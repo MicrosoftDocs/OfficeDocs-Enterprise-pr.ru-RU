@@ -22,148 +22,148 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="designing-storage-for-the-microsoft-cloud"></a>Разработка хранилища для Microsoft Cloud
+# <a name="designing-storage-for-the-microsoft-cloud"></a><span data-ttu-id="66a24-103">Разработка хранилища для Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="66a24-103">Designing storage for the Microsoft cloud</span></span>
 
- **Сводка.** Узнайте, зачем вам облачное хранилище, а также ознакомьтесь со списком доступных облачных хранилищ (Майкрософт) и основных сценариев хранения.
+ <span data-ttu-id="66a24-104">**Сводка.** Узнайте, зачем вам облачное хранилище, а также ознакомьтесь со списком доступных облачных хранилищ (Майкрософт) и основных сценариев хранения.</span><span class="sxs-lookup"><span data-stu-id="66a24-104">**Summary:** Understand why you need cloud storage and review the list of Microsoft's cloud storage options and the key storage scenarios.</span></span>
   
-Интеграция хранилища с облачными службами (Майкрософт) предоставляет вам доступ к широкому ассортименту служб и облачных платформ.
+<span data-ttu-id="66a24-105">Интеграция хранилища с облачными службами (Майкрософт) предоставляет вам доступ к широкому ассортименту служб и облачных платформ.</span><span class="sxs-lookup"><span data-stu-id="66a24-105">Integrating your storage with Microsoft cloud services gives you access to a broad range of services and cloud platform options.</span></span>
   
-## <a name="why-cloud-storage"></a>Зачем использовать облачное хранилище?
+## <a name="why-cloud-storage"></a><span data-ttu-id="66a24-106">Зачем использовать облачное хранилище?</span><span class="sxs-lookup"><span data-stu-id="66a24-106">Why cloud storage?</span></span>
 
-Есть две основные причины для использования облачного хранилища.
+<span data-ttu-id="66a24-107">Есть две основные причины для использования облачного хранилища.</span><span class="sxs-lookup"><span data-stu-id="66a24-107">There are two key reasons to use cloud storage.</span></span>
   
-1. Быстрый выход на рынок:
+1. <span data-ttu-id="66a24-108">Быстрый выход на рынок:</span><span class="sxs-lookup"><span data-stu-id="66a24-108">Speed to market:</span></span>
     
-  - быстродействующая конфигурация, позволяющая обеспечить высокую доступность и аварийное восстановление;
+  - <span data-ttu-id="66a24-109">быстродействующая конфигурация, позволяющая обеспечить высокую доступность и аварийное восстановление;</span><span class="sxs-lookup"><span data-stu-id="66a24-109">Faster configuration for high availability and disaster recovery</span></span>
     
-  - не нужно приобретать оборудование для хранилища;
+  - <span data-ttu-id="66a24-110">не нужно приобретать оборудование для хранилища;</span><span class="sxs-lookup"><span data-stu-id="66a24-110">No storage hardware to purchase</span></span>
     
-  - в облачных предложениях Майкрософт имеются встроенные вспомогательные средства;
+  - <span data-ttu-id="66a24-111">в облачных предложениях Майкрософт имеются встроенные вспомогательные средства;</span><span class="sxs-lookup"><span data-stu-id="66a24-111">Built-in plumbing provided by Microsoft's cloud offerings</span></span>
     
-  - доступность по всему миру.
+  - <span data-ttu-id="66a24-112">доступность по всему миру.</span><span class="sxs-lookup"><span data-stu-id="66a24-112">Available from anywhere in the world</span></span>
     
-2. Снижение затрат на обслуживание:
+2. <span data-ttu-id="66a24-113">Снижение затрат на обслуживание:</span><span class="sxs-lookup"><span data-stu-id="66a24-113">Lower costs to maintain:</span></span>
     
-  - эластичность, позволяющая масштабировать хранилище согласно вашим потребностям;
+  - <span data-ttu-id="66a24-114">эластичность, позволяющая масштабировать хранилище согласно вашим потребностям;</span><span class="sxs-lookup"><span data-stu-id="66a24-114">Elasticity to scale up and down your storage demands</span></span>
     
-  - не нужно обслуживать или переносить оборудование хранилища;
+  - <span data-ttu-id="66a24-115">не нужно обслуживать или переносить оборудование хранилища;</span><span class="sxs-lookup"><span data-stu-id="66a24-115">No storage hardware to maintain or migrate</span></span>
     
-  - корпорация Майкрософт предоставляет встроенные средства для обслуживания и повышения качества инфраструктуры;
+  - <span data-ttu-id="66a24-116">корпорация Майкрософт предоставляет встроенные средства для обслуживания и повышения качества инфраструктуры;</span><span class="sxs-lookup"><span data-stu-id="66a24-116">Microsoft is your built-in plumber to maintain and improve infrastructure</span></span>
     
-  - лучшая защита хранилища на рынке, которая постоянно совершенствуется.
+  - <span data-ttu-id="66a24-117">лучшая защита хранилища на рынке, которая постоянно совершенствуется.</span><span class="sxs-lookup"><span data-stu-id="66a24-117">Best storage security in the marketplace with ongoing improvements</span></span>
     
-## <a name="microsoft-cloud-storage-options"></a>Варианты облачного хранилища (Майкрософт)
+## <a name="microsoft-cloud-storage-options"></a><span data-ttu-id="66a24-118">Варианты облачного хранилища (Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="66a24-118">Microsoft cloud storage options</span></span>
 
-В этом разделе представлен широкий ассортимент облачных хранилищ.
+<span data-ttu-id="66a24-119">В этом разделе представлен широкий ассортимент облачных хранилищ.</span><span class="sxs-lookup"><span data-stu-id="66a24-119">To help you understand the wide variety of cloud storage options, we use a construction analogy.</span></span>
   
-### <a name="move-in-ready"></a>Решения, не требующие сборки
+### <a name="move-in-ready"></a><span data-ttu-id="66a24-120">Решения, не требующие сборки</span><span class="sxs-lookup"><span data-stu-id="66a24-120">Move-in ready</span></span>
 
-Используйте эти заранее подготовленные пакеты решений, объединенных с существующими службами. Они готовы к работе и практически не требуют настройки.
+<span data-ttu-id="66a24-p101">Используйте эти заранее подготовленные пакеты решений, объединенных с существующими службами. Они готовы к работе и практически не требуют настройки.</span><span class="sxs-lookup"><span data-stu-id="66a24-p101">Use these prepackaged solutions that are bundled with existing services. Use immediately and with minimal configuration.</span></span>
   
-- Office 365
+- <span data-ttu-id="66a24-123">Office 365</span><span class="sxs-lookup"><span data-stu-id="66a24-123">Office 365</span></span>
     
-- Microsoft Intune
+- <span data-ttu-id="66a24-124">Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="66a24-124">Microsoft Intune</span></span>
     
-- OneDrive для бизнеса
+- <span data-ttu-id="66a24-125">OneDrive для бизнеса</span><span class="sxs-lookup"><span data-stu-id="66a24-125">OneDrive for Business</span></span>
     
-- Dynamics 365
+- <span data-ttu-id="66a24-126">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="66a24-126">Dynamics 365</span></span>
     
-- Visual Studio Team Services
+- <span data-ttu-id="66a24-127">Visual Studio Team Services</span><span class="sxs-lookup"><span data-stu-id="66a24-127">Visual Studio Team Services</span></span>
     
-- Azure Site Recovery
+- <span data-ttu-id="66a24-128">Azure Site Recovery</span><span class="sxs-lookup"><span data-stu-id="66a24-128">Azure Site Recovery</span></span>
     
-- Совместный доступ к сайтам Yammer
+- <span data-ttu-id="66a24-129">Совместный доступ к сайтам Yammer</span><span class="sxs-lookup"><span data-stu-id="66a24-129">Yammer Site Sharing</span></span>
     
-- Azure Backup
+- <span data-ttu-id="66a24-130">Azure Backup</span><span class="sxs-lookup"><span data-stu-id="66a24-130">Azure Backup</span></span>
     
-Подробные сведения о каждом из этих вариантов облачного хранилища см. в статье [Решения, не требующие сборки](move-in-ready.md).
+<span data-ttu-id="66a24-131">Подробные сведения о каждом из этих вариантов облачного хранилища см. в статье [Решения, не требующие сборки](move-in-ready.md).</span><span class="sxs-lookup"><span data-stu-id="66a24-131">For the details of each of these cloud storage options, see [Move-in ready](move-in-ready.md).</span></span>
   
-### <a name="some-assembly-required"></a>Решения, требующие сборки
+### <a name="some-assembly-required"></a><span data-ttu-id="66a24-132">Решения, требующие сборки</span><span class="sxs-lookup"><span data-stu-id="66a24-132">Some assembly required</span></span>
 
-Используйте существующие службы в качестве отправной точки для своего хранилища. Чтобы создать хранилище, вам потребуется выполнить дополнительную настройку или написать код.
+<span data-ttu-id="66a24-133">Используйте существующие службы в качестве отправной точки для своего хранилища. Чтобы создать хранилище, вам потребуется выполнить дополнительную настройку или написать код.</span><span class="sxs-lookup"><span data-stu-id="66a24-133">Use these existing services as a starting point for your storage solution with additional configuration or coding for a custom fit.</span></span>
   
-- Сеть доставки содержимого Azure
+- <span data-ttu-id="66a24-134">Сеть доставки содержимого Azure</span><span class="sxs-lookup"><span data-stu-id="66a24-134">Azure Content Delivery Network</span></span>
     
-- Службы мультимедиа Azure
+- <span data-ttu-id="66a24-135">Службы мультимедиа Azure</span><span class="sxs-lookup"><span data-stu-id="66a24-135">Azure Media Services</span></span>
     
-- HdInsight
+- <span data-ttu-id="66a24-136">HdInsight</span><span class="sxs-lookup"><span data-stu-id="66a24-136">HdInsight</span></span>
     
-- Кэш Redis для Azure
+- <span data-ttu-id="66a24-137">Кэш Redis для Azure</span><span class="sxs-lookup"><span data-stu-id="66a24-137">Azure Redis Cache</span></span>
     
-- База данных SQL Azure
+- <span data-ttu-id="66a24-138">База данных SQL Azure</span><span class="sxs-lookup"><span data-stu-id="66a24-138">Azure SQL Database</span></span>
     
-- SQL Server на виртуальной машине Azure
+- <span data-ttu-id="66a24-139">SQL Server на виртуальной машине Azure</span><span class="sxs-lookup"><span data-stu-id="66a24-139">SQL Server on an Azure VM</span></span>
     
-- Azure Cosmos DB
+- <span data-ttu-id="66a24-140">Azure Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="66a24-140">Azure Cosmos DB</span></span>
     
-- StorSimple
+- <span data-ttu-id="66a24-141">StorSimple</span><span class="sxs-lookup"><span data-stu-id="66a24-141">StorSimple</span></span>
     
-- Хранилище данных SQL Azure
+- <span data-ttu-id="66a24-142">Хранилище данных SQL Azure</span><span class="sxs-lookup"><span data-stu-id="66a24-142">Azure SQL Data Warehouse</span></span>
     
-- Azure Data Lake Store
+- <span data-ttu-id="66a24-143">Azure Data Lake Store</span><span class="sxs-lookup"><span data-stu-id="66a24-143">Azure Data Lake Store</span></span>
     
-Подробные сведения о каждом из этих вариантов облачного хранилища см. в статье [Решения, требующие сборки](some-assembly-required.md).
+<span data-ttu-id="66a24-144">Подробные сведения о каждом из этих вариантов облачного хранилища см. в статье [Решения, требующие сборки](some-assembly-required.md).</span><span class="sxs-lookup"><span data-stu-id="66a24-144">For the details of each of these cloud storage options, see [Some assembly required](some-assembly-required.md).</span></span>
   
-### <a name="build-from-the-ground-up"></a>Создание с чистого листа
+### <a name="build-from-the-ground-up"></a><span data-ttu-id="66a24-145">Создание с чистого листа</span><span class="sxs-lookup"><span data-stu-id="66a24-145">Build from the ground up</span></span>
 
-Используя эти стандартные блоки хранилища и написав необходимый код, вы можете создать собственное хранилище или приложения "с нуля".
+<span data-ttu-id="66a24-146">Используя эти стандартные блоки хранилища и написав необходимый код, вы можете создать собственное хранилище или приложения "с нуля".</span><span class="sxs-lookup"><span data-stu-id="66a24-146">Use these storage building blocks, along with coding, to create your own storage solution or apps from scratch.</span></span>
   
-- Служба хранилища Azure (файлы)
+- <span data-ttu-id="66a24-147">Служба хранилища Azure (файлы)</span><span class="sxs-lookup"><span data-stu-id="66a24-147">Azure Storage (files)</span></span>
     
-- Служба хранилища Azure (большие двоичные объекты)
+- <span data-ttu-id="66a24-148">Служба хранилища Azure (большие двоичные объекты)</span><span class="sxs-lookup"><span data-stu-id="66a24-148">Azure Storage (blobs)</span></span>
     
-- Служба хранилища Azure (очереди)
+- <span data-ttu-id="66a24-149">Служба хранилища Azure (очереди)</span><span class="sxs-lookup"><span data-stu-id="66a24-149">Azure Storage (queues)</span></span>
     
-- Служба хранилища Azure (таблицы)
+- <span data-ttu-id="66a24-150">Служба хранилища Azure (таблицы)</span><span class="sxs-lookup"><span data-stu-id="66a24-150">Azure Storage (tables)</span></span>
     
-Подробные сведения о каждом из этих вариантов облачного хранилища см. в статье [Создание с чистого листа](build-from-the-ground-up.md).
+<span data-ttu-id="66a24-151">Подробные сведения о каждом из этих вариантов облачного хранилища см. в статье [Создание с чистого листа](build-from-the-ground-up.md).</span><span class="sxs-lookup"><span data-stu-id="66a24-151">For the details of each of these cloud storage options, see [Build from the ground up](build-from-the-ground-up.md).</span></span>
   
-## <a name="key-storage-scenarios"></a>Основные сценарии хранения
+## <a name="key-storage-scenarios"></a><span data-ttu-id="66a24-152">Основные сценарии хранения</span><span class="sxs-lookup"><span data-stu-id="66a24-152">Key storage scenarios</span></span>
 
-Ниже перечислены основные сценарии, в которых требуется облачное хранилище.
+<span data-ttu-id="66a24-153">Ниже перечислены основные сценарии, в которых требуется облачное хранилище.</span><span class="sxs-lookup"><span data-stu-id="66a24-153">Here are the key scenarios that require cloud-based storage:</span></span>
   
-- Кэширование данных
+- <span data-ttu-id="66a24-154">Кэширование данных</span><span class="sxs-lookup"><span data-stu-id="66a24-154">Cache data</span></span>
     
-    Чтобы ускорить доступ к часто используемым данным, разместите их в быстродействующем кэше.
+    <span data-ttu-id="66a24-155">Чтобы ускорить доступ к часто используемым данным, разместите их в быстродействующем кэше.</span><span class="sxs-lookup"><span data-stu-id="66a24-155">Accelerate access to commonly used data by storing it in a high-speed cache.</span></span>
     
-- Совместная работа с участниками группы
+- <span data-ttu-id="66a24-156">Совместная работа с участниками группы</span><span class="sxs-lookup"><span data-stu-id="66a24-156">Collaborate with team members</span></span>
     
-    Вы можете предоставлять разрешения на доступ к данным в облачном хранилище большому количеству пользователей.
+    <span data-ttu-id="66a24-157">Вы можете предоставлять разрешения на доступ к данным в облачном хранилище большому количеству пользователей.</span><span class="sxs-lookup"><span data-stu-id="66a24-157">Grant permission to multiple users to allow access to data in cloud storage.</span></span>
     
-- Управление данными
+- <span data-ttu-id="66a24-158">Управление данными</span><span class="sxs-lookup"><span data-stu-id="66a24-158">Manage data</span></span>
     
-    Храните, перемещайте или удаляйте большие объемы внутренних или внешних данных.
+    <span data-ttu-id="66a24-159">Храните, перемещайте или удаляйте большие объемы внутренних или внешних данных.</span><span class="sxs-lookup"><span data-stu-id="66a24-159">Store, move, or delete internal or external bulk data.</span></span>
     
-- Управление исходным кодом
+- <span data-ttu-id="66a24-160">Управление исходным кодом</span><span class="sxs-lookup"><span data-stu-id="66a24-160">Manage source code</span></span>
     
-    Отправляйте файлы кода приложений, ведите совместную работу над ними и запускайте их в облаке.
+    <span data-ttu-id="66a24-161">Отправляйте файлы кода приложений, ведите совместную работу над ними и запускайте их в облаке.</span><span class="sxs-lookup"><span data-stu-id="66a24-161">Upload, collaborate, and run application code files in the cloud.</span></span>
     
-- Резервное копирование файлов
+- <span data-ttu-id="66a24-162">Резервное копирование файлов</span><span class="sxs-lookup"><span data-stu-id="66a24-162">Backup files</span></span>
     
-    Храните копии внутренних и внешних данных за пределами своей организации в нескольких облачных расположениях.
+    <span data-ttu-id="66a24-163">Храните копии внутренних и внешних данных за пределами своей организации в нескольких облачных расположениях.</span><span class="sxs-lookup"><span data-stu-id="66a24-163">Store copies of internal or external data offsite in multiple cloud locations.</span></span>
     
-- Публикация информации, передаваемой внутри компании
+- <span data-ttu-id="66a24-164">Публикация информации, передаваемой внутри компании</span><span class="sxs-lookup"><span data-stu-id="66a24-164">Publish company communications</span></span>
     
-    Создайте единую точку публикации для внутренних или внешних сообщений.
+    <span data-ttu-id="66a24-165">Создайте единую точку публикации для внутренних или внешних сообщений.</span><span class="sxs-lookup"><span data-stu-id="66a24-165">Create a single point of publication for internal or external messages.</span></span>
     
-- Распространение миллионов событий
+- <span data-ttu-id="66a24-166">Распространение миллионов событий</span><span class="sxs-lookup"><span data-stu-id="66a24-166">Distribute millions of events</span></span>
     
-    Создайте хранилище для приема данных телеметрии с веб-сайтов и устройств, а также из приложений.
+    <span data-ttu-id="66a24-167">Создайте хранилище для приема данных телеметрии с веб-сайтов и устройств, а также из приложений.</span><span class="sxs-lookup"><span data-stu-id="66a24-167">Create storage for telemetry ingestion from websites, apps, and devices.</span></span>
     
-- Предоставление видеоматериалов и управление ими
+- <span data-ttu-id="66a24-168">Предоставление видеоматериалов и управление ими</span><span class="sxs-lookup"><span data-stu-id="66a24-168">Manage/serve videos</span></span>
     
-    Храните и показывайте видеоконтент клиентам или пользователям из организации.
+    <span data-ttu-id="66a24-169">Храните и показывайте видеоконтент клиентам или пользователям из организации.</span><span class="sxs-lookup"><span data-stu-id="66a24-169">Store and serve video content to customers or organization users.</span></span>
     
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a><span data-ttu-id="66a24-170">Следующее действие</span><span class="sxs-lookup"><span data-stu-id="66a24-170">Next step</span></span>
 
-Ознакомьтесь со службами облачного хранения [Решения, не требующие сборки](move-in-ready.md).
+<span data-ttu-id="66a24-171">Ознакомьтесь со службами облачного хранения [Решения, не требующие сборки](move-in-ready.md).</span><span class="sxs-lookup"><span data-stu-id="66a24-171">Review the [Move-in ready](move-in-ready.md) cloud storage options.</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="66a24-172">See Also</span><span class="sxs-lookup"><span data-stu-id="66a24-172">See Also</span></span>
 
-[Облачные хранилища Майкрософт для корпоративных архитекторов](microsoft-cloud-storage-for-enterprise-architects.md)
+[<span data-ttu-id="66a24-173">Облачные хранилища Майкрософт для корпоративных архитекторов</span><span class="sxs-lookup"><span data-stu-id="66a24-173">Microsoft Cloud Storage for Enterprise Architects</span></span>](microsoft-cloud-storage-for-enterprise-architects.md)
   
-[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="66a24-174">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="66a24-174">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="66a24-175">Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ</span><span class="sxs-lookup"><span data-stu-id="66a24-175">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 

@@ -23,25 +23,25 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Этап 4. Федеративная проверка подлинности для обеспечения высокой доступности: настройка прокси веб-приложений
+# <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a><span data-ttu-id="bf81b-103">Этап 4. Федеративная проверка подлинности для обеспечения высокой доступности: настройка прокси веб-приложений</span><span class="sxs-lookup"><span data-stu-id="bf81b-103">High availability federated authentication Phase 4: Configure web application proxies</span></span>
 
- **Сводка:** Настройка серверов прокси-сервера веб-приложений для вашего высокой доступности федеративной проверки подлинности для Office 365 в Microsoft Azure.
+ <span data-ttu-id="bf81b-104">**Сводка:** Настройка серверов прокси-сервера веб-приложений для вашего высокой доступности федеративной проверки подлинности для Office 365 в Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="bf81b-104">**Summary:** Configure the web application proxy servers for your high availability federated authentication for Office 365 in Microsoft Azure.</span></span>
   
-На этом этапе развертывания федеративной проверки подлинности с высоким уровнем доступности для Office 365 в службах инфраструктуры Azure создаются внутренний балансировщик нагрузки и два сервера AD FS.
+<span data-ttu-id="bf81b-105">На этом этапе развертывания федеративной проверки подлинности с высоким уровнем доступности для Office 365 в службах инфраструктуры Azure создаются внутренний балансировщик нагрузки и два сервера AD FS.</span><span class="sxs-lookup"><span data-stu-id="bf81b-105">In this phase of deploying high availability for Office 365 federated authentication in Azure infrastructure services, you create an internal load balancer and two AD FS servers.</span></span>
   
-Необходимо выполнить данный этап перед перемещением на [высокой доступности федеративных проверки подлинности этап 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). В разделе [Развертывание высокой доступности федеративной проверки подлинности для Office 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) все этапы.
+<span data-ttu-id="bf81b-p101">Необходимо выполнить данный этап перед перемещением на [высокой доступности федеративных проверки подлинности этап 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). В разделе [Развертывание высокой доступности федеративной проверки подлинности для Office 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) все этапы.</span><span class="sxs-lookup"><span data-stu-id="bf81b-p101">You must complete this phase before moving on to [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). See [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
   
-## <a name="create-the-internet-facing-load-balancer-in-azure"></a>Создание внешнего балансировщика нагрузки в Azure
+## <a name="create-the-internet-facing-load-balancer-in-azure"></a><span data-ttu-id="bf81b-108">Создание внешнего балансировщика нагрузки в Azure</span><span class="sxs-lookup"><span data-stu-id="bf81b-108">Create the Internet-facing load balancer in Azure</span></span>
 
-Создайте внешний балансировщик нагрузки, чтобы Azure равномерно распределял входящий трафик проверки подлинности из Интернета между двумя прокси-серверами веб-приложений.
+<span data-ttu-id="bf81b-109">Создайте внешний балансировщик нагрузки, чтобы Azure равномерно распределял входящий трафик проверки подлинности из Интернета между двумя прокси-серверами веб-приложений.</span><span class="sxs-lookup"><span data-stu-id="bf81b-109">You must create an Internet-facing load balancer so that Azure distributes the incoming client authentication traffic from the Internet evenly among the two web application proxy servers.</span></span>
   
 > [!NOTE]
-> Следующие наборы команд использовать последнюю версию Windows Azure PowerShell. В разделе [Начало работы с Windows Azure PowerShell командлетов](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> <span data-ttu-id="bf81b-p102">Следующие наборы команд использовать последнюю версию Windows Azure PowerShell. В разделе [Начало работы с Windows Azure PowerShell командлетов](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span><span class="sxs-lookup"><span data-stu-id="bf81b-p102">The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span></span> 
   
-Указав расположение и группу ресурсов, выполните полученный блок в командной строке Azure PowerShell или в интегрированной среде сценариев PowerShell.
+<span data-ttu-id="bf81b-112">Указав расположение и группу ресурсов, выполните полученный блок в командной строке Azure PowerShell или в интегрированной среде сценариев PowerShell.</span><span class="sxs-lookup"><span data-stu-id="bf81b-112">When you have supplied location and resource group values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
   
 > [!TIP]
-> Текстовый файл, содержащий все команды PowerShell в данной статье и конфигурации книги Microsoft Excel, которое создает все готово к запуску PowerShell команду блоки на основе настраиваемых параметров содержатся в [федеративном проверки подлинности для Office 365 Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> <span data-ttu-id="bf81b-113">Текстовый файл, содержащий все команды PowerShell в данной статье и конфигурации книги Microsoft Excel, которое создает все готово к запуску PowerShell команду блоки на основе настраиваемых параметров содержатся в [федеративном проверки подлинности для Office 365 Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664).</span><span class="sxs-lookup"><span data-stu-id="bf81b-113">For a text file that contains all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664).</span></span> 
   
 ```
 # Set up key variables
@@ -56,51 +56,51 @@ $lbrule=New-AzureRMLoadBalancerRuleConfig -Name "WebTraffic" -FrontendIpConfigur
 New-AzureRMLoadBalancer -ResourceGroupName $rgName -Name "WebAppProxyServers" -Location $locName -LoadBalancingRule $lbrule -BackendAddressPool $beAddressPool -Probe $healthProbe -FrontendIpConfiguration $frontendIP
 ```
 
-Чтобы отобразить общедоступный IP-адрес внешнего балансировщика нагрузки, выполните следующие команды в командной строке Azure PowerShell на локальном компьютере:
+<span data-ttu-id="bf81b-114">Чтобы отобразить общедоступный IP-адрес внешнего балансировщика нагрузки, выполните следующие команды в командной строке Azure PowerShell на локальном компьютере:</span><span class="sxs-lookup"><span data-stu-id="bf81b-114">To display the public IP address assigned to your Internet-facing load balancer, run these commands at the Azure PowerShell command prompt on your local computer:</span></span>
   
 ```
 Write-Host (Get-AzureRMPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgName).IPAddress
 ```
 
-## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a>Определение полного доменного имени службы федерации и создание записей DNS
+## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a><span data-ttu-id="bf81b-115">Определение полного доменного имени службы федерации и создание записей DNS</span><span class="sxs-lookup"><span data-stu-id="bf81b-115">Determine your federation service FQDN and create DNS records</span></span>
 
-Вам нужно определить DNS-имя службы федерации, которое будет использоваться в Интернете. После настройки на этапе 5 это имя станет частью URL-адреса, который Office 365 отправляет подключающимся клиентам, чтобы получить маркер безопасности. Например, fs.contoso.com (fs означает "служба федерации").
+<span data-ttu-id="bf81b-p103">Вам нужно определить DNS-имя службы федерации, которое будет использоваться в Интернете. После настройки на этапе 5 это имя станет частью URL-адреса, который Office 365 отправляет подключающимся клиентам, чтобы получить маркер безопасности. Например, fs.contoso.com (fs означает "служба федерации").</span><span class="sxs-lookup"><span data-stu-id="bf81b-p103">You need to determine the DNS name to identify your federation service name on the Internet. Azure AD Connect will configure Office 365 with this name in Phase 5, which will become part of the URL that Office 365 sends to connecting clients to get a security token. An example is fs.contoso.com (fs stands for federation service).</span></span>
   
-После этого создайте запись A общедоступного домена DNS для полного доменного имени службы федерации, которая указывает на общедоступный IP-адрес внешнего балансировщика нагрузки Azure.
+<span data-ttu-id="bf81b-119">После этого создайте запись A общедоступного домена DNS для полного доменного имени службы федерации, которая указывает на общедоступный IP-адрес внешнего балансировщика нагрузки Azure.</span><span class="sxs-lookup"><span data-stu-id="bf81b-119">Once you have your federation service FDQN, create a public DNS domain A record for the federation service FDQN that resolves to the public IP address of the Azure Internet-facing load balancer.</span></span>
   
-|**Имя**|**Тип**|**TTL**|**Значение**|
+|<span data-ttu-id="bf81b-120">**Имя**</span><span class="sxs-lookup"><span data-stu-id="bf81b-120">**Name**</span></span>|<span data-ttu-id="bf81b-121">**Тип**</span><span class="sxs-lookup"><span data-stu-id="bf81b-121">**Type**</span></span>|<span data-ttu-id="bf81b-122">**TTL**</span><span class="sxs-lookup"><span data-stu-id="bf81b-122">**TTL**</span></span>|<span data-ttu-id="bf81b-123">**Значение**</span><span class="sxs-lookup"><span data-stu-id="bf81b-123">**Value**</span></span>|
 |:-----|:-----|:-----|:-----|
-|Полное доменное имя службы федерации  <br/> |A  <br/> |3600  <br/> |общедоступный IP-адрес балансировщика нагрузки Azure в Интернете (отобразить с помощью команды **Записи узла** в предыдущем разделе) <br/> |
+|<span data-ttu-id="bf81b-124">Полное доменное имя службы федерации</span><span class="sxs-lookup"><span data-stu-id="bf81b-124">federation service FDQN</span></span>  <br/> |<span data-ttu-id="bf81b-125">A</span><span class="sxs-lookup"><span data-stu-id="bf81b-125">A</span></span>  <br/> |<span data-ttu-id="bf81b-126">3600</span><span class="sxs-lookup"><span data-stu-id="bf81b-126">3600</span></span>  <br/> |<span data-ttu-id="bf81b-127">общедоступный IP-адрес балансировщика нагрузки Azure в Интернете (отобразить с помощью команды **Записи узла** в предыдущем разделе)</span><span class="sxs-lookup"><span data-stu-id="bf81b-127">public IP address of the Azure Internet-facing load balancer (displayed by the **Write-Host** command in the previous section)</span></span> <br/> |
    
-Пример
+<span data-ttu-id="bf81b-128">Пример</span><span class="sxs-lookup"><span data-stu-id="bf81b-128">Here is an example:</span></span>
   
-|**Имя**|**Тип**|**TTL**|**Значение**|
+|<span data-ttu-id="bf81b-129">**Имя**</span><span class="sxs-lookup"><span data-stu-id="bf81b-129">**Name**</span></span>|<span data-ttu-id="bf81b-130">**Тип**</span><span class="sxs-lookup"><span data-stu-id="bf81b-130">**Type**</span></span>|<span data-ttu-id="bf81b-131">**TTL**</span><span class="sxs-lookup"><span data-stu-id="bf81b-131">**TTL**</span></span>|<span data-ttu-id="bf81b-132">**Значение**</span><span class="sxs-lookup"><span data-stu-id="bf81b-132">**Value**</span></span>|
 |:-----|:-----|:-----|:-----|
-|FS.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
+|<span data-ttu-id="bf81b-133">FS.contoso.com</span><span class="sxs-lookup"><span data-stu-id="bf81b-133">fs.contoso.com</span></span>  <br/> |<span data-ttu-id="bf81b-134">A</span><span class="sxs-lookup"><span data-stu-id="bf81b-134">A</span></span>  <br/> |<span data-ttu-id="bf81b-135">3600</span><span class="sxs-lookup"><span data-stu-id="bf81b-135">3600</span></span>  <br/> |<span data-ttu-id="bf81b-136">131.107.249.117</span><span class="sxs-lookup"><span data-stu-id="bf81b-136">131.107.249.117</span></span>  <br/> |
    
-После этого добавьте адресную запись DNS в частное пространство имен DNS вашей организации, которое превращает полное доменное имя службы федерации в частный IP-адрес, присвоенный внутреннему балансировщику нагрузки для серверов AD FS (таблица I, элемент 4, столбец "Значение").
+<span data-ttu-id="bf81b-137">После этого добавьте адресную запись DNS в частное пространство имен DNS вашей организации, которое превращает полное доменное имя службы федерации в частный IP-адрес, присвоенный внутреннему балансировщику нагрузки для серверов AD FS (таблица I, элемент 4, столбец "Значение").</span><span class="sxs-lookup"><span data-stu-id="bf81b-137">Next, add a DNS address record to your organization's private DNS namespace that resolves your federation service FQDN to the private IP address assigned to the internal load balancer for the AD FS servers (Table I, item 4, Value column).</span></span>
   
-## <a name="create-the-web-application-proxy-server-virtual-machines-in-azure"></a>Создание виртуальных машин прокси-серверов веб-приложений в Azure
+## <a name="create-the-web-application-proxy-server-virtual-machines-in-azure"></a><span data-ttu-id="bf81b-138">Создание виртуальных машин прокси-серверов веб-приложений в Azure</span><span class="sxs-lookup"><span data-stu-id="bf81b-138">Create the web application proxy server virtual machines in Azure</span></span>
 
-Используйте приведенный ниже блок команд Azure PowerShell, чтобы создать виртуальные машины для двух прокси-серверов веб-приложений.  
+<span data-ttu-id="bf81b-139">Используйте приведенный ниже блок команд Azure PowerShell, чтобы создать виртуальные машины для двух прокси-серверов веб-приложений. </span><span class="sxs-lookup"><span data-stu-id="bf81b-139">Use the following block of Azure PowerShell commands to create the virtual machines for the two web application proxy servers.</span></span> 
   
-Обратите внимание, что в указанных наборах команд PowerShell используются значения из следующих таблиц:
+<span data-ttu-id="bf81b-140">Обратите внимание, что в указанных наборах команд PowerShell используются значения из следующих таблиц:</span><span class="sxs-lookup"><span data-stu-id="bf81b-140">Note that the following Azure PowerShell command sets use values from the following tables:</span></span>
   
-- таблица M (для виртуальных машин);
+- <span data-ttu-id="bf81b-141">таблица M (для виртуальных машин);</span><span class="sxs-lookup"><span data-stu-id="bf81b-141">Table M, for your virtual machines</span></span>
     
-- таблица R (для групп ресурсов);
+- <span data-ttu-id="bf81b-142">таблица R (для групп ресурсов);</span><span class="sxs-lookup"><span data-stu-id="bf81b-142">Table R, for your resource groups</span></span>
     
-- таблица V (для параметров виртуальной сети);
+- <span data-ttu-id="bf81b-143">таблица V (для параметров виртуальной сети);</span><span class="sxs-lookup"><span data-stu-id="bf81b-143">Table V, for your virtual network settings</span></span>
     
-- таблица S (для подсетей);
+- <span data-ttu-id="bf81b-144">таблица S (для подсетей);</span><span class="sxs-lookup"><span data-stu-id="bf81b-144">Table S, for your subnets</span></span>
     
-- таблица I (для статических IP-адресов);
+- <span data-ttu-id="bf81b-145">таблица I (для статических IP-адресов);</span><span class="sxs-lookup"><span data-stu-id="bf81b-145">Table I, for your static IP addresses</span></span>
     
-- таблица A (для групп доступности).
+- <span data-ttu-id="bf81b-146">таблица A (для групп доступности).</span><span class="sxs-lookup"><span data-stu-id="bf81b-146">Table A, for your availability sets</span></span>
     
-Помните, что вы задали M таблицы в [высокой доступности федеративных проверки подлинности этап 2: Настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) и таблиц R, V, S, I и A в [высокой доступности федеративных проверки подлинности на шаге 1: настройте Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+<span data-ttu-id="bf81b-147">Помните, что вы задали M таблицы в [высокой доступности федеративных проверки подлинности этап 2: Настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) и таблиц R, V, S, I и A в [высокой доступности федеративных проверки подлинности на шаге 1: настройте Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span><span class="sxs-lookup"><span data-stu-id="bf81b-147">Recall that you defined Table M in [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I, and A in [High availability federated authentication Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span></span>
   
-Задав правильные значения, выполните полученный блок в командной строке Azure PowerShell или в интегрированной среде сценариев PowerShell.
+<span data-ttu-id="bf81b-148">Задав правильные значения, выполните полученный блок в командной строке Azure PowerShell или в интегрированной среде сценариев PowerShell.</span><span class="sxs-lookup"><span data-stu-id="bf81b-148">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
   
 ```
 # Set up variables common to both virtual machines
@@ -154,26 +154,26 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Так как эти виртуальные машины для приложения интрасети, они не назначен общедоступный IP-адрес или имя домена DNS и выход в Интернет. Тем не менее это также означает, что не удается подключиться к ним с Azure портала. Параметр **Подключить** недоступна при просмотре свойств виртуальной машины. Используйте стандартную программу подключения к удаленному рабочему столу или другого средства удаленного рабочего стола для подключения к виртуальной машине с помощью его частных IP-адресов интрасети или адреса DNS-имени и учетные данные учетной записи локального администратора.
+> <span data-ttu-id="bf81b-p104">Так как эти виртуальные машины для приложения интрасети, они не назначен общедоступный IP-адрес или имя домена DNS и выход в Интернет. Тем не менее это также означает, что не удается подключиться к ним с Azure портала. Параметр **Подключить** недоступна при просмотре свойств виртуальной машины. Используйте стандартную программу подключения к удаленному рабочему столу или другого средства удаленного рабочего стола для подключения к виртуальной машине с помощью его частных IP-адресов интрасети или адреса DNS-имени и учетные данные учетной записи локального администратора.</span><span class="sxs-lookup"><span data-stu-id="bf81b-p104">Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name and the credentials of the local administrator account.</span></span>
   
-Здесь показана конфигурация, полученная в результате успешного выполнения этого этапа (с заполнителями вместо имен компьютеров).
+<span data-ttu-id="bf81b-153">Здесь показана конфигурация, полученная в результате успешного выполнения этого этапа (с заполнителями вместо имен компьютеров).</span><span class="sxs-lookup"><span data-stu-id="bf81b-153">Here is the configuration resulting from the successful completion of this phase, with placeholder computer names.</span></span>
   
-**Этап 4: Интернет-загрузить нагрузки и серверов прокси-сервера веб-приложений для обеспечения высокой доступности инфраструктуры федеративной проверки подлинности в Azure**
+<span data-ttu-id="bf81b-154">**Этап 4: Интернет-загрузить нагрузки и серверов прокси-сервера веб-приложений для обеспечения высокой доступности инфраструктуры федеративной проверки подлинности в Azure**</span><span class="sxs-lookup"><span data-stu-id="bf81b-154">**Phase 4: The Internet-facing load balancer and web application proxy servers for your high availability federated authentication infrastructure in Azure**</span></span>
 
 ![Этап 4. Инфраструктура федеративной проверки подлинности для Office 365 с высокой доступностью, развертывание которой выполняется в Azure с использованием прокси-серверов веб-приложений](images/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a><span data-ttu-id="bf81b-156">Следующее действие</span><span class="sxs-lookup"><span data-stu-id="bf81b-156">Next step</span></span>
 
-Использование [высокой доступности федеративных проверки подлинности этап 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) для продолжения настройки этой рабочей нагрузкой.
+<span data-ttu-id="bf81b-157">Использование [высокой доступности федеративных проверки подлинности этап 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) для продолжения настройки этой рабочей нагрузкой.</span><span class="sxs-lookup"><span data-stu-id="bf81b-157">Use [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) to continue configuring this workload.</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="bf81b-158">See Also</span><span class="sxs-lookup"><span data-stu-id="bf81b-158">See Also</span></span>
 
-[Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[<span data-ttu-id="bf81b-159">Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365</span><span class="sxs-lookup"><span data-stu-id="bf81b-159">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Федеративное удостоверение для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="bf81b-160">Федеративное удостоверение для среды разработки и тестирования Office 365</span><span class="sxs-lookup"><span data-stu-id="bf81b-160">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="bf81b-161">Освоение облака и гибридные решения</span><span class="sxs-lookup"><span data-stu-id="bf81b-161">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
-[Федеративные удостоверения для Office 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[<span data-ttu-id="bf81b-162">Федеративные удостоверения для Office 365</span><span class="sxs-lookup"><span data-stu-id="bf81b-162">Federated identity for Office 365</span></span>](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
 
 

@@ -16,8 +16,8 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="obsolete-article"></a>Устаревшая статья
+# <a name="obsolete-article"></a><span data-ttu-id="64b53-104">Устаревшая статья</span><span class="sxs-lookup"><span data-stu-id="64b53-104">Obsolete article</span></span>
 
-Данная статья устарела. Сведения содержатся в [облаке внедрения и гибридные решения](cloud-adoption-and-hybrid-solutions.md) текущей.
+<span data-ttu-id="64b53-p102">Данная статья устарела. Сведения содержатся в [облаке внедрения и гибридные решения](cloud-adoption-and-hybrid-solutions.md) текущей.</span><span class="sxs-lookup"><span data-stu-id="64b53-p102">This article is obsolete. See [Cloud adoption and hybrid solutions](cloud-adoption-and-hybrid-solutions.md) for current information.</span></span>
   
 

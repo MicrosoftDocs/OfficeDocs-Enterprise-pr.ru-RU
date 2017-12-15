@@ -23,108 +23,108 @@ ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="the-microsoft-365-enterprise-devtest-environment"></a>Среда разработки и тестирования Microsoft 365 корпоративный
+# <a name="the-microsoft-365-enterprise-devtest-environment"></a><span data-ttu-id="75e1b-103">Среда разработки и тестирования Microsoft 365 корпоративный</span><span class="sxs-lookup"><span data-stu-id="75e1b-103">The Microsoft 365 Enterprise dev/test environment</span></span>
 
- **Сводка:** В этом документе Test Lab Guide используйте для создания среды разработки или тестирования, включающего Office 365 E5, мобильности Enterprise + E5 безопасности (Командной) и компьютера под управлением Windows 10 Enterprise.
+ <span data-ttu-id="75e1b-104">**Сводка:** В этом документе Test Lab Guide используйте для создания среды разработки или тестирования, включающего Office 365 E5, мобильности Enterprise + E5 безопасности (Командной) и компьютера под управлением Windows 10 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="75e1b-104">**Summary:** Use this Test Lab Guide to create a dev/test environment that includes Office 365 E5, Enterprise Mobility + Security (EMS) E5, and a computer running Windows 10 Enterprise.</span></span>
   
-В этой статье предоставляются пошаговые инструкции по созданию упрощенный среде для тестирования компоненты и функциональные возможности [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)для предприятия.
+<span data-ttu-id="75e1b-105">В этой статье предоставляются пошаговые инструкции по созданию упрощенный среде для тестирования компоненты и функциональные возможности [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)для предприятия.</span><span class="sxs-lookup"><span data-stu-id="75e1b-105">This article provides you with step-by-step instructions to create a simplified environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).</span></span>
   
-## <a name="phase-1-create-your-office-365-e5-subscription"></a>Этап 1. Создание подписки Office 365 E5
+## <a name="phase-1-create-your-office-365-e5-subscription"></a><span data-ttu-id="75e1b-106">Этап 1. Создание подписки Office 365 E5</span><span class="sxs-lookup"><span data-stu-id="75e1b-106">Phase 1: Create your Office 365 E5 subscription</span></span>
 
-Выполните действия, описанные в этап 2 и 3 этапа из [Office 365 dev/тестовой среды](office-365-dev-test-environment.md) для создания среды разработки и тестирования lightweight Office 365, как показано на рисунке 1.
+<span data-ttu-id="75e1b-107">Выполните действия, описанные в этап 2 и 3 этапа из [Office 365 dev/тестовой среды](office-365-dev-test-environment.md) для создания среды разработки и тестирования lightweight Office 365, как показано на рисунке 1.</span><span class="sxs-lookup"><span data-stu-id="75e1b-107">Follow the steps in Phase 2 and Phase 3 of [Office 365 dev/test environment](office-365-dev-test-environment.md) to create a lightweight Office 365 dev/test environment, as shown in Figure 1.</span></span>
   
-**На рисунке 1: Office 365 E5 подписки по программе его Azure Active Directory (AD) клиента и учетные записи пользователей**
+<span data-ttu-id="75e1b-108">**На рисунке 1: Office 365 E5 подписки по программе его Azure Active Directory (AD) клиента и учетные записи пользователей**</span><span class="sxs-lookup"><span data-stu-id="75e1b-108">**Figure 1: Your Office 365 E5 subscription with its Azure Active Directory (AD) tenant and user accounts**</span></span>
 
 ![Этап 1 для среды разработки и тестирования Microsoft 365 корпоративный](images/65bb027b-fb59-46eb-aec2-38c0af425168.png)
   
-## <a name="phase-2-add-ems"></a>Этап 2. Добавление EMS
+## <a name="phase-2-add-ems"></a><span data-ttu-id="75e1b-110">Этап 2. Добавление EMS</span><span class="sxs-lookup"><span data-stu-id="75e1b-110">Phase 2: Add EMS</span></span>
 
-На этом этапе можно оформить пробную подписку на EMS E5 и добавить ее к той же организации, для которой создана пробная подписка на Office 365 E5.
+<span data-ttu-id="75e1b-111">На этом этапе можно оформить пробную подписку на EMS E5 и добавить ее к той же организации, для которой создана пробная подписка на Office 365 E5.</span><span class="sxs-lookup"><span data-stu-id="75e1b-111">In this phase, you sign up for the EMS E5 trial subscription and add it to the same organization as your Office 365 E5 trial subscription.</span></span>
   
-Во-первых добавьте E5 Командной пробной подписки и назначьте лицензии Командной свою учетную запись глобального администратора.
+<span data-ttu-id="75e1b-112">Во-первых добавьте E5 Командной пробной подписки и назначьте лицензии Командной свою учетную запись глобального администратора.</span><span class="sxs-lookup"><span data-stu-id="75e1b-112">First, add the EMS E5 trial subscription and assign an EMS license to your global administrator account.</span></span>
   
-1. С помощью закрытого экземпляр веб-браузер войдите в портал Office 365 с свои учетные данные глобального администратора. Дополнительные сведения см [Where для входа в Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="75e1b-p101">С помощью закрытого экземпляр веб-браузер войдите в портал Office 365 с свои учетные данные глобального администратора. Дополнительные сведения см [Where для входа в Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="75e1b-p101">With a private instance of an Internet browser, sign in to the Office 365 portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. Щелкните плитку **администрирования** .
+2. <span data-ttu-id="75e1b-115">Щелкните плитку **администрирования** .</span><span class="sxs-lookup"><span data-stu-id="75e1b-115">Click the **Admin** tile.</span></span>
     
-3. На вкладке **центра администрирования Office** в браузере на панели навигации слева щелкните **выставления счетов > службы приобретения**.
+3. <span data-ttu-id="75e1b-116">На вкладке **центра администрирования Office** в браузере на панели навигации слева щелкните **выставления счетов > службы приобретения**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-116">On the **Office Admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
     
-4. На странице " **службы приобретения** " Поиск элемента **мобильной работы предприятия + E5 безопасности** . Наведите указатель мыши на его и нажмите кнопку **Пуск бесплатную пробную версию**.
+4. <span data-ttu-id="75e1b-p102">На странице " **службы приобретения** " Поиск элемента **мобильной работы предприятия + E5 безопасности** . Наведите указатель мыши на его и нажмите кнопку **Пуск бесплатную пробную версию**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-p102">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
     
-5. На странице " **Подтверждение заказа** " щелкните **Теперь попробуйте**.
+5. <span data-ttu-id="75e1b-119">На странице " **Подтверждение заказа** " щелкните **Теперь попробуйте**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-119">On the **Confirm your order** page, click **Try now**.</span></span>
     
-6. На странице **получения заказа** нажмите кнопку **Продолжить**.
+6. <span data-ttu-id="75e1b-120">На странице **получения заказа** нажмите кнопку **Продолжить**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-120">On the **Order receipt** page, click **Continue**.</span></span>
     
-7. На вкладке **Центр администрирования Office 365** в браузере на панели навигации слева щелкните **Пользователи > Активные пользователи**.
+7. <span data-ttu-id="75e1b-121">На вкладке **Центр администрирования Office 365** в браузере на панели навигации слева щелкните **Пользователи > Активные пользователи**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-121">On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
     
-8. Выберите учетную запись глобального администратора и нажмите кнопку **Изменить** для **лицензий на продукт**.
+8. <span data-ttu-id="75e1b-122">Выберите учетную запись глобального администратора и нажмите кнопку **Изменить** для **лицензий на продукт**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-122">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
     
-9. В области **лицензий на продукт** включить лицензии для **мобильных устройств предприятия + E5 безопасности** для **на**, нажмите кнопку **Сохранить** и дважды нажмите кнопку **Закрыть** .
+9. <span data-ttu-id="75e1b-123">В области **лицензий на продукт** включить лицензии для **мобильных устройств предприятия + E5 безопасности** для **на**, нажмите кнопку **Сохранить** и дважды нажмите кнопку **Закрыть** .</span><span class="sxs-lookup"><span data-stu-id="75e1b-123">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
     
 > [!NOTE]
-> Период пробной подписки на Enterprise Mobility + Security E5 составляет 90 дней. Чтобы создать постоянную среду тестирования и разработки, создайте новую платную подписку с небольшим количеством лицензий. 
+> <span data-ttu-id="75e1b-p103">Период пробной подписки на Enterprise Mobility + Security E5 составляет 90 дней. Чтобы создать постоянную среду тестирования и разработки, создайте новую платную подписку с небольшим количеством лицензий.</span><span class="sxs-lookup"><span data-stu-id="75e1b-p103">The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
   
- ***Если вы выполнили этап 3*** [Office 365 dev/тестовой среде](office-365-dev-test-environment.md) , повторите шаги 8 и 9 предыдущей процедуры для всех других учетных записей (2 пользователя, пользователь 3, 4 пользователя и пользователь 5).
+ <span data-ttu-id="75e1b-126">***Если вы выполнили этап 3*** [Office 365 dev/тестовой среде](office-365-dev-test-environment.md) , повторите шаги 8 и 9 предыдущей процедуры для всех других учетных записей (2 пользователя, пользователь 3, 4 пользователя и пользователь 5).</span><span class="sxs-lookup"><span data-stu-id="75e1b-126">***If you completed Phase 3 of*** [Office 365 dev/test environment](office-365-dev-test-environment.md) , repeat steps 8 and 9 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).</span></span>
   
-Теперь ваша среда разработки и тестирования содержит:
+<span data-ttu-id="75e1b-127">Теперь ваша среда разработки и тестирования содержит:</span><span class="sxs-lookup"><span data-stu-id="75e1b-127">Your dev/test environment now has:</span></span>
   
-- Пробные подписки на Office 365 корпоративный E5 и EMS для одной организации, а также один и тот же клиент Azure AD для всех учетных записей пользователей из списка.
+- <span data-ttu-id="75e1b-128">Пробные подписки на Office 365 корпоративный E5 и EMS для одной организации, а также один и тот же клиент Azure AD для всех учетных записей пользователей из списка.</span><span class="sxs-lookup"><span data-stu-id="75e1b-128">Office 365 E5 Enterprise and EMS trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
     
-- Использование Office 365 E5 и E5 Командной включены все соответствующие учетные записи пользователей (только что глобального администратора или все пять учетных записей пользователей).
+- <span data-ttu-id="75e1b-129">Использование Office 365 E5 и E5 Командной включены все соответствующие учетные записи пользователей (только что глобального администратора или все пять учетных записей пользователей).</span><span class="sxs-lookup"><span data-stu-id="75e1b-129">All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Office 365 E5 and EMS E5.</span></span>
     
-На рисунке 2 показана полученная в итоге конфигурация с EMS.
+<span data-ttu-id="75e1b-130">На рисунке 2 показана полученная в итоге конфигурация с EMS.</span><span class="sxs-lookup"><span data-stu-id="75e1b-130">Figure 2 shows your resulting configuration, which adds EMS.</span></span>
   
-**На рисунке 2: Добавление Командной пробной подписки**
+<span data-ttu-id="75e1b-131">**На рисунке 2: Добавление Командной пробной подписки**</span><span class="sxs-lookup"><span data-stu-id="75e1b-131">**Figure 2: Adding the EMS trial subscription**</span></span>
 
 ![Этап 2 для среды разработки и тестирования Microsoft 365 корпоративный](images/8a01a483-3de2-41f3-a845-141c7edd0cb0.png)
   
-## <a name="phase-3-create-a-windows-10-enterprise-computer"></a>Этап 3. Создание изолированного компьютера с ОС Windows 10 Корпоративная
+## <a name="phase-3-create-a-windows-10-enterprise-computer"></a><span data-ttu-id="75e1b-133">Этап 3. Создание изолированного компьютера с ОС Windows 10 Корпоративная</span><span class="sxs-lookup"><span data-stu-id="75e1b-133">Phase 3: Create a Windows 10 Enterprise computer</span></span>
 
-На этом этапе можно создать изолированный компьютер под управлением Windows 10 Корпоративная.
+<span data-ttu-id="75e1b-134">На этом этапе можно создать изолированный компьютер под управлением Windows 10 Корпоративная.</span><span class="sxs-lookup"><span data-stu-id="75e1b-134">In this phase, you create a standalone computer running Windows 10 Enterprise.</span></span>
   
-### <a name="physical-computer"></a>Физический компьютер
+### <a name="physical-computer"></a><span data-ttu-id="75e1b-135">Физический компьютер</span><span class="sxs-lookup"><span data-stu-id="75e1b-135">Physical computer</span></span>
 
-Получите личный компьютер и установить Windows 10 Enterprise на него. Вы можете загрузить Windows 10 корпоративной пробной версии [здесь](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
+<span data-ttu-id="75e1b-p104">Получите личный компьютер и установить Windows 10 Enterprise на него. Вы можете загрузить Windows 10 корпоративной пробной версии [здесь](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span><span class="sxs-lookup"><span data-stu-id="75e1b-p104">Obtain a personal computer and install Windows 10 Enterprise on it. You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span></span>
   
-### <a name="virtual-machine"></a>Виртуальная машина
+### <a name="virtual-machine"></a><span data-ttu-id="75e1b-138">Виртуальная машина</span><span class="sxs-lookup"><span data-stu-id="75e1b-138">Virtual machine</span></span>
 
-Создание виртуальной машины с помощью низкоуровневой оболочки собственное и установить Windows 10 Enterprise на него. Вы можете загрузить Windows 10 корпоративной пробной версии [здесь](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
+<span data-ttu-id="75e1b-p105">Создание виртуальной машины с помощью низкоуровневой оболочки собственное и установить Windows 10 Enterprise на него. Вы можете загрузить Windows 10 корпоративной пробной версии [здесь](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span><span class="sxs-lookup"><span data-stu-id="75e1b-p105">Create a virtual machine using the hypervisor of your choice and install Windows 10 Enterprise on it. You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span></span>
   
-### <a name="virtual-machine-in-azure"></a>Виртуальная машина в Azure
+### <a name="virtual-machine-in-azure"></a><span data-ttu-id="75e1b-141">Виртуальная машина в Azure</span><span class="sxs-lookup"><span data-stu-id="75e1b-141">Virtual machine in Azure</span></span>
 
-Создание виртуальной машины Windows 10 в Microsoft Azure, ***необходимо иметь подписку на основе Visual Studio***, которой имеют доступ к нужному изображению для Windows 10 Enterprise. Другие типы Azure подписки, например пробной версии и платной подписки нет доступа на данное изображение.
+<span data-ttu-id="75e1b-p106">Создание виртуальной машины Windows 10 в Microsoft Azure, ***необходимо иметь подписку на основе Visual Studio***, которой имеют доступ к нужному изображению для Windows 10 Enterprise. Другие типы Azure подписки, например пробной версии и платной подписки нет доступа на данное изображение.</span><span class="sxs-lookup"><span data-stu-id="75e1b-p106">To create a Windows 10 virtual machine in Microsoft Azure, ***you must have a Visual Studio-based subscription***, which has access to the image for Windows 10 Enterprise. Other types of Azure subscriptions, such as trial and paid subscriptions, do not have access to this image.</span></span>
   
 > [!NOTE]
-> Следующие наборы команд использовать последнюю версию te Azure PowerShell. В разделе [Начало работы с Windows Azure PowerShell командлетов](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Эти команды построения наборов виртуальной машины Windows 10 Enterprise с именем WIN10 и всех его инфраструктура, необходимая, включая группы ресурсов, учетной записи хранилища и виртуальной сети. Если вы уже знакомы с помощью служб инфраструктуры, можно адаптировать эти инструкции в соответствии с уже развернутого инфраструктуры. 
+> <span data-ttu-id="75e1b-p107">Следующие наборы команд использовать последнюю версию te Azure PowerShell. В разделе [Начало работы с Windows Azure PowerShell командлетов](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Эти команды построения наборов виртуальной машины Windows 10 Enterprise с именем WIN10 и всех его инфраструктура, необходимая, включая группы ресурсов, учетной записи хранилища и виртуальной сети. Если вы уже знакомы с помощью служб инфраструктуры, можно адаптировать эти инструкции в соответствии с уже развернутого инфраструктуры.</span><span class="sxs-lookup"><span data-stu-id="75e1b-p107">The following command sets use te latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). These command sets build a Windows 10 Enterprise virtual machine named WIN10 and all of its required infrastructure, including a resource group, a storage account, and a virtual network. If you are already familiar with Azure infrastructure services, please adapt these instructions to suit your currently deployed infrastructure.</span></span> 
   
-Сначала запустите командную строку Microsoft PowerShell.
+<span data-ttu-id="75e1b-148">Сначала запустите командную строку Microsoft PowerShell.</span><span class="sxs-lookup"><span data-stu-id="75e1b-148">First, start a Microsoft PowerShell prompt.</span></span>
   
-Войдите в свою учетную запись Azure с помощью указанной ниже команды.
+<span data-ttu-id="75e1b-149">Войдите в свою учетную запись Azure с помощью указанной ниже команды.</span><span class="sxs-lookup"><span data-stu-id="75e1b-149">Sign in to your Azure account with the following command.</span></span>
   
 ```
 Login-AzureRMAccount
 ```
 
-Получите имя подписки с помощью следующей команды.
+<span data-ttu-id="75e1b-150">Получите имя подписки с помощью следующей команды.</span><span class="sxs-lookup"><span data-stu-id="75e1b-150">Get your subscription name using the following command.</span></span>
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name
 ```
 
-Задайте подпиской Azure. Замените все содержимое в кавычки, включая \< и > символов с правильным именем.
+<span data-ttu-id="75e1b-p108">Задайте подпиской Azure. Замените все содержимое в кавычки, включая \< и > символов с правильным именем.</span><span class="sxs-lookup"><span data-stu-id="75e1b-p108">Set your Azure subscription. Replace everything within the quotes, including the \< and > characters, with the correct name.</span></span>
   
 ```
 $subscr="<subscription name>"
 Get-AzureRmSubscription -SubscriptionName $subscr | Select-AzureRmSubscription
 ```
 
-Затем создайте группу ресурсов. Чтобы выбрать уникальное имя для группы ресурсов, с помощью этой команды отобразите имеющиеся группы ресурсов.
+<span data-ttu-id="75e1b-p109">Затем создайте группу ресурсов. Чтобы выбрать уникальное имя для группы ресурсов, с помощью этой команды отобразите имеющиеся группы ресурсов.</span><span class="sxs-lookup"><span data-stu-id="75e1b-p109">Next, create a new resource group. To determine a unique resource group name, use this command to list your existing resource groups.</span></span>
   
 ```
 Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-Создание новой группы ресурсов с помощью следующих команд. Замените все содержимое в кавычки, включая \< и > символов с правильные имена.
+<span data-ttu-id="75e1b-p110">Создание новой группы ресурсов с помощью следующих команд. Замените все содержимое в кавычки, включая \< и > символов с правильные имена.</span><span class="sxs-lookup"><span data-stu-id="75e1b-p110">Create your new resource group with these commands. Replace everything within the quotes, including the \< and > characters, with the correct names.</span></span>
   
 ```
 $rgName="<resource group name>"
@@ -132,19 +132,19 @@ $locName="<location name, such as West US>"
 New-AzureRMResourceGroup -Name $rgName -Location $locName
 ```
 
-Диспетчер ресурсов на основе виртуальных машин требуется учетная запись хранения на основе диспетчера ресурсов. Необходимо выбрать глобально уникальное имя для учетной записи вашего хранилища,, *которая содержит только строчные буквы и цифры* . Эта команда используется для получения списка существующих учетных записей хранилища.
+<span data-ttu-id="75e1b-p111">Диспетчер ресурсов на основе виртуальных машин требуется учетная запись хранения на основе диспетчера ресурсов. Необходимо выбрать глобально уникальное имя для учетной записи вашего хранилища,, *которая содержит только строчные буквы и цифры* . Эта команда используется для получения списка существующих учетных записей хранилища.</span><span class="sxs-lookup"><span data-stu-id="75e1b-p111">Resource Manager-based virtual machines require a Resource Manager-based storage account. You must pick a globally unique name for your storage account  *that contains only lowercase letters and numbers*  . You can use this command to list the existing storage accounts.</span></span>
   
 ```
 Get-AzureRMStorageAccount | Sort StorageAccountName | Select StorageAccountName
 ```
 
-Чтобы проверить, уникально ли предложенное имя учетной записи хранения, воспользуйтесь приведенной ниже командой.
+<span data-ttu-id="75e1b-160">Чтобы проверить, уникально ли предложенное имя учетной записи хранения, воспользуйтесь приведенной ниже командой.</span><span class="sxs-lookup"><span data-stu-id="75e1b-160">Use this command to test whether a proposed storage account name is unique.</span></span>
   
 ```
 Get-AzureRmStorageAccountNameAvailability "<proposed name>"
 ```
 
-C помощью указанных ниже команд создайте учетную запись хранения для новой тестовой среды.
+<span data-ttu-id="75e1b-161">C помощью указанных ниже команд создайте учетную запись хранения для новой тестовой среды.</span><span class="sxs-lookup"><span data-stu-id="75e1b-161">Create a new storage account for your new test environment with these commands.</span></span>
   
 ```
 $rgName="<your new resource group name>"
@@ -153,7 +153,7 @@ $locName=(Get-AzureRmResourceGroup -Name $rgName).Location
 New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
 ```
 
-Далее используйте приведенные ниже команды для создания новой виртуальной сети и виртуальной машины WIN10. При появлении запроса укажите имя и пароль учетной записи локального администратора WIN10 и сохраните их в надежном месте.
+<span data-ttu-id="75e1b-p112">Далее используйте приведенные ниже команды для создания новой виртуальной сети и виртуальной машины WIN10. При появлении запроса укажите имя и пароль учетной записи локального администратора WIN10 и сохраните их в надежном месте.</span><span class="sxs-lookup"><span data-stu-id="75e1b-p112">Next, you create a new virtual network and the WIN10 virtual machine with these commands. When prompted, provide the name and password of the local administrator account for WIN10 and store these in a secure location.</span></span>
   
 ```
 $corpnetSubnet=New-AzureRMVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -176,62 +176,62 @@ $vm=Set-AzureRMVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -VhdUri $osDiskUri -C
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a>Этап 4. Присоединение компьютера с Windows 10 к Azure AD
+## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a><span data-ttu-id="75e1b-164">Этап 4. Присоединение компьютера с Windows 10 к Azure AD</span><span class="sxs-lookup"><span data-stu-id="75e1b-164">Phase 4: Join your Windows 10 computer to Azure AD</span></span>
 
-После создания и запуска физической или виртуальной машины с Windows 10 Корпоративная войдите в систему, используя учетную запись локального администратора.
+<span data-ttu-id="75e1b-165">После создания и запуска физической или виртуальной машины с Windows 10 Корпоративная войдите в систему, используя учетную запись локального администратора.</span><span class="sxs-lookup"><span data-stu-id="75e1b-165">After the physical or virtual machine is created, configured with Windows 10 Enterprise, and is running, sign in with a local administrator account.</span></span>
   
 > [!NOTE]
-> Для виртуальных машин в Azure подключиться к ней с помощью [этих инструкций](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Вход с помощью учетных данных учетной записи локального администратора. 
+> <span data-ttu-id="75e1b-p113">Для виртуальных машин в Azure подключиться к ней с помощью [этих инструкций](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Вход с помощью учетных данных учетной записи локального администратора.</span><span class="sxs-lookup"><span data-stu-id="75e1b-p113">For a virtual machine in Azure, connect to it using [these instructions](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Sign in with the credentials of the local administrator account.</span></span> 
   
-Затем присоедините компьютер WIN10 к клиенту Azure AD, отвечающему за ваши подписки Office 365 и EMS.
+<span data-ttu-id="75e1b-168">Затем присоедините компьютер WIN10 к клиенту Azure AD, отвечающему за ваши подписки Office 365 и EMS.</span><span class="sxs-lookup"><span data-stu-id="75e1b-168">Next, join the WIN10 computer to the Azure AD tenant of your Office 365 and EMS subscriptions.</span></span>
   
-1. На рабочем столе компьютера WIN10, нажмите кнопку **Пуск > Параметры > учетные записи > доступа к работе и в школе > подключить**.
+1. <span data-ttu-id="75e1b-169">На рабочем столе компьютера WIN10, нажмите кнопку **Пуск > Параметры > учетные записи > доступа к работе и в школе > подключить**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-169">At the desktop of the WIN10 computer, click **Start > Settings > Accounts > Access work or school > Connect**.</span></span>
     
-2. В диалоговом окне **Настройка рабочего или школы учетной записи** нажмите кнопку **присоединиться к устройству Azure Active Directory**.
+2. <span data-ttu-id="75e1b-170">В диалоговом окне **Настройка рабочего или школы учетной записи** нажмите кнопку **присоединиться к устройству Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-170">In the **Set up a work or school account** dialog box, click **Join this device to Azure Active Directory**.</span></span>
     
-3. В **работы или учетная запись школа**, введите имя учетной записи глобального администратора подписки Office 365 и нажмите кнопку **Далее**.
+3. <span data-ttu-id="75e1b-171">В **работы или учетная запись школа**, введите имя учетной записи глобального администратора подписки Office 365 и нажмите кнопку **Далее**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-171">In **Work or school account**, type the global administrator account name of your Office 365 subscription, and then click **Next**.</span></span>
     
-4. В поле **Введите пароль**введите пароль для учетной записи глобального администратора и нажмите кнопку **Вход**.
+4. <span data-ttu-id="75e1b-172">В поле **Введите пароль**введите пароль для учетной записи глобального администратора и нажмите кнопку **Вход**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-172">In **Enter password**, type the password for your global administrator account, and then click **Sign in**.</span></span>
     
-5. При появлении запроса убедитесь в том, что это вашей организации, нажмите кнопку **присоединиться**и нажмите кнопку **Готово**.
+5. <span data-ttu-id="75e1b-173">При появлении запроса убедитесь в том, что это вашей организации, нажмите кнопку **присоединиться**и нажмите кнопку **Готово**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-173">When prompted to make sure this is your organization, click **Join**, and then click **Done**.</span></span>
     
-6. Закройте окно параметров.
+6. <span data-ttu-id="75e1b-174">Закройте окно параметров.</span><span class="sxs-lookup"><span data-stu-id="75e1b-174">Close the settings window.</span></span>
     
-Затем установите Office 2016 на компьютер WIN10
+<span data-ttu-id="75e1b-175">Затем установите Office 2016 на компьютер WIN10</span><span class="sxs-lookup"><span data-stu-id="75e1b-175">Next, install Office 2016 on the WIN10 computer</span></span>
   
-1. Откройте браузер пограничного сервера Microsoft и вход на портал Office 365 свои учетные данные глобального администратора. Дополнительные сведения см [Where для входа в Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. <span data-ttu-id="75e1b-p114">Откройте браузер пограничного сервера Microsoft и вход на портал Office 365 свои учетные данные глобального администратора. Дополнительные сведения см [Where для входа в Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="75e1b-p114">Open the Microsoft Edge browser and sign in to the Office 365 portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
     
-2. На вкладке **Microsoft Office для дома** щелкните **установить 2016 Office**.
+2. <span data-ttu-id="75e1b-178">На вкладке **Microsoft Office для дома** щелкните **установить 2016 Office**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-178">On the **Microsoft Office Home** tab, click **Install Office 2016**.</span></span>
     
-3. При появлении запроса в возможные действия, выберите пункт **выполнить**и нажмите кнопку **Да** для **Контроль учетных записей пользователей**.
+3. <span data-ttu-id="75e1b-179">При появлении запроса в возможные действия, выберите пункт **выполнить**и нажмите кнопку **Да** для **Контроль учетных записей пользователей**.</span><span class="sxs-lookup"><span data-stu-id="75e1b-179">When prompted with what to do, click **Run**, and then click **Yes** for **User Account Control**.</span></span>
     
-4. Дождитесь Office для завершения установки. При появлении **вы все set!**, дважды нажмите кнопку **Закрыть** .
+4. <span data-ttu-id="75e1b-p115">Дождитесь Office для завершения установки. При появлении **вы все set!**, дважды нажмите кнопку **Закрыть** .</span><span class="sxs-lookup"><span data-stu-id="75e1b-p115">Wait for Office to complete its installation. When you see **You're all set!**, click **Close** twice.</span></span>
     
-На рисунке 3 представлена итоговая среда, в которую входит компьютер WIN10, присоединенный к клиенту Azure AD, отвечающему за подписки Office 365 и EMS.
+<span data-ttu-id="75e1b-182">На рисунке 3 представлена итоговая среда, в которую входит компьютер WIN10, присоединенный к клиенту Azure AD, отвечающему за подписки Office 365 и EMS.</span><span class="sxs-lookup"><span data-stu-id="75e1b-182">Figure 3 shows your resulting environment, which includes the WIN10 computer that has joined the Azure AD tenant of your Office 365 and EMS subscriptions.</span></span>
   
-**На рисунке 3: Добавление учетной записи компьютера WIN10 к клиенту Azure AD**
+<span data-ttu-id="75e1b-183">**На рисунке 3: Добавление учетной записи компьютера WIN10 к клиенту Azure AD**</span><span class="sxs-lookup"><span data-stu-id="75e1b-183">**Figure 3: Adding the WIN10 computer account to the Azure AD tenant**</span></span>
 
 ![Этап 4 для среды разработки и тестирования Microsoft 365 корпоративный](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
   
-Теперь вы готовы экспериментировать с дополнительными возможностями [Microsoft 365 для предприятия](https://www.microsoft.com/microsoft-365/enterprise).
+<span data-ttu-id="75e1b-185">Теперь вы готовы экспериментировать с дополнительными возможностями [Microsoft 365 для предприятия](https://www.microsoft.com/microsoft-365/enterprise).</span><span class="sxs-lookup"><span data-stu-id="75e1b-185">You are now ready to experiment with additional features of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).</span></span>
   
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a><span data-ttu-id="75e1b-186">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="75e1b-186">Next steps</span></span>
 
-Изучите возможности Microsoft 365 корпоративный, ознакомившись со следующими дополнительными статьями:
+<span data-ttu-id="75e1b-187">Изучите возможности Microsoft 365 корпоративный, ознакомившись со следующими дополнительными статьями:</span><span class="sxs-lookup"><span data-stu-id="75e1b-187">Use these additional articles to explore features of Microsoft 365 Enterprise:</span></span>
   
-- [Добавление политики управления (MAM) мобильных приложений](https://technet.microsoft.com/library/mt764059.aspx)
+- [<span data-ttu-id="75e1b-188">Добавление политики управления (MAM) мобильных приложений</span><span class="sxs-lookup"><span data-stu-id="75e1b-188">Add mobile application management (MAM) policies</span></span>](https://technet.microsoft.com/library/mt764059.aspx)
     
-- [Регистрация операций ввода-вывода и Android](https://technet.microsoft.com/library/mt743077.aspx)
+- [<span data-ttu-id="75e1b-189">Регистрация операций ввода-вывода и Android</span><span class="sxs-lookup"><span data-stu-id="75e1b-189">Enroll iOS and Android devices</span></span>](https://technet.microsoft.com/library/mt743077.aspx)
     
-- [Настройки и тестирования расширенного управления безопасностью](https://technet.microsoft.com/library/mt757250.aspx)
+- [<span data-ttu-id="75e1b-190">Настройки и тестирования расширенного управления безопасностью</span><span class="sxs-lookup"><span data-stu-id="75e1b-190">Configure and test Advanced Security Management</span></span>](https://technet.microsoft.com/library/mt757250.aspx)
     
-- [Настройки и тестирования расширенного защиту от угроз](https://technet.microsoft.com/library/mt490479.aspx)
+- [<span data-ttu-id="75e1b-191">Настройки и тестирования расширенного защиту от угроз</span><span class="sxs-lookup"><span data-stu-id="75e1b-191">Configure and test Advanced Threat Protection</span></span>](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="75e1b-192">See Also</span><span class="sxs-lookup"><span data-stu-id="75e1b-192">See Also</span></span>
 
-[Один Microsoft Cloud dev/тестовой среды](the-one-microsoft-cloud-dev-test-environment.md)
+[<span data-ttu-id="75e1b-193">Один Microsoft Cloud dev/тестовой среды</span><span class="sxs-lookup"><span data-stu-id="75e1b-193">The One Microsoft Cloud dev/test environment</span></span>](the-one-microsoft-cloud-dev-test-environment.md)
 
-[Документация по Microsoft 365 для предприятия](https://docs.microsoft.com/microsoft-365-enterprise/)
+[<span data-ttu-id="75e1b-194">Документация по Microsoft 365 для предприятия</span><span class="sxs-lookup"><span data-stu-id="75e1b-194">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 
 
