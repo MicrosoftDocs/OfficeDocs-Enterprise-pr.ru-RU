@@ -81,5 +81,5 @@
 #### [Развертывание изолированного сайта группы SharePoint Online](deploy-an-isolated-sharepoint-online-team-site.md)
 #### [Управление изолированным сайтом группы SharePoint Online](manage-an-isolated-sharepoint-online-team-site.md)
 #### [Изолированный SharePoint Online группы сайта dev/тестовой среды](isolated-sharepoint-online-team-site-dev-test-environment.md)
-## [Управление Office 365 с Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
+## [Управление Office 365 с помощью PowerShell Office 365](powershell/manage-office-365-with-office-365-powershell.md)
 
