@@ -19,7 +19,7 @@ ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: "Сводка. Сведения о том, как использовать изолированные сайты групп SharePoint Online."
 ms.openlocfilehash: 3de60bb19498d9f84c18e51181a3fedda9846bdf
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
@@ -61,7 +61,7 @@ ms.lasthandoff: 12/15/2017
   
 Когда вы будете готовы выполнить развертывание изолированного сайта группы SharePoint Online в рабочей среде, просмотрите подробные инструкции из статьи [Разработка изолированного сайта группы SharePoint Online](design-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Разработка изолированного сайта группы SharePoint Online](design-an-isolated-sharepoint-online-team-site.md)
   

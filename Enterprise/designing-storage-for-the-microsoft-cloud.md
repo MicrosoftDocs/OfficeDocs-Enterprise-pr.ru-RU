@@ -18,7 +18,7 @@ ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "Сводка. Узнайте, зачем вам облачное хранилище, а также ознакомьтесь со списком доступных облачных хранилищ (Майкрософт) и основных сценариев хранения."
 ms.openlocfilehash: 3501f6a39498276d02fe4178f701a06dfb6a3e93
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
@@ -118,7 +118,7 @@ ms.lasthandoff: 12/15/2017
     
 Подробные сведения о каждом из этих вариантов облачного хранилища см. в статье [Создание с чистого листа](build-from-the-ground-up.md).
   
-## <a name="key-storage-scenarios"></a>Основные сценарии хранения
+## <a name="key-storage-scenarios"></a>Основные сценарии использования хранилища
 
 Ниже перечислены основные сценарии, в которых требуется облачное хранилище.
   
@@ -158,7 +158,7 @@ ms.lasthandoff: 12/15/2017
 
 Ознакомьтесь со службами облачного хранения [Решения, не требующие сборки](move-in-ready.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Облачные хранилища Майкрософт для корпоративных архитекторов](microsoft-cloud-storage-for-enterprise-architects.md)
   

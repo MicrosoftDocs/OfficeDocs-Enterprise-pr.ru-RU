@@ -18,7 +18,7 @@ ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "Сводка. Сведения об архитектуре гибридных облачных предложений Майкрософт."
 ms.openlocfilehash: 0909964421cecec455ed3c45c965a330501d361c
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
@@ -64,7 +64,7 @@ ms.lasthandoff: 12/15/2017
     
     Для сценариев простого перемещения и встраивания в облако серверные приложения, запущенные на виртуальных машинах Azure, обеспечивают простую подготовку и масштабирование.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

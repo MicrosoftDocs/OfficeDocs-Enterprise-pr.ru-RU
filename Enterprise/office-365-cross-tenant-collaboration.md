@@ -15,7 +15,7 @@ ms.assetid: 48a24184-2868-4bb2-866c-1907d1bad505
 description: "Узнайте о возможностях безопасной совместной работы организаций на различных клиентах Office 365."
 ms.openlocfilehash: a6b82ab79d6eb2312c33fac488cb21a941831518
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---

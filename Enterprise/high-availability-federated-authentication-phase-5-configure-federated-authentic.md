@@ -19,7 +19,7 @@ ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "Сводка. Настройка Azure AD Connect для федеративной проверки высокого уровня доступности для Office 365 в Microsoft Azure."
 ms.openlocfilehash: 8340058dc93389d4b2b1e843726bc7e8ef30cdde
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
@@ -143,7 +143,7 @@ ms.lasthandoff: 12/15/2017
   
 Настройка инфраструктуры федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Azure завершена.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

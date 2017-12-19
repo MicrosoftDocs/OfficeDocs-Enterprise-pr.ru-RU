@@ -1,5 +1,5 @@
 ---
-title: "Общие элементы подключения к Microsoft Cloud"
+title: "Общие элементы подключения к Microsoft Cloud"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,17 +16,17 @@ ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "Сводка. Об общих элементах сетевой инфраструктуры и подготовке сети."
 ms.openlocfilehash: 27a83217e94d6a0f882825c57346b58ea1834443
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="common-elements-of-microsoft-cloud-connectivity"></a>Общие элементы подключения к Microsoft Cloud
+# <a name="common-elements-of-microsoft-cloud-connectivity"></a>Общие элементы подключения к Microsoft Cloud
 
  **Сводка.** Об общих элементах сетевой инфраструктуры и подготовке сети.
   
-Интеграция вашей сети с Microsoft Cloud обеспечивает оптимальный доступ к широкому спектру служб.
+Интеграция вашей сети с Microsoft Cloud обеспечивает оптимальный доступ к широкому спектру служб.
   
-## <a name="steps-to-prepare-your-network-for-microsoft-cloud-services"></a>Действия по подготовке сети для служб Microsoft Cloud
+## <a name="steps-to-prepare-your-network-for-microsoft-cloud-services"></a>Действия по подготовке сети для служб Microsoft Cloud
 <a name="steps"> </a>
 
 Для локальной сети:
@@ -39,21 +39,21 @@ ms.lasthandoff: 12/15/2017
     
 Для подключения к Интернету:
   
-1. проанализируйте задержку между пограничным устройством Интернета (например, внешним брандмауэром) и региональными расположениями службы Microsoft Cloud, к которой вы подключаетесь;
+1. проанализируйте задержку между пограничным устройством Интернета (например, внешним брандмауэром) и региональными расположениями службы Microsoft Cloud, к которой вы подключаетесь;
     
 2. проанализируйте пропускную способность и степень использования вашего текущего подключения к Интернету и при необходимости увеличьте пропускную способность. В качестве альтернативы вы можете добавить подключение ExpressRoute.
     
-## <a name="microsoft-cloud-connectivity-options"></a>Варианты подключения к Microsoft Cloud
+## <a name="microsoft-cloud-connectivity-options"></a>Варианты подключения к Microsoft Cloud
 <a name="steps"> </a>
 
-Используйте существующий интернет-канал или подключение ExpressRoute к Office 365, Azure и Dynamics 365.
+Используйте существующий интернет-канал или подключение ExpressRoute к Office 365, Azure и Dynamics 365.
   
 **Рис. 1. Варианты подключения к Microsoft Cloud**
 
-![Рис. 1. Варианты подключения к Microsoft Cloud](images/Network_Poster/CommonElements.png)
+![Рис. 1. Варианты подключения к Microsoft Cloud](images/Network_Poster/CommonElements.png)
 
   
-На рис. 1 показано, как можно подключить локальную сеть к Microsoft Cloud, используя существующий интернет-канал или подключение ExpressRoute. Интернет-канал представляет зону DMZ и может содержать указанные ниже компоненты.
+На рис. 1 показано, как можно подключить локальную сеть к Microsoft Cloud, используя существующий интернет-канал или подключение ExpressRoute. Интернет-канал представляет зону DMZ и может содержать указанные ниже компоненты.
   
 - **Брандмауэр Интернета:** барьер между надежной и ненадежной сетями. Выполняет фильтрацию (на основе правил) и мониторинг трафика.
     
@@ -65,7 +65,7 @@ ms.lasthandoff: 12/15/2017
     
 - **Подключение глобальной сети к поставщику услуг Интернета.** Обеспечиваемое оператором подключение к поставщику услуг Интернета, который осуществляет подключение к Интернету и маршрутизацию в Интернете.
     
-## <a name="areas-of-networking-common-to-all-microsoft-cloud-services"></a>Области сети, общие для всех служб Microsoft Cloud
+## <a name="areas-of-networking-common-to-all-microsoft-cloud-services"></a>Области сети, общие для всех служб Microsoft Cloud
 <a name="steps"> </a>
 
 При внедрении любых облачных служб Майкрософт вам следует рассмотреть указанные ниже вопросы, касающиеся сети.
@@ -78,7 +78,7 @@ ms.lasthandoff: 12/15/2017
     
 - **DNS Интернета.** Записи A, AAAA, CNAME, MX, PTR и другие записи, необходимые для поиска Microsoft Cloud или ваших служб, размещенных в облаке. Например, для вашего приложения, размещенного в Azure PaaS, может понадобиться запись CNAME.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 <a name="steps"> </a>
 
