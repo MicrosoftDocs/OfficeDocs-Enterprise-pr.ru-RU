@@ -1,5 +1,5 @@
 ---
-title: "Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365"
+title: "Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,17 +18,17 @@ ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: "Сводка. Используйте PowerShell в Office 365 и командлет Add-MsolRoleMember для назначения ролей учетным записям пользователей."
 ms.openlocfilehash: 673a71fb2f85515276e94767ed3f9dd40655dfea
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365
+# <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365
 
- **Сводка:** Используйте командлет **Add-MsolRoleMember** и Office 365 PowerShell для назначения ролей для учетных записей пользователей.
+ **Сводка.** Назначайте роли учетным записям пользователей, используя PowerShell для Office 365 и командлет **Add-MsolRoleMember**.
   
-Можно быстро и легко назначить роли для учетных записей пользователей с помощью Office 365 PowerShell, указав отображаемое имя учетной записи пользователя и имя роли.
+Вы можете быстро и легко назначать роли с помощью PowerShell для Office 365, указывая отображаемое имя учетной записи пользователя и имя роли.
   
-## <a name="before-you-begin"></a>Приступая к работе
+## <a name="before-you-begin"></a>Перед началом работы
 
 Чтобы выполнять процедуры, описанные в этой статье, необходимо подключиться к PowerShell в Office 365, используя учетную запись глобального администратора. Инструкции см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
   
@@ -38,7 +38,7 @@ ms.lasthandoff: 12/15/2017
   
 - Учетная запись пользователя, которую вы хотите настроить.
     
-    Чтобы указать учетную запись пользователя, необходимо определить его отображаемого имени. Чтобы получить полный список учетных записей, используйте следующую команду:
+    Чтобы указать учетную запись пользователя, необходимо определить ее отображаемое имя. Чтобы получить список учетных записей, используйте эту команду:
     
   ```
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
@@ -68,7 +68,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Скопируйте команды и вставьте их в "Блокнот". Переменные **$dispName** и **$roleName** замените текст описания их значения, удалите \< и > символов и оставьте кавычки. Скопируйте изменений в строках и вставьте их в вашем окне Windows Azure модуль Active Directory для Windows PowerShell для их запуска. Кроме того можно использовать Windows PowerShell интегрированная скрипт среды (ISE).
+Скопируйте команды в Блокнот. Замените описания переменных **$dispName** и **$roleName** их значениями, удалите символы \< и > и оставьте кавычки. Скопируйте измененные строки в окно модуля Windows Azure Active Directory для Windows PowerShell и запустите их. Кроме того, можно использовать интегрированную среду сценариев Windows PowerShell.
   
 Вот пример полного набора команд:
   
@@ -90,7 +90,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    Эта команда выводит список отображаемое имя все учетные записи пользователей, отсортированные по отображаемому имени, на один экран. С помощью командлета **которых** можно отфильтровать список с небольшим набором. Ниже приведен пример:
+    Эта команда выводит все учетные записи пользователей, отсортированное по отображаемому имени, по одному экрану за раз. Вы можете отфильтровать список, используя командлет **Where**. Вот пример:
     
   ```
   Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
@@ -123,7 +123,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>См. также
 
 #### 
 

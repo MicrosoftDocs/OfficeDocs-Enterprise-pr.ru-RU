@@ -20,7 +20,7 @@ ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "Сводка. Показательный пример внедрения облачной ИТ-инфраструктуры с облачными предложениями Майкрософт вымышленной всемирной организацией."
 ms.openlocfilehash: 17ee633c13f50db4c1de630a5c006506d9d79ece
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,15 +30,15 @@ ms.lasthandoff: 12/15/2017
   
 Здесь вы найдете ссылки на ряд статей, в которых описано, как корпорация Contoso, транснациональный производственный конгломерат с главным офисом в Париже, развертывает ИТ-инфраструктуру в облаке и принимает важные проектные решения по организации сетей, обеспечению идентификации и безопасности, а также реализует сценарии корпоративного облака, соответствующие бизнес-задачам. Эти сведения можно просмотреть еще в виде 11-страничного плаката и распечатать в табличном формате (A3).
   
-[![Эскиз изображения Contoso в облаке Майкрософт Плакат.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+[![Эскиз плаката "Contoso в Microsoft Cloud".](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
-![PDF-файл](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Файл Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![См. страницу с версиями на дополнительных языках](images/Common_Images/GlobeIcon.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=54427)
+![PDF-файл](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Файл Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Страница с версиями на других языках](images/Common_Images/GlobeIcon.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=54427)
   
 См. указанные ниже разделы.
   
 - [Общие сведения о гибридном облаке](hybrid-cloud-overview.md)
     
-    Корпорация Contoso  это транснациональная компания-конгломерат, которая занимается производством, продажей и поддержкой более чем 100 000 продуктов.
+    Корпорация Contoso — это транснациональная компания-конгломерат, которая занимается производством, продажей и поддержкой более чем 100 000 продуктов.
     
 - [ИТ-инфраструктура и потребности корпорации Contoso](contoso-it-infrastructure-and-needs.md)
     
@@ -67,7 +67,7 @@ ms.lasthandoff: 12/15/2017
 > [!NOTE]
 > В этих статьях отражены сведения, представленные в выпуске плаката "Contoso в Microsoft Cloud" за **сентябрь 2017 г.**
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

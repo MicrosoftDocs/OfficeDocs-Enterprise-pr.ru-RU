@@ -16,10 +16,10 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
-description: "Сводка: Применить защиту Azure сведения для защиты файлов конфиденциальными сайта группы SharePoint Online."
+description: "Сводка. Защита файлов на строго конфиденциальном сайте группы SharePoint Online с помощью службы Azure Information Protection."
 ms.openlocfilehash: bc2c7dbbcc254270cf2c7db3d3eed98b3f7872f6
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
@@ -74,7 +74,7 @@ ms.lasthandoff: 12/15/2017
     
 19. Закройте колонку новой политики области.
     
-20. В колонке **Azure Information Protection  политики в области** нажмите кнопку **Опубликовать**.
+20. В колонке **Azure Information Protection  политики в области** нажмите кнопку **Опубликовать**.
     
 Ниже показана полученная в результате конфигурация строго конфиденциального сайта группы SharePoint Online.
   
@@ -95,7 +95,7 @@ ms.lasthandoff: 12/15/2017
 > [!NOTE]
 > Если у вас несколько строго конфиденциальных сайтов группы SharePoint Online, необходимо создать несколько политик области Azure Information Protection с подчиненными метками, используя указанные выше параметры. При этом нужно настроить разрешения для каждой подчиненной метки, заданные группе доступа для участников определенного сайта группы SharePoint Online. 
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Безопасность сайтов и файлов SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   

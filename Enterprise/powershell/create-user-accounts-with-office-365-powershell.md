@@ -1,5 +1,5 @@
 ---
-title: "Создание учетных записей пользователей с помощью PowerShell в Office 365"
+title: "Создание учетных записей пользователей с помощью PowerShell в Office 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,29 +19,29 @@ ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: "Сведения о том, как с помощью PowerShell в Office 365 создавать учетные записи пользователей в Office 365:."
 ms.openlocfilehash: 9f6eb4cafa82ae511e806b7e32f2ed98a065d52e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="create-user-accounts-with-office-365-powershell"></a>Создание учетных записей пользователей с помощью PowerShell в Office 365
+# <a name="create-user-accounts-with-office-365-powershell"></a>Создание учетных записей пользователей с помощью PowerShell в Office 365
 
-**Сводка:** Сведения об использовании Office 365 PowerShell для создания учетных записей пользователей в Office 365.
+**Сводка.** Узнайте, как создавать учетные записи пользователей в Office 365, используя PowerShell.
   
-С помощью PowerShell в Office 365 можно эффективно создавать учетные записи пользователей, особенно если нужно создать сразу несколько. При создании учетных записей пользователей в PowerShell в Office 365 указываются определенные свойства. Одни из них обязательны, другие  нет. Все свойства важны. Они описаны в приведенной ниже таблице.
+С помощью PowerShell в Office 365 можно эффективно создавать учетные записи пользователей, особенно если нужно создать сразу несколько. При создании учетных записей пользователей в PowerShell в Office 365 указываются определенные свойства. Одни из них обязательны, другие  нет. Все свойства важны. Они описаны в приведенной ниже таблице.
   
 ****
 
-|**Имя свойства**|**Обязательное?**|**Описание**|
+|**Имя свойства**|**Обязательный?**|**Описание**|
 |:-----|:-----|:-----|
 |**DisplayName** <br/> |Да  <br/> |Это отображаемое имя, которое используется в службах Office 365:. Например, Caleb Sills.  <br/> |
 |**UserPrincipalName** <br/> |Да  <br/> |Это имя учетной записи, которое используется для входа в службы Office 365:. Например, CalebS@contoso.onmicrosoft.com.  <br/> |
 |**FirstName** <br/> |Нет  <br/> ||
 |**LastName** <br/> |Нет  <br/> ||
-|**LicenseAssignment** <br/> |Нет  <br/> |Это план лицензирования (также известный как план Office 365: или SKU), согласно которому для учетной записи пользователя назначается доступная лицензия. Лицензия определяет службы Office 365:, доступные для учетной записи пользователя. При создании учетной записи пользователя для него не обязательно назначать лицензию, но последняя необходима для доступа к службам Office 365:. Лицензию требуется добавить в течение 30 дней после создания учетной записи пользователя.<br/> Командлет **Get-MsolAccountSku** используется для просмотра планы лицензирования ( **AccountSkuId** ) и доступных лицензий в организации. Для получения дополнительных сведений см. [Просмотр лицензий и службы с помощью Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).<br/> |
+|**LicenseAssignment** <br/> |Нет  <br/> |Это план лицензирования (также известный как план Office 365: или SKU), согласно которому для учетной записи пользователя назначается доступная лицензия. Лицензия определяет службы Office 365:, доступные для учетной записи пользователя. При создании учетной записи пользователя для него не обязательно назначать лицензию, но последняя необходима для доступа к службам Office 365:. Лицензию требуется добавить в течение 30 дней после создания учетной записи пользователя.<br/> Просмотреть планы лицензирования (**AccountSkuId**) и доступные лицензии в организации можно с помощью командлета **Get-MsolAccountSku**. Дополнительные сведения см. в статье [Просмотр лицензий и служб с помощью PowerShell для Office 365](view-licenses-and-services-with-office-365-powershell.md).<br/> |
 |**Password** <br/> |Нет  <br/> | Если не задать пароль, для учетной записи пользователя назначается случайный пароль, отображающийся в результатах выполнения команды. Если вы решили задать пароль самостоятельно, он должен быть достаточно сложным. Для этого: <br/>  Требуется указать от 8 до 16 текстовых знаков ASCII. <br/>  Знаки должны быть любого из четырех типов: строчные буквы, прописные буквы, числа и символы. <br/> |
 |**UsageLocation** <br/> |Нет  <br/> |Это допустимый код страны согласно ISO 3166-1 alpha-2 (например, US для США и FR для Франции). Важно указать это значение, так как некоторые службы Office 365: недоступны в определенных странах. Следовательно, вы не сможете назначить лицензию для учетной записи пользователя, если для нее не настроено это значение. Дополнительные сведения см. в статье [О лицензионных ограничениях](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
    
-## <a name="before-you-begin"></a>Приступая к работе
+## <a name="before-you-begin"></a>Перед началом работы
 
 Для процедур, описанных в этой статье, требуется подключение к PowerShell в Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
   
@@ -71,9 +71,9 @@ ShawnM@contoso.onmicrosoft.com,Shawn,Melendez,Shawn Melendez,US,contoso:ENTERPRI
   ```
 
  > [!NOTE]
->Имена столбцов и их порядок в первой строке в CSV-файле произвольных, но убедитесь, что данные в остальные файла совпадает с порядком имена столбцов и использовать имена столбцов для значений параметров в Office 365 PowerShell команду.
+>Имена столбцов и их порядок в первой строке CSV-файла произвольны, но остальные данные в файле должны соответствовать порядку названий столбцов. Используйте названия столбцов в качестве значений параметров в команде PowerShell для Office 365.
     
-2. Используйте следующий синтаксис:
+2. Используйте указанный ниже синтаксис.
     
   ```
   Import-Csv -Path <Input CSV File Path and Name> | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId [-Password $_.Password]} | Export-Csv -Path <Output CSV File Path and Name>
@@ -89,7 +89,7 @@ ShawnM@contoso.onmicrosoft.com,Shawn,Melendez,Shawn Melendez,US,contoso:ENTERPRI
     
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-create-individual-user-accounts"></a>Создание учетных записей пользователей с помощью модуля Azure Active Directory PowerShell 2
 
-Чтобы использовать командлет **New-AzureADUser** из модуля Azure Active Directory версии 2 PowerShell, необходимо сначала подключиться к своей подписке. Инструкции в разделе [подключение с помощью модуля Azure Active Directory версии 2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).
+Чтобы использовать командлет **New-AzureADUser** из модуля Azure Active Directory 2 для PowerShell, сначала необходимо подключиться к подписке ([инструкции](https://go.microsoft.com/fwlink/?linkid=842218)).
   
 После подключения используйте следующий синтаксис, чтобы создать учетную запись:
   
@@ -107,11 +107,11 @@ $PasswordProfile.Password="3Rv0y1q39/chsy"
 New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -MailNickName calebs -PasswordProfile $PasswordProfile -AccountEnabled $true
 ```
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>См. также
 
-Разделах эти дополнительные сведения об управлении пользователями с помощью Office 365 PowerShell:
+Сведения об управлении пользователями с помощью PowerShell для Office 365 см. в следующих статьях:
   
-- [Удаление и восстановление учетных записей пользователей с помощью PowerShell в Office 365](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [Удаление и восстановление учетных записей пользователей с помощью PowerShell для Office 365](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
 - [Блокировка учетных записей пользователей с помощью PowerShell в Office 365](block-user-accounts-with-office-365-powershell.md)
     
@@ -119,16 +119,16 @@ New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -
     
 - [Использование PowerShell в Office 365 для удаления лицензий из учетных записей пользователей](remove-licenses-from-user-accounts-with-office-365-powershell.md)
     
-Дополнительные сведения о командлетах, использованных в этих процедурах, см. в следующих статьях:
+Дополнительные сведения о командлетах, использованных в этих процедурах, см. в указанных ниже статьях.
   
 - [Export-Csv](https://go.microsoft.com/fwlink/p/?LinkId=113299)
     
 - [Import-Csv](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv);
     
-- [Новый MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
+- [New-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
     
 - [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     
-- [Новый AzureADUser](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
+- [New-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
     
 

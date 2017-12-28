@@ -21,7 +21,7 @@ ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: "Сводка. Узнайте, как настроить распределенную виртуальную сеть Azure для рабочих нагрузок Office Server."
 ms.openlocfilehash: 83e5842a4b3192ee2f65048cefe57790cd1e2341
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
@@ -39,7 +39,7 @@ ms.lasthandoff: 12/15/2017
     
 - [Схема развертывания](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#DeploymentRoadmap)
     
-## <a name="overview"></a>Общие сведения
+## <a name="overview"></a>Обзор
 <a name="Overview"> </a>
 
 Виртуальные машины в Azure не должны быть изолированы от локальной среды. Чтобы подключить виртуальные машины Azure к локальным сетевым ресурсам, необходимо настроить виртуальную сеть Azure. На схеме ниже показаны компоненты, необходимые для развертывания виртуальной сети Azure с виртуальной машиной в Azure.
@@ -52,7 +52,7 @@ ms.lasthandoff: 12/15/2017
   
 1. **Локальная сеть.** Определите и создайте локальный сетевой маршрут для адресного пространства виртуальной сети Azure, который указывает на локальное VPN-устройство.
     
-2. **Microsoft Azure:** Создайте Azure виртуальной сети с помощью VPN-подключения веб сайта. В этой статье не рассматриваются использование [ExpressRoute](https://azure.microsoft.com/services/expressroute/).
+2. **Microsoft Azure.** Создайте виртуальную сеть Azure с VPN-подключением типа "сеть-сеть". В этой статье не описывается подключение [ExpressRoute](https://azure.microsoft.com/services/expressroute/).
     
 3. **Локальная сеть.** Настройте аппаратное или программное локальное VPN-устройство для прерывания VPN-подключения, которое использует IPsec.
     
@@ -61,7 +61,7 @@ ms.lasthandoff: 12/15/2017
 ## <a name="plan-your-azure-virtual-network"></a>Планирование виртуальной сети Azure
 <a name="PlanningVirtual"> </a>
 
-### <a name="prerequisites"></a>Требования
+### <a name="prerequisites"></a>Предварительные условия
 <a name="Prerequisites"> </a>
 
 - Подписка на Azure. Сведения о подписках на Azure см. на [странице подписки на Microsoft Azure](https://azure.microsoft.com/pricing/purchase-options/).
@@ -130,11 +130,11 @@ ms.lasthandoff: 12/15/2017
   
 |**Необходимое количество виртуальных машин**|**Необходимое количество бит узла**|**Размер подсети**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4  <br/> |/28  <br/> |
-|12-27  <br/> |5  <br/> |/27  <br/> |
-|28-59  <br/> |6  <br/> |/26  <br/> |
-|60-123  <br/> |7  <br/> |/25  <br/> |
+|1–3  <br/> |3  <br/> |/29  <br/> |
+|4–11  <br/> |4  <br/> |/28  <br/> |
+|12–27  <br/> |5  <br/> |/27  <br/> |
+|28–59  <br/> |6  <br/> |/26  <br/> |
+|60–123  <br/> |7  <br/> |/25  <br/> |
    
 ### <a name="planning-worksheet-for-configuring-your-azure-virtual-network"></a>Таблица планирования настройки виртуальной сети Azure
 <a name="worksheet"> </a>
@@ -205,7 +205,7 @@ ms.lasthandoff: 12/15/2017
 
 В локальной сети необходимо настроить маршрут, который указывает на маршрутизатор на границе локальной сети и направляет на него трафик, предназначенный для адресного пространства виртуальной сети. Обратитесь к администратору сети, чтобы определить, как добавить маршрут в инфраструктуру локальной сети.
   
-Ниже показана итоговая конфигурация.
+Ниже показана полученная в итоге конфигурация.
   
 ![Локальная сеть должна иметь маршрут для адресного пространства виртуальной сети, указывающий на VPN-устройство.](images/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
   
@@ -300,7 +300,7 @@ $nsg=Get-AzureRMNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgNam
 Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -AddressPrefix $SubnetPrefix -NetworkSecurityGroup $nsg
 ```
 
-Ниже показана итоговая конфигурация.
+Ниже показана полученная в итоге конфигурация.
   
 ![Виртуальная сеть пока не подключена к локальной.](images/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
   
@@ -330,7 +330,7 @@ $vnetConnectionName="S2SConnection"
 $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnectionName -ResourceGroupName $rgName -Location $locName -ConnectionType IPsec -SharedKey $vnetConnectionKey -VirtualNetworkGateway1 $vnetGateway -LocalNetworkGateway2 $localGateway
 ```
 
-Ниже показана итоговая конфигурация.
+Ниже показана полученная в итоге конфигурация.
   
 ![Для виртуальной сети теперь настроен шлюз.](images/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
@@ -342,7 +342,7 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
     
 - Общий ключ IPsec для VPN-подключения типа "сеть-сеть" (таблица V, элемент 5, столбец "Значение").
     
-Ниже показана итоговая конфигурация.
+Ниже показана полученная в итоге конфигурация.
   
 ![Теперь виртуальная сеть подключена к локальной.](images/6379c423-4f22-4453-941b-7ff32484a0a5.png)
   
@@ -361,11 +361,11 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
     
 Проверьте внутренний DNS, чтобы убедиться, что виртуальная машина правильно использует DNS и для виртуальной машины добавлены адресные записи (A). Чтобы предоставить виртуальным машинам Azure доступ к Интернету, их необходимо настроить на использование прокси-сервера локальной сети. Обратитесь к администратору сети за дополнительными инструкциями по настройке сервера.
   
-Ниже показана итоговая конфигурация.
+Ниже показана полученная в итоге конфигурация.
   
 ![В виртуальной сети теперь размещены виртуальные машины, доступные из локальной сети.](images/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 <a name="DeploymentRoadmap"> </a>
 

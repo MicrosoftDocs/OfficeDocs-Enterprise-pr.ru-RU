@@ -16,13 +16,13 @@ ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "Сводка. В этой статье рассказано, как с помощью PowerShell в Office 365 создавать отчеты, которые невозможно создать в Центре администрирования Office 365:."
 ms.openlocfilehash: b1cbbbef73a266a62a417d2714fefcd630c604c4
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Использование Windows PowerShell для создания отчетов в Office 365
 
- **Сводка:** Для создания отчетов, которые не могут создавать в центре администрирования Office 365 с помощью Office 365 PowerShell.
+ **Сводка.** Создавайте отчеты, которые нельзя создать в Центре администрирования Office 365, используя PowerShell.
   
 В Центре администрирования Office 365: доступно множество различных отчетов. Тем не менее иногда представленной в них информации бывает недостаточно. В таких случаях на помощь приходит PowerShell в Office 365.
   
@@ -58,7 +58,7 @@ ms.lasthandoff: 12/15/2017
     
   - [Display Exchange Online reports with Office 365 PowerShell](http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx).
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>См. также
 
 #### 
 

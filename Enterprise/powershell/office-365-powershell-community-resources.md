@@ -16,27 +16,27 @@ ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: "Сводка. Получите справку по PowerShell в Office 365 на этих площадках сообщества."
 ms.openlocfilehash: c1d81415cd8ec05cba21e09fa96b5c40bf320f49
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="office-365-powershell-community-resources"></a>Ресурсы сообщества Office 365 PowerShell
 
- **Сводка:** Справка для Office 365 PowerShell из этих встреч сообщества.
+ **Сводка.** Обратитесь к участникам сообщества за помощью с PowerShell для Office 365.
   
 Используйте данные сети Yammer, форумы сообщества и вики-сайт, чтобы связаться с единомышленниками и получить быстрые и точные ответы на ваши вопросы о PowerShell в Office 365. 
   
 - [Группа PowerShell для Office 365 в сети Office 365 Yammer Network](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
     
-- [Форум сообщества по управлению Office 365](https://community.office365.com/en-us/f/148.aspx)
+- [Форум сообщества по управлению Office 365](https://community.office365.com/ru-RU/f/148.aspx)
     
 - [Форум сообщества Exchange TechCenter](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
 - [Блоги Office](https://blogs.office.com/)
     
-- [Вики-сайт по управлению Office 365](https://community.office365.com/en-us/w/manage/default.aspx)
+- [Вики-сайт по управлению Office 365](https://community.office365.com/ru-RU/w/manage/default.aspx)
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>См. также
 
 #### 
 

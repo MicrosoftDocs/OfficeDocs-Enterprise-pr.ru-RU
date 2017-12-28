@@ -14,21 +14,21 @@ ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: "Сводка: в этой статье рассказывается, как использовать PowerShell в Office 365 для управления параметрами политик, индивидуальных политик для пользователей и собраний в Skype для бизнеса Online."
 ms.openlocfilehash: 66a3cdd90f1c0c205ddf5cab52597e32a638688d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Управление Skype для бизнеса Online с помощью Office 365 PowerShell
 
- **Сводка:** Использование Office 365 PowerShell для управления Скайп для бизнеса в Интернет политики, политики и параметры собрания.
+ **Сводка.** Управляйте политиками и настройками собраний Skype для бизнеса Online, используя PowerShell для Office 365.
   
-Один из основных задач любой Скайп для бизнеса в Интернет администратор Управление политиками. Несмотря на то, что можно выполнить некоторые из этих задач в центре администрирования Office 365, другие задачи, намного быстрее и проще в Office 365 PowerShell. Дополнительные сведения в следующих разделах:
+Одной из основных задач любого администратора Skype для бизнеса Online является управление политиками. Несмотря на то что вы можете выполнить некоторые из этих задач в Центре администрирования Office 365, другие задачи гораздо быстрее и легче выполнить в PowerShell. Дополнительные сведения приведены в следующих разделах:
   
 - [Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
 - [Назначение индивидуальных политик для Skype для бизнеса Online с помощью Office 365 PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>См. также
 
 #### 
 

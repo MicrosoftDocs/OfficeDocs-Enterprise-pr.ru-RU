@@ -1,5 +1,5 @@
 ---
-title: "Удаление и восстановление учетных записей пользователей с помощью PowerShell в Office 365"
+title: "Удаление и восстановление учетных записей пользователей с помощью PowerShell в Office 365"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,24 +15,24 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: "Сведения об использовании Office 365 PowerShell для удаления и восстановления учетных записей пользователей Office 365."
+description: "Узнайте, как удалять и восстанавливать учетные записи пользователей Office 365, используя PowerShell."
 ms.openlocfilehash: 8404395ea9594cea1a2e772cecbeb011756b7754
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Удаление и восстановление учетных записей пользователей с помощью PowerShell в Office 365
+# <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Удаление и восстановление учетных записей пользователей с помощью PowerShell в Office 365
 
-**Сводка:**  Сведения об использовании Office 365 PowerShell для удаления и восстановления учетных записей пользователей Office 365.
+**Сводка.** Узнайте, как удалять и восстанавливать учетные записи пользователей Office 365, используя PowerShell.
   
 Учетную запись пользователя, удаленную с помощью PowerShell в Office 365, можно восстановить в течение 30 дней.
   
-## <a name="before-you-begin"></a>Приступая к работе
+## <a name="before-you-begin"></a>Перед началом работы
 
 - Для процедур, описанных в этой статье, требуется подключение к PowerShell в Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
     
-- При использовании командлета **Get-MsolUser** без использования _-все_ параметра, возвращаются только первые 500 учетных записей.
+- Если использовать командлет **Get-MsolUser** без параметра _-All_, возвращаются только первые 500 учетных записей.
     
 ## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a>Блокировка доступа к отдельным учетным записям пользователей с помощью PowerShell в Office 365
 <a name="ShortVersion"> </a>
@@ -74,7 +74,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-remove-a-user-account"></a>Удаление учетной записи пользователя с помощью модуля Azure Active Directory PowerShell 2
 <a name="ShortVersion"> </a>
 
-Чтобы использовать командлет **Remove-AzureADUser** из модуля Azure Active Directory версии 2 PowerShell, необходимо сначала подключиться к своей подписке. Инструкции в разделе [подключение с помощью модуля Azure Active Directory версии 2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).
+Чтобы использовать командлет **Remove-AzureADUser** из модуля Azure Active Directory 2 для PowerShell, сначала необходимо подключиться к подписке ([инструкции](https://go.microsoft.com/fwlink/?linkid=842218)).
   
 После подключения используйте следующий синтаксис, чтобы удалить учетную запись пользователя:
   
@@ -115,7 +115,7 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 ## <a name="see-also"></a>См. также
 <a name="SeeAlso"> </a>
 
-Разделах эти дополнительные сведения об управлении пользователями с помощью Office 365 PowerShell:
+Сведения об управлении пользователями с помощью PowerShell для Office 365 см. в следующих статьях:
   
 - [Создание учетных записей пользователей с помощью PowerShell в Office 365](create-user-accounts-with-office-365-powershell.md)
     

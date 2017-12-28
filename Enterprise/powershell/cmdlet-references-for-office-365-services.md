@@ -16,15 +16,15 @@ ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: "Сводка: в этой статье рассказывается, как найти справочные статьи о командлете PowerShell в Office 365 для Azure Active Directory, Exchange Online, SharePoint Online и Skype для бизнеса Online."
 ms.openlocfilehash: 86975e7c0729429d771a9a316dad4b8c73d28010
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Сведения о командлетах для служб Office 365
 
- **Сводка:** Найдите ссылки на разделы командлета Office 365 PowerShell для Azure Active Directory, Exchange Online, SharePoint Online и Скайп для бизнеса в Интернет.
+ **Сводка.** Здесь вы найдете справочные статьи по командлетам PowerShell для служб Office 365 (Azure Active Directory, Exchange Online, SharePoint Online и Skype для бизнеса Online).
   
-Командлет ссылку для различных служб Office 365 представлены подробные сведения и инструкции по использованию каждого командлета. Addiitonally, Office 365, имеющей PowerShell поддерживает необходимы разные подключения инструкции.
+В них предоставлены подробные сведения и инструкции по использованию каждого командлета. Кроме того, подключение к разным службам Office 365 с поддержкой PowerShell выполняется по-разному.
   
 > [!NOTE]
 > Чтобы подключиться ко всем службам сразу, см. раздел [Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md). 
@@ -37,9 +37,9 @@ ms.lasthandoff: 12/15/2017
   
 ## <a name="security-amp-compliance-center-powershell-cmdlets"></a>Командлеты PowerShell в Центре безопасности и соответствия требованиям
 
-Безопасность Office 365 &amp; центре соответствия требованиям командлет ссылки на разделы, находятся в безопасности &amp; область PowerShell центр соответствия требованиям в библиотеке TechNet. Чтобы перейти к нему, нажмите кнопку [безопасности Office 365 &amp; командлеты центре соответствия требованиям](https://go.microsoft.com/fwlink/p/?LinkId=627085).
+Чтобы перейти в раздел библиотеки TechNet, в котором собраны справочные статьи по командлетам для Центра безопасности и соответствия требованиям Office 365, нажмите [здесь](https://go.microsoft.com/fwlink/p/?LinkId=627085).
   
-Инструкции по подключению безопасности &amp; PowerShell центр соответствия требованиям, нажмите кнопку [подключение к Office 365 безопасность &amp; центре соответствия требованиям, с помощью удаленной оболочки PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=627084).
+Инструкции по подключению к Центру безопасности и соответствия требованиям через PowerShell см. в [этой статье](https://go.microsoft.com/fwlink/p/?LinkId=627084).
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Командлеты Exchange Online PowerShell
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 12/15/2017
   
 Чтобы получить инструкции по подключению для PowerShell в Skype для бизнеса Online, щелкните ссылку [Подключение к Skype для бизнеса Online с помощью Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=691607).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>См. также
 
 #### 
 

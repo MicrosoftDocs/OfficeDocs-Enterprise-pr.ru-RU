@@ -21,7 +21,7 @@ ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: "Сводка. Настройка федеративной проверки подлинности с высоким уровнем доступности для подписки на Office 365 в Microsoft Azure."
 ms.openlocfilehash: 6e64912d6b115e3aee179509c504f3872ecea551
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
@@ -39,7 +39,7 @@ ms.lasthandoff: 12/15/2017
     
 - один сервер DirSync, на котором запущено средство Azure AD Connect.
     
-Ниже приведена конфигурация с именами-заполнителями для каждого сервера.
+Ниже приводится конфигурация с именами-заполнителями для каждого сервера.
   
 **Инфраструктура федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Azure**
 
@@ -65,23 +65,23 @@ ms.lasthandoff: 12/15/2017
     
 - одна нелокальная виртуальная сеть с четырьмя подсетями;
     
-- семь учетных записей хранения;
-    
 - четыре группы ресурсов;
     
 - три группы доступности;
+    
+- одна подписка Azure.
     
 Ниже приводится список виртуальных машин, необходимых для данной конфигурации, а также их размеры по умолчанию.
   
 |**Элемент**|**Описание виртуальной машины**|**Изображение коллекции Azure**|**Размер по умолчанию**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Первый контроллер домена  <br/> |Windows Server 2016 Datacenter  <br/> |D2.  <br/> |
-|2.  <br/> |Второй контроллер домена  <br/> |Windows Server 2016 Datacenter  <br/> |D2.  <br/> |
-|3.  <br/> |Сервер Azure AD Connect  <br/> |Windows Server 2016 Datacenter  <br/> |D2.  <br/> |
-|4.  <br/> |Первый сервер AD FS  <br/> |Windows Server 2016 Datacenter  <br/> |D2.  <br/> |
-|5.  <br/> |Второй сервер AD FS  <br/> |Windows Server 2016 Datacenter  <br/> |D2.  <br/> |
-|6.  <br/> |Первый прокси-сервер веб-приложений  <br/> |Windows Server 2016 Datacenter  <br/> |D2.  <br/> |
-|7.  <br/> |Второй прокси-сервер веб-приложений  <br/> |Windows Server 2016 Datacenter  <br/> |D2.  <br/> |
+|1.  <br/> |Первый контроллер домена  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|2.  <br/> |Второй контроллер домена  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|3.  <br/> |Сервер Azure AD Connect  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|4.  <br/> |Первый сервер AD FS  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|5.  <br/> |Второй сервер AD FS  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|6.  <br/> |Первый прокси-сервер веб-приложений  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
+|7.  <br/> |Второй прокси-сервер веб-приложений  <br/> |Windows Server 2016 Datacenter  <br/> |D2  <br/> |
    
 Рассчитать примерные затраты на эту конфигурацию можно с помощью [калькулятора цен Azure](https://azure.microsoft.com/pricing/calculator/).
   
@@ -90,24 +90,34 @@ ms.lasthandoff: 12/15/2017
 Эта рабочая нагрузка развертывается на следующих этапах:
   
 <<<<<<< HEAD
-- [Высокой доступности федеративных проверки подлинности этап 1: Настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Создание группы ресурсов, хранилище учетных записей, группы доступности и виртуальной сети между организациями.
+- [Федеративная проверка подлинности для обеспечения высокой доступности
+Этап 1. Настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Создайте группы ресурсов, учетные записи хранения, группы доступности и нелокальную виртуальную сеть.
     
-- [Высокой доступности федеративных проверки подлинности этап 2: Настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Создание и настройка реплики контроллеров домена Active Directory Windows Server (AD) и сервер синхронизации каталогов.
+- [Федеративная проверка подлинности для обеспечения высокой доступности
+Этап 2. Настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Создайте и настройте реплики контроллеров домена Windows Server Active Directory (AD) и сервера DirSync.
     
-- [Высокой доступности федеративных проверки подлинности этап 3: настройте серверы AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Создание и настройка двух серверов AD FS.
+- [Федеративная проверка подлинности для обеспечения высокой доступности
+Этап 3. Настройка серверов AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Создайте и настройте два сервера AD FS.
     
-- [Высокой доступности федеративных проверки подлинности этап 4: настройка прокси-серверы приложений web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Создание и настройка прокси-сервера приложения два веб-серверах.
+- [Федеративная проверка подлинности для обеспечения высокой доступности
+Этап 4. Настройка прокси веб-приложений](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Создайте и настройте два прокси-сервера веб-приложений.
     
-- [Высокой доступности федеративных проверки подлинности этап 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Настройка федеративного проверки подлинности для подписки Office 365. =======
-- [Высокой доступности федеративных проверки подлинности этап 1: Настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md) -Создание группы ресурсов, хранилище учетных записей, группы доступности и виртуальной сети между организациями.
+- [Федеративная проверка подлинности для обеспечения высокой доступности
+Этап 5. Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Настройте федеративную проверку подлинности для подписки на Office 365.
+- [Федеративная проверка подлинности для обеспечения высокой доступности
+Этап 1. Настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Создайте группы ресурсов, учетные записи хранения, группы доступности и нелокальную виртуальную сеть.
     
-- [Высокой доступности федеративных проверки подлинности этап 2: Настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) — Создание и настройка реплики контроллеров домена Active Directory Windows Server (AD) и сервер синхронизации каталогов.
+- [Федеративная проверка подлинности для обеспечения высокой доступности
+Этап 2. Настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Создайте и настройте реплики контроллеров домена Windows Server Active Directory (AD) и сервер DirSync.
     
-- [Высокой доступности федеративных проверки подлинности этап 3: настройте серверы AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) — Создание и настройка двух серверов AD FS.
+- [Федеративная проверка подлинности для обеспечения высокой доступности
+Этап 3. Настройка серверов AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Создайте и настройте два сервера AD FS.
     
-- [Высокой доступности федеративных проверки подлинности этап 4: настройка прокси-серверы приложений web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) — Создание и настройка прокси-сервера приложения два веб-серверах.
+- [Федеративная проверка подлинности для обеспечения высокой доступности
+Этап 4. Настройка прокси веб-приложений](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Создайте и настройте два прокси-сервера веб-приложений.
     
-- [Высокой доступности федеративных проверки подлинности этап 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) -Настройка федеративной проверки подлинности для подписки Office 365.
+- [Федеративная проверка подлинности для обеспечения высокой доступности
+Этап 5. Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Настройте федеративную проверку подлинности для подписки на Office 365.
 >>>>>>> образец
     
 Эти статьи содержат поэтапное руководство по созданию функциональной федеративной проверки подлинности с высоким уровнем доступности для Office 365 в службах инфраструктуры Azure для предопределенной архитектуры. Учитывайте следующее:
@@ -125,7 +135,7 @@ ms.lasthandoff: 12/15/2017
 > [!TIP]
 > Чтобы быстрее выполнить развертывание федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Azure, воспользуйтесь [этим комплектом средств](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Федеративное удостоверение для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   

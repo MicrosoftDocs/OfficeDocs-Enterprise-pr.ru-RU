@@ -15,16 +15,16 @@ ms.custom:
 - DecEntMigration
 - Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
-description: "Сводка: Как Contoso реализован защита конфиденциальных и конфиденциальными SharePoint Online сайты рабочих групп для более простой, пока безопасной совместной работы для руководителей и его справочных материалов центры."
+description: "Сводка. Узнайте, как в компании Contoso реализованы защита конфиденциальных данных и строго конфиденциальные сайты групп SharePoint Online, обеспечивающие простую, но безопасную совместную работу руководителей и исследовательских центров."
 ms.openlocfilehash: 1574babb54bfcb3fd74fb8ce4f31c364bb96b14a
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Защита сайтов групп SharePoint Online, содержащих конфиденциальные и строго конфиденциальные ресурсы
 
- **Сводка:** Как защита конфиденциальных реализован Contoso и конфиденциальными SharePoint Online сайты рабочих групп для удобства, но безопасной совместной работы для руководителей и его исследовательских центрах.
+ **Сводка.** Узнайте, как в компании Contoso реализованы защита конфиденциальных данных и строго конфиденциальные сайты групп SharePoint Online, обеспечивающие простую, но безопасную совместную работу руководителей и исследовательских центров.
   
 Руководству высшего звена компании Contoso нужно использовать Office 365 и хранить свои файлы в одном расположении для совместной работы независимо от того, где находится тот или иной руководитель. Аналогичным образом, исследовательским отделам компании Contoso (расположенным в Париже, Нью-Йорке, Пекине и Бангалоре) требуется перенести свои локальные цифровые ресурсы в облако для удобства доступа и более открытой совместной работы между группами.
   
@@ -58,9 +58,9 @@ ms.lasthandoff: 12/15/2017
   
 Дополнительные сведения см. в статье [Защита сайтов и файлов SharePoint Online](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).
   
- Для установки для демонстрации, эксперимента или разработку и тестирование, просмотрите [сайты безопасного SharePoint Online в среде разработки и тестирования](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
+ Сведения о том, как настроить такую защиту для демонстрации, экспериментальной системы либо среды разработки и тестирования, см. в статье [Защита сайтов SharePoint Online в среде разработки и тестирования](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Корпоративные сценарии для корпорации Contoso](enterprise-scenarios-for-the-contoso-corporation.md)
   
