@@ -72,7 +72,7 @@ ms.lasthandoff: 01/11/2018
   
 1. <span data-ttu-id="6fbbf-135">Создайте подключение к удаленному рабочему столу сервера DirSync с помощью учетной записи домена с правами локального администратора.</span><span class="sxs-lookup"><span data-stu-id="6fbbf-135">Create a remote desktop connection to your DirSync server with a domain account that has local administrator privileges.</span></span>
     
-2. <span data-ttu-id="6fbbf-136">На рабочем столе сервера DirSync откройте Internet Explorer и перейдите на страницу [(https://aka.ms/aadconnect)]((https://aka.ms/aadconnect)).</span><span class="sxs-lookup"><span data-stu-id="6fbbf-136">From the desktop of the DirSync server, open Internet Explorer and go to [(https://aka.ms/aadconnect)]((https://aka.ms/aadconnect)).</span></span>
+2. <span data-ttu-id="6fbbf-136">На рабочем столе сервера DirSync откройте Internet Explorer и перейдите на страницу [(https://aka.ms/aadconnect)](https://aka.ms/aadconnect).</span><span class="sxs-lookup"><span data-stu-id="6fbbf-136">From the desktop of the DirSync server, open Internet Explorer and go to [(https://aka.ms/aadconnect)](https://aka.ms/aadconnect).</span></span>
     
 3. <span data-ttu-id="6fbbf-137">На странице **Microsoft Azure Active Directory Connect** нажмите **Скачать**, а затем **Запустить**.</span><span class="sxs-lookup"><span data-stu-id="6fbbf-137">On the **Microsoft Azure Active Directory Connect** page, click **Download**, and then click **Run**.</span></span>
     

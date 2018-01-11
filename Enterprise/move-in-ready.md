@@ -62,9 +62,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5f602-124">Ресурсы</span><span class="sxs-lookup"><span data-stu-id="5f602-124">Resources</span></span>
 
-<span data-ttu-id="5f602-125">Дополнительные сведения см. [здесь]((https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)).</span><span class="sxs-lookup"><span data-stu-id="5f602-125">For additional information, click [here]((https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)).</span></span>
+<span data-ttu-id="5f602-125">Дополнительные сведения см. [здесь](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).</span><span class="sxs-lookup"><span data-stu-id="5f602-125">For additional information, click [here](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).</span></span>
   
-<span data-ttu-id="5f602-126">Сведения о стоимости см. [здесь]((https://products.office.com/business/compare-office-365-for-business-plans)).</span><span class="sxs-lookup"><span data-stu-id="5f602-126">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="5f602-126">Сведения о стоимости см. [здесь](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="5f602-126">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="exchange-online-in-office-365"></a><span data-ttu-id="5f602-127">Exchange Online в Office 365</span><span class="sxs-lookup"><span data-stu-id="5f602-127">Exchange Online in Office 365</span></span>
 
@@ -84,9 +84,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5f602-135">Ресурсы</span><span class="sxs-lookup"><span data-stu-id="5f602-135">Resources</span></span>
 
-<span data-ttu-id="5f602-136">Дополнительные сведения см. [здесь]((https://technet.microsoft.com/library/exchange-online-limits.aspx)).</span><span class="sxs-lookup"><span data-stu-id="5f602-136">For additional information, click [here]((https://technet.microsoft.com/library/exchange-online-limits.aspx)).</span></span>
+<span data-ttu-id="5f602-136">Дополнительные сведения см. [здесь](https://technet.microsoft.com/library/exchange-online-limits.aspx).</span><span class="sxs-lookup"><span data-stu-id="5f602-136">For additional information, click [here](https://technet.microsoft.com/library/exchange-online-limits.aspx).</span></span>
   
-<span data-ttu-id="5f602-137">Сведения о стоимости см. [здесь]((https://products.office.com/business/compare-office-365-for-business-plans)).</span><span class="sxs-lookup"><span data-stu-id="5f602-137">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="5f602-137">Сведения о стоимости см. [здесь](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="5f602-137">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="onedrive-for-business"></a><span data-ttu-id="5f602-138">OneDrive для бизнеса</span><span class="sxs-lookup"><span data-stu-id="5f602-138">OneDrive for Business</span></span>
 
@@ -112,9 +112,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5f602-149">Ресурсы</span><span class="sxs-lookup"><span data-stu-id="5f602-149">Resources</span></span>
 
-<span data-ttu-id="5f602-150">Дополнительные сведения см. [здесь]((https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)).</span><span class="sxs-lookup"><span data-stu-id="5f602-150">For additional information, click [here]((https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)).</span></span>
+<span data-ttu-id="5f602-150">Дополнительные сведения см. [здесь](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).</span><span class="sxs-lookup"><span data-stu-id="5f602-150">For additional information, click [here](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).</span></span>
   
-<span data-ttu-id="5f602-151">Сведения о стоимости см. [здесь]((https://products.office.com/business/compare-office-365-for-business-plans)).</span><span class="sxs-lookup"><span data-stu-id="5f602-151">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="5f602-151">Сведения о стоимости см. [здесь](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="5f602-151">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="visual-studio-team-services"></a><span data-ttu-id="5f602-152">Visual Studio Team Services</span><span class="sxs-lookup"><span data-stu-id="5f602-152">Visual Studio Team Services</span></span>
 
@@ -138,9 +138,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5f602-162">Ресурсы</span><span class="sxs-lookup"><span data-stu-id="5f602-162">Resources</span></span>
 
-<span data-ttu-id="5f602-163">Дополнительные сведения см. [здесь]((https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx)).</span><span class="sxs-lookup"><span data-stu-id="5f602-163">For additional information, click [here]((https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx)).</span></span>
+<span data-ttu-id="5f602-163">Дополнительные сведения см. [здесь](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx).</span><span class="sxs-lookup"><span data-stu-id="5f602-163">For additional information, click [here](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx).</span></span>
   
-<span data-ttu-id="5f602-164">Сведения о стоимости см. [здесь]((https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx)).</span><span class="sxs-lookup"><span data-stu-id="5f602-164">For cost information, click [here]((https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx)).</span></span>
+<span data-ttu-id="5f602-164">Сведения о стоимости см. [здесь](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx).</span><span class="sxs-lookup"><span data-stu-id="5f602-164">For cost information, click [here](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx).</span></span>
   
 ## <a name="yammer-file-sharing"></a><span data-ttu-id="5f602-165">Общий доступ к файлам в Yammer</span><span class="sxs-lookup"><span data-stu-id="5f602-165">Yammer file sharing</span></span>
 
@@ -166,9 +166,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5f602-176">Ресурсы</span><span class="sxs-lookup"><span data-stu-id="5f602-176">Resources</span></span>
 
-<span data-ttu-id="5f602-177">Дополнительные сведения см. [здесь]((https://products.office.com/yammer/yammer-overview)).</span><span class="sxs-lookup"><span data-stu-id="5f602-177">For additional information, click [here]((https://products.office.com/yammer/yammer-overview)).</span></span>
+<span data-ttu-id="5f602-177">Дополнительные сведения см. [здесь](https://products.office.com/yammer/yammer-overview).</span><span class="sxs-lookup"><span data-stu-id="5f602-177">For additional information, click [here](https://products.office.com/yammer/yammer-overview).</span></span>
   
-<span data-ttu-id="5f602-178">Сведения о стоимости см. [здесь]((https://products.office.com/business/compare-office-365-for-business-plans)).</span><span class="sxs-lookup"><span data-stu-id="5f602-178">For cost information, click [here]((https://products.office.com/business/compare-office-365-for-business-plans)).</span></span>
+<span data-ttu-id="5f602-178">Сведения о стоимости см. [здесь](https://products.office.com/business/compare-office-365-for-business-plans).</span><span class="sxs-lookup"><span data-stu-id="5f602-178">For cost information, click [here](https://products.office.com/business/compare-office-365-for-business-plans).</span></span>
   
 ## <a name="dynamics-365"></a><span data-ttu-id="5f602-179">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="5f602-179">Dynamics 365</span></span>
 
@@ -210,9 +210,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5f602-198">Ресурсы</span><span class="sxs-lookup"><span data-stu-id="5f602-198">Resources</span></span>
 
-<span data-ttu-id="5f602-199">Дополнительные сведения см. [здесь]((https://www.microsoft.com/server-cloud/products/microsoft-intune/)).</span><span class="sxs-lookup"><span data-stu-id="5f602-199">For additional information, click [here]((https://www.microsoft.com/server-cloud/products/microsoft-intune/)).</span></span>
+<span data-ttu-id="5f602-199">Дополнительные сведения см. [здесь](https://www.microsoft.com/server-cloud/products/microsoft-intune/).</span><span class="sxs-lookup"><span data-stu-id="5f602-199">For additional information, click [here](https://www.microsoft.com/server-cloud/products/microsoft-intune/).</span></span>
   
-<span data-ttu-id="5f602-200">Сведения о стоимости см. [здесь]((https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)).</span><span class="sxs-lookup"><span data-stu-id="5f602-200">For cost information, click [here]((https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)).</span></span>
+<span data-ttu-id="5f602-200">Сведения о стоимости см. [здесь](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).</span><span class="sxs-lookup"><span data-stu-id="5f602-200">For cost information, click [here](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).</span></span>
   
 ## <a name="azure-site-recovery"></a><span data-ttu-id="5f602-201">Azure Site Recovery</span><span class="sxs-lookup"><span data-stu-id="5f602-201">Azure Site Recovery</span></span>
 
@@ -240,7 +240,7 @@ ms.lasthandoff: 01/11/2018
 
 <span data-ttu-id="5f602-213">Дополнительные сведения см. [здесь](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA).</span><span class="sxs-lookup"><span data-stu-id="5f602-213">For additional information, click [here](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA).</span></span>
   
-<span data-ttu-id="5f602-214">Сведения о стоимости см. [здесь]((http://azure.microsoft.com/pricing/details/site-recovery/)).</span><span class="sxs-lookup"><span data-stu-id="5f602-214">For cost information, click [here]((http://azure.microsoft.com/pricing/details/site-recovery/)).</span></span>
+<span data-ttu-id="5f602-214">Сведения о стоимости см. [здесь](http://azure.microsoft.com/pricing/details/site-recovery/).</span><span class="sxs-lookup"><span data-stu-id="5f602-214">For cost information, click [here](http://azure.microsoft.com/pricing/details/site-recovery/).</span></span>
   
 ## <a name="azure-backup"></a><span data-ttu-id="5f602-215">Azure Backup</span><span class="sxs-lookup"><span data-stu-id="5f602-215">Azure Backup</span></span>
 
@@ -264,9 +264,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="5f602-225">Ресурсы</span><span class="sxs-lookup"><span data-stu-id="5f602-225">Resources</span></span>
 
-<span data-ttu-id="5f602-226">Дополнительные сведения см. [здесь]((http://azure.microsoft.com/services/backup/)).</span><span class="sxs-lookup"><span data-stu-id="5f602-226">For additional information, click [here]((http://azure.microsoft.com/services/backup/)).</span></span>
+<span data-ttu-id="5f602-226">Дополнительные сведения см. [здесь](http://azure.microsoft.com/services/backup/).</span><span class="sxs-lookup"><span data-stu-id="5f602-226">For additional information, click [here](http://azure.microsoft.com/services/backup/).</span></span>
   
-<span data-ttu-id="5f602-227">Сведения о стоимости см. [здесь]((http://azure.microsoft.com/pricing/details/backup/)).</span><span class="sxs-lookup"><span data-stu-id="5f602-227">For cost information, click [here]((http://azure.microsoft.com/pricing/details/backup/)).</span></span>
+<span data-ttu-id="5f602-227">Сведения о стоимости см. [здесь](http://azure.microsoft.com/pricing/details/backup/).</span><span class="sxs-lookup"><span data-stu-id="5f602-227">For cost information, click [here](http://azure.microsoft.com/pricing/details/backup/).</span></span>
   
 ## <a name="next-step"></a><span data-ttu-id="5f602-228">Следующее действие</span><span class="sxs-lookup"><span data-stu-id="5f602-228">Next step</span></span>
 
@@ -278,7 +278,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="5f602-232">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="5f602-232">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="5f602-233">[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="5f602-233">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="5f602-233">[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="5f602-233">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

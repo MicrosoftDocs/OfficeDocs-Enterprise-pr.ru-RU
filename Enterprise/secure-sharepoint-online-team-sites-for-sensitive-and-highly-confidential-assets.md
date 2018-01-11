@@ -52,9 +52,9 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="8a00b-p104">В результате получается два сайта для совместной работы, доступ к которым строго контролируют система безопасности и администраторы SharePoint. Файлы с меткой AIP "Строго конфиденциальный" всегда шифруются, даже если они распространяются за пределами сайта группы "Исследования". При этом их может открыть только участник исследовательской группы.</span><span class="sxs-lookup"><span data-stu-id="8a00b-p104">The result is two collaboration sites whose access is tightly controlled by security and SharePoint administrators. For files with the Highly Confidential AIP label, even if they are distributed outside the Research team site, they are encrypted and can only be opened by a member of a research team.</span></span>
   
-<span data-ttu-id="8a00b-124">Дополнительные сведения см. в статье [Защита сайтов и файлов SharePoint Online]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)).</span><span class="sxs-lookup"><span data-stu-id="8a00b-124">For more information, see [Secure SharePoint Online sites and files]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)).</span></span>
+<span data-ttu-id="8a00b-124">Дополнительные сведения см. в статье [Защита сайтов и файлов SharePoint Online](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).</span><span class="sxs-lookup"><span data-stu-id="8a00b-124">For more information, see [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).</span></span>
   
- <span data-ttu-id="8a00b-125">Сведения о том, как настроить такую защиту для демонстрации, экспериментальной системы либо среды разработки и тестирования, см. в статье [Защита сайтов SharePoint Online в среде разработки и тестирования]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)).</span><span class="sxs-lookup"><span data-stu-id="8a00b-125">To set this up for demonstration, proof-of-concept, or dev/test, see [Secure SharePoint Online sites in a dev/test environment]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)).</span></span>
+ <span data-ttu-id="8a00b-125">Сведения о том, как настроить такую защиту для демонстрации, экспериментальной системы либо среды разработки и тестирования, см. в статье [Защита сайтов SharePoint Online в среде разработки и тестирования](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).</span><span class="sxs-lookup"><span data-stu-id="8a00b-125">To set this up for demonstration, proof-of-concept, or dev/test, see [Secure SharePoint Online sites in a dev/test environment](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="8a00b-126">См. также</span><span class="sxs-lookup"><span data-stu-id="8a00b-126">See Also</span></span>
 
@@ -64,9 +64,9 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="8a00b-129">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="8a00b-129">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="8a00b-130">[База данных Stretch]((https://msdn.microsoft.com/library/dn935011.aspx))</span><span class="sxs-lookup"><span data-stu-id="8a00b-130">[Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx))</span></span>
+<span data-ttu-id="8a00b-130">[База данных Stretch](https://msdn.microsoft.com/library/dn935011.aspx)</span><span class="sxs-lookup"><span data-stu-id="8a00b-130">[Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx)</span></span>
   
-<span data-ttu-id="8a00b-131">[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="8a00b-131">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="8a00b-131">[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="8a00b-131">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

@@ -116,7 +116,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="f830b-p108">База данных Stretch представляет собой экономически эффективное решение для долгосрочного хранения архивных данных и прозрачного доступа к ним. Кроме того, она позволяет решить проблемы производительности и доступности, возникающие при значительном увеличении таблиц.</span><span class="sxs-lookup"><span data-stu-id="f830b-p108">Stretch database provides a cost-effective option for long-term storage and transparent access to historical data. It also solves performance and availability problems that arise when tables become very large.</span></span>
   
-<span data-ttu-id="f830b-160">Дополнительные сведения см. в статье [База данных Stretch]((https://msdn.microsoft.com/library/dn935011.aspx)).</span><span class="sxs-lookup"><span data-stu-id="f830b-160">For more information, see [Stretch Database]((https://msdn.microsoft.com/library/dn935011.aspx)).</span></span>
+<span data-ttu-id="f830b-160">Дополнительные сведения см. в статье [База данных Stretch](https://msdn.microsoft.com/library/dn935011.aspx).</span><span class="sxs-lookup"><span data-stu-id="f830b-160">For more information, see [Stretch Database](https://msdn.microsoft.com/library/dn935011.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="f830b-161">См. также</span><span class="sxs-lookup"><span data-stu-id="f830b-161">See Also</span></span>
 
@@ -124,7 +124,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="f830b-163">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="f830b-163">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="f830b-164">[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="f830b-164">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="f830b-164">[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="f830b-164">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

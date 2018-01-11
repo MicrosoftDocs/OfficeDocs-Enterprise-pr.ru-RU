@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
   
 <span data-ttu-id="c6fc6-108">![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=49552)</span><span class="sxs-lookup"><span data-stu-id="c6fc6-108">![PDF file](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Visio file](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![See a page with versions in additional languages](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[More languages](https://www.microsoft.com/download/details.aspx?id=49552)</span></span>
   
-<span data-ttu-id="c6fc6-109">Все модели можно найти в статье [Ресурсы по ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md). Вы также можете просмотреть [материалы по схеме корпоративного облака Майкрософт для ИТ-менеджеров]((https://aka.ms/cloudarchitecture)).</span><span class="sxs-lookup"><span data-stu-id="c6fc6-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)).</span></span>
+<span data-ttu-id="c6fc6-109">Все модели можно найти в статье [Ресурсы по ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md). Вы также можете просмотреть [материалы по схеме корпоративного облака Майкрософт для ИТ-менеджеров](https://aka.ms/cloudarchitecture).</span><span class="sxs-lookup"><span data-stu-id="c6fc6-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
   
 <span data-ttu-id="c6fc6-110">См. указанные ниже разделы.</span><span class="sxs-lookup"><span data-stu-id="c6fc6-110">See the following sections:</span></span>
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 01/11/2018
 
 [<span data-ttu-id="c6fc6-121">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="c6fc6-121">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="c6fc6-122">[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="c6fc6-122">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="c6fc6-122">[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="c6fc6-122">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

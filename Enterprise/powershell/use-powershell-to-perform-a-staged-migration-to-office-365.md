@@ -58,7 +58,7 @@ ms.lasthandoff: 01/11/2018
   
 - <span data-ttu-id="26431-131">Используйте Outlook из-за пределов вашей корпоративной сети, чтобы подключиться к своему локальному почтовому ящику Exchange.</span><span class="sxs-lookup"><span data-stu-id="26431-131">Use Outlook from outside your corporate network to connect to your on-premises Exchange mailbox.</span></span>
     
-- <span data-ttu-id="26431-p108">Проверьте параметры подключения с помощью [анализатора удаленного подключения Microsoft Exchange]((https://www.testexchangeconnectivity.com/)). Используйте Мобильный Outlook (RPC через HTTP) или проверки автообнаружения Outlook.</span><span class="sxs-lookup"><span data-stu-id="26431-p108">Use the [Microsoft Exchange Remote Connectivity Analyzer]((https://www.testexchangeconnectivity.com/)) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.</span></span>
+- <span data-ttu-id="26431-p108">Проверьте параметры подключения с помощью [анализатора удаленного подключения Microsoft Exchange](https://www.testexchangeconnectivity.com/). Используйте Мобильный Outlook (RPC через HTTP) или проверки автообнаружения Outlook.</span><span class="sxs-lookup"><span data-stu-id="26431-p108">Use the [Microsoft Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.</span></span>
     
 - <span data-ttu-id="26431-134">В Exchange Online PowerShell выполните следующие команды.</span><span class="sxs-lookup"><span data-stu-id="26431-134">Run the following commands in Exchange Online PowerShell:</span></span>
     

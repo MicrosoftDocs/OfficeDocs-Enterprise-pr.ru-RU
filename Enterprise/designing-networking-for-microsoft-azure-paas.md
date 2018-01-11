@@ -70,7 +70,7 @@ ms.lasthandoff: 01/11/2018
     
 - <span data-ttu-id="6a61e-130">разгрузка SSL.</span><span class="sxs-lookup"><span data-stu-id="6a61e-130">SSL offload</span></span>
     
-<span data-ttu-id="6a61e-131">Дополнительные сведения см. в статье [Обзор шлюза приложений]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).</span><span class="sxs-lookup"><span data-stu-id="6a61e-131">For more information, see [Application Gateway]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).</span></span>
+<span data-ttu-id="6a61e-131">Дополнительные сведения см. в статье [Обзор шлюза приложений](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).</span><span class="sxs-lookup"><span data-stu-id="6a61e-131">For more information, see [Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).</span></span>
   
 ## <a name="azure-traffic-manager"></a><span data-ttu-id="6a61e-132">Диспетчер трафика Azure</span><span class="sxs-lookup"><span data-stu-id="6a61e-132">Azure Traffic Manager</span></span>
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 01/11/2018
     
 2. <span data-ttu-id="6a61e-144">Пользователь инициирует трафик к региональному веб-приложению в Европе.</span><span class="sxs-lookup"><span data-stu-id="6a61e-144">The user initiates traffic with the regional web app in Europe.</span></span>
     
-<span data-ttu-id="6a61e-145">Дополнительные сведения см. в статье [Что такое диспетчер трафика]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)).</span><span class="sxs-lookup"><span data-stu-id="6a61e-145">For more information, see [Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)).</span></span>
+<span data-ttu-id="6a61e-145">Дополнительные сведения см. в статье [Что такое диспетчер трафика](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).</span><span class="sxs-lookup"><span data-stu-id="6a61e-145">For more information, see [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="6a61e-146">См. также</span><span class="sxs-lookup"><span data-stu-id="6a61e-146">See Also</span></span>
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="6a61e-148">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="6a61e-148">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="6a61e-149">[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="6a61e-149">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="6a61e-149">[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="6a61e-149">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 
