@@ -12,16 +12,15 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_Other
 - LIL_Placement
-- DecEntMigration
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 description: "В данной статье описывается использование Office 365 PowerShell назначение лицензии Office 365 для нелицензированных пользователей."
-ms.openlocfilehash: 7120b5d61b98f401f9ec1830598f20fbcbecdb66
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 88628a78179605c734cd1d3f114a8a1dcb712376
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365
 
@@ -227,7 +226,7 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
 |:-----|
 |![Короткие значок обучения LinkedIn](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Создать в Office 365?**         Обнаружение Бесплатные курсы видео для [ИТ-специалистов и администраторов Office 365](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), с LinkedIn обучения. |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 <a name="SeeAlso"> </a>
 
 Сведения об управлении пользователями с помощью Office 365 PowerShell см. в следующих статьях:

@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: None
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "Сводка: Создание общедоступные, частный, конфиденциальные и конфиденциальными SharePoint Online сайтов группы в среде разработки и тестирования политических кампании."
-ms.openlocfilehash: 82e671af271508dfdecac6169a7892a8a12b7865
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4f89fd29103756a33aa15e8e5e2976c521d69baa
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Создание сайтов группы в среде разработки и тестирования для политической кампании
 
@@ -407,13 +405,13 @@ ms.lasthandoff: 12/15/2017
   
 Чтобы защитить документ с Azure защита информации и этой новой метки, необходимо [установить клиент защита информации Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) на тестовом компьютере, установка Office с портала Office 365 и войдите в из Microsoft Word с использованием учетной записи в ** Старший и стратегического персонала** группы пробной подписки.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Руководство по безопасности (Майкрософт) для политических кампаний, некоммерческих и других динамических организаций](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Настройка групп и пользователей в среде разработки и тестирования политических кампаний (en)](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
   
-[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 

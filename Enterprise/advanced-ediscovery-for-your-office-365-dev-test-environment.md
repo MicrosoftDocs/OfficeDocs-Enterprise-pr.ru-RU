@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: "Сводка: Настройка и демонстрация Office 365 Advanced электронного обнаружения с образцами данных в среде разработки и тестирования Office 365."
-ms.openlocfilehash: 35ebbe68027d37d2925728005235d3dde62c6248
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 95eabc3eeb718cb1235848544b41207a94c428c7
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery для среды разработки и тестирования Office 365
 
@@ -183,7 +180,7 @@ ms.lasthandoff: 12/15/2017
     
 Теперь вы можете использовать эту среду для создания контента, операций поиска и дел, а также дальнейших экспериментов с Advanced eDiscovery в Office 365.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
