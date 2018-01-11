@@ -8,22 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: "Сводка. Узнайте, как настроить распределенную виртуальную сеть Azure для рабочих нагрузок Office Server."
-ms.openlocfilehash: 83e5842a4b3192ee2f65048cefe57790cd1e2341
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4dac6ccc5b2c9bfbc540ed3dee338c735748170b
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Подключение локальной сети к виртуальной сети Microsoft Azure
 
@@ -52,7 +47,7 @@ ms.lasthandoff: 12/15/2017
   
 1. **Локальная сеть.** Определите и создайте локальный сетевой маршрут для адресного пространства виртуальной сети Azure, который указывает на локальное VPN-устройство.
     
-2. **Microsoft Azure.** Создайте виртуальную сеть Azure с VPN-подключением типа "сеть-сеть". В этой статье не описывается подключение [ExpressRoute](https://azure.microsoft.com/services/expressroute/).
+2. **Microsoft Azure.** Создайте виртуальную сеть Azure с VPN-подключением типа "сеть-сеть". В этой статье не описывается подключение [ExpressRoute]((https://azure.microsoft.com/services/expressroute/)).
     
 3. **Локальная сеть.** Настройте аппаратное или программное локальное VPN-устройство для прерывания VPN-подключения, которое использует IPsec.
     
@@ -64,7 +59,7 @@ ms.lasthandoff: 12/15/2017
 ### <a name="prerequisites"></a>Предварительные условия
 <a name="Prerequisites"> </a>
 
-- Подписка на Azure. Сведения о подписках на Azure см. на [странице подписки на Microsoft Azure](https://azure.microsoft.com/pricing/purchase-options/).
+- Подписка на Azure. Сведения о подписках на Azure см. на [странице подписки на Microsoft Azure]((https://azure.microsoft.com/pricing/purchase-options/)).
     
 - Доступное частное пространство IPv4-адресов, которое необходимо назначить виртуальной сети и ее подсетям, с достаточным количеством адресов с учетом возможного расширения.
     
@@ -151,11 +146,11 @@ ms.lasthandoff: 12/15/2017
 |2.  <br/> |Расположение виртуальной сети  <br/> |Центр обработки данных Azure, в котором будет расположена виртуальная сеть (например, Запад США).  <br/> |__________________  <br/> |
 |3.  <br/> |IP-адрес VPN-устройства  <br/> |Общедоступный IPv4-адрес интерфейса VPN-устройства в Интернете. Определите этот адрес при поддержке ИТ-отдела.  <br/> |__________________  <br/> |
 |4.  <br/> |Адресное пространство виртуальной сети  <br/> |Адресное пространство (определенное в одном префиксе личного адреса) для виртуальной сети. Определите это адресное пространство при поддержке ИТ-отдела. Оно должно быть представлено в формате CIDR, также известном как формат префикса сети. Пример: 10.24.64.0/20.  <br/> |__________________  <br/> |
-|5.  <br/> |Общий ключ IPsec  <br/> |32-значный случайный буквенно-цифровой ключ, который будет использоваться для проверки подлинности обеих сторон VPN-подключения. Определите значение этого ключа при поддержке ИТ-отдела, а затем сохраните его в надежном месте. Вы также можете ознакомиться со статьей [Создание случайной строки для предварительного ключа IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |__________________  <br/> |
+|5.  <br/> |Общий ключ IPsec  <br/> |32-значный случайный буквенно-цифровой ключ, который будет использоваться для проверки подлинности обеих сторон VPN-подключения. Определите значение этого ключа при поддержке ИТ-отдела, а затем сохраните его в надежном месте. Вы также можете ознакомиться со статьей [Создание случайной строки для предварительного ключа IPsec]((https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx)).<br/> |__________________  <br/> |
    
 Заполните таблицу S для подсетей этого решения.
   
-- Для первой подсети определите 28-битовое адресное пространство (с длиной префикса /28) подсети шлюза Azure. Сведения о том, как определить это адресное пространство, см. в статье [Расчет адресного пространства подсетей шлюза для виртуальных сетей Azure](https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/).
+- Для первой подсети определите 28-битовое адресное пространство (с длиной префикса /28) подсети шлюза Azure. Сведения о том, как определить это адресное пространство, см. в статье [Расчет адресного пространства подсетей шлюза для виртуальных сетей Azure]((https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/)).
     
 - Для второй подсети укажите понятное имя, одно пространство IP-адресов на основе адресного пространства виртуальной сети.
     
@@ -212,10 +207,10 @@ ms.lasthandoff: 12/15/2017
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Этап 2. Создание распределенной виртуальной сети в Azure
 <a name="Phase2"> </a>
 
-Сначала откройте командную строку Azure PowerShell. Если вы еще не установили Azure PowerShell, просмотрите статью [Начало работы с командлетами Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
+Сначала откройте командную строку Azure PowerShell. Если вы еще не установили Azure PowerShell, просмотрите статью [Начало работы с командлетами Azure PowerShell]((https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)).
   
 > [!NOTE]
-> Эти команды предназначены для Azure PowerShell 1.0 и более поздних версий. Скачать текстовый файл, который содержит все команды PowerShell, указанные в этой статье, можно [здесь](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
+> Эти команды предназначены для Azure PowerShell 1.0 и более поздних версий. Скачать текстовый файл, который содержит все команды PowerShell, указанные в этой статье, можно [здесь]((https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19)). 
   
 Затем войдите в свою учетную запись Azure с помощью следующей команды.
   
@@ -334,7 +329,7 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
   
 ![Для виртуальной сети теперь настроен шлюз.](images/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
-Затем настройте локальное VPN-устройство для подключения к VPN-шлюзу Azure. Дополнительные сведения см. в статье [О VPN-устройствах для подключений VPN-шлюзов типа "сеть-сеть"](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Затем настройте локальное VPN-устройство для подключения к VPN-шлюзу Azure. Дополнительные сведения см. в статье [О VPN-устройствах для подключений VPN-шлюзов типа "сеть-сеть"]((https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)).
   
 Чтобы настроить VPN-устройство, вам потребуется следующее:
   
@@ -375,7 +370,7 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
 
 [Создание виртуальной машины Windows на портале Azure](https://go.microsoft.com/fwlink/p/?LinkId=393098)
   
-[О VPN-устройствах для подключений VPN-шлюзов типа "сеть-сеть"](https://azure.microsoft.com/documentation/articles/vpn-gateway-about-vpn-devices/)
+[О VPN-устройствах для подключений VPN-шлюзов типа "сеть-сеть"]((https://azure.microsoft.com/documentation/articles/vpn-gateway-about-vpn-devices/))
   
 [Установка и настройка Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/#how-to-install-azure-powershell)
 

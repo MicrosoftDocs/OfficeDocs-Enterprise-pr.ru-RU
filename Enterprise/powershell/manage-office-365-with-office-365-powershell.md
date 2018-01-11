@@ -11,16 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - PowerShell
-- DecEntMigration
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: "Сводка. Узнайте, как использовать PowerShell в Office 365 с пользователями и лицензиями Office 365:, Skype для бизнеса Online, SharePoint Online и Microsoft Exchange Online."
-ms.openlocfilehash: aaea1d5aa83bd01bc1646a11778397936bdb14c9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8732d8f6170608e76df25f521ac83feda62b2d2a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Управление Office 365 с помощью PowerShell Office 365
 
@@ -38,7 +37,7 @@ PowerShell в Office 365  это мощное средство управлен�
     
     Ознакомьтесь с этой статьей, если у вас установлены модули PowerShell в Office 365 и вы хотите подробнее узнать о том, как использовать команды автоматизации для управления учетными записями пользователей и лицензиями.
     
-- [Office 365 PowerShell для SharePoint Online](https://technet.microsoft.com/ru-RU/library/fp161362.aspx)
+- [Office 365 PowerShell для SharePoint Online]((https://technet.microsoft.com/ru-RU/library/fp161362.aspx))
     
     Ознакомьтесь с этой статьей, если у вас установлены модули PowerShell в Office 365 и вы хотите использовать команды автоматизации для управления SharePoint Online.
     
@@ -58,7 +57,7 @@ PowerShell в Office 365  это мощное средство управлен�
     
     Ознакомьтесь с этой статьей, если у вас установлены модули PowerShell в Office 365 и вы хотите использовать команды автоматизации для управления Skype для бизнеса Online.
     
-- [Skype for Business Online cmdlets](http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx)
+- [Skype for Business Online cmdlets]((http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx))
     
     Ознакомьтесь с этой статьей, если вы хорошо разбираетесь в PowerShell в Office 365 и хотите узнать подробнее об отдельных командах для управления параметрами конференц-связи по телефонному подключению, облачной УАТС и звонков по ТСОП, а также использовать компонент отчетов, чтобы отслеживать и создавать отчеты об использовании Skype для бизнеса Online.
     

@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: "Сводка. Статья о том, как корпорация Contoso внедрила базу данных Stretch на SQL Server, чтобы снизить необходимость в локальных хранилищах данных и сократить ежедневные производственные затраты."
-ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: ef21b00f54fcc6efda2e83cb5952a99c7b8c8f28
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>Перемещение в облако транзакционных данных за прошлые периоды
 
@@ -34,7 +32,7 @@ ms.lasthandoff: 12/15/2017
   
 На рис. 1 показано, как клиент SQL отправляет запросы T-SQL на сервер, на котором развернут сервер SQL Server 2016, перенаправляющий их в базу данных SQL Stretch Azure в Azure PaaS.
   
-Дополнительные сведения см. в статье [База данных Stretch](https://msdn.microsoft.com/library/dn935011.aspx).
+Дополнительные сведения см. в статье [База данных Stretch]((https://msdn.microsoft.com/library/dn935011.aspx)).
   
 Для перемещения статистических данных в облако корпорация Contoso использовала следующие шаги:
   
@@ -77,9 +75,9 @@ ms.lasthandoff: 12/15/2017
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[База данных Stretch](https://msdn.microsoft.com/library/dn935011.aspx)
+[База данных Stretch]((https://msdn.microsoft.com/library/dn935011.aspx))
   
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

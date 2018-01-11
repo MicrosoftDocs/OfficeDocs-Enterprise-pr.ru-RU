@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Office_Other
-- DecEntMigration
+ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "Сводка: в этой статье рассказывается, почему необходимо использовать PowerShell в Office 365 для управления Office 365:: в ряде случаев это может быть более эффективно, а в других  вызвано необходимостью."
-ms.openlocfilehash: 46295ed851f24b16f775fd48dc8cdfbce39bf76c
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 22410e167baf94f5f965fcdab060235f09fe7194
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Причины использования Office 365 PowerShell
 
@@ -94,7 +92,7 @@ Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
 > [!NOTE]
-> Для использования этой команды необходимо установить [модуль Windows Azure Active Directory](https://technet.microsoft.com/ru-RU/library/jj151815.aspx). 
+> Для использования этой команды необходимо установить [модуль Windows Azure Active Directory]((https://technet.microsoft.com/ru-RU/library/jj151815.aspx)). 
   
 Ниже приведен пример отображения.
   
@@ -243,7 +241,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> Для использования этой команды необходимо [подключиться к PowerShell для SharePoint Online](https://technet.microsoft.com/library/fp161372.aspx). 
+> Для использования этой команды необходимо [подключиться к PowerShell для SharePoint Online]((https://technet.microsoft.com/library/fp161372.aspx)). 
   
 > [!TIP]
 >  Эта команда PowerShell возвращает список всех сайтов SharePoint в текущей подписке Office 365 (**Get-SPOSite**) и удаляет пользователя Ken Meyer из списка зарегистрированных пользователей каждого сайта (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}**).

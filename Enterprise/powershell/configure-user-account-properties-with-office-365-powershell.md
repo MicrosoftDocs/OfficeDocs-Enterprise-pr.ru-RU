@@ -10,18 +10,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - O365ITProTrain
 - Ent_Office_Other
 - PowerShell
-- apr17entnews
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: "Сводка. Сведения о том, как с помощью PowerShell в Office 365 настроить свойства одной или нескольких учетных записей пользователей в клиенте Office 365:."
-ms.openlocfilehash: d9e817530f3b1554cb757720f01afec5ed3b63ef
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eac568d20d1b33e06c37e920f9fd31582c8bb648
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Настройка параметров учетной записи пользователя с помощью PowerShell для Office 365
 
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/15/2017
   
 ## <a name="change-properties-for-a-specific-user-account"></a>Изменение свойств для определенной учетной записи пользователя
 
-Чтобы настроить свойства для определенной учетной записи пользователя, используйте командлет [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) и укажите свойства, которые нужно задать или изменить. Приведенный ниже пример команды меняет расположение использования для пользователя Belinda Newman, задавая Францию.
+Чтобы настроить свойства для определенной учетной записи пользователя, используйте командлет [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)) и укажите свойства, которые нужно задать или изменить. Приведенный ниже пример команды меняет расположение использования для пользователя Belinda Newman, задавая Францию.
   
 ```
 Set-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" -UsageLocation "FR"
@@ -77,7 +75,7 @@ Set-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" -UsageLocat
     
     Это двухбуквенный код страны или региона согласно ISO 3166-1 alpha-2 (A2).
     
-Сведения о дополнительных параметрах см. в статье [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).
+Сведения о дополнительных параметрах см. в статье [Set-MsolUser]((https://msdn.microsoft.com/library/azure/dn194136.aspx)).
   
 Чтобы просмотреть имя участника-пользователя для каждого из пользователей, выполните приведенную ниже команду.
   
@@ -210,7 +208,7 @@ Get-AzureADUser | Sort-Object UserPrincipalName | Select-Object UserPrincipalNam
 - Сортировать список имен участников-пользователей в алфавитном порядке (**Sort-Object UserPrincipalName**) и отправить его следующей команде (**|**).
     
 - Отобразить только свойство имени участника-пользователя для каждой учетной записи ( **Select-Object UserPrincipalName** ).
-- Отобразить их на одном экране (**More**).
+- Отобразить их на одном экране ( **More** ).
     
 Эта команда вернет все учетные записи. Если нужно отобразить имя участника-пользователя для учетной записи по соответствующему отображаемому имени (имени и фамилии), введите переменную **$userName** ниже (удалив символы \< и >), а затем выполните следующие команды:
   
@@ -219,7 +217,7 @@ $userName="<Display name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-Эта команда отображает имя участника-пользователя для пользователя Caleb Sills.
+Этот пример отображает имя участника-пользователя для пользователя Caleb Sills.
   
 ```
 $userName="Caleb Sills"

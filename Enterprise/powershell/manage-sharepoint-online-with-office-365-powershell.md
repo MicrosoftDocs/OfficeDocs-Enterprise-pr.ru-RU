@@ -12,14 +12,13 @@ ms.collection: Ent_O365
 ms.custom:
 - PowerShell
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: "Сводка: в этой статье рассказывается, как использовать PowerShell в Office 365 для управления пользователями, группами и группами сайтов в SharePoint Online."
-ms.openlocfilehash: 7f59081161b083a6447fbfba2652674f0592f634
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 2caef048196a2ffdf1d481f728dae05c0c9b3ae9
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Управление SharePoint Online с помощью Office 365 PowerShell
 
@@ -27,11 +26,11 @@ ms.lasthandoff: 12/15/2017
   
 Одной из основных задач любого администратора SharePoint Online является управление сайтами, группами сайтов и пользователями. Несмотря на то что вы можете выполнить некоторые из этих задач в Центр администрирования Office 365, другие задачи гораздо быстрее и легче выполнить в PowerShell в Office 365. Дополнительные сведения приведены в следующих разделах:
   
-- [Создание сайтов и добавление пользователей в SharePoint Online с помощью Office 365 PowerShell](http://technet.microsoft.com/library/c55d4ccf-ab36-481a-a285-c40234e11abd.aspx)
+- [Создание сайтов и добавление пользователей в SharePoint Online с помощью Office 365 PowerShell]((http://technet.microsoft.com/library/c55d4ccf-ab36-481a-a285-c40234e11abd.aspx))
     
-- [Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
+- [Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell]((http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx))
     
-- [Manage site groups](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+- [Manage site groups]((http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx))
     
 ## <a name="see-also"></a>См. также
 

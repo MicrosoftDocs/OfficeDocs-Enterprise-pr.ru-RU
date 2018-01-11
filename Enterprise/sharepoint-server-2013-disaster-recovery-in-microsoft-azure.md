@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Deployment
+ms.collection: Ent_O365
+ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Сводка. С помощью Azure вы можете создать среду аварийного восстановления для локальной фермы SharePoint. В этой статье описываются разработка и реализация этого решения."
-ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: be1a369bb87a5a63d9c266977c32c64fc55f3630
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Аварийное восстановление SharePoint Server 2013 в Microsoft Azure
 
@@ -185,7 +181,7 @@ ms.lasthandoff: 12/18/2017
   
 **Рисунок. Топология и основные элементы рабочей фермы и фермы восстановления с горячим резервированием**
 
-![Отображает топологию и ключевые элементы рабочей фермы и фермы восстановления "горячего" резервирования SharePoint.](images/AZarch_TopWarmStndby.gif)
+![Отображает топологию и ключевые элементы рабочей фермы и фермы восстановления "горячего" резервирования SharePoint.](images/AZarchWarmStndby.gif)
   
 На этой схеме:
   
@@ -371,7 +367,7 @@ ms.lasthandoff: 12/18/2017
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Этап 6. Настройка доставки журналов в ферму восстановления
 <a name="Phase6"> </a>
 
-Доставка журналов  ключевой компонент настройки аварийного восстановления в этой среде. Вы можете использовать доставку журналов, чтобы автоматически отправлять файлы журналов транзакций из основной базы данных во вспомогательный экземпляр сервера баз данных. Сведения о настройке доставки журналов см. в статье [Configure log shipping in SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx). 
+Доставка журналов  ключевой компонент настройки аварийного восстановления в этой среде. Вы можете использовать доставку журналов, чтобы автоматически отправлять файлы журналов транзакций из основной базы данных во вспомогательный экземпляр сервера баз данных. Сведения о настройке доставки журналов см. в статье [Configure log shipping in SharePoint 2013]((http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)). 
   
 > [!IMPORTANT]
 > Поддержка доставки журналов в SharePoint Server ограничена определенными базами данных. Дополнительные сведения см. в статье [Поддерживаемые варианты обеспечения высокого уровня доступности и аварийного восстановления для баз данных SharePoint (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 

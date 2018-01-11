@@ -9,16 +9,14 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Office_Other
-- DecEntMigration
+ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: "Сводка. Получите справку по PowerShell в Office 365 на этих площадках сообщества."
-ms.openlocfilehash: c1d81415cd8ec05cba21e09fa96b5c40bf320f49
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: ab6eb810e856d1d9219e06def078e36074646ce3
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="office-365-powershell-community-resources"></a>Ресурсы сообщества Office 365 PowerShell
 
@@ -28,13 +26,13 @@ ms.lasthandoff: 12/15/2017
   
 - [Группа PowerShell для Office 365 в сети Office 365 Yammer Network](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
     
-- [Форум сообщества по управлению Office 365](https://community.office365.com/ru-RU/f/148.aspx)
+- [Форум сообщества по управлению Office 365]((https://community.office365.com/ru-RU/f/148.aspx))
     
 - [Форум сообщества Exchange TechCenter](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
-- [Блоги Office](https://blogs.office.com/)
+- [Блоги Office]((https://blogs.office.com/))
     
-- [Вики-сайт по управлению Office 365](https://community.office365.com/ru-RU/w/manage/default.aspx)
+- [Вики-сайт по управлению Office 365]((https://community.office365.com/ru-RU/w/manage/default.aspx))
     
 ## <a name="see-also"></a>См. также
 

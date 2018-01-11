@@ -12,16 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
 - O365ITProTrain
-- DecEntMigration
-- apr17entnews
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Сводка. Подключитесь к своей организации Office 365, используя PowerShell, чтобы выполнять задачи администрирования из командной строки."
-ms.openlocfilehash: 3ac368a3d3584c15e1d0c26104616e8258a78e7b
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 942c128d8cfbcf4e78f054a0ab3a51b05173073f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Подключение к Office 365
 
@@ -32,7 +30,7 @@ PowerShell позволяет управлять настройками Office 3
 Обратите внимание, что эти инструкции такие же, как в разделе [Azure ActiveDirectory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113).
   
 > [!TIP]
-> **Никогда не работали с PowerShell?** Посмотрите [этот видеообзор](http://technet.microsoft.com/library/https://support.office.com/ru-RU/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx) на сайте LinkedIn Learning. 
+> **Никогда не работали с PowerShell?** Посмотрите [этот видеообзор](http://technet.microsoft.com/library/https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx) на сайте LinkedIn Learning. 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Что нужно знать перед началом работы?
 
@@ -133,7 +131,7 @@ Connect-MsolService -Credential $UserCredential
 ## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>Подключение с помощью модуля Azure Active Directory PowerShell 2
 <a name="ConnectV2"> </a>
 
-Чтобы выполнить действия, требующие использования новых командлетов в [модуле Azure Active Directory PowerShell 2](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory), установите его и подключитесь к подписке на Office 365. Вот как это сделать:
+Чтобы выполнить действия, требующие использования новых командлетов в [модуле Azure Active Directory PowerShell 2]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)), установите его и подключитесь к подписке на Office 365. Вот как это сделать:
   
 1. Откройте командную строку Windows PowerShell с повышенными привилегиями (запустите Windows PowerShell от имени администратора).
     
@@ -166,7 +164,7 @@ Connect-AzureAD -Credential $UserCredential
     
 Следуйте инструкциям в диалоговом окне **Azure Active Directory PowerShell**, чтобы указать дополнительные сведения для проверки подлинности, например код подтверждения, и нажмите **Войти**.
     
-После подключения можно использовать новые командлеты для [модуля Azure Active Directory PowerShell 2](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
+После подключения можно использовать новые командлеты для [модуля Azure Active Directory PowerShell 2]((https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)).
   
 ## <a name="see-also"></a>См. также
 

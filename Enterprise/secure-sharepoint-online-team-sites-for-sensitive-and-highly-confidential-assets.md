@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "Сводка. Узнайте, как в компании Contoso реализованы защита конфиденциальных данных и строго конфиденциальные сайты групп SharePoint Online, обеспечивающие простую, но безопасную совместную работу руководителей и исследовательских центров."
-ms.openlocfilehash: 1574babb54bfcb3fd74fb8ce4f31c364bb96b14a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 062238bd301200e388ba9d4f6d24503d33046f50
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Защита сайтов групп SharePoint Online, содержащих конфиденциальные и строго конфиденциальные ресурсы
 
@@ -56,9 +52,9 @@ ms.lasthandoff: 12/15/2017
     
 В результате получается два сайта для совместной работы, доступ к которым строго контролируют система безопасности и администраторы SharePoint. Файлы с меткой AIP "Строго конфиденциальный" всегда шифруются, даже если они распространяются за пределами сайта группы "Исследования". При этом их может открыть только участник исследовательской группы.
   
-Дополнительные сведения см. в статье [Защита сайтов и файлов SharePoint Online](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).
+Дополнительные сведения см. в статье [Защита сайтов и файлов SharePoint Online]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)).
   
- Сведения о том, как настроить такую защиту для демонстрации, экспериментальной системы либо среды разработки и тестирования, см. в статье [Защита сайтов SharePoint Online в среде разработки и тестирования](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
+ Сведения о том, как настроить такую защиту для демонстрации, экспериментальной системы либо среды разработки и тестирования, см. в статье [Защита сайтов SharePoint Online в среде разработки и тестирования]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)).
   
 ## <a name="see-also"></a>См. также
 
@@ -68,9 +64,9 @@ ms.lasthandoff: 12/15/2017
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[База данных Stretch](https://msdn.microsoft.com/library/dn935011.aspx)
+[База данных Stretch]((https://msdn.microsoft.com/library/dn935011.aspx))
   
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

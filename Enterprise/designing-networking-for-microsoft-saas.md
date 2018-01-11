@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: "Сводка. В этой статье рассказано, как оптимизировать сеть для доступа к службам SaaS корпорации Майкрософт, в том числе к Office 365, Microsoft Intune и Dynamics 365."
-ms.openlocfilehash: 432789d03f5208a379dc2ab4f17f38f95223e10d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 970d27e50e06f4d872de67589295c490aaa6e0e7
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Разработка сети для Microsoft SaaS
 
@@ -142,9 +138,9 @@ ms.lasthandoff: 12/15/2017
     
 Кроме того, оптимизируйте пропускную способность подключений к интрасети (проводного, беспроводного или VPN).
   
-Дополнительные сведения см. в статье [Поддержка NAT в Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).
+Дополнительные сведения см. в статье [Поддержка NAT в Office 365]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)).
   
-Самые актуальные рекомендации по использованию ExpressRoute в Office 365 представлены в статье [Azure ExpressRoute для Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
+Самые актуальные рекомендации по использованию ExpressRoute в Office 365 представлены в статье [Azure ExpressRoute для Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).
   
 Чтобы оптимизировать производительность интрасети, выполните указанные ниже действия.
   
@@ -154,7 +150,7 @@ ms.lasthandoff: 12/15/2017
     
 - Проанализируйте промежуточные устройства (их возраст, работоспособность, и т. д.)
     
-Дополнительные сведения см. в статье [Средство PsPing](https://technet.microsoft.com/sysinternals/jj729731.aspx).
+Дополнительные сведения см. в статье [Средство PsPing]((https://technet.microsoft.com/sysinternals/jj729731.aspx)).
   
 ## <a name="it-operations-considerations"></a>Рекомендации по ИТ-операциям
 
@@ -184,11 +180,11 @@ ms.lasthandoff: 12/15/2017
     
 Дополнительные сведения см. в следующих разделах:
   
-- [Планирование миграции и использования сети для Office 365](https://aka.ms/tune)
+- [Планирование миграции и использования сети для Office 365]((https://aka.ms/tune))
     
-- [Курс Microsoft Virtual Academy по управлению производительностью Office 365](https://aka.ms/o365perf)
+- [Курс Microsoft Virtual Academy по управлению производительностью Office 365]((https://aka.ms/o365perf))
     
-- [ExpressRoute для Office 365](https://aka.ms/expressrouteoffice365)
+- [ExpressRoute для Office 365]((https://aka.ms/expressrouteoffice365))
     
 ## <a name="see-also"></a>См. также
 
@@ -196,7 +192,7 @@ ms.lasthandoff: 12/15/2017
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в ИТ-отрасли](https://sway.com/FJ2xsyWtkJc2taRD)
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

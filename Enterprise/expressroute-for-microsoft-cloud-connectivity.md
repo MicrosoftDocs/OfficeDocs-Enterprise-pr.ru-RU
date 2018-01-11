@@ -9,16 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: "Сводка: в этой статье рассказывается, как с помощью ExpressRoute создать более быстрые и надежные подключения к облачным службам и платформам корпорации Майкрософт."
-ms.openlocfilehash: 69120d3237518be5d77716a106d2e75b64a4860e
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4534f06e5d4eca759aadb9b589e39f0c8cdeffb1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute для подключения к Microsoft Cloud
 
@@ -62,9 +60,9 @@ ExpressRoute обеспечивает частное выделенное ско
   
 Дополнительные сведения см. в указанных ниже ресурсах.
   
-- [ExpressRoute для Office 365](https://aka.ms/expressrouteoffice365)
+- [ExpressRoute для Office 365]((https://aka.ms/expressrouteoffice365))
     
-- [ExpressRoute для Azure](https://azure.microsoft.com/services/expressroute/)
+- [ExpressRoute для Azure]((https://azure.microsoft.com/services/expressroute/))
     
 ## <a name="advantages-of-expressroute-for-azure"></a>Преимущества ExpressRoute для Azure
 
@@ -80,7 +78,7 @@ ExpressRoute обеспечивает частное выделенное ско
     
 Подключение ExpressRoute обеспечивает более высокую производительность не во всех конфигурациях. Возможно, что производительность подключения ExpressRoute с низкой пропускной способностью будет меньше высокоскоростного интернет-подключения, особенно если путь до регионального центра обработки данных корпорации Майкрософт состоит всего из нескольких прыжков.
   
-Самые актуальные рекомендации по использованию ExpressRoute в Office 365 представлены в статье [Azure ExpressRoute для Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
+Самые актуальные рекомендации по использованию ExpressRoute в Office 365 представлены в статье [Azure ExpressRoute для Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).
   
 ## <a name="expressroute-connectivity-models"></a>Модели подключений ExpressRoute
 
@@ -237,11 +235,11 @@ ExpressRoute обеспечивает частное выделенное ско
     
 Дополнительные сведения см. в следующих разделах:
   
-- [Azure ExpressRoute для обучения работе с Office 365](https://channel9.msdn.com/series/aer/)
+- [Azure ExpressRoute для обучения работе с Office 365]((https://channel9.msdn.com/series/aer/))
     
-- [Планирование использования сетей и настройка производительности для Office 365](https://aka.ms/tune)
+- [Планирование использования сетей и настройка производительности для Office 365]((https://aka.ms/tune))
     
-- [Управление производительностью Office 365](https://mva.microsoft.com/ru-RU/training-courses/office-365-performance-management-8416)
+- [Управление производительностью Office 365]((https://mva.microsoft.com/ru-RU/training-courses/office-365-performance-management-8416))
     
 ## <a name="expressroute-options"></a>Дополнительные возможности для ExpressRoute
 
@@ -257,11 +255,11 @@ ExpressRoute обеспечивает частное выделенное ско
     
 Дополнительные сведения см. в указанных ниже ресурсах.
   
-- [ExpressRoute для Office 365](https://aka.ms/expressrouteoffice365)
+- [ExpressRoute для Office 365]((https://aka.ms/expressrouteoffice365))
     
-- [Azure ExpressRoute для обучения работе с Office 365](https://channel9.msdn.com/series/aer/)
+- [Azure ExpressRoute для обучения работе с Office 365]((https://channel9.msdn.com/series/aer/))
     
-- [ExpressRoute для Azure](https://azure.microsoft.com/services/expressroute/)
+- [ExpressRoute для Azure]((https://azure.microsoft.com/services/expressroute/))
     
 ## <a name="see-also"></a>См. также
 
@@ -269,7 +267,7 @@ ExpressRoute обеспечивает частное выделенное ско
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

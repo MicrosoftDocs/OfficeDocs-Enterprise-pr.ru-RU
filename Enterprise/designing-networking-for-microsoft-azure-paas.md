@@ -9,16 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: "Сводка: в этой статье рассказывается о том, как оптимизировать сеть для доступа к Microsoft Azure PaaS."
-ms.openlocfilehash: d63a7a20d4648b0044a24ea86ad4e9125779a027
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Разработка сети для Microsoft Azure PaaS
 
@@ -72,7 +70,7 @@ ms.lasthandoff: 12/15/2017
     
 - разгрузка SSL.
     
-Дополнительные сведения см. в статье [Обзор шлюза приложений](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).
+Дополнительные сведения см. в статье [Обзор шлюза приложений]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).
   
 ## <a name="azure-traffic-manager"></a>Диспетчер трафика Azure
 
@@ -98,7 +96,7 @@ ms.lasthandoff: 12/15/2017
     
 2. Пользователь инициирует трафик к региональному веб-приложению в Европе.
     
-Дополнительные сведения см. в статье [Что такое диспетчер трафика](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
+Дополнительные сведения см. в статье [Что такое диспетчер трафика]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)).
   
 ## <a name="see-also"></a>См. также
 
@@ -106,7 +104,7 @@ ms.lasthandoff: 12/15/2017
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в ИТ-отрасли](https://sway.com/FJ2xsyWtkJc2taRD)
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

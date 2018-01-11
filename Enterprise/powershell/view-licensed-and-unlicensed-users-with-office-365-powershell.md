@@ -12,15 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
-- DecEntMigration
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: "В этой статье рассказывается, как использовать PowerShell в Office 365 для просмотра учетных записей пользователей с лицензиями и пользователей без лицензий."
-ms.openlocfilehash: aa8c38864f3abf98f1aa5c8149db08506c6f7668
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: fe4f75d9d8dbc85efbc71856192dbaece3e84fbc
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Отображение списков пользователей с лицензиями и пользователей без лицензий с помощью Office 365 PowerShell
 
@@ -58,7 +57,7 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>Подробная версия (инструкции с подробными пояснениями)
 
-Между учетными записями пользователей Office 365 и лицензиями Office 365 не обязательно наличие точного соответствия. У некоторых пользователей может не быть лицензии, а некоторые лицензии могут быть никому не назначены. (У одного пользователя может быть *несколько* лицензий.) При создании учетной записи пользователя Office 365 ([дополнительная информация](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx)) необязательно назначать ему лицензию: у нового пользователя будет действительная учетная запись, но он не сможет войти в Office 365. При попытке входа он увидит примерно следующее:
+Между учетными записями пользователей Office 365 и лицензиями Office 365 не обязательно наличие точного соответствия. У некоторых пользователей может не быть лицензии, а некоторые лицензии могут быть никому не назначены. (У одного пользователя может быть *несколько* лицензий.) При создании учетной записи пользователя Office 365 ([дополнительная информация]((http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx))) необязательно назначать ему лицензию: у нового пользователя будет действительная учетная запись, но он не сможет войти в Office 365. При попытке входа он увидит примерно следующее:
   
 ![Пользователь без действительной лицензии Office 365.](images/o365_powershell_no_license.png)
   

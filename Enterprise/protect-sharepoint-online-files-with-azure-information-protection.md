@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: "Сводка. Защита файлов на строго конфиденциальном сайте группы SharePoint Online с помощью службы Azure Information Protection."
-ms.openlocfilehash: bc2c7dbbcc254270cf2c7db3d3eed98b3f7872f6
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 03a10c5d856c4c5518f18b9d02ffe76f2c8d2e7a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Защита файлов SharePoint Online с помощью Azure Information Protection
 
@@ -32,13 +29,13 @@ ms.lasthandoff: 12/15/2017
 > [!NOTE]
 > Когда шифрование Azure Information Protection применяется к файлам в Office 365, служба не может обрабатывать содержимое этих файлов. Совместное редактирование, обнаружение электронных данных, поиск, Delve и другие функции совместной работы неактивны. Политики защиты от потери данных могут работать только с метаданными (включая метки Office 365), но не с содержимым этих файлов (например, номерами кредитных карт в файлах). 
   
-Сперва выполните для настройки подписки на Office 365 действия, описанные в статье [Как активировать Azure RMS в Центре администрирования Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Сперва выполните для настройки подписки на Office 365 действия, описанные в статье [Как активировать Azure RMS в Центре администрирования Office 365]((https://docs.microsoft.com/information-protection/deploy-use/activate-office365)).
   
 Теперь настройте Azure Information Protection, добавив новую политику области и подчиненную метку для разрешений на доступ к строго конфиденциальному сайту группы SharePoint Online и его защиты.
   
-1. Войдите на портал Office 365, используя учетную запись с ролью администратора компании или администратора безопасности. Справочные сведения см. в статье [Вход в Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Войдите на портал Office 365, используя учетную запись с ролью администратора компании или администратора безопасности. Справочные сведения см. в статье [Вход в Office 365]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
     
-2. Перейдите на портал Azure ([https://portal.azure.com](https://portal.azure.com)), открыв отдельную вкладку браузера.
+2. Перейдите на портал Azure ([(https://portal.azure.com)]((https://portal.azure.com))), открыв отдельную вкладку браузера.
     
 3. Если вы настраиваете Azure Information Protection впервые, ознакомьтесь с этими [инструкциями](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
@@ -82,11 +79,11 @@ ms.lasthandoff: 12/15/2017
   
 Теперь вы можете создавать документы и защищать их с помощью службы Azure Information Protection и новой метки.
   
-Необходимо [установить клиент Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) на мобильном устройстве или компьютере под управлением Windows. Вы можете воспользоваться скриптом и автоматизировать установку. Кроме того, пользователи могут установить клиент вручную. Просмотрите указанные ниже ресурсы.
+Необходимо [установить клиент Azure Information Protection]((https://docs.microsoft.com/information-protection/rms-client/install-client-app)) на мобильном устройстве или компьютере под управлением Windows. Вы можете воспользоваться скриптом и автоматизировать установку. Кроме того, пользователи могут установить клиент вручную. Просмотрите указанные ниже ресурсы.
   
-- [Клиентская часть Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/use-client)
+- [Клиентская часть Azure Information Protection]((https://docs.microsoft.com/information-protection/rms-client/use-client))
     
-- [Руководство по клиенту Azure Information Protection для администратора](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide)
+- [Руководство по клиенту Azure Information Protection для администратора]((https://docs.microsoft.com/information-protection/rms-client/client-admin-guide))
     
 - [Страница скачивания для установки вручную](https://www.microsoft.com/download/details.aspx?id=53018)
     
