@@ -15,29 +15,29 @@ ms.custom:
 - O365ITProTrain
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
-description: 'Summary: Connect Windows PowerShell to all Office 365 services in a single Windows PowerShell window.'
-ms.openlocfilehash: 2dccfc73b016cbe97436c822432331ee30ba4bcd
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+description: "Сводка: Подключение Windows PowerShell для всех служб Office 365 в одном окне Windows PowerShell."
+ms.openlocfilehash: 5f97924d141afa4319c761fee86b13cb2b0705fb
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell
 
- **Summary:** Instead of managing different Office 365 services in separate PowerShell console windows, you can connect to all Office 365 services and manage them from single console window.
+ **Сводка:** Вместо управление различных службах Office 365 в отдельной консоли windows PowerShell можно подключиться ко всем службам Office 365 и управлять ими из одного окна консоли.
   
-When you use PowerShell to manage Office 365, it is possible to have up to five different Windows PowerShell sessions open at the same time corresponding to Office 365 admin center, SharePoint Online, Exchange Online, Skype for Business Online, and the Security &amp; Compliance Center. With five different connection methods in separate Windows PowerShell sessions, your desktop could look like this:
+При использовании PowerShell для управления Office 365, его можно установить до пяти различных Windows PowerShell открытые в то же время, соответствующий центра администрирования Office 365, SharePoint Online, Exchange Online, Скайп для бизнеса в Интернет и безопасности &amp;Центре соответствия требованиям. С помощью пяти разные способы подключения в отдельных сеансах Windows PowerShell к рабочему столу может выглядеть следующим образом:
   
 ![Пять консолей Windows PowerShell, работающих одновременно](images/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
-This is not optimal for managing Office 365 because you can't exchange data among those five windows for cross-service management. This topic describes how to use a single instance of Windows PowerShell from which you can manage Office 365, Skype for Business Online, Exchange Online, SharePoint Online, and the Security &amp; Compliance Center.
+Это не является оптимальным для управления Office 365, так как не удается обмен данными между этих пяти windows для управления между службами. В этом разделе описывается, как использовать один экземпляр Windows PowerShell, из которого можно управлять Office 365, Скайп для бизнеса в Интернет, Exchange Online, SharePoint Online и безопасность &amp; центре соответствия требованиям.
   
 ## <a name="before-you-begin"></a>Перед началом работы
 <a name="BeforeYouBegin"> </a>
 
-Before you can manage all of Office 365 from a single instance of Windows PowerShell, consider the following prerequisites:
+Прежде чем все Office 365 можно управлять из одного экземпляра Windows PowerShell, необходимо учитывайте следующие требования:
   
-- The Office 365 work or school account that you use for these procedures needs to be a member of an Office 365 admin role. For more information, see [About Office 365 admin roles](https://go.microsoft.com/fwlink/p/?LinkId=532367). This a requirement for Office 365 PowerShell, not necessarily for all other Office 365 services.
+- Office 365 работы или школе учетной записи, используемой для этих процедур потребностей для быть участником роли администратора Office 365. Дополнительные сведения см в [роли администраторов об Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367). В этом является обязательным требованием для Office 365 PowerShell, а не обязательно для всех других служб Office 365.
     
 - Ниже приведены 64-разрядные версии Windows, которые можно использовать.
     
@@ -53,21 +53,21 @@ Before you can manage all of Office 365 from a single instance of Windows PowerS
     
   - Windows Server 2008 R2 с пакетом обновления 1 (SP1)*
     
-    * You need to install the Microsoft .NET Framework 4.5. _x_ and then either the Windows Management Framework 3.0 or the Windows Management Framework 4.0. For more information, see [Installing the .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) and [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) or [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
+    * Необходимо установить Microsoft .NET Framework 4.5. _x_ и затем либо Windows Management Framework 3.0 или Windows Management Framework 4.0. Для получения дополнительных сведений см [установки .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) и [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) или [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
     
-    You need to use a 64-bit version of Windows because of the requirements for the Skype for Business Online module and one of the Office 365 modules.
+    Необходимо использовать 64-разрядной версии Windows из-за требования к Скайп для бизнеса в Интернет в модуле и один из модулей Office 365.
     
-- You need to install the modules that are required for Office 365, SharePoint Online, and Skype for Business Online:
+- Требуется ли установить модули, которые необходимы для Office 365, SharePoint Online и Скайп для бизнеса в Интернет:
     
-  - [Microsoft Online Service Sign-in Assistant for IT Professionals RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)
+  - [Microsoft Online службы помощник по входу для ИТ-специалистов RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)
     
-  - [Windows Azure Active Directory Module for Windows PowerShell (64-bit version)](https://go.microsoft.com/fwlink/p/?linkid=236297)
+  - [Windows Azure Active Directory модуль для Windows PowerShell (64-разрядная версия)](https://go.microsoft.com/fwlink/p/?linkid=236297)
     
-  - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+  - [Командная консоль SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251)
     
-  - [Skype for Business Online, Windows PowerShell Module](https://go.microsoft.com/fwlink/p/?LinkId=532439)
+  - [Скайп для бизнеса через Интернет, модуля Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
--  Windows PowerShell needs to be configured to run signed scripts for Skype for Business Online, Exchange Online, and the Security &amp; Compliance Center. To do this, run the following command in an elevated Windows PowerShell session (a Windows PowerShell window you open by selecting **Run as administrator**).
+-  Windows PowerShell необходимо настроить для запуска сценариев со знаком для Скайп для бизнеса в Интернет, Exchange Online и безопасность &amp; центре соответствия требованиям. Для этого выполните следующую команду в сеансе Windows PowerShell с повышенными привилегиями (окно Windows PowerShell можно открыть, выбрав **Запуск от имени администратора**).
     
   ```
   Set-ExecutionPolicy RemoteSigned
@@ -78,29 +78,29 @@ Before you can manage all of Office 365 from a single instance of Windows PowerS
 
 В этом разделе описываются шаги подключения без подробных пояснений. Если у вас возникнут вопросы или вам потребуются дополнительные сведения, можно обратиться к остальным разделам статьи. Указанные здесь номера шагов соответствуют шагам в остальных разделах данной статьи.
   
-1. Open Windows PowerShell as an administrator (use **Run as administrator**).
+1. Откройте Windows PowerShell с правами администратора ( **Запуск от имени администратора**использования).
     
-2. Run this command, and enter your Office 365 work or school account credentials.
+2. Выполните следующую команду и введите данные Office 365 или школе учетные данные учетной записи.
     
   ```
   $credential = Get-Credential
   ```
 
-3. Run these commands to connect to Office 365.
+3. Выполните следующие команды для подключения к Office 365.
     
   ```
   Import-Module MsOnline
   Connect-MsolService -Credential $credential
   ```
 
-4. Run these commands to connect to SharePoint Online. Replace  _\<domainhost>_ with the actual value for your domain. For example, for `litwareinc.onmicrosoft.com`, the  _\<domainhost>_ value is `litwareinc`.
+4. Выполните следующие команды для подключения к SharePoint Online. Замените _ \<domainhost >_ с фактическое значение для вашего домена. Например, `litwareinc.onmicrosoft.com`, _ \<domainhost >_ значение — `litwareinc`.
     
   ```
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
   Connect-SPOService -Url https://<domainhost>-admin.sharepoint.com -credential $credential
   ```
 
-5. Run these commands to connect to Skype for Business Online. A warning about increasing the `WSMan NetworkDelayms` value is expected the first time you connect and should be ignored.
+5. Выполните следующие команды для подключения к Скайп для бизнеса в Интернет. Предупреждение о том, увеличение `WSMan NetworkDelayms` впервые ожидается значение подключения и можно пропустить.
     
   ```
   Import-Module SkypeOnlineConnector
@@ -108,23 +108,23 @@ Before you can manage all of Office 365 from a single instance of Windows PowerS
   Import-PSSession $sfboSession
   ```
 
-6. Run these commands to connect to Exchange Online.
+6. Выполните следующие команды для подключения к Exchange Online.
     
   ```
   $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
   Import-PSSession $exchangeSession -DisableNameChecking
   ```
 
-7. Run these commands to connect to the Security &amp; Compliance Center.
+7. Выполните следующие команды для подключения к безопасности &amp; центре соответствия требованиям.
     
   ```
   $ccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication Basic -AllowRedirection
   Import-PSSession $ccSession -Prefix cc
   ```
 > [!NOTE]
-> The text prefix "cc" is added to  *all*  Security &amp; Compliance Center cmdlet names so you can run cmdlets that exist in both Exchange Online and the Security &amp; Compliance Center in the same Windows PowerShell session. For example, **Get-RoleGroup** becomes **Get-ccRoleGroup** in the Security &amp; Compliance Center.
+> Текст префикса «копия» добавляется *все* безопасности &amp; имена центре соответствия требованиям, могут выполняться командлеты, который существует в Exchange Online и безопасность &amp; центре соответствия требованиям в том же сеансе Windows PowerShell. Например, **Get-RoleGroup** становится **Get-ccRoleGroup** в системы &amp; центре соответствия требованиям.
   
-Here are all the commands in a single block. Specify the name of your domain host, and then run them all at one time.
+Ниже приведены все команды в один блок. Укажите имя вашего домена узла и затем использовать их для работы всех за один раз.
   
 ```
 $domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
@@ -142,7 +142,7 @@ $ccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri 
 Import-PSSession $ccSession -Prefix cc
 ```
 
-When you are ready to close down the Windows PowerShell window, run this command to remove the active sessions to Skype for Business Online, Exchange Online, SharePoint Online, and the Security &amp; Compliance Center:
+Когда вы будете готовы закрыть все окна Windows PowerShell, выполните следующую команду, чтобы удалить активных сеансов для Скайп для бизнеса в Интернет, Exchange Online, SharePoint Online и безопасность &amp; центре соответствия требованиям:
   
 ```
 Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSession $ccSession ; Disconnect-SPOService
@@ -154,52 +154,52 @@ Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSes
 ### <a name="step-1-open-windows-powershell-as-an-administrator"></a>Шаг 1. Запуск Windows PowerShell от имени администратора
 <a name="Step1"> </a>
 
-If you're running Windows 10, Windows 8, Windows 8.1, Windows Server 2016, Windows Server 2012 R2, or Windows Server 2012 R2, do this:
+Если вы используете Windows 10, Windows 8, Windows 8.1, Windows Server 2016, Windows Server 2012 R2 или Windows Server 2012 R2 этого сделайте следующее.
   
-1. Use any of these methods to find the shortcut for **Windows PowerShell**:
+1. Используйте любой из следующих методов для поиска ярлыка **Windows PowerShell**:
     
-  - On the Start screen, click an empty area, and type Windows PowerShell.
+  - На начальном экране щелкните пустую область и введите Windows PowerShell.
     
-  - On the desktop or the Start screen, press the Windows key+Q. In the Search charm, type Windows PowerShell.
+  - На рабочем столе или на начальном экране нажмите Windows ключевые + Q. В чудо поиска введите Windows PowerShell.
     
-  - On the desktop or the Start screen, move your cursor to the upper-right corner, or swipe left from the right edge of the screen to show the charms. Select the Search charm, and enter Windows PowerShell.
+  - На рабочем столе или на начальном экране переместите курсор в правом верхнем углу или проведите слева от правого края экрана, чтобы отобразить чудо-кнопки. Выберите чудо поиска и введите Windows PowerShell.
     
-2. In the results, right-click **Windows PowerShell**, and select **Run as administrator**.
+2. В списке результатов щелкните правой кнопкой мыши **Windows PowerShell**и выберите **Запуск от имени администратора**.
     
-3. If the **User Account Control** dialog box appears, select **Yes** to verify that you want to run Windows PowerShell under administrator credentials.
+3. Если появится диалоговое окно **Контроль учетных записей пользователей** , выберите **Да** , чтобы подтвердить запуск Windows PowerShell с использованием учетных данных администратора.
     
-If you're running Windows 7 SP1 (or Windows Server 2008 R2 SP1), do this:
+Если вы используете Windows 7 с пакетом обновления 1 (или Windows Server 2008 R2 SP1), это необходимо:
   
-1. On the **Start** menu, select **All Programs** > **Accessories** > **Windows PowerShell**. Right-click **Windows PowerShell**, and then select **Run as administrator**.
+1. В меню **Пуск** выберите **Все программы** > **Стандартные** > **Windows PowerShell**. Щелкните правой кнопкой мыши **Windows PowerShell**и выберите **Запуск от имени администратора**.
     
-2. If the **User Account Control** dialog box appears, select **Yes** to verify that you want to run Windows PowerShell under administrator credentials.
+2. Если появится диалоговое окно **Контроль учетных записей пользователей** , выберите **Да** , чтобы подтвердить запуск Windows PowerShell с использованием учетных данных администратора.
     
-You must run Windows PowerShell as an administrator. If you don't, you're going to get an error message similar to this when you try to import one of the required modules.
+Windows PowerShell необходимо запустить с правами администратора. Если вы не произошло, вы собираетесь сообщение об ошибке следующего вида при попытке импортировать один из необходимых модулей.
   
 ```
 The specified module 'Microsoft.Online.SharePoint.Online.PowerShell' was not loaded because no valid module file was found in any directory.
 ```
 
-The only way to remedy the situation is to close Windows PowerShell and restart it as an administrator. Here's a quick and easy way to tell if you're running Windows PowerShell as an administrator: the prompt is  `PS C:\Windows\System32>`, not  `PS C:\Users\YourUserName>`.
+Единственный способ исправить ситуацию — Windows PowerShell закройте и перезапустите его с правами администратора. Быстрый и простой способ сообщить, если вы используете Windows PowerShell с правами администратора: строке является `PS C:\Windows\System32>`, а не `PS C:\Users\YourUserName>`.
 
   
 ### <a name="step-2-create-a-windows-powershell-credentials-object"></a>Этап 2. Создание объекта учетных данных Windows PowerShell
 <a name="Step2"> </a>
 
-The credentials object provides an encrypted way to pass your user name and password to Windows PowerShell. To create a credentials object, run the following command in Windows PowerShell.
+Объект учетных данных содержит зашифрованные способ передачи имени пользователя и пароля Windows PowerShell. Чтобы создать объект учетных данных, выполните следующую команду в Windows PowerShell.
   
 ```
 $credential = Get-Credential
 ```
 
 > [!NOTE]
->  `$credential` is a variable that will store the credentials object. You don't have to name the variable `$credential`, but doing so makes it easier to remember which variable contains the credentials object. (And that's important, because we'll reuse this variable several times.) That will also make it easier for you to follow our examples, because this article will always use  `$credential` to represent the credentials object.
+>  `$credential`— это переменная, на котором будут храниться учетные данные объекта. У вас нет одно имя переменной `$credential`, но это так упрощает запомнить, к какой переменная содержит объект учетных данных. (И, важна, так как мы будем использовать эту переменную неоднократно.) Который также облегчит вам необходимо выполнить наши примеры так как всегда будет использоваться в этой статье `$credential` для представления объекта учетные данные.
   
-Windows PowerShell will then display a dialog box that looks like this.
+Windows PowerShell, будет выведено диалоговое окно, которое выглядит следующим образом.
   
 ![Диалоговое окно запроса блокировки учетных данных.](images/o365_powershell_empty_credentials_box.png)
   
-Type your work or school account user name in the **User name** box, using the format _username@domainname_ (for example, kenmyer@litwareinc.onmicrosoft.com); type your password in the **Password** box; and then click **OK**:
+Введите данные или школе имя учетной записи в поле **имя пользователя** в формате _username@domainname_ (например, kenmyer@litwareinc.onmicrosoft.com); Введите свой пароль в поле **пароль** ; и нажмите кнопку **ОК**:
   
 ![Диалоговое окно запроса полных учетных данных.](images/o365_powershell_completed_credentials_box.png)
   
@@ -222,9 +222,9 @@ kenmyer@litwareinc.onmicrosoft.com     System.Security.SecureString
 ### <a name="step-3-connect-to-office-365"></a>Действие 3. Подключение к Office 365
 <a name="Step3"> </a>
 
-We'll start by connecting to Office 365 itself. 
+Мы начнем с помощью подключения к Office 365 самого. 
   
-The first thing we need to do here is import the Office 365 module (the Microsoft Azure Active Directory Module for Windows PowerShell). To do that, run this command in Windows PowerShell.
+Первое, что нужно сделать здесь — это импорта модуля Office 365 (Microsoft Azure Active Directory модуль для Windows PowerShell). Для этого выполните эту команду в Windows PowerShell.
   
 ```
 Import-Module MsOnline
@@ -236,7 +236,7 @@ Import-Module MsOnline
 Get-Module
 ```
 
-Somewhere in the list of modules that are returned by this command you should see something that looks like this:  `Manifest 1.0 MSOnline {Add-MsolForeignGroupToRole, Add-MsolG...}`.
+Где-нибудь в списке модулей, возвращенных этой командой будет выглядеть примерно так, которая выглядит следующим образом: `Manifest 1.0 MSOnline {Add-MsolForeignGroupToRole, Add-MsolG...}`.
   
 Если вы видите `MSOnline` в списке, это означает, что все выполнено согласно плану.
   
@@ -248,7 +248,7 @@ Connect-MsolService -Credential $credential
 
 Обратите внимание, что все, что необходимо указать — это объект учетные данные ( `$credential`). На основе этих учетных данных, Office 365 будет автоматически подключаются к правильный домен. Необходимо указать имя домена, при запуске **Connect-MsolService**.
   
-To verify that you really  *are*  connected to Office 365, run this command.
+Чтобы проверить, которые Вы действительно *являются* подключение к Office 365, выполните следующую команду.
   
 ```
 Get-MsolDomain
@@ -265,7 +265,7 @@ litwareinc.onmicrosoft.com   Verified        Managed
 ### <a name="step-4-connect-to-sharepoint-online"></a>Действие 4. Подключение к SharePoint Online
 <a name="Step4"> </a>
 
-Import the SharePoint Online module with the following command:
+Импортируйте модуль SharePoint Online с помощью следующей команды:
   
 ```
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -281,11 +281,11 @@ WARNING: The names of some imported commands from the module 'Microsoft.Online.S
   
 Чтобы определить URL-адрес сайта администрирования, выполните перечисленные ниже действия.
   
-1. Start by using the prefix  `https://`.
+1. Запуск с помощью префикса `https://`.
     
-2. Add the domain host portion of your domain name. For example, for  `litwareinc.onmicrosoft.com`, the domain host name is  `litwareinc`. For  `contoso.onmicrosoft.com`, the domain host name is  `contoso`.
+2. Добавление узла доменная часть имени домена. Например, `litwareinc.onmicrosoft.com`, — это имя узла домена `litwareinc`. Для `contoso.onmicrosoft.com`, — это имя узла домена `contoso`.
     
-3. Add a hyphen (-) followed by  `admin.sharepoint.com`.
+3. Добавьте дефис (-), за которым следует `admin.sharepoint.com`.
     
 Другими словами:
   
@@ -349,7 +349,7 @@ $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 ```
 
-When you import the Windows PowerShell session, you should see a progress bar similar to the following, a progress bar that reports on all the Skype for Business Online cmdlets being imported to your computer.
+При импорте сеанса Windows PowerShell, вы должны увидеть индикатор хода выполнения, подобные приведенным ниже, индикатор хода выполнения, отчеты о всех Скайп для бизнеса в Интернет командлетов импортируемого на своем компьютере.
   
 ![Строка хода выполнения Lync Online.](images/o365_powershell_lync_progress_bar.png)
   
@@ -393,7 +393,7 @@ Script     1.0      tmp_nweiqjvl.geu {Add-AvailabilityAddressSpace...
 Get-AcceptedDomain
 ```
 
-In return, you should see information about your Office 365 domains that are configured for email addresses in Exchange Online.
+В ответ вы должны увидеть сведения об Office 365 домены, настроенные для адресов электронной почты в Exchange Online.
   
 ```
 Name            DomainName          DomainType      Default
@@ -401,10 +401,10 @@ Name            DomainName          DomainType      Default
 litwareinc.com  litwareinc.com      Authoritative   True
 ```
 
-### <a name="step-7-connect-to-the-security-amp-compliance-center"></a>Step 7: Connect to the Security &amp; Compliance Center
+### <a name="step-7-connect-to-the-security-amp-compliance-center"></a>Шаг 7: Подключение к безопасности &amp; центре соответствия требованиям
 <a name="Step7"> </a>
 
-The Security &amp; Compliance Center is a service in Office 365 that lets you to manage compliance features from one location. For more information, see [Office 365 compliance center](http://technet.microsoft.com/library/fde83656-f136-448d-b250-6fa17b503e4e.aspx).
+Безопасность &amp; центре соответствия требованиям — это служба в Office 365, которая позволяет управлять функции контроля соответствия требованиям из одного расположения. Дополнительные сведения см в [центре соответствия требованиям Office 365](http://technet.microsoft.com/library/fde83656-f136-448d-b250-6fa17b503e4e.aspx).
   
 Инструкции по подключения для системы безопасности &amp; центре соответствия требованиям очень похожи на для Exchange Online, но с добавлены версия, который вы увидите позже.
   
@@ -420,9 +420,9 @@ $ccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri 
 Import-PSSession $ccSession -Prefix cc
 ```
 
-Again, this command is very similar to the command for Exchange Online. The  _DisableNameChecking_ switch isn't required because there are no unapproved verbs in the Security &amp; Compliance Center. But what about that additional `-Prefix cc` parameter and value? That's the added twist we told you about.
+Опять же эта команда похожа на команду для Exchange Online. Переключатель _DisableNameChecking_ не требуется, потому что существуют отсутствуют неутвержденных команды в системы &amp; центре соответствия требованиям. Но как насчет то дополнительные `-Prefix cc` параметр и значение? Добавлена версия, которую мы же говорили, о это.
   
-Exchange Online and the Security &amp; Compliance Center share some cmdlets that have exactly the same names and provide the same functionality. **Get-RoleGroup** is an example.
+Exchange Online и безопасность &amp; некоторые командлеты, которые имеют точно такие же имена и предоставляют те же функциональные возможности совместного использования центре соответствия требованиям. **Get-RoleGroup** является примером.
   
 Что произойдет, если при попытке импорта два сеанса, содержащих командлеты с тем же именем? Они встречаются. Вы получите большой предупреждение, что, `WARNING: Proxy creation has been skipped for the following command:` за которым следует список конфликтующие командлеты, которые не могут быть импортированы. Конечный результат? **Get-RoleGroup** можно запустить в Exchange Online, так как вы сначала подключена, но не может запустить **Get-RoleGroup** в системы &amp; центра обработки соответствия требованиям, так как вы последнее существует подключенных и конфликтующие командлеты отказано для импорта.
   
@@ -438,7 +438,7 @@ ModuleType Version  Name             ExportedCommands
 Script     1.0      tmp_xbbx5exr.ehm {Add-ccRoleGroupMember, Get-ccAdminAuditLogConfig, Get-ccA...
 ```
 
-Now you are free to manage all Office 365 services in a single Windows PowerShell session.
+Теперь вы могут управлять всех служб Office 365 в одном сеансе Windows PowerShell.
   
 ### <a name="step-8-gracefully-end-your-powershell-sessions"></a>Шаг 8. Корректное завершение сеансов PowerShell
 <a name="Step8"> </a>
@@ -451,7 +451,7 @@ Now you are free to manage all Office 365 services in a single Windows PowerShel
 Get-PSSession
 ```
 
-The [Get-PSSession](https://go.microsoft.com/fwlink/p/?LinkId=532437) cmdlet should show you that you have at least three remote sessions open, one for Skype for Business Online, one for Exchange Online and one for the Security &amp; Compliance Center (it's possible you could have more than three remote sessions running, depending on whether you've used this instance of Windows PowerShell to connect to something else besides the Office 365 services). You should see something similar to the following.
+Командлет [Get-PSSession](https://go.microsoft.com/fwlink/p/?LinkId=532437) необходимо показать, наличие по крайней мере три удаленных сеансов открыть, одному для Скайп для бизнеса в Интернет, для Exchange Online и для системы безопасности &amp; центре соответствия требованиям (его можно может иметь больше, чем три удаленного сеансы запущена, в зависимости от того, является ли использовалась этот экземпляр Windows PowerShell для подключения к что-то еще, кроме служб Office 365). Вы должны увидеть, что-то следующим образом.
   
 ```
 Id Name     ComputerName     State   ConfigurationName    Availability
@@ -461,7 +461,7 @@ Id Name     ComputerName     State   ConfigurationName    Availability
  3 Session3 ps.complianc...  Opened  Microsoft.Exchange      Available
 ```
 
-To close these three sessions, run these commands one at a time. The first command closes the Skype for Business Online session, the second closes the Exchange Online session, and the third closes the Security &amp; Compliance Center session.
+Чтобы закрыть эти три сеансы, выполните следующие команды по очереди. Первая команда закрывает Скайп для бизнеса в Интернет сеанса, второй закроется Exchange Online сеанса и третий закрывает безопасности &amp; сеанс центре соответствия требованиям.
   
 ```
 Remove-PSSession $sfboSession
@@ -469,44 +469,42 @@ Remove-PSSession $exchangeSession
 Remove-PSSession $ccSession
 ```
 
-If you now run the **Get-PSSession** cmdlet, you should see nothing at all (unless you have other remote sessions up and running).
+При выполнении командлета **Get-PSSession** , не отобразится никаких вообще (если у вас есть другие удаленные сеансы запущены).
   
 ![Консоль Windows PowerShell без удаленных сеансов](images/o365_powershell_no_remote_sessions.png)
   
 > [!NOTE]
-> If you'd prefer to close all your remote sessions at the same time, you can use this command: >  `Get-PSSession | Remove-PSSession`
+> Если вы хотите закрыть все удаленные сеансы в то же время, можно использовать следующую команду: >`Get-PSSession | Remove-PSSession`
   
-If you now try running a cmdlet from any of these closed sessions (for example, **Get-CsMeetingConfiguration** in Skype for Business Online) you'll get an error message that's similar to this one.
+Если вы сейчас попытаетесь выполнить командлет из любого из этих закрыт сеансов (например, **Get-CsMeetingConfiguration** в Скайп для бизнеса в Интернет) вы получите сообщение об ошибке, аналогичную этой.
   
 ```
 Get-CsMeetingConfiguration : The term 'Get-CsMeetingConfiguration' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
 ```
 
-We get that error message because the cmdlets for Skype for Business Online, Exchange Online, and the Security &amp; Compliance Center were deleted when we closed the remote sessions.
+Мы получаем этого сообщения об ошибке, так как командлеты для Скайп для бизнеса в Интернет, Exchange Online и безопасность &amp; центре соответствия требованиям были удалены при закрытии удаленных сеансов.
   
-To close the SharePoint Online session, type this command.
+Чтобы закрыть сеанс SharePoint Online, введите следующую команду.
   
 ```
 Disconnect-SPOService
 ```
 
-If you now try to run the **Get-SPOSite** cmdlet, you'll get an error message like this.
+Если вы сейчас попытаетесь выполнить командлет **Get-SPOSite** , вы получите сообщение об ошибке следующим образом.
   
 ```
 get-sposite : No connection available. Use Connect-SPOService before running this CmdLet.
 ```
 
-You can't retrieve site information because you're no longer connected to SharePoint Online.
+Не удается получить сведения о сайте, поскольку вы больше не подключены к SharePoint Online.
   
-As for your connection to Office 365, although there's a **Connect-MsolService** cmdlet, there's no corresponding **Disconnect-MsolService** cmdlet. So for Office 365, just close the Windows PowerShell window. Nevertheless, it's still a good idea to do this last so you can properly disconnect from SharePoint Online, Skype for Business Online, Exchange Online, and the Security &amp; Compliance Center.
+Как для подключения к Office 365 хотя для командлета **Connect-MsolService** , нет нет соответствующих командлет **Disconnect-MsolService** . Поэтому для Office 365, просто закройте окно Windows PowerShell. Тем не менее, это по-прежнему рекомендуется сделать это последний, поэтому можно надлежащим образом отключить из SharePoint Online, Скайп для бизнеса в Интернет, Exchange Online и безопасность &amp; центре соответствия требованиям.
   
 ## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
 <a name="LongVersion"> </a>
 
-||
-|:-----|
-|![The short icon for LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **New to Office 365?**         Discover free video courses for [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), brought to you by LinkedIn Learning. |
-   
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+
 ## <a name="see-also"></a>См. также
 
 #### 

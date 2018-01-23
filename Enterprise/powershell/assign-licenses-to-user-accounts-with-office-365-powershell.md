@@ -16,11 +16,11 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 description: "В данной статье описывается использование Office 365 PowerShell назначение лицензии Office 365 для нелицензированных пользователей."
-ms.openlocfilehash: 88628a78179605c734cd1d3f114a8a1dcb712376
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 8a7ad7b4586ccdef95430f9c4cc9c4d6e9360070
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365
 
@@ -222,10 +222,8 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
   
 ## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
 
-||
-|:-----|
-|![Короткие значок обучения LinkedIn](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Создать в Office 365?**         Обнаружение Бесплатные курсы видео для [ИТ-специалистов и администраторов Office 365](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), с LinkedIn обучения. |
-   
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+
 ## <a name="see-also"></a>См. также
 <a name="SeeAlso"> </a>
 
