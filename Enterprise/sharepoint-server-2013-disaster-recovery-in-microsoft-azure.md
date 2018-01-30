@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Сводка. С помощью Azure вы можете создать среду аварийного восстановления для локальной фермы SharePoint. В этой статье описываются разработка и реализация этого решения."
-ms.openlocfilehash: be1a369bb87a5a63d9c266977c32c64fc55f3630
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e949d2cc88e576993a357007c2a600b55c259009
+ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Аварийное восстановление SharePoint Server 2013 в Microsoft Azure
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 01/11/2018
   
 **Рисунок. Элементы решения горячего резервирования в Azure**
 
-![Элементы решения "горячего" резервирования SharePoint в Azure](images/AZarch_AZWarmStndby.png)
+![Элементы решения "горячего" резервирования SharePoint в Azure](images/AZarch_AZWarmStndby.gif)
   
 Доставка журналов SQL Server с репликацией распределенной файловой системы (DFSR) используется для копирования резервных копий баз данных и журналов транзакций в ферму восстановления в Azure: 
   
@@ -367,7 +367,7 @@ ms.lasthandoff: 01/11/2018
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Этап 6. Настройка доставки журналов в ферму восстановления
 <a name="Phase6"> </a>
 
-Доставка журналов  ключевой компонент настройки аварийного восстановления в этой среде. Вы можете использовать доставку журналов, чтобы автоматически отправлять файлы журналов транзакций из основной базы данных во вспомогательный экземпляр сервера баз данных. Сведения о настройке доставки журналов см. в статье [Configure log shipping in SharePoint 2013]((http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)). 
+Доставка журналов  ключевой компонент настройки аварийного восстановления в этой среде. Вы можете использовать доставку журналов, чтобы автоматически отправлять файлы журналов транзакций из основной базы данных во вспомогательный экземпляр сервера баз данных. Сведения о настройке доставки журналов см. в статье [Configure log shipping in SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx). 
   
 > [!IMPORTANT]
 > Поддержка доставки журналов в SharePoint Server ограничена определенными базами данных. Дополнительные сведения см. в статье [Поддерживаемые варианты обеспечения высокого уровня доступности и аварийного восстановления для баз данных SharePoint (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 
