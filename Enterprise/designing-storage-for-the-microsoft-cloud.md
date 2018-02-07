@@ -8,8 +8,10 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom: Ent_Architecture
+ms.collection:
+- Ent_O365
+ms.custom:
+- Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "Сводка. Узнайте, зачем вам облачное хранилище, а также ознакомьтесь со списком доступных облачных хранилищ (Майкрософт) и основных сценариев хранения."
 ms.openlocfilehash: 199e385ea0238e8fb27c04153faf177df07e1025
@@ -160,6 +162,6 @@ ms.lasthandoff: 01/11/2018
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
