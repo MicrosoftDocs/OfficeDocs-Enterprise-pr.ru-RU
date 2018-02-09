@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
 description: "Сводка. Узнайте, как получить сведения о наборе параметров облачного хранилища, с помощью которых можно создать собственное решения для хранения."
-ms.openlocfilehash: bcfc5d851a3f3b0d987214c4ea22e669db3a53ee
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="some-assembly-required"></a>Решения, требующие сборки
 
@@ -58,9 +58,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения вы найдете [здесь]((https://azure.microsoft.com/services/cdn/)).
+Дополнительные сведения вы найдете [здесь](https://azure.microsoft.com/services/cdn/).
   
-Сведения о ценах см. [здесь]((https://azure.microsoft.com/pricing/details/cdn/)).
+Сведения о ценах см. [здесь](https://azure.microsoft.com/pricing/details/cdn/).
   
 ## <a name="hdinsight"></a>HdInsight
 
@@ -94,9 +94,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения вы найдете [здесь]((https://azure.microsoft.com/services/hdinsight/)).
+Дополнительные сведения вы найдете [здесь](https://azure.microsoft.com/services/hdinsight/).
   
-Сведения о ценах см. [здесь]((https://azure.microsoft.com/pricing/details/hdinsight/)).
+Сведения о ценах см. [здесь](https://azure.microsoft.com/pricing/details/hdinsight/).
   
 ## <a name="azure-sql-database"></a>База данных SQL Azure
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 01/11/2018
   
 ![Горизонтальное масштабирование, обеспеченное базой данных SQL Azure.](images/Storage_Poster/CloudStor-HorizScale.png)
   
-Дополнительные сведения вы найдете [здесь]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)).
+Дополнительные сведения вы найдете [здесь](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction).
   
 ### <a name="stretch-database-with-sql-server-2016"></a>База данных Stretch с SQL Server 2016
 
@@ -160,13 +160,13 @@ ms.lasthandoff: 01/11/2018
   
 База данных Stretch представляет собой экономически эффективное решение для долгосрочного хранения архивных данных и прозрачного доступа к ним. Кроме того, она позволяет решить проблемы производительности и доступности, возникающие при значительном увеличении таблиц.
   
-Дополнительные сведения вы найдете [здесь]((https://msdn.microsoft.com/library/dn935011.aspx)).
+Дополнительные сведения вы найдете [здесь](https://msdn.microsoft.com/library/dn935011.aspx).
   
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения вы найдете [здесь]((http://azure.microsoft.com/services/sql-database/)).
+Дополнительные сведения вы найдете [здесь](http://azure.microsoft.com/services/sql-database/).
   
-Сведения о ценах см. [здесь]((http://azure.microsoft.com/pricing/details/sql-database/)).
+Сведения о ценах см. [здесь](http://azure.microsoft.com/pricing/details/sql-database/).
   
 ## <a name="azure-cosmos-db"></a>Azure Cosmos DB
 
@@ -210,9 +210,9 @@ ms.lasthandoff: 01/11/2018
   
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. [здесь]((http://azure.microsoft.com/services/documentdb/)).
+Дополнительные сведения см. [здесь](http://azure.microsoft.com/services/documentdb/).
   
-Сведения о ценах см. [здесь]((http://azure.microsoft.com/pricing/details/documentdb/)).
+Сведения о ценах см. [здесь](http://azure.microsoft.com/pricing/details/documentdb/).
   
 ## <a name="azure-media-services"></a>Службы мультимедиа Azure
 
@@ -244,9 +244,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения вы найдете [здесь]((https://azure.microsoft.com/services/media-services/)).
+Дополнительные сведения вы найдете [здесь](https://azure.microsoft.com/services/media-services/).
   
-Сведения о ценах см. [здесь]((http://azure.microsoft.com/pricing/details/media-services/)).
+Сведения о ценах см. [здесь](http://azure.microsoft.com/pricing/details/media-services/).
   
 ## <a name="azure-redis-cache"></a>Кэш Redis для Azure
 
@@ -278,9 +278,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. [здесь]((http://azure.microsoft.com/services/cache/)).
+Дополнительные сведения см. [здесь](http://azure.microsoft.com/services/cache/).
   
-Сведения о стоимости см. [здесь]((http://azure.microsoft.com/pricing/details/cache/)).
+Сведения о стоимости см. [здесь](http://azure.microsoft.com/pricing/details/cache/).
   
 ## <a name="sql-server-on-an-azure-vm"></a>SQL Server на виртуальной машине Azure
 
@@ -300,9 +300,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. [здесь]((http://azure.microsoft.com/services/virtual-machines/)).
+Дополнительные сведения см. [здесь](http://azure.microsoft.com/services/virtual-machines/).
   
-Сведения о стоимости см. [здесь]((http://azure.microsoft.com/pricing/details/virtual-machines/)).
+Сведения о стоимости см. [здесь](http://azure.microsoft.com/pricing/details/virtual-machines/).
   
 ## <a name="storsimple"></a>StorSimple
 
@@ -334,9 +334,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. [здесь]((http://azure.microsoft.com/services/storsimple/)).
+Дополнительные сведения см. [здесь](http://azure.microsoft.com/services/storsimple/).
   
-Сведения о ценах см. [здесь]((http://azure.microsoft.com/pricing/details/storsimple/)).
+Сведения о ценах см. [здесь](http://azure.microsoft.com/pricing/details/storsimple/).
   
 ## <a name="azure-sql-data-warehouse"></a>Хранилище данных SQL Azure
 
@@ -364,9 +364,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения вы найдете [здесь]((https://azure.microsoft.com/services/sql-data-warehouse/)).
+Дополнительные сведения вы найдете [здесь](https://azure.microsoft.com/services/sql-data-warehouse/).
   
-Сведения о ценах см. [здесь]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/)).
+Сведения о ценах см. [здесь](https://azure.microsoft.com/pricing/details/sql-data-warehouse/).
   
 ## <a name="azure-data-lake-store"></a>Azure Data Lake Store
 
@@ -398,9 +398,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения вы найдете [здесь]((https://azure.microsoft.com/services/data-lake-store/)).
+Дополнительные сведения вы найдете [здесь](https://azure.microsoft.com/services/data-lake-store/).
   
-Сведения о ценах см. [здесь]((https://azure.microsoft.com/pricing/details/data-lake-store/)).
+Сведения о ценах см. [здесь](https://azure.microsoft.com/pricing/details/data-lake-store/).
   
 ## <a name="next-step"></a>Следующее действие
 
@@ -412,7 +412,7 @@ ms.lasthandoff: 01/11/2018
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

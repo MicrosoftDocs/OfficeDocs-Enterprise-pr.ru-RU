@@ -9,14 +9,15 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "Сводка. Сведения об архитектуре гибридных облачных предложений Майкрософт."
-ms.openlocfilehash: 6c61d7467177b0dbf70e5540e32b059b348a062c
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: f1c234026324b2c507dd4369cb98306e7e83a775
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Архитектура гибридного облака Майкрософт
 
@@ -66,7 +67,7 @@ ms.lasthandoff: 01/11/2018
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

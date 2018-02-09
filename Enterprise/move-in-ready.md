@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: c27d9a45-92f4-4d14-affc-9a4c459910be
 description: "Сводка. Узнайте о службах облачного хранения, встроенных в облачные предложения корпорации Майкрософт."
-ms.openlocfilehash: 8c97742c5538acb73fe9dd6491ce85049990ecc0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 174e5a5a9827a1f8a7f8f1640e1987ceaa965968
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="move-in-ready"></a>Решения, не требующие сборки
 
@@ -62,9 +62,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. [здесь]((https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)).
+Дополнительные сведения см. [здесь](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).
   
-Сведения о стоимости см. [здесь]((https://products.office.com/business/compare-office-365-for-business-plans)).
+Сведения о стоимости см. [здесь](https://products.office.com/business/compare-office-365-for-business-plans).
   
 ## <a name="exchange-online-in-office-365"></a>Exchange Online в Office 365
 
@@ -84,9 +84,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. [здесь]((https://technet.microsoft.com/library/exchange-online-limits.aspx)).
+Дополнительные сведения см. [здесь](https://technet.microsoft.com/library/exchange-online-limits.aspx).
   
-Сведения о стоимости см. [здесь]((https://products.office.com/business/compare-office-365-for-business-plans)).
+Сведения о стоимости см. [здесь](https://products.office.com/business/compare-office-365-for-business-plans).
   
 ## <a name="onedrive-for-business"></a>OneDrive для бизнеса
 
@@ -112,9 +112,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. [здесь]((https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)).
+Дополнительные сведения см. [здесь](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).
   
-Сведения о стоимости см. [здесь]((https://products.office.com/business/compare-office-365-for-business-plans)).
+Сведения о стоимости см. [здесь](https://products.office.com/business/compare-office-365-for-business-plans).
   
 ## <a name="visual-studio-team-services"></a>Visual Studio Team Services
 
@@ -138,9 +138,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. [здесь]((https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx)).
+Дополнительные сведения см. [здесь](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx).
   
-Сведения о стоимости см. [здесь]((https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx)).
+Сведения о стоимости см. [здесь](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx).
   
 ## <a name="yammer-file-sharing"></a>Общий доступ к файлам в Yammer
 
@@ -166,9 +166,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. [здесь]((https://products.office.com/yammer/yammer-overview)).
+Дополнительные сведения см. [здесь](https://products.office.com/yammer/yammer-overview).
   
-Сведения о стоимости см. [здесь]((https://products.office.com/business/compare-office-365-for-business-plans)).
+Сведения о стоимости см. [здесь](https://products.office.com/business/compare-office-365-for-business-plans).
   
 ## <a name="dynamics-365"></a>Dynamics 365
 
@@ -210,9 +210,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. [здесь]((https://www.microsoft.com/server-cloud/products/microsoft-intune/)).
+Дополнительные сведения см. [здесь](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
   
-Сведения о стоимости см. [здесь]((https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)).
+Сведения о стоимости см. [здесь](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
   
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -240,7 +240,7 @@ ms.lasthandoff: 01/11/2018
 
 Дополнительные сведения см. [здесь](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA).
   
-Сведения о стоимости см. [здесь]((http://azure.microsoft.com/pricing/details/site-recovery/)).
+Сведения о стоимости см. [здесь](http://azure.microsoft.com/pricing/details/site-recovery/).
   
 ## <a name="azure-backup"></a>Azure Backup
 
@@ -264,9 +264,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a>Ресурсы
 
-Дополнительные сведения см. [здесь]((http://azure.microsoft.com/services/backup/)).
+Дополнительные сведения см. [здесь](http://azure.microsoft.com/services/backup/).
   
-Сведения о стоимости см. [здесь]((http://azure.microsoft.com/pricing/details/backup/)).
+Сведения о стоимости см. [здесь](http://azure.microsoft.com/pricing/details/backup/).
   
 ## <a name="next-step"></a>Следующее действие
 
@@ -278,7 +278,7 @@ ms.lasthandoff: 01/11/2018
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

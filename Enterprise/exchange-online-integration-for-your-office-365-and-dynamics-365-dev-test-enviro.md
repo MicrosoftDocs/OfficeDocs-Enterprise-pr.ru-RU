@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "Сводка. Воспользуйтесь этим руководством, чтобы включить интеграцию Dynamics 365 для Exchange Online в пробной подписке Office 365."
-ms.openlocfilehash: b297c3e461b5695b323c619145df64524989d58a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Интеграция с Exchange Online для среды разработки и тестирования Office 365 и Dynamics 365
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 позволяет хранить всю переписк
 
 Выполните следующие действия, чтобы настроить почтовый ящик глобального администратора для интеграции Dynamics 365 и Exchange Online:
   
-1. Откройте сайт [(http://portal.office.com)]((http://portal.office.com)) в окне браузера в анонимном режиме и войдите с помощью учетной записи глобального администратора Office 365.
+1. Откройте сайт [http://portal.office.com](http://portal.office.com) в окне браузера в анонимном режиме и войдите с помощью учетной записи глобального администратора Office 365.
     
 2. На **домашней странице Microsoft Office** щелкните плитку **Почта**.
     
@@ -98,7 +98,7 @@ Microsoft Dynamics 365 позволяет хранить всю переписк
 9. Нажмите **Отменить**.
 
 > [!TIP]
-> Щелкните [здесь]((http://aka.ms/catlgstack)), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования Microsoft Cloud.
+> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования Microsoft Cloud.
     
 ## <a name="see-also"></a>См. также
 
@@ -112,8 +112,8 @@ Microsoft Dynamics 365 позволяет хранить всю переписк
   
 [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Управление подпиской для Dynamics 365 (сетевая версия)]((https://technet.microsoft.com/library/jj679903.aspx))
+[Управление подпиской для Dynamics 365 (сетевая версия)](https://technet.microsoft.com/library/jj679903.aspx)
   
-[Администрирование Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))
+[Администрирование Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)
 
 

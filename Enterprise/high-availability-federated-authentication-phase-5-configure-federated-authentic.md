@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "Сводка. Настройка Azure AD Connect для федеративной проверки высокого уровня доступности для Office 365 в Microsoft Azure."
-ms.openlocfilehash: 92e579c325d2cfa18e404d15d6add56fc225eedd
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 2c23ffa2e9f033018c5cc1fd016fb4ed76535605
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Этап 5. Федеративная проверка подлинности для обеспечения высокой доступности: настройка федеративной проверки подлинности для Office 365
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 01/11/2018
   
 1. Создайте подключение к удаленному рабочему столу сервера DirSync с помощью учетной записи домена с правами локального администратора.
     
-2. На рабочем столе сервера DirSync откройте Internet Explorer и перейдите на страницу [(https://aka.ms/aadconnect)]((https://aka.ms/aadconnect)).
+2. На рабочем столе сервера DirSync откройте Internet Explorer и перейдите на страницу [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
     
 3. На странице **Microsoft Azure Active Directory Connect** нажмите **Скачать**, а затем **Запустить**.
     

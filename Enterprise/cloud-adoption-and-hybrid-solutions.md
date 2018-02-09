@@ -6,17 +6,16 @@ manager: laurawi
 layout: LandingPage
 ms.assetid: 
 ms.service: o365-solutions
-ms.topic: landing-page
+ms.topic: hub-page
 localization_priority: Normal
-ms.collection:
-- Ent_O365
+ms.collection: Ent_O365
 ms.date: 12/13/2017
 ms.author: JoeDavies-MSFT
-ms.openlocfilehash: 396d61debdd3f0cb222e9627b74a7baaa287c4c3
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 32e15b5d80fd7c7a200987ea55bca927e6e02372
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 <h1>Облачные решения для корпоративных пользователей</h1>
 <p>Решайте бизнес-задачи, используя Microsoft Cloud. Здесь вы найдете информацию о последних гибридных решениях и облачных решениях для обеспечения безопасности, о внедрении облачных технологий и не только.</p>

@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "Сводка: в этой статье изложены сведения, необходимые при разработке сетей для облачных служб и платформ корпорации Майкрософт."
-ms.openlocfilehash: 155e40bfe769a8d8771d71e570cab418d4a6b2a0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7fe7fc71825ddbdf485fedece890c87be914d4fc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Облачные сети Майкрософт для корпоративных архитекторов
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 01/11/2018
   
 ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=54425)
   
-Все модели можно найти в статье [Ресурсы по ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md). Вы также можете просмотреть [материалы по схеме корпоративного облака Майкрософт для ИТ-менеджеров]((https://aka.ms/cloudarchitecture)).
+Все модели можно найти в статье [Ресурсы по ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md). Вы также можете просмотреть [материалы по схеме корпоративного облака Майкрософт для ИТ-менеджеров](https://aka.ms/cloudarchitecture).
   
 См. указанные ниже разделы.
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 01/11/2018
     
     Выполняя процесс разработки этап за этапом, вы сможете создать оптимальную виртуальную сеть Azure с размещенными на серверах рабочими ИТ-нагрузками, включающую подсети, адресные пространства, средства маршрутизации, DNS, средства балансировки нагрузки и подключения к локальной сети, другим виртуальным сетям и Интернету.
     
-Обзор основных положений этого плаката представлен в курсе [Оптимизация сети для облачных служб Майкрософт]((https://mva.microsoft.com/ru-RU/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)) на сайте Microsoft Virtual Academy.
+Обзор основных положений этого плаката представлен в курсе [Оптимизация сети для облачных служб Майкрософт](https://mva.microsoft.com/ru-RU/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) на сайте Microsoft Virtual Academy.
   
 > [!NOTE]
 > В этих статьях отражен выпуск плаката "Организация сети в облаке Майкрософт для корпоративных архитекторов" за **июнь 2017 г.**
@@ -68,7 +68,7 @@ ms.lasthandoff: 01/11/2018
 
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

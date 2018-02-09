@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "Сводка. В этой статье рассказано, как с помощью PowerShell в Office 365 создавать отчеты, которые невозможно создать в Центре администрирования Office 365:."
-ms.openlocfilehash: 0a524ca2a11bdea156ad684ab3f4936d423a4b21
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 09db143c027af987cf86036c4f5fd6bca009afe4
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Использование Windows PowerShell для создания отчетов в Office 365
 
@@ -46,15 +46,15 @@ ms.lasthandoff: 01/11/2018
     
 - Отчеты для SharePoint Online:
     
-  - [Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell]((http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)) .
+  - [Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx) .
     
-  - [Manage SharePoint Online site groups with Office 365 PowerShell]((http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)).
+  - [Manage SharePoint Online site groups with Office 365 PowerShell](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx).
     
 - Отчеты для Exchange Online:
     
-  - [Display Exchange Online mailbox information with Office 365 PowerShell]((http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)).
+  - [Display Exchange Online mailbox information with Office 365 PowerShell](http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx).
     
-  - [Display Exchange Online reports with Office 365 PowerShell]((http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)).
+  - [Display Exchange Online reports with Office 365 PowerShell](http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx).
     
 ## <a name="see-also"></a>См. также
 

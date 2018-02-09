@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: "Сводка. Статья о том, как корпорация Contoso внедрила базу данных Stretch на SQL Server, чтобы снизить необходимость в локальных хранилищах данных и сократить ежедневные производственные затраты."
-ms.openlocfilehash: ef21b00f54fcc6efda2e83cb5952a99c7b8c8f28
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9d8d51aa1bc7a304d1148111aedd54916d9e8052
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>Перемещение в облако транзакционных данных за прошлые периоды
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
   
 На рис. 1 показано, как клиент SQL отправляет запросы T-SQL на сервер, на котором развернут сервер SQL Server 2016, перенаправляющий их в базу данных SQL Stretch Azure в Azure PaaS.
   
-Дополнительные сведения см. в статье [База данных Stretch]((https://msdn.microsoft.com/library/dn935011.aspx)).
+Дополнительные сведения см. в статье [База данных Stretch](https://msdn.microsoft.com/library/dn935011.aspx).
   
 Для перемещения статистических данных в облако корпорация Contoso использовала следующие шаги:
   
@@ -75,9 +75,9 @@ ms.lasthandoff: 01/11/2018
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[База данных Stretch]((https://msdn.microsoft.com/library/dn935011.aspx))
+[База данных Stretch](https://msdn.microsoft.com/library/dn935011.aspx)
   
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

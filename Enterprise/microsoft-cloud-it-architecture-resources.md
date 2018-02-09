@@ -8,18 +8,17 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection:
-- Ent_O365
+ms.collection: Ent_O365
 ms.custom:
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: "Сводка. Узнайте об облачных службах и платформах Майкрософт. Ознакомьтесь со схемой корпоративного облака и рядом сведений об облачной архитектуре и не только."
-ms.openlocfilehash: f39625b371290f3bb5ef68441409d436518e43f3
-ms.sourcegitcommit: ca96830b425b3ec5a6387eaae47cdc23c8384456
+ms.openlocfilehash: 94b0e732e84fe7ec47431b7521be4c21a1d858df
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 
@@ -82,7 +81,7 @@ ms.lasthandoff: 02/01/2018
   
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Эскиз модели идентификации в облаке Майкрософт](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| ![Статья](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Статья](https://technet.microsoft.com/library/mt613459.aspx)  <br/>![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Эта модель содержит: <ul><li>Общие сведения об идентификации в облаке Майкрософт </li> <li>Возможности службы идентификации и управления доступом Azure AD </li><li>Интеграция локальных учетных записей доменных служб Active Directory с Microsoft Azure Active Directory </li> <li>Помещение компонентов каталога в Azure </li><li>Варианты доменных служб для рабочих нагрузок в службе Azure IaaS </li></ul> <br/>|
+|[![Эскиз модели идентификации в облаке Майкрософт](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| ![Статья](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Статья](https://technet.microsoft.com/library/mt613459.aspx)  <br/>![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Эта модель содержит: <ul><li>Общие сведения об удостоверениях в облаке Майкрософт </li> <li>Возможности платформы IDaaS в Azure AD </li><li>Интеграция локальных учетных записей доменных служб Active Directory с Microsoft Azure Active Directory </li> <li>Размещение компонентов каталога в Azure </li><li>Варианты доменных служб для рабочих нагрузок в службе Azure IaaS </li></ul> <br/>|
    
 <a name="security"> </a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Обеспечение безопасности в облаке Майкрософт для корпоративных архитекторов
@@ -91,7 +90,7 @@ ms.lasthandoff: 02/01/2018
   
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Эскиз модели безопасности в облаке Майкрософт](images/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| ![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Эта модель содержит: <ul><li>Роль Майкрософт в предоставлении безопасных служб и платформ</li><li>Обязанности клиента по снижению угроз безопасности</li><li>Лучшие варианты сертификации защиты </li><li>Решения для обеспечения безопасности от консалтинговых служб Майкрософт </ul></li>Пройдите курс виртуальной академии Microsoft Virtual Academy [Обеспечение безопасности в облачном мире](https://mva.microsoft.com/training-courses/security-in-a-cloudenabled-world-12725?l=CfLHobAcB_3904300474), основанный на этом плакате. <br/>|
+|[![Эскиз модели безопасности в облаке Майкрософт](images/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| ![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Эта модель содержит: <ul><li>Роль корпорации Майкрософт в предоставлении безопасных служб и платформ.</li><li>Обязанности клиента по снижению угроз безопасности.</li><li>Лучшие варианты сертификации защиты. </li><li>Решения для обеспечения безопасности от консалтинговых служб Майкрософт. </ul></li>Пройдите курс виртуальной академии Microsoft Virtual Academy [Обеспечение безопасности в облачном мире](https://mva.microsoft.com/training-courses/security-in-a-cloudenabled-world-12725?l=CfLHobAcB_3904300474), основанный на этом плакате. <br/>|
    
 <a name="networking"> </a>
 ### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Организация сети в облаке Майкрософт для корпоративных архитекторов
@@ -109,7 +108,7 @@ ms.lasthandoff: 02/01/2018
   
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Эскиз плаката "Защита информации в Office 365"](images/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| ![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | Эта модель содержит: <ul><li>Популярные мобильные приложения для бизнеса </li><li>Платформы, службы и ресурсы для разработки мобильных приложений </li><li>Управление доступом к облачным приложениям и данным с мобильных устройств </li><li>Сравнение возможностей и поддержки платформ между Office 365 MDM, Azure Active Directory Premium и Intune </li></ul><br/> |
+|[![Эскиз плаката "Защита информации в Office 365"](images/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| ![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | Эта модель содержит: <ul><li>Основные мобильные приложения для бизнеса </li><li>Платформа, службы и ресурсы для разработки мобильных приложений </li><li>Управление доступом к облачным приложениям и данным с мобильных устройств </li><li>Сравнение возможностей и поддержки платформ между Office 365 MDM, Azure Active Directory Premium и Intune </li></ul><br/> |
    
 <a name="storage"> </a>
 ### <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Хранение в облаке Майкрософт для корпоративных архитекторов
@@ -118,7 +117,7 @@ ms.lasthandoff: 02/01/2018
   
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Эскиз модели хранения в облаке Майкрософт](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| ![Статья](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Статья](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | Эта модель содержит: <ul><li>Причины использовать облачное хранилище и основные сценарии </li><li>Службы облачного хранения, которые прилагаются к существующим службам </li><li>Службы хранения, которые можно использовать в качестве отправной точки для собственного решения </li><li>Функциональные блоки для создания собственного решения или хранилища для приложений</li></ul><br/>|
+|[![Эскиз модели хранения в облаке Майкрософт](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| ![Статья](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Статья](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | Эта модель содержит: <ul><li>Причины использования облачного хранилища и основные сценарии </li><li>Службы облачного хранения, которые прилагаются к существующим службам </li><li>Службы хранения, которые можно использовать в качестве отправной точки для собственного решения </li><li>Функциональные блоки для создания собственного решения или хранилища для приложений</li></ul><br/>|
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Гибридное облако Майкрософт для корпоративных архитекторов

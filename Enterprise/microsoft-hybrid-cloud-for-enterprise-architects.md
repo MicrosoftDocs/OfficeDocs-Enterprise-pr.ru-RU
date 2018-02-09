@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "Сводка. Сведения для ИТ-архитекторов о гибридных сценариях в облачных службах и платформах Майкрософт."
-ms.openlocfilehash: 0a2d9e097d976a729492748aa2672146cb8681a7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9972241d5e7291a2cecf8c72811f34115dcf116a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Гибридное облако Майкрософт для корпоративных архитекторов
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/11/2018
 ![PDF-файл](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Файл Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![Страница с версиями на других языках](images/Common_Images/GlobeIcon.png)
 [Другие языки](https://www.microsoft.com/download/details.aspx?id=54424)
   
-Все модели можно найти в статье [Ресурсы по ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md). Вы также можете просмотреть [материалы по схеме корпоративного облака Майкрософт для ИТ-менеджеров]((https://aka.ms/cloudarchitecture)).
+Все модели можно найти в статье [Ресурсы по ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md). Вы также можете просмотреть [материалы по схеме корпоративного облака Майкрософт для ИТ-менеджеров](https://aka.ms/cloudarchitecture).
   
 См. указанные ниже разделы.
   
@@ -63,7 +63,7 @@ ms.lasthandoff: 01/11/2018
 
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

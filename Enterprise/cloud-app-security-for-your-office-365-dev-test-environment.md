@@ -14,22 +14,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: "Сводка. Настройка и демонстрация работы Office 365 Cloud App Security в среде разработки и тестирования Office 365."
-ms.openlocfilehash: 8d398dcbf1ca5dea5ee790a64829eef55765025a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: b13931ca21b440188563feef9236cd70e6df084b
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security для среды разработки и тестирования Office 365
 
  **Сводка.** Настройка и демонстрация работы Office 365 Cloud App Security в среде разработки и тестирования Office 365.
   
-Office 365 Cloud App Security (предыдущее название  расширенное управление безопасностью Office 365) позволяет создавать политики, которые отслеживают подозрительные действия в вашей подписке на Office 365 и сообщают вам о них, чтобы вы могли исследовать и исправить проблему. Дополнительные сведения см. в статье [Обзор Cloud App Security в Office 365]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)).
+Office 365 Cloud App Security (предыдущее название  расширенное управление безопасностью Office 365) позволяет создавать политики, которые отслеживают подозрительные действия в вашей подписке на Office 365 и сообщают вам о них, чтобы вы могли исследовать и исправить проблему. Дополнительные сведения см. в статье [Обзор Cloud App Security в Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 С помощью инструкций в этой статье вы можете включить и протестировать функции Cloud App Security в пробной подписке на Office 365.
   
 > [!TIP]
-> Щелкните [здесь]((http://aka.ms/catlgstack)), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования Microsoft Cloud.
+> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365 — упрощенной или для имитированных предприятий
 
@@ -46,11 +46,11 @@ Office 365 Cloud App Security (предыдущее название  расши
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Проверка режима работы уведомлений по умолчанию в Office 365
 
-1. Перейдите на портал Office 365 ([(https://portal.office.com)]((https://portal.office.com))) и войдите на странице пробной подписки на Office 365, используя учетную запись глобального администратора.
+1. Перейдите на портал Office 365 ([https://portal.office.com](https://portal.office.com)) и войдите на странице пробной подписки на Office 365, используя учетную запись глобального администратора.
     
   - Если вы используете упрощенную среду разработки и тестирования Office 365, войдите с локального компьютера.
     
-  - Если вы используете среду разработки и тестирования Office 365 для имитированного предприятия, войдите на [портал Azure]((https://portal.azure.com)), чтобы подключиться к виртуальной машине CLIENT1, а затем выполните вход с этой виртуальной машины.
+  - Если вы используете среду разработки и тестирования Office 365 для имитированного предприятия, войдите на [портал Azure](https://portal.azure.com), чтобы подключиться к виртуальной машине CLIENT1, а затем выполните вход с этой виртуальной машины.
     
 2. На главной странице портала щелкните **Администратор**.
     
@@ -76,7 +76,7 @@ Office 365 Cloud App Security (предыдущее название  расши
     
 ### <a name="enable-and-configure-cloud-app-security"></a>Включение и настройка Cloud App Security
 
-1. Перейдите на портал Office 365 ([(https://portal.office.com)]((https://portal.office.com))) и войдите на странице пробной подписки на Office 365, используя учетную запись глобального администратора.
+1. Перейдите на портал Office 365 ([https://portal.office.com](https://portal.office.com)) и войдите на странице пробной подписки на Office 365, используя учетную запись глобального администратора.
     
 2. Нажмите плитку **Безопасность и соответствие требованиям**.
     
@@ -108,7 +108,7 @@ Office 365 Cloud App Security (предыдущее название  расши
 
 1. Щелкните значок пользователя в верхней правой части страницы, а затем выберите **Выйти**.
     
-2. Перейдите по такому адресу: [(https://portal.office.com)]((https://portal.office.com)).
+2. Перейдите по такому адресу: [https://portal.office.com](https://portal.office.com).
     
 3. На странице входа в Office 365 выберите пункт **Используйте другую учетную запись**.
     
@@ -132,7 +132,7 @@ Office 365 Cloud App Security (предыдущее название  расши
     
 13. Щелкните значок пользователя в верхней правой части страницы, а затем выберите **Выйти**. 
     
-14. Перейдите по такому адресу: [(https://portal.office.com)]((https://portal.office.com)).
+14. Перейдите по такому адресу: [https://portal.office.com](https://portal.office.com).
     
 15. На странице **входа в Office 365** выберите имя учетной записи глобального администратора.
     
@@ -152,7 +152,7 @@ Office 365 Cloud App Security (предыдущее название  расши
     
     В папке "Входящие" вы увидите два новых электронных сообщения, в названии которых указано **Служба уведомлений Microsoft Azure AD**. В одном из сообщений говорится, что учетной записи Пользователя 5 присвоена роль **Администратор паролей**. В другом сообщении указано, что учетной записи Пользователя 5 присвоена роль **Администратор пользователей** (приравнивается к роли администратора управления пользователями в Центре администрирования Office 365).
     
-Теперь с помощью этой среды можно создавать новые политики и продолжать экспериментировать с Office 365 Cloud App Security. Ссылки на дополнительные статьи, посвященные конфигурации, см. на странице [Начало работы с Office 365 Cloud App Security]((https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)).
+Теперь с помощью этой среды можно создавать новые политики и продолжать экспериментировать с Office 365 Cloud App Security. Ссылки на дополнительные статьи, посвященные конфигурации, см. на странице [Начало работы с Office 365 Cloud App Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a).
   
 ## <a name="see-also"></a>См. также
 
@@ -162,6 +162,6 @@ Office 365 Cloud App Security (предыдущее название  расши
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 
-[Обзор Cloud App Security в Office 365]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475))
+[Обзор Cloud App Security в Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 
 
