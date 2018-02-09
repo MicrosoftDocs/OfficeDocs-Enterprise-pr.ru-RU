@@ -6,15 +6,16 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
 description: "Эта статья представляет собой текстовую версию схемы \"Варианты платформы Microsoft SharePoint 2013\"."
-ms.openlocfilehash: 9cd282cc723376f85fe2cbc5a439ee24fd2ab883
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>Доступная схема — варианты платформы Microsoft SharePoint 2013
 
@@ -240,7 +241,7 @@ Duet Enterprise Online
     
 - Обеспечение доступности и достаточной пропускной способности сети при использовании брандмауэров, прокси-серверов, шлюзов и каналов глобальной сети. 
     
-- Приобретение сторонних SSL-сертификатов, позволяющих обеспечить защиту корпоративного уровня для служб Office 365. 
+- Получение сторонних SSL-сертификатов для обеспечения безопасности на корпоративном уровне для служб Office 365. 
     
 - Планирование имени клиента, моделирование архитектуры семейства веб-сайтов и управления.  
     
@@ -250,7 +251,7 @@ Duet Enterprise Online
     
 #### <a name="hybrid-with-office-365"></a>Гибридное развертывание с Office 365
 
-Кроме решения задач для среды Office 365 и локальной среды, нужно: 
+В дополнение к задачам для Office 365 и локальных сред: 
   
 - Определите необходимую степень интеграции и выберите гибридную топологию. См. плакат этой модели: "Какую гибридную топологию следует использовать?".  
     
@@ -318,7 +319,7 @@ Duet Enterprise Online
     
 #### <a name="hybrid-with-office-365"></a>Гибридное развертывание с Office 365
 
-Кроме решения задач для среды Office 365 и локальной среды, нужно: 
+В дополнение к задачам для Office 365 и локальных сред: 
   
 - Настроить устройства прокси-сервера (при необходимости). 
     

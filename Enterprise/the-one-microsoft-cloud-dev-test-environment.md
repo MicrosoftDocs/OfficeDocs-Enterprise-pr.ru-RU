@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: "Сводка: Используйте руководство в лаборатории тестирования для создания среды разработки или тестирования, которая включает в себя все облака корпорации Майкрософт."
-ms.openlocfilehash: 2cbfb3e963927f18d2ee46ed1f5076b274a99154
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 486aabd769461a7e743ac390d633913053b467a8
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Среда разработки и тестирования One Microsoft Cloud
 
