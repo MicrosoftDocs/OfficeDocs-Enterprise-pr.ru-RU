@@ -64,7 +64,6 @@
 #### [Высокая доступность федеративных проверки подлинности этап 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 ### [Аварийное восстановление SharePoint Server 2013 в Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
 ### [Веб-сайты в Microsoft Azure с использованием SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
-### [Использование службы Microsoft Azure Active Directory для проверки подлинности в SharePoint 2013](using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md)
 ### [Автоматизировать коллекции файлов для обнаружения электронных данных](automate-file-collection-for-ediscovery.md)
 ## [Решения для обеспечения безопасности](security-solutions.md)
 ### [Защита информации в Office 365 в соответствии с регламентом GDPR](office-365-information-protection-for-gdpr.md)
