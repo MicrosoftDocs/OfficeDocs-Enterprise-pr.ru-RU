@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: "Сводка: в этой статье рассказывается о том, как оптимизировать сеть для доступа к Microsoft Azure PaaS."
-ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Разработка сети для Microsoft Azure PaaS
 
@@ -26,8 +26,6 @@ ms.lasthandoff: 01/11/2018
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>Планирование действий по размещению приложений PaaS организации в Azure
 
-Вставьте сюда основную часть.
-  
 1. Выполните **действия по подготовке сети для облачных служб (Майкрософт)**, описанные в статье [Общие элементы подключения к облаку Майкрософт](common-elements-of-microsoft-cloud-connectivity.md).
     
 2. Оптимизируйте скорость интернет-соединения, выполнив действия 2–4 из раздела **Действия по подготовке сети для служб Microsoft SaaS** статьи [Проектирование сети для Microsoft SaaS](designing-networking-for-microsoft-saas.md).
@@ -70,7 +68,7 @@ ms.lasthandoff: 01/11/2018
     
 - разгрузка SSL.
     
-Дополнительные сведения см. в статье [Обзор шлюза приложений]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).
+Дополнительные сведения см. в статье [Обзор шлюза приложений](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).
   
 ## <a name="azure-traffic-manager"></a>Диспетчер трафика Azure
 
@@ -96,15 +94,19 @@ ms.lasthandoff: 01/11/2018
     
 2. Пользователь инициирует трафик к региональному веб-приложению в Европе.
     
-Дополнительные сведения см. в статье [Что такое диспетчер трафика]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)).
-  
+Дополнительные сведения см. в [обзоре диспетчера трафика](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
+
+## <a name="next-step"></a>Следующее действие
+
+[Проектирование сети для Microsoft Azure IaaS](designing-networking-for-microsoft-azure-iaas.md)
+ 
 ## <a name="see-also"></a>См. также
 
-[Облачные сети Майкрософт для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
+[Организация сети в Microsoft Cloud для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

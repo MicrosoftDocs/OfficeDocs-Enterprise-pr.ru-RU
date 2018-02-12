@@ -9,14 +9,15 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "Сводка. Об общих элементах сетевой инфраструктуры и подготовке сети."
-ms.openlocfilehash: 9dffcae28283c9f8b8c219284554225645435e0a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 28825ad299ee12b55037963c68a289f43ffcc56a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Общие элементы подключения к Microsoft Cloud
 
@@ -76,14 +77,17 @@ ms.lasthandoff: 01/11/2018
     
 - **DNS Интернета.** Записи A, AAAA, CNAME, MX, PTR и другие записи, необходимые для поиска Microsoft Cloud или ваших служб, размещенных в облаке. Например, для вашего приложения, размещенного в Azure PaaS, может понадобиться запись CNAME.
     
+
+## <a name="next-step"></a>Следующее действие
+
+[ExpressRoute для подключения к Microsoft Cloud](expressroute-for-microsoft-cloud-connectivity.md)
+
 ## <a name="see-also"></a>См. также
 
 <a name="steps"> </a>
 
 [Облачные сети Майкрософт для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Материалы по архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "Сводка: в этой статье рассказывается о необходимости нового подхода к инвестициям в сетевую инфраструктуру при внедрении облачных технологий."
-ms.openlocfilehash: 18b4e5e10094a43f0d2b10cd0f01684f2352a0a8
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 1fe3b2cbacb0fff31de1c368fa36650adc7d570c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Подключение сети к облаку
 
@@ -81,15 +81,15 @@ ms.lasthandoff: 01/11/2018
 |Проектирование и внедрение балансировки нагрузки для внутренних рабочих ИТ-нагрузок и рабочих ИТ-нагрузок в Интернете  <br/> |||Применимо  <br/> |
 |Устранение неполадок, связанных с подключением к виртуальным машинам, и проблем с пропускной способностью  <br/> |||Применимо  <br/> |
    
+## <a name="next-step"></a>Следующее действие
+
+[Общие элементы подключения к Microsoft Cloud](common-elements-of-microsoft-cloud-connectivity.md)
+
 ## <a name="see-also"></a>См. также
 
-[Облачные сети Майкрософт для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
+[Организация сети в Microsoft Cloud для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[ExpressRoute для подключения к Microsoft Cloud](expressroute-for-microsoft-cloud-connectivity.md)
-  
-[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Материалы по архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 
 

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: "Сводка. В этой статье рассказано, как оптимизировать сеть для доступа к службам SaaS корпорации Майкрософт, в том числе к Office 365, Microsoft Intune и Dynamics 365."
-ms.openlocfilehash: 970d27e50e06f4d872de67589295c490aaa6e0e7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Разработка сети для Microsoft SaaS
 
@@ -138,9 +138,9 @@ ms.lasthandoff: 01/11/2018
     
 Кроме того, оптимизируйте пропускную способность подключений к интрасети (проводного, беспроводного или VPN).
   
-Дополнительные сведения см. в статье [Поддержка NAT в Office 365]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)).
+Дополнительные сведения см. в статье [Поддержка NAT в Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).
   
-Самые актуальные рекомендации по использованию ExpressRoute в Office 365 представлены в статье [Azure ExpressRoute для Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).
+Самые актуальные рекомендации по использованию ExpressRoute в Office 365 представлены в статье [Azure ExpressRoute для Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
   
 Чтобы оптимизировать производительность интрасети, выполните указанные ниже действия.
   
@@ -150,7 +150,7 @@ ms.lasthandoff: 01/11/2018
     
 - Проанализируйте промежуточные устройства (их возраст, работоспособность, и т. д.)
     
-Дополнительные сведения см. в статье [Средство PsPing]((https://technet.microsoft.com/sysinternals/jj729731.aspx)).
+Дополнительные сведения см. в статье [Средство PsPing](https://technet.microsoft.com/sysinternals/jj729731.aspx).
   
 ## <a name="it-operations-considerations"></a>Рекомендации по ИТ-операциям
 
@@ -180,19 +180,23 @@ ms.lasthandoff: 01/11/2018
     
 Дополнительные сведения см. в следующих разделах:
   
-- [Планирование миграции и использования сети для Office 365]((https://aka.ms/tune))
+- [Планирование миграции и использования сети для Office 365](https://aka.ms/tune)
     
-- [Курс Microsoft Virtual Academy по управлению производительностью Office 365]((https://aka.ms/o365perf))
+- [Курс Microsoft Virtual Academy по управлению производительностью Office 365](https://aka.ms/o365perf)
     
-- [ExpressRoute для Office 365]((https://aka.ms/expressrouteoffice365))
+- [ExpressRoute для Office 365](https://aka.ms/expressrouteoffice365)
+
+## <a name="next-step"></a>Следующее действие
+
+[Проектирование сети для Microsoft Azure PaaS](designing-networking-for-microsoft-azure-paas.md)
     
 ## <a name="see-also"></a>См. также
 
-[Облачные сети Майкрософт для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
+[Организация сети в Microsoft Cloud для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

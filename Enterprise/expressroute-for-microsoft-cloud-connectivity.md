@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: "Сводка: в этой статье рассказывается, как с помощью ExpressRoute создать более быстрые и надежные подключения к облачным службам и платформам корпорации Майкрософт."
-ms.openlocfilehash: 4534f06e5d4eca759aadb9b589e39f0c8cdeffb1
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute для подключения к Microsoft Cloud
 
@@ -60,9 +60,9 @@ ExpressRoute обеспечивает частное выделенное ско
   
 Дополнительные сведения см. в указанных ниже ресурсах.
   
-- [ExpressRoute для Office 365]((https://aka.ms/expressrouteoffice365))
+- [ExpressRoute для Office 365](https://aka.ms/expressrouteoffice365)
     
-- [ExpressRoute для Azure]((https://azure.microsoft.com/services/expressroute/))
+- [ExpressRoute для Azure](https://azure.microsoft.com/services/expressroute/)
     
 ## <a name="advantages-of-expressroute-for-azure"></a>Преимущества ExpressRoute для Azure
 
@@ -78,7 +78,7 @@ ExpressRoute обеспечивает частное выделенное ско
     
 Подключение ExpressRoute обеспечивает более высокую производительность не во всех конфигурациях. Возможно, что производительность подключения ExpressRoute с низкой пропускной способностью будет меньше высокоскоростного интернет-подключения, особенно если путь до регионального центра обработки данных корпорации Майкрософт состоит всего из нескольких прыжков.
   
-Самые актуальные рекомендации по использованию ExpressRoute в Office 365 представлены в статье [Azure ExpressRoute для Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).
+Самые актуальные рекомендации по использованию ExpressRoute в Office 365 представлены в статье [Azure ExpressRoute для Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
   
 ## <a name="expressroute-connectivity-models"></a>Модели подключений ExpressRoute
 
@@ -159,7 +159,7 @@ ExpressRoute обеспечивает частное выделенное ско
 ![Рис. 6. Поток трафика после миграции фермы SharePoint в SharePoint Online в Office 365](images/Network_Poster/Hairpin2.png)
 
   
-На рис. 6 показано, как трафик между сервером приложений и SharePoint Online в Office 365 проходит через частную пиринговую связь от сервера приложений к границе локальной сети, а затем  от границы (через пиринговую связь Майкрософт) до Office 365.
+На рис. 6 показано, как трафик между сервером приложений и SharePoint Online в Office 365 проходит через частную пиринговую связь от сервера приложений к границе локальной сети, а затем  от границы (через пиринговую связь Майкрософт) до Office 365.
   
 В результате мы получим режим разворота пакетов, который является следствием использованной схемы маршрутизации и действий приложения.
   
@@ -195,7 +195,7 @@ ExpressRoute обеспечивает частное выделенное ско
 
 ![Рис. 8. Использование нескольких подключений ExpressRoute для оптимальной доставки данных в региональные центры обработки данных](images/Network_Poster/MSNet2.png)
   
-На рис. 8 показана та же организация с двумя подключениями ExpressRoute (по одному для каждого расположения) к регионально-локальным расположениям пиринга Майкрософт. В этой конфигурации трафик из расположения 2 на северо-востоке, предназначенный для центра обработки данных на восточном побережье, направляется непосредственно в расположение пиринга на восточном побережье, в сеть Microsoft Cloud, а затем  в центр обработки данных на восточном побережье.
+На рис. 8 показана та же организация с двумя подключениями ExpressRoute (по одному для каждого расположения) к регионально-локальным расположениям пиринга Майкрософт. В этой конфигурации трафик из расположения 2 на северо-востоке, предназначенный для центра обработки данных на восточном побережье, направляется непосредственно в расположение пиринга на восточном побережье, в сеть Microsoft Cloud, а затем  в центр обработки данных на восточном побережье.
   
 Используя несколько подключений ExpressRoute, можно:
   
@@ -235,11 +235,11 @@ ExpressRoute обеспечивает частное выделенное ско
     
 Дополнительные сведения см. в следующих разделах:
   
-- [Azure ExpressRoute для обучения работе с Office 365]((https://channel9.msdn.com/series/aer/))
+- [Azure ExpressRoute для обучения работе с Office 365](https://channel9.msdn.com/series/aer/)
     
-- [Планирование использования сетей и настройка производительности для Office 365]((https://aka.ms/tune))
+- [Планирование использования сетей и настройка производительности для Office 365](https://aka.ms/tune)
     
-- [Управление производительностью Office 365]((https://mva.microsoft.com/ru-RU/training-courses/office-365-performance-management-8416))
+- [Управление производительностью Office 365](https://mva.microsoft.com/ru-RU/training-courses/office-365-performance-management-8416)
     
 ## <a name="expressroute-options"></a>Дополнительные возможности для ExpressRoute
 
@@ -255,19 +255,23 @@ ExpressRoute обеспечивает частное выделенное ско
     
 Дополнительные сведения см. в указанных ниже ресурсах.
   
-- [ExpressRoute для Office 365]((https://aka.ms/expressrouteoffice365))
+- [ExpressRoute для Office 365](https://aka.ms/expressrouteoffice365)
     
-- [Azure ExpressRoute для обучения работе с Office 365]((https://channel9.msdn.com/series/aer/))
+- [Azure ExpressRoute для обучения работе с Office 365](https://channel9.msdn.com/series/aer/)
     
-- [ExpressRoute для Azure]((https://azure.microsoft.com/services/expressroute/))
+- [ExpressRoute для Azure](https://azure.microsoft.com/services/expressroute/)
     
+## <a name="next-step"></a>Следующее действие
+
+[Проектирование сети для Microsoft SaaS](designing-networking-for-microsoft-saas.md)
+
 ## <a name="see-also"></a>См. также
 
-[Облачные сети Майкрософт для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
+[Организация сети в Microsoft Cloud для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

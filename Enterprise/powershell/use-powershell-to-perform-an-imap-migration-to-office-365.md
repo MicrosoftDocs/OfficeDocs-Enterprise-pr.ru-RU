@@ -1,8 +1,8 @@
 ---
 title: "Использование PowerShell для миграции IMAP в Office 365"
-ms.author: sirkkuw
-author: sirkkuw
-manager: scotv
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
 ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: 
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: "Сводка. Узнайте, как использовать Windows PowerShell для миграции IMAP в Office 365."
-ms.openlocfilehash: 2c4d54f02a885e7ee5e18bed715c30e9090610df
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 50f97d858b7e7f00ac3cb1e0a239928badca215a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Использование PowerShell для миграции IMAP в Office 365
 
@@ -109,7 +109,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot**
   
-На серверах IMAP, поддерживающих протокол SASL, например Dovecot, используется формат **имя_пользователя*имя_администратора**, где звездочка ( * ) является настраиваемым знаком разделения. Допустим, переносится почта тех же пользователей с сервера IMAP Dovecot с использованием учетных данных администратора **mailadmin** и **P@ssw0rd**. Вот как будет выглядеть CSV-файл.
+На серверах IMAP, поддерживающих протокол SASL, например Dovecot, используется формат **имя_пользователя*имя_администратора**, где звездочка (*) является настраиваемым знаком разделения. Допустим, переносится почта тех же пользователей с сервера IMAP Dovecot с использованием учетных данных администратора **mailadmin** и **P@ssw0rd**. Вот как будет выглядеть CSV-файл:
   
 ```
 EmailAddress,UserName,Password
