@@ -9,18 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Office_Other
-- LIL_Placement
-- PowerShell
-- O365ITProTrain
+ms.custom: Ent_Office_Other, LIL_Placement, PowerShell, O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 description: "В данной статье описывается использование Office 365 PowerShell назначение лицензии Office 365 для нелицензированных пользователей."
-ms.openlocfilehash: 8a7ad7b4586ccdef95430f9c4cc9c4d6e9360070
-ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
+ms.openlocfilehash: 11724e7f295079b76bbb9006bad1fb5487087bd8
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365
 
