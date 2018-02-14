@@ -6,17 +6,19 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: None
 ms.custom: Strat_O365_Enterprise
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "Сводка: Создание общедоступные, частный, конфиденциальные и конфиденциальными SharePoint Online сайтов группы в среде разработки и тестирования политических кампании."
-ms.openlocfilehash: d1515d2534713de41c16640d0008b1f8146ab300
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 3a2e507d17a558452fe0c2f0a062098e7c9c6407
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Создание сайтов группы в среде разработки и тестирования для политической кампании
 
@@ -412,7 +414,7 @@ ms.lasthandoff: 02/13/2018
   
 [Настройка групп и пользователей в среде разработки и тестирования политических кампаний (en)](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
   
-[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 
