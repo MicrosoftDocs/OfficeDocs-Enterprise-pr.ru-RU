@@ -10,19 +10,17 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Сводка: Используйте эти облака внедрения тестирование руководства по лаборатории (руководствам) для настройки для демонстрации, проверки концепции или средах разработки и тестирования для Office 365, мобильности Enterprise + безопасности (Командной), Dynamics 365 и продуктов Office Server."
-ms.openlocfilehash: 532215a08e28a9d67cd19ef60d60419b06df4957
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 3172b6033fbb7dd79b8eb786d92a4f58886a8fd5
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Руководства по лаборатории тестирования для принятия облачных решений
 
@@ -161,10 +159,10 @@ ms.lasthandoff: 12/15/2017
 |**Свяжитесь с нами**|**Описание**|
 |:-----|:-----|
 |**Какое вам решение необходимо?** <br/> |Мы создаем контент для решений, которые охватывают несколько продуктов и служб Майкрософт. Сообщите нам, что вы думаете о наших межсерверных решениях, или укажите интересующие вас решения, написав по адресу [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Присоединяйтесь к обсуждению решений** <br/> |Если вы являетесь отношусь решения на основе облака, рассмотрите возможность присоединения облачных внедрения Advisory платы (CAAB) для подключения с более крупный, живые сообщества разработчиков содержимого, ИТ-специалистов и клиентов по всему миру из Microsoft. Чтобы присоединиться к, добавьте себя в качестве члена [пространства CAAB (облако внедрения Advisory Доска)](https://aka.ms/caab) Технический сообщества Microsoft и отправьте быстрого электронной почты в [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Любой пользователь может читать контент, связанный с сообщества [CAAB блога](https://blogs.technet.com/b/solutions_advisory_board/). Тем не менее члены CAAB получать приглашения на закрытый семинары, описывающие внедрения новых облачных ресурсов и решения.<br/> |
-|**Скачать изображения, которые вы видите здесь** <br/> |Если вы хотите редактирования копию картинка, отображаемые в этой статье, мы будем рады отправить вам. Отправить по электронной почте запроса, включая URL-адреса и заголовка картинка, чтобы [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
+|**Присоединяйтесь к обсуждению решений** <br/> |Если вам интересны облачные решения, присоединяйтесь к теме Cloud Adoption Advisory Board (CAAB) и общайтесь с разработчиками контента Майкрософт, специалистами отрасли и клиентами со всего мира. Чтобы присоединиться, добавьте себя в качестве участника [темы CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) на сайте Microsoft Tech Community и отправьте нам письмо на адрес [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Просматривать материалы в [блоге CAAB](https://blogs.technet.com/b/solutions_advisory_board/) могут все пользователи. Однако только участники CAAB получают приглашения на закрытые вебинары, на которых мы рассказываем о новых облачных решениях и ресурсах по их внедрению.<br/> |
+|**Получите изображения, которые вы здесь видите** <br/> |Если вам нужна редактируемая копия иллюстративного материала из этой статьи, мы с радостью вам ее отправим. Напишите нам, указав URL-адрес и название материала, по адресу [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 <a name="ADD_TLGs"> </a>
 

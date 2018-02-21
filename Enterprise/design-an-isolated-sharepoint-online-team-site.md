@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: "Сводка: Шаг через процесс разработки изолированного SharePoint Online веб-сайтов групп."
-ms.openlocfilehash: 343872ef7a41b40a87454da27ddccc4530ffe2eb
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: efd55ce780cf2951bfafd31215201459965c0e78
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Разработка изолированного сайта группы SharePoint Online
 
@@ -44,9 +40,9 @@ ms.lasthandoff: 12/15/2017
   
 |**Группа SharePoint**|**Уровень разрешений**|
 |:-----|:-----|
-|\<Имя сайта > члены  <br/> |Изменение  <br/> |
+|\<Имя сайта > члены  <br/> |Правка  <br/> |
 |\<Имя сайта > посетители  <br/> |Чтение  <br/> |
-|\<Имя сайта > владельцев  <br/> |Полный контроль  <br/> |
+|\<Имя сайта > владельцев  <br/> |Полный доступ  <br/> |
    
  **Рекомендация:** Можно создать дополнительные группы SharePoint и уровни разрешений. Тем не менее рекомендуется использовать группы SharePoint по умолчанию и уровни разрешений для изолированного сайта SharePoint Online.
   
@@ -84,9 +80,9 @@ ms.lasthandoff: 12/15/2017
   
 |**Группа SharePoint**|**Группа доступа Microsoft Azure на основе AD**|**Уровень разрешений**|
 |:-----|:-----|:-----|
-|\<Имя сайта > члены  <br/> |\<Имя сайта > члены  <br/> |Изменение  <br/> |
+|\<Имя сайта > члены  <br/> |\<Имя сайта > члены  <br/> |Правка  <br/> |
 |\<Имя сайта > посетители  <br/> |\<Имя сайта > средства просмотра  <br/> |Чтение  <br/> |
-|\<Имя сайта > владельцев  <br/> |\<Имя сайта > "Администраторы"  <br/> |Полный контроль  <br/> |
+|\<Имя сайта > владельцев  <br/> |\<Имя сайта > "Администраторы"  <br/> |Полный доступ  <br/> |
    
  **Рекомендация:** Несмотря на то, что Office 365 и Azure AD группы можно использовать в качестве членов групп SharePoint, мы рекомендуем использовать групп Azure AD. Azure AD групп, управляемых с помощью Windows Server AD или Office 365, предоставить большую гибкость использовать вложенные группы для назначения разрешений.
   
@@ -133,7 +129,7 @@ ms.lasthandoff: 12/15/2017
 
 Если вы готовы для создания и настройки изолированной сайта в рабочей среде, видеть [Развертывание изолированного SharePoint Online сайт группы](deploy-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Изолированные сайты групп SharePoint Online](isolated-sharepoint-online-team-sites.md)
   

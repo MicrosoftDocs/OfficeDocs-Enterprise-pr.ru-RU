@@ -13,14 +13,13 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - LIL_Placement
-- DecEntMigration
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: "Объясняет, как использовать Office 365 PowerShell для определения служб Office 365, которые были назначены пользователям."
-ms.openlocfilehash: 59a6444e0f6618fd837e8eae567661499e795c69
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 69784b43e6e2b24f776d07a937877e5ae0c74888
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Просмотр сведений о лицензии и службе учетной записи с помощью PowerShell в Office 365
 
@@ -292,7 +291,7 @@ Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[
 И это очень дурацких команды. Однако он создает CSV-файла, отображение всех пользователей и всего их состояние службы.
 
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>См. также
 <a name="SeeAlso"> </a>
 
 Сведения об управлении пользователями с помощью Office 365 PowerShell см. в следующих статьях:
@@ -324,8 +323,4 @@ Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[
 ## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
 
 
-||
-|:-----|
-|![Короткие значок обучения LinkedIn](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Создать в Office 365?**         Обнаружение Бесплатные курсы видео для [ИТ-специалистов и администраторов Office 365](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), с LinkedIn обучения. |
-   
-
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]

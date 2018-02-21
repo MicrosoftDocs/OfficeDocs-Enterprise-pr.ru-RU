@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: "Сводка: Сведения о корпорации Contoso как компания и многоуровневая структура его офисах по всему миру."
-ms.openlocfilehash: 6243f6d6e5c08342cae7650d0b4e75de27ed3527
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7dcbefc82591c4baf65a2b64127d547020109c59
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Общие сведения о корпорации Contoso
 
@@ -63,7 +61,7 @@ Contoso офисах по всему миру выполните три уров
 
 Contoso архитекторы ИТ определили следующие элементы при планировании внедрения облака корпорации Майкрософт.
   
-- Сеть
+- Сети
     
     Сеть включает в себя возможность подключения к облака корпорации Майкрософт и недостаточно пропускной способности для высокой производительностью в разделе пиковых нагрузок. Некоторые подключения будут через локального подключения к Интернету и некоторые будет на уровне архитектуры частной сети организации Contoso.
     

@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_TLGs
+ms.collection: Ent_O365
+ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: "Сводка: Используйте в этом документе Test Lab Guide Регистрация устройств в среде разработки и тестирования Microsoft 365 и удаленного управления."
-ms.openlocfilehash: 8ad22ed62d8e7cac8aca225af42e389dc05cb2b5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 77b5074b083656fdfa2cd460510231dae0689d10
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>Регистрация операций ввода-вывода и Android в среде разработки и тестирования Microsoft Enterprise 365
 
@@ -255,15 +251,15 @@ Microsoft Intune предоставляет возможности удален�
 7. Чтобы изменить секретный код обратно, перейдите к **параметрам**, коснитесь **устройства**, коснитесь **экран блокировки**, введите новый секретный код еще раз, коснитесь **экрана блокировки**и выбор для секретный код.
     
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack) для visual карты для всех статей в стеке один Microsoft Cloud руководство по лаборатории тестирования.
+> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования Microsoft Cloud.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Microsoft 365 Enterprise dev/тестовой среды](the-microsoft-365-enterprise-dev-test-environment.md)
   
 [MAM политик для вашей среды разработки или тестирования Microsoft 365 для предприятия](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Мобильные решения на предприятиях + безопасности (Командной)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 

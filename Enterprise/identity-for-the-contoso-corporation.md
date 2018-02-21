@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "Сводка: Узнайте, как Contoso использует IDaaS и предоставляет географически распределенные и избыточных проверки подлинности для пользователей."
-ms.openlocfilehash: a0de29ac7e73216e04fe02c680f2557e9f402883
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7a6448969a90f1f646f70fee4c67a6da992dd2bc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Удостоверение для корпорации Contoso
 
@@ -126,9 +124,9 @@ Contoso настроил федеративной проверки подлин�
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft Облачное удостоверение для архитекторов предприятия](http://aka.ms/cloudarchidentity)
+[Идентификация в облаке Майкрософт для корпоративных архитекторов](http://aka.ms/cloudarchidentity)
   
-[Удостоверение и защита устройств для Office 365](http://aka.ms/o365protect_device)
+[Защита удостоверений и устройств для Office 365](http://aka.ms/o365protect_device)
   
 [Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
 

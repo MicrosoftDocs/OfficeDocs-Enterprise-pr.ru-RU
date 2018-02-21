@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
 description: "Сводка: Получите подробные сведения об набор облачных хранилища стандартные блоки, которые можно использовать для создания службы хранилища или решения."
-ms.openlocfilehash: 18aa8cb7fa0dda05302a88487dcc69bdbcb174d5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="build-from-the-ground-up"></a>Создание с чистого листа
 
@@ -194,7 +190,7 @@ ms.lasthandoff: 12/15/2017
     
 - Сегментируйте данные по вертикали (по таблицам) либо по горизонтали (разбивайте таблицы на несколько сегментов), чтобы распределить нагрузку в нескольких базах данных.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Облачные хранилища Майкрософт для корпоративных архитекторов](microsoft-cloud-storage-for-enterprise-architects.md)
   

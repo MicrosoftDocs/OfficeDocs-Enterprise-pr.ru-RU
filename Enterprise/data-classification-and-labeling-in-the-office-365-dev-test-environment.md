@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "Сводка: Настройка и демонстрация классификации данных и маркировки с помощью клиента защиты информации Azure (AIP) в среде разработки и тестирования Office 365."
-ms.openlocfilehash: 2784f4105903855de89c6c45f7a643279bb4dfbf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7243acecca0dd4c39ff6ef2aecd25091f25f2f53
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Классификация и маркировка данных в среде разработки и тестирования Office 365
 
@@ -53,9 +49,9 @@ ms.lasthandoff: 12/15/2017
     
 4. На странице " **службы приобретения** " Поиск элемента **Azure сведения о защите Premium P2** . Наведите указатель мыши на его и нажмите кнопку **Пуск бесплатную пробную версию**.
     
-5. На странице " **Подтверждение заказа** " щелкните **Теперь попробуйте**.
+5. На странице **Подтверждение заказа** щелкните **Попробовать сейчас**.
     
-6. На странице **получения заказа** нажмите кнопку **Продолжить**.
+6. На странице **Получение заказа** нажмите кнопку **Продолжить**.
     
 После этого включите лицензию Azure Information Protection для всех учетных записей пользователей.
   
@@ -141,7 +137,7 @@ ms.lasthandoff: 12/15/2017
     
 5. В списке групп SharePoint выберите **семейство сайтов поддержки участников**.
     
-6. На странице " **пользователи и группы** " нажмите кнопку **Создать**.
+6. На странице **Пользователи и группы** нажмите кнопку **Создать**.
     
 7. В **папке «Поддержка семейства веб-сайтов»**, введите **все**, щелкните **все, кроме внешних пользователей**и нажмите кнопку **совместный доступ.**
     
@@ -161,12 +157,12 @@ ms.lasthandoff: 12/15/2017
     
     Файл ПослеAIP.docx отобразится в папке "Документы" поддержки семейства веб-сайтов.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Office 365 и Командной разработки и тестовой среде](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   
-[Защита информации Azure](https://www.microsoft.com/cloud-platform/azure-information-protection)
+[Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
 

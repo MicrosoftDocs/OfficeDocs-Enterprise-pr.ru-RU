@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: "Сводка: Настройка и демонстрация Office 365 Information Rights Management защите конфиденциальных файлов, даже если они учтены неверный семейства сайтов SharePoint Online."
-ms.openlocfilehash: a6547cf4327980e3909323d5bda4455dfffd37f4
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 236272a90bb6ff7f310c95f1494b68750e363f40
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Защита конфиденциальных файлов в среде разработки и тестирования Office 365
 
@@ -141,7 +137,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. В список групп SharePoint щелкните **Элементы руководителей**.
     
-9. На странице " **пользователи и группы** " нажмите кнопку **Создать**.
+9. На странице **Пользователи и группы** нажмите кнопку **Создать**.
     
 10. В поле **общий доступ «Руководители»**введите **руководители**, щелкните группу, **руководители** и нажмите кнопку **совместный доступ**.
     
@@ -157,7 +153,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 4. В списке групп SharePoint нажмите кнопку **члены семейства веб-сайтов продаж**.
     
-5. На странице " **пользователи и группы** " нажмите кнопку **Создать**.
+5. На странице **Пользователи и группы** нажмите кнопку **Создать**.
     
 6. В **папке «Продажи семейства веб-сайтов»**введите **все**, щелкните **все, кроме внешних пользователей**и нажмите кнопку **общий доступ**.
     
@@ -331,7 +327,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 Другой способ просмотра защиту IRM — просматривать файлы в локальной папке. **SensitiveData AfterIRM.docx** должно быть значительно больше **SensitiveData BeforeIRM.docx** файла. Файл **SensitiveData AfterIRM.docx** зашифрован и добавил данные защиту IRM к нему.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   

@@ -8,21 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- jan17entnews
-- Strat_O365_Enterprise
-- Ent_TLGs
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: "Сводка: Используйте руководство в лаборатории тестирования для добавления Dynamics 365 dev/тестовой среде Office 365."
-ms.openlocfilehash: 49648dd357d23eaee2d08d35252e18edf6a5d2ec
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f13cf81f989867e543439e1ccb6ecd7f8ba55cb6
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Среда разработки и тестирования для Office 365 и Dynamics 365
 
@@ -47,7 +41,7 @@ ms.lasthandoff: 12/15/2017
 > [!TIP]
 > Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования Microsoft Cloud.
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365  упрощенной или для имитированных предприятий
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365 — упрощенной или для имитированных предприятий
 
 Если необходимо проверить Dynamics 365 и Office 365 в облегченный путь с минимальным требованиям, следуйте инструкциям в этапы 2 и 3 [Office 365 dev/тестовой среды](office-365-dev-test-environment.md).
   
@@ -64,15 +58,15 @@ ms.lasthandoff: 12/15/2017
 
 1. С помощью браузера на любой компьютер (lightweight) или от CLIENT1 (моделируемые enterprise), вход на портал Office 365 на [https://portal.office.com](https://portal.office.com) с использованием учетных данных учетной записи глобального администратора.
     
-2. Щелкните плитку **администрирования** .
+2. Выберите плитку **Администрирование**.
     
 3. На вкладке **Центр администрирования Office** на панели навигации слева щелкните **выставления счетов > службы приобретения**.
     
 4. На странице " **службы приобретения** " Поиск элемента **Dynamics 365 планирование 1 Enterprise Edition** . Наведите указатель мыши на его и нажмите кнопку **Пуск бесплатную пробную версию**.
     
-5. На странице " **Подтверждение заказа** " щелкните **Теперь попробуйте**.
+5. На странице **Подтверждение заказа** щелкните **Попробовать сейчас**.
     
-6. На странице **получения заказа** нажмите кнопку **Продолжить**.
+6. На странице **Получение заказа** нажмите кнопку **Продолжить**.
     
 > [!NOTE]
 > Пробная подписка на Dynamics 365 Plan 1 Enterprise Edition действует 30 дней. Вы легко можете продлить ее еще на 30 дней. Чтобы создать постоянную среду тестирования и разработки, создайте новую платную подписку с небольшим количеством лицензий. 
@@ -136,7 +130,7 @@ ms.lasthandoff: 12/15/2017
 
 Настройка и затем Демонстрация Office 365 Dynamics 365 совместная работа и почтовых ящиков в Exchange Online с помощью [интеграции с Exchange Online для Office 365 и Dynamics 365 dev/тестовой среды](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   

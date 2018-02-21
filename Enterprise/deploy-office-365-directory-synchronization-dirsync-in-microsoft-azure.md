@@ -5,23 +5,22 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Top
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: "Сводка: Развертывание Azure AD подключение (DirSync) на виртуальной машине в среде Azure для синхронизации учетных записей между локального каталога и клиента Azure AD подписки Office 365."
-ms.openlocfilehash: c6ee337c49092ac5d2b3d30a54fc33b3f3e2bb58
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 07ec310c50635afd70b0342d2e0547aab0e95d01
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>Развертывание службы синхронизации каталогов Office 365 (DirSync) в Microsoft Azure
 
@@ -85,7 +84,7 @@ Azure Active Directory (AD) подключение (ранее известны�
 ## <a name="plan-for-hosting-a-dirsync-server-for-office-365-in-azure"></a>Планирование размещения сервера DirSync для Office 365 в Azure
 <a name="PlanningVirtual"> </a>
 
-### <a name="prerequisites"></a>Необходимые условия
+### <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем приступать к работе, изучите необходимые условия для этого решения.
   
@@ -115,7 +114,7 @@ Azure Active Directory (AD) подключение (ранее известны�
     
 - Если в Azure виртуальной сети, контроллеры домена, определить, является ли Настройка Active Directory — сайты и службы может быть лучшим вариантом. Сервер синхронизации каталогов можно запросить контроллеры доменов в виртуальная сеть Azure для изменения в учетные записи и пароли, а не контроллеров домена в локальной сети.
     
-## <a name="deployment-roadmap"></a>Схема развертывания
+## <a name="deployment-roadmap"></a>План развертывания
 <a name="DeploymentRoadmap"> </a>
 
 Развертывание Azure AD подключение на виртуальную машину в Azure состоит из трех этапов:
@@ -198,7 +197,7 @@ Azure Active Directory (AD) подключение (ранее известны�
     
 7. Вернитесь к шагу 3, чтобы повторить эти действия для других пользователей.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 <a name="DeploymentRoadmap"> </a>
 

@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 8f004c92-773e-4eb0-8bb5-24494ca538d3
 description: "Сводка: Как вымышленного, но представитель международной организации — это адресации его business должно со сценариями облачных enterprise."
-ms.openlocfilehash: ff520c317fe4137b5e683935dc238bd7ff3f05ac
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 3964ed03e8437ce50aab10f1209a7afb6e06bc8b
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enterprise-scenarios-for-the-contoso-corporation"></a>Корпоративные сценарии для корпорации Contoso
 

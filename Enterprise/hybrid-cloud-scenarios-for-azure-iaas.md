@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: "Сводка: Сведения о гибридных архитектуры и сценарии для корпорации Майкрософт инфраструктура как служба (IaaS)-на основе облака в Azure."
-ms.openlocfilehash: 389ab2b7ce37423a1601a2f76d143370833085cb
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 66024c708cb4fbc904de18f27077871d52f0e70c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Сценарии гибридного облака для Azure IaaS
+# <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Гибридные облачные сценарии для Azure IaaS
 
  **Сводка:** Представление об архитектуре гибридного и сценарии для инфраструктуры корпорации Майкрософт как служба (IaaS)-на основе облака в Azure.
   
@@ -150,7 +146,7 @@ ms.lasthandoff: 12/15/2017
     
     В разделе [Разработка фермы SharePoint Server 2016 в Azure](https://technet.microsoft.com/library/mt779108%28v=office.16%29.aspx) пошаговое выполнение процесса для определения набора сети Azure IaaS, compute и хранения элементов для размещения фермы и их параметров.
     
-3. Развертывание
+3. Развернуть
     
     В разделе [Развертывание 2016 SharePoint Server с помощью группы обеспечения доступности AlwaysOn SQL Server в среде Azure](https://technet.microsoft.com/library/mt793552%28v=office.16%29.aspx) для пошагового выполнения начала до конца конфигурации фермы высокой доступности в пять этапов.
     
@@ -176,7 +172,7 @@ ms.lasthandoff: 12/15/2017
     
     В разделе [федеративных удостоверений для Office 365 dev/тестовой среды](federated-identity-for-your-office-365-dev-test-environment.md) для построения имитации dev/тестовой среды для федеративной проверки подлинности с помощью Office 365.
     
-2. Развертывание
+2. Развернуть
     
     В разделе [Развертывание высокой доступности федеративной проверки подлинности для Office 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) для пошаговой настройки начала до конца высокой доступности инфраструктуру AD FS в пять этапов.
     
@@ -188,7 +184,7 @@ ms.lasthandoff: 12/15/2017
     
 - [Разработка и Создание бизнес-приложение в Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>См. также
 
 [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

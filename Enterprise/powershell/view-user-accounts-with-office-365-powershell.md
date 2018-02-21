@@ -12,16 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
 - PowerShell
-- apr17entnews
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: "Обзор: Просмотр, список или отображение учетные записи пользователей с Office 365 PowerShell разными способами."
-ms.openlocfilehash: b27f9045d26d4dabd3ada70766491f722d822a91
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e9ffa439c1840cbbbd8a47c2835d9427330804be
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Просмотр учетных записей пользователей с помощью PowerShell для Office 365
 
@@ -29,7 +27,7 @@ ms.lasthandoff: 12/15/2017
   
 Несмотря на то, что центр администрирования Office 365 можно использовать для просмотра учетных записей для клиента Office 365, можно с помощью Office 365 PowerShell и выполнить некоторые действия, которые невозможно Центр администрирования Office 365.
   
-## <a name="before-you-begin"></a>Приступая к работе
+## <a name="before-you-begin"></a>Перед началом работы
 
 Для процедур, описанных в этой статье, требуется подключение к PowerShell в Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
   
@@ -79,7 +77,7 @@ Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null}
 
 Эта команда указывает PowerShell в Office 365 сделать следующее:
   
-- Получение всех данных на учетные записи пользователей ( **Такую** ) и отправьте его в следующей команде ( **|** ).
+- Получить всю информацию об учетных записях пользователей (**Get-MsolUser**) и передать их в следующую команду (**|**).
     
 - Найти все учетные записи пользователей, имеющие место не указано использования ( **Where-Object {$\_. UsageLocation - eq $Null}** ). В фигурных скобках, команда указывает, что Office 365 PowerShell только поиск набор учетных записей, в которых UsageLocation учетной записью пользователя, свойство ( ** $ \_. UsageLocation** ), не является указанного ( **-eq $Null** ).
     
@@ -132,7 +130,7 @@ Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
 
 Эта команда указывает PowerShell в Office 365 сделать следующее:
   
-- Получение всех данных на учетные записи пользователей ( **Такую** ) и отправьте его в следующей команде ( **|** ).
+- Получить всю информацию об учетных записях пользователей (**Get-MsolUser**) и передать их в следующую команду (**|**).
     
 - Только пользователь учетная запись имени, отдела и об использовании место отображения ( **DisplayName Select-Object, отдел, UsageLocation** ).
     
@@ -165,7 +163,7 @@ Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object Display
 
 Эта команда указывает PowerShell в Office 365 сделать следующее:
   
-- Получение всех данных на учетные записи пользователей ( **Такую** ) и отправьте его в следующей команде ( **|** ).
+- Получить всю информацию об учетных записях пользователей (**Get-MsolUser**) и передать их в следующую команду (**|**).
     
 - Найти все учетные записи пользователей, имеющие место не указано использования ( **Where-Object {$\_. UsageLocation - eq $Null}** ) и отправлять полученные сведения к следующей команде ( **|** ). В фигурных скобках, команда рекомендует Office 365 PowerShell только поиск набор учетных записей, в которых UsageLocation учетной записью пользователя, свойство ( ** $ \_. UsageLocation** ), не является указанного ( **-eq $Null** ).
     
@@ -206,9 +204,9 @@ Get-AzureADUser
 Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null}
 ```
 
-Эта команда указывает PowerShell в Office 365 сделать следующее:
+Эта команда дает инструкцию PowerShell для Office 365:
   
-- Получение всех данных на учетные записи пользователей ( **Get-AzureADUser** ) и отправьте его в следующей команде ( **|** ).
+- Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
     
 - Найти все учетные записи пользователей, имеющие место не указано использования ( **Where-Object {$\_. UsageLocation - eq $Null}** ). В фигурных скобках, команда указывает, что Office 365 PowerShell только поиск набор учетных записей, в которых UsageLocation учетной записью пользователя, свойство ( ** $ \_. UsageLocation** ), не является указанного ( **-eq $Null** ).
     
@@ -235,9 +233,9 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 ```
 
-Эта команда указывает PowerShell в Office 365 сделать следующее:
+Эта команда дает инструкцию PowerShell для Office 365:
   
-- Получение всех данных на учетные записи пользователей ( **Get-AzureADUser** ) и отправьте его в следующей команде ( **|** ).
+- Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
     
 - Только пользователь учетная запись имени, отдела и об использовании место отображения ( **DisplayName Select-Object, отдел, UsageLocation** ).
     
@@ -247,9 +245,9 @@ Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object DisplayName, Department, UsageLocation
 ```
 
-Эта команда указывает PowerShell в Office 365 сделать следующее:
+Эта команда дает инструкцию PowerShell для Office 365:
   
-- Получение всех данных на учетные записи пользователей ( **Get-AzureADUser** ) и отправьте его в следующей команде ( **|** ).
+- Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
     
 - Найти все учетные записи пользователей, имеющие место не указано использования ( **Where-Object {$\_. UsageLocation - eq $Null}** ) и отправлять полученные сведения к следующей команде ( **|** ). В фигурных скобках, команда рекомендует Office 365 PowerShell только поиск набор учетных записей, в которых UsageLocation учетной записью пользователя, свойство ( ** $ \_. UsageLocation** ), не является указанного ( **-eq $Null** ).
     
@@ -257,11 +255,9 @@ Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object Disp
     
 ## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
 
-||
-|:-----|
-|![Короткие значок обучения LinkedIn](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Создать в Office 365?**         Обнаружение Бесплатные курсы видео для [ИТ-специалистов и администраторов Office 365](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), с LinkedIn обучения. |
-   
-## <a name="see-also"></a>See also
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+  
+## <a name="see-also"></a>См. также
 
 #### 
 
