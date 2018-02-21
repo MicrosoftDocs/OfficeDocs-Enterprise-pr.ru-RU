@@ -9,15 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: "Сводка. Об общих элементах сетевой инфраструктуры и подготовке сети."
-ms.openlocfilehash: 28825ad299ee12b55037963c68a289f43ffcc56a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Общие элементы подключения к Microsoft Cloud
 
@@ -52,7 +51,7 @@ ms.lasthandoff: 02/09/2018
 ![Рис. 1. Варианты подключения к Microsoft Cloud](images/Network_Poster/CommonElements.png)
 
   
-На рис. 1 показано, как можно подключить локальную сеть к Microsoft Cloud, используя существующий интернет-канал или подключение ExpressRoute. Интернет-канал представляет зону DMZ и может содержать указанные ниже компоненты.
+На рис. 1 показано, как подключить локальную сеть к Microsoft Cloud, используя существующий интернет-канал или подключение ExpressRoute. Интернет-канал представляет зону DMZ и может содержать указанные ниже компоненты.
   
 - **Брандмауэр Интернета:** барьер между надежной и ненадежной сетями. Выполняет фильтрацию (на основе правил) и мониторинг трафика.
     

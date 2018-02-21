@@ -8,23 +8,21 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Architecture
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "Сводка. Сведения для ИТ-архитекторов о гибридных сценариях в облачных службах и платформах Майкрософт."
-ms.openlocfilehash: 9972241d5e7291a2cecf8c72811f34115dcf116a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: e31981c87d7b1ca350eff0acc3a63092092c8567
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Гибридное облако Майкрософт для корпоративных архитекторов
 
  **Сводка.** Сведения для ИТ-архитекторов о гибридных сценариях в облачных службах и платформах Майкрософт.
   
-В этой статье представлены ссылки на статьи для ИТ-архитекторов, в которых рассказывается о гибридных конфигурациях и архитектуре на основе облачных служб и платформ Майкрософт. Вы также можете скачать эту статью в виде 7-страничной афиши и распечатать ее на листах формата A3.
+В этой статье представлены ссылки на статьи для ИТ-архитекторов, в которых рассказывается о гибридных конфигурациях и архитектуре на основе облачных служб и платформ Майкрософт. Вы также можете просмотреть эту статью в виде 7-страничной афиши и распечатать ее на листах формата A3.
   
 [![Эскиз: модель гибридного облака Майкрософт](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
