@@ -9,24 +9,22 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- PowerShell
-- Ent_Office_Other
+ms.custom: PowerShell, Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: "Сводка. Указанные ниже статьи раскрывают важность PowerShell в Office 365 и объясняют, как подключиться к клиенту Office 365: и где получить поддержку."
-ms.openlocfilehash: 4e416914703016a6b33c12779eff0c080ae0552f
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e6e3ed87208c36db359e40ba0aceaeb1cef505fd
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Начало работы с Office 365 PowerShell
 
  **Сводка.** Узнайте, для чего нужен PowerShell, как подключиться к клиенту Office 365 и куда обратиться за помощью.
   
-Благодаря PowerShell в Office 365 вы можете управлять Office 365: с помощью команд и сценариев, которые упорядочивают вашу ежедневную работу. Узнайте, почему возможности PowerShell в Office 365 имеют важнейшее значение при управлении Office 365:, подключении вашей подписки Office 365:, создании отчетов и получении дополнительной информации и справочных сведений из сообщества Office 365:.
+PowerShell позволяет управлять Office 365 с помощью команд и скриптов, которые упрощают вашу повседневную работу. Узнайте, почему навыки работы с PowerShell так важны для управления Office 365, как подключиться к подписке на Office 365, создать отчеты и получить дополнительную информацию и помощь от сообщества Office 365.
   
-Выберите необходимую вам статью из перечисленных ниже.
+Выберите интересующую вас статью из перечисленных ниже.
   
 - [Причины использования Office 365 PowerShell](why-you-need-to-use-office-365-powershell.md)
     
@@ -38,7 +36,7 @@ ms.lasthandoff: 01/11/2018
     
 - [Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
     
-    Вы можете управлять Office 365: в отдельных окнах для лицензий и учетных записей Office 365:, Skype для бизнеса Online, SharePoint Online и Microsoft Exchange Online или в одном окне для всего. В этой статье описано, как это сделать.
+    Вы можете управлять лицензиями и учетными записями Skype для бизнеса Online, SharePoint Online, Microsoft Exchange Online и Office 365 в отдельных окнах. Кроме того, ими можно управлять в одном окне. В этой статье описано, как это сделать.
     
 - [Использование Windows PowerShell для создания отчетов в Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
     

@@ -8,32 +8,30 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Solutions
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: "Сводка. Защита файлов на строго конфиденциальном сайте группы SharePoint Online с помощью службы Azure Information Protection."
-ms.openlocfilehash: 5beba188cadc88c15ec75ed2adb4899d9b41b8ec
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: f1a063f07b6e7488cf7512472631d0d2cae09733
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Защита файлов SharePoint Online с помощью Azure Information Protection
 
  **Сводка.** Защита файлов на строго конфиденциальном сайте группы SharePoint Online с помощью службы Azure Information Protection.
   
-В этой статье показано, как настроить Azure Information Protection, чтобы обеспечить шифрование и применение разрешений для файлов на строго конфиденциальном сайте группы SharePoint Online. Даже когда файл скачан с сайта, он остается защищен благодаря шифрованию и указанным разрешениям. Дополнительные сведения о строго конфиденциальных сайтах группы SharePoint Online см. в статье [Безопасность сайтов и файлов SharePoint Online](secure-sharepoint-online-sites-and-files.md).
+В этой статье описано, как настроить Azure Information Protection для применения шифрования и разрешений к файлам на строго конфиденциальном сайте группы SharePoint Online. Даже при скачивании с сайта файл будет по-прежнему защищен благодаря шифрованию и указанным разрешениям. Дополнительные сведения о строго конфиденциальных сайтах групп SharePoint Online см. в статье [Безопасность сайтов и файлов SharePoint Online](secure-sharepoint-online-sites-and-files.md).
   
 > [!NOTE]
-> Когда шифрование Azure Information Protection применяется к файлам в Office 365, служба не может обрабатывать содержимое этих файлов. Совместное редактирование, обнаружение электронных данных, поиск, Delve и другие функции совместной работы неактивны. Политики защиты от потери данных могут работать только с метаданными (включая метки Office 365), но не с содержимым этих файлов (например, номерами кредитных карт в файлах). 
+> Office 365 не может обрабатывать файлы, к которым применено шифрование Azure Information Protection. Совместное редактирование, обнаружение электронных данных, поиск, Delve и другие функции совместной работы неактивны. Политики защиты от потери данных могут работать только с метаданными (включая метки Office 365), но не с содержимым этих файлов (например, номерами кредитных карт в файлах). 
   
-Сперва выполните для настройки подписки на Office 365 действия, описанные в статье [Как активировать Azure RMS в Центре администрирования Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Для начала выполните действия, описанные в статье [Как активировать службу Azure Rights Management из Центра администрирования Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365), со своей подпиской на Office 365.
   
 Теперь настройте Azure Information Protection, добавив новую политику области и подчиненную метку для разрешений на доступ к строго конфиденциальному сайту группы SharePoint Online и его защиты.
   
-1. Войдите на портал Office 365, используя учетную запись с ролью администратора компании или администратора безопасности. Справочные сведения см. в статье [Вход в Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Войдите на портал Office 365, используя учетную запись с ролью администратора компании или администратора безопасности. Дополнительные сведения см. в статье [Вход в Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Перейдите на портал Azure ([https://portal.azure.com](https://portal.azure.com)), открыв отдельную вкладку браузера.
     
@@ -79,7 +77,7 @@ ms.lasthandoff: 02/09/2018
   
 Теперь вы можете создавать документы и защищать их с помощью службы Azure Information Protection и новой метки.
   
-Необходимо [установить клиент Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) на мобильном устройстве или компьютере под управлением Windows. Вы можете воспользоваться скриптом и автоматизировать установку. Кроме того, пользователи могут установить клиент вручную. Просмотрите указанные ниже ресурсы.
+Вам нужно [установить клиент Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) на мобильном устройстве или компьютере под управлением Windows. Вы можете воспользоваться скриптом и автоматизировать установку. Кроме того, пользователи могут установить клиент вручную. Ознакомьтесь с приведенными ниже материалами.
   
 - [Клиентская часть Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/use-client)
     
@@ -87,10 +85,10 @@ ms.lasthandoff: 02/09/2018
     
 - [Страница скачивания для установки вручную](https://www.microsoft.com/download/details.aspx?id=53018)
     
-После установки пользователи выполняют запуск и вход из приложения Office (например, Microsoft Word) с указанием своей учетной записи Office 365. С помощью новой панели **Information Protection** пользователи могут выбрать новую метку. Убедитесь, что они знают, какую метку использовать для сайта группы SharePoint Online, чтобы защитить свои строго конфиденциальные файлы.
+После установки пользователи запускают приложение Office (например, Microsoft Word) и входят с помощью своей учетной записи Office 365. Затем они могут выбрать метку в новой панели **Information Protection**. Убедитесь, что они знают, какую метку использовать для сайта группы SharePoint Online, чтобы защитить свои строго конфиденциальные файлы.
   
 > [!NOTE]
-> Если у вас несколько строго конфиденциальных сайтов группы SharePoint Online, необходимо создать несколько политик области Azure Information Protection с подчиненными метками, используя указанные выше параметры. При этом нужно настроить разрешения для каждой подчиненной метки, заданные группе доступа для участников определенного сайта группы SharePoint Online. 
+> Если у вас несколько строго конфиденциальных сайтов группы SharePoint Online, необходимо создать несколько политик Azure Information Protection с подчиненными метками, используя указанные выше параметры. При этом нужно настроить разрешения для каждой подчиненной метки, заданные группе доступа для участников определенного сайта группы SharePoint Online. 
   
 ## <a name="see-also"></a>См. также
 

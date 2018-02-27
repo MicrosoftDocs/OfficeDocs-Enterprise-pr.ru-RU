@@ -9,17 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- O365ITProTrain
-- PowerShell
-- Ent_Office_Other
+ms.custom: O365ITProTrain, PowerShell, Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: "Сводка. Используйте PowerShell в Office 365 и командлет Add-MsolRoleMember для назначения ролей учетным записям пользователей."
-ms.openlocfilehash: dee9aede72a79a32f03c94a0793464e1393edd95
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 68e8be24f1581aa3430bca95206ecc1b2512f09a
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365
 
@@ -29,7 +26,7 @@ ms.lasthandoff: 01/11/2018
   
 ## <a name="before-you-begin"></a>Перед началом работы
 
-Чтобы выполнять процедуры, описанные в этой статье, необходимо подключиться к PowerShell в Office 365, используя учетную запись глобального администратора. Инструкции см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
+Чтобы выполнять процедуры, описанные в этой статье, необходимо подключиться к PowerShell, используя учетную запись глобального администратора. Инструкции см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
   
 ## <a name="for-a-single-role-change"></a>Изменение одной роли
 
@@ -37,13 +34,13 @@ ms.lasthandoff: 01/11/2018
   
 - Учетная запись пользователя, которую вы хотите настроить.
     
-    Чтобы указать учетную запись пользователя, необходимо определить ее отображаемое имя. Чтобы получить список учетных записей, используйте эту команду:
+    Чтобы указать учетную запись пользователя, необходимо определить ее отображаемое имя. Чтобы получить полный список учетных записей, используйте следующую команду:
     
   ```
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    Эта команда выводит учетные записи пользователей, отсортированное по отображаемому имени, по одному экрану за раз. Вы можете отфильтровать список, используя командлет **Where**. Вот пример:
+    Эта команда выводит учетные записи пользователей, отсортированные по отображаемому имени, по одному экрану за раз. Вы можете отфильтровать список, используя командлет **Where**. Вот пример:
     
   ```
   Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
@@ -67,7 +64,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Скопируйте команды в Блокнот. Замените описания переменных **$dispName** и **$roleName** их значениями, удалите символы \< и > и оставьте кавычки. Скопируйте измененные строки в окно модуля Windows Azure Active Directory для Windows PowerShell и запустите их. Кроме того, можно использовать интегрированную среду сценариев Windows PowerShell.
+Скопируйте команды в Блокнот. Замените описания переменных **$dispName** и **$roleName** их значениями, а также удалите символы \< и >, оставив кавычки. Скопируйте измененные строки в окно модуля Windows Azure Active Directory для Windows PowerShell и запустите их. Кроме того, можно использовать интегрированную среду сценариев Windows PowerShell.
   
 Вот пример полного набора команд:
   
@@ -83,7 +80,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq
   
 - Какие учетные записи пользователей вы хотите настроить.
     
-    Чтобы указать учетную запись пользователя, необходимо определить ее отображаемое имя. Чтобы получить список учетных записей, используйте эту команду:
+    Чтобы указать учетную запись пользователя, необходимо определить ее отображаемое имя. Чтобы получить список учетных записей, используйте следующую команду:
     
   ```
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
@@ -133,5 +130,5 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
 #### 
 
-[Add-MsolRoleMember]((https://msdn.microsoft.com/library/dn194120.aspx))
+[Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
 
