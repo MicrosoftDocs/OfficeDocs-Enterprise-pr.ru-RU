@@ -9,77 +9,75 @@ ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom:
-- PowerShell
-- Ent_Office_Other
+ms.custom: PowerShell, Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: "Сведения о том, как назначать лицензии для учетных записей пользователей и отключать определенные планы обслуживания, используя PowerShell в Office 365."
-ms.openlocfilehash: 9d97b5c4604091a62090fb07452e59b5cf5a3bb6
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 5b39a7e92217f5f7039ae1d8980f0c271ea29bfb
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
-# <a name="disable-access-to-services-while-assigning-user-licenses"></a><span data-ttu-id="3fcfd-103">Отключение доступа к службам во время назначения лицензий</span><span class="sxs-lookup"><span data-stu-id="3fcfd-103">Disable access to services while assigning user licenses</span></span>
+# <a name="disable-access-to-services-while-assigning-user-licenses"></a><span data-ttu-id="a6581-103">Отключение доступа к службам во время назначения лицензий</span><span class="sxs-lookup"><span data-stu-id="a6581-103">Disable access to services while assigning user licenses</span></span>
 
-<span data-ttu-id="3fcfd-104">**Сводка.** Узнайте, как назначать лицензии пользователям и одновременно отключать определенные планы обслуживания, используя PowerShell для Office 365.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-104">**Summary:**  Learn how to assign licenses to user accounts and disable specific service plans at the same time using Office 365 PowerShell.</span></span>
+<span data-ttu-id="a6581-104">**Сводка.** Узнайте, как назначать лицензии пользователям и одновременно отключать определенные планы обслуживания, используя PowerShell для Office 365.</span><span class="sxs-lookup"><span data-stu-id="a6581-104">**Summary:**  Learn how to assign licenses to user accounts and disable specific service plans at the same time using Office 365 PowerShell.</span></span>
   
-<span data-ttu-id="3fcfd-p101">Подписки на Office 365 включают в себя планы обслуживания для отдельных служб. Администраторам Office 365 часто нужно отключать определенные планы при назначении лицензий для пользователей. Следуя инструкциям в этой статье, вы можете с помощью PowerShell назначить лицензию на Office 365 для одной или нескольких учетных записей пользователей, при этом отключив определенные планы обслуживания.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-p101">Office 365 subscriptions come with service plans for individual services. Office 365 administrators often need to disable certain plans when assigning licenses to users. With the instructions in this article, you can assign an Office 365 license while disabling specific service plans using PowerShell for an individual user account or multiple user accounts.</span></span>
+<span data-ttu-id="a6581-p101">Подписки на Office 365 включают отдельные планы обслуживания. Администраторам Office 365 часто нужно отключать определенные планы при назначении лицензий пользователям. Следуя инструкциям в этой статье, вы можете с помощью PowerShell назначить лицензию на Office 365 одной или нескольким учетным записям пользователей, при этом отключив определенные планы обслуживания.</span><span class="sxs-lookup"><span data-stu-id="a6581-p101">Office 365 subscriptions come with service plans for individual services. Office 365 administrators often need to disable certain plans when assigning licenses to users. With the instructions in this article, you can assign an Office 365 license while disabling specific service plans using PowerShell for an individual user account or multiple user accounts.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="3fcfd-108">В основе этой статьи лежит работа Siddhartha Parmar, специалиста технической поддержки Майкрософт, занимающегося эскалированными запросами на обслуживание.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-108">This article is based on the work of Siddhartha Parmar, a Microsoft Support Escalation Engineer.</span></span> 
+> <span data-ttu-id="a6581-108">В основе этой статьи лежит работа Siddhartha Parmar, специалиста технической поддержки Майкрософт, занимающегося эскалированными запросами на обслуживание.</span><span class="sxs-lookup"><span data-stu-id="a6581-108">This article is based on the work of Siddhartha Parmar, a Microsoft Support Escalation Engineer.</span></span> 
   
-## <a name="before-you-begin"></a><span data-ttu-id="3fcfd-109">Перед началом работы</span><span class="sxs-lookup"><span data-stu-id="3fcfd-109">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="a6581-109">Перед началом работы</span><span class="sxs-lookup"><span data-stu-id="a6581-109">Before you begin</span></span>
 
-<span data-ttu-id="3fcfd-p102">Для процедур, описанных в этой статье, требуется подключение к PowerShell в Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3fcfd-p102">The procedures in this topic require you to connect to Office 365 PowerShell. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).</span></span>
+<span data-ttu-id="a6581-p102">Для выполнения действий, описанных в этой статье, требуется подключение к PowerShell. Инструкции см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="a6581-p102">The procedures in this topic require you to connect to Office 365 PowerShell. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).</span></span>
   
-## <a name="collect-information-about-subscriptions-and-service-plans"></a><span data-ttu-id="3fcfd-112">Соберите сведения о подписках и планах обслуживания</span><span class="sxs-lookup"><span data-stu-id="3fcfd-112">Collect information about subscriptions and service plans</span></span>
+## <a name="collect-information-about-subscriptions-and-service-plans"></a><span data-ttu-id="a6581-112">Соберите сведения о подписках и планах обслуживания</span><span class="sxs-lookup"><span data-stu-id="a6581-112">Collect information about subscriptions and service plans</span></span>
 
-<span data-ttu-id="3fcfd-113">Выполните эту команду, чтобы увидеть текущие подписки:</span><span class="sxs-lookup"><span data-stu-id="3fcfd-113">Run this command to see your current subscriptions:</span></span>
+<span data-ttu-id="a6581-113">Выполните эту команду, чтобы увидеть текущие подписки:</span><span class="sxs-lookup"><span data-stu-id="a6581-113">Run this command to see your current subscriptions:</span></span>
   
 ```
 Get-MsolAccountSku
 ```
 
-<span data-ttu-id="3fcfd-114">Значение составляющих команды  `Get-MsolAccountSku`:</span><span class="sxs-lookup"><span data-stu-id="3fcfd-114">In the display of the  `Get-MsolAccountSku` command:</span></span>
+<span data-ttu-id="a6581-114">Значение составляющих команды  `Get-MsolAccountSku`:</span><span class="sxs-lookup"><span data-stu-id="a6581-114">In the display of the  `Get-MsolAccountSku` command:</span></span>
   
-- <span data-ttu-id="3fcfd-p103">**AccountSkuId** — это подписка вашей организации в формате \<НазваниеОрганизации>:\<Подписка>. \<НазваниеОрганизации> — значение, которое вы указали при регистрации в Office 365 (уникальное для организации). \<Подписка> — значение, обозначающее конкретную подписку. Например, в случае litwareinc:ENTERPRISEPACK название организации — litwareinc, а название подписки — ENTERPRISEPACK (Office 365 корпоративный E3).</span><span class="sxs-lookup"><span data-stu-id="3fcfd-p103">**AccountSkuId** is a subscription for your organization in \<OrganizationName>:\<Subscription> format. The \<OrganizationName> is the value that you provided when you enrolled in Office 365, and is unique for your organization. The \<Subscription> value is for a specific subscription. For example, for litwareinc:ENTERPRISEPACK, the organization name is litwareinc, and the subscription name is ENTERPRISEPACK (Office 365 Enterprise E3).</span></span>
+- <span data-ttu-id="a6581-p103">**AccountSkuId** — это подписка вашей организации в формате \<НазваниеОрганизации>:\<Подписка>. \<НазваниеОрганизации> — значение, которое вы указали при регистрации в Office 365 (уникальное для организации). \<Подписка> — значение, обозначающее конкретную подписку. Например, в случае litwareinc:ENTERPRISEPACK название организации — litwareinc, а название подписки — ENTERPRISEPACK (Office 365 корпоративный E3).</span><span class="sxs-lookup"><span data-stu-id="a6581-p103">**AccountSkuId** is a subscription for your organization in \<OrganizationName>:\<Subscription> format. The \<OrganizationName> is the value that you provided when you enrolled in Office 365, and is unique for your organization. The \<Subscription> value is for a specific subscription. For example, for litwareinc:ENTERPRISEPACK, the organization name is litwareinc, and the subscription name is ENTERPRISEPACK (Office 365 Enterprise E3).</span></span>
     
-- <span data-ttu-id="3fcfd-119">**ActiveUnits**  количество лицензий, которые вы приобрели для подписки.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-119">**ActiveUnits** is the number of licenses that you've purchased for the subscription.</span></span>
+- <span data-ttu-id="a6581-119">**ActiveUnits** — количество лицензий, которые вы приобрели для подписки.</span><span class="sxs-lookup"><span data-stu-id="a6581-119">**ActiveUnits** is the number of licenses that you've purchased for the subscription.</span></span>
     
-- <span data-ttu-id="3fcfd-120">**WarningUnits**  количество лицензий для не продленной подписки, срок действия которой истекает через 30 дней льготного периода.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-120">**WarningUnits** is the number of licenses in a subscription that you haven't renewed, and that will expire after the 30-day grace period.</span></span>
+- <span data-ttu-id="a6581-120">**WarningUnits**  количество лицензий для не продленной подписки, срок действия которой истекает через 30 дней льготного периода.</span><span class="sxs-lookup"><span data-stu-id="a6581-120">**WarningUnits** is the number of licenses in a subscription that you haven't renewed, and that will expire after the 30-day grace period.</span></span>
     
-- <span data-ttu-id="3fcfd-121">**ConsumedUnits**  количество лицензий, которые вы назначили пользователям для подписки.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-121">**ConsumedUnits** is the number of licenses that you've assigned to users for the subscription.</span></span>
+- <span data-ttu-id="a6581-121">**ConsumedUnits**  количество лицензий, которые вы назначили пользователям для подписки.</span><span class="sxs-lookup"><span data-stu-id="a6581-121">**ConsumedUnits** is the number of licenses that you've assigned to users for the subscription.</span></span>
     
-<span data-ttu-id="3fcfd-p104">Укажите AccountSkuId для подписки на Office 365, где обозначены пользователи, которым вы хотите назначить лицензию. Убедитесь, что лицензий для назначения достаточно (отнимите **ConsumedUnits** от **ActiveUnits** ).</span><span class="sxs-lookup"><span data-stu-id="3fcfd-p104">Note the AccountSkuId for your Office 365 subscription that contains the users you want to license. Also, ensure that there are enough licenses to assign (subtract **ConsumedUnits** from **ActiveUnits** ).</span></span>
+<span data-ttu-id="a6581-p104">Укажите AccountSkuId для подписки на Office 365, где обозначены пользователи, которым вы хотите назначить лицензию. Убедитесь, что лицензий для назначения достаточно (отнимите **ConsumedUnits** от **ActiveUnits** ).</span><span class="sxs-lookup"><span data-stu-id="a6581-p104">Note the AccountSkuId for your Office 365 subscription that contains the users you want to license. Also, ensure that there are enough licenses to assign (subtract **ConsumedUnits** from **ActiveUnits** ).</span></span>
   
-<span data-ttu-id="3fcfd-124">Затем выполните эту команду, чтобы просмотреть сведения о планах обслуживания Office 365, доступных для каждой из ваших подписок:</span><span class="sxs-lookup"><span data-stu-id="3fcfd-124">Next, run this command to see the details about the Office 365 service plans that are available in all your subscriptions:</span></span>
+<span data-ttu-id="a6581-124">Затем выполните следующую команду, чтобы просмотреть сведения о планах обслуживания Office 365, доступных для каждой из ваших подписок:</span><span class="sxs-lookup"><span data-stu-id="a6581-124">Next, run this command to see the details about the Office 365 service plans that are available in all your subscriptions:</span></span>
   
 ```
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-<span data-ttu-id="3fcfd-125">Просмотрите результаты команды и определите, какие планы обслуживания нужно отключить при назначении лицензий пользователям.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-125">From the display of this command, determine which service plans you would like to disable when you assign licenses to users.</span></span>
+<span data-ttu-id="a6581-125">Просмотрите результаты команды и определите, какие планы обслуживания нужно отключить при назначении лицензий пользователям.</span><span class="sxs-lookup"><span data-stu-id="a6581-125">From the display of this command, determine which service plans you would like to disable when you assign licenses to users.</span></span>
   
-<span data-ttu-id="3fcfd-126">Ниже приведен неполный список планов обслуживания и соответствующих им служб Office 365.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-126">Here is a partial list of service plans and their corresponding Office 365 services.</span></span>
+<span data-ttu-id="a6581-126">Ниже приведен неполный список планов обслуживания и соответствующих им служб Office 365.</span><span class="sxs-lookup"><span data-stu-id="a6581-126">Here is a partial list of service plans and their corresponding Office 365 services.</span></span>
   
-|<span data-ttu-id="3fcfd-127">**План обслуживания**</span><span class="sxs-lookup"><span data-stu-id="3fcfd-127">**Service plan**</span></span>|<span data-ttu-id="3fcfd-128">**Описание**</span><span class="sxs-lookup"><span data-stu-id="3fcfd-128">**Description**</span></span>|
+|<span data-ttu-id="a6581-127">**План обслуживания**</span><span class="sxs-lookup"><span data-stu-id="a6581-127">**Service plan**</span></span>|<span data-ttu-id="a6581-128">**Описание**</span><span class="sxs-lookup"><span data-stu-id="a6581-128">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="3fcfd-129">SWAY</span><span class="sxs-lookup"><span data-stu-id="3fcfd-129">SWAY</span></span>  <br/> |<span data-ttu-id="3fcfd-130">Sway</span><span class="sxs-lookup"><span data-stu-id="3fcfd-130">Sway</span></span>  <br/> |
-|<span data-ttu-id="3fcfd-131">INTUNE_O365</span><span class="sxs-lookup"><span data-stu-id="3fcfd-131">INTUNE_O365</span></span>  <br/> |<span data-ttu-id="3fcfd-132">Управление мобильными устройствами для Office 365</span><span class="sxs-lookup"><span data-stu-id="3fcfd-132">Mobile Device Management for Office 365</span></span>  <br/> |
-|<span data-ttu-id="3fcfd-133">YAMMER_ENTERPRISE</span><span class="sxs-lookup"><span data-stu-id="3fcfd-133">YAMMER_ENTERPRISE</span></span>  <br/> |<span data-ttu-id="3fcfd-134">Yammer</span><span class="sxs-lookup"><span data-stu-id="3fcfd-134">Yammer</span></span>  <br/> |
-|<span data-ttu-id="3fcfd-135">RMS_S_ENTERPRISE</span><span class="sxs-lookup"><span data-stu-id="3fcfd-135">RMS_S_ENTERPRISE</span></span>  <br/> |<span data-ttu-id="3fcfd-136">Azure Rights Management (RMS)</span><span class="sxs-lookup"><span data-stu-id="3fcfd-136">Azure Rights Management (RMS)</span></span>  <br/> |
-|<span data-ttu-id="3fcfd-137">OFFICESUBSCRIPTION</span><span class="sxs-lookup"><span data-stu-id="3fcfd-137">OFFICESUBSCRIPTION</span></span>  <br/> |<span data-ttu-id="3fcfd-138">Office профессиональный плюс</span><span class="sxs-lookup"><span data-stu-id="3fcfd-138">Office Professional Plus</span></span>  <br/> |
-|<span data-ttu-id="3fcfd-139">MCOSTANDARD</span><span class="sxs-lookup"><span data-stu-id="3fcfd-139">MCOSTANDARD</span></span>  <br/> |<span data-ttu-id="3fcfd-140">Skype для бизнеса Online</span><span class="sxs-lookup"><span data-stu-id="3fcfd-140">Skype for Business Online</span></span>  <br/> |
-|<span data-ttu-id="3fcfd-141">SHAREPOINTWAC</span><span class="sxs-lookup"><span data-stu-id="3fcfd-141">SHAREPOINTWAC</span></span>  <br/> |<span data-ttu-id="3fcfd-142">Office Online</span><span class="sxs-lookup"><span data-stu-id="3fcfd-142">Office Online</span></span>  <br/> |
-|<span data-ttu-id="3fcfd-143">SHAREPOINTENTERPRISE</span><span class="sxs-lookup"><span data-stu-id="3fcfd-143">SHAREPOINTENTERPRISE</span></span>  <br/> |<span data-ttu-id="3fcfd-144">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="3fcfd-144">SharePoint Online</span></span>  <br/> |
-|<span data-ttu-id="3fcfd-145">EXCHANGE_S_ENTERPRISE</span><span class="sxs-lookup"><span data-stu-id="3fcfd-145">EXCHANGE_S_ENTERPRISE</span></span>  <br/> |<span data-ttu-id="3fcfd-146">Exchange Online (план 2)</span><span class="sxs-lookup"><span data-stu-id="3fcfd-146">Exchange Online Plan 2</span></span>  <br/> |
+|<span data-ttu-id="a6581-129">SWAY</span><span class="sxs-lookup"><span data-stu-id="a6581-129">SWAY</span></span>  <br/> |<span data-ttu-id="a6581-130">Sway</span><span class="sxs-lookup"><span data-stu-id="a6581-130">Sway</span></span>  <br/> |
+|<span data-ttu-id="a6581-131">INTUNE_O365</span><span class="sxs-lookup"><span data-stu-id="a6581-131">INTUNE_O365</span></span>  <br/> |<span data-ttu-id="a6581-132">Управление мобильными устройствами для Office 365</span><span class="sxs-lookup"><span data-stu-id="a6581-132">Mobile Device Management for Office 365</span></span>  <br/> |
+|<span data-ttu-id="a6581-133">YAMMER_ENTERPRISE</span><span class="sxs-lookup"><span data-stu-id="a6581-133">YAMMER_ENTERPRISE</span></span>  <br/> |<span data-ttu-id="a6581-134">Yammer</span><span class="sxs-lookup"><span data-stu-id="a6581-134">Yammer</span></span>  <br/> |
+|<span data-ttu-id="a6581-135">RMS_S_ENTERPRISE</span><span class="sxs-lookup"><span data-stu-id="a6581-135">RMS_S_ENTERPRISE</span></span>  <br/> |<span data-ttu-id="a6581-136">Azure Rights Management (RMS)</span><span class="sxs-lookup"><span data-stu-id="a6581-136">Azure Rights Management (RMS)</span></span>  <br/> |
+|<span data-ttu-id="a6581-137">OFFICESUBSCRIPTION</span><span class="sxs-lookup"><span data-stu-id="a6581-137">OFFICESUBSCRIPTION</span></span>  <br/> |<span data-ttu-id="a6581-138">Office профессиональный плюс</span><span class="sxs-lookup"><span data-stu-id="a6581-138">Office Professional Plus</span></span>  <br/> |
+|<span data-ttu-id="a6581-139">MCOSTANDARD</span><span class="sxs-lookup"><span data-stu-id="a6581-139">MCOSTANDARD</span></span>  <br/> |<span data-ttu-id="a6581-140">Skype для бизнеса Online</span><span class="sxs-lookup"><span data-stu-id="a6581-140">Skype for Business Online</span></span>  <br/> |
+|<span data-ttu-id="a6581-141">SHAREPOINTWAC</span><span class="sxs-lookup"><span data-stu-id="a6581-141">SHAREPOINTWAC</span></span>  <br/> |<span data-ttu-id="a6581-142">Office Online</span><span class="sxs-lookup"><span data-stu-id="a6581-142">Office Online</span></span>  <br/> |
+|<span data-ttu-id="a6581-143">SHAREPOINTENTERPRISE</span><span class="sxs-lookup"><span data-stu-id="a6581-143">SHAREPOINTENTERPRISE</span></span>  <br/> |<span data-ttu-id="a6581-144">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="a6581-144">SharePoint Online</span></span>  <br/> |
+|<span data-ttu-id="a6581-145">EXCHANGE_S_ENTERPRISE</span><span class="sxs-lookup"><span data-stu-id="a6581-145">EXCHANGE_S_ENTERPRISE</span></span>  <br/> |<span data-ttu-id="a6581-146">Exchange Online (план 2)</span><span class="sxs-lookup"><span data-stu-id="a6581-146">Exchange Online Plan 2</span></span>  <br/> |
    
-<span data-ttu-id="3fcfd-147">Теперь, когда у вас есть AccountSkuId и планы обслуживания, которые нужно отключить, вы можете назначить лицензии для одного или нескольких пользователей.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-147">Now that you have the AccountSkuId and the service plans to disable, you can assign licenses for an individual user or for multiple users.</span></span>
+<span data-ttu-id="a6581-147">Теперь, когда у вас есть AccountSkuId и планы обслуживания, которые нужно отключить, вы можете назначить лицензии для одного или нескольких пользователей.</span><span class="sxs-lookup"><span data-stu-id="a6581-147">Now that you have the AccountSkuId and the service plans to disable, you can assign licenses for an individual user or for multiple users.</span></span>
   
-## <a name="for-a-single-user"></a><span data-ttu-id="3fcfd-148">Для одного пользователя</span><span class="sxs-lookup"><span data-stu-id="3fcfd-148">For a single user</span></span>
+## <a name="for-a-single-user"></a><span data-ttu-id="a6581-148">Для одного пользователя</span><span class="sxs-lookup"><span data-stu-id="a6581-148">For a single user</span></span>
 
-<span data-ttu-id="3fcfd-p105">Введите имя участника-пользователя из учетной записи пользователя, AccountSkuId и список отключаемых планов обслуживания, удалив при этом пояснительный текст и символы \< и >. После этого выполните полученные команды в командной строке PowerShell.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-p105">For a single user, fill in the user principal name of the user account, the AccountSkuId, and the list of service plans to disable and remove the explanatory text and the \< and > characters. Then, run the resulting commands at the PowerShell command prompt.</span></span>
+<span data-ttu-id="a6581-p105">Введите имя участника-пользователя из учетной записи пользователя, AccountSkuId и список отключаемых планов обслуживания, удалив при этом пояснительный текст и символы \< и >. После этого выполните полученные команды в командной строке PowerShell.</span><span class="sxs-lookup"><span data-stu-id="a6581-p105">For a single user, fill in the user principal name of the user account, the AccountSkuId, and the list of service plans to disable and remove the explanatory text and the \< and > characters. Then, run the resulting commands at the PowerShell command prompt.</span></span>
   
 ```
 $userUPN="<the user's account name in email format>"
@@ -94,7 +92,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $usageLocation
 ```
 
-<span data-ttu-id="3fcfd-151">Ниже приведен пример блока команд для учетной записи belindan@contoso.com. В этом случае указана лицензия contoso:ENTERPRISEPACK, а отключить нужно планы обслуживания RMS_S_ENTERPRISE, SWAY, INTUNE_O365 и YAMMER_ENTERPRISE.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-151">Here is an example command block for the account named belindan@contoso.com, for the contoso:ENTERPRISEPACK license, and the service plans to disable are RMS_S_ENTERPRISE, SWAY, INTUNE_O365, and YAMMER_ENTERPRISE:</span></span>
+<span data-ttu-id="a6581-151">Ниже приведен пример блока команд для учетной записи belindan@contoso.com. В этом случае указана лицензия contoso:ENTERPRISEPACK, а отключить нужно планы обслуживания RMS_S_ENTERPRISE, SWAY, INTUNE_O365 и YAMMER_ENTERPRISE.</span><span class="sxs-lookup"><span data-stu-id="a6581-151">Here is an example command block for the account named belindan@contoso.com, for the contoso:ENTERPRISEPACK license, and the service plans to disable are RMS_S_ENTERPRISE, SWAY, INTUNE_O365, and YAMMER_ENTERPRISE:</span></span>
   
 ```
 $userUPN="belindan@contoso.com"
@@ -109,9 +107,9 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $UsageLocation
 ```
 
-## <a name="for-multiple-users"></a><span data-ttu-id="3fcfd-152">Для нескольких пользователей</span><span class="sxs-lookup"><span data-stu-id="3fcfd-152">For multiple users</span></span>
+## <a name="for-multiple-users"></a><span data-ttu-id="a6581-152">Для нескольких пользователей</span><span class="sxs-lookup"><span data-stu-id="a6581-152">For multiple users</span></span>
 
-<span data-ttu-id="3fcfd-p106">Чтобы выполнить эту задачу администрирования для нескольких пользователей, создайте текстовый файл с разделителями-запятыми (CSV-файл), содержащий поля UserPrincipalName и UsageLocation. Пример:</span><span class="sxs-lookup"><span data-stu-id="3fcfd-p106">To perform this administration task for multiple users, create a comma-separated value (CSV) text file that contains the UserPrincipalName and UsageLocation fields. Here is an example:</span></span>
+<span data-ttu-id="a6581-p106">Чтобы выполнить эту команду для нескольких пользователей, создайте текстовый файл с разделителями-запятыми (CSV-файл), содержащий поля UserPrincipalName и UsageLocation. Пример:</span><span class="sxs-lookup"><span data-stu-id="a6581-p106">To perform this administration task for multiple users, create a comma-separated value (CSV) text file that contains the UserPrincipalName and UsageLocation fields. Here is an example:</span></span>
   
 ```
 UserPrincipalName,UsageLocation
@@ -120,7 +118,7 @@ LynneB@contoso.onmicrosoft.com,US
 ShawnM@contoso.onmicrosoft.com,US
 ```
 
-<span data-ttu-id="3fcfd-155">После этого укажите расположение входного и выходного CSV-файлов, ИД SKU учетной записи и список планов обслуживания, которые нужно отключить. Затем выполните полученные команды в командной строке PowerShell.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-155">Next, fill in the location of the input and output CSV files, the account SKU ID, and the list of service plans to disable, and then run the resulting commands at the PowerShell command prompt.</span></span>
+<span data-ttu-id="a6581-155">После этого укажите расположение входного и выходного CSV-файлов, ИД SKU учетной записи и список планов обслуживания, которые нужно отключить. Затем выполните полученные команды в командной строке PowerShell.</span><span class="sxs-lookup"><span data-stu-id="a6581-155">Next, fill in the location of the input and output CSV files, the account SKU ID, and the list of service plans to disable, and then run the resulting commands at the PowerShell command prompt.</span></span>
   
 ```
 $inFileName="<path and file name of the input CSV file that contains the users, example: C:\admin\Users2License.CSV>"
@@ -142,23 +140,23 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
 }
 ```
 
-<span data-ttu-id="3fcfd-156">Что делает этот блок команд PowerShell:</span><span class="sxs-lookup"><span data-stu-id="3fcfd-156">This PowerShell command block:</span></span>
+<span data-ttu-id="a6581-156">Что делает этот блок команд PowerShell:</span><span class="sxs-lookup"><span data-stu-id="a6581-156">This PowerShell command block:</span></span>
   
-- <span data-ttu-id="3fcfd-157">Отображает имя участника-пользователя для каждого пользователя.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-157">Displays the user principal name of each user.</span></span>
+- <span data-ttu-id="a6581-157">Отображает имя участника-пользователя для каждого пользователя.</span><span class="sxs-lookup"><span data-stu-id="a6581-157">Displays the user principal name of each user.</span></span>
     
-- <span data-ttu-id="3fcfd-158">Назначает настраиваемые лицензии для каждого пользователя.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-158">Assigns customized licenses to each user.</span></span>
+- <span data-ttu-id="a6581-158">Назначает настраиваемые лицензии для каждого пользователя.</span><span class="sxs-lookup"><span data-stu-id="a6581-158">Assigns customized licenses to each user.</span></span>
     
-- <span data-ttu-id="3fcfd-159">Создает CSV-файл со всеми обработанными пользователями и отображает состояние их лицензий.</span><span class="sxs-lookup"><span data-stu-id="3fcfd-159">Creates a CSV file with all the users that were processed and shows their license status.</span></span>
+- <span data-ttu-id="a6581-159">Создает CSV-файл со всеми обработанными пользователями и отображает состояние их лицензий.</span><span class="sxs-lookup"><span data-stu-id="a6581-159">Creates a CSV file with all the users that were processed and shows their license status.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="3fcfd-160">См. также</span><span class="sxs-lookup"><span data-stu-id="3fcfd-160">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a6581-160">См. также</span><span class="sxs-lookup"><span data-stu-id="a6581-160">See also</span></span>
 
 #### 
 
-[<span data-ttu-id="3fcfd-161">Отключение доступа к службам с помощью Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3fcfd-161">Disable access to services with Office 365 PowerShell</span></span>](disable-access-to-services-with-office-365-powershell.md)
+[<span data-ttu-id="a6581-161">Отключение доступа к службам с помощью Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="a6581-161">Disable access to services with Office 365 PowerShell</span></span>](disable-access-to-services-with-office-365-powershell.md)
   
-[<span data-ttu-id="3fcfd-162">Отключение доступа к Sway с помощью PowerShell в Office 365</span><span class="sxs-lookup"><span data-stu-id="3fcfd-162">Disable access to Sway with Office 365 PowerShell</span></span>](disable-access-to-sway-with-office-365-powershell.md)
+[<span data-ttu-id="a6581-162">Отключение доступа к Sway с помощью PowerShell в Office 365</span><span class="sxs-lookup"><span data-stu-id="a6581-162">Disable access to Sway with Office 365 PowerShell</span></span>](disable-access-to-sway-with-office-365-powershell.md)
   
-[<span data-ttu-id="3fcfd-163">Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3fcfd-163">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="a6581-163">Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="a6581-163">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="3fcfd-164">Управление Office 365 с помощью PowerShell Office 365</span><span class="sxs-lookup"><span data-stu-id="3fcfd-164">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="a6581-164">Управление Office 365 с помощью PowerShell Office 365</span><span class="sxs-lookup"><span data-stu-id="a6581-164">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
 
