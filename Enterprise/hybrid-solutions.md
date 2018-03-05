@@ -3,7 +3,7 @@ title: "Гибридные решения"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 3/2/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: "Сводка. В этих статьях описано, как развернуть рабочие нагрузки сервера Office Server в Microsoft Azure."
-ms.openlocfilehash: 0bc47f8f9b10d51d801973c719625247be39fa9b
-ms.sourcegitcommit: 38001ca323a60126fcf31667393c31322044cedc
+ms.openlocfilehash: 37294a80217b5aa99aa4589fe464ca92d2f2ab23
+ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="hybrid-solutions"></a>Гибридные решения
 
@@ -25,12 +25,14 @@ ms.lasthandoff: 02/11/2018
 Теперь некоторые рабочие нагрузки Office Server, которые обычно развертывались локально, можно развернуть в службах инфраструктуры Azure.
   
 Для инфраструктуры идентификации Office 365 в Azure:
+
+- [Использование Azure AD для проверки подлинности на сервере SharePoint Server](using-azure-ad-for-sharepoint-server-authentication.md)
+
+- [Развертывание службы синхронизации каталогов Office 365 (DirSync) в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [Подключение локальной сети к виртуальной сети Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [Развертывание службы синхронизации каталогов Office 365 (DirSync) в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
-    
-- [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [Развертывание федеративной проверки подлинности для обеспечения высокой доступности Office 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
 Для рабочих нагрузок SharePoint Server 2013 в Azure:
   
