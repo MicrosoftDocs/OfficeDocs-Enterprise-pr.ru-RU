@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: 
 description: "Сводка: Узнайте, как для обхода служба контроля доступа Azure и использовании SAML 1.1 для проверки подлинности пользователей SharePoint Server с помощью Azure Active Directory."
-ms.openlocfilehash: e346a79fae32c19e14ce852257d5643041faf5d4
-ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
+ms.openlocfilehash: 1e8ce1aad43e110311c1f5fcceca816871c07e9e
+ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>С помощью Azure AD для проверки подлинности на сервере SharePoint
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/05/2018
 > В этой статье основано на рабочих Кирк Петров, руководитель программы корпорации Майкрософт субъекта. 
 
 <blockquote>
-<p>В этом статье содержатся ссылки на примеры кода для взаимодействия с Azure Active Directory графике. Вы можете загрузить примеры кода [ниже](https://1drv.ms/u/s!AuAlJmH2xI6Kg3ItzF78krMFxJu3).</p>
+<p>В этом статье содержатся ссылки на примеры кода для взаимодействия с Azure Active Directory графике. Вы можете загрузить примеры кода [ниже](https://github.com/kaevans/spsaml11/tree/master/scripts).</p>
 </blockquote>
 
 SharePoint Server 2016 предоставляет возможность проверки подлинности пользователей с помощью проверки подлинности на основе утверждений, что упрощает для управления пользователями, они проходят проверку подлинности с помощью различных поставщиков удостоверений, которые вы доверяете, но кто управляет. К примеру вместо управления проверки подлинности пользователей с помощью доменных служб Active Directory (AD DS), позволит пользователям проходить проверку подлинности с помощью Azure Active Directory (Azure AD). Это позволяет проверки подлинности пользователей только в облаке с суффиксом onmicrosoft.com в свои имя пользователя, пользователи синхронизируются с локального каталога и гостевых пользователей из других каталогов на участие. Он также позволяет воспользоваться преимуществами Azure AD компонентов, таких как многофакторная проверка подлинности и расширенные возможности работы с отчетами.
@@ -131,13 +131,12 @@ SharePoint Server 2016 предоставляет возможность про�
 $realm = "<Realm from Table 1>"
 $wsfedurl="<SAML single sign-on service URL from Table 1>"
 $filepath="<Full path to SAML signing certificate file from Table 1>"
-$cert = New-Object 
-System.Security.Cryptography.X509Certificates.X509Certificate2($filepath)
+$cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($filepath)
 New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 $map = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" -IncomingClaimTypeDisplayName "name" -LocalClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"
 $map2 = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" -IncomingClaimTypeDisplayName "GivenName" -SameAsIncoming
 $map3 = New-SPClaimTypeMapping -IncomingClaimType "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" -IncomingClaimTypeDisplayName "SurName" -SameAsIncoming
-$ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint secured by Azure AD" -realm $realm -ImportTrustCertificate $cert -ClaimsMappings $map,$map2,$map3 -SignInUrl $wsfedurl -IdentifierClaim “http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name”
+$ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint secured by Azure AD" -realm $realm -ImportTrustCertificate $cert -ClaimsMappings $map,$map2,$map3 -SignInUrl $wsfedurl -IdentifierClaim "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
 ```
 
 Затем выполните следующие действия для включения доверенного поставщика удостоверений для вашего приложения.
@@ -173,7 +172,8 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>Шаг 6: Добавление политики выдача маркеров SAML 1.1 в Azure AD
 
-При создании приложения Azure AD на портале, по умолчанию с помощью SAML 2.0. SharePoint Server 2016 необходимо использовать формат маркеров SAML 1.1. Приведенный ниже сценарий будет удалить политику SAML 2.0 по умолчанию и добавьте новую политику маркеры SAML 1.1 проблему.
+При создании приложения Azure AD на портале, по умолчанию с помощью SAML 2.0. SharePoint Server 2016 необходимо использовать формат маркеров SAML 1.1. Приведенный ниже сценарий будет удалить политику SAML 2.0 по умолчанию и добавьте новую политику маркеры SAML 1.1 проблему. Этот код требует загрузки сопутствующий [примеры, показывающие взаимодействия с Azure Active Directory графике](https://github.com/kaevans/spsaml11/tree/master/scripts).
+
 
 ```
 Import-Module <file path of Initialize.ps1> 
@@ -183,6 +183,8 @@ Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $
 $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
 Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
 ```
+
+Для получения дополнительных сведений о маркеров политики выдачи с Azure AD видеть [Справочник по API график для операций в политике](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy).
 
 ## <a name="step-7-verify-the-new-provider"></a>Шаг 7: Проверка нового поставщика
 
@@ -198,6 +200,17 @@ Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $obj
 
 ![Пользователь вошел в SharePoint](images/SAML11/fig15-signedinsharepoint.png)
 
+## <a name="managing-certificates"></a>Управление сертификатами
+Важно понимать, что имеет дату окончания срока действия сертификата для подписи, который был настроен для доверенного поставщика удостоверений в приведенном выше шаге 4 и должны обновляться. В статье [Управление сертификатами для федеративного единого входа в Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-sso-certs) для получения сведений на Продление сертификата. После обновления сертификата в Azure AD загрузить локальный файл и используйте приведенный ниже сценарий для настройки доверенного поставщика удостоверений с обновленного сертификата для подписи. 
+
+```
+$filepath="<Full path to renewed SAML signing certificate file>"
+$cert= New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($filePath)
+New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
+Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
+```
+
+
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 
@@ -209,8 +222,8 @@ Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $obj
 
 |**Свяжитесь с нами**|**Описание**|
 |:-----|:-----|
-|**Какое вам решение необходимо?** <br/> |Мы создаем материалы по внедрению облачных платформ и служб Майкрософт. Сообщите нам, что вы думаете о наших материалах по внедрению облачных решений и какие материалы вы хотели бы увидеть, написав по адресу [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
+|**Какое вам решение необходимо?** <br/> |Мы создаем контент для решений, которые охватывают несколько продуктов и служб Майкрософт. Сообщите нам, что вы думаете о наших межсерверных решениях, или укажите интересующие вас решения, написав по адресу [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
 |**Присоединяйтесь к обсуждению решений** <br/> |Если вам интересны облачные решения, присоединяйтесь к теме Cloud Adoption Advisory Board (CAAB) и общайтесь с разработчиками контента Майкрософт, специалистами отрасли и клиентами со всего мира. Чтобы присоединиться, добавьте себя в качестве участника [темы CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) на сайте Microsoft Tech Community и отправьте нам письмо на адрес [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Просматривать материалы в [блоге CAAB](https://blogs.technet.com/b/solutions_advisory_board/) могут все пользователи. Однако только участники CAAB получают приглашения на закрытые вебинары, на которых мы рассказываем о новых облачных решениях и ресурсах по их внедрению.<br/> |
-|**Получите изображения, которые вы здесь видите** <br/> |Если вам нужна редактируемая копия иллюстративного материала из этой статьи, мы с радостью вам ее отправим. Напишите нам, указав URL-адрес и название материала, по адресу [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
+|**Скачать изображения, которые вы видите здесь** <br/> |Если вам нужна редактируемая копия иллюстративного материала из этой статьи, мы с радостью вам ее отправим. Напишите нам, указав URL-адрес и название материала, по адресу [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
    
 
