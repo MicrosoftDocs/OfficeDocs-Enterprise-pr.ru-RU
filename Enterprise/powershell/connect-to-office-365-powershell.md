@@ -9,16 +9,19 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: LIL_Placement, O365ITProTrain, Ent_Office_Other
+ms.custom:
+- LIL_Placement
+- O365ITProTrain
+- Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Сводка. Подключитесь к своей организации Office 365, используя PowerShell, чтобы выполнять задачи администрирования из командной строки."
-ms.openlocfilehash: 62d080e81668b6eabc7e308fae0e236002cd5949
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: a13fcc401a4d00f49dcc4eec2a5acba36075233f
+ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="connect-to-office-365-powershell"></a>Подключение к Office 365
+# <a name="connect-to-office-365-powershell"></a>Подключение к Office 365 PowerShell
 
  **Сводка.** Подключитесь к своей организации Office 365, используя PowerShell, чтобы выполнять задачи администрирования из командной строки.
   
@@ -54,7 +57,7 @@ PowerShell позволяет управлять настройками Office 3
   
 1.  Установите 64-разрядную версию помощника по входу в Microsoft Online Services. См. статью [Помощник по входу в Microsoft Online Services для ИТ-специалистов, RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
     
-2. Чтобы установить модуль Microsoft Azure Active Directory для Windows PowerShell, сделайте вот что:
+2. Чтобы установить модуль Microsoft Azure Active Directory для Windows PowerShell, сделайте следующее:
     
   - Откройте командную строку для уровня администратора PowerShell.
   - Выполните команду **Install-Module MSOnline**.
