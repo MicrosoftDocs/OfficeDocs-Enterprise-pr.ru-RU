@@ -1,11 +1,11 @@
 ---
-title: "Облачные решения для корпоративных пользователей"
-description: "Решайте бизнес-задачи, используя Microsoft Cloud. Здесь вы найдете информацию о последних гибридных решениях и облачных решениях для обеспечения безопасности, о внедрении облачных технологий и не только."
+title: Облачные решения для корпоративных пользователей
+description: Решайте бизнес-задачи, используя Microsoft Cloud. Здесь вы найдете информацию о последних гибридных решениях и облачных решениях для обеспечения безопасности, о внедрении облачных технологий и не только.
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 layout: LandingPage
-ms.assetid: 
+ms.assetid: ''
 ms.service: o365-solutions
 ms.topic: hub-page
 localization_priority: Normal

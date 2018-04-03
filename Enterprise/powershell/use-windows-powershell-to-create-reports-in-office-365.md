@@ -1,5 +1,5 @@
 ---
-title: "Использование Windows PowerShell для создания отчетов в Office 365"
+title: Использование Windows PowerShell для создания отчетов в Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: "Сводка. В этой статье рассказано, как с помощью PowerShell в Office 365 создавать отчеты, которые невозможно создать в Центре администрирования Office 365:."
+description: Сводка. В этой статье рассказано, как с помощью PowerShell в Office 365 создавать отчеты, которые невозможно создать в Центре администрирования Office 365:.
 ms.openlocfilehash: 09db143c027af987cf86036c4f5fd6bca009afe4
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT

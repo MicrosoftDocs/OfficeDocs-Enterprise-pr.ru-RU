@@ -1,5 +1,5 @@
 ---
-title: "Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell"
+title: Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: "Сводка: в этой статье рассказывается о том, как управлять учетными записями и лицензиями пользователей с помощью PowerShell в Office 365."
+description: 'Сводка: в этой статье рассказывается о том, как управлять учетными записями и лицензиями пользователей с помощью PowerShell в Office 365.'
 ms.openlocfilehash: 27bf709fc0daca5c56d9a1c57d3723a09ff49fdc
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
