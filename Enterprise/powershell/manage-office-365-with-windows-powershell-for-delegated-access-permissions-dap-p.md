@@ -1,5 +1,5 @@
 ---
-title: "Управление Office 365 с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)"
+title: Управление Office 365 с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,9 +9,9 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
-description: "Сводка.Партнеры по синдикации и поставщики облачных решений (CSP) может использовать Windows PowerShell для управления пользовательскими клиентами Office 365."
+description: Сводка.Партнеры по синдикации и поставщики облачных решений (CSP) может использовать Windows PowerShell для управления пользовательскими клиентами Office 365.
 ms.openlocfilehash: 7920680f390b8a38f53386bd4af1efff895e4d6e
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT

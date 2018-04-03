@@ -1,5 +1,5 @@
 ---
-title: "Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud"
+title: Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -15,7 +15,7 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
-description: "Сводка. Узнайте об облачных службах и платформах Майкрософт. Ознакомьтесь со схемой корпоративного облака и рядом сведений об облачной архитектуре и не только."
+description: Сводка. Узнайте об облачных службах и платформах Майкрософт. Ознакомьтесь со схемой корпоративного облака и рядом сведений об облачной архитектуре и не только.
 ms.openlocfilehash: bf8015d1a3876276a5a7f15be7e289d1984e9193
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

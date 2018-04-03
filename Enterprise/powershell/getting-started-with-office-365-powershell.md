@@ -1,5 +1,5 @@
 ---
-title: "Начало работы с Office 365 PowerShell"
+title: Начало работы с Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: "Сводка. Указанные ниже статьи раскрывают важность PowerShell в Office 365 и объясняют, как подключиться к клиенту Office 365: и где получить поддержку."
+description: 'Сводка. Указанные ниже статьи раскрывают важность PowerShell в Office 365 и объясняют, как подключиться к клиенту Office 365: и где получить поддержку.'
 ms.openlocfilehash: cc9583fcfeb0822cc9fe1b7a39b090c37442169e
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

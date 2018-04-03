@@ -1,5 +1,5 @@
 ---
-title: "Гибридные решения"
+title: Гибридные решения
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: "Сводка. В этих статьях описано, как развернуть рабочие нагрузки сервера Office Server в Microsoft Azure."
+description: Сводка. В этих статьях описано, как развернуть рабочие нагрузки сервера Office Server в Microsoft Azure.
 ms.openlocfilehash: 37294a80217b5aa99aa4589fe464ca92d2f2ab23
 ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
 ms.translationtype: HT
