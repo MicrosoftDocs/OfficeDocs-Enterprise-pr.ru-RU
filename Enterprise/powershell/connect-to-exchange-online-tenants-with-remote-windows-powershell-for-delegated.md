@@ -1,5 +1,5 @@
 ---
-title: "Подключение к клиентам Exchange Online с помощью удаленного сеанса Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)"
+title: Подключение к клиентам Exchange Online с помощью удаленного сеанса Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
-description: "Сводка. Использование удаленного сеанса Windows PowerShell для подключения к Exchange Online с помощью параметра DelegatedOrg."
-ms.openlocfilehash: 857c97e5d3374f293b98298419932af4ce2dfa19
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+description: Сводка. Использование удаленного сеанса Windows PowerShell для подключения к Exchange Online с помощью параметра DelegatedOrg.
+ms.openlocfilehash: d8cbb6640419ba2f1de868ae88b0a273c3f71ae7
+ms.sourcegitcommit: f3f81d2c2e8290948d93f3f787a679c804840256
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Подключение к клиентам Exchange Online с помощью удаленного сеанса Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 
@@ -40,11 +40,11 @@ ms.lasthandoff: 01/11/2018
     
   - Windows Server 2008 R2 с пакетом обновления 1 (SP1)*
     
-    * Вам потребуется установить .NET Framework 4.5.1 или .NET Framework 4.5, а затем  Windows Management Framework 4.0 или Windows Management Framework 3.0. Дополнительные сведения см. в указанных ниже ресурсах.
+    \* Необходимо установить .NET Framework 4.5.1 или .NET Framework 4.5, а затем Windows Management Framework 4.0 или Windows Management Framework 3.0. Дополнительные сведения см. в указанных ниже ресурсах.
     
-  - [Установка .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868)
+    - [Установка .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868)
     
-  - [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) или[Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)
+    - [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) или [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)
     
 - Сведения о сочетаниях клавиш, которые можно использовать в процедурах из этой статьи, см. в статье [Сочетания клавиш в Центре администрирования Exchange](https://go.microsoft.com/fwlink/p/?LinkId=534017).
     
