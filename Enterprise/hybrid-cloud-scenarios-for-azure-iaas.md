@@ -1,5 +1,5 @@
 ---
-title: "Сценарии гибридного облака для Azure IaaS"
+title: Сценарии гибридного облака для Azure IaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
-description: "Сводка: Сведения о гибридных архитектуры и сценарии для корпорации Майкрософт инфраструктура как служба (IaaS)-на основе облака в Azure."
-ms.openlocfilehash: 66024c708cb4fbc904de18f27077871d52f0e70c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Сводка: Сведения о гибридных архитектуры и сценарии для корпорации Майкрософт инфраструктура как служба (IaaS)-на основе облака в Azure.'
+ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Гибридные облачные сценарии для Azure IaaS
 
@@ -142,7 +142,7 @@ ms.lasthandoff: 02/09/2018
     
     Просмотреть [интрасети 2016 сервера SharePoint в среде Azure разработку и тестирование](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx) для построения имитации dev/тестовой среды
     
-2. Разработка
+2. Проектирование
     
     В разделе [Разработка фермы SharePoint Server 2016 в Azure](https://technet.microsoft.com/library/mt779108%28v=office.16%29.aspx) пошаговое выполнение процесса для определения набора сети Azure IaaS, compute и хранения элементов для размещения фермы и их параметров.
     
@@ -179,8 +179,6 @@ ms.lasthandoff: 02/09/2018
 Дополнительные материалы:
   
 - [Разработка архитектуры гибридных облачных средах](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
-    
-- [Расширение Your центра обработки данных для виртуального академия Microsoft Cloud курс](https://mva.microsoft.com/en-US/training-courses/extend-your-datacenter-to-the-cloud-13908?l=7fG3tAouB_7100115881)
     
 - [Разработка и Создание бизнес-приложение в Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     

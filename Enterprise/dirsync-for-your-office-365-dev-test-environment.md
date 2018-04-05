@@ -1,9 +1,9 @@
 ---
-title: "DirSync для среды разработки и тестирования Office 365"
+title: Синхронизация каталогов для Office 365 dev/тестовой среды
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,31 +16,29 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
-description: "Сводка: Настройка синхронизации службы каталогов для Office 365 dev/тестовой среды."
-ms.openlocfilehash: 8a656ea742af642a8b4dc3e096764f0e8cbde074
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Сводка: Настройка синхронизации службы каталогов для Office 365 dev/тестовой среды.'
+ms.openlocfilehash: 1363e7fd6a3afdbec85fd08790268ab186badbc8
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="dirsync-for-your-office-365-devtest-environment"></a>DirSync для среды разработки и тестирования Office 365
+# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Синхронизация каталогов для Office 365 dev/тестовой среды
 
  **Сводка:** Настройка синхронизации каталогов для Office 365 dev/тестовой среды.
   
-Во многих организациях используют Azure AD Connect и средство синхронизации службы каталогов (DirSync), чтобы синхронизировать набор учетных записей в локальном лесу Windows Server Active Directory (AD) с учетными записями в Office 365. В этой статье описывается добавление DirSync с синхронизацией паролей в среду тестирования и разработки Office 365, в результате чего получается следующая конфигурация:
+Многие организации использование подключить Azure AD и синхронизации службы каталогов для синхронизации набор учетных записей в лесу Active Directory Windows Server (AD) их в локальной набору учетных записей в Office 365. В этой статье описывается, как можно добавить синхронизации службы каталогов с хэш-функции синхронизации паролей в Office 365 dev/тестовую среду, приведшего к следующую конфигурацию.
   
-![Среда разработки и тестирования Office 365 с DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Центр разработчиков/тестовой среде Office 365 с помощью синхронизации службы каталогов](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Конфигурация состоит из следующих компонентов:  
   
 - Пробная подписка Office 365 E5, которая действительна в течение 30 дней с момента создания.
-    
 - Упрощенная интрасеть организации, подключенная к Интернету и состоящая из трех виртуальных машин в подсети виртуальной сети Azure (DC1, APP1 и CLIENT1). Azure AD Connect работает на компьютере APP1 для синхронизации домена Windows Server AD с Office 365.
     
 Процесс настройки этой среды разработки и тестирования состоит из двух указанных ниже основных этапов.
   
 1. Создание среды разработки и тестирования Office 365 (виртуальных машин DC1, APP1 и CLIENT1 в виртуальной сети Azure с пробной подпиской Office 365 E5).
-    
 2. Установка и настройка Azure AD Connect на компьютере APP1.
     
 > [!TIP]
@@ -55,7 +53,6 @@ ms.lasthandoff: 02/14/2018
 Конфигурация состоит из следующих компонентов:  
   
 - Пробная подписка на Office 365 E5.
-    
 - Упрощенная интрасеть организации, подключенная к Интернету и состоящая из виртуальных машин DC1, APP1 и CLIENT1 в подсети, входящей в виртуальную сеть Azure.
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>Этап 2. Установка Azure AD Connect на компьютере APP1
@@ -93,13 +90,13 @@ Stop-Process -Name Explorer -Force
     
 11. На странице " **Настройка завершена** " нажмите кнопку **Выход**.
     
-12. В Internet Explorer перейдите к порталу Office 365 ([https://portal.office.com](https://portal.office.com)) и войдите пробной подписки Office 365 с учетной записью глобального администратора.
+12. В Internet Explorer, перейдите к порталу Office 365 ([https://portal.office.com](https://portal.office.com)) и войти в систему с учетной записью глобального администратора пробной подписки Office 365.
     
 13. На главной странице портала щелкните **Администратор**.
     
 14. На панели навигации слева выберите элементы **Пользователи > Активные пользователи**.
     
-    Запомните учетную запись с именем **User1**. Эта учетная запись является из домена CORP Windows Server AD и обоснования работавших DirSync.
+    Запомните учетную запись с именем **User1**. Эта учетная запись является из домена CORP Windows Server AD и обоснования работавших синхронизации службы каталогов.
     
 15. Нажмите кнопку учетной записи **User1** . Для лицензий на продукт нажмите кнопку **Изменить**.
     
@@ -107,31 +104,25 @@ Stop-Process -Name Explorer -Force
     
 Ниже показана итоговая конфигурация.
   
-![Среда разработки и тестирования Office 365 с DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Центр разработчиков/тестовой среде Office 365 с помощью синхронизации службы каталогов](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Конфигурация состоит из следующих компонентов:  
   
 - Пробная подписка на Office 365 E5.
-    
 - Упрощенная интрасеть организации, подключенная к Интернету и состоящая из виртуальных машин DC1, APP1 и CLIENT1 в подсети, входящей в виртуальную сеть Azure. Azure AD Connect работает на компьютере APP1 для синхронизации домена Windows Server AD CORP с Office 365 каждые 30 минут.
     
 ## <a name="next-step"></a>Следующий шаг
 
-Если вы готовы к развертыванию DirSync для вашей организации, видеть [Развертывание Office 365 синхронизации каталогов (DirSync) в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
+Если вы готовы к развертыванию синхронизации службы каталогов для вашей организации, видеть [развертывание Office 365 синхронизации каталогов в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
 ## <a name="see-also"></a>См. также
 
-[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
-  
-[Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
-  
-[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
-  
-[Облако безопасности приложения для Office 365 dev/тестовой среды](cloud-app-security-for-your-office-365-dev-test-environment.md)
-  
-[Дополнительные защиту от угроз для вашей среды разработки или тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-  
-[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
+[Облако внедрения тестирование руководства по лаборатории (руководствам)](cloud-adoption-test-lab-guides-tlgs.md)
+[среды разработки или тестирования базовой конфигурации](base-configuration-dev-test-environment.md)
+[Office 365 dev/тестовой среды](office-365-dev-test-environment.md)
+[Безопасности облаке приложения для Office 365 dev/тестовой среды](cloud-app-security-for-your-office-365-dev-test-environment.md) 
+ [ Дополнительные защиту от угроз для вашей среды разработки или тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[гибридные решения и внедрения облако](cloud-adoption-and-hybrid-solutions.md)
 
 
 
