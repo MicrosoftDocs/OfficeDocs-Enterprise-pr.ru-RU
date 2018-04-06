@@ -1,9 +1,9 @@
 ---
-title: "Базовая конфигурация среды разработки и тестирования"
+title: Базовая конфигурация среды разработки и тестирования
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
-description: "Сводка: Создание упрощенный интрасети в среде разработки или тестирования в Microsoft Azure."
-ms.openlocfilehash: 04da1037dbebed9f9a5d2aa2fb37b03b88218839
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Сводка: Создание упрощенный интрасети в среде разработки или тестирования в Microsoft Azure.'
+ms.openlocfilehash: b2bd1c7bb2b0cd100326867fc3603b6afb6cd8db
+ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>Базовая конфигурация среды разработки и тестирования
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/14/2018
 
 ![Этап 4. Базовая конфигурация в Azure, включающая виртуальную машину CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-Среда разработки и тестирования с базовой конфигурацией, представленная на рис. 1, состоит из корпоративной подсети в облачной виртуальной сети Azure под названием TestLab. Последняя является симуляцией упрощенной частной интрасети, подключенной к Интернету. Она содержит три виртуальные машины Azure под управлением Windows Server 2016.
+Среда разработки и тестирования базовой конфигурации на рисунке 1 состоит из корпоративной сети подсети в только в облаке Azure виртуальную сеть с именем лаборатория тестирования, которая моделирует простая и частной интрасети, подключенных к Интернету. Он содержит три виртуальных машин Azure:
   
 - DC1 настроена в качестве контроллера домена интрасети и сервера доменных имен (DNS).
     
@@ -50,7 +50,7 @@ ms.lasthandoff: 02/14/2018
   
 - Разработка и тестирование приложений.
     
-- Как начальной настройке среды расширенного теста проекта, который включает в себя дополнительных виртуальных машин, служб Azure или другие предложения облаке Майкрософт: Office 365 и безопасности предприятия + мобильности.
+- Как начальной настройке среды расширенного теста проекта, который включает в себя дополнительных виртуальных машин, служб Azure или другие предложения облачных Microsoft, такие как Office 365 и безопасности предприятия + мобильных устройств (Командной).
     
 Существует четыре этапа настройки тестовой среды с базовой конфигурацией в Azure:
   
@@ -70,7 +70,7 @@ ms.lasthandoff: 02/14/2018
 ![Руководства по лаборатории тестирования в Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования Microsoft Cloud.
+> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
   
 ## <a name="phase-1-create-the-virtual-network"></a>Этап 1. Создание виртуальной сети
 
@@ -163,7 +163,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 ### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>Подключение к DC1 с помощью учетных данных учетной записи локального администратора
 
-1. В [Azure портала](https://portal.azure.com), нажмите кнопку **группы ресурсов >** <the name of your new resource group> **> DC1 > подключить**.
+1. В [Azure портала](https://portal.azure.com), нажмите кнопку **группы ресурсов >** [имя новой группы ресурсов] **> DC1 > подключить**.
     
 2. Откройте файл DC1.rdp, который будет загружен и нажмите кнопку **Подключить**.
     
@@ -191,7 +191,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs"
+Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
 ```
 
 Потребуется указать пароль администратора для безопасного режима. Храните этот пароль в надежном месте.
@@ -202,7 +202,7 @@ Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\\NTDS" -Sysvol
   
 ### <a name="connect-to-dc1-using-domain-credentials"></a>Подключение к DC1 с помощью учетных данных домена
 
-1. В [Azure портала](https://portal.azure.com), нажмите кнопку **группы ресурсов >** <your resource group name> **> DC1 > подключить**.
+1. В [Azure портала](https://portal.azure.com), нажмите кнопку **группы ресурсов >** [имя группы ресурсов] **> DC1 > подключить**.
     
 2. Запустите файл DC1.rdp, который будет загружен и нажмите кнопку **Подключить**.
     
@@ -242,7 +242,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 APP1 предоставляет веб-службы и службы общего доступа к файлам.
   
-Чтобы создать виртуальную машину Azure для APP1, укажите имя группы ресурсов, расположение Azure и имя учетной записи хранения. Затем выполните указанные ниже команды в командной строке Azure PowerShell на локальном компьютере.
+Создание виртуальной машины Azure для APP1, введите имя группы ресурсов и выполните следующие команды в командной строке Windows Azure PowerShell на локальном компьютере.
   
 ```
 $rgName="<resource group name>"
@@ -283,9 +283,9 @@ Install-WindowsFeature Web-WebServer -IncludeManagementTools
 Создайте общую папку и текстовый файл в папке на APP1 с помощью указанных ниже команд PowerShell.
   
 ```
-New-Item -path c:\\files -type directory
-Write-Output "This is a shared file." | out-file c:\\files\\example.txt
-New-SmbShare -name files -path c:\\files -changeaccess CORP\\User1
+New-Item -path c:\files -type directory
+Write-Output "This is a shared file." | out-file c:\files\example.txt
+New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 ```
 
 Это — ваша текущая конфигурация.
@@ -296,10 +296,7 @@ New-SmbShare -name files -path c:\\files -changeaccess CORP\\User1
 
 CLIENT1 действует как типичный ноутбук, планшет или компьютер в интрасети Contoso.
   
-> [!NOTE]
-> Следующие команды set создает CLIENT1 под управлением Windows Server 2016 центра обработки данных, который может выполняться для всех типов Azure подписок. Если у вас есть подписка Azure на основе Visual Studio, можно создать CLIENT1 выполняемого-Windows 10, Windows 8 или Windows 7 с [Azure портала](https://portal.azure.com). 
-  
-Чтобы создать виртуальную машину Azure для CLIENT1, укажите имя группы ресурсов, расположение Azure и имя учетной записи хранения. Затем выполните указанные ниже команды в командной строке Azure PowerShell на локальном компьютере.
+Создание виртуальной машины Azure для CLIENT1, введите имя группы ресурсов и выполните следующие команды в командной строке Windows Azure PowerShell на локальном компьютере.
   
 ```
 $rgName="<resource group name>"
@@ -310,7 +307,7 @@ $nic=New-AzureRMNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -L
 $vm=New-AzureRMVMConfig -VMName CLIENT1 -VMSize Standard_A1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
 $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
@@ -343,7 +340,7 @@ Restart-Computer
     
 4. На начальном экране выберите пункт **Internet Explorer**и нажмите кнопку **ОК**.
     
-5. В адресной строке введите **http://app1.corp.contoso.com/**и нажмите клавишу ВВОД. Вы увидите веб-страницу по умолчанию службы IIS для APP1.
+5. В адресной строке введите **http://app1.corp.contoso.com/**, а затем нажмите клавишу ВВОД. Вы увидите веб-страницу по умолчанию службы IIS для APP1.
     
 6. Щелкните значок проводника на панели задач рабочего стола.
     
@@ -362,8 +359,8 @@ Restart-Computer
 > [!TIP]
 > Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования Microsoft Cloud.
   
-## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Минимизация расходов на виртуальные машины в тестовой среде в Azure
 <a name="mincost"> </a>
+## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Минимизация расходов на виртуальные машины в тестовой среде в Azure
 
 Чтобы снизить затраты на работу виртуальных машин тестовой среды, можно выполнить одно из указанных ниже действий.
   
@@ -383,9 +380,7 @@ Stop-AzureRMVM -ResourceGroupName $rgName -Name "DC1" -Force
 Чтобы виртуальные машины, находящиеся в остановленном (освобожденном) состоянии, работали должным образом после запуска и вывода их из этого состояния, запускайте их в следующем порядке:
   
 1. DC1
-    
 2. APP1
-    
 3. CLIENT1
     
 Чтобы запустить виртуальные машины по порядку с помощью Azure PowerShell, введите имя группы ресурсов и выполните указанные ниже команды.
@@ -399,16 +394,8 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 ## <a name="see-also"></a>См. также
 
-<a name="mincost"> </a>
-
-[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
-  
-[DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Облако безопасности приложения для Office 365 dev/тестовой среды](cloud-app-security-for-your-office-365-dev-test-environment.md)
-  
-[Дополнительные защиту от угроз для вашей среды разработки или тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-  
-[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
-
-
+- [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
+- [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Advanced Threat Protection в среде разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)

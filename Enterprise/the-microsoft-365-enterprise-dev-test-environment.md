@@ -1,5 +1,5 @@
 ---
-title: "Среда разработки и тестирования Microsoft 365 корпоративный"
+title: Среда разработки и тестирования Microsoft 365 корпоративный
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: "Сводка: Используйте руководство в лаборатории тестирования для создания среды разработки или тестирования, включающего Office 365 E5, мобильности Enterprise + E5 безопасности (Командной) и компьютера под управлением Windows 10 Enterprise."
-ms.openlocfilehash: c31c9a86a6918ee0a68e64cf3edfa7e2e4d2e93a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Сводка: Используйте руководство в лаборатории тестирования для создания среды разработки или тестирования, включающего Office 365 E5, мобильности Enterprise + E5 безопасности (Командной) и компьютера под управлением Windows 10 Enterprise.'
+ms.openlocfilehash: f4100a870191f03f82e7af5e79e710ee1403e8c7
+ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Среда разработки и тестирования Microsoft 365 корпоративный
 
@@ -63,12 +63,11 @@ ms.lasthandoff: 02/14/2018
 > [!NOTE]
 > Период пробной подписки на Enterprise Mobility + Security E5 составляет 90 дней. Чтобы создать постоянную среду тестирования и разработки, создайте новую платную подписку с небольшим количеством лицензий. 
   
- ***Если вы выполнили этап 3*** [Office 365 dev/тестовой среде](office-365-dev-test-environment.md) , повторите шаги 8 и 9 предыдущей процедуры для всех других учетных записей (2 пользователя, пользователь 3, 4 пользователя и пользователь 5).
+ ***Завершения этапа 3*** [Office 365 dev/тестовой среде](office-365-dev-test-environment.md), повторите шаги 8 и 9 предыдущей процедуры для всех других учетных записей (2 пользователя, пользователь 3, 4 пользователя и пользователь 5).
   
 Теперь ваша среда разработки и тестирования содержит:
   
 - Пробные подписки на Office 365 корпоративный E5 и EMS для одной организации, а также один и тот же клиент Azure AD для всех учетных записей пользователей из списка.
-    
 - Использование Office 365 E5 и E5 Командной включены все соответствующие учетные записи пользователей (только что глобального администратора или все пять учетных записей пользователей).
     
 На рисунке 2 показана полученная в итоге конфигурация с EMS.
@@ -91,7 +90,7 @@ ms.lasthandoff: 02/14/2018
   
 ### <a name="virtual-machine-in-azure"></a>Виртуальная машина в Azure
 
-Создание виртуальной машины Windows 10 в Microsoft Azure, ***необходимо иметь подписку на основе Visual Studio***, которой имеют доступ к нужному изображению для Windows 10 Enterprise. Другие типы Azure подписки, например пробной версии и платной подписки нет доступа на данное изображение.
+Создание виртуальной машины Windows 10 в Microsoft Azure с использованием Azure галереи изображений.
   
 > [!NOTE]
 > Следующие наборы команд использовать последнюю версию te Azure PowerShell. В разделе [Начало работы с Windows Azure PowerShell командлетов](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Эти команды построения наборов виртуальной машины Windows 10 Enterprise с именем WIN10 и всех его инфраструктура, необходимая, включая группы ресурсов, учетной записи хранилища и виртуальной сети. Если вы уже знакомы с помощью служб инфраструктуры, можно адаптировать эти инструкции в соответствии с уже развернутого инфраструктуры. 
@@ -131,27 +130,6 @@ $locName="<location name, such as West US>"
 New-AzureRMResourceGroup -Name $rgName -Location $locName
 ```
 
-Диспетчер ресурсов на основе виртуальных машин требуется учетная запись хранения на основе диспетчера ресурсов. Необходимо выбрать глобально уникальное имя для учетной записи вашего хранилища,, *которая содержит только строчные буквы и цифры* . Эта команда используется для получения списка существующих учетных записей хранилища.
-  
-```
-Get-AzureRMStorageAccount | Sort StorageAccountName | Select StorageAccountName
-```
-
-Чтобы проверить, уникально ли предложенное имя учетной записи хранения, воспользуйтесь приведенной ниже командой.
-  
-```
-Get-AzureRmStorageAccountNameAvailability "<proposed name>"
-```
-
-C помощью указанных ниже команд создайте учетную запись хранения для новой тестовой среды.
-  
-```
-$rgName="<your new resource group name>"
-$saName="<storage account name>"
-$locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
-```
-
 Далее используйте приведенные ниже команды для создания новой виртуальной сети и виртуальной машины WIN10. При появлении запроса укажите имя и пароль учетной записи локального администратора WIN10 и сохраните их в надежном месте.
   
 ```
@@ -165,19 +143,17 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 $pip=New-AzureRMPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzureRMNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
 $vm=New-AzureRMVMConfig -VMName WIN10 -VMSize Standard_D1_V2
-$storageAcc=Get-AzureRMStorageAccount -ResourceGroupName $rgName -Name $saName
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for WIN10."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName WIN10 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftVisualStudio -Offer Windows -Skus Windows-10-N-x64 -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$osDiskUri=$storageAcc.PrimaryEndpoints.Blob.ToString() + "vhds/WIN10-TestLab-OSDisk.vhd"
-$vm=Set-AzureRMVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -VhdUri $osDiskUri -CreateOption fromImage
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 ## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a>Этап 4. Присоединение компьютера с Windows 10 к Azure AD
 
-После создания и запуска физической или виртуальной машины с Windows 10 Корпоративная войдите в систему, используя учетную запись локального администратора.
+После создания физической или виртуальной машине с Windows 10 Enterprise вход с учетной записью локального администратора.
   
 > [!NOTE]
 > Для виртуальных машин в Azure подключиться к ней с помощью [этих инструкций](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Вход с помощью учетных данных учетной записи локального администратора. 
@@ -196,7 +172,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 6. Закройте окно параметров.
     
-Затем установите Office 2016 на компьютер WIN10
+Затем установите Office 2016 на компьютере WIN10.
   
 1. Откройте браузер пограничного сервера Microsoft и вход на портал Office 365 свои учетные данные глобального администратора. Дополнительные сведения см [Where для входа в Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -228,10 +204,8 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 ## <a name="see-also"></a>См. также
 
-[Один Microsoft Cloud dev/тестовой среды](the-one-microsoft-cloud-dev-test-environment.md)
+- [Документация по Microsoft 365 для предприятия](https://docs.microsoft.com/microsoft-365-enterprise/)
 
-[Документация по Microsoft 365 для предприятия](https://docs.microsoft.com/microsoft-365-enterprise/)
+ - [Развертывание Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 
-
-
-
+- [Один Microsoft Cloud dev/тестовой среды](the-one-microsoft-cloud-dev-test-environment.md)
