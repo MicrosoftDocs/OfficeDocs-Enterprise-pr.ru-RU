@@ -1,9 +1,9 @@
 ---
-title: "Этап 2 Настройка контроллеров домена для проверки подлинности федеративные высокой доступности"
+title: Этап 2 Настройка контроллеров домена для проверки подлинности федеративные высокой доступности
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: "Сводка: Настройка контроллеров домена и сервер синхронизации каталогов для вашей высокой доступности федеративной проверки подлинности для Office 365 в Microsoft Azure."
-ms.openlocfilehash: 5e2cc8b5c750b5b2cf48ff0c594a5bd716d5bcf2
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Сводка: Настройка контроллеров домена и сервер синхронизации каталогов для вашей высокой доступности федеративной проверки подлинности для Office 365 в Microsoft Azure.'
+ms.openlocfilehash: 80846025af82810f63087aafd1a3b3a1213212d1
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Этап 2. Федеративная проверка подлинности для обеспечения высокой доступности: настройка контроллеров домена
 
@@ -35,13 +35,13 @@ ms.lasthandoff: 02/09/2018
   
 |**Элемент**|**Имя виртуальной машины**|**Коллекция изображения**|**Тип хранилища**|**Минимальный размер**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |______________ (первый контроллер домена, например DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |______________ (второй контроллер домена, например DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |______________ (сервер DirSync, например DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |______________ (первый сервер AD FS, например ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |______________ (второй сервер AD FS, например ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |______________ (первый прокси-сервер веб-приложений, например WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |______________ (второй прокси-сервер веб-приложений, например WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./images/Common_Images/TableLine.png)(первого контроллера домена, пример DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png)(второго контроллера домена, пример DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./images/Common_Images/TableLine.png)(Сервер синхронизации каталогов, пример DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./images/Common_Images/TableLine.png)(первого сервера AD FS, пример ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./images/Common_Images/TableLine.png)(второго сервера AD FS, пример ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./images/Common_Images/TableLine.png)(первый сервер веб-приложения прокси, пример WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./images/Common_Images/TableLine.png)(второй веб-прокси сервер приложений, пример WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
    
  **В таблице M - виртуальных машин для проверки подлинности федеративные высокой доступности для Office 365 в Azure**
   
