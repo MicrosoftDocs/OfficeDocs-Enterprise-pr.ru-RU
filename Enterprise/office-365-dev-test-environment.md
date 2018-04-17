@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Сводка: Используйте руководство в лаборатории тестирования для создания пробную подписку на Office 365 для оценки или разработку и тестирование.'
-ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-devtest-environment"></a>Среда разработки и тестирования Office 365
 
@@ -26,7 +29,7 @@ ms.lasthandoff: 04/05/2018
   
 - Упрощенная среда Office 365 для разработки и тестирования включает в себя пробную подписку Office 365, доступ к которой можно получить с основного компьютера.
     
-    Используйте эту среду для быстрой демонстрации компонента. Для упрощенной среды разработки и тестирования Office 365 выполните этапы 2 и 3, описанные в этой статье.
+    Используйте этой среды, когда необходимо быстро Демонстрация компонента. Упрощенная среда разработки и тестирования Office 365 выполните только этапы 2 и 3 в этой статье.
     
 - Среда Office 365 для разработки и тестирования смоделированного предприятия включает в себя пробную подписку на Office 365 и подключенную к Интернету упрощенную интрасеть организации, которая размещена в службах инфраструктуры Microsoft Azure. Вы можете полностью создать эту конфигурацию в Microsoft Cloud.
     
@@ -38,7 +41,7 @@ ms.lasthandoff: 04/05/2018
 ![Руководства по лаборатории тестирования в Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования Microsoft Cloud.
+> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
   
 ## <a name="phase-1-create-the-base-configuration-in-azure"></a>Этап 1. Создание базовой конфигурации в Azure
 
@@ -56,13 +59,13 @@ ms.lasthandoff: 04/05/2018
 
 Чтобы оформить пробную подписку на Office 365 E5, потребуются вымышленное название компании и новая учетная запись Майкрософт.
   
-1. Рекомендуется использовать значение variant, название компании Contoso для название компании, которая вымышленной компании, используемые в Microsoft образцы контента, но она не требуется. Запишите имя вымышленной компании: ___.
+1. Рекомендуется использовать значение variant, название компании Contoso для название компании, которая вымышленной компании, используемые в Microsoft образцы контента, но она не требуется. Запишите имя вымышленной компании:![](./images/Common_Images/TableLine.png)
     
 2. Чтобы зарегистрировать новую учетную запись Майкрософт, перейдите к [https://outlook.com](https://outlook.com) и создание учетной записи с помощью новой учетной записи электронной почты и адрес. Эта учетная запись будет использоваться для подписки на Office 365.
     
-  - Запишите имя и фамилию новой учетной записи здесь: ___.
+  - Запишите имя и фамилию новой учетной записи здесь:![](./images/Common_Images/TableLine.png)
     
-  - Запишите здесь адрес электронной почты новой учетной записи: _____________________________@outlook.com
+  - Запишите новый адрес электронной почты учетной записи здесь: ![](./images/Common_Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Оформление пробной подписки на Office 365 E5
 
@@ -105,7 +108,7 @@ Stop-Process -Name Explorer -Force
     
     Запишите пароль в надежном месте.
     
-    Запишите свое имя вымышленной компании, чтобы рассматриваться, как **Название организации**, здесь: ___.
+    Запишите имя вымышленной компании, чтобы рассматриваться, как **Название организации**, здесь:![](./images/Common_Images/TableLine.png)
     
 5. Нажмите кнопку **Создать учетную запись**.
     
@@ -113,9 +116,9 @@ Stop-Process -Name Explorer -Force
     
 7. Введите код проверки из текст сообщения и нажмите кнопку **Далее**.
     
-8. Запишите страница входа URL-адрес здесь (Выбор и копии): ___.
+8. Запись входа в URL-адрес страницы здесь (Выбор и копии):![](./images/Common_Images/TableLine.png)
     
-9. Запишите здесь идентификатор пользователя (выделите и скопируйте): __________________________________.onmicrosoft.com
+9. Запишите идентификатор пользователя здесь (Выбор и копии): ![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     Это значение будет рассматриваться, как **имя глобального администратора Office 365**.
     
@@ -229,11 +232,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 Запишите эти значения для использования или развертывания дополнительных лабораторий тестирования в этой тестовой среде:
   
-- Имя глобального администратора Office 365: ____________________________________.onmicrosoft.com (с шага 9 этапа 2)
+- Имя глобального администратора Office 365: ![](./images/Common_Images/TableLine.png). onmicrosoft.com (в шаге 9 этап 2)
     
     Кроме того, запишите пароль этой учетной записи в надежном месте.
     
-- Название организации с пробной подпиской: _______________________________________________ (с шага 4 этапа 2)
+- Название организации, пробной подписки: ![](./images/Common_Images/TableLine.png) (из шага 4 этап 2)
     
 - Чтобы увидеть список учетных записей пользователей User 2, User 3, User 4 и User 5, выполните следующую команду в командной строке модуля Windows Azure Active Directory для Windows PowerShell:
     
@@ -243,13 +246,13 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
     Запишите здесь имена учетных записей:
     
-  - Имя учетно запись пользователя User 2: user2@_______________________________________________.onmicrosoft.com
+  - Имя учетной записи пользователя 2: Пользователь2 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Имя учетно запись пользователя User 3: user3@_______________________________________________.onmicrosoft.com
+  - Имя учетной записи пользователя 3: user3 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Имя учетно запись пользователя User 4: user4@_______________________________________________.onmicrosoft.com
+  - Имя учетной записи пользователя 4: Пользователь4 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Имя учетно запись пользователя User 5: user5@_______________________________________________.onmicrosoft.com
+  - Имя учетной записи пользователя 5: user5 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     Кроме того, запишите в надежном месте пароли этих учетных записей.
     
@@ -259,11 +262,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - URL-адрес сайта рабочей:https://______________________________________________.sharepoint.com/sites/production
+  - URL-адрес сайта рабочей: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
     
-  - URL-адрес сайта продаж:https://______________________________________________.sharepoint.com/sites/sales
+  - URL-адрес сайта продаж: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
     
-  - Поддержка URL-адрес сайта:https://______________________________________________.sharepoint.com/sites/support
+  - Поддержка URL-адрес сайта: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Дальнейшие действия
 
@@ -275,30 +278,30 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
     
 - [Федеративное удостоверение для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
-- [Облако безопасности приложения для Office 365 dev/тестовой среды](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-- [Дополнительные защиту от угроз для вашей среды разработки или тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Advanced Threat Protection в среде разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
-- [Расширенные eDiscovery для вашей среды разработки или тестирования Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [Advanced eDiscovery для среды разработки и тестирования Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-- [Защита конфиденциальных файлов в Office 365 dev/тестовой среде](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
+- [Защита конфиденциальных файлов в среде разработки и тестирования Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
-- [Изолированный SharePoint Online группы сайта dev/тестовой среды](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [Среда разработки и тестирования изолированного сайта группы SharePoint Online](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
-- [Классификации данных и маркировки в Office 365 dev/тестовой среде](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
+- [Классификация и маркировка данных в среде разработки и тестирования Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
 Добавьте к среде разработки и тестирования для Office 365 дополнительные облачные решения Майкрософт:
   
-- [Microsoft 365 Enterprise dev/тестовой среды](the-microsoft-365-enterprise-dev-test-environment.md)
+- [Среда разработки и тестирования Microsoft 365 корпоративный](the-microsoft-365-enterprise-dev-test-environment.md)
     
 - [Среда разработки и тестирования для Office 365 и Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
     
 ## <a name="see-also"></a>См. также
 
-[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+- [Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Среда разработки и тестирования для Office 365 и Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+- [Среда разработки и тестирования для Office 365 и Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   
-[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
+ - [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 
 

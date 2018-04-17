@@ -12,16 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Сводка: Настройка синхронизации службы каталогов для Office 365 dev/тестовой среды.'
-ms.openlocfilehash: 1363e7fd6a3afdbec85fd08790268ab186badbc8
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 2fd4a9e6ea009e28ce95ff69e5ab03043ed18706
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Синхронизация каталогов для Office 365 dev/тестовой среды
 
@@ -42,7 +41,7 @@ ms.lasthandoff: 04/05/2018
 2. Установка и настройка Azure AD Connect на компьютере APP1.
     
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования Microsoft Cloud.
+> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365
 

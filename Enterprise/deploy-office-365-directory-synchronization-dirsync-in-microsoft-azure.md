@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Сводка: Развертывание Azure AD подключение на виртуальной машине в среде Azure для синхронизации учетных записей между локального каталога и клиента Azure AD подписки Office 365.'
-ms.openlocfilehash: f96147542da3af1883ea5428b1345c8cf75b9223
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Развертывание Office 365 синхронизации службы каталогов в Microsoft Azure
 

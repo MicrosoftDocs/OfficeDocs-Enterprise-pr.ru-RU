@@ -1,5 +1,5 @@
 ---
-title: "Подписки, лицензий, учетные записи и клиентов для облака корпорации Майкрософт"
+title: Подписки, лицензий, учетные записи и клиентов для облака корпорации Майкрософт
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: "Сводка: Сведения о связи между организациями, подписок, лицензий, учетных записей пользователей и клиентов в облаке и услуги корпорации Майкрософт."
-ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Сводка: Сведения о связи между организациями, подписок, лицензий, учетных записей пользователей и клиентов в облаке и услуги корпорации Майкрософт.'
+ms.openlocfilehash: ff4854bc66f9a500715bbcd2da696b9a4519aa82
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Подписки, лицензий, учетные записи и клиентов для облака корпорации Майкрософт
 
@@ -150,7 +149,7 @@ ms.lasthandoff: 02/14/2018
    
 Вы можете с легкостью добавить подписки на службы Майкрософт на основе SaaS, используя Центр администрирования Office 365:
   
-1. Вход на портал Office 365 ([https://portal.office.com](https://portal.office.com)), используя свою учетную запись глобального администратора, а затем щелкните **Администрирование**.
+1. Войдите в портал Office 365 ([https://portal.office.com](https://portal.office.com)) с глобальным администратором учетной записи, а затем щелкните **Администрирование**.
     
 2. В левой области переходов домашней странице **центра администрирования** выберите **выставления счетов**, а затем **приобрести службы**.
     
@@ -160,7 +159,7 @@ ms.lasthandoff: 02/14/2018
   
 Чтобы добавить подписку Azure с теми же организацией и клиентом Azure AD, что и в подписке на Office 365:
   
-1. Войдите в портале Azure ([https://portal.azure.com](https://portal.azure.com)), используя свою учетную запись глобального администратора Office 365.
+1. Вход на портал Azure ([https://portal.azure.com](https://portal.azure.com)) с учетной записью глобального администратора Office 365.
     
 2. На панели навигации слева щелкните **подписки**и нажмите кнопку **Добавить**.
     

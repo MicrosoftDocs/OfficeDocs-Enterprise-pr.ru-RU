@@ -7,14 +7,15 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Разверните узел состояние присутствия Office 365 для нескольких географических регионов с несколькими географически возможности в OneDrive и SharePoint Online.
-ms.openlocfilehash: 7387b267cbc925916b600a112d6911c97a971c36
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 2c5de533aaaace68e51b747cd62a53b9572bcaec
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Поддержка нескольких регионов в OneDrive и SharePoint Online в Office 365
 

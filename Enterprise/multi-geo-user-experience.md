@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Описание взаимодействия с пользователями SharePoint и OneDrive в среде с несколькими географически.
-ms.openlocfilehash: 91837883ef7c970674a500afa4fda9adfafc6d5b
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 42e384d3e93ca3f5a06a8ee07a37b10e21477038
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Взаимодействие с пользователем в среде с несколькими географически
 
@@ -49,13 +50,13 @@ OneDrive для бизнеса клиента синхронизации (вер
 
 Для пользователей Office 365, в экземпляры вспомогательных поддерживается углубимся несколькими географически, с ограничением, Delve не ссылка на записи блога SharePoint, созданным пользователями в других регионах, только на свои сайты SharePoint блога.
 
-#### <a name="search"></a>служба поиска;
+#### <a name="search"></a>Поиск
 
 Каждое местоположение географически имеет свой собственный центр поиска и индекс поиска. При выполнении пользователем поиска, запрос отправляется в расположениях географически и объединенных и затем ранжирования, пользователь получает объединенные результаты возвращаемых результатов. Пользователи получают результаты из всех расположений географически вне зависимости от географического расположения. В разделе [Настройка поиска для OneDrive для бизнеса Multi-географически](configure-search-for-multi-geo.md) особенности.
 
 Поддерживаются следующие клиенты поиска:
 
--   OneDrive для бизнеса
+-   OneDrive for Business
 
 -   Delve
 

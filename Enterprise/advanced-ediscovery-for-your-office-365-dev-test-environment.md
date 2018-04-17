@@ -1,5 +1,5 @@
 ---
-title: "Advanced eDiscovery для среды разработки и тестирования Office 365"
+title: Advanced eDiscovery для среды разработки и тестирования Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,15 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- TLG-
+- TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
-description: "Сводка: Настройка и демонстрация Office 365 Advanced электронного обнаружения с образцами данных в среде разработки и тестирования Office 365."
-ms.openlocfilehash: a118ec2753d04afb60d13890b7d5da8c07701721
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Сводка: Настройка и демонстрация Office 365 Advanced электронного обнаружения с образцами данных в среде разработки и тестирования Office 365.'
+ms.openlocfilehash: e850cf7ebab806d8ff51176a3e88077a692c41ef
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery для среды разработки и тестирования Office 365
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/14/2018
 Выполнив действия, описанные в этой статье, вы создадите небольшой набор данных для урегулирования вымышленных разногласий по контракту и проанализируете его с помощью Advanced eDiscovery.
   
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования Microsoft Cloud.
+> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 02/14/2018
     
   - Если вы используете упрощенную среду разработки и тестирования, запустите частный сеанс Internet Explorer и войдите с локального компьютера.
     
-  - При использовании имитации корпоративной среде разработки и тестирования Azure портал ([https://portal.azure.com](https://portal.azure.com)) можно используйте для подключения на виртуальную машину CLIENT1 и затем вход из CLIENT1.
+  - При использовании среды разработки и тестирования имитации enterprise используйте Azure портала ([https://portal.azure.com](https://portal.azure.com)) для подключения на виртуальную машину CLIENT1 и затем вход из CLIENT1.
     
 2. На вкладке **Почты Outlook** нажмите кнопку **Создать**.
     
@@ -190,7 +190,7 @@ ms.lasthandoff: 02/14/2018
   
 [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
-[Облако безопасности приложения для Office 365 dev/тестовой среды](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 

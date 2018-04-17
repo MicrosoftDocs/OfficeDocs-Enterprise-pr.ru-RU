@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Сводка: Создание упрощенный интрасети в среде разработки или тестирования в Microsoft Azure.'
-ms.openlocfilehash: b2bd1c7bb2b0cd100326867fc3603b6afb6cd8db
-ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
+ms.openlocfilehash: a874260510b2825fae0f0fd9154912d35e555d19
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>Базовая конфигурация среды разработки и тестирования
 
@@ -32,7 +31,7 @@ ms.lasthandoff: 04/06/2018
 
 ![Этап 4. Базовая конфигурация в Azure, включающая виртуальную машину CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-Среда разработки и тестирования базовой конфигурации на рисунке 1 состоит из корпоративной сети подсети в только в облаке Azure виртуальную сеть с именем лаборатория тестирования, которая моделирует простая и частной интрасети, подключенных к Интернету. Он содержит три виртуальных машин Azure:
+Среда разработки и тестирования базовой конфигурации на рисунке 1 состоит из корпоративной сети подсети в только в облаке Azure виртуальную сеть с именем лаборатория тестирования, которая моделирует простая и частной интрасети, подключенных к Интернету. Он содержит три виртуальных машин Azure под управлением WIndows Server 2016:
   
 - DC1 настроена в качестве контроллера домена интрасети и сервера доменных имен (DNS).
     
@@ -241,7 +240,10 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 ## <a name="phase-3-configure-app1"></a>Этап 3. Настройка APP1
 
 APP1 предоставляет веб-службы и службы общего доступа к файлам.
-  
+
+-> [!NOTE]  
+-> Следующие команды set создает CLIENT1 под управлением Windows Server 2016 центра обработки данных, который может выполняться для всех типов Azure подписок. Если у вас есть подписка на основе Visual Studio Azure, вы можете создать CLIENT1 под управлением Windows 10 с [Azure портала](https://portal.azure.com). 
+
 Создание виртуальной машины Azure для APP1, введите имя группы ресурсов и выполните следующие команды в командной строке Windows Azure PowerShell на локальном компьютере.
   
 ```
@@ -307,7 +309,7 @@ $nic=New-AzureRMNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -L
 $vm=New-AzureRMVMConfig -VMName CLIENT1 -VMSize Standard_A1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
 $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm

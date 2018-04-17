@@ -12,16 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Сводка: Настройка федеративной проверки подлинности для среды разработки и тестирования Office 365.'
-ms.openlocfilehash: 8841e203587f4582396db172ff5f4626eacbcdc7
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: e1a2e4096dc14c2853af33a36b24d7b6ac9784bd
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Федеративное удостоверение для среды разработки и тестирования Office 365
 
@@ -275,7 +274,7 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
     
   - В поле **Отображаемое имя службы федерации**введите название вымышленной организации.
     
-  - Нажмите кнопку **Далее**.
+  - Нажмите кнопку **Next** (Далее).
     
 7. На странице **Укажите учетную запись службы** для **имени учетной записи**нажмите кнопку **выбрать** .
     
@@ -357,7 +356,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
   - В поле **пароль**введите пароль для учетной записи User1.
     
-  - Нажмите кнопку **Далее**.
+  - Нажмите кнопку **Next** (Далее).
     
 6. На странице " **Сертификат прокси-сервера AD FS** " щелкните стрелку вниз, выберите сертификат с полным доменным ИМЕНЕМ службы федерации и нажмите кнопку **Далее**.
     

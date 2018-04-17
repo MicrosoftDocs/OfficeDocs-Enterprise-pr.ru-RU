@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Сводка: Используйте руководство в лаборатории тестирования для создания среды разработки или тестирования, включающего Office 365 E5, мобильности Enterprise + E5 безопасности (Командной) и компьютера под управлением Windows 10 Enterprise.'
-ms.openlocfilehash: f4100a870191f03f82e7af5e79e710ee1403e8c7
-ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
+ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Среда разработки и тестирования Microsoft 365 корпоративный
 
@@ -90,10 +89,10 @@ ms.lasthandoff: 04/06/2018
   
 ### <a name="virtual-machine-in-azure"></a>Виртуальная машина в Azure
 
-Создание виртуальной машины Windows 10 в Microsoft Azure с использованием Azure галереи изображений.
+Создание виртуальной машины Windows 10 в Microsoft Azure, ***необходимо иметь подписку на основе Visual Studio***, которой имеют доступ к нужному изображению для Windows 10 Enterprise. Другие типы Azure подписки, например пробной версии и платной подписки нет доступа на данное изображение.
   
 > [!NOTE]
-> Следующие наборы команд использовать последнюю версию te Azure PowerShell. В разделе [Начало работы с Windows Azure PowerShell командлетов](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Эти команды построения наборов виртуальной машины Windows 10 Enterprise с именем WIN10 и всех его инфраструктура, необходимая, включая группы ресурсов, учетной записи хранилища и виртуальной сети. Если вы уже знакомы с помощью служб инфраструктуры, можно адаптировать эти инструкции в соответствии с уже развернутого инфраструктуры. 
+> Следующие наборы команд использовать последнюю версию Windows Azure PowerShell. В разделе [Начало работы с Windows Azure PowerShell командлетов](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Эти команды построения наборов виртуальной машины Windows 10 Enterprise с именем WIN10 и всех его инфраструктура, необходимая, включая группы ресурсов, учетной записи хранилища и виртуальной сети. Если вы уже знакомы с помощью служб инфраструктуры, можно адаптировать эти инструкции в соответствии с уже развернутого инфраструктуры. 
   
 Сначала запустите командную строку Microsoft PowerShell.
   
@@ -205,7 +204,5 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ## <a name="see-also"></a>См. также
 
 - [Документация по Microsoft 365 для предприятия](https://docs.microsoft.com/microsoft-365-enterprise/)
-
- - [Развертывание Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
-
+- [Развертывание Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [Один Microsoft Cloud dev/тестовой среды](the-one-microsoft-cloud-dev-test-environment.md)

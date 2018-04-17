@@ -1,5 +1,5 @@
 ---
-title: "Развертывание сайтов SharePoint Online для три уровня защиты"
+title: Развертывание сайтов SharePoint Online для три уровня защиты
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
-description: "Сводка: Создание и настройка SharePoint Online сайты рабочих групп для различных уровнях защита информации."
-ms.openlocfilehash: f015ce8d7c91d02ce5dc0a7791ba22a53bc2933f
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Сводка: Создание и настройка SharePoint Online сайты рабочих групп для различных уровнях защита информации.'
+ms.openlocfilehash: ddeb1885cbc74be6e7098660eb1d9906d43739fd
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Развертывание сайтов SharePoint Online для три уровня защиты
 
@@ -52,7 +51,7 @@ ms.lasthandoff: 02/14/2018
     
 8. В области **Who do you want to add?** (Кого нужно добавить?) нажмите кнопку **Готово**.
     
-Ниже показана результирующая конфигурация.
+Ниже показана полученная в итоге конфигурация.
   
 ![Защита базового уровня для общедоступного сайта группы SharePoint Online.](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
@@ -78,7 +77,7 @@ ms.lasthandoff: 02/14/2018
     
 9. После добавления к узлу начальный набор элементов нажмите кнопку **Готово**
     
-Ниже показана результирующая конфигурация.
+Ниже показана полученная в итоге конфигурация.
   
 ![Защита базового уровня для закрытого сайта группы SharePoint Online.](images/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
@@ -194,7 +193,7 @@ ms.lasthandoff: 02/14/2018
     
 - Для пользователей, не являющихся участниками, включена возможность запроса доступа.
     
-Ниже показана результирующая конфигурация.
+Ниже показана полученная в итоге конфигурация.
   
 ![Защита уровня конфиденциальности для изолированного сайта группы SharePoint Online.](images/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
