@@ -3,7 +3,7 @@ title: Поддержка нескольких регионов в OneDrive и S
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
+ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,15 +11,15 @@ ms.custom: Strat_SP_gtc
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Разверните узел состояние присутствия Office 365 для нескольких географических регионов с несколькими географически возможности в OneDrive и SharePoint Online.
-ms.openlocfilehash: 2c5de533aaaace68e51b747cd62a53b9572bcaec
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 3f72158fe05aadfe8a08a5520bf65cd2d0aaa1c6
+ms.sourcegitcommit: a81d08c7e8771cb2c232435971e3169d4f7428dc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 04/16/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Поддержка нескольких регионов в OneDrive и SharePoint Online в Office 365
 
-Поддержка нескольких регионов в OneDrive и SharePoint Online позволяет организации развивать бизнес в нескольких географических регионах или странах, используя существующий клиент Office 365. В настоящее время эта функция находится на стадии бета-тестирования. Обратитесь в отдел по работе с клиентами Майкрософт, чтобы зарегистрировать свою международную компанию для работы с несколькими регионами в OneDrive.
+С несколькими географически возможности в OneDrive и SharePoint Online организации могут расширить его присутствие Office 365 для нескольких географических областей и странах в рамках существующего клиента. Доступ к ваша группа учетной записи Майкрософт для подписки на вашей компании несколькими национальный OneDrive для бизнеса Multi-географически.
   
 С несколькими OneDrive-географически, можно подготовить и хранения статических данных в географически местах, выбранные в соответствии с требованиями местонахождения данных и в то же время разблокировки вашей глобального развертывание современных работы для сотрудников.
   
