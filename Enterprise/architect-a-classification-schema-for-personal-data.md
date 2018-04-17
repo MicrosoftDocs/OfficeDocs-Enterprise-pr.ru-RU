@@ -1,5 +1,5 @@
 ---
-title: "Разработка архитектуры схемы классификации для персональных данных"
+title: Разработка архитектуры схемы классификации для персональных данных
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Strat_O365_Enterprise
 - Ent_O365
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- GDPR
-- Strat_O365_Enterprise
-ms.assetid: 
-description: "Определите, целесообразно ли вашей организации внедрять метки в рамках плана по соблюдению регламента GDPR."
-ms.openlocfilehash: ee3c01cd4fd99fcc62bbde445eeb3018bb05f586
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.custom: ''
+ms.assetid: ''
+description: Определите, целесообразно ли вашей организации внедрять метки в рамках плана по соблюдению регламента GDPR.
+ms.openlocfilehash: 5a462c6e63c72d76fe11d1a41df02cc2bc6f249d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Разработка архитектуры схемы классификации для персональных данных
 

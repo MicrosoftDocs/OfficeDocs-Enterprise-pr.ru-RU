@@ -1,5 +1,5 @@
 ---
-title: "Настройка и создание типа конфиденциальной информации"
+title: Настройка и создание типа конфиденциальной информации
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- Strat_O365_Enterprise
-- GDPR
-ms.assetid: 
-description: "Узнайте, как изменить или создать типы конфиденциальной информации в Office 365 для соблюдения регламента GDPR."
-ms.openlocfilehash: 58bfce19d75a66fe36d3e61ec0b05bcca6913b85
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.custom: ''
+ms.assetid: ''
+description: Узнайте, как изменить или создать типы конфиденциальной информации в Office 365 для соблюдения регламента GDPR.
+ms.openlocfilehash: 17158dc3de7672e57ff84bc1dab24e844a15f43b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Настройка и создание типа конфиденциальной информации
 
