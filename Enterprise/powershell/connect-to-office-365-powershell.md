@@ -3,7 +3,7 @@ title: Подключение к Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/12/2018
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Сводка. Подключитесь к своей организации Office 365, используя PowerShell, чтобы выполнять задачи администрирования из командной строки.
-ms.openlocfilehash: 95d1e5717d3fec7f0d3102beb65eebaef28bd6cf
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 71b8c8d61a914fa7fd036fadb7e17ca3f66cd639
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Подключение к Office 365 PowerShell
 
@@ -27,7 +27,6 @@ ms.lasthandoff: 04/16/2018
   
 PowerShell позволяет управлять настройками Office 365 из командной строки. Подключение состоит из трех этапов: установки необходимого программного обеспечения, его запуска и непосредственно подключения к организации Office 365. 
 
-Обратите внимание, что эти инструкции такие же, как в разделе [Azure ActiveDirectory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113).
   
 > [!TIP]
 > **Никогда не работали с PowerShell?** Посмотрите [этот видеообзор](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx) на сайте LinkedIn Learning. 
@@ -120,15 +119,15 @@ Connect-MsolService
     
 - **Если при подключении возникнет ошибка, ознакомьтесь с **[этой статьей](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-## <a name="connect-with-the-azure-active-directory-v2-powershell-module"></a>Подключение с помощью модуля Azure Active Directory PowerShell 2
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Связь с Azure Active Directory PowerShell для модуля "график"
 <a name="ConnectV2"> </a>
 
-Имена командлетов в модуле Azure Active Directory для PowerShell версии 2 включают компонент AzureAD.
+Команды в Azure Active Directory PowerShell для модуля графике иметь «AzureAD» в имени командлета.
 
-Для процедур, которые требуют новых командлетов в модуле Windows Azure Active Directory версии 2 PowerShell используйте следующие действия для установки модуля и подключитесь к своей подписке Office 365.
+Для процедур, которые требуют новых командлетов в Windows Azure Active Directory PowerShell для модуля "график" используйте следующие действия для установки модуля и подключиться к своей подписке Office 365.
 
 >[!Note]
->[Модуль Windows Azure Active Directory версии 2 PowerShell](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) в разделе сведения о поддержке для разных версий Microsoft Windows.
+>[Windows Azure Active Directory PowerShell для модуля "график"](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) в разделе сведения о поддержке для разных версий Microsoft Windows.
 >
 
 ### <a name="step-1-install-required-software"></a>Шаг 1. Установите необходимое программное обеспечение
@@ -168,7 +167,7 @@ Connect-AzureAD
     
 Следуйте инструкциям в диалоговом окне **Azure Active Directory PowerShell**, чтобы указать дополнительные сведения для проверки подлинности, например код подтверждения, и нажмите **Войти**.
     
-После подключения можно использовать новые командлеты для [модуля Azure Active Directory PowerShell 2](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
+После подключения, можно использовать новые командлеты для [Windows Azure Active Directory PowerShell для модуля "график"](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
 ## <a name="see-also"></a>См. также
 

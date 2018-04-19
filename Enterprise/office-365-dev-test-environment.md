@@ -3,7 +3,7 @@ title: Среда разработки и тестирования Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 04/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Сводка: Используйте руководство в лаборатории тестирования для создания пробную подписку на Office 365 для оценки или разработку и тестирование.'
-ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 61c1fc5a997eaa0a524d49e7806fc8bb102ee281
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="office-365-devtest-environment"></a>Среда разработки и тестирования Office 365
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
 Необходимо будет Azure подписки. [Бесплатная пробная версия Azure](https://azure.microsoft.com/pricing/free-trial/) можно использовать для этой конфигурации. Если у вас есть подписка на MSDN или Visual Studio, видеть [кредит ежемесячный Azure для подписчиков Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
   
-Ниже показана итоговая конфигурация.
+Ниже показана конфигурация, которая должна получиться в итоге.
   
 ![Базовая конфигурация среды разработки и тестирования в Azure](images/63108214-f716-46ae-9974-072ff15b44a2.png)
   
@@ -71,22 +71,9 @@ ms.lasthandoff: 04/16/2018
 
 1. Упрощенный Office 365 dev/тестовой среды, откройте веб-браузер на вашем компьютере и перейдите к [https://aka.ms/e5trial](https://aka.ms/e5trial). 
     
-    Для имитации enterprise Office 365 dev/тестовой среды:
-    
-  - С [Azure портала](https://portal.azure.com), подключиться к CLIENT1 с CORP\\учетной записи User1.
-    
-  - Откройте командную строку Windows PowerShell с правами администратора и выполните следующие команды:
-    
-  ```
-  Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Stop-Process -Name Explorer -Force
-  ```
+    Для имитации enterprise Office 365 dev/тестовой среды подключитесь к CLIENT1 с помощью учетной записи CORP\User1 с Azure портала.
 
-    > [!TIP]
-    > Щелкните [здесь](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) для получения текстовый файл, содержащий все команды PowerShell в данной статье.
-  
-  - На начальном экране выберите пункт **Internet Explorer** и перейдите к [https://aka.ms/e5trial](https://aka.ms/e5trial).
+    На начальном экране, выполните пограничного сервера Microsoft и перейдите к [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
 2. На странице **приветствия, давайте рассмотрим знать, можно** укажите:
     
@@ -161,6 +148,8 @@ $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
 $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
+> [!TIP]
+> Щелкните [здесь](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) для получения текстовый файл, содержащий все команды PowerShell в данной статье.
 
 Отображение команду **New-MsolUser** Обратите внимание, созданный пароль для учетной записи пользователя 2 и запишите его в надежном месте.
   
@@ -302,6 +291,6 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
   
 - [Среда разработки и тестирования для Office 365 и Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   
- - [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
+- [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 
 

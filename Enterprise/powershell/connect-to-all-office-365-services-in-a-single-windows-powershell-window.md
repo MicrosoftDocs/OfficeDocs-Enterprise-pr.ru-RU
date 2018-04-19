@@ -3,7 +3,7 @@ title: Подключение ко всем службам Office 365 с пом�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/10/2018
+ms.date: 04/17/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Сводка: Подключение Windows PowerShell для всех служб Office 365 в одном окне Windows PowerShell.'
-ms.openlocfilehash: ffa603ec50c95f5800315eee07b4d01e058852f3
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: b48caf9ab75b775995b9839325832c798da4d331
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/16/2018
   
 Это не является оптимальным для управления Office 365, так как не удается обмен данными между этих пяти windows для управления между службами. В этом разделе описывается, как использовать один экземпляр Windows PowerShell, из которого можно управлять Office 365, Скайп для бизнеса в Интернет, Exchange Online, SharePoint Online и безопасность &amp; центре соответствия требованиям.
 
-## <a name="before-you-begin"></a>Подготовка
+## <a name="before-you-begin"></a>Перед началом работы
 <a name="BeforeYouBegin"> </a>
 
 Прежде чем все Office 365 можно управлять из одного экземпляра Windows PowerShell, необходимо учитывайте следующие требования:
@@ -57,10 +57,9 @@ ms.lasthandoff: 04/16/2018
     
     Необходимо использовать 64-разрядной версии Windows из-за требования к Скайп для бизнеса в Интернет в модуле и один из модулей Office 365.
     
-- Требуется ли установить модули, которые необходимы для Office 365, SharePoint Online и Скайп для бизнеса в Интернет:
+- Требуется ли установить модули, которые необходимы для Azure AD SharePoint Online и Скайп для бизнеса в Интернет:
     
-   - [Microsoft Online службы помощник по входу для ИТ-специалистов RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152)
-   - Windows Azure Active Directory модуль для Windows PowerShell (64-разрядная версия) с помощью команды **Install-модуль MSOnline** в командной строке с повышенными привилегиями PowerShell.
+   - [Azure Active Directory версии 2](connect-to-office-365-powershell.md#ConnectV2)
    - [Командная консоль SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Скайп для бизнеса через Интернет, модуля Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
@@ -83,11 +82,10 @@ ms.lasthandoff: 04/16/2018
   $credential = Get-Credential
   ```
 
-3. Выполните следующие команды для подключения к Office 365.
+3. Выполните эту команду, чтобы подключиться к Azure Active Directory (AD).
     
   ```
-  Import-Module MsOnline
-  Connect-MsolService -Credential $credential
+   Connect-AzureAD -Credential $credential
   ```
 
 4. Выполните следующие команды для подключения к SharePoint Online. Замените _ \<domainhost >_ с фактическое значение для вашего домена. Например, `litwareinc.onmicrosoft.com`, _ \<domainhost >_ значение — `litwareinc`.
@@ -124,8 +122,7 @@ ms.lasthandoff: 04/16/2018
 ```
 $domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
 $credential = Get-Credential
-Import-Module MsOnline
-Connect-MsolService -Credential $credential
+Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$domainHost-admin.sharepoint.com -credential $credential
 Import-Module SkypeOnlineConnector
@@ -151,10 +148,7 @@ Remove-PSSession $sfboSession ; Remove-PSSession $exchangeSession ; Remove-PSSes
 $acctName="<UPN of a global administrator account>"
 $domainHost="<domain host name, such as litware for litwareinc.onmicrosoft.com>"
 #Azure Active Directory
-#If you are running Office 365 commands that contain "AzureAd" in their name, use this command:
 Connect-AzureAD
-#If you are running Office 365 commands that contain "Msol" in their name, comment the preceding command and un-comment the following command:
-#Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$domainHost-admin.sharepoint.com
 #Skype for Business Online
@@ -176,8 +170,7 @@ Exchange Online и системы безопасности &amp; центре с
 
 ## <a name="see-also"></a>См. также
 
-- [Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
-- [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+- [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md)
 - [Управление SharePoint Online с помощью Office 365 PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
 - [Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Использование Windows PowerShell для создания отчетов в Office 365](use-windows-powershell-to-create-reports-in-office-365.md)

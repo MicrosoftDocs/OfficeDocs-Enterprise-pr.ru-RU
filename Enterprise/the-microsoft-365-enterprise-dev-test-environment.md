@@ -3,7 +3,7 @@ title: Среда разработки и тестирования Microsoft 36
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Сводка: Используйте руководство в лаборатории тестирования для создания среды разработки или тестирования, включающего Office 365 E5, мобильности Enterprise + E5 безопасности (Командной) и компьютера под управлением Windows 10 Enterprise.'
-ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 9ef1c13d7ae194ff4ba31abaf379529220ffa14f
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Среда разработки и тестирования Microsoft 365 корпоративный
 
@@ -29,11 +29,14 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>Этап 1. Создание подписки Office 365 E5
 
-Выполните действия, описанные в этап 2 и 3 этапа из [Office 365 dev/тестовой среды](office-365-dev-test-environment.md) для создания среды разработки и тестирования lightweight Office 365, как показано на рисунке 1.
+Выполните действия, описанные в этап 2 и 3 этапа [разработки и тестовой среде Office 365](office-365-dev-test-environment.md) для создания среды разработки и тестирования lightweight Office 365, как показано на рисунке 1.
   
 **На рисунке 1: Office 365 E5 подписки по программе его Azure Active Directory (AD) клиента и учетные записи пользователей**
 
 ![Этап 1 для среды разработки и тестирования Microsoft 365 корпоративный](images/65bb027b-fb59-46eb-aec2-38c0af425168.png)
+
+> [!NOTE]
+> Пробной подписки Office 365 E5 — 30 дней, которые могут быть легко расширены до 60 дней. Для постоянного dev/тестовой среды создайте новую оплата за подписки с небольшого числа лицензий. 
   
 ## <a name="phase-2-add-ems"></a>Этап 2. Добавление EMS
 
@@ -66,7 +69,7 @@ ms.lasthandoff: 04/16/2018
   
 Теперь ваша среда разработки и тестирования содержит:
   
-- Пробные подписки на Office 365 корпоративный E5 и EMS для одной организации, а также один и тот же клиент Azure AD для всех учетных записей пользователей из списка.
+- Office 365 корпоративный E5 и E5 Командной пробной подписки, общий доступ к одной Azure AD клиента со списком учетных записей пользователей.
 - Использование Office 365 E5 и E5 Командной включены все соответствующие учетные записи пользователей (только что глобального администратора или все пять учетных записей пользователей).
     
 На рисунке 2 показана полученная в итоге конфигурация с EMS.
@@ -201,8 +204,9 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 - [Настройки и тестирования расширенного защиту от угроз](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Понятия
 
 - [Документация по Microsoft 365 для предприятия](https://docs.microsoft.com/microsoft-365-enterprise/)
 - [Развертывание Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [Один Microsoft Cloud dev/тестовой среды](the-one-microsoft-cloud-dev-test-environment.md)
+- [Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
