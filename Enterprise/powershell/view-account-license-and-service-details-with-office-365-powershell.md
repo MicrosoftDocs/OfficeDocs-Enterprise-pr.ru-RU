@@ -1,9 +1,9 @@
 ---
-title: "Просмотр сведений о лицензии и службе учетной записи с помощью PowerShell в Office 365"
+title: Просмотр сведений о лицензии и службе учетной записи с помощью PowerShell в Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/19/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
-description: "Объясняет, как использовать Office 365 PowerShell для определения служб Office 365, которые были назначены пользователям."
-ms.openlocfilehash: 69784b43e6e2b24f776d07a937877e5ae0c74888
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Объясняет, как использовать Office 365 PowerShell для определения служб Office 365, которые были назначены пользователям.
+ms.openlocfilehash: 5286a581a67b39d5d5ca921b998d6ea14b3ff50f
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Просмотр сведений о лицензии и службе учетной записи с помощью PowerShell в Office 365
 
@@ -44,8 +44,8 @@ ms.lasthandoff: 02/14/2018
     
 - Если использовать командлет **Get-MsolUser** без параметра _All_, возвращаются только первые 500 учетных записей.
     
-## <a name="the-short-version-instructions-without-explanations"></a>Краткая версия (инструкции без пояснений)
 <a name="ShortVersion"> </a>
+## <a name="the-short-version-instructions-without-explanations"></a>Краткая версия (инструкции без пояснений)
 
 Для просмотра всех служб Office 365 PowerShell, которые пользователь имеет доступ к, используйте следующий синтаксис:
   
@@ -89,8 +89,8 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceSt
 Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
-## <a name="the-long-version-instructions-with-detailed-explanations"></a>Подробная версия (инструкции с подробными пояснениями)
 <a name="LongVersion"> </a>
+## <a name="the-long-version-instructions-with-detailed-explanations"></a>Подробная версия (инструкции с подробными пояснениями)
 
 ### <a name="find-the-office-365-powershell-services-that-a-user-has-access-to"></a>Поиск служб Office 365 PowerShell, которые пользователь имеет доступ к
 
@@ -124,7 +124,7 @@ System.Runtime... Microsoft.On...  litwarein... {Microsoft.Online.A...
 
 И затем, развернув свойство **ServiceStatus** мы можем вернуть еще больше информации:
   
-|Служба плана ***|Описание ***|
+|Служба плана ***|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -162,7 +162,7 @@ EXCHANGE_S_ENTERPRISE             Success
 
 И давайте также взглянем на таблицу, объясняется, что самом деле представляют эти планы обслуживания со странными именами:
   
-|Служба плана ***|Описание ***|
+|Служба плана ***|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -190,7 +190,7 @@ EXCHANGE_S_ENTERPRISE             Success
   
 Мы надежде, что кто-то задаст. Чтобы ответить на этот вопрос, давайте рассмотрим таблицы службы, которые мы сначала рассмотрены в статье [Просмотр лицензий и службы с помощью Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md) для нашего доступны только план лицензирования `litwareinc:ENTERPRISEPACK`:
   
-|Служба плана ***|Описание ***|
+|Служба плана ***|****Description****|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
@@ -282,17 +282,21 @@ Get-MsolUser | Where-Object {$_.isLicensed -eq $true -and $_.Licenses.ServiceSta
   
 Конечно, являющийся зачем нам Windows PowerShell: Windows PowerShell позволяет сохранить вы утомительные и длительные задачи, например.
   
-Хотя мы на него, здесь приведена ключевая команда для просмотра сведений о службе:
+Ниже приведен пример команды для просмотра сведений о службе для указанного набора служб, как определено в своих лицензий и ServiceStatus индексов для подписки на Office 365 E5:
   
 ```
-Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[0].ServiceStatus[0].ProvisioningStatus}}, @{Name="MDM";Expression={$_.Licenses[0].ServiceStatus[1].ProvisioningStatus}}, @{Name="Yammer";Expression={$_.Licenses[0].ServiceStatus[2].ProvisioningStatus}}, @{Name="AD RMS";Expression={$_.Licenses[0].ServiceStatus[3].ProvisioningStatus}}, @{Name="OfficePro";Expression={$_.Licenses[0].ServiceStatus[4].ProvisioningStatus}}, @{Name="Skype";Expression={$_.Licenses[0].ServiceStatus[5].ProvisioningStatus}}, @{Name="OfficeWeb";Expression={$_.Licenses[0].ServiceStatus[6].ProvisioningStatus}}, @{Name="SharePoint";Expression={$_.Licenses[0].ServiceStatus[7].ProvisioningStatus}}, @{Name="Exchange";Expression={$_.Licenses[0].ServiceStatus[8].ProvisioningStatus}} | ConvertTo-Html > "C:\\My Documents\\Service Info.html"
+Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[0].ServiceStatus[12].ProvisioningStatus}}, @{Name="Teams";Expression={$_.Licenses[0].ServiceStatus[7].ProvisioningStatus}}, @{Name="Yammer";Expression={$_.Licenses[0].ServiceStatus[20].ProvisioningStatus}}, @{Name="AD RMS";Expression={$_.Licenses[0].ServiceStatus[19].ProvisioningStatus}}, @{Name="OfficePro";Expression={$_.Licenses[0].ServiceStatus[21].ProvisioningStatus}}, @{Name="Skype";Expression={$_.Licenses[0].ServiceStatus[22].ProvisioningStatus}}, @{Name="SharePoint";Expression={$_.Licenses[0].ServiceStatus[24].ProvisioningStatus}}, @{Name="Exchange";Expression={$_.Licenses[0].ServiceStatus[23].ProvisioningStatus}} | ConvertTo-CSV > "C:\Service Info.csv"
 ```
 
-И это очень дурацких команды. Однако он создает CSV-файла, отображение всех пользователей и всего их состояние службы.
+Эта команда создает CSV-файла, все пользователи, а также их состояние службы для указанного набора служб (группы, Yammer, службы управления правами, OfficePro, Скайп, SharePoint и Exchange).
+
+>[!Note]
+>Можно получить список служб в подписке из `(Get-MsolUser -UserPrincipalName <user account UPN>).Licenses[<LicenseIndexNumber>].ServiceStatus` команды. В выходных данных сначала нумерация индексов службы с 0. Предыдущая команда всего лишь пример. Номера индекса для служб может изменяться со временем.
+>
 
   
-## <a name="see-also"></a>См. также
 <a name="SeeAlso"> </a>
+## <a name="see-also"></a>См. также
 
 Сведения об управлении пользователями с помощью Office 365 PowerShell см. в следующих статьях:
   

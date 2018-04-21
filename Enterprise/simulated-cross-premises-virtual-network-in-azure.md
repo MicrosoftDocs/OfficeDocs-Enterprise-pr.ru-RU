@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Сводка: Создание имитации распределенной виртуальной сети в Microsoft Azure в среде разработки и тестирования.'
-ms.openlocfilehash: 41988e8201e896a7c1900b645e6c38357d0bfcd0
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Имитация распределенной виртуальной сети в Azure
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/16/2018
 Во-первых, запустите командную строку Azure PowerShell на своем локальном компьютере.
   
 > [!NOTE]
-> Следующие наборы команд использовать последнюю версию Windows Azure PowerShell. В разделе [Начало работы с Windows Azure PowerShell командлетов](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!Примечание] Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Просмотрите статью [Начало работы с командлетами Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Войдите в свою учетную запись Azure с помощью указанной ниже команды.
   
@@ -85,7 +85,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> Щелкните [здесь](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) для получения текстовый файл, содержащий все команды PowerShell в данной статье.
+> [!Совет] Скачать текстовый файл, который содержит все команды PowerShell, указанные в этой статье, можно [здесь](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0).
   
 Получите имя подписки с помощью следующей команды.
   
@@ -173,7 +173,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -Credential (Get-Credential CORP\\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\\NTDS" -LogPath "F:\\Logs" -SysvolPath "F:\\SYSVOL"
+Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
 Обратите внимание на то, что вам предлагается ввести обоих CORP\\User1 пароль и пароль режима восстановления служб каталогов (DSRM) и для перезапуска DC2. 
@@ -206,7 +206,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 Используйте этот dev/тестовой среды для моделирования работы [фермы SharePoint Server 2016 интрасети, размещать в Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Понятия
 
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
   

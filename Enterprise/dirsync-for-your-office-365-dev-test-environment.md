@@ -16,11 +16,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Сводка: Настройка синхронизации службы каталогов для Office 365 dev/тестовой среды.'
-ms.openlocfilehash: 2fd4a9e6ea009e28ce95ff69e5ab03043ed18706
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: ebb16cb65738e0440b40d0d14550cd1f9c5bb21c
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Синхронизация каталогов для Office 365 dev/тестовой среды
 
@@ -65,8 +65,8 @@ ms.lasthandoff: 04/16/2018
 2. В виртуальной машине APP1 откройте командную строку Windows PowerShell с правами администратора и выполните следующие команды:
     
   ```
-  Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
+  Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
 Stop-Process -Name Explorer -Force
 
   ```
@@ -114,7 +114,7 @@ Stop-Process -Name Explorer -Force
 
 Если вы готовы к развертыванию синхронизации службы каталогов для вашей организации, видеть [развертывание Office 365 синхронизации каталогов в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Понятия
 
 [Облако внедрения тестирование руководства по лаборатории (руководствам)](cloud-adoption-test-lab-guides-tlgs.md)
 [среды разработки или тестирования базовой конфигурации](base-configuration-dev-test-environment.md)

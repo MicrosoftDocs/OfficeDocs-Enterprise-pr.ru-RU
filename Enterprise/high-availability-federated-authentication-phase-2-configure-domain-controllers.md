@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Сводка: Настройка контроллеров домена и сервер синхронизации каталогов для вашей высокой доступности федеративной проверки подлинности для Office 365 в Microsoft Azure.'
-ms.openlocfilehash: 80846025af82810f63087aafd1a3b3a1213212d1
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 9713e6b0f5241ece4e0f90aa5e0343582e38cdaa
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Этап 2. Федеративная проверка подлинности для обеспечения высокой доступности: настройка контроллеров домена
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/08/2018
 
 Во-первых необходимо заполнить столбец **имя виртуальной машины** в таблице M и изменение размеров виртуальной машины при необходимости в столбце **Минимальный размер** .
   
-|**Элемент**|**Имя виртуальной машины**|**Коллекция изображения**|**Тип хранилища**|**Минимальный размер**|
+|**Элемент**|**Имя виртуальной машины**|**Образ коллекции**|**Тип хранилища**|**Минимальный размер**|
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./images/Common_Images/TableLine.png)(первого контроллера домена, пример DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![](./images/Common_Images/TableLine.png)(второго контроллера домена, пример DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
@@ -64,7 +64,7 @@ ms.lasthandoff: 04/08/2018
 Помните, что вы задали таблицы R, V, S, I и A в [высокой доступности федеративных проверки подлинности этап 1: Настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> Следующие наборы команд использовать последнюю версию Windows Azure PowerShell. В разделе [Начало работы с Windows Azure PowerShell командлетов](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!Примечание] Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Просмотрите статью [Начало работы с командлетами Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Указав правильные значения, выполните полученный блок в командной строке Azure PowerShell или в интегрированной среде сценариев PowerShell (ISE) на локальном компьютере.
   
@@ -165,7 +165,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
 $cred = Get-Credential -Message "Enter credentials of an account with permission to join a new domain controller to the domain"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs" -Credential $cred
+Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs" -Credential $cred
 ```
 
 Вам будет предложено указать учетные данные администратора домена. Компьютер перезагрузится.
@@ -186,7 +186,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
 $domname="<DNS domain name of the domain for which this computer will be a domain controller, such as corp.contoso.com>"
 $cred = Get-Credential -Message "Enter credentials of an account with permission to join a new domain controller to the domain"
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs" -Credential $cred
+Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs" -Credential $cred
 
 ```
 

@@ -11,11 +11,11 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 'Сводка: Сведения о создании интегрированной тестовой лабораторной среды, которая содержит сервер под управлением Exchange Server 2013, сервер под управлением Lync Server 2013 и сервера под управлением SharePoint Server 2013.'
-ms.openlocfilehash: 636429a9cce04b982c1129dba601c6348deb9cdc
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: a15bdefe1749bca98933a8b9a4c4874130732eda
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Руководство по лаборатории тестирования. Настройка интегрированной лаборатории тестирования Exchange, Lync и SharePoint
 
@@ -23,8 +23,7 @@ ms.lasthandoff: 04/18/2018
  
 **Просмотрите интегрированной Exchange, Lync и SharePoint Обзорное видео по лаборатории тестирования**
 
-<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" ></iframe>
-
+> [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false]
  
 Лаборатории тестирования, результаты из этой конфигурации, которая включает в себя проверки подлинности сервер сервер между все три типа серверов, можно использовать для построения в работе и демонстрации продукта несколькими сценарии и решения, использующие сервер под управлением Exchange Server 2013 сервер под управлением Lync Server 2013 и сервера под управлением SharePoint Server 2013.
   
@@ -54,7 +53,7 @@ ms.lasthandoff: 04/18/2018
 
 [Руководство по тестовой лаборатории: настройка интегрированной Exchange, Lync и SharePoint тестовой лаборатории](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Понятия
 
 [Руководства для лабораторий тестирования](https://go.microsoft.com/fwlink/p/?LinkId=202817)
 

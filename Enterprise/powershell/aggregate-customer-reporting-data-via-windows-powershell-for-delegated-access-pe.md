@@ -1,5 +1,5 @@
 ---
-title: "Сбор отчетных данных о пользователях с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)"
+title: Сбор отчетных данных о пользователях с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
-description: "Сводка. Узнайте, как использовать Windows PowerShell для Office 365:, чтобы получить отчеты по всем пользовательским клиентам и собрать данные в одном хранилище."
-ms.openlocfilehash: 825f0519b97522f664c34462c441d190cac4bb8e
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
-ms.translationtype: HT
+description: Сводка. Узнайте, как использовать Windows PowerShell для Office 365:, чтобы получить отчеты по всем пользовательским клиентам и собрать данные в одном хранилище.
+ms.openlocfilehash: eba2c3be848b878670321485718317b5552b2db3
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>Сбор отчетных данных о пользователях с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 
@@ -54,9 +54,9 @@ $UserName = "admin@contoso.onmicrosoft.com"
 
 # These are the locations for the report output and error log.
 
-$OutputFile = ".\\ReportOutput.csv"
+$OutputFile = ".\ReportOutput.csv"
 
-$ErrorFile = ".\\Errors.txt"
+$ErrorFile = ".\Errors.txt"
 
 # This is the report to run and all the necessary parameters.
 
@@ -132,7 +132,7 @@ foreach ($c in $contracts) {
 3. Запустите сценарий в удаленном сеансе Windows PowerShell, соблюдая синтаксис.
     
   ```
-  &amp; "C:\\O365 Scripts\\GetMailboxActivityReport.ps1"
+  &amp; "C:\O365 Scripts\GetMailboxActivityReport.ps1"
   ```
 
 Пример сценария помещает собранный отчет в файл ReportOutput.csv.

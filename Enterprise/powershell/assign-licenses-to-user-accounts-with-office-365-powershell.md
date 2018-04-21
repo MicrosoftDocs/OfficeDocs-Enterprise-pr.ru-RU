@@ -1,5 +1,5 @@
 ---
-title: "Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365"
+title: Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
-description: "В данной статье описывается использование Office 365 PowerShell назначение лицензии Office 365 для нелицензированных пользователей."
-ms.openlocfilehash: 688e2775e7a028cd9dbe0c8ea27a7f3a453b5279
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: В данной статье описывается использование Office 365 PowerShell назначение лицензии Office 365 для нелицензированных пользователей.
+ms.openlocfilehash: ce8e8c26e929132a8d4beb0f71e18c127064acbe
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365
 
@@ -66,7 +66,7 @@ Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "l
 $x = Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>]; $x | foreach {Set-MsolUserLicense -AddLicenses "<AccountSkuId>"}
 ```
 
- **Примечания**
+ 2^31 (****2 миллиардов терминов)
   
 - Невозможно назначить пользователю несколько лицензий из одного плана лицензирования.
     
@@ -139,7 +139,7 @@ Set-MsolUserLicense -UserPrincipalName "BelindaN@litwareinc.com" -AddLicenses "l
   
 **Set-MsolUserLicense** завершении запущена, вы увидите, что-то похожее на этот на экране:
   
- `PS C:\\windows\\system32>`
+ `PS C:\windows\system32>`
   
 Другими словами он не будет похож на что-либо выполнена. Чтобы убедиться, что пользователю назначена лицензия, выполните команду следующим образом:
   
@@ -224,7 +224,7 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Понятия
 <a name="SeeAlso"> </a>
 
 Сведения об управлении пользователями с помощью Office 365 PowerShell см. в следующих статьях:
