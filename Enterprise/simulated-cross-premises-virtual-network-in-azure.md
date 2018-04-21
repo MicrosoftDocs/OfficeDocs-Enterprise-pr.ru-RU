@@ -15,92 +15,92 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Сводка: Создание имитации распределенной виртуальной сети в Microsoft Azure в среде разработки и тестирования.'
-ms.openlocfilehash: 41988e8201e896a7c1900b645e6c38357d0bfcd0
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="simulated-cross-premises-virtual-network-in-azure"></a><span data-ttu-id="e2171-103">Имитация распределенной виртуальной сети в Azure</span><span class="sxs-lookup"><span data-stu-id="e2171-103">Simulated cross-premises virtual network in Azure</span></span>
+# <a name="simulated-cross-premises-virtual-network-in-azure"></a><span data-ttu-id="fd6e2-103">Имитация распределенной виртуальной сети в Azure</span><span class="sxs-lookup"><span data-stu-id="fd6e2-103">Simulated cross-premises virtual network in Azure</span></span>
 
- <span data-ttu-id="e2171-104">**Сводка:** Создание имитации распределенной виртуальной сети в Microsoft Azure в среде разработки и тестирования.</span><span class="sxs-lookup"><span data-stu-id="e2171-104">**Summary:** Create a simulated cross-premises virtual network in Microsoft Azure as a dev/test environment.</span></span>
+ <span data-ttu-id="fd6e2-104">**Сводка:** Создание имитации распределенной виртуальной сети в Microsoft Azure в среде разработки и тестирования.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-104">**Summary:** Create a simulated cross-premises virtual network in Microsoft Azure as a dev/test environment.</span></span>
   
-<span data-ttu-id="e2171-p101">В этой статье описаны действия по созданию имитации гибридной облачной среды в Microsoft Azure с помощью двух виртуальных сетей Azure. Ниже показана итоговая конфигурация.  </span><span class="sxs-lookup"><span data-stu-id="e2171-p101">This article steps you through creating a simulated hybrid cloud environment with Microsoft Azure using two Azure virtual networks. Here is the resulting configuration.</span></span> 
+<span data-ttu-id="fd6e2-p101">В этой статье описаны действия по созданию имитации гибридной облачной среды в Microsoft Azure с помощью двух виртуальных сетей Azure. Ниже показана итоговая конфигурация.  </span><span class="sxs-lookup"><span data-stu-id="fd6e2-p101">This article steps you through creating a simulated hybrid cloud environment with Microsoft Azure using two Azure virtual networks. Here is the resulting configuration.</span></span> 
   
 ![Этап 3: создание имитации распределенной виртуальной сети как среды разработки и тестирования (с виртуальной машиной DC2 в сети XPrem)](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
-<span data-ttu-id="e2171-108">Так имитируется гибридная облачная рабочая среда Azure IaaS, которая включает:</span><span class="sxs-lookup"><span data-stu-id="e2171-108">This simulates an Azure IaaS hybrid cloud production environment and consists of:</span></span>
+<span data-ttu-id="fd6e2-108">Так имитируется гибридная облачная рабочая среда Azure IaaS, которая включает:</span><span class="sxs-lookup"><span data-stu-id="fd6e2-108">This simulates an Azure IaaS hybrid cloud production environment and consists of:</span></span>
   
-- <span data-ttu-id="e2171-109">	Имитацию упрощенной локальной сети, размещенной в виртуальной сети Azure (TestLab).</span><span class="sxs-lookup"><span data-stu-id="e2171-109">A simulated and simplified on-premises network hosted in an Azure virtual network (the TestLab virtual network).</span></span>
+- <span data-ttu-id="fd6e2-109">	Имитацию упрощенной локальной сети, размещенной в виртуальной сети Azure (TestLab).</span><span class="sxs-lookup"><span data-stu-id="fd6e2-109">A simulated and simplified on-premises network hosted in an Azure virtual network (the TestLab virtual network).</span></span>
     
-- <span data-ttu-id="e2171-110">	Имитацию распределенной виртуальной сети, размещенной в Azure (XPrem).</span><span class="sxs-lookup"><span data-stu-id="e2171-110">A simulated cross-premises virtual network hosted in Azure (XPrem).</span></span>
+- <span data-ttu-id="fd6e2-110">	Имитацию распределенной виртуальной сети, размещенной в Azure (XPrem).</span><span class="sxs-lookup"><span data-stu-id="fd6e2-110">A simulated cross-premises virtual network hosted in Azure (XPrem).</span></span>
     
-- <span data-ttu-id="e2171-111">	Пиринговую связь между двумя виртуальными сетями.</span><span class="sxs-lookup"><span data-stu-id="e2171-111">A VNet peering relationship between the two virtual networks.</span></span>
+- <span data-ttu-id="fd6e2-111">	Пиринговую связь между двумя виртуальными сетями.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-111">A VNet peering relationship between the two virtual networks.</span></span>
     
-- <span data-ttu-id="e2171-112">	Дополнительный контроллер домена в виртуальной сети XPrem.</span><span class="sxs-lookup"><span data-stu-id="e2171-112">A secondary domain controller in the XPrem virtual network.</span></span>
+- <span data-ttu-id="fd6e2-112">	Дополнительный контроллер домена в виртуальной сети XPrem.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-112">A secondary domain controller in the XPrem virtual network.</span></span>
     
-<span data-ttu-id="e2171-113">Это обеспечивает общую исходную точку, начиная с которой, вы можете: </span><span class="sxs-lookup"><span data-stu-id="e2171-113">This provides a basis and common starting point from which you can:</span></span> 
+<span data-ttu-id="fd6e2-113">Это обеспечивает общую исходную точку, начиная с которой, вы можете: </span><span class="sxs-lookup"><span data-stu-id="fd6e2-113">This provides a basis and common starting point from which you can:</span></span> 
   
-- <span data-ttu-id="e2171-114">	Разрабатывать и тестировать приложения в имитированной гибридной облачной среде Azure IaaS.</span><span class="sxs-lookup"><span data-stu-id="e2171-114">Develop and test applications in a simulated Azure IaaS hybrid cloud environment.</span></span>
+- <span data-ttu-id="fd6e2-114">	Разрабатывать и тестировать приложения в имитированной гибридной облачной среде Azure IaaS.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-114">Develop and test applications in a simulated Azure IaaS hybrid cloud environment.</span></span>
     
-- <span data-ttu-id="e2171-115">	Создавать тестовые конфигурации компьютеров внутри виртуальной сети (для некоторых это TestLab, а для некоторых — XPrem), чтобы имитировать рабочие ИТ-нагрузки на основе гибридного облака.</span><span class="sxs-lookup"><span data-stu-id="e2171-115">Create test configurations of computers, some within the TestLab virtual network and some within the XPrem virtual network, to simulate hybrid cloud-based IT workloads.</span></span>
+- <span data-ttu-id="fd6e2-115">	Создавать тестовые конфигурации компьютеров внутри виртуальной сети (для некоторых это TestLab, а для некоторых — XPrem), чтобы имитировать рабочие ИТ-нагрузки на основе гибридного облака.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-115">Create test configurations of computers, some within the TestLab virtual network and some within the XPrem virtual network, to simulate hybrid cloud-based IT workloads.</span></span>
     
-<span data-ttu-id="e2171-116">Процесс настройки этой среды разработки и тестирования состоит из трех перечисленных ниже основных этапов.</span><span class="sxs-lookup"><span data-stu-id="e2171-116">There are three major phases to setting up this dev/test environment:</span></span>
+<span data-ttu-id="fd6e2-116">Процесс настройки этой среды разработки и тестирования состоит из трех перечисленных ниже основных этапов.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-116">There are three major phases to setting up this dev/test environment:</span></span>
   
-1. <span data-ttu-id="e2171-117">	Настраивать виртуальную сеть TestLab.</span><span class="sxs-lookup"><span data-stu-id="e2171-117">Configure the TestLab virtual network.</span></span>
+1. <span data-ttu-id="fd6e2-117">	Настраивать виртуальную сеть TestLab.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-117">Configure the TestLab virtual network.</span></span>
     
-2. <span data-ttu-id="e2171-118">Создавать распределенную виртуальную сеть.</span><span class="sxs-lookup"><span data-stu-id="e2171-118">Create the cross-premises virtual network.</span></span>
+2. <span data-ttu-id="fd6e2-118">Создавать распределенную виртуальную сеть.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-118">Create the cross-premises virtual network.</span></span>
     
-3. <span data-ttu-id="e2171-119">Настраивать DC2.</span><span class="sxs-lookup"><span data-stu-id="e2171-119">Configure DC2.</span></span>
+3. <span data-ttu-id="fd6e2-119">Настраивать DC2.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-119">Configure DC2.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="e2171-120">Эта конфигурация требует платной подписки на Azure.</span><span class="sxs-lookup"><span data-stu-id="e2171-120">This configuration requires a paid Azure subscription.</span></span> 
+> <span data-ttu-id="fd6e2-120">Эта конфигурация требует платной подписки на Azure.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-120">This configuration requires a paid Azure subscription.</span></span> 
   
 ![Руководства по лаборатории тестирования в Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> <span data-ttu-id="e2171-122">Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="e2171-122">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="fd6e2-122">Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-122">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-configure-the-testlab-virtual-network"></a><span data-ttu-id="e2171-123">Этап 1. Настройка виртуальной сети TestLab</span><span class="sxs-lookup"><span data-stu-id="e2171-123">Phase 1: Configure the TestLab virtual network</span></span>
+## <a name="phase-1-configure-the-testlab-virtual-network"></a><span data-ttu-id="fd6e2-123">Этап 1. Настройка виртуальной сети TestLab</span><span class="sxs-lookup"><span data-stu-id="fd6e2-123">Phase 1: Configure the TestLab virtual network</span></span>
 
-<span data-ttu-id="e2171-124">Используйте инструкции в [среде разработки и тестирования базовой конфигурации](base-configuration-dev-test-environment.md) для настройки компьютеров DC1, APP1 и CLIENT1 в виртуальная сеть Azure, с именем лаборатория тестирования.</span><span class="sxs-lookup"><span data-stu-id="e2171-124">Use the instructions in [Base Configuration dev/test environment](base-configuration-dev-test-environment.md) to configure the DC1, APP1, and CLIENT1 computers in the Azure virtual network named TestLab.</span></span>
+<span data-ttu-id="fd6e2-124">Используйте инструкции в [среде разработки и тестирования базовой конфигурации](base-configuration-dev-test-environment.md) для настройки компьютеров DC1, APP1 и CLIENT1 в виртуальная сеть Azure, с именем лаборатория тестирования.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-124">Use the instructions in [Base Configuration dev/test environment](base-configuration-dev-test-environment.md) to configure the DC1, APP1, and CLIENT1 computers in the Azure virtual network named TestLab.</span></span>
   
-<span data-ttu-id="e2171-125">Это — ваша текущая конфигурация.</span><span class="sxs-lookup"><span data-stu-id="e2171-125">This is your current configuration.</span></span> 
+<span data-ttu-id="fd6e2-125">Это — ваша текущая конфигурация.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-125">This is your current configuration.</span></span> 
   
 ![Этап 4. Базовая конфигурация в Azure, включающая виртуальную машину CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-## <a name="phase-2-create-the-xprem-virtual-network"></a><span data-ttu-id="e2171-127">Этап 2. Создание виртуальной сети XPrem</span><span class="sxs-lookup"><span data-stu-id="e2171-127">Phase 2: Create the XPrem virtual network</span></span>
+## <a name="phase-2-create-the-xprem-virtual-network"></a><span data-ttu-id="fd6e2-127">Этап 2. Создание виртуальной сети XPrem</span><span class="sxs-lookup"><span data-stu-id="fd6e2-127">Phase 2: Create the XPrem virtual network</span></span>
 
-<span data-ttu-id="e2171-128">На этом этапе создается и настраивается новая виртуальная сеть XPrem, а затем подключается к пиринговой виртуальной сети TestLab.</span><span class="sxs-lookup"><span data-stu-id="e2171-128">In this phase, you create and configure the new XPrem virtual network and then connect it to the TestLab virtual network with VNet peering.</span></span>
+<span data-ttu-id="fd6e2-128">На этом этапе создается и настраивается новая виртуальная сеть XPrem, а затем подключается к пиринговой виртуальной сети TestLab.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-128">In this phase, you create and configure the new XPrem virtual network and then connect it to the TestLab virtual network with VNet peering.</span></span>
   
-<span data-ttu-id="e2171-129">Во-первых, запустите командную строку Azure PowerShell на своем локальном компьютере.</span><span class="sxs-lookup"><span data-stu-id="e2171-129">First, start an Azure PowerShell prompt on your local computer.</span></span>
+<span data-ttu-id="fd6e2-129">Во-первых, запустите командную строку Azure PowerShell на своем локальном компьютере.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-129">First, start an Azure PowerShell prompt on your local computer.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="e2171-p102">Следующие наборы команд использовать последнюю версию Windows Azure PowerShell. В разделе [Начало работы с Windows Azure PowerShell командлетов](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span><span class="sxs-lookup"><span data-stu-id="e2171-p102">The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span></span> 
+> <span data-ttu-id="fd6e2-p102">[!Примечание] Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Просмотрите статью [Начало работы с командлетами Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span><span class="sxs-lookup"><span data-stu-id="fd6e2-p102">The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span></span> 
   
-<span data-ttu-id="e2171-132">Войдите в свою учетную запись Azure с помощью указанной ниже команды.</span><span class="sxs-lookup"><span data-stu-id="e2171-132">Sign in to your Azure account with the following command.</span></span>
+<span data-ttu-id="fd6e2-132">Войдите в свою учетную запись Azure с помощью указанной ниже команды.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-132">Sign in to your Azure account with the following command.</span></span>
   
 ```
 Login-AzureRMAccount
 ```
 
 > [!TIP]
-> <span data-ttu-id="e2171-133">Щелкните [здесь](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) для получения текстовый файл, содержащий все команды PowerShell в данной статье.</span><span class="sxs-lookup"><span data-stu-id="e2171-133">Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) to get a text file that contains all of the PowerShell commands in this article.</span></span>
+> <span data-ttu-id="fd6e2-133">[!Совет] Скачать текстовый файл, который содержит все команды PowerShell, указанные в этой статье, можно [здесь](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0).</span><span class="sxs-lookup"><span data-stu-id="fd6e2-133">Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) to get a text file that contains all of the PowerShell commands in this article.</span></span>
   
-<span data-ttu-id="e2171-134">Получите имя подписки с помощью следующей команды.</span><span class="sxs-lookup"><span data-stu-id="e2171-134">Get your subscription name using the following command.</span></span>
+<span data-ttu-id="fd6e2-134">Получите имя подписки с помощью следующей команды.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-134">Get your subscription name using the following command.</span></span>
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name
 ```
 
-<span data-ttu-id="e2171-p103">Задайте подпиской Azure. Замените все содержимое в кавычки, включая \< и > символов с правильные имена.</span><span class="sxs-lookup"><span data-stu-id="e2171-p103">Set your Azure subscription. Replace everything within the quotes, including the \< and > characters, with the correct names.</span></span>
+<span data-ttu-id="fd6e2-p103">Задайте подпиской Azure. Замените все содержимое в кавычки, включая \< и > символов с правильные имена.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-p103">Set your Azure subscription. Replace everything within the quotes, including the \< and > characters, with the correct names.</span></span>
   
 ```
 $subscrName="<subscription name>"
 Get-AzureRmSubscription -SubscriptionName $subscrName | Select-AzureRmSubscription
 ```
 
-<span data-ttu-id="e2171-137">Далее создайте виртуальную сеть XPrem и защитите ее с помощью группы безопасности сети, воспользовавшись этими командами.</span><span class="sxs-lookup"><span data-stu-id="e2171-137">Next, create the XPrem virtual network and protect it with a network security group with these commands.</span></span>
+<span data-ttu-id="fd6e2-137">Далее создайте виртуальную сеть XPrem и защитите ее с помощью группы безопасности сети, воспользовавшись этими командами.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-137">Next, create the XPrem virtual network and protect it with a network security group with these commands.</span></span>
   
 ```
 $rgName="<name of the resource group that you used for your TestLab virtual network>"
@@ -114,7 +114,7 @@ $nsg=Get-AzureRMNetworkSecurityGroup -Name "Testnet" -ResourceGroupName $rgName
 Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "Testnet" -AddressPrefix 192.168.0.0/24 -NetworkSecurityGroup $nsg
 ```
 
-<span data-ttu-id="e2171-138">Затем создайте пиринговую связь между виртуальными сетями TestLab и XPrem с помощью этих команд.</span><span class="sxs-lookup"><span data-stu-id="e2171-138">Next, you create the VNet peering relationship between the TestLab and XPrem VNets with these commands.</span></span>
+<span data-ttu-id="fd6e2-138">Затем создайте пиринговую связь между виртуальными сетями TestLab и XPrem с помощью этих команд.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-138">Next, you create the VNet peering relationship between the TestLab and XPrem VNets with these commands.</span></span>
   
 ```
 $rgName="<name of the resource group that you used for your TestLab virtual network>"
@@ -124,15 +124,15 @@ Add-AzureRmVirtualNetworkPeering -Name TestLab2XPrem -VirtualNetwork $vnet1 -Rem
 Add-AzureRmVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVirtualNetworkId $vnet1.Id
 ```
 
-<span data-ttu-id="e2171-139">Это — ваша текущая конфигурация.</span><span class="sxs-lookup"><span data-stu-id="e2171-139">This is your current configuration.</span></span> 
+<span data-ttu-id="fd6e2-139">Это — ваша текущая конфигурация.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-139">This is your current configuration.</span></span> 
   
 ![Этап 2: создание имитации распределенной виртуальной сети как среды разработки и тестирования (с сетью XPrem и пиринговыми отношениями)](images/cac5e999-69c7-4f4c-bfce-a7f4006115ef.png)
   
-## <a name="phase-3-configure-dc2"></a><span data-ttu-id="e2171-141">Этап 3. Настройка DC2</span><span class="sxs-lookup"><span data-stu-id="e2171-141">Phase 3: Configure DC2</span></span>
+## <a name="phase-3-configure-dc2"></a><span data-ttu-id="fd6e2-141">Этап 3. Настройка DC2</span><span class="sxs-lookup"><span data-stu-id="fd6e2-141">Phase 3: Configure DC2</span></span>
 
-<span data-ttu-id="e2171-142">На этом этапе нужно создать виртуальную машину DC2 в виртуальной сети XPrem, а затем настроить ее в качестве контроллера домена реплики.</span><span class="sxs-lookup"><span data-stu-id="e2171-142">In this phase, you create the DC2 virtual machine in the XPrem virtual network and then configure it as a replica domain controller.</span></span>
+<span data-ttu-id="fd6e2-142">На этом этапе нужно создать виртуальную машину DC2 в виртуальной сети XPrem, а затем настроить ее в качестве контроллера домена реплики.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-142">In this phase, you create the DC2 virtual machine in the XPrem virtual network and then configure it as a replica domain controller.</span></span>
   
-<span data-ttu-id="e2171-p104">Сначала создайте виртуальную машину для DC2. Выполните эти команды в командной строке Azure PowerShell на локальном компьютере.</span><span class="sxs-lookup"><span data-stu-id="e2171-p104">First, create a virtual machine for DC2. Run these commands at the Azure PowerShell command prompt on your local computer.</span></span>
+<span data-ttu-id="fd6e2-p104">Сначала создайте виртуальную машину для DC2. Выполните эти команды в командной строке Azure PowerShell на локальном компьютере.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-p104">First, create a virtual machine for DC2. Run these commands at the Azure PowerShell command prompt on your local computer.</span></span>
   
 ```
 $rgName="<your resource group name>"
@@ -152,33 +152,33 @@ $vm=Add-AzureRmVMDataDisk -VM $vm -Name "DC2-DataDisk1" -CreateOption Attach -Ma
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-<span data-ttu-id="e2171-145">Затем подключитесь к новой виртуальной машины DC2 с [Azure портала](https://portal.azure.com) с помощью его имя учетной записи локального администратора и пароль.</span><span class="sxs-lookup"><span data-stu-id="e2171-145">Next, connect to the new DC2 virtual machine from the [Azure portal](https://portal.azure.com) using its local administrator account name and password.</span></span>
+<span data-ttu-id="fd6e2-145">Затем подключитесь к новой виртуальной машины DC2 с [Azure портала](https://portal.azure.com) с помощью его имя учетной записи локального администратора и пароль.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-145">Next, connect to the new DC2 virtual machine from the [Azure portal](https://portal.azure.com) using its local administrator account name and password.</span></span>
   
-<span data-ttu-id="e2171-p105">Далее настройте правило брандмауэра Windows, разрешающее трафик для тестирования базовых параметров подключения. С помощью командной строки Windows PowerShell уровня администратора на DC2 выполните эти команды. </span><span class="sxs-lookup"><span data-stu-id="e2171-p105">Next, configure a Windows Firewall rule to allow traffic for basic connectivity testing. From an administrator-level Windows PowerShell command prompt on DC2, run these commands.</span></span> 
+<span data-ttu-id="fd6e2-p105">Далее настройте правило брандмауэра Windows, разрешающее трафик для тестирования базовых параметров подключения. С помощью командной строки Windows PowerShell уровня администратора на DC2 выполните эти команды. </span><span class="sxs-lookup"><span data-stu-id="fd6e2-p105">Next, configure a Windows Firewall rule to allow traffic for basic connectivity testing. From an administrator-level Windows PowerShell command prompt on DC2, run these commands.</span></span> 
   
 ```
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ping dc1.corp.contoso.com
 ```
 
-<span data-ttu-id="e2171-p106">В результате команды проверки связи должны прийти четыре успешных ответа с IP-адреса 10.0.0.4. Это тест трафика в рамках пиринговой виртуальной сети. </span><span class="sxs-lookup"><span data-stu-id="e2171-p106">The ping command should result in four successful replies from IP address 10.0.0.4. This is a test of traffic across the VNet peering relationship.</span></span> 
+<span data-ttu-id="fd6e2-p106">В результате команды проверки связи должны прийти четыре успешных ответа с IP-адреса 10.0.0.4. Это тест трафика в рамках пиринговой виртуальной сети. </span><span class="sxs-lookup"><span data-stu-id="fd6e2-p106">The ping command should result in four successful replies from IP address 10.0.0.4. This is a test of traffic across the VNet peering relationship.</span></span> 
   
-<span data-ttu-id="e2171-150">Добавьте на диске дополнительных данных как новый том с диска F:, с помощью этой команды в командной строке Windows PowerShell на DC2.</span><span class="sxs-lookup"><span data-stu-id="e2171-150">Next, add the extra data disk as a new volume with the drive letter F: with this command from the Windows PowerShell command prompt on DC2.</span></span>
+<span data-ttu-id="fd6e2-150">Добавьте на диске дополнительных данных как новый том с диска F:, с помощью этой команды в командной строке Windows PowerShell на DC2.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-150">Next, add the extra data disk as a new volume with the drive letter F: with this command from the Windows PowerShell command prompt on DC2.</span></span>
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-<span data-ttu-id="e2171-p107">Затем настройте виртуальную машину DC2 как контроллер домена реплики для corp.contoso.com. Выполните указанные ниже команды в командной строке Windows PowerShell на DC2.</span><span class="sxs-lookup"><span data-stu-id="e2171-p107">Next, configure DC2 as a replica domain controller for the corp.contoso.com domain. Run these commands from the Windows PowerShell command prompt on DC2.</span></span>
+<span data-ttu-id="fd6e2-p107">Затем настройте виртуальную машину DC2 как контроллер домена реплики для corp.contoso.com. Выполните указанные ниже команды в командной строке Windows PowerShell на DC2.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-p107">Next, configure DC2 as a replica domain controller for the corp.contoso.com domain. Run these commands from the Windows PowerShell command prompt on DC2.</span></span>
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -Credential (Get-Credential CORP\\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\\NTDS" -LogPath "F:\\Logs" -SysvolPath "F:\\SYSVOL"
+Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
-<span data-ttu-id="e2171-153">Обратите внимание на то, что вам предлагается ввести обоих CORP\\User1 пароль и пароль режима восстановления служб каталогов (DSRM) и для перезапуска DC2.</span><span class="sxs-lookup"><span data-stu-id="e2171-153">Note that you are prompted to supply both the CORP\\User1 password and a Directory Services Restore Mode (DSRM) password, and to restart DC2.</span></span> 
+<span data-ttu-id="fd6e2-153">Обратите внимание на то, что вам предлагается ввести обоих CORP\\User1 пароль и пароль режима восстановления служб каталогов (DSRM) и для перезапуска DC2.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-153">Note that you are prompted to supply both the CORP\\User1 password and a Directory Services Restore Mode (DSRM) password, and to restart DC2.</span></span> 
   
-<span data-ttu-id="e2171-p108">Теперь, когда у виртуальной сети XPrem есть свой DNS-сервер (DC2), вам нужно настроить XPrem для использования этого DNS-сервера. Выполните эти команды в командной строке Azure PowerShell на локальном компьютере.</span><span class="sxs-lookup"><span data-stu-id="e2171-p108">Now that the XPrem virtual network has its own DNS server (DC2), you must configure the XPrem virtual network to use this DNS server. Run these commands from the Azure PowerShell command prompt on your local computer.</span></span>
+<span data-ttu-id="fd6e2-p108">Теперь, когда у виртуальной сети XPrem есть свой DNS-сервер (DC2), вам нужно настроить XPrem для использования этого DNS-сервера. Выполните эти команды в командной строке Azure PowerShell на локальном компьютере.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-p108">Now that the XPrem virtual network has its own DNS server (DC2), you must configure the XPrem virtual network to use this DNS server. Run these commands from the Azure PowerShell command prompt on your local computer.</span></span>
   
 ```
 $vnet=Get-AzureRmVirtualNetwork -ResourceGroupName $rgName -name "XPrem"
@@ -187,7 +187,7 @@ Set-AzureRmVirtualNetwork -VirtualNetwork $vnet
 Restart-AzureRmVM -ResourceGroupName $rgName -Name "DC2"
 ```
 
-<span data-ttu-id="e2171-p109">С Azure портала на локальном компьютере, подключиться к DC1 с CORP\\учетные данные пользователя User1. Чтобы настроить домен CORP, чтобы пользователи и компьютеры использовать их локального контроллера домена для проверки подлинности, выполните эти команды из командной строки Windows PowerShell уровня администратора на DC1.</span><span class="sxs-lookup"><span data-stu-id="e2171-p109">From the Azure portal on your local computer, connect to DC1 with the CORP\\User1 credentials. To configure the CORP domain so that computers and users use their local domain controller for authentication, run these commands from an administrator-level Windows PowerShell command prompt on DC1.</span></span>
+<span data-ttu-id="fd6e2-p109">С Azure портала на локальном компьютере, подключиться к DC1 с CORP\\учетные данные пользователя User1. Чтобы настроить домен CORP, чтобы пользователи и компьютеры использовать их локального контроллера домена для проверки подлинности, выполните эти команды из командной строки Windows PowerShell уровня администратора на DC1.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-p109">From the Azure portal on your local computer, connect to DC1 with the CORP\\User1 credentials. To configure the CORP domain so that computers and users use their local domain controller for authentication, run these commands from an administrator-level Windows PowerShell command prompt on DC1.</span></span>
   
 ```
 New-ADReplicationSite -Name "TestLab" 
@@ -196,28 +196,28 @@ New-ADReplicationSubnet -Name "10.0.0.0/8" -Site "TestLab"
 New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 ```
 
-<span data-ttu-id="e2171-158">Это — ваша текущая конфигурация.</span><span class="sxs-lookup"><span data-stu-id="e2171-158">This is your current configuration.</span></span> 
+<span data-ttu-id="fd6e2-158">Это — ваша текущая конфигурация.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-158">This is your current configuration.</span></span> 
   
 ![Этап 3: создание имитации распределенной виртуальной сети как среды разработки и тестирования (с виртуальной машиной DC2 в сети XPrem)](images/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
-<span data-ttu-id="e2171-160">Ваша имитированная гибридная облачная среда Azure готова к тестированию.</span><span class="sxs-lookup"><span data-stu-id="e2171-160">Your simulated Azure hybrid cloud environment is now ready for testing.</span></span>
+<span data-ttu-id="fd6e2-160">Ваша имитированная гибридная облачная среда Azure готова к тестированию.</span><span class="sxs-lookup"><span data-stu-id="fd6e2-160">Your simulated Azure hybrid cloud environment is now ready for testing.</span></span>
   
-## <a name="next-step"></a><span data-ttu-id="e2171-161">Следующий этап</span><span class="sxs-lookup"><span data-stu-id="e2171-161">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="fd6e2-161">Следующий этап</span><span class="sxs-lookup"><span data-stu-id="fd6e2-161">Next step</span></span>
 
-<span data-ttu-id="e2171-162">Используйте этот dev/тестовой среды для моделирования работы [фермы SharePoint Server 2016 интрасети, размещать в Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="e2171-162">Use this dev/test environment to simulate a [SharePoint Server 2016 intranet farm hosted in Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).</span></span>
+<span data-ttu-id="fd6e2-162">Используйте этот dev/тестовой среды для моделирования работы [фермы SharePoint Server 2016 интрасети, размещать в Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="fd6e2-162">Use this dev/test environment to simulate a [SharePoint Server 2016 intranet farm hosted in Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="e2171-163">См. также</span><span class="sxs-lookup"><span data-stu-id="e2171-163">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fd6e2-163">Понятия</span><span class="sxs-lookup"><span data-stu-id="fd6e2-163">See Also</span></span>
 
-[<span data-ttu-id="e2171-164">Базовая конфигурация среды разработки и тестирования</span><span class="sxs-lookup"><span data-stu-id="e2171-164">Base Configuration dev/test environment</span></span>](base-configuration-dev-test-environment.md)
+[<span data-ttu-id="fd6e2-164">Базовая конфигурация среды разработки и тестирования</span><span class="sxs-lookup"><span data-stu-id="fd6e2-164">Base Configuration dev/test environment</span></span>](base-configuration-dev-test-environment.md)
   
-[<span data-ttu-id="e2171-165">Среда разработки и тестирования Office 365</span><span class="sxs-lookup"><span data-stu-id="e2171-165">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
+[<span data-ttu-id="fd6e2-165">Среда разработки и тестирования Office 365</span><span class="sxs-lookup"><span data-stu-id="fd6e2-165">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
   
-[<span data-ttu-id="e2171-166">DirSync для среды разработки и тестирования Office 365</span><span class="sxs-lookup"><span data-stu-id="e2171-166">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="fd6e2-166">DirSync для среды разработки и тестирования Office 365</span><span class="sxs-lookup"><span data-stu-id="fd6e2-166">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
   
-[<span data-ttu-id="e2171-167">Cloud App Security для среды разработки и тестирования Office 365</span><span class="sxs-lookup"><span data-stu-id="e2171-167">Cloud App Security for your Office 365 dev/test environment</span></span>](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="fd6e2-167">Cloud App Security для среды разработки и тестирования Office 365</span><span class="sxs-lookup"><span data-stu-id="fd6e2-167">Cloud App Security for your Office 365 dev/test environment</span></span>](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[<span data-ttu-id="e2171-168">Advanced Threat Protection в среде разработки и тестирования Office 365</span><span class="sxs-lookup"><span data-stu-id="e2171-168">Advanced Threat Protection for your Office 365 dev/test environment</span></span>](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="fd6e2-168">Advanced Threat Protection в среде разработки и тестирования Office 365</span><span class="sxs-lookup"><span data-stu-id="fd6e2-168">Advanced Threat Protection for your Office 365 dev/test environment</span></span>](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   
-[<span data-ttu-id="e2171-169">Освоение облака и гибридные решения</span><span class="sxs-lookup"><span data-stu-id="e2171-169">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="fd6e2-169">Освоение облака и гибридные решения</span><span class="sxs-lookup"><span data-stu-id="fd6e2-169">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
 
