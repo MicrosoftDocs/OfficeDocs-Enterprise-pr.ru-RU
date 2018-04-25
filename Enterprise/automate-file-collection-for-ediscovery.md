@@ -1,5 +1,5 @@
 ---
-title: "Автоматизация сбора файлов для обнаружения электронных данных"
+title: Автоматизация сбора файлов для обнаружения электронных данных
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,22 +9,22 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
-description: "Сводка. Узнайте, как автоматизировать сбор файлов с компьютеров пользователей для обнаружения электронных данных."
-ms.openlocfilehash: bb93bed80ec95511c6bbf4307d1f0c9e1d4f82cb
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+description: Сводка. Узнайте, как автоматизировать сбор файлов с компьютеров пользователей для обнаружения электронных данных.
+ms.openlocfilehash: 0a09eb8ec997f62e0f8c3149d35422b0ee0e4a98
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Автоматизация сбора файлов для обнаружения электронных данных
 
  **Сводка.** Узнайте, как автоматизировать сбор файлов с компьютеров пользователей для обнаружения электронных данных.
   
-Ни одна компания не застрахована от судебных исков. Несмотря на то что юридические отделы стараются снизить этот риск, судебные разбирательства  неизбежная реальность бизнеса. Когда против компании начинается судебное разбирательство, она обязана предоставить суду и адвокату противной стороны все необходимые документы. 
+Ни одна компания не застрахована от судебных исков. Несмотря на то что юридические отделы стараются снизить этот риск, судебные разбирательства  неизбежная реальность бизнеса. Когда против компании начинается судебное разбирательство, она обязана предоставить суду и адвокату противной стороны все необходимые документы. 
   
-Обнаружение электронных данных  это процесс, который компании используют для инвентаризации, поиска, идентификации, сохранения, фильтрации и предоставления необходимых электронных документов. В SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online и Exchange Online можно хранить большое количество документов. В зависимости от версии эти продукты могут поддерживать eDiscovery и хранение на месте (Lync через Exchange Server), что позволяет юридическим отделам легко индексировать, идентифицировать, хранить и фильтровать материалы по тому или иному делу.
+Обнаружение электронных данных  это процесс, который компании используют для инвентаризации, поиска, идентификации, сохранения, фильтрации и предоставления необходимых электронных документов. В SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online и Exchange Online можно хранить большое количество документов. В зависимости от версии эти продукты могут поддерживать eDiscovery и хранение на месте (Lync через Exchange Server), что позволяет юридическим отделам легко индексировать, идентифицировать, хранить и фильтровать материалы по тому или иному делу.
   
 Многие документы хранятся на локальных компьютерах пользователей (хранителей), а не в одной папке. В этом случае поиск данных в SharePoint 2013 практически невозможен. Следовательно, их невозможно включить в eDiscovery. В этом решении показано, как использовать сценарии входа, System Center Orchestrator 2012 R2 и Windows PowerShell, чтобы автоматизировать идентификацию и сбор документов с компьютеров пользователей в Exchange Server.
   
@@ -163,7 +163,7 @@ catch [System.Exception] {
 Function CopyFileToCaseFolder($SourcePath, $TargetPath, $FileName) {
     
     # Check to see if the file already exists
-    $TargetFileCheck = Test-Path $TargetPath\\$FileName
+    $TargetFileCheck = Test-Path $TargetPath\$FileName
 
 try {
 
@@ -202,18 +202,18 @@ $CaseNo = get-date -Format yyyyMMddHHmm
 $CaseNo = $CaseNo + "_" + [Environment]::UserName
 
 # Target location to copy case files
-$CaseRootLocation = "\\\\staging\\Cases$" 
+$CaseRootLocation = "\\staging\Cases$" 
 
 # File copy location, log file location, PST file location and temporary log file location
-$CaseLocation = $CaseRootLocation + "\\" + $CaseNo
-$CaseLogLocation = $CaseRootLocation + "\\" + $CaseNo + "\\_Log"
-$CasePSTLocation = $CaseRootLocation + "\\" + $CaseNo + "\\_PSTs"
-$TemporaryLogLocation = [Environment]::getfolderpath('ApplicationData') + "\\" + $CaseNo
+$CaseLocation = $CaseRootLocation + "\" + $CaseNo
+$CaseLogLocation = $CaseRootLocation + "\" + $CaseNo + "\_Log"
+$CasePSTLocation = $CaseRootLocation + "\" + $CaseNo + "\_PSTs"
+$TemporaryLogLocation = [Environment]::getfolderpath('ApplicationData') + "\" + $CaseNo
 
 # Inventory of local drives
 $LocalDrives = Get-PSDrive -PSProvider FileSystem -Scope Global
 
-$LoggingFile = "$CaseLogLocation\\FileCopyErrors.log"
+$LoggingFile = "$CaseLogLocation\FileCopyErrors.log"
 
 # Main script
 
@@ -221,12 +221,12 @@ $LoggingFile = "$CaseLogLocation\\FileCopyErrors.log"
 CreateCaseFolder
 
 # Create the list of files to be copied
-# First create the temporary directory in the AppData\\Roaming folder
+# First create the temporary directory in the AppData\Roaming folder
 New-Item "$TemporaryLogLocation" -ItemType Directory -Force -ErrorAction SilentlyContinue
 $LocalDrives | foreach {
 
     # Write-Host -ForeGroundColor Cyan "Collecting Files for Drive: " $_
-    Get-ChildItem -Path $_.Root -Recurse -Include $FileTypes -ErrorAction SilentlyContinue -ErrorVariable +Loggederrors | Export-Clixml $TemporaryLogLocation\\\\$_.xml -Force
+    Get-ChildItem -Path $_.Root -Recurse -Include $FileTypes -ErrorAction SilentlyContinue -ErrorVariable +Loggederrors | Export-Clixml $TemporaryLogLocation\$_.xml -Force
     # Needs try catch and logged collection error file
 }
 
@@ -290,7 +290,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 # This is for on-prem Exchange only
 # Input parameters
 # When you run the script, you call it with two parameters, PST source path and target mailbox alias
-# For example:  .\\PSTImport.ps1 \\\\FileShare\\PSTFiles jdoe
+# For example:  .\PSTImport.ps1 \\FileShare\PSTFiles jdoe
 
 param ([String]$SourcePath,[String]$MailboxAlias)
 
@@ -333,11 +333,11 @@ $AllFiles | ForEach-Object {
     
 5. У сценария импорта PST-файлов есть два обязательных входных параметра:
     
-  - **$SourcePath**  расположение импортируемых PST-файлов, например \\\\Staging\\Cases$.
+  - **$SourcePath**  расположение импортируемых PST-файлов, например \\\\Staging\\Cases$.
     
-  - **$MailboxAlias**  псевдоним целевого почтового ящика, в который будут импортированы элементы электронной почты.
+  - **$MailboxAlias**  псевдоним целевого почтового ящика, в который будут импортированы элементы электронной почты.
     
-6. Например, если вы хотите импортировать все PST-файлы из пути \\\\Staging\\Cases$ в почтовый ящик с псевдонимом eDiscoveryMailbox, запустите следующий сценарий:  `\\\\staging\\AFCscripts\\PSTImportScript.ps1 \\\\Staging\\cases$ eDiscoveryMailbox`.
+6. Например, если вы хотите импортировать все PST-файлы из пути \\Staging\Cases$ в почтовый ящик с псевдонимом eDiscoveryMailbox, запустите следующий сценарий: `\\staging\AFCscripts\PSTImportScript.ps1 \\Staging\cases$ eDiscoveryMailbox`.
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>Вариант Б импорта PST-файлов для Exchange Online
 
