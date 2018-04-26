@@ -14,16 +14,16 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: Сводка. Подключитесь к своей организации Office 365, используя PowerShell, чтобы выполнять задачи администрирования из командной строки.
-ms.openlocfilehash: 71b8c8d61a914fa7fd036fadb7e17ca3f66cd639
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+description: 'Сводка: Подключиться к своей организации Office 365, с помощью Office 365 PowerShell для выполнения задач Центр администрирования из командной строки.'
+ms.openlocfilehash: 65ddb3c66d2cd69ad1ecb468ec762667a0b07a84
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Подключение к Office 365 PowerShell
 
- **Сводка.** Подключитесь к своей организации Office 365, используя PowerShell, чтобы выполнять задачи администрирования из командной строки.
+ **Сводка:** Подключение к организации Office 365 с помощью Office 365 PowerShell для выполнения задач администрирования из командной строки.
   
 PowerShell позволяет управлять настройками Office 365 из командной строки. Подключение состоит из трех этапов: установки необходимого программного обеспечения, его запуска и непосредственно подключения к организации Office 365. 
 
@@ -64,8 +64,7 @@ PowerShell позволяет управлять настройками Office 3
   - Если отобразится запрос на установку модуля из репозитория PSGallery, введите **Y** и нажмите клавишу ВВОД.
   - После установки закройте командное окно PowerShell.
     
-### <a name="step-2-connect-to-your-office-365-subscription"></a>Шаг 2. Подключитесь к своей подписке Office 365
-<a name="step3"> </a>
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Шаг 2: Подключение к Azure AD для подписки Office 365
 
 Чтобы при подключении использовать только *имя и пароль учетной записи*:
   
@@ -93,7 +92,6 @@ Connect-MsolService
 4. Следуйте инструкциям в диалоговом окне **Azure Active Directory PowerShell**, чтобы указать дополнительные сведения для проверки подлинности, например код подтверждения, и нажмите **Войти**.
     
 ### <a name="how-do-you-know-this-worked"></a>Как проверить, что все получилось?
-<a name="step3"> </a>
 
 Если не возникло никаких ошибок, значит, подключение выполнено успешно. Чтобы выполнить быструю проверку, запустите командлет Office 365:, например **Get-MsolUser**, и просмотрите результаты.
   
@@ -119,10 +117,10 @@ Connect-MsolService
     
 - **Если при подключении возникнет ошибка, ознакомьтесь с **[этой статьей](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Связь с Azure Active Directory PowerShell для модуля "график"
 <a name="ConnectV2"> </a>
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Связь с Azure Active Directory PowerShell для модуля "график"
 
-Команды в Azure Active Directory PowerShell для модуля графике иметь «AzureAD» в имени командлета.
+Команды в модуле [Windows Azure Active Directory PowerShell для модуля графике](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) иметь «AzureAD» в имени командлета.
 
 Для процедур, которые требуют новых командлетов в Windows Azure Active Directory PowerShell для модуля "график" используйте следующие действия для установки модуля и подключиться к своей подписке Office 365.
 
@@ -146,7 +144,7 @@ Connect-MsolService
 Если появится предупреждение об установке модуля из ненадежного репозитория, введите **Y** и нажмите клавишу ВВОД.
 
 
-### <a name="step-2-connect-to-office-365"></a>Шаг 2. Подключитесь к Office 365
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Шаг 2: Подключение к Azure AD для подписки Office 365
 
 Чтобы подключиться к подписке на Office 365 с помощью *имени и пароля учетной записи*:
     

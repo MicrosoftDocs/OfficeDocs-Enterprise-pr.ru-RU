@@ -1,5 +1,5 @@
 ---
-title: "Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365"
+title: Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,12 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: "Сводка. Используйте PowerShell в Office 365 и командлет Add-MsolRoleMember для назначения ролей учетным записям пользователей."
-ms.openlocfilehash: 97ecf29e10d14843322f3062ef16da14f16f7a2a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Сводка. Используйте PowerShell в Office 365 и командлет Add-MsolRoleMember для назначения ролей учетным записям пользователей.
+ms.openlocfilehash: 2af4409020cc4a4e3dd6ff3b8bfcf5f1138f26cd
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365
 
@@ -124,14 +124,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ## <a name="see-also"></a>См. также
 
-#### 
-
-[Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-  
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
-  
-[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-#### 
-
-[Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
-
+- [Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+- [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+- [Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
