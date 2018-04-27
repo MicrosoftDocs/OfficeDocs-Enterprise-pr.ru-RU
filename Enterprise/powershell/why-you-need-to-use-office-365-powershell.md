@@ -1,5 +1,5 @@
 ---
-title: "Причины использования Office 365 PowerShell"
+title: Причины использования Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
-description: "Сводка: в этой статье рассказывается, почему необходимо использовать PowerShell в Office 365 для управления Office 365:: в ряде случаев это может быть более эффективно, а в других  вызвано необходимостью."
-ms.openlocfilehash: b3715da44c1509ea46e7bb939b5ca0be8b2b9671
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Сводка: в этой статье рассказывается, почему необходимо использовать PowerShell в Office 365 для управления Office 365:: в ряде случаев это может быть более эффективно, а в других  вызвано необходимостью.'
+ms.openlocfilehash: d4dec6a62aecf2cfafdaf52f018f34fd2c9a14d4
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Причины использования Office 365 PowerShell
 
@@ -36,9 +36,9 @@ ms.lasthandoff: 02/09/2018
     
 - Упрощение печати или сохранения данных с помощью PowerShell Office 365
     
-- "Перекрестное" управление серверными продуктами с помощью PowerShell Office 365
+- PowerShell для Office 365 позволяет управлять различными серверными продуктами
     
-Приступая к чтению статьи, необходимо понимать, что PowerShell в Office 365  это набор модулей для Windows PowerShell, среда командной строки для служб и платформ Windows. Эта среда создает язык командной строки, который можно расширить с помощью дополнительных модулей и который позволяет выполнять как простые, так и сложные команды и сценарии. Например, после установки модулей PowerShell в Office 365 и подключения подписки Office 365: вы можете запустить следующую команду, чтобы отобразить список всех почтовых ящиков пользователей для Microsoft Exchange Online:
+Приступая к чтению статьи, необходимо понимать, что PowerShell в Office 365 — это набор модулей для Windows PowerShell, среды командной строки для служб и платформ Windows. Эта среда создает язык командной строки, который можно расширить с помощью дополнительных модулей и который позволяет выполнять как простые, так и сложные команды и скрипты. Например, после установки модулей PowerShell в Office 365 и подключения подписки на Office 365 вы можете выполнить следующую команду, чтобы получить список всех почтовых ящиков пользователей для Microsoft Exchange Online:
   
 ```
 Get-Mailbox

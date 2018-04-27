@@ -12,19 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: Сводка. С помощью Azure вы можете создать среду аварийного восстановления для локальной фермы SharePoint. В этой статье описываются разработка и реализация этого решения.
-ms.openlocfilehash: 1e8f067954de19c374688220be439fe1a56089f7
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: 499b296040eaf02bd679ee422429f08ed669ba85
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Аварийное восстановление SharePoint Server 2013 в Microsoft Azure
 
  **Сводка.** С помощью Azure вы можете создать среду аварийного восстановления для локальной фермы SharePoint. В этой статье описываются разработка и реализация этого решения.
 
  **Смотрите видео с обзором аварийного восстановления в SharePoint Server 2013**
-<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=1b73ec8f-29bd-44eb-aa3a-f7932784bfd9&AutoPlayVideo=false&height=415&width=740" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" style="width: 740px; height: 415px;"></iframe>
-
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
   
  В случае возникновения аварии в локальной среде SharePoint вашей главной задачей является быстрое восстановление работы системы. Аварийное восстановление SharePoint выполняется быстрее и проще, если в Microsoft Azure уже запущена резервная среда. В этом видеоролике рассматриваются основные концепции "горячей" отработки отказов в SharePoint и дополняются подробные сведения, приведенные в этой статье.
   
