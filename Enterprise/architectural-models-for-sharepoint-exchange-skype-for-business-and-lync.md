@@ -7,7 +7,7 @@ ms.date: 04/11/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: 'Сводка: Получите плакаты ИТ, которые описывают модели архитектуры, развертывание и параметры платформе SharePoint, Exchange, Скайп для бизнеса и Lync.'
-ms.openlocfilehash: ac3ba3f8a0786ec28c9aa6099f288811802bd92d
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: 79831116df486e1a0ae87c07c01070a5ecd1c4b0
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Архитектурные модели для SharePoint, Exchange, Skype для бизнеса и Lync
 
@@ -100,7 +100,7 @@ ms.lasthandoff: 04/19/2018
 |:-----|:-----|
 |[![Ферма с несколькими географически OneDrive в модели Office 365](images/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.vsdx) <br/> | На этом плакате приведен обзор одной странице несколькими географически OneDrive в Office 365, который находится в режиме предварительного просмотра. Эта модель включает в себя:<br/><br/> -Преимущества <br/> -Действия для развертывания <br/> -Пример конфигурации <br/><br/>  Дополнительные сведения о предварительной версии несколькими географически OneDrive в Office 365, щелкните [здесь](https://aka.ms/onedrivemultigeo).  <br/> |
    
-### <a name="sharepoint-server-2016-databases"></a>Базы данных SharePoint Server 2016
+### <a name="sharepoint-server-2016-databases"></a>Базы данных SharePoint Server 2016
 <a name="SP2016_Databases"> </a>
 
 |**Элемент**|**Описание**|
@@ -187,7 +187,7 @@ ms.lasthandoff: 04/19/2018
 |:-----|:-----|
 |[![Процесс аварийного восстановления SharePoint в Azure](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |На этом плакате ИТ иллюстрирует принципы архитектуры среды аварийного восстановления в Azure. Версии доступных текст на этом плакате в разделе [доступ диаграмму — аварийное восстановление SharePoint в Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md).<br/><br/> Дополнительные сведения см. в следующих статьях:  <br/><br/> - [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Архитектуры Microsoft Azure для SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-## <a name="see-also"></a>Понятия
+## <a name="see-also"></a>См. также
 
 <a name="Lync2013_Options"> </a>
 
