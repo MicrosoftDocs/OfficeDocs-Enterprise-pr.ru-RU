@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Сводка: в этой статье рассказывается, почему необходимо использовать PowerShell в Office 365 для управления Office 365:: в ряде случаев это может быть более эффективно, а в других  вызвано необходимостью.'
-ms.openlocfilehash: d4dec6a62aecf2cfafdaf52f018f34fd2c9a14d4
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: 375ab283385431ea975782f9b7b8bf97ed0cb6ed
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Причины использования Office 365 PowerShell
 
@@ -348,7 +348,7 @@ Get-User -Filter '{LastName -like "*son"}'
 К счастью, с помощью PowerShell в Office 365 можно не только отобразить список, но и сохранить его в файл, который легко импортировать в Excel. Ниже приведен пример команды, позволяющей сохранить пользовательские данные Skype для бизнеса Online в файл с разделителями-запятыми (CSV-файл), который легко импортировать в виде таблицы в лист Excel.
   
 ```
-Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export-Csv -Path "C:\\Logs\\SfBUsers.csv" -NoTypeInformation
+Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export-Csv -Path "C:\Logs\SfBUsers.csv" -NoTypeInformation
 ```
 
 Ниже приведен пример отображения.
