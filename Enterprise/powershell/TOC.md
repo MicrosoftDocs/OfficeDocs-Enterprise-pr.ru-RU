@@ -9,7 +9,7 @@
 ### [Сведения о командлетах для служб Office 365](cmdlet-references-for-office-365-services.md)
 ### [Ресурсы сообщества Office 365 PowerShell](office-365-powershell-community-resources.md)
 ## [Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-### [Просмотр лицензий и служб с помощью PowerShell в Office 365](view-licenses-and-services-with-office-365-powershell.md) .
+### [Просмотр лицензий и служб с помощью PowerShell в Office 365](view-licenses-and-services-with-office-365-powershell.md)
 ### [Отображение списков пользователей с лицензиями и пользователей без лицензий с помощью Office 365 PowerShell](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
 ### [Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365](assign-licenses-to-user-accounts-with-office-365-powershell.md)
 ### [Просмотр сведений о лицензии и службе учетной записи с помощью PowerShell в Office 365](view-account-license-and-service-details-with-office-365-powershell.md)
@@ -24,6 +24,9 @@
 ### [Просмотр учетных записей пользователей с помощью PowerShell для Office 365](view-user-accounts-with-office-365-powershell.md)
 ### [Настройка параметров учетной записи пользователя с помощью PowerShell для Office 365](configure-user-account-properties-with-office-365-powershell.md)
 ## [Управление SharePoint Online с помощью Office 365 PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
+### [Создание сайтов SharePoint Online и добавление пользователей](create-sharepoint-sites-and-add-users-with-powershell.md)
+### [Управление SharePoint Online пользователями и группами](manage-sharepoint-users-and-groups-with-powershell.md)
+### [Управление SharePoint Online группы сайтов](manage-sharepoint-site-groups-with-powershell.md)
 ## [Управление Exchange Online с помощью Office 365 PowerShell](manage-exchange-online-with-office-365-powershell.md)
 ## [Использование PowerShell для переноса электронной почты в Office 365](use-powershell-for-email-migration-to-office-365.md)
 ### [Прямая миграция в Office 365 с помощью PowerShell](use-powershell-to-perform-a-cutover-migration-to-office-365.md)
@@ -35,7 +38,7 @@
 ### [Подключение к Exchange Online с помощью удаленной оболочки Windows PowerShell для делегированных доступа партнеров](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [Получение данных с помощью Windows PowerShell отчетов для партнеров делегированной доступа клиентов](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
 ### [Агрегированные клиента отчетов данных с помощью Windows PowerShell для делегированных доступа партнеров](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
-## [Управление Skype для бизнеса Online с помощью Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
+## [Управление Skype для бизнеса Online с помощью Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [Назначение индивидуальных политик для Skype для бизнеса Online с помощью Office 365 PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
 
