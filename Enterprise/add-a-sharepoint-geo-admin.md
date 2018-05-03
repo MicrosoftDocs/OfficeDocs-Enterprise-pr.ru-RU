@@ -8,11 +8,11 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: Узнайте, как добавить или удалить администратора geo в OneDrive для бизнеса Multi-географически.
-ms.openlocfilehash: 7630597654df9ad78619b94fedc9e18d5b0b721e
-ms.sourcegitcommit: 886b23f590f6187f7a98c1083a3b49359ec2a5c3
+ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Добавление или удаление администратора geo в OneDrive несколькими-географически Busniess
 
@@ -49,6 +49,14 @@ ms.lasthandoff: 04/30/2018
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
 Чтобы удалить группу с помощью ObjectID, выполните`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
+
+### <a name="accessing-the-admin-center-for-a-specific-geo-location"></a>Доступ к центру администрирования для конкретного географического расположения
+
+Для администрирования параметров OneDrive для их географического расположения, "Администраторы" необходимо получить доступ к центру администрирования OneDrive напрямую с помощью следующий формат URL-адреса:
+
+https://admin.onedrive.com/?geo=<*географическая*>
+
+К примеру, Центр администрирования OneDrive для Канады расположена в каталоге: https://admin.onedrive.com/?geo=CAN.
 
 ## <a name="see-also"></a>См. также
 
