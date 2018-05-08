@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Сводка: Использование Office 365 PowerShell для управления SharePoint Online группы сайтов.'
-ms.openlocfilehash: 68be9ce3ef26cb46df6d43716c6719ffd9c172e2
-ms.sourcegitcommit: 74cdb2534bce376abc9cf4fef85ff039c46ee790
+ms.openlocfilehash: 881e67b7eb2d8bb5e04f83e28569aa54341d16b9
+ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Управление группами сайтов SharePoint Online с помощью Office 365 PowerShell
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="view-sharepoint-online-with-office-365-powershell"></a>Просмотр SharePoint Online с помощью Office 365 PowerShell
 
-Центр администрирования SharePoint Online имеет некоторые простые в использовании методы для управления группами сайтов. Предположим, например, чтобы посмотреть на группы и участники групп, https://litwareinc.sharepoint.com/sites/finance сайта. Вот что необходимо сделать, чтобы:
+Центр администрирования SharePoint Online имеет некоторые простые в использовании методы для управления группами сайтов. Предположим, например, вам необходимо просмотреть групп и членов группы, для протокола https\://litwareinc.sharepoint.com/sites/finance сайта. Вот что необходимо сделать, чтобы:
 
 1. В центре администрирования Office 365 щелкните **ресурсы** > **сайтов**и затем щелкните URL-адрес сайта.
 2. В диалоговом окне семейства сайтов нажмите кнопку **Перейти на этом сайте**.
@@ -56,33 +56,47 @@ foreach ($y in $x)
 ```
 
 Для выполнения этой команды в командной консоли SharePoint Online двумя способами:
-- Скопируйте команд в "Блокнот" (или другом текстовом редакторе), измените значение переменной **$siteURL** , выберите команды и вставьте их в командной консоли SharePoint Online. В этом случае PowerShell будет останавливаться на >> строки. Нажмите клавишу ВВОД, чтобы выполнить для каждой команды.</br>
-- Скопируйте команд в "Блокнот" (или другом текстовом редакторе), измените значение переменной **$siteURL** и затем сохраните этот текстовый файл с именем и расширение ".ps1" в соответствующие папки. Затем выполните скрипт в командной консоли SharePoint Online, указав его путь и имя файла. Ниже приведен пример:</br>
+
+- Скопируйте команд в "Блокнот" (или другом текстовом редакторе), измените значение переменной **$siteURL** , выберите команды и вставьте их в командной консоли SharePoint Online. В этом случае PowerShell будет останавливаться на **>>** строки. Нажмите клавишу ВВОД, чтобы выполнить команду **foreach** .</br>
+- Скопируйте команд в "Блокнот" (или другом текстовом редакторе), измените значение переменной **$siteURL** и затем сохраните этот текстовый файл с именем и расширение ".ps1" в соответствующие папки. Затем выполните скрипт в командной консоли SharePoint Online, указав его путь и имя файла. Ниже приведен пример команды.
+
 ```
 C:\Scripts\SiteGroupsAndUsers.ps1
-```</br>
+```
 
-In both cases, you should see something similar to this:
+В обоих случаях должно отобразиться что-то вроде этого:
 
-![SharePoint Online site groups](images/SPO-site-groups.png)
+![SharePoint Online группы сайтов](images/SPO-site-groups.png)
 
-These are all the groups that have been created for the site https://litwareinc.sharepoint.com/sites/finance, as well as all the users assigned to those groups. The group names are in yellow to help you separate group names from their members.
+Далее представлены все группы, которые были созданы для сайта https\:/ / litwareinc.sharepoint.com/sites/finance, а также всех пользователей, назначенных этим группам. Имена групп — желтого цвета, которые помогут вам имена другая группа от их участников.
 
-As another example, here is a command set that lists the groups, and all the group memberships, for all of your SharePoint Online sites.
+Другой пример: Вот набор команд, содержит список групп и всех членство в группах, для всех сайтов SharePoint Online.
 
 ```
-$x = get-SPOSite foreach ($y в $x) {$y.Url Write-Host - ForegroundColor «желтый» $z = Get-SPOSiteGroup-foreach $y.Url сайта ($ в $z) {$b = Get-SPOSiteGroup-веб-$y.Url-$b.Title $a.Title записи узла группы - ForegroundColor «Голубой» $b | SELECT-Object - ExpandProperty пользователей Write-Host}}
+$x = Get-SPOSite
+foreach ($y in $x)
+    {
+        Write-Host $y.Url -ForegroundColor "Yellow"
+        $z = Get-SPOSiteGroup -Site $y.Url
+        foreach ($a in $z)
+            {
+                 $b = Get-SPOSiteGroup -Site $y.Url -Group $a.Title 
+                 Write-Host $b.Title -ForegroundColor "Cyan"
+                 $b | Select-Object -ExpandProperty Users
+                 Write-Host
+            }
+    }
 ```
     
-## See also
+## <a name="see-also"></a>См. также
 
-[Connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Подключение к SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Create SharePoint Online sites and add users with Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
+[Создание сайтов SharePoint Online и добавление пользователей с Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Manage SharePoint Online users and groups with Office 365 PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
+[Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell](manage-sharepoint-users-and-groups-with-powershell.md) .
 
-[Manage Office 365 with Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
   
-[Getting started with Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
 
