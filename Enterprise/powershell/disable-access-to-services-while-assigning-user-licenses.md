@@ -1,9 +1,9 @@
 ---
-title: "Отключение доступа к службам во время назначения лицензий"
+title: Отключение доступа к службам во время назначения лицензий
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/07/2018
 ms.audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -13,21 +13,18 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
-description: "Сведения о том, как назначать лицензии для учетных записей пользователей и отключать определенные планы обслуживания, используя PowerShell в Office 365."
-ms.openlocfilehash: 0ab1aea03099f6aae469699b1169af9e12b41d74
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: Сведения о том, как назначать лицензии для учетных записей пользователей и отключать определенные планы обслуживания, используя PowerShell в Office 365.
+ms.openlocfilehash: 7567d84490cdb3db7c149a51c4f2f04d39cad9ce
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Отключение доступа к службам во время назначения лицензий
 
 **Сводка.** Узнайте, как назначать лицензии пользователям и одновременно отключать определенные планы обслуживания, используя PowerShell для Office 365.
   
 Подписки на Office 365 включают в себя планы обслуживания для отдельных служб. Администраторам Office 365 часто нужно отключать определенные планы при назначении лицензий для пользователей. Следуя инструкциям в этой статье, вы можете с помощью PowerShell назначить лицензию на Office 365 для одной или нескольких учетных записей пользователей, при этом отключив определенные планы обслуживания.
-  
-> [!NOTE]
-> В основе этой статьи лежит работа Siddhartha Parmar, специалиста технической поддержки Майкрософт, занимающегося эскалированными запросами на обслуживание. 
   
 ## <a name="before-you-begin"></a>Перед началом работы
 
@@ -151,8 +148,6 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
 - Создает CSV-файл со всеми обработанными пользователями и отображает состояние их лицензий.
     
 ## <a name="see-also"></a>См. также
-
-#### 
 
 [Отключение доступа к службам с помощью Office 365 PowerShell](disable-access-to-services-with-office-365-powershell.md)
   

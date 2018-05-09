@@ -4,21 +4,24 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 ms.date: 5/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: ''
-ms.custom: ''
-ms.assetid: ''
+ms.service: Office 365 Administration
+localization_priority: None
+ms.collection: Strat_O365_Enterprise
 description: 'Сводка: Сведения о политиках клиента Office 365, поддерживаемых приложением Android, браузеры, операций ввода-вывода, Mac OS X, Windows и Windows Mobile.'
-ms.openlocfilehash: 1da917ec40fb40d7a13dc5fb426f640b178877f4
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: 663d2e2a127b03524f7f402acee3d6249870321a
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="office-365-client-policies---client-and-app-view"></a>Клиент Office 365 политики - клиента и просмотр приложения
+**Хотите изменить представление эту информацию? Выберите другое представление ниже:**
+> [!div class="op_single_selector"] 
+> - [Клиент & представление приложения](office-365-client-policies-app-view.md)
+> - [Просмотр политики](office-365-client-policies-policy-view.md)
+
 Используйте следующие списки, чтобы определить, какие политики клиента Office 365 поддерживаются для отдельных клиентских приложений Microsoft.
 
 ## <a name="delve"></a>Delve
