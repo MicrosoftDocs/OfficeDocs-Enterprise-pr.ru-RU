@@ -7,7 +7,6 @@ ms.reviewer:
 - josephd
 - kirks
 manager: laurawi
-ms.date: 3/2/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,8 +17,8 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 'Сводка: Узнайте, как для обхода служба контроля доступа Azure и использовании SAML 1.1 для проверки подлинности пользователей SharePoint Server с помощью Azure Active Directory.'
-ms.openlocfilehash: 1ab0bb3215531ca8b2d0fda8d70874f966438759
-ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.openlocfilehash: 8a844cf1f45f6285e676439f934b9119a757804f
+ms.sourcegitcommit: c52bd6eaa8772063f9e2bd1acf10fa23422a2b92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/09/2018
