@@ -1,9 +1,9 @@
 ---
-title: "Развертывание изолированного сайта группы SharePoint Online"
+title: Развертывание изолированного сайта группы SharePoint Online
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
-description: "Сводка: Развертывание нового изолированного SharePoint Online сайта группы с помощью этих пошаговые инструкции."
-ms.openlocfilehash: 297681b688b43eb02ee4f99f983a0f796312e599
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 'Сводка: Развертывание нового изолированного SharePoint Online сайта группы с помощью этих пошаговые инструкции.'
+ms.openlocfilehash: c4bb272cc96ca86fc8bffc99f7c3e50033c06755
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Развертывание изолированного сайта группы SharePoint Online
 
@@ -61,19 +61,21 @@ ms.lasthandoff: 02/13/2018
     
 - Читатели сайта (список из шага 3)
     
-1. В браузере перейдите на портале Azure по [https://portal.azure.com](https://portal.azure.com) и вход с помощью учетных данных учетной записи, которая была назначена с ролью Администратор управления пользователями или администратор компании.
+1. В браузере перейдите на портале Azure по [https://portal.azure.com](https://portal.azure.com) и войдите с учетными данными учетной записи, которая была назначена с ролью Администратор управления пользователями или администратор компании.
     
-2. На портале Azure последовательно выберите пункты **"Azure Active Directory" > "Пользователи и группы" > "Все группы"**.
+2. На портале Azure щелкните **Azure Active Directory > группы**.
     
-3. В колонке **Все группы** щелкните пункт **+ Новая группа**.
+3. На blade **групп — все группы** нажмите кнопку **+ новую группу**.
     
 4. В колонке **Группа**:
     
+  - Выберите **Тип группы** **Office 365** .
+    
   - В поле **имя**введите имя группы.
     
-  - Выберите **Назначенные** в поле **Членство**.
+  - Введите описание группы в **поле Описание группы**.
     
-  - Выберите вариант **Да** в поле **Включить функции Office**.
+  - Выберите **назначено** в **типа участия**.
     
 5. Нажмите кнопку **Создать**, а затем закройте колонку **Группа**.
     
