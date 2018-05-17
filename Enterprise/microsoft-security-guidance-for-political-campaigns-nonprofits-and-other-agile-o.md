@@ -1,5 +1,5 @@
 ---
-title: "Руководство по безопасности (Майкрософт) для политических кампаний, некоммерческих и других динамических организаций"
+title: Руководство по безопасности (Майкрософт) для политических кампаний, некоммерческих и других динамических организаций
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -10,21 +10,21 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
-description: "Обзор: Планирование и внедрение руководство по переносу fast организации, которые профиль увеличению угроз."
-ms.openlocfilehash: b35b7a49343b21fdd8e6584e113fcbf771b4a1ef
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: MT
+description: Сводка. Руководство по планированию и реализации для быстроразвивающихся организаций с высокой вероятностью возникновения угроз безопасности.
+ms.openlocfilehash: 9f8979a674dd61710268df5b67857a5a8d641609
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Руководство по безопасности (Майкрософт) для политических кампаний, некоммерческих и других динамических организаций
 
- **Сводка:** Планирование и внедрение руководства по перемещению fast организации, которые профиль увеличению угроз.
+ **Сводка.** Руководство по планированию и реализации для быстроразвивающихся организаций с высокой вероятностью возникновения угроз безопасности.
   
-Если у вас динамичная организация, небольшая команда ИТ-специалистов, а профиль угроз выше среднего, это руководство — именно то, что вам нужно. Здесь вы узнаете, как быстро создать среду с основными облачными службами, куда изначально входят и элементы управления безопасностью. В этом руководстве приводятся рекомендации по защите данных, электронной почты и удостоверений, а также по организации безопасного доступа с мобильных устройств.
+Если у вас динамичная организация, небольшая команда ИТ-специалистов, а профиль угроз выше среднего, это руководство — именно то, что вам нужно. Здесь вы узнаете, как быстро создать среду с основными облачным службами, куда изначально входят и элементы управления безопасностью. В этом руководстве приводятся рекомендации по защите данных, электронной почты и удостоверений, а также по организации безопасного доступа с мобильных устройств.
   
 ## <a name="security-solution-guidance"></a>Руководство по безопасности
 
@@ -33,30 +33,30 @@ ms.lasthandoff: 02/14/2018
 |||
 |:-----|:-----|
 |**Элемент** <br/> |**Описание** <br/> |
-|**Руководство по безопасности (Майкрософт) для политических кампаний** <br/> [![Эскиз гвоздями для мини-плакат набора.](images/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf) <br/> [Версия в формате](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf) \| [Visio](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.vsdx)   <br/> |В этом руководстве в качестве примера используется организация, проводящая политические кампании. Используйте это руководство в качестве отправной точки для любой среды.  <br/> |
-|**Руководство по безопасности (Майкрософт) для некоммерческих организаций** <br/> [![Эскиз изображения загружаемого файла](images/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf) <br/> [Версия в формате](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf) \| [Visio](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.vsdx)   <br/> |В это руководство внесены незначительные изменения, благодаря которым оно подходит некоммерческим организациям. Например, рассмотрены планы Office 365 для некоммерческих организаций. Техническое руководство ничем не отличается от такового для организаций, проводящих политические кампании.  <br/> |
+|**Руководство по безопасности (Майкрософт) для политических кампаний** <br/> [![Эскиз для набора мини-постеров.](images/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf) <br/> [PDF](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.pdf)  \| [Visio](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security for political campaigns.vsdx) <br/> |В этом руководстве в качестве примера приведена организация, проводящая политические кампании. Используйте это руководство в качестве отправной точки для любой среды.  <br/> |
+|**Руководство по безопасности (Майкрософт) для некоммерческих организаций** <br/> [![Эскиз для скачиваемого файла](images/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf) <br/> [PDF](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.pdf)  \| [Visio](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud Architecture_Security for Nonprofits.vsdx) <br/> |В это руководство внесены незначительные изменения, благодаря которым оно подходит некоммерческим организациям. Например, рассмотрены планы Office 365 для некоммерческих организаций. Техническое руководство ничем не отличается от такового для организаций, проводящих политические кампании.  <br/> |
    
 ## <a name="test-lab-guides"></a>Руководства по лаборатории тестирования
 
-Чтобы создать среду разработки и тестирования для этого решения, используйте следующие руководства:   
+Чтобы создать среду разработки и тестирования для этого решения, используйте следующие руководства: 
   
-- [Настройка групп и пользователей в среде разработки и тестирования политических кампаний (en)](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
+- [Настройка групп и пользователей в случае среды разработки и тестирования для политической кампании](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
     
-     Создание пробной подписки для Office 365 и Командной и создайте для типичной политических кампании пользователей и групп.
+     Создайте пробные подписки на Office 365 и EMS, а затем создайте группы и пользователей для типичной политической кампании.
     
-- [Создание веб-сайтов групп в среде разработки и тестирования политических кампаний (en)](create-team-sites-in-a-political-campaign-dev-test-environment.md)
+- [Создание сайтов группы в среде разработки и тестирования для политической кампании](create-team-sites-in-a-political-campaign-dev-test-environment.md)
     
-    Создайте четыре SharePoint Online веб-сайтов групп с помощью Internal, Private, конфиденциальные и конфиденциальными уровней безопасности.
+    Создайте четыре сайта группы SharePoint Online с уровнями безопасности "Для внутреннего пользования", "Для личного пользования", "Конфиденциально" и "Строго конфиденциально".
     
-Дополнительные функции безопасности для демонстрации или пробной версии в разделе [Руководства по тестовой лаборатории Office 365](http://aka.ms/o365tlgs).
+Дополнительные функции безопасности для демонстрации или доказательства правильности концепции см. в статье [Руководства по лаборатории тестирования Office 365](http://aka.ms/o365tlgs).
   
 ## <a name="see-also"></a>См. также
 
 [Решения для обеспечения безопасности](security-solutions.md)
   
-[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по лаборатории тестирования для облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Материалы по архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 
 

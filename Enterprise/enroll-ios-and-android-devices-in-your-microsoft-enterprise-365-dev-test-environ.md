@@ -3,7 +3,7 @@ title: Регистрация операций ввода-вывода и Androi
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/14/2017
+ms.date: 05/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 'Сводка: Используйте в этом документе Test Lab Guide Регистрация устройств в среде разработки и тестирования Microsoft 365 и удаленного управления.'
-ms.openlocfilehash: b5ceecd74ac010d787bc580054d5dd43db952fef
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 8765a7ffb1bff1f257d7cd1ce5181561c2cf0080
+ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>Регистрация операций ввода-вывода и Android в среде разработки и тестирования Microsoft Enterprise 365
 
@@ -112,7 +112,7 @@ Microsoft Intune предоставляет возможности удален�
   
 [Политики MAM для вашей среды разработки и тестирования Microsoft 365 корпоративный](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по лабораториям тестирования (TLG) для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Мобильные решения на предприятиях + безопасности (Командной)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
