@@ -1,5 +1,5 @@
 ---
-title: Настройка поиска для OneDrive для бизнеса Multi географически
+title: Настройка поиска в OneDrive для бизнеса с поддержкой нескольких регионов
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
@@ -7,251 +7,252 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: Сведения о настройке поиска в среде с несколькими географически.
-ms.openlocfilehash: 5cf155c2c5bd2e27a54d84c4d5411e5b1afce568
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: Сведения о настройке поиска в среде с поддержкой нескольких регионов.
+ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="configure-search-for-onedrive-for-business-multi-geo"></a><span data-ttu-id="b4d61-103">Настройка поиска для OneDrive для бизнеса Multi географически</span><span class="sxs-lookup"><span data-stu-id="b4d61-103">Configure Search for OneDrive for Business Multi-Geo</span></span>
+# <a name="configure-search-for-onedrive-for-business-multi-geo"></a><span data-ttu-id="d1418-103">Настройка поиска в OneDrive для бизнеса с поддержкой нескольких регионов</span><span class="sxs-lookup"><span data-stu-id="d1418-103">Configure Search for OneDrive for Business Multi-Geo</span></span>
 
-<span data-ttu-id="b4d61-104">В среде с несколькими географически SharePoint Online (SPO) может иметь одну клиента Office 365 организации, но хранить их содержимого SharePoint в нескольких географических местах - одного центрального местоположения и один или несколько вспомогательные географического расположения.</span><span class="sxs-lookup"><span data-stu-id="b4d61-104">In a Multi-Geo SharePoint Online (SPO) environment, an organization can have one Office 365 tenant, but store their SharePoint content in multiple geographical locations - one central location and one or more satellite geo locations.</span></span>
+<span data-ttu-id="d1418-104">Используя среду SharePoint Online (SPO) с поддержкой нескольких регионов, организация может иметь одного клиента Office 365, но при этом хранить контент SharePoint в нескольких географических расположениях — центральном и периферийных.</span><span class="sxs-lookup"><span data-stu-id="d1418-104">In a Multi-Geo SharePoint Online (SPO) environment, an organization can have one Office 365 tenant, but store their SharePoint content in multiple geographical locations - one central location and one or more satellite geo locations.</span></span>
 
-<span data-ttu-id="b4d61-p101">Каждый свое географическое местоположение имеет свой собственный центр поиска и индекс поиска. При выполнении пользователем поиска, запрос fanned в работе для всех индексов и объединяются возвращаемых результатов.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p101">Each geographical location has its own search index and Search Center. When a user searches, the query is fanned out to all the indexes, and the returned results are merged.</span></span>
+<span data-ttu-id="d1418-p101">В случае каждого географического расположения предусмотрены отдельные индекс и центр поиска. Когда пользователь пытается что-то найти, запрос развертывается для всех индексов, а возвращенные результаты объединяются.</span><span class="sxs-lookup"><span data-stu-id="d1418-p101">Each geographical location has its own search index and Search Center. When a user searches, the query is fanned out to all the indexes, and the returned results are merged.</span></span>
 
-<span data-ttu-id="b4d61-p102">К примеру пользователей в одном месте географически можно найти контент, который хранится в другом месте географически, и для контента на сайте SharePoint, в которую различных географического расположения. Если у пользователя есть доступ к этому содержимому, поиска будет показывать результат.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p102">For example, a user in one geo location can search for content stored in another geo location, or for content on a SharePoint site that’s restricted to a different geo location. If the user has access to this content, search will show the result.</span></span>
+<span data-ttu-id="d1418-p102">Например, пользователь, находящийся в одном географическом расположении, может искать контент, хранящийся в другом, а также на сайте SharePoint, доступ к которому ограничен другим географическим расположением. Если у пользователя есть доступ к этому контенту, отобразятся результаты поиска.</span><span class="sxs-lookup"><span data-stu-id="d1418-p102">For example, a user in one geo location can search for content stored in another geo location, or for content on a SharePoint site that’s restricted to a different geo location. If the user has access to this content, search will show the result.</span></span>
 
-## <a name="which-search-clients-work-in-a-multi-geo-environment"></a><span data-ttu-id="b4d61-109">В среде с несколькими географически которого поиск работы клиентов?</span><span class="sxs-lookup"><span data-stu-id="b4d61-109">Which search clients work in a Multi-Geo environment?</span></span>
+## <a name="which-search-clients-work-in-a-multi-geo-environment"></a><span data-ttu-id="d1418-109">Какие клиенты поиска работают в среде с поддержкой нескольких регионов?</span><span class="sxs-lookup"><span data-stu-id="d1418-109">Which search clients work in a Multi-Geo environment?</span></span>
 
-<span data-ttu-id="b4d61-110">Эти клиенты могут возвращать результаты из всех расположений географически:</span><span class="sxs-lookup"><span data-stu-id="b4d61-110">These clients can return results from all geo locations:</span></span>
+<span data-ttu-id="d1418-110">Возвращать результаты поиска из всех географических расположений могут такие клиенты:</span><span class="sxs-lookup"><span data-stu-id="d1418-110">These clients can return results from all geo locations:</span></span>
 
--   <span data-ttu-id="b4d61-111">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="b4d61-111">OneDrive for Business</span></span>
+-   <span data-ttu-id="d1418-111">OneDrive для бизнеса;</span><span class="sxs-lookup"><span data-stu-id="d1418-111">OneDrive for Business</span></span>
 
--   <span data-ttu-id="b4d61-112">Delve</span><span class="sxs-lookup"><span data-stu-id="b4d61-112">Delve</span></span>
+-   <span data-ttu-id="d1418-112">Delve;</span><span class="sxs-lookup"><span data-stu-id="d1418-112">Delve</span></span>
 
--   <span data-ttu-id="b4d61-113">Домашняя страница SharePoint</span><span class="sxs-lookup"><span data-stu-id="b4d61-113">The SharePoint home page</span></span>
+-   <span data-ttu-id="d1418-113">домашняя страница SharePoint;</span><span class="sxs-lookup"><span data-stu-id="d1418-113">The SharePoint Central Administration Web site home page opens.</span></span>
 
--   <span data-ttu-id="b4d61-114">Центр поиска</span><span class="sxs-lookup"><span data-stu-id="b4d61-114">The Search Center</span></span>
+-   <span data-ttu-id="d1418-114">центр поиска;</span><span class="sxs-lookup"><span data-stu-id="d1418-114">The Search Center</span></span>
 
--   <span data-ttu-id="b4d61-115">Настраиваемые приложения поиска, использующие API поиска SharePoint</span><span class="sxs-lookup"><span data-stu-id="b4d61-115">Custom search applications that use the SharePoint Search API</span></span>
+-   <span data-ttu-id="d1418-115">специальные поисковые приложения, которые используют API поиска SharePoint.</span><span class="sxs-lookup"><span data-stu-id="d1418-115">Custom search applications that use the SharePoint Search API</span></span>
 
-### <a name="onedrive-for-business"></a><span data-ttu-id="b4d61-116">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="b4d61-116">OneDrive for Business</span></span>
+### <a name="onedrive-for-business"></a><span data-ttu-id="d1418-116">OneDrive для бизнеса</span><span class="sxs-lookup"><span data-stu-id="d1418-116">OneDrive for Business</span></span>
 
-<span data-ttu-id="b4d61-117">Настройка среды ферма с несколькими географически сразу же пользователей, в которых поиск в OneDrive получать результаты из всех расположений географически.</span><span class="sxs-lookup"><span data-stu-id="b4d61-117">As soon as the Multi-Geo environment has been set up, users that search in OneDrive get results from all geo locations.</span></span>
+<span data-ttu-id="d1418-117">Как только завершится настройка среды с поддержкой нескольких регионов, пользователи, выполняющие поиск в OneDrive, получат результаты из всех географических расположений.</span><span class="sxs-lookup"><span data-stu-id="d1418-117">As soon as the Multi-Geo environment has been set up, users that search in OneDrive get results from all geo locations.</span></span>
 
-### <a name="delve"></a><span data-ttu-id="b4d61-118">Delve</span><span class="sxs-lookup"><span data-stu-id="b4d61-118">Delve</span></span>
+### <a name="delve"></a><span data-ttu-id="d1418-118">Delve</span><span class="sxs-lookup"><span data-stu-id="d1418-118">Delve</span></span>
 
-<span data-ttu-id="b4d61-119">Настройка среды ферма с несколькими географически сразу же пользователей, в которых поиск в Delve получать результаты из всех расположений географически.</span><span class="sxs-lookup"><span data-stu-id="b4d61-119">As soon as the Multi-Geo environment has been set up, users that search in Delve get results from all geo locations.</span></span>
+<span data-ttu-id="d1418-119">Как только завершится настройка среды с поддержкой нескольких регионов, пользователи, выполняющие поиск в Delve, получат результаты из всех географических расположений.</span><span class="sxs-lookup"><span data-stu-id="d1418-119">As soon as the Multi-Geo environment has been set up, users that search in Delve get results from all geo locations.</span></span>
 
-<span data-ttu-id="b4d61-p103">Веб-канал Delve и Карточка профиля отображаются только предварительный просмотр файлов, которые хранятся в **центральном** расположении. Для файлов, которые хранятся в вспомогательных географического расположения вместо этого отображается значок для типа файла.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p103">The Delve feed and the profile card only show previews of files that are stored in the **central** location. For files that are stored in satellite geo locations, the icon for the file type is shown instead.</span></span>
+<span data-ttu-id="d1418-p103">Веб-канал Delve и карточка профиля показывают только краткое содержание файлов, которые хранятся в **центральном** расположении. В случае файлов, хранящихся в периферийных геообъектах, отображается значок типа файла.</span><span class="sxs-lookup"><span data-stu-id="d1418-p103">The Delve feed and the profile card only show previews of files that are stored in the **central** location. For files that are stored in satellite geo locations, the icon for the file type is shown instead.</span></span>
 
-### <a name="the-sharepoint-home-page"></a><span data-ttu-id="b4d61-122">Домашняя страница SharePoint</span><span class="sxs-lookup"><span data-stu-id="b4d61-122">The SharePoint home page</span></span>
+### <a name="the-sharepoint-home-page"></a><span data-ttu-id="d1418-122">Домашняя страница SharePoint</span><span class="sxs-lookup"><span data-stu-id="d1418-122">The SharePoint Central Administration Web site home page opens.</span></span>
 
-<span data-ttu-id="b4d61-p104">Как настроить среду несколькими географически пользователи увидят новости, последние и число сайтов из нескольких расположений географически на своей домашней странице SharePoint. При использовании поля поиска на домашней странице SharePoint, они получите объединенных результатов из нескольких расположений географически.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p104">As soon as the Multi-Geo environment has been set up, users will see news, recent and followed sites from multiple geo locations on their SharePoint home page. If they use the search box on the SharePoint home page, they'll get merged results from multiple geo locations.</span></span>
+<span data-ttu-id="d1418-p104">Как только завершится настройка среды с поддержкой нескольких регионов, пользователи на своей домашней странице SharePoint увидят новости, недавние и отслеживаемые сайты из нескольких геообъектов. Используя поле поиска на домашней странице SharePoint, пользователи получат объединенные результаты из нескольких географических расположений.</span><span class="sxs-lookup"><span data-stu-id="d1418-p104">As soon as the Multi-Geo environment has been set up, users will see news, recent and followed sites from multiple geo locations on their SharePoint home page. If they use the search box on the SharePoint home page, they'll get merged results from multiple geo locations.</span></span>
 
-### <a name="the-search-center"></a><span data-ttu-id="b4d61-125">Центр поиска</span><span class="sxs-lookup"><span data-stu-id="b4d61-125">The Search Center</span></span>
+### <a name="the-search-center"></a><span data-ttu-id="d1418-125">Центр поиска</span><span class="sxs-lookup"><span data-stu-id="d1418-125">The Search Center</span></span>
 
-<span data-ttu-id="b4d61-p105">После Multi-географически среды был настроен, каждого центра поиска по-прежнему производится только Показать результаты из географического расположения. Администраторы должны [Изменить параметры каждого центра поиска](#_Set_up_a_1) для получения результатов из всех расположений географически. После этого пользователи, в которых поиск в центре поиска получать результаты из всех расположений географически.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p105">After the Multi-Geo environment has been set up, each Search Center continues to only show results from their own geo location. Admins must [change the settings of each Search Center](#_Set_up_a_1) to get results from all geo locations. Afterwards, users that search in the Search Center get results from all geo locations.</span></span>
+<span data-ttu-id="d1418-p105">Когда завершится настройка среды с поддержкой нескольких регионов, каждый центр поиска будет по-прежнему отображать только результаты из своего географического расположения. Чтобы можно было получать данные из всех геообъектов, администраторы должны [изменить настройки каждого центра поиска](#_Set_up_a_1). После этого пользователи станут получать результаты из всех географических расположений.</span><span class="sxs-lookup"><span data-stu-id="d1418-p105">After the Multi-Geo environment has been set up, each Search Center continues to only show results from their own geo location. Admins must [change the settings of each Search Center](#_Set_up_a_1) to get results from all geo locations. Afterwards, users that search in the Search Center get results from all geo locations.</span></span>
 
-### <a name="custom-search-applications"></a><span data-ttu-id="b4d61-129">Настраиваемые приложения поиска</span><span class="sxs-lookup"><span data-stu-id="b4d61-129">Custom search applications</span></span>
+### <a name="custom-search-applications"></a><span data-ttu-id="d1418-129">Специальные поисковые приложения</span><span class="sxs-lookup"><span data-stu-id="d1418-129">Custom search applications</span></span>
 
-<span data-ttu-id="b4d61-p106">Как обычно настраиваемые приложения поиска взаимодействовать с индексы поиска с помощью существующих API REST поиска SharePoint. Для получения результатов из всех или некоторых географического расположения, приложение должно [вызов API и включения новых параметров запроса несколькими географически](#_Get_custom_search) в запросе. Это запускает вентилятора из него запросов на все географического расположения.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p106">As usual, custom search applications interact with the search indexes by using the existing SharePoint Search REST APIs. To get results from all, or some geo locations, the application must [call the API and include the new Multi-Geo query parameters](#_Get_custom_search) in the request. This triggers a fan out of the query to all geo locations.</span></span>
+<span data-ttu-id="d1418-p106">Как правило, специальные поисковые приложения взаимодействуют с индексами поиска при помощи существующих REST API поиска SharePoint. Для получения результатов из всех или некоторых географических расположений приложение должно [вызвать API и включить в запрос новые параметры поддержки нескольких регионов](#_Get_custom_search). Это действие активирует развертывание запроса для всех геообъектов.</span><span class="sxs-lookup"><span data-stu-id="d1418-p106">As usual, custom search applications interact with the search indexes by using the existing SharePoint Search REST APIs. To get results from all, or some geo locations, the application must [call the API and include the new Multi-Geo query parameters](#_Get_custom_search) in the request. This triggers a fan out of the query to all geo locations.</span></span>
 
-## <a name="whats-different-about-search-in-a-multi-geo-environment"></a><span data-ttu-id="b4d61-133">Каковы отличия, о поиске в среде с несколькими географически?</span><span class="sxs-lookup"><span data-stu-id="b4d61-133">What’s different about search in a Multi-Geo environment?</span></span>
+## <a name="whats-different-about-search-in-a-multi-geo-environment"></a><span data-ttu-id="d1418-133">Чем отличается поиск в среде с поддержкой нескольких регионов?</span><span class="sxs-lookup"><span data-stu-id="d1418-133">What’s different about search in a Multi-Geo environment?</span></span>
 
-<span data-ttu-id="b4d61-134">Некоторые функции поиска, которые могут быть знакомы, работают по-разному в среде с несколькими географически.</span><span class="sxs-lookup"><span data-stu-id="b4d61-134">Some search features you might be familiar with, work differently in a Multi-Geo environment.</span></span>
+<span data-ttu-id="d1418-134">Некоторые знакомые вам функции поиска работают иначе в среде с поддержкой нескольких регионов.</span><span class="sxs-lookup"><span data-stu-id="d1418-134">Some search features you might be familiar with, work differently in a Multi-Geo environment.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="b4d61-135"><strong>Компонент</strong></span><span class="sxs-lookup"><span data-stu-id="b4d61-135"><strong>Feature</strong></span></span></th>
-<th align="left"><span data-ttu-id="b4d61-136"><strong>Как это работает</strong></span><span class="sxs-lookup"><span data-stu-id="b4d61-136"><strong>How does it work</strong></span></span></th>
-<th align="left"><span data-ttu-id="b4d61-137"><strong>Обходной путь</strong></span><span class="sxs-lookup"><span data-stu-id="b4d61-137"><strong>Workaround</strong></span></span></th>
+<th align="left"><span data-ttu-id="d1418-135"><strong>Функция</strong></span><span class="sxs-lookup"><span data-stu-id="d1418-135"><strong>Feature</strong></span></span></th>
+<th align="left"><span data-ttu-id="d1418-136"><strong>Как это работает</strong></span><span class="sxs-lookup"><span data-stu-id="d1418-136"><strong>How does it work?</strong></span></span></th>
+<th align="left"><span data-ttu-id="d1418-137"><strong>Решение</strong></span><span class="sxs-lookup"><span data-stu-id="d1418-137"><strong>Workaround</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="b4d61-138">Результатов повышенного уровня</span><span class="sxs-lookup"><span data-stu-id="b4d61-138">Promoted results</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-p107">Можно создать правила запросов с повышенным уровнем результаты на различных уровнях: для всей клиента, для семейства веб-сайтов или для сайта. В среде с несколькими географически определите результатов повышенного уровня на уровне <strong>клиента</strong> , чтобы повысить уровень результатов в центрах поиска во <strong>всех</strong> расположениях географически. Вы <strong>только</strong> продвигать результаты в центре поиска, который находится в папке географически семейства веб-сайтов или сайта, определите результаты на уровне <strong>семейства веб-сайтов</strong> или <strong>сайта</strong> .</span><span class="sxs-lookup"><span data-stu-id="b4d61-p107">You can create query rules with promoted results at different levels: for the whole tenant, for a site collection, or for a site. In a Multi-Geo environment, define promoted results at the <strong>tenant</strong> level if you want to promote the results to the Search Centers in <strong>all</strong> geo locations. If you <strong>only</strong> want to promote results in the Search Center that’s in the geo location of the site collection or site, define the results at the <strong>site collection</strong> or <strong>site</strong> level.</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-142">Если не требуется различных результатов повышенного уровня одного географического расположения, например различные правила поездок, мы рекомендуем определение результатов на уровне клиента повышенного уровня.</span><span class="sxs-lookup"><span data-stu-id="b4d61-142">If you don’t need different promoted results per geo location, for example different rules for traveling, we recommend defining promoted results at the tenant level.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-138">Повышение уровня результатов</span><span class="sxs-lookup"><span data-stu-id="d1418-138">Promoted results</span></span></td>
+<td align="left"><span data-ttu-id="d1418-p107">Вы можете создавать правила запросов с повышением уровня результатов для всего клиента, семейства веб-сайтов или отдельного сайта. Чтобы в среде с поддержкой нескольких регионов повысить уровень результатов для центров поиска <strong>всех</strong> географических расположений, определите такие результаты для <strong>клиента</strong>. Чтобы повысить уровень результатов <strong>только</strong> для центра поиска, находящегося в геообъекте семейства веб-сайтов или отдельного сайта, определите такие результаты для <strong>семейства веб-сайтов</strong> или <strong>сайта</strong> соответственно.</span><span class="sxs-lookup"><span data-stu-id="d1418-p107">You can create query rules with promoted results at different levels: for the whole tenant, for a site collection, or for a site. In a Multi-Geo environment, define promoted results at the <strong>tenant</strong> level if you want to promote the results to the Search Centers in <strong>all</strong> geo locations. If you <strong>only</strong> want to promote results in the Search Center that’s in the geo location of the site collection or site, define the results at the <strong>site collection</strong> or <strong>site</strong> level.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-142">Если вам не нужны различные результаты с повышенным уровнем для каждого отдельного географического расположения (например, разные правила для перемещения), рекомендуем определять результаты с повышенным уровнем для клиента.</span><span class="sxs-lookup"><span data-stu-id="d1418-142">If you don’t need different promoted results per geo location, for example different rules for traveling, we recommend defining promoted results at the tenant level.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="b4d61-143">Уточнения поиска</span><span class="sxs-lookup"><span data-stu-id="b4d61-143">Search refiners</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-p108">Поиск возвращает уточнений из всех расположений географически клиента и затем объединяет их. Объединение — это все возможное, что означает, что счетчиков может быть точных 100%. Для большинства сценариев на основе механизмов поиска это является достаточно.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p108">Search returns refiners from all the geo locations of a tenant and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-147">Для приложения на основе поиска, зависящих от полнота уточнения запросов для каждого географического расположения независимо друг от друга без использования несколькими географически развертывания.</span><span class="sxs-lookup"><span data-stu-id="b4d61-147">For search-driven applications that depend on refiner completeness, query each geo location independently without using Multi-Geo fan-out.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-143">Уточнения поиска</span><span class="sxs-lookup"><span data-stu-id="d1418-143">Search refiners</span></span></td>
+<td align="left"><span data-ttu-id="d1418-p108">При поиске возвращаются уточнения из всех географических расположений клиента, а затем объединяются. Объединение выполняется максимально правильно, но счетчики уточнений могут не быть точными на 100 %. Для большинства сценариев поиска такой точности вполне достаточно.</span><span class="sxs-lookup"><span data-stu-id="d1418-p108">Search returns refiners from all the geo locations of a tenant and then aggregates them. The aggregation is a best effort, meaning that the refiner counts might not be 100% accurate. For most search-driven scenarios, this accuracy is sufficient.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-147">Поисковые приложения, которые зависят от полноты уточнения, запрашивают каждое географическое расположение отдельно, не используя развертывание с поддержкой нескольких регионов.</span><span class="sxs-lookup"><span data-stu-id="d1418-147">For search-driven applications that depend on refiner completeness, query each geo location independently without using Multi-Geo fan-out.</span></span></td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
-<td align="left"><span data-ttu-id="b4d61-148">Ферма с несколькими географически поиска не поддерживает динамические сегментация для числовых уточнений.</span><span class="sxs-lookup"><span data-stu-id="b4d61-148">Multi-Geo search doesn’t support dynamic bucketing for numerical refiners.</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-149">Используйте <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">параметр «Discretize»</a> для числовых уточнений.</span><span class="sxs-lookup"><span data-stu-id="b4d61-149">Use the <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize” parameter</a> for numerical refiners.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-148">При поиске в среде с поддержкой нескольких регионов невозможно динамическое группирование числовых уточнений.</span><span class="sxs-lookup"><span data-stu-id="d1418-148">Multi-Geo search doesn’t support dynamic bucketing for numerical refiners.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-149">В случае числовых уточнений задавайте <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">параметр discretize</a>.</span><span class="sxs-lookup"><span data-stu-id="d1418-149">Use the <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">“Discretize” parameter</a> for numerical refiners.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="b4d61-150">Идентификаторы документов</span><span class="sxs-lookup"><span data-stu-id="b4d61-150">Document IDs</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-151">При разработке приложения на основе механизмов поиска, которое зависит от идентификаторами документов, обратите внимание на то, что идентификаторы документов в среде с несколькими географически не уникальный в географически подразделениях, они являются уникальными для географического расположения.</span><span class="sxs-lookup"><span data-stu-id="b4d61-151">If you’re developing a search-driven application that depends on document IDs, note that document IDs in a Multi-Geo environment aren’t unique across geo locations, they are unique per geo location.</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-p109">Мы добавили столбец, который идентифицирует географического расположения. Используйте этот столбец для обеспечения уникальности. Этот столбец является с именем «GeoLocationSource».</span><span class="sxs-lookup"><span data-stu-id="b4d61-p109">We’ve added a column that identifies the geo location. Use this column to achieve uniqueness. This column is named “GeoLocationSource”.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-150">Идентификаторы документов</span><span class="sxs-lookup"><span data-stu-id="d1418-150">Unique Document IDs</span></span></td>
+<td align="left"><span data-ttu-id="d1418-151">При разработке поискового приложения, которое зависит от ИД документов, обратите внимание на то, что такие идентификаторы в среде с поддержкой нескольких регионов уникальны только для каждого отдельного географического расположения.</span><span class="sxs-lookup"><span data-stu-id="d1418-151">If you’re developing a search-driven application that depends on document IDs, note that document IDs in a Multi-Geo environment aren’t unique across geo locations, they are unique per geo location.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-p109">Добавлен столбец "GeoLocationSource", который определяет географическое расположение и позволяет добиться уникальности.</span><span class="sxs-lookup"><span data-stu-id="d1418-p109">We’ve added a column that identifies the geo location. Use this column to achieve uniqueness. This column is named “GeoLocationSource”.</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="b4d61-155">Число результатов</span><span class="sxs-lookup"><span data-stu-id="b4d61-155">Number of results</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-156">Страницы результатов поиска отображает объединенный результаты из географического расположения, но невозможно страницы за пределы 500 результатов.</span><span class="sxs-lookup"><span data-stu-id="b4d61-156">The search results page shows combined results from the geo locations, but it’s not possible to page beyond 500 results.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-155">Количество результатов</span><span class="sxs-lookup"><span data-stu-id="d1418-155">Number of results</span></span></td>
+<td align="left"><span data-ttu-id="d1418-156">На странице результатов поиска отображаются объединенные данные из географических расположений (не более 500 результатов на одной странице).</span><span class="sxs-lookup"><span data-stu-id="d1418-156">The search results page shows combined results from the geo locations, but it’s not possible to page beyond 500 results.</span></span></td>
 <td align="left"></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="whats-not-supported-for-search-in-a-multi-geo-environment"></a><span data-ttu-id="b4d61-157">Что не поддерживается для поиска в среде с несколькими географически?</span><span class="sxs-lookup"><span data-stu-id="b4d61-157">What’s not supported for search in a Multi-Geo environment?</span></span>
+## <a name="whats-not-supported-for-search-in-a-multi-geo-environment"></a><span data-ttu-id="d1418-157">Что не поддерживается при поиске в среде с поддержкой нескольких регионов?</span><span class="sxs-lookup"><span data-stu-id="d1418-157">What’s not supported for search in a Multi-Geo environment?</span></span>
 
-<span data-ttu-id="b4d61-158">Некоторые функции поиска, которые могут быть знакомы, не поддерживаются в среде с несколькими географически.</span><span class="sxs-lookup"><span data-stu-id="b4d61-158">Some of the search features you might be familiar with, aren’t supported in a Multi-Geo environment.</span></span>
+<span data-ttu-id="d1418-158">Некоторые знакомые вам функции поиска в среде поддержки нескольких регионов не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="d1418-158">Some of the search features you might be familiar with, aren’t supported in a Multi-Geo environment.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="b4d61-159"><strong>Функция поиска</strong></span><span class="sxs-lookup"><span data-stu-id="b4d61-159"><strong>Search feature</strong></span></span></th>
-<th align="left"><span data-ttu-id="b4d61-160"><strong>Примечание</strong></span><span class="sxs-lookup"><span data-stu-id="b4d61-160"><strong>Note</strong></span></span></th>
+<th align="left"><span data-ttu-id="d1418-159"><strong>Функция поиска</strong></span><span class="sxs-lookup"><span data-stu-id="d1418-159"><strong>Search feature</strong></span></span></th>
+<th align="left"><span data-ttu-id="d1418-160"><strong>Примечание</strong></span><span class="sxs-lookup"><span data-stu-id="d1418-160"><strong>Note</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="b4d61-161">Проверка подлинности только для приложений</span><span class="sxs-lookup"><span data-stu-id="b4d61-161">App-only authentication</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-162">Только проверка подлинности (привилегированный доступ из служб) не поддерживается в географически несколькими поиска.</span><span class="sxs-lookup"><span data-stu-id="b4d61-162">App-only authentication (privileged access from services) isn’t supported in Multi-Geo search.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-161">Проверка подлинности только для приложений</span><span class="sxs-lookup"><span data-stu-id="d1418-161">App-only authentication</span></span></td>
+<td align="left"><span data-ttu-id="d1418-162">При поиске в среде с поддержкой нескольких регионов невозможна проверка подлинности только для приложений (привилегированный доступ из служб).</span><span class="sxs-lookup"><span data-stu-id="d1418-162">App-only authentication (privileged access from services) isn’t supported in Multi-Geo search.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="b4d61-163">Гости</span><span class="sxs-lookup"><span data-stu-id="b4d61-163">Guest users</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-164">Гости получить только результаты из географического расположения, они поиска из.</span><span class="sxs-lookup"><span data-stu-id="b4d61-164">Guest users only get results from the geo location that they’re searching from.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-163">Гостевые пользователи</span><span class="sxs-lookup"><span data-stu-id="d1418-163">Guest users</span></span></td>
+<td align="left"><span data-ttu-id="d1418-164">Гостевые пользователи получают результаты только из того географического расположения, из которого они выполняют поиск.</span><span class="sxs-lookup"><span data-stu-id="d1418-164">Guest users only get results from the geo location that they’re searching from.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="how-does-search-work-in-a-multi-geo-environment"></a><span data-ttu-id="b4d61-165">Как работает поиска работает в среде с несколькими географически?</span><span class="sxs-lookup"><span data-stu-id="b4d61-165">How does search work in a Multi-Geo environment?</span></span>
+## <a name="how-does-search-work-in-a-multi-geo-environment"></a><span data-ttu-id="d1418-165">Каковые принципы поиска в среде с поддержкой нескольких регионов?</span><span class="sxs-lookup"><span data-stu-id="d1418-165">How does search work in a Multi-Geo environment?</span></span>
 
-<span data-ttu-id="b4d61-166">**Все** клиенты поиска использовать существующие интерфейсы API REST поиска SharePoint для взаимодействия с индексы поиска.</span><span class="sxs-lookup"><span data-stu-id="b4d61-166">**All** the search clients use the existing SharePoint Search REST APIs to interact with the search indexes.</span></span>
+<span data-ttu-id="d1418-166">**Все** клиенты поиска взаимодействуют с индексами поиска, используя существующие REST API поиска SharePoint.</span><span class="sxs-lookup"><span data-stu-id="d1418-166">**All** the search clients use the existing SharePoint Search REST APIs to interact with the search indexes.</span></span>
 <img src="media/configure-search-for-multi-geo_image1-1.png" />
 
-1. <span data-ttu-id="b4d61-167">Клиент поиска вызывает конечная точка REST поиска с помощью свойства запроса EnableMultiGeoSearch = true.</span><span class="sxs-lookup"><span data-stu-id="b4d61-167">A search client calls the Search REST endpoint with the query property EnableMultiGeoSearch= true.</span></span>
-2. <span data-ttu-id="b4d61-168">Запрос отправляется все географического расположения в клиентов.</span><span class="sxs-lookup"><span data-stu-id="b4d61-168">The query is sent to all geo locations in the tenant.</span></span>
-3. <span data-ttu-id="b4d61-169">Результаты поиска из каждого географического расположения объединенных и ранжирования.</span><span class="sxs-lookup"><span data-stu-id="b4d61-169">Search results from each geo location are merged and ranked.</span></span>
-4. <span data-ttu-id="b4d61-170">Клиент получает результаты стандартизированное.</span><span class="sxs-lookup"><span data-stu-id="b4d61-170">The client gets unified search results.</span></span>
+1. <span data-ttu-id="d1418-167">Клиент поиска вызывает конечную точку поиска REST с использованием свойства запроса EnableMultiGeoSearch = true.</span><span class="sxs-lookup"><span data-stu-id="d1418-167">A search client calls the Search REST endpoint with the query property EnableMultiGeoSearch= true.</span></span>
+2. <span data-ttu-id="d1418-168">Запрос отправляется во все геообъекты, предусмотренные для клиента.</span><span class="sxs-lookup"><span data-stu-id="d1418-168">The query is sent to all geo locations in the tenant.</span></span>
+3. <span data-ttu-id="d1418-169">Результаты поиска из каждого географического расположения объединяются и ранжируются.</span><span class="sxs-lookup"><span data-stu-id="d1418-169">Search results from each geo location are merged and ranked.</span></span>
+4. <span data-ttu-id="d1418-170">Клиент получает объединенные результаты поиска.</span><span class="sxs-lookup"><span data-stu-id="d1418-170">The client gets unified search results.</span></span>
 
 
 
-<span data-ttu-id="b4d61-p110"><span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Обратите внимание на то, что мы не объединение результатов поиска, пока мы получили результаты из всех расположений географически. Это означает, что поиск несколькими географически дополнительные задержки, по сравнению с поисков в среде с только один географического расположения.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p110"><span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Notice that we don’t merge the search results until we’ve received results from all the geo locations. This means that Multi-Geo searches have additional latency compared to searches in an environment with only one geo location.</span></span>
+<span data-ttu-id="d1418-p110"><span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Обратите внимание на то, что результаты поиска не объединяются до тех пор, пока не будут получены данные из всех географических расположений. Это означает, что поиск в среде с поддержкой нескольких регионов выполняется с большей задержкой, чем поиск в среде с одним геообъектом.</span><span class="sxs-lookup"><span data-stu-id="d1418-p110"><span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Notice that we don’t merge the search results until we’ve received results from all the geo locations. This means that Multi-Geo searches have additional latency compared to searches in an environment with only one geo location.</span></span>
 
 <span id="_Set_up_a_1" class="anchor"><span id="_Ref505252370" class="anchor"></span></span>
-## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a><span data-ttu-id="b4d61-173">Получение центра поиска, чтобы показать результаты из всех расположений географически</span><span class="sxs-lookup"><span data-stu-id="b4d61-173">Get a Search Center to show results from all geo locations</span></span>
+## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a><span data-ttu-id="d1418-173">Настройка отображения в центре поиска результатов из всех географических расположений</span><span class="sxs-lookup"><span data-stu-id="d1418-173">Get a Search Center to show results from all geo locations</span></span>
 
-<span data-ttu-id="b4d61-174">Каждого центра поиска имеет несколько вертикали и должны настроить по вертикали каждого по отдельности.</span><span class="sxs-lookup"><span data-stu-id="b4d61-174">Each Search Center has several verticals and you have to set up each vertical individually.</span></span>
+<span data-ttu-id="d1418-174">Для каждого центра поиска предусмотрено несколько вертикалей, и каждую из них следует настраивать отдельно.</span><span class="sxs-lookup"><span data-stu-id="d1418-174">Each Search Center has several verticals and you have to set up each vertical individually.</span></span>
 
-1.  <span data-ttu-id="b4d61-175">Убедитесь, что выполняются эти действия с использованием учетной записи, которая имеет разрешение на изменение страницы результатов поиска и веб-части результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="b4d61-175">Ensure that you perform these steps with an account that has permission to edit the search results page and the Search Result Web Part.</span></span>
+1.  <span data-ttu-id="d1418-175">Убедитесь, что выполняете эти действия в учетной записи, у которой есть разрешение на изменение страницы результатов поиска и веб-части результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="d1418-175">Ensure that you perform these steps with an account that has permission to edit the search results page and the Search Result Web Part.</span></span>
 
-2.  <span data-ttu-id="b4d61-176">Перейдите на страницу результатов поиска (просматривать страницы результатов поиска [списка](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) )</span><span class="sxs-lookup"><span data-stu-id="b4d61-176">Navigate to the search results page (see the [list](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) of search results pages)</span></span>
+2.  <span data-ttu-id="d1418-176">Перейдите на страницу результатов поиска (см. [список](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) страниц результатов поиска).</span><span class="sxs-lookup"><span data-stu-id="d1418-176">Navigate to the search results page (see the [list](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) of search results pages)</span></span>
 
-3.  <span data-ttu-id="b4d61-p111">Выберите вертикальная для установки, щелкните значок шестеренки **Параметры** в верхнем правом углу окна и выберите команду **Изменить страницу**. Откроется страница результатов поиска в режиме редактирования.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p111">Select the vertical to set up, click **Settings** gear icon in the upper, right corner, and then click **Edit Page**. The search results page opens in Edit mode.</span></span>
+3.  <span data-ttu-id="d1418-p111">Выберите вертикаль для настройки. В верхнем правом углу щелкните значок шестеренки **Параметры**, а затем выберите **Изменить страницу**. Откроется страница результатов поиска в режиме редактирования.</span><span class="sxs-lookup"><span data-stu-id="d1418-p111">Select the vertical to set up, click **Settings** gear icon in the upper, right corner, and then click **Edit Page**. The search results page opens in Edit mode.</span></span>
 
      ![](media/configure-search-for-multi-geo_image2.png)
-1.  <span data-ttu-id="b4d61-p112">В веб-части результатов поиска наведите указатель на верхний правый угол веб-части щелкните стрелку и выберите в меню команду **Изменить веб-часть** . Откроется панель инструмента веб-части результатов поиска в разделе ленты в верхней правой части страницы.![](media/configure-search-for-multi-geo_image3.png)</span><span class="sxs-lookup"><span data-stu-id="b4d61-p112">In the Search Results Web Part, move the pointer to the upper, right corner of the Web Part, click the arrow, and then click **Edit Web Part** on the menu. The Search Results Web Part tool pane opens under the ribbon in the top right of the page. ![](media/configure-search-for-multi-geo_image3.png)</span></span>
+1.  <span data-ttu-id="d1418-p112">В веб-части результатов поиска переместите указатель в верхний правый угол, щелкните стрелку, а затем в меню выберите **Изменить веб-часть**. Под лентой в верхней правой части страницы откроется область инструментов веб-части результатов поиска. ![](media/configure-search-for-multi-geo_image3.png)</span><span class="sxs-lookup"><span data-stu-id="d1418-p112">In the Search Results Web Part, move the pointer to the upper, right corner of the Web Part, click the arrow, and then click **Edit Web Part** on the menu. The Search Results Web Part tool pane opens under the ribbon in the top right of the page. ![](media/configure-search-for-multi-geo_image3.png)</span></span>
 
-1.  <span data-ttu-id="b4d61-181">В области инструментов веб-части в разделе **Параметры** в области **результатов задают параметры**выберите **Показать несколькими географически результатов** для получения веб-части результатов поиска для отображения результатов из всех расположений географически.</span><span class="sxs-lookup"><span data-stu-id="b4d61-181">In the Web Part tool pane, in the **Settings** section, under **Results control settings**, select **Show Multi-Geo results** to get the Search Results Web Part to show results from all geo locations.</span></span>
+1.  <span data-ttu-id="d1418-181">Чтобы в веб-части результатов поиска отображались результаты из всех геообъектов, в области инструментов веб-части выберите **Параметры** > **Параметры управления результатами** > **Отображение результатов с поддержкой нескольких регионов**.</span><span class="sxs-lookup"><span data-stu-id="d1418-181">In the Web Part tool pane, in the **Settings** section, under **Results control settings**, select **Show Multi-Geo results** to get the Search Results Web Part to show results from all geo locations.</span></span>
 
-2.  <span data-ttu-id="b4d61-182">Нажмите **кнопку ОК** , чтобы сохранить изменения и закрыть панель инструментов веб-части.</span><span class="sxs-lookup"><span data-stu-id="b4d61-182">Click **OK** to save your change and close the Web Part tool pane.</span></span>
+2.  <span data-ttu-id="d1418-182">Чтобы сохранить изменения и закрыть область инструментов веб-части, нажмите кнопку **ОК**.</span><span class="sxs-lookup"><span data-stu-id="d1418-182">Click **OK** to save your change and close the Web Part tool pane.</span></span>
 
-3.  <span data-ttu-id="b4d61-183">Проверка изменений для веб-части результатов поиска, щелкнув **Возврат** на вкладке Страница главного меню.</span><span class="sxs-lookup"><span data-stu-id="b4d61-183">Check your changes to the Search Results Web Part by clicking **Check-In** on the Page tab of the main menu.</span></span>
+3.  <span data-ttu-id="d1418-183">Проверьте изменения, внесенные в веб-часть результатов поиска, выбрав **Возврат** на вкладке "Страница" главного меню.</span><span class="sxs-lookup"><span data-stu-id="d1418-183">Check your changes to the Search Results Web Part by clicking **Check-In** on the Page tab of the main menu.</span></span>
 
-4.  <span data-ttu-id="b4d61-184">Публикация изменений с помощью ссылки, содержащиеся в примечание в верхней части страницы.</span><span class="sxs-lookup"><span data-stu-id="b4d61-184">Publish the changes by using the link provided in the note at the top of the page.</span></span>
+4.  <span data-ttu-id="d1418-184">Опубликуйте изменения, воспользовавшись ссылкой, предоставленной в примечании вверху страницы.</span><span class="sxs-lookup"><span data-stu-id="d1418-184">Publish the changes by using the link provided in the note at the top of the page.</span></span>
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
-## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a><span data-ttu-id="b4d61-185">Получение настраиваемые приложения поиска для отображения результатов из всех или некоторых географического расположения</span><span class="sxs-lookup"><span data-stu-id="b4d61-185">Get custom search applications to show results from all or some geo locations</span></span>
+## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a><span data-ttu-id="d1418-185">Настройка отображения в специальных поисковых приложениях результатов из всех или некоторых географических расположений</span><span class="sxs-lookup"><span data-stu-id="d1418-185">Get custom search applications to show results from all or some geo locations</span></span>
 
-<span data-ttu-id="b4d61-p113">Настраиваемые приложения поиска получать результаты из всех или некоторых, географического расположения, путем указания параметров запроса с запросом на API REST поиска SharePoint. В зависимости от параметров запроса запрос fanned все географического расположения или некоторые географического расположения. Например если вам требуется только для запроса подмножество географически местоположения, чтобы найти информацию, можно управлять веером только такие. Если запрос пройдет успешно, API REST поиска SharePoint возвращает данные ответа.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p113">Custom search applications get results from all, or some, geo locations by specifying query parameters with the request to the SharePoint Search REST API. Depending on the query parameters, the query is fanned out to all geo locations, or to some geo locations. For example, if you only need to query a subset of geo locations to find relevant information, you can control the fan out to only these. If the request succeeds, the SharePoint Search REST API returns response data.</span></span>
+<span data-ttu-id="d1418-p113">Специальные поисковые приложения получают результаты из всех или некоторых географических расположений, указывая параметры запроса для REST API поиска SharePoint. В зависимости от этих параметров запрос развертывается для всех или некоторых геообъектов. Например, если нужно найти релевантные данные, отправив запрос только в подмножество географических расположений, можно выполнить развертывание запроса именно для них. Если запрос будет выполнен успешно, REST API поиска SharePoint возвратит данные отклика.</span><span class="sxs-lookup"><span data-stu-id="d1418-p113">Custom search applications get results from all, or some, geo locations by specifying query parameters with the request to the SharePoint Search REST API. Depending on the query parameters, the query is fanned out to all geo locations, or to some geo locations. For example, if you only need to query a subset of geo locations to find relevant information, you can control the fan out to only these. If the request succeeds, the SharePoint Search REST API returns response data.</span></span>
 
-### <a name="query-parameters"></a><span data-ttu-id="b4d61-190">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="b4d61-190">Query parameters</span></span>
+### <a name="query-parameters"></a><span data-ttu-id="d1418-190">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="d1418-190">Query parameters</span></span>
 
-<span data-ttu-id="b4d61-p114">EnableMultiGeoSearch — это логическое значение, указывает ли запрос должен fanned в работе с индексами другие расположения географически несколькими географически клиента. Значение **true,** чтобы проходят запросов; **значение false,** чтобы не проходят запроса. Значение по умолчанию — **false**. Если этот параметр не указан, запрос — это **не** fanned в работе других географического расположения. При использовании параметра в среде, где не несколькими географически параметр игнорируется.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p114">EnableMultiGeoSearch - This is a Boolean value that specifies whether the query shall be fanned out to the indexes of other geo locations of the Multi-Geo tenant. Set it to **true** to fan out the query; **false** to not fan out the query. The default value is **false**. If you don’t include this parameter, the query is **not** fanned out to other geo locations. If you use the parameter in an environment that isn’t Multi-Geo, the parameter is ignored.</span></span>
+<span data-ttu-id="d1418-p114">EnableMultiGeoSearch — это логическое значение, определяющее, должен ли запрос развертываться для индексов других геообъектов клиента с несколькими регионами. Чтобы выполнить развертывание запроса, задайте для этого параметра значение **true**. Чтобы не выполнять его, установите значение **false**. По умолчанию задано **false**. Если не указать этот параметр, развертывание запроса **не** будет выполнено для других геообъектов. Если вы используете этот параметр в среде без поддержки нескольких регионов, он будет проигнорирован.</span><span class="sxs-lookup"><span data-stu-id="d1418-p114">EnableMultiGeoSearch - This is a Boolean value that specifies whether the query shall be fanned out to the indexes of other geo locations of the Multi-Geo tenant. Set it to **true** to fan out the query; **false** to not fan out the query. The default value is **false**. If you don’t include this parameter, the query is **not** fanned out to other geo locations. If you use the parameter in an environment that isn’t Multi-Geo, the parameter is ignored.</span></span>
 
-<span data-ttu-id="b4d61-p115">Типа клиента — это строка. Введите имя уникальное клиента для каждого приложения поиска. Если этот параметр не указан, запрос — это **не** fanned в работе других географического расположения.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p115">ClientType - This is a string. Enter a unique client name for each search application. If you don’t include this parameter, the query is **not** fanned out to other geo locations.</span></span>
+<span data-ttu-id="d1418-p115">ClientType — строка. Введите для каждого поискового приложения уникальное имя клиента. Если не указать этот параметр, развертывание запроса **не** будет выполнено для других геообъектов.</span><span class="sxs-lookup"><span data-stu-id="d1418-p115">ClientType - This is a string. Enter a unique client name for each search application. If you don’t include this parameter, the query is **not** fanned out to other geo locations.</span></span>
 
-<span data-ttu-id="b4d61-p116">MultiGeoSearchConfiguration — это необязательный список из которых географически расположений в различных-географически клиентов для проходят запрос к при **EnableMultiGeoSearch** имеет **значение true**. Если не включить этот параметр, или оставьте его пустым, запрос fanned в работе для всех географического расположения. Для каждого географического расположения введите указанные ниже представлен в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p116">MultiGeoSearchConfiguration - This is an optional list of which geo locations in the Multi-Geo tenant to fan the query out to when **EnableMultiGeoSearch** is **true**. If you don’t include this parameter, or leave it blank, the query is fanned out to all geo locations. For each geo location, enter the following items, in JSON format:</span></span>
+<span data-ttu-id="d1418-p116">MultiGeoSearchConfiguration — дополнительный список геообъектов клиента с несколькими регионами. Он предназначен для развертывания запроса, когда параметру **EnableMultiGeoSearch** задано значение **true**. Если не указать этот параметр или его значение, развертывание запроса будет выполнено для всех географических расположений. Для каждого геообъекта введите указанные ниже элементы в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d1418-p116">MultiGeoSearchConfiguration - This is an optional list of which geo locations in the Multi-Geo tenant to fan the query out to when **EnableMultiGeoSearch** is **true**. If you don’t include this parameter, or leave it blank, the query is fanned out to all geo locations. For each geo location, enter the following items, in JSON format:</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="b4d61-202">Элемент</span><span class="sxs-lookup"><span data-stu-id="b4d61-202">Item</span></span></th>
-<th align="left"><span data-ttu-id="b4d61-203">Описание</span><span class="sxs-lookup"><span data-stu-id="b4d61-203">Description</span></span></th>
+<th align="left"><span data-ttu-id="d1418-202">Элемент</span><span class="sxs-lookup"><span data-stu-id="d1418-202">Item</span></span></th>
+<th align="left"><span data-ttu-id="d1418-203">Описание</span><span class="sxs-lookup"><span data-stu-id="d1418-203">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="b4d61-204">DataLocation</span><span class="sxs-lookup"><span data-stu-id="b4d61-204">DataLocation</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-205">Расположение географически, например им.</span><span class="sxs-lookup"><span data-stu-id="b4d61-205">The geo location, for example NAM.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-204">DataLocation</span><span class="sxs-lookup"><span data-stu-id="d1418-204">DataLocation</span></span></td>
+<td align="left"><span data-ttu-id="d1418-205">Географическое расположение (например, NAM).</span><span class="sxs-lookup"><span data-stu-id="d1418-205">The geo location, for example NAM.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="b4d61-206">Конечная точка</span><span class="sxs-lookup"><span data-stu-id="b4d61-206">EndPoint</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-207">Конечная точка следует подключиться, напримерhttps://contoso.sharepoint.com</span><span class="sxs-lookup"><span data-stu-id="b4d61-207">The endpoint to connect to, for example https://contoso.sharepoint.com</span></span></td>
+<td align="left"><span data-ttu-id="d1418-206">EndPoint</span><span class="sxs-lookup"><span data-stu-id="d1418-206">endpoint</span></span></td>
+<td align="left"><span data-ttu-id="d1418-207">Конечная точка для подключения (например, https://contoso.sharepoint.com).</span><span class="sxs-lookup"><span data-stu-id="d1418-207">The endpoint to connect to, for example https://contoso.sharepoint.com</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="b4d61-208">SourceId</span><span class="sxs-lookup"><span data-stu-id="b4d61-208">SourceId</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-209">Идентификатор GUID источника результатов, например B81EAB55-3140-4312-B0F4-9459D1B4FFEE.</span><span class="sxs-lookup"><span data-stu-id="b4d61-209">The GUID of the result source, for example B81EAB55-3140-4312-B0F4-9459D1B4FFEE.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-208">SourceId</span><span class="sxs-lookup"><span data-stu-id="d1418-208">SourceId</span></span></td>
+<td align="left"><span data-ttu-id="d1418-209">GUID источника результатов, например B81EAB55-3140-4312-B0F4-9459D1B4FFEE.</span><span class="sxs-lookup"><span data-stu-id="d1418-209">The GUID of the result source, for example B81EAB55-3140-4312-B0F4-9459D1B4FFEE.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="b4d61-p117">Если опустить DataLocation или конечную точку или дублируются DataLocation, не удается выполнить запрос. [Вы можете получать сведения о конечной точки клиента географического расположения с помощью Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).</span><span class="sxs-lookup"><span data-stu-id="b4d61-p117">If you omit DataLocation or EndPoint, or if a DataLocation is duplicated, the request fails. [You can get information about the endpoint of a tenant's geo locations by using Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).</span></span>
+<span data-ttu-id="d1418-p117">Если опустить элемент DataLocation или EndPoint, а также если продублировать DataLocation, запрос будет выполнен с ошибкой. [Сведения о конечной точке геообъектов клиента можно получить с помощью Microsoft Graph](https://docs.microsoft.com/ru-RU/sharepoint/dev/solution-guidance/multigeo-discovery).</span><span class="sxs-lookup"><span data-stu-id="d1418-p117">If you omit DataLocation or EndPoint, or if a DataLocation is duplicated, the request fails. [You can get information about the endpoint of a tenant's geo locations by using Microsoft Graph](https://docs.microsoft.com/ru-RU/sharepoint/dev/solution-guidance/multigeo-discovery).</span></span>
 
-### <a name="response-data"></a><span data-ttu-id="b4d61-212">Данные ответа</span><span class="sxs-lookup"><span data-stu-id="b4d61-212">Response data</span></span>
+### <a name="response-data"></a><span data-ttu-id="d1418-212">Данные отклика</span><span class="sxs-lookup"><span data-stu-id="d1418-212">Response data</span></span>
 
-<span data-ttu-id="b4d61-p118">MultiGeoSearchStatus — это свойство, которое возвращает API поиска SharePoint в ответ на запрос. Значение свойства — это строка и дает следующие сведения о результатах, возвращаемых API поиска SharePoint:</span><span class="sxs-lookup"><span data-stu-id="b4d61-p118">MultiGeoSearchStatus – This is a property that the SharePoint Search API returns in response to a request. The value of the property is a string and gives the following information about the results that the SharePoint Search API returns:</span></span>
+<span data-ttu-id="d1418-p118">MultiGeoSearchStatus — свойство, которое API поиска SharePoint возвращает в отклике на запрос. Значение этого свойства является строкой и предоставляет указанные ниже сведения о результатах, которые возвращает API поиска SharePoint.</span><span class="sxs-lookup"><span data-stu-id="d1418-p118">MultiGeoSearchStatus – This is a property that the SharePoint Search API returns in response to a request. The value of the property is a string and gives the following information about the results that the SharePoint Search API returns:</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="b4d61-215">Значение</span><span class="sxs-lookup"><span data-stu-id="b4d61-215">Value</span></span></th>
-<th align="left"><span data-ttu-id="b4d61-216">Описание</span><span class="sxs-lookup"><span data-stu-id="b4d61-216">Description</span></span></th>
+<th align="left"><span data-ttu-id="d1418-215">Значение</span><span class="sxs-lookup"><span data-stu-id="d1418-215">Value</span></span></th>
+<th align="left"><span data-ttu-id="d1418-216">Описание</span><span class="sxs-lookup"><span data-stu-id="d1418-216">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="b4d61-217">Полный доступ</span><span class="sxs-lookup"><span data-stu-id="b4d61-217">Full</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-218">Полный результаты из <strong>всех</strong> расположений географически.</span><span class="sxs-lookup"><span data-stu-id="b4d61-218">Full results from <strong>all</strong> the geo locations.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-217">Full</span><span class="sxs-lookup"><span data-stu-id="d1418-217">Full</span></span></td>
+<td align="left"><span data-ttu-id="d1418-218">Полные результаты из <strong>всех</strong> географических расположений.</span><span class="sxs-lookup"><span data-stu-id="d1418-218">Full results from <strong>all</strong> the geo locations.</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="b4d61-219">Частично</span><span class="sxs-lookup"><span data-stu-id="b4d61-219">Partial</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-p119">Частичный результаты из одного или нескольких географического расположения. Результаты не завершены из-за временные ошибки.</span><span class="sxs-lookup"><span data-stu-id="b4d61-p119">Partial results from one or more geo locations. The results are incomplete due to a transient error.</span></span></td>
+<td align="left"><span data-ttu-id="d1418-219">Partial</span><span class="sxs-lookup"><span data-stu-id="d1418-219">Partial</span></span></td>
+<td align="left"><span data-ttu-id="d1418-p119">Частичные результаты из одного или нескольких географических расположений. Такие результаты являются неполными из-за временной ошибки.</span><span class="sxs-lookup"><span data-stu-id="d1418-p119">Partial results from one or more geo locations. The results are incomplete due to a transient error.</span></span></td>
 </tr>
 
 </tbody>
 </table>
 
-### <a name="query-using-the-rest-service"></a><span data-ttu-id="b4d61-222">Запрос с использованием службы REST</span><span class="sxs-lookup"><span data-stu-id="b4d61-222">Query using the REST service</span></span>
+### <a name="query-using-the-rest-service"></a><span data-ttu-id="d1418-222">Отправка запросов с помощью службы REST</span><span class="sxs-lookup"><span data-stu-id="d1418-222">Query using the REST service</span></span>
 
-<span data-ttu-id="b4d61-p120">Запрос GET позволяет определить параметры запроса в URL-адрес. С помощью запроса POST передайте параметров запроса в тексте запроса в формате JavaScript Object Notation (JSON).</span><span class="sxs-lookup"><span data-stu-id="b4d61-p120">With a GET request, you specify the query parameters in the URL. With a POST request, you pass the query parameters in the body in JavaScript Object Notation (JSON) format.</span></span>
+<span data-ttu-id="d1418-p120">Используя GET-запрос, нужно указать соответствующие параметры в URL-адресе. Параметры POST-запроса передаются в его теле в формате нотации объектов JavaScript (JSON).</span><span class="sxs-lookup"><span data-stu-id="d1418-p120">With a GET request, you specify the query parameters in the URL. With a POST request, you pass the query parameters in the body in JavaScript Object Notation (JSON) format.</span></span>
 
-#### <a name="request-headers"></a><span data-ttu-id="b4d61-225">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b4d61-225">Request headers</span></span>
+#### <a name="request-headers"></a><span data-ttu-id="d1418-225">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d1418-225">Request headers</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="b4d61-226">Имя</span><span class="sxs-lookup"><span data-stu-id="b4d61-226">Name</span></span></th>
-<th align="left"><span data-ttu-id="b4d61-227">Значение</span><span class="sxs-lookup"><span data-stu-id="b4d61-227">Value</span></span></th>
+<th align="left"><span data-ttu-id="d1418-226">Имя</span><span class="sxs-lookup"><span data-stu-id="d1418-226">Name</span></span></th>
+<th align="left"><span data-ttu-id="d1418-227">Значение</span><span class="sxs-lookup"><span data-stu-id="d1418-227">Value</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="b4d61-228">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b4d61-228">Content-Type</span></span></td>
-<td align="left"><span data-ttu-id="b4d61-229">приложение/json; odata = verbose</span><span class="sxs-lookup"><span data-stu-id="b4d61-229">application/json;odata=verbose</span></span></td>
+<td align="left"><span data-ttu-id="d1418-228">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d1418-228">Content-Type</span></span></td>
+<td align="left"><span data-ttu-id="d1418-229">application/json;odata=verbose</span><span class="sxs-lookup"><span data-stu-id="d1418-229">application/json;odata=verbose</span></span></td>
 </tr>
 </tbody>
 </table>
 
-#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a><span data-ttu-id="b4d61-230">Пример запроса GET, fanned в работе, чтобы **все** географического расположения</span><span class="sxs-lookup"><span data-stu-id="b4d61-230">Sample GET request that’s fanned out to **all** geo locations</span></span>
+#### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a><span data-ttu-id="d1418-230">Пример GET-запроса, развертывание которого выполняется для **всех** геообъектов</span><span class="sxs-lookup"><span data-stu-id="d1418-230">Sample GET request that’s fanned out to **all** geo locations</span></span>
 
-<span data-ttu-id="b4d61-231">https:// \<клиента\>/\_api/search/query?querytext = «sharepoint» & свойства = «EnableMultiGeoSearch:true» & типа клиента = "Мои\_клиента\_идентификатор"</span><span class="sxs-lookup"><span data-stu-id="b4d61-231">https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'</span></span>
+<span data-ttu-id="d1418-231">https:// \<клиент\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='ИД\_моего\_клиента'</span><span class="sxs-lookup"><span data-stu-id="d1418-231">https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'</span></span>
 
-#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a><span data-ttu-id="b4d61-232">Пример запроса GET для проходят **некоторые** географического расположения</span><span class="sxs-lookup"><span data-stu-id="b4d61-232">Sample GET request to fan out to **some** geo locations</span></span>
+#### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a><span data-ttu-id="d1418-232">Пример GET-запроса, развертывание которого выполняется для **некоторых** геообъектов</span><span class="sxs-lookup"><span data-stu-id="d1418-232">Sample GET request to fan out to **some** geo locations</span></span>
 
-<span data-ttu-id="b4d61-233">https:// <tenant>/_api/search/query?querytext = «узел» & типа клиента = «my_client_id» & Свойства = "EnableMultiGeoSearch:true, MultiGeoSearchConfiguration: [{DataLocation\:«Им»\,конечная точка\:«https\: contosoNAM.sharepoint.com»\,SourceId\:«B81EAB55-3140-4312-B0F4-9459D1B4FFEE»}\,{DataLocation\:«Может»\,конечная точка\:«https\://contosoCAN.sharepoint-df.com»}] "</span><span class="sxs-lookup"><span data-stu-id="b4d61-233">https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'</span></span>
+<span data-ttu-id="d1418-233">https:// <tenant>/_api/search/query?querytext='site'&ClientType='ИД_моего_клиента'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'</span><span class="sxs-lookup"><span data-stu-id="d1418-233">https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'</span></span>
 
-#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a><span data-ttu-id="b4d61-234">Пример запроса POST, fanned в работе, чтобы **все** географического расположения</span><span class="sxs-lookup"><span data-stu-id="b4d61-234">Sample POST request that’s fanned out to **all** geo locations</span></span>
+#### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a><span data-ttu-id="d1418-234">Пример POST-запроса, развертывание которого выполняется для **всех** геообъектов</span><span class="sxs-lookup"><span data-stu-id="d1418-234">Sample POST request that’s fanned out to **all** geo locations</span></span>
 
     {
         "request": {
@@ -275,7 +276,7 @@ ms.lasthandoff: 04/16/2018
     }
 
 
-#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a><span data-ttu-id="b4d61-235">Пример запроса POST, fanned в работе для **некоторых** географического расположения</span><span class="sxs-lookup"><span data-stu-id="b4d61-235">Sample POST request that’s fanned out to **some** geo locations</span></span>
+#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a><span data-ttu-id="d1418-235">Пример POST-запроса, развертывание которого выполняется для **некоторых** геообъектов</span><span class="sxs-lookup"><span data-stu-id="d1418-235">Sample POST request that’s fanned out to **some** geo locations</span></span>
 
 
     {
@@ -303,9 +304,9 @@ ms.lasthandoff: 04/16/2018
         }
     }
 
-### <a name="query-using-csom"></a><span data-ttu-id="b4d61-236">Запрос с использованием CSOM</span><span class="sxs-lookup"><span data-stu-id="b4d61-236">Query using CSOM</span></span>
+### <a name="query-using-csom"></a><span data-ttu-id="d1418-236">Отправка запросов с помощью CSOM</span><span class="sxs-lookup"><span data-stu-id="d1418-236">Query using CSOM</span></span>
 
-<span data-ttu-id="b4d61-237">Ниже приведен пример запроса CSOM, fanned в работе, чтобы **все** географического расположения:</span><span class="sxs-lookup"><span data-stu-id="b4d61-237">Here’s a sample CSOM query that’s fanned out to **all** geo locations:</span></span>
+<span data-ttu-id="d1418-237">Пример CSOM-запроса, развертывание которого выполняется для **всех** геообъектов</span><span class="sxs-lookup"><span data-stu-id="d1418-237">Here’s a sample CSOM query that’s fanned out to **all** geo locations:</span></span>
 
     var keywordQuery = new KeywordQuery(ctx);
     keywordQuery.QueryText = query.SearchQueryText;
