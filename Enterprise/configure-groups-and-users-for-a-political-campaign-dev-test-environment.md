@@ -14,11 +14,11 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: Сводка. Сведения о создании пробных подписок на Office 365 и Enterprise Mobility + Security (EMS) с пользователями и группами в случае среды разработки и тестирования для политической кампании.
-ms.openlocfilehash: 8556040a648937d4c1bc338292be121e5d290dd9
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: df737e3f745ba0fa4ab4752609e09e8af64ce6b0
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Настройка групп и пользователей в случае среды разработки и тестирования для политической кампании
 
@@ -184,11 +184,11 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 Запишите эти значения для работы с пробными подписками Office 365 и EMS для этой среды разработки и тестирования:
   
-- Название вашей организации: _______________________________________________ 
+- Название вашей организации: ![](./images/Common_Images/TableLine.png) 
     
     Например, для доменного имени contoso.onmicrosoft.com название организации — "contoso".
     
-- Имя глобального администратора Office 365: ____________________________________.onmicrosoft.com
+- Имя глобального администратора Office 365: ![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
     Запишите пароль для этой учетной записи и общий первоначальный пароль для других учетных записей пользователей в надежном месте.
     
