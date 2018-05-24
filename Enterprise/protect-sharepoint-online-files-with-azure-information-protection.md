@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: Сводка. Защита файлов на строго конфиденциальном сайте группы SharePoint Online с помощью службы Azure Information Protection.
-ms.openlocfilehash: a5df4d7289ec31686ad74f78a4797e1aa3eaa447
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: bab799a784cac579c92fb06ea17592d85fd59af2
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Защита файлов SharePoint Online с помощью Azure Information Protection
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 04/27/2018
     
 3. Если вы настраиваете Azure Information Protection впервые, ознакомьтесь с этими [инструкциями](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
-4. На панели списка выберите **Дополнительные службы**, введите **Информация**, а затем выберите **Azure Information Protection**.
+4. На панели списка выберите **Все службы**, введите **information**, а затем выберите **Azure Information Protection**.
     
 5. В колонке **Azure Information Protection**, щелкните последовательно элементы **Политики в области > + Добавить политику**.
     
