@@ -9,15 +9,18 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Узнайте, как обеспечивать соблюдение требований GDPR на локальных серверах Office.
-ms.openlocfilehash: dc1150361db6a28f011e4890a2770f4a6b607a91
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: 598d4b0c3f4b7d4281383111f0891759f81d483f
+ms.sourcegitcommit: 53a57b0617b5bb22beea766e515873d14b3a4783
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "19183598"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>GDPR для локальных серверов Office
 
 Общий регламент по защите данных (GDPR) устанавливает требования в отношении защиты персональных данных и надлежащего реагирования на запросы субъектов данных. В этой серии статей представлены рекомендуемые подходы для локальных рабочих нагрузок.
+
+-   [SharePoint Server](gdpr-for-sharepoint-server.md)
 
 -   [Exchange Server](gdpr-for-exchange-server.md)
 
@@ -48,4 +51,4 @@ ms.lasthandoff: 05/17/2018
 |Защита||Правила защиты от потери данных Exchange Server; разрешения, защита IRM для библиотек|Правила защиты от потери данных Exchange Server; интеграция IRM с Exchange Server|||
 |Мониторинг|Интеграция журналов с инструментами SIEM|Интеграция журналов с инструментами SIEM|Интеграция журналов с инструментами SIEM|Интеграция журналов с инструментами SIEM|Интеграция журналов с инструментами SIEM|
 
-* Для GDPR применяйте метки, которые не включают защиту. Защита шифрует файл. Следовательно, SharePoint Server не может находить конфиденциальную информацию в этих файлах.
+* Обратите внимание, что система защиты шифрует файл. Соответственно, сервер SharePoint не может найти конфиденциальную информацию в защищенных файлах.

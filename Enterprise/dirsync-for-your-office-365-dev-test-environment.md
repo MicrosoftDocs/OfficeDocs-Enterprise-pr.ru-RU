@@ -3,7 +3,7 @@ title: Синхронизация каталогов для среды разр�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,11 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: Сводка. Настройте синхронизацию каталогов для среды разработки и тестирования Office 365.
-ms.openlocfilehash: 209b41e4d695a753867d989b8f27b96618a81303
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193539"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Синхронизация каталогов для среды разработки и тестирования Office 365
 
@@ -116,11 +117,16 @@ Stop-Process -Name Explorer -Force
 
 ## <a name="see-also"></a>См. также
 
-[Руководства по лаборатории тестирования для облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
-[Базовая среда разработки и тестирования](base-configuration-dev-test-environment.md)
+[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+
+[Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
+
 [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
+
 [Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-[Advanced Threat Protection для среды разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+
+[Advanced Threat Protection в среде разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 
 

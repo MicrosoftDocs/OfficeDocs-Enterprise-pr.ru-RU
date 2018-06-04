@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Сводка. Воспользуйтесь этими руководствами по лаборатории тестирования для облачных решений, чтобы настроить среды демонстрации, экспериментирования, разработки и тестирования для продуктов Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 и Office Server.
-ms.openlocfilehash: 87e9be912b7e53dea07915ae236b057273285718
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193679"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Руководства по лаборатории тестирования для облачных решений
 
@@ -38,7 +39,6 @@ ms.lasthandoff: 04/27/2018
 - Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
     
 ## <a name="office-365-devtest-environment"></a>Среда разработки и тестирования Office 365
-<a name="O365"> </a>
 
 Следующие статьи помогут вам создать среду разработки и тестирования Office 365:
   
@@ -89,7 +89,6 @@ ms.lasthandoff: 04/27/2018
     Демонстрация процесса создания сайта группы SharePoint Online, функционирующего изолированно от всей организации с целью защиты ресурсов с высоким или средним уровнем конфиденциальности.
     
 ## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Среда разработки и тестирования Microsoft 365 корпоративный
-<a name="O365"> </a>
 
 Следующие статьи можно использовать для создания среды разработки и тестирования для сценариев [Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365-enterprise/):
   
@@ -106,7 +105,6 @@ ms.lasthandoff: 04/27/2018
     Регистрация устройств с ОС iOS или Android и удаленное управление ими.
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Среда разработки и тестирования для Office 365 и Dynamics 365
-<a name="O365_D365"> </a>
 
 В следующих статьях описано, как добавить пробную подписку на Dynamics 365 и протестировать интегрированные компоненты и сценарии Office 365 и Dynamics 365:
   
@@ -119,12 +117,10 @@ ms.lasthandoff: 04/27/2018
     Настройка и демонстрация совместной работы Office 365 и Dynamics 365 в почтовых ящиках Exchange Online.
     
 ## <a name="the-one-microsoft-cloud-devtest-environment"></a>Среда разработки и тестирования One Microsoft Cloud
-<a name="O365_D365"> </a>
 
 Создание среды разработки и тестирования, включающей все облачные решения корпорации Майкрософт: Office 365, Azure, EMS и Dynamics 365. Для ознакомления с пошаговыми инструкциями см. статью [Среда разработки и тестирования One Microsoft Cloud](the-one-microsoft-cloud-dev-test-environment.md).
   
 ## <a name="simulated-cross-premises-devtest-environments"></a>Имитация распределенной среды разработки и тестирования
-<a name="O365_D365"> </a>
 
 Сведения о том, как создать распределенную среду разработки и тестирования, включающую виртуальную сеть Azure и имитацию локальной сети, вы найдете в таких статьях:
   
@@ -137,7 +133,6 @@ ms.lasthandoff: 04/27/2018
     Создание односерверной фермы SharePoint Server 2016 в виртуальной сети Azure и проверка возможности подключения и администрирования в имитации локальной сети.
     
 ## <a name="additional-cloud-based-devtest-environments"></a>Дополнительные облачные среды разработки и тестирования
-<a name="ADD_TLGs"> </a>
 
 В службы инфраструктуры Azure можно также добавить следующие облачные среды разработки и тестирования:
   

@@ -3,7 +3,7 @@ title: Ресурсы для администраторов, посвященн�
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 12/18/2017
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: Сводка. Узнайте об облачных службах и платформах Майкрософт. Ознакомьтесь со схемой корпоративного облака и рядом сведений об облачной архитектуре и не только.
-ms.openlocfilehash: ccc10e2ba369d711c26936a88385fdb3c1cae3ac
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: a2e2431d0ace5a77722da844feb3aaaea61b0e6f
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193709"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Эскиз модели идентификации в облаке Майкрософт](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| ![Статья](images/5cec453d-5fc4-4657-8980-16543b2316ea.png)[Статья](https://technet.microsoft.com/library/mt613459.aspx)  <br/>![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Эта модель содержит: <ul><li>Общие сведения об удостоверениях в облаке Майкрософт </li> <li>Возможности платформы IDaaS в Azure AD </li><li>Интеграция локальных учетных записей доменных служб Active Directory с Microsoft Azure Active Directory </li> <li>Размещение компонентов каталога в Azure </li><li>Варианты доменных служб для рабочих нагрузок в службе Azure IaaS </li></ul> <br/>|
+|[![Эскиз модели идентификации в облаке Майкрософт](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> ![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)  \| ![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Эта модель содержит: <ul><li>Общие сведения об удостоверениях в облаке Майкрософт </li> <li>Возможности платформы IDaaS в Azure AD </li><li>Интеграция локальных учетных записей доменных служб Active Directory с Microsoft Azure Active Directory </li> <li>Размещение компонентов каталога в Azure </li><li>Варианты доменных служб для рабочих нагрузок в службе Azure IaaS </li></ul> <br/>|
    
 <a name="security"> </a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Обеспечение безопасности в облаке Майкрософт для корпоративных архитекторов
