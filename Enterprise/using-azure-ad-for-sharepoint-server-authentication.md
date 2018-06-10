@@ -17,18 +17,16 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 'Сводка: Узнайте, как для обхода служба контроля доступа Azure и использовании SAML 1.1 для проверки подлинности пользователей SharePoint Server с помощью Azure Active Directory.'
-ms.openlocfilehash: 8a844cf1f45f6285e676439f934b9119a757804f
-ms.sourcegitcommit: c52bd6eaa8772063f9e2bd1acf10fa23422a2b92
+ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
+ms.sourcegitcommit: b6c8b044963d8df24ea7d63917e0203ba40fb822
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "19702989"
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>С помощью Azure AD для проверки подлинности на сервере SharePoint
 
- **Сводка:** Узнайте, как выполнить проверку подлинности пользователей SharePoint Server 2016 с Azure Active Directory.
-  
-> [!NOTE]
-> В этой статье основано на рабочих Кирк Петров, руководитель программы корпорации Майкрософт субъекта. 
+ **Сводка:** Узнайте, как выполнить проверку подлинности пользователей SharePoint Server 2016 с Azure Active Directory. 
 
 <blockquote>
 <p>В этом статье содержатся ссылки на примеры кода для взаимодействия с Azure Active Directory графике. Вы можете загрузить примеры кода [ниже](https://github.com/kaevans/spsaml11/tree/master/scripts).</p>
@@ -147,6 +145,9 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 
 ![Настройка поставщика проверки подлинности](images/SAML11/fig10-configauthprovider.png)
 
+> [!IMPORTANT]
+> Важно, необходимо выполнить все действия, включая установку настраиваемых входа на странице «/_trust/», как показано. Конфигурации не будет работать корректно, если выполнены все шаги.
+
 ## <a name="step-5-set-the-permissions"></a>Шаг 5: Задайте разрешения
 
 Пользователи, которым будет войти в Azure AD и получить доступ к SharePoint необходимо предоставить доступ к приложению. 
@@ -167,22 +168,58 @@ $ap = New-SPTrustedIdentityTokenIssuer -Name "AzureAD" -Description "SharePoint 
 7. В текстовом поле **поиска** введите имя входа для пользователя в каталоге и нажмите кнопку **Найти**. </br>Пример: *demouser@blueskyabove.onmicrosoft.com*.
 8. Под заголовком AzureAD в представлении списка выберите свойство имя и нажмите кнопку **Добавить,** а затем нажмите **кнопку ОК** , чтобы закрыть диалоговое окно.
 9. В разделе разрешения выберите **Полный доступ**.</br>![Предоставление полного доступа к пользователя утверждений](images/SAML11/fig12-grantfullcontrol.png)</br>
-10. Нажмите **Готово**, а затем  **ОК**.
+10. Нажмите **Готово**, а затем  **ОК**.
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>Шаг 6: Добавление политики выдача маркеров SAML 1.1 в Azure AD
 
-При создании приложения Azure AD на портале, по умолчанию с помощью SAML 2.0. SharePoint Server 2016 необходимо использовать формат маркеров SAML 1.1. Приведенный ниже сценарий будет удалить политику SAML 2.0 по умолчанию и добавьте новую политику маркеры SAML 1.1 проблему. Этот код требует загрузки сопутствующий [примеры, показывающие взаимодействия с Azure Active Directory графике](https://github.com/kaevans/spsaml11/tree/master/scripts). 
+При создании приложения Azure AD на портале, по умолчанию с помощью SAML 2.0. SharePoint Server 2016 необходимо использовать формат маркеров SAML 1.1. Приведенный ниже сценарий будет удалить политику SAML 2.0 по умолчанию и добавьте новую политику маркеры SAML 1.1 проблему. 
 
+> Этот код требует загрузки сопутствующий [примеры, показывающие взаимодействия с Azure Active Directory графике](https://github.com/kaevans/spsaml11/tree/master/scripts). Если сценарии загрузить ZIP-файл из репозиториев рабочий стол Windows, убедитесь в том разблокировать `MSGraphTokenLifetimePolicy.psm1` файл сценария модуля и `Initialize.ps1` файл сценария (щелкните правой кнопкой мыши свойства, нажмите кнопку разблокировать, нажмите кнопку ОК). ![Разблокировка загружаемых файлов](images/SAML11/fig17-unblock.png)
+
+После загрузки пример сценария создать новый сценарий PowerShell, путем добавления следующего кода, заменив заполнитель путь к файлу загруженного `Initialize.ps1` на локальном компьютере. Замените заполнитель идентификатор объекта приложения идентификатор объекта приложения, который был введен в таблице 1. После создания выполните сценарий PowerShell. 
 
 ```
-Import-Module <file path of Initialize.ps1> 
-$objectid = "<Application Object ID from Table 1>"
-$saml2policyid = Get-PoliciesAssignedToServicePrincipal -servicePrincipalId $objectid | ?{$_.displayName -EQ "TokenIssuancePolicy"} | select objectId
-Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $objectid
-$policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
-Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
+function AssignSaml11PolicyToAppPrincipal
+{
+    Param(
+        [Parameter(Mandatory=$true)]
+        [string]$pathToInitializeScriptFile, 
+        [Parameter(Mandatory=$true)]
+        [string]$appObjectid
+    )
+
+    $folder = Split-Path $pathToInitializeScriptFile
+    Push-Location $folder
+
+    #Loads the dependent ADAL module used to acquire tokens
+    Import-Module $pathToInitializeScriptFile 
+
+    #Gets the existing token issuance policy
+    $existingTokenIssuancePolicy = Get-PoliciesAssignedToServicePrincipal -servicePrincipalId $appObjectid | ?{$_.type -EQ "TokenIssuancePolicy"} 
+    Write-Host "The following TokenIssuancePolicy policies are assigned to the service principal." -ForegroundColor Green
+    Write-Host $existingTokenIssuancePolicy -ForegroundColor White
+    $policyId = $existingTokenIssuancePolicy.objectId
+
+    #Removes existing token issuance policy
+    Write-Host "Only a single policy can be assigned to the service principal. Removing the existing policy with ID $policyId" -ForegroundColor Green
+    Remove-PolicyFromServicePrincipal -policyId $policyId -servicePrincipalId $appObjectid
+
+    #Creates a new token issuance policy and assigns to the service principal
+    Write-Host "Adding the new SAML 1.1 TokenIssuancePolicy" -ForegroundColor Green
+    $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
+    Write-Host "Assigning the new SAML 1.1 TokenIssuancePolicy $policy.objectId to the service principal $appObjectid" -ForegroundColor Green
+    Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $appObjectid
+    Pop-Location
+}
+
+#Only edit the following two variables
+$pathToInitializeScriptFile = "<file path of Initialize.ps1>"
+$appObjectid = "<Application Object ID from Table 1>"
+
+AssignSaml11PolicyToAppPrincipal $pathToInitializeScriptFile $appObjectid
 ```
-> Обратите внимание на то, что очень важно для запуска `Import-Module` команды, как показано в следующем примере. Загрузится зависимые модуль, который содержит команды, показанные. Может потребоваться открыть окно командной строки с повышенными привилегиями, для успешного выполнения этих команд.
+> [!IMPORTANT]
+> Не подписи скриптов PowerShell и может потребоваться задать политику выполнения. Дополнительные сведения о политиках выполнения видеть [О политиках выполнения](http://go.microsoft.com/fwlink/?LinkID=135170). Кроме того необходимо открыть окно командной строки с повышенными привилегиями, для успешного выполнения команд, содержащихся в примеры сценариев.
 
 Эти команды PowerShell пример приведены примеры того, как для выполнения запросов к API графике. Для получения дополнительных сведений о маркеров политики выдачи с Azure AD видеть [Справочник по API график для операций в политике](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy).
 
@@ -215,7 +252,7 @@ Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -I
 1. На портале Azure откройте каталог Azure AD. Щелкните **Регистрация приложения**, а затем щелкните **Просмотр всех приложений**. Выберите приложение, которое вы создали ранее (SAML интеграции с SharePoint).
 2. Нажмите кнопку **Параметры**.
 3. В blade параметры щелкните **URL-адреса ответа**. 
-4. Добавьте URL-адрес для дополнительных веб-приложения (например, `https://sales.contoso.local`) и нажмите кнопку **Сохранить**. 
+4. Добавьте URL-адрес для дополнительных веб-приложения с помощью `/_trust/default.aspx` добавляется в конец URL-адреса (например, `https://sales.contoso.local/_trust/default.aspx`) и нажмите кнопку **Сохранить**. 
 5. На сервере SharePoint откройте **Командную консоль SharePoint 2016** и выполните следующие команды, используя имя надежный поставщик маркеров удостоверений, который использовался ранее.
 
 ```
