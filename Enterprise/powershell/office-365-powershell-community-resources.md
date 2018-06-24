@@ -3,7 +3,6 @@ title: Ресурсы сообщества Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,27 +11,28 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: Сводка. Получите справку по PowerShell в Office 365 на этих площадках сообщества.
-ms.openlocfilehash: 9348c824e34baba4d4d1a12da7910fc3cfe81a30
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+ms.openlocfilehash: 9b98345db6db9b5070d738170258de6d7fff10ea
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "20017395"
 ---
 # <a name="office-365-powershell-community-resources"></a>Ресурсы сообщества Office 365 PowerShell
 
  **Сводка.** Обратитесь к участникам сообщества за помощью с PowerShell для Office 365.
   
-Используйте данные сети Yammer, форумы сообщества и вики-сайт, чтобы связаться с единомышленниками и получить быстрые и точные ответы на ваши вопросы о PowerShell в Office 365. 
+Используйте эти вики-сайты и форумы сообщества подключиться к Интернету с коллегами и ответы на быстро и правильно вопросы Office 365 PowerShell. 
   
-- [Группа PowerShell для Office 365 в сети Office 365 Yammer Network](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
+- [Посетите Технический сообщества Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
-- [Форум сообщества по управлению Office 365](https://community.office365.com/ru-RU/f/148.aspx)
+- [Технические сообщества Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
 - [Форум сообщества Exchange TechCenter](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
 - [Блоги Office](https://blogs.office.com/)
     
-- [Вики-сайт по управлению Office 365](https://community.office365.com/ru-RU/w/manage/default.aspx)
+- [Вики-сайт по управлению Office 365](https://community.office365.com/en-us/w/manage/default.aspx)
     
 ## <a name="see-also"></a>См. также
 

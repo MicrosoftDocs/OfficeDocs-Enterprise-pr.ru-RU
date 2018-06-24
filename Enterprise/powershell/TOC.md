@@ -5,7 +5,6 @@
 ### [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md)
 ### [Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
 ### [Использование Windows PowerShell для создания отчетов в Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
-#### [Использование Excel для получения отчетных данных Office 365](using-excel-to-retrieve-office-365-reporting-data.md)
 ### [Сведения о командлетах для служб Office 365](cmdlet-references-for-office-365-services.md)
 ### [Ресурсы сообщества Office 365 PowerShell](office-365-powershell-community-resources.md)
 ## [Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
