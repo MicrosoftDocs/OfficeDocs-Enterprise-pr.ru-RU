@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: Сводка. С помощью Azure вы можете создать среду аварийного восстановления для локальной фермы SharePoint. В этой статье описываются разработка и реализация этого решения.
-ms.openlocfilehash: 499b296040eaf02bd679ee422429f08ed669ba85
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
-ms.translationtype: HT
+ms.openlocfilehash: 553b2e6bb9d35ab3dba471b01938914a95af23d6
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161802"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Аварийное восстановление SharePoint Server 2013 в Microsoft Azure
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 04/20/2018
   
 [![Процесс аварийного восстановления SharePoint в Azure](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
-![PDF-файл](images/ITPro_Other_PDFicon.png) [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) | ![Файл Visio](images/ITPro_Other_VisioIcon.jpg) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
+ [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
 В этой статье
   
