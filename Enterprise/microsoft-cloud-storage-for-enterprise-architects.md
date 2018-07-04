@@ -15,52 +15,53 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: Сводка. Проектирование хранилища для облачных служб и платформ корпорации Майкрософт.
-ms.openlocfilehash: f4ab7ad5391fadb78db1c5522022a2e2c9ca1ecc
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 7c8d232c42c203ce1f4fba06d4134693e01e7284
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161812"
 ---
-# <a name="microsoft-cloud-storage-for-enterprise-architects"></a><span data-ttu-id="85354-103">Облачные хранилища Майкрософт для корпоративных архитекторов</span><span class="sxs-lookup"><span data-stu-id="85354-103">Microsoft Cloud Storage for Enterprise Architects</span></span>
+# <a name="microsoft-cloud-storage-for-enterprise-architects"></a><span data-ttu-id="4226f-103">Облачные хранилища Майкрософт для корпоративных архитекторов</span><span class="sxs-lookup"><span data-stu-id="4226f-103">Microsoft Cloud Storage for Enterprise Architects</span></span>
 
- <span data-ttu-id="85354-104">**Сводка.** Проектирование хранилища для облачных служб и платформ корпорации Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="85354-104">**Summary:** Design your storage for Microsoft cloud services and platforms.</span></span>
+ <span data-ttu-id="4226f-104">**Сводка.** Проектирование хранилища для облачных служб и платформ корпорации Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="4226f-104">**Summary:** Design your storage for Microsoft cloud services and platforms.</span></span>
   
-<span data-ttu-id="85354-p101">В этой статье представлены ссылки на статьи для ИТ-архитекторов о проектировании хранилища для организаций, использующих облачные службы и платформы Майкрософт. Вы также можете просмотреть эту информацию в виде 6-страничного плаката и распечатать его на листах формата A3.</span><span class="sxs-lookup"><span data-stu-id="85354-p101">This article links you to a set of articles that describe what IT architects need to know about designing storage for organizations using Microsoft cloud services and platforms. You can also view this information as a 6-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
+<span data-ttu-id="4226f-p101">В этой статье представлены ссылки на статьи для ИТ-архитекторов о проектировании хранилища для организаций, использующих облачные службы и платформы Майкрософт. Вы также можете просмотреть эту информацию в виде 6-страничного плаката и распечатать его на листах формата A3.</span><span class="sxs-lookup"><span data-stu-id="4226f-p101">This article links you to a set of articles that describe what IT architects need to know about designing storage for organizations using Microsoft cloud services and platforms. You can also view this information as a 6-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
   
-<span data-ttu-id="85354-107">[![Эскиз: модель хранения в облаке Майкрософт](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
-](https://www.microsoft.com/download/details.aspx?id=49552)</span><span class="sxs-lookup"><span data-stu-id="85354-107">[![Thumb image for Microsoft cloud storage model](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+<span data-ttu-id="4226f-107">[![Эскиз: модель хранения в облаке Майкрософт](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+](https://www.microsoft.com/download/details.aspx?id=49552)</span><span class="sxs-lookup"><span data-stu-id="4226f-107">[![Thumb image for Microsoft cloud storage model](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
 ](https://www.microsoft.com/download/details.aspx?id=49552)</span></span>
   
-<span data-ttu-id="85354-108">![PDF-файл](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Файл Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![Страница с версиями на других языках](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=49552)</span><span class="sxs-lookup"><span data-stu-id="85354-108">![PDF file](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Visio file](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![See a page with versions in additional languages](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[More languages](https://www.microsoft.com/download/details.aspx?id=49552)</span></span>
+<span data-ttu-id="4226f-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | [Другие языки](https://www.microsoft.com/download/details.aspx?id=49552)</span><span class="sxs-lookup"><span data-stu-id="4226f-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | [More languages](https://www.microsoft.com/download/details.aspx?id=49552)</span></span>
   
-<span data-ttu-id="85354-109">Все модели можно найти в статье [Ресурсы по ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md). Вы также можете просмотреть [материалы по схеме корпоративного облака Майкрософт для ИТ-менеджеров](https://aka.ms/cloudarchitecture).</span><span class="sxs-lookup"><span data-stu-id="85354-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
+<span data-ttu-id="4226f-109">Все модели можно найти в статье [Ресурсы по ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md). Вы также можете просмотреть [материалы по схеме корпоративного облака Майкрософт для ИТ-менеджеров](https://aka.ms/cloudarchitecture).</span><span class="sxs-lookup"><span data-stu-id="4226f-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
   
-<span data-ttu-id="85354-110">См. указанные ниже разделы.</span><span class="sxs-lookup"><span data-stu-id="85354-110">See the following sections:</span></span>
+<span data-ttu-id="4226f-110">См. указанные ниже разделы.</span><span class="sxs-lookup"><span data-stu-id="4226f-110">See the following sections:</span></span>
   
-- [<span data-ttu-id="85354-111">Разработка хранилища для Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="85354-111">Designing storage for the Microsoft cloud</span></span>](designing-storage-for-the-microsoft-cloud.md)
+- [<span data-ttu-id="4226f-111">Разработка хранилища для Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="4226f-111">Designing storage for the Microsoft cloud</span></span>](designing-storage-for-the-microsoft-cloud.md)
     
-    <span data-ttu-id="85354-112">Узнайте, почему следует использовать облачное хранение, изучите основные сценарии и просмотрите список служб облачного хранения Microsoft.</span><span class="sxs-lookup"><span data-stu-id="85354-112">Understand why you should use cloud storage and the key cloud storage scenarios, and then scan the list of the different Microsoft cloud storage options.</span></span>
+    <span data-ttu-id="4226f-112">Узнайте, почему следует использовать облачное хранение, изучите основные сценарии и просмотрите список служб облачного хранения Microsoft.</span><span class="sxs-lookup"><span data-stu-id="4226f-112">Understand why you should use cloud storage and the key cloud storage scenarios, and then scan the list of the different Microsoft cloud storage options.</span></span>
     
-- [<span data-ttu-id="85354-113">Решения, не требующие сборки</span><span class="sxs-lookup"><span data-stu-id="85354-113">Move-in ready</span></span>](move-in-ready.md)
+- [<span data-ttu-id="4226f-113">Решения, не требующие сборки</span><span class="sxs-lookup"><span data-stu-id="4226f-113">Move-in ready</span></span>](move-in-ready.md)
     
-    <span data-ttu-id="85354-114">Эти службы облачного хранения встроены в другие облачные предложения Microsoft и готовы к использованию.</span><span class="sxs-lookup"><span data-stu-id="85354-114">Using a construction analogy to organize the wide variety of cloud storage options, these are built-in to other Microsoft cloud offerings and are ready to use immediately.</span></span>
+    <span data-ttu-id="4226f-114">Эти службы облачного хранения встроены в другие облачные предложения Microsoft и готовы к использованию.</span><span class="sxs-lookup"><span data-stu-id="4226f-114">Using a construction analogy to organize the wide variety of cloud storage options, these are built-in to other Microsoft cloud offerings and are ready to use immediately.</span></span>
     
-- [<span data-ttu-id="85354-115">Решения, требующие сборки</span><span class="sxs-lookup"><span data-stu-id="85354-115">Some assembly required</span></span>](some-assembly-required.md)
+- [<span data-ttu-id="4226f-115">Решения, требующие сборки</span><span class="sxs-lookup"><span data-stu-id="4226f-115">Some assembly required</span></span>](some-assembly-required.md)
     
-    <span data-ttu-id="85354-116">Возьмите за основу эти службы облачного хранения и настройте или доработайте их в соответствии со своими требованиями.</span><span class="sxs-lookup"><span data-stu-id="85354-116">These cloud storage options are a starting point for your storage solution, requiring additional configuration or coding for a custom fit.</span></span>
+    <span data-ttu-id="4226f-116">Возьмите за основу эти службы облачного хранения и настройте или доработайте их в соответствии со своими требованиями.</span><span class="sxs-lookup"><span data-stu-id="4226f-116">These cloud storage options are a starting point for your storage solution, requiring additional configuration or coding for a custom fit.</span></span>
     
-- [<span data-ttu-id="85354-117">Создание с чистого листа</span><span class="sxs-lookup"><span data-stu-id="85354-117">Build from the ground up</span></span>](build-from-the-ground-up.md)
+- [<span data-ttu-id="4226f-117">Создание с чистого листа</span><span class="sxs-lookup"><span data-stu-id="4226f-117">Build from the ground up</span></span>](build-from-the-ground-up.md)
     
-    <span data-ttu-id="85354-118">Эти службы облачного хранения — это кирпичики, из которых можно создать собственное решение для хранения или приложение с нуля.</span><span class="sxs-lookup"><span data-stu-id="85354-118">These cloud storage options are the fundamental storage building blocks, which you can use to create your own storage solution or apps from scratch.</span></span>
+    <span data-ttu-id="4226f-118">Эти службы облачного хранения — это кирпичики, из которых можно создать собственное решение для хранения или приложение с нуля.</span><span class="sxs-lookup"><span data-stu-id="4226f-118">These cloud storage options are the fundamental storage building blocks, which you can use to create your own storage solution or apps from scratch.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="85354-119">В этих статьях отражен выпуск плаката "Облачное хранилище Майкрософт для корпоративных архитекторов" за **сентябрь 2017 г.**</span><span class="sxs-lookup"><span data-stu-id="85354-119">These articles reflect the **September 2017** release of the Microsoft Cloud Storage for Enterprise Architects poster.</span></span>
+> <span data-ttu-id="4226f-119">В этих статьях отражен выпуск плаката "Облачное хранилище Майкрософт для корпоративных архитекторов" за **сентябрь 2017 г.**</span><span class="sxs-lookup"><span data-stu-id="4226f-119">These articles reflect the **September 2017** release of the Microsoft Cloud Storage for Enterprise Architects poster.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="85354-120">См. также</span><span class="sxs-lookup"><span data-stu-id="85354-120">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4226f-120">См. также</span><span class="sxs-lookup"><span data-stu-id="4226f-120">See Also</span></span>
 
-[<span data-ttu-id="85354-121">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="85354-121">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="4226f-121">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="4226f-121">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[<span data-ttu-id="85354-122">Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ</span><span class="sxs-lookup"><span data-stu-id="85354-122">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="4226f-122">Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ</span><span class="sxs-lookup"><span data-stu-id="4226f-122">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
