@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: Сводка. Показательный пример внедрения облачной ИТ-инфраструктуры с облачными предложениями Майкрософт вымышленной всемирной организацией.
-ms.openlocfilehash: 0a332883fef3291e133998ecd1bbfa53e7282ec0
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: d548301fdbd3b26d3de5ea0e279a379b7eea269f
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161782"
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso в Microsoft Cloud
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/19/2018
   
 [![Эскиз плаката "Contoso в Microsoft Cloud".](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
-![PDF-файл](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Файл Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Страница с версиями на других языках](images/Common_Images/GlobeIcon.png)[Другие языки](https://www.microsoft.com/download/details.aspx?id=54427)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | [Другие языки](https://www.microsoft.com/download/details.aspx?id=54427)
   
 См. указанные ниже разделы.
   
