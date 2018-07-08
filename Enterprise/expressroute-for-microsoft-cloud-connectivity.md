@@ -1,9 +1,9 @@
 ---
-title: "ExpressRoute для подключения к Microsoft Cloud"
+title: ExpressRoute для подключения к Microsoft Cloud
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/03/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
-description: "Сводка: в этой статье рассказывается, как с помощью ExpressRoute создать более быстрые и надежные подключения к облачным службам и платформам корпорации Майкрософт."
-ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Сводка: в этой статье рассказывается, как с помощью ExpressRoute создать более быстрые и надежные подключения к облачным службам и платформам корпорации Майкрософт.'
+ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188117"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute для подключения к Microsoft Cloud
 
@@ -48,7 +49,7 @@ ExpressRoute обеспечивает частное выделенное ско
   
 На рисунке 2 показаны два сетевых пути. Трафик, направляемый в Microsoft Intune, проходит тот же путь, что и обычный интернет-трафик. Трафик, направляемый в Office 365, Microsoft Azure и Dynamics 365, проходит через подключение ExpressRoute, представляющее собой выделенный путь между параметром локальной сети и параметром облака Майкрософт.
   
-При наличии подключения ExpressRoute у вас будет контроль (благодаря связи с поставщиком услуг) над всем путем, который проходит трафик от границы вашей сети до границы Microsoft Cloud. Это подключение обеспечивает предсказуемую производительность и время бесперебойной работы на уровне 99,9 %.
+С помощью подключения к ExpressRoute вы теперь обеспечивает контроль через отношение с поставщиком услуг, через путь весь трафик от вашей пограничного сервера в корпорацию Майкрософт в облаке пограничного сервера. Это подключение можно предоставлять прогнозируемой производительности и [99,95% времени работоспособности соглашения об уровне ОБСЛУЖИВАНИЯ](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/).
   
 Теперь вы можете рассчитывать предсказуемые величины пропускной способности и задержек при работе со службами Office 365, Azure и Dynamics 365, учитывая параметры подключения, предоставленного поставщиком услуг. На данный момент подключения ExpressRoute к Microsoft Intune не поддерживаются.
   
@@ -239,7 +240,7 @@ ExpressRoute обеспечивает частное выделенное ско
     
 - [Планирование использования сетей и настройка производительности для Office 365](https://aka.ms/tune)
     
-- [Управление производительностью Office 365](https://mva.microsoft.com/ru-RU/training-courses/office-365-performance-management-8416)
+- [Управление производительностью Office 365](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
     
 ## <a name="expressroute-options"></a>Дополнительные возможности для ExpressRoute
 
