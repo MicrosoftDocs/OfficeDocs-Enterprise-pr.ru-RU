@@ -1,9 +1,9 @@
 ---
-title: "Cloud App Security для среды разработки и тестирования Office 365"
+title: Cloud App Security для среды разработки и тестирования Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,13 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
-description: "Сводка. Настройка и демонстрация работы Office 365 Cloud App Security в среде разработки и тестирования Office 365."
-ms.openlocfilehash: ac5f5c25ecb4d97ac1c8fe3b48096ee02da2ec3e
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: Сводка. Настройка и демонстрация работы Office 365 Cloud App Security в среде разработки и тестирования Office 365.
+ms.openlocfilehash: d62524b6c4373c851a67b4039146ad8b6a610790
+ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "20215881"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security для среды разработки и тестирования Office 365
 
@@ -46,7 +47,7 @@ Office 365 Cloud App Security (предыдущее название  расши
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Проверка режима работы уведомлений по умолчанию в Office 365
 
-1. Перейдите на портал Office 365 ([https://portal.office.com](https://portal.office.com)) и войдите на странице пробной подписки на Office 365, используя учетную запись глобального администратора.
+1. Последовательно выберите пункты портала Office 365 ([https://portal.office.com](https://portal.office.com)) и войти в систему с учетной записью глобального администратора пробной подписки Office 365.
     
   - Если вы используете упрощенную среду разработки и тестирования Office 365, войдите с локального компьютера.
     
@@ -76,9 +77,9 @@ Office 365 Cloud App Security (предыдущее название  расши
     
 ### <a name="enable-and-configure-cloud-app-security"></a>Включение и настройка Cloud App Security
 
-1. Перейдите на портал Office 365 ([https://portal.office.com](https://portal.office.com)) и войдите на странице пробной подписки на Office 365, используя учетную запись глобального администратора.
+1. Последовательно выберите пункты портала Office 365 ([https://portal.office.com](https://portal.office.com)) и войти в систему с учетной записью глобального администратора пробной подписки Office 365.
     
-2. Нажмите плитку **Безопасность и соответствие требованиям**.
+2. Щелкните плитку **администрирования** . На вкладке **центра администрирования Office** щелкните **центры администрирования > Безопасность и соответствие требованиям**.
     
 3. В области навигации слева выберите **Оповещения > Управление расширенными оповещениями**.
     
@@ -108,7 +109,7 @@ Office 365 Cloud App Security (предыдущее название  расши
 
 1. Щелкните значок пользователя в верхней правой части страницы, а затем выберите **Выйти**.
     
-2. Перейдите по такому адресу: [https://portal.office.com](https://portal.office.com).
+2. Последовательно выберите пункты [https://portal.office.com](https://portal.office.com).
     
 3. На странице входа в Office 365 выберите пункт **Используйте другую учетную запись**.
     
@@ -132,7 +133,7 @@ Office 365 Cloud App Security (предыдущее название  расши
     
 13. Щелкните значок пользователя в верхней правой части страницы, а затем выберите **Выйти**. 
     
-14. Перейдите по такому адресу: [https://portal.office.com](https://portal.office.com).
+14. Последовательно выберите пункты [https://portal.office.com](https://portal.office.com).
     
 15. На странице **входа в Office 365** выберите имя учетной записи глобального администратора.
     
