@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Сводка: Подключение Windows PowerShell для всех служб Office 365 в одном окне Windows PowerShell.'
-ms.openlocfilehash: ba23dde0fd79d13274244b52c5914d9249640570
-ms.sourcegitcommit: f496a401245240ec01754edcd4d44e7a0194d068
+ms.openlocfilehash: bf5e81012eaa3e7e200f9b1984b3d3fe01c30799
+ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "19907190"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "20720375"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell
 
@@ -42,7 +42,7 @@ ms.locfileid: "19907190"
     
 - Ниже приведены 64-разрядные версии Windows, которые можно использовать.
     
-  - Windows 10
+  - Windows 10
     
   - Windows 8.1 или Windows 8
     
@@ -60,7 +60,7 @@ ms.locfileid: "19907190"
     
 - Требуется ли установить модули, которые необходимы для Azure AD SharePoint Online и Скайп для бизнеса в Интернет:
     
-   - [Azure Active Directory версии 2](connect-to-office-365-powershell.md#ConnectV2)
+   - [Azure Active Directory версии 2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [Командная консоль SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Скайп для бизнеса через Интернет, модуля Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
