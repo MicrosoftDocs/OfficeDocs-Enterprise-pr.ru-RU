@@ -1,6 +1,3 @@
-
-  
-
 # [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 ## [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 ### [Организация сети в облаке Майкрософт для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
@@ -44,9 +41,6 @@
 #### [Advanced eDiscovery для среды разработки и тестирования Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 #### [Защита конфиденциальных файлов в среде разработки и тестирования Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
 #### [Классификация и маркировка данных в среде разработки и тестирования Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
-### [Среда разработки и тестирования Microsoft 365 корпоративный](the-microsoft-365-enterprise-dev-test-environment.md)
-#### [Политики MAM для вашей среды разработки и тестирования Microsoft 365 корпоративный](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-#### [Регистрация устройств на базе ОС iOS и Android в среде разработки и тестирования Microsoft 365 корпоративный](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
 ### [Среда разработки и тестирования для Office 365 и Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
 #### [Интеграция с Exchange Online для среды разработки и тестирования Office 365 и Dynamics 365](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
 ### [Среда разработки и тестирования One Microsoft Cloud](the-one-microsoft-cloud-dev-test-environment.md)
@@ -112,5 +106,19 @@
 #### [Развертывание изолированного сайта группы SharePoint Online](deploy-an-isolated-sharepoint-online-team-site.md)
 #### [Управление изолированным сайтом группы SharePoint Online](manage-an-isolated-sharepoint-online-team-site.md)
 #### [Среда разработки и тестирования изолированного сайта группы SharePoint Online](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [Обновление с Office 2007 или 2010 продуктов](plan-upgrade-previous-versions-office.md)
+### [Office 2010](upgrade-from-office-2010-servers-and-products.md)
+#### [Рабочего стола Office 2010](/DeployOffice/office-2010-end-support-roadmap.md)
+#### [Exchange 2010](exchange-2010-end-of-support.md)
+#### [SharePoint 2010](upgrade-from-sharepoint-2010.md)
+#### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+#### [Project Server 2010](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers)
+### [Office 2007](upgrade-from-office-2007-servers-and-products.md)
+#### [Рабочего стола Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap)
+#### [Exchange 2007](exchange-2007-end-of-support.md)
+#### [SharePoint 2007](sharepoint-2007-end-of-support.md)
+#### [Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+#### [PerformancePoint Server 2007](pps-2007-end-of-support.md)
+#### [Project Server 2007](project-server-2007-end-of-support.md)
 ## [Управление Office 365 с помощью PowerShell Office 365](powershell/manage-office-365-with-office-365-powershell.md)
 

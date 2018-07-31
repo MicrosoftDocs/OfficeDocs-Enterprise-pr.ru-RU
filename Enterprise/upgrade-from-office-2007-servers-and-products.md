@@ -10,7 +10,6 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 search.appverid:
-- MET150
 - LCC120
 - OFF120
 - OFF140
@@ -21,12 +20,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Скоро заканчивается поддержка для серверов выпуска 2007 системы Office и клиентских приложений и соглашения о поддержке настраиваемого недоступны. Используйте эту статью для начала планирования обновления сейчас.
-ms.openlocfilehash: 6935fab5e91de05c427d2bb1c233f988dc13e8ce
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: 9318dd4f85d02673137498375e7ecdcfe2b4b553
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169861"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21548890"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ресурсы, которые помогут вам обновление с Office 2007 серверов и клиентов
 
@@ -52,13 +51,13 @@ ms.locfileid: "21169861"
 Выберите один из следующих вариантов:
 - **Перемещение в Office 365**: для многих клиентов это эффективное и экономичное решение. Просмотреть [как мы перемещаться в Office 365 для бизнеса?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)
     
-- **Обновление локальных серверов и приложений.** В разделе [Exchange 2007](exchange-2007-end-of-support.md), [SharePoint Server 2007](sharepoint-2007-end-of-support.md), [Project Server 2007](project-server-2007-end-of-support.md), [Office Communications Server](/Skype/SfbServer/plan-your-deployment/upgrade.md)и планирование содержимого [PerformancePoint Server 2007](pps-2007-end-of-support.md) . 
+- **Обновление локальных серверов и приложений.** В разделе [Exchange 2007](exchange-2007-end-of-support.md), [SharePoint Server 2007](sharepoint-2007-end-of-support.md), [Project Server 2007](project-server-2007-end-of-support.md), [Office Communications Server](https://docs.microsoft.com/Skype/SfbServer/plan-your-deployment/upgrade)и планирование содержимого [PerformancePoint Server 2007](pps-2007-end-of-support.md) . 
     
 - **Реализовать гибридное решение, включая Office 365** и локальных серверов и приложений. Просмотреть [Обзор облачных решений Office 365 гибридного.](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7.aspx)
     
 **Нужна помощь?** Рассмотрите возможность работы с партнера или корпоративного лицензирования специалист по. В разделе **[Поиск партнеров Office 365 или торговых посредников](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**. 
 > [!TIP]
-> Если приобрести 50 или более лицензии Office 365, наша группа она может помочь через процесс установки Office 365. Посетите [FastTrack.Microsoft.com](https://fasttrack.microsoft.com).
+> Если приобрести 50 или более лицензии Office 365, наша группа она может помочь через процесс установки Office 365. Посетите [FastTrack.Microsoft.com](https://www.microsoft.com/fasttrack/microsoft-365/office-365).
   
 Если ваша организация меньше 50 лицензий на Office 365, см ["Администраторы": обновления пользователей до последних клиент Office с помощью Office 365 для бизнеса](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb.aspx). 
   
@@ -81,14 +80,12 @@ ms.locfileid: "21169861"
 ## <a name="what-is-office-365"></a>Что такое Office 365?
 
 Office 365 — это программное обеспечение как служба (SaaS) предложения, входящий в состав Microsoft Cloud стека. [Планы Office 365 для предприятия](https://aka.ms/viirjv) включают Exchange Online для корпоративной электронной почтой, Скайп для бизнеса в Интернет для обмена мгновенными Сообщениями и конференц-связи через Интернет и OneDrive для бизнеса на хранилище в Интернете. Большинство бизнес-планы включают программного обеспечения Office, которая может быть установлена на компьютеры (ПК и Mac), смарт-телефоны (Android, iOS и Windows) и планшетные ПК (Android и операций ввода-вывода). С помощью Office 365 могут эффективно, практически в любом месте и в различных устройств. 
-  
+
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|**[Видео: Что такое Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)** <br/> |Просмотрите это видео, чтобы получить обзор Office 365.  <br/> |
-|**[Как мы перемещаться в Office 365 для бизнеса?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)** <br/> |В этой статье, чтобы получить высокоуровневый обзор как предприятиях можно переместить в Office 365.  <br/> |
 |**[Выберите план](https://aka.ms/viirjv)** <br/> |Посетите страницу на этой странице, чтобы узнать о бизнес-планы Office 365  <br/> |
 |**[Требования к системе для Office](https://aka.ms/o365sysrequirements)** <br/> |Просмотр сведений о требованиях к системе в разделе **планы Office 365 для бизнеса, образовательным учреждениям и государственных организаций** .  <br/> |
-|**[Варианты платформы Microsoft Cloud](https://www.microsoft.com/download/details.aspx?id=54432)** <br/> |Скачать Этот плакат, чтобы ознакомиться с Office 365 и Microsoft Cloud стека. Вы узнаете о основными возможностями Microsoft Cloud стека, в том числе и области ответственности, позволяющая, наших клиентов и Microsoft Office 365. Вы можете скачать плакат в формате PDF или форматов Visio.  <br/> |
+|**[Архитектура ресурсы облачных ИТ-отдела Майкрософт](microsoft-cloud-it-architecture-resources.md)** <br/> |Загрузите один или несколько плакаты для получения дополнительных сведений о параметрах платформы Microsoft Cloud и server. Вы можете загрузить плакаты в формате PDF или форматов Visio.  <br/> |
 |**[Вопросы и ответы по Office 365](https://aka.ms/office365faqs)** <br/> |Посетите страницу на этой странице, чтобы просмотреть список часто задаваемые вопросы об Office 365, а также ссылки на дополнительные сведения.  <br/> |
    
 ## <a name="what-is-microsoft-365"></a>Что такое Microsoft 365?
