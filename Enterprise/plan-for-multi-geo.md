@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения о OneDrive для бизнеса с поддержкой нескольких регионов, о принципе такой поддержки и о географических расположениях, доступных для хранения данных.
-ms.openlocfilehash: 54efc6092338e505ef44344f9c3d3a7efe9ae498
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 26dc9d1b0f0f78e1740088036be4b77bea3ce176
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549990"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>Планирование использования OneDrive для бизнеса с поддержкой нескольких регионов
 
@@ -63,20 +64,20 @@ ms.lasthandoff: 04/27/2018
 <td align="left">APC</td>
 </tr>
 <tr class="even">
-<td align="left">Европа, Ближний Восток и Африка</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
-<td align="left">Северная Америка</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="even">
 <td align="left">Австралия</td>
 <td align="left">AUS</td>
 </tr>
 <tr class="odd">
 <td align="left">Канада</td>
 <td align="left">CAN</td>
+</tr>
+<tr class="even">
+<td align="left">Европа, Ближний Восток и Африка</td>
+<td align="left">EUR</td>
+</tr>
+<tr class="odd">
+<td align="left">Франция</td>
+<td align="left">FRA</td>
 </tr>
 <tr class="odd">
 <td align="left">Япония</td>
@@ -87,15 +88,18 @@ ms.lasthandoff: 04/27/2018
 <td align="left">KOR</td>
 </tr>
 <tr class="odd">
+<td align="left">Северная Америка</td>
+<td align="left">NAM</td>
+</tr>
+<tr class="odd">
 <td align="left">Соединенное Королевство</td>
 <td align="left">GBR</td>
 </tr>
 </tbody>
 </table>
 
-Ожидаемые географические расположения:
+Ожидается поддержка таких географических расположений:
   
-- Франция
 - Индия
 
 Настраивая поддержку нескольких регионов, рассмотрите возможность консолидировать свою локальную инфраструктуру при миграции в Office 365. Например, можно консолидировать локальные фермы, находящиеся в Сингапуре и Малайзии, с периферийным расположением APC при условии, что это разрешено требованиями к местонахождению данных.

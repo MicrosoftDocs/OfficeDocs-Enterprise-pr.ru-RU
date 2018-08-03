@@ -11,11 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Сведения о настройке OneDrive для бизнеса с поддержкой нескольких регионов.
-ms.openlocfilehash: 29e69fa6e5a9715360b61024ee41dee4cd4b95b1
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549970"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Настройка клиента OneDrive для бизнеса с поддержкой нескольких регионов
 
@@ -42,14 +43,6 @@ ms.lasthandoff: 04/27/2018
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Северная Америка</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="even">
-<td align="left">Европа, Ближний Восток и Африка</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
 <td align="left">Азиатско-Тихоокеанский регион</td>
 <td align="left">APC</td>
 </tr>
@@ -57,21 +50,33 @@ ms.lasthandoff: 04/27/2018
 <td align="left">Австралия</td>
 <td align="left">AUS</td>
 </tr>
+<tr class="even">
+<td align="left">Канада</td>
+<td align="left">CAN</td>
+</tr>
+<tr class="even">
+<td align="left">Европа, Ближний Восток и Африка</td>
+<td align="left">EUR</td>
+</tr>
+<tr class="even">
+<td align="left">Франция</td>
+<td align="left">FRA</td>
+</tr>
 <tr class="odd">
 <td align="left">Япония</td>
 <td align="left">JPN</td>
 </tr>
 <tr class="even">
-<td align="left">Канада</td>
-<td align="left">CAN</td>
+<td align="left">Республика Корея</td>
+<td align="left">KOR</td>
+</tr>
+<tr class="odd">
+<td align="left">Северная Америка</td>
+<td align="left">NAM</td>
 </tr>
 <tr class="odd">
 <td align="left">Соединенное Королевство</td>
 <td align="left">GBR</td>
-</tr>
-<tr class="even">
-<td align="left">Республика Корея</td>
-<td align="left">KOR</td>
 </tr>
 </tbody>
 </table>
