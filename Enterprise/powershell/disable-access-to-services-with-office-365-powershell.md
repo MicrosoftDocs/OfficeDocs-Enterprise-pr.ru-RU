@@ -1,9 +1,9 @@
 ---
-title: "Отключение доступа к службам с помощью Office 365 PowerShell"
+title: Отключение доступа к службам с помощью Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2018
+ms.date: 08/08/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,13 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: "Объясняет, как использовать Office 365 PowerShell для отключения доступа к службам Office 365 для пользователей в вашей организации."
-ms.openlocfilehash: 61d92a1a0c55a381f10fedbb43403dd099fcb69b
-ms.sourcegitcommit: 07416472be80566370c30631aff740177b37b24c
+description: Объясняет, как использовать Office 365 PowerShell для отключения доступа к службам Office 365 для пользователей в вашей организации.
+ms.openlocfilehash: 44b0ed84bb8fd098412c69258834194b2b1eeb2f
+ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "22196826"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Отключение доступа к службам с помощью Office 365 PowerShell
 
@@ -62,7 +63,7 @@ ms.lasthandoff: 02/19/2018
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
   ```
 
-2. Используйте объект **LicenseOptions** из шага 1 на одного или нескольких пользователей.
+2. Используйте объект **LicenseOptions** из действия 1 для одного или нескольких пользователей.
     
   - Чтобы создать учетную запись, для которой отключены службы, используйте указанную ниже команду.
     
@@ -151,9 +152,9 @@ for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
 
 2. В своей среде настройте указанные ниже значения.
     
-  -  _<UndesirableService>_В этом примере мы будем использовать Office Online и SharePoint Online.
+  -  _<UndesirableService>_ В этом примере мы будем использовать Office Online и SharePoint Online.
     
-  -  _<Account>_В этом примере мы будем использовать belindan@litwareinc.com.
+  -  _<Account>_ В этом примере мы будем использовать belindan@litwareinc.com.
     
     Измененный сценарий выглядит указанным ниже образом.
     
@@ -177,20 +178,9 @@ for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
 > [!NOTE]
 > Для отмены эффекты любого из этих процедур (то есть, чтобы повторно включить отключенные службы), снова выполнить процедуру, но использовать значение `$null` для параметра _DisabledPlans_ .
   
-[В начало](disable-access-to-services-with-office-365-powershell.md#RTT)
+[К началу страницы](disable-access-to-services-with-office-365-powershell.md#RTT)
 
 
-## <a name="all-office-365-services-for-all-users-for-a-single-licensing-plan"></a>Все службы Office 365 для всех пользователей для одного плана лицензирования
- 
-Чтобы отключить все службы Office 365 для всех пользователей в определенных плана лицензирования, укажите имя плана лицензирования для $acctSKU (например, **litwareinc: enterprisepack**) и затем выполните следующие команды в окне командной строки PowerShell:
-
-```
-$acctSKU="<AccountSkuId>"
-$servicesList=(Get-MsolAccountSku | Select -ExpandProperty ServiceStatus).ServicePlan.ServiceName
-$lo = New-MsolLicenseOptions -AccountSkuId $acctSKU -DisabledPlans $servicesList
-$AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
-$AllLicensed | ForEach {Set-MsolUserLicense -ObjectID $_.ObjectID -LicenseOptions $lo}
-```
 
 ## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
 <a name="LinkedIn"> </a>
