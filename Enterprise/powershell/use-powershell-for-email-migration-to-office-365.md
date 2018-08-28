@@ -17,6 +17,7 @@ ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17115248"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Использование PowerShell для переноса электронной почты в Office 365
 
@@ -47,9 +48,9 @@ ms.lasthandoff: 01/11/2018
 [Использование Windows PowerShell для создания отчетов в Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-[Преимущества использования Windows PowerShell для управления Office 365]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))
+[Преимущества использования Windows PowerShell для управления Office 365](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
   
-[Технический справочник командлетов Windows PowerShell в Office 365]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))
+[Технический справочник командлетов Windows PowerShell в Office 365](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
   
-[Лицензирование Office 365 и Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))
+[Лицензирование Office 365 и Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
 
