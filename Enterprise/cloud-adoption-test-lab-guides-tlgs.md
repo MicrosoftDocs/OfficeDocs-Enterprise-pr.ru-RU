@@ -1,36 +1,38 @@
 ---
-title: Руководства по лаборатории тестирования для облачных решений
+title: Тестирование Office 365 с помощью руководств по лаборатории тестирования для внедрения облака
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 08/23/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: Сводка. Воспользуйтесь этими руководствами по лаборатории тестирования для облачных решений, чтобы настроить среды демонстрации, экспериментирования, разработки и тестирования для продуктов Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 и Office Server.
-ms.openlocfilehash: ac48a9d3d0941b1152aa2bc22a8d9aa5dde7ad77
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+description: Сводка. Воспользуйтесь этими руководствами по лаборатории тестирования для внедрения облака, чтобы настроить среды для демонстрации, экспериментальной установки, разработки и тестирования продуктов Office 365, Dynamics 365 и Office Server.
+ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
+ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188167"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "23041503"
 ---
-# <a name="cloud-adoption-test-lab-guides-tlgs"></a>Руководства по лаборатории тестирования для облачных решений
+# <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Тестирование Office 365 с помощью руководств по лаборатории тестирования для внедрения облака
 
- **Сводка.** Воспользуйтесь этими руководствами по лаборатории тестирования для облачных решений, чтобы настроить среды демонстрации, экспериментирования, разработки и тестирования для продуктов Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 и Office Server.
+ **Сводка.** Воспользуйтесь этими руководствами по лаборатории тестирования для внедрения облака, чтобы настроить среды для демонстрации, экспериментальной установки, разработки и тестирования продуктов Office 365, Dynamics 365 и Office Server.
   
 Руководства по лаборатории тестирования содержат краткие сведения о продуктах Майкрософт. Они отлично подходят для ситуаций, в которых нужно оценить технологию или конфигурацию, прежде чем решать, подходит ли она вам, или прежде чем развертывать ее для пользователей. Такой интерактивный подход помогает ознакомиться с требованиями для развертывания нового продукта или решения и позволяет лучше спланировать его размещение в производственной среде.
   
 Кроме того, эти руководства помогают создавать типичные среды для разработки и тестирования приложений.
   
-![Руководства по лаборатории тестирования в Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Руководства по лаборатории тестирования в Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 Прежде чем приступить к освоению, ознакомьтесь с дополнительными ресурсами:
   
@@ -88,21 +90,10 @@ ms.locfileid: "20188167"
     
     Демонстрация процесса создания сайта группы SharePoint Online, функционирующего изолированно от всей организации с целью защиты ресурсов с высоким или средним уровнем конфиденциальности.
     
-## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Среда разработки и тестирования Microsoft 365 корпоративный
+## <a name="the-microsoft-365-enterprise-test-environment"></a>Среда тестирования Microsoft 365 корпоративный
 
-Следующие статьи можно использовать для создания среды разработки и тестирования для сценариев [Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365-enterprise/):
-  
-- [Среда разработки и тестирования Microsoft 365 корпоративный](the-microsoft-365-enterprise-dev-test-environment.md)
-    
-    Создание начальной среды, которая включает в себя Office 365 E5, EMS E5 и компьютер на базе ОС Windows 10 Корпоративная.
-    
-- [Политики MAM для вашей среды разработки и тестирования Microsoft 365 корпоративный](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-    
-    Создание групп пользователей и политик управления мобильными приложениями (MAM) для устройств iOS и Android.
-    
-- [Регистрация устройств на базе ОС iOS и Android в среде разработки и тестирования Microsoft 365 корпоративный](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
-    
-    Регистрация устройств с iOS или Android и удаленное управление ими.
+Создайте среду тестирования [Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365-enterprise/), используя [эти статьи](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).
+ 
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Среда разработки и тестирования для Office 365 и Dynamics 365
 
@@ -148,17 +139,7 @@ ms.locfileid: "20188167"
     
     Создание ферм SharePoint Server 2013 (базовых и с высоким уровнем доступности) в службах инфраструктуры Azure.
     
-**Присоединяйтесь к обсуждению**
-
-|**Свяжитесь с нами**|**Описание**|
-|:-----|:-----|
-|**Какое вам решение необходимо?** <br/> |Мы создаем контент для решений, которые охватывают несколько продуктов и служб Майкрософт. Сообщите нам, что вы думаете о наших межсерверных решениях, или укажите интересующие вас решения, написав по адресу [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Присоединяйтесь к обсуждению решений** <br/> |Если вам интересны облачные решения, присоединяйтесь к теме Cloud Adoption Advisory Board (CAAB) и общайтесь с разработчиками контента Майкрософт, специалистами отрасли и клиентами со всего мира. Чтобы присоединиться, добавьте себя в качестве участника [темы CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) на сайте Microsoft Tech Community и отправьте нам письмо на адрес [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Просматривать материалы в [блоге CAAB](https://blogs.technet.com/b/solutions_advisory_board/) могут все пользователи. Однако только участники CAAB получают приглашения на закрытые вебинары, на которых мы рассказываем о новых облачных решениях и ресурсах по их внедрению.<br/> |
-|**Скачать изображения, которые вы видите здесь** <br/> |Если вам нужна редактируемая копия иллюстративного материала из этой статьи, мы с радостью вам ее отправим. Напишите нам, указав URL-адрес и название материала, по адресу [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
-   
 ## <a name="see-also"></a>См. также
-
-<a name="ADD_TLGs"> </a>
 
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
   
