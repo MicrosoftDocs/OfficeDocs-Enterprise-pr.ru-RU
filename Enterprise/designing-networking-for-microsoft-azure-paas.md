@@ -1,5 +1,5 @@
 ---
-title: "Разработка сети для Microsoft Azure PaaS"
+title: Разработка сети для Microsoft Azure PaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
-description: "Сводка: в этой статье рассказывается о том, как оптимизировать сеть для доступа к Microsoft Azure PaaS."
-ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Сводка: в этой статье рассказывается о том, как оптимизировать сеть для доступа к Microsoft Azure PaaS.'
+ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915114"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Разработка сети для Microsoft Azure PaaS
 
@@ -46,7 +49,7 @@ ms.lasthandoff: 02/09/2018
     
 **Рис. 1. Варианты подключения к службам Azure PaaS**
 
-![Рис. 1. Варианты подключения к службам Azure PaaS](images/Network_Poster/PaaS1.png)
+![Рис. 1. Варианты подключения к службам Azure PaaS](media/Network-Poster/PaaS1.png)
   
 На рис. 1 показано подключение локальной сети к службам Azure PaaS через интернет-канал или ExpressRoute.
   
@@ -56,7 +59,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рис. 2. Шлюз приложений Azure**
 
-![Рис. 2. Служба шлюза приложений Azure](images/Network_Poster/PaaS2.png)
+![Рис. 2. Служба шлюза приложений Azure](media/Network-Poster/PaaS2.png)
   
 На рис. 2 показан шлюз приложений Azure и способы маршрутизации запросов пользователей из Интернета в веб-приложения, облачные службы или виртуальные машины Azure.
   
@@ -86,7 +89,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рис. 3. Диспетчер трафика Azure**
 
-![Рис. 3. Диспетчер трафика Azure](images/Network_Poster/PaaS3.png)
+![Рис. 3. Диспетчер трафика Azure](media/Network-Poster/PaaS3.png)
   
 На рис. 3 показан основной процесс, который диспетчер трафика использует для маршрутизации запросов в три различных веб-приложения Azure в США, Европе и Азии. В этом примере происходит указанный ниже процесс.
   

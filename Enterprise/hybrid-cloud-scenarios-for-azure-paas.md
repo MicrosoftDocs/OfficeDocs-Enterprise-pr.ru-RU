@@ -1,5 +1,5 @@
 ---
-title: "Сценарии гибридного облака для Azure PaaS"
+title: Сценарии гибридного облака для Azure PaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
-description: "Сводка. Сведения о гибридной архитектуре и сценариях для облачных предложений на основе Microsoft PaaS в Azure."
-ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: Сводка. Сведения о гибридной архитектуре и сценариях для облачных предложений на основе Microsoft PaaS в Azure.
+ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915014"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Сценарии гибридного облака для Azure PaaS
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рис. 1. Гибридные сценарии на основе Microsoft PaaS в Azure**
 
-![Гибридные сценарии на основе Microsoft PaaS в Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS.png)
+![Гибридные сценарии на основе Microsoft PaaS в Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
 Для каждого слоя архитектуры:
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рис. 2. Гибридное приложение на основе Azure PaaS**
 
-![Гибридное приложение на основе Azure PaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps.png)
+![Гибридное приложение на основе Azure PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
 На рисунке 2 показана локальная сеть, в которой на серверах размещаются хранилище или приложения, а также зона DMZ, содержащая прокси-сервер. Локальная сеть подключена к службам Azure PaaS через интернет-канал или с помощью подключения ExpressRoute.
   
@@ -78,7 +79,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рис. 3. Пример гибридного приложения на основе Azure PaaS**
 
-![Пример гибридного приложения на основе Azure PaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_Ex.png)
+![Пример гибридного приложения на основе Azure PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
 На рисунке 3 показана локальная сеть, в которой размещается бизнес-приложение. В Azure PaaS находится настраиваемое мобильное приложение. Подключенный к Интернету смартфон получает доступ к настраиваемому мобильному приложению в Azure, которое отправляет запросы данных локальному бизнес-приложению.
   
@@ -104,7 +105,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рис. 4. База данных Stretch в SQL Server 2016**
 
-![База данных Stretch с SQL Server 2016](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_SQL.png)
+![База данных Stretch с SQL Server 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
   
 На рисунке 4 показана локальная сеть, в которой размещен сервер SQL Server 2016 с небольшой локальной базой данных. В Azure PaaS размещен экземпляр растянутой базы данных Stretch сервера SQL Azure. Запросы T-SQL, отправляемые от локальных пользователей на локальный сервер SQL, безопасно перенаправляются в базу данных Stretch SQL Azure, которая возвращает результаты запросов пользователям.
   

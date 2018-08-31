@@ -1,5 +1,5 @@
 ---
-title: "Перемещение в облако транзакционных данных за прошлые периоды"
+title: Перемещение в облако транзакционных данных за прошлые периоды
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
-description: "Сводка. Статья о том, как корпорация Contoso внедрила базу данных Stretch на SQL Server, чтобы снизить необходимость в локальных хранилищах данных и сократить ежедневные производственные затраты."
-ms.openlocfilehash: 9d8d51aa1bc7a304d1148111aedd54916d9e8052
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: Сводка. Статья о том, как корпорация Contoso внедрила базу данных Stretch на SQL Server, чтобы снизить необходимость в локальных хранилищах данных и сократить ежедневные производственные затраты.
+ms.openlocfilehash: 791b5d4f14ba7246221cf9b459c31c9ba1b54099
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915724"
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>Перемещение в облако транзакционных данных за прошлые периоды
 
@@ -28,7 +31,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рис. 1. База данных Stretch в SQL Server**
 
-![База данных SQL Server Stretch как гибридное решение для хранения данных](images/Contoso_Poster/StretchDB01.png)
+![База данных SQL Server Stretch как гибридное решение для хранения данных](media/Contoso-Poster/StretchDB01.png)
   
 На рис. 1 показано, как клиент SQL отправляет запросы T-SQL на сервер, на котором развернут сервер SQL Server 2016, перенаправляющий их в базу данных SQL Stretch Azure в Azure PaaS.
   
@@ -52,7 +55,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рис. 2. Использование базы данных Stretch для сервера в центре обработки данных корпорации Contoso**
 
-![Настройка Базы данных SQL Server Stretch, выполняемая Contoso для одного компьютера с SQL Server](images/Contoso_Poster/StretchDB02.png)
+![Настройка Базы данных SQL Server Stretch, выполняемая Contoso для одного компьютера с SQL Server](media/Contoso-Poster/StretchDB02.png)
 
   
 На рис. 2 показано, как пользовательские запросы к серверу приложений в центре обработки данных Contoso превращаются в SQL-запросы, которые передаются в базу данных SQL Stretch Azure в Azure PaaS.

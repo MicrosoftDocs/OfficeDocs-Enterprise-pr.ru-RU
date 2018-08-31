@@ -1,5 +1,5 @@
 ---
-title: "ИТ-инфраструктура и потребности корпорации Contoso"
+title: ИТ-инфраструктура и потребности корпорации Contoso
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
-description: "Сводка. Сведения о базовой локальной ИТ-инфраструктуре Contoso и о том, как можно удовлетворить бизнес-потребности с помощью облачных решений Майкрософт."
-ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: Сводка. Сведения о базовой локальной ИТ-инфраструктуре Contoso и о том, как можно удовлетворить бизнес-потребности с помощью облачных решений Майкрософт.
+ms.openlocfilehash: e500aa1f3105c1e605d0d3c1d5f66651acb82b34
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915734"
 ---
 # <a name="contosos-it-infrastructure-and-needs"></a>ИТ-инфраструктура и потребности корпорации Contoso
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рис. 1. Существующая ИТ-инфраструктура Contoso**
 
-![Существующая ИТ-инфраструктура Contoso](images/Contoso_Poster/Existing_IT.png)
+![Существующая ИТ-инфраструктура Contoso](media/Contoso-Poster/Existing-IT.png)
   
 На рисунке 1 показан главный офис с центрами обработки данных приложений, сетью периметра и Интернетом.
   

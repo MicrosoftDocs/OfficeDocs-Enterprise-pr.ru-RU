@@ -1,5 +1,5 @@
 ---
-title: "Решения, требующие сборки"
+title: Решения, требующие сборки
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
-description: "Сводка. Узнайте, как получить сведения о наборе параметров облачного хранилища, с помощью которых можно создать собственное решения для хранения."
-ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: Сводка. Узнайте, как получить сведения о наборе параметров облачного хранилища, с помощью которых можно создать собственное решения для хранения.
+ms.openlocfilehash: 2c80b0cdf0829e80a7916133ee51a45c91b96efa
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915524"
 ---
 # <a name="some-assembly-required"></a>Решения, требующие сборки
 
@@ -138,11 +141,11 @@ ms.lasthandoff: 02/09/2018
     
 Вертикальное масштабирование: вы можете изменить уровень производительности или выпуск базы данных Azure либо использовать пулы эластичных баз данных.
   
-![Вертикальное масштабирование, обеспеченное базой данных SQL Azure.](images/Storage_Poster/CloudStor-VertScale.png)
+![Вертикальное масштабирование, обеспеченное базой данных SQL Azure.](media/Storage-Poster/CloudStor-VertScale.png)
   
 Горизонтальное масштабирование: при необходимости вы можете добавлять новые базы данных.
   
-![Горизонтальное масштабирование, обеспеченное базой данных SQL Azure.](images/Storage_Poster/CloudStor-HorizScale.png)
+![Горизонтальное масштабирование, обеспеченное базой данных SQL Azure.](media/Storage-Poster/CloudStor-HorizScale.png)
   
 Дополнительные сведения вы найдете [здесь](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction).
   
@@ -150,7 +153,7 @@ ms.lasthandoff: 02/09/2018
 
 База данных Stretch  это функция SQL Server 2016, которая позволяет прозрачно и безопасно переместить редко используемые данные, например данные о закрытой компании в большой таблице со сведениями о заказах клиентов, в базу данных Stretch в SQL Azure. При использовании функции Stretch содержимое экземпляра SQL Server, база данных или даже одна таблица являются сочетанием локальных данных на сервере SQL Server 2016 и удаленных данных в Azure. SQL Server 2016 автоматически перемещает в Azure данные, которые поддерживают функцию Stretch.
   
-![База данных Stretch с SQL Server 2016.](images/Storage_Poster/CloudStor-Stretch.png)
+![База данных Stretch с SQL Server 2016.](media/Storage-Poster/CloudStor-Stretch.png)
   
  
 
@@ -206,7 +209,7 @@ ms.lasthandoff: 02/09/2018
     
 В приведенной ниже таблице показаны редко используемые атрибуты Azure Cosmos DB, Хранилища таблиц Azure и Базы данных SQL Azure.
   
-![Редко используемые атрибуты Cosmos DB, таблицы Azure или база данных SQL Azure](images/Storage_Poster/CloudStor-Table.png)
+![Редко используемые атрибуты Cosmos DB, таблицы Azure или база данных SQL Azure](media/Storage-Poster/CloudStor-Table.png)
   
 ### <a name="resources"></a>Ресурсы
 

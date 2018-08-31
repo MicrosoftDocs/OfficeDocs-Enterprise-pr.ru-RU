@@ -1,5 +1,5 @@
 ---
-title: "Общие элементы подключения к Microsoft Cloud"
+title: Общие элементы подключения к Microsoft Cloud
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
-description: "Сводка. Об общих элементах сетевой инфраструктуры и подготовке сети."
-ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+description: Сводка. Об общих элементах сетевой инфраструктуры и подготовке сети.
+ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915654"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Общие элементы подключения к Microsoft Cloud
 
@@ -48,7 +51,7 @@ ms.lasthandoff: 02/13/2018
   
 **Рис. 1. Варианты подключения к Microsoft Cloud**
 
-![Рис. 1. Варианты подключения к Microsoft Cloud](images/Network_Poster/CommonElements.png)
+![Рис. 1. Варианты подключения к Microsoft Cloud](media/Network-Poster/CommonElements.png)
 
   
 На рис. 1 показано, как подключить локальную сеть к Microsoft Cloud, используя существующий интернет-канал или подключение ExpressRoute. Интернет-канал представляет зону DMZ и может содержать указанные ниже компоненты.
