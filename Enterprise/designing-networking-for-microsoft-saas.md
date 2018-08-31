@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: Сводка. В этой статье рассказано, как оптимизировать сеть для доступа к службам SaaS корпорации Майкрософт, в том числе к Office 365, Microsoft Intune и Dynamics 365.
-ms.openlocfilehash: 4cfbeab3d90703e17c86e707988a8a62c937df9a
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 94118022b86a5e732467599632e30c058827468f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915474"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Разработка сети для Microsoft SaaS
 
@@ -44,7 +47,7 @@ ms.lasthandoff: 05/03/2018
   
 **Рис. 1. Варианты подключения для служб Microsoft SaaS**
 
-![Рис. 1. Варианты подключения для служб Microsoft SaaS](images/Network_Poster/SaaS1.png)
+![Рис. 1. Варианты подключения для служб Microsoft SaaS](media/Network-Poster/SaaS1.png)
   
 На рис. 1 показано подключение локальной сети к службам Microsoft SaaS через интернет-канал или ExpressRoute.
   

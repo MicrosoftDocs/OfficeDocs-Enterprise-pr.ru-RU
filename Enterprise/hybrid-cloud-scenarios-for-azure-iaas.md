@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Сводка: Сведения о гибридных архитектуры и сценарии для корпорации Майкрософт инфраструктура как служба (IaaS)-на основе облака в Azure.'
-ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915034"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Гибридные облачные сценарии для Azure IaaS
 
@@ -28,9 +29,9 @@ ms.lasthandoff: 04/05/2018
 
 На рисунке 1 показана архитектура гибридных сценариев на основе Microsoft IaaS в Azure.
   
-**На рисунке 1: Майкрософт на основе IaaS гибридных сценариев в Azure**
+**Рис. 1. Гибридные сценарии на основе Microsoft IaaS в Azure**
 
-![Гибридные сценарии на основе Microsoft IaaS в Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS.png)
+![Гибридные сценарии на основе Microsoft IaaS в Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS.png)
   
 Для каждого слоя архитектуры:
   
@@ -54,9 +55,9 @@ ms.lasthandoff: 04/05/2018
 
 Использование сервера синхронизации каталогов (DirSync) в виртуальной сети Azure, как показано на рисунке 2, — пример развертывания инфраструктуры вычислений и идентификации в облаке.
   
-**На рисунке 2: Сервер синхронизации каталогов для Office 365 в Azure IaaS**
+**Рисунок 2. Сервер DirSync для Office 365 в Azure IaaS**
 
-![Сервер DirSync для Office 365 в Azure IaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_DirSync.png)
+![Сервер DirSync для Office 365 в Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
 На рисунке 2 локальной сети, где размещается в инфраструктуре Windows Server AD с прокси-сервера и маршрутизатора в его пограничного сервера. Маршрутизатор подключается к Azure шлюза на границе VNet Azure с подключением через VPN или ExpressRoute веб сайта. Внутри VNet сервер синхронизации каталогов выполняется подключение Azure AD.
   
@@ -66,19 +67,22 @@ ms.lasthandoff: 04/05/2018
   
 Сервер DirSync опрашивает Windows Server AD для определения наличия изменений, а затем синхронизирует их с Office 365.
   
-Дополнительные сведения можно [Развернуть Office 365 DirSync в Azure](https://technet.microsoft.com/library/dn635310.aspx).
+Для получения дополнительных сведений см. [Настройка синхронизации службы каталогов для Office 365](set-up-directory-synchronization.md).
   
 ## <a name="line-of-business-lob-application"></a>Бизнес-приложение
 
 На рисунке 3 показана конфигурация серверного бизнес-приложения, работающего в Azure IaaS.
   
-**На рисунке 3: Бизнес-приложение в Azure IaaS**
+**Рис. 3. Бизнес-приложение в Azure IaaS**
 
-![Серверное бизнес-приложение в Azure IaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_Ex.png)
+![Серверное бизнес-приложение в Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-Ex.png)
   
 На рисунке 3 показана локальная сеть, в которой размещены инфраструктура идентификации и пользователи. Она подключена к шлюзу Azure IaaS с помощью соединения VPN типа "сеть-сеть" или ExpressRoute. В Azure IaaS размещена виртуальная сеть, содержащая серверы бизнес-приложения.
   
-Можно создать бизнес-приложения, работающего на виртуальных машин Azure, в которой хранятся на устройстве подсети VNet Azure в Azure обработки данных (также известной как расположение).
+Вы можете создать бизнес-приложения, которые будут выполняться на виртуальных машинах Azure и размещаться в подсетях виртуальной сети Azure в центре данных Azure (который также называется расположением). 
+
+
+
   
 Так как вы, по сути, расширяете локальную инфраструктуру до Azure, необходимо назначить уникальное пространство частных адресов своим виртуальным сетям и обновить таблицы локальной маршрутизации, чтобы обеспечить доступность каждой виртуальной сети.
   
@@ -86,7 +90,7 @@ ms.lasthandoff: 04/05/2018
   
 После настройки общедоступных портов мобильные или удаленные пользователи также могут получить доступ к этим виртуальным машинам через Интернет.
   
-Конфигурация обоснования концепции в разделе [модель распределенной виртуальной сети в Azure](simulated-cross-premises-virtual-network-in-azure.md).
+В случае конфигурации для подтверждения концепции см. статью [Simulated cross-premises virtual network in Azure](simulated-cross-premises-virtual-network-in-azure.md).
   
 Атрибуты бизнес-приложений, размещенных на виртуальных машинах Azure:
   
@@ -110,9 +114,9 @@ ms.lasthandoff: 04/05/2018
 
 Ферма SharePoint Server 2016, показанная на рисунке 4, является примером многоуровневого высокодоступного бизнес-приложения в Azure.
   
-**На рисунке 4: Высокого уровня доступности SharePoint Server 2016 фермы в Azure IaaS**
+**Рис. 4. Высокодоступная ферма SharePoint Server 2016 в Azure IaaS**
 
-![Высокодоступная ферма SharePoint Server 2016 в Azure IaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_SP2016.png)
+![Высокодоступная ферма SharePoint Server 2016 в Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-SP2016.png)
   
 На рисунке 4 показана локальная сеть, в которой размещены инфраструктура идентификации и пользователи. Она подключена к шлюзу Azure IaaS с помощью соединения VPN типа "сеть-сеть" или ExpressRoute. Виртуальная сеть Azure содержит серверы фермы SharePoint Server 2016, которая включает отдельные уровни для серверов переднего плана, серверов приложений, кластера SQL Server и контроллеров домена.
   
@@ -120,7 +124,8 @@ ms.lasthandoff: 04/05/2018
   
 - Уровни
     
-    Под управлением различных ролей в ферме серверов создайте по уровням и каждого уровня имеет свой собственный подсети.
+    Серверы, выполняющие разные роли в ферме, создают уровни, и каждый уровень имеет собственную подсеть.
+
     
 - Высокая доступность
     
@@ -138,17 +143,17 @@ ms.lasthandoff: 04/05/2018
   
 1. Оценка и эксперимент
     
-    В разделе [2016 сервера SharePoint в Microsoft Azure](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx) понять преимущества под управлением SharePoint Server 2016 в Azure.
+    В разделе [2016 сервера SharePoint в Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) понять преимущества под управлением SharePoint Server 2016 в Azure.
     
-    Просмотреть [интрасети 2016 сервера SharePoint в среде Azure разработку и тестирование](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx) для построения имитации dev/тестовой среды
+    Просмотреть [интрасети 2016 сервера SharePoint в среде Azure разработку и тестирование](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment) для построения имитации dev/тестовой среды
     
 2. Проектирование
     
-    В разделе [Разработка фермы SharePoint Server 2016 в Azure](https://technet.microsoft.com/library/mt779108%28v=office.16%29.aspx) пошаговое выполнение процесса для определения набора сети Azure IaaS, compute и хранения элементов для размещения фермы и их параметров.
+    В разделе [Разработка фермы SharePoint Server 2016 в Azure](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure) пошаговое выполнение процесса для определения набора сети Azure IaaS, compute и хранения элементов для размещения фермы и их параметров.
     
 3. Развернуть
     
-    В разделе [Развертывание 2016 SharePoint Server с помощью группы обеспечения доступности AlwaysOn SQL Server в среде Azure](https://technet.microsoft.com/library/mt793552%28v=office.16%29.aspx) для пошагового выполнения начала до конца конфигурации фермы высокой доступности в пять этапов.
+    В разделе [Развертывание 2016 SharePoint Server с помощью группы обеспечения доступности AlwaysOn SQL Server в среде Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) для пошагового выполнения начала до конца конфигурации фермы высокой доступности в пять этапов.
     
 ## <a name="federated-identity-for-office-365-in-azure"></a>Федеративное удостоверение для Office 365 в Azure
 
@@ -156,7 +161,7 @@ ms.lasthandoff: 04/05/2018
   
 **На рисунке 5: В инфраструктуре федеративных удостоверений высокого уровня доступности для Office 365 в Azure IaaS**
 
-![Окончательная конфигурация инфраструктуры для федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_ADFS.png)
+![Окончательная конфигурация инфраструктуры для федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 На рисунке 5 локальной сети размещается инфраструктуру удостоверения и пользователей. Подключения шлюза Azure IaaS с веб сайта VPN или ExpressRoute подключения. Azure VNet содержит прокси-сервера веб-серверов, серверов служб федерации Active Directory (AD FS) и контроллеры домена Active Directory Windows Server (AD).
   
