@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: Сводка. Общие сведения о связи между организациями, подписками, лицензиями, учетными записями пользователей и клиентами в облачных предложениях корпорации Майкрософт.
-ms.openlocfilehash: 53d2f7f32402d8c05d22c0661a0f625c756da6d4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: ebddd97afb2c45821cd25eae5e8124459720df0b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319220"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915204"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Подписки, лицензии, учетные записи и клиенты для облачных предложений корпорации Майкрософт
 
@@ -62,7 +64,7 @@ ms.locfileid: "20319220"
   
 **Рис. 1. Пример использования нескольких подписок для организации**
 
-![Пример организации с несколькими подписками на облачные предложения корпорации Майкрософт.](images/Subscriptions/Subscriptions_Fig1.png)
+![Пример организации с несколькими подписками на облачные предложения корпорации Майкрософт.](media/Subscriptions/Subscriptions-Fig1.png)
 
   
 На изображении 1 показана одна организация с несколькими подписками на Office 365 и Azure, подпиской на Intune и подпиской на Dynamics 365.
@@ -73,7 +75,7 @@ ms.locfileid: "20319220"
   
 **Рис. 2. Лицензии в рамках подписок на основе SaaS для организации**
 
-![Пример нескольких лицензий в подписках на облачные предложения корпорации Майкрософт на основе SaaS.](images/Subscriptions/Subscriptions_Fig2.png)
+![Пример нескольких лицензий в подписках на облачные предложения корпорации Майкрософт на основе SaaS.](media/Subscriptions/Subscriptions-Fig2.png)
   
 В случае облачных служб на основе Azure PaaS стоимость лицензий на программное обеспечение включается в цену службы.
   
@@ -89,7 +91,7 @@ ms.locfileid: "20319220"
   
 **Рис. 3. Несколько подписок организации, использующих один клиент Azure AD**
 
-![Пример организации с несколькими подписками, использующими один и тот же клиент Azure AD.](images/Subscriptions/Subscriptions_Fig3.png)
+![Пример организации с несколькими подписками, использующими один и тот же клиент Azure AD.](media/Subscriptions/Subscriptions-Fig3.png)
   
 ### <a name="tenants"></a>Клиенты
 
@@ -131,7 +133,7 @@ ms.locfileid: "20319220"
   
 **Рис. 4. Синхронизированные локальные учетные записи и IDaaS для организации**
 
-![Идентификация как служба (IDaaS) для организации.](images/Subscriptions/Subscriptions_Fig4.png)
+![Идентификация как служба (IDaaS) для организации.](media/Subscriptions/Subscriptions-Fig4.png)
   
 На рисунке 4 показано, как взаимодействуют с общим клиентом Azure AD облачные решения SaaS Майкрософт, приложения PaaS Azure и виртуальные машины на платформе IaaS Azure, использующие доменные службы Azure AD. Клиент Azure AD синхронизируется с локальным лесом Active Directory Windows Server с помощью Azure AD Connect.
   

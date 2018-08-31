@@ -1,5 +1,5 @@
 ---
-title: "Сценарии гибридного облака для Microsoft SaaS (Office 365)"
+title: Сценарии гибридного облака для Microsoft SaaS (Office 365)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
-description: "Сводка: Сведения о гибридных архитектуры и сценарии для Майкрософт на основе SaaS в облаке и услуги (Office 365)."
-ms.openlocfilehash: 65b1841a155e286af8862c2fb7c37d0bfb61e1e8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Сводка: Сведения о гибридных архитектуры и сценарии для Майкрософт на основе SaaS в облаке и услуги (Office 365).'
+ms.openlocfilehash: 53187d53b55eedf1fca4f0b98e34accf454c67df
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915594"
 ---
-# <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Сценарии гибридного облака для Microsoft SaaS (Office 365)
+# <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Гибридные облачные сценарии для SaaS Майкрософт (Office 365)
 
  **Сводка:** Представление об архитектуре гибридного и сценарии для Майкрософт на основе SaaS в облаке и услуги (Office 365).
   
@@ -28,9 +29,9 @@ ms.lasthandoff: 02/09/2018
 
 На рисунке 1 показана архитектура гибридных сценариев на основе Microsoft SaaS для Office 365.
   
-**На рисунке 1: Майкрософт на основе SaaS гибридных сценариев для Office 365**
+**Рис. 1. Гибридные сценарии на основе Microsoft SaaS для Office 365**
 
-![Гибридные сценарии на основе Microsoft SaaS для Office 365](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS.png)
+![Гибридные сценарии на основе Microsoft SaaS для Office 365](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS.png)
   
 Для каждого слоя архитектуры:
   
@@ -58,15 +59,15 @@ ms.lasthandoff: 02/09/2018
     
     Может состоять из имеющихся серверов Exchange, SharePoint и Skype для бизнеса, которые необходимо обновить до последних версий. После этого их можно объединить с аналогичными серверами Office 365 для гибридных сценариев.
     
-Настройка собственных [Office 365 dev/тестовой среды](office-365-dev-test-environment.md).
+Настройте собственную [Office 365 dev/test environment](office-365-dev-test-environment.md).
   
 ## <a name="skype-for-business-2015-hybrid"></a>Гибридный сценарий в Skype для бизнеса 2015
 
 Скайп для гибридных 2015 Business позволяет объединять существующей в локальной среде с Скайп для бизнеса в Интернет. Некоторые пользователи, размещенные локально и некоторые пользователи размещаются в Интернете, но пользователи совместно использовать один домен Session Initiation Protocol (SIP), например contoso.com. В этом гибридной конфигурации можно использовать для переноса из локальной в Office 365 со временем в расписании. Скайп для бизнеса 2015 можно объединить с Exchange Online.
   
-**На рисунке 2: Скайп для бизнеса 2015 гибридной конфигурации**
+**Рис. 2. Гибридная конфигурация Skype для бизнеса 2015**
 
-![Гибридная конфигурация Skype для бизнеса 2015](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB.png)
+![Гибридная конфигурация Skype для бизнеса 2015](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
 На рисунке 2 показано Скайп для бизнеса 2015 гибридной конфигурации, состоящий из локальной Скайп для бизнеса 2015 интерфейсного пула и пограничного сервера связи с Скайп для бизнеса в Интернет в Office 365.
   
@@ -82,9 +83,9 @@ ms.lasthandoff: 02/09/2018
 
 Сценарий "Облачная УАТС со Skype для бизнеса Server" позволяет перенести имеющееся локальное развертывание Skype для бизнеса Server на топологию с возможностью подключения к локальной телефонной сети общего пользования (ТСОП).  
   
-**На рисунке 3: Cloud УАТС с Скайп для Business Server**
+**Рис. 3. Облачная УАТС со Skype для бизнеса Server**
 
-![Облачная УАТС со Skype для бизнеса Server](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB_CloudPBX.png)
+![Облачная УАТС со Skype для бизнеса Server](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB-CloudPBX.png)
   
 На рисунке 3 показаны облачных УАТС с Скайп для конфигурации Business Server, состоящий из локальной, существующей УАТС или Telco шлюз, Скайп для Business Server и PSTN подключенный к УАТС облаке Майкрософт в Office 365, который включает в себя Скайп для бизнеса Онлайн.
   
@@ -102,29 +103,29 @@ ms.lasthandoff: 02/09/2018
 
 Гибридная среда SharePoint объединяет SharePoint Online в Office 365 с локальной фермой SharePoint в оптимальном решении с возможностями обоих продуктов.
   
-**На рисунке 4: Гибридной конфигурации SharePoint**
+**Рис. 4. Гибридная конфигурация SharePoint**
 
-![Гибридная конфигурация SharePoint](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SP.png)
+![Гибридная конфигурация SharePoint](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SP.png)
   
 На рисунке 4 показано гибридной конфигурации SharePoint, состоящий из локальной фермы SharePoint, данными с SharePoint Online в Office 365.
   
 Гибридные сценарии SharePoint
   
-- [Гибридные OneDrive для бизнеса](https://technet.microsoft.com/library/mt147425%28v=office.16%29.aspx)
+- [Гибридная служба OneDrive для бизнеса](https://technet.microsoft.com/library/mt147425%28v=office.16%29.aspx)
     
 - [Гибридные веб-сайтов групп](https://technet.microsoft.com/library/mt346110%28v=office.16%29.aspx)
     
 - [Гибридные B2B экстрасети](https://support.office.com/article/SharePoint-Business-to-Business-Collaboration-Extranet-for-Partners-with-Office-365-7b087413-165a-4e94-8871-4393e0b9c037)
     
-- [Гибридного поиска](https://technet.microsoft.com/library/dn720906%28v=office.16%29.aspx)
+- [Гибридный поиск](https://technet.microsoft.com/library/dn720906%28v=office.16%29.aspx)
     
-- [Гибридные профилей](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)
+- [Гибридные профили](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)
     
 - [Средство выбора гибридного](https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c)
     
     Гибридные сценарии можно легко включить с помощью мастеров, которые автоматически реализуют гибридные конфигурации, доступные в Центре администрирования SharePoint Online в Office 365.
     
-- [Расширяемые гибридного запуска приложения](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
+- [Расширяемое гибридное средство запуска приложений](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
     
     Позволяет пользователям просматривать и использовать видео Office 365, а также приложения и возможности Delve на страницах их локальной фермы SharePoint.
     
@@ -136,9 +137,9 @@ ms.lasthandoff: 02/09/2018
 
 Гибридный сценарий в Exchange Server 2016 позволяет пользователям в сети воспользоваться преимуществами Exchange Online в Office 365, в то время как локальные пользователи смогут и дальше использовать имеющуюся инфраструктуру Exchange Server.  
   
-**На рисунке 5: Exchange 2016 гибридной конфигурации**
+**Рис. 5. Гибридная конфигурация Exchange 2016**
 
-![Гибридная конфигурация Exchange 2016](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_EX.png)
+![Гибридная конфигурация Exchange 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-EX.png)
   
 На рисунке 5 показана конфигурация гибридного Exchange 2016, состоящий из локальных серверов почтовых ящиков Exchange связи с почтовых ящиков в Office 365 и Exchange Online Protection.
   
@@ -146,7 +147,10 @@ ms.lasthandoff: 02/09/2018
   
 Эта гибридная конфигурация:
   
-- Использует существующую инфраструктуру Exchange Server при переходе на Exchange Online со временем в расписании.
+- использует имеющуюся инфраструктуру Exchange Server при постепенном переносе данных на Exchange Online по расписанию;
+
+
+
     
 - позволяет обеспечить поддержку удаленных сайтов без инвестиций в создание инфраструктуры филиалов;
     

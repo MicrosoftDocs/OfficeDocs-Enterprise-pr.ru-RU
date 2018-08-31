@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: Сводка. Проектирование хранилища для облачных служб и платформ корпорации Майкрософт.
-ms.openlocfilehash: 7c8d232c42c203ce1f4fba06d4134693e01e7284
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: 56f7f8316296b43b96903ad8da5f4f4fbf2733d7
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161812"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915674"
 ---
 # <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Облачные хранилища Майкрософт для корпоративных архитекторов
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161812"
   
 В этой статье представлены ссылки на статьи для ИТ-архитекторов о проектировании хранилища для организаций, использующих облачные службы и платформы Майкрософт. Вы также можете просмотреть эту информацию в виде 6-страничного плаката и распечатать его на листах формата A3.
   
-[![Эскиз: модель хранения в облаке Майкрософт](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+[![Эскиз: модель хранения в облаке Майкрософт](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
 ](https://www.microsoft.com/download/details.aspx?id=49552)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | [Другие языки](https://www.microsoft.com/download/details.aspx?id=49552)

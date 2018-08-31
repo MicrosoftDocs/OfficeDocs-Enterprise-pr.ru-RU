@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Сведения о настройке OneDrive для бизнеса с поддержкой нескольких регионов.
-ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 1817eee1bb2ceefa0e2e167e327af417dd0c517d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21549970"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915254"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Настройка клиента OneDrive для бизнеса с поддержкой нескольких регионов
 
@@ -112,7 +112,7 @@ ms.locfileid: "21549970"
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Синхронизация предпочтительного расположения данных пользователя с помощью AD Connect 
 
-Если пользователи вашей организации синхронизируются из системы локальной службы Active Directory (AD) в Azure Active Directory (AAD), соответствующий параметр PreferredDataLocation должен быть заполнен в AD и синхронизирован с AAD. Чтобы настроить синхронизацию предпочтительных расположений данных из локальной службы AD в AAD, следуйте инструкциям из статьи [Синхронизация Azure AD Connect: внесение изменений в конфигурацию по умолчанию](https://docs.microsoft.com/ru-RU/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration).
+Если пользователи вашей организации синхронизируются из системы локальной службы Active Directory (AD) в Azure Active Directory (AAD), соответствующий параметр PreferredDataLocation должен быть заполнен в AD и синхронизирован с AAD. Чтобы настроить синхронизацию предпочтительных расположений данных из локальной службы AD в AAD, следуйте инструкциям из статьи [Синхронизация Azure AD Connect: внесение изменений в конфигурацию по умолчанию](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration).
 
 Рекомендуем включить настройку предпочтительного расположения данных пользователя в стандартный рабочий процесс создания пользователей.
 
@@ -129,7 +129,7 @@ ms.locfileid: "21549970"
 
 2.  Запустите командлет `Connect-MsolService` и введите учетные данные глобального администратора для своего клиента.
 
-3.  Запустите командлет [Set-MsolUser](https://docs.microsoft.com/ru-RU/powershell/msonline/v1/set-msoluser), чтобы задать предпочтительное расположение данных для каждого из пользователей. Пример:
+3.  Запустите командлет [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser), чтобы задать предпочтительное расположение данных для каждого из пользователей. Пример:
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
@@ -137,7 +137,7 @@ ms.locfileid: "21549970"
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![](media/multi-geo-tenant-configuration_image3.png)
+![](media/multi-geo-tenant-configuration-image3.png)
 
 Рекомендуем включить настройку предпочтительного расположения данных пользователя в стандартный рабочий процесс создания пользователей.
 

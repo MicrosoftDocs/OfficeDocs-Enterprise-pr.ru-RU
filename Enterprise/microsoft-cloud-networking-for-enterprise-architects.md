@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 'Сводка: в этой статье изложены сведения, необходимые при разработке сетей для облачных служб и платформ корпорации Майкрософт.'
-ms.openlocfilehash: eebfb0537ba3166ded84c899f22efcd11825601b
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: ac499dde3db65d3594704d13e40aad6e6bd45f94
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161872"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915404"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Облачные сети Майкрософт для корпоративных архитекторов
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161872"
   
 В этой статье представлены ссылки на статьи для ИТ-архитекторов, в которых рассказывается о проектировании сетей для организаций, использующих облачные службы и платформы Майкрософт. Вы также можете просмотреть этот документ в виде 12-страничного плаката и распечатать его на листах формата A3.
   
-[![Эскиз: модель организации сети в облаке Майкрософт](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+[![Эскиз: модель организации сети в облаке Майкрософт](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [Другие языки](https://www.microsoft.com/download/details.aspx?id=54425)

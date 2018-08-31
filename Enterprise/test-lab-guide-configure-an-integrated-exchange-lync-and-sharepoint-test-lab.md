@@ -9,25 +9,28 @@ ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 'Сводка: Сведения о создании интегрированной тестовой лабораторной среды, которая содержит сервер под управлением Exchange Server 2013, сервер под управлением Lync Server 2013 и сервера под управлением SharePoint Server 2013.'
-ms.openlocfilehash: a15bdefe1749bca98933a8b9a4c4874130732eda
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: bb668dcaff53f37127f43551cb4b108589a39def
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915604"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Руководство по лаборатории тестирования. Настройка интегрированной лаборатории тестирования Exchange, Lync и SharePoint
 
  **Сводка:** Сведения о создании интегрированной тестовой лабораторной среды, которая содержит сервер под управлением Exchange Server 2013, сервер под управлением Lync Server 2013 и сервера под управлением SharePoint Server 2013.
  
-**Просмотрите интегрированной Exchange, Lync и SharePoint Обзорное видео по лаборатории тестирования**
+**Посмотрите видеообзор руководства по созданию интегрированной лаборатории тестирования Exchange, Lync и SharePoint**
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false]
  
 Лаборатории тестирования, результаты из этой конфигурации, которая включает в себя проверки подлинности сервер сервер между все три типа серверов, можно использовать для построения в работе и демонстрации продукта несколькими сценарии и решения, использующие сервер под управлением Exchange Server 2013 сервер под управлением Lync Server 2013 и сервера под управлением SharePoint Server 2013.
   
-В этом документе представлены инструкции для выполнения следующих операций:
+В этом документе содержатся инструкции для выполнения указанных ниже операций.
   
 1. Настройка лаборатории тестирования базовой конфигурации Windows Server 2012.
     
@@ -49,13 +52,13 @@ ms.lasthandoff: 04/20/2018
     
 Сведения о настройке этой лаборатории тестирования в Hyper-V видеть [размещения интегрированной Exchange, SharePoint и Lync, тестовой лаборатории с помощью Windows Server 2012 Hyper-V](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx).
   
-## <a name="download-the-test-lab-guide"></a>Загрузить это руководство
+## <a name="download-the-test-lab-guide"></a>Скачать это руководство по лаборатории тестирования
 
 [Руководство по тестовой лаборатории: настройка интегрированной Exchange, Lync и SharePoint тестовой лаборатории](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
-## <a name="see-also"></a>Понятия
+## <a name="see-also"></a>См. также
 
-[Руководства для лабораторий тестирования](https://go.microsoft.com/fwlink/p/?LinkId=202817)
+[Руководства по лаборатории тестирования](https://go.microsoft.com/fwlink/p/?LinkId=202817)
 
 
 

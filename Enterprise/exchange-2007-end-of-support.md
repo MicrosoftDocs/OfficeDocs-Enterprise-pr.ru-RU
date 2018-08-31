@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: На 11 апреля 2017 Exchange Server 2007 достигается конец поддержки. Если вы еще не уже начали миграции от Exchange 2007 в Office 365 или Exchange 2016, теперь — это время начала планирования.
-ms.openlocfilehash: 4bb8933977c280b4bfaa686e858fc818a1dc4ace
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: 674de8904d03e024a8a75b945b5ef94319214f92
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169811"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915574"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки Exchange 2007;
 
@@ -191,7 +191,7 @@ Office 365 также получает новые функции и каждый
     
 - [Мастер гибридной конфигурации](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
     
-- [Мастер настройки гибридной конфигурации: вопросы и ответы](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
+- [Мастер гибридной конфигурации: вопросы и ответы](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
     
 - [Предварительные условия для гибридного развертывания](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
     

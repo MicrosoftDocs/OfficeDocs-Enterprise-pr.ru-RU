@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: Сводка. Воспользуйтесь этим руководством по лабораториям тестирования при создании среды разработки и тестирования, которая включает все облачные решения Майкрософт.
-ms.openlocfilehash: 29fcb1108ceac6aa488ca71d723789a7a2e6c409
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915634"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Среда разработки и тестирования One Microsoft Cloud
 
@@ -27,7 +30,7 @@ ms.lasthandoff: 04/27/2018
   
 Инструкции из этой статьи помогут создать имитируемую интрасеть в службах инфраструктуры Microsoft Azure, а затем добавить подписки на Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS) и Microsoft Dynamics 365. В результате вы получите упрощенную организацию, которая использует все облачные решения Майкрософт одновременно в одной среде тестирования и разработки.  
   
-![Этап 3 для среды разработки и тестирования One Microsoft Cloud с Azure, Office 365, EMS и Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Этап 3 для среды разработки и тестирования One Microsoft Cloud с Azure, Office 365, EMS и Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 Полученную в итоге конфигурацию можно использовать, чтобы:
   
@@ -47,7 +50,7 @@ ms.lasthandoff: 04/27/2018
   
 **Рисунок 1. Имитированная интрасеть в Azure с Office 365**
 
-![Среда разработки и тестирования Office 365 с DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Среда разработки и тестирования Office 365 с DirSync](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
 > Срок действия пробной версии Azure — 30 дней. Пробная подписка на Office 365 корпоративный E5 действительна в течение 30 дней, и этот срок можно легко продлить еще на 30 дней. Чтобы создать постоянную среду разработки и тестирования, создайте новую платную подписку на Azure и новую платную подписку на Office 365 корпоративный E5 с небольшим количеством лицензий. 
@@ -93,7 +96,7 @@ ms.lasthandoff: 04/27/2018
   
 **Рисунок 2. Имитированная интрасеть в Azure с Office 365 и EMS**
 
-![Этап 2 для среды разработки и тестирования One Microsoft Cloud с Azure, Office 365 и EMS](images/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
+![Этап 2 для среды разработки и тестирования One Microsoft Cloud с Azure, Office 365 и EMS](media/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
 ## <a name="phase-3-add-dynamics-365"></a>Этап 3. Добавление Dynamics 365
 
@@ -171,7 +174,7 @@ ms.lasthandoff: 04/27/2018
   
 **Рисунок 3. Имитированная интрасеть в Azure с Office 365, EMS и Dynamics 365**
 
-![Этап 3 для среды разработки и тестирования One Microsoft Cloud с Azure, Office 365, EMS и Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Этап 3 для среды разработки и тестирования One Microsoft Cloud с Azure, Office 365, EMS и Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 ## <a name="next-steps"></a>Дальнейшие действия
 

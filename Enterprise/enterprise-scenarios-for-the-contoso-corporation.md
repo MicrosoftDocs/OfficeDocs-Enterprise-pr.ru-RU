@@ -1,5 +1,5 @@
 ---
-title: "Корпоративные сценарии для корпорации Contoso"
+title: Корпоративные сценарии для корпорации Contoso
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,27 +8,30 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8f004c92-773e-4eb0-8bb5-24494ca538d3
-description: "Сводка: Как вымышленного, но представитель международной организации — это адресации его business должно со сценариями облачных enterprise."
-ms.openlocfilehash: 3964ed03e8437ce50aab10f1209a7afb6e06bc8b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: Сводка. На примере фиктивной компании показано, как типичная глобальная организация удовлетворяет бизнес-потребности с помощью корпоративного облака.
+ms.openlocfilehash: d258b9b37b1d9399cce159c72c4d7599ff37d5d4
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915134"
 ---
 # <a name="enterprise-scenarios-for-the-contoso-corporation"></a>Корпоративные сценарии для корпорации Contoso
 
- **Сводка:** Как вымышленного, но представитель международной организации — это адресации его business должно со сценариями облачных enterprise.
+ **Сводка.** На примере фиктивной компании показано, как типичная глобальная организация удовлетворяет бизнес-потребности с помощью корпоративного облака.
   
 Организовав сетевую инфраструктуру, а также инфраструктуры безопасности и идентификации, корпорация Contoso реализовала такие сценарии использования корпоративного облака:
   
-- [Перемещение данных журнала транзакций в облако](moving-historical-transaction-data-to-the-cloud.md)
+- [Перемещение в облако транзакционных данных за прошлые периоды](moving-historical-transaction-data-to-the-cloud.md)
     
     Contoso реализован растянутых базы данных, чтобы уменьшить его локальных данных дисковое пространство, а также под управлением затраты на каждый день.
     
-- [Безопасные сайты SharePoint Online группы для конфиденциальных и конфиденциальными активов](secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets.md)
+- [Защита сайтов групп SharePoint Online, содержащих конфиденциальные и строго конфиденциальные ресурсы](secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets.md)
     
     Contoso реализован защита конфиденциальных и их конфиденциальными SharePoint Online для удобства, но безопасной совместной работы для его руководителей и центры справочных материалов.
     

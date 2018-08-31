@@ -1,5 +1,5 @@
 ---
-title: "Блокировка учетных записей пользователей с помощью PowerShell в Office 365"
+title: Блокировка учетных записей пользователей с помощью PowerShell в Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +13,13 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: "Описание способов блокировать и разблокировать доступ к учетным записям Office 365 с помощью Office 365 PowerShell."
-ms.openlocfilehash: 34d144c982210ddc9d557b6094f71706f8edbb7f
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Описание способов блокировать и разблокировать доступ к учетным записям Office 365 с помощью Office 365 PowerShell.
+ms.openlocfilehash: 748d24f95f9dca651158dae2fe15e9c655eb021e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915414"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Блокировка учетных записей пользователей с помощью PowerShell в Office 365
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/14/2018
   
 Блокирование доступа к учетной записи Office 365 не позволяет другим пользователям с помощью учетной записи для входа и доступ к службам и данных в организации Office 365. При блокировании доступа к учетной записи, пользователь получает сообщение об ошибке при попытке входа в:
   
-![Заблокированная учетная запись Office 365.](images/o365_powershell_account_blocked.png)
+![Заблокированная учетная запись Office 365.](media/o365-powershell-account-blocked.png)
   
 Office 365 PowerShell можно использовать для блокировки доступа к отдельным и несколько учетных записей пользователей.
   
@@ -161,7 +162,6 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 ```
 
 ## <a name="see-also"></a>См. также
-<a name="SeeAlso"> </a>
 
 Сведения об управлении пользователями с помощью Office 365 PowerShell см. в следующих статьях:
   

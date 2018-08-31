@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: Сводка. Создание упрощенной интрасети в качестве среды разработки и тестирования в Microsoft Azure.
-ms.openlocfilehash: 03e729e2211320cac1adc88258e59b18b3ff0719
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: f065f9fa31b6793933dc4eec0d840bd1320a8891
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215851"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915284"
 ---
 # <a name="base-configuration-devtest-environment"></a>Базовая конфигурация среды разработки и тестирования
 
@@ -30,7 +32,7 @@ ms.locfileid: "20215851"
   
 **Рис. 1. Базовая конфигурация среды разработки и тестирования**
 
-![Этап 4. Базовая конфигурация в Azure, включающая виртуальную машину CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Этап 4. Базовая конфигурация в Azure, включающая виртуальную машину CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 Среда разработки и тестирования с базовой конфигурацией, представленная на рис. 1, состоит из корпоративной подсети в облачной виртуальной сети Azure под названием TestLab. Последняя является симуляцией упрощенной частной интрасети, подключенной к Интернету. Она содержит три виртуальные машины Azure под управлением Windows Server 2016.
   
@@ -67,7 +69,7 @@ ms.locfileid: "20215851"
 > [!NOTE]
 > За использование виртуальных машин Azure взимается повременная плата. Счет будет выставляться по вашей бесплатной пробной версии, подписке MSDN или платной подписке. Дополнительные сведения о стоимости использования виртуальных машин Azure см. в статьях [Цены на виртуальные машины](https://azure.microsoft.com/pricing/details/virtual-machines/) и [Калькулятор цен Azure](https://azure.microsoft.com/pricing/calculator/). Сведения о минимизации расходов см. в разделе [Минимизация расходов на виртуальные машины в тестовой среде в Azure](base-configuration-dev-test-environment.md#mincost). 
   
-![Руководства по лаборатории тестирования в Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Руководства по лаборатории тестирования в Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
@@ -131,7 +133,7 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 
 Это ваша текущая конфигурация.
   
-![Этап 1. Базовая конфигурация в Azure, включающая виртуальную сеть и подсеть](images/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
+![Этап 1. Базовая конфигурация в Azure, включающая виртуальную сеть и подсеть](media/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
   
 ## <a name="phase-2-configure-dc1"></a>Этап 2. Настройка DC1
 
@@ -235,7 +237,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 Это ваша текущая конфигурация.
   
-![Этап 2. Базовая конфигурация в Azure, включающая виртуальную машину DC1](images/49069908-29c3-4d73-87f7-debbea067261.png)
+![Этап 2. Базовая конфигурация в Azure, включающая виртуальную машину DC1](media/49069908-29c3-4d73-87f7-debbea067261.png)
   
 ## <a name="phase-3-configure-app1"></a>Этап 3. Настройка APP1
 
@@ -289,7 +291,7 @@ New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 
 Это ваша текущая конфигурация.
   
-![Этап 3. Базовая конфигурация в Azure, включающая виртуальную машину APP1](images/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
+![Этап 3. Базовая конфигурация в Azure, включающая виртуальную машину APP1](media/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
   
 ## <a name="phase-4-configure-client1"></a>Этап 4. Настройка CLIENT1
 
@@ -354,7 +356,7 @@ Restart-Computer
     
 Это ваша окончательная конфигурация.
   
-![Этап 4. Базовая конфигурация в Azure, включающая виртуальную машину CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Этап 4. Базовая конфигурация в Azure, включающая виртуальную машину CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 Теперь ваша базовая конфигурация в Azure готова к разработке и тестированию приложений, а также к созданию дополнительных тестовых сред. 
   

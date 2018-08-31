@@ -14,11 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Сводка: Использование Office 365 PowerShell для управления SharePoint Online группы сайтов.'
-ms.openlocfilehash: 881e67b7eb2d8bb5e04f83e28569aa54341d16b9
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: a9fddf33b2f29e7b4e8ed6b86c2433c7ca19a9fc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915354"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Управление группами сайтов SharePoint Online с помощью Office 365 PowerShell
 
@@ -32,12 +33,12 @@ ms.lasthandoff: 05/07/2018
 
 ## <a name="view-sharepoint-online-with-office-365-powershell"></a>Просмотр SharePoint Online с помощью Office 365 PowerShell
 
-Центр администрирования SharePoint Online имеет некоторые простые в использовании методы для управления группами сайтов. Предположим, например, вам необходимо просмотреть групп и членов группы, для протокола https\://litwareinc.sharepoint.com/sites/finance сайта. Вот что необходимо сделать, чтобы:
+Центр администрирования SharePoint Online имеет некоторые простые в использовании методы для управления группами сайтов. Предположим, например, чтобы посмотреть на группы и участники групп, `https://litwareinc.sharepoint.com/sites/finance` сайта. Вот что необходимо сделать, чтобы:
 
 1. В центре администрирования Office 365 щелкните **ресурсы** > **сайтов**и затем щелкните URL-адрес сайта.
-2. В диалоговом окне семейства сайтов нажмите кнопку **Перейти на этом сайте**.
-3. На странице "сайт" щелкните значок **Параметры** (находится в правом верхнем углу страницы) и выберите пункт **Параметры сайта**:</br>
-![SharePoint Online параметры сайта](images/spo-site-settings.png)</br>
+2. В диалоговом окне Семейство веб-сайтов выберите **Перейти на сайт**.
+3. На странице сайта щелкните значок **Параметры** (в верхнем правом углу страницы) и нажмите кнопку **Параметры сайта**.</br>
+![SharePoint Online параметры сайта](media/spo-site-settings.png)</br>
 4. На странице "Параметры узла" щелкните **разрешения сайтов** в разделе **пользователи и разрешения**.
 
 И затем повторить процесс для следующего сайта, который необходимо просмотреть.
@@ -66,9 +67,9 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 В обоих случаях должно отобразиться что-то вроде этого:
 
-![SharePoint Online группы сайтов](images/SPO-site-groups.png)
+![SharePoint Online группы сайтов](media/SPO-site-groups.png)
 
-Далее представлены все группы, которые были созданы для сайта https\:/ / litwareinc.sharepoint.com/sites/finance, а также всех пользователей, назначенных этим группам. Имена групп — желтого цвета, которые помогут вам имена другая группа от их участников.
+Далее представлены все группы, которые были созданы для сайта `https://litwareinc.sharepoint.com/sites/finance`, также все пользователи, которым назначены этим группам. Имена групп — желтого цвета, которые помогут вам имена другая группа от их участников.
 
 Другой пример: Вот набор команд, содержит список групп и всех членство в группах, для всех сайтов SharePoint Online.
 
@@ -90,9 +91,9 @@ foreach ($y in $x)
     
 ## <a name="see-also"></a>См. также
 
-[Подключение к SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Подключение к PowerShell в SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Создание сайтов SharePoint Online и добавление пользователей с Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
+[Создание сайтов и добавление пользователей в SharePoint Online с помощью Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 [Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell](manage-sharepoint-users-and-groups-with-powershell.md) .
 

@@ -1,5 +1,5 @@
 ---
-title: "Архитектуры Microsoft Azure для SharePoint 2013"
+title: Архитектуры Microsoft Azure для SharePoint 2013
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: "Сводка. Решения SharePoint 2013 можно размещать на виртуальных машинах Microsoft Azure. Узнайте, какие типы решений хорошо для этого подходят и как настроить Microsoft Azure для их размещения."
-ms.openlocfilehash: 5156f3e8cabb3acabc7ad23a680a016c200c676e
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: Сводка. Решения SharePoint 2013 можно размещать на виртуальных машинах Microsoft Azure. Узнайте, какие типы решений хорошо для этого подходят и как настроить Microsoft Azure для их размещения.
+ms.openlocfilehash: f7d34f5f9640a8f404265433806ccc39a35c8fd5
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915384"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Архитектуры Microsoft Azure для SharePoint 2013
 
@@ -53,7 +54,7 @@ ms.lasthandoff: 02/09/2018
 
 Хотя в этой статье используются примеры топологий SharePoint, вы можете использовать эти проектные решения с любой топологией фермы SharePoint. Прежде чем разрабатывать среду Azure, используйте указанные ниже топологию, архитектуру, емкость и производительность для разработки фермы SharePoint.
   
-- [Архитектура SharePoint 2013 для ИТ-специалистов](http://technet.microsoft.com/ru-RU/sharepoint/fp123594.aspx)
+- [Архитектура SharePoint 2013 для ИТ-специалистов](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
     
 - [Plan for performance and capacity management in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
@@ -76,7 +77,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рисунок 1. Локальная среда с виртуальной сетью в Azure**
 
-![Конструкция виртуальной сети Microsoft Azure для решения SharePoint. Одна подсеть для шлюза Azure. Одна подсеть для виртуальных машин.](images/OPrrasconWA_AZarch.png)
+![Конструкция виртуальной сети Microsoft Azure для решения SharePoint. Одна подсеть для шлюза Azure. Одна подсеть для виртуальных машин.](media/OPrrasconWA-AZarch.png)
   
 На этой схеме:
   
@@ -92,7 +93,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рисунок 2. Использование шлюза Azure и локального устройства шлюза для установки подключения типа "сеть-сеть" между локальной средой и Azure**
 
-![Локальная среда подключена к виртуальной сети Azure с помощью VPN-подключения типа "сеть-сеть" или подключения ExpressRoute](images/AZarch_VPNgtwyconnct.png)
+![Локальная среда подключена к виртуальной сети Azure с помощью VPN-подключения типа "сеть-сеть" или подключения ExpressRoute](media/AZarch-VPNgtwyconnct.png)
   
 На этой схеме:
   
@@ -110,7 +111,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рисунок 3. Гибридная конфигурация домена Active Directory**
 
-![Две виртуальные машины, развернутые в виртуальной сети Azure и подсети фермы SharePoint — это реплики контроллеров домена и DNS-серверы](images/AZarch_HyADdomainConfig.png)
+![Две виртуальные машины, развернутые в виртуальной сети Azure и подсети фермы SharePoint — это реплики контроллеров домена и DNS-серверы](media/AZarch-HyADdomainConfig.png)
   
 В отличие от предыдущих схем, на этой схеме в подсеть AD на сервере Windows и DNS добавлены две виртуальные машины. Это реплики контроллеров доменов и DNS-серверов. Они являются расширением локальной среды AD на сервере Windows. 
   
@@ -134,7 +135,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рисунок 4. Размещение виртуальных машин SharePoint**
 
-![Серверы баз данных и роли сервера SharePoint добавлены в виртуальную сеть Azure в подсети фермы SharePoint](images/AZarch_SPVMsinCloudSer.png)
+![Серверы баз данных и роли сервера SharePoint добавлены в виртуальную сеть Azure в подсети фермы SharePoint](media/AZarch-SPVMsinCloudSer.png)
   
 В отличие от предыдущих схем, на этой схеме на соответствующие уровни добавлены роли серверов фермы SharePoint.
   
@@ -150,7 +151,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рисунок 5. Использование групп доступности Azure для обеспечения высокой доступности уровней фермы SharePoint**
 
-![Конфигурация групп доступности в инфраструктуре Azure для решения SharePoint 2013](images/AZenv_WinAzureAvailSetsHA.png)
+![Конфигурация групп доступности в инфраструктуре Azure для решения SharePoint 2013](media/AZenv-WinAzureAvailSetsHA.png)
   
 На этой схеме показана конфигурация групп доступности в инфраструктуре Azure. Перечисленные ниже роли используют отдельную группу доступности.
   
@@ -170,7 +171,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рисунок 6. Пример планирования емкости и производительности в трехуровневой ферме**
 
-![Стандартная архитектура SharePoint 2013 Internet Sites с распределением компонентов, которое соответствует определенным требованиям к мощности и производительности](images/AZarch_CapPerfexmpArch.png)
+![Стандартная архитектура SharePoint 2013 Internet Sites с распределением компонентов, которое соответствует определенным требованиям к мощности и производительности](media/AZarch-CapPerfexmpArch.png)
   
 На этой схеме:
   
@@ -186,7 +187,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рисунок 7. Уровень серверов приложений перед точной настройкой**
 
-![Пример уровня серверов приложений SharePoint Server 2013 перед настройкой для групп доступности Microsoft Azure](images/AZarch_AppServtierBefore.png)
+![Пример уровня серверов приложений SharePoint Server 2013 перед настройкой для групп доступности Microsoft Azure](media/AZarch-AppServtierBefore.png)
   
 На этой схеме:
   
@@ -202,7 +203,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рисунок 8. Уровень серверов приложений после точной настройки**
 
-![Пример уровня серверов приложений SharePoint Server 2013 после настройки для групп доступности Microsoft Azure](images/AZarch_AppServtierAfter.png)
+![Пример уровня серверов приложений SharePoint Server 2013 после настройки для групп доступности Microsoft Azure](media/AZarch-AppServtierAfter.png)
   
 На этой схеме показаны все три сервера приложений, настроенных одинаково с одними и теми же четырьмя компонентами.
   
@@ -210,7 +211,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рисунок 9. Готовая ферма SharePoint в службах инфраструктуры Azure**
 
-![Пример фермы SharePoint 2013 в службах инфраструктуры Azure с виртуальной сетью, подключением между организациями, подсетями, виртуальными машинами и группами доступности](images/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Пример фермы SharePoint 2013 в службах инфраструктуры Azure с виртуальной сетью, подключением между организациями, подсетями, виртуальными машинами и группами доступности](media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 На этой схеме показана ферма SharePoint, реализованная в службах инфраструктуры Azure: группы доступности обеспечивают домены сбоя для серверов на каждом уровне.
   

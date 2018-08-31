@@ -1,5 +1,5 @@
 ---
-title: "Подписки, лицензии и учетные записи корпорации Contoso"
+title: Подписки, лицензии и учетные записи корпорации Contoso
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ec3b08f0-288c-4ba3-b822-dbf6352fa761
-description: "Сводка: Сведения о структура подписок облачной организации Contoso, лицензий, учетные записи пользователей и клиентов."
-ms.openlocfilehash: 6e62fbbc0f52019e5d233fc73992b000952344f5
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Сводка: Сведения о структура подписок облачной организации Contoso, лицензий, учетные записи пользователей и клиентов.'
+ms.openlocfilehash: cd196e0800f6a39973f4c5c82001ed3e9c330fee
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915514"
 ---
 # <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>Подписки, лицензии и учетные записи корпорации Contoso
 
@@ -44,9 +47,9 @@ ms.lasthandoff: 02/09/2018
 
 Организация Contoso определила следующую структуру для себя и своих подписок, лицензий, учетных записей и клиентов:
   
-**На рисунке 1: Contoso организации, подписок, лицензий, учетные записи пользователей и клиентов**
+**Рис. 1. Организация Contoso и ее подписки, лицензии, учетные записи пользователей и клиенты**
 
-![Организация Contoso и ее подписки, лицензии, учетные записи пользователей и клиенты](images/Contoso_Poster/Subscriptions.png)
+![Организация Contoso и ее подписки, лицензии, учетные записи пользователей и клиенты](media/Contoso-Poster/Subscriptions.png)
   
 На рис. 1 показано, что организация Contoso включает множество подписок и связана с общим клиентом Azure AD, содержащим учетные записи пользователей, которые синхронизируются из леса Windows Server AD на contoso.com.
   
@@ -60,7 +63,8 @@ ms.lasthandoff: 02/09/2018
     
   - Продукт Командной с 5000 лицензий
     
-  - Продукт Dynamics 365 с 100 лицензий
+  - продукт Dynamics 365 с 100 лицензиями;
+
     
   - множество подписок Azure для разных регионов.
     
@@ -68,7 +72,8 @@ ms.lasthandoff: 02/09/2018
     
 Для клиентов Contoso:
   
-- Для SaaS облака клиента — региональных расположение, которое содержит серверов, обеспечивающих работу облачных служб. Contoso выбрал европейских региона для размещения его клиентов Office 365, Командной и Dynamics 365. 
+- Что касается облачных предложений SaaS, клиент представляет собой региональное расположение, в котором размещены серверы, обеспечивающие облачные службы. Организация Contoso выбрала европейский регион для размещения своих клиентов Office 365, EMS и Dynamics 365.
+  
     
 - Azure PaaS служб и приложений и рабочие нагрузки ИТ IaaS может иметь аренде в любой Azure центра обработки данных по всему миру. Клиент Azure AD — это определенный экземпляр Azure AD, содержащий учетные записи и группы.
     
@@ -78,11 +83,14 @@ ms.lasthandoff: 02/09/2018
   
 ## <a name="contosos-azure-subscriptions"></a>Contoso Azure подписки
 
-На рисунке 2 показано, иерархические структуры Contoso Azure подписки:
-  
-**На рисунке 2: Структура организации Contoso для Azure подписок**
+На рис. 2 показано иерархическую структуру подписок Azure организации Contoso: 
 
-![Структура подписок Azure для Contoso](images/Contoso_Poster/Subscriptions_Nested.png)
+
+
+  
+**Рис. 2: Структура подписок Azure организации Contoso**
+
+![Структура подписок Azure для Contoso](media/Contoso-Poster/Subscriptions-Nested.png)
   
 - Contoso находится на верхнем уровне по соглашению Enterprise с корпорацией Майкрософт.
     

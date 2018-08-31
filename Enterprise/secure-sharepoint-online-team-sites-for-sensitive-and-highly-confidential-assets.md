@@ -1,5 +1,5 @@
 ---
-title: "Защита сайтов групп SharePoint Online, содержащих конфиденциальные и строго конфиденциальные ресурсы"
+title: Защита сайтов групп SharePoint Online, содержащих конфиденциальные и строго конфиденциальные ресурсы
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
-description: "Сводка. Узнайте, как в компании Contoso реализованы защита конфиденциальных данных и строго конфиденциальные сайты групп SharePoint Online, обеспечивающие простую, но безопасную совместную работу руководителей и исследовательских центров."
-ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: Сводка. Узнайте, как в компании Contoso реализованы защита конфиденциальных данных и строго конфиденциальные сайты групп SharePoint Online, обеспечивающие простую, но безопасную совместную работу руководителей и исследовательских центров.
+ms.openlocfilehash: 23511e4156bb04e8bacf970913b00ed36e8ff9c8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914864"
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Защита сайтов групп SharePoint Online, содержащих конфиденциальные и строго конфиденциальные ресурсы
 
@@ -30,7 +33,7 @@ ms.lasthandoff: 02/09/2018
   
 **Рис. 1. Сравнение защиты конфиденциальных данных и строго конфиденциальных сайтов групп SharePoint Online**
 
-![Защита конфиденциальных данных и строго конфиденциальные сайты групп SharePoint Online](images/Contoso_Poster/SP_Solution.png)
+![Защита конфиденциальных данных и строго конфиденциальные сайты групп SharePoint Online](media/Contoso-Poster/SP-Solution.png)
   
 Чтобы создать защищенные сайты групп SharePoint Online для руководителей и исследовательских групп, компания Contoso выполнила следующие действия:
   

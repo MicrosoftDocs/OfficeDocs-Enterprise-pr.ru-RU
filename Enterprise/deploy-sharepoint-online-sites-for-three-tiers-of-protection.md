@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: Сводка. Сведения о создании и настройке сайтов группы в SharePoint Online для применения различных уровней защиты информации.
-ms.openlocfilehash: 84b455809e210fb40d4a92396b2d8c4eb18245b1
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 6103675941802fcdee50c06ac3212d90f95c6d35
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631400"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915624"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Развертывание сайтов SharePoint Online с тремя уровнями защиты
 
@@ -54,7 +56,7 @@ ms.locfileid: "19631400"
     
 Ниже показана полученная в итоге конфигурация.
   
-![Базовый уровень защиты для общедоступного сайта группы SharePoint Online.](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![Базовый уровень защиты для общедоступного сайта группы SharePoint Online.](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>Частный
 
@@ -80,7 +82,7 @@ ms.locfileid: "19631400"
     
 Ниже показана полученная в итоге конфигурация.
   
-![Базовый уровень защиты для частного сайта группы SharePoint Online.](images/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![Базовый уровень защиты для частного сайта группы SharePoint Online.](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>Конфиденциальные сайты группы SharePoint Online
 
@@ -142,7 +144,7 @@ ms.locfileid: "19631400"
     
 На новом сайте группы SharePoint Online настройте разрешения, выполнив описанные ниже действия.
   
-1. Определите имя участника-пользователя (UPN) для ИТ-администратора или другого человека, который будет обрабатывать запросы на получение доступа к сайту и отвечать на них (пример имени участника-пользователя: reginap@contoso.com). Напишите это имя участника-пользователя здесь: ![](./images/Common_Images/TableLine.png).
+1. Определите имя участника-пользователя (UPN) для ИТ-администратора или другого человека, который будет обрабатывать запросы на получение доступа к сайту и отвечать на них (пример имени участника-пользователя: reginap@contoso.com). Напишите это имя участника-пользователя здесь: ![](./media/Common-Images/TableLine.png).
     
 2. На панели инструментов щелкните значок параметров и выберите вариант **Разрешения для сайта**.
     
@@ -196,7 +198,7 @@ ms.locfileid: "19631400"
     
 Ниже показана полученная в итоге конфигурация.
   
-![Уровень защиты для конфиденциальных данных в случае изолированного сайта группы SharePoint Online.](images/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![Уровень защиты для конфиденциальных данных в случае изолированного сайта группы SharePoint Online.](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 Благодаря членству в одной из групп доступа участники сайта теперь могут безопасно работать с ресурсами сайта.
   
@@ -256,7 +258,7 @@ ms.locfileid: "19631400"
     
 Ниже показана полученная в итоге конфигурация.
   
-![Уровень защиты строго конфиденциальных данных для изолированного сайта группы SharePoint Online.](images/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![Уровень защиты строго конфиденциальных данных для изолированного сайта группы SharePoint Online.](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 Благодаря членству в одной из групп доступа участники сайта теперь могут безопасно работать с ресурсами сайта.
   

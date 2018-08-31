@@ -1,5 +1,5 @@
 ---
-title: "Интеграция с Exchange Online для среды разработки и тестирования Office 365 и Dynamics 365"
+title: Интеграция с Exchange Online для среды разработки и тестирования Office 365 и Dynamics 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
-description: "Сводка. Воспользуйтесь этим руководством, чтобы включить интеграцию Dynamics 365 для Exchange Online в пробной подписке Office 365."
-ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: Сводка. Воспользуйтесь этим руководством, чтобы включить интеграцию Dynamics 365 для Exchange Online в пробной подписке Office 365.
+ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915504"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Интеграция с Exchange Online для среды разработки и тестирования Office 365 и Dynamics 365
 
@@ -39,13 +42,13 @@ Microsoft Dynamics 365 позволяет хранить всю переписк
 
 Выполните следующие действия, чтобы настроить почтовый ящик глобального администратора для интеграции Dynamics 365 и Exchange Online:
   
-1. Откройте сайт [http://portal.office.com](http://portal.office.com) в окне браузера в анонимном режиме и войдите с помощью учетной записи глобального администратора Office 365.
+1. С помощью закрытого сеанса браузера, перейдите к [http://portal.office.com](http://portal.office.com) и выполнить вход с помощью учетной записи глобального администратора Office 365.
     
 2. На **домашней странице Microsoft Office** щелкните плитку **Почта**.
     
 3. На новой вкладке **Почта** нажмите **Создать** и обратите внимание на значок "Мои шаблоны" в нижнем углу области под полем для ввода сообщения.
     
-     ![Пустое новое сообщение электронной почты без интеграции с Dynamics 365.](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
+     ![Пустое новое сообщение электронной почты без интеграции с Dynamics 365.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
 4. Нажмите **Отменить** и оставьте вкладку **Почта** открытой.
     
@@ -87,13 +90,13 @@ Microsoft Dynamics 365 позволяет хранить всю переписк
     
 6. На новой вкладке **Почта** нажмите **Создать**. Обратите внимание на значок Dynamics 365 в нижнем углу области под полем для ввода сообщения.
     
-     ![Пустое новое сообщение с интеграцией с Dynamics 365; отображается новый значок.](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
+     ![Пустое новое сообщение с интеграцией с Dynamics 365; отображается новый значок.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
 7. Щелкните значок Dynamics 365. Вы увидите панель **Dynamics 365**, на которой сможете отслеживать это сообщение, а также просматривать шаблоны, литературу и статьи.
     
 8. В поле **Кому** сообщения электронной почты введите **alex.y.wu@outlook.com** и нажмите **Повторить** на панели **Dynamics 365**. Вы увидите раздел **Получатели** на панели **Dynamics 365** с информацией о контакте Alex Wu из приложения "Продажи", в которое в рамках пробной подписки были добавлены демонстрационные данные.
     
-     ![Область сведений для контакта по продажам, сохраненного в Dynamics 365.](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
+     ![Область сведений для контакта по продажам, сохраненного в Dynamics 365.](media/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
 9. Нажмите **Отменить**.
 

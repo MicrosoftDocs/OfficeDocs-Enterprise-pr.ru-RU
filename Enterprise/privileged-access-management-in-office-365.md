@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Используйте этот раздел для получения дополнительных сведений о функции управления правами доступа в Office 365
-ms.openlocfilehash: b2db3e16e53cca7deb2bf8fbff61b5b981f42fa6
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 22286d4f91ffa0bd3c49f028681d20e36d14283d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319210"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915394"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Правами доступа к управления в Office 365
 
@@ -46,7 +48,7 @@ ms.locfileid: "20319210"
 ### <a name="step-1---create-an-approvers-group"></a>Шаг 1 - Создание группы утверждающий
 Портал администрирования Office 365, выберите **группы** > **Добавить группу**, нажмите Создать группу безопасности включена поддержка почты для доступа по умолчанию привилегированный утверждающих лиц. Закончив настройку, выберите **Добавить** , чтобы создавать и сохранять группы утверждающий.
 
-![Экран утверждающие привилегированный доступ в портал администрирования Office 365](images/privileged-access-approvers-ui.png)
+![Экран утверждающие привилегированный доступ в портал администрирования Office 365](media/privileged-access-approvers-ui.png)
 
 > [!NOTE] 
 > В настоящее время для утверждения запросов из клиента Office 365 priviledged разрешены только пользователи с правами администратора. В следующих любой пользователь, который является частью в группе утверждающих будет иметь возможность утверждать запросы доступа.
@@ -140,7 +142,7 @@ Disable-ElevatedAccessControl
 ## <a name="managed-access-to-microsoft-graph-in-microsoft-azure"></a>Управляемый доступ к Microsoft Graph в Microsoft Azure
 
 > [!IMPORTANT]
-> В этом разделе описывается развертывание и конфигурация руководство для общедоступных бета-версию Microsoft Graph компонент, в настоящее время доступны только в Office 365 E5 и дополнительные номера SKU соответствия требованиям.
+> В этом разделе рассматривается подробные сведения о функции, доступные в настоящее время только в режиме предварительного просмотра.
 
 Управляемый доступ к Microsoft Graph в Microsoft Azure — это служба, которая позволяет организациям точный детальный уровень контроля над их данные Office 365. Эта система позволяет разработчикам приложений подделать обмена мнениями с этими данными. 
 

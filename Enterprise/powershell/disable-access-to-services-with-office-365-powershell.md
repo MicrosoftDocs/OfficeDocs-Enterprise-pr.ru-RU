@@ -3,7 +3,7 @@ title: Отключение доступа к службам с помощью O
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/08/2018
+ms.date: 08/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,18 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Объясняет, как использовать Office 365 PowerShell для отключения доступа к службам Office 365 для пользователей в вашей организации.
-ms.openlocfilehash: 44b0ed84bb8fd098412c69258834194b2b1eeb2f
-ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
+ms.openlocfilehash: d65308746ac5c2b60f4749588455fa66471069e3
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "22196826"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914994"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Отключение доступа к службам с помощью Office 365 PowerShell
 
 **Сводка:** Объясняет, как использовать Office 365 PowerShell для отключения доступа к службам Office 365 для пользователей в вашей организации.
   
-Если учетная запись Office 365 назначена лицензия из плана лицензирования, служб Office 365 становятся доступными для пользователя из этой лицензии. Тем не менее можно управлять служб Office 365, которые могут иметь доступ этот пользователь. Например несмотря на то, что лицензия позволяет получить доступ к SharePoint Online, можно отключить доступ к нему. На самом деле Office 365 PowerShell можно использовать для отключения доступа к любой номер для служб:
+Если учетная запись Office 365 назначена лицензия из плана лицензирования, служб Office 365 становятся доступными для пользователя из этой лицензии. Тем не менее можно управлять служб Office 365, которые могут иметь доступ этот пользователь. Например несмотря на то, что лицензия позволяет получить доступ к службе SharePoint Online, можно отключить доступ к нему. Office 365 PowerShell можно использовать для отключения доступа к любой номер для определенного плана лицензирования для служб:
 
 - отдельная учетная запись;
     
@@ -47,9 +47,9 @@ ms.locfileid: "22196826"
     
 - При использовании командлета **Get-MsolUser** без использования _всех_ параметров возвращаются только первой 500 учетных записей.
     
-## <a name="specific-office-365-services-for-specific-users-for-a-single-licensing-plan"></a>Планирование конкретных служб Office 365 для конкретных пользователей для одной лицензирования
+## <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a>Отключение конкретных служб Office 365 для конкретных пользователей для определенного плана лицензирования
   
-Чтобы отключить определенного набора служб Office 365 для пользователей из одного плана лицензирования, выполните следующие действия:
+Чтобы отключить определенного набора служб Office 365 для пользователей для определенного плана лицензирования, выполните следующие действия:
   
 1. Выбор нежелательный служб в плане лицензирования, используя следующий синтаксис:
     
@@ -133,53 +133,12 @@ ms.locfileid: "22196826"
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
   ```
 
+Если вы хотите отключить доступ к службам для нескольких планы лицензирования, выполните инструкции, приведенные выше для каждого плана лицензирования проверка того, что:
+
+- Учетные записи пользователей, назначенных план лицензирования.
+- Службы для отключения доступны в плане лицензирования.
+
 Для отключения служб Office 365 для пользователей во время при назначении их план лицензирования см [запрещать доступ к службам при назначении лицензии пользователя](disable-access-to-services-while-assigning-user-licenses.md).
-  
-## <a name="specific-office-365-services-for-users-from-all-licensing-plans"></a>Конкретных служб Office 365 для пользователей из всех планы лицензирования
-  
-Чтобы отключить служб Office 365 для пользователей в все доступные планы лицензирования, выполните следующие действия:
-  
-1. Скопируйте и вставьте сценарий в Блокнот.
-    
-  ```
-  $AllLicensingPlans = Get-MsolAccountSku
-for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
-{
-    $O365Licences = New-MsolLicenseOptions -AccountSkuId $AllLicensingPlans[$i].AccountSkuId -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
-    Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $O365Licences
-}
-  ```
-
-2. В своей среде настройте указанные ниже значения.
-    
-  -  _<UndesirableService>_ В этом примере мы будем использовать Office Online и SharePoint Online.
-    
-  -  _<Account>_ В этом примере мы будем использовать belindan@litwareinc.com.
-    
-    Измененный сценарий выглядит указанным ниже образом.
-    
-  ```
-  $AllLicensingPlans = Get-MsolAccountSku
-for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
-{
-    $O365Licences = New-MsolLicenseOptions -AccountSkuId $AllLicensingPlans[$i].AccountSkuId -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
-    Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $O365Licences
-}
-  ```
-
-3. Сохраните сценарий в `RemoveO365Services.ps1` в папке, где можно найти. В данном примере мы будем сохраните файл в `C:\\O365 Scripts`.
-    
-4. Запустите сценарий в Office 365 PowerShell с помощью следующей команды.
-    
-  ```
-  & "C:\O365 Scripts\RemoveO365Services.ps1"
-  ```
-
-> [!NOTE]
-> Для отмены эффекты любого из этих процедур (то есть, чтобы повторно включить отключенные службы), снова выполнить процедуру, но использовать значение `$null` для параметра _DisabledPlans_ .
-  
-[К началу страницы](disable-access-to-services-with-office-365-powershell.md#RTT)
-
 
 
 ## <a name="new-to-office-365"></a>Никогда не работали с Office 365?

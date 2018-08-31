@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 'Сводка: Настройка инфраструктуры Microsoft Azure для высокой доступности узла федеративной проверки подлинности для Office 365.'
-ms.openlocfilehash: 465c53efe8464ac823ebb3cd0e847a854eed82bb
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+description: Сводка. Настройка инфраструктуры Microsoft Azure для размещения федеративной проверки подлинности с высоким уровнем доступности для Office 365.
+ms.openlocfilehash: e88204d7f69c56c951f5d6ebd4d978c96e4c52ba
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915464"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Этап 1. Федеративная проверка подлинности для обеспечения высокой доступности: настройка Azure
 
- **Сводка:** Настройка инфраструктуры Microsoft Azure для использования проверки подлинности федеративные высокой доступности узла для Office 365.
+ **Сводка.** Настройка инфраструктуры Microsoft Azure для размещения федеративной проверки подлинности с высоким уровнем доступности для Office 365.
   
 На этом этапе создается группы ресурсов, виртуальные сети (VNet) и доступность наборы в Azure, в котором будет размещаться виртуальных машин в этапы 2, 3 и 4. Необходимо выполнить данный этап перед перемещением на [высокой доступности федеративных проверки подлинности этап 2: Настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). В разделе [Развертывание высокой доступности федеративной проверки подлинности для Office 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) все этапы.
   
@@ -40,11 +41,12 @@ ms.lasthandoff: 05/03/2018
   
 |**Элемент**|**Параметр конфигурации**|**Описание**|**Значение**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Имя виртуальной сети  <br/> |Имя виртуальной сети (например, FedAuthNet).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |Расположение VNet  <br/> |Региональный центр обработки данных Azure, в котором будет расположена виртуальная сеть.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |IP-адрес VPN-устройства  <br/> |Общедоступный IPv4-адрес интерфейса VPN-устройства в Интернете.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |Адресное пространство виртуальной сети  <br/> |Адресное пространство виртуальной сети. Чтобы определить это адресное пространство, обратитесь в ИТ-отдел.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |Общий ключ IPsec  <br/> |32 символов в случайном порядке, буквенно-цифровой строка, которая будет использоваться для проверки подлинности обеих сторон VPN-подключения веб сайта. Работа с ИТ или отдела безопасности для определения это значение ключа. Кроме того в разделе [Создать строку в случайном порядке для предварительного ключа IPsec](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |Имя виртуальной сети  <br/> |Имя виртуальной сети (например, FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |
+Расположение виртуальной сети  <br/> |Региональный центр обработки данных Azure, в котором будет расположена виртуальная сеть.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |IP-адрес VPN-устройства  <br/> |Общедоступный IPv4-адрес интерфейса VPN-устройства в Интернете.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Адресное пространство виртуальной сети  <br/> |Адресное пространство виртуальной сети. Чтобы определить это адресное пространство, обратитесь в ИТ-отдел.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Общий ключ IPsec  <br/> |32 символов в случайном порядке, буквенно-цифровой строка, которая будет использоваться для проверки подлинности обеих сторон VPN-подключения веб сайта. Работа с ИТ или отдела безопасности для определения это значение ключа. Кроме того в разделе [Создать строку в случайном порядке для предварительного ключа IPsec](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Таблица V. Настройка распределенной виртуальной сети**
   
@@ -62,10 +64,10 @@ ms.lasthandoff: 05/03/2018
   
 |**Элемент**|**Имя подсети**|**Адресное пространство подсети**|**Назначение**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Подсеть, используемая контроллером домена Active Directory (AD) Windows Server и виртуальными машинами сервера DirSync.  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Подсеть, используемая виртуальными машинами AD FS.  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Подсеть, используемая виртуальными машинами прокси-серверов веб-приложений.  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Подсеть, используемая виртуальными машинами шлюза Azure.  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая контроллером домена Active Directory (AD) Windows Server и виртуальными машинами сервера DirSync.  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая виртуальными машинами AD FS.  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая виртуальными машинами прокси-серверов веб-приложений.  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая виртуальными машинами шлюза Azure.  <br/> |
    
  **Таблица S. Подсети виртуальной сети**
   
@@ -73,23 +75,23 @@ ms.lasthandoff: 05/03/2018
   
 |**Элемент**|**Назначение**|**IP-адрес в подсети**|**Значение**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Статический IP-адрес первого контроллера домена  <br/> |Четвертый возможный IP-адрес для адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |Статический IP-адрес второго контроллера домена  <br/> |Пятый возможный IP-адрес адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |Статический IP-адрес сервера DirSync  <br/> |Шестой возможный IP-адрес адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |Статический IP-адрес внутреннего балансировщика нагрузки для серверов AD FS  <br/> |Четвертый возможный IP-адрес для адресного пространства подсети, определенный в элементе 2 таблицы S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |Статический IP-адрес первого сервера AD FS  <br/> |Пятый возможный IP-адрес адресного пространства подсети, определенной в элементе 2 таблицы S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|6.  <br/> |Статический IP-адрес второго сервера AD FS  <br/> |Шестой возможный IP-адрес адресного пространства подсети, определенной в элементе 2 таблицы S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|7.  <br/> |Статический IP-адрес первого прокси-сервера веб-приложений  <br/> |Четвертый возможный IP-адрес для адресного пространства подсети, определенный в элементе 3 таблицы S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|8.  <br/> |Статический IP-адрес второго прокси-сервера веб-приложений  <br/> |Пятый возможный IP-адрес адресного пространства подсети, определенной в элементе 3 таблицы S.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |Статический IP-адрес первого контроллера домена  <br/> |Четвертый возможный IP-адрес для адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Статический IP-адрес второго контроллера домена  <br/> |Пятый возможный IP-адрес адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Статический IP-адрес сервера DirSync  <br/> |Шестой возможный IP-адрес адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Статический IP-адрес внутреннего балансировщика нагрузки для серверов AD FS  <br/> |Четвертый возможный IP-адрес для адресного пространства подсети, определенный в элементе 2 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Статический IP-адрес первого сервера AD FS  <br/> |Пятый возможный IP-адрес адресного пространства подсети, определенной в элементе 2 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |Статический IP-адрес второго сервера AD FS  <br/> |Шестой возможный IP-адрес адресного пространства подсети, определенной в элементе 2 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|7.  <br/> |Статический IP-адрес первого прокси-сервера веб-приложений  <br/> |Четвертый возможный IP-адрес для адресного пространства подсети, определенный в элементе 3 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|8.  <br/> |Статический IP-адрес второго прокси-сервера веб-приложений  <br/> |Пятый возможный IP-адрес адресного пространства подсети, определенной в элементе 3 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- **В таблице по созданию статических IP-адресов в виртуальной сети**
+ **Таблица I. Статические IP-адреса в виртуальной сети**
   
 В таблице D укажите два DNS-сервера в локальной сети, которые необходимо использовать при начальной настройке контроллеров домена в виртуальной сети. Чтобы определить этот список, обратитесь в ИТ-отдел.
   
 |**Элемент**|**Понятное имя DNS-сервера**|**IP-адрес DNS-сервера**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Таблица D. Локальные DNS-сервера**
   
@@ -99,16 +101,16 @@ ms.lasthandoff: 05/03/2018
   
 |**Элемент**|**Адресное пространство локальной сети**|
 |:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Таблица L. Префиксы адресов для локальной сети**
   
 Теперь приступим к созданию инфраструктуры Azure для размещения федеративной проверки подлинности для Office 365.
   
 > [!NOTE]
-> [!Примечание] Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Просмотрите статью [Начало работы с командлетами Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> Приведенные ниже наборы команд основаны на последней версии Azure PowerShell. См. статью [Начало работы с командлетами Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Запустите командную строку Azure PowerShell и войдите в свою учетную запись.
   
@@ -131,7 +133,7 @@ Get-AzureRMSubscription | Sort Name | Select Name
 Get-AzureRMSubscription | Sort Name | Select SubscriptionName
 ```
 
-Задайте подпиской Azure. Замените все содержимое в кавычки, включая \< и > символов с правильным именем.
+Укажите свою подписку Azure. Замените текст в кавычках, в том числе символы "\<" и ">", на правильное имя.
   
 ```
 $subscr="<subscription name>"
@@ -148,12 +150,12 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
   
 |**Элемент**|**Имя группы ресурсов**|**Назначение**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Контроллеры доменов  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Серверы AD FS  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Прокси-серверы веб-приложений  <br/> |
-|4.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Элементы инфраструктуры  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Контроллеры доменов  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Серверы AD FS  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Прокси-серверы веб-приложений  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Элементы инфраструктуры  <br/> |
    
- **В таблице центральный группы ресурсов**
+ **Таблица R. Группы ресурсов**
   
 Создайте новые группы ресурсов с помощью этих команд.
   
@@ -273,11 +275,11 @@ Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgNam
   
 |**Элемент**|**Назначение**|**Имя группы доступности**|
 |:-----|:-----|:-----|
-|1.  <br/> |Контроллеры доменов  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |Серверы AD FS  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |Прокси-серверы веб-приложений  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |Контроллеры доменов  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Серверы AD FS  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Прокси-серверы веб-приложений  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- **Задает доступность ответ: таблицы**
+ **Таблица A. Группы доступности**
   
 Вам потребуются эти имена при создании виртуальных машин на этапах 2, 3 и 4.
   
@@ -298,13 +300,13 @@ New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $l
 
 Ниже показана конфигурация, полученная в результате успешного выполнения этого этапа.
   
-**Этап 1: Azure инфраструктуры для обеспечения высокой доступности федеративной проверки подлинности для Office 365**
+**Этап 1. Инфраструктура Azure для федеративной проверки подлинности с высоким уровнем доступности для Office 365**
 
-![Этап 1. Федеративная проверка подлинности для Office 365 с высокой доступностью, развертывание которой выполняется в Azure с использованием инфраструктуры Azure](images/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Этап 1. Федеративная проверка подлинности для Office 365 с высокой доступностью, развертывание которой выполняется в Azure с использованием инфраструктуры Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий шаг
 
-Использование [высокой доступности федеративных проверки подлинности этап 2: Настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) чтобы продолжить работу конфигурации этой рабочей нагрузкой.
+Используйте [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md), чтобы продолжить настройку этой нагрузки.
   
 ## <a name="see-also"></a>См. также
 
@@ -314,6 +316,6 @@ New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $l
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 
-[Федеративные удостоверения для Office 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[Идентификация в Office 365 и Azure Active Directory](about-office-365-identity.md)
 
 

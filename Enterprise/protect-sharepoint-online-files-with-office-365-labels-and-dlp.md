@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: Сводка. Применяйте метки Office 365 и политики защиты от потери данных для сайтов групп SharePoint Online с различными уровнями защиты информации.
-ms.openlocfilehash: 439f59f683090d39ea98730854aa1ca5dc8db482
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 1e83f8c08dde55c22b7b9e8e6f9fe966c9fe9c02
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319270"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915784"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Защита файлов SharePoint Online с помощью меток Office 365 и DLP
 
@@ -127,7 +129,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 Ниже показана итоговая конфигурация.
   
-![Метки Office 365 для четырех типов сайтов групп SharePoint Online.](images/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
+![Метки Office 365 для четырех типов сайтов групп SharePoint Online.](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>Политики защиты от потери данных для сайтов SharePoint Online
 
@@ -178,7 +180,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 Здесь показана итоговая конфигурация для конфиденциальных сайтов групп SharePoint Online.
   
-![Политика защиты от потери данных для изолированного сайта группы SharePoint Online с использованием метки "Конфиденциальный" в Office 365.](images/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![Политика защиты от потери данных для изолированного сайта группы SharePoint Online с использованием метки "Конфиденциальный" в Office 365.](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 Выполните следующие действия, чтобы настроить политику защиты от потери данных, которая блокирует пользователей, когда они совместно используют документы на строго конфиденциальном сайте группы SharePoint Online за пределами организации.
   
@@ -226,7 +228,7 @@ ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
     
 Ниже показана итоговая конфигурация для строго конфиденциальных сайтов групп SharePoint Online.
   
-![Политика защиты от потери данных для изолированного сайта группы SharePoint Online с использованием метки "Строго конфиденциальный" в Office 365.](images/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![Политика защиты от потери данных для изолированного сайта группы SharePoint Online с использованием метки "Строго конфиденциальный" в Office 365.](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>Следующий шаг
 

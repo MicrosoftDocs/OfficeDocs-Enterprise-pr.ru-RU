@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Сводка. Рекомендации по настройке для защиты файлов в SharePoint Online и Office 365.
-ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 5ee7ce0f5d52076ec27a3478a39b998a96e0e270
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319230"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915084"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Защита сайтов и файлов SharePoint Online
 
@@ -138,7 +140,7 @@ ms.locfileid: "20319230"
     
 - Пользователи в организации могут вручную применять метки к содержимому в Outlook 2010 и более поздних версий, Outlook в Интернете, OneDrive для бизнеса, SharePoint Online и группах Office 365. Пользователи часто знают лучше других, с каким содержимым они работают, поэтому могут классифицировать его и применять соответствующие политики защиты от потери данных.
     
-![Рекомендованная конфигурация для сайтов SharePoint](images/7fed0126-ab4a-4480-922c-681970642339.png)
+![Рекомендованная конфигурация для сайтов SharePoint](media/7fed0126-ab4a-4480-922c-681970642339.png)
   
 Как показано на иллюстрации, это решение включает создание следующих меток:
   
@@ -160,7 +162,7 @@ ms.locfileid: "20319230"
   
 Обратите внимание, что если к файлам, хранящимся в Office 365, применяется шифрование Azure Information Protection, эта служба не может обрабатывать содержимое таких файлов. В этом случае совместное редактирование, обнаружение электронных данных, поиск, Delve и другие функции совместной работы недоступны. Политики защиты от потери данных могут применяться только к метаданным этих файлов, включая метки Office 365 (не к их содержимому, например номерам кредитных карт).
   
-![В Azure настраивается Azure Information Protection, и на панели инструментов клиента отображаются метки](images/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
+![В Azure настраивается Azure Information Protection, и на панели инструментов клиента отображаются метки](media/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
   
 Как следует из приведенной иллюстрации:
   

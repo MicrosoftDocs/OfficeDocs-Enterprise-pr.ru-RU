@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: Сводка. Настройка Azure AD Connect для федеративной проверки высокого уровня доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: 93e872098b31326de67fb0557354e9f4fc1de9ed
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 797429e508a0a0c2b91d837e5475e840ca26b3d8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915364"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Этап 5. Федеративная проверка подлинности для обеспечения высокой доступности: настройка федеративной проверки подлинности для Office 365
 
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/08/2018
   
 **Пример конфигурации инфраструктуры федеративной проверки подлинности с высоким уровнем доступности в Azure**
 
-![Пример конфигурации инфраструктуры для федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure](images/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Пример конфигурации инфраструктуры для федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure](media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Настройка федеративной проверки подлинности с помощью Azure AD Connect
 
@@ -134,7 +135,7 @@ ms.lasthandoff: 04/08/2018
   
 **Этап 5. Окончательная конфигурация инфраструктуры федеративной проверки подлинности с высоким уровнем доступности в Azure**
 
-![Окончательная конфигурация инфраструктуры для федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure](images/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Окончательная конфигурация инфраструктуры для федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Настройка инфраструктуры федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Azure завершена.
   
