@@ -1,0 +1,101 @@
+---
+title: Подготовка без поддержки маршрутизации домена для синхронизации службы каталогов
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+ms.date: 8/21/2018
+ms.audience: Admin
+ms.topic: article
+f1_keywords:
+- O365E_SetupDirSyncLocalDir
+ms.service: o365-administration
+localization_priority: Normal
+ms.custom: Adm_O365
+search.appverid:
+- MET150
+- MOE150
+- MED150
+- BCS160
+ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
+description: Узнайте, что делать, если у вас не routale домена, связанного с локальными пользователями, перед выполнением синхронизации с Office 365.
+ms.openlocfilehash: 62779ba879522177ba15a491644ab42f5961ece0
+ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22542575"
+---
+# <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a><span data-ttu-id="a4cf6-103">Подготовка без поддержки маршрутизации домена для синхронизации службы каталогов</span><span class="sxs-lookup"><span data-stu-id="a4cf6-103">Prepare a non-routable domain for directory synchronization</span></span>
+<span data-ttu-id="a4cf6-p101">При синхронизации локального каталога с Office 365 необходимо иметь подтвержденным доменом в Azure Active Directory. Синхронизированы только участника-пользователя имена (UPN), связанные с локального домена. Тем не менее, будет синхронизирован любое имя участника-пользователя, который содержит без поддержки маршрутизации домена, например .local (например, billa@contoso.local), чтобы. onmicrosoft.com домена (например, billa@contoso.onmicrosoft.com).</span><span class="sxs-lookup"><span data-stu-id="a4cf6-p101">When you synchronize your on-premises directory with Office 365 you have to have a verified domain in Azure Active Directory. Only the User Principal Names (UPN) that are associated with the on-premises domain are synchronized. However, any UPN that contains an non-routable domain, for example .local (like billa@contoso.local), will be synchronized to an .onmicrosoft.com domain (like billa@contoso.onmicrosoft.com).</span></span> 
+
+<span data-ttu-id="a4cf6-107">При использовании .local домена для учетных записей пользователей в Active Directory рекомендуется изменять их для использования подтвержденным доменом (например, billa@contoso.com), чтобы должным образом синхронизации с вашего домена Office 365.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-107">If you currently use a .local domain for your user accounts in Active Directory it's recommended that you change them to use a verified domain (like billa@contoso.com) in order to properly sync with your Office 365 domain.</span></span>
+  
+## <a name="what-if-i-only-have-a-local-on-premises-domain"></a><span data-ttu-id="a4cf6-108">Что делать, если только у локального домена .local?</span><span class="sxs-lookup"><span data-stu-id="a4cf6-108">What if I only have a .local on-premises domain?</span></span>
+
+<span data-ttu-id="a4cf6-p102">Самые последние средство, которое можно использовать для синхронизации Active Directory для Azure Active Directory называется подключить Azure AD. Для получения дополнительных сведений см [Интеграция вашей локальной удостоверения с помощью Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=624168).</span><span class="sxs-lookup"><span data-stu-id="a4cf6-p102">The most recent tool you can use for synchronizing your Active Directory to Azure Active Directory is named Azure AD Connect. For more information, see [Integrating your on-premises identities with Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=624168).</span></span>
+  
+<span data-ttu-id="a4cf6-p103">Подключение Azure AD синхронизирует пользователей имени участника-пользователя и пароль, чтобы пользователи могут входить с один набор учетных данных они используют для локальной. Тем не менее Azure AD подключить синхронизирует только пользователям доменов, которые проверяются с Office 365. Это означает, что также проверки домена с Azure Active Directory так как Office 365 удостоверения управляют Azure Active Directory. Другими словами домен должен быть допустимый домен Интернета (например, .com, .org, .net, .us, и т.д.). Если в вашей внутренней Active Directory используется только без поддержки маршрутизации домена (например, .local), это не может совпадать возможно с подтвержденным доменом в Office 365. Эту проблему можно устранить с помощью любого из изменения основного домена в локальный Active Directory или путем добавления одного или нескольких суффиксов UPN.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-p103">Azure AD Connect synchronizes your users' UPN and password so that users can sign in with the same credentials they use on-premises. However, Azure AD Connect only synchronizes users to domains that are verified by Office 365. This means that the domain also is verified by Azure Active Directory because Office 365 identities are managed by Azure Active Directory. In other words, the domain has to be a valid Internet domain (for example, .com, .org, .net, .us, etc.). If your internal Active Directory only uses a non-routable domain (for example, .local), this can't possibly match the verified domain you have on Office 365. You can fix this issue by either changing your primary domain in your on premises Active Directory, or by adding one or more UPN suffixes.</span></span>
+  
+### <a name="change-your-primary-domain"></a><span data-ttu-id="a4cf6-117">**Изменение основного домена**</span><span class="sxs-lookup"><span data-stu-id="a4cf6-117">**Change your primary domain**</span></span>
+
+<span data-ttu-id="a4cf6-p104">Изменение основного домена к домену, в которые проверки в Office 365, например, contoso.com. Каждый пользователь, который имеет contoso.local домена обновляется на contoso.com. Сведения содержатся в разделе [How Domain Rename Works](https://go.microsoft.com/fwlink/p/?LinkId=624174). Это сложный процесс, но и более простое решение — [Добавьте имя участника-пользователя суффиксов и обновите их пользователям](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register), как показано в следующем разделе.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-p104">Change your primary domain to a domain you have verified in Office 365, for example, contoso.com. Every user that has the domain contoso.local is then updated to contoso.com. For instructions, see [How Domain Rename Works](https://go.microsoft.com/fwlink/p/?LinkId=624174). This is a very involved process, however, and an easier solution is to [Add UPN suffixes and update your users to them](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register), as shown in the following section.</span></span>
+  
+### <a name="add-upn-suffixes-and-update-your-users-to-them"></a><span data-ttu-id="a4cf6-122">**Добавление суффиксов UPN и обновить пользователей к ним**</span><span class="sxs-lookup"><span data-stu-id="a4cf6-122">**Add UPN suffixes and update your users to them**</span></span>
+
+<span data-ttu-id="a4cf6-p105">Вы можете решить проблему .local путем регистрации нового суффикса имени участника-пользователя или суффиксы в Active Directory в соответствии с домена (или доменов), проверенных в Office 365. После регистрации нового суффикса обновление имен участников-пользователей для замены .local новое доменное имя, например, чтобы учетная запись пользователя выглядит как billa@contoso.com пользователя.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-p105">You can solve the .local problem by registering new UPN suffix or suffixes in Active Directory to match the domain (or domains) you verified in Office 365. After you register the new suffix, you update the user UPNs to replace the .local with the new domain name for example so that a user account looks like billa@contoso.com.</span></span>
+  
+<span data-ttu-id="a4cf6-125">После обновления UPN для использования с подтвержденным доменом, вы готовы для синхронизации локальной Active Directory с Office 365.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-125">After you have updated the UPNs to use the verified domain,you are ready to synchronize your on-premises Active Directory with Office 365.</span></span>
+  
+ <span data-ttu-id="a4cf6-126">**Шаг 1: Добавление нового суффикса имени участника-пользователя**</span><span class="sxs-lookup"><span data-stu-id="a4cf6-126">**Step 1: Add the new UPN suffix**</span></span>
+  
+1. <span data-ttu-id="a4cf6-127">На сервере, на котором выполняется доменных служб Active Directory (AD DS) на, в диспетчере серверов выберите **средства** \> **Active Directory — домены и доверие**.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-127">On the server that Active Directory Domain Services (AD DS) runs on, in the Server Manager choose **Tools** \> **Active Directory Domains and Trusts**.</span></span>
+    
+    <span data-ttu-id="a4cf6-128">**Или, если у вас нет Windows Server 2012**</span><span class="sxs-lookup"><span data-stu-id="a4cf6-128">**Or, if you don't have Windows Server 2012**</span></span>
+    
+    <span data-ttu-id="a4cf6-129">Нажмите **клавиши Windows + R** , чтобы открыть диалоговое окно **запуска** , а затем введите в Domain.msc и нажмите кнопку **ОК**.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-129">Press **Windows key + R** to open the **Run** dialog, and then type in Domain.msc, and then choose **OK**.</span></span>
+    
+    ![Выберите Active Directory — домены и доверие.](media/46b6e007-9741-44af-8517-6f682e0ac974.png)
+  
+2. <span data-ttu-id="a4cf6-131">В окне **Active Directory — домены и доверие** щелкните правой кнопкой мыши **Active Directory — домены и доверие**и выберите пункт **Свойства**.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-131">On the **Active Directory Domains and Trusts** window, right-click **Active Directory Domains and Trusts**, and then choose **Properties**.</span></span>
+    
+    ![Щелкните правой кнопкой мыши ActiveDirectory — домены и доверие и выберите команду Свойства](media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
+  
+3. <span data-ttu-id="a4cf6-133">На вкладке **UPN-суффиксы** **UPN-суффиксы альтернатива** введите в поле, нового суффикса имени участника-пользователя или суффиксы и нажмите кнопку **Добавить** \> **Применить**.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-133">On the **UPN Suffixes** tab, in the **Alternative UPN Suffixes** box, type your new UPN suffix or suffixes, and then choose **Add** \> **Apply**.</span></span>
+    
+    ![Добавление нового суффикса имени участника-пользователя](media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
+  
+    <span data-ttu-id="a4cf6-135">После завершения добавления суффиксов, нажмите кнопку **ОК** .</span><span class="sxs-lookup"><span data-stu-id="a4cf6-135">Choose **OK** when you're done adding suffixes.</span></span> 
+    
+ <span data-ttu-id="a4cf6-136">**Шаг 2: Изменение суффикса имени участника-пользователя для существующих пользователей**</span><span class="sxs-lookup"><span data-stu-id="a4cf6-136">**Step 2: Change the UPN suffix for existing users**</span></span>
+  
+1. <span data-ttu-id="a4cf6-137">На сервере, на котором выполняется доменных служб Active Directory (AD DS) на, в диспетчере серверов выберите **средства** \> **Active Directory Active Directory — пользователи и компьютеры**.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-137">On the server that Active Directory Domain Services (AD DS) runs on, in the Server Manager choose **Tools** \> **Active Directory Active Directory Users and Computers**.</span></span>
+    
+    <span data-ttu-id="a4cf6-138">**Или, если у вас нет Windows Server 2012**</span><span class="sxs-lookup"><span data-stu-id="a4cf6-138">**Or, if you don't have Windows Server 2012**</span></span>
+    
+    <span data-ttu-id="a4cf6-139">Нажмите **клавиши Windows + R** , чтобы открыть диалоговое окно **запуска** , а затем введите в Dsa.msc, а затем нажмите **кнопку ОК**</span><span class="sxs-lookup"><span data-stu-id="a4cf6-139">Press **Windows key + R** to open the **Run** dialog, and then type in Dsa.msc, and then click **OK**</span></span>
+    
+2. <span data-ttu-id="a4cf6-140">Выберите пользователя, щелкните правой кнопкой мыши и выберите пункт **Свойства**.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-140">Select a user, right-click, and then choose **Properties**.</span></span>
+    
+3. <span data-ttu-id="a4cf6-141">На вкладке **учетная запись** в раскрывающемся списке суффикса имени участника-пользователя выберите новый суффикса имени участника-пользователя и нажмите кнопку **ОК**.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-141">On the **Account** tab, in the UPN suffix drop-down list, choose the new UPN suffix, and then choose **OK**.</span></span>
+    
+    ![Добавление нового суффикса имени участника-пользователя для пользователя](media/54876751-49f0-48cc-b864-2623c4835563.png)
+  
+4. <span data-ttu-id="a4cf6-143">Выполните эти действия для каждого пользователя.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-143">Complete these steps for every user.</span></span>
+    
+    <span data-ttu-id="a4cf6-144">В другом варианте массового обновления суффиксов UPN [также можно использовать Windows PowerShell для изменения суффикса имени участника-пользователя для всех пользователей](prepare-a-non-routable-domain-for-directory-synchronization.md#BK_Posh).</span><span class="sxs-lookup"><span data-stu-id="a4cf6-144">Alternately you can bulk update the UPN suffixes [You can also use Windows PowerShell to change the UPN suffix for all users](prepare-a-non-routable-domain-for-directory-synchronization.md#BK_Posh).</span></span>
+    
+### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a><span data-ttu-id="a4cf6-145">**Также можно использовать Windows PowerShell для изменения суффикса имени участника-пользователя для всех пользователей**</span><span class="sxs-lookup"><span data-stu-id="a4cf6-145">**You can also use Windows PowerShell to change the UPN suffix for all users**</span></span>
+
+<span data-ttu-id="a4cf6-p106">Если у вас есть много обновлений, проще использовать Windows PowerShell. В следующем примере используется командлет [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) и [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) для изменения всех суффиксов contoso.local на contoso.com.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-p106">If you have a lot of users to update, it is easier to use Windows PowerShell. The following example uses the cmdlets [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) and [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) to change all contoso.local suffixes to contoso.com.</span></span> 
+
+<span data-ttu-id="a4cf6-148">Выполните следующие команды Windows PowerShell для обновления всех суффиксов contoso.local contoso.com.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-148">Run the following Windows PowerShell commands to update all contoso.local suffixes to contoso.com:</span></span>
+    
+  ```
+  $LocalUsers = Get-ADUser -Filter {UserPrincipalName -like '*contoso.local'} -Properties userPrincipalName -ResultSetSize $null
+  ```
+
+  ```
+  $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("contoso.local","contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
+  ```
+<span data-ttu-id="a4cf6-149">В разделе [модуль Active Directory Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=624314) для получения дополнительных сведений об использовании Windows PowerShell в службе каталогов Active Directory.</span><span class="sxs-lookup"><span data-stu-id="a4cf6-149">See [Active Directory Windows PowerShell module](https://go.microsoft.com/fwlink/p/?LinkId=624314) to learn more about using Windows PowerShell in Active Directory.</span></span> 
+
