@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения о перемещении сайта OneDrive в другой геообъект.
-ms.openlocfilehash: 80768d0838d1d5d072d3e221c4c2b4b1af78dae6
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: d951e42ba1881483438383719390c35d0227da7b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "19174905"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915334"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Перемещение сайта OneDrive в другой геообъект 
 
@@ -39,6 +39,14 @@ ms.locfileid: "19174905"
 
 Обязательно известите пользователей об успешном окончании перемещения и сообщите, что они могут возобновить работу в OneDrive.
 
+## <a name="scheduling-onedrive-site-moves"></a>Планирование перемещений сайтов OneDrive
+
+Вы можете заранее спланировать перемещения сайтов OneDrive (описано далее в этой статье). Рекомендуется начать с небольшого количества пользователей для проверки рабочих процессов и стратегий коммуникации. После ознакомления с процессом можно планировать перемещения следующим образом:
+
+- Можно запланировать до 4000 перемещений за один раз.
+- После начала перемещения можно продолжить планирование, не превышая 4000 ожидаемых перемещений в очереди в любой момент времени.
+- Рекомендуется не планировать более 4000 перемещений в месяц.
+
 ## <a name="moving-a-onedrive-site"></a>Перемещение сайта OneDrive
 
 Чтобы выполнить перемещение OneDrive в отношении геообъекта, администратор клиента должен сначала задать предпочтительное расположение данных (PDL) пользователя. Указав PDL, подождите как минимум 24 часа, прежде чем приступать к перемещению OneDrive в отношении геообъекта. Это время отведено на синхронизацию обновления PDL между географическими расположениями.
@@ -51,7 +59,7 @@ ms.locfileid: "19174905"
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations_image1.png)
+![](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>Проверка среды
 
@@ -86,7 +94,7 @@ ms.locfileid: "19174905"
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations_image2.png)
+![](media/move-onedrive-between-geo-locations-image2.png)
 
 Чтобы запланировать перемещение в отношении геообъекта на более позднее время, используйте один из следующих параметров:
 
