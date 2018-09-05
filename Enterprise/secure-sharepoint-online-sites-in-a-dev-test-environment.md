@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: Сводка. Создание общедоступных, частных, конфиденциальных и строго конфиденциальных сайтов групп SharePoint Online в среде разработки и тестирования.
-ms.openlocfilehash: fecb725999c7958dca1278c1236fcf251adc33cd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 49153a5c4256e7aa0e5ba5f6d2ac53c4e56b5bdc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193729"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915774"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Защита сайтов SharePoint Online в среде разработки и тестирования
 
@@ -27,7 +29,7 @@ ms.locfileid: "19193729"
   
 Эта статья содержит пошаговые инструкции по созданию среды разработки и тестирования, включающей четыре различных типа сайтов групп SharePoint Online для [решения по защите файлов и сайтов SharePoint Online](secure-sharepoint-online-sites-and-files.md).
   
-![Все четыре сайта группы в безопасной среде разработки и тестирования SharePoint Online.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Все четыре сайта группы в безопасной среде разработки и тестирования SharePoint Online.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 Используйте это окружение разработки и тестирования для экспериментов с режимами защиты информации и настройкой перед развертыванием сайтов групп SharePoint Online в рабочей среде.
   
@@ -270,7 +272,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 Ниже показана полученная в итоге конфигурация.
   
-![Защита базового уровня для общедоступного сайта группы SharePoint Online, используемого во всей организации.](images/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
+![Защита базового уровня для общедоступного сайта группы SharePoint Online, используемого во всей организации.](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
   
 ### <a name="project-1-team-site"></a>Сайт группы "Проект 1"
 
@@ -304,7 +306,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 Ниже показана полученная в итоге конфигурация.
   
-![Защита базового уровня для закрытого сайта группы SharePoint Online, названного Project1.](images/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
+![Защита базового уровня для закрытого сайта группы SharePoint Online, названного Project1.](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
   
 ### <a name="marketing-campaigns-team-site"></a>Сайт группы "Маркетинговые кампании"
 
@@ -420,7 +422,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 Ниже показана полученная в итоге конфигурация.
   
-![Защита уровня конфиденциальности для изолированного сайта группы SharePoint Online, названного "Маркетинговые кампании".](images/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
+![Защита уровня конфиденциальности для изолированного сайта группы SharePoint Online, названного "Маркетинговые кампании".](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>Сайт группы "Стратегия организации"
 
@@ -566,11 +568,11 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
     
 15. В колонке **Подчиненная метка** нажмите кнопку **Сохранить**, а затем щелкните **ОК**.
 
-16. В колонке **Azure Information Protection**, щелкните элементы **Политики > + Добавить политику**.
+16. В колонке **Azure Information Protection** щелкните элементы **Политики > + Добавить политику**.
     
-17. Введите **CompanyStrategy** в поле **Имя политики** и **Метка для документов на сайте группы стратегии компании** в поле **Описание**.
+17. Введите **CompanyStrategy** в поле **Имя политики** и **Документы на сайте группы стратегии компании** в поле **Описание**.
     
-18. Щелкните пункты **"Выберите, к каким пользователям или группам будет применяться эта политика" > "Пользователи или группы"**, а затем выберите **C-Suite**.
+18. Щелкните пункты **Выберите, к каким пользователям или группам будет применяться эта политика > Пользователи или группы**, а затем выберите **C-Suite**.
     
 19. Щелкните **Выбрать > ОК**.
 
@@ -582,13 +584,13 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
   
 Ниже показана полученная в итоге конфигурация.
   
-![Защита уровня строгой конфиденциальности для изолированного сайта группы SharePoint Online, названного "Стратегия компании".](images/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
+![Защита уровня строгой конфиденциальности для изолированного сайта группы SharePoint Online, названного "Стратегия компании".](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
   
 Теперь вы готовы к созданию документов на этих четырех сайтах и тестированию доступа к ним с помощью различных учетных записей пользователей в пробной подписке.
   
 Здесь приведена общая конфигурация для всех четырех сайтов групп SharePoint Online.
   
-![Все четыре сайта группы в безопасной среде разработки и тестирования SharePoint Online.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Все четыре сайта группы в безопасной среде разработки и тестирования SharePoint Online.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 ## <a name="next-step"></a>Следующее действие
 

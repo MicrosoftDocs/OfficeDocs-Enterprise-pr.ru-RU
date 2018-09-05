@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения о настройке поиска в среде с поддержкой нескольких регионов.
-ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915064"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Настройка поиска в OneDrive для бизнеса с поддержкой нескольких регионов
 
@@ -81,7 +82,7 @@ ms.lasthandoff: 04/27/2018
 </tr>
 <tr class="even">
 <td align="left">Уточнения поиска</td>
-<td align="left">При поиске возвращаются уточнения из всех географических расположений клиента, а затем объединяются. Объединение выполняется максимально правильно, но счетчики уточнений могут не быть точными на 100 %. Для большинства сценариев поиска такой точности вполне достаточно.</td>
+<td align="left">При поиске возвращаются уточнения из всех географических расположений клиента, а затем объединяются. Объединение выполняется максимально правильно, но счетчики уточнений могут не быть точными на 100 %. Для большинства сценариев поиска такой точности вполне достаточно. </td>
 <td align="left">Поисковые приложения, которые зависят от полноты уточнения, запрашивают каждое географическое расположение отдельно, не используя развертывание с поддержкой нескольких регионов.</td>
 </tr>
 <tr class="odd">
@@ -128,7 +129,8 @@ ms.lasthandoff: 04/27/2018
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Каковые принципы поиска в среде с поддержкой нескольких регионов?
 
 **Все** клиенты поиска взаимодействуют с индексами поиска, используя существующие REST API поиска SharePoint.
-<img src="media/configure-search-for-multi-geo_image1-1.png" />
+
+<img src="media/configure-search-for-multi-geo-image1-1.png" />
 
 1. Клиент поиска вызывает конечную точку поиска REST с использованием свойства запроса EnableMultiGeoSearch = true.
 2. Запрос отправляется во все геообъекты, предусмотренные для клиента.
@@ -150,8 +152,8 @@ ms.lasthandoff: 04/27/2018
 
 3.  Выберите вертикаль для настройки. В верхнем правом углу щелкните значок шестеренки **Параметры**, а затем выберите **Изменить страницу**. Откроется страница результатов поиска в режиме редактирования.
 
-     ![](media/configure-search-for-multi-geo_image2.png)
-1.  В веб-части результатов поиска переместите указатель в верхний правый угол, щелкните стрелку, а затем в меню выберите **Изменить веб-часть**. Под лентой в верхней правой части страницы откроется область инструментов веб-части результатов поиска. ![](media/configure-search-for-multi-geo_image3.png)
+     ![](media/configure-search-for-multi-geo-image2.png)
+1.  В веб-части результатов поиска переместите указатель в верхний правый угол, щелкните стрелку, а затем в меню выберите **Изменить веб-часть**. Под лентой в верхней правой части страницы откроется область инструментов веб-части результатов поиска. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  Чтобы в веб-части результатов поиска отображались результаты из всех геообъектов, в области инструментов веб-части выберите **Параметры** > **Параметры управления результатами** > **Отображение результатов с поддержкой нескольких регионов**.
 
@@ -227,6 +229,7 @@ MultiGeoSearchStatus — свойство, которое API поиска Share
 
 Используя GET-запрос, нужно указать соответствующие параметры в URL-адресе. Параметры POST-запроса передаются в его теле в формате нотации объектов JavaScript (JSON).
 
+
 #### <a name="request-headers"></a>Заголовки запросов
 
 <table>
@@ -250,7 +253,10 @@ https:// \<клиент\>/\_api/search/query?querytext='sharepoint'&Properties='
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Пример GET-запроса, развертывание которого выполняется для **некоторых** геообъектов
 
-https:// <tenant>/_api/search/query?querytext='site'&ClientType='ИД_моего_клиента'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+
+> [!NOTE]
+> Перед запятыми и двоеточиями в списке геообъектов для свойства MultiGeoSearchConfiguration используется символ **обратной косой черты**. Это обусловлено тем, что запросы GET используют двоеточия для разделения свойств и запятые для разделения аргументов свойств. Без обратной косой черты в качестве экранирующего символа свойство MultiGeoSearchConfiguration будет распознаваться неправильно.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Пример POST-запроса, развертывание которого выполняется для **всех** геообъектов
 

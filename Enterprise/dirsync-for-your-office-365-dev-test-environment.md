@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: Сводка. Настройте синхронизацию каталогов для среды разработки и тестирования Office 365.
-ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 106e902c9da46c7c3c0fc6eb8af96d6695c7bdce
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193539"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915844"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Синхронизация каталогов для среды разработки и тестирования Office 365
 
@@ -29,7 +31,7 @@ ms.locfileid: "19193539"
   
 Во многих организациях используют Azure AD Connect и синхронизацию каталогов, чтобы синхронизировать набор учетных записей в локальном лесу Windows Server Active Directory (AD) с учетными записями в Office 365. В этой статье описано, как добавить синхронизацию каталогов с синхронизацией хэша паролей в среду тестирования и разработки Office 365, в результате чего получается следующая конфигурация.
   
-![Среда разработки и тестирования Office 365 с синхронизацией каталогов](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Среда разработки и тестирования Office 365 с синхронизацией каталогов](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Конфигурация состоит из следующих компонентов: 
   
@@ -48,7 +50,7 @@ ms.locfileid: "19193539"
 
 Следуйте инструкциям, приведенным на этапах 1, 2 и 3 статьи [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md). Ниже показана итоговая конфигурация.
   
-![Среда разработки и тестирования Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![Среда разработки и тестирования Office 365](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 Конфигурация состоит из следующих компонентов: 
   
@@ -104,7 +106,7 @@ Stop-Process -Name Explorer -Force
     
 Ниже показана итоговая конфигурация.
   
-![Среда разработки и тестирования Office 365 с синхронизацией каталогов](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Среда разработки и тестирования Office 365 с синхронизацией каталогов](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Конфигурация состоит из следующих компонентов: 
   
@@ -113,7 +115,7 @@ Stop-Process -Name Explorer -Force
     
 ## <a name="next-step"></a>Следующий шаг
 
-Когда вы будете готовы развернуть синхронизацию каталогов для своей организации, обратитесь к [этой статье](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
+Когда вы будете готовы развернуть синхронизацию каталогов для своей организации, обратитесь к статье [Развертывание службы синхронизации каталогов Office 365 в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
 ## <a name="see-also"></a>См. также
 

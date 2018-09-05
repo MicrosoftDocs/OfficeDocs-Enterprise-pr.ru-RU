@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: Сводка. Узнайте, как настроить распределенную виртуальную сеть Azure для серверных рабочих нагрузок Office с VPN-подключением типа "сеть-сеть".
-ms.openlocfilehash: de61603781009149c284701f749f42cfdd0881f6
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 640db506ec49d468dcb09ce3804c76c1f4562f13
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915324"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Подключение локальной сети к виртуальной сети Microsoft Azure
 
@@ -33,7 +36,7 @@ ms.lasthandoff: 04/27/2018
 
 Виртуальные машины в Azure не должны быть изолированы от локальной среды. Чтобы подключить виртуальные машины Azure к локальным сетевым ресурсам, необходимо настроить виртуальную сеть Azure. На схеме ниже показаны компоненты, необходимые для развертывания виртуальной сети Azure с виртуальной машиной в Azure.
   
-![Локальная сеть, подключенная к Microsoft Azure с помощью VPN-подключения типа "сеть-сеть"](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
+![Локальная сеть, подключенная к Microsoft Azure с помощью VPN-подключения типа "сеть-сеть"](media/CP-ConnectOnPremisesNetworkToAzureVPN.png)
   
 На схеме показано VPN-подключение типа "сеть-сеть", установленное между локальной сетью и виртуальной сетью Azure. VPN-подключение типа "сеть-сеть":
 
@@ -141,11 +144,11 @@ ms.lasthandoff: 04/27/2018
   
 |**Элемент**|**Элемент Configuration**|**Описание**|**Значение**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Имя виртуальной сети  <br/> |Имя, назначаемое виртуальной сети Azure (например, DirSyncNet).  <br/> |![](./images/Common_Images/TableLine.png) |
-|2.  <br/> |Расположение виртуальной сети  <br/> |Центр обработки данных Azure, в котором будет расположена виртуальная сеть (например, Запад США).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |IP-адрес VPN-устройства  <br/> |Общедоступный IPv4-адрес интерфейса VPN-устройства в Интернете. Попросите ИТ-отдел определить этот адрес.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |Адресное пространство виртуальной сети  <br/> |Адресное пространство (определенное в одном префиксе личного адреса) для виртуальной сети. Определите это адресное пространство при поддержке ИТ-отдела. Оно должно быть представлено в формате CIDR, также известном как формат префикса сети. Пример: 10.24.64.0/20.  <br/> |![](./images/Common_Images/TableLine.png) <br/> |
-|5.  <br/> |Общий ключ IPsec  <br/> |32-значный случайный буквенно-цифровой ключ, который будет использоваться для проверки подлинности обеих сторон VPN-подключения. Определите значение этого ключа при поддержке ИТ-отдела, а затем сохраните его в надежном месте. Вы также можете ознакомиться со статьей [Создание случайной строки для предварительного ключа IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./images/Common_Images/TableLine.png) <br/> |
+|1.  <br/> |Имя виртуальной сети  <br/> |Имя, назначаемое виртуальной сети Azure (например, DirSyncNet).  <br/> |![](./media/Common-Images/TableLine.png) |
+|2.  <br/> |Расположение виртуальной сети  <br/> |Центр обработки данных Azure, в котором будет расположена виртуальная сеть (например, Запад США).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |IP-адрес VPN-устройства  <br/> |Общедоступный IPv4-адрес интерфейса VPN-устройства в Интернете. Попросите ИТ-отдел определить этот адрес.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Адресное пространство виртуальной сети  <br/> |Адресное пространство (определенное в одном префиксе личного адреса) для виртуальной сети. Определите это адресное пространство при поддержке ИТ-отдела. Оно должно быть представлено в формате CIDR, также известном как формат префикса сети. Пример: 10.24.64.0/20.  <br/> |![](./media/Common-Images/TableLine.png) <br/> |
+|5.  <br/> |Общий ключ IPsec  <br/> |32-значный случайный буквенно-цифровой ключ, который будет использоваться для проверки подлинности обеих сторон VPN-подключения. Определите значение этого ключа при поддержке ИТ-отдела, а затем сохраните его в надежном месте. Вы также можете ознакомиться со статьей [Создание случайной строки для предварительного ключа IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./media/Common-Images/TableLine.png) <br/> |
    
 Укажите подсети этого решения в таблице S.
   
@@ -159,8 +162,8 @@ ms.lasthandoff: 04/27/2018
   
 |**Элемент**|**Имя подсети**|**Адресное пространство подсети**|**Назначение**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Подсеть, используемая шлюзом Azure.  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая шлюзом Azure.  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 Для локальных DNS-серверов, используемых виртуальными машинами в виртуальной сети, заполните таблицу D. Присвойте каждому DNS-серверу понятное имя и один IP-адрес. Это понятное имя необязательно должно совпадать с именем узла или именем компьютера на DNS-сервере. Обратите внимание, что представлено два пустых поля, но вы можете добавить еще. Определите этот список при поддержке ИТ-отдела.
   
@@ -168,8 +171,8 @@ ms.lasthandoff: 04/27/2018
   
 |**Элемент**|**Понятное имя DNS-сервера**|**IP-адрес DNS-сервера**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 Чтобы отправлять пакеты из виртуальной сети Azure в сеть организации с помощью VPN-подключения типа "сеть-сеть", необходимо настроить виртуальную сеть с локальной сетью. Эта локальная сеть содержит список адресных пространств (в формате CIDR) для всех расположений в локальной сети организации, которые должны быть доступны виртуальным машинам в виртуальной сети. Это могут быть все расположения в локальной сети или подсети. Список адресных пространств, которые определяют локальную сеть, должен быть уникален и не должен пересекаться с адресными пространствами, используемыми для этой или других виртуальных сетей.
   
@@ -179,9 +182,9 @@ ms.lasthandoff: 04/27/2018
   
 |**Элемент**|**Адресное пространство локальной сети**|
 |:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 ## <a name="deployment-roadmap"></a>План развертывания
 <a name="DeploymentRoadmap"> </a>
@@ -201,7 +204,7 @@ ms.lasthandoff: 04/27/2018
   
 Ниже показана полученная в итоге конфигурация.
   
-![Локальная сеть должна иметь маршрут для адресного пространства виртуальной сети, указывающий на VPN-устройство.](images/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
+![Локальная сеть должна иметь маршрут для адресного пространства виртуальной сети, указывающий на VPN-устройство.](media/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
   
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Этап 2. Создание распределенной виртуальной сети в Azure
 <a name="Phase2"></a>
@@ -293,7 +296,7 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -A
 
 Ниже показана полученная в итоге конфигурация.
   
-![Виртуальная сеть пока не подключена к локальной.](images/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
+![Виртуальная сеть пока не подключена к локальной.](media/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
   
 Затем используйте следующие команды, чтобы создать шлюзы для VPN-подключения типа "сеть-сеть".
   
@@ -323,7 +326,7 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
 
 Ниже показана полученная в итоге конфигурация.
   
-![Для виртуальной сети теперь настроен шлюз.](images/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
+![Для виртуальной сети теперь настроен шлюз.](media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
 Затем настройте локальное VPN-устройство для подключения к VPN-шлюзу Azure. Дополнительные сведения см. в статье [О VPN-устройствах для подключений VPN-шлюзов типа "сеть-сеть"](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
@@ -335,7 +338,7 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
     
 Ниже показана полученная в итоге конфигурация.
   
-![Теперь виртуальная сеть подключена к локальной.](images/6379c423-4f22-4453-941b-7ff32484a0a5.png)
+![Теперь виртуальная сеть подключена к локальной.](media/6379c423-4f22-4453-941b-7ff32484a0a5.png)
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>Этап 3 (необязательный). Добавление виртуальных машин
 
@@ -353,9 +356,8 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
   
 Ниже показана полученная в итоге конфигурация.
   
-![В виртуальной сети теперь размещены виртуальные машины, доступные из локальной сети.](images/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![В виртуальной сети теперь размещены виртуальные машины, доступные из локальной сети.](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
   
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий шаг
   
-[Развертывание службы синхронизации каталогов Office 365 (DirSync) в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
-
+[Развертывание синхронизации каталогов Office 365 в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
