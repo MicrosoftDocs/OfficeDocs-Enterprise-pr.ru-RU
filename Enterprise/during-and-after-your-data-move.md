@@ -3,7 +3,7 @@ title: Во время и после перемещения данных
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Перемещение данных — это операция серверной с минимальное влияние для конечных пользователей. Никаких действий не требуется Microsoft перемещает каждой службы и связанных данных для вашего клиента для нового географически центра обработки данных. Передача данных и проверки происходят в фоновом режиме заранее с минимальное влияние для пользователей.
-ms.openlocfilehash: 8813e73dcbce7b6ea24e497929ca6b8e0928e4e7
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542461"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839607"
 ---
 # <a name="during-and-after-your-data-move"></a>Во время и после перемещения данных
 
@@ -165,4 +165,13 @@ ms.locfileid: "22542461"
 
 Мы перемещать только данные клиента для Exchange Online, SharePoint Online и Скайп для бизнеса. Мы не перемещать данные для других служб. Нет изменений или влияние его в качестве клиента или пользователя следующие службы. Процесс перемещения не влияет на их и расположение свои данные клиента не изменяется.
   
+## <a name="related-topics"></a>Смежные темы 
+ 
+[Как запросить перемещение данных](request-your-data-move.md)
+    
+[Ответы на общие вопросы о перемещении данных](data-move-faq.md)
+  
+[Новые geos центра обработки данных для Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Служб Azure по регионам](https://azure.microsoft.com/en-us/regions/)
 

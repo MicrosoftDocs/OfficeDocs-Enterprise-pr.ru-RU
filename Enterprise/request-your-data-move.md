@@ -3,7 +3,7 @@ title: Как запросить перемещение данных
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Существующие клиенты Office 365 необходимо отправить запрос в срок для своей страны для получения данных клиента их участников служб Office 365, перемещено в своих новых географически.
-ms.openlocfilehash: 850a3a81b7e0405d47e36726e328ea078ae3f55c
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23222981"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839577"
 ---
 # <a name="how-to-request-your-data-move"></a>Как запросить перемещение данных
 
@@ -109,5 +109,15 @@ ms.locfileid: "23222981"
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Уведомить пользователей, чтобы обновить устаревшие параметры Exchange на мобильных устройствах
 
 Если пользователи имеют мобильных устройств с Exchange Server, задайте значение **m.outlook.com** или **podxxxxx.outlook.com**, мы рекомендуем они переключаются **outlook.office365.com**, следуйте инструкциям в разделе [Set up мобильного устройства для синхронизации с помощью учетной записи](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+
+## <a name="related-topics"></a>Смежные темы
+
+[Перемещение основных данных в новый Office 365 geos центра обработки данных](moving-data-to-new-datacenter-geos.md)
+
+[Ответы на общие вопросы о перемещении данных](data-move-faq.md)
+
+[Новые geos центра обработки данных для Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Служб Azure по регионам](https://azure.microsoft.com/en-us/regions/)
   
 

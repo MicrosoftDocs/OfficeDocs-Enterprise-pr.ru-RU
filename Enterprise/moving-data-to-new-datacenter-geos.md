@@ -3,7 +3,7 @@ title: Перемещение основных данных в новый Office
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Новые geos центра обработки данных добавьте емкости и вычисления ресурсы, которые поддерживают наш рост запросами и использовании текущего клиента. Кроме того новые geos центра обработки данных предлагают местонахождения данных в географически для основных данных клиента. Основных данных клиентов — это термин, который относится к подмножество данных клиента, определенных в условия соглашения Microsoft Online Services: содержимое и файлы узла Exchange Online содержимого почтового ящика (текст сообщения электронной почты, элементы календаря и содержимого вложений электронной почты) и SharePoint Online сохраненных в пределах этого сайта и отправки файлов в OneDrive для бизнеса.'
-ms.openlocfilehash: 1f3af15852b1221daf2e2d994653c8bb9cf697e4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542557"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839587"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Перемещение основных данных в новый Office 365 geos центра обработки данных
 
@@ -63,7 +63,7 @@ ms.locfileid: "22542557"
     
 - Перемещение данных — это операция серверной службы, оказывая минимальное влияние на конечных пользователей. На странице [во время и после перемещения данных](during-and-after-your-data-move.md) перечислены возможности, которые могут повлиять на работу. Использования [Microsoft Online Services службы уровень соглашение](https://go.microsoft.com/fwlink/p/?LinkId=523897) для обеспечения доступности, но это не требуется для подготовки к или мониторинг во время перемещения. Уведомление об обслуживание службы выполняется при необходимости. 
     
-## <a name="related-topics"></a>Статьи по теме 
+## <a name="related-topics"></a>Смежные темы 
  
 [Как запросить перемещение данных](request-your-data-move.md)
     
