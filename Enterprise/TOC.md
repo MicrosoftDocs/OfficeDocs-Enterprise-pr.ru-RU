@@ -1,4 +1,4 @@
-# Модели облачной архитектуры
+# [Модели облачной архитектуры](microsoft-cloud-it-architecture-resources.md)
 ## [Организация сети для облака Microsoft для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
 ### [Подключение сети к облаку](evolving-your-network-for-cloud-connectivity.md)
 ### [Общие элементы подключения к Microsoft Cloud](common-elements-of-microsoft-cloud-connectivity.md)
@@ -66,8 +66,8 @@
 #### [PerformancePoint Server 2007](pps-2007-end-of-support.md)
 #### [Project Server 2007](project-server-2007-end-of-support.md)
 
-# Тестирование Office 365
-## [Среда разработки и тестирования с базовой конфигурацией](base-configuration-dev-test-environment.md)
+# [Тестирование Office 365](cloud-adoption-test-lab-guides-tlgs.md)
+## [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
 ## [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
 ### [Синхронизация каталогов для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 ### [Многофакторная проверка подлинности для среды разработки и тестирования Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
