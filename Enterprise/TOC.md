@@ -92,7 +92,7 @@
 ### [Как подготовить немаршрутизируемый домен к синхронизации каталогов](prepare-a-non-routable-domain-for-directory-synchronization.md)
 ### [Планирование сети при использовании ExpressRoute для Office 365](network-planning-with-expressroute.md)
 ### [Маршрутизация с помощью ExpressRoute для Office 365](routing-with-expressroute.md)
-### [Принципы сетевого подключения к Office 365](network-connectivity.md)
+### [Принципы сетевого подключения к Office 365](office-365-network-connectivity-principles.md)
 ### Конечные точки Office 365
 #### [Глобальные конечные точки](urls-and-ip-address-ranges.md)
 #### [Конечные точки U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)
