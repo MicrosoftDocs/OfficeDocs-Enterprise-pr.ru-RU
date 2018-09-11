@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Чтобы помочь вам выявлять и дифференцировать сетевой трафик Office 365, новая веб-служба публикует конечные точки Office 365, упрощая оценку, настройку и обновление. Эта новая веб-служба заменяет собой скачиваемые XML-файлы, доступные в настоящее время.
-ms.openlocfilehash: 3abd6a0692ae4d66c76f8c0d65653b83646c6e23
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23830896"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831904"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Веб-служба IP-адресов и URL-адресов в Office 365**
 
@@ -68,11 +68,13 @@ ms.locfileid: "23830896"
 - **Format=JSON** | **CSV** | **RSS**. Кроме форматов JSON и CSV, веб-метод версии поддерживает RSS. Вы можете использовать его вместе с параметром allVersions=true для запрашивания RSS-канала, который можно применять в Outlook или других средствах чтения RSS.
 - **Instance**. Параметр маршрутизации. Этот необязательный параметр указывает экземпляр, для которого возвращается версия. Если его опустить, будут возвращены все экземпляры. Допустимые экземпляры: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
-Результат из веб-метода версии может быть одной записью или массивом записей. Ниже перечислены элементы каждой записи.
+Результат выполнения веб-метода версии может быть одной записью или массивом записей. Ниже перечислены элементы каждой записи.
 
 - instance — короткое имя экземпляра службы Office 365.
 - latest — последняя версия для конечных точек указанного экземпляра.
 - versions — список всех предыдущих версий для указанного экземпляра. Этот элемент включен, только если параметр AllVersions имеет значение true.
+
+Вы можете использовать Microsoft Flow для получения уведомлений об изменениях IP-адресов и URL-адресов по электронной почте. См. статью [Использование Microsoft Flow для получения электронных сообщений об изменениях URL-адресов и IP-адресов Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 
 ### <a name="examples"></a>**Примеры**
 
@@ -487,24 +489,10 @@ else:
 
 [Сетевое подключение к Office 365](network-connectivity.md)
   
-[Azure ExpressRoute для Office 365](azure-expressroute.md)
-  
-[Использование ExpressRoute для подключения к Office 365](managing-expressroute-for-connectivity.md)
-  
-[Маршрутизация с использованием ExpressRoute для Office 365](routing-with-expressroute.md)
-  
-[Реализация ExpressRoute для Office 365](implementing-expressroute.md)
-  
-[Использование сообществ BGP в ExpressRoute для сценариев Office 365 (предварительная версия)](bgp-communities-in-expressroute.md)
-  
 [Качество мультимедиа и характеристики сетевого подключения в случае Skype для бизнеса Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [Оптимизация сети для Skype для бизнеса Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
-  
-[ExpressRoute и качество обслуживания в Skype для бизнеса Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
-  
-[Поток вызовов с использованием ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
-  
+
 [Настройка производительности Office 365 с помощью базовых показателей и журнала производительности](performance-tuning-using-baselines-and-history.md)
   
 [План устранения проблем с производительностью Office 365](performance-troubleshooting-plan.md)
