@@ -14,11 +14,11 @@ search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: В этой статье объясняется разница между с помощью кэша объектов в SharePoint Server 2013 в локальной и SharePoint Online.
 ms.openlocfilehash: 8aa505645bb5f39c65684412ddebbd2b02baa13f
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 7cd210c44622ea2de5fb0e8e91c7be4839c80205
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542458"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24056168"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Использование кэша объектов в SharePoint Online
 

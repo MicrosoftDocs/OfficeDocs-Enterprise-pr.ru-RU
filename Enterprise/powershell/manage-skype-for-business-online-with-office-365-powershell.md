@@ -3,7 +3,7 @@ title: Управление Skype для бизнеса Online с помощью
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/22/2018
+ms.date: 09/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Сводка: в этой статье рассказывается, как использовать PowerShell в Office 365 для управления параметрами политик, индивидуальных политик для пользователей и собраний в Skype для бизнеса Online.'
-ms.openlocfilehash: f490131491a026961b0a5db312df5780483eadd9
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: a91803316972337aa31e2b979f841ac1cfbe8566
+ms.sourcegitcommit: 053db5479f93478a65d4c36ffe44c6a7bcb60e3c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319240"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965196"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Управление Skype для бизнеса Online с помощью Office 365 PowerShell
 
@@ -71,4 +71,6 @@ ms.locfileid: "20319240"
 [Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+
+[Скайп для ссылок на командлета PowerShell бизнеса](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

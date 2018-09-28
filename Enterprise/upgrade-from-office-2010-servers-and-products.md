@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Скоро заканчивается поддержка для Office 2010 на серверах и клиентских приложений и соглашения о поддержке настраиваемого недоступны. Используйте эту статью для начала планирования обновления сейчас.
-ms.openlocfilehash: 97a21b3dc715fa90113491be216a8f2da45678e5
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d358cfc2e9fbc0ecc829995698b32801e4c55c9f
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915184"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975157"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, которые помогут вам обновление с Office 2010 серверов и клиентов
 
@@ -39,14 +39,14 @@ ms.locfileid: "22915184"
 |Office 2010 (включая Word 2010, Excel 2010, PowerPoint 2010 и Outlook 2010)  <br/> |[Конец стратегия поддержки Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> |[Конец стратегия поддержки Exchange 2010](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 и SharePoint Server 2010  <br/> |[Обновление с SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 </br> | [Планирование Project Server и Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) </br> |
-|Lync Server 2010 </br> | [Планирование обновления до Скайп для Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) </br> |
+|Project Server 2010 <br/> | [Планирование Project Server и Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) <br/> |
+|Lync Server 2010 <br/> | [Планирование обновления до Скайп для Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
 ## <a name="what-if-im-a-home-user-what-do-i-do"></a>Что делать, если я домашних пользователей? Чем я занимаюсь?
 
 Если вы используете продуктов Office 2010 и приложениями дома, видеть [эти сведения](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Смежные темы
 
 [Группа пенсионного обеспечения Office (сообщества Microsoft Технический)](https://go.microsoft.com/fwlink/?linkid=842065)
   

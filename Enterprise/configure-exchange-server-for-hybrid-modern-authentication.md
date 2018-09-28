@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Гибридные современных проверки подлинности (НЕГО) — это метод управления удостоверениями, который обеспечивает более безопасной проверки подлинности пользователя и авторизации и доступна для гибридного развертывания Exchange server в локальной.
-ms.openlocfilehash: 871f03b8e776c694f7378f6905259d21516f7326
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542459"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975197"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности
 
@@ -81,7 +81,7 @@ ms.locfileid: "22542459"
     
 Принимать сообщения с (и снимок экрана для дальнейшего сравнения) выходных данных, эта команда, должен включать https:// * службы автообнаружения. .com *имя_домена* * и URL-адрес https:// *mail.yourdomain.com* , но в основном состоят из имен участников-служб, начинающихся с 00000002-0000-0ff1-ce00-000000000000 /. При наличии https:// URL-адресов из своей локальной, которые не указаны необходимо добавить записи, определенные в этот список. 
   
-3. Если своих внутренних и внешних MAPI/HTTP, веб-служб Exchange, ActiveSync, автономной адресной книги и автоматического обнаружения записей в этом списке не отображается, необходимо добавить их с помощью приведенной ниже команды (примере используются URL-адреса "`mail.corp.contoso.com`«и»`owa.contoso.com`", но было **Заменить примеры URL-адресов с помощью собственного** ) : </br>
+3. Если своих внутренних и внешних MAPI/HTTP, веб-служб Exchange, ActiveSync, автономной адресной книги и автоматического обнаружения записей в этом списке не отображается, необходимо добавить их с помощью приведенной ниже команды (примере используются URL-адреса "`mail.corp.contoso.com`«и»`owa.contoso.com`", но было **Заменить примеры URL-адресов с помощью собственного** ) : <br/>
 ```
 - $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 - $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
@@ -149,7 +149,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
  **Примечание** Необходимо настроить Скайп для бизнеса с НЕГО? Вам потребуются две статьи:, в котором приведены [Поддерживаемые топологии](https://technet.microsoft.com/en-us/library/mt803262.aspx)и показано, [как для выполнения конфигурации](configure-skype-for-business-for-hybrid-modern-authentication.md).
   
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Смежные темы
 
 [Обзор проверки подлинности на современном гибридной среды и необходимые условия для использования его с Скайп локальных серверов Exchange и бизнес-](hybrid-modern-auth-overview.md) 
   
