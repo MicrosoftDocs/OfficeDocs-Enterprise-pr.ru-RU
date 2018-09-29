@@ -3,7 +3,7 @@ title: Как настроить локальное развертывание E
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 3/23/2018
+ms.date: 09/28/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Гибридные современных проверки подлинности (НЕГО) — это метод управления удостоверениями, который обеспечивает более безопасной проверки подлинности пользователя и авторизации и доступна для гибридного развертывания Exchange server в локальной.
-ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
+ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975197"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "25347609"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности
 
@@ -63,13 +63,12 @@ ms.locfileid: "23975197"
   
 Во-первых необходимо Соберите все URL-адреса, которые необходимо добавить в AAD. Выполните следующие команды в локальной:
   
-- Get-MapiVirtualDirectory | Сервер FL\*URL-адрес\*
-    
-- Get-WebServicesVirtualDirectory | Сервер FL\*URL-адрес\*
-    
-- **Get-ActiveSyncVirtualDirectory | Сервер FL\*URL-адрес\***
-    
-- Get-OABVirtualDirectory | Сервер FL\*URL-адрес\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*
+Get-WebServicesVirtualDirectory | FL server,*url*
+Get-ActiveSyncVirtualDirectory | FL server,*url*
+Get-OABVirtualDirectory | FL server,*url*
+```
     
 Проверьте URL-адреса, клиенты могут подключаться к присутствовала HTTPS имена участников-служб в AAD.
   
@@ -77,17 +76,19 @@ ms.locfileid: "23975197"
     
 2. Для обмена связанные URL-адреса, введите следующую команду:
     
-- Get-MsolServicePrincipal - AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | Выберите - ExpandProperty ServicePrincipalNames
-    
-Принимать сообщения с (и снимок экрана для дальнейшего сравнения) выходных данных, эта команда, должен включать https:// * службы автообнаружения. .com *имя_домена* * и URL-адрес https:// *mail.yourdomain.com* , но в основном состоят из имен участников-служб, начинающихся с 00000002-0000-0ff1-ce00-000000000000 /. При наличии https:// URL-адресов из своей локальной, которые не указаны необходимо добавить записи, определенные в этот список. 
+```powershell
+Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
+```
+
+Принимать сообщения с (и снимок экрана для дальнейшего сравнения) выходные данные этой команды, которая должна включать https:// *autodiscover.yourdomain.com* и URL-адрес https:// *mail.yourdomain.com* , но большей части состоят из имен участников-служб, начинающихся с 00000002-0000-0ff1-ce00-000000000000 /. При наличии https:// URL-адресов из своей локальной, которые не указаны необходимо добавить записи, определенные в этот список. 
   
 3. Если своих внутренних и внешних MAPI/HTTP, веб-служб Exchange, ActiveSync, автономной адресной книги и автоматического обнаружения записей в этом списке не отображается, необходимо добавить их с помощью приведенной ниже команды (примере используются URL-адреса "`mail.corp.contoso.com`«и»`owa.contoso.com`", но было **Заменить примеры URL-адресов с помощью собственного** ) : <br/>
-```
-- $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
-- $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
-- $x.ServicePrincipalnames.Add("https://eas.contoso.com/")
-- Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+```powershell
+$x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
+$x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
+$x.ServicePrincipalnames.Add("https://owa.contoso.com/")
+$x.ServicePrincipalnames.Add("https://eas.contoso.com/")
+Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
  
 4. Убедитесь, что были добавлены новые записи, выполнив команду Get-MsolServicePrincipal на шаге 2 еще раз и просмотр выходных данных. Сравните список / снимок экрана с перед новый список имен участников-служб (можно также снимок экрана нового списка для записи). Если вы было выполнено успешно, вы увидите две новые URL-адресов в списке. Переход в нашем примере список имен участников-служб будут включать конкретные URL-адреса `https://mail.corp.contoso.com` и `https://owa.contoso.com`. 
@@ -96,28 +97,27 @@ ms.locfileid: "23975197"
 
 Теперь проверьте OAuth должным образом включены в Exchange на всех виртуальных каталогов Outlook может использовать, выполнив следующие команды:
 
-```
-Get-MapiVirtualDirectory | FL server,\*url\*,\*auth\* 
-Get-WebServicesVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-OABVirtualDirectory | FL server,\*url\*,\*oauth\*
-Get-AutoDiscoverVirtualDirectory | FL server,\*oauth\*
+```powershell
+Get-MapiVirtualDirectory | FL server,*url*,*auth* 
+Get-WebServicesVirtualDirectory | FL server,*url*,*oauth*
+Get-OABVirtualDirectory | FL server,*url*,*oauth*
+Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
 Проверка выходные данные в убедитесь в том, **OAuth** включен на каждом из этих VDirs, он будет выглядеть примерно следующим образом (и всего рассмотрение является «OAuth»); 
-  
- **[PS] C:\Windows\system32\>Get-MapiVirtualDirectory | сервер fl\*URL-адрес\*,\*проверки подлинности\***
-  
- **Сервер: EX1**
-  
- **InternalUrl:`https://mail.contoso.com/mapi`**
-  
- **ExternalUrl:`https://mail.contoso.com/mapi`**
-  
- **IISAuthenticationMethods: {Ntlm, OAuth, согласование}**
-  
- **InternalAuthenticationMethods: {Ntlm, OAuth, согласование}**
-  
- **ExternalAuthenticationMethods: {Ntlm, OAuth, согласование}**
+
+```powershell
+Get-MapiVirtualDirectory | fl server,*url*,*auth*
+```
+
+```
+Server                        : EX1
+InternalUrl                   : https://mail.contoso.com/mapi
+ExternalUrl                   : https://mail.contoso.com/mapi
+IISAuthenticationMethods      : {Ntlm, OAuth, Negotiate}
+InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
+```
   
 Если отсутствует OAuth с любого сервера и любой из четырех виртуальных каталогов необходимо добавить его с помощью нужных команд перед тем как перейти.
   
@@ -125,8 +125,10 @@ Get-AutoDiscoverVirtualDirectory | FL server,\*oauth\*
 
 Вернуться к локальной Командная консоль Exchange для этой команды последнего. Теперь можно проверить, что локальную имеется запись evoSTS поставщика проверки подлинности:
   
-`Get-AuthServer | where {$_.Name -eq "EvoSts"}`
-    
+```powershell
+Get-AuthServer | where {$_.Name -eq "EvoSts"}
+```
+
 Выходные данные должны быть показаны AuthServer EvoSts имя и состояние «Включено» должно быть значение True. Если это не отображается, следует Загрузите и запустите последнюю версию мастера гибридной конфигурации.
   
  **Важные** Если вы используете Exchange 2010 в вашей среде, не создается поставщик проверки подлинности EvoSTS. 
@@ -135,7 +137,7 @@ Get-AutoDiscoverVirtualDirectory | FL server,\*oauth\*
 
 Выполните следующую команду в командной консоли Exchange, в локальной:
 
-```
+```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true  
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
