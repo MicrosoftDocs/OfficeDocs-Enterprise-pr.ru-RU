@@ -3,7 +3,7 @@ title: Дополнительные IP-адреса и URL-адреса Office 3
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/22/2018
+ms.date: 9/13/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: Сводка. В новых веб-службах конечных точек отсутствует небольшое количество конечных точек для определенных сценариев.
 hideEdit: true
-ms.openlocfilehash: b40fb1a40d2a815bfc6e02fa11204d10dde2af73
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 4711f9b9560b0fab6d18700fcf3e933150861946
+ms.sourcegitcommit: 0f98c342f80ffa21ec35bbf4ae5619b5e3271da5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22600513"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977354"
 ---
 # <a name="additional-office-365-ip-addresses-and-urls-not-included-in-the-web-services"></a>Дополнительные IP-адреса и URL-адреса Office 365, не включенные в веб-службы
 
@@ -52,10 +52,11 @@ ms.locfileid: "22600513"
 | 6  | Функции сосуществования для[гибридного развертывания Exchange](https://docs.microsoft.com/exchange/exchange-deployment-assistant), например обмен сведениями о доступности. | Локальный сервер Exchange клиента | Входящий серверный трафик |
 | 7  | Проверка подлинности прокси-сервера для [гибридного развертывания Exchange](https://docs.microsoft.com/exchange/exchange-deployment-assistant) | Локальная служба маркеров безопасности клиента | Входящий серверный трафик |
 | 8  | Используется для настройки [гибридного развертывания Exchange](https://docs.microsoft.com/exchange/exchange-deployment-assistant) с помощью мастера гибридной конфигурации Exchange. <br> Примечание. Эти конечные точки необходимы только для настройки гибридного развертывания Exchange  | ```domains.live.com``` на TCP-портах 80 и 443. Требуется только для мастера гибридной конфигурации Exchange 2010 с пакетом обновления 3 (SP3). | Только исходящий серверный трафик |
-| 9  | **Проверка подлинности и удостоверения полных доменных имен** <br> Для функционирования полное доменное имя ```secure.aadcdn.microsoftonline-p.com``` должно находиться в зоне надежных сайтов Internet Explorer (IE) или Microsoft Edge. |  | Надежные сайты |
-| 10  |  **Полные доменные имена Microsoft Teams** <br> Если вы используете Internet Explorer или Microsoft Edge, вам нужно разрешить основные и сторонние файлы cookie, а также добавить полные доменные имена Teams в список надежных сайтов (в дополнение к полным доменным именам для всего набора, CDN и телеметрии, перечисленным выше). Дополнительные сведения см. в статье [Известные проблемы Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Надежные сайты |
-| 11  |  **Полные доменные имена SharePoint Online и OneDrive для бизнеса** <br> Для функционирования все полные доменные имена ". sharepoint.com", имеющие в имени "\<клиент>", должны находиться в зоне надежных сайтов IE или Microsoft Edge вашего клиента. Эти конечные точки необходимо добавить в дополнение к полным доменным именам для всего набора, CDN и телеметрии, перечисленным выше. |  | Надежные сайты |
-| 12  | **Yammer**  <br> Приложение Yammer доступно только в браузере и требует, чтобы авторизованный пользователь проходил через прокси-сервер. Для функционирования все полные доменные имена приложения Yammer должны находиться в зоне надежных сайтов IE или Microsoft Edge вашего клиента. |  | Надежные сайты |
+| 9  | Служба AutoDetect используется в сценариях [гибридного развертывания Exchange](https://docs.microsoft.com/exchange/exchange-deployment-assistant) с [гибридной современной проверкой подлинности в Outlook для iOS и Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Локальный сервер Exchange клиента на TCP 443 | Входящий серверный трафик |
+| 10  | **Проверка подлинности и удостоверения полных доменных имен** <br> Для функционирования полное доменное имя ```secure.aadcdn.microsoftonline-p.com``` должно находиться в зоне надежных сайтов Internet Explorer (IE) или Microsoft Edge. |  | Надежные сайты |
+| 11  |  **Полные доменные имена Microsoft Teams** <br> Если вы используете Internet Explorer или Microsoft Edge, вам нужно разрешить основные и сторонние файлы cookie, а также добавить полные доменные имена Teams в список надежных сайтов (в дополнение к полным доменным именам для всего набора, CDN и телеметрии, перечисленным выше). Дополнительные сведения см. в статье [Известные проблемы Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Надежные сайты |
+| 12  |  **Полные доменные имена SharePoint Online и OneDrive для бизнеса** <br> Для функционирования все полные доменные имена ". sharepoint.com", имеющие в имени "\<клиент>", должны находиться в зоне надежных сайтов IE или Microsoft Edge вашего клиента. Эти конечные точки необходимо добавить в дополнение к полным доменным именам для всего набора, CDN и телеметрии, перечисленным выше. |  | Надежные сайты |
+| 13  | **Yammer**  <br> Приложение Yammer доступно только в браузере и требует, чтобы авторизованный пользователь проходил через прокси-сервер. Для функционирования все полные доменные имена приложения Yammer должны находиться в зоне надежных сайтов IE или Microsoft Edge вашего клиента. |  | Надежные сайты |
 
 ## <a name="related-topics"></a>Статьи по теме
 
