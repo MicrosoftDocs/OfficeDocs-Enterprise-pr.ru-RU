@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: Сводка. Узнайте об облачных службах и платформах Майкрософт. Ознакомьтесь со схемой корпоративного облака и рядом сведений об облачной архитектуре и не только.
-ms.openlocfilehash: f6f390a493efe4f4155655cc6116e9fdd7ec5a9f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
+ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915744"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24022098"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 
@@ -40,7 +40,6 @@ ms.locfileid: "22915744"
     - [Microsoft Mobility + Security для корпоративных архитекторов](microsoft-cloud-it-architecture-resources.md#mobility)
     - [Хранение в облаке Майкрософт для корпоративных архитекторов](microsoft-cloud-it-architecture-resources.md#storage)
     - [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-cloud-it-architecture-resources.md#hybrid)
-    - [Contoso в Microsoft Cloud](microsoft-cloud-it-architecture-resources.md#contoso)
     - [Распространенные атаки и как Майкрософт защищает вашу организацию](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
 - **[Серия решений Office 365 для корпоративных пользователей](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
@@ -132,22 +131,13 @@ ms.locfileid: "22915744"
 |:-----|:-----|
 |[![Эскиз модели гибридного облака Майкрософт](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Статья](https://technet.microsoft.com/library/mt750500.aspx) <br/>[Другие языки](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Эта модель содержит следующие страницы: <ul><li> **Общие сведения о гибридном облаке**. Облачные предложения корпорации Майкрософт (SaaS, Azure PaaS и Azure IaaS) и их общие элементы. </li><li> **Архитектура сценариев гибридного облака корпорации Майкрософт**. Схема архитектуры гибридного облака для облачных предложений корпорации Майкрософт, на которой показаны общие слои локальных инфраструктуры, сети и удостоверений. </li><li> **Сценарии гибридного облака для Microsoft SaaS (Office 365)**. Архитектура гибридного сценария SaaS и описания ключевых гибридных конфигураций для Skype для бизнеса, SharePoint Server и Exchange Server. </li><li> **Сценарии гибридного облака для Azure PaaS**. Архитектура гибридного сценария Azure PaaS и описание вариантов применения гибридной среды Azure PaaS с примером и описанием базы данных SQL Server 2016 Stretch. </li><li> **Сценарии гибридного облака для Azure IaaS**. Архитектура гибридного сценария Azure IaaS и описание варианта применения бизнес-приложения, размещенного в Azure IaaS. </li></ul><br/>|
    
-<a name="contoso"> </a>
-### <a name="contoso-in-the-microsoft-cloud"></a>Contoso в Microsoft Cloud
-
-Как вымышленная, но типичная международная организация реализовала облачные решения Майкрософт, в том числе Office 365, Azure, Dynamics 365 и Intune.
-  
-|**Элемент**|**Описание**|
-|:-----|:-----|
-|[![Эскиз плаката "Contoso в Microsoft Cloud".](media/63077617-b8f2-45b6-b772-bad6cd98721d.png)          ](https://www.microsoft.com/download/details.aspx?id=54427) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)           \| [Статья](https://technet.microsoft.com/library/mt775341.aspx) <br/>[Другие языки](https://www.microsoft.com/download/details.aspx?id=54427) <br/> |Эта модель содержит: <ul><li>Общие сведения о корпорации Contoso </li><li>ИТ-инфраструктура и потребности корпорации Contoso </li><li>Организация сети Contoso в облаке</li><li>Идентификация Contoso в облаке</li><li>Подписки, лицензии и учетные записи пользователей Contoso</li><li>Обеспечение безопасности в облаке для Contoso</li><li>Сценарии использования облака в корпорации Contoso</li></ul> <br/>|
-   
 <a name="attacks"> </a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Распространенные атаки и как Майкрософт защищает вашу организацию
 Узнайте о распространенных кибер-атаках и о том, как Майкрософт поможет вашей организации на каждом этапе атаки. 
 
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|[![Эскиз плаката "Распространенные атаки".](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) </br> | На этом плакате показаны этапы основных атак и описаны возможности, позволяющие остановить злоумышленников на каждом из них. <br/>|
+|[![Эскиз плаката "Распространенные атаки".](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | На этом плакате показаны этапы основных атак и описаны возможности, позволяющие остановить злоумышленников на каждом из них. <br/>|
 
 
 <a name="santa"> </a>
