@@ -36,6 +36,10 @@
 ### [Azure ExpressRoute для Office 365](azure-expressroute.md)
 ### [Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016](modern-auth-for-office-2013-and-2016.md)
 ### [Взаимодействие между клиентами Office 365](office-365-inter-tenant-collaboration.md)
+## Поддержка клиентов Office 365
+### [Условный доступ](office-365-client-support-conditional-access.md)
+### [управление мобильными приложениями;](office-365-client-support-mobile-application-management.md)
+### [Современный проверки подлинности](office-365-client-support-modern-authentication.md)
 ## Гибридные возможности
 ### [Гибридная современная проверка подлинности и предварительные требования для Skype для бизнеса Server и Exchange Server](hybrid-modern-auth-overview.md)
 ### [Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -169,6 +173,8 @@
 ### [Настройка производительности Office 365 с помощью базовых показателей и журнала производительности](performance-tuning-using-baselines-and-history.md)
 ### [Настройка производительности Exchange Online](tune-exchange-online-performance.md)
 ### [Настройка производительности SharePoint Online](tune-sharepoint-online-performance.md)
+#### [Общие сведения о настройке производительности для SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
+#### [Диагностика проблем производительности в SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
 ### [Настройка параметров Скайп для бизнеса в Интернет производительности](tune-skype-for-business-online-performance.md)
 ### [Настройка параметров производительности Project Online](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
 ### [План устранения проблем с производительностью Office 365](performance-troubleshooting-plan.md)
