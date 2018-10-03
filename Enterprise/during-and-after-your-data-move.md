@@ -3,7 +3,7 @@ title: Во время и после перемещения данных
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Перемещение данных — это операция серверной с минимальное влияние для конечных пользователей. Никаких действий не требуется Microsoft перемещает каждой службы и связанных данных для вашего клиента для нового географически центра обработки данных. Передача данных и проверки происходят в фоновом режиме заранее с минимальное влияние для пользователей.
-ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 6975a2ea4a1f2b2ebabe5f64b12ae58657180903
+ms.sourcegitcommit: b745d570fd6691606d226f6232cfaafd2d875a2d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975177"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25361507"
 ---
 # <a name="during-and-after-your-data-move"></a>Во время и после перемещения данных
 
@@ -34,7 +34,7 @@ ms.locfileid: "23975177"
 |Фиджи Австралия, Новая Зеландия  <br/> |31 октября 2017  <br/> |
 |Япония  <br/> |31 октября 2018  <br/> |
 |Индия  <br/> |31 октября 2018  <br/> |
-|Канада  <br/> |31 октября 2018  <br/> |
+|Канада  <br/> |30 июня 2019  <br/> |
 |Южная Корея  <br/> |31 октября 2018  <br/> |
 |Соединенное Королевство  <br/> |15 сентября 2019  <br/> |
 |Франция  <br/> |15 сентября 2020 г.  <br/> |
