@@ -15,12 +15,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Описываются распространенные причины проблем с синхронизацией каталогов в Office 365 и предоставляет несколько методов для устранения неполадок и устраните их.
-ms.openlocfilehash: ad3b6e27439354a2ede9b1a4b100e0f9e06148d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
+ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542376"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25405132"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Устранение проблем с синхронизацией каталогов для Office 365
 
@@ -63,7 +63,7 @@ ms.locfileid: "22542376"
 - [Синхронизации службы каталогов останавливает Azure Active Directory или в случае предупреждение о том, что синхронизация не зарегистрировано в более одного дня](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Не синхронизация хэши паролей или я вижу оповещения в центре администрирования Office 365, что не был последние хэш-функции синхронизации паролей**
-- [Реализация хэш-функции синхронизации паролей с помощью Azure AD подключение синхронизации](https://go.microsoft.com/fwlink/p/?LinkId=820600)
+- [Реализация хэш-функции синхронизации паролей с помощью Azure AD подключение синхронизации](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Я вижу оповещение о превышении квот объектов**
 - У нас есть квоты встроенный объект для защиты службы. При наличии слишком большого числа объектов в каталоге, которые необходимо синхронизировать с Office 365, потребуется увеличить квоту на почтовый [контакт поддержки продуктов бизнес](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) .
