@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 description: Узнайте, как современные проверки подлинности Office 365 работает по-разному для Office 2013 и 2016 клиентских приложений.
-ms.openlocfilehash: a9b6e2dabec9fb59f5fd7f60508dcbc6fe840cfb
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 78df8c12ab008922592516cf1d3cda10c594e552
+ms.sourcegitcommit: 7a12a46019970fcd45a6461f4f4cbcd1f76c9b4e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542470"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "25436087"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016
 
@@ -54,7 +54,8 @@ ms.locfileid: "22542470"
     
 - [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
     
-- [Skype для бизнеса Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
+- 
+  [Skype для бизнеса Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -96,5 +97,8 @@ ms.locfileid: "22542470"
    
 ## <a name="see-also"></a>См. также
 
-[С помощью Office 365 современных проверки подлинности с клиентами Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)
+[Включение современных проверки подлинности для Office 2013 на устройствах Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
+[Планирование для многофакторной проверки подлинности для развертываний Office 365 (для Office 365 для администраторов)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+
+[Вход на портал Office 365 с проверкой шаг 2 (для конечных пользователей)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
