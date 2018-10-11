@@ -3,7 +3,7 @@ title: Поддержка протокола IPv6 в службах Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/12/2017
+ms.date: 10/10/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Сводка: Описание поддержки IPv6 в компонентах Microsoft Office 365 и в предложениях Office 365 для государственных учреждений.'
-ms.openlocfilehash: 74752988803728ef4c319e368150b90f7e5d2599
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: ed06f1eac3c6a3d631445db1d623bd25c62a309c
+ms.sourcegitcommit: ae7f2087d51698d3c5ef371888278544a7046205
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223131"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25493834"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Поддержка протокола IPv6 в службах Office 365
 
@@ -79,7 +79,9 @@ Exchange Online Protection (EOP) поддерживает IPv6, если пер�
 
 - IPv6 не поддерживает BlackBerry® Enterprise Server (BES), так как BlackBerry не поддерживает IPv6.
 
-Ниже приводится краткое связь, которую можно использовать для возврата:[https://aka.ms/o365ip6](https://aka.ms/o365ip6)
+- При использовании служб федерации Active Directory (AD FS) с помощью Office 365 рекламу сетевую конечную точку службы федерации Active Directory в Office 365 с помощью IPv6 не поддерживается. Не следует включать записи AAAA в соответствующие записи AD FS при использовании Exchange Online. 
+
+Вы можете быстро вернуться сюда с помощью этой короткой ссылки: [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
   
 ## <a name="see-also"></a>См. также
 
