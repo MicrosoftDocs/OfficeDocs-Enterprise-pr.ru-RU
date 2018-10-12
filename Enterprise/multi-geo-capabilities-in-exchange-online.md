@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Разверните узел состояние присутствия Office 365 для нескольких географических регионов с несколькими географически возможности в Exchange Online.
-ms.openlocfilehash: 9834b102365f11623a1decc00460f85f36552ccb
-ms.sourcegitcommit: d88307a32fd3439a09a87b260e0c0cf9074ebeb0
+ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "22914784"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498229"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Ферма с несколькими географически возможности в Exchange Online
 
@@ -52,7 +52,7 @@ ms.locfileid: "22914784"
 - США
 
 ## <a name="prerequisite-configuration"></a>Предварительные настройки
-Прежде чем начать, используя возможности несколькими географически в Exchange Online, корпорации Майкрософт необходимо настроить клиент Exchange Online для поддержки различных географически. Этот процесс однократного конфигурации запускается после упорядочивании несколькими географически и лицензий, которые отображаются в наших клиентов. Этот процесс однократного конфигурации обычно занимает меньше, чем 30 дней.
+Прежде чем начать, используя возможности несколькими географически в Exchange Online, корпорации Майкрософт необходимо настроить клиент Exchange Online для поддержки различных географически. Этот процесс однократного конфигурации запускается после упорядочивании несколькими географически и лицензий, которые отображаются в вашего клиента. Этот процесс однократного конфигурации обычно занимает меньше, чем 30 дней. Порядок несколькими географически обратитесь к представителю Майкрософт. Дополнительные сведения можно https://aka.ms/Multi-Geo.
 
 Вы будете получать уведомления в [Центр сообщений Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) после завершения настройки. Конфигурация будет запущен автоматически после лицензии несколькими географически отображаются в вашего клиента.
 
@@ -146,7 +146,7 @@ Exchange Online синхронизирует свойство **PreferredDataLoc
 Get-OrganizationConfig | Select -ExpandProperty AllowedMailboxRegions | Format-Table
 ```
 
-Выходные данные команды выглядят следующим образом:
+Выходные данные команды выглядят так:
 
 ```
 APC
@@ -167,7 +167,7 @@ NAM
 Get-OrganizationConfig | Select DefaultMailboxRegion
 ```
 
-Выходные данные команды выглядят следующим образом:
+Выходные данные команды выглядят так:
 
 ```
 DefaultMailboxRegion
@@ -197,7 +197,7 @@ Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
 Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
 ```
 
-Выходные данные команды выглядят следующим образом:
+Выходные данные команды выглядят так:
 
 ```
 Database                    : EURPR03DG077-db007 
@@ -222,7 +222,7 @@ Get-MsolUser -UserPrincipalName <UserPrincipalName> | Format-List UserPrincipalN
 Get-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com | Format-List
 ```
 
-Выходные данные команды выглядят следующим образом:
+Выходные данные команды выглядят так:
 
 ```
 UserPrincipalName     : michelle@contoso.onmicrosoft.com
@@ -241,7 +241,7 @@ Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoC
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
 ```
 
-**Примечания.**
+**Примечания**:
 
 - Как упоминалось ранее нельзя использовать эту процедуру для объектов-синхронизированных пользователей из локального Active Directory. Необходимо изменить значение **PreferredDataLocation** , с помощью AAD подключение. Дополнительные сведения можно [Azure Active Directory подключение синхронизации: Настройка предпочитаемого данных расположения для ресурсов Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation). 
 
