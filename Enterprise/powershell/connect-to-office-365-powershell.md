@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Сводка: Подключиться к своей организации Office 365, с помощью Office 365 PowerShell для выполнения задач Центр администрирования из командной строки.'
-ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
+ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575283"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25601643"
 ---
 # <a name="connect-to-office-365-powershell"></a>Подключение к Office 365 PowerShell
 
@@ -89,6 +89,10 @@ Connect-AzureAD
 В диалоговом окне **входа в учетную запись** введите работы Office 365 или школа имя учетной записи и пароль и нажмите кнопку **ОК**.
 
 При использовании многофакторной проверкой Подлинности следуйте инструкциям в диалоговых окнах дополнительные, чтобы предоставить дополнительные сведения о проверке подлинности, такие как код подтверждения.
+
+>[!Tip]
+>Для подключения к Office 365 Германия видеть [подключение к Германии Azure с помощью PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
+>
     
 После подключения, можно использовать новые командлеты для [Windows Azure Active Directory PowerShell для модуля "график"](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
@@ -122,8 +126,11 @@ Connect-MsolService
 
 При использовании многофакторной проверкой Подлинности следуйте инструкциям в диалоговых окнах дополнительные, чтобы предоставить дополнительные сведения о проверке подлинности, такие как код подтверждения.
 
+>[!Tip]
+>Для подключения к Office 365 Германия видеть [подключение к Германии Azure с помощью PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
+>
     
-### <a name="how-do-you-know-this-worked"></a>Как проверить, что все получилось?
+### <a name="how-do-you-know-this-worked"></a>Как убедиться, что все получилось?
 
 Если не возникло никаких ошибок, значит, подключение выполнено успешно. Чтобы выполнить быструю проверку, запустите командлет Office 365:, например **Get-MsolUser**, и просмотрите результаты.
   
