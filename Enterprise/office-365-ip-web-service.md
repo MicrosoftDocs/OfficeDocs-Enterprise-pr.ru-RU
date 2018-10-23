@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Чтобы помочь вам выявлять и дифференцировать сетевой трафик Office 365, новая веб-служба публикует конечные точки Office 365, упрощая оценку, настройку и обновление. Эта новая веб-служба заменяет собой скачиваемые XML-файлы, доступные в настоящее время.
-ms.openlocfilehash: 2b5763b9f8f08f2cc619331dac70743474a8515b
-ms.sourcegitcommit: d67e73f6cdc1e8d220d90a239e23e218f24528d2
+ms.openlocfilehash: 1765a35e961d6aa3da42c36e5a04333e57ae010b
+ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "24961828"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25697985"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Веб-служба IP-адресов и URL-адресов в Office 365**
 
@@ -107,8 +107,8 @@ ms.locfileid: "24961828"
 ]
 ```
 
-[!IMPORTANT]
-GUID для параметра ClientRequestID в этих URI приведен только в качестве примера. Чтобы попробовать применить URI веб-службы, создайте собственный GUID. GUID, показанные в этих примерах, могут быть заблокированы веб-службой в будущем.
+> [!IMPORTANT]
+> GUID для параметра ClientRequestID в этих URI приведен только в качестве примера. Чтобы попробовать применить URI веб-службы, создайте собственный GUID. GUID, показанные в этих примерах, могут быть заблокированы веб-службой в будущем.
 
 Пример 2. Запрос URI: [https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
