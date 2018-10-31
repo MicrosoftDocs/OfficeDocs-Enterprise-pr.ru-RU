@@ -7,7 +7,7 @@ ms.date: 10/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Сводка: Подключиться к своей организации Office 365, с помощью Office 365 PowerShell для выполнения задач Центр администрирования из командной строки.'
-ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
-ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
+ms.openlocfilehash: d9bee7060f599120d2d6036c45b44e485ea9a0bd
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25601643"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849895"
 ---
 # <a name="connect-to-office-365-powershell"></a>Подключение к Office 365 PowerShell
 
@@ -80,20 +80,22 @@ Office 365 PowerShell позволяет Управление параметра
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Шаг 2: Подключение к Azure AD для подписки Office 365
 
-Чтобы подключиться к Azure AD для подписки Office 365 с имя учетной записи и пароль или *многофакторная проверка подлинности (многофакторной проверкой Подлинности)*, выполните следующую команду в командной строке Windows PowerShell (она не обязательно с повышенными привилегиями).
-    
-```
-Connect-AzureAD
-```
+Для подключения к Azure AD для подписки Office 365 с имя учетной записи и пароль или *многофакторная проверка подлинности (многофакторной проверкой Подлинности)*, выполните одну из следующих команд в командной строке Windows PowerShell (она не обязательно с повышенными привилегиями).
+
+|||
+|:-------|:-----|
+| **Облако Office 365** | **Команда** |
+| Office 365 по всему миру (+ GCC) | `Connect-AzureAD` |
+| Office 365, которой с 21 Vianet | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 в Германии | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
+| Обороны США государственных Office 365 и Office 365 США государственных GCC высокой | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
+|||
 
 В диалоговом окне **входа в учетную запись** введите работы Office 365 или школа имя учетной записи и пароль и нажмите кнопку **ОК**.
 
 При использовании многофакторной проверкой Подлинности следуйте инструкциям в диалоговых окнах дополнительные, чтобы предоставить дополнительные сведения о проверке подлинности, такие как код подтверждения.
 
->[!Tip]
->Для подключения к Office 365 Германия видеть [подключение к Германии Azure с помощью PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
->
-    
+
 После подключения, можно использовать новые командлеты для [Windows Azure Active Directory PowerShell для модуля "график"](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
 
@@ -116,27 +118,28 @@ Connect-AzureAD
     
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Шаг 2: Подключение к Azure AD для подписки Office 365
 
-Чтобы подключиться к Azure AD для подписки Office 365 с имя учетной записи и пароль или *многофакторная проверка подлинности (многофакторной проверкой Подлинности)*, выполните следующую команду в командной строке Windows PowerShell (она не обязательно с повышенными привилегиями).
-    
-```
-Connect-MsolService
-```
+Для подключения к Azure AD для подписки Office 365 с имя учетной записи и пароль или *многофакторная проверка подлинности (многофакторной проверкой Подлинности)*, выполните одну из следующих команд в командной строке Windows PowerShell (она не обязательно с повышенными привилегиями).
+
+|||
+|:-------|:-----|
+| **Облако Office 365** | **Команда** |
+| Office 365 по всему миру (+ GCC) | `Connect-MsolService` |
+| Office 365, которой с 21 Vianet | `Connect-MsolService -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 в Германии | `Connect-MsolService -AzureEnvironmentName AzureGermanyCloud` |
+| Обороны США государственных Office 365 и Office 365 США государственных GCC высокой | `Connect-MsolService -AzureEnvironmentName USGovernment` |
+|||
 
 В диалоговом окне **входа в учетную запись** введите работы Office 365 или школа имя учетной записи и пароль и нажмите кнопку **ОК**.
 
 При использовании многофакторной проверкой Подлинности следуйте инструкциям в диалоговых окнах дополнительные, чтобы предоставить дополнительные сведения о проверке подлинности, такие как код подтверждения.
 
->[!Tip]
->Для подключения к Office 365 Германия видеть [подключение к Германии Azure с помощью PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
->
-    
-### <a name="how-do-you-know-this-worked"></a>Как убедиться, что все получилось?
+### <a name="how-do-you-know-this-worked"></a>Как проверить, что все получилось?
 
 Если не возникло никаких ошибок, значит, подключение выполнено успешно. Чтобы выполнить быструю проверку, запустите командлет Office 365:, например **Get-MsolUser**, и просмотрите результаты.
   
 Если возникают ошибки, просмотрите список возможных причин:
   
-- **Распространенная проблема — неправильный пароль.**. Еще раз выполните шаг 3. Будьте особенно внимательны при вводе имени пользователя и пароля.
+- **Распространенные проблемы имеет неверный пароль**. Повторите шаг 2. и обратите внимание на имя пользователя и пароль, введенные.
     
 - * *Требует Microsoft Azure модуль Active Directory для Windows PowerShell, Microsoft .NET Framework 3.5.* x * включен на компьютере **. Вероятно, что на компьютере установлена более новой версии (например, 4 или 4.5.* x *), но обратной совместимости с предыдущими версиями платформы .NET Framework можно включить или отключить. Дополнительные сведения в следующих разделах:
     

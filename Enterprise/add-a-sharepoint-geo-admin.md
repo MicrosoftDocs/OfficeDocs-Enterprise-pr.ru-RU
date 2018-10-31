@@ -1,5 +1,5 @@
 ---
-title: Добавление или удаление администратора географически
+title: Добавление и удаление администратора геообъектов
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,11 +8,12 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: Узнайте, как добавить или удалить администратора geo в OneDrive для бизнеса Multi-географически.
-ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849815"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Добавление или удаление администратора geo в OneDrive несколькими-географически Busniess
 
@@ -20,7 +21,7 @@ ms.lasthandoff: 05/03/2018
 
 Некоторые службы — например, банк терминов - из центрального расположения для администрирования и были реплицированы во вспомогательных расположения. Admin географически для центрального расположения имеет доступ к ним, а не "Администраторы" географического расположения вспомогательных.
 
-Для получения доступа к параметрам в все географического расположения продолжить глобальных администраторов и администраторов SharePoint Online.
+Чтобы иметь доступ к параметрам в центрального расположения и все вспомогательные расположения продолжить глобальных администраторов и администраторов SharePoint Online.
 
 ## <a name="configuring-geo-administrators"></a>Настройка географически администраторов
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 05/03/2018
 
 Можно добавить группу безопасности или группу безопасности с включенной поддержкой почты как администратор географически. (Группы рассылки и группы Office 365 не поддерживаются).
 
-Чтобы добавить группу географически администратором, выполните`Add-SPOGeoAdministrator -GroupAlias <alias>`
+Чтобы добавить группу от имени администратора географически, выполните`Add-SPOGeoAdministrator -GroupAlias <alias>`
 
-Чтобы удалить группу как географически администрирования, выполните`Remove-SPOGeoAdministrator -GroupAlias <alias>`
+Чтобы удалить группу от имени администратора географически, выполните`Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
 Обратите внимание, что не все группы безопасности псевдоним группы. Если вы хотите добавить группу безопасности, для которого не псевдоним, запустите [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) для получения списка групп, найдите группу безопасности ObjectID и выполните:
 
