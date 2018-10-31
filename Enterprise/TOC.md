@@ -26,7 +26,7 @@
 ### [Планирование сетевых устройств, подключающихся к службам Office 365](plan-for-network-devices.md)
 ### [Планирование сторонних SSL-сертификатов для Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Идентификация в Office 365 и Azure Active Directory](about-office-365-identity.md)
-### [Выбор между MDM и Intune](https://docs.microsoft.com/en-us/office365/securitycompliance/choose-between-mdm-and-intune)
+### [Выбор между MDM и Intune](https://docs.microsoft.com/ru-RU/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Планирование сети и миграции в Office 365](network-and-migration-planning.md)
 ### [Сетевое подключение к Office 365](network-connectivity.md)
 ### [Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
@@ -36,10 +36,10 @@
 ### [Azure ExpressRoute для Office 365](azure-expressroute.md)
 ### [Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016](modern-auth-for-office-2013-and-2016.md)
 ### [Взаимодействие между клиентами Office 365](office-365-inter-tenant-collaboration.md)
-## Поддержка клиентов Office 365
+## Поддержка клиента Office 365
 ### [Условный доступ](office-365-client-support-conditional-access.md)
-### [управление мобильными приложениями;](office-365-client-support-mobile-application-management.md)
-### [Современный проверки подлинности](office-365-client-support-modern-authentication.md)
+### [Управление мобильными приложениями](office-365-client-support-mobile-application-management.md)
+### [Современная проверка подлинности](office-365-client-support-modern-authentication.md)
 ## Гибридные возможности
 ### [Гибридная современная проверка подлинности и предварительные требования для Skype для бизнеса Server и Exchange Server](hybrid-modern-auth-overview.md)
 ### [Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -63,16 +63,16 @@
 # [Тестирование Office 365](cloud-adoption-test-lab-guides-tlgs.md)
 ## [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
 ## [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
-### [Синхронизация службы каталогов](dirsync-for-your-office-365-dev-test-environment.md)
+### [Синхронизация каталогов](dirsync-for-your-office-365-dev-test-environment.md)
 ### [Многофакторная проверка подлинности](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [Федеративное удостоверение](federated-identity-for-your-office-365-dev-test-environment.md)
 ### [Защита облачных приложений](cloud-app-security-for-your-office-365-dev-test-environment.md)
 ### [Расширенная защита от угроз](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 ### [Advanced eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 ### [Защита конфиденциальных файлов](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
-### [Классификации данных и маркировки](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
+### [Метки и классификация данных](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Office 365 и Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
-### [Интеграция с Exchange Online](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
+### [Интеграция Exchange Online](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
 ## [Среда разработки и тестирования One Microsoft Cloud](the-one-microsoft-cloud-dev-test-environment.md)
 ## [Имитация распределенной виртуальной сети в Azure](simulated-cross-premises-virtual-network-in-azure.md)
 
@@ -80,14 +80,14 @@
 ## [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)
 ## [Развертывание Office 365 корпоративный для организации](setup-overview-for-enterprises.md)
 ### [Контрольный список планирования развертывания Office 365](deployment-planning-checklist.md)
-### [Рекомендации по обеспечению безопасности в Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+### [Рекомендации по обеспечению безопасности в Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
 ## Настройка сети
-### [Обзор сетевые подключения к Office 365](office-365-networking-overview.md)
+### [Обзор возможности сетевого подключения к Office 365](office-365-networking-overview.md)
 ### [Принципы сетевого подключения к Office 365](office-365-network-connectivity-principles.md)
 ### [Планирование сети и настройка производительности для Office 365](network-planning-and-performance.md)
 ### [Сетевое подключение к Office 365](network-connectivity.md)
-### [Партнерская программа по организации сети для Office 365](office-365-networking-partner-program.md)
-### Office 365 IP-адресов и URL-адреса
+### [Партнерская программа Office 365 для поставщиков сетевых устройств и служб](office-365-networking-partner-program.md)
+### URL- и IP-адреса в Office 365
 #### [Управление конечными точками Office 365](managing-office-365-endpoints.md)
 #### [Глобальные конечные точки](urls-and-ip-address-ranges.md)
 #### [Конечные точки U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)
@@ -95,6 +95,7 @@
 #### [Конечные точки Office 365 под управлением 21Vianet](urls-and-ip-address-ranges-21vianet.md)
 #### [Конечные точки Office 365 Germany](office-365-germany-endpoints.md)
 #### [Сетевые запросы в Office 2016 для Mac](network-requests-in-office-2016-for-mac.md)
+#### [Веб-служба IP-адресов и URL-адресов в Office 365](office-365-ip-web-service.md)
 #### [Дополнительные конечные точки, отсутствующие в веб-службах](additional-office365-ip-addresses-and-urls.md)
 ### [Сети доставки содержимого](content-delivery-networks.md)
 ### [Поддержка IPv6 в службах Office 365](ipv6-support.md)
@@ -103,7 +104,7 @@
 #### [Azure ExpressRoute для Office 365](azure-expressroute.md)
 #### [Реализация ExpressRoute для Office 365](implementing-expressroute.md)
 #### [Планирование сети при использовании ExpressRoute для Office 365](network-planning-with-expressroute.md)
-#### [Маршрутизация с помощью ExpressRoute для Office 365](routing-with-expressroute.md)
+#### [Маршрутизация с использованием ExpressRoute для Office 365](routing-with-expressroute.md)
 
 ## Настройка подписки
 ### [Подготовка пользователей к работе путем синхронизации каталогов с Office 365](prepare-for-directory-synchronization.md)
@@ -156,10 +157,10 @@
 #### [Этап 5. Федеративная проверка подлинности для обеспечения высокой доступности: настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
 # Управление Office 365
-## [Работоспособность служб](view-service-health.md)
+## [Работоспособность службы](view-service-health.md)
 ### [Мониторинг подключения](monitor-connectivity.md)
-### [Варианты поддержки](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## [Инструменты управления](https://support.office.com/en-us/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Варианты поддержки](https://support.office.com/ru-RU/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+## [Инструменты управления](https://support.office.com/ru-RU/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Инструменты для управления учетными записями Office 365](manage-office-365-accounts.md)
 ### [Добавление в Office 365 сразу нескольких пользователей — справка для администраторов](add-several-users-at-the-same-time.md)
 ### [Восстановление удаленных элементов в почтовом ящике пользователя — справка для администраторов](recover-deleted-items-in-a-mailbox.md)
@@ -175,8 +176,8 @@
 ### [Настройка производительности SharePoint Online](tune-sharepoint-online-performance.md)
 #### [Общие сведения о настройке производительности для SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
 #### [Диагностика проблем производительности в SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
-### [Настройка параметров Скайп для бизнеса в Интернет производительности](tune-skype-for-business-online-performance.md)
-### [Настройка параметров производительности Project Online](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
+### [Настройка производительности Skype для бизнеса Online](tune-skype-for-business-online-performance.md)
+### [Настройка производительности Project Online](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
 ### [План устранения проблем с производительностью Office 365](performance-troubleshooting-plan.md)
 ### [Управление подключением ExpressRoute для Office 365](managing-expressroute-for-connectivity.md)
 ## Синхронизация каталогов
