@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Сводка: в этой статье описаны рекомендации по пропускной способности сети, ускорителям глобальной сети и устройствам балансировки нагрузки, которые используются для подключения к Office 365.'
-ms.openlocfilehash: c384ba043e64ec83eda74b234937efaf72f29815
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 023eb3f5ed4d81d1d49d18c69ef8c81032fd5851
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223071"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933126"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Планирование для сетевых устройств, подключающихся к службам Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "23223071"
   
 Следующие Скайп для статьи справки Business получить больше информации о Скайп для параметров бизнеса:
   
-- [Устранение неполадок Скайп для бизнеса входа ошибки (для администраторов)](https://go.microsoft.com/fwlink/p/?LinkID=243624)
+- [Устранение неполадок Скайп для бизнеса в Интернет ошибки для администраторов](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [Не удается подключиться к Скайп для бизнеса или некоторые функции не работают, так как локальный брандмауэр блокирует подключение](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
