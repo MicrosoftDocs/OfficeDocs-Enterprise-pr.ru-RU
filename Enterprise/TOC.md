@@ -45,7 +45,7 @@
 ### [Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности](configure-exchange-server-for-hybrid-modern-authentication.md)
 ### [Как настроить локальное развертывание Skype для бизнеса для использования гибридной современной проверки подлинности](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
 ### [Удаление гибридной современной проверки подлинности из Skype для бизнеса и Exchange или ее отключение](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
-## [Планирование перехода с продуктов Office 2007 или 2010](plan-upgrade-previous-versions-office.md)
+## [Обновление Office](plan-upgrade-previous-versions-office.md)
 ### [Office 2010](upgrade-from-office-2010-servers-and-products.md)
 #### [Office 2010 для настольных ПК](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 #### [Exchange 2010](exchange-2010-end-of-support.md)
