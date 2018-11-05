@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 description: Неплохо Если подключение к Интернету всегда была fast и никогда не вниз? Возможно поступит дня. Однако в это время, практические вещей, которые можно сделать, чтобы обойти balky сети и по-прежнему вашей повседневной работе.
-ms.openlocfilehash: 52c3bde04aa58f9e24a49d2034e6b6433c44f21c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 2287de562672f5ceb1ab32949168e8dfdeb31585
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542561"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933146"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Рекомендации по использованию Office 365 в медленных сетях
 
@@ -162,7 +162,7 @@ OneDrive для бизнес-приложение синхронизации с 
 
 При настройке веб-страницы, случайно не может снизить производительность со страницей. Ряд факторов могут оказывать влияние, такие как сложности и размера страницы добавляются количества веб-частей, изначально отображаются количество элементов списка или библиотеки, и способа кодовая страница.
   
-Для получения дополнительных сведений в разделе [Настройка параметров SharePoint Online производительности](https://technet.microsoft.com/library/f97c2f06-0426-443d-8a16-d98abb0da252#TuneSharePoint).
+Для получения дополнительных сведений в разделе [Настройка параметров SharePoint Online производительности](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance).
   
 ## <a name="best-practices-for-using-project-online"></a>Рекомендации по использованию Project Online
 
@@ -190,7 +190,7 @@ OneDrive для бизнес-приложение синхронизации с 
   
 [Курс по Microsoft Virtual Academy — Управление производительностью Office 365](https://blogs.office.com/2014/12/03/microsoft-virtual-academy-course-office-365-performance-management/)
   
-[Управление конечных точках Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Управление конечными точками Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Конечные точки Office 365 вопросы и ответы](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Вопросы и ответы о конечных точках Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 
