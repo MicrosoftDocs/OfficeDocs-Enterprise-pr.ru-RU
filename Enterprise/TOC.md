@@ -81,7 +81,7 @@
 ## [Развертывание Office 365 корпоративный для организации](setup-overview-for-enterprises.md)
 ### [Контрольный список планирования развертывания Office 365](deployment-planning-checklist.md)
 ### [Рекомендации по обеспечению безопасности в Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
-## Настройка сети
+## [Настройка сети](set-up-network-for-office-365.md)
 ### [Обзор возможности сетевого подключения к Office 365](office-365-networking-overview.md)
 ### [Принципы сетевого подключения к Office 365](office-365-network-connectivity-principles.md)
 ### [Планирование сети и настройка производительности для Office 365](network-planning-and-performance.md)
