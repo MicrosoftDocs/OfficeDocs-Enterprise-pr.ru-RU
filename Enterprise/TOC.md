@@ -87,7 +87,7 @@
 ### [Планирование сети и настройка производительности для Office 365](network-planning-and-performance.md)
 ### [Сетевое подключение к Office 365](network-connectivity.md)
 ### [Партнерская программа Office 365 для поставщиков сетевых устройств и служб](office-365-networking-partner-program.md)
-### URL- и IP-адреса в Office 365
+### [URL- и IP-адреса для Office 365](office-365-endpoints.md)
 #### [Управление конечными точками Office 365](managing-office-365-endpoints.md)
 #### [Глобальные конечные точки](urls-and-ip-address-ranges.md)
 #### [Конечные точки U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)
