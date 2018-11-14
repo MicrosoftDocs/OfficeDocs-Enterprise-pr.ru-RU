@@ -94,9 +94,9 @@
 #### [Конечные точки U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Конечные точки Office 365 под управлением 21Vianet](urls-and-ip-address-ranges-21vianet.md)
 #### [Конечные точки Office 365 Germany](office-365-germany-endpoints.md)
-#### [Сетевые запросы в Office 2016 для Mac](network-requests-in-office-2016-for-mac.md)
+#### [Сетевые запросы в Office для Mac](network-requests-in-office-2016-for-mac.md)
 #### [Веб-служба IP-адресов и URL-адресов в Office 365](office-365-ip-web-service.md)
-#### [Дополнительные конечные точки, отсутствующие в веб-службах](additional-office365-ip-addresses-and-urls.md)
+#### [Дополнительные конечные точки, отсутствующие в веб-службе](additional-office365-ip-addresses-and-urls.md)
 ### [Сети доставки содержимого](content-delivery-networks.md)
 ### [Поддержка IPv6 в службах Office 365](ipv6-support.md)
 ### [Поддержка NAT в Office 365](nat-support-with-office-365.md)
@@ -191,5 +191,5 @@
 ### [Подключение клиентских компьютеров](client-connectivity.md)
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [Безопасность и соответствие требованиям](https://docs.microsoft.com/Office365/SecurityCompliance)
-# [Office 365 для бизнеса](https://support.office.com/office365admin)
+# [Office 365 для бизнеса](https://docs.microsoft.com/office365/admin/admin-home)
   
