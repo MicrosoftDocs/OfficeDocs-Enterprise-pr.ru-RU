@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: В этой статье описываются сайты параметры навигации с публикации SharePoint включен в SharePoint Online. Выбор и настройка навигации заметно влияет на производительность и масштабируемость сайтов в SharePoint Online.
-ms.openlocfilehash: 08790dcee343e9e69bbaab149cce8a390470e7d6
-ms.sourcegitcommit: 5731dce2440e5a7a261f6360e8e2e9639d339d4e
+ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23957454"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547181"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Параметры навигации для SharePoint Online
 
@@ -193,7 +193,7 @@ ms.locfileid: "23957454"
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. Результаты присваиваются в массив self.nodes и иерархия создается из объектов, с помощью linq.js присвоение массива self.heirarchy выходные данные. Этот массив — это объект, связанный с HTML-код. Для этого в функции toggleView(), передав собственный объект в функцию ko.applyBinding().<br/>Затем в результате массив иерархии привязаны к следующий HTML-код:<br/>
+8. Результаты присваиваются в массив self.nodes и иерархия создается из объектов, с помощью linq.js присвоение массива self.hierarchy выходные данные. Этот массив — это объект, связанный с HTML-код. Для этого в функции toggleView(), передав собственный объект в функцию ko.applyBinding().<br/>Затем в результате массив иерархии привязаны к следующий HTML-код:<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
@@ -525,7 +525,7 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 
 ```
   
-## <a name="related-topics"></a>Смежные темы
+## <a name="related-topics"></a>Связанные статьи
 
 [Обзор управляемой навигации в SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
 

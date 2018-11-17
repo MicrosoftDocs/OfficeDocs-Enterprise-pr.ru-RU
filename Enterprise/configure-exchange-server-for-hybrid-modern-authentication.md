@@ -3,7 +3,7 @@ title: Как настроить локальное развертывание E
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 09/28/2018
+ms.date: 11/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Гибридные современных проверки подлинности (НЕГО) — это метод управления удостоверениями, который обеспечивает более безопасной проверки подлинности пользователя и авторизации и доступна для гибридного развертывания Exchange server в локальной.
-ms.openlocfilehash: 4267eaff8dfce71461f230310141a98be8a39e80
-ms.sourcegitcommit: 9f921c0cae9a5dd4e66ec1a1261cb88284984a91
+ms.openlocfilehash: df5ea03b06ee1c101b03e19c7acb445c9543586b
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "25347609"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547161"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности
 
@@ -72,7 +72,9 @@ Get-OABVirtualDirectory | FL server,*url*
     
 Проверьте URL-адреса, клиенты могут подключаться к присутствовала HTTPS имена участников-служб в AAD.
   
-1. Во-первых подключение к AAD с [этим инструкциям](https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell).
+1. Во-первых подключение к AAD с [этим инструкциям](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell). 
+
+ **Примечание** Необходимо использовать параметр Connect-MsolService на этой странице должны иметь возможность использовать приведенной ниже команды. 
     
 2. Для обмена связанные URL-адреса, введите следующую команду:
     
@@ -148,10 +150,10 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
   
 Также следует удерживайте нажатой клавишу CTRL, в то же время, щелкните значок правой кнопкой мыши для клиентов Outlook (а также в области уведомлений Windows) и нажмите кнопку «Состояние подключения». Найдите SMTP-адрес клиента с типом «Определения» "носителя\*", который представляет маркер носителя, используемый в OAuth.
   
- **Примечание** Необходимо настроить Скайп для бизнеса с НЕГО? Вам потребуются две статьи:, в котором приведены [Поддерживаемые топологии](https://technet.microsoft.com/en-us/library/mt803262.aspx)и показано, [как для выполнения конфигурации](configure-skype-for-business-for-hybrid-modern-authentication.md).
+ **Примечание** Необходимо настроить Скайп для бизнеса с НЕГО? Вам потребуются две статьи:, в котором приведены [Поддерживаемые топологии](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)и показано, [как для выполнения конфигурации](configure-skype-for-business-for-hybrid-modern-authentication.md).
   
 
-## <a name="related-topics"></a>Смежные темы
+## <a name="related-topics"></a>Связанные статьи
 
 [Обзор проверки подлинности на современном гибридной среды и необходимые условия для использования его с Скайп локальных серверов Exchange и бизнес-](hybrid-modern-auth-overview.md) 
   
