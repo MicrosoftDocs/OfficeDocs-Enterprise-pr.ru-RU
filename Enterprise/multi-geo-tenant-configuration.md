@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Сведения о настройке OneDrive для бизнеса с поддержкой нескольких регионов.
-ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: e6a4ee9bd933b3f0db278ca2a7b04661bf123184
+ms.sourcegitcommit: 444efa9e5ea6c0102bb7611d2a9a6b9e072e8a48
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849875"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539141"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Настройка клиента OneDrive для бизнеса с поддержкой нескольких регионов
 
@@ -112,7 +112,7 @@ ms.locfileid: "25849875"
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Синхронизация предпочтительного расположения данных пользователя с помощью AD Connect 
 
-Если пользователи вашей организации синхронизируются из системы локальной службы Active Directory в Azure Active Directory, соответствующий параметр PreferredDataLocation должен быть заполнен в AD и синхронизирован с AAD. Чтобы настроить синхронизацию предпочтительных расположений данных из локальной службы Active Directory в Azure Active Directory, следуйте инструкциям из статьи [Синхронизация Azure AD Connect: внесение изменений в конфигурацию по умолчанию](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration).
+Если пользователи вашей организации синхронизируются из системы локальной службы Active Directory в Azure Active Directory, соответствующий параметр PreferredDataLocation должен быть заполнен в AD и синхронизирован с AAD. Чтобы настроить синхронизацию предпочтительных расположений данных из локальной службы Active Directory в Azure Active Directory, следуйте инструкциям из [этой статьи](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation).
 
 Рекомендуем включить настройку предпочтительного расположения данных пользователя в стандартный рабочий процесс создания пользователей.
 
