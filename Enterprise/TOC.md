@@ -133,6 +133,7 @@
 ##### [Удаление геообъекта](delete-a-geo-location.md)
 ##### [Взаимодействие с пользователем в среде с поддержкой нескольких регионов](multi-geo-user-experience.md)
 #### [Настройка OneDrive для бизнеса с поддержкой нескольких регионов](multi-geo-tenant-configuration.md)
+##### [Настройка предпочтительного расположения данных](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### [Настройка поиска в OneDrive для бизнеса с поддержкой нескольких регионов](configure-search-for-multi-geo.md)
 #### [Перемещение библиотеки OneDrive в другой геообъект](move-onedrive-between-geo-locations.md)
 ### [Поддержка нескольких регионов в Exchange Online](multi-geo-capabilities-in-exchange-online.md)
