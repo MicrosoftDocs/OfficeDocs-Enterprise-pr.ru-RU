@@ -3,7 +3,6 @@ title: Интеграция Azure с Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -16,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Подписки Office 365 включает в себя подписка на Azure AD. Интеграция Office 365 с Azure AD, если необходимо использовать синхронизацию паролей или единого входа с локальной среды.
-ms.openlocfilehash: 276243b953d18953ef3ea8f1189d1af8292dca6a
-ms.sourcegitcommit: b1cd20300a616ebef2f00668f42ba14e8aa5fcab
+ms.openlocfilehash: 8b7af5ba8d5106900384369a3e6548af40f9e201
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531842"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674423"
 ---
 # <a name="azure-integration-with-office-365"></a>Интеграция Azure с Office 365
 
@@ -57,7 +56,7 @@ Azure также предоставляет другие функциональ�
    
 Другие ресурсы, посвященные Microsoft Cloud и Office 365 см.
   
-- [Идентификация в облаке Майкрософт для корпоративных архитекторов](https://go.microsoft.com/fwlink/p/?LinkId=828642)
+- [Идентификация в облаке Майкрософт для корпоративных архитекторов](https://go.microsoft.com/fwlink/p/?LinkId=524586)
     
 - [Развертывание службы синхронизации каталогов Office 365 (DirSync) в Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     

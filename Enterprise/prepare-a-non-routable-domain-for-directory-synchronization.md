@@ -3,7 +3,6 @@ title: Подготовка без поддержки маршрутизации
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Узнайте, что делать, если у вас не routale домена, связанного с локальными пользователями, перед выполнением синхронизации с Office 365.
-ms.openlocfilehash: 62779ba879522177ba15a491644ab42f5961ece0
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 9ec96c34e1dc4a6c755ea97fce3f5f2a5ba21bb3
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542575"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674443"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Подготовка без поддержки маршрутизации домена для синхронизации службы каталогов
 При синхронизации локального каталога с Office 365 необходимо иметь подтвержденным доменом в Azure Active Directory. Синхронизированы только участника-пользователя имена (UPN), связанные с локального домена. Тем не менее, будет синхронизирован любое имя участника-пользователя, который содержит без поддержки маршрутизации домена, например .local (например, billa@contoso.local), чтобы. onmicrosoft.com домена (например, billa@contoso.onmicrosoft.com). 
@@ -32,7 +31,7 @@ ms.locfileid: "22542575"
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Что делать, если только у локального домена .local?
 
-Самые последние средство, которое можно использовать для синхронизации Active Directory для Azure Active Directory называется подключить Azure AD. Для получения дополнительных сведений см [Интеграция вашей локальной удостоверения с помощью Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=624168).
+Самые последние средство, которое можно использовать для синхронизации Active Directory для Azure Active Directory называется подключить Azure AD. Для получения дополнительных сведений см [Интеграция вашей локальной удостоверения с помощью Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
   
 Подключение Azure AD синхронизирует пользователей имени участника-пользователя и пароль, чтобы пользователи могут входить с один набор учетных данных они используют для локальной. Тем не менее Azure AD подключить синхронизирует только пользователям доменов, которые проверяются с Office 365. Это означает, что также проверки домена с Azure Active Directory так как Office 365 удостоверения управляют Azure Active Directory. Другими словами домен должен быть допустимый домен Интернета (например, .com, .org, .net, .us, и т.д.). Если в вашей внутренней Active Directory используется только без поддержки маршрутизации домена (например, .local), это не может совпадать возможно с подтвержденным доменом в Office 365. Эту проблему можно устранить с помощью любого из изменения основного домена в локальный Active Directory или путем добавления одного или нескольких суффиксов UPN.
   
