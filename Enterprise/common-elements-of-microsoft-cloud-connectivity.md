@@ -3,7 +3,7 @@ title: Общие элементы подключения к Microsoft Cloud
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: Сводка. Об общих элементах сетевой инфраструктуры и подготовке сети.
-ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
-ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
+ms.openlocfilehash: e00ad8820ef37c818c270323cf2aa036bb86a804
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25897032"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872220"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Общие элементы подключения к Microsoft Cloud
 
@@ -62,7 +62,7 @@ ms.locfileid: "25897032"
     
 - **Прокси-сервера:** Включают следующие веб-контента от имени пользователей интрасети. Обратный прокси-сервер разрешает нежелательных входящих запросов.
     
-- **Внешний брандмауэр.** Разрешает исходящий трафик и указанный входящий трафик. Может выполнять преобразование адресов.
+- **Внешний брандмауэр:** Позволяет исходящий трафик и указанного входящий трафик. Можно выполнить преобразование адресов, проверки сетевых пакетов, прерывание SSL и проверить или защита от потери данных.
     
 - **Подключение глобальной сети к поставщику услуг Интернета.** Обеспечиваемое оператором подключение к поставщику услуг Интернета, который осуществляет подключение к Интернету и маршрутизацию в Интернете.
     
