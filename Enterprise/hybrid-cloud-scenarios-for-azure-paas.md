@@ -3,7 +3,7 @@ title: Сценарии гибридного облака для Azure PaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: Сводка. Сведения о гибридной архитектуре и сценариях для облачных предложений на основе Microsoft PaaS в Azure.
-ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915014"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123336"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Сценарии гибридного облака для Azure PaaS
 
@@ -95,37 +95,9 @@ ms.locfileid: "22915014"
     
 Так как локальный поставщик удостоверений синхронизирован с Azure AD, настраиваемое мобильное приложение и бизнес-приложение могут проверить имя учетной записи пользователя, отправившего запрос.
   
-## <a name="stretch-database-with-sql-server-2016"></a>База данных Stretch с SQL Server 2016
-
-База данных Stretch — это функция SQL Server 2016, которая позволяет прозрачно и безопасно переместить редко используемые данные, например данные о закрытой компании в большой таблице со сведениями о заказах клиентов, в базу данных Stretch в SQL Azure.
-  
-При использовании функции Stretch содержимое экземпляра SQL Server, база данных или даже одна таблица являются сочетанием локальных данных на сервере SQL Server 2016 и удаленных данных в Azure. SQL Server 2016 автоматически перемещает в Azure данные, которые поддерживают функцию Stretch.
-  
-На рисунке 4 показана база данных Stretch в SQL Server 2016.
-  
-**Рис. 4. База данных Stretch в SQL Server 2016**
-
-![База данных Stretch с SQL Server 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
-  
-На рисунке 4 показана локальная сеть, в которой размещен сервер SQL Server 2016 с небольшой локальной базой данных. В Azure PaaS размещен экземпляр растянутой базы данных Stretch сервера SQL Azure. Запросы T-SQL, отправляемые от локальных пользователей на локальный сервер SQL, безопасно перенаправляются в базу данных Stretch SQL Azure, которая возвращает результаты запросов пользователям.
-  
-  
-
-Запросы пользователей, которые содержат архивные данные, прозрачно перенаправляются в базу данных Stretch в SQL Azure. Несмотря на то что таблица растягивается, запросы не нужно записывать повторно. 
-
-
-  
-База данных Stretch представляет собой экономически эффективное решение для долгосрочного хранения архивных данных и прозрачного доступа к ним. Кроме того, она позволяет решить проблемы производительности и доступности, возникающие при значительном увеличении таблиц.
-  
-Дополнительные сведения см. в статье [База данных Stretch](https://msdn.microsoft.com/library/dn935011.aspx).
-  
 ## <a name="see-also"></a>См. также
 
 [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

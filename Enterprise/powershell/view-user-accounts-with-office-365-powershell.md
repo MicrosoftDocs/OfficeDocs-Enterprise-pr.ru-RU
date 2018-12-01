@@ -1,9 +1,9 @@
 ---
-title: "Просмотр учетных записей пользователей с помощью PowerShell для Office 365"
+title: Просмотр учетных записей пользователей с помощью PowerShell для Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,16 +14,17 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: "Обзор: Просмотр, список или отображение учетные записи пользователей с Office 365 PowerShell разными способами."
-ms.openlocfilehash: e9ffa439c1840cbbbd8a47c2835d9427330804be
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Обзор: Просмотр, список или отображение учетные записи пользователей с Office 365 PowerShell разными способами.'
+ms.openlocfilehash: f2743197456cc56f654e99e682108230420384c9
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123256"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Просмотр учетных записей пользователей с помощью PowerShell для Office 365
 
- **Сводка:** Просмотр, список или отображение учетные записи пользователей с Office 365 PowerShell разными способами.
+**Сводка:** Просмотрите учетные записи пользователей с Office 365 PowerShell разными способами.
   
 Несмотря на то, что центр администрирования Office 365 можно использовать для просмотра учетных записей для клиента Office 365, можно с помощью Office 365 PowerShell и выполнить некоторые действия, которые невозможно Центр администрирования Office 365.
   
@@ -31,9 +32,104 @@ ms.lasthandoff: 02/14/2018
 
 Для процедур, описанных в этой статье, требуется подключение к PowerShell в Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
   
-## <a name="display-office-365-user-account-information"></a>Отображение сведений об учетных записях пользователей Office 365
+## <a name="display-office-365-user-account-information-with-azure-active-directory-powershell-for-graph"></a>Отображение сведений учетной записи пользователя Office 365 с помощью Windows Azure Active Directory PowerShell для диаграммы 
 
-Чтобы просмотреть полный список учетных записей пользователей, выполните следующую команду в командной строки на Office 365 PowerShell или PowerShell интегрированная скрипт среды (ISE).
+В следующих разделах описано для отображения сведений об учетной записи пользователя.
+
+### <a name="all-accounts"></a>Все учетные записи
+
+Чтобы просмотреть полный список учетных записей пользователей, выполните следующую команду.
+  
+```
+Get-AzureADUser
+```
+
+Выходные данные должны выглядеть примерно следующим образом:
+  
+```
+ObjectId                             DisplayName                                           UserPrincipalName
+--------                             -----------                                           -----------------
+032fc1fc-b5a2-46f1-8635-3d7dcb52c48d Adele Vance                                           AdeleV@litwareinc.OnMicr...
+bd1e6af1-41e7-4f77-a2ac-5b209950135c Global Administrator                                  admin@litwareinc.onmicro...
+ec37a4d6-232e-4eb7-82a5-1613490642a5 Alex Wilber                                           AlexW@litwareinc.OnMicro...
+be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                                         AllanD@litwareinc.OnMicr...
+598ab87b-76f0-4bf9-9538-bd46b10f4438 Christie Cline                                        ChristieC@litwareinc.OnM...
+40722671-e520-4a5f-97d4-0bc9e9b2dc0f Debra Berger                                          DebraB@litwareinc.OnMicr...
+```
+
+### <a name="a-specific-account"></a>Конкретной учетной записи
+
+Чтобы отобразить учетной записи пользователя, заполните поля в имя участника пользователя (UPN) учетной записи пользователя, удалите «<» и «>» символов и выполните следующую команду:
+  
+```
+Get-AzureADUser -ObjectID <UPN of user account>
+```
+
+### <a name="additional-property-values-for-a-specific-account"></a>Значения дополнительных свойств для конкретной учетной записи
+
+По умолчанию командлет **Get-AzureADUser** отображается только ObjectID, DisplayName и UserPrincipalName свойств учетных записей.
+
+Чтобы быть более Выборочный о список свойств для отображения, вы можно использовать командлет **Select-Object** в сочетании с помощью командлета **Get-AzureADUser** . Чтобы объединить два командлеты, мы используем символ «вертикальная черта» «|», который сообщает Windows Azure Active Directory PowerShell для диаграммы принимают результаты одной команды и отправьте его в следующей команде. Ниже приведен пример команды, которая отображает DisplayName, отдела и UsageLocation для каждой учетной записи пользователя:
+  
+```
+Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
+```
+
+Эта команда дает инструкцию PowerShell для Office 365:
+  
+- Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
+    
+- Только пользователь учетная запись имени, отдела и об использовании место отображения ( **DisplayName Select-Object, отдел, UsageLocation** ).
+  
+Чтобы просмотреть все свойства для учетных записей пользователей, используйте командлет **Select-Object** и подстановочный знак (*) для отображения их все для учетной записи пользователя. Ниже приведен пример:
+  
+```
+Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+```
+
+Например можно проверить включенное состояние учетной записи пользователя с помощью следующей команды:
+  
+```
+Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
+```
+
+### <a name="some-accounts-based-on-a-common-property"></a>Некоторые учетные записи на основе общие свойства
+
+Чтобы быть более Выборочный о список учетных записей для отображения, вы можно использовать командлет **Where-Object** в сочетании с помощью командлета **Get-AzureADUser** . Чтобы объединить два командлеты, мы используем символ «вертикальная черта» «|», который сообщает Windows Azure Active Directory PowerShell для диаграммы принимают результаты одной команды и отправьте его в следующей команде. Ниже приведен пример команды, которая отображает только учетные записи пользователей, имеющие место не указано использования:
+  
+```
+Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null}
+```
+
+Эта команда указывает Windows Azure Active Directory PowerShell для диаграммы:
+  
+- Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
+    
+- Найти все учетные записи пользователей, имеющие место не указано использования ( **Where-Object {$\_. UsageLocation - eq $Null}** ). В фигурных скобках, команда указывает, что Office 365 PowerShell только поиск набор учетных записей, в которых UsageLocation учетной записью пользователя, свойство ( ** $ \_. UsageLocation** ), не является указанного ( **-eq $Null** ).
+    
+Свойство **UsageLocation** — только один из многих свойства, связанные с учетной записью пользователя. Чтобы просмотреть все свойства для учетных записей пользователей, используйте командлет **Select-Object** и подстановочный знак (*) для отображения их все для учетной записи пользователя. Ниже приведен пример:
+  
+```
+Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+```
+
+Например, **City** для этого списка — имя свойства, принадлежащего учетной записи пользователя. Это значит, что перечислить все учетные записи пользователей, проживающих в Лондоне, можно с помощью такой команды:
+  
+```
+Get-AzureADUser | Where-Object {$_.City -eq "London"}
+```
+
+> [!TIP]
+>  Синтаксис командлет **Where-Object** , показано в следующих примерах **Where-Object {$\_.** [имя свойства учетной записи пользователя] [оператор сравнения] [значение] **}**. > [оператор сравнения] — это **-eq** значение, **-ne** для не равно, **-lt** меньше, чем **-gt** для больше, чем и другим пользователям.  [значение] обычно является строка (последовательность букв, цифр и других знаков), числовое значение или **$Null** для не определена > [Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) более подробные сведения.
+  
+
+## <a name="display-office-365-user-account-information-with-microsoft-azure-active-directory-module-for-windows-powershell"></a>Отображение сведений учетной записи пользователя Office 365 с помощью Microsoft Azure модуль Active Directory для Windows PowerShell
+
+В следующих разделах описано для отображения сведений об учетной записи пользователя.
+
+### <a name="all-accounts"></a>Все учетные записи
+
+Чтобы просмотреть полный список учетных записей пользователей, выполните следующую команду.
   
 ```
 Get-MsolUser
@@ -67,8 +163,19 @@ BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-Дополнительные сведения о дополнительных параметров для фильтрации на отображение набор учетных записей пользователей отображается, можно [Такую](https://msdn.microsoft.com/library/azure/dn194133.aspx) .
+Дополнительные сведения о дополнительных параметров для фильтрации на отображение набор учетных записей пользователей отображается, можно [Такую](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).
   
+
+### <a name="a-specific-account"></a>Конкретной учетной записи
+
+Чтобы отобразить учетной записи пользователя, заполните поля в имя участника пользователя (UPN) учетной записи пользователя, удалите «<» и «>» символов и выполните следующую команду:
+  
+```
+Get-MsolUser -UserPrincipalName <UPN of user account>
+```
+
+### <a name="some-accounts-based-on-a-common-property"></a>Некоторые учетные записи на основе общие свойства
+
 Чтобы быть более Выборочный о список учетных записей для отображения, вы можно использовать командлет **Where-Object** в сочетании с помощью командлета **Get-MsolUser** . Чтобы объединить два командлеты, мы используем символ «вертикальная черта» «|», который сообщает Office 365 PowerShell результаты одной команды и отправьте его в следующей команде. Ниже приведен пример команды, которая отображает только учетные записи пользователей, имеющие место не указано использования:
   
 ```
@@ -97,24 +204,24 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
 ```
 
-Например в этом списке **Город** — это имя свойства учетной записи пользователя. Это означает, что для получения списка всех учетных записей пользователей для пользователей в Лондон можно использовать следующую команду:
+Например, **City** для этого списка — имя свойства, принадлежащего учетной записи пользователя. Это значит, что перечислить все учетные записи пользователей, проживающих в Лондоне, можно с помощью такой команды:
   
 ```
 Get-MsolUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  Синтаксис командлет **Where-Object** , показано в следующих примерах **Where-Object {$\_.** [имя свойства учетной записи пользователя] [оператор сравнения] [значение] **}**. > [оператор сравнения] — это **-eq** значение, **-ne** для не равно, **-lt** меньше, чем **-gt** для больше, чем и другие пользователи > [значение] — это строка (последовательность букв, цифр и других знаков), числовое значение или **$Null** для не определена > [Where-Object](https://technet.microsoft.com/en-us/library/hh849715.aspx) более подробные сведения.
+>  Синтаксис командлет **Where-Object** , показано в следующих примерах **Where-Object {$\_.** [имя свойства учетной записи пользователя] [оператор сравнения] [значение] **}**.  [оператор сравнения] — это **-eq** значение, **-ne** для не равно, **-lt** меньше, чем **-gt** для больше, чем и другим пользователям.  [значение] обычно является строка (последовательность букв, цифр и других знаков), числовое значение или **$Null** для не задано. Для получения дополнительных сведений см [Where-Object](https://technet.microsoft.com/en-us/library/hh849715.aspx) .
   
 Можно проверить состояние блокировки учетной записи пользователя, с помощью следующей команды:
   
 ```
-Get-MolUser -UserPrincipalName <UPN of user account> | Select DisplayName,BlockCredential
+Get-MolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
 ```
 
-## <a name="select-the-user-account-properties-to-display"></a>Выбор отображаемых свойств учетных записей пользователей
+### <a name="additional-property-values-for-accounts"></a>Значения дополнительных свойств для учетных записей
 
-Командлет [Get-MsolUser](https://msdn.microsoft.com/library/azure/dn194133.aspx) по умолчанию отображает три свойства учетных записей пользователей:
+Командлет **Get-MsolUser** по умолчанию отображает три свойства учетных записей пользователей:
   
 - UserPrincipalName
     
@@ -145,8 +252,7 @@ Fabrice Canel           Legal                                US
 Brian Johnson
 Anne Wallace            Executive Management                 US
 Alex Darrow             Sales & Marketing                    US
-David Longmuir      Operations                               US
-Scott Wallace            Operations
+Scott Wallace           Operations
 ```
 
 Командлет **Select-Object** позволяет выбрать команду, чтобы отобразить свойства. Чтобы просмотреть все свойства для учетных записей пользователей, используйте подстановочный знак (*) для отображения их все для учетной записи пользователя. Ниже приведен пример:
@@ -155,7 +261,7 @@ Scott Wallace            Operations
 Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
 ```
 
-Чтобы быть более Выборочный о список учетных записей для отображения, вы можно также использовать командлет **Where-Object** . Ниже приведен пример команды, которая отображает только учетные записи пользователей, имеющие место не указано использования:
+Чтобы еще точнее отфильтровать список отображаемых учетных записей, можно также использовать командлет **Where-Object**. Ниже приведен пример команды, которая выводит только те учетные записи пользователей, для которых не указано расположение использования.
   
 ```
 Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object DisplayName, Department, UsageLocation
@@ -178,88 +284,18 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-## <a name="use-the-azure-active-directory-v2-powershell-module-to-display-user-accounts"></a>Отображение учетных записей пользователей с помощью модуля PowerShell для Azure Active Directory 2
+При использовании синхронизации каталогов для создания и управления пользователями Office 365 вы можете отобразить какие локальная учетная запись пользователя с Office 365 были предполагаемое из. В следующем примере предполагается, что подключение Azure AD был настроен на использование привязки источника по умолчанию из ObjectGUID (Дополнительные сведения о настройке привязки источника [Azure AD Connect: Разработка концепции](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)), а также предполагается, что модуль Active Directory для powershell имеет были установленных (см [средства RSAT](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):
 
-Чтобы отобразить свойства для учетных записей пользователей с помощью модуля Azure Active Directory версии 2 PowerShell, командлет [Get-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/get-azureaduser?view=azureadps-2.0) . Но для начала необходимо подключиться к своей подписке. Инструкции в разделе[подключение с помощью модуля Azure Active Directory версии 2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).
-  
-### <a name="display-office-365-user-account-information"></a>Отображение сведений об учетных записях пользователей Office 365
-
-Чтобы просмотреть полный список учетных записей пользователей, выполните следующую команду в командной строки на Office 365 PowerShell или PowerShell интегрированная скрипт среды (ISE).
-  
 ```
-Get-AzureADUser
+(Get-ADUser [guid][system.convert]::frombase64string((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).Guid
 ```
 
-Командлет **Get-AzureADUser** по умолчанию отображает три свойства учетных записей пользователей:
-  
-- ObjectID
-    
-- DisplayName
-    
-- UserPrincipalName
-    
-Чтобы быть более Выборочный о список учетных записей для отображения, вы можно использовать командлет **Where-Object** в сочетании с помощью командлета **Get-AzureADUser** . Чтобы объединить два командлеты, мы используем символ «вертикальная черта» «|», который сообщает Office 365 PowerShell результаты одной команды и отправьте его в следующей команде. Ниже приведен пример команды, которая отображает только учетные записи пользователей, имеющие место не указано использования:
-  
-```
-Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null}
-```
-
-Эта команда дает инструкцию PowerShell для Office 365:
-  
-- Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
-    
-- Найти все учетные записи пользователей, имеющие место не указано использования ( **Where-Object {$\_. UsageLocation - eq $Null}** ). В фигурных скобках, команда указывает, что Office 365 PowerShell только поиск набор учетных записей, в которых UsageLocation учетной записью пользователя, свойство ( ** $ \_. UsageLocation** ), не является указанного ( **-eq $Null** ).
-    
-Свойство **UsageLocation** — только один из многих свойства, связанные с учетной записью пользователя. Чтобы просмотреть все свойства для учетных записей пользователей, используйте командлет **Select-Object** и подстановочный знак (*) для отображения их все для учетной записи пользователя, одну страницу за раз (или **более** ). Ниже приведен пример:
-  
-```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object * | More
-```
-
-Например **Город** — это имя свойства учетной записи пользователя. Это означает, что для получения списка всех учетных записей пользователей для пользователей в Лондон можно использовать следующую команду:
-  
-```
-Get-AzureADUser | Where-Object {$_.City -eq "London"}
-```
-
-> [!TIP]
->  Синтаксис командлет **Where-Object** , показано в следующих примерах **Where-Object {$\_.** [имя свойства учетной записи пользователя] [оператор сравнения] [значение] **}**. > [оператор сравнения] — это **-eq** значение, **-ne** для не равно, **-lt** меньше, чем **-gt** для больше, чем и другие пользователи > [значение] — это строка (последовательность букв, цифр и других знаков), числовое значение или **$Null** для не определена >[Where-Object](https://technet.microsoft.com/en-us/library/hh849715.aspx) более подробные сведения.
-  
-### <a name="select-the-user-account-properties-to-display"></a>Выбор отображаемых свойств учетных записей пользователей
-
-Командлет **Get-AzureADUser** по умолчанию отображает ObjectID, DisplayName и UserPrincipalName свойства учетных записей пользователей. При необходимости в дополнительных свойств, например отдела, для работы пользователя и страны или региона, где пользователь использует службы Office 365, можно запустить **Get-AzureADUser** в сочетании с командлет **Select-Object** , чтобы указать список пользователей Свойства учетной записи. Ниже приведен пример:
-  
-```
-Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
-```
-
-Эта команда дает инструкцию PowerShell для Office 365:
-  
-- Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
-    
-- Только пользователь учетная запись имени, отдела и об использовании место отображения ( **DisplayName Select-Object, отдел, UsageLocation** ).
-    
-Чтобы быть более Выборочный о список учетных записей для отображения, вы можно также использовать командлет **Where-Object** . Ниже приведен пример команды, которая отображает только учетные записи пользователей, имеющие место не указано использования:
-  
-```
-Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object DisplayName, Department, UsageLocation
-```
-
-Эта команда дает инструкцию PowerShell для Office 365:
-  
-- Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
-    
-- Найти все учетные записи пользователей, имеющие место не указано использования ( **Where-Object {$\_. UsageLocation - eq $Null}** ) и отправлять полученные сведения к следующей команде ( **|** ). В фигурных скобках, команда рекомендует Office 365 PowerShell только поиск набор учетных записей, в которых UsageLocation учетной записью пользователя, свойство ( ** $ \_. UsageLocation** ), не является указанного ( **-eq $Null** ).
-    
-- Только пользователь учетная запись имени, отдела и об использовании место отображения ( **DisplayName Select-Object, отдел, UsageLocation** ).
     
 ## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
   
 ## <a name="see-also"></a>См. также
-
-#### 
 
 [Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

@@ -3,7 +3,7 @@ title: Архитектура гибридного облака Майкросо
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: Сводка. Сведения об архитектуре гибридных облачных предложений Майкрософт.
-ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914924"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123396"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Архитектура гибридного облака Майкрософт
 
@@ -33,7 +33,7 @@ ms.locfileid: "22914924"
   
 На рисунке 1 показан стек гибридного облака Майкрософт и его слои: локальная среда, сеть, удостоверение, приложения и сценарии, а также категория облачной службы (Microsoft SaaS Azure PaaS и Azure PaaS).
   
-Слой "Приложения и сценарии" содержит конкретные сценарии гибридного облака, описанные в дополнительных статьях для этой модели. Слои "Удостоверение", "Сеть" и "Локальная среда" могут быть общими для категорий облачных служб (SaaS, PaaS или PaaS).
+На уровне приложений и сценариев имеет облачных сценариев определенного гибридного, подробно рассмотрены в дополнительные статьи в этой модели. Удостоверение, сетевой и локальной слои могут быть общими для категорий облачная служба (SaaS, PaaS или PaaS).
   
 - Локальная среда
     
@@ -68,8 +68,4 @@ ms.locfileid: "22914924"
 [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

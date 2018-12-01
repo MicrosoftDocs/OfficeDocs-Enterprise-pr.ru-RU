@@ -3,7 +3,7 @@ title: Сценарии гибридного облака для Azure IaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Сводка: Сведения о гибридных архитектуры и сценарии для корпорации Майкрософт инфраструктура как служба (IaaS)-на основе облака в Azure.'
-ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915034"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123246"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Гибридные облачные сценарии для Azure IaaS
 
@@ -67,7 +67,7 @@ ms.locfileid: "22915034"
   
 Сервер DirSync опрашивает Windows Server AD для определения наличия изменений, а затем синхронизирует их с Office 365.
   
-Для получения дополнительных сведений см. [Настройка синхронизации службы каталогов для Office 365](set-up-directory-synchronization.md).
+Дополнительные сведения можно [Развернуть Office 365 синхронизации каталогов в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
 ## <a name="line-of-business-lob-application"></a>Бизнес-приложение
 
@@ -151,7 +151,7 @@ ms.locfileid: "22915034"
     
     В разделе [Разработка фермы SharePoint Server 2016 в Azure](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure) пошаговое выполнение процесса для определения набора сети Azure IaaS, compute и хранения элементов для размещения фермы и их параметров.
     
-3. Развернуть
+3. Развертывание
     
     В разделе [Развертывание 2016 SharePoint Server с помощью группы обеспечения доступности AlwaysOn SQL Server в среде Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) для пошагового выполнения начала до конца конфигурации фермы высокой доступности в пять этапов.
     
@@ -161,7 +161,7 @@ ms.locfileid: "22915034"
   
 **На рисунке 5: В инфраструктуре федеративных удостоверений высокого уровня доступности для Office 365 в Azure IaaS**
 
-![Окончательная конфигурация инфраструктуры для федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
+![Высокая доступность Office 365 федеративного инфраструктуры проверки подлинности в Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 На рисунке 5 локальной сети размещается инфраструктуру удостоверения и пользователей. Подключения шлюза Azure IaaS с веб сайта VPN или ExpressRoute подключения. Azure VNet содержит прокси-сервера веб-серверов, серверов служб федерации Active Directory (AD FS) и контроллеры домена Active Directory Windows Server (AD).
   
@@ -177,23 +177,15 @@ ms.locfileid: "22915034"
     
     В разделе [федеративных удостоверений для Office 365 dev/тестовой среды](federated-identity-for-your-office-365-dev-test-environment.md) для построения имитации dev/тестовой среды для федеративной проверки подлинности с помощью Office 365.
     
-2. Развернуть
+2. Развертывание
     
     В разделе [Развертывание высокой доступности федеративной проверки подлинности для Office 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) для пошаговой настройки начала до конца высокой доступности инфраструктуру AD FS в пять этапов.
     
-Дополнительные материалы:
-  
-- [Разработка архитектуры гибридных облачных средах](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
-    
-- [Разработка и Создание бизнес-приложение в Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
 ## <a name="see-also"></a>См. также
 
 [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
-
 
 

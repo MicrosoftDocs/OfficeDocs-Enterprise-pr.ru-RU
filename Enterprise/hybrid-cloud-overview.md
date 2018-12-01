@@ -3,7 +3,7 @@ title: Общие сведения о гибридном облаке
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: Сводка. Определение и элементы гибридного облака Майкрософт
-ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915824"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123316"
 ---
 # <a name="hybrid-cloud-overview"></a>Общие сведения о гибридном облаке
 
@@ -55,7 +55,7 @@ ms.locfileid: "22915824"
   
 - SaaS
     
-    Службы Microsoft SaaS включают Office 365, Microsoft Intune и Microsoft Dynamics 365. В сценариях гибридного облака для Microsoft SaaS эти службы объединяются с локальными службами и приложениями. Например, службу Exchange Online, запущенную в Office 365, можно интегрировать с локально развернутым приложением Skype для бизнеса 2015.
+    Службы Microsoft SaaS: Office 365, Microsoft Intune и Microsoft Dynamics 365. Облако гибридных сценариев с Microsoft SaaS объединить эти службы с локальных служб или приложений. Например Exchange Online в Office 365 можно интегрировать с Скайп для 2019 бизнеса, который является развертываются локально.
     
 - Azure PaaS
     
@@ -90,8 +90,4 @@ ms.locfileid: "22915824"
 [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
- 
-
 
