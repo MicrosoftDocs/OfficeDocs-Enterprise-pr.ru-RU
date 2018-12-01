@@ -17,59 +17,59 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 'Сводка: в этой статье изложены сведения, необходимые при разработке сетей для облачных служб и платформ корпорации Майкрософт.'
-ms.openlocfilehash: 5ee0df6442795a8ec440a0c56fa23dfd10448e0d
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 4864e92fd9a916c1aa15a8b921b9e64b486486fb
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872230"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123356"
 ---
-# <a name="microsoft-cloud-networking-for-enterprise-architects"></a><span data-ttu-id="b4cd9-103">Облачные сети Майкрософт для корпоративных архитекторов</span><span class="sxs-lookup"><span data-stu-id="b4cd9-103">Microsoft Cloud Networking for Enterprise Architects</span></span>
+# <a name="microsoft-cloud-networking-for-enterprise-architects"></a><span data-ttu-id="18f22-103">Облачные сети Майкрософт для корпоративных архитекторов</span><span class="sxs-lookup"><span data-stu-id="18f22-103">Microsoft Cloud Networking for Enterprise Architects</span></span>
 
- <span data-ttu-id="b4cd9-104">**Сводка:** в этой статье изложены сведения, необходимые при разработке сетей для облачных служб и платформ корпорации Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="b4cd9-104">**Summary:** Design your networking for Microsoft cloud services and platforms.</span></span>
+ <span data-ttu-id="18f22-104">**Сводка:** в этой статье изложены сведения, необходимые при разработке сетей для облачных служб и платформ корпорации Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="18f22-104">**Summary:** Design your networking for Microsoft cloud services and platforms.</span></span>
   
-<span data-ttu-id="b4cd9-p101">В этой статье представлены ссылки на статьи для ИТ-архитекторов, в которых рассказывается о проектировании сетей для организаций, использующих облачные службы и платформы Майкрософт. Вы также можете просмотреть этот документ в виде 12-страничного плаката и распечатать его на листах формата A3.</span><span class="sxs-lookup"><span data-stu-id="b4cd9-p101">This article links you to a set of articles that describe what IT architects need to know about designing networking for organizations using Microsoft cloud services and platforms. You can also view this information as a 12-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
+<span data-ttu-id="18f22-p101">В этой статье представлены ссылки на статьи для ИТ-архитекторов, в которых рассказывается о проектировании сетей для организаций, использующих облачные службы и платформы Майкрософт. Вы также можете просмотреть этот документ в виде 12-страничного плаката и распечатать его на листах формата A3.</span><span class="sxs-lookup"><span data-stu-id="18f22-p101">This article links you to a set of articles that describe what IT architects need to know about designing networking for organizations using Microsoft cloud services and platforms. You can also view this information as a 12-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
   
-<span data-ttu-id="b4cd9-107">[![Эскиз: модель организации сети в облаке Майкрософт](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
-](https://go.microsoft.com/fwlink/p/?linkid=842073)</span><span class="sxs-lookup"><span data-stu-id="b4cd9-107">[![Thumb image for Microsoft cloud networking model](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+<span data-ttu-id="18f22-107">[![Эскиз: модель организации сети в облаке Майкрософт](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+](https://go.microsoft.com/fwlink/p/?linkid=842073)</span><span class="sxs-lookup"><span data-stu-id="18f22-107">[![Thumb image for Microsoft cloud networking model](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)</span></span>
   
-<span data-ttu-id="b4cd9-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [Другие языки](https://www.microsoft.com/download/details.aspx?id=54425)</span><span class="sxs-lookup"><span data-stu-id="b4cd9-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [More languages](https://www.microsoft.com/download/details.aspx?id=54425)</span></span>
+<span data-ttu-id="18f22-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)</span><span class="sxs-lookup"><span data-stu-id="18f22-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)</span></span>
   
-<span data-ttu-id="b4cd9-109">Вы также можете увидеть все модели в [ресурсах для администраторов, посвященных архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).</span><span class="sxs-lookup"><span data-stu-id="b4cd9-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe throughMicrosoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers.</span></span>
+<span data-ttu-id="18f22-109">Вы также можете увидеть все модели в [ресурсах для администраторов, посвященных архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).</span><span class="sxs-lookup"><span data-stu-id="18f22-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md).</span></span>
   
-<span data-ttu-id="b4cd9-110">См. указанные ниже разделы.</span><span class="sxs-lookup"><span data-stu-id="b4cd9-110">See the following sections:</span></span>
+<span data-ttu-id="18f22-110">См. указанные ниже разделы.</span><span class="sxs-lookup"><span data-stu-id="18f22-110">See the following sections:</span></span>
   
-- [<span data-ttu-id="b4cd9-111">Подключение сети к облаку</span><span class="sxs-lookup"><span data-stu-id="b4cd9-111">Evolving your network for cloud connectivity</span></span>](evolving-your-network-for-cloud-connectivity.md)
+- [<span data-ttu-id="18f22-111">Подключение сети к облаку</span><span class="sxs-lookup"><span data-stu-id="18f22-111">Evolving your network for cloud connectivity</span></span>](evolving-your-network-for-cloud-connectivity.md)
     
-    <span data-ttu-id="b4cd9-p102">Миграция в облако изменяет объем и характер потоков трафика в корпоративной сети и за ее пределами. Кроме того, она влияет на способы противодействия угрозам безопасности.</span><span class="sxs-lookup"><span data-stu-id="b4cd9-p102">Cloud migration changes the volume and nature of traffic flows within and outside a corporate network. It also affects approaches to mitigating security risk.</span></span>
+    <span data-ttu-id="18f22-p102">Миграция в облако изменяет объем и характер потоков трафика в корпоративной сети и за ее пределами. Кроме того, она влияет на способы противодействия угрозам безопасности.</span><span class="sxs-lookup"><span data-stu-id="18f22-p102">Cloud migration changes the volume and nature of traffic flows within and outside a corporate network. It also affects approaches to mitigating security risk.</span></span>
     
-- [<span data-ttu-id="b4cd9-114">Общие элементы подключения к Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="b4cd9-114">Common elements of Microsoft cloud connectivity</span></span>](common-elements-of-microsoft-cloud-connectivity.md)
+- [<span data-ttu-id="18f22-114">Общие элементы подключения к Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="18f22-114">Common elements of Microsoft cloud connectivity</span></span>](common-elements-of-microsoft-cloud-connectivity.md)
     
-    <span data-ttu-id="b4cd9-115">Интеграция вашей сети с Microsoft Cloud обеспечивает оптимальный доступ к широкому спектру служб.</span><span class="sxs-lookup"><span data-stu-id="b4cd9-115">Integrating your networking with the Microsoft cloud provides optimal access to a broad range of services.</span></span>
+    <span data-ttu-id="18f22-115">Интеграция вашей сети с Microsoft Cloud обеспечивает оптимальный доступ к широкому спектру служб.</span><span class="sxs-lookup"><span data-stu-id="18f22-115">Integrating your networking with the Microsoft cloud provides optimal access to a broad range of services.</span></span>
     
-- [<span data-ttu-id="b4cd9-116">ExpressRoute для подключения к Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="b4cd9-116">ExpressRoute for Microsoft cloud connectivity</span></span>](expressroute-for-microsoft-cloud-connectivity.md)
+- [<span data-ttu-id="18f22-116">ExpressRoute для подключения к Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="18f22-116">ExpressRoute for Microsoft cloud connectivity</span></span>](expressroute-for-microsoft-cloud-connectivity.md)
     
-    <span data-ttu-id="b4cd9-117">ExpressRoute обеспечивает частное выделенное скоростное сетевое подключение к Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="b4cd9-117">ExpressRoute provides a private, dedicated, high-throughput network connection to Microsoft's cloud.</span></span>
+    <span data-ttu-id="18f22-117">ExpressRoute обеспечивает частное выделенное скоростное сетевое подключение к Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="18f22-117">ExpressRoute provides a private, dedicated, high-throughput network connection to Microsoft's cloud.</span></span>
     
-- [<span data-ttu-id="b4cd9-118">Проектирование сети для Microsoft SaaS</span><span class="sxs-lookup"><span data-stu-id="b4cd9-118">Designing networking for Microsoft SaaS</span></span>](designing-networking-for-microsoft-saas.md)
+- [<span data-ttu-id="18f22-118">Проектирование сети для Microsoft SaaS</span><span class="sxs-lookup"><span data-stu-id="18f22-118">Designing networking for Microsoft SaaS</span></span>](designing-networking-for-microsoft-saas.md)
     
-    <span data-ttu-id="b4cd9-119">Оптимизации сети для служб Microsoft SaaS требует настройки внутренних и пограничных устройств для маршрутизации различных категорий трафика в службы Microsoft SaaS.</span><span class="sxs-lookup"><span data-stu-id="b4cd9-119">Optimizing your network for Microsoft SaaS services requires the configuration of internal and edge devices to route the different categories of traffic to Microsoft SaaS services.</span></span>
+    <span data-ttu-id="18f22-119">Оптимизации сети для служб Microsoft SaaS требует настройки внутренних и пограничных устройств для маршрутизации различных категорий трафика в службы Microsoft SaaS.</span><span class="sxs-lookup"><span data-stu-id="18f22-119">Optimizing your network for Microsoft SaaS services requires the configuration of internal and edge devices to route the different categories of traffic to Microsoft SaaS services.</span></span>
     
-- [<span data-ttu-id="b4cd9-120">Проектирование сети для Microsoft Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="b4cd9-120">Designing networking for Microsoft Azure PaaS</span></span>](designing-networking-for-microsoft-azure-paas.md)
+- [<span data-ttu-id="18f22-120">Проектирование сети для Microsoft Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="18f22-120">Designing networking for Microsoft Azure PaaS</span></span>](designing-networking-for-microsoft-azure-paas.md)
     
-    <span data-ttu-id="b4cd9-121">Оптимизация сетей для работы с приложениями Azure PaaS требует соответствующей пропускной способности подключения к Интернету и распределения сетевого трафика по нескольким сайтам или приложениям (при необходимости).</span><span class="sxs-lookup"><span data-stu-id="b4cd9-121">Optimizing networking for Azure PaaS apps requires adequate Internet bandwidth and can require the distribution of network traffic across multiple sites or apps.</span></span>
+    <span data-ttu-id="18f22-121">Оптимизация сетей для работы с приложениями Azure PaaS требует соответствующей пропускной способности подключения к Интернету и распределения сетевого трафика по нескольким сайтам или приложениям (при необходимости).</span><span class="sxs-lookup"><span data-stu-id="18f22-121">Optimizing networking for Azure PaaS apps requires adequate Internet bandwidth and can require the distribution of network traffic across multiple sites or apps.</span></span>
     
-- [<span data-ttu-id="b4cd9-122">Проектирование сети для Microsoft Azure IaaS</span><span class="sxs-lookup"><span data-stu-id="b4cd9-122">Designing networking for Microsoft Azure IaaS</span></span>](designing-networking-for-microsoft-azure-iaas.md)
+- [<span data-ttu-id="18f22-122">Проектирование сети для Microsoft Azure IaaS</span><span class="sxs-lookup"><span data-stu-id="18f22-122">Designing networking for Microsoft Azure IaaS</span></span>](designing-networking-for-microsoft-azure-iaas.md)
     
-    <span data-ttu-id="b4cd9-123">Выполняя процесс разработки этап за этапом, вы сможете создать оптимальную виртуальную сеть Azure с размещенными на серверах рабочими ИТ-нагрузками, включающую подсети, адресные пространства, средства маршрутизации, DNS, средства балансировки нагрузки и подключения к локальной сети, другим виртуальным сетям и Интернету.</span><span class="sxs-lookup"><span data-stu-id="b4cd9-123">Step through the design process to create an optimal Azure virtual network (VNet) for hosting server-based IT workloads, including subnets, address spaces, routing, DNS, load balancing, and connectivity to your on-premises network, other VNets, and the Internet.</span></span>
+    <span data-ttu-id="18f22-123">Выполняя процесс разработки этап за этапом, вы сможете создать оптимальную виртуальную сеть Azure с размещенными на серверах рабочими ИТ-нагрузками, включающую подсети, адресные пространства, средства маршрутизации, DNS, средства балансировки нагрузки и подключения к локальной сети, другим виртуальным сетям и Интернету.</span><span class="sxs-lookup"><span data-stu-id="18f22-123">Step through the design process to create an optimal Azure virtual network (VNet) for hosting server-based IT workloads, including subnets, address spaces, routing, DNS, load balancing, and connectivity to your on-premises network, other VNets, and the Internet.</span></span>
     
-<span data-ttu-id="b4cd9-124">Обзор основных положений этого плаката представлен в курсе [Оптимизация сети для облачных служб Майкрософт](https://mva.microsoft.com/ru-RU/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) на сайте Microsoft Virtual Academy.</span><span class="sxs-lookup"><span data-stu-id="b4cd9-124">For a 30-minute summary of the key points of this poster, see the [Optimize Your Network for Microsoft Cloud Offerings](https://mva.microsoft.com/ru-RU/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) Microsoft Virtual Academy course.</span></span>
+<span data-ttu-id="18f22-124">Обзор основных положений этого плаката представлен в курсе [Оптимизация сети для облачных служб Майкрософт](https://mva.microsoft.com/ru-RU/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) на сайте Microsoft Virtual Academy.</span><span class="sxs-lookup"><span data-stu-id="18f22-124">For a 30-minute summary of the key points of this poster, see the [Optimize Your Network for Microsoft Cloud Offerings](https://mva.microsoft.com/ru-RU/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) Microsoft Virtual Academy course.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="b4cd9-125">В этих статьях отражен выпуск плаката "Облачные сети Майкрософт для корпоративных архитекторов" за **декабрь 2018 г.**</span><span class="sxs-lookup"><span data-stu-id="b4cd9-125">These articles reflect the **June 2017** release of the Microsoft Cloud Networking for Enterprise Architects poster.</span></span>
+> <span data-ttu-id="18f22-125">В этих статьях отражен выпуск плаката "Облачные сети Майкрософт для корпоративных архитекторов" за **декабрь 2018 г.**</span><span class="sxs-lookup"><span data-stu-id="18f22-125">These articles reflect the **December 2018** release of the Microsoft Cloud Networking for Enterprise Architects poster.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="b4cd9-126">См. также</span><span class="sxs-lookup"><span data-stu-id="b4cd9-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="18f22-126">См. также</span><span class="sxs-lookup"><span data-stu-id="18f22-126">See also</span></span>
 
-[<span data-ttu-id="b4cd9-127">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="b4cd9-127">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="18f22-127">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="18f22-127">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
