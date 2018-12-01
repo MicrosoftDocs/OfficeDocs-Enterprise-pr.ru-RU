@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 'Сводка: в этой статье изложены сведения, необходимые при разработке сетей для облачных служб и платформ корпорации Майкрософт.'
-ms.openlocfilehash: 5ee0df6442795a8ec440a0c56fa23dfd10448e0d
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 4864e92fd9a916c1aa15a8b921b9e64b486486fb
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872230"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123356"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Облачные сети Майкрософт для корпоративных архитекторов
 
@@ -33,7 +33,7 @@ ms.locfileid: "26872230"
 [![Эскиз: модель организации сети в облаке Майкрософт](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [Другие языки](https://www.microsoft.com/download/details.aspx?id=54425)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)
   
 Вы также можете увидеть все модели в [ресурсах для администраторов, посвященных архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).
   
