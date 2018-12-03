@@ -3,7 +3,7 @@ title: Гибридное облако Майкрософт для корпор�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: Сводка. Сведения для ИТ-архитекторов о гибридных сценариях в облачных службах и платформах Майкрософт.
-ms.openlocfilehash: 06400dd4f49c51bc3f4712701d9fe6a387de5cff
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 40a46c6d289011a0e0c6065573a5b67a3ac66756
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872250"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123376"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Гибридное облако Майкрософт для корпоративных архитекторов
 
@@ -33,8 +33,7 @@ ms.locfileid: "26872250"
 [![Эскиз: модель гибридного облака Майкрософт](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
-[Другие языки](https://www.microsoft.com/download/details.aspx?id=54424)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)
   
 Вы также можете увидеть все модели в [ресурсах для администраторов, посвященных архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).
   
@@ -61,13 +60,9 @@ ms.locfileid: "26872250"
     Архитектура гибридного сценария Azure IaaS и описание варианта применения бизнес-приложения, размещенного в Azure IaaS.
     
 > [!NOTE]
-> В этих статьях описан выпуск плаката "Гибридное облако Майкрософт для корпоративных архитекторов" за **июнь 2017 г.**
+> В этих статьях описывается выпуск афиши "Гибридное облако Майкрософт для корпоративных архитекторов" за **декабрь 2018 г.**
   
 ## <a name="see-also"></a>См. также
 
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Стратегия Enterprise Cloud корпорации Майкрософт: ресурсы для лиц, принимающих решения в области ИТ](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
