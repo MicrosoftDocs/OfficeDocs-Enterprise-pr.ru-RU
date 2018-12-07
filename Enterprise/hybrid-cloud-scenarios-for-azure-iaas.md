@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Сводка: Сведения о гибридных архитектуры и сценарии для корпорации Майкрософт инфраструктура как служба (IaaS)-на основе облака в Azure.'
-ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 441565adae46d50ad1b7139525ff3146c5f88ca3
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123246"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181040"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Гибридные облачные сценарии для Azure IaaS
 
@@ -51,21 +51,21 @@ ms.locfileid: "27123246"
     
     Содержит серверы удостоверений, которые синхронизируются с серверами удостоверений в Azure. Также может содержать ресурсы, к которым имеют доступ виртуальные машины, работающие в Azure, например хранилище или инфраструктуру управления системами.
     
-## <a name="dirsync-server-for-office-365"></a>Сервер DirSync для Office 365
+## <a name="directory-synchronization-server-for-office-365"></a>Сервер синхронизации каталогов для Office 365
 
-Использование сервера синхронизации каталогов (DirSync) в виртуальной сети Azure, как показано на рисунке 2, — пример развертывания инфраструктуры вычислений и идентификации в облаке.
+Под управлением сервер синхронизации каталогов VNet Azure, как показано на рисунке 2 приведен пример расширение инфраструктуры сетей и удостоверения в облако.
   
-**Рисунок 2. Сервер DirSync для Office 365 в Azure IaaS**
+**На рисунке 2: Сервер синхронизации каталогов для Office 365 в Azure IaaS**
 
-![Сервер DirSync для Office 365 в Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
+![Сервер синхронизации каталогов для Office 365 в Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
 На рисунке 2 локальной сети, где размещается в инфраструктуре Windows Server AD с прокси-сервера и маршрутизатора в его пограничного сервера. Маршрутизатор подключается к Azure шлюза на границе VNet Azure с подключением через VPN или ExpressRoute веб сайта. Внутри VNet сервер синхронизации каталогов выполняется подключение Azure AD.
   
-Сервер DirSync для Office 365 синхронизирует список учетных записей в Windows Server AD с клиентом Azure AD, предусмотренном в плане подписки на Office 365.
+Сервер синхронизации каталогов для Office 365 синхронизирует список учетных записей в Windows Server AD с клиентом Azure AD подписки Office 365.
   
-Сервер DirSync — это сервер под управлением Windows, на котором работает Azure AD Connect. Чтобы ускорить подготовку или уменьшить количество локальных серверов в организации, разверните сервер DirSync в виртуальной сети в Azure IaaS.
+Сервер синхронизации каталогов является сервером под управлением Windows, на котором выполняется подключение Azure AD. Для более быстрого подготовки или уменьшить количество локальных серверов в организации разверните сервер синхронизации каталогов в виртуальной сети (VNet) в Azure IaaS.
   
-Сервер DirSync опрашивает Windows Server AD для определения наличия изменений, а затем синхронизирует их с Office 365.
+Сервер синхронизации каталогов опрашивает Windows Server AD для изменения и синхронизирует их с подписки на Office 365.
   
 Дополнительные сведения можно [Развернуть Office 365 синхронизации каталогов в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   

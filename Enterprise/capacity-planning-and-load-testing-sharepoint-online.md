@@ -13,16 +13,16 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: В этой статье описывается, как можно развернуть в SharePoint Online без выполнения традиционных нагрузочного тестирования, так как он является недопустимым.
-ms.openlocfilehash: 490d05598c42cd5d94f61dd21ee5a11701d4b4a7
-ms.sourcegitcommit: 033156d46ac0fb5f05d2b1a594d5ef368b93b893
+ms.openlocfilehash: 6a22ee089adc0817f5c52bbfee5f2b41d7e5d80c
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "27134674"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181030"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Емкость планирования и нагрузочного тестирования SharePoint Online
 
-В этой статье описывается, как можно развернуть в SharePoint Online без выполнения традиционных нагрузочного тестирования, поскольку его не рекомендуется.
+В этой статье описывается, как можно развернуть в SharePoint Online без традиционных нагрузочного тестирования, поскольку нагрузочного тестирования не рекомендуется.
   
 Несмотря на то, что active нагрузочного тестирования в SharePoint Online не рекомендуется, можно и другими способами, которые вы можете убедиться в том, сайт не дает низкого уровня пользовательского интерфейса, при запуске сайта. 
   
