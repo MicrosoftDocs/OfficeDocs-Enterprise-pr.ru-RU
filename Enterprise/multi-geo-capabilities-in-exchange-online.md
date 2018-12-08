@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Разверните узел состояние присутствия Office 365 для нескольких географических регионов с несколькими географически возможности в Exchange Online.
-ms.openlocfilehash: 5f34a2da47b9767aa9dfe22c6be7237951128960
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 6acd2ffab1f35b74d06d6ab5f7bfcbf70f88f8b4
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849925"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200742"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Ферма с несколькими географически возможности в Exchange Online
 
@@ -41,7 +41,7 @@ ms.locfileid: "25849925"
 
 - Франция
 
-- Индия (в настоящее время доступны только для клиентов с адреса для выставления счета в Индии)
+- Индия
 
 - Япония
 
