@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения об администрировании служб SharePoint и OneDrive в среде с поддержкой нескольких регионов.
-ms.openlocfilehash: 09f8816fc0ba748ced5bd104710677829d893198
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+ms.openlocfilehash: 823b3a4c1d063a4d398b7f734c2171e856ee1244
+ms.sourcegitcommit: 4a1d6c43da44b559136f2bf422a531bea5f48dbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200707"
+ms.lasthandoff: 12/09/2018
+ms.locfileid: "27210127"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Администрирование среды с поддержкой нескольких регионов
 
@@ -102,7 +102,7 @@ ms.locfileid: "27200707"
 </tr>
 <tr class="even">
 <td align="left"><strong>IND</strong></td>
-<td align="left">Центры обработки данных в Юго-Восточной или Восточной Азии</td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>KOR</strong></td>
