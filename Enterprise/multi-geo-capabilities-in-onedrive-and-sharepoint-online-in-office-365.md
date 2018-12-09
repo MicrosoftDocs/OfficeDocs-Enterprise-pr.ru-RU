@@ -3,7 +3,6 @@ title: Поддержка нескольких регионов в OneDrive и S
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Расширьте свою географию присутствия Office 365 с поддержкой нескольких регионов в OneDrive и SharePoint Online.
-ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849825"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200732"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Поддержка нескольких регионов в OneDrive и SharePoint Online в Office 365
 
@@ -64,27 +63,25 @@ ms.locfileid: "25849825"
 В настоящее время поддержка нескольких регионов в OneDrive доступна в таких странах и регионах:
   
 - Азиатско-Тихоокеанский регион
-    
+
 - Австралия
-    
+
 - Канада
-    
+
 - Европейский Союз (Европа, Ближний Восток и Африка)
 
 - Франция
-    
-- Япония
-    
-- Соединенное Королевство
-    
-- Соединенные Штаты (Северная Америка)
-    
-- Республика Корея
-      
-Ожидается поддержка таких географических расположений:
-  
+
 - Индия
-    
+
+- Япония
+
+- Соединенное Королевство
+
+- Соединенные Штаты (Северная Америка)
+
+- Республика Корея
+
 ## <a name="getting-started"></a>Начало работы
 
 Чтобы начать работу с OneDrive для бизнеса с поддержкой нескольких регионов, [спланируйте среду](plan-for-multi-geo.md). Затем [узнайте об администрировании этой среды](administering-a-multi-geo-environment.md) и [особенностях взаимодействия с ней](multi-geo-user-experience.md). Когда вы будете готовы настроить OneDrive для бизнеса с поддержкой нескольких регионов, [настройте поддержку нескольких регионов в своем клиенте](multi-geo-tenant-configuration.md), а затем [переместите все сайты OneDrive в новые регионы](move-onedrive-between-geo-locations.md) и [настройте поиск](configure-search-for-multi-geo.md).
