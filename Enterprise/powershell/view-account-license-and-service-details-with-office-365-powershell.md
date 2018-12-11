@@ -3,7 +3,7 @@ title: Просмотр сведений о лицензии и службе у�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/27/2018
+ms.date: 12/10/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Объясняет, как использовать Office 365 PowerShell для определения служб Office 365, которые были назначены пользователям.
-ms.openlocfilehash: 78608c3a52151c115eaf80b5315bb71b61e62356
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 5d575ea9e0b45ddc453b3b1c73bd53bf73adab2e
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223111"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213956"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Просмотр сведений о лицензии и службе учетной записи с помощью PowerShell в Office 365
 
@@ -63,30 +63,6 @@ ms.locfileid: "23223111"
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
-```
-
-Чтобы найти всех лицензированных пользователей, для которых включены или отключены определенные службы, используйте следующий синтаксис:
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled" -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled"...}
-```
-
-В этих примерах используются следующие сведения:
-  
-- Лицензии, который предоставляет доступ к службам Office 365, которые мы будем рады — это первый лицензии, назначенной для всех пользователей (номер индекса 0).
-    
-- Службы Office 365, которые мы будем рады, Скайп для бизнеса в Интернет и Exchange Online. Для лицензий, которые связаны с план лицензирования, Скайп для бизнеса в Интернет — 6-й служба, из списка (номер индекса — 5), и Exchange Online — 9 служба перечисленных (индекс равен 8).
-    
-В этом примере возвращаются все лицензированных пользователей, которым разрешена Скайп для бизнеса в Интернет и Exchange Online.
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -ne "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -ne "Disabled"}
-```
-
-В этом примере возвращаются всех лицензированных пользователей, не включенных в Скайп для бизнеса в Интернет или Exchange Online.
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
 Чтобы просмотреть все службы для пользователя, которому назначена *несколько лицензий*, используйте следующий синтаксис:

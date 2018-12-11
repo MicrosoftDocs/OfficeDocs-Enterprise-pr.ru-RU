@@ -3,7 +3,7 @@ title: ExpressRoute для подключения к Microsoft Cloud
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 12/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Сводка: в этой статье рассказывается, как с помощью ExpressRoute создать более быстрые и надежные подключения к облачным службам и платформам корпорации Майкрософт.'
-ms.openlocfilehash: 3ac8d52f50ff6df612de68ea51136fc16d5c9169
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872330"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213976"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute для подключения к Microsoft Cloud
 
@@ -222,7 +222,7 @@ ExpressRoute обеспечивает частное выделенное ско
     
 - повысить доступность глобального облака Майкрософт, когда локальное подключение ExpressRoute становится недоступным.
     
-Для подключений ExpressRoute на основе Office 365 необходимо использовать ExpressRoute Premium. Предприятия, у которых не менее 500 лицензированных пользователей, могут использовать ExpressRoute Premium бесплатно.
+Расширенный ExpressRoute является обязательным для подключений на основе Office 365 ExpressRoute.
   
 **Рис. 9. Всемирная сеть Microsoft Cloud**
 
