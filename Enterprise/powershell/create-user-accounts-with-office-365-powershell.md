@@ -1,5 +1,5 @@
 ---
-title: "Создание учетных записей пользователей с помощью PowerShell в Office 365"
+title: Создание учетных записей пользователей с помощью PowerShell в Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: "Сведения о том, как с помощью PowerShell в Office 365 создавать учетные записи пользователей в Office 365:."
+description: Сведения о том, как с помощью PowerShell в Office 365 создавать учетные записи пользователей в Office 365:.
 ms.openlocfilehash: e5fed572d0b835a42071e77b4aeaf8714f2178bd
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/14/2018
+ms.locfileid: "17553262"
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Создание учетных записей пользователей с помощью PowerShell в Office 365
 

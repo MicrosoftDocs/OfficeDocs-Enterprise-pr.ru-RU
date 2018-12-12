@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193609"
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Сведения о командлетах для служб Office 365
 

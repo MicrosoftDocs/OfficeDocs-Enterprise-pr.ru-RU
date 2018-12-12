@@ -1,5 +1,5 @@
 ---
-title: "Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell"
+title: Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: "Сводка.PowerShell в Office 365 позволяет управлять свойствами учетной записи пользователя Skype для бизнеса Online с политиками."
+description: Сводка.PowerShell в Office 365 позволяет управлять свойствами учетной записи пользователя Skype для бизнеса Online с политиками.
 ms.openlocfilehash: 6698bd43b2a55e1c98fbe8e536a46e2de604b4d2
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17114918"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell
 

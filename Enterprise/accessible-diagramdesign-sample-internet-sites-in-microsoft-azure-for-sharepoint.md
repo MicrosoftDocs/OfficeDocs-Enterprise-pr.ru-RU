@@ -1,5 +1,5 @@
 ---
-title: "Доступно диаграмму — пример структуры веб-сайтов в Microsoft Azure для SharePoint 2013"
+title: Доступно диаграмму — пример структуры веб-сайтов в Microsoft Azure для SharePoint 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
-description: "Эта статья представляет собой текстовую версию схемы \"Пример проектирования: веб-сайты в Microsoft Azure для SharePoint 2013."
+description: 'Эта статья представляет собой текстовую версию схемы "Пример проектирования: веб-сайты в Microsoft Azure для SharePoint 2013.'
 ms.openlocfilehash: 0d42a96f80d47b360084557fea47c4155d106d30
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17502762"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Доступная схема — пример проекта: веб-сайты в Microsoft Azure для SharePoint 2013
 

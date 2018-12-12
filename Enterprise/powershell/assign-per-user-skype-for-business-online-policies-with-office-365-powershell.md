@@ -1,5 +1,5 @@
 ---
-title: "Назначение индивидуальных политик для Skype для бизнеса Online с помощью Office 365 PowerShell"
+title: Назначение индивидуальных политик для Skype для бизнеса Online с помощью Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: "Сводка.PowerShell в Office 365 позволяет назначать индивидуальные параметры связи с политиками Skype для бизнеса Online."
+description: Сводка.PowerShell в Office 365 позволяет назначать индивидуальные параметры связи с политиками Skype для бизнеса Online.
 ms.openlocfilehash: 7f819b619c5b3607c98c10791fe30c3944e862a4
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17114818"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Назначение индивидуальных политик для Skype для бизнеса Online с помощью Office 365 PowerShell
 

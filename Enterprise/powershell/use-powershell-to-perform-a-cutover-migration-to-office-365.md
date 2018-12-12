@@ -16,6 +16,7 @@ ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193689"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Прямая миграция в Office 365 с помощью PowerShell
 

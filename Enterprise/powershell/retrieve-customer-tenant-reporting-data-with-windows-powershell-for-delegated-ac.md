@@ -1,5 +1,5 @@
 ---
-title: "Получение отчетных данных пользовательских клиентов с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)"
+title: Получение отчетных данных пользовательских клиентов с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
-description: "Сводка. Узнайте, как использовать удаленный сеанс Windows PowerShell для Microsoft Exchange Online, чтобы получать отчеты от отдельных пользовательских клиентов."
+description: Сводка. Узнайте, как использовать удаленный сеанс Windows PowerShell для Microsoft Exchange Online, чтобы получать отчеты от отдельных пользовательских клиентов.
 ms.openlocfilehash: d764f34b89ee55fd7015f01c0c48446fc73a6ac0
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17114668"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Получение отчетных данных пользовательских клиентов с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 
