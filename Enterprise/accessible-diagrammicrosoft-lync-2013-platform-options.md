@@ -1,5 +1,5 @@
 ---
-title: "Текстовая версия схемы, в которой представлены варианты платформы Microsoft Lync 2013"
+title: Текстовая версия схемы, в которой представлены варианты платформы Microsoft Lync 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -9,337 +9,338 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
-description: "Эта статья  удобная текстовая версия схемы, показывающей варианты платформы Microsoft Lync 2013, которая доступна в статье Технические схемы."
+description: Эта статья  удобная текстовая версия схемы, показывающей варианты платформы Microsoft Lync 2013, которая доступна в статье Технические схемы.
 ms.openlocfilehash: 4a660df4bfacad2a00f5d9fbb5e1b668840e3b9f
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17504092"
 ---
-# <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a><span data-ttu-id="69a77-103">Текстовая версия схемы, в которой представлены варианты платформы Microsoft Lync 2013</span><span class="sxs-lookup"><span data-stu-id="69a77-103">Accessible diagram - Microsoft Lync 2013 Platform Options</span></span>
+# <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a><span data-ttu-id="5484e-103">Текстовая версия схемы, в которой представлены варианты платформы Microsoft Lync 2013</span><span class="sxs-lookup"><span data-stu-id="5484e-103">Accessible diagram - Microsoft Lync 2013 Platform Options</span></span>
 
-<span data-ttu-id="69a77-104">**Сводка.** Эта статья — удобная текстовая версия схемы "Варианты платформы для Microsoft Lync 2013", которая доступна в разделе [Технические схемы](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).</span><span class="sxs-lookup"><span data-stu-id="69a77-104">**Summary:** This article is an accessible text version of the diagram named Microsoft Lync 2013 Platform Options, which is available at [Technical Diagrams](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).</span></span>
+<span data-ttu-id="5484e-104">**Сводка.** Эта статья — удобная текстовая версия схемы "Варианты платформы для Microsoft Lync 2013", которая доступна в разделе [Технические схемы](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).</span><span class="sxs-lookup"><span data-stu-id="5484e-104">**Summary:** This article is an accessible text version of the diagram named Microsoft Lync 2013 Platform Options, which is available at [Technical Diagrams](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).</span></span>
   
-<span data-ttu-id="69a77-105">На этом плакате представлены сведения о вариантах развертывания Lync Online (Office 365) и Lync Server, которые должны знать архитекторы и лица, принимающие бизнес-решения.</span><span class="sxs-lookup"><span data-stu-id="69a77-105">This poster describes what business decision makers (BDMs) and architects need to know about Lync Online (Office 365) and Lync Server deployments and includes:</span></span>
+<span data-ttu-id="5484e-105">На этом плакате представлены сведения о вариантах развертывания Lync Online (Office 365) и Lync Server, которые должны знать архитекторы и лица, принимающие бизнес-решения.</span><span class="sxs-lookup"><span data-stu-id="5484e-105">This poster describes what business decision makers (BDMs) and architects need to know about Lync Online (Office 365) and Lync Server deployments and includes:</span></span>
   
-- <span data-ttu-id="69a77-106">Сравнение четырех различных вариантов развертывания: Lync Online (Office 365), гибридная среда Lync Online и Lync Server, Lync Server и Lync Server с размещением у поставщика.</span><span class="sxs-lookup"><span data-stu-id="69a77-106">A comparison of four different deployment options: Lync Online (Office 365), Lync Online/Server Hybrid, Lync Server, and Provider-Hosted Lync Server.</span></span> 
+- <span data-ttu-id="5484e-106">Сравнение четырех различных вариантов развертывания: Lync Online (Office 365), гибридная среда Lync Online и Lync Server, Lync Server и Lync Server с размещением у поставщика.</span><span class="sxs-lookup"><span data-stu-id="5484e-106">A comparison of four different deployment options: Lync Online (Office 365), Lync Online/Server Hybrid, Lync Server, and Provider-Hosted Lync Server.</span></span> 
     
-- <span data-ttu-id="69a77-107">Два примера сценариев развертывания Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="69a77-107">Two example scenarios for deploying Lync 2013.</span></span>
+- <span data-ttu-id="5484e-107">Два примера сценариев развертывания Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="5484e-107">Two example scenarios for deploying Lync 2013.</span></span>
     
-## <a name="comparison-of-four-different-deployments-for-the-lync-2013-platform"></a><span data-ttu-id="69a77-108">Сравнение четырех различных вариантов развертывания платформы Lync 2013</span><span class="sxs-lookup"><span data-stu-id="69a77-108">Comparison of four different deployments for the Lync 2013 platform</span></span>
+## <a name="comparison-of-four-different-deployments-for-the-lync-2013-platform"></a><span data-ttu-id="5484e-108">Сравнение четырех различных вариантов развертывания платформы Lync 2013</span><span class="sxs-lookup"><span data-stu-id="5484e-108">Comparison of four different deployments for the Lync 2013 platform</span></span>
 
-<span data-ttu-id="69a77-109">В сравнении по каждому варианту развертывания представлена следующая информация:</span><span class="sxs-lookup"><span data-stu-id="69a77-109">The comparison provides information about each deployment option in the following areas:</span></span> 
+<span data-ttu-id="5484e-109">В сравнении по каждому варианту развертывания представлена следующая информация:</span><span class="sxs-lookup"><span data-stu-id="5484e-109">The comparison provides information about each deployment option in the following areas:</span></span> 
   
-- <span data-ttu-id="69a77-110">обзор различных компонентов развертывания;</span><span class="sxs-lookup"><span data-stu-id="69a77-110">An overview of the different deployment features</span></span>
+- <span data-ttu-id="5484e-110">обзор различных компонентов развертывания;</span><span class="sxs-lookup"><span data-stu-id="5484e-110">An overview of the different deployment features</span></span>
     
-- <span data-ttu-id="69a77-111">преимущества каждого из вариантов развертывания;</span><span class="sxs-lookup"><span data-stu-id="69a77-111">Benefits of implementing each deployment option</span></span>
+- <span data-ttu-id="5484e-111">преимущества каждого из вариантов развертывания;</span><span class="sxs-lookup"><span data-stu-id="5484e-111">Benefits of implementing each deployment option</span></span>
     
-- <span data-ttu-id="69a77-112">требования лицензирования;</span><span class="sxs-lookup"><span data-stu-id="69a77-112">Licensing requirements</span></span>
+- <span data-ttu-id="5484e-112">требования лицензирования;</span><span class="sxs-lookup"><span data-stu-id="5484e-112">Licensing requirements</span></span>
     
-- <span data-ttu-id="69a77-113">необходимые архитектурные задачи;</span><span class="sxs-lookup"><span data-stu-id="69a77-113">Required architectural tasks</span></span>
+- <span data-ttu-id="5484e-113">необходимые архитектурные задачи;</span><span class="sxs-lookup"><span data-stu-id="5484e-113">Required architectural tasks</span></span>
     
-- <span data-ttu-id="69a77-114">обязанности ИТ-специалистов по внедрению каждого варианта развертывания.</span><span class="sxs-lookup"><span data-stu-id="69a77-114">IT Pro responsibilities for implementing each deployment option</span></span>
+- <span data-ttu-id="5484e-114">обязанности ИТ-специалистов по внедрению каждого варианта развертывания.</span><span class="sxs-lookup"><span data-stu-id="5484e-114">IT Pro responsibilities for implementing each deployment option</span></span>
     
-### <a name="overview"></a><span data-ttu-id="69a77-115">Общие сведения</span><span class="sxs-lookup"><span data-stu-id="69a77-115">Overview</span></span>
+### <a name="overview"></a><span data-ttu-id="5484e-115">Общие сведения</span><span class="sxs-lookup"><span data-stu-id="5484e-115">Overview</span></span>
 
-#### <a name="lync-online-office-365"></a><span data-ttu-id="69a77-116">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="69a77-116">Lync Online (Office 365)</span></span>
+#### <a name="lync-online-office-365"></a><span data-ttu-id="5484e-116">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="5484e-116">Lync Online (Office 365)</span></span>
 
-<span data-ttu-id="69a77-117">Повысьте эффективность работы и сократите затраты с помощью мультитенантных планов Office 365.</span><span class="sxs-lookup"><span data-stu-id="69a77-117">You gain efficiency and optimize for cost with Office 365 multitenant plans.</span></span>
+<span data-ttu-id="5484e-117">Повысьте эффективность работы и сократите затраты с помощью мультитенантных планов Office 365.</span><span class="sxs-lookup"><span data-stu-id="5484e-117">You gain efficiency and optimize for cost with Office 365 multitenant plans.</span></span>
   
-<span data-ttu-id="69a77-118">На сопроводительной схеме показана служба Lync Online с клиентом Azure Active Directory, который синхронизирует имена и пароли учетных записей между локальной средой доменных служб Active Directory и клиентом Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="69a77-118">The accompanying diagram shows Lync Online with an Azure Active Directory tenant, which synchronizes account names and passwords between the on-premises Active Directory Domain Services (AD DS) environment and the Azure Active Directory tenant.</span></span> 
+<span data-ttu-id="5484e-118">На сопроводительной схеме показана служба Lync Online с клиентом Azure Active Directory, который синхронизирует имена и пароли учетных записей между локальной средой доменных служб Active Directory и клиентом Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="5484e-118">The accompanying diagram shows Lync Online with an Azure Active Directory tenant, which synchronizes account names and passwords between the on-premises Active Directory Domain Services (AD DS) environment and the Azure Active Directory tenant.</span></span> 
   
-<span data-ttu-id="69a77-119">Описание компонентов и функций:</span><span class="sxs-lookup"><span data-stu-id="69a77-119">Description of features and functionality:</span></span>
+<span data-ttu-id="5484e-119">Описание компонентов и функций:</span><span class="sxs-lookup"><span data-stu-id="5484e-119">Description of features and functionality:</span></span>
   
-- <span data-ttu-id="69a77-120">Программное обеспечение как услуга (SaaS).</span><span class="sxs-lookup"><span data-stu-id="69a77-120">Software as a Service (SaaS).</span></span>
+- <span data-ttu-id="5484e-120">Программное обеспечение как услуга (SaaS).</span><span class="sxs-lookup"><span data-stu-id="5484e-120">Software as a Service (SaaS).</span></span>
     
-- <span data-ttu-id="69a77-121">Большой набор всегда обновленных компонентов.</span><span class="sxs-lookup"><span data-stu-id="69a77-121">Rich feature set that is always up to date.</span></span>
+- <span data-ttu-id="5484e-121">Большой набор всегда обновленных компонентов.</span><span class="sxs-lookup"><span data-stu-id="5484e-121">Rich feature set that is always up to date.</span></span>
     
-- <span data-ttu-id="69a77-122">В том числе и клиент Azure Active Directory для учетных записей интернет-служб, который можно использовать с другими приложениями.</span><span class="sxs-lookup"><span data-stu-id="69a77-122">Includes an Azure Active Directory tenant for online accounts, which can be used with other applications.</span></span> 
+- <span data-ttu-id="5484e-122">В том числе и клиент Azure Active Directory для учетных записей интернет-служб, который можно использовать с другими приложениями.</span><span class="sxs-lookup"><span data-stu-id="5484e-122">Includes an Azure Active Directory tenant for online accounts, which can be used with other applications.</span></span> 
     
-- <span data-ttu-id="69a77-123">Благодаря функции интеграции каталогов можно синхронизировать имена и пароли учетных записей между локальными доменными службами Active Directory и клиентом Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="69a77-123">Directory integration includes synchronizing account names and passwords between the on-premises Active Directory Domain Services (AD DS) environment and the Azure Active Directory tenant.</span></span>
+- <span data-ttu-id="5484e-123">Благодаря функции интеграции каталогов можно синхронизировать имена и пароли учетных записей между локальными доменными службами Active Directory и клиентом Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="5484e-123">Directory integration includes synchronizing account names and passwords between the on-premises Active Directory Domain Services (AD DS) environment and the Azure Active Directory tenant.</span></span>
     
-- <span data-ttu-id="69a77-124">Если необходима функция единого входа, потребуется реализовать службы федерации Active Directory.</span><span class="sxs-lookup"><span data-stu-id="69a77-124">If single sign-on (SSO) is a requirement, Active Directory Federation Services (AD FS) must be implemented.</span></span> 
+- <span data-ttu-id="5484e-124">Если необходима функция единого входа, потребуется реализовать службы федерации Active Directory.</span><span class="sxs-lookup"><span data-stu-id="5484e-124">If single sign-on (SSO) is a requirement, Active Directory Federation Services (AD FS) must be implemented.</span></span> 
     
-- <span data-ttu-id="69a77-125">Данные, которыми клиент обменивается через Интернет, шифруются. При их передаче используется аутентификация.</span><span class="sxs-lookup"><span data-stu-id="69a77-125">Client communication over the Internet is encrypted and authenticated.</span></span>
+- <span data-ttu-id="5484e-125">Данные, которыми клиент обменивается через Интернет, шифруются. При их передаче используется аутентификация.</span><span class="sxs-lookup"><span data-stu-id="5484e-125">Client communication over the Internet is encrypted and authenticated.</span></span>
     
-- <span data-ttu-id="69a77-126">Возможность подключения устаревшего телефонного оборудования (телефонной сети общего пользования, ТСОП) с помощью сторонних поставщиков.</span><span class="sxs-lookup"><span data-stu-id="69a77-126">Legacy phone equipment, public switched telephone network (PSTN), connectivity is available through third-party providers.</span></span>
+- <span data-ttu-id="5484e-126">Возможность подключения устаревшего телефонного оборудования (телефонной сети общего пользования, ТСОП) с помощью сторонних поставщиков.</span><span class="sxs-lookup"><span data-stu-id="5484e-126">Legacy phone equipment, public switched telephone network (PSTN), connectivity is available through third-party providers.</span></span>
     
-#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="69a77-127">Гибридная среда Lync Online и Lync Server (с разделенным доменом)</span><span class="sxs-lookup"><span data-stu-id="69a77-127">Lync Online/Server Hybrid (split domain)</span></span>
+#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="5484e-127">Гибридная среда Lync Online и Lync Server (с разделенным доменом)</span><span class="sxs-lookup"><span data-stu-id="5484e-127">Lync Online/Server Hybrid (split domain)</span></span>
 
-<span data-ttu-id="69a77-128">Вы можете использовать преимущества Office 365 и при локальном развертывании Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="69a77-128">You can combine the benefits of Office 365 with an on-premises deployment of Lync 2013.</span></span>
+<span data-ttu-id="5484e-128">Вы можете использовать преимущества Office 365 и при локальном развертывании Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="5484e-128">You can combine the benefits of Office 365 with an on-premises deployment of Lync 2013.</span></span>
   
-<span data-ttu-id="69a77-p101">На сопроводительной схеме показаны Office 365 с Lync Online, при этом часть пользователей размещена в локальной среде, а другая часть  в Интернете. Кроме того, на схеме имеется пограничный сервер, развернутый в локальной среде.</span><span class="sxs-lookup"><span data-stu-id="69a77-p101">The accompanying diagram shows Office 365 with Lync Online where some users are homed on-premises and some users are homed online. An Edge Server that is deployed on-premises is also shown.</span></span>
+<span data-ttu-id="5484e-p101">На сопроводительной схеме показаны Office 365 с Lync Online, при этом часть пользователей размещена в локальной среде, а другая часть  в Интернете. Кроме того, на схеме имеется пограничный сервер, развернутый в локальной среде.</span><span class="sxs-lookup"><span data-stu-id="5484e-p101">The accompanying diagram shows Office 365 with Lync Online where some users are homed on-premises and some users are homed online. An Edge Server that is deployed on-premises is also shown.</span></span>
   
-<span data-ttu-id="69a77-131">Описание компонентов и функций:</span><span class="sxs-lookup"><span data-stu-id="69a77-131">Description of features and functionality:</span></span>
+<span data-ttu-id="5484e-131">Описание компонентов и функций:</span><span class="sxs-lookup"><span data-stu-id="5484e-131">Description of features and functionality:</span></span>
   
-- <span data-ttu-id="69a77-132">Часть пользователей размещена в локальной среде, а другая часть — в Интернете, но все они используют один домен SIP, например contoso.com.</span><span class="sxs-lookup"><span data-stu-id="69a77-132">Some users are homed on premises and some users are homed online, but the users share the same SIP domain (such as contoso.com).</span></span>
+- <span data-ttu-id="5484e-132">Часть пользователей размещена в локальной среде, а другая часть — в Интернете, но все они используют один домен SIP, например contoso.com.</span><span class="sxs-lookup"><span data-stu-id="5484e-132">Some users are homed on premises and some users are homed online, but the users share the same SIP domain (such as contoso.com).</span></span>
     
-- <span data-ttu-id="69a77-133">Использование существующей инфраструктуры Lync Server 2013, в том числе подключений к ТСОП.</span><span class="sxs-lookup"><span data-stu-id="69a77-133">Leverage your existing Lync Server 2013 infrastructure, including the connections to the PSTN.</span></span>
+- <span data-ttu-id="5484e-133">Использование существующей инфраструктуры Lync Server 2013, в том числе подключений к ТСОП.</span><span class="sxs-lookup"><span data-stu-id="5484e-133">Leverage your existing Lync Server 2013 infrastructure, including the connections to the PSTN.</span></span>
     
-- <span data-ttu-id="69a77-134">Простое добавление новых пользователей Lync Online, которым не требуется доступ к ТСОП.</span><span class="sxs-lookup"><span data-stu-id="69a77-134">Add new Lync Online users easily when they do not require PSTN.</span></span>
+- <span data-ttu-id="5484e-134">Простое добавление новых пользователей Lync Online, которым не требуется доступ к ТСОП.</span><span class="sxs-lookup"><span data-stu-id="5484e-134">Add new Lync Online users easily when they do not require PSTN.</span></span>
     
-- <span data-ttu-id="69a77-135">Миграция из локальной среды Lync в Lync Online согласно заданному вами расписанию.</span><span class="sxs-lookup"><span data-stu-id="69a77-135">Migrate from Lync on-premises to Lync Online over time, on your schedule.</span></span>
+- <span data-ttu-id="5484e-135">Миграция из локальной среды Lync в Lync Online согласно заданному вами расписанию.</span><span class="sxs-lookup"><span data-stu-id="5484e-135">Migrate from Lync on-premises to Lync Online over time, on your schedule.</span></span>
     
-- <span data-ttu-id="69a77-136">Интеграция с другими приложениями Office 365, в том числе с Exchange Online и SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="69a77-136">Integrate with other Office 365 applications, including Exchange Online and SharePoint Online.</span></span>
+- <span data-ttu-id="5484e-136">Интеграция с другими приложениями Office 365, в том числе с Exchange Online и SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="5484e-136">Integrate with other Office 365 applications, including Exchange Online and SharePoint Online.</span></span>
     
-#### <a name="lync-server"></a><span data-ttu-id="69a77-137">Lync Server</span><span class="sxs-lookup"><span data-stu-id="69a77-137">Lync Server</span></span>
+#### <a name="lync-server"></a><span data-ttu-id="5484e-137">Lync Server</span><span class="sxs-lookup"><span data-stu-id="5484e-137">Lync Server</span></span>
 
-<span data-ttu-id="69a77-p102">При таком варианте развертывания все ресурсы находятся под вашим контролем. На сопроводительной схеме показана инфраструктура Lync Server с локальной средой доменных служб Active Directory, в которой пользователи размещены локально.</span><span class="sxs-lookup"><span data-stu-id="69a77-p102">In this deployment, you own everything. The accompanying diagram shows a Lync Server infrastructure with an on-premises Active Directory Domain Services (AD DS) environment where users are homed on-premises.</span></span>
+<span data-ttu-id="5484e-p102">При таком варианте развертывания все ресурсы находятся под вашим контролем. На сопроводительной схеме показана инфраструктура Lync Server с локальной средой доменных служб Active Directory, в которой пользователи размещены локально.</span><span class="sxs-lookup"><span data-stu-id="5484e-p102">In this deployment, you own everything. The accompanying diagram shows a Lync Server infrastructure with an on-premises Active Directory Domain Services (AD DS) environment where users are homed on-premises.</span></span>
   
-<span data-ttu-id="69a77-140">Описание компонентов и функций:</span><span class="sxs-lookup"><span data-stu-id="69a77-140">Description of features and functionality:</span></span>
+<span data-ttu-id="5484e-140">Описание компонентов и функций:</span><span class="sxs-lookup"><span data-stu-id="5484e-140">Description of features and functionality:</span></span>
   
-- <span data-ttu-id="69a77-141">Планирование загрузки и определение конфигурации оборудования.</span><span class="sxs-lookup"><span data-stu-id="69a77-141">Capacity planning and sizing.</span></span>
+- <span data-ttu-id="5484e-141">Планирование загрузки и определение конфигурации оборудования.</span><span class="sxs-lookup"><span data-stu-id="5484e-141">Capacity planning and sizing.</span></span>
     
-- <span data-ttu-id="69a77-142">Приобретение и настройка серверов.</span><span class="sxs-lookup"><span data-stu-id="69a77-142">Server acquisition and setup.</span></span>
+- <span data-ttu-id="5484e-142">Приобретение и настройка серверов.</span><span class="sxs-lookup"><span data-stu-id="5484e-142">Server acquisition and setup.</span></span>
     
-- <span data-ttu-id="69a77-143">Развертывание.</span><span class="sxs-lookup"><span data-stu-id="69a77-143">Deployment.</span></span>
+- <span data-ttu-id="5484e-143">Развертывание.</span><span class="sxs-lookup"><span data-stu-id="5484e-143">Deployment.</span></span>
     
-- <span data-ttu-id="69a77-144">Горизонтальное масштабирование, применение исправлений и эксплуатация.</span><span class="sxs-lookup"><span data-stu-id="69a77-144">Scaling out, patching, and operations.</span></span>
+- <span data-ttu-id="5484e-144">Горизонтальное масштабирование, применение исправлений и эксплуатация.</span><span class="sxs-lookup"><span data-stu-id="5484e-144">Scaling out, patching, and operations.</span></span>
     
-- <span data-ttu-id="69a77-145">Резервное копирование данных.</span><span class="sxs-lookup"><span data-stu-id="69a77-145">Backing up data.</span></span>
+- <span data-ttu-id="5484e-145">Резервное копирование данных.</span><span class="sxs-lookup"><span data-stu-id="5484e-145">Backing up data.</span></span>
     
-- <span data-ttu-id="69a77-146">Обслуживание средств отработки отказа и аварийного восстановления.</span><span class="sxs-lookup"><span data-stu-id="69a77-146">Maintaining failover and disaster recovery.</span></span>
+- <span data-ttu-id="5484e-146">Обслуживание средств отработки отказа и аварийного восстановления.</span><span class="sxs-lookup"><span data-stu-id="5484e-146">Maintaining failover and disaster recovery.</span></span>
     
-- <span data-ttu-id="69a77-147">Подключение инфраструктуры Lync Server 2013 к ТСОП.</span><span class="sxs-lookup"><span data-stu-id="69a77-147">Connecting your Lync Server 2013 infrastructure to the PSTN.</span></span>
+- <span data-ttu-id="5484e-147">Подключение инфраструктуры Lync Server 2013 к ТСОП.</span><span class="sxs-lookup"><span data-stu-id="5484e-147">Connecting your Lync Server 2013 infrastructure to the PSTN.</span></span>
     
-- <span data-ttu-id="69a77-148">Интеграция с существующим телефонным оборудованием, например с частными УАТС.</span><span class="sxs-lookup"><span data-stu-id="69a77-148">Integration with existing phone equipment, such as private branch exchanges (PBXs).</span></span>
+- <span data-ttu-id="5484e-148">Интеграция с существующим телефонным оборудованием, например с частными УАТС.</span><span class="sxs-lookup"><span data-stu-id="5484e-148">Integration with existing phone equipment, such as private branch exchanges (PBXs).</span></span>
     
-#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="69a77-149">Lync Server с размещением у поставщика</span><span class="sxs-lookup"><span data-stu-id="69a77-149">Provider-Hosted Lync Server</span></span>
+#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="5484e-149">Lync Server с размещением у поставщика</span><span class="sxs-lookup"><span data-stu-id="5484e-149">Provider-Hosted Lync Server</span></span>
 
-<span data-ttu-id="69a77-p103">При таком варианте развертывания все ресурсы находятся под контролем поставщика. На сопроводительной схеме показана сеть поставщика, включающая серверы и оборудование, подключенная к локальной среде.</span><span class="sxs-lookup"><span data-stu-id="69a77-p103">In this deployment, your provider owns everything. The accompanying diagram shows a provider's network including their servers and equipment with a connection to an on-premises environment.</span></span>
+<span data-ttu-id="5484e-p103">При таком варианте развертывания все ресурсы находятся под контролем поставщика. На сопроводительной схеме показана сеть поставщика, включающая серверы и оборудование, подключенная к локальной среде.</span><span class="sxs-lookup"><span data-stu-id="5484e-p103">In this deployment, your provider owns everything. The accompanying diagram shows a provider's network including their servers and equipment with a connection to an on-premises environment.</span></span>
   
-<span data-ttu-id="69a77-152">Описание компонентов и функций:</span><span class="sxs-lookup"><span data-stu-id="69a77-152">Description of features and functionality:</span></span>
+<span data-ttu-id="5484e-152">Описание компонентов и функций:</span><span class="sxs-lookup"><span data-stu-id="5484e-152">Description of features and functionality:</span></span>
   
-- <span data-ttu-id="69a77-153">Планирование загрузки и определение конфигурации оборудования.</span><span class="sxs-lookup"><span data-stu-id="69a77-153">Capacity planning and sizing.</span></span>
+- <span data-ttu-id="5484e-153">Планирование загрузки и определение конфигурации оборудования.</span><span class="sxs-lookup"><span data-stu-id="5484e-153">Capacity planning and sizing.</span></span>
     
-- <span data-ttu-id="69a77-154">Приобретение и настройка серверов.</span><span class="sxs-lookup"><span data-stu-id="69a77-154">Server acquisition and setup.</span></span>
+- <span data-ttu-id="5484e-154">Приобретение и настройка серверов.</span><span class="sxs-lookup"><span data-stu-id="5484e-154">Server acquisition and setup.</span></span>
     
-- <span data-ttu-id="69a77-155">Развертывание.</span><span class="sxs-lookup"><span data-stu-id="69a77-155">Deployment.</span></span>
+- <span data-ttu-id="5484e-155">Развертывание.</span><span class="sxs-lookup"><span data-stu-id="5484e-155">Deployment.</span></span>
     
-- <span data-ttu-id="69a77-156">Горизонтальное масштабирование, применение исправлений и эксплуатация.</span><span class="sxs-lookup"><span data-stu-id="69a77-156">Scaling out, patching, and operations.</span></span>
+- <span data-ttu-id="5484e-156">Горизонтальное масштабирование, применение исправлений и эксплуатация.</span><span class="sxs-lookup"><span data-stu-id="5484e-156">Scaling out, patching, and operations.</span></span>
     
-- <span data-ttu-id="69a77-157">Резервное копирование данных.</span><span class="sxs-lookup"><span data-stu-id="69a77-157">Backing up data.</span></span>
+- <span data-ttu-id="5484e-157">Резервное копирование данных.</span><span class="sxs-lookup"><span data-stu-id="5484e-157">Backing up data.</span></span>
     
-- <span data-ttu-id="69a77-158">Обслуживание средств отработки отказа и аварийного восстановления.</span><span class="sxs-lookup"><span data-stu-id="69a77-158">Maintaining failover and disaster recovery.</span></span>
+- <span data-ttu-id="5484e-158">Обслуживание средств отработки отказа и аварийного восстановления.</span><span class="sxs-lookup"><span data-stu-id="5484e-158">Maintaining failover and disaster recovery.</span></span>
     
-- <span data-ttu-id="69a77-159">Интеграция с существующим телефонным оборудованием, например с частными УАТС.</span><span class="sxs-lookup"><span data-stu-id="69a77-159">Integration with existing phone equipment, such as private branch exchanges (PBXs).</span></span>
+- <span data-ttu-id="5484e-159">Интеграция с существующим телефонным оборудованием, например с частными УАТС.</span><span class="sxs-lookup"><span data-stu-id="5484e-159">Integration with existing phone equipment, such as private branch exchanges (PBXs).</span></span>
     
-- <span data-ttu-id="69a77-160">Кроме того, поставщик может:</span><span class="sxs-lookup"><span data-stu-id="69a77-160">In addition, the provider can:</span></span>
+- <span data-ttu-id="5484e-160">Кроме того, поставщик может:</span><span class="sxs-lookup"><span data-stu-id="5484e-160">In addition, the provider can:</span></span>
     
-  - <span data-ttu-id="69a77-161">Установить свои серверы и оборудование в собственной сети с подключением к вашей локальной среде (сплошная линия).</span><span class="sxs-lookup"><span data-stu-id="69a77-161">Install their servers and equipment in their own network with a connection to your premises (solid line).</span></span>
+  - <span data-ttu-id="5484e-161">Установить свои серверы и оборудование в собственной сети с подключением к вашей локальной среде (сплошная линия).</span><span class="sxs-lookup"><span data-stu-id="5484e-161">Install their servers and equipment in their own network with a connection to your premises (solid line).</span></span>
     
-  - <span data-ttu-id="69a77-162">Установить свои серверы в вашей локальной среде (пунктирная линия).</span><span class="sxs-lookup"><span data-stu-id="69a77-162">Install their servers on your premises (dotted line).</span></span>
+  - <span data-ttu-id="5484e-162">Установить свои серверы в вашей локальной среде (пунктирная линия).</span><span class="sxs-lookup"><span data-stu-id="5484e-162">Install their servers on your premises (dotted line).</span></span>
     
-### <a name="benefits-of-implementing-each-deployment-option"></a><span data-ttu-id="69a77-163">Преимущества каждого из вариантов развертывания</span><span class="sxs-lookup"><span data-stu-id="69a77-163">Benefits of implementing each deployment option</span></span>
+### <a name="benefits-of-implementing-each-deployment-option"></a><span data-ttu-id="5484e-163">Преимущества каждого из вариантов развертывания</span><span class="sxs-lookup"><span data-stu-id="5484e-163">Benefits of implementing each deployment option</span></span>
 
-#### <a name="lync-online-office-365"></a><span data-ttu-id="69a77-164">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="69a77-164">Lync Online (Office 365)</span></span>
+#### <a name="lync-online-office-365"></a><span data-ttu-id="5484e-164">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="5484e-164">Lync Online (Office 365)</span></span>
 
-- <span data-ttu-id="69a77-165">Отсутствие операционных затрат на локальные серверы или серверное программное обеспечение.</span><span class="sxs-lookup"><span data-stu-id="69a77-165">No operational burden of on-premises servers or server software.</span></span>
+- <span data-ttu-id="5484e-165">Отсутствие операционных затрат на локальные серверы или серверное программное обеспечение.</span><span class="sxs-lookup"><span data-stu-id="5484e-165">No operational burden of on-premises servers or server software.</span></span>
     
-- <span data-ttu-id="69a77-166">Возможности для общения, доступные благодаря облачной службе Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="69a77-166">Communication capabilities of Lync Server 2013 as a cloud-based service.</span></span>
+- <span data-ttu-id="5484e-166">Возможности для общения, доступные благодаря облачной службе Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="5484e-166">Communication capabilities of Lync Server 2013 as a cloud-based service.</span></span>
     
-- <span data-ttu-id="69a77-167">Lync предоставляет такие возможности: получение сведений о присутствии, обмен мгновенными сообщениями, использование аудио- и видеосвязи, проведение собраний по сети и веб-конференций.</span><span class="sxs-lookup"><span data-stu-id="69a77-167">Lync presence, instant messaging, audio and video calling, rich online meetings, and extensive web conferencing capabilities.</span></span>
+- <span data-ttu-id="5484e-167">Lync предоставляет такие возможности: получение сведений о присутствии, обмен мгновенными сообщениями, использование аудио- и видеосвязи, проведение собраний по сети и веб-конференций.</span><span class="sxs-lookup"><span data-stu-id="5484e-167">Lync presence, instant messaging, audio and video calling, rich online meetings, and extensive web conferencing capabilities.</span></span>
     
-- <span data-ttu-id="69a77-168">Данный вариант используется географически разрозненными организациями или организациями с большим количеством мобильных сотрудников.</span><span class="sxs-lookup"><span data-stu-id="69a77-168">Used with geographically-dispersed organizations or with primarily mobile employees.</span></span>
+- <span data-ttu-id="5484e-168">Данный вариант используется географически разрозненными организациями или организациями с большим количеством мобильных сотрудников.</span><span class="sxs-lookup"><span data-stu-id="5484e-168">Used with geographically-dispersed organizations or with primarily mobile employees.</span></span>
     
-#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="69a77-169">Гибридная среда Lync Online и Lync Server (с разделенным доменом)</span><span class="sxs-lookup"><span data-stu-id="69a77-169">Lync Online/Server Hybrid (split domain)</span></span>
+#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="5484e-169">Гибридная среда Lync Online и Lync Server (с разделенным доменом)</span><span class="sxs-lookup"><span data-stu-id="5484e-169">Lync Online/Server Hybrid (split domain)</span></span>
 
-- <span data-ttu-id="69a77-170">Использование Lync Online для связи с удаленными пользователями и деловыми партнерами.</span><span class="sxs-lookup"><span data-stu-id="69a77-170">Use Lync Online for remote users and integration with business partners.</span></span>
+- <span data-ttu-id="5484e-170">Использование Lync Online для связи с удаленными пользователями и деловыми партнерами.</span><span class="sxs-lookup"><span data-stu-id="5484e-170">Use Lync Online for remote users and integration with business partners.</span></span>
     
-- <span data-ttu-id="69a77-171">Упрощение миграции из локальной среды Lync в Lync Online.</span><span class="sxs-lookup"><span data-stu-id="69a77-171">Facilitate a migration from Lync on-premises to Lync Online.</span></span>
+- <span data-ttu-id="5484e-171">Упрощение миграции из локальной среды Lync в Lync Online.</span><span class="sxs-lookup"><span data-stu-id="5484e-171">Facilitate a migration from Lync on-premises to Lync Online.</span></span>
     
-- <span data-ttu-id="69a77-172">Связь с филиалами без использования соответствующих устройств.</span><span class="sxs-lookup"><span data-stu-id="69a77-172">Support remote sites without using a branch office appliance.</span></span>
+- <span data-ttu-id="5484e-172">Связь с филиалами без использования соответствующих устройств.</span><span class="sxs-lookup"><span data-stu-id="5484e-172">Support remote sites without using a branch office appliance.</span></span>
     
-- <span data-ttu-id="69a77-173">Простота внедрения Lync для новых подразделений организации.</span><span class="sxs-lookup"><span data-stu-id="69a77-173">Ease of adding Lync support for new business acquisitions.</span></span>
+- <span data-ttu-id="5484e-173">Простота внедрения Lync для новых подразделений организации.</span><span class="sxs-lookup"><span data-stu-id="5484e-173">Ease of adding Lync support for new business acquisitions.</span></span>
     
-#### <a name="lync-server"></a><span data-ttu-id="69a77-174">Lync Server</span><span class="sxs-lookup"><span data-stu-id="69a77-174">Lync Server</span></span>
+#### <a name="lync-server"></a><span data-ttu-id="5484e-174">Lync Server</span><span class="sxs-lookup"><span data-stu-id="5484e-174">Lync Server</span></span>
 
-- <span data-ttu-id="69a77-175">Решения для частного облака.</span><span class="sxs-lookup"><span data-stu-id="69a77-175">Private cloud solutions.</span></span>
+- <span data-ttu-id="5484e-175">Решения для частного облака.</span><span class="sxs-lookup"><span data-stu-id="5484e-175">Private cloud solutions.</span></span>
     
-- <span data-ttu-id="69a77-176">Решения с широкими возможностями настройки.</span><span class="sxs-lookup"><span data-stu-id="69a77-176">Highly customized solutions.</span></span>
+- <span data-ttu-id="5484e-176">Решения с широкими возможностями настройки.</span><span class="sxs-lookup"><span data-stu-id="5484e-176">Highly customized solutions.</span></span>
     
-- <span data-ttu-id="69a77-177">Lync Online не поддерживает устаревшие решения со сторонними компонентами, зависящими от оборудования и программного обеспечения.</span><span class="sxs-lookup"><span data-stu-id="69a77-177">Legacy solutions with third-party components that depend on hardware and software that are not supported by Lync Online.</span></span>
+- <span data-ttu-id="5484e-177">Lync Online не поддерживает устаревшие решения со сторонними компонентами, зависящими от оборудования и программного обеспечения.</span><span class="sxs-lookup"><span data-stu-id="5484e-177">Legacy solutions with third-party components that depend on hardware and software that are not supported by Lync Online.</span></span>
     
-- <span data-ttu-id="69a77-178">Ограничения конфиденциальности, мешающие синхронизации учетных записей доменных служб Active Directory с Office 365.</span><span class="sxs-lookup"><span data-stu-id="69a77-178">Privacy restrictions that prevent synchronization of AD DS accounts with Office 365.</span></span>
+- <span data-ttu-id="5484e-178">Ограничения конфиденциальности, мешающие синхронизации учетных записей доменных служб Active Directory с Office 365.</span><span class="sxs-lookup"><span data-stu-id="5484e-178">Privacy restrictions that prevent synchronization of AD DS accounts with Office 365.</span></span>
     
-- <span data-ttu-id="69a77-179">Организации, которым необходим контроль над всей платформой и решением.</span><span class="sxs-lookup"><span data-stu-id="69a77-179">Organizations that desire control of the entire platform and solution.</span></span>
+- <span data-ttu-id="5484e-179">Организации, которым необходим контроль над всей платформой и решением.</span><span class="sxs-lookup"><span data-stu-id="5484e-179">Organizations that desire control of the entire platform and solution.</span></span>
     
-- <span data-ttu-id="69a77-180">Замена УАТС на Корпоративную голосовую связь Lync.</span><span class="sxs-lookup"><span data-stu-id="69a77-180">PBX replacement with Lync Enterprise Voice.</span></span>
+- <span data-ttu-id="5484e-180">Замена УАТС на Корпоративную голосовую связь Lync.</span><span class="sxs-lookup"><span data-stu-id="5484e-180">PBX replacement with Lync Enterprise Voice.</span></span>
     
-#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="69a77-181">Lync Server с размещением у поставщика</span><span class="sxs-lookup"><span data-stu-id="69a77-181">Provider-Hosted Lync Server</span></span>
+#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="5484e-181">Lync Server с размещением у поставщика</span><span class="sxs-lookup"><span data-stu-id="5484e-181">Provider-Hosted Lync Server</span></span>
 
-- <span data-ttu-id="69a77-182">Организации, которым необходимо использовать возможности Lync Server, но так, чтобы развертыванием и обслуживанием занималась другая компания.</span><span class="sxs-lookup"><span data-stu-id="69a77-182">Organizations that want Lync Server functionality but want to outsource its deployment and maintenance.</span></span>
+- <span data-ttu-id="5484e-182">Организации, которым необходимо использовать возможности Lync Server, но так, чтобы развертыванием и обслуживанием занималась другая компания.</span><span class="sxs-lookup"><span data-stu-id="5484e-182">Organizations that want Lync Server functionality but want to outsource its deployment and maintenance.</span></span>
     
-- <span data-ttu-id="69a77-183">Решения с привлечением поставщика.</span><span class="sxs-lookup"><span data-stu-id="69a77-183">Provider-based solutions.</span></span>
+- <span data-ttu-id="5484e-183">Решения с привлечением поставщика.</span><span class="sxs-lookup"><span data-stu-id="5484e-183">Provider-based solutions.</span></span>
     
-- <span data-ttu-id="69a77-184">Решения с широкими возможностями настройки.</span><span class="sxs-lookup"><span data-stu-id="69a77-184">Highly customized solutions.</span></span>
+- <span data-ttu-id="5484e-184">Решения с широкими возможностями настройки.</span><span class="sxs-lookup"><span data-stu-id="5484e-184">Highly customized solutions.</span></span>
     
-- <span data-ttu-id="69a77-185">Lync Online не поддерживает устаревшие решения со сторонними компонентами, зависящими от оборудования и программного обеспечения.</span><span class="sxs-lookup"><span data-stu-id="69a77-185">Legacy solutions with third-party components that depend on hardware and software that are not supported by Lync Online.</span></span>
+- <span data-ttu-id="5484e-185">Lync Online не поддерживает устаревшие решения со сторонними компонентами, зависящими от оборудования и программного обеспечения.</span><span class="sxs-lookup"><span data-stu-id="5484e-185">Legacy solutions with third-party components that depend on hardware and software that are not supported by Lync Online.</span></span>
     
-- <span data-ttu-id="69a77-186">Замена УАТС на Корпоративную голосовую связь Lync.</span><span class="sxs-lookup"><span data-stu-id="69a77-186">PBX replacement with Lync Enterprise Voice.</span></span>
+- <span data-ttu-id="5484e-186">Замена УАТС на Корпоративную голосовую связь Lync.</span><span class="sxs-lookup"><span data-stu-id="5484e-186">PBX replacement with Lync Enterprise Voice.</span></span>
     
-### <a name="license-requirements"></a><span data-ttu-id="69a77-187">Требования лицензирования</span><span class="sxs-lookup"><span data-stu-id="69a77-187">License requirements</span></span>
+### <a name="license-requirements"></a><span data-ttu-id="5484e-187">Требования лицензирования</span><span class="sxs-lookup"><span data-stu-id="5484e-187">License requirements</span></span>
 
-#### <a name="lync-online-office-365"></a><span data-ttu-id="69a77-188">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="69a77-188">Lync Online (Office 365)</span></span>
+#### <a name="lync-online-office-365"></a><span data-ttu-id="5484e-188">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="5484e-188">Lync Online (Office 365)</span></span>
 
-<span data-ttu-id="69a77-189">Модель с использованием подписки.</span><span class="sxs-lookup"><span data-stu-id="69a77-189">Subscription model.</span></span>
+<span data-ttu-id="5484e-189">Модель с использованием подписки.</span><span class="sxs-lookup"><span data-stu-id="5484e-189">Subscription model.</span></span>
   
-#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="69a77-190">Гибридная среда Lync Online и Lync Server (с разделенным доменом)</span><span class="sxs-lookup"><span data-stu-id="69a77-190">Lync Online/Server Hybrid (split domain)</span></span>
+#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="5484e-190">Гибридная среда Lync Online и Lync Server (с разделенным доменом)</span><span class="sxs-lookup"><span data-stu-id="5484e-190">Lync Online/Server Hybrid (split domain)</span></span>
 
-- <span data-ttu-id="69a77-p104">Для Office 365: модель с использованием подписки. Дополнительные лицензии не требуются.</span><span class="sxs-lookup"><span data-stu-id="69a77-p104">Office 365 — Subscription model. No additional licenses needed.</span></span> 
+- <span data-ttu-id="5484e-p104">Для Office 365: модель с использованием подписки. Дополнительные лицензии не требуются.</span><span class="sxs-lookup"><span data-stu-id="5484e-p104">Office 365 — Subscription model. No additional licenses needed.</span></span> 
     
-- <span data-ttu-id="69a77-193">Для локальной среды: можно применять все локальные лицензии.</span><span class="sxs-lookup"><span data-stu-id="69a77-193">On-premises — All on-premises licenses apply.</span></span> 
+- <span data-ttu-id="5484e-193">Для локальной среды: можно применять все локальные лицензии.</span><span class="sxs-lookup"><span data-stu-id="5484e-193">On-premises — All on-premises licenses apply.</span></span> 
     
-#### <a name="lync-server"></a><span data-ttu-id="69a77-194">Lync Server</span><span class="sxs-lookup"><span data-stu-id="69a77-194">Lync Server</span></span>
+#### <a name="lync-server"></a><span data-ttu-id="5484e-194">Lync Server</span><span class="sxs-lookup"><span data-stu-id="5484e-194">Lync Server</span></span>
 
-- <span data-ttu-id="69a77-195">Серверная операционная система</span><span class="sxs-lookup"><span data-stu-id="69a77-195">Server Operating System</span></span>
+- <span data-ttu-id="5484e-195">Серверная операционная система</span><span class="sxs-lookup"><span data-stu-id="5484e-195">Server Operating System</span></span>
     
-- <span data-ttu-id="69a77-196">SQL Server</span><span class="sxs-lookup"><span data-stu-id="69a77-196">SQL Server</span></span>
+- <span data-ttu-id="5484e-196">SQL Server</span><span class="sxs-lookup"><span data-stu-id="5484e-196">SQL Server</span></span>
     
-- <span data-ttu-id="69a77-197">Серверная лицензия для Lync 2013</span><span class="sxs-lookup"><span data-stu-id="69a77-197">Lync 2013 Server License</span></span>
+- <span data-ttu-id="5484e-197">Серверная лицензия для Lync 2013</span><span class="sxs-lookup"><span data-stu-id="5484e-197">Lync 2013 Server License</span></span>
     
-- <span data-ttu-id="69a77-198">Клиентская лицензия для Lync 2013</span><span class="sxs-lookup"><span data-stu-id="69a77-198">Lync 2013 Client Access License</span></span>
+- <span data-ttu-id="5484e-198">Клиентская лицензия для Lync 2013</span><span class="sxs-lookup"><span data-stu-id="5484e-198">Lync 2013 Client Access License</span></span>
     
-#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="69a77-199">Lync Server с размещением у поставщика</span><span class="sxs-lookup"><span data-stu-id="69a77-199">Provider-Hosted Lync Server</span></span>
+#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="5484e-199">Lync Server с размещением у поставщика</span><span class="sxs-lookup"><span data-stu-id="5484e-199">Provider-Hosted Lync Server</span></span>
 
-<span data-ttu-id="69a77-200">Затраты зависят от соглашения с поставщиком решения Lync.</span><span class="sxs-lookup"><span data-stu-id="69a77-200">Costs are based on the agreement with your Lync solution provider.</span></span>
+<span data-ttu-id="5484e-200">Затраты зависят от соглашения с поставщиком решения Lync.</span><span class="sxs-lookup"><span data-stu-id="5484e-200">Costs are based on the agreement with your Lync solution provider.</span></span>
   
-### <a name="architecture-tasks"></a><span data-ttu-id="69a77-201">Архитектурные задачи</span><span class="sxs-lookup"><span data-stu-id="69a77-201">Architecture tasks</span></span>
+### <a name="architecture-tasks"></a><span data-ttu-id="5484e-201">Архитектурные задачи</span><span class="sxs-lookup"><span data-stu-id="5484e-201">Architecture tasks</span></span>
 
-<span data-ttu-id="69a77-202">В этом разделе перечислены архитектурные задачи для каждого варианта развертывания.</span><span class="sxs-lookup"><span data-stu-id="69a77-202">This section lists the architectural tasks for each deployment option.</span></span>
+<span data-ttu-id="5484e-202">В этом разделе перечислены архитектурные задачи для каждого варианта развертывания.</span><span class="sxs-lookup"><span data-stu-id="5484e-202">This section lists the architectural tasks for each deployment option.</span></span>
   
-#### <a name="lync-online-office-365"></a><span data-ttu-id="69a77-203">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="69a77-203">Lync Online (Office 365)</span></span>
+#### <a name="lync-online-office-365"></a><span data-ttu-id="5484e-203">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="5484e-203">Lync Online (Office 365)</span></span>
 
-- <span data-ttu-id="69a77-204">Планирование и проектирование синхронизации каталогов.</span><span class="sxs-lookup"><span data-stu-id="69a77-204">Plan and design directory synchronization.</span></span>
+- <span data-ttu-id="5484e-204">Планирование и проектирование синхронизации каталогов.</span><span class="sxs-lookup"><span data-stu-id="5484e-204">Plan and design directory synchronization.</span></span>
     
-- <span data-ttu-id="69a77-205">Обеспечение доступности и достаточной пропускной способности сети при использовании брандмауэров, прокси-серверов, шлюзов и каналов глобальной сети.</span><span class="sxs-lookup"><span data-stu-id="69a77-205">Ensure network capacity and availability through firewalls, proxy servers, gateways, and across WAN links.</span></span>
+- <span data-ttu-id="5484e-205">Обеспечение доступности и достаточной пропускной способности сети при использовании брандмауэров, прокси-серверов, шлюзов и каналов глобальной сети.</span><span class="sxs-lookup"><span data-stu-id="5484e-205">Ensure network capacity and availability through firewalls, proxy servers, gateways, and across WAN links.</span></span>
     
-- <span data-ttu-id="69a77-206">Получение сторонних SSL-сертификатов для обеспечения безопасности на корпоративном уровне для служб Office 365.</span><span class="sxs-lookup"><span data-stu-id="69a77-206">Acquire third-party SSL certificates to provide enterprise-security for Office 365 service offerings.</span></span>
+- <span data-ttu-id="5484e-206">Получение сторонних SSL-сертификатов для обеспечения безопасности на корпоративном уровне для служб Office 365.</span><span class="sxs-lookup"><span data-stu-id="5484e-206">Acquire third-party SSL certificates to provide enterprise-security for Office 365 service offerings.</span></span>
     
-- <span data-ttu-id="69a77-207">Принятие решения о том, необходимо ли подключаться к Office 365 по протоколу IP версии 6 (IPv6).</span><span class="sxs-lookup"><span data-stu-id="69a77-207">Decide if you want to connect to Office 365 with Internet Protocol version 6 (IPv6).</span></span>
+- <span data-ttu-id="5484e-207">Принятие решения о том, необходимо ли подключаться к Office 365 по протоколу IP версии 6 (IPv6).</span><span class="sxs-lookup"><span data-stu-id="5484e-207">Decide if you want to connect to Office 365 with Internet Protocol version 6 (IPv6).</span></span>
     
-#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="69a77-208">Гибридная среда Lync Online и Lync Server (с разделенным доменом)</span><span class="sxs-lookup"><span data-stu-id="69a77-208">Lync Online/Server Hybrid (split domain)</span></span>
+#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="5484e-208">Гибридная среда Lync Online и Lync Server (с разделенным доменом)</span><span class="sxs-lookup"><span data-stu-id="5484e-208">Lync Online/Server Hybrid (split domain)</span></span>
 
-<span data-ttu-id="69a77-209">В дополнение к задачам для Office 365 и локальных сред:</span><span class="sxs-lookup"><span data-stu-id="69a77-209">In addition to tasks for both the Office 365 and on-premises environments:</span></span>
+<span data-ttu-id="5484e-209">В дополнение к задачам для Office 365 и локальных сред:</span><span class="sxs-lookup"><span data-stu-id="5484e-209">In addition to tasks for both the Office 365 and on-premises environments:</span></span>
   
-- <span data-ttu-id="69a77-210">Определить необходимую степень интеграции компонентов для локальных и веб-версий Exchange Server и SharePoint.</span><span class="sxs-lookup"><span data-stu-id="69a77-210">Determine how much feature integration you want to use with on-premises and online versions of Exchange Server and SharePoint.</span></span>
+- <span data-ttu-id="5484e-210">Определить необходимую степень интеграции компонентов для локальных и веб-версий Exchange Server и SharePoint.</span><span class="sxs-lookup"><span data-stu-id="5484e-210">Determine how much feature integration you want to use with on-premises and online versions of Exchange Server and SharePoint.</span></span>
     
-- <span data-ttu-id="69a77-211">При необходимости следует определить, какое устройство прокси-сервера будет использоваться для запросов из Office 365.</span><span class="sxs-lookup"><span data-stu-id="69a77-211">If required, determine which proxy server device will be used for requests from Office 365.</span></span>
+- <span data-ttu-id="5484e-211">При необходимости следует определить, какое устройство прокси-сервера будет использоваться для запросов из Office 365.</span><span class="sxs-lookup"><span data-stu-id="5484e-211">If required, determine which proxy server device will be used for requests from Office 365.</span></span>
     
-#### <a name="lync-server"></a><span data-ttu-id="69a77-212">Lync Server</span><span class="sxs-lookup"><span data-stu-id="69a77-212">Lync Server</span></span>
+#### <a name="lync-server"></a><span data-ttu-id="5484e-212">Lync Server</span><span class="sxs-lookup"><span data-stu-id="5484e-212">Lync Server</span></span>
 
-<span data-ttu-id="69a77-213">Проектирование среды Lync в существующей локальной среде.</span><span class="sxs-lookup"><span data-stu-id="69a77-213">Design the Lync environment in an existing on-premises environment:</span></span>
+<span data-ttu-id="5484e-213">Проектирование среды Lync в существующей локальной среде.</span><span class="sxs-lookup"><span data-stu-id="5484e-213">Design the Lync environment in an existing on-premises environment:</span></span>
   
-- <span data-ttu-id="69a77-214">Топология Lync для центрального офиса и филиалов.</span><span class="sxs-lookup"><span data-stu-id="69a77-214">Lync topology for central and branch offices.</span></span>
+- <span data-ttu-id="5484e-214">Топология Lync для центрального офиса и филиалов.</span><span class="sxs-lookup"><span data-stu-id="5484e-214">Lync topology for central and branch offices.</span></span>
     
-- <span data-ttu-id="69a77-215">Серверное оборудование, в том числе для виртуализации.</span><span class="sxs-lookup"><span data-stu-id="69a77-215">Server hardware, including virtualization.</span></span>
+- <span data-ttu-id="5484e-215">Серверное оборудование, в том числе для виртуализации.</span><span class="sxs-lookup"><span data-stu-id="5484e-215">Server hardware, including virtualization.</span></span>
     
-- <span data-ttu-id="69a77-216">Интеграция с доменными службами Active Directory и DNS.</span><span class="sxs-lookup"><span data-stu-id="69a77-216">Integration with Active Directory Domain Services (AD DS) and DNS.</span></span>
+- <span data-ttu-id="5484e-216">Интеграция с доменными службами Active Directory и DNS.</span><span class="sxs-lookup"><span data-stu-id="5484e-216">Integration with Active Directory Domain Services (AD DS) and DNS.</span></span>
     
-- <span data-ttu-id="69a77-217">Балансировка нагрузки для пулов серверов Lync.</span><span class="sxs-lookup"><span data-stu-id="69a77-217">Load balancing for Lync server pools.</span></span>
+- <span data-ttu-id="5484e-217">Балансировка нагрузки для пулов серверов Lync.</span><span class="sxs-lookup"><span data-stu-id="5484e-217">Load balancing for Lync server pools.</span></span>
     
-- <span data-ttu-id="69a77-218">Отработка отказа и аварийное восстановление.</span><span class="sxs-lookup"><span data-stu-id="69a77-218">Failover and disaster recovery.</span></span>
+- <span data-ttu-id="5484e-218">Отработка отказа и аварийное восстановление.</span><span class="sxs-lookup"><span data-stu-id="5484e-218">Failover and disaster recovery.</span></span>
     
-#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="69a77-219">Lync Server с размещением у поставщика</span><span class="sxs-lookup"><span data-stu-id="69a77-219">Provider-Hosted Lync Server</span></span>
+#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="5484e-219">Lync Server с размещением у поставщика</span><span class="sxs-lookup"><span data-stu-id="5484e-219">Provider-Hosted Lync Server</span></span>
 
-- <span data-ttu-id="69a77-220">В случае установки в облачной среде необходимо определить способ подключения к сети поставщика услуг.</span><span class="sxs-lookup"><span data-stu-id="69a77-220">For a cloud-based installation, determine the connection to the service provider's network.</span></span>
+- <span data-ttu-id="5484e-220">В случае установки в облачной среде необходимо определить способ подключения к сети поставщика услуг.</span><span class="sxs-lookup"><span data-stu-id="5484e-220">For a cloud-based installation, determine the connection to the service provider's network.</span></span>
     
-- <span data-ttu-id="69a77-221">В случае установки в локальной среде необходимо определить способ размещения серверов Lync поставщика в вашей сети.</span><span class="sxs-lookup"><span data-stu-id="69a77-221">For an on-premises installation, determine the placement of the provider's Lync servers on your network.</span></span>
+- <span data-ttu-id="5484e-221">В случае установки в локальной среде необходимо определить способ размещения серверов Lync поставщика в вашей сети.</span><span class="sxs-lookup"><span data-stu-id="5484e-221">For an on-premises installation, determine the placement of the provider's Lync servers on your network.</span></span>
     
-- <span data-ttu-id="69a77-222">В случае использования обоих типов установки необходимо определить способ интеграции с доменными службами Active Directory и оборудованием УАТС.</span><span class="sxs-lookup"><span data-stu-id="69a77-222">For both types, determine the integration with AD DS and your PBX equipment.</span></span>
+- <span data-ttu-id="5484e-222">В случае использования обоих типов установки необходимо определить способ интеграции с доменными службами Active Directory и оборудованием УАТС.</span><span class="sxs-lookup"><span data-stu-id="5484e-222">For both types, determine the integration with AD DS and your PBX equipment.</span></span>
     
-### <a name="it-pro-responsibilities"></a><span data-ttu-id="69a77-223">Обязанности ИТ-специалистов</span><span class="sxs-lookup"><span data-stu-id="69a77-223">IT Pro responsibilities</span></span>
+### <a name="it-pro-responsibilities"></a><span data-ttu-id="5484e-223">Обязанности ИТ-специалистов</span><span class="sxs-lookup"><span data-stu-id="5484e-223">IT Pro responsibilities</span></span>
 
-<span data-ttu-id="69a77-224">В этом разделе перечислены обязанности ИТ-специалистов по внедрению каждого варианта развертывания.</span><span class="sxs-lookup"><span data-stu-id="69a77-224">This section lists the IT Pro responsibilities for each deployment option.</span></span>
+<span data-ttu-id="5484e-224">В этом разделе перечислены обязанности ИТ-специалистов по внедрению каждого варианта развертывания.</span><span class="sxs-lookup"><span data-stu-id="5484e-224">This section lists the IT Pro responsibilities for each deployment option.</span></span>
   
-#### <a name="lync-online-office-365"></a><span data-ttu-id="69a77-225">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="69a77-225">Lync Online (Office 365)</span></span>
+#### <a name="lync-online-office-365"></a><span data-ttu-id="5484e-225">Lync Online (Office 365)</span><span class="sxs-lookup"><span data-stu-id="5484e-225">Lync Online (Office 365)</span></span>
 
-<span data-ttu-id="69a77-226">Развертывание службы Lync Online (Office 365) и управление ею.</span><span class="sxs-lookup"><span data-stu-id="69a77-226">Deploy and manage Lync Online (Office 365):</span></span>
+<span data-ttu-id="5484e-226">Развертывание службы Lync Online (Office 365) и управление ею.</span><span class="sxs-lookup"><span data-stu-id="5484e-226">Deploy and manage Lync Online (Office 365):</span></span>
   
-- <span data-ttu-id="69a77-227">Внедрение плана синхронизации каталогов.</span><span class="sxs-lookup"><span data-stu-id="69a77-227">Implement the directory synchronization plan.</span></span>
+- <span data-ttu-id="5484e-227">Внедрение плана синхронизации каталогов.</span><span class="sxs-lookup"><span data-stu-id="5484e-227">Implement the directory synchronization plan.</span></span>
     
-- <span data-ttu-id="69a77-228">Планирование внутренних и внешних записей DNS и маршрутизации.</span><span class="sxs-lookup"><span data-stu-id="69a77-228">Plan and implement internal and external DNS records and routing.</span></span>
+- <span data-ttu-id="5484e-228">Планирование внутренних и внешних записей DNS и маршрутизации.</span><span class="sxs-lookup"><span data-stu-id="5484e-228">Plan and implement internal and external DNS records and routing.</span></span>
     
-- <span data-ttu-id="69a77-229">Настройка прокси-сервера или брандмауэра согласно требованиям Office 365 к IP-адресу и URL-адресам.</span><span class="sxs-lookup"><span data-stu-id="69a77-229">Configure your proxy or firewall for Office 365 IP address and URL requirements.</span></span>
+- <span data-ttu-id="5484e-229">Настройка прокси-сервера или брандмауэра согласно требованиям Office 365 к IP-адресу и URL-адресам.</span><span class="sxs-lookup"><span data-stu-id="5484e-229">Configure your proxy or firewall for Office 365 IP address and URL requirements.</span></span>
     
-- <span data-ttu-id="69a77-230">Администрирование учетных записей пользователей и параметров Lync Online.</span><span class="sxs-lookup"><span data-stu-id="69a77-230">Administer user accounts and Lync Online settings.</span></span>
+- <span data-ttu-id="5484e-230">Администрирование учетных записей пользователей и параметров Lync Online.</span><span class="sxs-lookup"><span data-stu-id="5484e-230">Administer user accounts and Lync Online settings.</span></span>
     
-#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="69a77-231">Гибридная среда Lync Online и Lync Server (с разделенным доменом)</span><span class="sxs-lookup"><span data-stu-id="69a77-231">Lync Online/Server Hybrid (split domain)</span></span>
+#### <a name="lync-onlineserver-hybrid-split-domain"></a><span data-ttu-id="5484e-231">Гибридная среда Lync Online и Lync Server (с разделенным доменом)</span><span class="sxs-lookup"><span data-stu-id="5484e-231">Lync Online/Server Hybrid (split domain)</span></span>
 
-<span data-ttu-id="69a77-232">В дополнение к задачам для Office 365 и локальных сред:</span><span class="sxs-lookup"><span data-stu-id="69a77-232">In addition to tasks for both the Office 365 and on-premises environments:</span></span>
+<span data-ttu-id="5484e-232">В дополнение к задачам для Office 365 и локальных сред:</span><span class="sxs-lookup"><span data-stu-id="5484e-232">In addition to tasks for both the Office 365 and on-premises environments:</span></span>
   
-- <span data-ttu-id="69a77-233">Настроить устройства прокси-сервера (при необходимости).</span><span class="sxs-lookup"><span data-stu-id="69a77-233">Configure the proxy server device, if required.</span></span>
+- <span data-ttu-id="5484e-233">Настроить устройства прокси-сервера (при необходимости).</span><span class="sxs-lookup"><span data-stu-id="5484e-233">Configure the proxy server device, if required.</span></span>
     
-- <span data-ttu-id="69a77-234">Настроить интеграцию компонентов с локальными и веб-версиями Exchange Server и SharePoint.</span><span class="sxs-lookup"><span data-stu-id="69a77-234">Configure the integration of features with on-premises and online versions of Exchange Server and SharePoint.</span></span>
+- <span data-ttu-id="5484e-234">Настроить интеграцию компонентов с локальными и веб-версиями Exchange Server и SharePoint.</span><span class="sxs-lookup"><span data-stu-id="5484e-234">Configure the integration of features with on-premises and online versions of Exchange Server and SharePoint.</span></span>
     
-#### <a name="lync-server"></a><span data-ttu-id="69a77-235">Lync Server</span><span class="sxs-lookup"><span data-stu-id="69a77-235">Lync Server</span></span>
+#### <a name="lync-server"></a><span data-ttu-id="5484e-235">Lync Server</span><span class="sxs-lookup"><span data-stu-id="5484e-235">Lync Server</span></span>
 
-<span data-ttu-id="69a77-236">Развертывание Lync Server в локальной среде и управление им.</span><span class="sxs-lookup"><span data-stu-id="69a77-236">Deploy and manage Lync Server in an on-premises environment:</span></span>
+<span data-ttu-id="5484e-236">Развертывание Lync Server в локальной среде и управление им.</span><span class="sxs-lookup"><span data-stu-id="5484e-236">Deploy and manage Lync Server in an on-premises environment:</span></span>
   
-- <span data-ttu-id="69a77-237">Подготовка серверов к работе.</span><span class="sxs-lookup"><span data-stu-id="69a77-237">Provision the servers.</span></span>
+- <span data-ttu-id="5484e-237">Подготовка серверов к работе.</span><span class="sxs-lookup"><span data-stu-id="5484e-237">Provision the servers.</span></span>
     
-- <span data-ttu-id="69a77-238">Развертывание топологии Lync.</span><span class="sxs-lookup"><span data-stu-id="69a77-238">Deploy the Lync topology.</span></span>
+- <span data-ttu-id="5484e-238">Развертывание топологии Lync.</span><span class="sxs-lookup"><span data-stu-id="5484e-238">Deploy the Lync topology.</span></span>
     
-- <span data-ttu-id="69a77-239">Обновление серверов Lync.</span><span class="sxs-lookup"><span data-stu-id="69a77-239">Update Lync servers.</span></span>
+- <span data-ttu-id="5484e-239">Обновление серверов Lync.</span><span class="sxs-lookup"><span data-stu-id="5484e-239">Update Lync servers.</span></span>
     
-- <span data-ttu-id="69a77-240">Добавление серверов топологии в ферму или их удаление в зависимости от загруженности ресурсов.</span><span class="sxs-lookup"><span data-stu-id="69a77-240">Add or remove topology servers as needed based on utilization.</span></span>
+- <span data-ttu-id="5484e-240">Добавление серверов топологии в ферму или их удаление в зависимости от загруженности ресурсов.</span><span class="sxs-lookup"><span data-stu-id="5484e-240">Add or remove topology servers as needed based on utilization.</span></span>
     
-- <span data-ttu-id="69a77-241">Реализация среды для отработки отказа и аварийного восстановления.</span><span class="sxs-lookup"><span data-stu-id="69a77-241">Implement the failover and disaster recovery environment.</span></span>
+- <span data-ttu-id="5484e-241">Реализация среды для отработки отказа и аварийного восстановления.</span><span class="sxs-lookup"><span data-stu-id="5484e-241">Implement the failover and disaster recovery environment.</span></span>
     
-#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="69a77-242">Lync Server с размещением у поставщика</span><span class="sxs-lookup"><span data-stu-id="69a77-242">Provider-Hosted Lync Server</span></span>
+#### <a name="provider-hosted-lync-server"></a><span data-ttu-id="5484e-242">Lync Server с размещением у поставщика</span><span class="sxs-lookup"><span data-stu-id="5484e-242">Provider-Hosted Lync Server</span></span>
 
-<span data-ttu-id="69a77-243">Задачи, которые нужно выполнить вместе с поставщиком:</span><span class="sxs-lookup"><span data-stu-id="69a77-243">Work with the provider to:</span></span>
+<span data-ttu-id="5484e-243">Задачи, которые нужно выполнить вместе с поставщиком:</span><span class="sxs-lookup"><span data-stu-id="5484e-243">Work with the provider to:</span></span>
   
-- <span data-ttu-id="69a77-244">Интеграция Lync Server в вашу сеть.</span><span class="sxs-lookup"><span data-stu-id="69a77-244">Integrate Lync Server into your network.</span></span>
+- <span data-ttu-id="5484e-244">Интеграция Lync Server в вашу сеть.</span><span class="sxs-lookup"><span data-stu-id="5484e-244">Integrate Lync Server into your network.</span></span>
     
-- <span data-ttu-id="69a77-245">Интеграция Lync Server с другими продуктами Майкрософт или с собственными решениями.</span><span class="sxs-lookup"><span data-stu-id="69a77-245">Integrate Lync Server with other Microsoft products or custom solutions.</span></span>
+- <span data-ttu-id="5484e-245">Интеграция Lync Server с другими продуктами Майкрософт или с собственными решениями.</span><span class="sxs-lookup"><span data-stu-id="5484e-245">Integrate Lync Server with other Microsoft products or custom solutions.</span></span>
     
-- <span data-ttu-id="69a77-246">Отслеживание выполнения соглашений об уровне обслуживания поставщиком.</span><span class="sxs-lookup"><span data-stu-id="69a77-246">Monitor adherence with provider service level agreement (SLA).</span></span>
+- <span data-ttu-id="5484e-246">Отслеживание выполнения соглашений об уровне обслуживания поставщиком.</span><span class="sxs-lookup"><span data-stu-id="5484e-246">Monitor adherence with provider service level agreement (SLA).</span></span>
     
-## <a name="two-example-scenarios-for-deploying-lync-2013"></a><span data-ttu-id="69a77-247">Два примера сценариев развертывания Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="69a77-247">Two example scenarios for deploying Lync 2013</span></span>
+## <a name="two-example-scenarios-for-deploying-lync-2013"></a><span data-ttu-id="5484e-247">Два примера сценариев развертывания Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="5484e-247">Two example scenarios for deploying Lync 2013</span></span>
 
-### <a name="directory-synchronization-components-in-microsoft-azure"></a><span data-ttu-id="69a77-248">Компоненты средства синхронизации каталогов в Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="69a77-248">Directory Synchronization components in Microsoft Azure</span></span>
+### <a name="directory-synchronization-components-in-microsoft-azure"></a><span data-ttu-id="5484e-248">Компоненты средства синхронизации каталогов в Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="5484e-248">Directory Synchronization components in Microsoft Azure</span></span>
 
-<span data-ttu-id="69a77-249">Развертывание компонентов для синхронизации каталогов Office 365 в Azure происходит быстрее, так как виртуальные машины можно развертывать по запросу.</span><span class="sxs-lookup"><span data-stu-id="69a77-249">Deploying Office 365 directory synchronization components in Azure is faster due to the ability to deploy virtual machines on-demand.</span></span>
+<span data-ttu-id="5484e-249">Развертывание компонентов для синхронизации каталогов Office 365 в Azure происходит быстрее, так как виртуальные машины можно развертывать по запросу.</span><span class="sxs-lookup"><span data-stu-id="5484e-249">Deploying Office 365 directory synchronization components in Azure is faster due to the ability to deploy virtual machines on-demand.</span></span>
   
-<span data-ttu-id="69a77-250">На сопроводительной схеме показана служба Lync Online с клиентом Azure Active Directory, которая синхронизирует имена и пароли учетных записей между локальной средой Active Directory и клиентом Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="69a77-250">The accompanying diagram shows Lync Online with an Azure Active Directory tenant, which synchronizes account names and passwords between the on-premises Active Directory environment and the Azure Active Directory tenant.</span></span>
+<span data-ttu-id="5484e-250">На сопроводительной схеме показана служба Lync Online с клиентом Azure Active Directory, которая синхронизирует имена и пароли учетных записей между локальной средой Active Directory и клиентом Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="5484e-250">The accompanying diagram shows Lync Online with an Azure Active Directory tenant, which synchronizes account names and passwords between the on-premises Active Directory environment and the Azure Active Directory tenant.</span></span>
   
- <span data-ttu-id="69a77-p105">**Только сервер синхронизации каталогов**. Чтобы не развертывать в локальной среде 64-разрядную версию сервера синхронизации каталогов, можно через Интернет подготовить к работе виртуальную машину в Azure.</span><span class="sxs-lookup"><span data-stu-id="69a77-p105">**Directory synchronization server only**. Instead of deploying the 64-bit directory synchronization server in your on-premises environment, you provision a virtual machine in Azure over the Internet.</span></span>
+ <span data-ttu-id="5484e-p105">**Только сервер синхронизации каталогов**. Чтобы не развертывать в локальной среде 64-разрядную версию сервера синхронизации каталогов, можно через Интернет подготовить к работе виртуальную машину в Azure.</span><span class="sxs-lookup"><span data-stu-id="5484e-p105">**Directory synchronization server only**. Instead of deploying the 64-bit directory synchronization server in your on-premises environment, you provision a virtual machine in Azure over the Internet.</span></span>
   
- <span data-ttu-id="69a77-p106">**Средство синхронизации каталогов и службы федерации Active Directory**. Этот вариант позволяет поддерживать федеративные удостоверения Office 365, не добавляя оборудование в локальную инфраструктуру. Кроме того, при использовании этого варианта обеспечивается устойчивость системы в случае недоступности локальной среды Active Directory. Ниже перечислены возможности, доступные при использовании этого варианта.</span><span class="sxs-lookup"><span data-stu-id="69a77-p106">**Directory synchronization + AD FS**. This option allows you to support Office 365 federated identities (SSO) without adding hardware to your on-premises infrastructure. It also provides resiliency if the on-premises Active Directory environment is unavailable. The features of this option include:</span></span>
+ <span data-ttu-id="5484e-p106">**Средство синхронизации каталогов и службы федерации Active Directory**. Этот вариант позволяет поддерживать федеративные удостоверения Office 365, не добавляя оборудование в локальную инфраструктуру. Кроме того, при использовании этого варианта обеспечивается устойчивость системы в случае недоступности локальной среды Active Directory. Ниже перечислены возможности, доступные при использовании этого варианта.</span><span class="sxs-lookup"><span data-stu-id="5484e-p106">**Directory synchronization + AD FS**. This option allows you to support Office 365 federated identities (SSO) without adding hardware to your on-premises infrastructure. It also provides resiliency if the on-premises Active Directory environment is unavailable. The features of this option include:</span></span>
   
-- <span data-ttu-id="69a77-257">Компоненты интеграции каталогов работают как виртуальные машины Azure.</span><span class="sxs-lookup"><span data-stu-id="69a77-257">Directory integration components run as Azure virtual machines.</span></span>
+- <span data-ttu-id="5484e-257">Компоненты интеграции каталогов работают как виртуальные машины Azure.</span><span class="sxs-lookup"><span data-stu-id="5484e-257">Directory integration components run as Azure virtual machines.</span></span>
     
-- <span data-ttu-id="69a77-258">Службы федерации Active Directory публикуются в Интернете через прокси-серверы этих служб, работающие как виртуальные машины Azure.</span><span class="sxs-lookup"><span data-stu-id="69a77-258">AD FS is published to the Internet through AD FS proxies running as Azure virtual machines.</span></span>
+- <span data-ttu-id="5484e-258">Службы федерации Active Directory публикуются в Интернете через прокси-серверы этих служб, работающие как виртуальные машины Azure.</span><span class="sxs-lookup"><span data-stu-id="5484e-258">AD FS is published to the Internet through AD FS proxies running as Azure virtual machines.</span></span>
     
-- <span data-ttu-id="69a77-259">Для пользователей, подключающихся из любого расположения, трафик проверки подлинности клиентов обрабатывается серверами службы федерации Active Directory и прокси-серверами, развернутыми в качестве виртуальных машин Azure.</span><span class="sxs-lookup"><span data-stu-id="69a77-259">Client authentication traffic, for users that are connecting from any location, is handled by AD FS servers and proxies that are deployed as Azure virtual machines.</span></span>
+- <span data-ttu-id="5484e-259">Для пользователей, подключающихся из любого расположения, трафик проверки подлинности клиентов обрабатывается серверами службы федерации Active Directory и прокси-серверами, развернутыми в качестве виртуальных машин Azure.</span><span class="sxs-lookup"><span data-stu-id="5484e-259">Client authentication traffic, for users that are connecting from any location, is handled by AD FS servers and proxies that are deployed as Azure virtual machines.</span></span>
     
-### <a name="lync-integration-with-exchange-and-sharepoint-in-office-365"></a><span data-ttu-id="69a77-260">Интеграция Lync с Exchange и SharePoint в Office 365</span><span class="sxs-lookup"><span data-stu-id="69a77-260">Lync integration with Exchange and SharePoint in Office 365</span></span>
+### <a name="lync-integration-with-exchange-and-sharepoint-in-office-365"></a><span data-ttu-id="5484e-260">Интеграция Lync с Exchange и SharePoint в Office 365</span><span class="sxs-lookup"><span data-stu-id="5484e-260">Lync integration with Exchange and SharePoint in Office 365</span></span>
 
-#### <a name="lync-server-with-exchange-online-and-sharepoint-online"></a><span data-ttu-id="69a77-261">Lync Server с Exchange Online и SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="69a77-261">Lync Server with Exchange Online and SharePoint Online</span></span>
+#### <a name="lync-server-with-exchange-online-and-sharepoint-online"></a><span data-ttu-id="5484e-261">Lync Server с Exchange Online и SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="5484e-261">Lync Server with Exchange Online and SharePoint Online</span></span>
 
-<span data-ttu-id="69a77-262">На сопроводительной схеме вы можете видеть Office 365 с Exchange Online и SharePoint Online, подключенными к локальной ферме Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="69a77-262">The accompanying diagram shows Office 365 with Exchange Online and SharePoint Online connected to an on-premises Lync Server 2013 farm.</span></span>
+<span data-ttu-id="5484e-262">На сопроводительной схеме вы можете видеть Office 365 с Exchange Online и SharePoint Online, подключенными к локальной ферме Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="5484e-262">The accompanying diagram shows Office 365 with Exchange Online and SharePoint Online connected to an on-premises Lync Server 2013 farm.</span></span>
   
-<span data-ttu-id="69a77-263">При таком варианте развертывания можно:</span><span class="sxs-lookup"><span data-stu-id="69a77-263">The advantages of this deployment allow you to:</span></span>
+<span data-ttu-id="5484e-263">При таком варианте развертывания можно:</span><span class="sxs-lookup"><span data-stu-id="5484e-263">The advantages of this deployment allow you to:</span></span>
   
-- <span data-ttu-id="69a77-264">Использовать все возможности Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="69a77-264">Use the full feature set of Lync Server 2013.</span></span>
+- <span data-ttu-id="5484e-264">Использовать все возможности Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="5484e-264">Use the full feature set of Lync Server 2013.</span></span>
     
-- <span data-ttu-id="69a77-265">Использовать существующее локальное телефонное оборудование, например УАТС.</span><span class="sxs-lookup"><span data-stu-id="69a77-265">Leverage your existing on-premises phone equipment, such as PBXs.</span></span>
+- <span data-ttu-id="5484e-265">Использовать существующее локальное телефонное оборудование, например УАТС.</span><span class="sxs-lookup"><span data-stu-id="5484e-265">Leverage your existing on-premises phone equipment, such as PBXs.</span></span>
     
-- <span data-ttu-id="69a77-266">Использовать Exchange Online для электронной почты и уменьшения нагрузки на локальные почтовые серверы и хранилища.</span><span class="sxs-lookup"><span data-stu-id="69a77-266">Use Exchange Online for email, off-loading the burden of on-premises email servers and storage.</span></span>
+- <span data-ttu-id="5484e-266">Использовать Exchange Online для электронной почты и уменьшения нагрузки на локальные почтовые серверы и хранилища.</span><span class="sxs-lookup"><span data-stu-id="5484e-266">Use Exchange Online for email, off-loading the burden of on-premises email servers and storage.</span></span>
     
-- <span data-ttu-id="69a77-267">Использовать SharePoint Online для совместной работы и уменьшения нагрузки по обслуживанию локальных серверов SharePoint.</span><span class="sxs-lookup"><span data-stu-id="69a77-267">Use SharePoint Online for collaboration, off-loading the burden of maintaining on-premises SharePoint servers.</span></span>
+- <span data-ttu-id="5484e-267">Использовать SharePoint Online для совместной работы и уменьшения нагрузки по обслуживанию локальных серверов SharePoint.</span><span class="sxs-lookup"><span data-stu-id="5484e-267">Use SharePoint Online for collaboration, off-loading the burden of maintaining on-premises SharePoint servers.</span></span>
     
-- <span data-ttu-id="69a77-268">Использовать интегрированные функции Lync, Exchange и SharePoint, включая единую систему обмена сообщениями, в Office 365.</span><span class="sxs-lookup"><span data-stu-id="69a77-268">Use Lync, Exchange, and SharePoint integrated features, including Unified Messaging (UM) in Office 365.</span></span>
+- <span data-ttu-id="5484e-268">Использовать интегрированные функции Lync, Exchange и SharePoint, включая единую систему обмена сообщениями, в Office 365.</span><span class="sxs-lookup"><span data-stu-id="5484e-268">Use Lync, Exchange, and SharePoint integrated features, including Unified Messaging (UM) in Office 365.</span></span>
     
-#### <a name="exchange-server-with-lync-online"></a><span data-ttu-id="69a77-269">Exchange Server с Lync Online</span><span class="sxs-lookup"><span data-stu-id="69a77-269">Exchange Server with Lync Online</span></span>
+#### <a name="exchange-server-with-lync-online"></a><span data-ttu-id="5484e-269">Exchange Server с Lync Online</span><span class="sxs-lookup"><span data-stu-id="5484e-269">Exchange Server with Lync Online</span></span>
 
-<span data-ttu-id="69a77-270">На сопроводительной схеме можно увидеть Office 365 с Lync Online, подключенные к локальной ферме Exchange Server.</span><span class="sxs-lookup"><span data-stu-id="69a77-270">The accompanying diagram shows Office 365 with Lync Online connected to an on-premises Exchange Server farm.</span></span>
+<span data-ttu-id="5484e-270">На сопроводительной схеме можно увидеть Office 365 с Lync Online, подключенные к локальной ферме Exchange Server.</span><span class="sxs-lookup"><span data-stu-id="5484e-270">The accompanying diagram shows Office 365 with Lync Online connected to an on-premises Exchange Server farm.</span></span>
   
-<span data-ttu-id="69a77-271">При таком варианте развертывания можно:</span><span class="sxs-lookup"><span data-stu-id="69a77-271">The advantages of this deployment allow you to:</span></span>
+<span data-ttu-id="5484e-271">При таком варианте развертывания можно:</span><span class="sxs-lookup"><span data-stu-id="5484e-271">The advantages of this deployment allow you to:</span></span>
   
-- <span data-ttu-id="69a77-272">Использовать существующую инфраструктуру Exchange.</span><span class="sxs-lookup"><span data-stu-id="69a77-272">Leverage your existing Exchange infrastructure.</span></span>
+- <span data-ttu-id="5484e-272">Использовать существующую инфраструктуру Exchange.</span><span class="sxs-lookup"><span data-stu-id="5484e-272">Leverage your existing Exchange infrastructure.</span></span>
     
-- <span data-ttu-id="69a77-273">Использовать Lync Online для получения сведений о присутствии, обмена мгновенными сообщениями и проведения конференций.</span><span class="sxs-lookup"><span data-stu-id="69a77-273">Use Lync Online for presence, instant messaging, and conferencing capabilities.</span></span>
+- <span data-ttu-id="5484e-273">Использовать Lync Online для получения сведений о присутствии, обмена мгновенными сообщениями и проведения конференций.</span><span class="sxs-lookup"><span data-stu-id="5484e-273">Use Lync Online for presence, instant messaging, and conferencing capabilities.</span></span>
     
 
