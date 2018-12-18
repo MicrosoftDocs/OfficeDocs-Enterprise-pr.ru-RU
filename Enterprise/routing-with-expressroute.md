@@ -1,9 +1,9 @@
 ---
-title: Маршрутизация с помощью ExpressRoute для Office 365
+title: Маршрутизация с использованием ExpressRoute для Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/7/2017
+ms.date: 12/14/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Для правильного понимания трафик Office 365 с помощью Azure ExpressRoute, вам потребуются утвержденного может воспользоваться основные требования к маршрутизации ExpressRoute и ExpressRoute цепи и маршрутизации доменов. Эти размещения основах с помощью ExpressRoute, Office 365 клиенты будут основываться на записях.
-ms.openlocfilehash: e80ce78c0b229881349a4d02c7708fb9509748a9
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d8fa0c606a5aedd3760236cb46bcf9e1c584ecb8
+ms.sourcegitcommit: d165aef59fe9a9ef538e6756fb014909a7cf975b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542352"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "27294479"
 ---
-# <a name="routing-with-expressroute-for-office-365"></a>Маршрутизация с помощью ExpressRoute для Office 365
+# <a name="routing-with-expressroute-for-office-365"></a>Маршрутизация с использованием ExpressRoute для Office 365
 
 Для правильного понимания трафик Office 365 с помощью Azure ExpressRoute, вам потребуются утвержденного может воспользоваться основные [требования к маршрутизации ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-routing/) и [ExpressRoute цепи и маршрутизации доменов](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/). Эти размещения основах с помощью ExpressRoute, Office 365 клиенты будут основываться на записях.
   
@@ -53,13 +53,11 @@ ms.locfileid: "22542352"
   
 Ниже перечислены сценарии, где выполняется обмена информацией с Office 365 для локальной сети. Чтобы упростить проекта сети, рекомендуется их через Интернет пути маршрутизации.
   
+- Службы SMTP, такие как почты из Exchange Online клиента в основном для локальной или SharePoint Online сообщения из SharePoint Online в основном для локальной. Протокол SMTP используется более широко в сети корпорации Майкрософт не общих префиксы маршрут для цепей ExpressRoute и рекламы в локальной SMTP-серверов по ExpressRoute приведет к ошибкам, с этими других служб.
+
 - Службы федерации Active Directory во время подтверждения пароля для входа в систему.
 
 - [Exchange Server гибридные развертывания](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
-
-- Почты из Exchange Online клиента в основном локальных...
-
-- SharePoint Online почты отправить из SharePoint Online локального узла.
 
 - [Федеративные гибридного поиска SharePoint](https://technet.microsoft.com/library/dn197174.aspx).
 
@@ -69,7 +67,13 @@ ms.locfileid: "22542352"
 
 - [Скайп для Cloud Business Connector](https://technet.microsoft.com/library/mt605227.aspx ).
 
-Для Microsoft для маршрутизации сети для этих потоков двунаправленного трафика маршрутов протокола BGP на устройствах в локальной должен использоваться совместно с корпорацией Майкрософт.
+Для Microsoft для маршрутизации сети для этих потоков двунаправленного трафика маршрутов протокола BGP на устройствах в локальной должен использоваться совместно с корпорацией Майкрософт. При через ExpressRoute advertise префиксы маршрут в корпорацию Майкрософт, необходимо следовать рекомендациям:
+
+1) Объявляет один общедоступный IP-адрес маршрута префикс к Интернету и через ExpressRoute. Настоятельно рекомендуется, рекламные префикс маршрута протокола BGP IP-адресов в корпорацию Майкрософт за ExpressRoute из диапазона, который вообще не объявляются в Интернет. Если это не можно достичь из-за доступное место IP-адрес, его необходимо убедиться, что advertise более определенного диапазона через ExpressRoute чем любые каналы Интернета.
+
+2) Использование отдельных пулов IP-адреса NAT на канал ExpressRoute и разделения, цепей Интернета.
+
+3) Обратите внимание, что любые маршрут, объявленных в корпорацию Майкрософт будет привлечения сетевого трафика от любого сервера в сети корпорации Майкрософт, не только те, для которых объявления маршрутов к сети через ExpressRoute. Объявляет только маршруты на серверах, где определяются и хорошо понятны ваша группа маршрутизации сценариев. Advertise отдельный IP-адрес маршрута префиксы на каждом из нескольких каналов ExpressRoute из локальной сети. 
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>Решить, какие приложения и компоненты маршрутизации по ExpressRoute
 
@@ -78,7 +82,7 @@ ms.locfileid: "22542352"
 Другие приложения, такие как Office 365 видео, — это приложение Office 365; Тем не менее Office 365 видео включает в себя три разных компонентов, портала, службу потоковой передачи и в сети доставки содержимого. Портала размещается в SharePoint Online потоковой передачи сроков службы в службах Media Azure, и в сети доставки содержимого находится в пределах Azure CDN. В следующей таблице описываются эти компоненты.
   
 | |
-|**Компонент**|**Базового приложения**|**Включенные в SharePoint Online протокола BGP сообщества?**|**Применение**|
+|**Компонент**|**Базового приложения**|**Включенные в SharePoint Online протокола BGP сообщества?**|**Оптимальный метод**|
 |:-----|:-----|:-----|:-----|
 |Видео портала Office 365  <br/> |SharePoint Online  <br/> |Да  <br/> |Конфигурация, отправка  <br/> |
 |Служба потоковой передачи видео Office 365  <br/> |Службы мультимедиа Azure  <br/> |Нет  <br/> |Потоковая передача службы, используемые в том случае, если видео недоступен из сети CDN  <br/> |
@@ -222,7 +226,7 @@ Trey Research предполагает использовать Azure ExpressRou
 
 4. **Сообщества протокола BGP** - фильтрации в зависимости от [протокола BGP сообщества тегов](https://aka.ms/bgpexpressroute365) позволяет клиента определить, какие приложения Office 365 должны пройти ExpressRoute и которого будет проходят через Интернет.
 
-Ниже приводится краткое связь, которую можно использовать для возврата:[https://aka.ms/erorouting](https://aka.ms/erorouting)
+Вы можете быстро вернуться сюда с помощью этой короткой ссылки: [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
 ## <a name="related-topics"></a>Статьи по теме
 
@@ -230,19 +234,19 @@ Trey Research предполагает использовать Azure ExpressRou
   
 [Azure ExpressRoute для Office 365](azure-expressroute.md)
   
-[Управление подключением ExpressRoute для Office 365](managing-expressroute-for-connectivity.md)
+[Использование ExpressRoute для подключения к Office 365](managing-expressroute-for-connectivity.md)
   
 [Планирование сети при использовании ExpressRoute для Office 365](network-planning-with-expressroute.md)
   
 [Реализация ExpressRoute для Office 365](implementing-expressroute.md)
   
-[Качество мультимедиа и производительность подключения к сети в Скайп для бизнеса в Интернете](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Качество мультимедиа и характеристики сетевого подключения в случае Skype для бизнеса Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Оптимизация сети для Скайп для бизнеса в Интернет](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Оптимизация сети для Skype для бизнеса Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute и качества обслуживания в Скайп для бизнеса в Интернете](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute и качество обслуживания в Skype для бизнеса Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Поток вызовов с помощью ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Поток вызовов с использованием ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Использование протокола BGP сообществ в ExpressRoute для сценариев Office 365](bgp-communities-in-expressroute.md)
   
@@ -250,6 +254,6 @@ Trey Research предполагает использовать Azure ExpressRou
   
 [План устранения проблем с производительностью Office 365](performance-troubleshooting-plan.md)
   
-[URL-адреса и диапазоны IP-адресов для Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Диапазоны IP-адресов и URL-адреса Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Office 365 сети и настройка производительности](network-planning-and-performance.md)
+[Сеть Office 365 и настройка производительности](network-planning-and-performance.md)
