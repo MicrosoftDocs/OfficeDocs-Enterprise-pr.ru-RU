@@ -1,7 +1,7 @@
 ---
 title: Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 8/1/2017
 ms.audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 description: Узнайте, как современные проверки подлинности Office 365 работает по-разному для Office 2013 и 2016 клиентских приложений.
-ms.openlocfilehash: 78df8c12ab008922592516cf1d3cda10c594e552
-ms.sourcegitcommit: 7a12a46019970fcd45a6461f4f4cbcd1f76c9b4e
+ms.openlocfilehash: 2a5e218ca751f341e2a3a0ffd164f000ee503279
+ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25436087"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27378505"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016
 
@@ -54,8 +54,7 @@ ms.locfileid: "25436087"
     
 - [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
     
-- 
-  [Skype для бизнеса Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
+- [Skype для бизнеса Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -97,7 +96,7 @@ ms.locfileid: "25436087"
    
 ## <a name="see-also"></a>См. также
 
-[Включение современных проверки подлинности для Office 2013 на устройствах Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Включение современной проверки подлинности для Office 2013 на устройствах с Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
 [Планирование для многофакторной проверки подлинности для развертываний Office 365 (для Office 365 для администраторов)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
