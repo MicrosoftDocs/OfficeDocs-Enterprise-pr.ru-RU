@@ -3,24 +3,6 @@
 
 
 
-## <a name="week-of-november-12-2018"></a>Неделя с 12 ноября 2018 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 11/14/2018 | [ExpressRoute для подключения к Microsoft Cloud](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | изменено |
-| 11/14/2018 | [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | изменено |
-| 11/15/2018 | [Настройка клиента OneDrive для бизнеса с поддержкой нескольких регионов](/Office365/Enterprise/multi-geo-tenant-configuration) | изменено |
-| 11/16/2018 | [Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | изменено |
-| 11/16/2018 | [Настройка клиента OneDrive для бизнеса с поддержкой нескольких регионов](/Office365/Enterprise/multi-geo-tenant-configuration) | изменено |
-| 11/16/2018 | [Параметры навигации для SharePoint Online](/Office365/Enterprise/navigation-options-for-sharepoint-online) | изменено |
-| 11/16/2018 | Создание с чистого листа | удалены |
-| 11/16/2018 | Разработка хранилища для Microsoft Cloud | удалены |
-| 11/16/2018 | Хранение в облаке Майкрософт для корпоративных архитекторов | удалены |
-| 11/16/2018 | Решения, не требующие сборки | удалены |
-| 11/16/2018 | Решения, требующие сборки | удалены |
-
-
 ## <a name="week-of-november-19-2018"></a>Недели после 19 ноября 2018
 
 
@@ -31,7 +13,7 @@
 | 11/19/2018 | [Интегрированные приложения и Azure AD для администраторов Office 365](/Office365/Enterprise/integrated-apps-and-azure-ads) | изменено |
 
 
-## <a name="week-of-november-26-2018"></a>Неделя 26 ноября 2018
+## <a name="week-of-november-26-2018"></a>Неделя с 26 ноября 2018 г.
 
 
 | Дата публикации |Название статьи | Изменение |
@@ -43,19 +25,19 @@
 | 11/26/2018 | [Подготовка без поддержки маршрутизации домена для синхронизации службы каталогов](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | изменено |
 | 11/27/2018 | [Настройка поиска в OneDrive для бизнеса с поддержкой нескольких регионов](/Office365/Enterprise/configure-search-for-multi-geo) | изменено |
 | 11/27/2018 | [Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | изменено |
-| 11/28/2018 | [Общие элементы подключения к Microsoft Cloud](/Office365/Enterprise/common-elements-of-microsoft-cloud-connectivity) | изменено |
-| 11/28/2018 | [Проектирование сети для Microsoft Azure IaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | изменено |
-| 11/28/2018 | [Проектирование сети для Microsoft Azure PaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-paas) | изменено |
-| 11/28/2018 | [Проектирование сети для Microsoft SaaS](/Office365/Enterprise/designing-networking-for-microsoft-saas) | изменено |
-| 11/28/2018 | [Подключение сети к облаку](/Office365/Enterprise/evolving-your-network-for-cloud-connectivity) | изменено |
-| 11/28/2018 | [ExpressRoute для подключения к Microsoft Cloud](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | изменено |
-| 11/28/2018 | [Организация сети в облаке Майкрософт для корпоративных архитекторов](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | изменено |
-| 11/28/2018 | [Гибридное облако Майкрософт для корпоративных архитекторов](/Office365/Enterprise/microsoft-hybrid-cloud-for-enterprise-architects) | изменено |
-| 11/28/2018 | [Конечные точки Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | изменено |
-| 11/28/2018 | [Конечные точки обороны США государственных Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | изменено |
-| 11/28/2018 | [США государственных GCC высокой конечных точках Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | изменено |
-| 11/28/2018 | [URL-адреса и диапазоны IP-адресов для службы Office 365, предоставляемой компанией 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | изменено |
-| 11/28/2018 | [Диапазоны IP-адресов и URL-адреса Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | изменено |
+| 28.11.2018 | [Общие элементы подключения к Microsoft Cloud](/Office365/Enterprise/common-elements-of-microsoft-cloud-connectivity) | изменено |
+| 28.11.2018 | [Проектирование сети для Microsoft Azure IaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | изменено |
+| 28.11.2018 | [Проектирование сети для Microsoft Azure PaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-paas) | изменено |
+| 28.11.2018 | [Проектирование сети для Microsoft SaaS](/Office365/Enterprise/designing-networking-for-microsoft-saas) | изменено |
+| 28.11.2018 | [Подключение сети к облаку](/Office365/Enterprise/evolving-your-network-for-cloud-connectivity) | изменено |
+| 28.11.2018 | [ExpressRoute для подключения к Microsoft Cloud](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | изменено |
+| 28.11.2018 | [Организация сети в облаке Майкрософт для корпоративных архитекторов](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | изменено |
+| 28.11.2018 | [Гибридное облако Майкрософт для корпоративных архитекторов](/Office365/Enterprise/microsoft-hybrid-cloud-for-enterprise-architects) | изменено |
+| 28.11.2018 | [Конечные точки Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | изменено |
+| 28.11.2018 | [Конечные точки обороны США государственных Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | изменено |
+| 28.11.2018 | [США государственных GCC высокой конечных точках Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | изменено |
+| 28.11.2018 | [URL-адреса и диапазоны IP-адресов для службы Office 365, предоставляемой компанией 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | изменено |
+| 28.11.2018 | [Диапазоны IP-адресов и URL-адреса Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | изменено |
 | 11/29/2018 | [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | изменено |
 | 11/29/2018 | [Веб-служба IP-адресов и URL-адресов в Office 365](/Office365/Enterprise/office-365-ip-web-service) | изменено |
 | 11/30/2018 | [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | изменено |
@@ -94,3 +76,17 @@
 |------|------------|--------|
 | 12/10/2018 | [ExpressRoute для подключения к Microsoft Cloud](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | изменено |
 | 12/10/2018 | [Просмотр сведений о лицензии и службе учетной записи с помощью PowerShell в Office 365](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | изменено |
+
+
+## <a name="week-of-december-17-2018"></a>Неделю от 17 декабря 2018
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 12/17/2018 | [Маршрутизация с использованием ExpressRoute для Office 365](/Office365/Enterprise/routing-with-expressroute) | изменено |
+| 12/17/2018 | [Поддержка IPv6 в службах Office 365](/Office365/Enterprise/ipv6-support) | изменено |
+| 12/18/2018 | [Обзор проверки подлинности на современном гибридной среды и необходимые условия для использования его с Скайп локальных серверов Exchange и бизнес-](/Office365/Enterprise/hybrid-modern-auth-overview) | изменено |
+| 12/18/2018 | [Подготовка пользователей к работе путем синхронизации каталогов с Office 365](/Office365/Enterprise/prepare-for-directory-synchronization); | изменено |
+| 12/19/2018 | [Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | изменено |
+| 12/19/2018 | [Время ожидания сеанса для Office 365](/Office365/Enterprise/session-timeouts) | изменено |
+| 12/20/2018 | [Конец стратегия поддержки Exchange 2010](/Office365/Enterprise/exchange-2010-end-of-support) | изменено |
