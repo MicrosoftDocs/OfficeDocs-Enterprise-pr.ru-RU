@@ -3,16 +3,6 @@
 
 
 
-## <a name="week-of-november-19-2018"></a>Недели после 19 ноября 2018
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 11/19/2018 | [План действий после прекращения поддержки PerformancePoint Server 2007](/Office365/Enterprise/pps-2007-end-of-support). | изменено |
-| 11/19/2018 | [Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | изменено |
-| 11/19/2018 | [Интегрированные приложения и Azure AD для администраторов Office 365](/Office365/Enterprise/integrated-apps-and-azure-ads) | изменено |
-
-
 ## <a name="week-of-november-26-2018"></a>Неделя с 26 ноября 2018 г.
 
 
@@ -90,3 +80,10 @@
 | 12/19/2018 | [Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | изменено |
 | 12/19/2018 | [Время ожидания сеанса для Office 365](/Office365/Enterprise/session-timeouts) | изменено |
 | 12/20/2018 | [Конец стратегия поддержки Exchange 2010](/Office365/Enterprise/exchange-2010-end-of-support) | изменено |
+
+
+## <a name="week-of-december-24-2018"></a>Недели после 24 декабря 2018
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
