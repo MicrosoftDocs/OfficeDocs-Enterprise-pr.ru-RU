@@ -1,8 +1,8 @@
 
-# [Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
-## [Начало работы с PowerShell Office 365](getting-started-with-office-365-powershell.md)
-### [Причины использования PowerShell Office 365](why-you-need-to-use-office-365-powershell.md)
-### [Подключение к PowerShell Office 365](connect-to-office-365-powershell.md)
+# [Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+## [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+### [Причины использования Office 365 PowerShell](why-you-need-to-use-office-365-powershell.md)
+### [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md)
 ### [Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
 ### [Использование Windows PowerShell для создания отчетов в Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
 ### [Сведения о командлетах для служб Office 365](cmdlet-references-for-office-365-services.md)
