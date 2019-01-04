@@ -16,18 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Сводка: в статье описываются SSL-сертификаты, необходимые для локального и гибридного развертываний Exchange, единый вход со службами федерации Active Directory, службы Exchange Online и веб-службы Exchange.'
-ms.openlocfilehash: 82e37ebb058b8a6b4b618649bea31a4137897690
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975217"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546520"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Планирование сторонних SSL-сертификатов для Office 365
 
  **Сводка:** Описываются SSL-сертификаты, необходимые для Exchange локального и гибридного, единый вход с использованием служб AD FS службы Exchange Online и веб-служб Exchange. 
   
-Чтобы зашифровать обмен информацией между клиентами и theOffice 365Office 365 среды, сертификаты сторонних производителей Layer сокетов (SSL) должны устанавливаться на серверах инфраструктуры.
+Чтобы зашифровать обмен информацией между клиентами и средой Office 365, сертификаты сторонних производителей Layer сокетов (SSL) должны устанавливаться на серверах инфраструктуры.
 
 ||
 |:-----|

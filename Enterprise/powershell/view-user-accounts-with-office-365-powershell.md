@@ -3,7 +3,7 @@ title: Просмотр учетных записей пользователей
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/30/2018
+ms.date: 01/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Обзор: Просмотр, список или отображение учетные записи пользователей с Office 365 PowerShell разными способами.'
-ms.openlocfilehash: f2743197456cc56f654e99e682108230420384c9
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: dc33b64207341576968867fbeea6f211034eeca6
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123256"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546530"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Просмотр учетных записей пользователей с помощью PowerShell для Office 365
 
@@ -28,15 +28,11 @@ ms.locfileid: "27123256"
   
 Несмотря на то, что центр администрирования Office 365 можно использовать для просмотра учетных записей для клиента Office 365, можно с помощью Office 365 PowerShell и выполнить некоторые действия, которые невозможно Центр администрирования Office 365.
   
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование Windows Azure Active Directory PowerShell для модуля "график"
 
-Для процедур, описанных в этой статье, требуется подключение к PowerShell в Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
+Во-первых, [подключиться к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
-## <a name="display-office-365-user-account-information-with-azure-active-directory-powershell-for-graph"></a>Отображение сведений учетной записи пользователя Office 365 с помощью Windows Azure Active Directory PowerShell для диаграммы 
-
-В следующих разделах описано для отображения сведений об учетной записи пользователя.
-
-### <a name="all-accounts"></a>Все учетные записи
+### <a name="view-all-accounts"></a>Просмотреть все учетные записи
 
 Чтобы просмотреть полный список учетных записей пользователей, выполните следующую команду.
   
@@ -57,7 +53,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 40722671-e520-4a5f-97d4-0bc9e9b2dc0f Debra Berger                                          DebraB@litwareinc.OnMicr...
 ```
 
-### <a name="a-specific-account"></a>Конкретной учетной записи
+### <a name="view-a-specific-account"></a>Просмотр конкретной учетной записи
 
 Чтобы отобразить учетной записи пользователя, заполните поля в имя участника пользователя (UPN) учетной записи пользователя, удалите «<» и «>» символов и выполните следующую команду:
   
@@ -65,7 +61,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 Get-AzureADUser -ObjectID <UPN of user account>
 ```
 
-### <a name="additional-property-values-for-a-specific-account"></a>Значения дополнительных свойств для конкретной учетной записи
+### <a name="view-additional-property-values-for-a-specific-account"></a>Просмотр значений дополнительных свойств для конкретной учетной записи
 
 По умолчанию командлет **Get-AzureADUser** отображается только ObjectID, DisplayName и UserPrincipalName свойств учетных записей.
 
@@ -93,7 +89,7 @@ Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
 Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
-### <a name="some-accounts-based-on-a-common-property"></a>Некоторые учетные записи на основе общие свойства
+### <a name="view-some-accounts-based-on-a-common-property"></a>Просмотр некоторых учетных записей на основе общие свойства
 
 Чтобы быть более Выборочный о список учетных записей для отображения, вы можно использовать командлет **Where-Object** в сочетании с помощью командлета **Get-AzureADUser** . Чтобы объединить два командлеты, мы используем символ «вертикальная черта» «|», который сообщает Windows Azure Active Directory PowerShell для диаграммы принимают результаты одной команды и отправьте его в следующей команде. Ниже приведен пример команды, которая отображает только учетные записи пользователей, имеющие место не указано использования:
   
@@ -123,11 +119,11 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 >  Синтаксис командлет **Where-Object** , показано в следующих примерах **Where-Object {$\_.** [имя свойства учетной записи пользователя] [оператор сравнения] [значение] **}**. > [оператор сравнения] — это **-eq** значение, **-ne** для не равно, **-lt** меньше, чем **-gt** для больше, чем и другим пользователям.  [значение] обычно является строка (последовательность букв, цифр и других знаков), числовое значение или **$Null** для не определена > [Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) более подробные сведения.
   
 
-## <a name="display-office-365-user-account-information-with-microsoft-azure-active-directory-module-for-windows-powershell"></a>Отображение сведений учетной записи пользователя Office 365 с помощью Microsoft Azure модуль Active Directory для Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
 
-В следующих разделах описано для отображения сведений об учетной записи пользователя.
+Во-первых, [подключиться к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-### <a name="all-accounts"></a>Все учетные записи
+### <a name="view-all-accounts"></a>Просмотреть все учетные записи
 
 Чтобы просмотреть полный список учетных записей пользователей, выполните следующую команду.
   
@@ -166,7 +162,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 Дополнительные сведения о дополнительных параметров для фильтрации на отображение набор учетных записей пользователей отображается, можно [Такую](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).
   
 
-### <a name="a-specific-account"></a>Конкретной учетной записи
+### <a name="view-a-specific-account"></a>Просмотр конкретной учетной записи
 
 Чтобы отобразить учетной записи пользователя, заполните поля в имя участника пользователя (UPN) учетной записи пользователя, удалите «<» и «>» символов и выполните следующую команду:
   
@@ -174,7 +170,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 Get-MsolUser -UserPrincipalName <UPN of user account>
 ```
 
-### <a name="some-accounts-based-on-a-common-property"></a>Некоторые учетные записи на основе общие свойства
+### <a name="view-some-accounts-based-on-a-common-property"></a>Просмотр некоторых учетных записей на основе общие свойства
 
 Чтобы быть более Выборочный о список учетных записей для отображения, вы можно использовать командлет **Where-Object** в сочетании с помощью командлета **Get-MsolUser** . Чтобы объединить два командлеты, мы используем символ «вертикальная черта» «|», который сообщает Office 365 PowerShell результаты одной команды и отправьте его в следующей команде. Ниже приведен пример команды, которая отображает только учетные записи пользователей, имеющие место не указано использования:
   
@@ -219,7 +215,7 @@ Get-MsolUser | Where-Object {$_.City -eq "London"}
 Get-MolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
 ```
 
-### <a name="additional-property-values-for-accounts"></a>Значения дополнительных свойств для учетных записей
+### <a name="view-additional-property-values-for-accounts"></a>Просмотр значений дополнительных свойств для учетных записей
 
 Командлет **Get-MsolUser** по умолчанию отображает три свойства учетных записей пользователей:
   
@@ -291,10 +287,6 @@ Scott Wallace            Operations
 ```
 
     
-## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-  
 ## <a name="see-also"></a>См. также
 
 [Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)

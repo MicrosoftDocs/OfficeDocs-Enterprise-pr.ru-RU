@@ -3,7 +3,7 @@ title: Просмотр лицензий и служб с помощью PowerSh
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/31/2018
+ms.date: 01/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Объясняет, как использовать Office 365 PowerShell для просмотра сведений о лицензировании планы, служб и лицензий, которые доступны в организации Office 365.
-ms.openlocfilehash: dab6b8f1828c6be4d32bb2432437d23328653560
-ms.sourcegitcommit: 6dd4ac5808d72406578fcc7be6590dd7a99cebea
+ms.openlocfilehash: e4c4a0570cafd3d9cb775dd99c5f75da613715e3
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2018
-ms.locfileid: "27466878"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546540"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Просмотр лицензий и служб с помощью PowerShell в Office 365
 
@@ -37,15 +37,75 @@ ms.locfileid: "27466878"
     
 Office 365 PowerShell можно использовать для просмотра сведений о доступные планы лицензирования, лицензии и службы в организации Office 365. Дополнительные сведения о продуктах, компонентов и служб, доступных в различных подписок на Office 365 можно [Параметры плана Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691147).
 
-## <a name="before-you-begin"></a>Перед началом работы
 
-- Для процедур, описанных в этой статье, требуется подключение к PowerShell в Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
-    
-- Сценарий PowerShell, который автоматизирует процедур, описанных в этом разделе. В частности сценарий позволяет просматривать и отключения службы в организации Office 365, включая Sway. Дополнительные сведения можно [отключить доступ к Sway с Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
-    
-## <a name="view-information-about-licensing-plans-and-the-available-licenses"></a>Просмотр сведений о планах лицензирования и доступных лицензиях
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование Windows Azure Active Directory PowerShell для модуля "график"
 
-Чтобы просмотреть сводную информацию о текущем планы лицензирования и доступных лицензий для каждого плана, выполните следующую команду в Office 365 PowerShell:
+Во-первых, [подключиться к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+  
+Чтобы просмотреть сводную информацию о текущем планы лицензирования и доступных лицензий для каждого плана, выполните следующую команду:
+  
+```
+Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
+```
+
+Результаты содержат сведения, указанные ниже.
+  
+- **SkuPartNumber:** Показать доступные планы лицензирования для вашей организации >, например `ENTERPRISEPACK` — это имя системы для Office 365 для предприятий E3.
+    
+- **Включено:** Число лицензий, которые вы приобрели для конкретного плана лицензирования.
+    
+- **ConsumedUnits:** Число лицензий, которые вы назначили для пользователей с определенным плана лицензирования.
+    
+Чтобы просмотреть подробные сведения о службах Office 365, которые доступны во всех планов лицензии, сначала отобразите список планов лицензии.
+
+````
+Get-AzureADSubscribedSku | Select SkuPartNumber
+````
+
+Затем сохраните информацию о лицензии планы в переменной.
+
+````
+$licenses = Get-AzureADSubscribedSku
+````
+
+Затем откройте службы в плане лицензий.
+
+````
+$licenses[<index>].ServicePlan
+````
+
+\<Индекс > — целое число, указывающее количество план лицензирования из отображения `Get-AzureADSubscribedSku | Select SkuPartNumber` команды минус 1.
+
+Например если на отображение `Get-AzureADSubscribedSku | Select SkuPartNumber` команда будет иметь это:
+
+````
+SkuPartNumber
+-------------
+WIN10_VDA_E5
+EMSPREMIUM
+ENTERPRISEPREMIUM
+FLOW_FREE
+````
+
+Выберите команду, чтобы отобразить служб для план лицензирования ENTERPRISEPREMIUM состоит в следующем.
+
+````
+$licenses[2].ServicePlan
+````
+
+ENTERPRISEPREMIUM является третьей строки. Таким образом, — это значение индекса (3 - 1), или 2.
+
+Полный список планов лицензии (также известной как названия продуктов), планы включены службы и их соответствующих понятные имена в разделе [продукта имена и идентификаторы плана службы для лицензирования](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
+
+Во-первых, [подключиться к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+>[!Note]
+>Сценарий PowerShell, который автоматизирует процедур, описанных в этом разделе. В частности сценарий позволяет просматривать и отключения службы в организации Office 365, включая Sway. Дополнительные сведения можно [отключить доступ к Sway с Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
+>
+    
+Чтобы просмотреть сводную информацию о текущем планы лицензирования и доступных лицензий для каждого плана, выполните следующую команду:
   
 ```
 Get-MsolAccountSku
@@ -55,7 +115,7 @@ Get-MsolAccountSku
   
 - **AccountSkuId:** Показать доступные планы лицензирования для вашей организации, используя синтаксис `<CompanyName>:<LicensingPlan>`.  _<CompanyName>_ — это значение, что и при участвуют в Office 365 и является уникальным для вашей организации. _<LicensingPlan>_ Равны для всех пользователей. Например, в значении `litwareinc:ENTERPRISEPACK`, — это название компании `litwareinc`и имя плана лицензирования `ENTERPRISEPACK`, — имя системы для Office 365 для предприятий E3.
     
-- **ActiveUnits:** Число лицензий, что покупки для конкретного плана лицензирования.
+- **ActiveUnits:** Число лицензий, которые вы приобрели для конкретного плана лицензирования.
     
 - **WarningUnits:** Число лицензий в плане лицензирования, который еще не обновленной и, срок действия 30-дневный льготный период.
     
@@ -79,7 +139,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `MCOSTANDARD` <br/> |Skype для бизнеса Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office Online  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
-| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (план 2);  <br/> |
+| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (план 2)  <br/> |
    
 Полный список планов лицензии (также известной как названия продуктов), планы включены службы и их соответствующих понятные имена в разделе [продукта имена и идентификаторы плана службы для лицензирования](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
@@ -95,13 +155,16 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
+
 ## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
 ## <a name="see-also"></a>См. также
 
-- [Отображение списков пользователей с лицензиями и пользователей без лицензий с помощью Office 365 PowerShell](view-licensed-and-unlicensed-users-with-office-365-powershell.md) .
-- [Просмотр сведений о лицензии и службе учетной записи с помощью PowerShell в Office 365](view-account-license-and-service-details-with-office-365-powershell.md) .
-- [Get-MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
 
+[Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+  
+[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+  
+[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)

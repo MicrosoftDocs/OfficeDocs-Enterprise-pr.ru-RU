@@ -3,7 +3,7 @@ title: Блокировка учетных записей пользовател
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/10/2018
+ms.date: 01/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,89 +14,33 @@ ms.custom:
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Описание способов блокировать и разблокировать доступ к учетным записям Office 365 с помощью Office 365 PowerShell.
-ms.openlocfilehash: 748d24f95f9dca651158dae2fe15e9c655eb021e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 0e1ac3f61acafedd77c2af760b8316aa6b936e7b
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915414"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546480"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Блокировка учетных записей пользователей с помощью PowerShell в Office 365
 
 **Сводка:**  Описание способов блокировать и разблокировать доступ к учетным записям Office 365 с помощью Office 365 PowerShell.
   
-Блокирование доступа к учетной записи Office 365 не позволяет другим пользователям с помощью учетной записи для входа и доступ к службам и данных в организации Office 365. При блокировании доступа к учетной записи, пользователь получает сообщение об ошибке при попытке входа в:
-  
-![Заблокированная учетная запись Office 365.](media/o365-powershell-account-blocked.png)
-  
-Office 365 PowerShell можно использовать для блокировки доступа к отдельным и несколько учетных записей пользователей.
-  
-## <a name="before-you-begin"></a>Перед началом работы
+Блокирование доступа к учетной записи Office 365 не позволяет другим пользователям с помощью учетной записи для входа и доступ к службам и данных в организации Office 365. Office 365 PowerShell можно использовать для блокировки доступа к отдельным и несколько учетных записей пользователей.
 
-- Для процедур, описанных в этой статье, требуется подключение к PowerShell в Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
-    
-- При блокировании учетной записи пользователя, может потребоваться в течение 24 часов вступили в силу на устройствах пользователей и клиентов.
-    
-## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a>Блокировка доступа к отдельным учетным записям пользователей с помощью PowerShell в Office 365
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование Windows Azure Active Directory PowerShell для модуля "график"
 
-Используйте следующий синтаксис, чтобы заблокировать доступ к отдельной учетной записи пользователя:
+Во-первых, [подключиться к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+ 
+### <a name="block-access-to-individual-user-accounts"></a>Заблокируйте доступ к учетным записям отдельных пользователей
+
+Чтобы заблокировать отдельные учетные записи, используйте следующий синтаксис:
   
 ```
-Set-MsolUser -UserPrincipalName <UPN of user account>  -BlockCredential $true
-```
-
-В этом примере блокируется доступ к учетной записи пользователя fabricec@litwareinc.com.
-  
-```
-Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
-```
-
-Чтобы разблокировать учетную запись пользователя, выполните следующую команду:
-  
-```
-Set-MsolUser -UserPrincipalName <UPN of user account>  -BlockCredential $false
-```
-
-В любое время можно проверить заблокированных состояние учетной записи пользователя, с помощью следующей команды:
-  
-```
-Get-MolUser -UserPrincipalName <UPN of user account> | Select DisplayName,BlockCredential
-```
-
-## <a name="use-office-365-powershell-to-block-access-to-multiple-user-accounts"></a>Заблокируйте доступ к нескольким учетным записям пользователей с помощью Office 365 PowerShell
-
-Во-первых создайте текстовый файл, содержащий одну учетную запись в каждой строке следующим образом:
-    
-  ```
-akol@contoso.com
-tjohnston@contoso.com
-kakers@contoso.com
-  ```
-В следующие команды в текстовом файле пример — C:\My Documents\Accounts.txt. Замените путь и имя текстового файла.
-    
-Чтобы заблокировать доступ к учетным записям, перечисленным в текстовом файле, выполните следующую команду:
-    
-  ```
-  Get-Content Accounts.txt | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $true }
-  ```
-Чтобы разблокировать учетные записи, перечисленные в текстовом файле, выполните следующую команду:
-    
-  ```
-  Get-Content Accounts.txt | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $false }
-  ```
-
-## <a name="use-the-azure-active-directory-v2-powershell-module-to-block-access-to-user-accounts"></a>Блокировка доступа к учетным записям пользователей с помощью модуля Azure Active Directory PowerShell 2
-
-Чтобы использовать командлет **New-AzureADUser** из модуля Azure Active Directory PowerShell 2, сначала необходимо подключиться к подписке. Инструкции см. в разделе[Подключение с помощью модуля Azure Active Directory PowerShell 2](https://go.microsoft.com/fwlink/?linkid=842218).
-  
-После этого используйте следующий синтаксис, чтобы заблокировать отдельную учетную запись пользователя:
-  
-```
-Set-AzureADUser -ObjectID <UPN of user account> -AccountEnabled $false
+Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $false
 ```
 
 > [!NOTE]
-> Параметр -ObjectID в командлете Set-AzureAD принимает либо имя учетной записи (имя участника-пользователя), либо идентификатор объекта учетной записи. 
+> Параметр - ObjectID в командлет Set-AzureAD принимает либо имя учетной записи входа, имя участника-пользователя или идентификатор учетной записи. 
   
 В этом примере блокируется доступ к учетной записи пользователя fabricec@litwareinc.com.
   
@@ -113,7 +57,7 @@ Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $true
 Для отображения имени участника-пользователя на основании отображаемое имя пользователя учетной записи пользователя, используйте следующие команды:
   
 ```
-$userName="<user account display name>"
+$userName="<display name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 
 ```
@@ -125,10 +69,10 @@ $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-Чтобы заблокировать учетную запись на основе имени пользователя, используйте следующие команды:
+Чтобы заблокировать на основании отображаемое имя пользователя учетной записи, используйте следующие команды:
   
 ```
-$userName="<user account display name>"
+$userName="<display name>"
 Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName -AccountEnabled $false
 
 ```
@@ -139,7 +83,9 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
-Чтобы заблокировать доступ к нескольким учетным записям пользователей, создайте текстовый файл, содержащий одно имя учетной записи в каждой строке следующим образом:
+### <a name="block-access-to-multiple-user-accounts"></a>Заблокируйте доступ к нескольким учетным записям пользователей
+
+Чтобы заблокировать доступ к нескольким учетным записям пользователей, создайте текстовый файл, содержащий одну учетную запись учетное имя в каждой строке следующим образом:
     
   ```
 akol@contoso.com
@@ -148,7 +94,7 @@ kakers@contoso.com
   ```
 
 В следующие команды в текстовом файле пример — C:\My Documents\Accounts.txt. Замените путь и имя текстового файла.
-    
+  
 Чтобы заблокировать доступ к учетным записям, перечисленным в текстовом файле, выполните следующую команду:
     
 ```
@@ -161,24 +107,63 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
 ```
 
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
+
+Во-первых, [подключиться к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+    
+### <a name="block-access-to-individual-user-accounts"></a>Заблокируйте доступ к учетным записям отдельных пользователей
+
+Используйте следующий синтаксис, чтобы заблокировать доступ к отдельной учетной записи пользователя:
+  
+```
+Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $true
+```
+
+В этом примере блокируется доступ к учетной записи пользователя fabricec@litwareinc.com.
+  
+```
+Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
+```
+
+Чтобы разблокировать учетную запись пользователя, выполните следующую команду:
+  
+```
+Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $false
+```
+
+В любое время можно проверить заблокированных состояние учетной записи пользователя, с помощью следующей команды:
+  
+```
+Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayName,BlockCredential
+```
+
+### <a name="block-access-to-multiple-user-accounts"></a>Заблокируйте доступ к нескольким учетным записям пользователей
+
+Во-первых создайте текстовый файл, содержащий одну учетную запись в каждой строке следующим образом:
+    
+  ```
+akol@contoso.com
+tjohnston@contoso.com
+kakers@contoso.com
+  ```
+В следующие команды в текстовом файле пример — C:\My Documents\Accounts.txt. Замените путь и имя текстового файла.
+    
+Чтобы заблокировать доступ к учетным записям, перечисленным в текстовом файле, выполните следующую команду:
+    
+  ```
+  Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $true }
+  ```
+Чтобы разблокировать учетные записи, перечисленные в текстовом файле, выполните следующую команду:
+    
+  ```
+  Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $false }
+  ```
+
 ## <a name="see-also"></a>См. также
 
-Сведения об управлении пользователями с помощью Office 365 PowerShell см. в следующих статьях:
+[Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-- [Создание учетных записей пользователей с помощью PowerShell в Office 365](create-user-accounts-with-office-365-powershell.md)
-    
-- [Удаление и восстановление учетных записей пользователей с помощью PowerShell в Office 365](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-- [Использование PowerShell в Office 365 для удаления лицензий из учетных записей пользователей](remove-licenses-from-user-accounts-with-office-365-powershell.md)
-    
-Дополнительные сведения о командлетах, использованных в этих процедурах, см. в указанных ниже статьях.
+[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
   
-- [Get-Content](https://go.microsoft.com/fwlink/p/?LinkId=113310)
-    
-- [SET-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691644)
-    
-- [New-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
-    
-
+[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
