@@ -3,7 +3,7 @@ title: Подключение ко всем службам Office 365 с пом�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/03/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Сводка: Подключение Windows PowerShell для всех служб Office 365 в одном окне Windows PowerShell.'
-ms.openlocfilehash: 5635cf8b03490c2b2f811f22c231c271d5204552
-ms.sourcegitcommit: 65de707bd1c389eea48767a68c31032dd5198359
+ms.openlocfilehash: f863879fd83fb09fc748066fb25ca4b73895eb98
+ms.sourcegitcommit: c6efb42ffa0e81122152b67a3568a1ad1ff30aba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706693"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "27521675"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell
 
@@ -90,13 +90,13 @@ ms.locfileid: "26706693"
 3. Выполните эту команду, чтобы подключиться к Azure Active Directory (AD) с помощью Azure Active Directory PowerShell для модуля "график".
     
   ```
-   Connect-AzureAD -Credential $credential
+  Connect-AzureAD -Credential $credential
   ```
   
   Кроме того Если вы используете модуль Microsoft Azure модуль Active Directory для Windows PowerShell, выполните следующую команду.
       
   ```
-   Connect-MsolService -Credential $credential
+  Connect-MsolService -Credential $credential
  ```
 
 4. Выполните следующие команды для подключения к SharePoint Online. Замените _ \<domainhost >_ с фактическое значение для вашего домена. Например, «litwareinc.onmicrosoft.com» _ \<domainhost >_ значение: «litwareinc».
@@ -118,7 +118,7 @@ ms.locfileid: "26706693"
     
   ```
   $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
-  Import-PSSession $exchangeSession
+  Import-PSSession $exchangeSession -DisableNameChecking
   ```
 
 >[!Note]
@@ -148,7 +148,7 @@ Import-Module SkypeOnlineConnector
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
-Import-PSSession $exchangeSession
+Import-PSSession $exchangeSession -DisableNameChecking
 $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $SccSession -Prefix cc
 ```
@@ -165,7 +165,7 @@ Import-Module SkypeOnlineConnector
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
-Import-PSSession $exchangeSession
+Import-PSSession $exchangeSession -DisableNameChecking
 $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $SccSession -Prefix cc
 ```
@@ -216,7 +216,7 @@ Exchange Online и системы безопасности &amp; центре с
 
 ## <a name="see-also"></a>См. также
 
-- [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md)
+- [Подключение к PowerShell Office 365](connect-to-office-365-powershell.md)
 - [Управление SharePoint Online с помощью Office 365 PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
 - [Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Использование Windows PowerShell для создания отчетов в Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
