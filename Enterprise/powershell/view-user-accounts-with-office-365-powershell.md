@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Обзор: Просмотр, список или отображение учетные записи пользователей с Office 365 PowerShell разными способами.'
-ms.openlocfilehash: dc33b64207341576968867fbeea6f211034eeca6
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: e95353602b96babe5c80f7d57462370636dd26fa
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546530"
+ms.locfileid: "27730324"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Просмотр учетных записей пользователей с помощью PowerShell для Office 365
 
@@ -28,9 +28,9 @@ ms.locfileid: "27546530"
   
 Несмотря на то, что центр администрирования Office 365 можно использовать для просмотра учетных записей для клиента Office 365, можно с помощью Office 365 PowerShell и выполнить некоторые действия, которые невозможно Центр администрирования Office 365.
   
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование Windows Azure Active Directory PowerShell для модуля "график"
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
 
-Во-первых, [подключиться к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 ### <a name="view-all-accounts"></a>Просмотреть все учетные записи
 
@@ -55,10 +55,16 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 
 ### <a name="view-a-specific-account"></a>Просмотр конкретной учетной записи
 
-Чтобы отобразить учетной записи пользователя, заполните поля в имя участника пользователя (UPN) учетной записи пользователя, удалите «<» и «>» символов и выполните следующую команду:
+Чтобы отобразить учетной записи пользователя, удаление заливки в учетную запись для входа имя учетной записи пользователя, также известной как имя участника-пользователя (UPN), «<» и «>» символов и выполните следующую команду:
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account>
+Get-AzureADUser -ObjectID <sign-in name of the user account>
+```
+
+Пример
+  
+```
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 ```
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>Просмотр значений дополнительных свойств для конкретной учетной записи
@@ -71,7 +77,7 @@ Get-AzureADUser -ObjectID <UPN of user account>
 Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 ```
 
-Эта команда дает инструкцию PowerShell для Office 365:
+Эта команда указывает PowerShell в Office 365 сделать следующее:
   
 - Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
     
@@ -80,13 +86,13 @@ Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 Чтобы просмотреть все свойства для учетных записей пользователей, используйте командлет **Select-Object** и подстановочный знак (*) для отображения их все для учетной записи пользователя. Ниже приведен пример:
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Например можно проверить включенное состояние учетной записи пользователя с помощью следующей команды:
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
+Get-AzureADUser -ObjectID <sign-in name of the user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>Просмотр некоторых учетных записей на основе общие свойства
@@ -106,7 +112,7 @@ Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null}
 Свойство **UsageLocation** — только один из многих свойства, связанные с учетной записью пользователя. Чтобы просмотреть все свойства для учетных записей пользователей, используйте командлет **Select-Object** и подстановочный знак (*) для отображения их все для учетной записи пользователя. Ниже приведен пример:
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Например, **City** для этого списка — имя свойства, принадлежащего учетной записи пользователя. Это значит, что перечислить все учетные записи пользователей, проживающих в Лондоне, можно с помощью такой команды:
@@ -121,7 +127,7 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
 
-Во-первых, [подключиться к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 ### <a name="view-all-accounts"></a>Просмотреть все учетные записи
 
@@ -164,10 +170,10 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ### <a name="view-a-specific-account"></a>Просмотр конкретной учетной записи
 
-Чтобы отобразить учетной записи пользователя, заполните поля в имя участника пользователя (UPN) учетной записи пользователя, удалите «<» и «>» символов и выполните следующую команду:
+Чтобы отобразить учетной записи пользователя, удалить заполните учетное имя учетной записи пользователя, учетная запись пользователя, также известной как имя участника-пользователя (UPN), «<» и «>» символов и выполните следующую команду:
   
 ```
-Get-MsolUser -UserPrincipalName <UPN of user account>
+Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>Просмотр некоторых учетных записей на основе общие свойства
@@ -197,7 +203,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 Свойство **UsageLocation** — только один из многих свойства, связанные с учетной записью пользователя. Чтобы просмотреть все свойства для учетных записей пользователей, используйте командлет **Select-Object** и подстановочный знак (*) для отображения их все для учетной записи пользователя. Ниже приведен пример:
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Например, **City** для этого списка — имя свойства, принадлежащего учетной записи пользователя. Это значит, что перечислить все учетные записи пользователей, проживающих в Лондоне, можно с помощью такой команды:
@@ -254,7 +260,7 @@ Scott Wallace           Operations
 Командлет **Select-Object** позволяет выбрать команду, чтобы отобразить свойства. Чтобы просмотреть все свойства для учетных записей пользователей, используйте подстановочный знак (*) для отображения их все для учетной записи пользователя. Ниже приведен пример:
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Чтобы еще точнее отфильтровать список отображаемых учетных записей, можно также использовать командлет **Where-Object**. Ниже приведен пример команды, которая выводит только те учетные записи пользователей, для которых не указано расположение использования.

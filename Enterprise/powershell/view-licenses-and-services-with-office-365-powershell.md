@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Объясняет, как использовать Office 365 PowerShell для просмотра сведений о лицензировании планы, служб и лицензий, которые доступны в организации Office 365.
-ms.openlocfilehash: e4c4a0570cafd3d9cb775dd99c5f75da613715e3
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: f673ac984e504a740dfac474821366d34de5ccbc
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546540"
+ms.locfileid: "27730334"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Просмотр лицензий и служб с помощью PowerShell в Office 365
 
@@ -38,9 +38,9 @@ ms.locfileid: "27546540"
 Office 365 PowerShell можно использовать для просмотра сведений о доступные планы лицензирования, лицензии и службы в организации Office 365. Дополнительные сведения о продуктах, компонентов и служб, доступных в различных подписок на Office 365 можно [Параметры плана Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691147).
 
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование Windows Azure Active Directory PowerShell для модуля "график"
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
 
-Во-первых, [подключиться к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Чтобы просмотреть сводную информацию о текущем планы лицензирования и доступных лицензий для каждого плана, выполните следующую команду:
   
@@ -50,7 +50,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 Результаты содержат сведения, указанные ниже.
   
-- **SkuPartNumber:** Показать доступные планы лицензирования для вашей организации >, например `ENTERPRISEPACK` — это имя системы для Office 365 для предприятий E3.
+- **SkuPartNumber:** Отображает доступные планы лицензирования для вашей организации. Например `ENTERPRISEPACK` — это имя системы для Office 365 для предприятий E3.
     
 - **Включено:** Число лицензий, которые вы приобрели для конкретного плана лицензирования.
     
@@ -99,7 +99,7 @@ ENTERPRISEPREMIUM является третьей строки. Таким об�
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
 
-Во-первых, [подключиться к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 >[!Note]
 >Сценарий PowerShell, который автоматизирует процедур, описанных в этом разделе. В частности сценарий позволяет просматривать и отключения службы в организации Office 365, включая Sway. Дополнительные сведения можно [отключить доступ к Sway с Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
