@@ -3,7 +3,7 @@ title: Конечные точки Office 365 Germany
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Если ваша организация использует Office 365 и ограничивает компьютеры в сети с подключением к Интернету, Далее вы найдете конечных точек (полные доменные имена, порты, URL-адреса и IPv4 и IPv6 диапазонов адресов), который следует включить в вашей исходящих разрешить списков, чтобы обеспечить вашей компьютеры можно успешно использовать Office 365.
 hideEdit: true
-ms.openlocfilehash: 016fc3073ece232a0e12e298d745cd18d8e5cb9d
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 05bbcb1cb4e6b90b3f7a61d84ae3488ce97245c2
+ms.sourcegitcommit: e3fa9998321f6fa5d31217d107b672258993826e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872300"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "27746139"
 ---
 # <a name="office-365-germany-endpoints"></a>Конечные точки Office 365 Germany
 
@@ -34,7 +34,7 @@ ms.locfileid: "26872300"
   
 |||
 |:-----|:-----|
-|**Последнее обновление:** 11/28/2018 - ![RSS-канал](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [подписки журнал изменений](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Скачивание:** все обязательные и необязательные назначения в одном списке [в формате JSON](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
+|**Последнее обновление:** 01/07/2019 - ![RSS-канал](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [подписки журнал изменений](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Скачивание:** все обязательные и необязательные назначения в одном списке [в формате JSON](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Начать с [конечными точками управления Office 365](managing-office-365-endpoints.md) понять рекомендаций по управлению подключение к сети с помощью этих данных. Конечные точки данных обновляется в начале каждый месяц с новой IP-адресов и URL-адреса опубликовано 30 дней до активности. Таким образом, пользователи, которые еще не автоматические обновления для выполнения своих процессов до нового подключения является обязательным. Конечные точки также могут быть обновлены в течение месяца, если, необходимые для поддержки эскалации адрес, угрозы безопасности и других интерпретации эксплуатационных требований. Всегда можно ссылаться на [Изменение журнала подписки](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 
