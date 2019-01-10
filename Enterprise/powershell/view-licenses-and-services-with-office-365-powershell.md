@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Объясняет, как использовать Office 365 PowerShell для просмотра сведений о лицензировании планы, служб и лицензий, которые доступны в организации Office 365.
-ms.openlocfilehash: f673ac984e504a740dfac474821366d34de5ccbc
-ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
+ms.openlocfilehash: 8efc123e2820560b4bd8547f4c99bccae242956f
+ms.sourcegitcommit: 96313c3c812bae47819f603af995839f4da034c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27730334"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "27786155"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Просмотр лицензий и служб с помощью PowerShell в Office 365
 
@@ -71,7 +71,7 @@ $licenses = Get-AzureADSubscribedSku
 Затем откройте службы в плане лицензий.
 
 ````
-$licenses[<index>].ServicePlan
+$licenses[<index>].ServicePlans
 ````
 
 \<Индекс > — целое число, указывающее количество план лицензирования из отображения `Get-AzureADSubscribedSku | Select SkuPartNumber` команды минус 1.
@@ -90,7 +90,7 @@ FLOW_FREE
 Выберите команду, чтобы отобразить служб для план лицензирования ENTERPRISEPREMIUM состоит в следующем.
 
 ````
-$licenses[2].ServicePlan
+$licenses[2].ServicePlans
 ````
 
 ENTERPRISEPREMIUM является третьей строки. Таким образом, — это значение индекса (3 - 1), или 2.
