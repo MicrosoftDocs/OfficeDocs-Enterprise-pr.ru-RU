@@ -3,29 +3,6 @@
 
 
 
-## <a name="week-of-december-10-2018"></a>Недели после 10 декабря 2018
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 12/10/2018 | [ExpressRoute для подключения к Microsoft Cloud](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | изменено |
-| 12/10/2018 | [Просмотр сведений о лицензии и службе учетной записи с помощью PowerShell в Office 365](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | изменено |
-
-
-## <a name="week-of-december-17-2018"></a>Неделя с 17 декабря 2018 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 12/17/2018 | [Маршрутизация с использованием ExpressRoute для Office 365](/Office365/Enterprise/routing-with-expressroute) | изменено |
-| 12/17/2018 | [Поддержка IPv6 в службах Office 365](/Office365/Enterprise/ipv6-support) | изменено |
-| 12/18/2018 | [Обзор проверки подлинности на современном гибридной среды и необходимые условия для использования его с Скайп локальных серверов Exchange и бизнес-](/Office365/Enterprise/hybrid-modern-auth-overview) | изменено |
-| 12/18/2018 | [Подготовка пользователей к работе путем синхронизации каталогов с Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | изменено |
-| 12/19/2018 | [Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | изменено |
-| 12/19/2018 | [Время ожидания сеанса для Office 365](/Office365/Enterprise/session-timeouts) | изменено |
-| 12/20/2018 | [Конец стратегия поддержки Exchange 2010](/Office365/Enterprise/exchange-2010-end-of-support) | изменено |
-
-
 ## <a name="week-of-december-24-2018"></a>Недели после 24 декабря 2018
 
 
@@ -54,7 +31,7 @@
 | 1/4/2019 | [Просмотр учетных записей пользователей с помощью PowerShell для Office 365](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | изменено |
 
 
-## <a name="week-of-january-07-2019"></a>Неделя 07 января 2019
+## <a name="week-of-january-07-2019"></a>Неделя с 7 января 2019 г.
 
 
 | Дата публикации |Название статьи | Изменение |
@@ -63,8 +40,36 @@
 | 1/7/2019 | [Конечные точки Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | изменено |
 | 1/7/2019 | [Конечные точки обороны США государственных Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | изменено |
 | 1/7/2019 | [США государственных GCC высокой конечных точках Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | изменено |
-| 1/7/2019 | [Диапазоны IP-адресов и URL-адреса Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | изменено |
+| 1/7/2019 | [URL-адреса и диапазоны IP-адресов для Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | изменено |
 | 8/1/2019 | [Настройка синхронизации каталогов для Office 365](/Office365/Enterprise/set-up-directory-synchronization) | изменено |
 | 1/9/2019 | [Просмотр лицензий и служб с помощью Office 365 PowerShell](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | изменено |
 | 11/1/2019 | [Управление конечными точками Office 365](/Office365/Enterprise/managing-office-365-endpoints) | изменено |
 | 11/1/2019 | [Конечные точки обороны США государственных Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | изменено |
+
+
+## <a name="week-of-january-14-2019"></a>Недели после 14 января 2019
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 1/15/2019 | [Принципы сетевого подключения к Office 365](/Office365/Enterprise/office-365-network-connectivity-principles) | изменено |
+| 1/15/2019 | [Планирование сети и настройка производительности для Office 365](/Office365/Enterprise/network-planning-and-performance) | изменено |
+| 1/16/2019 | [Поддержка IPv6 в службах Office 365](/Office365/Enterprise/ipv6-support) | изменено |
+| 1/16/2019 | [Отображение списков пользователей с лицензиями и пользователей без лицензий с помощью Office 365 PowerShell](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | изменено |
+| 1/16/2019 | [Просмотр ошибок синхронизации службы каталогов в Office 365](/Office365/Enterprise/identify-directory-synchronization-errors) | изменено |
+| 1/16/2019 | [Общие сведения о гибридном облаке](/Office365/Enterprise/hybrid-cloud-overview) | изменено |
+| 1/17/2019 | [Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | изменено |
+| 1/17/2019 | [Конечные точки обороны США государственных Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | изменено |
+| 1/17/2019 | [США государственных GCC высокой конечных точках Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | изменено |
+
+
+## <a name="week-of-january-21-2019"></a>Недели после 21 января 2019
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 1/25/2019 | [Помощники по развертыванию служб Office 365](/Office365/Enterprise/deployment-advisors-for-office-365) | изменено |
+| 1/25/2019 | [Управление группами Office 365 с помощью PowerShell](/Office365/Enterprise/manage-office-365-groups-with-powershell) | изменено |
+| 1/25/2019 | [Перемещение сайта OneDrive в другой геообъект](/Office365/Enterprise/move-onedrive-between-geo-locations) | изменено |
+| 1/25/2019 | [Использование сети доставки содержимого Office 365 с помощью SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | изменено |
+| 1/25/2019 | [Настройка синхронизации каталогов для Office 365](/Office365/Enterprise/set-up-directory-synchronization) | изменено |
