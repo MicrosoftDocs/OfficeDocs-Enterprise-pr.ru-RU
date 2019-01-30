@@ -3,7 +3,7 @@ title: США государственных GCC высокой конечных
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/17/2019
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Если ваша организация использует Office 365 и ограничивает компьютеры в сети с подключением к Интернету, Далее вы найдете конечных точек (полные доменные имена, порты, URL-адреса, IPv4 и IPv6 диапазонов адресов), который следует включить в вашей исходящих разрешить списков, чтобы обеспечить вашей компьютеры можно успешно использовать Office 365.
 hideEdit: true
-ms.openlocfilehash: 5c849775c8fd55d9e4196ebad6c55cdf56d2ab60
-ms.sourcegitcommit: 0c4f50aa55699b8390038efbb8b50dbe10f3eefe
+ms.openlocfilehash: b40e38b1adeedc49e175e3d901b1283688de17e1
+ms.sourcegitcommit: 51cb8941a15f6d77b85f47cdf95822ae00d8f7e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723386"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29612135"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>США государственных GCC высокой конечных точках Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "28723386"
   
 |||
 |:-----|:-----|
-|**Последнее обновление:** 01/17/2019 - ![RSS-канал](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [подписки журнал изменений](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Загрузка:** полный список в [формате JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Последнее обновление:** 01/28/2019 - ![RSS-канал](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [подписки журнал изменений](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Загрузка:** полный список в [формате JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Начать с [конечными точками управления Office 365](managing-office-365-endpoints.md) понять рекомендаций по управлению подключение к сети с помощью этих данных. Конечные точки данных обновляется в начале каждый месяц с новой IP-адресов и URL-адреса опубликовано 30 дней до активности. Таким образом, пользователи, которые еще не автоматические обновления для выполнения своих процессов до нового подключения является обязательным. Конечные точки также могут быть обновлены в течение месяца, если, необходимые для поддержки эскалации адрес, угрозы безопасности и других интерпретации эксплуатационных требований. Данные, отображаемые на этой странице ниже создается на основе REST веб-службы. При использовании сценария или сетевых устройств для доступа к этим данным, то должны перейти к [веб-службы](office-365-ip-web-service.md) непосредственно.
 
