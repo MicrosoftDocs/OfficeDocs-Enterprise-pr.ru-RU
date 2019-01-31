@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Объясняет, как использовать Office 365 PowerShell для просмотра сведений о лицензировании планы, служб и лицензий, которые доступны в организации Office 365.
-ms.openlocfilehash: 8efc123e2820560b4bd8547f4c99bccae242956f
-ms.sourcegitcommit: 96313c3c812bae47819f603af995839f4da034c5
+ms.openlocfilehash: bce181445523a2f043caa932f3d4e0ddd81d89cc
+ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "27786155"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29651213"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Просмотр лицензий и служб с помощью PowerShell в Office 365
 
@@ -50,7 +50,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 Результаты содержат сведения, указанные ниже.
   
-- **SkuPartNumber:** Отображает доступные планы лицензирования для вашей организации. Например `ENTERPRISEPACK` — это имя системы для Office 365 для предприятий E3.
+- **SkuPartNumber:** Отображает доступные планы лицензирования для вашей организации. Например `ENTERPRISEPACK` — это имя плана лицензии для Office 365 для предприятий E3.
     
 - **Включено:** Число лицензий, которые вы приобрели для конкретного плана лицензирования.
     
@@ -74,7 +74,7 @@ $licenses = Get-AzureADSubscribedSku
 $licenses[<index>].ServicePlans
 ````
 
-\<Индекс > — целое число, указывающее количество план лицензирования из отображения `Get-AzureADSubscribedSku | Select SkuPartNumber` команды минус 1.
+\<index> — целое число, указывающее количество план лицензирования из отображения `Get-AzureADSubscribedSku | Select SkuPartNumber` команды минус 1.
 
 Например если на отображение `Get-AzureADSubscribedSku | Select SkuPartNumber` команда будет иметь это:
 
