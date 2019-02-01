@@ -3,7 +3,7 @@ title: Назначение ролей учетным записям польз�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/31/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,24 +14,58 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: Сводка. Используйте PowerShell в Office 365 и командлет Add-MsolRoleMember для назначения ролей учетным записям пользователей.
-ms.openlocfilehash: 2af4409020cc4a4e3dd6ff3b8bfcf5f1138f26cd
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
+description: Сводка. Назначайте роли учетным записям пользователей, используя PowerShell для Office 365.
+ms.openlocfilehash: 702c7358ccca9bb36bd106d742b5c454283ee8b4
+ms.sourcegitcommit: d0c870c7a487eda48b11f649b30e4818fd5608aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690440"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365
 
- **Сводка.** Назначайте роли учетным записям пользователей, используя PowerShell для Office 365 и командлет **Add-MsolRoleMember**.
-  
-Вы можете быстро и легко назначать роли с помощью PowerShell для Office 365, указывая отображаемое имя учетной записи пользователя и имя роли.
-  
-## <a name="before-you-begin"></a>Перед началом работы
+Вы можете быстро и легко назначать роли учетным записям пользователей с помощью PowerShell для Office 365.
 
-Чтобы выполнять процедуры, описанные в этой статье, необходимо подключиться к PowerShell в Office 365, используя учетную запись глобального администратора. Инструкции см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
+
+Сначала [подключитесь к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) с помощью учетной записи глобального администратора.
   
-## <a name="for-a-single-role-change"></a>Изменение одной роли
+Затем определите имя входа для учетной записи пользователя, которую нужно добавить в роль (пример: fredsm@contoso.com). Оно также называется именем участника-пользователя (UPN).
+
+После этого определите имя роли. Используйте эту команду, чтобы перечислить роли, которые можно назначать с помощью PowerShell.
+
+````
+Get-AzureADDirectoryRole
+````
+
+Затем укажите имена для входа и роли и выполните указанные ниже команды.
+  
+```
+$userName="<sign-in name of the account>"
+$roleName="<role name>"
+Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+```
+
+Вот пример полного набора команд:
+  
+```
+$userName="belindan@contoso.com"
+$roleName="Lync Service Administrator"
+Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+```
+
+Чтобы отобразить список имен пользователей для определенной роли, используйте указанные ниже команды.
+
+```
+$roleName="<role name>"
+Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+```
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
+
+Сначала [подключитесь к клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) с помощью учетной записи глобального администратора.
+  
+### <a name="for-a-single-role-change"></a>Изменение одной роли
 
 Определите следующее:
   
@@ -77,7 +111,7 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-## <a name="for-multiple-role-changes"></a>Изменение нескольких ролей
+### <a name="for-multiple-role-changes"></a>Изменение нескольких ролей
 
 Определите следующее:
   
@@ -117,7 +151,7 @@ DisplayName,RoleName
 Затем укажите расположение CSV-файла и запустите получившиеся команды в командной строке PowerShell.
   
 ```
-$fileName="<path and file name of the input CSV file that contains the role changes, example: C:\admin\RoleUpdates.CSV>"
+$fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
 $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $_.DisplayName).UserPrincipalName -RoleName $_.RoleName }
 
 ```
@@ -127,4 +161,3 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 - [Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
 - [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-- [Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
