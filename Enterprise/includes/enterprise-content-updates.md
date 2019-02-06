@@ -3,13 +3,6 @@
 
 
 
-## <a name="week-of-december-24-2018"></a>Недели после 24 декабря 2018
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-
-
 ## <a name="week-of-december-31-2018"></a>Недели после 31 декабря 2018
 
 
@@ -47,7 +40,7 @@
 | 11/1/2019 | [Конечные точки обороны США государственных Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | изменено |
 
 
-## <a name="week-of-january-14-2019"></a>Недели после 14 января 2019
+## <a name="week-of-january-14-2019"></a>Неделя с 14 января 2019 г.
 
 
 | Дата публикации |Название статьи | Изменение |
@@ -73,3 +66,23 @@
 | 1/25/2019 | [Перемещение сайта OneDrive в другой геообъект](/Office365/Enterprise/move-onedrive-between-geo-locations) | изменено |
 | 1/25/2019 | [Использование сети доставки содержимого Office 365 с помощью SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | изменено |
 | 1/25/2019 | [Настройка синхронизации каталогов для Office 365](/Office365/Enterprise/set-up-directory-synchronization) | изменено |
+
+
+## <a name="week-of-january-28-2019"></a>Недели после 28 января 2019
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 1/28/2019 | [Помощники по развертыванию служб Office 365](/Office365/Enterprise/deployment-advisors-for-office-365) | изменено |
+| 1/28/2019 | [Как запросить перемещение данных](/Office365/Enterprise/request-your-data-move) | изменено |
+| 1/28/2019 | [План действий после прекращения поддержки SharePoint Server 2007](/Office365/Enterprise/sharepoint-2007-end-of-support); | изменено |
+| 1/29/2019 | [Конечные точки обороны США государственных Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | изменено |
+| 1/29/2019 | [США государственных GCC высокой конечных точках Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | изменено |
+| 1/29/2019 | [URL-адреса и диапазоны IP-адресов для Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | изменено |
+| 1/30/2019 | [Подготовка организации к миграции на Office 365 корпоративный](/Office365/Enterprise/get-your-organization-ready-for-office-365) | изменено |
+| 1/30/2019 | [Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | изменено |
+| 1/30/2019 | [Использование PowerShell в Office 365 для удаления лицензий из учетных записей пользователей](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | изменено |
+| 1/30/2019 | [Просмотр лицензий и служб с помощью Office 365 PowerShell](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | изменено |
+| 1/30/2019 | [Проверка работоспособности служб Office 365](/Office365/Enterprise/view-service-health) | изменено |
+| 1/31/2019 | [Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | изменено |
+| 2/1/2019 | [Проверка работоспособности служб Office 365](/Office365/Enterprise/view-service-health) | изменено |

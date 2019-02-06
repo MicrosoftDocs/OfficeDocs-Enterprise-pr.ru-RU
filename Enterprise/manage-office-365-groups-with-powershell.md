@@ -1,8 +1,8 @@
 ---
 title: Управление группами Office 365 с помощью PowerShell
-ms.author: dianef
-author: dianef77
-manager: scotv
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: В этой статье пошаговые инструкции для выполнения типичных задач управления для групп в Microsoft PowerShell.
-ms.openlocfilehash: 23dfb7f871496b33bf9c34937977b98dc13cea6d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 83b7340cea1fd8d38bba073353b61f0b17fad8a0
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542545"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741232"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Управление группами Office 365 с помощью PowerShell
 
@@ -35,9 +35,9 @@ ms.locfileid: "22542545"
 
 - [Списки рассылки обновления в Office 365 группы](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f.aspx)
     
-- [Управление пользователей, которые можно создавать группы Office 365](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
+- [Управление разрешениями пользователей на создание групп Office 365](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
     
-- [Управление доступом гостевой группы Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+- [Управление гостевым доступом к Группам Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
     
 - [Управление группами динамически в Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632)
     
@@ -126,7 +126,7 @@ Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact>
 New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -AccessType <Public> 
 ```
 
-Ознакомьтесь [С помощью PowerShell с Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) и [подключение к Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) для получения дополнительных сведений об использовании Exchange Online PowerShell. 
+Сведения об использовании Exchange Online PowerShell см. в статьях [Использование PowerShell с Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) и [Подключение к Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415). 
   
 После включения этих параметров Владелец группы смогут выберите из раскрывающегося меню в Outlook в Outlook и веб-классификация и сохраните его на странице **Изменение** группы. 
   
@@ -204,7 +204,7 @@ Office 365 группы в Outlook создаются как частного п
   
 ## <a name="office-365-groups-cmdlets"></a>Командлеты групп Office 365
 
-Следующие командлеты недавно были сделаны доступными в Office 365 группы. Если вы не могут использовать эти, подписки Office 365 не были внесены Данная функциональная возможность еще. Установите флажок центра сообщений и [схема для Office 365](http://roadmap.office.com/en-us).
+Следующие командлеты недавно были сделаны доступными в Office 365 группы. Если вы не могут использовать эти, подписки Office 365 не были внесены Данная функциональная возможность еще. Установите флажок центра сообщений и [Стратегия Майкрософт 365](https://www.microsoft.com/microsoft-365/roadmap).
   
 |**Имя командлета**|**Описание**|
 |:-----|:-----|
