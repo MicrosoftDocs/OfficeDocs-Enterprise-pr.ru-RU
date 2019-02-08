@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: Окончание поддержки достигнуто PerformancePoint Server 2007, ProClarity и SharePoint Server 2007. Руководство по планированию обновления решения бизнес-Аналитики.
-ms.openlocfilehash: 219349a85f14ddf10058c853d69b58a52bb0d1cc
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 03db75b38bfaa32df20eafb8ede745e403bc964f
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831914"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "26617882"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки PerformancePoint Server 2007.
 
@@ -147,10 +147,12 @@ SQL Server Reporting Services предоставляет надежную реш
 
 Ли вы обновление локального перемещения в Office 365, рекомендуется работать с партнера корпорации Майкрософт. Рекомендованные партнер может помочь определить решение, наилучшим образом отвечает бизнес-требованиям и помощь в развертывании. Посетите [Центр партнеров Майкрософт](https://go.microsoft.com/fwlink/?linkid=841249)и используйте фильтры поиска, чтобы найти поставщика решений.
   
-## <a name="related-topics"></a>Смежные темы
+## <a name="related-topics"></a>Статьи по теме
 
 [Ресурсы, которые помогут вам обновление с Office 2007 серверов и клиентов](upgrade-from-office-2007-servers-and-products.md)
   
 [Группа пенсионного обеспечения Office (сообщества Microsoft Технический)](https://go.microsoft.com/fwlink/?linkid=842065)
+
+
   
 

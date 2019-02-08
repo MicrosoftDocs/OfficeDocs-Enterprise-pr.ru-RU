@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: Сводка. Настройка и демонстрация классификации и маркировки данных с помощью клиента Azure Information Protection (AIP) в среде разработки и тестирования Office 365.
-ms.openlocfilehash: 91d3b40f43eed750bd33065faa1c57d74179cf58
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 69526f8bf0ae0b6cc7509653cfaa72581e10dbfe
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914854"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897442"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Классификация и маркировка данных в среде разработки и тестирования Office 365
 
  **Сводка.** Настройка и демонстрация классификации и маркировки данных с помощью клиента Azure Information Protection (AIP) в среде разработки и тестирования Office 365.
   
-Защита информации Azure клиента можно классифицировать документа перед загрузкой с папкой SharePoint Online в Office 365. Согласно инструкциям в этой статье установить клиент Azure защита информации и демонстрации классификации данных. Дополнительные сведения содержатся в разделе [Защита информации Azure](https://www.microsoft.com/cloud-platform/azure-information-protection).
+Защита информации Azure клиент позволяет классифицировать документа перед загрузкой с папкой SharePoint Online в Office 365. Согласно инструкциям в этой статье установить клиент Azure защита информации и демонстрации классификации данных. Дополнительные сведения содержатся в разделе [Защита информации Azure](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
 > Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
@@ -126,7 +126,7 @@ ms.locfileid: "22914854"
     
 9. Нажмите кнопку **Проводник** на панели задач, а затем откройте папку **Документы**.
     
-    Обратите внимание, что файлы **ДоAIP** и **ПослеAIP** имеют разный размер. Документ "ПослеAIP" больше, так как содержит сведения о классификации.
+    Обратите внимание, различных размеров **BeforeAIP** и **AfterAIP** документы. Документ AfterAIP больше, так как она содержит сведения о классификации.
     
 Теперь необходимо разрешить всем пользователям доступ к поддержке семейства веб-сайтов.
   
@@ -150,7 +150,7 @@ ms.locfileid: "22914854"
   
 1. На вкладке **Домашняя страница Microsoft Office** щелкните значок пользователя в верхней правой части, затем нажмите **Выйти**.
     
-2. Последовательно выберите пункты [http://portal.office.com](http://portal.office.com).
+2. Перейдите по ссылке [http://portal.office.com](http://portal.office.com).
     
 3. На странице **входа Office 365** щелкните имя учетной записи User5 и вход.
     

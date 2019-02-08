@@ -3,7 +3,7 @@ title: Azure ExpressRoute для Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,19 +18,19 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Сведения об использовании Azure ExpressRoute в Office 365 и планирование реализации проекта сети, который требуется, если выполняется развертывание Azure ExpressRoute для использования с Office 365.
-ms.openlocfilehash: 5a82576b541e27c70bca490ff8dfe887ee879c83
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: c8cff4ef85c4383ba04829cf3cf8da3a1bc36715
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542342"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25911403"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute для Office 365
 
-Сведения об использовании Azure ExpressRoute в Office 365 и планирование реализации проекта сети, который требуется, если выполняется развертывание Azure ExpressRoute для использования с Office 365. Инфраструктура и платформы служб, работающих в Azure часто выиграют, устраняя рекомендации по архитектуре и производительности сети. В таких случаях рекомендуется ExpressRoute для Azure. Программное обеспечение, как службы и услуги, как Office 365 и Dynamics 365 построенных доступ к безопасности и надежности через Интернет. Соответственно только рекомендуется ExpressRoute для этих приложений в определенных сценариях. Могут читать о безопасности и производительности Интернета и когда может потребоваться Azure ExpressRoute для Office 365 в статье [сетевое подключение к Office 365](network-connectivity.md).
+Сведения об использовании Azure ExpressRoute в Office 365 и планирование реализации проекта сети, который требуется, если выполняется развертывание Azure ExpressRoute для использования с Office 365. Инфраструктура и платформы служб, работающих в Azure часто выиграют, устраняя рекомендации по архитектуре и производительности сети. В таких случаях рекомендуется ExpressRoute для Azure. Программное обеспечение, как службы и услуги, как Office 365 и Dynamics 365 построенных доступ к безопасности и надежности через Интернет. Могут читать о безопасности и производительности Интернета и когда может потребоваться Azure ExpressRoute для Office 365 в статье [сетевое подключение к Office 365](network-connectivity.md).
 
 > [!NOTE]
-> Запуск 31 июля 2017, можно включить Microsoft Peering непосредственно из консоли администрирования Azure или с помощью PowerShell. После включения Peering Майкрософт, можно создать фильтры маршрутов для получения определенного объявления маршрутов протокола BGP. Необходимо разрешение на создание фильтров для Office 365 и можно создавать фильтры приложений (ранее известных как CRM Online) Dynamics 365 сотрудничества с клиентами в любое время. В группу учетную запись Майкрософт обсудим процесс для получения авторизации для создания фильтров маршрута Office 365. Несанкционированная подписок для создания фильтров маршрутов для Office 365 получите [сообщение об ошибке](https://support.microsoft.com/kb/3181709)
+> Авторизация Microsoft необходимо использовать ExpressRoute для Office 365. Корпорация Майкрософт просматривает все запросы клиентов и авторизует ExpressRoute для использования Office 365, когда нормативные требования клиента требует прямое подключение. Если у вас есть такие требования, укажите текст отрывок и веб-ссылки на законов которого интерпретации означает, что необходимо прямое подключение в [ExpressRoute для формы запроса Office 365](https://aka.ms/O365ERReview) для начала проверки Microsoft. Несанкционированная подписок для создания фильтров маршрутов для Office 365 отображается [сообщение об ошибке](https://support.microsoft.com/kb/3181709). 
 
 Теперь можно добавить прямое сетевое подключение к Office 365 для выбранного Office 365 сетевого трафика. Azure ExpressRoute предоставляет прямое подключение прогнозируемой производительности и поставляется с соглашения об уровне ОБСЛУЖИВАНИЯ 99,95% времени работы сетевых компонентов Microsoft. Будет по-прежнему требуется подключение к Интернету для служб, которые не поддерживаются через Azure ExpressRoute.
 
@@ -96,33 +96,32 @@ ms.locfileid: "22542342"
 
 Чтобы приобрести ExpressRoute для Office 365, вам потребуются для работы с одного или нескольких [утвержденных поставщиков](https://azure.microsoft.com/documentation/articles/expressroute-locations/) для подготовки требуемого числа и размера цепи с подпиской ExpressRoute Premium. Существует никаких дополнительных лицензий на покупку из Office 365.
 
-Ниже приводится краткое связь, которую можно использовать для возврата:[https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
+Вы можете быстро вернуться сюда с помощью этой короткой ссылки: [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
 
 Подготовиться к переходу на регистрации для [ExpressRoute для Office 365](https://aka.ms/ert)?
 
 ([Azure ExpressRoute для Office 365](azure-expressroute.md#BKMK_HOME))
 
 ## <a name="related-topics"></a>Статьи по теме
-<a name="BKMK_End"> </a>
 
 [Сетевое подключение к Office 365](network-connectivity.md)
 
-[Управление подключением ExpressRoute для Office 365](managing-expressroute-for-connectivity.md)
+[Использование ExpressRoute для подключения к Office 365](managing-expressroute-for-connectivity.md)
 
-[Маршрутизация с помощью ExpressRoute для Office 365](routing-with-expressroute.md)
+[Маршрутизация с использованием ExpressRoute для Office 365](routing-with-expressroute.md)
 
 [Планирование сети при использовании ExpressRoute для Office 365](network-planning-with-expressroute.md)
 
 [Реализация ExpressRoute для Office 365](implementing-expressroute.md)
 
-[Использование протокола BGP сообществ в ExpressRoute для Office 365 сценариев (Предварительная версия)](bgp-communities-in-expressroute.md)
+[Использование сообществ BGP в ExpressRoute для сценариев Office 365 (предварительная версия)](bgp-communities-in-expressroute.md)
 
-[Качество мультимедиа и производительность подключения к сети в Скайп для бизнеса в Интернете](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Качество мультимедиа и характеристики сетевого подключения в случае Skype для бизнеса Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 
 [Настройка производительности Office 365 с помощью базовых показателей и журнала производительности](performance-tuning-using-baselines-and-history.md)
 
 [План устранения проблем с производительностью Office 365](performance-troubleshooting-plan.md)
 
-[URL-адреса и диапазоны IP-адресов для Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URL-адреса и диапазоны IP-адресов для Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
-[Office 365 сети и настройка производительности](network-planning-and-performance.md)
+[Сеть Office 365 и настройка производительности](network-planning-and-performance.md)

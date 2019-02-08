@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Описывается, почему оптимизации сетевого важна для служб SaaS, задача сети Office 365, и как SaaS требуются разные сети из других рабочих нагрузок.
-ms.openlocfilehash: ebd7410ec5fe421561543f1223e455377e99e625
-ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
+ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25002358"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897212"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Обзор сетевого подключения к Office 365
 
@@ -84,7 +84,7 @@ Office 365 предназначена для обеспечения оптима
 > [!NOTE]
 > Инфраструктуры _распределенных двери служба_ является глобальной сети Microsoft пограничных серверов высокой доступности и масштабируемости сети с географически распределенные расположения. Он завершает подключения конечных пользователей и эффективно маршрутизирует их в глобальной сети Microsoft. Дополнительные сведения о глобальной сети Microsoft на [как Microsoft создает его быстрыми и надежными глобальной сети](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
-Дополнительные сведения о Общие сведения о и применение принципов сетевого подключения к Office 365 [Сетевого подключения к Office 365 принципы](office-365-network-connectivity-principles#office-365-connectivity-principles)см.
+Дополнительные сведения о Общие сведения о и применение принципов сетевого подключения к Office 365 [Сетевого подключения к Office 365 принципы](office-365-network-connectivity-principles.md)см.
 
 ## <a name="conclusion"></a>Заключение
 

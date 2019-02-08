@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Сводка: Использование Office 365 PowerShell для управления SharePoint Online группы сайтов.'
-ms.openlocfilehash: c68e0905c0abcbea279829be7c841c31409db6cf
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 62643cabb2377c07117299dc25314cd515a06791
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975147"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897162"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Управление группами сайтов SharePoint Online с помощью Office 365 PowerShell
 
@@ -69,7 +69,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 ![SharePoint Online группы сайтов](media/SPO-site-groups.png)
 
-Далее представлены все группы, которые были созданы для сайта `https://litwareinc.sharepoint.com/sites/finance`, также все пользователи, которым назначены этим группам. Имена групп — желтого цвета, которые помогут вам имена другая группа от их участников.
+Далее представлены все группы, которые были созданы для сайта `https://litwareinc.sharepoint.com/sites/finance`и для всех пользователей, назначенных этим группам. Имена групп — желтого цвета, которые помогут вам имена другая группа от их участников.
 
 Другой пример: Вот набор команд, содержит список групп и всех членство в группах, для всех сайтов SharePoint Online.
 

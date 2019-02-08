@@ -3,7 +3,6 @@ title: Устранение проблем с синхронизацией ка�
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -15,12 +14,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Описываются распространенные причины проблем с синхронизацией каталогов в Office 365 и предоставляет несколько методов для устранения неполадок и устраните их.
-ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
-ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
+ms.openlocfilehash: 2d567daa370d651a6eb9180db2f729d09b380226
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25405132"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897312"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Устранение проблем с синхронизацией каталогов для Office 365
 
@@ -54,12 +53,12 @@ ms.locfileid: "25405132"
 
 ### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**Объекты не отображаются или обновление online или отчеты об ошибках синхронизации получены от службы.**
 
-- [Устойчивость атрибут синхронизации и повторяющихся удостоверений](https://go.microsoft.com/fwlink/p/?LinkID=798300)
+- [Устойчивость атрибут синхронизации и повторяющихся удостоверений](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
 ### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Я иметь оповещения в центре администрирования Office 365 или выводится сообщение, что не был недавнее событие синхронизации автоматическая отправка сообщения электронной почты**
-- [Устранения неполадок подключения к с Azure AD подключение](https://go.microsoft.com/fwlink/p/?LinkId=820597)
+- [Устранения неполадок подключения к с Azure AD подключение](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Azure учетные записи подключения AD и разрешения](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Azure AD подключение синхронизации: управление учетной записи службы Azure AD](https://go.microsoft.com/fwlink/p/?LinkId=820599)
+- [Azure AD подключение синхронизации: управление учетной записи службы Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [Синхронизации службы каталогов останавливает Azure Active Directory или в случае предупреждение о том, что синхронизация не зарегистрировано в более одного дня](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Не синхронизация хэши паролей или я вижу оповещения в центре администрирования Office 365, что не был последние хэш-функции синхронизации паролей**
@@ -79,7 +78,7 @@ ms.locfileid: "25405132"
    
 ## <a name="other-resources"></a>Другие ресурсы
 
-- [Сценарий для исправления дублированных основные имена](https://go.microsoft.com/fwlink/p/?LinkId=396725)
+- [Сценарий для устранения повторяющихся имен участников-пользователей](https://go.microsoft.com/fwlink/p/?LinkId=396725)
     
 - [Подготовка к синхронизации службы каталогов без поддержки маршрутизации домена (например, .local домена)](prepare-a-non-routable-domain-for-directory-synchronization.md)
     
