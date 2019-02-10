@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: Сводка. Создание имитации распределенной виртуальной сети в Microsoft Azure как среды разработки и тестирования.
-ms.openlocfilehash: 0aee14af136e0874c259faac26d83d85b188a7c7
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 7341c8cc412636e633001882edfdfc661cce9a11
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915344"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897142"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Имитация распределенной виртуальной сети в Azure
 
@@ -79,7 +79,7 @@ ms.locfileid: "22915344"
 Во-первых, запустите командную строку Azure PowerShell на своем локальном компьютере.
   
 > [!NOTE]
-> Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. См. статью [Начало работы с командлетами Azure PowerShell](https://docs.microsoft.com/ru-RU/powershell/azureps-cmdlets-docs/). 
+> Для приведенных ниже последовательностей команд используется последняя версия Azure PowerShell. См. статью [Общие сведения об Azure PowerShell](https://docs.microsoft.com/ru-RU/powershell/azureps-cmdlets-docs/). 
   
 Войдите в свою учетную запись Azure с помощью указанной ниже команды.
   
@@ -90,7 +90,7 @@ Login-AzureRMAccount
 > [!TIP]
 > Скачать текстовый файл, который содержит все команды PowerShell, указанные в этой статье, можно [здесь](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0).
   
-Получите имя подписки с помощью следующей команды.
+Получите имя подписки с помощью приведенной ниже команды.
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name

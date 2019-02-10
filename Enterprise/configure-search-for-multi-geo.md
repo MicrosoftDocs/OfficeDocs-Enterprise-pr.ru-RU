@@ -11,12 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения о настройке поиска в среде с поддержкой нескольких регионов.
-ms.openlocfilehash: 5ca2a35385ab2c246b78dc8811e8435bbdec25c7
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: c56e7d310dd6ece53fdea36df4ad94e2ebbc64cb
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849915"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "26705463"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Настройка поиска в OneDrive для бизнеса с поддержкой нескольких регионов
 
@@ -167,6 +167,9 @@ ms.locfileid: "25849915"
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Настройка отображения в специальных поисковых приложениях результатов из всех или некоторых географических расположений
 
 Специальные поисковые приложения получают результаты из всех или некоторых географических расположений, указывая параметры запроса для REST API поиска SharePoint. В зависимости от этих параметров запрос развертывается для всех или некоторых геообъектов. Например, если нужно найти релевантные данные, отправив запрос только в подмножество географических расположений, можно выполнить развертывание запроса именно для них. Если запрос будет выполнен успешно, REST API поиска SharePoint возвратит данные отклика.
+
+#### <a name="requirement"></a>Требование #### 
+Для каждого географического расположения необходимо убедиться, что всем пользователям в организации предоставлено разрешение **на чтение** корневого веб-сайта (например, contoso**APAC**.sharepoint.com/ и contoso**EU**.sharepoint.com/). [Сведения о разрешениях](https://support.office.com/ru-RU/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Параметры запроса
 

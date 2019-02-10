@@ -3,11 +3,13 @@ title: Среда разработки и тестирования Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/11/2018
+ms.date: 08/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: Сводка. Используйте это руководство, чтобы создать пробную подписку Office 365 для оценки или разработки и тестирования.
-ms.openlocfilehash: 57fdf66f11d9c71faf81e2a88482093f8f17dfbd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 1606f30e28a482e60610d15b2f1643b9dd5b3240
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897272"
 ---
 # <a name="office-365-devtest-environment"></a>Среда разработки и тестирования Office 365
 
@@ -38,7 +41,7 @@ ms.lasthandoff: 05/19/2018
 > [!NOTE]
 > Вы можете распечатать эту статью, чтобы записать значения, которые понадобятся вам для этой среды в течение 30 дней пробной подписки на Office 365. Вы легко можете продлить пробную подписку еще на 30 дней. Для постоянной среды тестирования и разработки создайте новую платную подписку с небольшим количеством лицензий. 
   
-![Руководства по лаборатории тестирования в Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Руководства по лаборатории тестирования в Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
@@ -51,7 +54,7 @@ ms.lasthandoff: 05/19/2018
   
 Ниже показана итоговая конфигурация.
   
-![Базовая конфигурация среды разработки и тестирования в Azure](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Базовая конфигурация среды разработки и тестирования в Azure](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
 
 
   
@@ -61,13 +64,13 @@ ms.lasthandoff: 05/19/2018
 
 Чтобы оформить пробную подписку на Office 365 E5, потребуются вымышленное название компании и новая учетная запись Майкрософт.
   
-1. Рекомендуем использовать в качестве названия компании какую-нибудь вариацию имени Contoso (вымышленной компании, используемой в примерах от Майкрософт), но это необязательно. Запишите здесь название своей вымышленной компании: ![](./images/Common_Images/TableLine.png)
+1. Рекомендуем использовать в качестве названия компании какую-нибудь вариацию имени Contoso (вымышленной компании, используемой в примерах от Майкрософт), но это необязательно. Запишите здесь название своей вымышленной компании: ![](./media/Common-Images/TableLine.png)
     
 2. Чтобы зарегистрировать новую учетную запись Майкрософт, перейдите на сайт [https://outlook.com](https://outlook.com) и создайте учетную запись, используя новый адрес электронной почты. Эта учетная запись будет использоваться для регистрации в Office 365.
     
-  - Запишите имя и фамилию новой учетной записи здесь: ![](./images/Common_Images/TableLine.png)
+  - Запишите имя и фамилию новой учетной записи здесь: ![](./media/Common-Images/TableLine.png)
     
-  - Запишите здесь адрес электронной почты новой учетной записи: ![](./images/Common_Images/TableLine.png)@outlook.com
+  - Запишите здесь адрес электронной почты новой учетной записи: ![](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Оформление пробной подписки на Office 365 E5
 
@@ -97,7 +100,7 @@ ms.lasthandoff: 05/19/2018
     
     Запишите пароль в надежном месте.
     
-    Запишите вымышленное название компании (**название организации**) здесь: ![](./images/Common_Images/TableLine.png)
+    Запишите вымышленное название компании (**название организации**) здесь: ![](./media/Common-Images/TableLine.png)
     
 5. Нажмите **Создать мою учетную запись**.
     
@@ -105,9 +108,9 @@ ms.lasthandoff: 05/19/2018
     
 7. Введите код подтверждения из полученного SMS и нажмите **Далее**.
     
-8. Запишите здесь URL-адрес страницы входа (выделите и скопируйте): ![](./images/Common_Images/TableLine.png)
+8. Запишите здесь URL-адрес страницы входа (выделите и скопируйте): ![](./media/Common-Images/TableLine.png)
     
-9. Запишите здесь идентификатор пользователя (выделите и скопируйте): ![](./images/Common_Images/TableLine.png).onmicrosoft.com
+9. Запишите здесь идентификатор пользователя (выделите и скопируйте): ![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Это значение будет называться **именем глобального администратора Office 365**.
     
@@ -119,7 +122,7 @@ ms.lasthandoff: 05/19/2018
   
 Ниже показана итоговая конфигурация для среды разработки и тестирования Office 365, имитирующей предприятие.
   
-![Среда разработки и тестирования Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![Среда разработки и тестирования Office 365](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 Конфигурация состоит из следующих компонентов: 
   
@@ -151,7 +154,7 @@ $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 > [!TIP]
-> Нажмите [здесь](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34), чтобы скачать текстовый файл, который содержит все команды PowerShell, приведенные в этой статье.
+> Скачать текстовый файл, который содержит все команды PowerShell, приведенные в этой статье, можно [здесь](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34).
 
 Запишите в надежном месте пароль, созданный для пользователя User 2, из вывода команды **New-MsolUser**.
   
@@ -184,8 +187,10 @@ New-MsolUser -DisplayName "User 5" -FirstName User -LastName 5 -UserPrincipalNam
   
 Затем создайте три сайта групп SharePoint Online для отделов продаж, производства и поддержки.
   
-### <a name="create-three-new-sharepoint-online-team-sites"></a>Создание трех сайтов групп SharePoint Online
+## <a name="phase-4-create-three-new-sharepoint-online-team-sites-optional"></a>Этап 4. Создание трех сайтов групп SharePoint Online (необязательно)
 
+На этом этапе выполняется настройка набора сайтов групп SharePoint Online.
+  
 1. Установите [командную консоль SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251) (версия x64).
     
 2. Нажмите кнопку **Пуск**, введите **sharepoint** и выберите **Командная консоль SharePoint Online**.
@@ -223,11 +228,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 Запишите эти значения для использования или развертывания дополнительных руководств в этой тестовой среде:
   
-- Имя глобального администратора Office 365: ![](./images/Common_Images/TableLine.png).onmicrosoft.com (с шага 9 этапа 2)
+- Имя глобального администратора Office 365: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (с шага 9 этапа 2)
     
     Кроме того, запишите пароль этой учетной записи в надежном месте.
     
-- Название организации с пробной подпиской: ![](./images/Common_Images/TableLine.png) (с шага 4 этапа 2)
+- Название организации с пробной подпиской: ![](./media/Common-Images/TableLine.png) (с шага 4 этапа 2)
     
 - Чтобы увидеть список учетных записей пользователей User 2, User 3, User 4 и User 5, выполните следующую команду в командной строке модуля Windows Azure Active Directory для Windows PowerShell:
     
@@ -237,27 +242,27 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
     Запишите здесь имена учетных записей:
     
-  - Имя учетной записи пользователя User 2: user2@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Имя учетной записи пользователя User 2: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Имя учетной записи пользователя User 3: user3@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Имя учетной записи пользователя User 3: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Имя учетной записи пользователя User 4: user4@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Имя учетной записи пользователя User 4: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Имя учетной записи пользователя User 5: user5@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Имя учетной записи пользователя User 5: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Кроме того, запишите в надежном месте пароли этих учетных записей.
     
-- Чтобы увидеть список URL-адресов сайтов групп для отделов продаж, производства и поддержки, выполните следующую команду в командной консоли SharePoint Online:
+- (Необязательно) Чтобы увидеть список URL-адресов сайтов групп для отделов продаж, производства и поддержки, выполните следующую команду в командной консоли SharePoint Online:
     
   ```
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - URL-адрес сайта производственного отдела: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
+  - URL-адрес сайта производственного отдела: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/production
     
-  - URL-адрес сайта отдела продаж: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
+  - URL-адрес сайта отдела продаж: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/sales
     
-  - URL-адрес сайта отдела поддержки: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
+  - URL-адрес сайта отдела поддержки: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Сводка. Воспользуйтесь этими руководствами по лаборатории тестирования для внедрения облака, чтобы настроить среды для демонстрации, экспериментальной установки, разработки и тестирования продуктов Office 365, Dynamics 365 и Office Server.
-ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: df4729c93f3665bdfe072102f2952d7432ad22f0
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "23041503"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897242"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Тестирование Office 365 с помощью руководств по лаборатории тестирования для внедрения облака
 
@@ -68,9 +68,9 @@ ms.locfileid: "23041503"
     
 - [Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-    Настройка и демонстрация компонента Office 365 Cloud App Security, с помощью которого можно создавать политики, отслеживающие подозрительные действия в вашей подписке на Office 365 и сообщающие вам о них.
+    Настройка и демонстрация компонента Office 365 Cloud App Security, позволяющего создавать политики, отслеживающие подозрительные действия в вашей подписке на Office 365 и сообщающие вам о них.
     
-- [Advanced Threat Protection в среде разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Advanced Threat Protection для среды разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
     Настройка и демонстрация Advanced Threat Protection — компонента Exchange Online Protection (EOP), позволяющего оградить электронную почту от вредоносных программ.
     
