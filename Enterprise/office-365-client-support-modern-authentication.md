@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Поддержка клиентского приложения Office 365 для современных проверки подлинности.
-ms.openlocfilehash: 18ef5b2219c9527594ae8fcff7e29052671d1431
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 9705c70e68ec69dcfdac09342798baf860666535
+ms.sourcegitcommit: df40eb730e416f206ca8387ef9e6f559c4e4b8a5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29771128"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29887626"
 ---
 # <a name="office-365-client-app-support---modern-authentication"></a>Поддержка приложения клиента Office 365 — современных проверки подлинности
 
@@ -32,6 +32,8 @@ ms.locfileid: "29771128"
  - Android
  - операций ввода-вывода
  - macOS
+
+Дополнительные сведения о поддержке платформ в Office 365 приведены [системные требования для Office 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Поддерживаемые клиенты
 

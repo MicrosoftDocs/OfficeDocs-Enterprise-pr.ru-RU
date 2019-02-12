@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Понять приложения службы поддержки клиентов Office 365 для управления мобильных приложений
-ms.openlocfilehash: 4dc068bb1a62d71d92af28959c95c7ffda296e45
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 8a6894f0b8cc99820507d1224966ffe41ed9febe
+ms.sourcegitcommit: df40eb730e416f206ca8387ef9e6f559c4e4b8a5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29771118"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29887585"
 ---
 # <a name="office-365-client-app-support---mobile-application-management"></a>Поддержка приложения клиента Office 365 — управления мобильных приложений
 
@@ -28,6 +28,8 @@ ms.locfileid: "29771118"
 
  - Android
  - операций ввода-вывода<sup>1</sup>
+
+Дополнительные сведения о поддержке платформ в Office 365 приведены [системные требования для Office 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Поддерживаемые клиенты
 
