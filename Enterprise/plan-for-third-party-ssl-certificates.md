@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Сводка: в статье описываются SSL-сертификаты, необходимые для локального и гибридного развертываний Exchange, единый вход со службами федерации Active Directory, службы Exchange Online и веб-службы Exchange.'
-ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: 1746cf5059ba83e225e4a2d55c8eebc082366362
+ms.sourcegitcommit: bdd0083dc9dc62994de29421a1f4056ebe27f15f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546520"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29952475"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Планирование сторонних SSL-сертификатов для Office 365
 
@@ -49,7 +49,7 @@ ms.locfileid: "27546520"
   
 ## <a name="certificates-for-single-sign-on"></a>Сертификаты для единого входа
 
-Чтобы предоставить пользователям с помощью единого входа упрощенные, включающий надежную защиту, сертификаты, приведенные в следующей таблице являются обязательными для серверов федерации или прокси-сервера федерации. В следующей таблице основное внимание уделяется служб федерации Active Directory (AD FS), также у нас есть Дополнительные сведения об [использовании Поставщики удостоверений сторонних производителей](https://go.microsoft.com/fwlink/?LinkId=532869).
+Чтобы предоставить пользователям с помощью единого входа упрощенные, включающий надежную защиту, сертификаты, приведенные в следующей таблице являются обязательными для серверов федерации или прокси-сервера федерации. В следующей таблице основное внимание уделяется служб федерации Active Directory (AD FS), также у нас есть Дополнительные сведения об [использовании Поставщики удостоверений сторонних производителей](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
   
 ||||
 |:-----|:-----|:-----|
