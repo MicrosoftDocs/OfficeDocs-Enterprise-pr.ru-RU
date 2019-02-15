@@ -1,5 +1,5 @@
 ---
-title: Поддержка нескольких регионов в OneDrive и SharePoint Online в Office 365
+title: Поддержка нескольких регионов в OneDrive для Office 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,17 +10,17 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: Расширьте свою географию присутствия Office 365 с поддержкой нескольких регионов в OneDrive и SharePoint Online.
-ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+description: Расширьте свою географию присутствия Office 365 с поддержкой нескольких регионов в OneDrive Online.
+ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
+ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200732"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30052993"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Поддержка нескольких регионов в OneDrive и SharePoint Online в Office 365
+# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a>Поддержка нескольких регионов в OneDrive для Office 365
 
-Поддержка нескольких регионов в OneDrive и SharePoint Online позволяет организации развивать бизнес в нескольких географических регионах или странах, используя существующий клиент Office 365. Обратитесь в отдел по работе с клиентами Майкрософт, чтобы зарегистрировать свою международную компанию в OneDrive для бизнеса с поддержкой нескольких регионов.
+Поддержка нескольких регионов в OneDrive Online позволяет организации развивать бизнес в нескольких географических регионах или странах, используя существующий клиент Office 365. Обратитесь в отдел по работе с клиентами Майкрософт, чтобы зарегистрировать свою международную компанию в OneDrive для бизнеса с поддержкой нескольких регионов.
   
 Поддержка нескольких регионов в службе OneDrive позволяет подготавливать и хранить неактивные данные в выбранных вами регионах, а также предоставлять современные возможности для работы всем сотрудникам.
   
