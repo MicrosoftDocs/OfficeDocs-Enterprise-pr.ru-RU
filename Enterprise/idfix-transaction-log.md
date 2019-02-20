@@ -9,25 +9,28 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: Пример и описание соглашение об именовании и уровень журнала по умолчанию в журнал транзакций Office 365 IdFix.
-ms.openlocfilehash: 016318c7e771ec6c5f90336e11c5dd011144d12e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: В этом разделе приводится пример и описывается соглашение об именовании и уровень журнала по умолчанию для журнала транзакций Office 365 IdFix.
+ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542456"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085068"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Журнал транзакций Office 365 IdFix
 
-Пример и описание соглашение об именовании и уровень журнала по умолчанию в журнал транзакций Office 365 IdFix.
+В этом разделе приводится пример и описывается соглашение об именовании и уровень журнала по умолчанию для журнала транзакций Office 365 IdFix.
   
 ## <a name="idfix-transaction-log-location"></a>Расположение журнала транзакций IdFix
 
-Средство Office 365 IdFix создает новый журнал транзакций каждый раз, нажмите кнопку **Применить** в IdFix и применить изменения к лесу Active Directory. Журнал транзакций сохраняются в ту же папку, где установлен IdFix. По умолчанию эта папка не C:\Deployment Tools\IDFix. Имя файла журнала транзакций используется формат штамп даты и времени, например, Verbose 6-1-2018 6 17 22 PM указывает файл, который был создан на 1 июня 2018 на 6:17:22 PM. подробный уровень ведения журнала. 
+Средство Office 365 IdFix создает новый журнал транзакций при каждом нажатии кнопки **Применить** в IdFix и применении изменений к лесу Active Directory. Журнал транзакций сохраняется в той же папке, где установлен IdFix. По умолчанию эта папка является К:\деплоймент Тулс\идфикс. В имени файла журнала транзакций используется формат даты и времени, например verbose 6-1-2018 6-17-22 PM указывает файл, который был создан 1 июня 2018 по 6:17:22 PM. verbose указывает уровень ведения журнала. 
   
 ## <a name="idfix-transaction-log-logging-level"></a>Уровень ведения журнала транзакций IdFix
 
@@ -35,7 +38,7 @@ ms.locfileid: "22542456"
   
 ## <a name="idfix-transaction-log-format"></a>Расположение журнала транзакций IdFix
 
-IdFix записывает результаты каждого действия **UPDATE** в журнал транзакций, как показано в следующем примере:
+IdFix записывает результаты каждого действия **обновления** в журнал транзакций, как показано в следующем примере:
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant

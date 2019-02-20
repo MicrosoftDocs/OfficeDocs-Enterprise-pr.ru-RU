@@ -8,92 +8,95 @@ ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
-description: Описываются распространенные причины проблем с синхронизацией каталогов в Office 365 и предоставляет несколько методов для устранения неполадок и устраните их.
-ms.openlocfilehash: 2d567daa370d651a6eb9180db2f729d09b380226
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: В этой статье описываются распространенные причины проблем с синхронизацией службы каталогов в Office 365, а также способы их устранения.
+ms.openlocfilehash: e83ca495ca96ac41fb2f79775c3d5970a6b538fb
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897312"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085398"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Устранение проблем с синхронизацией каталогов для Office 365
 
-С помощью синхронизации службы каталогов можно продолжить Управление пользователями и группами в локальной и синхронизация добавления, удаления и изменения в облако. Программа установки немного сложнее, но в некоторых случаях может быть трудно определить источник проблемы. У нас есть ресурсы, которые помогут вам определить потенциальные проблемы и их устранения.
+С помощью синхронизации службы каталогов можно продолжать управлять локальными пользователями и группами и синхронизировать добавления, удаления и изменения в облаке. Однако программа установки немного сложна, и иногда может быть трудно определить источник проблем. У нас есть ресурсы, которые помогут вам определить потенциальные проблемы и устранить их.
   
-## <a name="how-do-i-know-if-something-is-wrong"></a>Как узнать, что-то неверно?
+## <a name="how-do-i-know-if-something-is-wrong"></a>Как узнать, что что-то не так?
 
-Первым признаком того, что дает сбой при Плитка DirSync состояния в центре администрирования Office 365 указывает, что проблемы:
+Первый признак того, что что-то не так, когда плитка состояния DirSync в центре администрирования Office 365 указывает на наличие проблем:
   
-![Состояние DirSync плиток в предварительной версии центра администрирования](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+![Плитка состояния DirSync в предварительной версии центра администрирования](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-Также вы получите почты (альтернативного электронной почты и электронной почты администратора) с Office 365, который указывает, что клиент обнаружил ошибок синхронизации службы каталогов. Для получения дополнительных сведений см [Определение ошибок синхронизации службы каталогов в Office 365](identify-directory-synchronization-errors.md).
+Кроме того, вы получите почту из Office 365, которая указывает на то, что клиент обнаружил ошибки синхронизации службы каталогов, в альтернативную электронную почту и электронную почту администратора. Подробные сведения см. [в статье определение ошибок синхронизации каталогов в Office 365](identify-directory-synchronization-errors.md).
   
-## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Как получить средство подключения Azure Active Directory?
+## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Как получить средство Azure Active Directory Connect?
 
-В центре администрирования Office 365 перейдите к разделу ** пользователей ** \> **Активные пользователи**. Щелкните **Дополнительные** меню и выберите **синхронизации службы каталогов**. 
+в центре администрирования Office 365 перейдите к разделу * * пользователи * * \> **активные пользователи**. Откройте меню **Дополнительно** и выберите пункт **Синхронизация службы каталогов**. 
   
-![Выберите в меню Дополнительные синхронизации службы каталогов](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+![В меню Дополнительно выберите пункт Синхронизация службы каталогов.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
-В старой центра администрирования Office 365 перейдите к **пользователям** \> **Активных пользователей**и выберите **Настройка** синхронизации **Active Directory**. 
+в старом центре администрирования Office 365 перейдите к разделу **** \> **активные пользователи**пользователей и нажмите кнопку **настройка** рядом с пунктом **синхронизация active Directory**. 
   
-![Щелкните настроить синхронизации Active Directory](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
+![Нажмите кнопку "Настройка" рядом с элементом "Синхронизация Active Directory"](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
   
-Следуйте [инструкциям мастера](set-up-directory-synchronization.md) , чтобы загрузить подключить Azure AD. 
+Следуйте [инструкциям мастера](set-up-directory-synchronization.md) , чтобы скачать Azure AD Connect. 
   
-Если вы используете по-прежнему синхронизации Azure Active Directory (DirSync), посмотрите на [Устранение неполадок при установке средства синхронизации Azure Active Directory и мастер настройки сообщений об ошибках в Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) для получения сведений о требованиях к системе для установки DirSync, разрешения, необходимые и способы устранения наиболее распространенных ошибок. 
+Если вы по-прежнему используете Azure Active Directory Sync (DirSync), ознакомьтесь с [сообщениями об ошибках мастера установки и настройки средства синхронизации Azure Active Directory в Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) для получения сведений о требованиях к системе для установки DirSync, необходимые разрешения и устранение распространенных ошибок. 
   
-Для обновления от синхронизации Azure Active Directory подключение Azure AD, видеть [инструкциями по обновлению](https://go.microsoft.com/fwlink/p/?LinkId=733240).
+Чтобы обновить синхронизацию Azure Active Directory с помощью Azure AD Connect, ознакомьтесь [с инструкциями по обновлению](https://go.microsoft.com/fwlink/p/?LinkId=733240).
   
-## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a>Устранение распространенных причин проблем с синхронизацией каталогов в Office 365
+## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a>Устранение распространенных причин проблем с синхронизацией службы каталогов в Office 365
 
-### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**Объекты не отображаются или обновление online или отчеты об ошибках синхронизации получены от службы.**
+### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**Синхронизированные объекты не отображаются или не обновляются в Интернете, или я получаю отчеты об ошибках синхронизации от службы.**
 
-- [Устойчивость атрибут синхронизации и повторяющихся удостоверений](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
+- [Устойчивость к синхронизации удостоверений и дублирование атрибутов](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
-### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Я иметь оповещения в центре администрирования Office 365 или выводится сообщение, что не был недавнее событие синхронизации автоматическая отправка сообщения электронной почты**
-- [Устранения неполадок подключения к с Azure AD подключение](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
-- [Azure учетные записи подключения AD и разрешения](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Azure AD подключение синхронизации: управление учетной записи службы Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
-- [Синхронизации службы каталогов останавливает Azure Active Directory или в случае предупреждение о том, что синхронизация не зарегистрировано в более одного дня](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
+### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**У меня есть оповещение в центре администрирования Office 365 или при получении сообщений электронной почты, которые не были последними событиями синхронизации**
+- [Устранение проблем с подключением к Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
+- [Учетные записи и разрешения для Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=820598)
+- [Синхронизация Azure AD Connect: Управление учетной записью службы Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
+- [Синхронизация службы каталогов с Azure Active Directory закончится, или вы будете предупреждать о том, что синхронизация не была зарегистрирована более суток](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
-### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Не синхронизация хэши паролей или я вижу оповещения в центре администрирования Office 365, что не был последние хэш-функции синхронизации паролей**
-- [Реализация хэш-функции синхронизации паролей с помощью Azure AD подключение синхронизации](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
+### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Хеш-коды паролей не синхронизируются, или я вижу оповещение в центре администрирования Office 365, что еще не выполнялась Последняя синхронизация хэша паролей**
+- [Реализация синхронизации хэша паролей с синхронизацией Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
-### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Я вижу оповещение о превышении квот объектов**
-- У нас есть квоты встроенный объект для защиты службы. При наличии слишком большого числа объектов в каталоге, которые необходимо синхронизировать с Office 365, потребуется увеличить квоту на почтовый [контакт поддержки продуктов бизнес](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) .
+### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Я вижу предупреждение о превышении квоты объекта**
+- У нас есть встроенная квота объекта, помогающая защитить службу. Если в вашем каталоге слишком много объектов, которые необходимо синхронизировать с Office 365, вам потребуется [обратиться в службу поддержки продуктов для бизнеса](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) , чтобы увеличить квоту.
 
 ### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**Необходимо определить, какие атрибуты синхронизируются**
-- Список всех атрибутов, которые синхронизируются между локальной и облачных [право здесь](https://go.microsoft.com/fwlink/p/?LinkId=396719)можно найти.
+- Вы можете найти список всех атрибутов, которые синхронизируются между локальной средой и облаком [непосредственно](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
-### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**Не удается управлять или удалить объекты, которые были синхронизированы с облаком**
-- Все готово для управления объектами в облаке только? Или, существует ли объект, который был удаленных локальные, но обращается в облаке? Рассмотрим этот [Устранение ошибок во время синхронизации](https://go.microsoft.com/fwlink/p/?linkid=842044) и [поддержки статьи](https://go.microsoft.com/fwlink/p/?LinkId=396720) для инструкции о том, как решить эти проблемы.
+### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**Не удается управлять или удалять объекты, синхронизированные с облаком**
+- Вы готовы управлять объектами только в облаке? Есть ли в облаке объект, который был удален локально, но в облаке он застрял? Ознакомьтесь с этой статьей [об устраненИи неполадок во время синхронизации](https://go.microsoft.com/fwlink/p/?linkid=842044) и [поддержки](https://go.microsoft.com/fwlink/p/?LinkId=396720) , чтобы получить рекомендации по устранению этих проблем.
 
 ### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**Появляется сообщение о том, что в компании превышено максимальное количество объектов, которые можно синхронизировать**
-- Можно прочитать подробнее об этой проблеме [здесь](https://go.microsoft.com/fwlink/p/?LinkId=396721).
+- Подробнее об этой статье можно узнать [здесь](https://go.microsoft.com/fwlink/p/?LinkId=396721).
    
 ## <a name="other-resources"></a>Другие ресурсы
 
 - [Сценарий для устранения повторяющихся имен участников-пользователей](https://go.microsoft.com/fwlink/p/?LinkId=396725)
     
-- [Подготовка к синхронизации службы каталогов без поддержки маршрутизации домена (например, .local домена)](prepare-a-non-routable-domain-for-directory-synchronization.md)
+- [Подготовка домена, не поддерживающего маршрутизацию (например, локального домена), для синхронизации службы каталогов](prepare-a-non-routable-domain-for-directory-synchronization.md)
     
-- [Сценарий для подсчета всего синхронизированных объектов](https://go.microsoft.com/fwlink/p/?LinkId=396726)
+- [Скрипт для подсчета итоговых синхронизированных объектов](https://go.microsoft.com/fwlink/p/?LinkId=396726)
     
-- [Устранение неполадок AD FS 2.0 (en)](https://go.microsoft.com/fwlink/p/?LinkId=396727)
+- [Устранение неполадок AD FS 2,0](https://go.microsoft.com/fwlink/p/?LinkId=396727)
     
 - [Использование PowerShell для исправления пустых атрибутов DisplayName для групп с включенной поддержкой почты](https://go.microsoft.com/fwlink/p/?LinkId=396728)
     
-- [Использование PowerShell для исправления дублированных имени участника-пользователя](https://go.microsoft.com/fwlink/p/?LinkId=396730)
+- [Использование PowerShell для исправления повторяющегося имени участника-пользователя](https://go.microsoft.com/fwlink/p/?LinkId=396730)
     
-- [Использование PowerShell для исправления адреса повторяющихся электронной почты](https://go.microsoft.com/fwlink/p/?LinkId=396731)
+- [Использование PowerShell для исправления дублирующихся адресов электронной почты](https://go.microsoft.com/fwlink/p/?LinkId=396731)
     
 ## <a name="diagnostic-tools"></a>Средства диагностики
 
-[Инструмент IDFix](prepare-directory-attributes-for-synch-with-idfix.md) используется для выполнения средства обнаружения и исправлению удостоверения объектов и их атрибутов в локальной среде Active Directory при подготовке к миграции в Office 365. IDFix предназначена для администраторов Active Directory, ответственный за DirSync со службой Office 365. 
+[Средство IDFix](prepare-directory-attributes-for-synch-with-idfix.md) используется для выполнения обнаружения и исправления объектов Identity и их атрибутов в локальной среде Active Directory при подготовке к миграции в Office 365. IDFix предназначен для администраторов Active Directory, ответственных за DirSync, с помощью службы Office 365. 
 
-[Загрузите средство IDFix](https://go.microsoft.com/fwlink/p/?LinkId=396718) из центра загрузки Майкрософт.
+[Скачайте средство IDFix](https://go.microsoft.com/fwlink/p/?LinkId=396718) из центра загрузки Майкрософт.
