@@ -3,22 +3,6 @@
 
 
 
-## <a name="week-of-january-14-2019"></a>Неделя с 14 января 2019 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 1/15/2019 | [Принципы сетевого подключения к Office 365](/Office365/Enterprise/office-365-network-connectivity-principles) | изменено |
-| 1/15/2019 | [Планирование сети и настройка производительности для Office 365](/Office365/Enterprise/network-planning-and-performance) | изменено |
-| 1/16/2019 | [Поддержка IPv6 в службах Office 365](/Office365/Enterprise/ipv6-support) | изменено |
-| 1/16/2019 | [Отображение списков пользователей с лицензиями и пользователей без лицензий с помощью Office 365 PowerShell](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | изменено |
-| 1/16/2019 | [Просмотр ошибок синхронизации каталогов в Office 365](/Office365/Enterprise/identify-directory-synchronization-errors) | изменено |
-| 1/16/2019 | [Общие сведения о гибридном облаке](/Office365/Enterprise/hybrid-cloud-overview) | изменено |
-| 1/17/2019 | [Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | изменено |
-| 1/17/2019 | [Конечные точки DoD Office 365 для государственных учреждений (США)](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | изменено |
-| 1/17/2019 | [Office 365 США для государственных организаций GCC High](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | изменено |
-
-
 ## <a name="week-of-january-21-2019"></a>Неделя 21 января 2019 г.
 
 
@@ -80,3 +64,38 @@
 | 2/14/2019 | [Поддержка нескольких регионов в OneDrive для Office 365](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | изменено |
 | 2/14/2019 | [Принципы сетевого подключения к Office 365](/Office365/Enterprise/office-365-network-connectivity-principles) | изменено |
 | 2/14/2019 | [Просмотр сведений о лицензии и службе учетной записи с помощью PowerShell в Office 365](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | изменено |
+
+
+## <a name="week-of-february-18-2019"></a>Неделя с 18 февраля 2019 г.
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 2/19/2019 | [Идентификация в Office 365 и Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | изменено |
+| 2/19/2019 | [Интеграция Azure с Office 365](/Office365/Enterprise/azure-integration) | изменено |
+| 2/19/2019 | [Настройка служб и приложений Office 365 корпоративный](/Office365/Enterprise/configure-services-and-applications) | изменено |
+| 2/19/2019 | [Помощники по развертыванию служб Office 365](/Office365/Enterprise/deployment-advisors-for-office-365) | изменено |
+| 2/19/2019 | [Контрольный список планирования развертывания Office 365](/Office365/Enterprise/deployment-planning-checklist) | изменено |
+| 2/19/2019 | [Устранение проблем с синхронизацией каталогов для Office 365](/Office365/Enterprise/fix-problems-with-directory-synchronization) | изменено |
+| 2/19/2019 | [Подготовка организации к миграции на Office 365 корпоративный](/Office365/Enterprise/get-your-organization-ready-for-office-365) | изменено |
+| 2/19/2019 | [Просмотр ошибок синхронизации каталогов в Office 365](/Office365/Enterprise/identify-directory-synchronization-errors) | изменено |
+| 2/19/2019 | [Исключаемые и поддерживаемые объекты и атрибуты IdFix](/Office365/Enterprise/idfix-excluded-and-supported-objects-and-attributes) | изменено |
+| 2/19/2019 | [Журнал транзакций Office 365 IdFix](/Office365/Enterprise/idfix-transaction-log) | изменено |
+| 2/19/2019 | [Установка и запуск средства Office 365 IdFix](/Office365/Enterprise/install-and-run-idfix) | изменено |
+| 2/19/2019 | [Инструменты для управления учетными записями Office 365](/Office365/Enterprise/manage-office-365-accounts) | изменено |
+| 2/19/2019 | [Поддержка клиентских приложений Office 365 — условный доступ](/Office365/Enterprise/office-365-client-support-conditional-access) | изменено |
+| 2/19/2019 | [Поддержка клиентских приложений Office 365 — управление мобильными приложениями](/Office365/Enterprise/office-365-client-support-mobile-application-management) | изменено |
+| 2/19/2019 | [Поддержка клиентских приложений Office 365 — современная проверка поДлинности](/Office365/Enterprise/office-365-client-support-modern-authentication) | изменено |
+| 2/19/2019 | [Использование домена для интеграции с локальной службой электронной почты, например с помощью службы каталогов](/Office365/Enterprise/office-365-integration) | изменено |
+| 2/19/2019 | [Планирование синхронизации службы каталогов для Office 365](/Office365/Enterprise/plan-for-directory-synchronization) | изменено |
+| 2/19/2019 | [Планирование сторонних SSL-сертификатов для Office 365](/Office365/Enterprise/plan-for-third-party-ssl-certificates) | изменено |
+| 2/19/2019 | [Подготовка домена, не поддерживающего маршрутизацию, для синхронизации службы каталогов](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | изменено |
+| 2/19/2019 | [Подготовка атрибутов каталога к синхронизации с Office 365 с помощью инструмента IdFix](/Office365/Enterprise/prepare-directory-attributes-for-synch-with-idfix) | изменено |
+| 2/19/2019 | [Подготовка пользователей к работе путем синхронизации каталогов с Office 365](/Office365/Enterprise/prepare-for-directory-synchronization); | изменено |
+| 2/19/2019 | [Настройка синхронизации каталогов для Office 365](/Office365/Enterprise/set-up-directory-synchronization) | изменено |
+| 2/19/2019 | [Развертывание Office 365 корпоративный для организации](/Office365/Enterprise/setup-overview-for-enterprises) | изменено |
+| 2/19/2019 | [Инструменты для управления учетными записями Office 365](/Office365/Enterprise/tools-to-manage-office-365-accounts) | изменено |
+| 2/19/2019 | [Отключение синхронизации каталогов для Office 365](/Office365/Enterprise/turn-off-directory-synchronization) | изменено |
+| 2/19/2019 | [Просмотр состояния синхронизации каталогов в Office 365](/Office365/Enterprise/view-directory-synchronization-status) | изменено |
+| 2/19/2019 | [Проверка работоспособности служб Office 365](/Office365/Enterprise/view-service-health) | изменено |
+| 2/21/2019 | [Управление конечными точками Office 365](/Office365/Enterprise/managing-office-365-endpoints) | изменено |
