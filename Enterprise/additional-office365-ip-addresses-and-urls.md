@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: Сводка. В новой веб-службе конечных точек отсутствует небольшое количество конечных точек для определенных сценариев.
 hideEdit: true
-ms.openlocfilehash: 2e25ed32a6e88654f583b4bdca2ff04e6a4c96ff
-ms.sourcegitcommit: 0c4f50aa55699b8390038efbb8b50dbe10f3eefe
+ms.openlocfilehash: 02deeb06f73b836d95a738ca8566bc2554010aa4
+ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723376"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242091"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365
 
@@ -56,7 +56,7 @@ ms.locfileid: "28723376"
 | 10  | Служба AutoDetect используется в сценариях [гибридного развертывания Exchange](https://docs.microsoft.com/exchange/exchange-deployment-assistant) с [гибридной современной проверкой подлинности в Outlook для iOS и Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Локальный сервер Exchange клиента на TCP 443 | Входящий серверный трафик |
 | 11  | Skype для бизнеса в Office 2016 включает демонстрацию экрана с видео, для которой используются порты UDP. Более ранние клиенты Skype для бизнеса в Office 2013 и предшествовавших версий использовали RDP через порт 443 TCP. | Порт 443 TCP открыт для 52.112.0.0/14 | Более ранние версии клиента Skype для бизнеса в Office 2013 и предшествующих версиях |
 | 12  | Возможность подключения гибридного локального сервера Skype для бизнеса к службе Skype для бизнеса Online | Порты UDP 13.107.64.0/18, 52.112.0.0/14, 50 000–59 999 <BR>  Порты TCP 50 000–59 999 | Возможность исходящего подключения к локальному серверу Skype для бизнеса |
-| 13  | Облачной ТСОП с возможностью гибридного локального подключения требуется поддержка подключения сети к локальным узлам. Дополнительные сведения о гибридных конфигурациях Skype для бизнеса Online  | см. в статье [Гибридное решение Skype для бизнеса](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions). | Гибридное входящее локальное подключение Skype для бизнеса |
+| 13  | Облачной ТСОП с возможностью гибридного локального подключения требуется поддержка подключения сети к локальным узлам. Дополнительные сведения о гибридных конфигурациях Skype для бизнеса Online  | См. статью [Планирование гибридного соединения Skype для бизнеса Server и Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity). | Гибридное входящее локальное подключение Skype для бизнеса |
 | 14  | **FQDN для проверки подлинности и идентификации** <br> Для функционирования полное доменное имя ```secure.aadcdn.microsoftonline-p.com``` должно находиться в зоне надежных сайтов Internet Explorer (IE) или Microsoft Edge. |  | Надежные сайты |
 | 15  |  **Полные доменные имена Microsoft Teams** <br> Если вы используете Internet Explorer или Microsoft Edge, вам нужно разрешить основные и сторонние файлы cookie, а также добавить полные доменные имена Teams в список надежных сайтов (в дополнение к полным доменным именам для всего набора, CDN и телеметрии, перечисленной в строке 14). Дополнительные сведения см. в статье [Известные проблемы Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Надежные сайты |
 | 16  |  **Полные доменные имена SharePoint Online и OneDrive для бизнеса** <br> Для функционирования все полные доменные имена ". sharepoint.com", имеющие в имени "\<клиент>", должны находиться в зоне надежных сайтов IE или Microsoft Edge вашего клиента. Эти конечные точки необходимо добавить в дополнение к полным доменным именам для всего набора, CDN и телеметрии, перечисленным в строке 14. |  | Надежные сайты |
