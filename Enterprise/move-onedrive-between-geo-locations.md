@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения о перемещении сайта OneDrive в другой геообъект.
-ms.openlocfilehash: 4d55ce087b475b9364a4e1584a1ac4947cc1ba85
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 13210d354c45c2d4927ac3de34512bc75a09c14b
+ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29547137"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30458329"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Перемещение сайта OneDrive в другой геообъект 
 
@@ -68,6 +68,8 @@ ms.locfileid: "29547137"
 Чтобы проверить, все ли геообъекты совместимы, выполните такую команду:
 
 `Get-SPOGeoMoveCrossCompatibilityStatus`
+
+Вы увидите список ваших геообъектов, а контент, который можно перемещать между ними будет обозначен как Compatible (Совместимый). Если команда возвращает значение Incompatible (Несовместимый), попробуйте проверить состояние позднее.
 
 Переместить службу OneDrive невозможно, если она находится в состоянии удержания по юридическим причинам или содержит дочерний сайт. Чтобы проверить возможность перемещения OneDrive, выполните командлет Start-SPOUserAndContentMove с параметром -ValidationOnly.
 
