@@ -62,6 +62,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 -->
   
 <a name="cloudarch"></a>
+
 ## Серия "Облако Майкрософт для корпоративных архитекторов"
 
 На этих плакатах об облачной архитектуре приведена информация об облачных службах Майкрософт, в том числе Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, а также гибридных и облачных решениях. При помощи этих ресурсов ответственные ИТ-специалисты и архитекторы могут определять подходящие варианты для своих рабочих нагрузок, а также принимать решения по основным компонентам инфраструктуры, таким как идентификация и безопасность.
@@ -79,6 +80,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
    
 <a name="identity"> </a>
+
 ### Идентификация в облаке Майкрософт для корпоративных архитекторов
 
 Сведения для ИТ-архитекторов о создании системы удостоверений для организаций, использующих облачные службы и платформы Майкрософт.
@@ -134,6 +136,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 |[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
    
 <a name="BKMK_o365solutions"></a>
+
 ## Серия "Корпоративные решения для Microsoft 365"
 
 В серии "Корпоративные решения для Microsoft 365" представлены инструкции по реализации возможностей Microsoft 365, особенно при их пересечении с технологиями.
@@ -150,6 +153,7 @@ Capabilities for enterprise organizations to protect corporate assets.
 -->
    
 <a name="BKMK_O365IDP"></a>
+
 ### Защита идентификации и устройств для Office 365
 
 Рекомендуемые возможности для защиты удостоверений и устройств, имеющих доступ к Office 365 и отличных от SaaS-служб и локальных приложений, которые опубликованы с помощью прокси приложения Azure AD.
