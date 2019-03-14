@@ -3,7 +3,7 @@ title: Причины использования Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 03/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Сводка: в этой статье рассказывается, почему необходимо использовать PowerShell в Office 365 для управления Office 365:: в ряде случаев это может быть более эффективно, а в других  вызвано необходимостью.'
-ms.openlocfilehash: 9909d9665817646f7c70c66012af4b8762cceaa1
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 32110b56f1123e404b1eb7996a9af5d244874377
+ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897472"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30538997"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Причины использования Office 365 PowerShell
 
@@ -65,7 +65,7 @@ Get-Mailbox
   
 ![Пример отображения пользователей и групп в Центре администрирования Office 365.](media/o365-powershell-users-and-groups.png)
   
-В различных целях отображает сведения, которые необходимо знать. Тем не менее бывают ситуации, когда может потребоваться больше. Например, лицензирование Office 365 (и Office 365 функции, доступные пользователю) зависят от частично географического расположения этого пользователя. Политики и компонентов, которые можно использовать для пользователей, проживающих в Соединенных Штатах Америки могут не совпадать с политик и компонентов, которые можно использовать для пользователей, проживающих в Индии или Бельгия. Можно использовать Центр администрирования Office 365 для определения географическое расположение пользователя в результате этих действий:
+Для многих целей отображаются сведения, которые необходимо знать. Однако бывают случаи, когда вам требуется больше времени. Например, лицензирование Office 365 (и возможности Office 365, доступные пользователю) зависят от географического расположения этого пользователя. Политики и функции, которые вы можете расширить для пользователя, который живет в США, могут отличаться от политик и функций, которые можно расширить для пользователя, который живет в Индии или в Бельгии. С помощью центра администрирования Office 365 вы можете определить географическое расположение пользователя, выполнив указанные ниже действия.
   
 1. Дважды щелкните **отображаемое имя** пользователя.
     
@@ -93,7 +93,6 @@ Get-MsolUser | Select DisplayName, UsageLocation
 ```
 DisplayName                               UsageLocation
 -----------                               -------------
-Zrinka Makovac                            US
 Bonnie Kearney                            GB
 Fabrice Canel                             BR
 Brian Johnson (TAILSPIN)                  US
@@ -122,7 +121,6 @@ Bonnie Kearney                              GB
 Alex Darrow                                 US
 Anne Wallace                                US
 Brian Johnson (TAILSPIN)                    US
-Zrinka Makovac                              US
 ```
 
 > [!TIP]
@@ -274,7 +272,6 @@ Alex Darrow                              San Diego
 Bonnie Kearney                           San Diego
 Julian Isla                              Bloomington
 Rob Young                                Bloomington
-Zrinka Makovac                           San Diego
 ```
 
 > [!TIP]
@@ -329,7 +326,7 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>PowerShell для Office 365 упрощает печать и сохранение данных
 
-Центр администрирования Office 365 позволяет просматривать списки данных. Ниже приведен пример Скайп по центру администрирования Online бизнеса, отображение списка пользователей, которым был разрешен доступ к Скайп для бизнеса в Интернет:
+Центр администрирования Office 365 позволяет просматривать списки данных. Ниже приведен пример, где в Центре администрирования Skype для бизнеса Online отображается список пользователей, для которых включено приложение Skype для бизнеса Online:
   
 ![Пример Центра администрирования Skype для бизнеса Online со списком пользователей, для которых включен Skype для бизнеса Online.](media/o365-powershell-lync-users.png)
   
@@ -407,7 +404,6 @@ $x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB
 ```
 DisplayName             IsLicensed   IsMailboxEnabled   EnabledForSfB
 -----------             ----------   ----------------   --------------
-Zrinka Makovac          True         True               True
 Bonnie Kearney          True         True               True
 Fabrice Canel           True         True               True
 Brian Johnson           False        True               False

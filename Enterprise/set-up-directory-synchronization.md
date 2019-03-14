@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Узнайте, как настроить синхронизацию каталогов между Office 365 и локальной службой Active Directory.
-ms.openlocfilehash: 5f6e5be2a2137ee183a7d592d9a3e6b086e5be9a
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 03f824da6feb41791e12818d8da2e298dc633f4e
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085268"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492949"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Настройка синхронизации каталогов для Office 365
 
@@ -52,13 +52,13 @@ ms.locfileid: "30085268"
 |**Серверная операционная система**|**другое программное обеспечение. **|
 |:-----|:-----|
 |**Windows Server 2012 R2** | -PowerShell устанавливается по умолчанию, никакие действия не требуются.  <br> – NET 4.5.1 и более поздние версии предлагаются через обновление Windows. Убедитесь, что установлены последние обновления для Windows Server на панели управления. |
-|**Windows server 2008 R2 с пакетом обновления 1 (SP1)** или **Windows Server 2012** | — Последняя версия PowerShell доступна в Windows Management Framework 4,0. Выполните поиск в [центре загрузки Майкрософт](https://go.microsoft.com/fwlink/p/?LinkId=717996).<br> .NET 4.5.1 и более поздние версии доступны в [центре загрузки Майкрософт](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
+|**Windows server 2008 R2 с пакетом обновления 1 (SP1)** или **Windows Server 2012** | — Последняя версия PowerShell доступна в Windows Management Framework 4,0. Выполните поиск в [центре загрузки Майкрософт](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> .NET 4.5.1 и более поздние версии доступны в [центре загрузки Майкрософт](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
 |**Windows Server 2008** | -Последняя поддерживаемая версия PowerShell доступна в Windows Management Framework 3,0, которая доступна в [центре загрузки Майкрософт](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> .NET 4.5.1 и более поздние версии доступны в [центре загрузки Майкрософт](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
 
 > [!NOTE]
 > Если вы используете Azure Active Directory DirSync, максимальное число членов группы рассылки, которые можно синхронизировать из локального каталога Active Directory с Azure Active Directory, — 15 000. Для Azure AD Connect это число равно 50 000. 
   
-Чтобы тщательно проанализировать требования к оборудованию, программному обеспечению, учетным записям и разрешениям, требования к сертификатам SSL и ограничению объектов для Azure AD Connect, прочитайте [необходимые компоненты для Azure Active Directory Connect](https://go.microsoft.com/fwlink/p/?LinkId=716896).
+Чтобы тщательно проанализировать требования к оборудованию, программному обеспечению, учетным записям и разрешениям, требования к сертификатам SSL и ограничению объектов для Azure AD Connect, прочитайте [необходимые компоненты для Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
   
 Вы также можете ознакомиться с журналом выпусков для [версии](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history) Azure AD Connect, чтобы узнать, какие из них включены и исправлены в каждом выпуске.
 
