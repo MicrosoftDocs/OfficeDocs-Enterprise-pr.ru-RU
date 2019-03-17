@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: Сводка. Настройка федеративной проверки подлинности с высоким уровнем доступности для подписки на Office 365 в Microsoft Azure.
-ms.openlocfilehash: 9ab2cf992a0170e8b6528c74c868f0db5feeb6e1
-ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
+ms.openlocfilehash: 7c039cd72fabdd6c3ab66a61ce9fd7b861a97f8e
+ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "26024661"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "30650122"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365
 
@@ -110,7 +110,8 @@ ms.locfileid: "26024661"
 
 Начните настройку этой рабочей нагрузки с ознакомления со статьей [Этап 1. Федеративная проверка подлинности для обеспечения высокой доступности: настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
   
+<!--
 > [!TIP]
-> Чтобы быстрее выполнить развертывание федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Azure, воспользуйтесь [этим комплектом средств](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
- 
+> For a set of files to more quickly deploy your high availability federated authentication for Office 365 in Azure, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+--> 
 
