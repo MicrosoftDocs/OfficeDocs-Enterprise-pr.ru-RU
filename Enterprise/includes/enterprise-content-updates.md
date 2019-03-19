@@ -30,20 +30,58 @@
 | 3/8/2019 | [Планирование и тестирование загрузки SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | изменено |
 
 
-## <a name="week-of-february-04-2019"></a>Неделя с 4 февраля 2019 г.
+## <a name="week-of-march-11-2019"></a>Неделя с 11 марта 2019 г.
 
 
 | Дата публикации |Название статьи | Изменение |
 |------|------------|--------|
-| 2/5/2019 | [Управление группами Office 365 с помощью PowerShell](/Office365/Enterprise/manage-office-365-groups-with-powershell) | изменено |
-| 2/5/2019 | [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | изменено |
-| 2/5/2019 | [Управление группами Office 365 с помощью PowerShell](/Office365/Enterprise/powershell/manage-office-365-groups-with-powershell) | изменено |
-| 2/6/2019 | Управление группами Office 365 с помощью PowerShell | удалены |
-| 2/6/2019 | [Управление группами Office 365 с помощью PowerShell](/Office365/Enterprise/powershell/manage-office-365-groups-with-powershell) | изменено |
-| 2/7/2019 | [Управление конечными точками Office 365](/Office365/Enterprise/managing-office-365-endpoints) | изменено |
-| 2/7/2019 | [Поддержка клиентских приложений Office 365 — условный доступ](/Office365/Enterprise/office-365-client-support-conditional-access) | изменено |
-| 2/7/2019 | [Поддержка клиентских приложений Office 365 — управление мобильными приложениями](/Office365/Enterprise/office-365-client-support-mobile-application-management) | изменено |
-| 2/7/2019 | [Поддержка клиентских приложений Office 365 — современная проверка поДлинности](/Office365/Enterprise/office-365-client-support-modern-authentication) | изменено |
+| 3/11/2019 | [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | изменено |
+| 3/11/2019 | [Просмотр учетных записей пользователей с помощью PowerShell для Office 365](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | изменено |
+| 3/11/2019 | [Зачем использовать Office 365 PowerShell](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | изменено |
+| 3/13/2019 | [Advanced eDiscovery для среды разработки и тестирования Office 365](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | изменено |
+| 3/13/2019 | [Advanced Threat Protection в среде разработки и тестирования Office 365](/Office365/Enterprise/advanced-threat-protection-for-your-office-365-dev-test-environment) | изменено |
+| 3/13/2019 | [Тестирование Office 365 с руководством по лаборатории тестирования для внедрения в облако (руководствах TLG)](/Office365/Enterprise/cloud-adoption-test-lab-guides-tlgs) | изменено |
+| 3/13/2019 | [Cloud App Security для среды разработки и тестирования Office 365](/Office365/Enterprise/cloud-app-security-for-your-office-365-dev-test-environment) | изменено |
+| 3/13/2019 | [Классификация и маркировка данных в среде разработки и тестирования Office 365](/Office365/Enterprise/data-classification-and-labeling-in-the-office-365-dev-test-environment) | изменено |
+| 3/13/2019 | [Развертывание синхронизации каталогов Office 365 в Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | изменено |
+| 3/13/2019 | [Синхронизация каталогов для среды разработки и тестирования Office 365](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | изменено |
+| 3/13/2019 | [Интеграция с Exchange Online для среды разработки и тестирования Office 365 и Dynamics 365](/Office365/Enterprise/exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro) | изменено |
+| 3/13/2019 | [ExpressRoute для подключения к Microsoft Cloud](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | изменено |
+| 3/13/2019 | [Федеративное удостоверение для среды разработки и тестирования Office 365](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | изменено |
+| 3/13/2019 | [Облачные сети Майкрософт для корпоративных архитекторов](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | изменено |
+| 3/13/2019 | [Многофакторная проверка подлинности для среды разработки и тестирования Office 365](/Office365/Enterprise/multi-factor-authentication-for-your-office-365-dev-test-environment) | изменено |
+| 3/13/2019 | [Планирование миграции и использования сети для Office 365](/Office365/Enterprise/network-and-migration-planning) | изменено |
+| 3/13/2019 | [Среда разработки и тестирования для Office 365 и Dynamics 365](/Office365/Enterprise/office-365-and-dynamics-365-dev-test-environment) | изменено |
+| 3/13/2019 | [Среда разработки и тестирования Office 365](/Office365/Enterprise/office-365-dev-test-environment) | изменено |
+| 3/13/2019 | [Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | изменено |
+| 3/13/2019 | [Управление Exchange Online с помощью Office 365 PowerShell](/Office365/Enterprise/powershell/manage-exchange-online-with-office-365-powershell) | изменено |
+| 3/13/2019 | [Управление SharePoint Online с помощью Office 365 PowerShell](/Office365/Enterprise/powershell/manage-sharepoint-online-with-office-365-powershell) | изменено |
+| 3/13/2019 | [Manage SharePoint Online site groups with Office 365 PowerShell](/Office365/Enterprise/powershell/manage-sharepoint-site-groups-with-powershell). | изменено |
+| 3/13/2019 | [Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell](/Office365/Enterprise/powershell/manage-sharepoint-users-and-groups-with-powershell) . | изменено |
+| 3/13/2019 | [Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](/Office365/Enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell) | изменено |
+| 3/13/2019 | [Прямая миграция в Office 365 с помощью PowerShell](/Office365/Enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365) | изменено |
+| 3/13/2019 | [Поэтапная миграция в Office 365 с помощью PowerShell](/Office365/Enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365) | изменено |
+| 3/13/2019 | [Зачем использовать Office 365 PowerShell](/Office365/Enterprise/powershell/why-you-need-to-use-office-365-powershell) | изменено |
+| 3/13/2019 | [Защита учетных записей глобального администратора Office 365](/Office365/Enterprise/protect-your-global-administrator-accounts) | изменено |
+| 3/13/2019 | [Защита конфиденциальных файлов в среде разработки и тестирования Office 365](/Office365/Enterprise/sensitive-file-protection-in-the-office-365-dev-test-environment) | изменено |
+| 3/13/2019 | [Подписки, лицензии, учетные записи и клиенты для облачных предложений корпорации Майкрософт](/Office365/Enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) | изменено |
+| 3/13/2019 | [Среда разработки и тестирования One Microsoft Cloud](/Office365/Enterprise/the-one-microsoft-cloud-dev-test-environment) | изменено |
+| 3/14/2019 | [Сети доставки содержимого](/Office365/Enterprise/content-delivery-networks) | изменено |
+| 3/14/2019 | [Вопросы и ответы по работе с видео о сети Office 365](/Office365/Enterprise/office-365-video-networking-faq) | изменено |
+| 3/15/2019 | [Перемещение основных данных в новые жеос центра обработки данных Office 365](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | изменено |
+| 3/15/2019 | [Во время и после перемещения данных](/Office365/Enterprise/during-and-after-your-data-move) | изменено |
+| 3/15/2019 | [Базовая конфигурация среды разработки и тестирования](/Office365/Enterprise/base-configuration-dev-test-environment) | изменено |
+| 3/15/2019 | [Подключение локальной сети к виртуальной сети Microsoft Azure](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | изменено |
+| 3/15/2019 | [Развертывание федеративной проверки подлинности для обеспечения высокой доступности Office 365 в Azure](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | изменено |
+| 3/15/2019 | [Развертывание синхронизации каталогов Office 365 в Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | изменено |
+| 3/15/2019 | [Федеративное удостоверение для среды разработки и тестирования Office 365](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | изменено |
+| 3/15/2019 | [Этап 1 для федеративной проверки подлинности с высоким уровнем доступности. Настройка Azure](/Office365/Enterprise/high-availability-federated-authentication-phase-1-configure-azure) | изменено |
+| 3/15/2019 | [Этап 2 для федеративной проверки подлинности с высоким уровнем доступности настройка контроллеров домена](/Office365/Enterprise/high-availability-federated-authentication-phase-2-configure-domain-controllers) | изменено |
+| 3/15/2019 | [Этап 3 для федеративной проверки подлинности с высоким уровнем доступности. Настройка серверов AD FS](/Office365/Enterprise/high-availability-federated-authentication-phase-3-configure-ad-fs-servers) | изменено |
+| 3/15/2019 | [Фаза федеративной проверки подлинности высокого уровня доступности 4 Настройка прокси-серверов веб-приложений](/Office365/Enterprise/high-availability-federated-authentication-phase-4-configure-web-application-pro) | изменено |
+| 3/15/2019 | [Среда разработки и тестирования Office 365](/Office365/Enterprise/office-365-dev-test-environment) | изменено |
+| 3/15/2019 | [Запрос на перемещение данных](/Office365/Enterprise/request-your-data-move) | изменено |
+| 3/15/2019 | [Имитация распределенной виртуальной сети в Azure](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | изменено |
 
 
 ## <a name="week-of-february-11-2019"></a>Неделя с 11 февраля 2019 г.
