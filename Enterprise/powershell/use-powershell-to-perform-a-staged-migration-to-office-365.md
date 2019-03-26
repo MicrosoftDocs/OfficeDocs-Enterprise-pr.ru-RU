@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: Сводка. Узнайте, как использовать Windows PowerShell для поэтапной миграции в Office 365.
-ms.openlocfilehash: d30bb27700199379ea96b157051110af49bf95fa
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 3e390502e239573f1b3c93f5e3d46c0aa0f4579a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17504372"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574113"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Поэтапная миграция в Office 365 с помощью PowerShell
 
@@ -236,7 +236,7 @@ Get-MigrationBatch StagedBatch1
 ### <a name="step7-assign-licenses-to-office-365-users"></a>Шаг 7. Назначение лицензий пользователям Office 365
 <a name="BK_Endpoint"> </a>
 
-Активируйте учетные записи пользователей Office 365 для перенесенных учетных записей, назначив им лицензии. Если не назначить лицензию, почтовый ящик будет отключен по истечении льготного периода (30 дней). Сведения о назначении лицензии в Центре администрирования Центр администрирования Office 365 см. в статье [Назначение и отмена лицензий для Office 365 бизнес](https://go.microsoft.com/fwlink/?LinkId=536681).
+Активируйте учетные записи пользователей Office 365 для перенесенных учетных записей, назначив им лицензии. Если не назначить лицензию, почтовый ящик отключится по окончании льготного периода (30 дней). Сведения о назначении лицензии в Центре администрирования Microsoft 365 см. в статье [Назначение и удаление лицензий Office 365 для бизнеса](https://go.microsoft.com/fwlink/?LinkId=536681).
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Шаг 8. Необходимые действия после миграции
 <a name="BK_Postmigration"> </a>

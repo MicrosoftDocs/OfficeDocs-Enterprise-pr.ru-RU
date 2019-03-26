@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: Сводка. Используйте это руководство, чтобы создать пробную подписку Office 365 для оценки или разработки и тестирования.
-ms.openlocfilehash: 1606f30e28a482e60610d15b2f1643b9dd5b3240
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 7a7b12038acf914667655decee52993286faab1e
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897272"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574003"
 ---
 # <a name="office-365-devtest-environment"></a>Среда разработки и тестирования Office 365
 
@@ -118,7 +118,7 @@ ms.locfileid: "25897272"
     
 11. На следующей странице дождитесь завершения настройки Office 365 и появления всех плиток.
     
-Появится главная страница портала Office 365, с которой можно получить доступ к службам Office Online и Центру администрирования Office 365.
+Появится главная страница портала Office 365, с которой можно получить доступ к службам Office Online и Центру администрирования Microsoft 365.
   
 Ниже показана итоговая конфигурация для среды разработки и тестирования Office 365, имитирующей предприятие.
   
@@ -153,8 +153,10 @@ $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
 $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
+<!--
 > [!TIP]
-> Скачать текстовый файл, который содержит все команды PowerShell, приведенные в этой статье, можно [здесь](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34).
+> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) to get a text file that has all the PowerShell commands in this article.
+-->
 
 Запишите в надежном месте пароль, созданный для пользователя User 2, из вывода команды **New-MsolUser**.
   
