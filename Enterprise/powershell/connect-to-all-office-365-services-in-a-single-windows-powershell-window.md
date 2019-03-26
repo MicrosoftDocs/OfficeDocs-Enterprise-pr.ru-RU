@@ -16,18 +16,18 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Сводка: подключение Windows PowerShell ко всем службам Office 365 в отдельном окне Windows PowerShell.'
-ms.openlocfilehash: 38221a2c9b50aaeab217016336cf4d020abd706a
-ms.sourcegitcommit: 2e5e2c65a1b785e229f1f7fd5b219f1b3de96f97
+ms.openlocfilehash: 3f6153d5ea8b88d8c6853dbbe597f2cf7cc62fab
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30339517"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573973"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell
 
  **Сводка:** Вместо того чтобы управлять различными службами Office 365 в разных окнах консоли PowerShell, можно подключаться ко всем службам Office 365 и управлять ими из одного окна консоли.
   
-При использовании PowerShell для управления Office 365 можно одновременно открыть до пяти разных сеансов Windows PowerShell, соответствующих центру администрирования Office 365, SharePoint Online, Exchange Online, Skype для бизнеса Online и безопасности &amp;Центр соответствия требованиям. С пятью методами подключения, которые находятся в разных сеансах Windows PowerShell, ваш рабочий стол может выглядеть следующим образом:
+При использовании PowerShell для управления Office 365 можно одновременно открыть до пяти разных сеансов Windows PowerShell, соответствующих центру администрирования Microsoft 365, SharePoint Online, Exchange Online, Skype для бизнеса Online и безопасности. &amp; Центр соответствия требованиям. С пятью методами подключения, которые находятся в разных сеансах Windows PowerShell, ваш рабочий стол может выглядеть следующим образом:
   
 ![Пять консолей Windows PowerShell, работающих одновременно](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
@@ -37,7 +37,7 @@ ms.locfileid: "30339517"
 >В настоящее время эта статья содержит только команды для подключения к облаку Office 365 Worldwide (+ GCC). Дополнительные примечания содержат ссылки на статьи со сведениями о подключении к другим облакам Office 365.
 >
 
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="before-you-begin"></a>До начала работы
 
 Прежде чем управлять всеми Office 365 из одного экземпляра Windows PowerShell, примите во внимание следующие предварительные требования:
   

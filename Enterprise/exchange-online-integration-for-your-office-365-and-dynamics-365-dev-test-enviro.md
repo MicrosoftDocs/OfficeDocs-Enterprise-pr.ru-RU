@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: Сводка. Воспользуйтесь этим руководством, чтобы включить интеграцию Dynamics 365 для Exchange Online в пробной подписке Office 365.
-ms.openlocfilehash: 97e480bd148092f8e8e5ab610f0aed0a5eb2e20e
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897122"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574023"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Интеграция с Exchange Online для среды разработки и тестирования Office 365 и Dynamics 365
 
@@ -42,11 +42,11 @@ Microsoft Dynamics 365 позволяет хранить всю переписк
 
 Выполните следующие действия, чтобы настроить почтовый ящик глобального администратора для интеграции Dynamics 365 и Exchange Online:
   
-1. С помощью закрытого сеанса браузера, перейдите к [http://portal.office.com](http://portal.office.com) и выполнить вход с помощью учетной записи глобального администратора Office 365.
+1. С помощью личного сеанса работы с браузером перейдите к [http://admin.microsoft.com](http://admin.microsoft.com) учетной записи глобального администратора Office 365 и войдите в нее.
     
 2. На **домашней странице Microsoft Office** щелкните плитку **Почта**.
     
-3. На новой вкладке **почты** в браузере нажмите кнопку **Создать** и обратите внимание на то, как нижнем углу области, расположенной ниже поле для ввода сообщения содержит значок для личных шаблонов.
+3. На вкладке Новая **почта** в браузере нажмите кнопку **создать** и обратите внимание на то, что нижний угол области под полем для ввода сообщения имеет значок для шаблонов "Мои шаблоны".
     
      ![Пустое новое сообщение электронной почты без интеграции с Dynamics 365.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
@@ -88,7 +88,7 @@ Microsoft Dynamics 365 позволяет хранить всю переписк
     
 5. Откройте вкладку **Домашняя страница Microsoft Office** и щелкните плитку **Почта**.
     
-6. На новой вкладке **почты** в браузере нажмите кнопку **Создать**. Обратите внимание на то, что нижнем углу области, расположенной ниже поле для ввода сообщения теперь содержит значок для Dynamics 365.
+6. На новой вкладке **Почта** нажмите **Создать**. Обратите внимание, что в нижнем углу области под полем для ввода сообщения теперь есть значок Dynamics 365.
     
      ![Пустое новое сообщение с интеграцией с Dynamics 365; отображается новый значок.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
@@ -113,7 +113,7 @@ Microsoft Dynamics 365 позволяет хранить всю переписк
   
 [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
   
-[DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 
 [Управление подпиской для Dynamics 365 (сетевая версия)](https://technet.microsoft.com/library/jj679903.aspx)
   

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: Сводка. Развертывание средства Azure AD Connect на виртуальной машине в Azure для синхронизации учетных записей между локальным каталогом и клиентом Azure AD, связанным с подпиской на Office 365.
-ms.openlocfilehash: c2aba481f789e52d027ccd8f5a91217e825ed8bf
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 4b248dd0a5f6fc775fca322b696703545a1ef465
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25976705"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574033"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Развертывание службы синхронизации каталогов Office 365 в Microsoft Azure
 
@@ -119,9 +119,11 @@ ms.locfileid: "25976705"
 - Этап 3. Установка и настройка Azure AD Connect
     
 После развертывания также необходимо назначить расположения и лицензии для новых учетных записей пользователей в Office 365.
-  
+
+<!--  
 > [!TIP]
-> [Сервер синхронизации каталогов в комплекте средств для развертывания Azure](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) содержит все блоки Azure PowerShell для моделирования этого решения, схемы в формате Microsoft PowerPoint и Visio, а также таблицу настройки Microsoft Excel, которая создает блоки команд Azure PowerShell специально для ваших параметров.
+> The [Directory Synchronization Server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) has all of the Azure PowerShell blocks to build out this solution, the diagrams in Microsoft PowerPoint and Visio format, and a Microsoft Excel configuration workbook that generates Azure PowerShell command blocks customized for your settings.
+-->
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Этап 1. Создание и настройка виртуальной сети Azure
 
@@ -176,7 +178,7 @@ ms.locfileid: "25976705"
 
 Средство Azure AD Connect добавляет учетные записи из локального леса Windows Server AD в подписку на Office 365, но чтобы пользователи могли входить в Office 365 и использовать службы, необходимо настроить расположение и лицензии. Чтобы добавить расположение и активировать лицензии для соответствующих учетных записей пользователей, сделайте следующее:
   
-1. Выполните вход на [странице портала Office 365](https://portal.office.com) и нажмите плитку **Администрирование**.
+1. Выполните вход на [странице портала Office 365](https://www.office.com) и нажмите плитку **Администрирование**.
     
 2. На панели навигации слева выберите **Пользователи > Активные пользователи**.
     
@@ -200,7 +202,8 @@ ms.locfileid: "25976705"
   
 [Настройка синхронизации каталогов для Office 365](set-up-directory-synchronization.md)
   
-[Сервер синхронизации каталогов в комплекте средств для развертывания Azure](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
-
+<!--
+[Directory Synchronization server in Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
+-->
 
 
