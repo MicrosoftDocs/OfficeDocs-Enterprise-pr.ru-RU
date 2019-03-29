@@ -6,65 +6,57 @@ manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-description: Узнайте, как добавить или удалить администратора geo в OneDrive для бизнеса Multi-географически.
-ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
-ms.translationtype: MT
+localization_priority: Priority
+description: Узнайте, как добавить или удалить администратора геообъектов в Office 365 с поддержкой нескольких регионов.
+ms.openlocfilehash: 28af776f3afe4e3cc666817eb2d5faff846aa1af
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849815"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931668"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Добавление или удаление администратора geo в OneDrive несколькими-географически Busniess
+# <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Добавление и удаление администратора геообъектов в Office 365 с поддержкой нескольких регионов
 
-Можно настроить отдельные администраторов для каждого географического расположения, у вас есть клиента. Эти администраторы будут иметь доступ к SharePoint Online и OneDrive параметры, относящиеся к их географического расположения.
+Можно настроить отдельных администраторов для каждого географического расположения в клиенте. Эти администраторы получат доступ к параметрам SharePoint Online и OneDrive, относящимся к конкретным географическим расположениям.
 
-Некоторые службы — например, банк терминов - из центрального расположения для администрирования и были реплицированы во вспомогательных расположения. Admin географически для центрального расположения имеет доступ к ним, а не "Администраторы" географического расположения вспомогательных.
+Некоторые службы, например банк терминов, управляются из центрального расположения и копируются в периферийные расположения. Доступ к ним есть у администратора геообъектов в центральном расположении, но не у администраторов геообъектов в периферийных расположениях.
 
-Чтобы иметь доступ к параметрам в центрального расположения и все вспомогательные расположения продолжить глобальных администраторов и администраторов SharePoint Online.
+Глобальные администраторы и администраторы SharePoint Online сохраняют доступ к параметрам в центральном и всех периферийных расположениях.
 
-## <a name="configuring-geo-administrators"></a>Настройка географически администраторов
+## <a name="configuring-geo-administrators"></a>Настройка администраторов геообъектов
 
-Географическая "Администраторы" для настройки требуется модуль SharePoint Online PowerShell.
+Для настройки администраторов геообъектов требуется модуль PowerShell в SharePoint Online.
 
-Используйте [Connect-sposervice открывает](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) для подключения к центру администрирования географически расположение, где требуется добавить администратора географически. (Например, Connect-sposervice открываетhttps://ContosoEUR-admin.sharepoint.com.)
+Используйте команду [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) для подключения к центру администрирования геообъекта, для которого нужно добавить администратора. (Например, Connect-SPOService https://ContosoEUR-admin.sharepoint.com.)
 
-Чтобы просмотреть существующие Администраторы географического расположения, выполните`Get-SPOGeoAdministrator`
+Чтобы просмотреть существующих администраторов геообъектов в расположении, выполните команду `Get-SPOGeoAdministrator`
 
-### <a name="adding-a-user-as-a-geo-admin"></a>Добавление пользователя в качестве администратора географически
+### <a name="adding-a-user-as-a-geo-admin"></a>Добавление пользователя в качестве администратора геообъекта
 
-Для добавления пользователя в качестве администратора географически, выполните`Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
+Чтобы добавить пользователя в качестве администратора геообъекта, выполните команду `Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
 
-Чтобы удалить пользователя администратором географического расположения, выполните`Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
+Чтобы удалить пользователя из администраторов геообъекта в расположении, выполните команду `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
 
-### <a name="adding-a-group-as-a-geo-admin"></a>Добавление группы в качестве администратора географически
+### <a name="adding-a-group-as-a-geo-admin"></a>Добавление группы в качестве администратора геообъекта
 
-Можно добавить группу безопасности или группу безопасности с включенной поддержкой почты как администратор географически. (Группы рассылки и группы Office 365 не поддерживаются).
+Можно добавить группу безопасности или группу безопасности с поддержкой электронной почты в качестве администратора геообъекта. (Группы рассылки и группы Office 365 не поддерживаются.)
 
-Чтобы добавить группу от имени администратора географически, выполните`Add-SPOGeoAdministrator -GroupAlias <alias>`
+Чтобы добавить группу в качестве администратора геообъекта, выполните команду `Add-SPOGeoAdministrator -GroupAlias <alias>`
 
-Чтобы удалить группу от имени администратора географически, выполните`Remove-SPOGeoAdministrator -GroupAlias <alias>`
+Чтобы удалить группу из администраторов геообъекта, выполните команду `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
-Обратите внимание, что не все группы безопасности псевдоним группы. Если вы хотите добавить группу безопасности, для которого не псевдоним, запустите [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) для получения списка групп, найдите группу безопасности ObjectID и выполните:
+Обратите внимание, что не у всех групп безопасности есть псевдоним группы. Если нужно добавить группу безопасности без псевдонима, выполните команду [Get-MsolGroup](https://docs.microsoft.com/ru-RU/powershell/module/msonline/get-msolgroup) для получения списка групп, найдите ObjectID группы безопасности и выполните команду:
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
-Чтобы удалить группу с помощью ObjectID, выполните`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
-
-### <a name="accessing-the-admin-center-for-a-specific-geo-location"></a>Доступ к центру администрирования для конкретного географического расположения
-
-Для администрирования параметров OneDrive для их географического расположения, "Администраторы" необходимо получить доступ к центру администрирования OneDrive напрямую с помощью следующий формат URL-адреса:
-
-https://admin.onedrive.com/?geo=<*географическая*>
-
-К примеру, Центр администрирования OneDrive для Канады расположена в каталоге: https://admin.onedrive.com/?geo=CAN.
+Чтобы удалить группу с помощью ObjectID, выполните команду `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
 
 ## <a name="see-also"></a>См. также
 
-[Добавление SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
+[Add-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 
 [Get-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[Настройка псевдонима (MailNickName) для группы безопасности](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)
+[Установка псевдонима (MailNickName) для группы безопасности](https://docs.microsoft.com/ru-RU/powershell/module/azuread/set-azureadgroup)
