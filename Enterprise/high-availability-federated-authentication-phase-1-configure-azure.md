@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: Сводка. Настройка инфраструктуры Microsoft Azure для размещения федеративной проверки подлинности с высоким уровнем доступности для Office 365.
-ms.openlocfilehash: a57085ef066aeaf14235b8901c045911ef97ceed
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 0268178b12374f200181c0f1b8a38de6a39e7173
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650162"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948610"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Этап 1. Федеративная проверка подлинности для обеспечения высокой доступности: настройка Azure
 
@@ -72,7 +72,7 @@ Azure необходимо подготовить к работе с этими 
   
 После этого укажите статические IP-адреса, назначенные виртуальным машинам и экземплярам балансировщика нагрузки, в таблице I.
   
-|**Item**|**Цель**|**IP-адрес в подсети**|**Значение**|
+|**Item**|**Назначение**|**IP-адрес в подсети**|**Значение**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Статический IP-адрес первого контроллера домена  <br/> |Четвертый возможный IP-адрес для адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Статический IP-адрес второго контроллера домена  <br/> |Пятый возможный IP-адрес адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -87,7 +87,7 @@ Azure необходимо подготовить к работе с этими 
   
 В таблице D укажите два DNS-сервера в локальной сети, которые необходимо использовать при начальной настройке контроллеров домена в виртуальной сети. Чтобы определить этот список, обратитесь в ИТ-отдел.
   
-|**Item**|**Понятное имя DNS-сервера**|**IP-адрес DNS-сервера**|
+|**Элемент**|**Понятное имя DNS-сервера**|**IP-адрес DNS-сервера**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -137,8 +137,8 @@ Get-AzSubscription | Sort Name | Select SubscriptionName
 Укажите свою подписку Azure. Замените все в кавычках, в том \< числе символами и _гт_, правильным именем.
   
 ```
-$subscr="<subscription name>"
-Select-AzSubscription -SubscriptionName $subscrName -Current
+$subscrName="<subscription name>"
+Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 После этого создайте новые группы ресурсов. Чтобы задать уникальные имена, отобразите уже существующие группы ресурсов с помощью указанной команды.
@@ -274,7 +274,7 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 После этого определите имена четырех групп доступности. Заполните таблицу A. 
   
-|**Item**|**Цель**|**Имя группы доступности**|
+|**Item**|**Назначение**|**Имя группы доступности**|
 |:-----|:-----|:-----|
 |1.  <br/> |Контроллеры доменов  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Серверы AD FS  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -305,7 +305,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 ![Этап 1 для федеративной проверки подлинности Office 365 в Azure с инфраструктурой Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий шаг
 
 Используйте [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md), чтобы продолжить настройку этой нагрузки.
   

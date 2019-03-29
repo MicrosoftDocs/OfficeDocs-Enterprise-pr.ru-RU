@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: Сводка. Создание упрощенной интрасети в качестве среды разработки и тестирования в Microsoft Azure.
-ms.openlocfilehash: 6180f9f87509d6ef29c52223c47726ff549de8d5
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: a38fc04ffe4ffa9a76430cf44543174570d398bc
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650102"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948620"
 ---
 # <a name="base-configuration-devtest-environment"></a>Базовая конфигурация среды разработки и тестирования
 
@@ -135,8 +135,8 @@ Get-AzSubscription | Sort Name | Select Name
 Укажите свою подписку Azure. Замените текст в кавычках, в том числе символы < и >, на правильное имя.
   
 ```
-$subscr="<subscription name>"
-Select-AzSubscription -SubscriptionName $subscrName -Current
+$subscrName="<subscription name>"
+Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 Затем создайте группу ресурсов для лаборатории тестирования с базовой конфигурацией. Чтобы определить уникальное имя группы ресурсов, используйте указанную ниже команду для вывода списка имеющихся групп ресурсов.
