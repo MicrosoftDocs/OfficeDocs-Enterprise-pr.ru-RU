@@ -3,11 +3,10 @@ title: Развертывание Office 365 корпоративный для �
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +16,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: С помощью описанных здесь действий вы сможете развернуть Office 365, подключить Active Directory, выполнить перенос данных, а также помочь пользователям организации приступить к работе с последней версией Office 2016.
-ms.openlocfilehash: 76421a7870358e48798f21866d69672509084c6a
-ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
+ms.openlocfilehash: a49d57978faabfac7131db3178cbff02b500667f
+ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30303603"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004410"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Развертывание Office 365 корпоративный для организации
 Готовы развернуть и интегрировать Office 365 корпоративный в свою локальную инфраструктуру? С помощью описанных здесь действий вы сможете подключить свой каталог, выполнить перенос данных, а также помочь пользователям организации приступить к работе с последней версией Office 2016.

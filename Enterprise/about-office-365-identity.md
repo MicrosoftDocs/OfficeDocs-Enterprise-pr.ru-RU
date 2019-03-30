@@ -1,5 +1,5 @@
 ---
-title: Общие сведения об удостоверениях Office 365 и службе Azure Active Directory
+title: Идентификация в Office 365 и Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Сведения об управлении удостоверениями пользователей в Office 365.
-ms.openlocfilehash: 7b9a95d7d9c7fb19163518ad68409a22790d4c6e
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372896"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001562"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Общие сведения об удостоверениях Office 365 и службе Azure Active Directory
+# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Идентификация в Office 365 и Azure Active Directory
 
 В Office 365 для управления пользователями используется облачное удостоверение и служба проверки подлинности на основе облачной службы Azure Active Directory (Azure AD). Выбор между настройкой управления удостоверениями между локальной организацией и Office 365 — это предпринятое решение, которое является одной из самых разных моделей облачной инфраструктуры. Так как в дальнейшем изменить эту конфигурацию может быть сложно, тщательно изучите параметры, чтобы определить, что лучше всего подходит для вашей организации. Вы можете выбрать одну из двух основных моделей проверки подлинности в Office 365, чтобы настроить учетные записи пользователей и управлять ими; **облачная проверка** подлинности и **Федеративная проверка**подлинности.
   
@@ -37,7 +37,7 @@ ms.locfileid: "30372896"
   
 ### <a name="cloud-only"></a>Только облако
 
-С помощью облачной модели вы управляете учетными записями пользователей только в Office 365. Нет необходимости в локальных серверах; все обрабатываются в облаке Azure AD. Вы создаете и управляете пользователей в центре администрирования Office 365 или с помощью командлетов Windows PowerShell [PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) , а удостоверение и проверка подлинности в облаке полностью обрабатываются в облаке с помощью Azure AD. Облачная модель, как правило, является хорошим выбором, если: 
+С помощью облачной модели вы управляете учетными записями пользователей только в Office 365. Нет необходимости в локальных серверах; все обрабатываются в облаке Azure AD. Вы создаете и управляете пользователей в [центре администрирования Microsoft 365](https://admin.microsoft.com) или с помощью командлетов Windows PowerShell [PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) , а удостоверение и проверка подлинности в облаке полностью обрабатываются в облаке с помощью Azure AD. Облачная модель, как правило, является хорошим выбором, если: 
   
 - У вас нет другого локального каталога пользователей.
     
