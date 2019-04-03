@@ -143,6 +143,7 @@
 #### [Настройка обнаружения электронных данных в Office 365 с поддержкой нескольких регионов](multi-geo-ediscovery-configuration.md)
 #### [Создание группы с определенным PDL](multi-geo-add-group-with-pdl.md)
 #### [Удаление геообъекта](delete-a-geo-location.md)
+#### [Включение SharePoint c поддержкой нескольких регионов в периферийном расположении](enabling-SP-multigeo-satellite-geolocation.md)
 #### [Администрирование Exchange с поддержкой нескольких регионов](administering-exchange-online-multi-geo.md)
 
 ## [Перемещение в центр обработки данных Office 365 в другом регионе](moving-data-to-new-datacenter-geos.md)
