@@ -3,7 +3,7 @@ title: Управление политиками Skype для бизнеса Onl
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: Сводка.PowerShell в Office 365 позволяет управлять свойствами учетной записи пользователя Skype для бизнеса Online с политиками.
-ms.openlocfilehash: 6698bd43b2a55e1c98fbe8e536a46e2de604b4d2
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 6bbfd4451552cd3a281dbbcafde0b458bb71907c
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "17114918"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037903"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell
 
@@ -29,7 +29,7 @@ ms.locfileid: "17114918"
 
 Чтобы получить настройки для выполнения команд, воспользуйтесь приведенными ниже инструкциями (пропустите выполненные ранее шаги).
   
-1. Скачайте и установите [ модуль соединителя с Skype для бизнеса Online](https://www.microsoft.com/en-us/download/details.aspx?id=39366).
+1. Скачайте и установите [ модуль соединителя с Skype для бизнеса Online](https://www.microsoft.com/download/details.aspx?id=39366).
     
 2. Откройте командную строку Windows PowerShell и выполните указанные команды: 
     
@@ -104,7 +104,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Будет возвращен список всех доступных политик голосовой связи. Однако имейте в виду, что пользователям нельзя назначить некоторые политики. Это связано с различными ограничениями в отношении [места лицензирования и использования]((https://msdn.microsoft.com/ru-RU/library/azure/dn194136.aspx)). Чтобы узнать, какие политики внешнего доступа и конференций можно назначить пользователю, выполните команды, похожие на следующие: 
+> Будет возвращен список всех доступных политик голосовой связи. Однако имейте в виду, что пользователям нельзя назначить некоторые политики. Это связано с различными ограничениями в отношении [места лицензирования и использования](https://msdn.microsoft.com/ru-RU/library/azure/dn194136.aspx). Чтобы узнать, какие политики внешнего доступа и конференций можно назначить пользователю, выполните команды, похожие на следующие: 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
