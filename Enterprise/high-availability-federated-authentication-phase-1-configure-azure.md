@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: Сводка. Настройка инфраструктуры Microsoft Azure для размещения федеративной проверки подлинности с высоким уровнем доступности для Office 365.
-ms.openlocfilehash: 0268178b12374f200181c0f1b8a38de6a39e7173
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: 1c9cfeaf930997c30671e5bbaed92d7dde2542e1
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948610"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037963"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Этап 1. Федеративная проверка подлинности для обеспечения высокой доступности: настройка Azure
 
@@ -63,7 +63,7 @@ Azure необходимо подготовить к работе с этими 
   
 |**Item**|**Имя подсети**|**Адресное пространство подсети**|**Назначение**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая контроллером домена Active Directory (AD) Windows Server и виртуальными машинами сервера DirSync.  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая контроллером домена доменных служб Active Directory (AD DS) и виртуальными машинами сервера DirSync (ВМ).  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая виртуальными машинами AD FS.  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая виртуальными машинами прокси-серверов веб-приложений.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая виртуальными машинами шлюза Azure.  <br/> |
@@ -305,7 +305,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 ![Этап 1 для федеративной проверки подлинности Office 365 в Azure с инфраструктурой Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующее действие
 
 Используйте [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md), чтобы продолжить настройку этой нагрузки.
   
@@ -317,6 +317,6 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 
-[Общие сведения об удостоверениях Office 365 и службе Azure Active Directory](about-office-365-identity.md)
+[Идентификация в Office 365 и Azure Active Directory](about-office-365-identity.md)
 
 

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: Сводка. Решения SharePoint 2013 можно размещать на виртуальных машинах Microsoft Azure. Узнайте, какие типы решений хорошо для этого подходят и как настроить Microsoft Azure для их размещения.
-ms.openlocfilehash: f7d34f5f9640a8f404265433806ccc39a35c8fd5
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 7e40b7c4d37e5646d44a14f12a80a9c6cd25834b
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915384"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038073"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Архитектуры Microsoft Azure для SharePoint 2013
 
@@ -105,7 +105,7 @@ ms.locfileid: "22915384"
     
 Дополнительные сведения о планировании и создании распределенной виртуальной сети см. в статье [Подключение локальной сети к виртуальной сети Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
   
-## <a name="add-windows-server-active-directory-ad-and-dns"></a>Добавление Active Directory (AD) на сервере Windows Server и DNS
+## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Добавление доменных служб Active Directory (AD DS) и DNS
 
 Для аварийного восстановления в Azure доменные службы AD на сервере Windows и DNS развертываются в гибридном сценарии, где AD на сервере Windows развертывается как в локальной среде, так и на виртуальных машинах Azure.
   
@@ -217,11 +217,11 @@ ms.locfileid: "22915384"
   
 **Присоединяйтесь к обсуждению**
 
-|**Свяжитесь с нами**|**Описание**|
+|**Свяжитесь с нами**|**Description**|
 |:-----|:-----|
 |**Какое вам решение необходимо?** <br/> |Мы создаем контент для решений, которые охватывают несколько продуктов и служб Майкрософт. Сообщите нам, что вы думаете о наших межсерверных решениях, или укажите интересующие вас решения, написав по адресу [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Присоединяйтесь к обсуждению решений** <br/> |Если вам интересны облачные решения, присоединяйтесь к теме Cloud Adoption Advisory Board (CAAB) и общайтесь с разработчиками контента Майкрософт, специалистами отрасли и клиентами со всего мира. Чтобы присоединиться, добавьте себя в качестве участника [темы CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) на сайте Microsoft Tech Community и отправьте нам письмо на адрес [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Просматривать материалы в [блоге CAAB](https://blogs.technet.com/b/solutions_advisory_board/) могут все пользователи. Однако только участники CAAB получают приглашения на закрытые вебинары, на которых мы рассказываем о новых облачных решениях и ресурсах по их внедрению.<br/> |
-|**Скачать изображения, которые вы видите здесь** <br/> |Если вам нужна редактируемая копия иллюстративного материала из этой статьи, мы с радостью вам ее отправим. Напишите нам, указав URL-адрес и название материала, по адресу [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
+|**Присоединяйтесь к обсуждению решений** <br/> |If you are passionate about cloud-based solutions, consider joining the Cloud Adoption Advisory Board (CAAB) to connect with a larger, vibrant community of Microsoft content developers, industry professionals, and customers from around the globe. To join, add yourself as a member of the [CAAB (Cloud Adoption Advisory Board) space](https://aka.ms/caab) of the Microsoft Tech Community and send us a quick email at[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Anyone can read community-related content on the [CAAB blog](https://blogs.technet.com/b/solutions_advisory_board/). However, CAAB members get invitations to private webinars that describe new cloud adoption resources and solutions.  <br/> |
+|**Получите изображения, которые вы здесь видите** <br/> |Если вам нужна редактируемая копия иллюстративного материала из этой статьи, мы с радостью вам ее отправим. Напишите нам, указав URL-адрес и название материала, по адресу [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
    
 ## <a name="see-also"></a>См. также
 

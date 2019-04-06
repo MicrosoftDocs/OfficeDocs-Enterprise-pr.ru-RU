@@ -3,7 +3,7 @@ title: Защита конфиденциальных файлов в среде 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: Сводка. Настройка и демонстрация защиты Office 365 Information Rights Management защищает конфиденциальные файлы, даже если они публикуются в неправильном семействе веб-сайтов SharePoint Online.
-ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574073"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037973"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Защита конфиденциальных файлов в среде разработки и тестирования Office 365
 
@@ -232,7 +232,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 5. На вкладке **Центра администрирования SharePoint** щелкните **Параметры**.
     
-6. На странице **Параметры** в разделе **Управление правами на доступ к данным (IRM)** выберите **Использовать службу IRM, указанную в вашей конфигурации**, а затем выберите **Обновить параметры IRM**.
+6. На странице в разделе **Управление правами на доступ к данным (IRM)** выберите **использовать службу IRM, указанную в вашей конфигурации**, а затем нажмите кнопку **обновить параметры IRM**.
     
 7. Закройте вкладку **Центр администрирования SharePoint**.
     
@@ -264,7 +264,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 8. В разделе **Настройка прав доступа к документу** выберите **Разрешить наблюдателям печать** и **Разрешить наблюдателям выполнять запись в копии загруженного документа**.
     
-9. В разделе **Настройка защиты группы и интервала для учетных данных** выберите **Разрешить защиту групп**, а в поле **Группа по умолчанию** введите **Руководители**.
+9. В разделе **Настройка защиты групп и интервала учетных данных**выберите параметр **Разрешить защиту групп. Группу по умолчанию**, а затем введите **руководители**.
     
 10. Нажмите кнопку **ОК**.
     
@@ -332,7 +332,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 ## <a name="see-also"></a>См. также
 
-[Руководства по лабораториям тестирования (TLG) для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
   

@@ -18,17 +18,17 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Сведения о том, как просматривать ошибки синхронизации каталогов в центре администрирования Office 365.
-ms.openlocfilehash: 8b7bb16aeddbf1765426c3725cd1f670524ef6d1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+description: Сведения о том, как просматривать ошибки синхронизации каталогов в центре администрирования Microsoft 365.
+ms.openlocfilehash: 8450c2e26c9c9ae194be46d81018a20c91e35f29
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085038"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001812"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Просмотр ошибок синхронизации каталогов в Office 365
 
-Вы можете просматривать ошибки синхронизации каталогов в центре администрирования Office 365. Отображаются только ошибки объекта пользователя. Просмотреть ошибки с помощью PowerShell можно в разделе [Identify Objects with дирсинкпровисионинжеррорс](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
+Вы можете просматривать ошибки синхронизации каталогов в [центре администрирования Microsoft 365](https://admin.microsoft.com). Отображаются только ошибки объекта пользователя. Просмотреть ошибки с помощью PowerShell можно в разделе [Identify Objects with дирсинкпровисионинжеррорс](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
 После просмотра ознакомьтесь с разрешениями [проблем с синхронизацией каталогов для Office 365](fix-problems-with-directory-synchronization.md) , чтобы устранить обнаруженные проблемы.
   
@@ -36,9 +36,9 @@ ms.locfileid: "30085038"
 
 Чтобы просмотреть ошибки в центре администрирования, выполните следующие действия.
   
-1. Войдите в Office 365 с помощью своей рабочей или учебной учетной записи. 
+1. Войдите в Office 365 с рабочей или учебной учетной записью. 
     
-2. Перейдите к разделу [о центре администрирования Office 365](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
+2. Перейдите к разделу [о центре администрирования](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     
 3. На **домашней** странице вы увидите плитку **состояния DirSync** . 
     

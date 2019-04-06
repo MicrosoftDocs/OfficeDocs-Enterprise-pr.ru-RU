@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: В этой статье описываются распространенные причины проблем с синхронизацией службы каталогов в Office 365, а также способы их устранения.
-ms.openlocfilehash: e83ca495ca96ac41fb2f79775c3d5970a6b538fb
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085398"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001842"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Устранение проблем с синхронизацией каталогов для Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "30085398"
   
 ## <a name="how-do-i-know-if-something-is-wrong"></a>Как узнать, что что-то не так?
 
-Первый признак того, что что-то не так, когда плитка состояния DirSync в центре администрирования Office 365 указывает на наличие проблем:
+Первое указание на то, что что-то пошло не так, когда плитка состояния DirSync в центре администрирования Майкрософт 365 указывает на наличие проблем:
   
 ![Плитка состояния DirSync в предварительной версии центра администрирования](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
@@ -38,13 +38,9 @@ ms.locfileid: "30085398"
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Как получить средство Azure Active Directory Connect?
 
-в центре администрирования Office 365 перейдите к разделу * * пользователи * * \> **активные пользователи**. Откройте меню **Дополнительно** и выберите пункт **Синхронизация службы каталогов**. 
+в [центре администрирования Microsoft 365](https://admin.microsoft.com)перейдите к разделу * * пользователи * * \> **активные пользователи**. Откройте меню **Дополнительно** и выберите пункт **Синхронизация службы каталогов**. 
   
 ![В меню Дополнительно выберите пункт Синхронизация службы каталогов.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
-  
-в старом центре администрирования Office 365 перейдите к разделу **** \> **активные пользователи**пользователей и нажмите кнопку **настройка** рядом с пунктом **синхронизация active Directory**. 
-  
-![Нажмите кнопку "Настройка" рядом с элементом "Синхронизация Active Directory"](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
   
 Следуйте [инструкциям мастера](set-up-directory-synchronization.md) , чтобы скачать Azure AD Connect. 
   
@@ -58,25 +54,25 @@ ms.locfileid: "30085398"
 
 - [Устойчивость к синхронизации удостоверений и дублирование атрибутов](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
-### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**У меня есть оповещение в центре администрирования Office 365 или при получении сообщений электронной почты, которые не были последними событиями синхронизации**
+### <a name="i-have-an-alert-in-the-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**У меня есть оповещение в центре администрирования или приходят автоматические сообщения о том, что последнее событие синхронизации еще не выполнялось**
 - [Устранение проблем с подключением к Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Учетные записи и разрешения для Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=820598)
 - [Синхронизация Azure AD Connect: Управление учетной записью службы Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [Синхронизация службы каталогов с Azure Active Directory закончится, или вы будете предупреждать о том, что синхронизация не была зарегистрирована более суток](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
-### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Хеш-коды паролей не синхронизируются, или я вижу оповещение в центре администрирования Office 365, что еще не выполнялась Последняя синхронизация хэша паролей**
+### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Хэши паролей не синхронизируются, или я вижу оповещение в центре администрирования, что еще не выполнялась Последняя синхронизация хэша паролей**
 - [Реализация синхронизации хэша паролей с синхронизацией Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Я вижу предупреждение о превышении квоты объекта**
 - У нас есть встроенная квота объекта, помогающая защитить службу. Если в вашем каталоге слишком много объектов, которые необходимо синхронизировать с Office 365, вам потребуется [обратиться в службу поддержки продуктов для бизнеса](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) , чтобы увеличить квоту.
 
-### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**Необходимо определить, какие атрибуты синхронизируются**
+### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**Мне нужно знать, какие атрибуты синхронизированы**
 - Вы можете найти список всех атрибутов, которые синхронизируются между локальной средой и облаком [непосредственно](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
 ### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**Не удается управлять или удалять объекты, синхронизированные с облаком**
 - Вы готовы управлять объектами только в облаке? Есть ли в облаке объект, который был удален локально, но в облаке он застрял? Ознакомьтесь с этой статьей [об устраненИи неполадок во время синхронизации](https://go.microsoft.com/fwlink/p/?linkid=842044) и [поддержки](https://go.microsoft.com/fwlink/p/?LinkId=396720) , чтобы получить рекомендации по устранению этих проблем.
 
-### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**Появляется сообщение о том, что в компании превышено максимальное количество объектов, которые можно синхронизировать**
+### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**Получено сообщение об ошибке, когда в компании превышено количество объектов, которые можно синхронизировать**
 - Подробнее об этой статье можно узнать [здесь](https://go.microsoft.com/fwlink/p/?LinkId=396721).
    
 ## <a name="other-resources"></a>Другие ресурсы

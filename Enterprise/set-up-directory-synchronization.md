@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Узнайте, как настроить синхронизацию каталогов между Office 365 и локальной службой Active Directory.
-ms.openlocfilehash: 03f824da6feb41791e12818d8da2e298dc633f4e
-ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
+ms.openlocfilehash: 6d635dbcacb5a1c6c6c9c202f2ece4fac35558a4
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492949"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001752"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Настройка синхронизации каталогов для Office 365
 
@@ -56,7 +56,7 @@ ms.locfileid: "30492949"
 |**Windows Server 2008** | -Последняя поддерживаемая версия PowerShell доступна в Windows Management Framework 3,0, которая доступна в [центре загрузки Майкрософт](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> .NET 4.5.1 и более поздние версии доступны в [центре загрузки Майкрософт](https://go.microsoft.com/fwlink/p/?LinkId=717996). |
 
 > [!NOTE]
-> Если вы используете Azure Active Directory DirSync, максимальное число членов группы рассылки, которые можно синхронизировать из локального каталога Active Directory с Azure Active Directory, — 15 000. Для Azure AD Connect это число равно 50 000. 
+> Если вы используете Azure Active Directory DirSync, максимальное число членов группы рассылки, которые можно синхронизировать из локального каталога Active Directory с Azure Active Directory, — 15 000. Для Azure AD Connect это число равно 50 000.
   
 Чтобы тщательно проанализировать требования к оборудованию, программному обеспечению, учетным записям и разрешениям, требования к сертификатам SSL и ограничению объектов для Azure AD Connect, прочитайте [необходимые компоненты для Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
   
@@ -64,8 +64,8 @@ ms.locfileid: "30492949"
 
 ## <a name="to-set-up-directory-synchronization"></a>Настройка синхронизации службы каталогов
 
-1. войдите в центр администрирования Office 365 и выберите **пользователи** \> **активные пользователи** на левой панели навигации.
-2. в центре администрирования Office 365 на странице **активные пользователи** выберите пункт **больше** \> **синхронизации службы каталогов**.
+1. войдите в [центр администрирования Microsoft 365](https://admin.microsoft.com) и выберите **пользователи** \> **активные пользователи** на левой панели навигации.
+2. В центре администрирования на странице **Активные пользователи** выберите пункт **больше** \> **синхронизации службы каталогов**.
 
     ![В меню Дополнительно выберите пункт Синхронизация службы каталогов.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   

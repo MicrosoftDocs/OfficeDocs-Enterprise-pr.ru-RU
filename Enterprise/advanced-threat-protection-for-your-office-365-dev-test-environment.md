@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: Сводка. Настройка и демонстрация Office 365 Advanced Threat Protection в среде разработки и тестирования Office 365.
-ms.openlocfilehash: 9870f666a979d00ce6621e9459a1f9ad236f9799
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 4ef057480f0ebfb2e64529f39d0db65031b75010
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573833"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037943"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection в среде разработки и тестирования Office 365
 
@@ -38,7 +38,7 @@ Office 365 Advanced Threat Protection — это компонент Exchange Onl
 Если вы хотите протестировать ATP на имитации предприятия, следуйте инструкциям в статье [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Чтобы можно было протестировать ATP, не требуется среда разработки и тестирования для имитированного предприятия, предусматривающая подключение имитированной интрасети к Интернету и синхронизацию каталогов для леса Windows Server AD. Она указана здесь лишь для того, чтобы вы могли протестировать ATP и поэкспериментировать с этим компонентом в типичной для организаций среде. 
+> Для тестирования ATP не требуется среда имитации разработки и тестирования предприятия, включающая имитируемую интрасеть, подключенную к Интернету и синхронизацию каталогов для леса доменных служб Active Directory (AD DS). Она указана здесь лишь для того, чтобы вы могли протестировать ATP и поэкспериментировать с этим компонентом в типичной для организаций среде. 
   
 ## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>Этап 2: Демонстрация способа доставки электронной почты по умолчанию в Office 365
 
@@ -160,11 +160,11 @@ Office 365 Advanced Threat Protection — это компонент Exchange Onl
   
 ## <a name="see-also"></a>См. также
 
-[Руководства по лабораториям тестирования (TLG) для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
   
-[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
+[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
   
 [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   

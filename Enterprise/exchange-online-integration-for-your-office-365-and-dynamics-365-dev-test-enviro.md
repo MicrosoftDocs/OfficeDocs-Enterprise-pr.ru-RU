@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: Сводка. Воспользуйтесь этим руководством, чтобы включить интеграцию Dynamics 365 для Exchange Online в пробной подписке Office 365.
-ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 47153f9321284d0bb30f59645dfe56ab40cb7982
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574023"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038003"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Интеграция с Exchange Online для среды разработки и тестирования Office 365 и Dynamics 365
 
@@ -36,7 +36,7 @@ Microsoft Dynamics 365 позволяет хранить всю переписк
 Воспользуйтесь инструкциями в [Среда разработки и тестирования для Office 365 и Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md), чтобы создать упрощенную или условную корпоративную среду разработки и тестирования Office 365 и Dynamics 365.
   
 > [!NOTE]
-> Для настройки, описанной в этой статье, не требуется условная корпоративная среда разработки и тестирования, которая включает условную интрасеть, подключенную к Интернету, и синхронизацию каталогов для леса Windows Server Active Directory (AD). Она представлена здесь лишь для того, чтобы вы могли поэкспериментировать с Office 365 и Dynamics 365 в типичной среде организации. 
+> Конфигурация в этой статье не требует имитации среды Enterprise dev и Test, которая включает имитируемую интрасеть, подключенную к Интернету и синхронизацию каталогов, для леса доменных служб Active Directory (AD DS). Она представлена здесь лишь для того, чтобы вы могли поэкспериментировать с Office 365 и Dynamics 365 в типичной среде организации. 
   
 ## <a name="phase-2-configure-and-demonstrate-dynamics-365-integration-in-exchange-online"></a>Этап 2. Настройка и демонстрация интеграции с Dynamics 365 в Exchange Online
 
@@ -107,13 +107,13 @@ Microsoft Dynamics 365 позволяет хранить всю переписк
 
 [Среда разработки и тестирования для Office 365 и Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   
-[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
   
-[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
+[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
   
-[DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 
 [Управление подпиской для Dynamics 365 (сетевая версия)](https://technet.microsoft.com/library/jj679903.aspx)
   

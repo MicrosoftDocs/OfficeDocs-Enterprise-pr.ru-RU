@@ -3,7 +3,7 @@ title: Отключение доступа к службам с помощью O
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 03/28/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,50 +14,54 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: Объясняет, как использовать Office 365 PowerShell для отключения доступа к службам Office 365 для пользователей в вашей организации.
-ms.openlocfilehash: 66f6c04c1488f14d5752974a5475e7ef11279406
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: Отключение доступа к службам Office 365 для пользователей с помощью PowerShell в Office 365.
+ms.openlocfilehash: 0f2c603edd624c9d53a28b37c1c9795bad05ec0f
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897422"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001822"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Отключение доступа к службам с помощью Office 365 PowerShell
 
-**Сводка:** Объясняет, как использовать Office 365 PowerShell для отключения доступа к службам Office 365 для пользователей в вашей организации.
+**Сводка:** В этой статье объясняется, как использовать PowerShell для Office 365 для отключения доступа к службам Office 365 для пользователей в вашей организации.
   
-Если учетная запись Office 365 назначена лицензия из плана лицензирования, служб Office 365 становятся доступными для пользователя из этой лицензии. Тем не менее можно управлять служб Office 365, которые могут иметь доступ этот пользователь. Например несмотря на то, что лицензия позволяет получить доступ к службе SharePoint Online, можно отключить доступ к нему. Office 365 PowerShell можно использовать для отключения доступа к любой номер для определенного плана лицензирования для служб:
+Когда учетной записи Office 365 назначена лицензия в плане лицензирования, службы Office 365 предоставляются пользователю из этой лицензии. Тем не менее, вы можете управлять службами Office 365, к которым у пользователя есть доступ. Например, несмотря на то, что лицензия разрешает доступ к службе SharePoint Online, вы можете отключить доступ к ней. С помощью PowerShell можно отключить доступ к любому числу служб для определенного плана лицензирования:
 
 - отдельная учетная запись;
     
 - группа учетных записей;
     
 - все учетные записи в организации.
-    
-## <a name="before-you-begin"></a>Перед началом работы
-<a name="RTT"> </a>
 
-- Для процедур, описанных в этой статье, требуется подключение к PowerShell в Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
+
+Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+Затем используйте эту команду для просмотра доступных планов лицензирования, известных также как Аккаунтскуидс:
+
+```
+Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
+```
+
+Дополнительные сведения см. [в статье Просмотр лицензий и служб с помощью Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
     
-- Командлет **Get-MsolAccountSku** используется для просмотра доступные планы лицензирования и служб Office 365, доступные в этих планах. Для получения дополнительных сведений см. [Просмотр лицензий и службы с помощью Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
+Чтобы просмотреть результаты процедуры, описанные в этом разделе, в статье [Просмотр сведений о лицензиях и службАх для учетной записи с помощью Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).
     
-- Чтобы просмотреть до и после выполнения процедур, описанных в данном разделе увидеть [просмотреть сведения о лицензии и службы учетной записи с помощью Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).
+Кроме того, вы можете воспользоваться сценарием PowerShell, который автоматизирует выполнение процедур, описанных в этой статье. В частности, скрипт позволяет просматривать и отключать службы в организации Office 365, в том числе Sway. Дополнительные сведения см. в статье [Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
     
-- Сценарий PowerShell, который автоматизирует процедур, описанных в этом разделе. В частности сценарий позволяет просматривать и отключения службы в организации Office 365, включая Sway. Дополнительные сведения можно [отключить доступ к Sway с Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
     
-- При использовании командлета **Get-MsolUser** без использования _всех_ параметров возвращаются только первой 500 учетных записей.
-    
-## <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a>Отключение конкретных служб Office 365 для конкретных пользователей для определенного плана лицензирования
+### <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a>Отключение определенных служб Office 365 для определенных пользователей по определенному плану лицензирования
   
-Чтобы отключить определенного набора служб Office 365 для пользователей для определенного плана лицензирования, выполните следующие действия:
+Чтобы отключить определенный набор служб Office 365 для пользователей по определенному плану лицензирования, выполните указанные ниже действия.
   
-1. Выбор нежелательный служб в плане лицензирования, используя следующий синтаксис:
+1. Определите нежелательные службы в плане лицензирования, используя следующий синтаксис:
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
-  В следующем примере создается объект **LicenseOptions** , который отключает службы Office Online и SharePoint Online в плане лицензирования с именем `litwareinc:ENTERPRISEPACK` (Office 365 для предприятий E3).
+  В следующем примере создается объект **LicenseOptions** , который отключает службы Office Online и SharePoint Online в плане лицензирования под названием `litwareinc:ENTERPRISEPACK` (Office 365 корпоративный E3).
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
@@ -71,13 +75,13 @@ ms.locfileid: "25897422"
   New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
   ```
 
-  В следующем примере создается новая учетная запись для Allie Bellew, который назначает лицензии и отключает служб, описанных в шаге 1.
+  В следующем примере создается новая учетная запись для (Allie bellew), которая назначает лицензию и отключает службы, описанные в шаге 1.
     
   ```
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
-  Дополнительные сведения о создании учетных записей пользователей в Office 365 PowerShell можно [Создать учетные записи пользователей с Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).
+  Более подробную информацию о создании учетных записей пользователей в Office 365 PowerShell можно узнать в статье [Создание учетных записей пользователей с помощью office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).
     
   - Чтобы отключить службы для существующего лицензированного пользователя, выполните указанную ниже команду.
     
@@ -91,7 +95,7 @@ ms.locfileid: "25897422"
   Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
   ```
 
-  - Для отключения служб, описанных в разделе шаг 1 для всех существующих лицензированных пользователей, укажите имя плана Office 365 с экрана в командлет **Get-MsolAccountSku** (например, **litwareinc: enterprisepack**) и затем выполните следующие команды:
+  - Чтобы отключить службы, описанные в шаге 1, для всех существующих лицензированных пользователей, укажите имя плана Office 365 из отображения командлета **Get-MsolAccountSku** (например, **litwareinc: ENTERPRISEPACK**), а затем выполните следующие команды:
     
   ```
   $acctSKU="<AccountSkuId>"
@@ -99,23 +103,26 @@ ms.locfileid: "25897422"
   $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
+  Если вы используете командлет **Get – MsolUser** без параметра _ALL_ , возвращаются только первые 500 учетных записей пользователей.
+
+
   - Чтобы отключить службы для группы существующих пользователей, воспользуйтесь одним из указанных ниже методов для идентификации пользователей.
     
-  - **Фильтрация учетных записей, на основе существующего атрибута учетной записи** Чтобы сделать это, используйте следующий синтаксис:
+  - **Фильтрация учетных записей на основе существующего атрибута учетной записи** Для этого используйте следующий синтаксис:
     
   ```
   $x = Get-MsolUser -All <FilterableAttributes>
   $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
-  В следующем примере отключается службы для сотрудников отдела продаж в США.
+  В следующем примере отключаются службы для пользователей в отделе продаж в США.
     
   ```
   $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
   $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
-  - **Использование списка определенных учетных записей** Для этого выполните следующие действия:
+  - **Использование списка определенных учетных записей** Для этого выполните указанные ниже действия.
     
 1. Создайте текстовый файл, в котором в каждой строке будет по одной учетной записи, как в примере ниже.
     
@@ -125,20 +132,20 @@ ms.locfileid: "25897422"
   kakers@contoso.com
   ```
 
-  В этом примере в текстовом файле — C:\\Мои документы\\Accounts.txt.
+  В этом примере текстовый файл имеет значение C:\\мои документы\\Accounts. txt.
     
-2. Выполните следующую команду:
+2. Выполните следующую команду.
     
   ```
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
   ```
 
-Если вы хотите отключить доступ к службам для нескольких планы лицензирования, выполните инструкции, приведенные выше для каждого плана лицензирования проверка того, что:
+Если вы хотите отключить доступ к службам для нескольких планов лицензирования, повторите указанные выше инструкции для каждого плана лицензирования, убедившись в том, что:
 
-- Учетные записи пользователей, назначенных план лицензирования.
-- Службы для отключения доступны в плане лицензирования.
+- Учетным записям пользователей назначен план лицензирования.
+- Службы, которые необходимо отключить, доступны в плане лицензирования.
 
-Для отключения служб Office 365 для пользователей во время при назначении их план лицензирования см [запрещать доступ к службам при назначении лицензии пользователя](disable-access-to-services-while-assigning-user-licenses.md).
+Чтобы отключить службы Office 365 для пользователей при назначении их плану лицензирования, ознакомьтесь со статьей [Отключение доступа к службам при назначении пользовательских лицензий](disable-access-to-services-while-assigning-user-licenses.md).
 
 
 ## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
@@ -153,7 +160,7 @@ ms.locfileid: "25897422"
   
 - [Удаление и восстановление учетных записей пользователей с помощью PowerShell в Office 365](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [Удаление и восстановление учетных записей пользователей с помощью PowerShell для Office 365](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [Удаление и восстановление учетных записей пользователей с помощью PowerShell в Office 365](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
 - [Блокировка учетных записей пользователей с помощью PowerShell в Office 365](block-user-accounts-with-office-365-powershell.md)
     
@@ -161,23 +168,3 @@ ms.locfileid: "25897422"
     
 - [Создание учетных записей пользователей с помощью PowerShell в Office 365](create-user-accounts-with-office-365-powershell.md)
     
-Дополнительные сведения о командлетах, использованных в этих процедурах, см. в указанных ниже статьях.
-  
-- [Get-Content](https://go.microsoft.com/fwlink/p/?LinkId=289917)
-    
-- [Get-MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
-    
-- [Новый MsolLicenseOptions](https://go.microsoft.com/fwlink/p/?LinkId=691546)
-    
-- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
-    
-- [New-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
-    
-- [SET-MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
-    
-- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
-    
-- [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
-    
-  
-

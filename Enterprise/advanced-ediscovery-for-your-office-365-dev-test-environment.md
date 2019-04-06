@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: Сводка. Настройка и демонстрация Office 365 Advanced eDiscovery с образцами данных в среде разработки и тестирования Office 365.
-ms.openlocfilehash: 6c52c7c7fdc31616e58f186484d2d8c4506b7ea6
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573823"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038023"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery для среды разработки и тестирования Office 365
 
@@ -39,7 +39,7 @@ Office 365 Advanced eDiscovery позволяет быстро находить 
 Если вы хотите протестировать расширенные функции обнаружения электронных данных на имитации предприятия, следуйте инструкциям в статье [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Чтобы тестировать Advanced eDiscovery, не требуется среда для имитированного предприятия, предусматривающая подключение имитированной интрасети к Интернету и синхронизацию каталогов для леса Windows Server AD. Он предоставляется в качестве варианта, чтобы можно было выполнять тестирование и эксперименты в среде, представляющей типичную организацию. 
+> Для тестирования расширенного обнаружения электронных данных не требуется Имитируемая среда Enterprise, которая включает имитируемую интрасеть, подключенную к Интернету и синхронизацию каталогов для леса доменных служб Active Directory (AD DS). Он предоставляется в качестве варианта, чтобы можно было выполнять тестирование и эксперименты в среде, представляющей типичную организацию. 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>Этап 2. Создание образца данных для Advanced eDiscovery
 
@@ -183,11 +183,11 @@ Office 365 Advanced eDiscovery позволяет быстро находить 
   
 ## <a name="see-also"></a>См. также
 
-[Руководства по лабораториям тестирования (TLG) для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
   
-[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
+[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
   
 [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
