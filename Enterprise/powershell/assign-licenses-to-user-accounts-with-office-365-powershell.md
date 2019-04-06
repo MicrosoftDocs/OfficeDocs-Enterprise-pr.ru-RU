@@ -15,35 +15,37 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
-description: В данной статье описывается использование Office 365 PowerShell назначение лицензии Office 365 для нелицензированных пользователей.
-ms.openlocfilehash: ab9b66065e20d0c2d6cfb673dac24ee2ab79e831
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+search.appverid:
+- MET150
+description: В этой статье объясняется, как использовать Office 365 PowerShell для назначения лицензии Office 365 пользователям без лицензий.
+ms.openlocfilehash: 5040249f29ac8390db5b2933fc04fb1d01f0af2c
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651187"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931768"
 ---
-# <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a><span data-ttu-id="abfa1-103">Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365</span><span class="sxs-lookup"><span data-stu-id="abfa1-103">Assign licenses to user accounts with Office 365 PowerShell</span></span>
+# <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a><span data-ttu-id="af173-103">Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365</span><span class="sxs-lookup"><span data-stu-id="af173-103">Assign licenses to user accounts with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="abfa1-104">**Сводка:**  В данной статье описывается использование Office 365 PowerShell назначение лицензии Office 365 для нелицензированных пользователей.</span><span class="sxs-lookup"><span data-stu-id="abfa1-104">**Summary:**  Explains how to use Office 365 PowerShell assign an Office 365 license to unlicensed users.</span></span>
+<span data-ttu-id="af173-104">**Сводка:**  В этой статье объясняется, как использовать Office 365 PowerShell для назначения лицензии Office 365 пользователям без лицензий.</span><span class="sxs-lookup"><span data-stu-id="af173-104">**Summary:**  Explains how to use Office 365 PowerShell assign an Office 365 license to unlicensed users.</span></span>
   
-<span data-ttu-id="abfa1-p101">Пользователи не могут использовать какие-либо службы Office 365, пока не своей учетной записи будет назначена лицензия из плана лицензирования. Office 365 PowerShell позволяет быстро назначение лицензий нелицензированных учетным записям.</span><span class="sxs-lookup"><span data-stu-id="abfa1-p101">Users can't use any Office 365 services until their account has been assigned a license from a licensing plan. You can use Office 365 PowerShell to quickly assign licenses to unlicensed accounts.</span></span> 
+<span data-ttu-id="af173-105">Пользователи не могут использовать службы Office 365, пока их учетной записи не назначена лицензия из плана лицензирования.</span><span class="sxs-lookup"><span data-stu-id="af173-105">Users can't use any Office 365 services until their account has been assigned a license from a licensing plan.</span></span> <span data-ttu-id="af173-106">Вы можете быстро назначить лицензии для нелицензированных учетных записей с помощью PowerShell в Office 365.</span><span class="sxs-lookup"><span data-stu-id="af173-106">You can use Office 365 PowerShell to quickly assign licenses to unlicensed accounts.</span></span> 
 
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="abfa1-107">Использование модуля PowerShell Azure Active Directory для Graph</span><span class="sxs-lookup"><span data-stu-id="abfa1-107">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="af173-107">Использование модуля PowerShell Azure Active Directory для Graph</span><span class="sxs-lookup"><span data-stu-id="af173-107">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="abfa1-108">Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="abfa1-108">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="af173-108">Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="af173-108">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
   
 
-<span data-ttu-id="abfa1-109">Рассмотрим процедуру список планов лицензии для клиента с помощью этой команды.</span><span class="sxs-lookup"><span data-stu-id="abfa1-109">Next, list the license plans for your tenant with this command.</span></span>
+<span data-ttu-id="af173-109">Затем перечислите план лицензирования для клиента с помощью этой команды.</span><span class="sxs-lookup"><span data-stu-id="af173-109">Next, list the license plans for your tenant with this command.</span></span>
 
 ```
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-<span data-ttu-id="abfa1-110">Затем получите учетное имя учетной записи, к которому требуется добавить лицензию, также известной как имя участника-пользователя (UPN).</span><span class="sxs-lookup"><span data-stu-id="abfa1-110">Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).</span></span>
+<span data-ttu-id="af173-110">Затем получите имя для входа учетной записи, к которой требуется добавить лицензию, также называемую именем участника-пользователя (UPN).</span><span class="sxs-lookup"><span data-stu-id="af173-110">Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).</span></span>
 
-<span data-ttu-id="abfa1-111">И, наконец укажите имя входа пользователя и имя плана лицензии и выполните следующие команды.</span><span class="sxs-lookup"><span data-stu-id="abfa1-111">Finally, specify the user sign-in name and license plan name and run these commands.</span></span>
+<span data-ttu-id="af173-111">Наконец, укажите имя пользователя для входа и имя плана лицензирования и выполните указанные ниже команды.</span><span class="sxs-lookup"><span data-stu-id="af173-111">Finally, specify the user sign-in name and license plan name and run these commands.</span></span>
 
 ```
 $userUPN="<user sign-in name (UPN)>"
@@ -55,84 +57,84 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="abfa1-112">Использование модуля Microsoft Azure Active Directory для Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="abfa1-112">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="af173-112">Использование модуля Microsoft Azure Active Directory для Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="af173-112">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="abfa1-113">Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="abfa1-113">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="af173-113">Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="af173-113">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-<span data-ttu-id="abfa1-p102">Выполните команду **Get-MsolAccountSku** , чтобы просмотреть доступные планы лицензирования и число доступных лицензий в каждом плане в вашей организации. Число доступных лицензий в каждом плане — **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Дополнительные сведения о лицензировании планы, лицензии и службы можно [Просмотр лицензий и службы с помощью Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="abfa1-p102">Run the **Get-MsolAccountSku** command to view the available licensing plans and the number of available licenses in each plan in your organization. The number of available licenses in each plan is **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. For more information about licensing plans, licenses, and services, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="af173-114">Выполните команду **Get – MsolAccountSku** , чтобы просмотреть доступные планы лицензирования и число доступных лицензий в каждом плане в Организации.</span><span class="sxs-lookup"><span data-stu-id="af173-114">Run the **Get-MsolAccountSku** command to view the available licensing plans and the number of available licenses in each plan in your organization.</span></span> <span data-ttu-id="af173-115">Число доступных лицензий в каждом плане — **ActiveUnits** - **WarningUnits** - **ConsumedUnits**.</span><span class="sxs-lookup"><span data-stu-id="af173-115">The number of available licenses in each plan is **ActiveUnits** - **WarningUnits** - **ConsumedUnits**.</span></span> <span data-ttu-id="af173-116">Для получения дополнительных сведений о планах лицензирования, лицензиях и службах ознакомьтесь со статьей [Просмотр лицензий и служб с помощью Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="af173-116">For more information about licensing plans, licenses, and services, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
     
-<span data-ttu-id="abfa1-117">Чтобы найти нелицензированных учетные записи в вашей организации, выполните следующую команду.</span><span class="sxs-lookup"><span data-stu-id="abfa1-117">To find the unlicensed accounts in your organization, run this command.</span></span>
+<span data-ttu-id="af173-117">Чтобы найти нелицензированные учетные записи в Организации, выполните указанную ниже команду.</span><span class="sxs-lookup"><span data-stu-id="af173-117">To find the unlicensed accounts in your organization, run this command.</span></span>
 
 ```
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
     
-<span data-ttu-id="abfa1-p103">Учетные записи пользователей, которые имеют свойство **UsageLocation** , равное допустимый код страны альфа-2 3166-1 ISO можно назначить только лицензий. Например, "мне НРАВИТСЯ" для США и FR для Франции. Некоторые службы Office 365 не доступны в некоторых странах. Для получения дополнительных сведений см [об ограничениях лицензии](https://go.microsoft.com/fwlink/p/?LinkId=691730).</span><span class="sxs-lookup"><span data-stu-id="abfa1-p103">You can only assign licenses to user accounts that have the **UsageLocation** property set to a valid ISO 3166-1 alpha-2 country code. For example, US for the United States, and FR for France. Some Office 365 services aren't available in certain countries. For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).</span></span>
+<span data-ttu-id="af173-118">Вы можете назначать лицензии только тем пользователям, у которых для свойства **UsageLocation** задан действительный код страны ISO 3166-1 Alpha-2.</span><span class="sxs-lookup"><span data-stu-id="af173-118">You can only assign licenses to user accounts that have the **UsageLocation** property set to a valid ISO 3166-1 alpha-2 country code.</span></span> <span data-ttu-id="af173-119">Важно указать это значение, так как некоторые службы O365_W14_2nd недоступны в определенных странах.</span><span class="sxs-lookup"><span data-stu-id="af173-119">For example, US for the United States, and FR for France.</span></span> <span data-ttu-id="af173-120">Некоторые службы Office 365 недоступны в некоторых странах.</span><span class="sxs-lookup"><span data-stu-id="af173-120">Some Office 365 services aren't available in certain countries.</span></span> <span data-ttu-id="af173-121">Более подробную информацию можно узнать в статье [ограничения лицензирования](https://go.microsoft.com/fwlink/p/?LinkId=691730).</span><span class="sxs-lookup"><span data-stu-id="af173-121">For more information, see [About license restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).</span></span>
     
-<span data-ttu-id="abfa1-122">Чтобы найти учетные записи, которые не имеют значений **UsageLocation** , выполните следующую команду.</span><span class="sxs-lookup"><span data-stu-id="abfa1-122">To find accounts that don't have a **UsageLocation** value, run this command.</span></span>
+<span data-ttu-id="af173-122">Чтобы найти учетные записи, для которых не задано значение **UsageLocation** , выполните указанную ниже команду.</span><span class="sxs-lookup"><span data-stu-id="af173-122">To find accounts that don't have a **UsageLocation** value, run this command.</span></span>
 
 ```
 Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 ```
 
-<span data-ttu-id="abfa1-123">Чтобы задать значение **UsageLocation** учетную запись, выполните эту команду.</span><span class="sxs-lookup"><span data-stu-id="abfa1-123">To set the **UsageLocation** value on an account, run this command.</span></span>
+<span data-ttu-id="af173-123">Чтобы задать значение **UsageLocation** для учетной записи, выполните указанную ниже команду.</span><span class="sxs-lookup"><span data-stu-id="af173-123">To set the **UsageLocation** value on an account, run this command.</span></span>
 
 ```
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-<span data-ttu-id="abfa1-124">Пример:</span><span class="sxs-lookup"><span data-stu-id="abfa1-124">For example:</span></span>
+<span data-ttu-id="af173-124">Пример:</span><span class="sxs-lookup"><span data-stu-id="af173-124">For example:</span></span>
 
 ```
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 ```
     
-<span data-ttu-id="abfa1-125">Если использовать командлет **Get-MsolUser** без параметра **-All**, возвращаются только первые 500 учетных записей.</span><span class="sxs-lookup"><span data-stu-id="abfa1-125">If you use the **Get-MsolUser** cmdlet without using the **-All** parameter, only the first 500 accounts are returned.</span></span>
+<span data-ttu-id="af173-125">Если использовать командлет **Get-MsolUser** без параметра **-All**, возвращаются только первые 500 учетных записей.</span><span class="sxs-lookup"><span data-stu-id="af173-125">If you use the **Get-MsolUser** cmdlet without using the **-All** parameter, only the first 500 accounts are returned.</span></span>
 
-### <a name="assigning-licenses-to-user-accounts"></a><span data-ttu-id="abfa1-126">Назначение лицензий для учетных записей пользователей</span><span class="sxs-lookup"><span data-stu-id="abfa1-126">Assigning licenses to user accounts</span></span>
+### <a name="assigning-licenses-to-user-accounts"></a><span data-ttu-id="af173-126">Назначение лицензий учетным записям пользователей</span><span class="sxs-lookup"><span data-stu-id="af173-126">Assigning licenses to user accounts</span></span>
     
-<span data-ttu-id="abfa1-127">Чтобы назначить лицензии пользователя, используйте следующую команду в Office 365 PowerShell.</span><span class="sxs-lookup"><span data-stu-id="abfa1-127">To assign a license to a user, use the following command in Office 365 PowerShell.</span></span>
+<span data-ttu-id="af173-127">Чтобы назначить лицензию пользователю, используйте следующую команду в Office 365 PowerShell.</span><span class="sxs-lookup"><span data-stu-id="af173-127">To assign a license to a user, use the following command in Office 365 PowerShell.</span></span>
   
 ```
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-<span data-ttu-id="abfa1-128">В этом примере показывается назначение лицензии из **litwareinc: enterprisepack** (Office 365 для предприятий E3) лицензирования плана по нелицензированных пользователей **belindan@litwareinc.com**:</span><span class="sxs-lookup"><span data-stu-id="abfa1-128">This example assigns a license from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to the unlicensed user **belindan@litwareinc.com**:</span></span>
+<span data-ttu-id="af173-128">В этом примере назначается лицензия из плана лицензирования **litwareinc: ENTERPRISEPACK** (Office 365 корпоративный E3) для нелицензированного пользователя **belindan@litwareinc.com**:</span><span class="sxs-lookup"><span data-stu-id="af173-128">This example assigns a license from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to the unlicensed user **belindan@litwareinc.com**:</span></span>
   
 ```
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-<span data-ttu-id="abfa1-129">Чтобы назначить лицензию число нелицензированных пользователей, запустите следующую команду.</span><span class="sxs-lookup"><span data-stu-id="abfa1-129">To assign a license to many unlicensed users, run this command.</span></span>
+<span data-ttu-id="af173-129">Чтобы назначить лицензию большому количеству нелицензированных пользователей, выполните указанную ниже команду.</span><span class="sxs-lookup"><span data-stu-id="af173-129">To assign a license to many unlicensed users, run this command.</span></span>
   
 ```
 Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | ForEach {Set-MsolUserLicense -AddLicenses "<AccountSkuId>"}
 ```
   
 >[!Note]
-><span data-ttu-id="abfa1-p104">Несколько лицензий не может назначить пользователю из того же плана лицензирования. Если у вас нет достаточного количества доступных лицензий, назначаются лицензии для пользователей в том порядке, в случае возвращаемых командлетом **Get-MsolUser** , пока не истечет доступных лицензий.</span><span class="sxs-lookup"><span data-stu-id="abfa1-p104">You can't assign multiple licenses to a user from the same licensing plan. If you don't have enough available licenses, the licenses are assigned to users in the order that they're returned by the **Get-MsolUser** cmdlet until the available licenses run out.</span></span>
+><span data-ttu-id="af173-130">Невозможно назначить пользователю несколько лицензий из одного плана лицензирования.</span><span class="sxs-lookup"><span data-stu-id="af173-130">You can't assign multiple licenses to a user from the same licensing plan.</span></span> <span data-ttu-id="af173-131">Если у вас нет достаточного количества доступных лицензий, они назначаются пользователям в порядке, в котором их возвращает командлет **Get-MsolUser**, пока не закончатся.</span><span class="sxs-lookup"><span data-stu-id="af173-131">If you don't have enough available licenses, the licenses are assigned to users in the order that they're returned by the **Get-MsolUser** cmdlet until the available licenses run out.</span></span>
 >
 
-<span data-ttu-id="abfa1-132">В этом примере назначаются лицензии из плана лицензирования **litwareinc: enterprisepack** (Office 365 для предприятий E3) всех нелицензированных пользователей:</span><span class="sxs-lookup"><span data-stu-id="abfa1-132">This example assigns licenses from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to all unlicensed users:</span></span>
+<span data-ttu-id="af173-132">В этом примере назначаются лицензии из плана лицензирования **litwareinc: ENTERPRISEPACK** (Office 365 корпоративный E3) для всех нелицензированных пользователей:</span><span class="sxs-lookup"><span data-stu-id="af173-132">This example assigns licenses from the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) licensing plan to all unlicensed users:</span></span>
   
 ```
 Get-MsolUser -All -UnlicensedUsersOnly | ForEach {Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
-<span data-ttu-id="abfa1-133">В этом примере назначает эти же лицензии нелицензированных пользователей в отделе продаж в США:</span><span class="sxs-lookup"><span data-stu-id="abfa1-133">This example assigns those same licenses to unlicensed users in the Sales department in the United States:</span></span>
+<span data-ttu-id="af173-133">В этом примере для нелицензированных пользователей назначаются те же лицензии в отделе продаж в США.</span><span class="sxs-lookup"><span data-stu-id="af173-133">This example assigns those same licenses to unlicensed users in the Sales department in the United States:</span></span>
   
 ```
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | ForEach {Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"}
 ```
   
-## <a name="new-to-office-365"></a><span data-ttu-id="abfa1-134">Никогда не работали с Office 365?</span><span class="sxs-lookup"><span data-stu-id="abfa1-134">New to Office 365?</span></span>
+## <a name="new-to-office-365"></a><span data-ttu-id="af173-134">Никогда не работали с Office 365?</span><span class="sxs-lookup"><span data-stu-id="af173-134">New to Office 365?</span></span>
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 
-## <a name="see-also"></a><span data-ttu-id="abfa1-135">См. также</span><span class="sxs-lookup"><span data-stu-id="abfa1-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="af173-135">См. также</span><span class="sxs-lookup"><span data-stu-id="af173-135">See also</span></span>
 
-[<span data-ttu-id="abfa1-136">Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="abfa1-136">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="af173-136">Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="af173-136">Manage user accounts and licenses with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="abfa1-137">Управление Office 365 с помощью PowerShell Office 365</span><span class="sxs-lookup"><span data-stu-id="abfa1-137">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="af173-137">Управление Office 365 с помощью PowerShell Office 365</span><span class="sxs-lookup"><span data-stu-id="af173-137">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="abfa1-138">Начало работы с Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="abfa1-138">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="af173-138">Начало работы с Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="af173-138">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
