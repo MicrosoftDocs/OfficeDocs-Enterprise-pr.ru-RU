@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: Сводка. Настройка федеративной проверки подлинности с высоким уровнем доступности для подписки на Office 365 в Microsoft Azure.
-ms.openlocfilehash: 7c039cd72fabdd6c3ab66a61ce9fd7b861a97f8e
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 9e671cabf2e9ca764f4948822da6aa0fb57ef5b5
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650122"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038053"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365
 
@@ -47,7 +47,7 @@ ms.locfileid: "30650122"
 Все виртуальные машины находятся в единой виртуальной сети Azure из распределенного развертывания. 
   
 > [!NOTE]
-> Федеративная проверка подлинности для отдельных пользователей не зависит от локальных ресурсов. Но если распределенное подключение станет недоступным, контроллеры домена в виртуальной сети не получат тех обновлений для учетных записей пользователей и для групп, которые появились в локальной службе AD на сервере Windows Server. Чтобы этого не произошло, настройте высокую доступность для распределенного подключения. Дополнительные сведения см. в статье [Настройка высокодоступных подключений: распределенных и между виртуальными сетями](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable).
+> Федеративная проверка подлинности для отдельных пользователей не зависит от локальных ресурсов. Но если распределенное подключение станет недоступным, контроллеры домена в виртуальной сети не получат тех обновлений для учетных записей пользователей и для групп, которые появились в локальных доменных службах Active Directory (AD DS). Чтобы этого не произошло, настройте высокую доступность для распределенного подключения. Дополнительные сведения см. в статье [Настройка высокодоступных подключений: распределенных и между виртуальными сетями](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable).
   
 Каждая пара виртуальных машин для определенной роли находится в отдельной подсети или группе доступности.
   
@@ -90,7 +90,7 @@ ms.locfileid: "30650122"
   
 - [Этап 1: настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Создание групп ресурсов, учетных записей хранения, групп доступности и распределенной виртуальной сети.
     
-- [Этап 2: настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Создание и настройка реплик контроллеров домена Windows Server Active Directory (AD) и сервера DirSync.
+- [Этап 2: настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Создание и настройка реплик контроллеров домена для доменных служб Active Directory (AD DS) и сервера DirSync.
     
 - [Этап 3: настройка серверов AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Создание и настройка двух серверов AD FS.
     

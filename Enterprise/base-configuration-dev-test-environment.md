@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: Сводка. Создание упрощенной интрасети в качестве среды разработки и тестирования в Microsoft Azure.
-ms.openlocfilehash: a38fc04ffe4ffa9a76430cf44543174570d398bc
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: b232372654d6244589bf1f10c3d76d4b7558aa23
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948620"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037983"
 ---
 # <a name="base-configuration-devtest-environment"></a>Базовая конфигурация среды разработки и тестирования
 
@@ -121,12 +121,10 @@ ms.locfileid: "30948620"
 Connect-AzAccount
 ```
 
-<!--
 > [!TIP]
-> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) to get a text file that has all the PowerShell commands in this article.
--->
+> Скачать текстовый файл, который содержит все команды PowerShell, приведенные в этой статье, можно [здесь](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d).
 
-Получите имя подписки с помощью следующей команды.
+Получите имя подписки с помощью приведенной ниже команды.
   
 ```
 Get-AzSubscription | Sort Name | Select Name
@@ -173,7 +171,7 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPre
   
 ### <a name="step-2-configure-dc1"></a>Этап 2. Настройка DC1
 
-На этом этапе мы создадим виртуальную машину DC1 и настроим ее как контроллер для домена Windows Server Active Directory corp.contoso.com и DNS-сервер для виртуальных машин сети TestLab.
+На этом этапе мы создадим виртуальную машину DC1 и настроим ее как контроллер для доменных служб Active Directory (AD DS) домена corp.contoso.com и DNS-сервер для виртуальных машин сети TestLab.
 
 > [!NOTE]
 > Перед выполнением следующего командного блока убедитесь, что выбранный регион (расположение) Azure поддерживает размер виртуальной машины Azure с заданным по умолчанию значением Standard_A1. Щелкните [здесь](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines), чтобы просмотреть последние сведения о расположениях и размерах виртуальных машин Azure.

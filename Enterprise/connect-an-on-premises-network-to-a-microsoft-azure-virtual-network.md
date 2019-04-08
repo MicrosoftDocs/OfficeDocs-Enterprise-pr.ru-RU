@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: Сводка. Узнайте, как настроить распределенную виртуальную сеть Azure для серверных рабочих нагрузок Office с VPN-подключением типа "сеть-сеть".
-ms.openlocfilehash: ea5ecf6e44c11f8381a8fa75f523a765ce1669f6
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: f6ee25d7e1564ce5770bada709934e68dd6888ee
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948630"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037993"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Подключение локальной сети к виртуальной сети Microsoft Azure
 
@@ -83,7 +83,7 @@ ms.locfileid: "30948630"
     
 - Вы можете использовать службу RRAS в Windows Server 2016 или Windows Server 2012, чтобы установить VPN-подключение типа "сеть-сеть" с защитой IPsec между локальной сетью и виртуальной сетью Azure. Вы также можете использовать другие VPN-устройства, например Cisco или Juniper Networks.
     
-- В локальной сети по-прежнему могут размещаться сетевые службы, такие как Windows Server Active Directory (AD), служба доменных имен (DNS), и прокси-серверы. В зависимости от ваших требований, некоторые из этих сетевых ресурсов может быть удобнее разместить в виртуальной сети Azure.
+- В локальной сети по-прежнему могут размещаться сетевые службы, такие как доменные службы Active Directory (AD DS), служба доменных имен (DNS), и прокси-серверы. В зависимости от ваших требований, некоторые из этих сетевых ресурсов может быть удобнее разместить в виртуальной сети Azure.
     
 Для существующей виртуальной сети Azure с одной или несколькими подсетями определите, осталось ли адресное пространство для дополнительной подсети и размещения необходимых виртуальных машин, учитывая ваши требования. Если адресного пространства для дополнительной подсети не осталось, создайте дополнительную виртуальную сеть с собственным VPN-подключением типа "сеть-сеть".
   
@@ -211,10 +211,8 @@ ms.locfileid: "30948630"
 
 Сначала откройте командную строку Azure PowerShell. Если вы еще не установили Azure PowerShell, просмотрите статью [Начало работы с командлетами Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
 
-<!--  
-> [!NOTE]
-> These commands are for Azure PowerShell 1.0 and above. For a text file that has all the PowerShell commands in this article, click [here](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
--->
+> [!TIP]
+> Скачать текстовый файл, который содержит все команды PowerShell, приведенные в этой статье, можно [здесь](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
   
 Затем войдите в свою учетную запись Azure с помощью следующей команды.
   
