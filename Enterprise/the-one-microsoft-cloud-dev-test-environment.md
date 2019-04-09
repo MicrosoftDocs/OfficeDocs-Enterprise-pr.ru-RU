@@ -17,184 +17,184 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: Сводка. Воспользуйтесь этим руководством по лабораториям тестирования при создании среды разработки и тестирования, которая включает все облачные решения Майкрософт.
-ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
-ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
+ms.openlocfilehash: b8ffd01c9d129d4537c82f0e1f74bd7c1be1388b
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573663"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037953"
 ---
-# <a name="the-one-microsoft-cloud-devtest-environment"></a><span data-ttu-id="1bda3-103">Среда разработки и тестирования One Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="1bda3-103">The One Microsoft Cloud dev/test environment</span></span>
+# <a name="the-one-microsoft-cloud-devtest-environment"></a><span data-ttu-id="2212c-103">Среда разработки и тестирования One Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="2212c-103">The One Microsoft Cloud dev/test environment</span></span>
 
- <span data-ttu-id="1bda3-104">**Сводка.** Воспользуйтесь этим руководством по лабораториям тестирования при создании среды разработки и тестирования, которая включает все облачные решения Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="1bda3-104">**Summary:** Use this Test Lab Guide to create a dev/test environment that includes all of Microsoft's cloud offerings.</span></span>
+ <span data-ttu-id="2212c-104">**Сводка.** Воспользуйтесь этим руководством по лабораториям тестирования при создании среды разработки и тестирования, которая включает все облачные решения Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="2212c-104">**Summary:** Use this Test Lab Guide to create a dev/test environment that includes all of Microsoft's cloud offerings.</span></span>
   
-<span data-ttu-id="1bda3-p101">Инструкции из этой статьи помогут создать имитируемую интрасеть в службах инфраструктуры Microsoft Azure, а затем добавить подписки на Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS) и Microsoft Dynamics 365. В результате вы получите упрощенную организацию, которая использует все облачные решения Майкрософт одновременно в одной среде тестирования и разработки. </span><span class="sxs-lookup"><span data-stu-id="1bda3-p101">With the instructions in this article, you create a simulated intranet in Microsoft Azure infrastructure services and then add Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS), and Microsoft Dynamics 365 subscriptions. The result is a simplified organization that uses all Microsoft's cloud offerings at the same time in a single dev/test environment.</span></span> 
+<span data-ttu-id="2212c-p101">Инструкции из этой статьи помогут создать имитируемую интрасеть в службах инфраструктуры Microsoft Azure, а затем добавить подписки на Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS) и Microsoft Dynamics 365. В результате вы получите упрощенную организацию, которая использует все облачные решения Майкрософт одновременно в одной среде тестирования и разработки. </span><span class="sxs-lookup"><span data-stu-id="2212c-p101">With the instructions in this article, you create a simulated intranet in Microsoft Azure infrastructure services and then add Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS), and Microsoft Dynamics 365 subscriptions. The result is a simplified organization that uses all Microsoft's cloud offerings at the same time in a single dev/test environment.</span></span> 
   
 ![Этап 3 для среды разработки и тестирования One Microsoft Cloud с Azure, Office 365, EMS и Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
-<span data-ttu-id="1bda3-108">Полученную в итоге конфигурацию можно использовать, чтобы:</span><span class="sxs-lookup"><span data-stu-id="1bda3-108">You can use the resulting configuration to:</span></span>
+<span data-ttu-id="2212c-108">Полученную в итоге конфигурацию можно использовать, чтобы:</span><span class="sxs-lookup"><span data-stu-id="2212c-108">You can use the resulting configuration to:</span></span>
   
-- <span data-ttu-id="1bda3-109">опробовать интеграцию облачных решений Майкрософт, таких как общая инфраструктура идентификации, которую обеспечивает Azure Active Directory (AD);</span><span class="sxs-lookup"><span data-stu-id="1bda3-109">Experience the integration across Microsoft's cloud offerings, such as the common identity infrastructure provided by Azure Active Directory (AD).</span></span>
+- <span data-ttu-id="2212c-109">опробовать интеграцию облачных решений Майкрософт, таких как общая инфраструктура идентификации, которую обеспечивает Azure Active Directory (AD);</span><span class="sxs-lookup"><span data-stu-id="2212c-109">Experience the integration across Microsoft's cloud offerings, such as the common identity infrastructure provided by Azure Active Directory (AD).</span></span>
     
-- <span data-ttu-id="1bda3-110">оценить комплексные сценарии, включающие несколько решений Microsoft Cloud;</span><span class="sxs-lookup"><span data-stu-id="1bda3-110">Evaluate end-to-end scenarios that include multiple Microsoft Cloud offerings.</span></span>
+- <span data-ttu-id="2212c-110">оценить комплексные сценарии, включающие несколько решений Microsoft Cloud;</span><span class="sxs-lookup"><span data-stu-id="2212c-110">Evaluate end-to-end scenarios that include multiple Microsoft Cloud offerings.</span></span>
     
-- <span data-ttu-id="1bda3-111">создать демоверсию конфигурации, конфигурацию для подтверждения концепции или конфигурацию для тестирования и разработки, которая использует несколько решений Microsoft Cloud;</span><span class="sxs-lookup"><span data-stu-id="1bda3-111">Create a demo, proof-of-concept, or dev/test configuration that uses multiple Microsoft Cloud offerings.</span></span>
+- <span data-ttu-id="2212c-111">создать демоверсию конфигурации, конфигурацию для подтверждения концепции или конфигурацию для тестирования и разработки, которая использует несколько решений Microsoft Cloud;</span><span class="sxs-lookup"><span data-stu-id="2212c-111">Create a demo, proof-of-concept, or dev/test configuration that uses multiple Microsoft Cloud offerings.</span></span>
     
-- <span data-ttu-id="1bda3-112">развить свои навыки работы с Microsoft Cloud для профессионального роста.</span><span class="sxs-lookup"><span data-stu-id="1bda3-112">Build your Microsoft Cloud skills for professional development.</span></span>
+- <span data-ttu-id="2212c-112">развить свои навыки работы с Microsoft Cloud для профессионального роста.</span><span class="sxs-lookup"><span data-stu-id="2212c-112">Build your Microsoft Cloud skills for professional development.</span></span>
     
-## <a name="phase-1-create-a-simulated-intranet-and-add-office-365"></a><span data-ttu-id="1bda3-113">Этап 1. Создание имитированной интрасети и добавление Office 365</span><span class="sxs-lookup"><span data-stu-id="1bda3-113">Phase 1: Create a simulated intranet and add Office 365</span></span>
+## <a name="phase-1-create-a-simulated-intranet-and-add-office-365"></a><span data-ttu-id="2212c-113">Этап 1. Создание имитированной интрасети и добавление Office 365</span><span class="sxs-lookup"><span data-stu-id="2212c-113">Phase 1: Create a simulated intranet and add Office 365</span></span>
 
-<span data-ttu-id="1bda3-114">Следуйте инструкциям из статьи [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md).</span><span class="sxs-lookup"><span data-stu-id="1bda3-114">Follow the instructions in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).</span></span>
+<span data-ttu-id="2212c-114">Следуйте инструкциям из статьи [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md).</span><span class="sxs-lookup"><span data-stu-id="2212c-114">Follow the instructions in [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).</span></span>
   
-<span data-ttu-id="1bda3-115">На рисунке 1 показана полученная в итоге конфигурация, которая включает Office 365 и имитированную интрасеть в службах инфраструктуры Azure с настроенной синхронизацией службы каталогов из локального леса Windows Server Active Directory (AD).</span><span class="sxs-lookup"><span data-stu-id="1bda3-115">Figure 1 shows your resulting configuration, which includes Office 365 and a simulated intranet running in Azure infrastructure services and directory synchronization from an on-premises Windows Server Active Directory (AD) forest.</span></span>
+<span data-ttu-id="2212c-115">На рисунке 1 показана полученная в итоге конфигурация, которая включает Office 365 и имитированную интрасеть в службах инфраструктуры Azure с настроенной синхронизацией службы каталогов из локального леса доменных служб Active Directory (AD DS).</span><span class="sxs-lookup"><span data-stu-id="2212c-115">Figure 1 shows your resulting configuration, which includes Office 365 and a simulated intranet running in Azure infrastructure services and directory synchronization from an on-premises Windows Server Active Directory (AD) forest.</span></span>
   
-<span data-ttu-id="1bda3-116">**Рисунок 1. Имитированная интрасеть в Azure с Office 365**</span><span class="sxs-lookup"><span data-stu-id="1bda3-116">**Figure 1: The simulated intranet in Azure with Office 365**</span></span>
+<span data-ttu-id="2212c-116">**Рисунок 1. Имитированная интрасеть в Azure с Office 365**</span><span class="sxs-lookup"><span data-stu-id="2212c-116">**Figure 1: The simulated intranet in Azure with Office 365**</span></span>
 
 ![Среда разработки и тестирования Office 365 с DirSync](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
-> <span data-ttu-id="1bda3-p102">Срок действия пробной версии Azure — 30 дней. Пробная подписка на Office 365 корпоративный E5 действительна в течение 30 дней, и этот срок можно легко продлить еще на 30 дней. Чтобы создать постоянную среду разработки и тестирования, создайте новую платную подписку на Azure и новую платную подписку на Office 365 корпоративный E5 с небольшим количеством лицензий.</span><span class="sxs-lookup"><span data-stu-id="1bda3-p102">The Azure trial is 30 days. The Office 365 Enterprise E5 Trial subscription is 30 days, which can be easily extended for another 30 days. For a permanent dev/test environment, create a new paid Azure subscription and a new paid Office 365 Enterprise E5 subscription with a small number of licenses.</span></span> 
+> <span data-ttu-id="2212c-p102">Срок действия пробной версии Azure — 30 дней. Пробная подписка на Office 365 корпоративный E5 действительна в течение 30 дней, и этот срок можно легко продлить еще на 30 дней. Чтобы создать постоянную среду разработки и тестирования, создайте новую платную подписку на Azure и новую платную подписку на Office 365 корпоративный E5 с небольшим количеством лицензий.</span><span class="sxs-lookup"><span data-stu-id="2212c-p102">The Azure trial is 30 days. The Office 365 Enterprise E5 Trial subscription is 30 days, which can be easily extended for another 30 days. For a permanent dev/test environment, create a new paid Azure subscription and a new paid Office 365 Enterprise E5 subscription with a small number of licenses.</span></span> 
   
-## <a name="phase-2-add-ems"></a><span data-ttu-id="1bda3-121">Этап 2. Добавление EMS</span><span class="sxs-lookup"><span data-stu-id="1bda3-121">Phase 2: Add EMS</span></span>
+## <a name="phase-2-add-ems"></a><span data-ttu-id="2212c-121">Этап 2. Добавление EMS</span><span class="sxs-lookup"><span data-stu-id="2212c-121">Phase 2: Add EMS</span></span>
 
-<span data-ttu-id="1bda3-122">На этом этапе можно оформить пробную подписку на EMS и добавить ее к той же организации, что и пробную подписку на Office 365.</span><span class="sxs-lookup"><span data-stu-id="1bda3-122">In this phase, you sign up for the EMS trial subscription and add it to the same organization as your Office 365 trial subscription.</span></span>
+<span data-ttu-id="2212c-122">На этом этапе можно оформить пробную подписку на EMS и добавить ее к той же организации, что и пробную подписку на Office 365.</span><span class="sxs-lookup"><span data-stu-id="2212c-122">In this phase, you sign up for the EMS trial subscription and add it to the same organization as your Office 365 trial subscription.</span></span>
   
-1. <span data-ttu-id="1bda3-123">В браузере на настольном компьютере или CLIENT1 войдите на портал Office 365 по адресу [https://www.office.com](https://www.office.com), используя данные учетной записи глобального администратора.</span><span class="sxs-lookup"><span data-stu-id="1bda3-123">With a browser on either your desktop computer or from CLIENT1, sign in to the Office 365 portal at [https://www.office.com](https://www.office.com) with the credentials of your global administrator account.</span></span>
+1. <span data-ttu-id="2212c-123">В браузере на настольном компьютере или CLIENT1 войдите на портал Office 365 по адресу [https://www.office.com](https://www.office.com), используя данные учетной записи глобального администратора.</span><span class="sxs-lookup"><span data-stu-id="2212c-123">With a browser on either your desktop computer or from CLIENT1, sign in to the Office 365 portal at [https://www.office.com](https://www.office.com) with the credentials of your global administrator account.</span></span>
     
-2. <span data-ttu-id="1bda3-124">Выберите плитку **Администрирование**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-124">Click the **Admin** tile.</span></span>
+2. <span data-ttu-id="2212c-124">Выберите плитку **Администрирование**.</span><span class="sxs-lookup"><span data-stu-id="2212c-124">Click the **Admin** tile.</span></span>
     
-3. <span data-ttu-id="1bda3-125">Открыв вкладку **Центр администрирования Office** в браузере, на панели навигации слева щелкните **Выставление счетов > Приобретение служб**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-125">On the **Office Admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
+3. <span data-ttu-id="2212c-125">Открыв вкладку **Центр администрирования Office** в браузере, на панели навигации слева щелкните **Выставление счетов > Приобретение служб**.</span><span class="sxs-lookup"><span data-stu-id="2212c-125">On the **Office Admin center** tab in your browser, in the left navigation, click **Billing > Purchase services**.</span></span>
     
-4. <span data-ttu-id="1bda3-p103">На странице **Приобретение служб** найдите элемент **Enterprise Mobility + Security E5**. Наведите на него указатель мыши и выберите **Начать бесплатный пробный период**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-p103">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
+4. <span data-ttu-id="2212c-p103">На странице **Приобретение служб** найдите элемент **Enterprise Mobility + Security E5**. Наведите на него указатель мыши и выберите **Начать бесплатный пробный период**.</span><span class="sxs-lookup"><span data-stu-id="2212c-p103">On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
     
-5. <span data-ttu-id="1bda3-128">На странице **Подтверждение заказа** нажмите кнопку **Попробовать**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-128">On the **Confirm your order** page, click **Try now**.</span></span>
+5. <span data-ttu-id="2212c-128">На странице **Подтверждение заказа** нажмите кнопку **Попробовать**.</span><span class="sxs-lookup"><span data-stu-id="2212c-128">On the **Confirm your order** page, click **Try now**.</span></span>
     
-6. <span data-ttu-id="1bda3-129">На странице **Получение заказа** нажмите кнопку **Продолжить**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-129">On the **Order receipt** page, click **Continue**.</span></span>
+6. <span data-ttu-id="2212c-129">На странице **Получение заказа** нажмите кнопку **Продолжить**.</span><span class="sxs-lookup"><span data-stu-id="2212c-129">On the **Order receipt** page, click **Continue**.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="1bda3-p104">Период пробной подписки на Enterprise Mobility + Security E5 составляет 90 дней. Чтобы создать постоянную среду тестирования и разработки, создайте новую платную подписку с небольшим количеством лицензий.</span><span class="sxs-lookup"><span data-stu-id="1bda3-p104">The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
+> <span data-ttu-id="2212c-p104">Период пробной подписки на Enterprise Mobility + Security E5 составляет 90 дней. Чтобы создать постоянную среду тестирования и разработки, создайте новую платную подписку с небольшим количеством лицензий.</span><span class="sxs-lookup"><span data-stu-id="2212c-p104">The Enterprise Mobility + Security E5 trial subscription is 90 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
   
-<span data-ttu-id="1bda3-132">Далее включите лицензию на Enterprise Mobility + Security E5 для всех учетных записей пользователей.</span><span class="sxs-lookup"><span data-stu-id="1bda3-132">Next, enable the Enterprise Mobility + Security E5 license for all user accounts.</span></span>
+<span data-ttu-id="2212c-132">Далее включите лицензию на Enterprise Mobility + Security E5 для всех учетных записей пользователей.</span><span class="sxs-lookup"><span data-stu-id="2212c-132">Next, enable the Enterprise Mobility + Security E5 license for all user accounts.</span></span>
   
-1. <span data-ttu-id="1bda3-133">Открыв вкладку браузера **Центр администрирования Office 365**, на панели навигации слева выберите **Пользователи > Активные пользователи**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-133">On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
+1. <span data-ttu-id="2212c-133">Открыв вкладку браузера **Центр администрирования Office 365**, на панели навигации слева выберите **Пользователи > Активные пользователи**.</span><span class="sxs-lookup"><span data-stu-id="2212c-133">On the **Office 365 Admin center** tab in your browser, in the left navigation, click **Users > Active users**.</span></span>
     
-2. <span data-ttu-id="1bda3-134">Выберите свою учетную запись глобального администратора и щелкните ссылку **Изменить** для параметра **Лицензии на продукты**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-134">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
+2. <span data-ttu-id="2212c-134">Выберите свою учетную запись глобального администратора и щелкните ссылку **Изменить** для параметра **Лицензии на продукты**.</span><span class="sxs-lookup"><span data-stu-id="2212c-134">Click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
     
-3. <span data-ttu-id="1bda3-135">На панели **Лицензии на продукты** переведите переключатель **Enterprise Mobility + Security E5** в положение **Вкл.**, нажмите **Сохранить**, а затем дважды **Закрыть**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-135">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
+3. <span data-ttu-id="2212c-135">На панели **Лицензии на продукты** переведите переключатель **Enterprise Mobility + Security E5** в положение **Вкл.**, нажмите **Сохранить**, а затем дважды **Закрыть**.</span><span class="sxs-lookup"><span data-stu-id="2212c-135">On the **Product licenses** pane, turn the product license for **Enterprise Mobility + Security E5** to **On**, click **Save,** and then click **Close** twice.</span></span>
     
-4. <span data-ttu-id="1bda3-136">Для всех других учетных записей (User1, User 2, User 3, User 4 и User 5) выполните действия 2 и 3.</span><span class="sxs-lookup"><span data-stu-id="1bda3-136">For all of your other accounts (User1, User 2, User 3, User 4, and User 5), do steps 2 and 3.</span></span>
+4. <span data-ttu-id="2212c-136">Для всех других учетных записей (User1, User 2, User 3, User 4 и User 5) выполните действия 2 и 3.</span><span class="sxs-lookup"><span data-stu-id="2212c-136">For all of your other accounts (User1, User 2, User 3, User 4, and User 5), do steps 2 and 3.</span></span>
     
-<span data-ttu-id="1bda3-137">Теперь ваша среда разработки и тестирования содержит следующее:</span><span class="sxs-lookup"><span data-stu-id="1bda3-137">Your dev/test environment now has:</span></span>
+<span data-ttu-id="2212c-137">Теперь ваша среда разработки и тестирования содержит следующее:</span><span class="sxs-lookup"><span data-stu-id="2212c-137">Your dev/test environment now has:</span></span>
   
-- <span data-ttu-id="1bda3-138">имитированную интрасеть в службах инфраструктуры Azure;</span><span class="sxs-lookup"><span data-stu-id="1bda3-138">A simulated intranet running in Azure infrastructure services.</span></span>
+- <span data-ttu-id="2212c-138">имитированную интрасеть в службах инфраструктуры Azure;</span><span class="sxs-lookup"><span data-stu-id="2212c-138">A simulated intranet running in Azure infrastructure services.</span></span>
     
-- <span data-ttu-id="1bda3-139">пробные подписки на Office 365 корпоративный E5 и EMS для одной организации, а также один и тот же клиент Azure AD для всех учетных записей пользователей из списка;</span><span class="sxs-lookup"><span data-stu-id="1bda3-139">Office 365 E5 Enterprise and EMS trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
+- <span data-ttu-id="2212c-139">пробные подписки на Office 365 корпоративный E5 и EMS для одной организации, а также один и тот же клиент Azure AD для всех учетных записей пользователей из списка;</span><span class="sxs-lookup"><span data-stu-id="2212c-139">Office 365 E5 Enterprise and EMS trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
     
-- <span data-ttu-id="1bda3-140">все учетные записи пользователей могут использовать Office 365 корпоративный E5 и EMS.</span><span class="sxs-lookup"><span data-stu-id="1bda3-140">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
+- <span data-ttu-id="2212c-140">все учетные записи пользователей могут использовать Office 365 корпоративный E5 и EMS.</span><span class="sxs-lookup"><span data-stu-id="2212c-140">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
     
-<span data-ttu-id="1bda3-141">На рисунке 2 показана полученная в итоге конфигурация с EMS.</span><span class="sxs-lookup"><span data-stu-id="1bda3-141">Figure 2 shows your resulting configuration, which adds EMS.</span></span>
+<span data-ttu-id="2212c-141">На рисунке 2 показана полученная в итоге конфигурация с EMS.</span><span class="sxs-lookup"><span data-stu-id="2212c-141">Figure 2 shows your resulting configuration, which adds EMS.</span></span>
   
-<span data-ttu-id="1bda3-142">**Рисунок 2. Имитированная интрасеть в Azure с Office 365 и EMS**</span><span class="sxs-lookup"><span data-stu-id="1bda3-142">**Figure 2: The simulated intranet in Azure with Office 365 and EMS**</span></span>
+<span data-ttu-id="2212c-142">**Рисунок 2. Имитированная интрасеть в Azure с Office 365 и EMS**</span><span class="sxs-lookup"><span data-stu-id="2212c-142">**Figure 2: The simulated intranet in Azure with Office 365 and EMS**</span></span>
 
 ![Этап 2 для среды разработки и тестирования One Microsoft Cloud с Azure, Office 365 и EMS](media/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
-## <a name="phase-3-add-dynamics-365"></a><span data-ttu-id="1bda3-144">Этап 3. Добавление Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="1bda3-144">Phase 3: Add Dynamics 365</span></span>
+## <a name="phase-3-add-dynamics-365"></a><span data-ttu-id="2212c-144">Этап 3. Добавление Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="2212c-144">Phase 3: Add Dynamics 365</span></span>
 
-<span data-ttu-id="1bda3-145">На этом этапе можно оформить пробную подписку на Dynamics 365 и добавить ее к той же организации, что и пробные подписки на Office 365 и EMS.</span><span class="sxs-lookup"><span data-stu-id="1bda3-145">In this phase, you sign up for the Dynamics 365 trial subscription and add it to the same organization as your Office 365 and EMS trial subscriptions.</span></span>
+<span data-ttu-id="2212c-145">На этом этапе можно оформить пробную подписку на Dynamics 365 и добавить ее к той же организации, что и пробные подписки на Office 365 и EMS.</span><span class="sxs-lookup"><span data-stu-id="2212c-145">In this phase, you sign up for the Dynamics 365 trial subscription and add it to the same organization as your Office 365 and EMS trial subscriptions.</span></span>
   
-1. <span data-ttu-id="1bda3-146">С помощью браузера на настольном компьютере или CLIENT1 войдите на портал Office 365 по адресу [https://www.office.com](https://www.office.com), используя данные учетной записи глобального администратора.</span><span class="sxs-lookup"><span data-stu-id="1bda3-146">Using a browser on either your desktop computer or from CLIENT1, sign in to the Office 365 portal at [https://www.office.com](https://www.office.com) with the credentials of your global administrator account.</span></span>
+1. <span data-ttu-id="2212c-146">С помощью браузера на настольном компьютере или CLIENT1 войдите на портал Office 365 по адресу [https://www.office.com](https://www.office.com), используя данные учетной записи глобального администратора.</span><span class="sxs-lookup"><span data-stu-id="2212c-146">Using a browser on either your desktop computer or from CLIENT1, sign in to the Office 365 portal at [https://www.office.com](https://www.office.com) with the credentials of your global administrator account.</span></span>
     
-2. <span data-ttu-id="1bda3-147">Выберите плитку **Администрирование**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-147">Click the **Admin** tile.</span></span>
+2. <span data-ttu-id="2212c-147">Выберите плитку **Администрирование**.</span><span class="sxs-lookup"><span data-stu-id="2212c-147">Click the **Admin** tile.</span></span>
     
-3. <span data-ttu-id="1bda3-148">На вкладке **Центра администрирования Microsoft 365**, в области навигации слева, нажмите **Выставление счетов > Приобретение служб**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-148">On the **Office admin center** tab, in the left navigation, click **Billing > Purchase services**.</span></span>
+3. <span data-ttu-id="2212c-148">На вкладке **Центра администрирования Microsoft 365**, в области навигации слева, нажмите **Выставление счетов > Приобретение служб**.</span><span class="sxs-lookup"><span data-stu-id="2212c-148">On the **Microsoft 365 admin center** tab, in the left navigation, click **Billing > Purchase services**.</span></span>
     
-4. <span data-ttu-id="1bda3-p105">На странице **Приобретение служб** найдите элемент **Dynamics 365 (план 1), выпуск Enterprise**. Наведите на него указатель мыши и выберите **Начать бесплатный пробный период**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-p105">On the **Purchase services** page, find the **Dynamics 365 Plan 1 Enterprise Edition** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
+4. <span data-ttu-id="2212c-p105">На странице **Приобретение служб** найдите элемент **Dynamics 365 (план 1), выпуск Enterprise**. Наведите на него указатель мыши и выберите **Начать бесплатный пробный период**.</span><span class="sxs-lookup"><span data-stu-id="2212c-p105">On the **Purchase services** page, find the **Dynamics 365 Plan 1 Enterprise Edition** item. Hover your mouse pointer over it and click **Start free trial**.</span></span>
     
-5. <span data-ttu-id="1bda3-151">На странице **Подтверждение заказа** нажмите кнопку **Попробовать**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-151">On the **Confirm your order** page, click **Try now**.</span></span>
+5. <span data-ttu-id="2212c-151">На странице **Подтверждение заказа** нажмите кнопку **Попробовать**.</span><span class="sxs-lookup"><span data-stu-id="2212c-151">On the **Confirm your order** page, click **Try now**.</span></span>
     
-6. <span data-ttu-id="1bda3-152">На странице **Получение заказа** нажмите кнопку **Продолжить**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-152">On the **Order receipt** page, click **Continue**.</span></span>
+6. <span data-ttu-id="2212c-152">На странице **Получение заказа** нажмите кнопку **Продолжить**.</span><span class="sxs-lookup"><span data-stu-id="2212c-152">On the **Order receipt** page, click **Continue**.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="1bda3-p106">Пробная подписка на Dynamics 365 Plan 1 Enterprise Edition действует 30 дней. Вы легко можете продлить ее еще на 30 дней. Чтобы создать постоянную среду тестирования и разработки, создайте новую платную подписку с небольшим количеством лицензий.</span><span class="sxs-lookup"><span data-stu-id="1bda3-p106">The Dynamics 365 Plan 1 Enterprise Edition trial subscription is 30 days. You can easily extend the trail subscription for another 30 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
+> <span data-ttu-id="2212c-p106">Пробная подписка на Dynamics 365 Plan 1 Enterprise Edition действует 30 дней. Вы легко можете продлить ее еще на 30 дней. Чтобы создать постоянную среду тестирования и разработки, создайте новую платную подписку с небольшим количеством лицензий.</span><span class="sxs-lookup"><span data-stu-id="2212c-p106">The Dynamics 365 Plan 1 Enterprise Edition trial subscription is 30 days. You can easily extend the trail subscription for another 30 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
   
-<span data-ttu-id="1bda3-156">Эти инструкции помогут назначить лицензии на Dynamics 365 глобальному администратору, учетным записям User 2 и User 3, а также сделать их системными администраторами.</span><span class="sxs-lookup"><span data-stu-id="1bda3-156">Use these steps to assign Dynamics 365 licenses to the global administrator, User 2, and User 3 accounts and make them system administrators.</span></span>
+<span data-ttu-id="2212c-156">Эти инструкции помогут назначить лицензии на Dynamics 365 глобальному администратору, учетным записям User 2 и User 3, а также сделать их системными администраторами.</span><span class="sxs-lookup"><span data-stu-id="2212c-156">Use these steps to assign Dynamics 365 licenses to the global administrator, User 2, and User 3 accounts and make them system administrators.</span></span>
   
-1. <span data-ttu-id="1bda3-157">На вкладке **Центра администрирования Microsoft 365** выберите **Пользователи > Активные пользователи**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-157">On the Office 365 admin center tab, click Users > Active users.</span></span>
+1. <span data-ttu-id="2212c-157">На вкладке **Центра администрирования Microsoft 365** выберите **Пользователи > Активные пользователи**.</span><span class="sxs-lookup"><span data-stu-id="2212c-157">On the **Microsoft 365 admin center** tab, click **Users > Active users**.</span></span>
     
-2. <span data-ttu-id="1bda3-158">В списке активных пользователей выберите свою учетную запись глобального администратора и щелкните ссылку **Изменить** для параметра **Лицензии на продукты**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-158">In the list of active users, click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
+2. <span data-ttu-id="2212c-158">В списке активных пользователей выберите свою учетную запись глобального администратора и щелкните ссылку **Изменить** для параметра **Лицензии на продукты**.</span><span class="sxs-lookup"><span data-stu-id="2212c-158">In the list of active users, click your global administrator account, and then click **Edit** for **Product licenses**.</span></span>
     
-3. <span data-ttu-id="1bda3-159">	На панели *\*Лицензии на продукты** переведите переключатель *\*Dynamics 365 (план 1), выпуск Enterprise** в положение *\*Вкл.*\*, нажмите *\*Сохранить*\*, а затем дважды *\*Закрыть*\*.</span><span class="sxs-lookup"><span data-stu-id="1bda3-159">On the **Product licenses** pane, turn the product license for **Dynamics 365 Plan 1 Enterprise Edition** to **On**, click **Save,** and then click **Close** twice.</span></span>
+3. <span data-ttu-id="2212c-159">	На панели *\*Лицензии на продукты** переведите переключатель *\*Dynamics 365 (план 1), выпуск Enterprise** в положение *\*Вкл.*\*, нажмите *\*Сохранить*\*, а затем дважды *\*Закрыть*\*.</span><span class="sxs-lookup"><span data-stu-id="2212c-159">On the **Product licenses** pane, turn the product license for **Dynamics 365 Plan 1 Enterprise Edition** to **On**, click **Save,** and then click **Close** twice.</span></span>
     
-4. <span data-ttu-id="1bda3-160">Повторите шаги 2 и 3 для учетных записей пользователей User 2 и User 3.</span><span class="sxs-lookup"><span data-stu-id="1bda3-160">Perform steps 2 and 3 for the User 2 and User 3 accounts.</span></span>
+4. <span data-ttu-id="2212c-160">Повторите шаги 2 и 3 для учетных записей пользователей User 2 и User 3.</span><span class="sxs-lookup"><span data-stu-id="2212c-160">Perform steps 2 and 3 for the User 2 and User 3 accounts.</span></span>
     
-5. <span data-ttu-id="1bda3-161">Закройте вкладку **Центра администрирования Microsoft 365**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-161">Close the **Office admin center** tab.</span></span>
+5. <span data-ttu-id="2212c-161">Закройте вкладку **Центра администрирования Microsoft 365**.</span><span class="sxs-lookup"><span data-stu-id="2212c-161">Close the **Microsoft 365 admin center** tab.</span></span>
     
-<span data-ttu-id="1bda3-162">Выполните следующие действия, чтобы сделать учетные записи User 2 и User 3 системными администраторами Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="1bda3-162">Use these steps to configure the User 2 and User 3 accounts as Dynamics 365 system administrators.</span></span>
+<span data-ttu-id="2212c-162">Выполните следующие действия, чтобы сделать учетные записи User 2 и User 3 системными администраторами Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="2212c-162">Use these steps to configure the User 2 and User 3 accounts as Dynamics 365 system administrators.</span></span>
   
-1. <span data-ttu-id="1bda3-163">Открыв в браузере вкладку **Центр администрирования Office**, в области навигации слева выберите пункт **Центры администрирования**, а затем выберите элемент **Dynamics 365**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-163">On the **Office Admin center** tab in your browser, in the left navigation, click **Admin centers**, and then click **Dynamics 365**.</span></span>
+1. <span data-ttu-id="2212c-163">Открыв в браузере вкладку **Центр администрирования Office**, в области навигации слева выберите пункт **Центры администрирования**, а затем выберите элемент **Dynamics 365**.</span><span class="sxs-lookup"><span data-stu-id="2212c-163">On the **Office Admin center** tab in your browser, in the left navigation, click **Admin centers**, and then click **Dynamics 365**.</span></span>
     
-    <span data-ttu-id="1bda3-164">Возможно, вам придется подождать окончания подготовки системы, прежде чем в меню появится пункт Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="1bda3-164">You may need to wait for Dynamics 365 to finish provisioning before Dynamics 365 appears in the menu.</span></span>
+    <span data-ttu-id="2212c-164">Возможно, вам придется подождать окончания подготовки системы, прежде чем в меню появится пункт Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="2212c-164">You may need to wait for Dynamics 365 to finish provisioning before Dynamics 365 appears in the menu.</span></span>
     
-2. <span data-ttu-id="1bda3-165">На вкладке "Dynamics 365" выберите **Все вышеперечисленное** и нажмите **Завершить установку**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-165">On the Dynamics 365 tab, click **All of these**, and then click **Complete Setup.**</span></span>
+2. <span data-ttu-id="2212c-165">На вкладке "Dynamics 365" выберите **Все вышеперечисленное** и нажмите **Завершить установку**.</span><span class="sxs-lookup"><span data-stu-id="2212c-165">On the Dynamics 365 tab, click **All of these**, and then click **Complete Setup.**</span></span>
     
-    <span data-ttu-id="1bda3-166">Подождите окончания операции.</span><span class="sxs-lookup"><span data-stu-id="1bda3-166">Wait for setup to complete.</span></span>
+    <span data-ttu-id="2212c-166">Подождите окончания операции.</span><span class="sxs-lookup"><span data-stu-id="2212c-166">Wait for setup to complete.</span></span>
     
-    <span data-ttu-id="1bda3-p107">После завершения установки отображается панель управления продажами с демонстрационными данными, которые входят в пробную подписку. Просмотрите **ознакомительное видео**. Закройте окно с видео, когда закончите.</span><span class="sxs-lookup"><span data-stu-id="1bda3-p107">When setup completes, it shows a Sales Activity Dashboard based on sample data that is part of the trail subscription. Take a few moments to view the **Welcome to your trial** video. Close the video window when complete.</span></span>
+    <span data-ttu-id="2212c-p107">После завершения установки отображается панель управления продажами с демонстрационными данными, которые входят в пробную подписку. Просмотрите **ознакомительное видео**. Закройте окно с видео, когда закончите.</span><span class="sxs-lookup"><span data-stu-id="2212c-p107">When setup completes, it shows a Sales Activity Dashboard based on sample data that is part of the trail subscription. Take a few moments to view the **Welcome to your trial** video. Close the video window when complete.</span></span>
     
-3. <span data-ttu-id="1bda3-170">На панели инструментов сверху нажмите стрелку вниз рядом с параметром **Продажи** и последовательно выберите **Параметры** > **Безопасность**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-170">On the toolbar at the top, click the down arrow next to **Sales**, click **Settings**, and then click **Security**.</span></span>
+3. <span data-ttu-id="2212c-170">На панели инструментов сверху нажмите стрелку вниз рядом с параметром **Продажи** и последовательно выберите **Параметры** > **Безопасность**.</span><span class="sxs-lookup"><span data-stu-id="2212c-170">On the toolbar at the top, click the down arrow next to **Sales**, click **Settings**, and then click **Security**.</span></span>
     
-4. <span data-ttu-id="1bda3-171">На странице **Безопасность** нажмите **Пользователи**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-171">On the **Security** page, click **Users**.</span></span>
+4. <span data-ttu-id="2212c-171">На странице **Безопасность** нажмите **Пользователи**.</span><span class="sxs-lookup"><span data-stu-id="2212c-171">On the **Security** page, click **Users**.</span></span>
     
-5. <span data-ttu-id="1bda3-172">В списке пользователей выберите **User 2**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-172">In the list of users, click **User 2**.</span></span>
+5. <span data-ttu-id="2212c-172">В списке пользователей выберите **User 2**.</span><span class="sxs-lookup"><span data-stu-id="2212c-172">In the list of users, click **User 2**.</span></span>
     
-6. <span data-ttu-id="1bda3-173">На панели инструментов выберите **Управление ролями**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-173">In the tool bar, click **Manage Roles**.</span></span>
+6. <span data-ttu-id="2212c-173">На панели инструментов выберите **Управление ролями**.</span><span class="sxs-lookup"><span data-stu-id="2212c-173">In the tool bar, click **Manage Roles**.</span></span>
     
-7. <span data-ttu-id="1bda3-174">В окне **Управление ролями** установите флажок **Системный администратор** и нажмите кнопку **ОК**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-174">In **Manage Roles**, click **System Administrator**, and then click **OK**.</span></span>
+7. <span data-ttu-id="2212c-174">В окне **Управление ролями** установите флажок **Системный администратор** и нажмите кнопку **ОК**.</span><span class="sxs-lookup"><span data-stu-id="2212c-174">In **Manage Roles**, click **System Administrator**, and then click **OK**.</span></span>
     
-8. <span data-ttu-id="1bda3-175">На панели инструментов сверху нажмите **Безопасность**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-175">In the tool bar at the top click **Security**.</span></span>
+8. <span data-ttu-id="2212c-175">На панели инструментов сверху нажмите **Безопасность**.</span><span class="sxs-lookup"><span data-stu-id="2212c-175">In the tool bar at the top click **Security**.</span></span>
     
-9. <span data-ttu-id="1bda3-176">Повторите действия 5–8 для учетной записи User 3.</span><span class="sxs-lookup"><span data-stu-id="1bda3-176">Repeat steps 5-8 for the User 3 account.</span></span>
+9. <span data-ttu-id="2212c-176">Повторите действия 5–8 для учетной записи User 3.</span><span class="sxs-lookup"><span data-stu-id="2212c-176">Repeat steps 5-8 for the User 3 account.</span></span>
     
-10. <span data-ttu-id="1bda3-177">Закройте вкладку **Пользователь: User3**.</span><span class="sxs-lookup"><span data-stu-id="1bda3-177">Close the **User: User3** tab.</span></span>
+10. <span data-ttu-id="2212c-177">Закройте вкладку **Пользователь: User3**.</span><span class="sxs-lookup"><span data-stu-id="2212c-177">Close the **User: User3** tab.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="1bda3-178">Вашей учетной записи глобального администратора Office 365 автоматически назначена роль системного администратора Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="1bda3-178">Your Office 365 global administrator account was automatically assigned the Dynamics 365 system administrator role.</span></span> 
+> <span data-ttu-id="2212c-178">Вашей учетной записи глобального администратора Office 365 автоматически назначена роль системного администратора Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="2212c-178">Your Office 365 global administrator account was automatically assigned the Dynamics 365 system administrator role.</span></span> 
   
-<span data-ttu-id="1bda3-179">Теперь ваша среда разработки и тестирования содержит следующее:</span><span class="sxs-lookup"><span data-stu-id="1bda3-179">Your dev/test environment now has:</span></span>
+<span data-ttu-id="2212c-179">Теперь ваша среда разработки и тестирования содержит следующее:</span><span class="sxs-lookup"><span data-stu-id="2212c-179">Your dev/test environment now has:</span></span>
   
-- <span data-ttu-id="1bda3-180">имитированную интрасеть в службах инфраструктуры Azure;</span><span class="sxs-lookup"><span data-stu-id="1bda3-180">A simulated intranet running in Azure infrastructure services.</span></span>
+- <span data-ttu-id="2212c-180">имитированную интрасеть в службах инфраструктуры Azure;</span><span class="sxs-lookup"><span data-stu-id="2212c-180">A simulated intranet running in Azure infrastructure services.</span></span>
     
-- <span data-ttu-id="1bda3-181">пробные подписки на Office 365 корпоративный E5, EMS и Dynamics 365 для одной организации, а также один и тот же клиент Azure AD для всех учетных записей пользователей из списка;</span><span class="sxs-lookup"><span data-stu-id="1bda3-181">Office 365 E5 Enterprise, EMS, and Dynamics 365 trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
+- <span data-ttu-id="2212c-181">пробные подписки на Office 365 корпоративный E5, EMS и Dynamics 365 для одной организации, а также один и тот же клиент Azure AD для всех учетных записей пользователей из списка;</span><span class="sxs-lookup"><span data-stu-id="2212c-181">Office 365 E5 Enterprise, EMS, and Dynamics 365 trial subscriptions sharing the same organization and the same Azure AD tenant with your list of user accounts.</span></span>
     
-- <span data-ttu-id="1bda3-182">все учетные записи пользователей могут использовать Office 365 корпоративный E5 и EMS;</span><span class="sxs-lookup"><span data-stu-id="1bda3-182">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
+- <span data-ttu-id="2212c-182">все учетные записи пользователей могут использовать Office 365 корпоративный E5 и EMS;</span><span class="sxs-lookup"><span data-stu-id="2212c-182">All of your user accounts enabled to use Office 365 E5 Enterprise and EMS.</span></span>
     
-- <span data-ttu-id="1bda3-183">учетным записям глобального администратора и пользователей User 2 и User 3 предоставлено разрешение использовать Dynamics 365 и назначена роль системного администратора Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="1bda3-183">Your global enterprise administrator, User 2, and User 3 accounts are enabled to use Dynamics 365 and are Dynamics 365 system administrators.</span></span>
+- <span data-ttu-id="2212c-183">учетным записям глобального администратора и пользователей User 2 и User 3 предоставлено разрешение использовать Dynamics 365 и назначена роль системного администратора Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="2212c-183">Your global enterprise administrator, User 2, and User 3 accounts are enabled to use Dynamics 365 and are Dynamics 365 system administrators.</span></span>
     
-<span data-ttu-id="1bda3-184">На рисунке 3 показана итоговая конфигурация.</span><span class="sxs-lookup"><span data-stu-id="1bda3-184">Figure 3 shows your resulting configuration.</span></span>
+<span data-ttu-id="2212c-184">На рисунке 3 показана итоговая конфигурация.</span><span class="sxs-lookup"><span data-stu-id="2212c-184">Figure 3 shows your resulting configuration.</span></span>
   
-<span data-ttu-id="1bda3-185">**Рисунок 3. Имитированная интрасеть в Azure с Office 365, EMS и Dynamics 365**</span><span class="sxs-lookup"><span data-stu-id="1bda3-185">**Figure 3: The simulated intranet in Azure with Office 365, EMS, and Dynamics 365**</span></span>
+<span data-ttu-id="2212c-185">**Рисунок 3. Имитированная интрасеть в Azure с Office 365, EMS и Dynamics 365**</span><span class="sxs-lookup"><span data-stu-id="2212c-185">**Figure 3: The simulated intranet in Azure with Office 365, EMS, and Dynamics 365**</span></span>
 
 ![Этап 3 для среды разработки и тестирования One Microsoft Cloud с Azure, Office 365, EMS и Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
-## <a name="next-steps"></a><span data-ttu-id="1bda3-187">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="1bda3-187">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="2212c-187">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="2212c-187">Next steps</span></span>
 
-<span data-ttu-id="1bda3-p108">Теперь вы можете экспериментировать в среде разработки и тестирования One Microsoft Cloud. Ниже приведены ссылки на некоторые инструкции.</span><span class="sxs-lookup"><span data-stu-id="1bda3-p108">You can now experiment with your One Microsoft Cloud dev/test environment. Here are some ideas for guided experiences:</span></span>
+<span data-ttu-id="2212c-p108">Теперь вы можете экспериментировать в среде разработки и тестирования One Microsoft Cloud. Ниже приведены ссылки на некоторые инструкции.</span><span class="sxs-lookup"><span data-stu-id="2212c-p108">You can now experiment with your One Microsoft Cloud dev/test environment. Here are some ideas for guided experiences:</span></span>
   
-- [<span data-ttu-id="1bda3-190">Настройка политик управления мобильными приложениями (MAM) в EMS для приложений Office 365</span><span class="sxs-lookup"><span data-stu-id="1bda3-190">Configure mobile application management (MAM) policies in EMS for Office 365 applications</span></span>](https://technet.microsoft.com/library/mt764059.aspx)
+- [<span data-ttu-id="2212c-190">Настройка политик управления мобильными приложениями (MAM) в EMS для приложений Office 365</span><span class="sxs-lookup"><span data-stu-id="2212c-190">Configure mobile application management (MAM) policies in EMS for Office 365 applications</span></span>](https://technet.microsoft.com/library/mt764059.aspx)
     
-- [<span data-ttu-id="1bda3-191">Демонстрация Exchange Online при интеграции Office 365 с контактами Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="1bda3-191">Demonstrate Exchange Online in Office 365 integration with Dynamics 365 contacts</span></span>](https://technet.microsoft.com/library/mt798313.aspx)
+- [<span data-ttu-id="2212c-191">Демонстрация Exchange Online при интеграции Office 365 с контактами Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="2212c-191">Demonstrate Exchange Online in Office 365 integration with Dynamics 365 contacts</span></span>](https://technet.microsoft.com/library/mt798313.aspx)
     
-- [<span data-ttu-id="1bda3-192">Создание имитированной распределенной сети в службах инфраструктуры Azure для размещения серверных рабочих нагрузок</span><span class="sxs-lookup"><span data-stu-id="1bda3-192">Create a simulated cross-premises network in Azure infrastructure services for hosting server-based workloads</span></span>](https://technet.microsoft.com/library/mt745150.aspx)
+- [<span data-ttu-id="2212c-192">Создание имитированной распределенной сети в службах инфраструктуры Azure для размещения серверных рабочих нагрузок</span><span class="sxs-lookup"><span data-stu-id="2212c-192">Create a simulated cross-premises network in Azure infrastructure services for hosting server-based workloads</span></span>](https://technet.microsoft.com/library/mt745150.aspx)
     
-## <a name="see-also"></a><span data-ttu-id="1bda3-193">См. также</span><span class="sxs-lookup"><span data-stu-id="1bda3-193">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2212c-193">См. также</span><span class="sxs-lookup"><span data-stu-id="2212c-193">See Also</span></span>
 
-[<span data-ttu-id="1bda3-194">Руководства по лабораториям тестирования (TLG) для принятия облачных решений</span><span class="sxs-lookup"><span data-stu-id="1bda3-194">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="2212c-194">Руководства по лабораториям тестирования (TLG) для принятия облачных решений</span><span class="sxs-lookup"><span data-stu-id="2212c-194">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-[<span data-ttu-id="1bda3-195">Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="1bda3-195">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="2212c-195">Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="2212c-195">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
   
-[<span data-ttu-id="1bda3-196">Гибридные решения</span><span class="sxs-lookup"><span data-stu-id="1bda3-196">Hybrid solutions</span></span>](hybrid-solutions.md)
+[<span data-ttu-id="2212c-196">Гибридные решения</span><span class="sxs-lookup"><span data-stu-id="2212c-196">Hybrid solutions</span></span>](hybrid-solutions.md)
   
-[<span data-ttu-id="1bda3-197">Решения для обеспечения безопасности</span><span class="sxs-lookup"><span data-stu-id="1bda3-197">Security solutions</span></span>](security-solutions.md)
+[<span data-ttu-id="2212c-197">Решения для обеспечения безопасности</span><span class="sxs-lookup"><span data-stu-id="2212c-197">Security solutions</span></span>](security-solutions.md)
 
 
 
