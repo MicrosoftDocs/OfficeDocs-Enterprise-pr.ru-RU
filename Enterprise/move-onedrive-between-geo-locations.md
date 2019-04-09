@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения о перемещении сайта OneDrive в другой геообъект.
-ms.openlocfilehash: 13210d354c45c2d4927ac3de34512bc75a09c14b
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 1197d23bdf94fe38ba24138ddde7c1f1fb92b41f
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458329"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931828"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Перемещение сайта OneDrive в другой геообъект 
 
@@ -59,7 +59,7 @@ ms.locfileid: "30458329"
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations-image1.png)
+![Снимок экрана: окно PowerShell с командлетом connect-sposervice](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>Проверка среды
 
@@ -71,7 +71,7 @@ ms.locfileid: "30458329"
 
 Вы увидите список ваших геообъектов, а контент, который можно перемещать между ними будет обозначен как Compatible (Совместимый). Если команда возвращает значение Incompatible (Несовместимый), попробуйте проверить состояние позднее.
 
-Переместить службу OneDrive невозможно, если она находится в состоянии удержания по юридическим причинам или содержит дочерний сайт. Чтобы проверить возможность перемещения OneDrive, выполните командлет Start-SPOUserAndContentMove с параметром -ValidationOnly.
+Переместить службу OneDrive невозможно, если она, к примеру, содержит дочерний сайт. Чтобы проверить возможность перемещения OneDrive, выполните командлет Start-SPOUserAndContentMove с параметром -ValidationOnly.
 
 `Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly`
 
@@ -96,7 +96,7 @@ ms.locfileid: "30458329"
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations-image2.png)
+![Снимок экрана: окно PowerShell с командлетом Start-SPOUserAndContentMove](media/move-onedrive-between-geo-locations-image2.png)
 
 Чтобы запланировать перемещение в отношении геообъекта на более позднее время, используйте один из следующих параметров:
 

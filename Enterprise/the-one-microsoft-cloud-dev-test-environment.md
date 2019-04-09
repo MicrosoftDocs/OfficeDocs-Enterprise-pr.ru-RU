@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: Сводка. Воспользуйтесь этим руководством по лабораториям тестирования при создании среды разработки и тестирования, которая включает все облачные решения Майкрософт.
-ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
-ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
+ms.openlocfilehash: b8ffd01c9d129d4537c82f0e1f74bd7c1be1388b
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573663"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037953"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Среда разработки и тестирования One Microsoft Cloud
 
@@ -46,7 +46,7 @@ ms.locfileid: "30573663"
 
 Следуйте инструкциям из статьи [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
-На рисунке 1 показана полученная в итоге конфигурация, которая включает Office 365 и имитированную интрасеть в службах инфраструктуры Azure с настроенной синхронизацией службы каталогов из локального леса Windows Server Active Directory (AD).
+На рисунке 1 показана полученная в итоге конфигурация, которая включает Office 365 и имитированную интрасеть в службах инфраструктуры Azure с настроенной синхронизацией службы каталогов из локального леса доменных служб Active Directory (AD DS).
   
 **Рисунок 1. Имитированная интрасеть в Azure с Office 365**
 
