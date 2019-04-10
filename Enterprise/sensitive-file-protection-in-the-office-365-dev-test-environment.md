@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: Сводка. Настройка и демонстрация защиты Office 365 Information Rights Management защищает конфиденциальные файлы, даже если они публикуются в неправильном семействе веб-сайтов SharePoint Online.
-ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037973"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741305"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Защита конфиденциальных файлов в среде разработки и тестирования Office 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "31037973"
 В этой статье описано, как включить и протестировать IRM в Office 365 для файлов, содержащих потенциально конфиденциальную информацию, в пробной подписке на Office 365.
   
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
+> Щелкните [здесь](http://aka.ms/catlgstack) , чтобы визуально сопоставить все статьи в стеке руководства по лаборатории тестирования Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "31037973"
 Если вам нужно протестировать защиту конфиденциальных файлов в условиях смоделированного предприятия, следуйте инструкциям в статье [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Для тестирования не требуется условная корпоративная среда разработки и тестирования, которая включает условную интрасеть, подключенную к Интернету, и синхронизацию каталогов для леса Windows Server AD. Она показана здесь лишь для того, чтобы вы могли протестировать защиту конфиденциальных файлов и поэкспериментировать с этим компонентом в типичной для организаций среде. 
+> Для тестирования защиты конфиденциальных файлов не требуется имитация среды Enterprise dev и Test, которая включает имитируемую интрасеть, подключенную к Интернету и синхронизацию каталогов, для леса доменных служб Active Directory (AD DS). Она показана здесь лишь для того, чтобы вы могли протестировать защиту конфиденциальных файлов и поэкспериментировать с этим компонентом в типичной для организаций среде. 
   
 ## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>Этап 2. Демонстрация утечки документов с сайтов, защищенных системой прав доступа
 
@@ -55,7 +55,7 @@ ms.locfileid: "31037973"
     
 - виртуальной машины CLIENT1 (для среды Office 365 для разработки и тестирования смоделированного предприятия).
     
-В диалоговом окне **Запрос учетных данных Windows PowerShell** введите имя глобального администратора Office 365 (например, jdoe@contosotoycompany.onmicrosoft.com) и пароль пробной подписки на Office 365.
+В диалоговом окне **запрос учетНых данных Windows PowerShell** введите имя глобального администратора Office 365 (пример: jdoe@contosotoycompany.onmicrosoft.com) и пароль пробной подписки на Office 365.
   
 Введите название организации (например, contosotoycompany) и двузначный код страны, а затем выполните следующие команды в командной строке модуля Windows Azure Active Directory для Windows PowerShell:
   
@@ -332,7 +332,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 ## <a name="see-also"></a>См. также
 
-[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
   

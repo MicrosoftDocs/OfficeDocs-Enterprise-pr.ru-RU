@@ -11,17 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
-description: 'Сводка: Сведения о гибридных архитектуры и сценарии для Майкрософт на основе SaaS в облаке и услуги (Office 365).'
-ms.openlocfilehash: 063cbd03a2cc65a6cd278ab2efcea235079f801b
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+description: Сводка. сведения о гибридной архитектуре и сценариях для облачных услуг Майкрософт на основе SaaS (Office 365).
+ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123416"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741395"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Гибридные облачные сценарии для SaaS Майкрософт (Office 365)
 
- **Сводка:** Представление об архитектуре гибридного и сценарии для Майкрософт на основе SaaS в облаке и услуги (Office 365).
+ **Сводка:** Узнайте, как гибридная архитектура и сценарии для облачных услуг Майкрософт на основе SaaS (Office 365).
   
 Объедините локальные развертывания Exchange, SharePoint или Skype для бизнеса с их аналогами в Office 365 в рамках переноса в облако или стратегии долгосрочной интеграции.
   
@@ -43,55 +43,55 @@ ms.locfileid: "27123416"
     
   - Skype для бизнеса Server в сочетании со Skype для бизнеса Online, а также новые сценарии "Облачная УАТС" и Cloud Connector Edition;
     
-  - SharePoint Server 2019 SharePoint Server 2016 и SharePoint Server 2013 в сочетании со службой SharePoint Online (несколько сценариев)
+  - SharePoint Server 2019, SharePoint Server 2016 или SharePoint Server 2013 в сочетании с SharePoint Online (несколько сценариев)
     
     Кроме того, есть следующий перекрестный гибридный сценарий: Exchange Online с локальным приложением Skype для бизнеса Server.
     
-- Удостоверение
+- Идентификация
     
-    Может включать синхронизацию службы каталогов с локальным каталогом Windows Server AD. В качестве альтернативы можно настроить федерацию Azure AD со сторонним поставщиком удостоверений.
+    Может включать синхронизацию службы каталогов с локальными доменными службами Active Directory (AD DS). В качестве альтернативы можно настроить федерацию Azure AD со сторонним поставщиком удостоверений.
     
 - Сеть
     
     Состоит из имеющегося интернет-канала или подключения ExpressRoute с пирингом Майкрософт для Office 365 или Dynamics 365.
     
-- Локальная среда
+- Локальная
     
     Может состоять из имеющихся серверов Exchange, SharePoint и Skype для бизнеса, которые необходимо обновить до последних версий. После этого их можно объединить с аналогичными серверами Office 365 для гибридных сценариев.
     
-Настройка среды разработки или тестирования Office 365, просмотрите [Руководства по лаборатории тестирования 365 Office](cloud-adoption-test-lab-guides-tlgs.md).
+Настройте собственную среду разработки и тестирования Office 365, ознакомьтесь с [руководством по лаборатории тестирования office 365](cloud-adoption-test-lab-guides-tlgs.md).
   
-## <a name="skype-for-business-hybrid"></a>Скайп для гибридных бизнеса
+## <a name="skype-for-business-hybrid"></a>Гибридное развертывание Skype для бизнеса
 
-Скайп для гибридной среды Business позволяет объединять существующей в локальной среде с Скайп для бизнеса в Интернет. Некоторые пользователи, размещенные локально и некоторые пользователи размещаются в Интернете, но пользователи совместно использовать один домен Session Initiation Protocol (SIP), например contoso.com. В этом гибридной конфигурации можно использовать для переноса из локальной в Office 365 со временем в расписании. Скайп для бизнеса можно объединить с [Exchange Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint).
+Гибридная среда Skype для бизнеса позволяет объединить существующее локальное развертывание с Skype для бизнеса Online. Часть пользователей размещена в локальной среде, а другая часть — в Интернете, но все они используют один домен SIP, например contoso.com. Эта гибридная конфигурация позволяет постепенно перенести данные из локальной среды в Office 365 по заданному вами расписанию. Skype для бизнеса также может быть интегрирован с [Exchange Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint).
   
-**На рисунке 2: Скайп для бизнеса гибридной конфигурации**
+**Рисунок 2: Гибридная конфигурация Skype для бизнеса**
 
-![Скайп для бизнеса гибридной конфигурации](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
+![Гибридная конфигурация Skype для бизнеса](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
-На рисунке 2 показано Скайп для бизнеса гибридной конфигурации, состоящий из локальной Скайп для бизнеса интерфейсного пула и пограничного сервера связи с Скайп для бизнеса в Интернет в Office 365.
+На рисунке 2 показана гибридная конфигурация Skype для бизнеса, состоящая из локального интерфейсного пула Skype для бизнеса и пограничного сервера, взаимодействующего со Skype для бизнеса Online в Office 365.
   
-Дополнительные сведения см в [планировании гибридного подключения между Скайп Business Server и Скайп для бизнеса в Интернет](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
+Для получения дополнительных сведений ознакомьтесь [со статьЕй планирование гибридного подключения между Skype для бизнеса Server и Skype для бизнеса Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
     
 ## <a name="cloud-pbx-with-skype-for-business-server"></a>Облачная УАТС со Skype для бизнеса Server
 
-Облако УАТС с Скайп для Business Server позволяет перенос существующих Скайп для локального развертывания Business Server к топологии для подключения к общедоступной переключения телефонной сети общего пользования (PSTN) для локальной. 
+Облачная УАТС со Skype для бизнеса Server позволяет переходить из существующего локального развертывания Skype для бизнеса Server в топологию с подключением к локальной телефонной сети общего пользования (PSTN). 
   
 **Рис. 3. Облачная УАТС со Skype для бизнеса Server**
 
 ![Облачная УАТС со Skype для бизнеса Server](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB-CloudPBX.png)
   
-На рисунке 3 показаны облачных УАТС с Скайп для конфигурации Business Server, состоящий из локальной, существующей УАТС или Telco шлюз, Скайп для Business Server и PSTN подключенный к УАТС облаке Майкрософт в Office 365, который включает в себя Скайп для бизнеса Онлайн.
+На рисунке 3 показана облачная УАТС с конфигурацией Skype для бизнеса Server, состоящей из локального существующего шлюза УАТС или Telco, Skype для бизнеса Server и PSTN, подключенного к облачной УАТС Майкрософт в Office 365, которая включает Skype для бизнеса Онлайн.
   
 Пользователи в организации, расположенные в облаке, могут получать из облака Майкрософт службы УАТС, которые включают в себя передачу сигналов и голосовую почту, но подключение к ТСОП (гудок) осуществляется с помощью корпоративной голосовой связи из локального развертывания Skype для бизнеса Server.
   
-Это является хорошим примером гибридной конфигурации, которое позволяет постепенно перенос в облачной службе. Возможности голосовой связи пользователей можно сохранить при начале переместите их Скайп для бизнеса в Интернет. Вы можете переместить пользователей в свои собственные ходом презентации знать, что их функций голосовой связи будет продолжить нет данному которых они размещены. 
+Это отличный пример гибридной конфигурации, который позволяет постепенно переходить на облачную службу. При переносе функций голосовой связи своих пользователей в Skype для бизнеса в Online вы можете сохранить эти функции. Перенос пользователей может выполняться в удобном для вас режиме, при этом вы можете быть уверены в том, что функции голосовой связи будут сохранены независимо от расположения пользователей. 
   
-Дополнительные сведения см в [планировании гибридного подключения между Скайп Business Server и Скайп для бизнеса в Интернет](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
+Для получения дополнительных сведений ознакомьтесь [со статьЕй планирование гибридного подключения между Skype для бизнеса Server и Skype для бизнеса Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
   
 Если у вас пока не развернуто решение Lync Server или Skype для бизнеса Server, вы можете использовать Cloud Connector Edition для Skype для бизнеса, набор упакованных виртуальных машин, которые реализуют возможность подключения к ТСОП с помощью облачной УАТС.
   
-Для получения дополнительных сведений см [Скайп облаке соединитель для выпуска для бизнеса](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
+Более подробную информацию можно найти в статье [Plan for Skype for Business Cloud Connector Edition](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
 
   
 ## <a name="sharepoint-hybrid"></a>Гибридная среда SharePoint
@@ -102,19 +102,19 @@ ms.locfileid: "27123416"
 
 ![Гибридная конфигурация SharePoint](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SP.png)
   
-На рисунке 4 показано гибридной конфигурации SharePoint, состоящий из локальной фермы SharePoint, данными с SharePoint Online в Office 365.
+На рисунке 4 показана гибридная конфигурация SharePoint, состоящая из локальной фермы SharePoint, которая взаимодействует с SharePoint Online в Office 365.
   
 Гибридные сценарии SharePoint
   
 - [Гибридная служба OneDrive для бизнеса](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap)
     
-- [Гибридные B2B экстрасети](https://docs.microsoft.com/sharepoint/create-b2b-extranet)
+- [Гибридная сеть B2B](https://docs.microsoft.com/sharepoint/create-b2b-extranet)
     
 - [Гибридный поиск](https://docs.microsoft.com/SharePoint/hybrid/configure-cloud-hybrid-searchroadmap)
     
 - [Гибридные профили](https://docs.microsoft.com/SharePoint/hybrid/plan-hybrid-profiles)
     
-- [Средство выбора гибридного](https://docs.microsoft.com/SharePoint/hybrid/hybrid-picker-in-the-sharepoint-online-admin-center)
+- [Мастер выбора гибридной конфигурации](https://docs.microsoft.com/SharePoint/hybrid/hybrid-picker-in-the-sharepoint-online-admin-center)
     
     Гибридные сценарии можно легко включить с помощью мастеров, которые автоматически реализуют гибридные конфигурации, доступные в Центре администрирования SharePoint Online в Office 365.
     
@@ -132,16 +132,13 @@ ms.locfileid: "27123416"
 
 ![Гибридная конфигурация Exchange 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-EX.png)
   
-На рисунке 5 показана конфигурация гибридного Exchange 2016, состоящий из локальных серверов почтовых ящиков Exchange связи с почтовых ящиков в Office 365 и Exchange Online Protection.
+На рисунке 5 показана гибридная конфигурация Exchange 2016, состоящая из локальных серверов почтовых ящиков Exchange, взаимодействующих с Exchange Online Protection и почтовыми ящиками в Office 365.
   
 Некоторые пользователи применяют локальный сервер электронной почты, а другие — Exchange Online, но все пользователи совместно используют одно пространство адресов электронной почты.  
   
 Эта гибридная конфигурация:
   
 - использует имеющуюся инфраструктуру Exchange Server при постепенном переносе данных на Exchange Online по расписанию;
-
-
-
     
 - позволяет обеспечить поддержку удаленных сайтов без инвестиций в создание инфраструктуры филиалов;
     
@@ -151,7 +148,7 @@ ms.locfileid: "27123416"
     
 Вы также можете интегрировать эту гибридную конфигурацию с другими приложениями Microsoft Office 365, в том числе Skype для бизнеса Online и SharePoint Online.
   
-Для получения дополнительных сведений см [Гибридные развертывания Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
+Для получения дополнительных сведений обратитесь к разделу [гибридНые развертывания Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
   
 ## <a name="see-also"></a>См. также
 

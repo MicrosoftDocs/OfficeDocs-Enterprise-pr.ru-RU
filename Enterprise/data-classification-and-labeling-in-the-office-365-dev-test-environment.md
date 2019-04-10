@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: Сводка. Настройка и демонстрация классификации и маркировки данных с помощью клиента Azure Information Protection (AIP) в среде разработки и тестирования Office 365.
-ms.openlocfilehash: ff8533cc6f1a5a34335f6ea469f7a8ec0a6be4da
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 66bdbb74ae88e10d5aa4fce2173f9a2b88a15e9b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573963"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741355"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Классификация и маркировка данных в среде разработки и тестирования Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "30573963"
 Клиент Azure Information Protection позволяет классифицировать документ перед его отправкой в папку SharePoint Online в Office 365. С помощью инструкций в этой статье вы можете установить клиент Azure Information Protection и продемонстрировать классификацию данных. Для получения дополнительных сведений см [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
+> Щелкните [здесь](http://aka.ms/catlgstack) , чтобы визуально сопоставить все статьи в стеке руководства по лаборатории тестирования Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365
 
@@ -162,7 +162,7 @@ ms.locfileid: "30573963"
     
 ## <a name="see-also"></a>См. также
 
-[Руководства по лабораториям тестирования (TLG) для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Среда разработки и тестирования Office 365 и EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   

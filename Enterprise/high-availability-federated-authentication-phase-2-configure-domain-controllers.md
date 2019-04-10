@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: Сводка. Настройка контроллеров домена и сервера DirSync для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: 5ca31f33ef75aeb00dee724dfc6bc86df51cbfef
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: bda22a1df0165724f660019e28a9f088280fea4f
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650132"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741255"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Этап 2. Федеративная проверка подлинности для обеспечения высокой доступности: настройка контроллеров домена
 
@@ -26,7 +26,7 @@ ms.locfileid: "30650132"
 На этом этапе развертывания федеративной проверки подлинности с высоким уровнем доступности для Office 365 в службах инфраструктуры Azure настраиваются два контроллера домена и сервер DirSync в виртуальной сети Azure. После этого проверку подлинности клиентов можно выполнять в виртуальной сети Azure, не отправляя трафик проверки подлинности через подключение VPN типа "сеть-сеть" к локальной сети.
   
 > [!NOTE]
-> В службах федерации Active Directory (AD FS) нельзя использовать доменные службы Azure Active Directory вместо контроллеров домена AD Windows Server. 
+> Службы федерации Active Directory (AD FS) не могут использовать доменные службы Azure Active Directory для замены контроллеров домена доменных служб Active Directory. 
   
 Прежде чем переходить к разделу [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md), необходимо завершить этот этап. Описание всех этапов см. в статье [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
@@ -34,15 +34,15 @@ ms.locfileid: "30650132"
 
 Для начала необходимо заполнить столбец **Имя виртуальной машины** в таблице M и при необходимости изменить размеры виртуальных машин в столбце **Минимальный размер**.
   
-|**Элемент**|**Имя виртуальной машины**|**Образ коллекции**|**Тип хранилища**|**Минимальный размер**|
+|**Элемент**|**Имя виртуальной машины**|**Образ в коллекции**|**Тип хранилища**|**Минимальный размер**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png) (первый контроллер домена, например DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png) (второй контроллер домена, например DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)(Сервер DirSync, например, DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./media/Common-Images/TableLine.png)(первый сервер AD FS, например, ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./media/Common-Images/TableLine.png)(второй сервер AD FS, например, ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./media/Common-Images/TableLine.png)(первый прокси-сервер веб-приложений, например WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./media/Common-Images/TableLine.png)(второй прокси-сервер веб-приложений, например WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  (первый контроллер домена, например DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  (второй контроллер домена, например DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png) (Сервер DirSync, например, DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png) (первый сервер AD FS, например, ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./media/Common-Images/TableLine.png) (второй сервер AD FS, например, ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./media/Common-Images/TableLine.png) (первый прокси-сервер веб-приложений, например WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png) (второй прокси-сервер веб-приложений, например WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
    
  **Таблица M: виртуальные машины для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Azure**
   
@@ -95,7 +95,7 @@ $vmName="<Table M - Item 1 - Virtual machine name column>"
 $vmSize="<Table M - Item 1 - Minimum size column>"
 $staticIP="<Table I - Item 1 - Value column>"
 $diskStorageType="<Table M - Item 1 - Storage type column>"
-$diskSize=<size of the extra disk for Windows Server AD data in GB>
+$diskSize=<size of the extra disk for Active Directory Domain Services (AD DS) data in GB>
 
 $nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
@@ -114,7 +114,7 @@ $vmName="<Table M - Item 2 - Virtual machine name column>"
 $vmSize="<Table M - Item 2 - Minimum size column>"
 $staticIP="<Table I - Item 2 - Value column>"
 $diskStorageType="<Table M - Item 2 - Storage type column>"
-$diskSize=<size of the extra disk for Windows Server AD data in GB>
+$diskSize=<size of the extra disk for AD DS data in GB>
 
 $nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
@@ -232,12 +232,12 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 ## <a name="configure-the-dirsync-server"></a>Настройка сервера DirSync
 
-Используйте клиент удаленного рабочего стола и создайте подключение к виртуальной машине сервера DirSync к удаленному рабочему столу. Используйте DNS-имя интрасети или имя компьютера, а также локальные учетные данные администратора.
+Используйте клиент удаленного рабочего стола и создайте подключение к виртуальной машине сервера DirSync к удаленному рабочему столу. Используйте DNS-имя интрасети или имя компьютера, а также учетные данные локального администратора.
   
-После этого настройте соединение с соответствующим доменом Windows Server AD, выполнив указанные ниже команды в командной строке Windows PowerShell.
+Затем присоедините его к соответствующему домену доменных служб Active Directory, выполнив приведенные ниже команды в командной строке Windows PowerShell.
   
 ```
-$domName="<Windows Server AD domain name to join, such as corp.contoso.com>"
+$domName="<AD DS domain name to join, such as corp.contoso.com>"
 $cred=Get-Credential -Message "Type the name and password of a domain acccount."
 Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer
@@ -257,7 +257,7 @@ Restart-Computer
 
 [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Федеративное удостоверение для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[Федеративная идентификация для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 

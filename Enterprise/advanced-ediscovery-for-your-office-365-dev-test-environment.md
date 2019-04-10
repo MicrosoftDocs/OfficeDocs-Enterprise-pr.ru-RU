@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: Сводка. Настройка и демонстрация Office 365 Advanced eDiscovery с образцами данных в среде разработки и тестирования Office 365.
-ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038023"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741456"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery для среды разработки и тестирования Office 365
 
@@ -30,7 +30,7 @@ Office 365 Advanced eDiscovery позволяет быстро находить 
 Выполнив действия, описанные в этой статье, вы создадите небольшой набор данных для урегулирования вымышленных разногласий по контракту и проанализируете его с помощью Advanced eDiscovery.
   
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
+> Щелкните [здесь](http://aka.ms/catlgstack) , чтобы визуально сопоставить все статьи в стеке руководства по лаборатории тестирования Office 365.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365
 
@@ -53,7 +53,7 @@ Office 365 Advanced eDiscovery позволяет быстро находить 
     
 2. На вкладке **Почта Outlook** нажмите кнопку **Создать**.
     
-3. В поле **Кому**введите электронный адрес учетной записи User6 пробной подписки ( **User6 @.**<organization name> **. onmicrosoft.com**).
+3. В поле **Кому**введите электронный адрес учетной записи User6 пробной подписки ( ** user6@.**<organization name> **. onmicrosoft.com**).
     
 4. В поле темы введите **Тестовое сообщение 1**.
     
@@ -183,18 +183,18 @@ Office 365 Advanced eDiscovery позволяет быстро находить 
   
 ## <a name="see-also"></a>См. также
 
-[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
   
-[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
+[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
   
-[DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
-[Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 Advanced eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
+[Расширенное обнаружение электронных данных для Office 365](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
 
 

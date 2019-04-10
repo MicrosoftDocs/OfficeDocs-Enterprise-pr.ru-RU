@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: Сводка. Сведения о гибридной архитектуре и сценариях для облачных предложений на основе Microsoft PaaS в Azure.
-ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123336"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741375"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Сценарии гибридного облака для Azure PaaS
 
@@ -29,7 +29,7 @@ ms.locfileid: "27123336"
 
 На рисунке 1 показана архитектура гибридных сценариев на основе Microsoft PaaS в Azure.
   
-**Рис. 1. Гибридные сценарии на основе Microsoft PaaS в Azure**
+**Рис. 1. Гибридные сценарии на основе Microsoft PaaS в Azure**
 
 ![Гибридные сценарии на основе Microsoft PaaS в Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
@@ -55,7 +55,7 @@ ms.locfileid: "27123336"
 
 На рисунке 2 показана конфигурация гибридного приложения, выполняемого в Azure.
   
-**Рис. 2. Гибридное приложение на основе Azure PaaS**
+**Рис. 2. Гибридное приложение на основе Azure PaaS**
 
 ![Гибридное приложение на основе Azure PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
@@ -69,7 +69,7 @@ ms.locfileid: "27123336"
     
 Приложение Azure может использовать учетные данные:
   
-- из службы Azure AD, которую можно синхронизировать с локальным поставщиком удостоверений, например Windows Server AD; 
+- Azure AD, которую можно синхронизировать с локальным поставщиком удостоверений, например доменными службами Active Directory (AD DS).
     
 - от стороннего поставщика удостоверений.
     
@@ -77,7 +77,7 @@ ms.locfileid: "27123336"
 
 На рисунке 3 показан пример гибридного приложения, выполняемого в Azure.
   
-**Рис. 3. Пример гибридного приложения на основе Azure PaaS**
+**Рис. 3. Пример гибридного приложения на основе Azure PaaS**
 
 ![Пример гибридного приложения на основе Azure PaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
