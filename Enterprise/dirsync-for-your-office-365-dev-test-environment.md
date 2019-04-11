@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: Сводка. Настройте синхронизацию каталогов для среды разработки и тестирования Office 365.
-ms.openlocfilehash: d5aff42837d3cf4789cf8785383ad213f98d35a3
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 74457cca2d199fe7bfa8839908b0f6a413890f8a
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037913"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741235"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Синхронизация каталогов для среды разработки и тестирования Office 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "31037913"
 2. Установка и настройка Azure AD Connect на виртуальной машине APP1.
     
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в One Microsoft Cloud.
+> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в Office 365.
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365
 
@@ -119,13 +119,13 @@ Stop-Process -Name Explorer -Force
 
 ## <a name="see-also"></a>См. также
 
-[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по лаборатории тестирования для облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
 
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
 
-[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
+[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
 
-[Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
 
 [Advanced Threat Protection в среде разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 
