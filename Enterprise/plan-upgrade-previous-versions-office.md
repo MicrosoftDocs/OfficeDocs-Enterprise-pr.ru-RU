@@ -1,9 +1,9 @@
 ---
-title: Планирование обновления Office 2007 или 2010 серверов и клиентов
+title: Планирование обновления с серверов и клиентов Office 2007 или 2010
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 04/12/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,83 +12,92 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: Если вы используете Office 2007 или Office 2010, настало время планирования обновления. Не обращается с устаревшими приложениями. Используйте следующие ресурсы для начала работы с планом.
-ms.openlocfilehash: e14479e9c313b228dc42f0c3da0d945ddd563a13
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: При использовании Office 2007 или Office 2010 необходимо запланировать обновление. Не следует зависнуть в случае устаревшего приложения. Используйте эти ресурсы, чтобы приступить к работе с планом.
+ms.openlocfilehash: ee14250f6bb17a571ff2c2e7e4cbd68d91d13646
+ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25911413"
+ms.lasthandoff: 04/13/2019
+ms.locfileid: "31838231"
 ---
-# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Планирование обновления Office 2007 или Office 2010 серверов и клиентов
+# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Планирование обновления с серверов и клиентов Office 2007 и Office 2010
 
-Если ваша организация использует старые версии продуктов Office и серверов, это много времени для начала планирования обновления. Продукты Office 2007 и службы достигшие их окончание поддержки и продуктов Office 2010 и служб близко к их окончание поддержки. Используйте ресурсы в этом разделе для начала работы.
+Если в Организации используются более ранние версии продуктов и серверов Office, это отличное время для начала планирования обновления. Продукты и службы Office 2007 достигают конца поддержки, а продукты и службы Office 2010 близки к их завершению. Используйте ресурсы, приведенные в этом разделе, чтобы приступить к работе.
 
-- [Обновление с Office 2010 серверов и клиентов](upgrade-from-office-2010-servers-and-products.md)
+- [Обновление серверов и клиентов Office 2010](upgrade-from-office-2010-servers-and-products.md)
 
-- [Обновление от клиентов и серверов выпуска 2007 системы Office](upgrade-from-office-2007-servers-and-products.md)
+- [Обновление серверов и клиентов Office 2007](upgrade-from-office-2007-servers-and-products.md)
 
-## <a name="what-happens-if-i-dont-upgrade"></a>Что произойдет, если я не обновления?
+## <a name="what-happens-if-i-dont-upgrade"></a>Что произойдет, если не выполнить обновление?
 
-Вы можете обновление в настоящее время не требуется. Локальные серверы и приложения будут выполняться. Тем не менее когда больше не получать обновления безопасности или варианты технической поддержки, вы или ваша организация может быть подвержена нарушение безопасности с последующим. Рекомендуется составлять обновление как можно скорее, будет ли для Office 365 или новая версия локальных серверов и приложений.
+В настоящее время вы можете отказаться от обновления. Ваши локальные серверы и приложения продолжат работу. Однако когда вы перестаете получать обновления для системы безопасности или варианты поддержки, ваша организация или ваша организация могут быть подвержены нарушениям безопасности. Настоятельно рекомендуется запланировать обновление как можно скорее, будь то Office 365 или более новые версии локальных серверов и приложений.
 
-## <a name="what-upgrade-options-are-available"></a>Какие варианты обновления доступны?      
+## <a name="what-upgrade-options-are-available"></a>Какие доступны варианты обновления?      
 
-Организации имеют несколько параметров, которые следует учесть:
+В организациях есть несколько вариантов, которые необходимо учитывать:
 
-- **Перемещение 365 Майкрософт**: переход в облако является эффективное и экономичное решение для многих клиентов. Программа установки и обслуживания значительно упростит и получить все новые возможности и обновления безопасности. Чтобы получить дополнительные сведения, обратитесь к разделу [возможности Microsoft 365?](#what-is-microsoft-365) (в этой статье).
+- **Переход на Microsoft 365**: для многих клиентов перемещение в облако является эффективным и экономически эффективным решением. Установка и обслуживание упрощаются, и вы получаете все последние функции и обновления для системы безопасности. Чтобы узнать больше, ознакомьтесь со статьей ** [Microsoft 365?](#what-is-microsoft-365)** (в этой статье).
     
-- **Обновление локальных серверов и приложений.** При использовании продуктов Office и серверные приложения при локальном видеть [Office](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap), [Exchange](exchange-2010-end-of-support.md), [SharePoint](upgrade-from-sharepoint-2010.md), [Project Server и Project Online](project-server-2010-end-of-support.md)и планирование содержимого [Скайп для бизнеса](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) . 
+- **Обновление локальных серверов и приложений.** Если вы используете продукты Office и серверные приложения локально, ознакомьтесь со следующими материалами по планированию:<br/> 
+
     
-- **Реализовать гибридное решение, включая Office 365** и локальных серверов и приложений. Просмотреть [Обзор облачных решений Office 365 гибридного.](hybrid-cloud-overview.md)
+    |Продукты и службы Office 2007  |Продукты и службы Office 2010  |
+    |---------|---------|
+    |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) Системной | [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) Системной |
+    |[Exchange 2007](exchange-2007-end-of-support.md) |[Exchange 2010](exchange-2010-end-of-support.md) |
+    |[SharePoint 2007](sharepoint-2007-end-of-support.md) |[SharePoint 2010](upgrade-from-sharepoint-2010.md) |
+    |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |
+    |[Project Server 2007](project-server-2007-end-of-support.md) |[Project Server 2010](project-server-2010-end-of-support.md) |
+    |[PerformancePoint Server 2007](pps-2007-end-of-support.md) | |
+ 
+- **Реализация гибридного решения, в том числе Office 365** и локальных серверов и приложений. Если вы перемещаетесь в облако поэтапно или хотите, чтобы некоторые серверы и приложения были локально, гибридное решение может оказаться для вашей организации. **[Общие сведения о гибридных облачных решениях для Office 365.](hybrid-cloud-overview.md)**. 
     
-### <a name="help-is-available-for-your-organization"></a>Справка доступна для вашей организации
+### <a name="help-is-available-for-your-organization"></a>Для организации доступна справка
 
-Справочные сведения о планировании обновления следует учесть одно или несколько из следующих параметров:
+Если вам нужна помощь по планированию обновления, рассмотрите один из следующих вариантов:
 
-- Работа с партнера или корпоративного лицензирования специалист по. **[Поиск партнера Office 365 или торговых посредников](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**. 
+- Работайте с специалистами по партнерам или корпоративными лицензиями. **[Найдите своего партнера или торгового посредника для Office 365](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**. 
 
-- Если ваша организация приобретает определенное количество лицензий облаке Майкрософт, наша группа она может помочь через процесс установки. Для получения дополнительных сведений см [эту 365 Microsoft](https://www.microsoft.com/fasttrack/microsoft-365).
+- Если ваша организация приобретает определенное количество облачных лицензий Майкрософт, наша группа FastTrack поможет вам выполнить процесс установки. Дополнительные сведения можно узнать в **[статье FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)**.
 
-- Если вы части меньшего размера организации или если вы предпочитаете обработку вашей организации Office обновление самостоятельно, содержатся в разделе [Обновление Office 365 для бизнес-пользователям последних клиента Office](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client). 
+- Если вы участвуете в небольших организациях или хотите самостоятельно управлять обновлением Office в Организации, ознакомьтесь со статьей **[обновление office 365 для бизнеса пользователей до последней версии клиента Office](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)**. 
   
-## <a name="im-a-home-user-what-do-i-do"></a>Я домашних пользователей. Чем я занимаюсь?
+## <a name="im-a-home-user-what-do-i-do"></a>Я домашний пользователь. What do I do?
 
-Если вы используете Office 2007 или Office 2010 дома, рассмотрите следующие возможности:
+Если вы используете Office 2007 или Office 2010 на дому, рассмотрите следующие возможности:
 
-- **Использование Office Online для свободного использования**. Создание, просмотр и редактирования файлов Office в браузере и имеют доступ к файлам с любого устройства с доступом в Интернет. [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) включает в себя [Word Online](http://go.microsoft.com/fwlink/p/?linkid=746664), [Excel Online](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint Online](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote Online](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [электронной почты](http://go.microsoft.com/fwlink/p/?linkid=746676), [Календарь](http://go.microsoft.com/fwlink/p/?linkid=746678)и [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679). Чтобы начать работу, посетите [сайт office.com](https://office.com) и войдите в вашей [учетной записи Майкрософт](https://account.microsoft.com/account). (Если у вас нет учетной записи Майкрософт, его можно создать на [сайте office.com](https://office.com).)
+- **Бесплатно Используйте Office Online**. Создавать, просматривать и редактировать файлы Office в браузере, а также получать доступ к этим файлам практически с любого устройства, имеющего доступ к Интернету. [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) включает [Word Online](http://go.microsoft.com/fwlink/p/?linkid=746664), [Excel Online](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint Online](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote Online](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [электронную почту](http://go.microsoft.com/fwlink/p/?linkid=746676), [Календарь](http://go.microsoft.com/fwlink/p/?linkid=746678)и [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679). Чтобы приступить к работе, перейдите по адресу [Office.com](https://office.com) и войдите в свою [учетную запись Майкрософт](https://account.microsoft.com/account). (Если у вас нет учетной записи Майкрософт, вы можете создать ее по адресу [Office.com](https://office.com).)
 
-- **Попробуйте Office 365 для использования на домашних компьютерах**. Выбор между подписки на [Office 365 Домашняя страница](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) или [Личные Office 365](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) . и подписаться на пробную версию. Зарегистрируйтесь и установка последней версии Office на Windows или Mac компьютера, вашего операций ввода-вывода или смартфонов Android и операций ввода-вывода или Android планшетного ПК. С помощью Office 365 понравится Облачное хранилище с помощью OneDrive, вы получите 60 минут Скайп вызовов для мобильных устройств и номера проводной каждый месяц и вы получите других мощных средств. [Планы Office 365 видеть и цена для домашних](https://products.office.com/explore-office-for-home).
+- **Попробуйте Office 365 для домашнего использования**. Ознакомьтесь с [требованиями](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab), а затем выберите вариант между [Office 365 Домашняя](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) или [Office 365 персональный](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf). Запустите пробную версию и посмотрите, как работает Office 365. В Office 365 вы будете работать с облачным хранилищем в OneDrive, вы получите 60 минут вызовов Skype для мобильных телефонов и стационарный, и вы получите множество других замечательных функций. Чтобы узнать больше, ознакомьтесь с статьей Узнайте больше [от Office с office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1).
     
-- **Домашняя страница Office покупки &amp; 2016 учебы**. Если выбран этот параметр, будет сделать одноразовой покупки и установить Office 2016 на [ПК с Windows](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) или [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac). Это не подписки. Это лицензии на использование однократного, Бессрочная для одного компьютера.
+- **Приобретение домашнего &amp; учащегося для Office**. Если выбран этот вариант, вы сделаете разовую покупку и установили Office на компьютере с Windows или Mac. Эта подписка не является подпискум; Это одноразовая лицензия бессрочного использования для одного компьютера. Просмотрите [требования](http://office.com/systemrequirements), а затем выберите нужную версию.
+    - Если на компьютере под управлением Windows установлена ОС Windows 10, рассмотрите вопрос о том, как начать работу с [Office Home _Амп_ Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
+    - Если на компьютере с Windows установлена ОС Windows 7, 8 или 8,1 и в настоящее время вы не выполняете обновление до Windows 10, рассмотрите возможность загрузки Office Home _Амп_ Student 2016 (или другого выпуска Microsoft Office) у авторизованного торгового посредника.
 
-Вы также можете обновление в настоящее время не требуется. Приложения Office будут выполняться. Тем не менее обновление обеспечивает доступ к новые и улучшенные возможности, включая обновления безопасности. 
+Вы также можете отказаться от обновления в данный момент. Приложения Office продолжат работу. (Временные шкалы дат поддержки Office доступны [здесь](https://go.microsoft.com/fwlink/p/?linkid=2085724).) Однако обновление предоставит вам доступ к новым и усовершенствованным функциям, в том числе обновлениям для системы безопасности. 
    
 ## <a name="what-is-microsoft-365"></a>Что такое Microsoft 365?
 
-Microsoft 365 представляет собой комбинацию Office 365, Windows 10 и мобильных устройств предприятия + безопасности (Командной), который предоставляет завершена, интеллектуальные решения предоставить все, чтобы быть creative и могут работать вместе, безопасно. 
+[Microsoft 365](https://www.microsoft.com/microsoft-365) — это сочетание Office 365, Windows 10 и Enterprise Mobility + Security (EMS), предоставляющее комплексное интеллектуальное решение для обеспечения творческого управления и совместной работы. 
   
-Несмотря на то, что можно выполнить migrate Office 2007 или Office 2010 серверов и клиентов в Office 365, Microsoft 365 включает в себя лицензий и возможностей, чтобы убедиться, что организация работает в последние операционной системы Windows и устройств, включая Windows, iOS и Android (en) — участвуют и безопасность с помощью политик, которые требуют проверки подлинности и защиты данных. Кроме того Windows 10 и Office 365 клиентское программное обеспечение обновляется на постоянной основе для включения последних функций и обновления безопасности.
+Несмотря на то, что вы можете перенести серверы и клиенты Office 2007 или Office 2010 в Office 365, Microsoft 365 включает лицензии и возможности, чтобы обеспечить работу Организации в новейшей операционной системе Windows, а также на устройствах, включая Windows, iOS и Android — регистрируются и защищены с помощью политик, требующих проверки подлинности и защиты данных. Кроме того, Windows 10 и клиентское программное обеспечение Office 365 постоянно обновляются, чтобы включить новейшие функции и обновления для системы безопасности.
   
-Microsoft 365 — это способ цифровым способом преобразования бизнеса с помощью устройства постоянно улучшение и работы, включен и защищены облаке Майкрософт.
+Microsoft 365 — это способ преобразования бизнеса в постоянное усовершенствование устройств и продуктивной работы, включенных и защищенных Microsoft Cloud.
   
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |Получение сведений в разных версиях Microsoft 365.  <br/> |
-|[Документация по Microsoft 365 для бизнеса](https://docs.microsoft.com/microsoft-365/business/) <br/> |Получите подробные сведения о версии Microsoft 365 для предприятий малого и среднего бизнеса.  <br/> |
-|[Документация по Microsoft 365 образования](https://docs.microsoft.com/microsoft-365/education/) <br/> |Получите подробные сведения о версии Microsoft 365 для образовательных организаций.  <br/> |
-|[Документация по Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |Получите подробные сведения о версии Microsoft 365 для предприятий.  <br/> |
+|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |Получение сведений о различных версиях Microsoft 365.  <br/> |
+|[Microsoft 365 бизнес-документация](https://docs.microsoft.com/microsoft-365/business/) <br/> |Получите подробные сведения о версии Microsoft 365 для малых и средних предприятий.  <br/> |
+|[Документация по образовательных заВедений Microsoft 365](https://docs.microsoft.com/microsoft-365/education/) <br/> |Получите подробные сведения о версии Microsoft 365 для образовательных организаций.  <br/> |
+|[Документация по Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |Получите подробные сведения о версии Microsoft 365 для корпоративных организаций.  <br/> |
 
    
 ## <a name="related-topics"></a>Статьи по теме
   
-[Политика жизненного цикла поддержки Майкрософт](https://go.microsoft.com/fwlink/?linkid=865200)
+[Политика жизненного цикла Майкрософт](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Группа пенсионного обеспечения Office (сообщества Microsoft Технический)](https://go.microsoft.com/fwlink/?linkid=842065)
+[Группа выбытия Office (Майкрософт Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
 
-[Обновление с Office 2010 серверов и клиентов](upgrade-from-office-2010-servers-and-products.md)
-
-[Обновление с Office 2007 серверов и клиентов](upgrade-from-office-2007-servers-and-products.md)
 
 
 

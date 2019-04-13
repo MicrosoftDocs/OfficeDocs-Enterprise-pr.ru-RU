@@ -1,5 +1,5 @@
 ---
-title: Ресурсы, которые помогут вам обновление с Office 2007 серверов и клиентов
+title: Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -20,45 +20,46 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: Скоро заканчивается поддержка для серверов выпуска 2007 системы Office и клиентских приложений и соглашения о поддержке настраиваемого недоступны. Используйте эту статью для начала планирования обновления сейчас.
-ms.openlocfilehash: 1a8747e15c9b4051a457deb75e61d02c0c6d73f6
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+description: Поддержка скоро завершается для серверов и клиентских приложений Office 2007, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
+ms.openlocfilehash: d717688e5eb0baefd73cf70914aa378400820c0c
+ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933086"
+ms.lasthandoff: 04/13/2019
+ms.locfileid: "31838211"
 ---
-# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ресурсы, которые помогут вам обновление с Office 2007 серверов и клиентов
+# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007
 
-Если вы используете Office 2007 продукты и услуги, поддержка его завершения этих приложений. При планировании обновления, это много времени, можно перенести в облако Майкрософт, начиная с Office 365. Используйте эту статью в качестве отправной точки просмотрите используемые параметры и планирование обновления.
+Если вы используете продукты и службы Office 2007, поддержка этих приложений закончилась. При планировании обновления это отличное время для перехода на Microsoft Cloud, начиная с Office 365. Используйте эту статью в качестве отправной точки для просмотра вариантов и планирования обновления.
       
 ## <a name="office-2007-planning-roadmaps"></a>Планы планирования Office 2007
   
-Более поддерживаются для продуктов Office 2007 и служб. Следующие планы поможет вам спланировать обновление сейчас.
+Служба поддержки закончилась для продуктов и служб Office 2007. Вы можете планировать обновление сейчас с помощью следующих схем.
 
-|**Планирование содержимого**|**Поддержка даты окончания**|
+|**Планирование контента**|**Поддержка дат завершена**|
 |:-----|:-----|
-|[Конец стратегия поддержки Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10 октября 2017 г.  <br/> |
+|[План поддержки Office 2007 в конце поддержки](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10 октября 2017 г.  <br/> |
 |[Exchange 2007 end of support roadmap](exchange-2007-end-of-support.md) <br/> |11 апреля 2017 г.  <br/> |
-|[План действий после прекращения поддержки SharePoint Server 2007](sharepoint-2007-end-of-support.md); <br/> |10 октября 2017 г.  <br/> |
+|
+  [План действий после прекращения поддержки SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 октября 2017 г.  <br/> |
 |[План действий после прекращения поддержки Project Server 2007](project-server-2007-end-of-support.md); <br/> |10 октября 2017 г.  <br/> |
-|[Обновление с Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 января 2018  <br/> |
+|[Обновление с сервера Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 января 2018 г.  <br/> |
 |[План действий после прекращения поддержки PerformancePoint Server 2007](pps-2007-end-of-support.md). <br/> |9 января 2018 г.  <br/> |
    
-По окончании поддержки продуктов Майкрософт не существует обновления для системы безопасности, не обновлений, варианты бесплатная или платная технической поддержки (в том числе соглашения об обслуживания) или online технического обновления содержимого. Будет ли вы предприятия или отдельный пользователь, у вас есть несколько вариантов, которые следует учитывать:
+Когда поддержка заканчивается для продукта корпорации Майкрософт, отсутствуют новые обновления для системы безопасности, обновления, не связанные с безопасностью, бесплатные или платные средства поддержки (в том числе настраиваемые соглашения о поддержке) или обновления технического контента в Интернете. Независимо от того, является ли ваша организация корпоративной или индивидуальной, вы можете рассмотреть несколько вариантов:
 
-## <a name="im-a-home-user-what-do-i-do"></a>Я домашних пользователей. Чем я занимаюсь?
+## <a name="im-a-home-user-what-do-i-do"></a>Я домашний пользователь. What do I do?
 
-Если вы используете продуктов Office 2010 и приложениями дома, видеть [эти сведения](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
+Если вы используете продукты и приложения Office 2007 на домашней странице, ознакомьтесь с [этими сведениями](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
      
-## <a name="related-topics"></a>См. также:
+## <a name="related-topics"></a>Статьи по теме
 
-[Группа пенсионного обеспечения Office (сообщества Microsoft Технический)](https://go.microsoft.com/fwlink/?linkid=842065)
+[Группа выбытия Office (Майкрософт Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
   
-[Видео: Что такое Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Видео: что такое Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Политика по срокам Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Политика жизненного цикла Майкрософт](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Планирование обновления Office 2007 или Office 2010 серверов и клиентов](plan-upgrade-previous-versions-office.md)
+[Планирование обновления с серверов и клиентов Office 2007 и Office 2010](plan-upgrade-previous-versions-office.md)
   
 
