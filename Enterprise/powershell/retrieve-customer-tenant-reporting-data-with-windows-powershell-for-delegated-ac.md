@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: Сводка. Узнайте, как использовать удаленный сеанс Windows PowerShell для Microsoft Exchange Online, чтобы получать отчеты от отдельных пользовательских клиентов.
-ms.openlocfilehash: 8df88e8b00cbd8e14558e423f41f45ea5f9bf26a
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 478cd8736a837dae571e20f38187be087b48231a
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992829"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Получение отчетных данных пользовательских клиентов с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 
@@ -26,9 +26,8 @@ ms.locfileid: "31001762"
   
 В этой статье мы воспользуемся удаленным сеансом Windows PowerShell для Exchange Online, чтобы подключиться к одному пользовательскому клиенту и получить отчет. По умолчанию Windows PowerShell не поддерживает сбор отчетных данных из нескольких пользовательских клиентов. Отчеты, полученные с помощью этой процедуре, предназначены только для  _DelegatedOrg_, к которой выполняется подключение.
   
-Если вам нужно получить один отчет для всех пользовательских клиентов, вы можете найти соответствующий пример сценария в статье [Сбор отчетных данных о пользователях с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md).
-  
-## <a name="before-you-begin"></a>Перед началом работы
+ 
+## <a name="before-you-begin"></a>До начала работы
 
 - Для подключения к клиенту Exchange Online необходимо использовать удаленный сеанс Windows PowerShell. Указания см. в статье [Подключение к клиентам Exchange Online с помощью удаленного сеанса Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
     
