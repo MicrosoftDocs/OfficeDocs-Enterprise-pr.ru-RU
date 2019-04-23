@@ -11,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Расширьте свою географию присутствия Office 365 с поддержкой нескольких регионов в OneDrive Online.
-ms.openlocfilehash: 15dcb44943fa1bf331ef6260946f7c3a632d3c4a
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: ce5a846391fd62daafd174baea4144ac1d1aba37
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992849"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Поддержка нескольких регионов в OneDrive и SharePoint Online
 
@@ -30,7 +30,9 @@ ms.locfileid: "30948590"
 
 Хранилище OneDrive каждого пользователя может быть подготовлено или [перемещено администратором](move-onedrive-between-geo-locations.md) в периферийное расположение в соответствии с предпочтительным расположением данных (PDL) пользователя. После этого личные файлы хранятся в этом географическом расположении, но ими можно делиться с пользователями из других географических расположений.
 
-## <a name="sites-and-groups"></a>Сайты и группы
+## <a name="sharepoint-sites-and-groups"></a>Сайты и группы SharePoint
+
+Функцией поддержки нескольких регионов можно управлять в Центре администрирования SharePoint. Подробные сведения см. в [соответствующей записи блога](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302).
 
 Когда пользователь создает сайт SharePoint, подключенный к группе, его значение PDL используется для определения географического расположения, в котором создается сайт и почтовый ящик связанной группы. (Если значение PDL пользователя не задано или присвоено географическое расположение, не настроенное в качестве периферийного расположения, сайт и почтовый ящик создаются в центральном расположении.)
 
@@ -46,7 +48,7 @@ ms.locfileid: "30948590"
 
 ## <a name="see-also"></a>См. также
 
-[Aka.ms/GetMultiGeo ](https://Aka.ms/GetMultiGeo)
+[Поддержка нескольких регионов в SharePoint и группах Office 365](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)
 
 [Администрирование среды с поддержкой нескольких регионов](administering-a-multi-geo-environment.md)
 

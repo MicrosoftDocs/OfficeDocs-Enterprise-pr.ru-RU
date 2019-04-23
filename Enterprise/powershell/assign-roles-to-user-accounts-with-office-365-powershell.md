@@ -3,7 +3,7 @@ title: Назначение ролей учетным записям польз�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/31/2019
+ms.date: 04/18/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: Сводка. Назначайте роли учетным записям пользователей, используя PowerShell для Office 365.
-ms.openlocfilehash: 702c7358ccca9bb36bd106d742b5c454283ee8b4
-ms.sourcegitcommit: d0c870c7a487eda48b11f649b30e4818fd5608aa
+ms.openlocfilehash: 78f2e08df6d46588b93dc217d0e16b7c3a350a88
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957710"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365
 
@@ -32,26 +32,38 @@ ms.locfileid: "29690440"
   
 Затем определите имя входа для учетной записи пользователя, которую нужно добавить в роль (пример: fredsm@contoso.com). Оно также называется именем участника-пользователя (UPN).
 
-После этого определите имя роли. Используйте эту команду, чтобы перечислить роли, которые можно назначать с помощью PowerShell.
+После этого определите имя роли. Используйте [список разрешений роли администратора в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
-````
-Get-AzureADDirectoryRole
-````
+>[!Note]
+>Обратите внимание на примечания в этой статье. Некоторые имена ролей отличаются для Azure AD PowerShell. Например роль "Администратор SharePoint" в центре администрирования Microsoft 365 называется "Администратор службы SharePoint" для Azure AD PowerShell.
+>
 
 Затем укажите имена для входа и роли и выполните указанные ниже команды.
   
 ```
 $userName="<sign-in name of the account>"
 $roleName="<role name>"
-Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+if ($role -eq $null) {
+$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
+Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+}
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
 Вот пример полного набора команд:
   
 ```
 $userName="belindan@contoso.com"
-$roleName="Lync Service Administrator"
-Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$roleName="SharePoint Service Administrator"
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+if ($role -eq $null) {
+$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
+Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+}
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
 Чтобы отобразить список имен пользователей для определенной роли, используйте указанные ниже команды.

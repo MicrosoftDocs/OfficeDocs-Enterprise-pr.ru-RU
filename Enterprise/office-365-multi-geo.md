@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Расширьте свою географию присутствия Office 365 с помощью поддержки нескольких регионов в Office 365.
-ms.openlocfilehash: e216f61806ea5d648519ac7217acf7dbaddd1419
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.openlocfilehash: eb5c28131b7ac629d9acc607c777756b8825549c
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30934082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992839"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 с поддержкой нескольких регионов
 
@@ -55,7 +55,7 @@ ms.locfileid: "30934082"
 
 Чтобы приступить к работе с несколькими регионами, следуйте указанным ниже инструкциям.
 
-1. Совместно с группой специалистов, занимающихся учетными записями, добавьте план обслуживания _с поддержкой нескольких регионов в Office 365_. Они помогут вам добавить необходимое количество лицензий.
+1. Совместно с группой специалистов, занимающихся учетными записями, добавьте план обслуживания _с поддержкой нескольких регионов в Office 365_. Они помогут вам добавить необходимое количество лицензий. Функция поддержки нескольких регионов доступна клиентам с не менее 2500 подписками на Office 365.
 
    Прежде чем вы сможете начать работу в Office 365 с поддержкой нескольких регионов корпорации Майкрософт потребуется настроить ваш клиент Exchange Online для поддержки нескольких регионов. Этот разовый процесс настройки запускается после заказа плана обслуживания с *функциями поддержки нескольких регионов в Office 365* и появления лицензий в вашем клиенте. Вы получите уведомления в [Центре сообщений Office 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) после присвоения лицензий с поддержкой нескольких регионов и затем сможете начать настройку и использование функций поддержки нескольких регионов в Office 365.
 
@@ -69,8 +69,8 @@ ms.locfileid: "30934082"
 
 ## <a name="see-also"></a>См. также
 
-[Aka.ms/GoMultiGeo ](https://Aka.ms/GoMultiGeo)
+[Поддержка нескольких регионов в Exchange Online и OneDrive](https://Aka.ms/GoMultiGeo)
 
-[Поддержка нескольких регионов в OneDrive и SharePoint Online](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
+[Поддержка нескольких регионов в OneDrive и SharePoint Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)
 
-[Поддержка нескольких регионов в Exchange Online](multi-geo-capabilities-in-exchange-online.md)
+[Поддержка нескольких регионов в Exchange Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)
