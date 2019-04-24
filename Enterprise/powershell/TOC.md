@@ -37,7 +37,6 @@
 ### [Добавление домена к области клиентов с помощью Windows PowerShell для партнеров с делегированным доступом](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 ### [Подключение к Exchange Online с помощью удаленного сеанса Windows PowerShell для партнеров с делегированным доступом](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [Получение данных отчетов пользователей с помощью Windows PowerShell для партнеров с делегированным доступом](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
-### [Сбор данных отчетов пользователей с помощью Windows PowerShell для партнеров с делегированным доступом](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
 ## [Управление Skype для бизнеса Online](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [Управление политиками Skype для бизнеса Online](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [Назначение индивидуальных политик Skype для бизнеса Online](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
