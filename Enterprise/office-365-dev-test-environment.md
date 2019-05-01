@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: Сводка. Используйте это руководство, чтобы создать пробную подписку Office 365 для оценки или разработки и тестирования.
 ms.openlocfilehash: 3e7aafc847b28ad7a81373539c2ea30ce304725a
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741245"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487603"
 ---
 # <a name="office-365-devtest-environment"></a>Среда разработки и тестирования Office 365
 
@@ -68,7 +68,7 @@ ms.locfileid: "31741245"
     
 2. Чтобы зарегистрировать новую учетную запись Майкрософт, перейдите на сайт [https://outlook.com](https://outlook.com) и создайте учетную запись, используя новый адрес электронной почты. Эта учетная запись будет использоваться для регистрации в Office 365.
     
-  - Запишите здесь имя и фамилию для новой учетной записи: ![](./media/Common-Images/TableLine.png)
+  - Запишите имя и фамилию новой учетной записи здесь: ![](./media/Common-Images/TableLine.png)
     
   - Запишите здесь адрес электронной почты новой учетной записи: ![](./media/Common-Images/TableLine.png)@outlook.com
     
@@ -197,7 +197,7 @@ $spURL="https://" + $orgName + "-admin.sharepoint.com"
 Connect-SPOService -Url $spURL
 ```
 
-4. В диалоговом окне **Командная консоль Microsoft SharePoint Online** введите имя глобального администратора Office 365 (например, jdoe@contosotoycompany.onmicrosoft.com) и пароль, а затем нажмите кнопку **Войти**.
+4. В диалоговом окне **Командная консоль Microsoft SharePoint Online** введите имя глобального администратора Office 365 (например, jdoe@contosotoycompany.onmicrosoft.com) и пароль, а затем нажмите кнопку **Войти**.
     
 5. Чтобы создать три сайта групп (отделов продаж, производства и поддержки), введите имя глобального администратора Office 365, а затем выполните следующие команды в командной консоли SharePoint Online:
     
@@ -263,27 +263,27 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 Используйте следующие статьи в среде разработки и тестирования Office 365:
   
-- [Синхронизация каталогов для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [Синхронизация каталогов для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
-- [Многофакторная проверка подлинности для среды разработки и тестирования Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [Многофакторная проверка подлинности для среды разработки и тестирования Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
-- [Федеративная идентификация для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Федеративная идентификация для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
-- [Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-- [Advanced Threat Protection в среде разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Advanced Threat Protection для среды разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
-- [Advanced eDiscovery для среды разработки и тестирования Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [Advanced eDiscovery для среды разработки и тестирования Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
 - [Защита конфиденциальных файлов в среде разработки и тестирования Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
-- [Среда разработки и тестирования изолированного сайта группы SharePoint Online](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [Изолированный сайт группы SharePoint Online в среде разработки и тестирования](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
 - [Классификация и маркировка данных в среде разработки и тестирования Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
 ## <a name="see-also"></a>См. также
 
-- [Руководства по лаборатории тестирования для облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+- [Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
 
