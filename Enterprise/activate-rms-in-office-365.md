@@ -1,5 +1,5 @@
 ---
-title: Активация службы управления правами в Центре администрирования Office 365
+title: Активация службы управления правами в Центре администрирования Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,33 +14,33 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
-description: Указатели на темы, посвященные активировать и использовать службу управления правами с помощью Office 365.
+description: Ссылки на разделы, в которых описывается активация и использование службы Rights Management с Office 365.
 ms.openlocfilehash: b3df1f7ff39214d5ab7ab8f5c730299c1c22f30b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542327"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487798"
 ---
-# <a name="activate-rights-management-in-the-office-365-admin-center"></a>Активация службы управления правами в Центре администрирования Office 365
+# <a name="activate-rights-management-in-the-office-365-admin-center"></a>Активация службы управления правами в Центре администрирования Office 365
 
-В этом разделе указывает на разделы, в которых описывается, как включить и использовать службы управления правами с Office 365.
+В этом разделе содержатся ссылки на разделы, в которых описывается включение и использование RMS в Office 365.
   
-Необходимо активировать службы управления правами (RMS), прежде чем использовать функции управления правами на доступ к данным (IRM) приложений Office 365 и служб. После активации службы управления правами для защиты важных документов и по электронной почте с помощью службы управления правами Azure можно начать вашей организации. Это решение защиты информации можно защищать все типы файлов и интегрируется с клиентскими приложениями, например Excel, Microsoft Word и другим пользователям, Exchange Online и SharePoint Online и серверов, таких как Microsoft Exchange и Microsoft SharePoint.
+Прежде чем использовать функции управления правами на доступ к данным (IRM) в приложениях и службах Office 365, необходимо активировать службу Rights Management (RMS). После активации службы управления правами ваша организация может начать защищать важные документы и сообщения электронной почты с помощью Azure RMS. Это решение защиты информации может защищать все типы файлов и интегрировать их с клиентскими приложениями, такими как Excel, Microsoft Word и другие, Exchange Online и SharePoint Online, а также серверами, такими как Microsoft Exchange и Microsoft SharePoint.
   
 > [!TIP]
-> Если вы не знаете, следует ли управления правами, проверяет, содержит ли ваша организация одно или несколько из [этих бизнес-проблемы или требования](https://docs.microsoft.com/rights-management/understand-explore/azure-rms-problems-it-solves)и рассмотрев некоторые [Примеры управления правами в действии](https://docs.microsoft.com/rights-management/understand-explore/what-admins-users-see). 
+> Если вы не уверены в том, что вам нужно управлять правами, убедитесь, что у вашей организации есть одна или несколько из [этих бизнес-проблем или требований](https://docs.microsoft.com/rights-management/understand-explore/azure-rms-problems-it-solves), и ознакомьтесь с [примерами управления правами в действии](https://docs.microsoft.com/rights-management/understand-explore/what-admins-users-see). 
   
-Используйте эти ссылки для получения дополнительных сведений о RMS:
+Используйте следующие ссылки для получения дополнительных сведений о службе управления правами:
   
-- Чтобы узнать больше о службы управления правами, приведены [Azure Rights Management](https://docs.microsoft.com/rights-management/understand-explore/what-is-azure-rms).
+- Чтобы узнать больше о службе управления правами, ознакомьтесь со статьей [Управление правами Azure](https://docs.microsoft.com/rights-management/understand-explore/what-is-azure-rms).
     
-- Вы начинаете службы управления правами, в статье [Overview of Azure Rights Management](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management).
+- Если вы не знакомы с RMS, ознакомьтесь со статьей [Обзор управления правами Azure](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management).
     
-- Этапы развертывания в разделе [план развертывания управления правами Azure](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap).
+- Общие сведения о развертывании можно найти в статье [план развертывания службы управления правами Azure](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap).
     
-- Сведения об активации службы управления правами для Office 365 содержатся в разделе [Активация службы управления правами Azure](https://technet.microsoft.com/library/jj658941.aspx).
+- Инструкции по активации службы управления правами для Office 365 приведены в разделе [Активация службы управления правами Azure](https://technet.microsoft.com/library/jj658941.aspx).
     
-- Сбиты с толку о различиях между Azure RMS и IRM в Office? Нужна помощь с другими терминами Rights Management? В разделе [терминология управления правами](https://technet.microsoft.com/library/dn595132.aspx).
+- Путают различия между Azure RMS и IRM в Office? Хотите помочь другим условиям управления правами? Ознакомьтесь со статьей " [терминология для управления правами](https://technet.microsoft.com/library/dn595132.aspx)".
     
 

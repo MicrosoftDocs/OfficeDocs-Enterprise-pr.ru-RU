@@ -1,5 +1,5 @@
 ---
-title: Разработка сети для Microsoft Azure PaaS
+title: Разработка сети для Microsoft Azure PaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 'Сводка: в этой статье рассказывается о том, как оптимизировать сеть для доступа к Microsoft Azure PaaS.'
 ms.openlocfilehash: 49096276a0e8356a11e52bc8765cc796eec32510
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872240"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491382"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Разработка сети для Microsoft Azure PaaS
 
@@ -89,7 +89,7 @@ ms.locfileid: "26872240"
   
 **Рис. 3. Диспетчер трафика Azure**
 
-![Рис. 3. Диспетчер трафика Azure](media/Network-Poster/PaaS3.png)
+![Рис. 3. Диспетчер трафика Azure](media/Network-Poster/PaaS3.png)
   
 На рис. 3 показан основной процесс, который диспетчер трафика использует для маршрутизации запросов в три различных веб-приложения Azure в США, Европе и Азии. В этом примере происходит указанный ниже процесс.
   
@@ -107,5 +107,5 @@ ms.locfileid: "26872240"
 
 [Организация сети в Microsoft Cloud для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

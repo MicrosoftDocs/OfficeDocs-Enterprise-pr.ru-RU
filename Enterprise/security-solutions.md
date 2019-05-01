@@ -1,5 +1,5 @@
 ---
-title: Решения для обеспечения безопасности
+title: Решения по обеспечению безопасности
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: Сводка. В этих статьях содержатся рекомендации по развертыванию решений для обеспечения безопасности в облачных предложениях Майкрософт.
 ms.openlocfilehash: 17bb89553b97d1a15c076d9bb4ce9acca19e62d2
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915274"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487215"
 ---
 # <a name="security-solutions"></a>Решения для обеспечения безопасности
 
@@ -27,7 +27,7 @@ ms.locfileid: "22915274"
   
 Ниже приведены решения для безопасного доступа, совместной работы и данных в рамках Microsoft Office 365, Microsoft Azure, Microsoft Dynamics 365, а также пакета Microsoft Enterprise Mobility + Security (EMS):
 
-- [Защита информации в Office 365 в соответствии с регламентом GDPR](office-365-information-protection-for-gdpr.md)
+- [Защита информации в Office 365 в соответствии с GDPR](office-365-information-protection-for-gdpr.md)
   
 - [Руководство по безопасности (Майкрософт) для политических кампаний, некоммерческих и других динамических организаций](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
     

@@ -1,5 +1,5 @@
 ---
-title: Настройка служб и приложений Office 365 корпоративный
+title: Настройка служб и приложений Office 365 корпоративный
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 description: Настройка служб и приложений Office 365 корпоративный
 ms.openlocfilehash: 2782d4501eb1e0b9d9d6fc40c251e1db065c86be
-ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004366"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490135"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Настройка служб и приложений Office 365 корпоративный
 

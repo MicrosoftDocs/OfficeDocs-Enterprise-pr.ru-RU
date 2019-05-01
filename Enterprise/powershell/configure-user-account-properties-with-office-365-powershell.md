@@ -1,5 +1,5 @@
 ---
-title: Настройка параметров учетной записи пользователя с помощью PowerShell для Office 365
+title: Настройка параметров учетной записи пользователя с помощью PowerShell для Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,11 +16,11 @@ ms.custom:
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: Сводка. Сведения о том, как с помощью PowerShell в Office 365 настроить свойства одной или нескольких учетных записей пользователей в клиенте Office 365:.
 ms.openlocfilehash: 4db63482fdcc1d6cb186e663fd55c13186b33813
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546490"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491435"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Настройка параметров учетной записи пользователя с помощью PowerShell для Office 365
 

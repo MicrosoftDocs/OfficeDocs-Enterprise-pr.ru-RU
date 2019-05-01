@@ -1,9 +1,9 @@
 ---
-title: Конечные точки Office 365 Germany
+title: Конечные точки Office 365 Germany
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 04/29/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,14 +16,14 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Если в вашей организации используется Office 365 и компьютеры сети не подключаются к Интернету, ниже вы найдете конечные точки (FQDN, Ports, URL-адреса, а также диапазоны адресов IPv4 и IPv6), которые следует включить в списки разрешенных исходящих подключений, чтобы убедиться, что компьютеры могут успешно использовать Office 365.
 hideEdit: true
-ms.openlocfilehash: 397d51f9fb6f176de2ea19d76ca7832ad90ec2e9
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.openlocfilehash: 3a25a81cd4e13f4809dd0f279d97860712b181b4
+ms.sourcegitcommit: 89eaafb5e21b80b8dfdc72a93f8588bf9c4512d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341970"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33497681"
 ---
-# <a name="office-365-germany-endpoints"></a>Конечные точки Office 365 Germany
+# <a name="office-365-germany-endpoints"></a>Конечные точки Office 365 Germany
 
  *Область применения: Office 365 Admin*
 
@@ -31,12 +31,12 @@ ms.locfileid: "30341970"
   
 > [!NOTE]
 > Корпорация Майкрософт выпустила веб-службу на базе REST для записей IP-адресов и полных доменных имен на этой странице. Эта новая служба поможет настраивать и обновлять устройства периметра сети, такие как брандмауэры и прокси-серверы. Вы можете скачать список конечных точек, текущую версию списка или сведения об определенных изменениях. Эта служба заменяет XML-документ, связанный с этой страницей, который устарел 2 октября 2018 г. Сведения о том, как опробовать новую службу, см. в статье [Веб-служба](office-365-ip-web-service.md).
-  
+ 
  **Конечные точки Office 365:**[ по всему миру (включая GCC)](urls-and-ip-address-ranges.md)  | [Office 365, предоставляемый 21 Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany* | [Office 365 для DoD государственных организаций США](office-365-u-s-government-dod-endpoints.md) | [Office 365 для GCC High государственных организаций США](office-365-u-s-government-gcc-high-endpoints.md)  |
   
 |||
 |:-----|:-----|
-|**Последнее обновление:** 07.01.2019, [подписка на журнал изменений](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) |**Скачивание:** все обязательные и необязательные назначения в одном списке [в формате JSON](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
+|**последнее обновление:** 04/29/2019 — ![](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [подписка на журнал изменений](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) RSS |**Скачивание:** все обязательные и необязательные назначения в одном списке [в формате JSON](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Начните с [управления конечными точками Office 365](managing-office-365-endpoints.md) , чтобы узнать, какие рекомендации по управлению сетевым подключением с помощью этих данных. Данные конечных точек обновляются в начале каждого месяца с новыми IP-адресами и URL-адресами, опубликованными в течение 30 дней до момента активации. Это позволяет пользователям, у которых еще не было автоматизированное обновление, завершить свои процессы, прежде чем потребуется новое подключение. Конечные точки также могут быть обновлены в течение месяца при необходимости обращения к укрупнению поддержки, происшествиям безопасности или другим немедленным рабочим требованиям. Вы всегда можете обратиться к подписке на [Журнал изменений](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 

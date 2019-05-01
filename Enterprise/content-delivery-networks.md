@@ -1,5 +1,5 @@
 ---
-title: Сети доставки контента
+title: Сети доставки содержимого
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Используйте эту информацию, чтобы узнать о том, как Office 365 использует сети доставки содержимого (сети CDN) для повышения производительности.
 ms.openlocfilehash: 5d02b28fad0e47473cc6a75948c9dd27e6728bb5
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039486"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490451"
 ---
 # <a name="content-delivery-networks-cdns"></a>Сети доставки контента (сети CDN)
 
@@ -95,9 +95,9 @@ ms.locfileid: "31039486"
 
 2. Office 365 либо возвращает данные непосредственно клиенту, либо, если данные являются частью набора контента, размещенного в сети CDN, перенаправляет клиента на URL-адрес сети CDN.
 
-    a. Если данные уже кэшированы в общедоступном источнике, клиент загрузит данные непосредственно из расположения сети CDN в клиент. __
+    а. Если данные уже кэшированы в общедоступном источнике, клиент загрузит данные непосредственно из расположения сети CDN в клиент. __
 
-    б) Если данные уже кэшированы в _частном_ источнике, служба CDN проверяет разрешения учетной записи пользователя Office 365 на происхождение этой учетной записи. Если у вас есть разрешения, SharePoint Online динамически создает настраиваемый URL-адрес, состоящий из пути к ресурсу в сети CDN и двух маркеров доступа, и возвращает пользовательский URL-адрес для клиента. Затем клиент загружает данные непосредственно из ближайшего расположения CDN в клиент с помощью настраиваемого URL-адреса.
+    б. Если данные уже кэшированы в _частном_ источнике, служба CDN проверяет разрешения учетной записи пользователя Office 365 на происхождение этой учетной записи. Если у вас есть разрешения, SharePoint Online динамически создает настраиваемый URL-адрес, состоящий из пути к ресурсу в сети CDN и двух маркеров доступа, и возвращает пользовательский URL-адрес для клиента. Затем клиент загружает данные непосредственно из ближайшего расположения CDN в клиент с помощью настраиваемого URL-адреса.
 
 3. Если данные не кэшируются в сети CDN, узел CDN запрашивает данные из Office 365, а затем кэширует их в течение определенного периода времени после загрузки данных клиентом.
 
@@ -113,11 +113,11 @@ ms.locfileid: "31039486"
 
 Сети CDN, используемый в Office 365, всегда изменяется, а во многих случаях в событии один из них настроено несколько партнеров CDN. Основной сети CDN, используемый в Office 365:
 
-|CDN  |Company  |Использование  |ссылок.  |
+|CDN  |Company  |Применение  |ссылок.  |
 |---------|---------|---------|---------|
 |CDN для Office 365     |Akamai         |Универсальные активы в общедоступных источниках, контент пользователя SharePoint в частных источниках         |[Использование сети доставки содержимого Office 365 с SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)         |
-|Сеть CDN Azure     |Майкрософт         |Пользовательский код, решения SharePoint Framework         |[Сеть CDN Microsoft Azure](https://azure.microsoft.com/documentation/services/cdn/)         |
-|Сеть CDN Microsoft AJAX (только чтение)     |Майкрософт         |Общие библиотеки для AJAX, jQuery, ASP.NET, начальной загрузки, выколачивание. js и т. д.         |[Сеть CDN Microsoft AJAX](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)         |
+|Сеть CDN Azure     |Microsoft         |Пользовательский код, решения SharePoint Framework         |[Сеть CDN Microsoft Azure](https://azure.microsoft.com/documentation/services/cdn/)         |
+|Сеть CDN Microsoft AJAX (только чтение)     |Microsoft         |Общие библиотеки для AJAX, jQuery, ASP.NET, начальной загрузки, выколачивание. js и т. д.         |[Сеть CDN Microsoft AJAX](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>Какой выигрыш в производительности обеспечивает сеть CDN?
 
@@ -186,8 +186,8 @@ ms.locfileid: "31039486"
 
 [Управление конечными точками Office 365](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 
-[URL-адреса и диапазоны IP-адресов Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
+[URL-адреса и диапазоны IP-адресов для Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
 [Использование сети доставки содержимого Office 365 с SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
 
-[Центр управления безопасностью Майкрософт](https://www.microsoft.com/trustcenter)
+[Центр управления безопасностью (Майкрософт)](https://www.microsoft.com/trustcenter)

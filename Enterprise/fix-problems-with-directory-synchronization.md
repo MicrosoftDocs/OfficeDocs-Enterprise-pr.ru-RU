@@ -1,5 +1,5 @@
 ---
-title: Устранение проблем с синхронизацией каталогов для Office 365
+title: Устранение проблем с синхронизацией службы каталогов для Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: В этой статье описываются распространенные причины проблем с синхронизацией службы каталогов в Office 365, а также способы их устранения.
 ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001842"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487473"
 ---
-# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Устранение проблем с синхронизацией каталогов для Office 365
+# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Устранение проблем с синхронизацией службы каталогов для Office 365
 
 С помощью синхронизации службы каталогов можно продолжать управлять локальными пользователями и группами и синхронизировать добавления, удаления и изменения в облаке. Однако программа установки немного сложна, и иногда может быть трудно определить источник проблем. У нас есть ресурсы, которые помогут вам определить потенциальные проблемы и устранить их.
   

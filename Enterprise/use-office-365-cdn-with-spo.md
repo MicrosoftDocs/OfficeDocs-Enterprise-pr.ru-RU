@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: В этой статье описывается использование сети доставки содержимого (CDN) Office 365 для ускорения доставки ресурсов SharePoint Online всем пользователям независимо от того, где они размещены, или от того, как они обращаются к контенту.
 ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
-ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31396927"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492233"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Использование сети доставки содержимого Office 365 с SharePoint Online
 
@@ -613,7 +613,7 @@ spo cdn set --type Public --enabled false
 https://publiccdn.sharepointonline.com/<TenantHostName>/sites/site/library/asset.png
 ```
 
-Замените **тенансостнаме** на имя вашего клиента. Пример:
+Замените **тенансостнаме** на имя вашего клиента. Пример.
 
 ``` html
 https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library/asset.png

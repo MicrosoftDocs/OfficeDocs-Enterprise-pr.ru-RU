@@ -1,5 +1,5 @@
 ---
-title: Архитектура гибридного облака Майкрософт
+title: Архитектура гибридных облачных сценариев Майкрософт
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: Сводка. Сведения об архитектуре гибридных облачных предложений Майкрософт.
 ms.openlocfilehash: f5493c0f008b22af412ee95ccb8b7581eee71476
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038013"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490274"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Архитектура гибридного облака Майкрософт
 
@@ -67,5 +67,5 @@ ms.locfileid: "31038013"
 
 [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

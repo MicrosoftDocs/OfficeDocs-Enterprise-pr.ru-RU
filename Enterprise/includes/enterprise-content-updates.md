@@ -3,18 +3,6 @@
 
 
 
-## <a name="week-of-march-18-2019"></a>Неделя с 18 марта 2019 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 3/18/2019 | [Ответы на общие вопросы о перемещении данных](/Office365/Enterprise/data-move-faq) | Изменено |
-| 3/18/2019 | [Во время и после перемещения данных](/Office365/Enterprise/during-and-after-your-data-move) | Изменено |
-| 3/18/2019 | [Планирование и тестирование загрузки SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | Изменено |
-| 3/18/2019 | [Взаимодействие между клиентами Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | Изменено |
-| 3/19/2019 | [Просмотр учетных записей пользователей с помощью PowerShell для Office 365](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | Изменено |
-
-
 ## <a name="week-of-march-25-2019"></a>Неделя с 25 марта 2019 г.
 
 
@@ -154,4 +142,16 @@
 | 4/18/2019 | [Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | Изменено |
 | 4/18/2019 | [Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | Изменено |
 | 4/18/2019 | [Маршрутизация с использованием ExpressRoute для Office 365](/Office365/Enterprise/routing-with-expressroute) | Изменено |
-| 4/18/2019 | [Управление надстройками с помощью командлетов PowerShell для централизованного развертывания](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | изменено |
+| 4/18/2019 | [Управление надстройками с помощью командлетов PowerShell для централизованного развертывания](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | Изменено |
+
+
+## <a name="week-of-april-22-2019"></a>Неделя с 22 апреля 2019 г.
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 4/22/2019 | [Поддержка нескольких регионов в OneDrive и SharePoint Online](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | Изменено |
+| 4/22/2019 | [Office 365 с поддержкой нескольких регионов](/Office365/Enterprise/office-365-multi-geo) | Изменено |
+| 4/22/2019 | Сбор отчетных данных о пользователях с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP) | удалены |
+| 4/22/2019 | [Управление Office 365 с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)](/Office365/Enterprise/powershell/manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p) | Изменено |
+| 4/22/2019 | [Получение отчетных данных пользовательских клиентов с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)](/Office365/Enterprise/powershell/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac) | изменено |

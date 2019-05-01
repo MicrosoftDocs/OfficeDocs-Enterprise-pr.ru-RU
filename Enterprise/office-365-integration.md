@@ -1,5 +1,5 @@
 ---
-title: Использование домена для интеграции с локальной службой электронной почты, например с помощью службы каталогов
+title: Интеграция Office 365 с локальными средами
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -20,13 +20,13 @@ search.appverid:
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Узнайте, как интегрировать Office 365 с существующими службами каталогов.
 ms.openlocfilehash: 112f543a9c647ea850d5e43bc14483308da0b2c7
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085338"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487413"
 ---
-# <a name="office-365-integration-with-on-premises-environments"></a>Использование домена для интеграции с локальной службой электронной почты, например с помощью службы каталогов
+# <a name="office-365-integration-with-on-premises-environments"></a>Интеграция Office 365 с локальными средами
 
 Вы можете интегрировать Office 365 с существующими службами каталогов и с локальной установкой Exchange Server, Skype для бизнеса Server 2015 или SharePoint Server 2013.
   
@@ -39,7 +39,7 @@ ms.locfileid: "30085338"
 - [Мастер развертывания службы управления правами Azure](https://aka.ms/azuremsguidance)
 - [Руководство по установке Azure AD Premium](https://aka.ms/aadpguidance)
    
-## <a name="before-you-begin"></a>Подготовка
+## <a name="before-you-begin"></a>Подготовка к работе
 Прежде чем интегрировать Office 365 и локальную среду, вам также потребуется принять участие в планировании [сети и настройке производительности для Office 365](network-planning-and-performance.md). Кроме того, вам потребуется ознакомиться с доступными [моделями идентификации](about-office-365-identity.md) в Office 365. 
 
 Сведения о [том, как управлять учетными записями пользователей office 365](manage-office-365-accounts.md) для списка средств, которые можно использовать для управления пользователями и учетными записями Office 365. 

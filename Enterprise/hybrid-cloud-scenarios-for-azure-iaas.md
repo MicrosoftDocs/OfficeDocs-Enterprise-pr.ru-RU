@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: Сводка. сведения о гибридной архитектуре и сценариях для инфраструктуры корпорации Майкрософт в качестве облачного решения на основе службы IaaS в Azure.
 ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741365"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487660"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Гибридные облачные сценарии для Azure IaaS
 
@@ -47,7 +47,7 @@ ms.locfileid: "31741365"
     
     Используйте подключение к VPN типа "сеть-сеть" в Интернете или подключение ExpressRoute с частным пирингом к Azure IaaS.
     
-- Локальная
+- Локальная среда
     
     Содержит серверы удостоверений, которые синхронизируются с серверами удостоверений в Azure. Также может содержать ресурсы, к которым имеют доступ виртуальные машины, работающие в Azure, например хранилище или инфраструктуру управления системами.
     
@@ -182,6 +182,6 @@ ms.locfileid: "31741365"
 
 [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 

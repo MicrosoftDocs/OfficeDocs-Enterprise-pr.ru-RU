@@ -17,13 +17,13 @@ ms.custom:
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: Сводка. Настройка и демонстрация Office 365 Advanced Threat Protection в среде разработки и тестирования Office 365.
 ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741345"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490155"
 ---
-# <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection в среде разработки и тестирования Office 365
+# <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection в среде разработки и тестирования Office 365
 
  **Сводка.** Настройка и демонстрация Office 365 Advanced Threat Protection в среде разработки и тестирования Office 365.
   
@@ -106,7 +106,7 @@ Office 365 Advanced Threat Protection — это компонент Exchange Onl
     
 8. Щелкните стрелку вниз возле элемента **Применяется к** и выберите пункт **Домен получателя**. В окне щелкните название организации (например, contoso.onmicrosoft.com), а затем нажмите кнопку **ОК**.
     
-9. Нажмите кнопку **Сохранить **. После обновления вы увидите новый и включенный **блок политики безопасных вложений**.
+9. Нажмите кнопку **Сохранить**. После обновления вы увидите новый и включенный **блок политики безопасных вложений**.
     
 10. Откройте вкладку **Безопасные ссылки** и щелкните знак "плюс".
     
@@ -156,19 +156,19 @@ Office 365 Advanced Threat Protection — это компонент Exchange Onl
 Теперь с помощью этой среды можно создавать новые политики и экспериментировать с ATP.
   
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack) , чтобы визуально сопоставить все статьи в стеке руководства по лаборатории тестирования Office 365.
+> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в Office 365.
   
 ## <a name="see-also"></a>См. также
 
-[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
   
 [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
   
-[DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
-[Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md) 
 

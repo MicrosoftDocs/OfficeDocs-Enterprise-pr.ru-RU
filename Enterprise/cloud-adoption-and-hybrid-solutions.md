@@ -1,5 +1,5 @@
 ---
-title: Облачные решения для корпоративных пользователей
+title: Корпоративные облачные решения
 description: Решайте бизнес-задачи, используя Microsoft Cloud. Здесь вы найдете информацию о последних гибридных решениях и облачных решениях для обеспечения безопасности, о внедрении облачных технологий и не только.
 author: JoeDavies-MSFT
 ms.author: josephd
@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: Ent_O365
 ms.date: 2/14/2018
 ms.openlocfilehash: 52eb23707077151ae4876381a03db3e9a4bdb33b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915714"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490055"
 ---
 <h1>Облачные решения для корпоративных пользователей</h1>
 <p>Решайте бизнес-задачи, используя Microsoft Cloud. Здесь вы найдете информацию о последних гибридных решениях и облачных решениях для обеспечения безопасности, о внедрении облачных технологий и не только.</p>

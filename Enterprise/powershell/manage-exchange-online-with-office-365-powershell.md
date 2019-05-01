@@ -15,11 +15,11 @@ ms.custom:
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 'Сводка: в этой статье рассказывается, как использовать PowerShell в Office 365 для управления Microsoft Exchange Online, в том числе для отображения конфигураций почтовых ящиков и работы с расширенными функциями отчетности.'
 ms.openlocfilehash: 93eb2ca11544139f3904126c0ec04fc1ab02ec1b
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573933"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491615"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Управление Exchange Online с помощью Office 365 PowerShell
 
@@ -27,11 +27,11 @@ ms.locfileid: "30573933"
   
 Одна из основных задач любого администратора Microsoft Exchange Online — управление почтовыми ящиками и получение отчетов по ним. Вы можете выполнить некоторые из указанных ниже задач в Центре администрирования Microsoft 365, но остальные задачи гораздо быстрее и проще выполнить с помощью PowerShell в Office 365. Дополнительную информацию см. в следующих статьях:
   
-- [Отображение сведений о почтовых ящиках в Exchange Online с помощью PowerShell для Office 365](https://technet.microsoft.com/ru-RU/library/mt771881%28v=exchg.160%29.aspx)
+- [Отображение сведений о почтовых ящиках в Exchange Online с помощью PowerShell для Office 365](https://technet.microsoft.com/en-us/library/mt771881%28v=exchg.160%29.aspx)
     
-- [Отображение отчетов Exchange Online с помощью PowerShell в Office 365](https://technet.microsoft.com/ru-RU/library/mt771882%28v=exchg.160%29.aspx)
+- [Отображение отчетов Exchange Online с помощью PowerShell в Office 365](https://technet.microsoft.com/en-us/library/mt771882%28v=exchg.160%29.aspx)
     
-- [Определение командлетов, доступных администраторам Exchange Online в PowerShell в Office 365](https://technet.microsoft.com/ru-RU/library/mt771883%28v=exchg.160%29.aspx)
+- [Определение командлетов, доступных администраторам Exchange Online в PowerShell в Office 365](https://technet.microsoft.com/en-us/library/mt771883%28v=exchg.160%29.aspx)
     
 ## <a name="see-also"></a>См. также
 

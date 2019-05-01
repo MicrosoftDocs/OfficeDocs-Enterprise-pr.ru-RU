@@ -1,5 +1,5 @@
 ---
-title: Идентификация в Office 365 и Azure Active Directory
+title: Общие сведения об удостоверениях Office 365 и службе Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -19,13 +19,13 @@ search.appverid:
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Сведения об управлении удостоверениями пользователей в Office 365.
 ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001562"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487766"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Идентификация в Office 365 и Azure Active Directory
+# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Общие сведения об удостоверениях Office 365 и службе Azure Active Directory
 
 В Office 365 для управления пользователями используется облачное удостоверение и служба проверки подлинности на основе облачной службы Azure Active Directory (Azure AD). Выбор между настройкой управления удостоверениями между локальной организацией и Office 365 — это предпринятое решение, которое является одной из самых разных моделей облачной инфраструктуры. Так как в дальнейшем изменить эту конфигурацию может быть сложно, тщательно изучите параметры, чтобы определить, что лучше всего подходит для вашей организации. Вы можете выбрать одну из двух основных моделей проверки подлинности в Office 365, чтобы настроить учетные записи пользователей и управлять ими; **облачная проверка** подлинности и **Федеративная проверка**подлинности.
   

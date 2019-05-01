@@ -1,5 +1,5 @@
 ---
-title: Открытая диаграмма — варианты платформы Microsoft Exchange 2013
+title: "Открытая диаграмма \x97 варианты платформы Microsoft Exchange 2013"
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: Эта статья  открытая текстовая версия диаграммыВарианты платформы Microsoft Exchange 2013, доступная в разделе Технические схемы.
 ms.openlocfilehash: e1c4957c9152c5a23008c657d7e2d0d47b5cce0f
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17503132"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487805"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Открытая диаграмма — варианты платформы Microsoft Exchange 2013
 
