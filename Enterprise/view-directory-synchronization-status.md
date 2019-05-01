@@ -1,5 +1,5 @@
 ---
-title: Просмотр состояния синхронизации каталогов в Office 365
+title: Просмотр состояния синхронизации каталогов в Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Сведения о том, как отключить синхронизацию службы каталогов. Вы также можете просмотреть его состояние.
 ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001572"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492105"
 ---
-# <a name="view-directory-synchronization-status-in-office-365"></a>Просмотр состояния синхронизации каталогов в Office 365
+# <a name="view-directory-synchronization-status-in-office-365"></a>Просмотр состояния синхронизации каталогов в Office 365
 
 Если вы интегрируете локальную службу Active Directory с помощью Azure AD, синхронизируя локальную среду с Office 365, вы также можете проверить состояние синхронизации.
   

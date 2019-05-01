@@ -1,5 +1,5 @@
 ---
-title: Взаимодействие между клиентами в Office 365
+title: Взаимодействие между клиентами Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Узнайте, как совместное использование Office 365 в клиентах и организациях.
 ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665252"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492095"
 ---
-# <a name="office-365-inter-tenant-collaboration"></a>Взаимодействие между клиентами в Office 365
+# <a name="office-365-inter-tenant-collaboration"></a>Взаимодействие между клиентами Office 365
 
 В этой статье описывается несколько способов совместной совместной работе между двумя клиентами Office 365. Он предназначен для администраторов Office 365.
   
@@ -37,7 +37,7 @@ ms.locfileid: "30665252"
 |:-----|:-----|:-----|
 |Совместное использование календарей с другой организацией Office 365  <br/> |Администраторы могут настроить различные уровни доступа к календарю в Exchange Online, чтобы позволить предприятиям совместно работать с другими организациями, а также предоставить пользователям общий доступ к расписаниям (сведения о доступности) другим пользователям.  <br/> |[Общий доступ в Exchange Online](https://technet.microsoft.com/en-us/library/jj916670%28v=exchg.150%29.aspx) <br/> [Связи Организации в Exchange Online](https://technet.microsoft.com/en-us/library/jj916658%28v=exchg.150%29.aspx) <br/> [Создание связи организации в Exchange Online](https://technet.microsoft.com/en-us/library/jj916671%28v=exchg.150%29.aspx) <br/> [Изменение и связь организации в Exchange Online](https://technet.microsoft.com/en-us/library/jj916659%28v=exchg.150%29.aspx) <br/> [Удаление связи Организации в Exchange Online](https://technet.microsoft.com/en-us/library/jj916657%28v=exchg.150%29.aspx) <br/> [Совместное использование календарей с внешними пользователями](https://support.office.com/article/fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd) <br/> |
 |Управление совместным доступом пользователей к календарям для людей за преличной Организацией  <br/> |Администраторы применяют политики общего доступа к почтовым ящикам пользователей, чтобы контролировать, к кому им можно предоставить общий доступ, и уровень предоставляемых разрешений.  <br/> |[Политики общего доступа в Exchange Online](https://technet.microsoft.com/en-us/library/jj916673%28v=exchg.150%29.aspx) <br/> [Создание политики общего доступа в Exchange Online](https://technet.microsoft.com/en-us/library/jj916676%28v=exchg.150%29.aspx) <br/> [Применение политики общего доступа к почтовым ящикам в Exchange Online](https://technet.microsoft.com/en-us/library/jj916672%28v=exchg.150%29.aspx) <br/> [Изменение, отключение или удаление политики общего доступа в Exchange Online](https://technet.microsoft.com/en-us/library/jj916674%28v=exchg.150%29.aspx) <br/> |
-|Настройка безопасных каналов электронной почты и управление процессом обработки почты с помощью партнерских организаций  <br/> |Администраторы создают соединители для применения безопасности к почтовым обменам с партнерской организацией или поставщиком услуг. Соединители обеспечивают шифрование с помощью протокола TLS, а также обеспечивают ограничения для доменных имен или диапазонов IP-адресов, с которых ваши партнеры отправляют электронную почту.  <br/> |[Использование протокола TLS службой Exchange Online для защиты электронной почты в Office 365](https://technet.microsoft.com/en-us/library/mt163898.aspx) <br/> [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/en-us/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx) <br/> [Удаленные домены в Exchange Online](https://technet.microsoft.com/en-us/library/jj966211%28v=exchg.150%29.aspx) <br/> [Настройка соединителя для безопасного обмена почтой с партнерской организацией](https://technet.microsoft.com/en-us/library/dn751021%28v=exchg.150%29.aspx) <br/> [Рекомендации по потоку обработки почты для Exchange Online и Office 365 (обзор)](https://technet.microsoft.com/en-us/library/0e6cd9d5-ad3e-418a-8ea9-3bf33332c491%28v=exchg.150%29) <br/> |
+|Настройка безопасных каналов электронной почты и управление процессом обработки почты с помощью партнерских организаций  <br/> |Администраторы создают соединители для применения безопасности к почтовым обменам с партнерской организацией или поставщиком услуг. Соединители обеспечивают шифрование с помощью протокола TLS, а также обеспечивают ограничения для доменных имен или диапазонов IP-адресов, с которых ваши партнеры отправляют электронную почту.  <br/> |[Использование протокола TLS службой Exchange Online для защиты электронной почты в Office 365](https://technet.microsoft.com/en-us/library/mt163898.aspx) <br/> [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/en-us/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx) <br/> [Удаленные домены в Exchange Online](https://technet.microsoft.com/en-us/library/jj966211%28v=exchg.150%29.aspx) <br/> [Настройка соединителя для безопасного обмена почтой с партнерской организацией](https://technet.microsoft.com/en-us/library/dn751021%28v=exchg.150%29.aspx) <br/> [Рекомендации по потоку обработки почты для Exchange Online и Office 365 (обзор)](https://technet.microsoft.com/en-us/library/0e6cd9d5-ad3e-418a-8ea9-3bf33332c491%28v=exchg.150%29) <br/> |
    
 ## <a name="sharepoint-online-and-onedrive-for-business-collaboration-options"></a>Параметры совместной работы в SharePoint Online и OneDrive для бизнеса
 

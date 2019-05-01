@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
 description: Репозиторий видеороликов Office 365 и службы потоковой передачи делают хранение и потоковые видео в Организации простыми. Существует множество полезных сведений о Office 365 Video; Эти вопросы и ответы по сети предназначены для ответа на наиболее распространенные вопросы по планированию пропускной способности, шифрованию и способу использования службой сетей доставки контента (сети CDN).
 ms.openlocfilehash: f11bd8baff7c2527287f6e1249ad4dae1928bdd2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30641526"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491934"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Вопросы и ответы по работе с видео о сети Office 365
 
@@ -112,11 +112,12 @@ Office 365 видео Поддерживаемые операционные си
   
 [Справка по настройке видеоРоликов Office 365](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)
   
-[ПоЗнакомьтесь с видео о Office 365](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)
+[Знакомство с Office 365 Видео](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)
   
 [Создание и управление каналом в Office 365 видео](https://support.office.com/article/Create-and-manage-a-channel-in-Office-365-Video-1fede4cc-13c0-435a-b585-e7fbf1c83bb2)
   
-[Управление видео порталом Office 365](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da)
+
+  [Управление порталом Office 365 Видео](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da)
   
 [Видеоформаты, которые работают в Office 365 видео](https://support.office.com/article/Video-formats-that-work-in-Office-365-Video-dd1af01c-fd8e-4640-b17b-93ee02b9b817)
   
