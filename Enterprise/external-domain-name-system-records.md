@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Сводка. Список записей DNS для планирования развертывания Office 365.
 ms.openlocfilehash: c172275e43b4703172f58287c086562da352f5e9
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542345"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487264"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Внешние записи DNS для Office 365
 

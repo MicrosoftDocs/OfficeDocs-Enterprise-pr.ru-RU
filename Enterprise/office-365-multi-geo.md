@@ -11,11 +11,11 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Расширьте свою географию присутствия Office 365 с помощью поддержки нескольких регионов в Office 365.
 ms.openlocfilehash: eb5c28131b7ac629d9acc607c777756b8825549c
-ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "31992839"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491954"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 с поддержкой нескольких регионов
 

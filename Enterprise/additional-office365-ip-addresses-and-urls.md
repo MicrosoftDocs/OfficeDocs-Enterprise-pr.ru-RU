@@ -23,11 +23,11 @@ ms.assetid: ''
 description: Сводка. В новой веб-службе конечных точек отсутствует небольшое количество конечных точек для определенных сценариев.
 hideEdit: true
 ms.openlocfilehash: f226e48fa6512e32e505d7ca1a35ab1fec390488
-ms.sourcegitcommit: c0d3007e51950b041569c28a495ee16d51783f28
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30374412"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490905"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365
 

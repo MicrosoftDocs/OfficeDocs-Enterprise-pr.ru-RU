@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: Сводка. Создание упрощенной интрасети в качестве среды разработки и тестирования в Microsoft Azure.
 ms.openlocfilehash: 68edf0dea20674a7dadb4d1e50b8151a9ce13c7b
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741385"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490542"
 ---
 # <a name="base-configuration-devtest-environment"></a>Базовая конфигурация среды разработки и тестирования
 
