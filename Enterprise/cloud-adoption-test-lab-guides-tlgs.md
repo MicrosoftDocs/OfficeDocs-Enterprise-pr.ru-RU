@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Сводка. Воспользуйтесь этими руководствами по лаборатории тестирования для внедрения облака, чтобы настроить среды для демонстрации, экспериментальной установки, разработки и тестирования продуктов Office 365.
 ms.openlocfilehash: 3531a3185cd52044ee59391d676fff1a7f4a5f64
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741175"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490236"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Тестирование Office 365 с помощью руководств по лаборатории тестирования для внедрения облака
 
@@ -44,7 +44,7 @@ ms.locfileid: "31741175"
     
     Создание упрощенной интрасети, выполняющейся в службах инфраструктуры Microsoft Azure. Это действие не является обязательным для создания имитации конфигурации предприятия.
     
-- [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
+- [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
     
     Подписка на бесплатную пробную версию Office 365 корпоративный Е5, которую можно оформить со своего компьютера или через упрощенную интрасеть в службах инфраструктуры Azure.
     
@@ -54,11 +54,11 @@ ms.locfileid: "31741175"
     
 Следующие статьи можно использовать для демонстрации компонентов корпоративного выпуска Office 365 в среде разработки и тестирования Office 365:
   
-- [Многофакторная проверка подлинности для среды разработки и тестирования Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [Многофакторная проверка подлинности для среды разработки и тестирования Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
     Настройте и протестируйте дополнительную проверку подлинности, отправив текстовое сообщение на свой смартфон для учетной записи, указанной при подписке на Office 365.
     
-- [Федеративная идентификация для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Федеративная идентификация для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
     Настройка и демонстрация федеративной проверки подлинности для учетных записей, настроенных в доменных службах Active Directory (AD DS).
     
@@ -66,11 +66,11 @@ ms.locfileid: "31741175"
     
     Настройка и демонстрация компонента Office 365 Cloud App Security, позволяющего создавать политики, отслеживающие подозрительные действия в вашей подписке на Office 365 и сообщающие вам о них.
     
-- [Advanced Threat Protection в среде разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Advanced Threat Protection для среды разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
     Настройка и демонстрация Advanced Threat Protection — компонента Exchange Online Protection (EOP), позволяющего оградить электронную почту от вредоносных программ.
     
-- [Advanced eDiscovery для среды разработки и тестирования Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [Advanced eDiscovery для среды разработки и тестирования Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
     Добавление данных для примера и демонстрация функции Advanced eDiscovery, позволяющей быстро находить и анализировать данные, хранящиеся в Office 365, в том числе электронные сообщения и документы.
     
@@ -95,7 +95,7 @@ ms.locfileid: "31741175"
     
     Создание имитации интрасети, подключенной к виртуальной сети Azure в гибридной облачной конфигурации.
     
-- [Интрасеть SharePoint Server 2016 в среде разработки и тестирования Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)
+- [Интрасеть SharePoint Server 2016 в среде разработки и тестирования Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)
     
     Создание односерверной фермы SharePoint Server 2016 в виртуальной сети Azure и проверка возможности подключения и администрирования в имитации локальной сети.
     
