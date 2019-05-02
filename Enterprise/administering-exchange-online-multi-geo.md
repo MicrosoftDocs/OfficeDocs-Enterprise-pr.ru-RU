@@ -10,11 +10,11 @@ ms.custom: ''
 localization_priority: Priority
 description: Узнайте, как управлять параметрами поддержки нескольких регионов в Exchange Online с помощью Microsoft PowerShell.
 ms.openlocfilehash: cc8adecda26073f588b63af12c13209720f9bc98
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765051"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490885"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Администрирование почтовых ящиков Exchange Online в среде с поддержкой нескольких регионов
 
@@ -124,7 +124,7 @@ Get-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com | Format-List
 Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoLocationCode>
 ```
 
-Например, чтобы присвоить **PreferredDataLocation** значение Европейский Союз (EUR) для пользователя michelle@contoso.onmicrosoft.com, выполните следующую команду:
+Например, чтобы присвоить значению **PreferredDataLocation** регион Европейского Союза (EUR) для пользователя michelle@contoso.onmicrosoft.com, выполните следующую команду:
 
 ```powershell
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
