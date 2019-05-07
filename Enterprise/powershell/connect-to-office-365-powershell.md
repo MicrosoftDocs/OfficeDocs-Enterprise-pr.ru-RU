@@ -14,26 +14,26 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: 'Сводка: Подключиться к своей организации Office 365, с помощью Office 365 PowerShell для выполнения задач Центр администрирования из командной строки.'
-ms.openlocfilehash: ae0449611703759105d92a706cf78ba4a58ad4b2
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: Сводка. подключение к организации Office 365 с помощью PowerShell в Office 365 для выполнения задач центра администрирования из командной строки.
+ms.openlocfilehash: 4c70f067558773ce7e2a6e27bab78f5c64965872
+ms.sourcegitcommit: 0516a15c72f4bc8423a1d8112fd4d3e5f69896c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897202"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639780"
 ---
 # <a name="connect-to-office-365-powershell"></a>Подключение к Office 365 PowerShell
 
- **Сводка:** Подключение к организации Office 365 с помощью Office 365 PowerShell для выполнения задач администрирования из командной строки.
+ **Сводка:** Подключитесь к вашей организации Office 365 с помощью Office 365 PowerShell, чтобы выполнять задачи администрирования из командной строки.
   
-Office 365 PowerShell позволяет управлять настройки Office 365 с помощью командной строки. Подключение к Office 365 PowerShell — простой процесс, где Установка необходимого программного обеспечения, а затем подключиться к своей организации Office 365. 
+Office 365 PowerShell позволяет управлять параметрами Office 365 из командной строки. Подключение к Office 365 PowerShell — это простой процесс установки необходимого программного обеспечения и последующего подключения к организации Office 365. 
 
-Существует две версии модуль PowerShell, используемая для подключения к Office 365 и выполнять администрирование учетных записей пользователей, групп и лицензий.
+Существует две версии модуля PowerShell, которые используются для подключения к Office 365 и управления учетными записями пользователей, группами и лицензиями.
 
-- Azure Active Directory PowerShell для диаграммы (включая командлеты **AzureAD** именах) 
-- Microsoft Azure модуль Active Directory для Windows PowerShell (включая командлеты **MSol** именах) 
+- Azure Active Directory PowerShell для Graph (командлеты содержат **AzureAD** в своем имени) 
+- Модуль Microsoft Azure Active Directory для Windows PowerShell (командлеты содержат **MSol** в своем имени) 
 
-По состоянию на дату в этой статье Azure Active Directory PowerShell для модуля график не полностью заменяет функциональные возможности в командлетах модуля Microsoft Azure модуль Active Directory для Windows PowerShell для пользователей, группы и Администрирование лицензирования . Во многих случаях необходимо использовать обеих версий. Безопасно обеих версиях можно установить на том же компьютере.
+Начиная с даты этой статьи, модуль Azure Active Directory PowerShell для Graph не полностью заменяет функции командлетов модуля Microsoft Azure Active Directory для модуля Windows PowerShell для администрирования пользователей, групп и лицензий. . Во многих случаях необходимо использовать обе версии. Вы можете безопасно установить обе версии на одном компьютере.
 
 > [!TIP]
 > **Никогда не работали с PowerShell?** Посмотрите [этот видеообзор](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx) на сайте LinkedIn Learning. 
@@ -44,24 +44,24 @@ Office 365 PowerShell позволяет управлять настройки O
     
 - Ниже приведены версии Windows, которые можно использовать.
     
-  - Windows 10, Windows 8.1, Windows 8 или Windows 7 с пакетом обновления 1 (SP1) 
+  - Windows 10, Windows 8,1, Windows 8 или Windows 7 с пакетом обновления 1 (SP1) 
     
-  - Windows Server 2019 Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 и Windows Server 2008 R2 с пакетом обновления 1
+  - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 или Windows Server 2008 R2 с ПАКЕТом обновления 1 (SP1)
     
     > [!NOTE]
     >Используйте 64-разрядную версию Windows. Поддержка 32-разрядной версии модуля Microsoft Azure Active Directory для Windows PowerShell прекращена в октябре 2014 г.
     
--  Эти процедуры, предназначены для пользователей, являющихся членами роли администратора Office 365. Дополнительные сведения см в [роли администраторов об Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+-  Эти процедуры предназначены для пользователей, которые являются участниками роли администратора Office 365. Дополнительные сведения см. в статье [Роли администраторов в Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
 
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Связь с Azure Active Directory PowerShell для модуля "график"
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Подключение к модулю PowerShell Azure Active Directory PowerShell для Graph
 
-Команды в модуле [Windows Azure Active Directory PowerShell для диаграммы](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) имеют **AzureAD** в имени командлета.
+Команды в модуле [PowerShell Azure Active Directory для Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) содержат **AzureAD** в имени командлета.
 
-Для процедур, которые требуют новых командлетов в Windows Azure Active Directory PowerShell для модуля "график" используйте следующие действия для установки модуля и подключиться к своей подписке Office 365.
+Для выполнения процедур, требующих новых командлетов в модуле PowerShell Azure Active Directory PowerShell для Graph, выполните указанные ниже действия, чтобы установить модуль и подключиться к вашей подписке на Office 365.
 
 >[!Note]
->[Windows Azure Active Directory PowerShell для модуля "график"](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) в разделе сведения о поддержке для разных версий Microsoft Windows.
+>Сведения о поддержке различных версий Microsoft Windows можно найти в [модуле PowerShell Azure Active Directory PowerShell для Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) .
 >
 
 ### <a name="step-1-install-required-software"></a>Шаг 1. Установите необходимое программное обеспечение
@@ -78,25 +78,25 @@ Office 365 PowerShell позволяет управлять настройки O
 
 Если появится предупреждение об установке модуля из ненадежного репозитория, введите **Y** и нажмите клавишу ВВОД.
 
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Шаг 2: Подключение к Azure AD для подписки Office 365
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Шаг 2: подключение к Azure AD для подписки на Office 365
 
-Для подключения к Azure AD для подписки Office 365 с имя учетной записи и пароль или *многофакторная проверка подлинности (многофакторной проверкой Подлинности)*, выполните одну из следующих команд в командной строке Windows PowerShell (она не обязательно с повышенными привилегиями).
+Чтобы подключиться к Azure AD для вашей подписки на Office 365 с помощью имени учетной записи и пароля или с многофакторной проверкой подлинности *(MFA)*, запустите одну из этих команд из командной строки Windows PowerShell (нет прав на повышение).
 
 |||
 |:-------|:-----|
-| **Облако Office 365** | **Команда** |
-| Office 365 по всему миру (+ GCC) | `Connect-AzureAD` |
-| Office 365, которой с 21 Vianet | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
+| **Office 365, облако** | **Command** |
+| Office 365 для разных языков (+ GCC) | `Connect-AzureAD` |
+| Office 365 под управлением 21 ВИАНЕТ | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
 | Office 365 в Германии | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
-| Обороны США государственных Office 365 и Office 365 США государственных GCC высокой | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
+| Office 365 для государственных учреждений (США) и Office 365 для государственных учреждений (США) GCC (высокое) | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-В диалоговом окне **входа в учетную запись** введите работы Office 365 или школа имя учетной записи и пароль и нажмите кнопку **ОК**.
+В диалоговом окне **Вход в учетную запись** введите имя пользователя и пароль учетной записи Office 365 Work или School, а затем нажмите кнопку **ОК**.
 
-При использовании многофакторной проверкой Подлинности следуйте инструкциям в диалоговых окнах дополнительные, чтобы предоставить дополнительные сведения о проверке подлинности, такие как код подтверждения.
+Если используется MFA, следуйте инструкциям в дополнительных диалоговых окнах, чтобы получить дополнительные сведения о проверке подлинности, например код проверки.
 
 
-После подключения, можно использовать новые командлеты для [Windows Azure Active Directory PowerShell для модуля "график"](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
+После подключения вы можете использовать новые командлеты для [модуля Azure Active Directory PowerShell для Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Подключение к модулю Microsoft Azure Active Directory для Windows PowerShell
@@ -116,22 +116,22 @@ Office 365 PowerShell позволяет управлять настройки O
   - Если отобразится запрос на установку поставщика NuGet, введите **Y** и нажмите клавишу ВВОД.
   - Если отобразится запрос на установку модуля из репозитория PSGallery, введите **Y** и нажмите клавишу ВВОД.
     
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Шаг 2: Подключение к Azure AD для подписки Office 365
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Шаг 2: подключение к Azure AD для подписки на Office 365
 
-Для подключения к Azure AD для подписки Office 365 с имя учетной записи и пароль или *многофакторная проверка подлинности (многофакторной проверкой Подлинности)*, выполните одну из следующих команд в командной строке Windows PowerShell (она не обязательно с повышенными привилегиями).
+Чтобы подключиться к Azure AD для вашей подписки на Office 365 с помощью имени учетной записи и пароля или с многофакторной проверкой подлинности *(MFA)*, запустите одну из этих команд из командной строки Windows PowerShell (нет прав на повышение).
 
 |||
 |:-------|:-----|
-| **Облако Office 365** | **Команда** |
-| Office 365 по всему миру (+ GCC) | `Connect-MsolService` |
-| Office 365, которой с 21 Vianet | `Connect-MsolService -AzureEnvironmentName AzureChinaCloud` |
-| Office 365 в Германии | `Connect-MsolService -AzureEnvironmentName AzureGermanyCloud` |
-| Обороны США государственных Office 365 и Office 365 США государственных GCC высокой | `Connect-MsolService -AzureEnvironmentName USGovernment` |
+| **Office 365, облако** | **Command** |
+| Office 365 для разных языков (+ GCC) | `Connect-MsolService` |
+| Office 365 под управлением 21 ВИАНЕТ | `Connect-MsolService -AzureEnvironment AzureChinaCloud` |
+| Office 365 в Германии | `Connect-MsolService -AzureEnvironment AzureGermanyCloud` |
+| Office 365 для государственных учреждений (США) и Office 365 для государственных учреждений (США) GCC (высокое) | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-В диалоговом окне **входа в учетную запись** введите работы Office 365 или школа имя учетной записи и пароль и нажмите кнопку **ОК**.
+В диалоговом окне **Вход в учетную запись** введите имя пользователя и пароль учетной записи Office 365 Work или School, а затем нажмите кнопку **ОК**.
 
-При использовании многофакторной проверкой Подлинности следуйте инструкциям в диалоговых окнах дополнительные, чтобы предоставить дополнительные сведения о проверке подлинности, такие как код подтверждения.
+Если используется MFA, следуйте инструкциям в дополнительных диалоговых окнах, чтобы получить дополнительные сведения о проверке подлинности, например код проверки.
 
 ### <a name="how-do-you-know-this-worked"></a>Как убедиться, что все получилось?
 
@@ -139,15 +139,15 @@ Office 365 PowerShell позволяет управлять настройки O
   
 Если возникают ошибки, просмотрите список возможных причин:
   
-- **Распространенные проблемы имеет неверный пароль**. Повторите шаг 2. и обратите внимание на имя пользователя и пароль, введенные.
+- **Распространенная проблема  неправильный пароль.**. Еще раз выполните шаг 2. Будьте особенно внимательны при вводе имени пользователя и пароля.
     
-- * *Требует Microsoft Azure модуль Active Directory для Windows PowerShell, Microsoft .NET Framework 3.5.* x * включен на компьютере **. Вероятно, что на компьютере установлена более новой версии (например, 4 или 4.5.* x *), но обратной совместимости с предыдущими версиями платформы .NET Framework можно включить или отключить. Дополнительные сведения в следующих разделах:
+- * *Для работы модуля Microsoft Azure Active Directory для Windows PowerShell требуется платформа Microsoft .net Framework 3,5.* функция x * включена на вашем компьютере * *. Вероятно, на компьютере установлена более новая версия (например, 4 или 4,5).* x *), но обратная совместимость с более ранними версиями .NET Framework может быть включена или отключена. Дополнительную информацию см. в следующих статьях:
     
   - [Включение .NET Framework 3.5 с помощью мастера добавления ролей и функций](https://go.microsoft.com/fwlink/p/?LinkId=532368) (Windows Server 2012 или Windows Server 2012 R2)
     
   - [Не удается открыть модуль Azure Active Directory для Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532370) (Windows 7 или Windows Server 2008 R2)
 
-  - Windows 10, Windows 8.1 и Windows 8 содержатся в разделе [Установка .NET Framework 3.5 на Windows 10, Windows 8.1 и Windows 8](https://docs.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-10)
+  - Для Windows 10, Windows 8,1 и Windows 8 Ознакомьтесь со статьей [Установка платформы .NET Framework 3,5 в Windows 10, windows 8,1 и Windows 8](https://docs.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-10)
 
   
 - **Возможно, используемая вами версия Модуль Microsoft Azure Active Directory для Windows PowerShell устарела.** Чтобы проверить актуальность версии, выполните указанную ниже команду в PowerShell в Office 365 или в Модуль Microsoft Azure Active Directory для Windows PowerShell.
