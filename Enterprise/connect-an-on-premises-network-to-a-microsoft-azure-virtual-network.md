@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: Сводка. Узнайте, как настроить распределенную виртуальную сеть Azure для серверных рабочих нагрузок Office с VPN-подключением типа "сеть-сеть".
-ms.openlocfilehash: f6ee25d7e1564ce5770bada709934e68dd6888ee
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 894d2ae7392b5365c4c074a3c7d48dd815c5b7d1
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490650"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867764"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Подключение локальной сети к виртуальной сети Microsoft Azure
 
@@ -271,6 +271,7 @@ New-AzNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName -Locatio
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name $vnetName
 $nsg=Get-AzNetworkSecurityGroup -Name $SubnetName -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -AddressPrefix $SubnetPrefix -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 Ниже показана полученная в итоге конфигурация.

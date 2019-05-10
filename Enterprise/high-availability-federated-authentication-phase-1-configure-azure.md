@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: Сводка. Настройка инфраструктуры Microsoft Azure для размещения федеративной проверки подлинности с высоким уровнем доступности для Office 365.
-ms.openlocfilehash: 937f22c4e54fa4ccc81a1770a3c924e1d9d07a91
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ec7aa71b9782dd568f85b78fb3e5110e32e2e23e
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487443"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867714"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Этап 1. Федеративная проверка подлинности для обеспечения высокой доступности: настройка Azure
 
@@ -39,7 +39,7 @@ Azure необходимо подготовить к работе с этими 
 
 Перед настройкой компонентов Azure заполните указанные ниже таблицы. Распечатайте этот раздел и запишите необходимую информацию или скопируйте его в документ и заполните там. Укажите параметры виртуальной сети в таблице V.
   
-|**Item**|**Параметр конфигурации**|**Описание**|**Значение**|
+|**Элемент**|**Параметр конфигурации**|**Описание**|**Значение**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Имя виртуальной сети  <br/> |Имя виртуальной сети (например, FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Расположение виртуальной сети  <br/> |Региональный центр обработки данных Azure, в котором будет расположена виртуальная сеть.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ Azure необходимо подготовить к работе с этими 
   
 Определите эти адресные пространства из адресного пространства виртуальной сети при поддержке ИТ-отдела.
   
-|**Item**|**Имя подсети**|**Адресное пространство подсети**|**Назначение**|
+|**Элемент**|**Имя подсети**|**Адресное пространство подсети**|**Назначение**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая контроллером домена доменных служб Active Directory (AD DS) и виртуальными машинами сервера DirSync (ВМ).  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая виртуальными машинами AD FS.  <br/> |
@@ -72,7 +72,7 @@ Azure необходимо подготовить к работе с этими 
   
 После этого укажите статические IP-адреса, назначенные виртуальным машинам и экземплярам балансировщика нагрузки, в таблице I.
   
-|**Item**|**Назначение**|**IP-адрес в подсети**|**Значение**|
+|**Элемент**|**Назначение**|**IP-адрес в подсети**|**Значение**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Статический IP-адрес первого контроллера домена  <br/> |Четвертый возможный IP-адрес для адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Статический IP-адрес второго контроллера домена  <br/> |Пятый возможный IP-адрес адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -109,7 +109,7 @@ Azure необходимо подготовить к работе с этими 
 Теперь приступим к созданию инфраструктуры Azure для размещения федеративной проверки подлинности для Office 365.
   
 > [!NOTE]
-> Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Обратитесь к разделу начало [работы с командлетАми Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Обратитесь к разделу начало [работы с командлетами Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Запустите командную строку Azure PowerShell и войдите в свою учетную запись.
   
@@ -122,7 +122,7 @@ Connect-AzAccount
 > For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
 -->
   
-Получите имя подписки с помощью следующей команды.
+Получите имя подписки с помощью приведенной ниже команды.
   
 ```
 Get-AzSubscription | Sort Name | Select Name
@@ -149,7 +149,7 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 Укажите уникальные имена групп ресурсов в следующей таблице.
   
-|**Item**|**Имя группы ресурсов**|**Назначение**|
+|**Элемент**|**Имя группы ресурсов**|**Назначение**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Контроллеры доменов  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Серверы AD FS  <br/> |
@@ -218,6 +218,7 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet2Name -Addre
 New-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName -Location $locShortName
 $nsg=Get-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -AddressPrefix $subnet3Prefix -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 Затем используйте следующие команды, чтобы создать шлюзы для VPN-подключения типа "сеть-сеть".
@@ -254,7 +255,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> Федеративная проверка подлинности для отдельных пользователей не зависит от локальных ресурсов. Однако если VPN-подключение типа "сеть-сеть" становится недоступным, контроллеры домена в виртуальной сети не будут получать обновления учетных записей пользователей и групп, которые были сделаны в локальных доменных службах Active Directory. Чтобы это не происходило, можно настроить высокий уровень доступности для VPN-подключения типа "сеть-сеть". Дополнительные сведения см в разделе [ВысокодоступНое подключение между локальными и виртуальными](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable) виртуальными машинами
+> Федеративная проверка подлинности для отдельных пользователей не зависит от локальных ресурсов. Однако если VPN-подключение типа "сеть-сеть" становится недоступным, контроллеры домена в виртуальной сети не будут получать обновления учетных записей пользователей и групп, которые были сделаны в локальных доменных службах Active Directory. Чтобы это не происходило, можно настроить высокий уровень доступности для VPN-подключения типа "сеть-сеть". Дополнительные сведения см в разделе [высокодоступное подключение между локальными и виртуальными](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable) виртуальными машинами
   
 После этого запишите общедоступный IPv4-адрес VPN-шлюза Azure для виртуальной сети из результата этой команды:
   
@@ -274,7 +275,7 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 После этого определите имена четырех групп доступности. Заполните таблицу A. 
   
-|**Item**|**Назначение**|**Имя группы доступности**|
+|**Элемент**|**Назначение**|**Имя группы доступности**|
 |:-----|:-----|:-----|
 |1.  <br/> |Контроллеры доменов  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Серверы AD FS  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -305,7 +306,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 ![Этап 1 для федеративной проверки подлинности Office 365 в Azure с инфраструктурой Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующее действие
 
 Используйте [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md), чтобы продолжить настройку этой нагрузки.
   
