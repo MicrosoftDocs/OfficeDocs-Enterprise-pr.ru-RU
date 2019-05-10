@@ -66,7 +66,7 @@ See the posters, icon sets, community venues, and other resources that describe 
   
 <a name="cloudarch"></a>
 
-<span data-ttu-id="0ffa8-128">## Серия "Облако Майкрософт для корпоративных архитекторов"</span><span class="sxs-lookup"><span data-stu-id="0ffa8-128">## Microsoft cloud for enterprise architects series</span></span>
+## <span data-ttu-id="0ffa8-128">Серия "Облако Майкрософт для корпоративных архитекторов"</span><span class="sxs-lookup"><span data-stu-id="0ffa8-128">Microsoft cloud for enterprise architects series</span></span>
 
 <span data-ttu-id="0ffa8-p105">На этих плакатах об облачной архитектуре приведена информация об облачных службах Майкрософт, в том числе Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, а также гибридных и облачных решениях. При помощи этих ресурсов ответственные ИТ-специалисты и архитекторы могут определять подходящие варианты для своих рабочих нагрузок, а также принимать решения по основным компонентам инфраструктуры, таким как идентификация и безопасность.</span><span class="sxs-lookup"><span data-stu-id="0ffa8-p105">These cloud architecture posters give you information about Microsoft cloud services, including Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security.</span></span>
 
@@ -141,7 +141,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
    
 <a name="BKMK_o365solutions"></a>
 
-<span data-ttu-id="0ffa8-189">## Серия "Корпоративные решения для Microsoft 365"</span><span class="sxs-lookup"><span data-stu-id="0ffa8-189">## Microsoft 365 enterprise solution series</span></span>
+## <span data-ttu-id="0ffa8-189">Серия "Корпоративные решения для Microsoft 365"</span><span class="sxs-lookup"><span data-stu-id="0ffa8-189">Microsoft 365 enterprise solution series</span></span>
 
 <span data-ttu-id="0ffa8-190">В серии "Корпоративные решения для Microsoft 365" представлены инструкции по реализации возможностей Microsoft 365, особенно при их пересечении с технологиями.</span><span class="sxs-lookup"><span data-stu-id="0ffa8-190">The Microsoft 365 enterprise solution series provides guidance for implementing Microsoft 365 capabilities, especially where capabilities cross technologies.</span></span>
 
