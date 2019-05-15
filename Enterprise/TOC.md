@@ -21,7 +21,8 @@
 ### [Планирование сетевых устройств, подключающихся к службам Office 365](plan-for-network-devices.md)
 ### [Планирование сторонних SSL-сертификатов для Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Идентификация в Office 365 и Azure Active Directory](about-office-365-identity.md)
-### [Выбор между MDM и Intune](https://docs.microsoft.com/ru-RU/office365/securitycompliance/choose-between-mdm-and-intune)
+### 
+  [Выбор между MDM и Intune](https://docs.microsoft.com/ru-RU/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Планирование сети и миграции в Office 365](network-and-migration-planning.md)
 ### [Сетевое подключение к Office 365](network-connectivity.md)
 ### [Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
@@ -32,9 +33,11 @@
 ### [Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016](modern-auth-for-office-2013-and-2016.md)
 ### [Взаимодействие между клиентами Office 365](office-365-inter-tenant-collaboration.md)
 ## Поддержка клиента Office 365
+### [Проверка подлинности на основе сертификатов](office-365-client-support-certificate-based-authentication.md)
 ### [Условный доступ](office-365-client-support-conditional-access.md)
 ### [Управление мобильными приложениями](office-365-client-support-mobile-application-management.md)
 ### [Современная проверка подлинности](office-365-client-support-modern-authentication.md)
+### [Единый вход](office-365-client-support-single-sign-on.md)
 ## Гибридные возможности
 ### [Гибридная современная проверка подлинности и предварительные требования для Skype для бизнеса Server и Exchange Server](hybrid-modern-auth-overview.md)
 ### [Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности](configure-exchange-server-for-hybrid-modern-authentication.md)
@@ -72,7 +75,7 @@
 ## [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)
 ## [Развертывание Office 365 корпоративный для организации](setup-overview-for-enterprises.md)
 ### [Контрольный список планирования развертывания Office 365](deployment-planning-checklist.md)
-### [Рекомендации по обеспечению безопасности в Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
+### [Рекомендации по обеспечению безопасности в Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
 ## [Настройка сети](set-up-network-for-office-365.md)
 ### [Обзор возможности сетевого подключения к Office 365](office-365-networking-overview.md)
 ### [Принципы сетевого подключения к Office 365](office-365-network-connectivity-principles.md)
@@ -161,8 +164,10 @@
 # Управление Office 365
 ## [Работоспособность службы](view-service-health.md)
 ### [Мониторинг подключения](monitor-connectivity.md)
-### [Варианты поддержки](https://support.office.com/ru-RU/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## [Инструменты управления](https://support.office.com/ru-RU/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### 
+  [Варианты поддержки](https://support.office.com/ru-RU/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+## 
+  [Инструменты управления](https://support.office.com/ru-RU/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Инструменты для управления учетными записями Office 365](manage-office-365-accounts.md)
 ### [Добавление в Office 365 сразу нескольких пользователей — справка для администраторов](add-several-users-at-the-same-time.md)
 ### [Восстановление удаленных элементов в почтовом ящике пользователя — справка для администраторов](recover-deleted-items-in-a-mailbox.md)
