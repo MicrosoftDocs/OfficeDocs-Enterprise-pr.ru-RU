@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
 description: Эта статья представляет собой текстовую версию схемы "Поток локального обнаружения электронных данных".
-ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487705"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068535"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Доступная схема — поток локального обнаружения электронных данных
 
@@ -62,7 +62,7 @@ ms.locfileid: "33487705"
     
 13. Веб-службы Exchange отвечают приложению службы поиска, предоставляя результаты поиска при обнаружении электронных данных или ответ на запрос о состоянии удержания по запросу, которые в свою очередь передаются в центр EDC.  
     
-#### <a name="prerequisites"></a>Необходимые компоненты
+#### <a name="prerequisites"></a>Необходимые условия
 
 - Служба корпоративного поиска SharePoint должна быть настроена. Кроме того, должен успешно выполняться обход контента во всех источниках контента (SharePoint и общих файловых ресурсах Windows), которые должны быть проиндексированы.  
     

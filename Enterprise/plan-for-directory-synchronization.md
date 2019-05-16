@@ -1,10 +1,9 @@
 ---
 title: Планирование синхронизации каталогов для Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Описание синхронизации каталогов с Office 365, очисткой Active Directory и средством Azure Active Directory Connect.
-ms.openlocfilehash: 1a7c63f699c51c829aaab5b70cb6a1a203bca3be
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b1d48696195c572de3a87bc5acb0646fc4bd0f41
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492085"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069365"
 ---
 # <a name="plan-for-directory-synchronization-for-office-365"></a>Планирование синхронизации каталогов для Office 365
 
@@ -40,7 +39,7 @@ ms.locfileid: "33492085"
   
 [Хэш пароля синхронизируется с единым входом](about-office-365-identity.md) — самый простой способ включить проверку подлинности для локальных объектов каталогов в Azure AD. С помощью синхронизации хэша паролей (ФС) вы синхронизируете локальные объекты учетной записи пользователя Active Directory с Office 365 и управляете локальными пользователями.
   
-[Сквозная проверка подлинности с единым входом](about-office-365-identity.md) . предоставляет простую проверку паролей для служб проверки поДлинности Azure AD с помощью программного агента, запущенного на одном или нескольких локальных серверах, для проверки пользователей непосредственно с помощью Локальная служба Active Directory.
+[Сквозная проверка подлинности с единым входом](about-office-365-identity.md) . предоставляет простую проверку паролей для служб проверки подлинности Azure AD с помощью программного агента, запущенного на одном или нескольких локальных серверах, для проверки пользователей непосредственно с помощью Локальная служба Active Directory.
   
 ### <a name="federated-authentication"></a>Федеративная проверка подлинности
 
@@ -58,19 +57,19 @@ ms.locfileid: "33492085"
 
 - Удалите повторяющиеся атрибуты **proxyAddress** и **userPrincipalName** .
 - Обновление пустых и недопустимых атрибутов **userPrincipalName** с допустимыми атрибутами **userPrincipalName** .
-- Удаление недопустимых и сомнительных символов **в givenName**, фамилия ( **SN** ), **SamAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailNickname**и **userPrincipalName** таблице. Подробнее о подготовке атрибутов можно узнать [в разделе List of Attributes, которые синхронизируЮтся средством синхронизации Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+- Удаление недопустимых и сомнительных символов **в givenName**, фамилия ( **SN** ), **SamAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailNickname**и **userPrincipalName** таблице. Подробнее о подготовке атрибутов можно узнать [в разделе List of Attributes, которые синхронизируются средством синхронизации Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
     > [!NOTE]
     > Это те же атрибуты, что и синхронизация Azure AD Connect. 
   
 ## <a name="multi-forest-deployment-considerations"></a>Рекомендации по развертыванию нескольких лесов
 
-Для параметров нескольких лесов и единого входа используйте [выборочНую установку Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430).
+Для параметров нескольких лесов и единого входа используйте [выборочную установку Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430).
   
 Если в организации используется несколько лесов для проверки подлинности (лесов входа), настоятельно рекомендуется выполнить следующие действия:
   
 - **Оцените консолидацию лесов.** В общем случае для поддержки нескольких лесов требуется дополнительная нагрузка. Если в Организации не предусмотрены ограничения безопасности, которые определяют потребность в отдельных лесах, рекомендуется упростить локальную среду.
-- **Используйте только в основном лесе входа в систему.** РасСмотрите вопрос о развертывании Office 365 только в основном лесе входа в систему для первоначального развертывания Office 365. 
+- **Используйте только в основном лесе входа в систему.** Рассмотрите вопрос о развертывании Office 365 только в основном лесе входа в систему для первоначального развертывания Office 365. 
 
 Если вы не можете консолидировать развертывание Active Directory с несколькими лесами или используете другие службы каталогов для управления удостоверениями, их можно синхронизировать с помощью корпорации Майкрософт или партнера.
   

@@ -1,10 +1,9 @@
 ---
 title: Контрольный список планирования развертывания для Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Этот контрольный список поможет вашей организации при планировании и подготовке к миграции в Office 365. Этапы и шаги в контрольном списке выравниваются по рекомендациям, предоставленным центром входящей миграции.
-ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 858ae9520db4cfb18696c817f041b879d66484e3
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490105"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067885"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Контрольный список планирования развертывания для Office 365
 
@@ -39,7 +38,7 @@ ms.locfileid: "33490105"
 |:-----|:-----|:-----|:-----|:-----|
 |**Задачи развертывания/Евентс** <br/> |**Дата начала** <br/> |**Дата окончания** <br/> |**Resources** <br/> |**Dependencies** <br/> |
 |**Определение целей развертывания** <br/> |||||
-| С внутренними и внешними заинтересованными лицами:<br>  — Согласование с областью и временной шкалой <br>  — Согласование с механизмом отслеживания проектов  <br>  — разработка критериев успеха и [связи](https://fasttrack.microsoft.com/office) / [приступая к работе с Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
+| С внутренними и внешними заинтересованными лицами:<br>  — Согласование с областью и временной шкалой <br>  — Согласование с механизмом отслеживания проектов  <br>  — Разработка критериев успеха и [связи](https://fasttrack.microsoft.com/office) / [Приступая к работе с Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Инвентаризация текущей среды и принятие ключевых решений по развертыванию** |||||
 |Инвентаризация текущей среды |||||
 | Сбор числа учетных записей пользователей (имена для входа, адреса электронной почты) |||||
@@ -68,7 +67,7 @@ ms.locfileid: "33490105"
 |[Проверьте домены, которые вы хотите использовать с подпиской.](https://go.microsoft.com/fwlink/?LinkId=534828) |||||
 | Настройка [параметров приложения](https://go.microsoft.com/fwlink/?LinkId=534829) (электронная почта, Обмен мгновенными сообщениями, собрания по сети, совместная работа в Интернете, хранение файлов, Yammer) |||||
 | При необходимости [Подготовьтесь к синхронизации службы каталогов](https://go.microsoft.com/fwlink/?LinkId=534830) |||||
-| НеОбязательное [Подготовьте единый вход](https://go.microsoft.com/fwlink/?LinkId=534831) |||||
+| Необязательное [Подготовьте единый вход](https://go.microsoft.com/fwlink/?LinkId=534831) |||||
 |Подготовка Организации |||||
 |[Подготовка службы поддержки](https://fasttrack.microsoft.com/office) к предстоящей миграции |||||
 | Тестирование развертывания и необязательного процесса миграции |||||

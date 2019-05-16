@@ -3,7 +3,7 @@ title: Прямая миграция в Office 365 с помощью PowerShell
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Сводка. Узнайте, как использовать Windows PowerShell для прямой миграции в Office 365.
-ms.openlocfilehash: 0f284e2dcccd3d7fc6958922ac4e87da4fc086ec
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 669aa3dc728b41bdc2ba8cc467943db5eb2005d9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574083"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071205"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Прямая миграция в Office 365 с помощью PowerShell
 
@@ -81,7 +81,7 @@ ms.locfileid: "30574083"
     
   - Администратор миграции должен быть членом группы **Администраторы домена** в службе каталогов Active Directory локальной организации.
     
-    Или
+    или
     
   - Администратор миграции должен иметь разрешение **FullAccess** для всех локальных почтовых ящиков.
     
@@ -195,7 +195,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>Шаг 7. Назначение пользователям лицензий
 <a name="BK_Step7"> </a>
 
- **Активируйте учетные записи пользователей Office 365 для мигрировавших учетных записей, назначая лицензии.** Если вы не назначите лицензию, почтовый ящик отключается по окончании льготного периода (30 дней). Чтобы назначить лицензию в центре администрирования Microsoft 365, ознакомьтесь с разназначением[лицензий на Office 365 для бизнеса](https://go.microsoft.com/fwlink/?LinkId=536681).
+ **Активируйте учетные записи пользователей Office 365 для перенесенных учетных записей, назначив им лицензии.** Если вы не назначите лицензию, почтовый ящик отключается по окончании льготного периода (30 дней). Чтобы назначить лицензию в центре администрирования Microsoft 365, ознакомьтесь с разназначением[лицензий на Office 365 для бизнеса](https://go.microsoft.com/fwlink/?LinkId=536681).
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Шаг 8. Необходимые действия после миграции
 <a name="BK_Step8"> </a>

@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: При использовании Office 2007 или Office 2010 необходимо запланировать обновление. Не следует зависнуть в случае устаревшего приложения. Используйте эти ресурсы, чтобы приступить к работе с планом.
-ms.openlocfilehash: ee14250f6bb17a571ff2c2e7e4cbd68d91d13646
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3643463e950fdfdf4440a7060383b3e7f21a9037
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492056"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069335"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Планирование обновления с серверов и клиентов Office 2007 и Office 2010
 
@@ -88,7 +88,7 @@ Microsoft 365 — это способ преобразования бизнес�
 |:-----|:-----|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |Получение сведений о различных версиях Microsoft 365.  <br/> |
 |[Microsoft 365 бизнес-документация](https://docs.microsoft.com/microsoft-365/business/) <br/> |Получите подробные сведения о версии Microsoft 365 для малых и средних предприятий.  <br/> |
-|[Документация по образовательных заВедений Microsoft 365](https://docs.microsoft.com/microsoft-365/education/) <br/> |Получите подробные сведения о версии Microsoft 365 для образовательных организаций.  <br/> |
+|[Документация по образовательных заведений Microsoft 365](https://docs.microsoft.com/microsoft-365/education/) <br/> |Получите подробные сведения о версии Microsoft 365 для образовательных организаций.  <br/> |
 |[Документация по Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |Получите подробные сведения о версии Microsoft 365 для корпоративных организаций.  <br/> |
 
    

@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 9/12/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Сведения о том, почему оптимизация сети важна для служб SaaS, цели Office 365 в сети, а также от того, как SaaS требуется разная сеть от других рабочих нагрузок.
-ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 88fde9a142b5394b642a46c19da6979c93fe8f9e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491914"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069625"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Обзор сетевого подключения Office 365
 
@@ -82,7 +82,7 @@ Office 365 разработана для обеспечения оптималь
 - Обеспечивает безопасность подключений на обоих концах, используя функции безопасности конечной точки клиента и облачные функции безопасности, избегая применения избыточных сетевых технологий безопасности.
 
 > [!NOTE]
-> Инфраструктура " _Передняя дверца" распределенНой службы_ — это высокодоступный и масштабируемый сетевой край Microsoft Global Network с географически распределенными расположениями. Он завершает подключения конечных пользователей и эффективно передает их в глобальную сеть Майкрософт. Вы можете узнать больше о глобальной сети Майкрософт, в которой [Корпорация Майкрософт создает свою быструю и надежную глобальную сеть](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+> Инфраструктура " _Передняя дверца" распределенной службы_ — это высокодоступный и масштабируемый сетевой край Microsoft Global Network с географически распределенными расположениями. Он завершает подключения конечных пользователей и эффективно передает их в глобальную сеть Майкрософт. Вы можете узнать больше о глобальной сети Майкрософт, в которой [Корпорация Майкрософт создает свою быструю и надежную глобальную сеть](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Для получения дополнительных сведений об использовании принципов сетевого подключения Office 365, ознакомьтесь со статьей [принципы сетевого подключения office 365](office-365-network-connectivity-principles.md).
 

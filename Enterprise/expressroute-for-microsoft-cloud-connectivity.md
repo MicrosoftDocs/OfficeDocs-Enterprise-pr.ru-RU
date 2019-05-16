@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Сводка: в этой статье рассказывается, как с помощью ExpressRoute создать более быстрые и надежные подключения к облачным службам и платформам корпорации Майкрософт.'
-ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0bab6cf3d400293221692a595346445afd242e48
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33488183"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067685"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute для подключения к Microsoft Cloud
 
@@ -268,5 +268,5 @@ ExpressRoute обеспечивает частное выделенное ско
 
 [Организация сети в Microsoft Cloud для корпоративных архитекторов](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

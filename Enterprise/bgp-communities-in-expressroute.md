@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 'Подключение к Office 365 с помощью Azure ExpressRoute основано на объявлениях BGP определенных IP-подсетей, которые представляют сети, в которых развернуты конечные точки Office 365. В связи с глобальной природой Office 365 и числа служб, которые составляют Office 365, клиентам часто приходится управлять этими рекламными объявлениями, которые они принимают в своей сети. Уменьшение числа IP-подсетей; на основе префиксов IP-адресов в оставшейся части этой статьи, чтобы выполнить согласование с терминологией управления сетью BGP, выполняет следующие конечные цели для клиентов:'
-ms.openlocfilehash: c6e40dc29df55aa87e8d40c6203100fa1e7ad38f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 2cce550aa4c14eb0de9daa6eac85cde6d1754add
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490925"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068185"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Использование сообществ BGP в ExpressRoute для сценариев Office 365
 
@@ -41,12 +41,12 @@ ms.locfileid: "33490925"
 |теплообменник\*  <br/> |12076:5010  <br/> |Включает службы Exchange и EOP\*  <br/> |
 |SharePoint\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
 |Skype для бизнеса\*  <br/> |12076:5030  <br/> |Skype для бизнеса Online  <br/> |
-|другие службы Office 365\*  <br/> |12076:5100  <br/> |Включает Azure Active Directory (сценарии проверки поДлинности и синхронизации каталогов), а также службы портала Office 365.  <br/> |
+|другие службы Office 365\*  <br/> |12076:5100  <br/> |Включает Azure Active Directory (сценарии проверки подлинности и синхронизации каталогов), а также службы портала Office 365.  <br/> |
 |\*Область сценариев служб, включенных в ExpressRoute, описана в статье по [конечным точкам Office 365](https://aka.ms/o365endpoints) .  <br/> \*\*Дополнительные службы и значения сообщества BGP могут быть добавлены в будущем. [Просмотр текущего списка сообществ BGP](https://azure.microsoft.com/documentation/articles/expressroute-routing/).  <br/> |
 
 ## <a name="what-are-the-most-common-scenarios-for-using-bgp-communities"></a>Каковы наиболее распространенные сценарии использования сообществ BGP?
 
-Клиенты могут использовать сообщества BGP для регулирования групп префиксов IP-адресов, принимаемых сетью через Azure ExpressRoute, таким образом изменяя общее количество префиксов IP и ожидаемый конверт пропускной способности определенных служб Office 365. Важно понимать, что для всех Office 365 потребуется связанный с Интернетом трафик независимо от использования соОбщества Azure ExpressRoute или BGP. Ниже приведены три сценария, наиболее часто используемые при использовании этой функции.
+Клиенты могут использовать сообщества BGP для регулирования групп префиксов IP-адресов, принимаемых сетью через Azure ExpressRoute, таким образом изменяя общее количество префиксов IP и ожидаемый конверт пропускной способности определенных служб Office 365. Важно понимать, что для всех Office 365 потребуется связанный с Интернетом трафик независимо от использования сообщества Azure ExpressRoute или BGP. Ниже приведены три сценария, наиболее часто используемые при использовании этой функции.
   
 ### <a name="scenario-1-minimizing-the-number-of-office-365-ip-prefixes"></a>Сценарий 1: сведение к минимуму количества префиксов IP-адресов Office 365
 

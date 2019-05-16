@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 2/23/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: В этой статье показано, как можно диагностировать распространенные проблемы с сайтом SharePoint Online с помощью средств разработчика Internet Explorer.
-ms.openlocfilehash: 89d4544bfabf6424b5f401bad7d63bd7fa41b5ca
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: dfc66822a98ce26bfd9fd94d9d58882b8b140831
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492290"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067865"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Диагностика проблем производительности в SharePoint Online
 
@@ -92,7 +92,7 @@ ms.locfileid: "33492290"
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>Что вызывает проблемы с производительностью в SharePoint Online?
 <a name="F12ToolInfo"> </a>
 
-[Параметры навигации по статье для SharePoint Online](navigation-options-for-sharepoint-online.md) показаны пример использования значения SPRequestDuration для определения того, что сложная структурная навигация привела к длительному времени для обработки страницы на сервере. Принимая значение для базового сайта (без настройки), можно определить, занимается ли заданный файл длительное время для загрузки. Пример, используемый в [параметрАх навигации для SharePoint Online](navigation-options-for-sharepoint-online.md) , — это файл main. aspx. В этом файле содержится большая часть кода ASP.NET, который выполняется при загрузке страницы. В зависимости от используемого шаблона сайта может быть Start. aspx, Home. aspx, Default. aspx или другое имя, если вы настроите домашнюю страницу. Если это число значительно выше, чем у базового сайта, это хорошо указывает на то, что на странице возникла какая-то сложность, которая вызывает проблемы с производительностью. 
+[Параметры навигации по статье для SharePoint Online](navigation-options-for-sharepoint-online.md) показаны пример использования значения SPRequestDuration для определения того, что сложная структурная навигация привела к длительному времени для обработки страницы на сервере. Принимая значение для базового сайта (без настройки), можно определить, занимается ли заданный файл длительное время для загрузки. Пример, используемый в [параметрах навигации для SharePoint Online](navigation-options-for-sharepoint-online.md) , — это файл main. aspx. В этом файле содержится большая часть кода ASP.NET, который выполняется при загрузке страницы. В зависимости от используемого шаблона сайта может быть Start. aspx, Home. aspx, Default. aspx или другое имя, если вы настроите домашнюю страницу. Если это число значительно выше, чем у базового сайта, это хорошо указывает на то, что на странице возникла какая-то сложность, которая вызывает проблемы с производительностью. 
   
 После того как вы определили, что проблема связана с вашим сайтом, рекомендуемый способ выяснить, что вызывает низкую производительность — устранить все возможные причины, например настройки страницы, а затем добавить их обратно на сайт по одному. После удаления достаточной настройки, которая хорошо работает на странице, можно добавить отдельные настройки по одному.
   

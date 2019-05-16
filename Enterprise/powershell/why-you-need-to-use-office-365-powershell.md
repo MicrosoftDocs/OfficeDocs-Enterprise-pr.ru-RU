@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/11/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Сводка: в этой статье рассказывается, почему необходимо использовать PowerShell в Office 365 для управления Office 365:: в ряде случаев это может быть более эффективно, а в других  вызвано необходимостью.'
-ms.openlocfilehash: f63f1a2361b225eed5d771b06b07f00bba26c392
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: be117dd2e4eaa7f3e2e95cd0d2444bd5b813bccb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574103"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071155"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Причины использования Office 365 PowerShell
 

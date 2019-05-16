@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 4/3/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: В этой статье описывается использование сети доставки содержимого (CDN) Office 365 для ускорения доставки ресурсов SharePoint Online всем пользователям независимо от того, где они размещены, или от того, как они обращаются к контенту.
-ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: de8c02b44405260aa7379ab0a881ba72f73c7a6b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492233"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070635"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Использование сети доставки содержимого Office 365 с SharePoint Online
 
@@ -35,7 +35,7 @@ ms.locfileid: "33492233"
 > [!TIP]
 > Существуют другие размещенные в Майкрософт сети CDN, которые можно использовать с Office 365 для специализированных сценариев использования, но не рассматриваются в этом разделе, так как они выходят за границы области CDN Office 365. Для получения дополнительных сведений обратитесь к разделу [Microsoft сети CDN](content-delivery-networks.md#other-microsoft-cdns).
 
- **Перейдите обратно к [планированИю сети и настройке производительности для Office 365](https://aka.ms/tune).**
+ **Перейдите обратно к [планированию сети и настройке производительности для Office 365](https://aka.ms/tune).**
 
 ## <a name="overview-of-working-with-the-office-365-cdn-in-sharepoint-online"></a>Общие сведения о работе с CDN Office 365 в SharePoint Online
 
@@ -66,7 +66,7 @@ ms.locfileid: "33492233"
 
 Наконец, ознакомьтесь с разделом [использование ресурсов CDN](use-office-365-cdn-with-spo.md#using-your-cdn-assets) для получения сведений о доступе к ресурсам CDN как из общедоступных, так и из частных источников.
 
-Рекомендации по устранению распространенных проблем приведены [в разделе устраненИе неполадок в сети CDN Office 365](use-office-365-cdn-with-spo.md#CDNTroubleshooting) .
+Рекомендации по устранению распространенных проблем приведены [в разделе Устранение неполадок в сети CDN Office 365](use-office-365-cdn-with-spo.md#CDNTroubleshooting) .
 
 ## <a name="plan-for-deployment-of-the-office-365-cdn"></a>Планирование развертывания сети CDN Office 365
 
@@ -215,7 +215,7 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 
 Дополнительные сведения об этом командлете приведены в разделе [Set – SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).
   
-### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Изменение списка типов файлов, включаемых в CDN Office 365 (неОбязательно)
+### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Изменение списка типов файлов, включаемых в CDN Office 365 (необязательно)
 <a name="Office365CDNforSPOFileType"> </a>
 
 > [!TIP]
@@ -243,7 +243,7 @@ Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 
 Дополнительные сведения об этих командлетах приведены в статье [Set/SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) и [Get – SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).
   
-### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Изменение списка классификаций сайтов, которые требуется исключить из сети CDN Office 365 (неОбязательно)
+### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Изменение списка классификаций сайтов, которые требуется исключить из сети CDN Office 365 (необязательно)
 <a name="Office365CDNforSPOSiteClassification"> </a>
 
 > [!TIP]
@@ -367,7 +367,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/fol
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Пример: Настройка частного источника для семейства веб-сайтов для SharePoint Online
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 
-Используйте командлет **Add-SPOTenantCdnOrigin** для определения семейства веб-сайтов в качестве частного источника. Пример:
+Используйте командлет **Add-SPOTenantCdnOrigin** для определения семейства веб-сайтов в качестве частного источника. Примеры:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -392,7 +392,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>Удаление источника из сети CDN Office 365
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 
-Вы можете запретить доступ к папке или библиотеке SharePoint, идентифицированным в качестве источника. Для этого используйте командлет reMove **– SPOTenantCdnOrigin** .
+Вы можете запретить доступ к папке или библиотеке SharePoint, идентифицированным в качестве источника. Для этого используйте командлет Remove **– SPOTenantCdnOrigin** .
 
 ``` powershell
 Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
@@ -562,7 +562,7 @@ spo cdn set --type Public --enabled false
 
 Чтобы использовать ресурсы, добавленные в источник, просто обновите ссылки на исходный файл, указав путь к файлу в источнике.
 
-- ОтРедактируйте страницу или контент, содержащие ссылки на ресурсы, добавленные в источник. Вы также можете использовать один из следующих методов для глобального поиска и замены ссылок на сайте ввод сайта или семейства веб-сайтов, если необходимо обновить ссылку на данный ресурс везде, где он отображается.
+- Отредактируйте страницу или контент, содержащие ссылки на ресурсы, добавленные в источник. Вы также можете использовать один из следующих методов для глобального поиска и замены ссылок на сайте ввод сайта или семейства веб-сайтов, если необходимо обновить ссылку на данный ресурс везде, где он отображается.
 - Для каждой ссылки на ресурс в источнике Замените путь на путь к файлу в источнике CDN. Можно использовать относительные пути.
 - Сохраните страницу или контент.
 
@@ -633,7 +633,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Доступ к ресурсам в частных источниках в сети CDN Office 365 предоставляется маркерами, созданными SharePoint Online. Пользователи, которые уже имеют разрешение на доступ к папке или библиотеке, назначенным источником, автоматически получают маркеры, позволяющие пользователю получить доступ к файлу на основе их уровня разрешений. Эти маркеры доступа действительны в течение 30 – 90 минут после их создания для предотвращения атак с повторением маркеров.
 
-После создания маркера доступа SharePoint Online возвращает пользовательский URI для клиента, содержащего два параметра авторизации _EAT_ (маркер авторизации пограничного сервера) и _ОАТ_ (маркер авторизации источника). Структура каждого маркера __лт_'експиратион время в эпоху времени Формат'_гт____лт_'секуре сигнатуре'_гт__. Пример:
+После создания маркера доступа SharePoint Online возвращает пользовательский URI для клиента, содержащего два параметра авторизации _EAT_ (маркер авторизации пограничного сервера) и _ОАТ_ (маркер авторизации источника). Структура каждого маркера __лт_'експиратион время в эпоху времени Формат'_гт____лт_'секуре сигнатуре'_гт__. Примеры:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312

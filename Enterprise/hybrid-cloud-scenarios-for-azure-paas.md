@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: Сводка. Сведения о гибридной архитектуре и сценариях для облачных предложений на основе Microsoft PaaS в Azure.
-ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: fcc335d0e53463dea4e7ac73c3885b39734db38e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491212"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067535"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Сценарии гибридного облака для Azure PaaS
 
@@ -99,5 +99,5 @@ ms.locfileid: "33491212"
 
 [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

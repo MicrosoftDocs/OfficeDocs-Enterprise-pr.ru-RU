@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/14/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Чтобы правильно разобрал трафик маршрутизации для Office 365 с помощью Azure ExpressRoute, вам потребуются сведения об основных требованиях к маршрутизации ExpressRoute, а также о доменах ExpressRoute и доменах маршрутизации. В этих статьях используются основные принципы использования ExpressRoute, на которые полагаются клиенты Office 365.
-ms.openlocfilehash: 83c3801e7886bf44500f1dc0b185782e2a7f3bc1
-ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
+ms.openlocfilehash: 60277e9d9f2a5b2fc92465b57b5aa08148b604f7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31957720"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071005"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Маршрутизация с использованием ExpressRoute для Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "31957720"
 
 - Существует сопоставление 1:1 между цепью ExpressRoute и клиентом s/клавишей.
 
-- Каждая цепь может поддерживать до 3 независимых одноранговых связей (общеДоступные пиринга Azure, частный пиринг Azure и пиринг Майкрософт); Для Office 365 требуется пиринг Майкрософт.
+- Каждая цепь может поддерживать 2 независимых одноранговых отношения (частный пиринг Azure и пиринг Майкрософт); Для Office 365 требуется пиринг Майкрософт.
 
 - Каждая цепь имеет фиксированную пропускную способность, совместно используемую во всех отношениях пиринга.
 
@@ -82,7 +82,7 @@ ms.locfileid: "31957720"
 Другие приложения, такие как Office 365 Video, являются приложением Office 365; Однако видео Office 365 состоит из трех различных компонентов, портала, потоковой службы и сети доставки контента. Портал находится в SharePoint Online, потоковая служба находится в службах мультимедиа Azure, а сеть доставки контента находится в CDN Azure. В следующей таблице приведены эти компоненты.
   
 | |
-|**Компонент**|**Базовое приложение**|**Включено в сообщество BGP для SharePoint Online?**|**Использование**|
+|**Компонент**|**Базовое приложение**|**Включено в сообщество BGP для SharePoint Online?**|**Применение**|
 |:-----|:-----|:-----|:-----|
 |Видео портал Office 365  <br/> |SharePoint Online  <br/> |Да  <br/> |Конфигурация, отправка  <br/> |
 |Служба потоковой передачи видео Office 365  <br/> |Службы мультимедиа Azure  <br/> |Нет  <br/> |Служба потоковой передачи, используемая в случае недоступности видео из сети CDN  <br/> |
@@ -94,10 +94,10 @@ ms.locfileid: "31957720"
   
 В этой таблице отображаются полные доменные имена, объявляемые как в Интернете, так и в Azure ExpressRoute вместе с дочерними именами, объявленными только в Интернете.
 
-|**Домен с подстановочными знаками, объявленный для ExpressRoute и Интернет каналов**|**ДоЧернее полное ДОМЕНное имя, объявленное только межИнтернетными цепями**|
+|**Домен с подстановочными знаками, объявленный для ExpressRoute и Интернет каналов**|**Дочернее полное ДОМЕНное имя, объявленное только межинтернетными цепями**|
 |:-----|:-----|
-|\*. microsoftonline.com  <br/> |Click.email.microsoftonline.com  <br/> Portal.microsoftonline.com  <br/> provisioningapi.microsoftonline.com  <br/> adminwebservice.microsoftonline.com  <br/> |
-|\*. officeapps.Live.com  <br/> |nexusRules.officeapps.live.com  <br/> Nexus.officeapps.Live.com  <br/> ODC.officeapps.Live.com  <br/> ODC.officeapps.Live.com  <br/> CDN.ODC.officeapps.Live.com  <br/> OLS.officeapps.Live.com  <br/> ocsredir.officeapps.Live.com  <br/> ocws.officeapps.Live.com  <br/> ocsa.officeapps.Live.com  <br/> |
+|\*. microsoftonline.com  <br/> |click.email.microsoftonline.com  <br/> portal.microsoftonline.com  <br/> provisioningapi.microsoftonline.com  <br/> adminwebservice.microsoftonline.com  <br/> |
+|\*. officeapps.live.com  <br/> |nexusRules.officeapps.live.com  <br/> nexus.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> cdn.odc.officeapps.live.com  <br/> ols.officeapps.live.com  <br/> ocsredir.officeapps.live.com  <br/> ocws.officeapps.live.com  <br/> ocsa.officeapps.live.com  <br/> |
 
 Обычно файлы PAC предназначены для отправки сетевых запросов к конечным конечным точкам ExpressRoute напрямую в цепь и всем остальным сетевым запросам прокси-сервера. Если вы настраиваете файл PAC подобным образом, создайте файл PAC в следующем порядке:
   
@@ -109,13 +109,13 @@ ms.locfileid: "31957720"
 
 В этой таблице отображаются домены с подстановочными знаками, объявляемые в Интернет, только вместе с дочерними именами, объявляемыми в Azure ExpressRoute и Интернет цепям. Для файла PAC, указанного в приведенном ниже списке, указаны полные доменные имена в столбце 2 в приведенной ниже таблице, что означает, что они будут включены во вторую группу записей в файле.
 
-|**Домен с подстановочными знаками, объявляемый только межИнтернетным цепям**|**ДоЧернее полное ДОМЕНное имя, объявленное с использованием ExpressRoute и интернетовых цепей**|
+|**Домен с подстановочными знаками, объявляемый только межинтернетным цепям**|**Дочернее полное ДОМЕНное имя, объявленное с использованием ExpressRoute и интернетовых цепей**|
 |:-----|:-----|
-|\*. Office.com  <br/> |\*. Outlook.Office.com  <br/> Home.Office.com  <br/> Outlook.Office.com  <br/> Portal.Office.com  <br/> www.Office.com  <br/> |
-|\*. Office.NET  <br/> |Agent.Office.NET  <br/> |
-|\*. Office365.com  <br/> |Outlook.Office365.com  <br/> smtp.office365.com  <br/> |
-|\*. Outlook.com  <br/> |\*. Protection.Outlook.com  <br/> \*. mail.Protection.Outlook.com  <br/> автообнаружения —\<клиент\>. Outlook.com  <br/> |
-|\*. Windows.NET  <br/> |Login.Windows.NET  <br/> |
+|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
+|\*. office.net  <br/> |agent.office.net  <br/> |
+|\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
+|\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> автообнаружения —\<клиент\>. Outlook.com  <br/> |
+|\*. windows.net  <br/> |login.windows.net  <br/> |
 
 ## <a name="routing-office-365-traffic-over-the-internet-and-expressroute"></a>Маршрутизация трафика Office 365 через Интернет и ExpressRoute
 
@@ -151,13 +151,13 @@ ms.locfileid: "31957720"
   
 ![Пограничная сеть клиента ExpressRoute](media/dab8cc42-b1d6-46d6-b2f6-d70f9e16d5ea.png)
   
-- Outlook.Office365.com, Outlook.Office.com
+- outlook.office365.com, outlook.office.com
 
-- \<\>имя \<клиента. sharepoint.com, имя клиента — имя\>my.sharepoint.com, \<имя\>-\<клиента app\>. sharepoint.com
+- \<\>имя \<клиента. SharePoint.com, имя клиента — имя\>My.SharePoint.com, \<имя\>-\<клиента App\>. SharePoint.com
 
 - \*. Lync.com и диапазоны IP-адресов для трафика, не входящего в TCP
 
-- \*Broadcast.officeapps.Live.com, \*Excel.officeapps.Live.com, \*OneNote.officeapps.Live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \* Word-Edit.officeapps.Live.com, \*Word-View.officeapps.Live.com, Office.Live.com
+- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \* word-edit.officeapps.live.com, \*word-view.officeapps.live.com, Office.Live.com
 
 Узнайте больше о [развертывании и управлении параметрами прокси-сервера в Windows 8](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) и [предоставлении учетной записи пользователя ограничения на Office 365](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx).
   
@@ -206,7 +206,7 @@ Humongous страхование географически распределе
   
 При планировании стратегии поддержки нескольких регионов для Humongous страхования необходимо учитывать размер цепи, число цепей, отработку отказа и т. д.
   
-С ExpressRoute в одной папке, в которой несколько областей пытаются использовать цепь, Humongous страхование хотят убедиться, что подключения к Office 365 из удаленного офиса отправляются в центр обработки данных Office 365, ближайший штаб-квартира и полученные расположение центрального офиса. Для этого Humongous страхование внедряет DNS-переадресацию для сокращения числа циклов обработки и поиска DNS, необходимых для установки подходящего подключения к среде Office 365, ближайшей к точке выхода в Интернет в офисе. Это предотвращает разрешение клиентом локального сервера переднего плана и обеспечение того, что сервер переднего плана, к которому подключается, находится в головном офисе, где Humongous страхование является одноранговым с корпорацией Майкрософт. Вы также можете узнать, как [назначить условную пересылку для доменНого имени](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx).
+С ExpressRoute в одной папке, в которой несколько областей пытаются использовать цепь, Humongous страхование хотят убедиться, что подключения к Office 365 из удаленного офиса отправляются в центр обработки данных Office 365, ближайший штаб-квартира и полученные расположение центрального офиса. Для этого Humongous страхование внедряет DNS-переадресацию для сокращения числа циклов обработки и поиска DNS, необходимых для установки подходящего подключения к среде Office 365, ближайшей к точке выхода в Интернет в офисе. Это предотвращает разрешение клиентом локального сервера переднего плана и обеспечение того, что сервер переднего плана, к которому подключается, находится в головном офисе, где Humongous страхование является одноранговым с корпорацией Майкрософт. Вы также можете узнать, как [назначить условную пересылку для доменного имени](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx).
   
 В этом сценарии трафик из удаленного офиса будет разрешать инфраструктуру Microsoft Office 365 в Северной Америке и использовать Office 365 для подключения к внутренним серверам в соответствии с архитектурой приложения Office 365. Например, Exchange Online будет прерывать подключение в Северной Америке, и эти серверы переднего плана подключаются к внутреннему серверу почтовых ящиков везде, где находился клиент. Все службы имеют широко распределенную службу передней дверцы, состоящую из одноадресной рассылки и назначений.
   
@@ -254,6 +254,6 @@ Humongous страхование географически распределе
   
 [План устранения проблем с производительностью Office 365](performance-troubleshooting-plan.md)
   
-[URL-адреса и диапазоны IP-адресов для Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Диапазоны IP-адресов и URL-адреса Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)

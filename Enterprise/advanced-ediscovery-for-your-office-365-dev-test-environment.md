@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: Сводка. Настройка и демонстрация Office 365 Advanced eDiscovery с образцами данных в среде разработки и тестирования Office 365.
-ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491225"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068345"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery для среды разработки и тестирования Office 365
 
@@ -77,7 +77,7 @@ Office 365 Advanced eDiscovery позволяет быстро находить 
     
 14. Нажмите значок пользователя в правом верхнем углу страницы, а затем выберите **Выйти**.
     
-15. Откройте новую вкладку и войдите на портал Office 365 ([https://www.office.com](https://www.office.com)), указав имя и пароль учетНой записи User6 пробной подписки.
+15. Откройте новую вкладку и войдите на портал Office 365 ([https://www.office.com](https://www.office.com)), указав имя и пароль учетной записи User6 пробной подписки.
     
 16. На вкладке **портала Office 365** выберите элемент **Почта**.
     
@@ -91,7 +91,7 @@ Office 365 Advanced eDiscovery позволяет быстро находить 
   
 1. На странице **Office** нажмите кнопку **Войти** и войдите с помощью учетных данных глобального администратора.
     
-2. на новой вкладке получите доступ к URL-адресу рабочего сайта SharePoint: **https://** <fictional organization name> **. sharepoint.com/sites/production**
+2. На новой вкладке получите доступ к URL-адресу рабочего сайта SharePoint: **https://** <fictional organization name> **. SharePoint.com/sites/Production**
     
 3. На вкладке **Семейство рабочих веб-сайтов** найдите раздел **Документы** и выберите элементы **Создать > Документ Word**.
     
@@ -187,7 +187,7 @@ Office 365 Advanced eDiscovery позволяет быстро находить 
   
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
   
-[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
+[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
   
 [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   

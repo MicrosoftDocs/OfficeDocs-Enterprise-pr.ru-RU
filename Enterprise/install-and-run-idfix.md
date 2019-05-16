@@ -1,9 +1,9 @@
 ---
 title: Установка и запуск инструмента Office 365 IdFix
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 f1_keywords:
 - O365E_HRCSetupAADConnectIDFixLM617036
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Сведения об установке и запуске средства Office 365 IdFix для очистки Active Directory перед его синхронизацией с Office 365.
-ms.openlocfilehash: a35b2a476f2b30eccc955b980eda6315b146af27
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4197694ce90ab600652aa729809ef0ddb0647e03
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33488021"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067295"
 ---
 # <a name="install-and-run-the-office-365-idfix-tool"></a>Установка и запуск инструмента Office 365 IdFix
 

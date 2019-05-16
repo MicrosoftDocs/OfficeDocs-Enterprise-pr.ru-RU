@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
 description: Эта статья представляет собой текстовую версию схемы "Варианты платформы Microsoft SharePoint 2013".
-ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4a0b068ffb8abbe11c2286f3daa70c5f62295425
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487825"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068605"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>Доступная схема — варианты платформы Microsoft SharePoint 2013
 
@@ -44,7 +44,7 @@ ms.locfileid: "33487825"
     
 - обязанности ИТ-специалистов в отношении реализации решения.  
     
-### <a name="overview"></a>Общие сведения
+### <a name="overview"></a>Обзор
 
 #### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 в Office 365
 
@@ -384,7 +384,7 @@ Duet Enterprise Online
     
 - Трафик проверки подлинности клиента для пользователей, подключающихся из любого расположения, обрабатывается серверами AD FS и прокси-серверами, развернутыми в Azure. 
     
-### <a name="public-facing-internet-site-and-azure-ad-for-customer-authentication"></a>ОбщеДоступный Интернет-сайт и Azure AD для проверки подлинности клиентов
+### <a name="public-facing-internet-site-and-azure-ad-for-customer-authentication"></a>Общедоступный Интернет-сайт и Azure AD для проверки подлинности клиентов
 
 Воспользуйтесь возможностью легко масштабироваться по запросу, разместив сайт Интернета в Azure. Используйте Azure AD для хранения учетных записей клиентов. 
   

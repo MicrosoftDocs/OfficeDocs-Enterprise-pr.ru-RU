@@ -1,10 +1,10 @@
 ---
-title: Ресурсы, которые помогут вам обновление с Office 2010 серверов и клиентов
+title: Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 11/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -20,39 +20,39 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: Скоро заканчивается поддержка для Office 2010 на серверах и клиентских приложений и соглашения о поддержке настраиваемого недоступны. Используйте эту статью для начала планирования обновления сейчас.
-ms.openlocfilehash: 10ec20fea5cd40c5ed24d1a24a7f4e4a1a2875d7
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+description: Поддержка скоро завершается для серверов и клиентских приложений Office 2010, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
+ms.openlocfilehash: cb1aa32f77a7a1f5490565cc269d5b93b842c229
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070695"
 ---
-# <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, которые помогут вам обновление с Office 2010 серверов и клиентов
+# <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 
-При использовании продуктов Office 2010 и служб, вы, вероятно, принять во внимание, что продукты Office 2010 и службы близко к их окончание поддержки. При планировании обновления, это много времени, можно перенести в облако Майкрософт, начиная с Office 365. Используйте эту статью в качестве отправной точки для просмотра параметров.
+Если вы используете продукты и службы Office 2010, вероятно, вы уверены, что продукты и службы Office 2010 близки к их концу. При планировании обновления это отличное время для перехода на Microsoft Cloud, начиная с Office 365. Используйте эту статью в качестве отправной точки для просмотра вариантов.
       
-## <a name="office-2010-planning-content"></a>Office 2010 планирования содержимого
+## <a name="office-2010-planning-content"></a>Материалы по планированию Office 2010
   
-|**Для этого продукта**|**Просмотрите этот ресурс**|
+|**Для этого продукта**|**Просмотр этого ресурса**|
 |:-----|:-----|
-|Office 2010 (включая Word 2010, Excel 2010, PowerPoint 2010 и Outlook 2010)  <br/> |[Конец стратегия поддержки Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
-|Exchange Server 2010  <br/> |[Конец стратегия поддержки Exchange 2010](exchange-2010-end-of-support.md) <br/> |
-|SharePoint 2010 и SharePoint Server 2010  <br/> |[Обновление с SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 <br/> | [Project Server 2010 конец поддержки стратегия](project-server-2010-end-of-support.md) <br/> |
-|Lync Server 2010 <br/> | [Планирование обновления до Скайп для Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
+|Office 2010 (включая Word 2010, Excel 2010, PowerPoint 2010 и Outlook 2010)  <br/> |[План поддержки Office 2010 в конце поддержки](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
+|Exchange Server 2010  <br/> |[План поддержки Exchange 2010 в конце поддержки](exchange-2010-end-of-support.md) <br/> |
+|SharePoint 2010 или SharePoint Server 2010  <br/> |[Обновление с SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
+|Project Server 2010 <br/> | [План поддержки Project Server 2010.](project-server-2010-end-of-support.md) <br/> |
+|Lync Server 2010 <br/> | [Планирование обновления до Skype для бизнеса Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
-## <a name="im-a-home-user-what-do-i-do"></a>Я домашних пользователей. Чем я занимаюсь?
+## <a name="im-a-home-user-what-do-i-do"></a>Я домашний пользователь. What do I do?
 
-Если вы используете продуктов Office 2010 и приложениями дома, видеть [эти сведения](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
+Если вы используете продукты и приложения Office 2010 на домашней странице, ознакомьтесь с [этими сведениями](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 
-## <a name="related-topics"></a>См. также:
+## <a name="related-topics"></a>Статьи по теме
 
-[Группа пенсионного обеспечения Office (сообщества Microsoft Технический)](https://go.microsoft.com/fwlink/?linkid=842065)
+[Группа выбытия Office (Майкрософт Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
   
-[Видео: Что такое Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Видео: что такое Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
-[Политика по срокам Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
+[Политика жизненного цикла поддержки Майкрософт](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Планирование обновления Office 2007 или Office 2010 серверов и клиентов](plan-upgrade-previous-versions-office.md)
+[Планирование обновления с серверов и клиентов Office 2007 и Office 2010](plan-upgrade-previous-versions-office.md)
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: Сводка. сведения о гибридной архитектуре и сценариях для облачных услуг Майкрософт на основе SaaS (Office 365).
-ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 84092fe419ab31fca7763f434e328eb855d46835
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487530"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067225"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Гибридные облачные сценарии для SaaS Майкрософт (Office 365)
 
@@ -47,7 +47,7 @@ ms.locfileid: "33487530"
     
     Кроме того, есть следующий перекрестный гибридный сценарий: Exchange Online с локальным приложением Skype для бизнеса Server.
     
-- Идентификация
+- Удостоверение
     
     Может включать синхронизацию службы каталогов с локальными доменными службами Active Directory (AD DS). В качестве альтернативы можно настроить федерацию Azure AD со сторонним поставщиком удостоверений.
     
@@ -71,7 +71,7 @@ ms.locfileid: "33487530"
   
 На рисунке 2 показана гибридная конфигурация Skype для бизнеса, состоящая из локального интерфейсного пула Skype для бизнеса и пограничного сервера, взаимодействующего со Skype для бизнеса Online в Office 365.
   
-Для получения дополнительных сведений ознакомьтесь [со статьЕй планирование гибридного подключения между Skype для бизнеса Server и Skype для бизнеса Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
+Для получения дополнительных сведений ознакомьтесь [со статьей Планирование гибридного подключения между Skype для бизнеса Server и Skype для бизнеса Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
     
 ## <a name="cloud-pbx-with-skype-for-business-server"></a>Облачная УАТС со Skype для бизнеса Server
 
@@ -87,7 +87,7 @@ ms.locfileid: "33487530"
   
 Это отличный пример гибридной конфигурации, который позволяет постепенно переходить на облачную службу. При переносе функций голосовой связи своих пользователей в Skype для бизнеса в Online вы можете сохранить эти функции. Перенос пользователей может выполняться в удобном для вас режиме, при этом вы можете быть уверены в том, что функции голосовой связи будут сохранены независимо от расположения пользователей. 
   
-Для получения дополнительных сведений ознакомьтесь [со статьЕй планирование гибридного подключения между Skype для бизнеса Server и Skype для бизнеса Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
+Для получения дополнительных сведений ознакомьтесь [со статьей Планирование гибридного подключения между Skype для бизнеса Server и Skype для бизнеса Online](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity).
   
 Если у вас пока не развернуто решение Lync Server или Skype для бизнеса Server, вы можете использовать Cloud Connector Edition для Skype для бизнеса, набор упакованных виртуальных машин, которые реализуют возможность подключения к ТСОП с помощью облачной УАТС.
   
@@ -148,11 +148,11 @@ ms.locfileid: "33487530"
     
 Вы также можете интегрировать эту гибридную конфигурацию с другими приложениями Microsoft Office 365, в том числе Skype для бизнеса Online и SharePoint Online.
   
-Для получения дополнительных сведений обратитесь к разделу [гибридНые развертывания Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
+Для получения дополнительных сведений обратитесь к разделу [Гибридные развертывания Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
   
 ## <a name="see-also"></a>См. также
 
 [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 11/08/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Узнайте, как совместное использование Office 365 в клиентах и организациях.
-ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: cedeab08cf6daf3817179bcf770eda6598361e67
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492095"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069675"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Взаимодействие между клиентами Office 365
 
@@ -57,7 +57,7 @@ ms.locfileid: "33492095"
 
 |**Цель общего доступа**|**Административное действие**|**Инструкции**|
 |:-----|:-----|:-----|
-|Совместная работа Azure AD B2B — общий доступ к контенту путем добавления внешних пользователей в группу в каталоге Организации.  <br/> |Глобальный администратор одного клиента Office 365 может пригласить пользователей в другом клиенте Office 365 для присоединения к каталогу, добавления этих внешних пользователей в группу и предоставления доступа к контенту, например сайтам и библиотекам SharePoint для группы.  <br/> |[Что такое предварительный просмотр совместной работы Azure AD B2B?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) <br/> [Azure AD B2B: новые обновления делают коллаб простыми](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br/> [Office 365 внешний общий доступ и совместная работа Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-o365-external-user) <br/> [API совместной работы и настройка Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-api) <br/> [ПоКажите Azure AD и удостоверения: совместная работа Azure AD B2B (бизнес для бизнеса)](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) <br/> |
+|Совместная работа Azure AD B2B — общий доступ к контенту путем добавления внешних пользователей в группу в каталоге Организации.  <br/> |Глобальный администратор одного клиента Office 365 может пригласить пользователей в другом клиенте Office 365 для присоединения к каталогу, добавления этих внешних пользователей в группу и предоставления доступа к контенту, например сайтам и библиотекам SharePoint для группы.  <br/> |[Что такое предварительный просмотр совместной работы Azure AD B2B?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) <br/> [Azure AD B2B: новые обновления делают коллаб простыми](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br/> [Office 365 внешний общий доступ и совместная работа Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-o365-external-user) <br/> [API совместной работы и настройка Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-api) <br/> [Покажите Azure AD и удостоверения: совместная работа Azure AD B2B (бизнес для бизнеса)](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) <br/> |
    
 ## <a name="office-365-collaboration-options"></a>Возможности совместной работы в Office 365
 
@@ -95,7 +95,7 @@ ms.locfileid: "33492095"
     
 - **Подписки &amp; на лицензии:** В Office 365 лицензии из планов лицензирования (которые также называются конфигурациями и планами Office 365) предоставляют пользователям доступ к службам Office 365, определенным для этих планов. 
     
-- **Хранилище:** В планах Office 365 программные границы и ограничения для SharePoint Online управляются отдельно от ограничений хранилища почтовых ящиков. Пределы хранилища поЧтовых ящиков настраиваются и управляются с помощью Exchange Online. В обоих сценариях хранилище не может совместно использоваться несколькими клиентами. 
+- **Хранилище:** В планах Office 365 программные границы и ограничения для SharePoint Online управляются отдельно от ограничений хранилища почтовых ящиков. Пределы хранилища почтовых ящиков настраиваются и управляются с помощью Exchange Online. В обоих сценариях хранилище не может совместно использоваться несколькими клиентами. 
     
 ### <a name="can-we-share-domain-namespaces-across-office-365-tenants"></a>Можно предоставить общий доступ к пространствам имен доменов в клиентах Office 365?
 

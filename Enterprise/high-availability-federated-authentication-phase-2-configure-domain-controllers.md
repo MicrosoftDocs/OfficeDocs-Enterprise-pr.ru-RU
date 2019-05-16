@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: Сводка. Настройка контроллеров домена и сервера DirSync для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: bda22a1df0165724f660019e28a9f088280fea4f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f04488ad9a99111734d476725eb8e9d423c167cd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491344"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067485"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Этап 2. Федеративная проверка подлинности для обеспечения высокой доступности: настройка контроллеров домена
 
@@ -62,7 +62,7 @@ ms.locfileid: "33491344"
     
 - таблица A (для групп доступности).
     
-Помните, что вы определили таблицы R, V, S, I и A для [федеративной проверки подлиннОсти с высоким уровнем доступности, этап 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Помните, что вы определили таблицы R, V, S, I и A для [федеративной проверки подлинности с высоким уровнем доступности, этап 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
 > Для приведенных ниже последовательностей команд используется последняя версия Azure PowerShell. См. статью [Общие сведения об Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
@@ -195,7 +195,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 Вам будет предложено указать учетные данные администратора домена. Компьютер перезагрузится.
   
-Теперь необходимо обновить DNS-серверы для виртуальной сети, чтобы служба Azure назначила виртуальным машинам IP-адреса двух новых контроллеров домена в качестве DNS-серверов. ЗаПолните переменные, а затем выполните приведенные ниже команды в командной строке Windows PowerShell на локальном компьютере:
+Теперь необходимо обновить DNS-серверы для виртуальной сети, чтобы служба Azure назначила виртуальным машинам IP-адреса двух новых контроллеров домена в качестве DNS-серверов. Заполните переменные, а затем выполните приведенные ниже команды в командной строке Windows PowerShell на локальном компьютере:
   
 ```
 $rgName="<Table R - Item 4 - Resource group name column>"

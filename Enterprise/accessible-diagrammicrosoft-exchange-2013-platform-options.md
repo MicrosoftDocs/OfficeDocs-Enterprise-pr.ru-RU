@@ -3,19 +3,19 @@ title: "Открытая диаграмма \x97 варианты платфор
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: Эта статья  открытая текстовая версия диаграммыВарианты платформы Microsoft Exchange 2013, доступная в разделе Технические схемы.
-ms.openlocfilehash: e1c4957c9152c5a23008c657d7e2d0d47b5cce0f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487805"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068595"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Открытая диаграмма — варианты платформы Microsoft Exchange 2013
 

@@ -1,10 +1,9 @@
 ---
 title: Интеграция Office 365 с локальными средами
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +18,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Узнайте, как интегрировать Office 365 с существующими службами каталогов.
-ms.openlocfilehash: 112f543a9c647ea850d5e43bc14483308da0b2c7
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 1fa044a0a9db0d8422239cf301fea21a2c3d47e9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487413"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069745"
 ---
 # <a name="office-365-integration-with-on-premises-environments"></a>Интеграция Office 365 с локальными средами
 
@@ -39,7 +38,7 @@ ms.locfileid: "33487413"
 - [Мастер развертывания службы управления правами Azure](https://aka.ms/azuremsguidance)
 - [Руководство по установке Azure AD Premium](https://aka.ms/aadpguidance)
    
-## <a name="before-you-begin"></a>Подготовка к работе
+## <a name="before-you-begin"></a>Перед началом работы
 Прежде чем интегрировать Office 365 и локальную среду, вам также потребуется принять участие в планировании [сети и настройке производительности для Office 365](network-planning-and-performance.md). Кроме того, вам потребуется ознакомиться с доступными [моделями идентификации](about-office-365-identity.md) в Office 365. 
 
 Сведения о [том, как управлять учетными записями пользователей office 365](manage-office-365-accounts.md) для списка средств, которые можно использовать для управления пользователями и учетными записями Office 365. 

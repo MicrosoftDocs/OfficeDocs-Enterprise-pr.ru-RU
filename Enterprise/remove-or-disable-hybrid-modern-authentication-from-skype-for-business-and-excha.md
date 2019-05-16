@@ -1,10 +1,10 @@
 ---
-title: Удаление и отключение гибридной современной проверки поДлинности в Skype для бизнеса и Exchange
+title: Удаление гибридной современной проверки подлинности из Skype для бизнеса и Exchange или ее отключение
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/3/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,26 +13,26 @@ search.appverid:
 ms.assetid: 5a91b9e3-1508-475b-93e0-710fa5d5cd2d
 ms.collection:
 - M365-security-compliance
-description: Если Гибридная современная проверка поДлинности (HMA) включена только для того, чтобы найти непригодную для текущей среды, можно отключить HMA. В этой статье описывается, как это сделать.
-ms.openlocfilehash: 4df044a8243bc6016f71c31d5b5cba7db901be98
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+description: Если Гибридная современная проверка подлинности (HMA) включена только для того, чтобы найти непригодную для текущей среды, можно отключить HMA. В этой статье описывается, как это сделать.
+ms.openlocfilehash: 011e24c546fede11177e49ce8b36599d7d81d121
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372846"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070985"
 ---
-# <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Удаление и отключение гибридной современной проверки поДлинности в Skype для бизнеса и Exchange
+# <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Удаление гибридной современной проверки подлинности из Skype для бизнеса и Exchange или ее отключение
 
-Если Гибридная современная проверка поДлинности (HMA) включена только для того, чтобы найти непригодную для текущей среды, можно отключить HMA. В этой статье описывается, как это сделать.
+Если Гибридная современная проверка подлинности (HMA) включена только для того, чтобы найти непригодную для текущей среды, можно отключить HMA. В этой статье описывается, как это сделать.
   
 ## <a name="who-is-this-article-for"></a>Для кого предназначена эта статья?
 
-Если вы включили современные проверки поДлинности в Skype для бизнеса Online или локальной среде, а также на сервере Exchange Online или в локальной среде, и вам нужно отключить сегмент HMA, выполните указанные ниже действия.
+Если вы включили современные проверки подлинности в Skype для бизнеса Online или локальной среде, а также на сервере Exchange Online или в локальной среде, и вам нужно отключить сегмент HMA, выполните указанные ниже действия.
 
 > [!IMPORTANT]
 > Ознакомьтесь со статьей "[топологии Skype для бизнеса, поддерживаемые с современной проверкой](https://technet.microsoft.com/en-us/library/mt803262.aspx)подлинности", если вы находитесь в Skype для бизнеса Online или в локальной среде, у вас есть смешанная топология HMA, и вам нужно взглянуть на поддерживаемые топологии перед началом работы.
   
-## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>Как отключить гибридную современные проверки поДлинности (Exchange)
+## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>Как отключить гибридную современные проверки подлинности (Exchange)
 
 1. **Локальная служба Exchange**: Откройте командную консоль Exchange и выполните следующие команды: 
 
@@ -47,20 +47,20 @@ Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
 ```
     
-## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>Как отключить гибридную современные проверки поДлинности (Skype для бизнеса)
+## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>Как отключить гибридную современные проверки подлинности (Skype для бизнеса)
 
-1. **ЛокальНая среда Skype для бизнеса**: выполните следующие команды в командной консоли Skype для бизнеса:
+1. **Локальная среда Skype для бизнеса**: выполните следующие команды в командной консоли Skype для бизнеса:
 
 ```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 ```
 
-2. **Skype для бизнеса Online**: [Подключение к Skype для бизнеса Online](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) с помощью удаленного сеанса PowerShell. Выполните следующую команду, чтобы отключить современные проверки поДлинности:
+2. **Skype для бизнеса Online**: [Подключение к Skype для бизнеса Online](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) с помощью удаленного сеанса PowerShell. Выполните следующую команду, чтобы отключить современные проверки подлинности:
 
 ```powershell    
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed
 ```
 
-[Выполните обратное соединение с обзорОм современной проверки](hybrid-modern-auth-overview.md) подлинности. 
+[Выполните обратное соединение с обзором современной проверки](hybrid-modern-auth-overview.md) подлинности. 
   
 

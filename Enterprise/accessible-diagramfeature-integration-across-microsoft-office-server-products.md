@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: Эта статья представляет собой текстовую версию схемы "Интеграция функций между серверными продуктами Microsoft Office — SharePoint Server, Exchange Server, Lync Server и Office Online".
-ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487815"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068775"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Доступная схема — интеграция функций между серверными продуктами Microsoft Office
 
@@ -32,7 +32,7 @@ ms.locfileid: "33487815"
   
 Функции и вкладки перечислены ниже.  
   
-- Введение
+- Общие сведения
     
 - Проверка подлинности вида сервер-сервер 
     
@@ -569,7 +569,7 @@ Project Server 2013 включает следующие элементы: 
     
  **Принцип работы**
   
-Если вызываемому абоненту не ответило ни одного из активных конечных точек вызываемого абонента, Lync Server направляет вызов на голосовую почту в единой системе обмена СООБЩЕНИЯми Exchange (например, на сервере поЧтовых ящиков Exchange). 
+Если вызываемому абоненту не ответило ни одного из активных конечных точек вызываемого абонента, Lync Server направляет вызов на голосовую почту в единой системе обмена СООБЩЕНИЯми Exchange (например, на сервере почтовых ящиков Exchange). 
   
 На сопроводительной схеме показано, как перенаправляются вызовы в двух сценариях:  
   
@@ -683,7 +683,7 @@ Project Server 2013 включает следующие элементы: 
     
 4. Перетащите запись собрания в свою библиотеку ресурсов SharePoint. 
     
-5. Необязательно: после перемещения записи в библиотеку ресурсов эту запись можно вставить на любой странице SharePoint. Для получения дополнительных сведений об этом шаге ознакомьтесь с записью блога Office 365, создайте и опубликуйте обучающие видеоРолики с SharePoint и Lync Online http://aka.ms/R61q35, расположенные по адресу. 
+5. Необязательно: после перемещения записи в библиотеку ресурсов эту запись можно вставить на любой странице SharePoint. Для получения дополнительных сведений об этом шаге ознакомьтесь с записью блога Office 365, создайте и опубликуйте обучающие видеоролики с SharePoint и Lync Online http://aka.ms/R61q35, расположенные по адресу. 
     
  **Эскизы видео**
   

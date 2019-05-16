@@ -1,10 +1,10 @@
 ---
-title: Управление надстройками с помощью командлетов PowerShell централизованного развертывания
+title: Использование командлетов PowerShell для централизованного развертывания для управления надстройками
 ms.author: twerner
 author: twernermsft
 manager: scotv
 ms.date: 5/31/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,54 +14,54 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
-description: Использование командлетов PowerShell централизованного развертывания для развертывания и управление надстройками Office для вашей организации Office 365.
-ms.openlocfilehash: f15bd1048d9240a125a1ae8245c773d83c6c935d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Используйте командлеты PowerShell централизованного развертывания для развертывания надстроек Office для организации Office 365 и управления ими.
+ms.openlocfilehash: 404085d79827664437f3ad327fac4a99166adcf4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542331"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071145"
 ---
-# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Управление надстройками с помощью командлетов PowerShell централизованного развертывания
+# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Использование командлетов PowerShell для централизованного развертывания для управления надстройками
 
-Как администратор Office 365 надстроек Office можно развернуть для пользователей с помощью централизованного развертывания (см. [Управление развертыванием надстроек Office 365 в центре администрирования Office 365](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)). В дополнение к развертыванию надстроек Office с помощью центра администрирования Office 365, можно также использовать Microsoft PowerShell. [Загрузите](https://go.microsoft.com/fwlink/p/?linkid=850850) командлеты PowerShell централизованного развертывания из центра загрузки Майкрософт. 
+Администраторы Office 365 могут развертывать надстройки Office для пользователей с помощью функции централизованного развертывания (см. [Управление развертыванием надстроек office 365 в центре администрирования office 365](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)). Кроме развертывания надстроек Office с помощью центра администрирования Office 365, вы также можете использовать Microsoft PowerShell. [Скачайте](https://go.microsoft.com/fwlink/p/?linkid=850850) командлеты PowerShell для централизованного развертывания из центра загрузки Майкрософт. 
   
-## <a name="what-do-you-want-to-do"></a>Что необходимо сделать?
+## <a name="what-do-you-want-to-do"></a>Что нужно сделать
 
-[Подключиться, используя свои учетные данные администратора](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_Connect)
+[Подключение с использованием учетных данных администратора](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_Connect)
   
-[Отправка файла манифеста надстройки](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_UploadManifest)
+[Отправка манифеста надстройки](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_UploadManifest)
   
-[Загрузка надстройки уровня приложения из магазина Office](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_UploadAddin)
+[Отправка надстройки из магазина Office](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_UploadAddin)
   
-[Подробные сведения о надстройки](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_GetDetails)
+[Получение сведений о надстройке](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_GetDetails)
   
-[Включить или отключить надстройку](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_TurnOnOff)
+[Включение и отключение надстройки](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_TurnOnOff)
   
 [Добавление и удаление пользователей из надстройки](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_AddRemove)
   
-[Обновление надстроек](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_UpdateAddin)
+[Обновление надстройки](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_UpdateAddin)
   
 [Удаление надстройки](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_Delete)
   
-[Получите подробные справки для каждого командлета](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_GetHelp)
+[Получение подробной справки для каждого командлета](use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md#BKMK_GetHelp)
   
-## <a name="connect-using-your-admin-credentials"></a>Подключиться, используя свои учетные данные администратора
+## <a name="connect-using-your-admin-credentials"></a>Подключение с использованием учетных данных администратора
 <a name="BKMK_Connect"> </a>
 
-Прежде чем использовать командлеты централизованного развертывания, необходимо выполнить вход.
+Прежде чем использовать командлеты централизованного развертывания, необходимо войти в систему.
   
 1. Запустите PowerShell.
     
-2. Подключение к PowerShell с помощью свои учетные данные администратора компании. Выполните следующий командлет.
+2. Подключитесь к PowerShell с помощью учетных данных администратора компании. Выполните следующий командлет.
     
   ```
   Connect-OrganizationAddInService
   ```
 
-3. На странице **Ввода учетных данных** введите учетные данные глобального администратора Office 365. Кроме того можно ввести учетные данные непосредственно в командлет. 
+3. На странице **введите учетные данные** введите учетные данные глобального администратора Office 365. Кроме того, вы можете ввести свои учетные данные непосредственно в командлет. 
     
-    Выполните следующий командлет, определяющее вашей компании учетные данные администратора как объект PSCredential.
+    Выполните следующий командлет, указав учетные данные администратора компании в качестве объекта PSCredential.
     
   ```
   $secpasswd = ConvertTo-SecureString "MyPassword" -AsPlainText -Force
@@ -70,72 +70,72 @@ ms.locfileid: "22542331"
   ```
 
 > [!NOTE]
-> Дополнительные сведения об использовании PowerShell можно [подключиться к Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585). 
+> Дополнительные сведения об использовании PowerShell приведены в статье [Подключение к Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585). 
   
-## <a name="upload-an-add-in-manifest"></a>Отправка файла манифеста надстройки
+## <a name="upload-an-add-in-manifest"></a>Отправка манифеста надстройки
 <a name="BKMK_UploadManifest"> </a>
 
-Выполните командлет New-OrganizationAdd-в Отправка файла манифеста надстройки из пути, который может быть расположение файла или URL-адрес. В следующем примере показано расположение файла для значения параметра _ManifestPath_ . 
+Выполните командлет New-Организациянадстройки-in, чтобы отправить манифест надстройки по пути, который может представлять собой расположение файла или URL-адрес. В следующем примере показано расположение файла для значения параметра _манифестпас_ . 
   
 ```
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-Также можно запустить командлет New-OrganizationAdd-связи для загрузки надстройки и назначения ее к пользователям или группам непосредственно с помощью параметра _члены_ , как показано в следующем примере. Адреса электронной почты членов разделяются точкой с запятой. 
+Кроме того, можно выполнить командлет New – Организациянадстройки – in, чтобы отправить надстройку и назначить ее пользователям или группам напрямую с помощью параметра Members __ , как показано в следующем примере. Разделяйте адреса электронной почты членов запятыми. 
   
 ```
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>Загрузка надстройки уровня приложения из магазина Office
+## <a name="upload-an-add-in-from-the-office-store"></a>Отправка надстройки из магазина Office
 <a name="BKMK_UploadAddin"> </a>
 
-Выполните командлет New-OrganizationAddIn для загрузки манифеста из магазина Office.
+Выполните командлет New – Организатионаддин, чтобы отправить манифест из магазина Office.
   
-В следующем примере командлет New-OrganizationAddIn указывает значением код для надстройки для США расположение и содержимое рынка.
+В следующем примере командлет New – Организатионаддин указывает Ассетид для надстройки для местонахождения США и рынка контента.
   
 ```
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Чтобы определить значение параметра _значением код_ , можно скопировать из URL-адрес в магазин Office веб-страницы для AssetIds надстройки всегда начинаются с «WA», за которым следует номер. Например, в предыдущем примере источник значение значением код WA104099688 — URL-адрес веб-страницы магазина Office для надстройки: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
+Чтобы определить значение параметра _ассетид_ , можно скопировать его из URL-адреса веб-страницы магазина Office для надстройки. Ассетидс всегда начинается с "WA", за которым следует число. Например, в предыдущем примере источник для значения Ассетид для WA104099688 — это URL-адрес веб-страницы магазина Office для надстройки: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
   
-Значения для параметра _языковой стандарт_ и параметр _ContentMarket_ идентичны и указания страны или региона, вы пытаетесь установить надстройку из. Имеет формат en US, fr-FR. и т. д. 
+Значения параметра _locale_ и параметра _контентмаркет_ идентичны и указывают страну или регион, из которого вы пытаетесь установить надстройку. Формат — en-US, fr-FR. и т. д. 
   
 > [!NOTE]
-> Надстройки, загруженные из магазина Office будет обновляться автоматически в течение нескольких дней Последние обновления, доступные в магазине Office. 
+> Надстройки, отправленные из магазина Office, автоматически обновляются в течение нескольких дней с последнего обновления, доступного в магазине Office. 
   
-## <a name="get-details-of-an-add-in"></a>Подробные сведения о надстройки
+## <a name="get-details-of-an-add-in"></a>Получение сведений о надстройке
 <a name="BKMK_GetDetails"> </a>
 
-Выполните командлет Get-OrganizationAddIn, как показано ниже для получения сведений о всех надстройках загружаться в клиент включенные надстройки ИД продукта.
+Выполните командлет Get – Организатионаддин, как показано ниже, чтобы получить сведения обо всех надстройках, отправленных в клиент, включающих идентификатор продукта надстройки.
   
 ```
 Get-OrganizationAddIn
 ```
 
-Выполните командлет Get-OrganizationAddIn значение для параметра _ProductId_ , определение которого надстройки, которую необходимо получить подробные сведения по. 
+Выполните командлет Get – Организатионаддин со значением параметра _ProductID_ , чтобы указать, для какой надстройки необходимо получить сведения. 
   
 ```
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-Чтобы получить полные сведения о всех надстроек, а также для пользователей и групп, выходные данные командлета Get-OrganizationAddIn в командлет Format-List, как показано в следующем примере.
+Чтобы получить полные сведения обо всех надстройках, а также о назначенных пользователях и группах, перечислите выходные данные командлета Get – Организатионаддин в командлет Format – List, как показано в следующем примере.
   
 ```
 Get-OrganizationAddIn |Format-List
 ```
 
-## <a name="turn-on-or-turn-off-an-add-in"></a>Включить или отключить надстройку
+## <a name="turn-on-or-turn-off-an-add-in"></a>Включение и отключение надстройки
 <a name="BKMK_TurnOnOff"> </a>
 
-Чтобы отключить надстройку, пользователи и группы, назначенных на него больше не будет предоставляться доступ, выполните командлет Set-OrganizationAddIn с помощью параметра _ProductId_ и задайте параметра _Enabled_ `$false`, как показано в следующем примере.
+Чтобы отключить надстройку, чтобы пользователи и группы, которым назначена эта надстройка, больше не были доступны, выполните командлет Set – Организатионаддин с параметром _ProductID_ и параметром _Enabled_ `$false`, равным, как показано в следующем примере.
   
 ```
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
 ```
 
-Чтобы включить надстройку, выполните командлет же с помощью параметра _Enabled_ , задайте значение `$true`.
+Чтобы снова включить надстройку, выполните тот же командлет, для `$true`параметра _Enabled_ которого задано значение.
   
 ```
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $true
@@ -144,55 +144,55 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $
 ## <a name="add-or-remove-users-from-an-add-in"></a>Добавление и удаление пользователей из надстройки
 <a name="BKMK_AddRemove"> </a>
 
-Добавление пользователей и групп для конкретных надстройки, выполните командлет Set-OrganizationAddInAssignments вместе с параметрами _ProductId_, _Добавить_, а также _элементы_ . Адреса электронной почты членов разделяются точкой с запятой. 
+Чтобы добавить пользователей и группы в определенную надстройку, выполните командлет Set – Организатионаддинассигнментс с параметрами _ProductID_, _Add_и Members. __ Разделяйте адреса электронной почты членов запятыми. 
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-Чтобы удалить пользователей и групп, выполните командлет же с помощью параметра _удаления_ . 
+Чтобы удалить пользователей и группы, выполните один командлет с параметром _Remove_ . 
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Remove -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-Чтобы назначить надстройки всем пользователям, включенным клиента, выполните командлет же с помощью параметра _AssignToEveryone_ со значением, равным `$true`.
+Чтобы назначить надстройку всем пользователям в клиенте, выполните тот же командлет с параметром _ассигнтоеверйоне_ , для `$true`которого задано значение.
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-Не назначить надстройки для всеобщего доступа и вернуться к ранее для пользователей и групп, можно запустить командлет же и отключите параметр _AssignToEveryone_ , значение `$false`.
+Чтобы не присваивать надстройке всем пользователям и вернуться к ранее назначенным пользователям и группам, можно выполнить один и тот же командлет и отключить параметр _ассигнтоеверйоне_ , присвоив ему значение `$false`.
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false
 ```
 
-## <a name="update-an-add-in"></a>Обновление надстроек
+## <a name="update-an-add-in"></a>Обновление надстройки
 <a name="BKMK_UpdateAddin"> </a>
 
-Для обновления надстройки уровня приложения из манифеста, выполните командлет Set-OrganizationAddIn с _ProductId_, _ManifestPath_и параметры _языкового стандарта_ , как показано в следующем примере. 
+Чтобы обновить надстройку с помощью манифеста, выполните командлет Set – Организатионаддин с параметрами _ProductID_, _манифестпас_и _locale_ , как показано в следующем примере. 
   
 ```
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
 > [!NOTE]
-> Надстройки, загруженные из магазина Office будет обновляться автоматически в течение нескольких дней Последние обновления, доступные в магазине Office. 
+> Надстройки, отправленные из магазина Office, автоматически обновляются в течение нескольких дней с последнего обновления, доступного в магазине Office. 
   
 ## <a name="delete-an-add-in"></a>Удаление надстройки
 <a name="BKMK_Delete"> </a>
 
-Чтобы удалить надстройку, выполните командлет Remove-OrganizationAddIn с параметром _ProductId_ , как показано в следующем примере. 
+Чтобы удалить надстройку, запустите командлет Remove – Организатионаддин с параметром _ProductID_ , как показано в следующем примере. 
   
 ```
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-## <a name="get-detailed-help-for-each-cmdlet"></a>Получите подробные справки для каждого командлета
+## <a name="get-detailed-help-for-each-cmdlet"></a>Получение подробной справки для каждого командлета
 <a name="BKMK_GetHelp"> </a>
 
-Подробные справки для каждого командлета можно просмотреть с помощью командлета Get-help. Например следующий командлет предоставляет подробные сведения о командлет Remove-OrganizationAddIn.
+С помощью командлета Get – Help можно просмотреть подробную справку для каждого командлета. Например, следующий командлет предоставляет подробные сведения о командлете Remove – Организатионаддин.
   
 ```
 Get-help Remove-OrganizationAddIn -Full

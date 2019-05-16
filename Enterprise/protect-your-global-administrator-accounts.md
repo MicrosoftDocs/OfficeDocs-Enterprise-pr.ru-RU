@@ -1,10 +1,10 @@
 ---
-title: Защита учетных записей глобального администратора Office 365
+title: Защита учетных записей глобальных администраторов Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 4/10/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,14 +17,14 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Защитите глобальный администратор доступ к вашей подписке на Office 365, выполнив следующие три действия.
-ms.openlocfilehash: 23d47ec1f5fc4126113dd69e1ac6400d003ca41f
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: bb1b19a7ac0ec8e32c23303e8acf2b7ee42f0532
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573923"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071025"
 ---
-# <a name="protect-your-office-365-global-administrator-accounts"></a>Защита учетных записей глобального администратора Office 365
+# <a name="protect-your-office-365-global-administrator-accounts"></a>Защита учетных записей глобальных администраторов Office 365
 
  **Сводка:** Защитите свою подписку на Office 365, используя нарушение безопасности учетной записи глобального администратора. 
   
@@ -61,7 +61,7 @@ ms.locfileid: "30573923"
     
 4. Назначьте роль глобального администратора каждой новой выделенной учетной записи пользователя глобального администратора.
     
-5. ВыЙдите из Office 365.
+5. Выйдите из Office 365.
     
 6. Войдите с помощью одной из новых выделенных учетных записей пользователей глобального администратора.
     
@@ -71,11 +71,11 @@ ms.locfileid: "30573923"
     
   - Назначьте роли администратора учетной записи, которая соответствует должностным обязанностям и должностным обязанностям этого пользователя. Более подробную информацию о различных ролях администратора в Office 365 вы найдете в статье [о ролях администратора office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d).
     
-8. ВыЙдите из Office 365.
+8. Выйдите из Office 365.
     
 Результат должен быть следующим:
   
-- Единственными учетными записями пользователей в подписке с ролью глобального администратора является новый набор выделенных учетных записей глобального администратора. Проверьте это с помощью следующей команды PowerShell:
+- Роль глобального администратора имеют только новые специальные учетные записи глобального администратора. Проверьте это с помощью следующей команды PowerShell:
     
   ```
   Get-MsolRoleMember -RoleObjectId (Get-MsolRole -RoleName "Company Administrator").ObjectId
@@ -162,7 +162,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress  $upn -RoleName "Compliance Administr
   
 Использование PIM и этого процесса значительно сокращает время, в течение которого учетные записи глобальных администраторов уязвимы для атак и использования злоумышленниками.
   
-Дополнительные сведения можно найти в статье [Настройка службы управления удостоверенИями Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
+Дополнительные сведения можно найти в статье [Настройка службы управления удостоверениями Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
   
 > [!NOTE]
 > Служба PIM доступна с помощью Azure Active Directory Premium P2, которая входит в состав Enterprise Mobility + Security (EMS), или вы можете приобрести отдельные лицензии для учетных записей глобального администратора. 

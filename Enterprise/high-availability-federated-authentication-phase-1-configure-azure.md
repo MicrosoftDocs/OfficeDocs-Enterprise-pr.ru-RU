@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: Сводка. Настройка инфраструктуры Microsoft Azure для размещения федеративной проверки подлинности с высоким уровнем доступности для Office 365.
-ms.openlocfilehash: ec7aa71b9782dd568f85b78fb3e5110e32e2e23e
-ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
+ms.openlocfilehash: 8b6511a3ce23a352b59a0e9a89f8f9901897391f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33867714"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067505"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Этап 1. Федеративная проверка подлинности для обеспечения высокой доступности: настройка Azure
 
@@ -39,7 +39,7 @@ Azure необходимо подготовить к работе с этими 
 
 Перед настройкой компонентов Azure заполните указанные ниже таблицы. Распечатайте этот раздел и запишите необходимую информацию или скопируйте его в документ и заполните там. Укажите параметры виртуальной сети в таблице V.
   
-|**Элемент**|**Параметр конфигурации**|**Описание**|**Значение**|
+|**Item**|**Параметр конфигурации**|**Описание**|**Значение**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Имя виртуальной сети  <br/> |Имя виртуальной сети (например, FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Расположение виртуальной сети  <br/> |Региональный центр обработки данных Azure, в котором будет расположена виртуальная сеть.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ Azure необходимо подготовить к работе с этими 
   
 Определите эти адресные пространства из адресного пространства виртуальной сети при поддержке ИТ-отдела.
   
-|**Элемент**|**Имя подсети**|**Адресное пространство подсети**|**Назначение**|
+|**Item**|**Имя подсети**|**Адресное пространство подсети**|**Назначение**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая контроллером домена доменных служб Active Directory (AD DS) и виртуальными машинами сервера DirSync (ВМ).  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая виртуальными машинами AD FS.  <br/> |
@@ -72,7 +72,7 @@ Azure необходимо подготовить к работе с этими 
   
 После этого укажите статические IP-адреса, назначенные виртуальным машинам и экземплярам балансировщика нагрузки, в таблице I.
   
-|**Элемент**|**Назначение**|**IP-адрес в подсети**|**Значение**|
+|**Item**|**Назначение**|**IP-адрес в подсети**|**Значение**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Статический IP-адрес первого контроллера домена  <br/> |Четвертый возможный IP-адрес для адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Статический IP-адрес второго контроллера домена  <br/> |Пятый возможный IP-адрес адресного пространства подсети, определенной в элементе 1 таблицы S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -122,7 +122,7 @@ Connect-AzAccount
 > For a text file that has all of the PowerShell commands in this article and a Microsoft Excel configuration workbook that generates ready-to-run PowerShell command blocks based on your custom settings, see the [Federated Authentication for Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
 -->
   
-Получите имя подписки с помощью приведенной ниже команды.
+Получите имя подписки с помощью следующей команды.
   
 ```
 Get-AzSubscription | Sort Name | Select Name
@@ -149,7 +149,7 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 Укажите уникальные имена групп ресурсов в следующей таблице.
   
-|**Элемент**|**Имя группы ресурсов**|**Назначение**|
+|**Item**|**Имя группы ресурсов**|**Назначение**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Контроллеры доменов  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Серверы AD FS  <br/> |
@@ -275,7 +275,7 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 После этого определите имена четырех групп доступности. Заполните таблицу A. 
   
-|**Элемент**|**Назначение**|**Имя группы доступности**|
+|**Item**|**Назначение**|**Имя группы доступности**|
 |:-----|:-----|:-----|
 |1.  <br/> |Контроллеры доменов  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Серверы AD FS  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -306,7 +306,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 ![Этап 1 для федеративной проверки подлинности Office 365 в Azure с инфраструктурой Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий шаг
 
 Используйте [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md), чтобы продолжить настройку этой нагрузки.
   

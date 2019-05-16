@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: Сводка. Настройка и демонстрация Office 365 Advanced Threat Protection в среде разработки и тестирования Office 365.
-ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 7063b56762711fdb06c0c879d74b783c0137b550
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490155"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068305"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection в среде разработки и тестирования Office 365
 
@@ -82,7 +82,7 @@ Office 365 Advanced Threat Protection — это компонент Exchange Onl
     
 17. В папке "Входящие" щелкните сообщение с темой **Ваши новые ключи**.
     
-18. В папке "неЖелательная почта" щелкните сообщение с **веб-сайтом "Создание**темы". В сообщении щелкните **эту ссылку сайт** . Вы должны увидеть "ой! Internet Explorer не удалось найти spamlink.contoso.com ". (Почти готово!). Это правильный результат, так как в этом расположении нет веб-страницы.
+18. В папке "Нежелательная почта" щелкните сообщение с **веб-сайтом "Создание**темы". В сообщении щелкните **эту ссылку сайт** . Вы должны увидеть "ой! Internet Explorer не удалось найти spamlink.contoso.com ". (Почти готово!). Это правильный результат, так как в этом расположении нет веб-страницы.
     
 Обратите внимание на то, что оба этих потенциально вредоносных электронных сообщения были успешно доставлены. Электронное сообщение с темой **Ваши новые ключи** могло содержать вредоносные программы, а сообщение с темой **Новый туристический веб-сайт** — потенциально вредоносную ссылку, по которой пользователь успешно перешел.
   
@@ -90,7 +90,7 @@ Office 365 Advanced Threat Protection — это компонент Exchange Onl
 
 На этом этапе нужно создать и настроить политику безопасных вложений, предотвращающую доставку писем с потенциально вредоносными вложениями, и политику безопасных ссылок, не допускающую перехода пользователей по потенциально небезопасным URL-адресам.
   
-1. На вкладке **домашнЯя страница Microsoft Office** в Internet Explorer щелкните плитку **Администратор** .
+1. На вкладке **Домашняя страница Microsoft Office** в Internet Explorer щелкните плитку **Администратор** .
     
 2. В области навигации слева откройте меню **Центры администрирования**, а затем выберите пункт **Exchange**.
     
@@ -164,7 +164,7 @@ Office 365 Advanced Threat Protection — это компонент Exchange Onl
   
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
   
-[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
+[Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
   
 [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   

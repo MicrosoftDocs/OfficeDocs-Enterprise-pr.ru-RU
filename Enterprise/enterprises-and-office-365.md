@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 11/8/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: Ресурсы по планированию и управлению Office 365 для корпоративной организации.
-ms.openlocfilehash: 7d28f68b0f33e02c9101abcac479d75675f1d0bc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0754213aef2acaa935cf59a317b93188b5002d33
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33489747"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067695"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>Корпоративные организации и Office 365
 
@@ -52,7 +52,7 @@ ms.locfileid: "33489747"
   
  **Общие сведения об облачной архитектуре**
   
-ИзУчите плакаты по архитектуре корпоративного облака.
+Изучите плакаты по архитектуре корпоративного облака.
   
 [Получение афиши](https://aka.ms/cloudarch)
   
@@ -70,7 +70,7 @@ ms.locfileid: "33489747"
   
  **Обучение ИТ-специалистов**
   
-ИзУчите Бесплатные видеокурсы, предоставленные программой LinkedIn Learning.
+Изучите Бесплатные видеокурсы, предоставленные программой LinkedIn Learning.
   
 [Углубленные учебные курсы](https://support.office.com/article/68cc9b95-0bdc-491e-a81f-ee70b3ec63c5.aspx)
   

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: Сводка. сведения о гибридной архитектуре и сценариях для инфраструктуры корпорации Майкрософт в качестве облачного решения на основе службы IaaS в Azure.
-ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 429af408ca3f21fe667b36cdb9767d3916a6b1a4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487660"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067355"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Гибридные облачные сценарии для Azure IaaS
 
@@ -39,7 +39,7 @@ ms.locfileid: "33487660"
     
     Рабочая ИТ-нагрузка обычно представляет собой многоуровневое приложение высокой доступности, которое состоит из виртуальных машин Azure.
     
-- Идентификация
+- Удостоверение
     
     Добавьте серверы удостоверений, такие как контроллеры домена доменных служб Active Directory (AD DS), в набор серверов, работающих в Azure виртуальных сетей для локальной проверки подлинности.
     
@@ -182,6 +182,6 @@ ms.locfileid: "33487660"
 
 [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 

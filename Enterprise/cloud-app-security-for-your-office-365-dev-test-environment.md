@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: Сводка. Настройка и демонстрация работы Office 365 Cloud App Security в среде разработки и тестирования Office 365.
-ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: af2a2657ede46818b9d705ca38f99d779f98fb11
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490125"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068105"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security для среды разработки и тестирования Office 365
 
@@ -49,15 +49,15 @@ Office 365 Cloud App Security, ранее известное как управл
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Проверка режима работы уведомлений по умолчанию в Office 365
 
-1. Перейдите в центр администрирования Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) и войдите в пробную подПиску на Office 365 с помощью учетной записи глобального администратора.
+1. Перейдите в центр администрирования Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) и войдите в пробную подписку на Office 365 с помощью учетной записи глобального администратора.
     
   - Если вы используете упрощенную среду разработки и тестирования Office 365, войдите с локального компьютера.
     
   - Если вы используете среду разработки и тестирования Office 365 для имитированного предприятия, войдите на [портал Azure](https://portal.azure.com), чтобы подключиться к виртуальной машине CLIENT1, а затем выполните вход с этой виртуальной машины.
     
-2. На главной странице портала нажмите **Администратор**.
+2. На главной странице портала нажмите **Администрирование**.
     
-3. На панели навигации слева выберите элементы **Пользователи > Активные пользователи**.
+3. На панели навигации слева выберите **Пользователи > Активные пользователи**.
     
 4. Выберите учетную запись **Пользователь 4**.
     
@@ -79,7 +79,7 @@ Office 365 Cloud App Security, ранее известное как управл
     
 ### <a name="enable-and-configure-cloud-app-security"></a>Включение и настройка Cloud App Security
 
-1. Перейдите в центр администрирования Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) и войдите в пробную подПиску на Office 365 с помощью учетной записи глобального администратора.
+1. Перейдите в центр администрирования Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) и войдите в пробную подписку на Office 365 с помощью учетной записи глобального администратора.
     
 2. Выберите плитку **Администрирование**. На вкладке **центр администрирования Office** выберите **центры администрирования _Гт_ безопасности _амп_ соответствие требованиям**.
     
@@ -123,9 +123,9 @@ Office 365 Cloud App Security, ранее известное как управл
     
 7. Если нужно, нажмите **Отмена** при запросе на обновление контактных данных для администратора.
     
-8. На главной странице портала нажмите **Администратор**.
+8. На главной странице портала нажмите **Администрирование**.
     
-9. На панели навигации слева выберите элементы **Пользователи > Активные пользователи**.
+9. На панели навигации слева выберите **Пользователи > Активные пользователи**.
     
 10. Выберите учетную запись **Пользователь 5**.
     

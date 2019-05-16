@@ -1,10 +1,10 @@
 ---
-title: Тестирование руководство по лаборатории настройка интегрированной Exchange, Lync и SharePoint тестовой лаборатории
+title: Руководство по лаборатории тестирования Настройка интегрированной лаборатории тестирования Exchange, Lync и SharePoint
 ms.author: jhendr
 author: JoanneHendrickson
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
@@ -12,25 +12,25 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
-description: 'Сводка: Сведения о создании интегрированной тестовой лабораторной среды, которая содержит сервер под управлением Exchange Server 2013, сервер под управлением Lync Server 2013 и сервера под управлением SharePoint Server 2013.'
-ms.openlocfilehash: b5d4527c063b0bfbac205007a9642b8edafd813b
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: Сводка. Узнайте, как создать интегрированную лабораторию тестирования, содержащую сервер под управлением Exchange Server 2013, сервер, на котором работает Lync Server 2013, и сервер, на котором работает SharePoint Server 2013.
+ms.openlocfilehash: 58c7d5ad701471e87c5e6600af2f9a36ac374448
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897052"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070405"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Руководство по лаборатории тестирования. Настройка интегрированной лаборатории тестирования Exchange, Lync и SharePoint
 
- **Сводка:** Сведения о создании интегрированной тестовой лабораторной среды, которая содержит сервер под управлением Exchange Server 2013, сервер под управлением Lync Server 2013 и сервера под управлением SharePoint Server 2013.
+ **Сводка:** Узнайте, как создать интегрированную лабораторию тестирования, содержащую сервер под управлением Exchange Server 2013, сервер, на котором работает Lync Server 2013, и сервер, на котором работает SharePoint Server 2013.
  
 **Посмотрите видеообзор руководства по созданию интегрированной лаборатории тестирования Exchange, Lync и SharePoint**
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false]
  
-Лаборатории тестирования, результаты из этой конфигурации, которая включает в себя проверки подлинности сервер сервер между все три типа серверов, можно использовать для построения в работе и демонстрации продукта несколькими сценарии и решения, использующие сервер под управлением Exchange Server 2013 сервер под управлением Lync Server 2013 и сервера под управлением SharePoint Server 2013.
+Тестовая лаборатория, полученная из этой конфигурации, которая включает межсерверную проверку подлинности между всеми тремя типами серверов, может использоваться для создания и демонстрации сценариев с несколькими продуктами и решений, использующих сервер под управлением Exchange Server 2013, сервер, на котором работает Lync Server 2013, и сервер, на котором работает SharePoint Server 2013.
   
-В этом документе представлены инструкции по:
+В этом документе представлены инструкции для:
   
 1. Настройка лаборатории тестирования базовой конфигурации Windows Server 2012.
     
@@ -46,15 +46,15 @@ ms.locfileid: "25897052"
     
 7. Установка Lync Server 2013 Standard Edition на LYNC1.
     
-8. Установка SharePoint Server 2013 с пакетом обновления 1.
+8. Установка SharePoint Server 2013 в пакет обновления 1 (SP1).
     
 9. Настройка интеграции между серверами EX1, LYNC1 и SP1.
     
-Сведения о настройке этой лаборатории тестирования в Hyper-V видеть [размещения интегрированной Exchange, SharePoint и Lync, тестовой лаборатории с помощью Windows Server 2012 Hyper-V](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx).
+Сведения о настройке этой лаборатории тестирования в Hyper-V можно найти в статье [Размещение интегрированной лаборатории тестирования Exchange, Lync и SharePoint с помощью Windows Server 2012 Hyper-V](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx).
   
-## <a name="download-the-test-lab-guide"></a>Скачать это руководство по лаборатории тестирования
+## <a name="download-the-test-lab-guide"></a>Скачайте это руководство
 
-[Руководство по тестовой лаборатории: настройка интегрированной Exchange, Lync и SharePoint тестовой лаборатории](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
+[Руководство по лаборатории тестирования: Настройка интегрированной лаборатории тестирования Exchange, Lync и SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
 ## <a name="see-also"></a>См. также
 

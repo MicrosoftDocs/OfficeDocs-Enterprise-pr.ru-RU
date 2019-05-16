@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/20/2015
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: В этой статье описывается, как повысить производительность, заменив веб-часть "запрос содержимого" на веб-часть "поиск контента" в SharePoint Server 2013 и SharePoint Online.
-ms.openlocfilehash: f86a4b75c4bf75ebaa99924411d017c7eb7b6760
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 590cd5f60dedf870d58d053b01e4e1b45469bfa4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070555"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Использование веб-части поиска контента вместо веб-части "Запрос контента" для улучшения производительности в SharePoint Online
 
@@ -66,6 +66,6 @@ ms.locfileid: "33492182"
   
 ## <a name="query-building-and-testing-tool"></a>Средство построения и тестирования запросов
 
-Для создания и тестирования сложных запросов в средстве поиска обратитесь к разделу [поискОвый запрос](https://sp2013searchtool.codeplex.com/) на сайте CodePlex. 
+Для создания и тестирования сложных запросов в средстве поиска обратитесь к разделу [поисковый запрос](https://sp2013searchtool.codeplex.com/) на сайте CodePlex. 
   
 

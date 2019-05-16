@@ -1,10 +1,10 @@
 ---
-title: Настройка производительности Office 365
+title: Настройка производительности Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 04/09/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,14 +15,14 @@ search.appverid:
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
 description: Ссылки на учебные курсы, блоги, статьи и другие материалы, содержащие сведения о том, как увеличить производительность Office 365.
-ms.openlocfilehash: c44a930c9dabed0061096b456c2535b61f326cfd
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 8369bf15d25d4c2aad00c2de4b21e4585056c04d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741185"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070715"
 ---
-# <a name="tune-office-365-performance"></a>Настройка производительности Office 365
+# <a name="tune-office-365-performance"></a>Настройка производительности Office 365
 
 В этой статье приведены ссылки на учебные курсы, блоги, статьи и другие материалы, содержащие сведения о том, как увеличить производительность Office 365.
   

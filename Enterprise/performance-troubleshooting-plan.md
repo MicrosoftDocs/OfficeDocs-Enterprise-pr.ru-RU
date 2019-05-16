@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 5/10/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Нужно знать, какие действия необходимо выполнить, чтобы определить и устранить отправку, зависание и снижение производительности между SharePoint Online, OneDrive для бизнеса, Exchange Online или Skype для бизнеса Online и вашим клиентским компьютером? Прежде чем позвонить в службу поддержки, эта статья поможет вам устранить проблемы с производительностью Office 365 и даже устранить некоторые из наиболее распространенных проблем.
-ms.openlocfilehash: 5d7201174d33afab3e85714202aa637a835b7776
-ms.sourcegitcommit: f506c95807a681cd661a99b1a8768c5c657dc126
+ms.openlocfilehash: afa24144c1595fd55477e45f4368d99bd4274aca
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33881537"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069585"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>План устранения неполадок с производительностью Office 365
 

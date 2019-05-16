@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: Сводка.PowerShell в Office 365 позволяет управлять свойствами учетной записи пользователя Skype для бизнеса Online с политиками.
-ms.openlocfilehash: 6bbfd4451552cd3a281dbbcafde0b458bb71907c
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
-ms.translationtype: HT
+ms.openlocfilehash: 853d70a008a3e42c6fa1175a52cadab815a46dfe
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037903"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068845"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell
 
@@ -104,7 +104,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Будет возвращен список всех доступных политик голосовой связи. Однако имейте в виду, что пользователям нельзя назначить некоторые политики. Это связано с различными ограничениями в отношении [места лицензирования и использования](https://msdn.microsoft.com/ru-RU/library/azure/dn194136.aspx). Чтобы узнать, какие политики внешнего доступа и конференций можно назначить пользователю, выполните команды, похожие на следующие: 
+> Будет возвращен список всех доступных политик голосовой связи. Однако имейте в виду, что пользователям нельзя назначить некоторые политики. Это связано с различными ограничениями в отношении [места лицензирования и использования](https://msdn.microsoft.com/en-us/library/azure/dn194136.aspx). Чтобы узнать, какие политики внешнего доступа и конференций можно назначить пользователю, выполните команды, похожие на следующие: 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"

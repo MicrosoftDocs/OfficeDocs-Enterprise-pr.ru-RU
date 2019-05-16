@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 2/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: SharePoint 2010 и SharePoint Server 2010 приближается к концу поддержки. Используйте эту статью в качестве руководства по обновлению до SharePoint Online или более новой версии SharePoint Server в локальной среде.
-ms.openlocfilehash: c88c6010aa398d8076fce59976bf6f5c0aa1a743
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 18522f9abb1514e14a172c6f2d661591826dff22
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492047"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070685"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Обновление с SharePoint 2010
 
@@ -45,7 +45,7 @@ ms.locfileid: "33492047"
   
 ## <a name="what-are-my-options"></a>Что такое параметры?
 
-Сначала проверьте дату, с которой поддержка заканчивается на [сайте жизненноГо цикла продукта](https://support.microsoft.com/en-us/lifecycle/search?alpha=SharePoint%20Server%202010). Затем обязательно запланируйте время обновления или миграции с учетом этой даты. Помните, что ваш продукт *не будет работать* в указанную дату, и вы можете продолжить его использование, но после этого вы получите стратегию, которая будет способствовать более плавному переходу на следующую версию. продукта. 
+Сначала проверьте дату, с которой поддержка заканчивается на [сайте жизненного цикла продукта](https://support.microsoft.com/en-us/lifecycle/search?alpha=SharePoint%20Server%202010). Затем обязательно запланируйте время обновления или миграции с учетом этой даты. Помните, что ваш продукт *не будет работать* в указанную дату, и вы можете продолжить его использование, но после этого вы получите стратегию, которая будет способствовать более плавному переходу на следующую версию. продукта. 
   
 Эта матрица помогает отобразить курс для переноса компонентов продукта и пользовательских данных:
   
@@ -122,17 +122,15 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
 > [!NOTE]
 > Можно обслуживать свою конечную ферму SharePoint 2010, устанавливать ферму SharePoint Server 2016 на новом оборудовании (чтобы отдельные фермы выполнялись параллельно), а затем планировать и выполнять перенос контента вручную (для загрузки и повторной отправки контента) для пример). Существуют потенциальные ловушки для таких ручных перемещений (например, документы, поступающие из 2010, у которых есть текущая учетная запись с псевдонимом учетной записи, выполняющей перемещение вручную), а некоторые действия должны быть выполнены заранее (повторное создание сайтов, дочерних сайтов, разрешений и структуры списка). Рекомендуется продумать, какие данные можно переместить в хранилище или больше не нужны. Это может снизить влияние миграции. В любом случае очистите среду перед обновлением. Прежде чем выполнять обновление, убедитесь, что ваша существующая ферма работает, а затем (для этого). 
   
-Не заБудьте просмотреть **Поддерживаемые и неподдерживаемые пути обновления**: 
+Не забудьте просмотреть **Поддерживаемые и неподдерживаемые пути обновления**: 
   
-- 
-  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156).
     
 - [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
     
 Если у вас есть **настройки**, важно обновить план для каждого шага в пути миграции: 
   
-- 
-  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
+- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160).
     
 - [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
     
@@ -151,15 +149,15 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
   
 - **Требования к оборудованию и программному обеспечению для**: 
     
-    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
-- **Границы и ограничения программНого обеспечения для**: 
+- **Границы и ограничения программного обеспечения для**: 
     
-    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - Ниже **приведен обзор процесса обновления**. 
     
-    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Создание гибридного решения SharePoint между SharePoint Online и SharePoint Server в локальной среде
 

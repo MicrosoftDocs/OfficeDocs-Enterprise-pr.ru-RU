@@ -3,19 +3,19 @@ title: Текстовая версия схемы, в которой предс�
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: Эта статья  удобная текстовая версия схемы, показывающей варианты платформы Microsoft Lync 2013, которая доступна в статье Технические схемы.
-ms.openlocfilehash: 4a660df4bfacad2a00f5d9fbb5e1b668840e3b9f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4993ad90307973589da6dc5081d8c2875b44ce66
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487804"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068615"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>Текстовая версия схемы, в которой представлены варианты платформы Microsoft Lync 2013
 

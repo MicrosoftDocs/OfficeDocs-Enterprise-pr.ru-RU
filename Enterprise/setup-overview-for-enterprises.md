@@ -1,9 +1,9 @@
 ---
 title: Развертывание Office 365 корпоративный для организации
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: С помощью описанных здесь действий вы сможете развернуть Office 365, подключить Active Directory, выполнить перенос данных, а также помочь пользователям организации приступить к работе с последней версией Office 2016.
-ms.openlocfilehash: a49d57978faabfac7131db3178cbff02b500667f
-ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
-ms.translationtype: HT
+ms.openlocfilehash: 16e6c60404a9e1f2c49b2e8e23920540e1dd8e49
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004410"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070815"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Развертывание Office 365 корпоративный для организации
 Готовы развернуть и интегрировать Office 365 корпоративный в свою локальную инфраструктуру? С помощью описанных здесь действий вы сможете подключить свой каталог, выполнить перенос данных, а также помочь пользователям организации приступить к работе с последней версией Office 2016.
@@ -31,7 +31,7 @@ ms.locfileid: "31004410"
 У вас не Office 365 корпоративный? См. инструкции для предприятий малого бизнеса в статье [Настройка Office 365 для бизнеса](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa). 
   
 ## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a>Процесс настройки Office 365 в организации под руководством службы FastTrack
-Оптимальный способ развертывания Office 365 — служба **[FastTrack](https://docs.microsoft.com/fasttrack)**. Программа FastTrack помогает выбрать одну из самых распространенных конфигураций развертывания, а также найти ответы на возникающие вопросы. Если вы хотите выполнить развертывание самостоятельно или под руководством партнера, см. наши статьи [Руководство по настройке Office 365](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), [Мастера настройки Office 365](https://aka.ms/o365fasttrack) или [найдите соответствующего партнера](https://partnercenter.microsoft.com/ru-RU/pcv/search).
+Оптимальный способ развертывания Office 365 — служба **[FastTrack](https://docs.microsoft.com/fasttrack)**. Программа FastTrack помогает выбрать одну из самых распространенных конфигураций развертывания, а также найти ответы на возникающие вопросы. Если вы хотите выполнить развертывание самостоятельно или под руководством партнера, см. наши статьи [Руководство по настройке Office 365](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), [Мастера настройки Office 365](https://aka.ms/o365fasttrack) или [найдите соответствующего партнера](https://partnercenter.microsoft.com/en-us/pcv/search).
 
 ## <a name="self-deployment-of-office-365"></a>Самостоятельное развертывание Office 365
 Если вы хотите самостоятельно развернуть Office 365, воспользуйтесь приведенными ниже инструкциями по развертыванию.

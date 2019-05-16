@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 10/10/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Сводка: в этой статье описывается поддержка IPv6 в компонентах Microsoft Office 365 и Office 365 для государственных организаций.'
-ms.openlocfilehash: 82af5c7659b3c16c8e92b45b65b6868a404eca23
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 2c73f5191cf46ddcb036e9077b855ebf752a2f55
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487756"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067235"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Поддержка протокола IPv6 в службах Office 365
 
@@ -55,7 +55,7 @@ Office 365 поддерживает как IPv6, так и IPv4; Однако н
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection и IPv6
 
-Exchange Online Protection (EOP) поддерживает IPv6, если передача происходит по протоколу безопасности трансПортного уровня. Для диапазона EOP используйте [URL-адреса и диапазоны IP-адресов для Office 365](urls-and-ip-address-ranges.md).
+Exchange Online Protection (EOP) поддерживает IPv6, если передача происходит по протоколу безопасности транспортного уровня. Для диапазона EOP используйте [URL-адреса и диапазоны IP-адресов для Office 365](urls-and-ip-address-ranges.md).
   
 ### <a name="ipv6-support-for-office-365-government-offerings"></a>Поддержка протокола IPv6 для государственных учреждений Office 365
 
@@ -79,7 +79,7 @@ Microsoft Office 365 для предприятий предоставляет с
 
 - IPv6 не поддерживает некоторые сценарии службы управления правами (RMS).
 
-- IPv6 не поддерживает BlackBerry ® Enterprise Server (BES), так как BlackBerry не поддерживает IPv6.
+- IPv6 не поддерживает BlackBerry® Enterprise Server (BES), так как BlackBerry не поддерживает IPv6.
 
 - Если вы используете службы федерации Active Directory (AD FS) с Office 365, не поддерживаются объявления конечной точки сети AD FS для Office 365 с использованием IPv6. При использовании Exchange Online не следует включать записи AAAA в DNS-запись AD FS. 
 
@@ -89,4 +89,4 @@ Microsoft Office 365 для предприятий предоставляет с
 
 [Схема обучения IPv6](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
   
-[Руководство по выЖиванию IPv6](https://social.technet.microsoft.com/wiki/contents/articles/1728.ipv6-survival-guide.aspx)
+[Руководство по выживанию IPv6](https://social.technet.microsoft.com/wiki/contents/articles/1728.ipv6-survival-guide.aspx)

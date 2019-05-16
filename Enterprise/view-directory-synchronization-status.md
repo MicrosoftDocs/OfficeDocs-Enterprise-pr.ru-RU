@@ -1,9 +1,9 @@
 ---
 title: Просмотр состояния синхронизации каталогов в Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Сведения о том, как отключить синхронизацию службы каталогов. Вы также можете просмотреть его состояние.
-ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4204d72719e928982b2b6222fb971d62c0f1f8d6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492105"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070415"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Просмотр состояния синхронизации каталогов в Office 365
 

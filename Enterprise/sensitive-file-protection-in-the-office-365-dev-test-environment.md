@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: Сводка. Настройка и демонстрация защиты Office 365 Information Rights Management защищает конфиденциальные файлы, даже если они публикуются в неправильном семействе веб-сайтов SharePoint Online.
-ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741305"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070895"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Защита конфиденциальных файлов в среде разработки и тестирования Office 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "31741305"
 В этой статье описано, как включить и протестировать IRM в Office 365 для файлов, содержащих потенциально конфиденциальную информацию, в пробной подписке на Office 365.
   
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack) , чтобы визуально сопоставить все статьи в стеке руководства по лаборатории тестирования Office 365.
+> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365
 
@@ -55,7 +55,7 @@ ms.locfileid: "31741305"
     
 - виртуальной машины CLIENT1 (для среды Office 365 для разработки и тестирования смоделированного предприятия).
     
-В диалоговом окне **запрос учетНых данных Windows PowerShell** введите имя глобального администратора Office 365 (пример: jdoe@contosotoycompany.onmicrosoft.com) и пароль пробной подписки на Office 365.
+В диалоговом окне **Запрос учетных данных Windows PowerShell** введите имя глобального администратора Office 365 (например, jdoe@contosotoycompany.onmicrosoft.com) и пароль пробной подписки на Office 365.
   
 Введите название организации (например, contosotoycompany) и двузначный код страны, а затем выполните следующие команды в командной строке модуля Windows Azure Active Directory для Windows PowerShell:
   
@@ -92,7 +92,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 Теперь создайте закрытую группу "Руководители" и добавьте в нее новые учетные записи.
   
-1. В браузере перейдите на портал Office [http://admin.microsoft.com](http://admin.microsoft.com) и войдите в пробную подПиску на Office 365 с помощью учетной записи глобального администратора.
+1. В браузере перейдите на портал Office [http://admin.microsoft.com](http://admin.microsoft.com) и войдите в пробную подписку на Office 365 с помощью учетной записи глобального администратора.
     
   - Если вы используете упрощенную среду разработки и тестирования Office 365, запустите частный сеанс Internet Explorer или вашего браузера и войдите с локального компьютера.
     
@@ -132,7 +132,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 4. В области Создание семейства веб-сайтов введите **руководители** в поле **название**, руководители в поле URL-адрес, укажите имя учетной записи глобального администратора в поле **Администратор**и нажмите кнопку **ОК**.
     
-5. ДоЖдитесь, пока не будет создано новое семейство веб-сайтов. По завершении скопируйте URL-адрес нового семейства веб-сайтов руководителей и вставьте его в новую вкладку браузера.
+5. Дождитесь, пока не будет создано новое семейство веб-сайтов. По завершении скопируйте URL-адрес нового семейства веб-сайтов руководителей и вставьте его в новую вкладку браузера.
     
 6. Щелкните значок параметров в правом верхнем углу семейства веб-сайтов группы **Руководители**, а затем нажмите **Общий доступ**.
     
@@ -172,7 +172,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 4. Введите данные учетной записи **генерального директора** и нажмите кнопку **Войти**.
     
-5. на новой вкладке браузера введите URL-адрес семейства веб-сайтов руководителей ( **https://**\<organization наме_гт_**. sharepoint.com/sites/executives**).
+5. На новой вкладке браузера введите URL-адрес семейства веб-сайтов руководителей ( **https://**\<Organization наме_гт_**. SharePoint.com/sites/Executives**).
     
 6. В меню **документы**выберите пункт **создать,** а затем щелкните **документ Word**.
     
@@ -190,7 +190,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 3. Сохраните документ **SensitiveData-BeforeIRM.docx** в папке, созданной на шаге 1.
     
-4. на новой вкладке браузера введите URL-адрес семейства веб-сайтов продаж ( **https://**\<organization наме_гт_**. sharepoint.com/sites/sales**).
+4. На новой вкладке браузера введите URL-адрес семейства веб-сайтов продаж ( **https://**\<Organization наме_гт_**. SharePoint.com/sites/sales**).
     
 5. Выберите папку **Документы****семейства веб-сайтов "Продажи"**.
     
@@ -332,7 +332,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 ## <a name="see-also"></a>См. также
 
-[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
   

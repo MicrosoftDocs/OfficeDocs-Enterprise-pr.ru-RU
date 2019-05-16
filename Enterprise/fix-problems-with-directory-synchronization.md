@@ -1,9 +1,9 @@
 ---
 title: Устранение проблем с синхронизацией службы каталогов для Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: В этой статье описываются распространенные причины проблем с синхронизацией службы каталогов в Office 365, а также способы их устранения.
-ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3a1cf63122be84dc3e1c60e84a9a3a488f81bc0f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487473"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067675"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Устранение проблем с синхронизацией службы каталогов для Office 365
 
@@ -38,7 +38,7 @@ ms.locfileid: "33487473"
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Как получить средство Azure Active Directory Connect?
 
-в [центре администрирования Microsoft 365](https://admin.microsoft.com)перейдите к разделу * * пользователи * * \> **активные пользователи**. Откройте меню **Дополнительно** и выберите пункт **Синхронизация службы каталогов**. 
+В [центре администрирования Microsoft 365](https://admin.microsoft.com)перейдите к разделу * * Пользователи * * \> **Активные пользователи**. Откройте меню **Дополнительно** и выберите пункт **Синхронизация службы каталогов**. 
   
 ![В меню Дополнительно выберите пункт Синхронизация службы каталогов.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
@@ -70,7 +70,7 @@ ms.locfileid: "33487473"
 - Вы можете найти список всех атрибутов, которые синхронизируются между локальной средой и облаком [непосредственно](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
 ### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**Не удается управлять или удалять объекты, синхронизированные с облаком**
-- Вы готовы управлять объектами только в облаке? Есть ли в облаке объект, который был удален локально, но в облаке он застрял? Ознакомьтесь с этой статьей [об устраненИи неполадок во время синхронизации](https://go.microsoft.com/fwlink/p/?linkid=842044) и [поддержки](https://go.microsoft.com/fwlink/p/?LinkId=396720) , чтобы получить рекомендации по устранению этих проблем.
+- Вы готовы управлять объектами только в облаке? Есть ли в облаке объект, который был удален локально, но в облаке он застрял? Ознакомьтесь с этой статьей [об устранении неполадок во время синхронизации](https://go.microsoft.com/fwlink/p/?linkid=842044) и [поддержки](https://go.microsoft.com/fwlink/p/?LinkId=396720) , чтобы получить рекомендации по устранению этих проблем.
 
 ### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**Получено сообщение об ошибке, когда в компании превышено количество объектов, которые можно синхронизировать**
 - Подробнее об этой статье можно узнать [здесь](https://go.microsoft.com/fwlink/p/?LinkId=396721).

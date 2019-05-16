@@ -1,9 +1,9 @@
 ---
 title: Подготовка домена, не поддерживающего маршрутизацию, для синхронизации службы каталогов
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365E_SetupDirSyncLocalDir
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Сведения о том, что делать, если у вас нет домена раутале, связанного с локальными пользователями, прежде чем выполнять синхронизацию с Office 365.
-ms.openlocfilehash: 150e670e58419cda0f8ba08a5fb1e375478a27b1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 15ab67212ec1ea6ca7665bb5a4b0748f7d85adb5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085318"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071085"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Подготовка домена, не поддерживающего маршрутизацию, для синхронизации службы каталогов
 При синхронизации локального каталога с Office 365 необходимо иметь проверенный домен в Azure Active Directory. Синхронизируются только имена участников-пользователей (UPN), связанные с локальным доменом. Тем не менее, любой UPN, который содержит домен без маршрутизации, например, Local (например, Билла @ contoso. local), будет синхронизирован с доменом onmicrosoft.com (например, billa@contoso.onmicrosoft.com). 
@@ -34,13 +34,13 @@ ms.locfileid: "30085318"
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Что делать, если у меня есть только локальный домен.
 
-Самое последнее средство, которое можно использовать для синхронизации Active Directory с Azure Active Directory, называется Azure AD Connect. Дополнительные сведения см. [в статье интеграция локальных удостоверений с помощью Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
+Самое последнее средство, которое можно использовать для синхронизации Active Directory с Azure Active Directory, называется Azure AD Connect. Дополнительные сведения см. в статье [Интеграция локальных удостоверений с Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
   
 Azure AD Connect синхронизирует UPN и пароль пользователей, чтобы пользователи могли входить в систему с теми же учетными данными, которые они используют в локальной среде. Однако Azure AD Connect синхронизирует только пользователей с доменами, которые проверяются в Office 365. Это означает, что домен также проверяется с помощью Azure Active Directory, так как удостоверения Office 365 управляются Azure Active Directory. Другими словами, домен должен быть допустимым Интернет-доменом (например,. com,. org, .NET,. US и т. д.). Если во внутренней Active Directory используется только домен, не поддерживающий маршрутизацию (например, Local), это может привести к тому, что проверенный домен, установленный в Office 365. Эту проблему можно устранить, либо изменив основной домен в локальной службе Active Directory, либо добавив один или несколько суффиксов имени участника-пользователя.
   
 ### <a name="change-your-primary-domain"></a>**Изменение основного домена**
 
-Замените основной домен на домен, проверенный в Office 365, например contoso.com. После этого все пользователи с доменом contoso. local обновляются до contoso.com. Инструкции [о том, как работает ПереименованИе домена](https://go.microsoft.com/fwlink/p/?LinkId=624174). Это очень сложный процесс, но проще всего [Добавить суффиксы UPN и обновить пользователей на них](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register), как показано в следующем разделе.
+Замените основной домен на домен, проверенный в Office 365, например contoso.com. После этого все пользователи с доменом contoso. local обновляются до contoso.com. Инструкции [о том, как работает переименование домена](https://go.microsoft.com/fwlink/p/?LinkId=624174). Это очень сложный процесс, но проще всего [Добавить суффиксы UPN и обновить пользователей на них](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register), как показано в следующем разделе.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**Добавление суффиксов UPN и обновление пользователей**
 
@@ -78,7 +78,7 @@ Azure AD Connect синхронизирует UPN и пароль пользов
     
 2. Выберите пользователя, щелкните его правой кнопкой мыши и выберите пункт **Свойства**.
     
-3. На вкладке **учетНая запись** в раскрывающемся списке суффикс UPN выберите новый суффикс UPN и нажмите кнопку **ОК**.
+3. На вкладке **учетная запись** в раскрывающемся списке суффикс UPN выберите новый суффикс UPN и нажмите кнопку **ОК**.
     
     ![Добавление нового суффикса имени участника-пользователя для пользователя](media/54876751-49f0-48cc-b864-2623c4835563.png)
   

@@ -4,7 +4,7 @@ ms.author: twerner
 author: twernermsft
 manager: scotv
 ms.date: 5/31/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Используйте командлеты PowerShell централизованного развертывания для развертывания надстроек Office для организации Office 365 и управления ими.
-ms.openlocfilehash: ec851fc85273e9f871c20d5075b16cb97472f975
-ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
+ms.openlocfilehash: 34040d11a1ef4d5da2d7a0e980b28e7ef0eba7fb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31957640"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070505"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Использование командлетов PowerShell для централизованного развертывания для управления надстройками
 
-Администраторы Office 365 могут развертывать надстройки Office для пользователей с помощью функции централизованного развертывания (см. раздел [Развертывание надстроек Office в центре администрирования office 365](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)). Кроме развертывания надстроек Office с помощью центра администрирования Office 365, вы также можете использовать Microsoft PowerShell. Установите [модуль развертывания Office 365 с централизованНой надстройкой для Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
+Администраторы Office 365 могут развертывать надстройки Office для пользователей с помощью функции централизованного развертывания (см. раздел [Развертывание надстроек Office в центре администрирования office 365](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)). Кроме развертывания надстроек Office с помощью центра администрирования Office 365, вы также можете использовать Microsoft PowerShell. Установите [модуль развертывания Office 365 с централизованной надстройкой для Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
     
 ## <a name="connect-using-your-admin-credentials"></a>Подключение с использованием учетных данных администратора
 
@@ -39,7 +39,7 @@ ms.locfileid: "31957640"
   Connect-OrganizationAddInService
   ```
 
-3. На странице **введите учетНые данные** введите учетные данные глобального администратора Office 365. Кроме того, вы можете ввести свои учетные данные непосредственно в командлет. 
+3. На странице **введите учетные данные** введите учетные данные глобального администратора Office 365. Кроме того, вы можете ввести свои учетные данные непосредственно в командлет. 
     
     Выполните следующий командлет, указав учетные данные администратора компании в качестве объекта PSCredential.
     
@@ -60,7 +60,7 @@ ms.locfileid: "31957640"
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-Кроме того, можно выполнить командлет New – Организациянадстройки – in, чтобы отправить надстройку и назначить ее пользователям или группам напрямую с помощью параметра Members __ , как показано в следующем примере. РазДеляйте адреса электронной почты членов запятыми. 
+Кроме того, можно выполнить командлет New – Организациянадстройки – in, чтобы отправить надстройку и назначить ее пользователям или группам напрямую с помощью параметра Members __ , как показано в следующем примере. Разделяйте адреса электронной почты членов запятыми. 
   
 ```
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
@@ -97,7 +97,7 @@ Get-OrganizationAddIn
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-Чтобы получить полные сведения обо всех надстройках, а также о назначенных пользователях и группах, переЧислите выходные данные командлета Get – Организатионаддин в командлет Format – List, как показано в следующем примере.
+Чтобы получить полные сведения обо всех надстройках, а также о назначенных пользователях и группах, перечислите выходные данные командлета Get – Организатионаддин в командлет Format – List, как показано в следующем примере.
   
 ```
 Get-OrganizationAddIn |Format-List
@@ -119,7 +119,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $
 
 ## <a name="add-or-remove-users-from-an-add-in"></a>Добавление и удаление пользователей из надстройки
 
-Чтобы добавить пользователей и группы в определенную надстройку, выполните командлет Set – Организатионаддинассигнментс с параметрами _ProductID_, _Add_и Members. __ РазДеляйте адреса электронной почты членов запятыми. 
+Чтобы добавить пользователей и группы в определенную надстройку, выполните командлет Set – Организатионаддинассигнментс с параметрами _ProductID_, _Add_и Members. __ Разделяйте адреса электронной почты членов запятыми. 
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
@@ -156,7 +156,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
   
 ## <a name="delete-an-add-in"></a>Удаление надстройки
 
-Чтобы удалить надстройку, запустите командлет reMove – Организатионаддин с параметром _ProductID_ , как показано в следующем примере. 
+Чтобы удалить надстройку, запустите командлет Remove – Организатионаддин с параметром _ProductID_ , как показано в следующем примере. 
   
 ```
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
@@ -164,7 +164,7 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>Получение подробной справки для каждого командлета
 
-С помощью командлета Get – Help можно просмотреть подробную справку для каждого командлета. Например, следующий командлет предоставляет подробные сведения о командлете reMove – Организатионаддин.
+С помощью командлета Get – Help можно просмотреть подробную справку для каждого командлета. Например, следующий командлет предоставляет подробные сведения о командлете Remove – Организатионаддин.
   
 ```
 Get-help Remove-OrganizationAddIn -Full
