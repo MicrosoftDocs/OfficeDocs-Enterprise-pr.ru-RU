@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
@@ -17,53 +17,53 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: Сводка. Сведения для ИТ-архитекторов о гибридных сценариях в облачных службах и платформах Майкрософт.
-ms.openlocfilehash: 40a46c6d289011a0e0c6065573a5b67a3ac66756
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 34b0b279d242f807620a192ed390f765170ac609
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123376"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070165"
 ---
-# <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a><span data-ttu-id="85928-103">Гибридное облако Майкрософт для корпоративных архитекторов</span><span class="sxs-lookup"><span data-stu-id="85928-103">Microsoft Hybrid Cloud for Enterprise Architects</span></span>
+# <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a><span data-ttu-id="867c5-103">Гибридное облако Майкрософт для корпоративных архитекторов</span><span class="sxs-lookup"><span data-stu-id="867c5-103">Microsoft Hybrid Cloud for Enterprise Architects</span></span>
 
- <span data-ttu-id="85928-104">**Сводка.** Сведения для ИТ-архитекторов о гибридных сценариях в облачных службах и платформах Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="85928-104">**Summary:** What IT architects need to know about hybrid scenarios using Microsoft cloud services and platforms.</span></span>
+ <span data-ttu-id="867c5-104">**Сводка.** Сведения для ИТ-архитекторов о гибридных сценариях в облачных службах и платформах Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="867c5-104">**Summary:** What IT architects need to know about hybrid scenarios using Microsoft cloud services and platforms.</span></span>
   
-<span data-ttu-id="85928-p101">В этой статье представлены ссылки на статьи для ИТ-архитекторов, в которых рассказывается о гибридных конфигурациях и архитектуре на основе облачных служб и платформ Майкрософт. Вы также можете скачать эту статью в виде 7-страничной афиши и распечатать ее на листах формата A3.</span><span class="sxs-lookup"><span data-stu-id="85928-p101">This article links you to a set of articles that describe what IT architects need to know about hybrid architecture and configurations with Microsoft cloud services and platforms. You can also view this article as a 7-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
+<span data-ttu-id="867c5-p101">В этой статье представлены ссылки на статьи для ИТ-архитекторов, в которых рассказывается о гибридных конфигурациях и архитектуре на основе облачных служб и платформ Майкрософт. Вы также можете скачать эту статью в виде 7-страничной афиши и распечатать ее на листах формата A3.</span><span class="sxs-lookup"><span data-stu-id="867c5-p101">This article links you to a set of articles that describe what IT architects need to know about hybrid architecture and configurations with Microsoft cloud services and platforms. You can also view this article as a 7-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
   
-<span data-ttu-id="85928-107">[![Эскиз: модель гибридного облака Майкрософт](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
-)</span><span class="sxs-lookup"><span data-stu-id="85928-107">[![Thumb image for the Microsoft hybrid cloud model](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+<span data-ttu-id="867c5-107">[![Эскиз: модель гибридного облака Майкрософт](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+)</span><span class="sxs-lookup"><span data-stu-id="867c5-107">[![Thumb image for the Microsoft hybrid cloud model](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )</span></span>
   
-<span data-ttu-id="85928-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)</span><span class="sxs-lookup"><span data-stu-id="85928-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)</span></span>
+<span data-ttu-id="867c5-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)</span><span class="sxs-lookup"><span data-stu-id="867c5-108">[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)</span></span>
   
-<span data-ttu-id="85928-109">Вы также можете увидеть все модели в [ресурсах для администраторов, посвященных архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).</span><span class="sxs-lookup"><span data-stu-id="85928-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md).</span></span>
+<span data-ttu-id="867c5-109">Вы также можете увидеть все модели в [ресурсах для администраторов, посвященных архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).</span><span class="sxs-lookup"><span data-stu-id="867c5-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md).</span></span>
   
-<span data-ttu-id="85928-110">См. указанные ниже разделы.</span><span class="sxs-lookup"><span data-stu-id="85928-110">See the following sections:</span></span>
+<span data-ttu-id="867c5-110">См. указанные ниже разделы.</span><span class="sxs-lookup"><span data-stu-id="867c5-110">See the following sections:</span></span>
   
-- [<span data-ttu-id="85928-111">Общие сведения о гибридном облаке</span><span class="sxs-lookup"><span data-stu-id="85928-111">Hybrid cloud overview</span></span>](hybrid-cloud-overview.md)
+- [<span data-ttu-id="867c5-111">Общие сведения о гибридном облаке</span><span class="sxs-lookup"><span data-stu-id="867c5-111">Hybrid cloud overview</span></span>](hybrid-cloud-overview.md)
     
-    <span data-ttu-id="85928-112">Облачные предложения Майкрософт (SaaS, Azure PaaS и Azure IaaS) и их общие элементы.</span><span class="sxs-lookup"><span data-stu-id="85928-112">Microsoft's cloud offerings (SaaS, Azure PaaS, and Azure IaaS) and their common elements.</span></span>
+    <span data-ttu-id="867c5-112">Облачные предложения Майкрософт (SaaS, Azure PaaS и Azure IaaS) и их общие элементы.</span><span class="sxs-lookup"><span data-stu-id="867c5-112">Microsoft's cloud offerings (SaaS, Azure PaaS, and Azure IaaS) and their common elements.</span></span>
     
-- [<span data-ttu-id="85928-113">Архитектура гибридного облака Майкрософт</span><span class="sxs-lookup"><span data-stu-id="85928-113">Architecture of Microsoft hybrid cloud scenarios</span></span>](architecture-of-microsoft-hybrid-cloud-scenarios.md)
+- [<span data-ttu-id="867c5-113">Архитектура гибридного облака Майкрософт</span><span class="sxs-lookup"><span data-stu-id="867c5-113">Architecture of Microsoft hybrid cloud scenarios</span></span>](architecture-of-microsoft-hybrid-cloud-scenarios.md)
     
-    <span data-ttu-id="85928-114">Схема архитектуры гибридного облака для облачных предложений Майкрософт, на которой показаны общие слои локальных инфраструктуры, сети и удостоверений.</span><span class="sxs-lookup"><span data-stu-id="85928-114">An architectural diagram of hybrid cloud for Microsoft's cloud offerings, showing the common layers of on-premises infrastructure, networking, and identity.</span></span>
+    <span data-ttu-id="867c5-114">Схема архитектуры гибридного облака для облачных предложений Майкрософт, на которой показаны общие слои локальных инфраструктуры, сети и удостоверений.</span><span class="sxs-lookup"><span data-stu-id="867c5-114">An architectural diagram of hybrid cloud for Microsoft's cloud offerings, showing the common layers of on-premises infrastructure, networking, and identity.</span></span>
     
-- [<span data-ttu-id="85928-115">Сценарии гибридного облака для Microsoft SaaS (Office 365)</span><span class="sxs-lookup"><span data-stu-id="85928-115">Hybrid cloud scenarios for Microsoft SaaS (Office 365)</span></span>](hybrid-cloud-scenarios-for-microsoft-saas-office-365.md)
+- [<span data-ttu-id="867c5-115">Сценарии гибридного облака для Microsoft SaaS (Office 365)</span><span class="sxs-lookup"><span data-stu-id="867c5-115">Hybrid cloud scenarios for Microsoft SaaS (Office 365)</span></span>](hybrid-cloud-scenarios-for-microsoft-saas-office-365.md)
     
-    <span data-ttu-id="85928-116">Архитектура гибридного сценария SaaS и описание ключевых гибридных конфигураций Skype для бизнеса, SharePoint Server и Exchange Server.</span><span class="sxs-lookup"><span data-stu-id="85928-116">The SaaS hybrid scenario architecture and descriptions of key hybrid configurations for Skype for Business, SharePoint Server, and Exchange Server.</span></span>
+    <span data-ttu-id="867c5-116">Архитектура гибридного сценария SaaS и описание ключевых гибридных конфигураций Skype для бизнеса, SharePoint Server и Exchange Server.</span><span class="sxs-lookup"><span data-stu-id="867c5-116">The SaaS hybrid scenario architecture and descriptions of key hybrid configurations for Skype for Business, SharePoint Server, and Exchange Server.</span></span>
     
-- [<span data-ttu-id="85928-117">Сценарии гибридного облака для Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="85928-117">Hybrid cloud scenarios for Azure PaaS</span></span>](hybrid-cloud-scenarios-for-azure-paas.md)
+- [<span data-ttu-id="867c5-117">Сценарии гибридного облака для Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="867c5-117">Hybrid cloud scenarios for Azure PaaS</span></span>](hybrid-cloud-scenarios-for-azure-paas.md)
     
-    <span data-ttu-id="85928-118">Архитектура гибридного сценария Azure PaaS и описание вариантов применения гибридной среды Azure PaaS с примером и описанием базы данных Stretch в SQL Server 2016.</span><span class="sxs-lookup"><span data-stu-id="85928-118">The Azure PaaS hybrid scenario architecture, the description of an Azure PaaS hybrid application with an example, and the description of SQL Server 2016 Stretch Database.</span></span>
+    <span data-ttu-id="867c5-118">Архитектура гибридного сценария Azure PaaS и описание вариантов применения гибридной среды Azure PaaS с примером и описанием базы данных Stretch в SQL Server 2016.</span><span class="sxs-lookup"><span data-stu-id="867c5-118">The Azure PaaS hybrid scenario architecture, the description of an Azure PaaS hybrid application with an example, and the description of SQL Server 2016 Stretch Database.</span></span>
     
-- [<span data-ttu-id="85928-119">Сценарии гибридного облака для Azure IaaS</span><span class="sxs-lookup"><span data-stu-id="85928-119">Hybrid cloud scenarios for Azure IaaS</span></span>](hybrid-cloud-scenarios-for-azure-iaas.md)
+- [<span data-ttu-id="867c5-119">Сценарии гибридного облака для Azure IaaS</span><span class="sxs-lookup"><span data-stu-id="867c5-119">Hybrid cloud scenarios for Azure IaaS</span></span>](hybrid-cloud-scenarios-for-azure-iaas.md)
     
-    <span data-ttu-id="85928-120">Архитектура гибридного сценария Azure IaaS и описание варианта применения бизнес-приложения, размещенного в Azure IaaS.</span><span class="sxs-lookup"><span data-stu-id="85928-120">The Azure IaaS hybrid scenario architecture and the description of a line of business (LOB) application hosted in Azure IaaS.</span></span>
+    <span data-ttu-id="867c5-120">Архитектура гибридного сценария Azure IaaS и описание варианта применения бизнес-приложения, размещенного в Azure IaaS.</span><span class="sxs-lookup"><span data-stu-id="867c5-120">The Azure IaaS hybrid scenario architecture and the description of a line of business (LOB) application hosted in Azure IaaS.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="85928-121">В этих статьях описывается выпуск афиши "Гибридное облако Майкрософт для корпоративных архитекторов" за **декабрь 2018 г.**</span><span class="sxs-lookup"><span data-stu-id="85928-121">These articles reflect the **December 2018** release of the Microsoft Cloud Networking for Enterprise Architects poster.</span></span>
+> <span data-ttu-id="867c5-121">В этих статьях описывается выпуск афиши "Гибридное облако Майкрософт для корпоративных архитекторов" за **декабрь 2018 г.**</span><span class="sxs-lookup"><span data-stu-id="867c5-121">These articles reflect the **December 2018** release of the Microsoft Hybrid Cloud for Enterprise Architects poster.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="85928-122">См. также</span><span class="sxs-lookup"><span data-stu-id="85928-122">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="867c5-122">См. также</span><span class="sxs-lookup"><span data-stu-id="867c5-122">See Also</span></span>
 
-[<span data-ttu-id="85928-123">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="85928-123">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="867c5-123">Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="867c5-123">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
