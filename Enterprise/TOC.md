@@ -164,10 +164,8 @@
 # Управление Office 365
 ## [Работоспособность службы](view-service-health.md)
 ### [Мониторинг подключения](monitor-connectivity.md)
-### 
-  [Варианты поддержки](https://support.office.com/ru-RU/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## 
-  [Инструменты управления](https://support.office.com/ru-RU/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Варианты поддержки](https://support.office.com/ru-RU/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+## [Инструменты управления](https://support.office.com/ru-RU/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Инструменты для управления учетными записями Office 365](manage-office-365-accounts.md)
 ### [Добавление в Office 365 сразу нескольких пользователей — справка для администраторов](add-several-users-at-the-same-time.md)
 ### [Восстановление удаленных элементов в почтовом ящике пользователя — справка для администраторов](recover-deleted-items-in-a-mailbox.md)
