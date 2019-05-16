@@ -21,8 +21,7 @@
 ### [Планирование сетевых устройств, подключающихся к службам Office 365](plan-for-network-devices.md)
 ### [Планирование сторонних SSL-сертификатов для Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Идентификация в Office 365 и Azure Active Directory](about-office-365-identity.md)
-### 
-  [Выбор между MDM и Intune](https://docs.microsoft.com/ru-RU/office365/securitycompliance/choose-between-mdm-and-intune)
+### [Выбор между MDM и Intune](https://docs.microsoft.com/ru-RU/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Планирование сети и миграции в Office 365](network-and-migration-planning.md)
 ### [Сетевое подключение к Office 365](network-connectivity.md)
 ### [Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
