@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/6/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: После развертывания Office 365 вы можете поддерживать подключение к службам Office 365 с помощью описанных ниже средств и методик. Для этого желательно разобраться в официальных рекомендациях по поддержанию работоспособности и непрерывной работы служб, а также использованию Office 365 в медленных сетях. Полезно также задействовать приложение для администраторов Office 365 и добавить в закладки справку для администраторов по Office 365 для бизнеса.
-ms.openlocfilehash: 80e1f56ed3ef7ae2e013239ac286e2a804bd9696
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: ce307e01a3d7da4a24a06e58d293b9598c684d8f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22542292"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070055"
 ---
 # <a name="monitor-office-365-connectivity"></a>Мониторинг подключения к Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "22542292"
 |**Использование System Center для наблюдения за Office 365** <br/> |Если вы используете Microsoft System Center, вы можете скачать [пакет управления System Center для Office 365](https://www.microsoft.com/download/details.aspx?id=43708), чтобы сразу начать мониторинг Office 365. Подробные инструкции см. в руководстве по работе с пакетом управления или в записи блога [Мониторинг Office 365 с помощью System Centre Operations Manager](https://blogs.msdn.com/b/mvpawardprogram/archive/2015/07/08/office365-monitoring-using-system-centre-operations-manager.aspx) <br/> |
 |**Наблюдение за работоспособностью Azure ExpressRoute** <br/> |Если вы подключаетесь к Office 365 с помощью Azure ExpressRoute для Office 365, рекомендуется использовать как панель мониторинга работоспособности Office 365, так и Azure для [экономии времени по устранению неполадок с помощью службы "Работоспособность ресурсов Azure"](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/) <br/> |
 |**Использование Azure AD Connect Health с AD FS** <br/> |Если вы используете AD FS для единого входа в Office 365, рекомендуем вам начать [использовать службу Azure AD Connect Health для мониторинга своей инфраструктуры AD FS](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/).  <br/> |
-|**Программный мониторинг Office 365** <br/> |См. наше руководство по [API управления Office 365](https://msdn.microsoft.com/library/jj984343%28v=office.15%29.aspx).  <br/> |
+|**Программный мониторинг Office 365** <br/> |См. наше руководство по [API управления Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview).  <br/> |
 
 Вы можете быстро вернуться сюда с помощью этой короткой ссылки: [hhttps://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 description: Эта статья относится к службе Office 365, предоставляемой компанией 21Vianet в Китае. В ней перечислены URL-адреса и диапазоны IP-адресов, используемые в службе Office 365, предоставляемой компанией 21Vianet.
 hideEdit: true
-ms.openlocfilehash: 5ab1da87673d422001aa826ec9411ce31fa323d1
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.openlocfilehash: e1e477b0bca538accd1fc76c202a27429c705ac6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341980"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070785"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URL-адреса и диапазоны IP-адресов для службы Office 365, предоставляемой компанией 21Vianet
 

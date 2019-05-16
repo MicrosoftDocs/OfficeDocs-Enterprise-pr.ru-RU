@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/12/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: Сводка. Общие сведения о связи между организациями, подписками, лицензиями, учетными записями пользователей и клиентами в облачных предложениях корпорации Майкрософт.
-ms.openlocfilehash: 55d13e55b597f398189efbafb6b3426609f2d41d
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 9df81d14cbd18246bf10e66002d9042a3b3d9384
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741325"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070435"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Подписки, лицензии, учетные записи и клиенты для облачных предложений корпорации Майкрософт
 
@@ -62,7 +62,7 @@ ms.locfileid: "31741325"
   
 У организации может быть несколько подписок на облачные предложения корпорации Майкрософт, как показано на рис. 1.
   
-**Рис. 1. Пример использования нескольких подписок для организации**
+**Рис. 1. Пример использования нескольких подписок для организации**
 
 ![Пример организации с несколькими подписками на облачные предложения корпорации Майкрософт.](media/Subscriptions/Subscriptions-Fig1.png)
 
@@ -143,12 +143,12 @@ ms.locfileid: "31741325"
 
 В приведенной ниже таблице показано, как объединить несколько облачных предложений корпорации Майкрософт на основе имеющейся подписки на облачное предложение одного типа (подписи в первом столбце) и добавленной подписки на другое решение (поперек столбцов).
   
-||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
+||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Office 365** <br/> |NA  <br/> |Добавьте подписку Azure для организации с помощью портала Azure.  <br/> |Добавьте подписку Intune/EMS для организации в Центре администрирования Microsoft 365.  <br/> |Добавьте подписку на Dynamics 365 для организации в Центре администрирования Microsoft 365.  <br/> |
+|**Office 365** <br/> |Н/Д  <br/> |Добавьте подписку Azure для организации с помощью портала Azure.  <br/> |Добавьте подписку Intune/EMS для организации в Центре администрирования Microsoft 365.  <br/> |Добавьте подписку на Dynamics 365 для организации в Центре администрирования Microsoft 365.  <br/> |
 |**Azure** <br/> |Добавьте подписку на Office 365 для организации.  <br/> |Недоступно  <br/> |Добавьте подписку Intune/EMS для организации.  <br/> |Добавьте подписку Dynamics 365 для организации.  <br/> |
 |**Intune/EMS** <br/> |Добавьте подписку на Office 365 для организации.  <br/> |Добавьте подписку Azure для организации с помощью портала Azure.  <br/> |Недоступно  <br/> |Добавьте подписку Dynamics 365 для организации.  <br/> |
-|**Dynamics 365** <br/> |Добавьте подписку на Office 365 для организации.  <br/> |Добавьте подписку Azure для организации с помощью портала Azure.  <br/> |Добавьте подписку Intune/EMS для организации.  <br/> |Недоступно  <br/> |
+|**Dynamics 365** <br/> |Добавьте подписку на Office 365 для организации.  <br/> |Добавьте подписку Azure для организации с помощью портала Azure.  <br/> |Добавьте подписку Intune/EMS для организации.  <br/> |Недоступно  <br/> |
    
 Вы можете легко добавлять подписки на службы Майкрософт на основе SaaS, используя Центр администрирования Office 365:
   
@@ -174,7 +174,7 @@ ms.locfileid: "31741325"
 
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
-[Руководства по лаборатории тестирования для облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Архитектурные модели для SharePoint, Exchange, Skype для бизнеса и Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

@@ -3,19 +3,19 @@ title: Настройка поиска в Office 365 с поддержкой н�
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения о настройке поиска в среде с поддержкой нескольких регионов.
-ms.openlocfilehash: 5a06b30e7850a23ff6443eb8b5b2e9e14850a7db
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490402"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068075"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Настройка поиска в Office 365 с поддержкой нескольких регионов
 
@@ -85,7 +85,7 @@ ms.locfileid: "33490402"
 <tr class="odd">
 <td align="left"></td>
 <td align="left">При поиске в среде с поддержкой нескольких регионов невозможно динамическое группирование числовых уточнений.</td>
-<td align="left">В случае числовых уточнений задавайте <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">параметр discretize</a>.</td>
+<td align="left">В случае числовых уточнений задавайте <a href="https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/query-refinement-in-sharepoint">параметр discretize</a>.</td>
 </tr>
 <tr class="even">
 <td align="left">Идентификаторы документов</td>

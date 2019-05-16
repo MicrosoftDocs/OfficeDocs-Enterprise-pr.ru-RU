@@ -3,19 +3,19 @@ title: Квоты хранилища SharePoint в средах с поддер�
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения о квотах хранилища SharePoint в средах с поддержкой нескольких регионов.
-ms.openlocfilehash: 9c43f21a844507c4de7971d70a110665ddc094ba
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.openlocfilehash: a9ccc32940293dcd11e2f3b89607950f7b6ae3f0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30934076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070755"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Квоты хранилища SharePoint в средах с поддержкой нескольких регионов
 

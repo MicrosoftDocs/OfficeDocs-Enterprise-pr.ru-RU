@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 5/7/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Чтобы помочь вам выявлять и дифференцировать сетевой трафик Office 365, новая веб-служба публикует конечные точки Office 365, упрощая оценку, настройку и обновление. Эта новая веб-служба заменяет собой скачиваемые XML-файлы, доступные в настоящее время.
-ms.openlocfilehash: 35a34071a76e551cde8342566a912e4fd4d0100e
-ms.sourcegitcommit: 9c6e31204aa326c31d60befe80e610f702e65800
+ms.openlocfilehash: fcef7a6a175b043639275fedc77faaa689f0e7d5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33976524"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069735"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Веб-служба IP-адресов и URL-адресов в Office 365
 

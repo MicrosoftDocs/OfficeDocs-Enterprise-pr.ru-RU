@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 2/14/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Сводка. Список записей DNS для планирования развертывания Office 365.
-ms.openlocfilehash: c172275e43b4703172f58287c086562da352f5e9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bc1bb822bc0baf376c96c95ff637b93f131605e9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487264"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067665"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Внешние записи DNS для Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "33487264"
   
 |||
 |:-----|:-----|
-|![Домен](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Вам нужен индивидуальный список записей DNS для вашей организации Office 365?** Вы можете [найти необходимые сведения для создания записей DNS в Office 365](https://support.office.microsoft.com/ru-RU/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) для домена в Office 365.<br/> **Вам нужны пошаговые инструкции по добавлению этих записей в узел DNS вашего домена, такой как GoDaddy или eNom?** [См. ссылки на пошаговые инструкции для популярных узлов DNS](https://go.microsoft.com/fwlink/?LinkId=286745).<br/> **Возврат к статье** [Планирование сети и настройка производительности для Office 365](https://aka.ms/tune).  <br/> |
+|![Домен](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Вам нужен индивидуальный список записей DNS для вашей организации Office 365?** Вы можете [найти необходимые сведения для создания записей DNS в Office 365](https://support.office.microsoft.com/en-us/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) для домена в Office 365.<br/> **Вам нужны пошаговые инструкции по добавлению этих записей в узел DNS вашего домена, такой как GoDaddy или eNom?** [См. ссылки на пошаговые инструкции для популярных узлов DNS](https://go.microsoft.com/fwlink/?LinkId=286745).<br/> **Возврат к статье** [Планирование сети и настройка производительности для Office 365](https://aka.ms/tune).  <br/> |
 
  **Желаете использовать этот список для собственного развертывания?** Для пользовательского развертывания Office 365 используйте следующий список. Вам потребуется выбрать записи, применимые для вашей организации, и заполнить соответствующие значения.
   
