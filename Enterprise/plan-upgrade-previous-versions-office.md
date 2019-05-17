@@ -13,20 +13,20 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: При использовании Office 2007 или Office 2010 необходимо запланировать обновление. Не следует зависнуть в случае устаревшего приложения. Используйте эти ресурсы, чтобы приступить к работе с планом.
-ms.openlocfilehash: 3643463e950fdfdf4440a7060383b3e7f21a9037
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3af3b366aa8ae7b9e70169ca0885959fe2b6f8dd
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069335"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102437"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Планирование обновления с серверов и клиентов Office 2007 и Office 2010
 
-Если в Организации используются более ранние версии продуктов и серверов Office, это отличное время для начала планирования обновления. Продукты и службы Office 2007 достигают конца поддержки, а продукты и службы Office 2010 близки к их завершению. Используйте ресурсы, приведенные в этом разделе, чтобы приступить к работе.
-
-- [Обновление серверов и клиентов Office 2010](upgrade-from-office-2010-servers-and-products.md)
+Если в Организации используются более ранние версии продуктов и серверов Office, это отличное время для начала планирования обновления. Продукты и службы Office 2007 достигают конца поддержки, а продукты и службы Office 2010 будут достигаться до **13 октября 2020 г**. Используйте ресурсы, приведенные в этом разделе, чтобы приступить к работе.
 
 - [Обновление серверов и клиентов Office 2007](upgrade-from-office-2007-servers-and-products.md)
+
+- [Обновление серверов и клиентов Office 2010](upgrade-from-office-2010-servers-and-products.md)
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Что произойдет, если не выполнить обновление?
 
