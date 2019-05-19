@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: Сводка. Создание упрощенной интрасети в качестве среды разработки и тестирования в Microsoft Azure.
-ms.openlocfilehash: 80011fced526ecf38cf31a89015ff0bbe7fa8b7a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f6a9f2f2742b56ffb5f8a7521a14bfe48d3adc22
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068295"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162442"
 ---
 # <a name="base-configuration-devtest-environment"></a>Базовая конфигурация среды разработки и тестирования
 
@@ -439,6 +439,5 @@ Start-AzVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 - [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
 - [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-- [Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
 - [Advanced Threat Protection в среде разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 - [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)

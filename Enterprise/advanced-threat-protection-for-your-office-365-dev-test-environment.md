@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: Сводка. Настройка и демонстрация Office 365 Advanced Threat Protection в среде разработки и тестирования Office 365.
-ms.openlocfilehash: 7063b56762711fdb06c0c879d74b783c0137b550
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 274f8558d23714a73e0891500dac5d5e007b6be2
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068305"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162422"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection в среде разработки и тестирования Office 365
 
@@ -167,8 +167,6 @@ Office 365 Advanced Threat Protection — это компонент Exchange Onl
 [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
   
 [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md) 
 

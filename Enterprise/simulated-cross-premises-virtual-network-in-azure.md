@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: Сводка. Создание имитации распределенной виртуальной сети в Microsoft Azure как среды разработки и тестирования.
-ms.openlocfilehash: 23e713ee50f1efed9ede07b13c289195d9054f8d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 595aa20595f43f481aaf090a14d0d7c0df000345
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070425"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162492"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Имитация распределенной виртуальной сети в Azure
 
@@ -219,8 +219,6 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
   
 [DirSync для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Cloud App Security для среды разработки и тестирования Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [Advanced Threat Protection в среде разработки и тестирования Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   
