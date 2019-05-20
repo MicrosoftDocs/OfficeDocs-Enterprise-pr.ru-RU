@@ -31,7 +31,7 @@
 
 ### [Планирование сторонних SSL-сертификатов для Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
-### [Интегрированные приложения и Azure AD для администраторов Office 365](integrated-apps-and-azure-ads.md)
+### [Интегрированные приложения и Azure AD](integrated-apps-and-azure-ads.md)
 
 ### Интеграция Office 365
 #### [Интеграция с локальной средой](office-365-integration.md)
@@ -43,8 +43,7 @@
 ## Поддержка клиента Office 365
 ### [Проверка подлинности на основе сертификатов](office-365-client-support-certificate-based-authentication.md)
 ### [Условный доступ](office-365-client-support-conditional-access.md)
-### 
-  [Выбор между MDM и Intune](https://docs.microsoft.com/ru-RU/office365/securitycompliance/choose-between-mdm-and-intune)
+### [Выбор между MDM и Intune](https://docs.microsoft.com/ru-RU/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Управление мобильными приложениями](office-365-client-support-mobile-application-management.md)
 ### [Современная проверка подлинности](office-365-client-support-modern-authentication.md)
 ### [Единый вход](office-365-client-support-single-sign-on.md)
@@ -80,7 +79,6 @@
 ### [Синхронизация каталогов](dirsync-for-your-office-365-dev-test-environment.md)
 ### [Многофакторная проверка подлинности](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [Федеративное удостоверение](federated-identity-for-your-office-365-dev-test-environment.md)
-### [Защита облачных приложений](cloud-app-security-for-your-office-365-dev-test-environment.md)
 ### [Расширенная защита от угроз](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 ### [Advanced eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 ### [Защита конфиденциальных файлов](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
@@ -123,21 +121,24 @@
 #### [Маршрутизация с использованием ExpressRoute для Office 365](routing-with-expressroute.md)
 
 ## 2. Настройка удостоверений
-### [Подготовка к синхронизации каталогов](prepare-for-directory-synchronization.md)
-### Использование средства IdFix
-#### [Подготовка атрибутов каталога с помощью средства IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
-#### [Установка и запуск средства IdFix](install-and-run-idfix.md)
-#### [Исключаемые и поддерживаемые объекты и атрибуты IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
-#### [Журнал транзакций IdFix](idfix-transaction-log.md)
-### [Настройка синхронизации каталогов](set-up-directory-synchronization.md)
 ### [Защита учетных записей глобальных администраторов](protect-your-global-administrator-accounts.md)
+### [Только облачные удостоверения](cloud-only-identities.md)
+### Гибридные удостоверения
+#### [Подготовка к синхронизации каталогов](prepare-for-directory-synchronization.md)
+#### Использование средства IdFix
+##### [Подготовка атрибутов каталога с помощью средства IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
+##### [Установка и запуск средства IdFix](install-and-run-idfix.md)
+##### [Исключаемые и поддерживаемые объекты и атрибуты IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
+##### [Журнал транзакций IdFix](idfix-transaction-log.md)
+#### [Настройка синхронизации каталогов](set-up-directory-synchronization.md)
+### [Назначение лицензий учетным записям пользователей](assign-licenses-to-user-accounts.md)
 
 ## 3. Развертывание клиентского программного обеспечения
 ### [Развертывание Office 365 профессиональный плюс](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 ### [Развертывание клиента Skype для бизнеса](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [Развертывание мобильных приложений и управления ими](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
-## [4. Настройка управления устройствами с помощью Intune](https://docs.microsoft.com/intune/setup-steps)
+## [4. Настройка управления мобильными устройствами](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
 ## 5. Настройка служб и приложений
 ### [Подготовка](configure-services-and-applications.md)
@@ -204,8 +205,7 @@
 ### [Отключение синхронизации каталогов](turn-off-directory-synchronization.md)
 
 ## Пользователи
-### 
-  [Центр справки для администраторов Office 365](https://support.office.com/ru-RU/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Центр справки для администраторов Office 365](https://support.office.com/ru-RU/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Средства для управления учетными записями пользователей](manage-office-365-accounts.md)
 ### [Добавление нескольких пользователей одновременно](add-several-users-at-the-same-time.md)
 ### [Восстановление элементов, удаленных из почтового ящика пользователя](recover-deleted-items-in-a-mailbox.md)
@@ -223,8 +223,7 @@
 
 ## Работоспособность служб
 ### [Способ проверки](view-service-health.md)
-### 
-  [Варианты поддержки](https://support.office.com/ru-RU/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+### [Варианты поддержки](https://support.office.com/ru-RU/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## Производительность
 ### [Настройка производительности Office 365](tune-office-365-performance.md)
