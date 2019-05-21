@@ -14,8 +14,7 @@
 ### [Сценарии гибридного облака для Azure IaaS](hybrid-cloud-scenarios-for-azure-iaas.md)
 ## [Архитектурные модели для SharePoint, Exchange, Skype для бизнеса и Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
-# План для Office 365
-## [Подготовка организации](get-your-organization-ready-for-office-365.md)
+# [Планирование Office 365](get-your-organization-ready-for-office-365.md)
 
 ## Клиент Office 365
 ### [Подписки, лицензии и клиенты](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
@@ -26,8 +25,8 @@
 #### [Планирование сети и миграции в Office 365](network-and-migration-planning.md)
 
 ### Планирование удостоверений
-#### [Модели удостоверений в Office 365](about-office-365-identity.md)
-#### [Гибридные удостоверения](plan-for-directory-synchronization.md)
+#### [Модели удостоверений](about-office-365-identity.md)
+#### [Гибридное удостоверение](plan-for-directory-synchronization.md)
 
 ### [Планирование сторонних SSL-сертификатов для Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
@@ -85,12 +84,7 @@
 ### [Метки и классификация данных](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Имитация распределенной виртуальной сети в Azure](simulated-cross-premises-virtual-network-in-azure.md)
 
-# Развертывание Office 365
-
-## Контрольные списки и рекомендации
-### [Развертывание Office 365 корпоративный для организации](setup-overview-for-enterprises.md)
-### [Контрольный список планирования развертывания](deployment-planning-checklist.md)
-### [Схема обеспечения безопасности Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+# [Развертывание Office 365 корпоративный](setup-overview-for-enterprises.md)
 
 ## 1. Настройка сети
 ### [Настройка корпоративной сети](set-up-network-for-office-365.md)
@@ -133,14 +127,16 @@
 #### [Настройка синхронизации каталогов](set-up-directory-synchronization.md)
 ### [Назначение лицензий учетным записям пользователей](assign-licenses-to-user-accounts.md)
 
-## 3. Развертывание клиентского программного обеспечения
+## [3. Реализация возможностей защиты](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+
+## 4. Развертывание клиентского программного обеспечения
 ### [Развертывание Office 365 профессиональный плюс](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 ### [Развертывание клиента Skype для бизнеса](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
-### [Развертывание мобильных приложений и управления ими](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
+### [Развертывание мобильных приложений и управление ими](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
-## [4. Настройка управления мобильными устройствами](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+## [5. Настройка управления мобильными устройствами](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
-## 5. Настройка служб и приложений
+## 6. Настройка служб и приложений
 ### [Подготовка](configure-services-and-applications.md)
 ### [Перенос данных в Office 365](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
@@ -151,7 +147,7 @@
 ### [Активация службы управления правами](activate-rms-in-office-365.md)
 ### [Настройка вариантов получения выпусков](https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47)
 
-## [6. Обучение пользователей](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)
+## [7. Обучение пользователей](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
 ## Расширенное развертывание
 
