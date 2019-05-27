@@ -4,7 +4,6 @@ ms.author: tracyp
 ms.reviewer: smithre4
 author: MSFTTracyP
 manager: laurawi
-ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: Современная проверка подлинности это способ управления удостоверениями, обеспечивающий более безопасную проверку подлинности и авторизацию пользователей. Он доступен для гибридных развертываний локального приложения Skype для бизнеса Server и локального сервера Exchange Server, а также для гибридных гибридов Skype для бизнеса. В этой статье приведены ссылки на связанные документы о предварительных требованиях, настройке и отключении современной проверки подлинности, а также о некоторых связанных клиентах (например, Сведения о клиентах Outlook и Skype).
-ms.openlocfilehash: 17c61b028aacd5abaf72450e197475fa2c0a2589
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
+ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067205"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34404221"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Обзор гибридной современной проверки подлинности и предварительные требования для их использования с локальными серверами Skype для бизнеса и Exchange
 
@@ -30,7 +29,7 @@ ms.locfileid: "34067205"
     
 - [Проверка состояния современной проверки подлинности в локальной среде](hybrid-modern-auth-overview.md#BKMK_CheckStatus)
     
-- [Соблюдены предварительные требования к современной проверке подлинности?](hybrid-modern-auth-overview.md#BKMK_MeetPrereq)
+- [Соблюдены предварительные требования к современной проверке подлинности?](#do-you-meet-modern-authentication-prerequisites)
     
 - [Что еще нужно знать перед началом работы?](hybrid-modern-auth-overview.md#BKMK_Whatelse)
     
@@ -43,7 +42,7 @@ ms.locfileid: "34067205"
   
 Современная проверка подлинности — это типичный термин для методов проверки подлинности и авторизации, а также некоторые меры безопасности, зависящие от политик доступа, с которыми вы уже можете ознакомиться. В него входят:
   
-- **Способы проверки**подлинности: многофакторная проверка подлинности; Проверка подлинности на основе сертификата клиента; и библиотека проверки подлинности Active Directory ( [ADAL](https://technet.microsoft.com/en-us/library/mt710548.aspx)).
+- **Способы проверки**подлинности: многофакторная проверка подлинности; Проверка подлинности на основе сертификата клиента.
     
 - **Методы проверки**подлинности: реализация Open Authorization (OAuth) корпорации Майкрософт. 
     
