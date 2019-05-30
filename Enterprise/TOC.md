@@ -121,7 +121,7 @@
 #### [Подготовка к синхронизации каталогов](prepare-for-directory-synchronization.md)
 #### Использование средства IdFix
 ##### [Подготовка атрибутов каталога с помощью средства IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
-##### [Установка и запуск средства IdFix](install-and-run-idfix.md)
+##### [Скачивание и запуск средства IdFix](install-and-run-idfix.md)
 ##### [Исключаемые и поддерживаемые объекты и атрибуты IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
 ##### [Журнал транзакций IdFix](idfix-transaction-log.md)
 #### [Настройка синхронизации каталогов](set-up-directory-synchronization.md)
