@@ -1,9 +1,9 @@
 ---
 title: Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 05/28/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,16 +21,18 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2010, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: cb1aa32f77a7a1f5490565cc269d5b93b842c229
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 11bd2e7acf5c35a427b2acd04fd37605615b42ed
+ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070695"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539215"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 
-Если вы используете продукты и службы Office 2010, вероятно, вы уверены, что продукты и службы Office 2010 близки к их концу. При планировании обновления это отличное время для перехода на Microsoft Cloud, начиная с Office 365. Используйте эту статью в качестве отправной точки для просмотра вариантов.
+Если вы используете продукты и службы Office 2010, вероятно, вы захотите знать, что продукты и службы Office 2010 будут обращаться к окончанию поддержки **13 октября 2020 г**. При планировании обновления это отличное время для перехода на Office 365. В Office 365 есть облачные службы для Office 2010 Server Products, такие как Exchange Server и SharePoint Server, а также новые службы, такие как teams и OneDrive для бизнеса. Office 365 профессиональный плюс — это клиентские приложения Office 2010, которые устанавливаются на локальном устройстве и обновлены с учетом новых функций обеспечения производительности и безопасности на онгоигн на основе Microsoft Cloud. Office 365 профессиональный плюс входит в состав Office 365 E3 и "е".
+
+Используйте эту статью в качестве отправной точки для просмотра вариантов.
       
 ## <a name="office-2010-planning-content"></a>Материалы по планированию Office 2010
   
