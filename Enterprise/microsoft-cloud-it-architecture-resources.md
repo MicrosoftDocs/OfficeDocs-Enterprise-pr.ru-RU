@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: Сводка. Узнайте основные принципы облачной архитектуры для удостоверений, безопасности, сети и гибридных решений Майкрософт. Ознакомьтесь с нормативными рекомендациями по защите файлов, удостоверений и устройств при использовании облака Майкрософт. Узнайте, как развернуть современную и безопасную настольную систему с Windows 10 и Office профессиональный плюс.
-ms.openlocfilehash: ca62612dd76b3ada07dba0e58f92f36e2bf8e1cd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: dfb6df46faacf6623a90ac5a4cf95d9512c31289
+ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070305"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539334"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 
@@ -38,6 +38,7 @@ ms.locfileid: "34070305"
     - [Организация сети в облаке Майкрософт для корпоративных архитекторов](microsoft-cloud-it-architecture-resources.md#networking)
     - [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Распространенные атаки и средства Майкрософт для защиты вашей организации](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
+    - [Базовая инфраструктура Microsoft 365 корпоративный](#m365foundationinfra)
     
 - **[Серия "Корпоративные решения для Microsoft 365"](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**
     - [Microsoft Teams и связанные службы повышения производительности в Microsoft 365 для ИТ-архитекторов](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
@@ -49,8 +50,6 @@ ms.locfileid: "34070305"
     - [Решения Майкрософт для телефонии](#microsoft-telephony-solutions) 
     - [Развертывание современной и безопасной настольной системы с помощью Майкрософт](microsoft-cloud-it-architecture-resources.md#msd)
     
-
-  
 Ждем ваших отзывов по адресу [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
 
 <!--
@@ -127,6 +126,15 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 |**Ресурс**|**Описание**|
 |:-----|:-----|
 |[![Эскиз плаката "Распространенные атаки".](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | На этом плакате показаны этапы основных атак и описаны возможности, позволяющие остановить злоумышленников на каждом из них. <br/>|
+
+<a name="m365foundationinfra"></a>
+### <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Базовая инфраструктура Microsoft 365 корпоративный
+
+Быстро ознакомьтесь с [базовой инфраструктурой](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) для Microsoft 365 корпоративный, чтобы приступить к развертыванию.
+  
+|**Item**|**Описание**|
+|:-----|:-----|
+|[![Эскиз плаката с базовой инфраструктурой Microsoft 365 корпоративный](media/Microsoft365EnterpriseFoundInfra-thumb.png)](http://aka.ms/m365efoundinfraposter) <br/> [Смотреть в Интернете](http://aka.ms/m365efoundinfraposter) \| [PDF-ФАЙЛ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | На этом плакате представлена сводка каждого этапа базовой инфраструктуры с точки зрения целей, функций и инструментов, решений разработки, результатов конфигурации, адаптации, а также текущего мониторинга и обновлений. <br/>| 
 
 
 <!--<a name="santa"></a>
