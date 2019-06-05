@@ -3,30 +3,6 @@
 
 
 
-## <a name="week-of-april-15-2019"></a>Неделя с 15 апреля 2019 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 4/18/2019 | [Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | Изменено |
-| 4/18/2019 | [Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | Изменено |
-| 4/18/2019 | [Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | Изменено |
-| 4/18/2019 | [Маршрутизация с использованием ExpressRoute для Office 365](/Office365/Enterprise/routing-with-expressroute) | Изменено |
-| 4/18/2019 | [Управление надстройками с помощью командлетов PowerShell для централизованного развертывания](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | Изменено |
-
-
-## <a name="week-of-april-22-2019"></a>Неделя с 22 апреля 2019 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 4/22/2019 | [Поддержка нескольких регионов в OneDrive и SharePoint Online](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | Изменено |
-| 4/22/2019 | [Office 365 с поддержкой нескольких регионов](/Office365/Enterprise/office-365-multi-geo) | Изменено |
-| 4/22/2019 | Сбор отчетных данных о пользователях с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP) | удалены |
-| 4/22/2019 | [Управление Office 365 с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)](/Office365/Enterprise/powershell/manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p) | Изменено |
-| 4/22/2019 | [Получение отчетных данных пользовательских клиентов с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)](/Office365/Enterprise/powershell/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac) | Изменено |
-
-
 ## <a name="week-of-april-29-2019"></a>Неделя с 29 апреля 2019 г.
 
 
@@ -341,3 +317,38 @@
 | 5/17/2019 | [Защита учетных записей глобального администратора Office 365](/Office365/Enterprise/protect-your-global-administrator-accounts) | Изменено |
 | 5/17/2019 | [Настройка синхронизации каталогов для Office 365](/Office365/Enterprise/set-up-directory-synchronization) | Изменено |
 | 5/17/2019 | [Имитация распределенной виртуальной сети в Azure](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | Изменено |
+
+
+## <a name="week-of-may-20-2019"></a>Неделя с 20 мая 2019 г.
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 5/20/2019 | [Модели удостоверений Office 365 и Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | Изменено |
+| 5/20/2019 | [Контрольный список планирования развертывания Office 365](/Office365/Enterprise/deployment-planning-checklist) | Изменено |
+| 5/20/2019 | [Планирование Office 365 корпоративный](/Office365/Enterprise/get-your-organization-ready-for-office-365) | Изменено |
+| 5/20/2019 | [Развертывание Office 365 корпоративный для организации](/Office365/Enterprise/setup-overview-for-enterprises) | Изменено |
+| 5/21/2019 | [Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | Изменено |
+| 5/21/2019 | Использование сетей доставки содержимого с SharePoint Online | удалены |
+| 5/22/2019 | [Обзор гибридной современной проверки подлинности и предварительные требования для их использования с локальными серверами Skype для бизнеса и Exchange](/Office365/Enterprise/hybrid-modern-auth-overview) | Изменено |
+| 5/22/2019 | Использование Azure AD для проверки подлинности на сервере SharePoint Server | удалены |
+
+
+## <a name="week-of-may-27-2019"></a>Неделя с 27 мая 2019 г.
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 5/28/2019 | [Office 365 корпоративный](/Office365/Enterprise/index) | Изменено |
+| 5/28/2019 | [Загрузка и запуск средства IdFix для Office 365](/Office365/Enterprise/install-and-run-idfix) | Изменено |
+| 5/28/2019 | [Инструменты для управления учетными записями Office 365](/Office365/Enterprise/manage-office-365-accounts) | Изменено |
+| 5/28/2019 | [Подготовка атрибутов каталога к синхронизации с Office 365 с помощью инструмента IdFix](/Office365/Enterprise/prepare-directory-attributes-for-synch-with-idfix) | Изменено |
+| 5/28/2019 | [Подготовка к синхронизации каталогов в Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | Изменено |
+| 5/28/2019 | [Инструменты для управления учетными записями Office 365](/Office365/Enterprise/tools-to-manage-office-365-accounts) | Изменено |
+| 5/28/2019 | [Конечные точки DoD Office 365 для государственных учреждений (США)](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Изменено |
+| 5/28/2019 | [Office 365 США для государственных организаций GCC High](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Изменено |
+| 5/28/2019 | [Диапазоны IP-адресов и URL-адреса Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Изменено |
+| 5/29/2019 | [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | Изменено |
+| 5/29/2019 | [Планирование обновления с серверов и клиентов Office 2007 или 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | Изменено |
+| 5/29/2019 | [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Изменено |
+| 5/30/2019 | [Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | Изменено |
