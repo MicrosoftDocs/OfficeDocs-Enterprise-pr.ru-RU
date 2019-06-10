@@ -21,16 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2010, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: de5c3f8d3e8cc86a2b53d175725e21f764f20df7
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: 4c0c5101a7d1dbd068fe4bbbd03eb1bdd41b3b05
+ms.sourcegitcommit: c9922eda48f5f533e828ba4cd23adecbfc32223d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704089"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34780868"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 
-На сервере Exchange 2010 будет достигнут конец поддержки **14 января 2020 г**. Другие продукты и службы Office 2010 будут обращаться к окончанию поддержки **13 октября 2020 г**. При планировании обновления это отличное время для перехода на Office 365. 
+Сервер Exchange Server 2010 достиг конца поддержки **14 января 2020 г**. Для Office 2010, SharePoint 2010 и Project Server 2010 достигнут конец поддержки **13 октября 2020 г**. При планировании обновления это отличное время для перехода на Office 365. 
 
 В Office 365 есть облачные службы для Office 2010 Server Products, такие как Exchange Server и SharePoint Server, а также новые службы, такие как teams и OneDrive для бизнеса. 
 
