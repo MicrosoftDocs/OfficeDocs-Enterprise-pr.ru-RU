@@ -20,8 +20,8 @@
 ### [Подписки, лицензии и клиенты](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 
 ### Планирование сети
-#### [Сетевое подключение к Office 365](network-connectivity.md)
-#### [Планирование сетевых устройств, подключающихся к службам Office 365](plan-for-network-devices.md)
+#### [Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
+#### [Планирование сетевых устройств, подключающихся к службам Office 365](plan-for-network-devices.md)
 #### [Планирование сети и миграции в Office 365](network-and-migration-planning.md)
 
 ### Планирование удостоверений
@@ -92,8 +92,8 @@
 ### [Обзор возможности сетевого подключения к Office 365](office-365-networking-overview.md)
 ### [Принципы сетевого подключения к Office 365](office-365-network-connectivity-principles.md)
 ### [Планирование сети и настройка производительности для Office 365](network-planning-and-performance.md)
-### [Сетевое подключение к Office 365](network-connectivity.md)
-### [Партнерская программа Office 365 для поставщиков сетевых устройств и служб](office-365-networking-partner-program.md)
+### [Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
+### [Партнерская программа Office 365 для поставщиков сетевых устройств и служб](office-365-networking-partner-program.md)
 ### URL- и IP-адреса для Office 365
 #### [Конечные точки Office 365](office-365-endpoints.md)
 #### [Управление конечными точками Office 365](managing-office-365-endpoints.md)
