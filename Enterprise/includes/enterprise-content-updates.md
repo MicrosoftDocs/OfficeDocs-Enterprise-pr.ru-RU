@@ -3,25 +3,6 @@
 
 
 
-## <a name="week-of-april-29-2019"></a>Неделя с 29 апреля 2019 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 30.04.2019 | [Как настроить локальное развертывание Skype для бизнеса для использования гибридной современной проверки подлинности](/Office365/Enterprise/configure-skype-for-business-for-hybrid-modern-authentication) | Изменено |
-| 30.04.2019 | [Проектирование сети для Microsoft Azure IaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | Изменено |
-| 30.04.2019 | [Обзор гибридной современной проверки подлинности и предварительные требования для их использования с локальными серверами Skype для бизнеса и Exchange](/Office365/Enterprise/hybrid-modern-auth-overview) | Изменено |
-| 30.04.2019 | [Мониторинг подключения к Office 365](/Office365/Enterprise/monitor-connectivity) | Изменено |
-| 30.04.2019 | [Конечные точки Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | Изменено |
-| 30.04.2019 | [Веб-служба IP-адресов и URL-адресов в Office 365](/Office365/Enterprise/office-365-ip-web-service) | Изменено |
-| 30.04.2019 | [Конечные точки DoD Office 365 для государственных учреждений (США)](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Изменено |
-| 30.04.2019 | [Office 365 США для государственных организаций GCC High](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Изменено |
-| 30.04.2019 | [Маршрутизация с использованием ExpressRoute для Office 365](/Office365/Enterprise/routing-with-expressroute) | Изменено |
-| 30.04.2019 | [Диапазоны IP-адресов и URL-адреса Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Изменено |
-| 30.04.2019 | [Использование Azure AD для проверки подлинности на сервере SharePoint Server](/Office365/Enterprise/using-azure-ad-for-sharepoint-server-authentication) | Изменено |
-| 5/1/2019 | [Веб-служба IP-адресов и URL-адресов в Office 365](/Office365/Enterprise/office-365-ip-web-service) | Изменено |
-
-
 ## <a name="week-of-may-06-2019"></a>Неделя в 06 мая 2006 г., 2019
 
 
@@ -352,3 +333,34 @@
 | 5/29/2019 | [Планирование обновления с серверов и клиентов Office 2007 или 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | Изменено |
 | 5/29/2019 | [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Изменено |
 | 5/30/2019 | [Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | Изменено |
+
+
+## <a name="week-of-june-03-2019"></a>Неделя с 3 июня 2019 г.
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 6/4/2019 | [Поддержка клиентских приложений Office 365 — современная проверка подлинности](/Office365/Enterprise/office-365-client-support-modern-authentication) | Изменено |
+| 6/4/2019 | [Конечные точки DoD Office 365 для государственных учреждений (США)](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Изменено |
+| 6/4/2019 | [Office 365 США для государственных организаций GCC High](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Изменено |
+| 6/4/2019 | [Планирование обновления с серверов и клиентов Office 2007 или 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | Изменено |
+| 6/4/2019 | [План конечной поддержки Project Server 2010](/Office365/Enterprise/project-server-2010-end-of-support) | Изменено |
+| 6/4/2019 | [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Изменено |
+| 6/4/2019 | [Обновление с SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | Изменено |
+| 6/5/2019 | [Azure ExpressRoute для Office 365](/Office365/Enterprise/azure-expressroute) | Изменено |
+| 6/5/2019 | [Использование сообществ BGP в ExpressRoute для сценариев Office 365](/Office365/Enterprise/bgp-communities-in-expressroute) | Изменено |
+| 6/5/2019 | [Подключение клиентских компьютеров](/Office365/Enterprise/client-connectivity) | Изменено |
+| 6/5/2019 | [Сети доставки содержимого](/Office365/Enterprise/content-delivery-networks) | Изменено |
+| 6/5/2019 | [Реализация ExpressRoute для Office 365](/Office365/Enterprise/implementing-expressroute) | Изменено |
+| 6/5/2019 | [Планирование сети при использовании ExpressRoute для Office 365](/Office365/Enterprise/network-planning-with-expressroute) | Изменено |
+| 6/5/2019 | [Веб-служба IP-адресов и URL-адресов в Office 365](/Office365/Enterprise/office-365-ip-web-service) | Изменено |
+| 6/5/2019 | [Принципы сетевого подключения к Office 365](/Office365/Enterprise/office-365-network-connectivity-principles) | Изменено |
+| 6/5/2019 | [Обзор сетевого подключения Office 365](/Office365/Enterprise/office-365-networking-overview) | Изменено |
+| 6/5/2019 | [Планирование сетевых устройств, подключающихся к службам Office 365](/Office365/Enterprise/plan-for-network-devices) | Изменено |
+| 6/5/2019 | [Маршрутизация с использованием ExpressRoute для Office 365](/Office365/Enterprise/routing-with-expressroute) | Изменено |
+| 6/5/2019 | [Настройка сети для Office 365](/Office365/Enterprise/set-up-network-for-office-365) | Изменено |
+| 6/5/2019 | [Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Изменено |
+| 6/5/2019 | [Advanced eDiscovery для среды разработки и тестирования Office 365](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | Изменено |
+| 6/7/2019 | [Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Изменено |
+| 6/7/2019 | [План конечной поддержки Project Server 2010](/Office365/Enterprise/project-server-2010-end-of-support) | Изменено |
+| 6/7/2019 | [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Изменено |
