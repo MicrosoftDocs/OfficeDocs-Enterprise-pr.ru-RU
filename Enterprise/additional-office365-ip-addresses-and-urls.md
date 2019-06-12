@@ -3,7 +3,7 @@ title: Дополнительные конечные точки не включ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/05/2019
+ms.date: 06/11/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: Сводка. В новой веб-службе конечных точек отсутствует небольшое количество конечных точек для определенных сценариев.
 hideEdit: true
-ms.openlocfilehash: 05bb48efef57785b75d302fd12294b7fb7062862
-ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
+ms.openlocfilehash: 01d0acfd832df47dd5cabd95b7b8137dd76ab049
+ms.sourcegitcommit: 37c29ded24f999fc5f41f5aae284238b25eb83f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726245"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857362"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365
 
@@ -61,7 +61,9 @@ ms.locfileid: "34726245"
 | 15  |  **Полные доменные имена Microsoft Teams** <br> Если вы используете Internet Explorer или Microsoft Edge, вам нужно разрешить основные и сторонние файлы cookie, а также добавить полные доменные имена Teams в список надежных сайтов (в дополнение к полным доменным именам для всего набора, CDN и телеметрии, перечисленной в строке 14). Дополнительные сведения см. в статье [Известные проблемы Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Надежные сайты |
 | 16  |  **Полные доменные имена SharePoint Online и OneDrive для бизнеса** <br> Для функционирования все полные доменные имена ". sharepoint.com", имеющие в имени "\<клиент>", должны находиться в зоне надежных сайтов IE или Microsoft Edge вашего клиента. Эти конечные точки необходимо добавить в дополнение к полным доменным именам для всего набора, CDN и телеметрии, перечисленным в строке 14. |  | Надежные сайты |
 | 17  | **Yammer**  <br> Приложение Yammer доступно только в браузере и требует, чтобы авторизованный пользователь проходил через прокси-сервер. Для функционирования все полные доменные имена приложения Yammer должны находиться в зоне надежных сайтов IE или Microsoft Edge вашего клиента. |  | Надежные сайты |
-| 18  | Используйте [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) для синхронизации учетных записей пользователей с Azure AD. | См. статьи [Порты и протоколы, необходимые для гибридной идентификации](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) и [Устранение неполадок подключения Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity), а также раздел [Исходящие подключения к конечным точкам службы Azure](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Только исходящий серверный трафик |
+| 18  | Используйте [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) для синхронизации учетных записей пользователей с Azure AD. | См. статьи [Порты и протоколы, необходимые для гибридной идентификации](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Устранение неполадок подключения Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) и [Установка агента Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Только исходящий серверный трафик |
+| 19  | Microsoft Stream (требуется маркер пользователя Azure AD). <BR> Office 365 Worldwide (включая GCC) | *.cloudapp.net <BR> *.api.microsoftstream.com <BR> *.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP-порт 443  | Входящий серверный трафик |
+|||||
 
 ## <a name="related-topics"></a>Статьи по теме
 
