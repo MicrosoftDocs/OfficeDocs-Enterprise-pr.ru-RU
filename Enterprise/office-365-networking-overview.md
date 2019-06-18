@@ -3,7 +3,7 @@ title: Обзор сетевого подключения Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/12/2018
+ms.date: 6/5/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Сведения о том, почему оптимизация сети важна для служб SaaS, цели Office 365 в сети, а также от того, как SaaS требуется разная сеть от других рабочих нагрузок.
-ms.openlocfilehash: 88fde9a142b5394b642a46c19da6979c93fe8f9e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e1ae446d7a69d0fab83e7dd4aa253bd1120e6c08
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069625"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017289"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Обзор сетевого подключения Office 365
 
@@ -94,18 +94,26 @@ Office 365 разработана для обеспечения оптималь
 
 [Принципы сетевого подключения к Office 365](office-365-network-connectivity-principles.md)
 
-[Веб-служба IP-адресов и URL-адресов в Office 365](office-365-ip-web-service.md)
-
 [Управление конечными точками Office 365](managing-office-365-endpoints.md)
 
+[Диапазоны IP-адресов и URL-адреса Office 365](urls-and-ip-address-ranges.md)
+
 [Веб-служба IP-адресов и URL-адресов в Office 365](office-365-ip-web-service.md)
 
-[Сетевое подключение к Office 365](network-connectivity.md)
+[Оценка сетевого подключения Office 365](assessing-network-connectivity.md)
 
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)
+
+[Оценка сетевого подключения Office 365](assessing-network-connectivity.md)
 
 [Настройка производительности Office 365 с помощью базовых показателей и журнала производительности](performance-tuning-using-baselines-and-history.md)
 
 [План устранения проблем с производительностью Office 365](performance-troubleshooting-plan.md)
 
+[Сети доставки содержимого](content-delivery-networks.md)
+
+[Средство входящей миграции в сети Office 365](https://aka.ms/netonboard)
+
 [Как корпорация Майкрософт создает свою быструю и надежную глобальную сеть](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+
+[Блог сети Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
