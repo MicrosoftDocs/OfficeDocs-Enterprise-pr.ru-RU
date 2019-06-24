@@ -50,7 +50,7 @@
 ## Гибридная современная проверка подлинности
 ### [Обязательные требования к Skype для бизнеса Server и Exchange Server](hybrid-modern-auth-overview.md)
 ### [Настройка Exchange Server](configure-exchange-server-for-hybrid-modern-authentication.md)
-### [Настройка Skype для бизнеса](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
+### [Настройка Skype для бизнеса](configure-skype-for-business-for-hybrid-modern-authentication.md)
 ### [Удаление или отключение Skype для бизнеса и Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
 
 ## Клиенты и серверы Office
