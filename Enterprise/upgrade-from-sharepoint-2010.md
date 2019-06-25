@@ -15,16 +15,16 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: Прекращение поддержки для SharePoint 2010 и SharePoint Server 2010 заканчивается 13 октября 2020 г. Используйте эту статью в качестве руководства по обновлению до SharePoint Online или более новой версии SharePoint Server в локальной среде.
-ms.openlocfilehash: 58e642a0a38dac1d140487716ab3e46b6fafd53f
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: d2114baf03d19c6be818139a08ed93ff3b64f664
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704160"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203618"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Обновление с SharePoint 2010
 
-Microsoft SharePoint 2010 и SharePoint Server 2010 достигают конца поддержки до **13 октября 2020 г**. В этой статье описываются ресурсы, которые помогут пользователям перенести существующие данные SharePoint Server 2010 в SharePoint Online или обновить локальную среду SharePoint Server 2010.
+Microsoft SharePoint 2010 и SharePoint Server 2010 достигают конца поддержки до **13 октября 2020 г**. В этой статье описываются ресурсы, которые помогут вам перенести существующие данные SharePoint Server 2010 в SharePoint Online в Office 365 или обновить локальную среду SharePoint Server 2010.
   
 ## <a name="what-is-end-of-support"></a>Что представляет собой конец поддержки?
 
@@ -74,7 +74,7 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
     
 - Выполните оба указанных выше действия.
     
-- Реализация гибридного решения [SharePoint](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) 
+- Реализация гибридного решения [SharePoint](https://docs.microsoft.com/sharepoint/hybrid/hybrid) 
     
 Следует учитывать скрытые затраты, связанные с обслуживанием фермы серверов для пересылки, обслуживания и переноса настроек, а также обновления оборудования, от которого зависит SharePoint Server. Если вы осведомлены о том, что у вас есть учетная запись для всех этих задач, вы сможете упростить обновление локальной системы. В противном случае, если вы выполняете ферму на старых серверах SharePoint без высокой настройки, вы можете воспользоваться плановой миграцией в SharePoint Online. Кроме того, возможно, что для локальной среды SharePoint Server вы можете попытаться поместить некоторые данные в SharePoint Online, чтобы снизить объем управления аппаратным обеспечением, в рамках которого все данные в локальной среде используются. Перемещение некоторых данных в SharePoint Online может оказаться более экономичным.
   

@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: Сводка. С помощью Azure вы можете создать среду аварийного восстановления для локальной фермы SharePoint. В этой статье описываются разработка и реализация этого решения.
-ms.openlocfilehash: a302f86e97cd7b61236a92f51a043258882991f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070445"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203648"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Аварийное восстановление SharePoint Server 2013 в Microsoft Azure
 
@@ -36,34 +36,6 @@ ms.locfileid: "34070445"
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
-В этой статье
-  
-- [Использование служб инфраструктуры Azure для аварийного восстановления](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#AZ)
-    
-- [Описание решения](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#SOL)
-    
-- [Подробная архитектура](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#arch)
-    
-- [Схема аварийного восстановления](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#RDmap)
-    
-- [Этап 1. Разработка среды аварийного восстановления](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase1)
-    
-- [Этап 2. Создание виртуальной сети Azure и VPN-подключения](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase2)
-    
-- [Этап 3. Развертывание Active Directory и служб доменных имен в виртуальной сети Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase3)
-    
-- [Этап 4. Развертывание фермы восстановления SharePoint в Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase4)
-    
-- [Этап 5. Настройка DFSR между фермами](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase5)
-    
-- [Этап 6. Настройка доставки журналов в ферму восстановления](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase6)
-    
-- [Этап 7. Проверка отработки отказа и восстановления](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase7)
-    
-- [Экспериментальная среда Майкрософт](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#POC)
-    
-- [Советы по устранению неполадок](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
-    
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>Использование служб инфраструктуры Azure для аварийного восстановления
 
 Во многих организациях нет среды аварийного восстановления для SharePoint, создание и поддержка которой в локальной организации может требовать значительных затрат. Службы инфраструктуры Azure предоставляют удобные способы создания сред аварийного восстановления с большей гибкостью и меньшими затратами, чем в локальной организации.
@@ -297,7 +269,7 @@ ms.locfileid: "34070445"
   
 **Рисунок. Гибридная конфигурация домена Active Directory**
 
-![Две виртуальные машины, развернутые в виртуальной сети Azure и подсети фермы SharePoint — это реплики контроллеров домена и DNS-серверы](media/AZarch-HyADdomainConfig.png)
+![Две виртуальные машины, развернутые в виртуальной сети Azure, и подсеть фермы SharePoint — это реплики контроллеров домена и DNS-серверы.](media/AZarch-HyADdomainConfig.png)
   
 На этом рисунке в одной подсети развертываются две виртуальные машины. На каждой из этих виртуальных машин размещаются две роли: Active Directory и DNS.
   
@@ -476,7 +448,7 @@ restore database WSS_Content with recovery
   
 Как правило, при настройке балансировки сетевой нагрузки кластеру назначается один IP-адрес. Затем необходимо создать у поставщика DNS для вашей сети запись узла DNS, которая указывает на кластер (для нашего проекта мы поместили DNS-сервер в Azure для повышения отказоустойчивости в случае сбоя локального центра обработки данных). Например, вы можете создать в диспетчере DNS службы Active Directory запись DNS с именем  `http://sharepoint.contoso.com`, которая указывает на IP-адрес кластера с балансировкой нагрузки.
   
-Для внешнего доступа к ферме SharePoint можно создать запись узла на внешнем DNS-сервере с тем же URL-АДРЕСом, который клиенты используют в вашей интрасети (например `http://sharepoint.contoso.com`,), который указывает на внешний IP-адрес в брандмауэре. (При использовании этого примера лучше всего настроить разделенный DNS, чтобы внутренний DNS-сервер был полномочным для `contoso.com` маршрутизации и направляет запросы непосредственно в кластер фермы SharePoint вместо МАРШРУТИЗАЦИИ DNS-запросов на внешний DNS-сервер.) Затем можно сопоставить внешний IP-адрес с внутренним IP-адресом локального кластера, чтобы клиенты могли найти нужные вам ресурсы.
+Для внешнего доступа к ферме SharePoint можно создать запись узла на внешнем DNS-сервере с тем же URL-адресом, который клиенты используют в вашей интрасети (например `http://sharepoint.contoso.com`,), который указывает на внешний IP-адрес в брандмауэре. (При использовании этого примера лучше всего настроить разделенный DNS, чтобы внутренний DNS-сервер был полномочным для `contoso.com` маршрутизации и направляет запросы непосредственно в кластер фермы SharePoint вместо маршрутизации DNS-запросов на внешний DNS-сервер.) Затем можно сопоставить внешний IP-адрес с внутренним IP-адресом локального кластера, чтобы клиенты могли найти нужные вам ресурсы.
   
 После этого может возникнуть один из описанных ниже сценариев аварийного восстановления.
   

@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Узнайте, как Office 365 современная проверка подлинности работает по-разному для клиентских приложений Office 2013 и 2016.
-ms.openlocfilehash: 80a5f557fc1f3d189e8852ac3039521cfc31fb2c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 25646c014fc9ff11926c0091209a3419fad811d6
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070065"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203628"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Современная проверка подлинности в клиентских приложениях Office 2013 и Office 2016
 
@@ -61,6 +61,7 @@ ms.locfileid: "34070065"
     
 - [Skype для бизнеса Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
+<a name="BK_EchangeOnline"> </a>
 ### <a name="exchange-online"></a>Exchange Online
 
 В следующей таблице описывается поведение проверки подлинности для клиентских приложений Office 2013 или Office 2016 при подключении к Exchange Online с помощью или без современного режима проверки подлинности.
@@ -73,8 +74,8 @@ ms.locfileid: "34070065"
 |Office 2013  <br/> |Нет  <br/> |Нет  <br/> |Обычная проверка подлинности  <br/> |Обычная проверка подлинности  <br/> |
 |Office 2013  <br/> |Да, Енаблеадал = 1  <br/> |Да  <br/> |Сначала выполняется попытка современной проверки подлинности. Если сервер отказывается от современного подключения проверки подлинности, используется обычная проверка подлинности. Сервер отказывает современные проверки подлинности, когда клиент не включен.  <br/> |Сначала выполняется попытка современной проверки подлинности. Если сервер отказывается от современного подключения проверки подлинности, используется обычная проверка подлинности. Сервер отказывает современные проверки подлинности, когда клиент не включен.  <br/> |
    
-### <a name="sharepoint-online"></a>SharePoint Online
 <a name="BK_SharePointOnline"> </a>
+### <a name="sharepoint-online"></a>SharePoint Online
 
 В следующей таблице описывается поведение проверки подлинности для клиентских приложений Office 2013 или Office 2016 при подключении к SharePoint Online с помощью или без современного режима проверки подлинности.
   

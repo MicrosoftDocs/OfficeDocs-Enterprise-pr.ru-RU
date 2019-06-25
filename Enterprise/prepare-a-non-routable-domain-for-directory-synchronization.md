@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Сведения о том, что делать, если у вас нет домена раутале, связанного с локальными пользователями, прежде чем выполнять синхронизацию с Office 365.
-ms.openlocfilehash: 15ab67212ec1ea6ca7665bb5a4b0748f7d85adb5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf7b901c3aaf6f49e4ecd92d27b9a6d9b8951d40
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071085"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203638"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Подготовка домена, не поддерживающего маршрутизацию, для синхронизации службы каталогов
 При синхронизации локального каталога с Office 365 необходимо иметь проверенный домен в Azure Active Directory. Синхронизируются только имена участников-пользователей (UPN), связанные с локальным доменом. Тем не менее, любой UPN, который содержит домен без маршрутизации, например, Local (например, Билла @ contoso. local), будет синхронизирован с доменом onmicrosoft.com (например, billa@contoso.onmicrosoft.com). 
@@ -40,7 +40,7 @@ Azure AD Connect синхронизирует UPN и пароль пользов
   
 ### <a name="change-your-primary-domain"></a>**Изменение основного домена**
 
-Замените основной домен на домен, проверенный в Office 365, например contoso.com. После этого все пользователи с доменом contoso. local обновляются до contoso.com. Инструкции [о том, как работает переименование домена](https://go.microsoft.com/fwlink/p/?LinkId=624174). Это очень сложный процесс, но проще всего [Добавить суффиксы UPN и обновить пользователей на них](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register), как показано в следующем разделе.
+Замените основной домен на домен, проверенный в Office 365, например contoso.com. После этого все пользователи с доменом contoso. local обновляются до contoso.com. Инструкции [о том, как работает переименование домена](https://go.microsoft.com/fwlink/p/?LinkId=624174). Тем не менее, это очень сложный процесс, и более простое решение описано в следующем разделе.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**Добавление суффиксов UPN и обновление пользователей**
 
@@ -84,8 +84,7 @@ Azure AD Connect синхронизирует UPN и пароль пользов
   
 4. Выполните указанные ниже действия для каждого пользователя.
     
-    Кроме того, можно выполнить массовое обновление суффиксов имени участника-пользователя [, но вы также можете использовать Windows PowerShell для изменения суффикса имени участника-пользователя для всех пользователей](prepare-a-non-routable-domain-for-directory-synchronization.md#BK_Posh).
-    
+   
 ### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**Вы также можете использовать Windows PowerShell для изменения суффикса имени участника-пользователя для всех пользователей**
 
 Если у вас много пользователей для обновления, проще использовать Windows PowerShell. В следующем примере командлеты [Get – ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) и [Set – ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) используются для изменения всех суффиксов contoso. local на contoso.com. 
