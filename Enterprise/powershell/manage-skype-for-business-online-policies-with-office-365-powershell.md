@@ -3,7 +3,7 @@ title: Управление политиками Skype для бизнеса Onl
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 06/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: Сводка.PowerShell в Office 365 позволяет управлять свойствами учетной записи пользователя Skype для бизнеса Online с политиками.
-ms.openlocfilehash: 853d70a008a3e42c6fa1175a52cadab815a46dfe
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f19e262947b40b3e61dc8376b8e2e9c8ec984ff7
+ms.sourcegitcommit: c115a3554647167e3770dda6b69dbf5c5de11ed7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068845"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253689"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell
 
@@ -84,15 +84,14 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 Эта команда находит политику, назначенную пользователю, а затем находит возможности, которые включены или отключены в этой политике.
   
-Учтите, что командлеты для создания или изменения политик отсутствуют. Вы должны использовать политики, входящие в состав Office 365:. Чтобы просмотреть доступные политики, воспользуйтесь перечисленными ниже командами.
-  
-- Get-CsClientPolicy       
-- Get-CsConferencingPolicy        
-- Get-CsDialPlan            
-- Get-CsExternalAccessPolicy                         
-- Get-CsHostedVoicemailPolicy                        
-- Get-CsPresencePolicy                               
-- Get-CsVoicePolicy                                  
+Для управления политиками Skype для бизнеса Online с помощью PowerShell обратитесь к командлетам для:
+
+- [Client policy](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets) (Политика клиента).
+- [Политика конференц-связи](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets),
+- [Политика для мобильных устройств](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [Политика сетевой голосовой почты](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [Политика маршрутизации голосовой связи](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+
 
 > [!NOTE]
 > Абонентская группа Skype для бизнеса Online  это политика во всех отношениях, кроме имени. Название "абонентская группа" выбрано вместо других названий (скажем, "политика набора") для обеспечения обратной совместимости с Office Communications Server и Exchange. 
