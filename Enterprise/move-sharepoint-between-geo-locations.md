@@ -1,5 +1,5 @@
 ---
-title: Перемещение сайта SharePoint в другой геообъект (предварительная версия)
+title: Перемещение сайта SharePoint в другой геообъект
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -9,16 +9,16 @@ ms.service: o365-solutions
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения о перемещении сайта SharePoint в другой геообъект.
-ms.openlocfilehash: 74a1ccf7dcfa60d74135211d7b74a2e7096d09b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f1837942a72881578930f94ad8c4b57dbdb0c649
+ms.sourcegitcommit: 59c250b5f62e72fb51fd0b80d2be636ee8078f6b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070115"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35422378"
 ---
-# <a name="move-a-sharepoint-site-to-a-different-geo-location-preview"></a>Перемещение сайта SharePoint в другой геообъект (предварительная версия)
+# <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Перемещение сайта SharePoint в другой геообъект
 
-С помощью функции перемещения географического расположения сайта SharePoint можно перемещать сайты SharePoint в другие геообъекты в среде с поддержкой нескольких регионов. В настоящее время эта функция находится на стадии бета-тестирования.
+С помощью функции перемещения географического расположения сайта SharePoint можно перемещать сайты SharePoint в другие геообъекты в среде с поддержкой нескольких регионов.
 
 Следующие типы сайтов можно перемещать между геообъектами:
 
@@ -95,11 +95,11 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 По умолчанию исходный URL-адрес для сайта изменяется на URL-адрес целевого географического расположения. Пример:
 
-https://Contoso.sharepoint.com/sites/projectx меняется на https://Contoso.sharepointEUR.com/sites/projectx
+https://Contoso.sharepoint.com/sites/projectx меняется на https://ContosoEUR.sharepoint.com/sites/projectx
 
 Сайты, не связанные с группой Office 365, также можно переименовать с помощью параметра `-DestinationUrl`. Пример:
 
-https://Contoso.sharepoint.com/sites/projectx меняется на https://Contoso.sharepointEUR.com/sites/projecty
+https://Contoso.sharepoint.com/sites/projectx меняется на https://ContosoEUR.sharepoint.com/sites/projecty
 
 Чтобы начать перемещение сайта, выполните такую команду:
 
