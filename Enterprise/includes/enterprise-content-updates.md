@@ -3,21 +3,6 @@
 
 
 
-## <a name="week-of-may-20-2019"></a>Неделя с 20 мая 2019 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 5/20/2019 | [Модели удостоверений Office 365 и Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | Изменено |
-| 5/20/2019 | [Контрольный список планирования развертывания Office 365](/Office365/Enterprise/deployment-planning-checklist) | Изменено |
-| 5/20/2019 | [Планирование Office 365 корпоративный](/Office365/Enterprise/get-your-organization-ready-for-office-365) | Изменено |
-| 5/20/2019 | [Развертывание Office 365 корпоративный для организации](/Office365/Enterprise/setup-overview-for-enterprises) | Изменено |
-| 5/21/2019 | [Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | Изменено |
-| 5/21/2019 | Использование сетей доставки содержимого с SharePoint Online | удалены |
-| 5/22/2019 | [Обзор гибридной современной проверки подлинности и предварительные требования для их использования с локальными серверами Skype для бизнеса и Exchange](/Office365/Enterprise/hybrid-modern-auth-overview) | Изменено |
-| 5/22/2019 | Использование Azure AD для проверки подлинности на сервере SharePoint Server | удалены |
-
-
 ## <a name="week-of-may-27-2019"></a>Неделя с 27 мая 2019 г.
 
 
@@ -92,3 +77,26 @@
 | 6/17/2019 | [Использование сети доставки содержимого Office 365 с SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | Изменено |
 | 6/19/2019 | [Office 365 с поддержкой нескольких регионов](/Office365/Enterprise/office-365-multi-geo) | Изменено |
 | 6/21/2019 | [План конечной поддержки Project Server 2010](/Office365/Enterprise/project-server-2010-end-of-support) | Изменено |
+
+
+## <a name="week-of-june-24-2019"></a>Неделя с 24 июня 2019 г.
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 6/24/2019 | [Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Изменено |
+| 6/24/2019 | [Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | Изменено |
+| 6/24/2019 | [Подготовка домена, не поддерживающего маршрутизацию, для синхронизации службы каталогов](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | Изменено |
+| 6/24/2019 | [Восстановление удаленных элементов в почтовом ящике пользователя — справка для администраторов](/Office365/Enterprise/recover-deleted-items-in-a-mailbox) | Изменено |
+| 6/24/2019 | [Аварийное восстановление SharePoint Server 2013 в Microsoft Azure](/Office365/Enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure) | Изменено |
+| 6/24/2019 | [Обновление с SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | Изменено |
+| 6/26/2019 | [Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | Изменено |
+| 6/26/2019 | [Подготовка к синхронизации каталогов в Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | Изменено |
+| 6/26/2019 | [Настройка производительности SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | Изменено |
+| 6/28/2019 | [Конечные точки Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | Изменено |
+| 6/28/2019 | [Конечные точки DoD Office 365 для государственных учреждений (США)](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Изменено |
+| 6/28/2019 | [Office 365 США для государственных организаций GCC High](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Изменено |
+| 6/28/2019 | [URL-адреса и диапазоны IP-адресов для службы Office 365, предоставляемой компанией 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | Изменено |
+| 6/28/2019 | [Диапазоны IP-адресов и URL-адреса Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Изменено |
+| 6/28/2019 | [Перемещение основных данных в новые жеос центра обработки данных Office 365](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | Изменено |
+| 6/28/2019 | [Как запросить перемещение данных](/Office365/Enterprise/request-your-data-move) | Изменено |
