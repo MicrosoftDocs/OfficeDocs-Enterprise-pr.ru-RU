@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: Сводка. Узнайте основные принципы облачной архитектуры для удостоверений, безопасности, сети и гибридных решений Майкрософт. Ознакомьтесь с нормативными рекомендациями по защите файлов, удостоверений и устройств при использовании облака Майкрософт. Узнайте, как развернуть современную и безопасную настольную систему с Windows 10 и Office профессиональный плюс.
-ms.openlocfilehash: dfb6df46faacf6623a90ac5a4cf95d9512c31289
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: 7af74f254ffc73251188b23255a35f800b5503f6
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539334"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616891"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 
@@ -39,6 +39,7 @@ ms.locfileid: "34539334"
     - [Гибридное облако Майкрософт для корпоративных архитекторов](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Распространенные атаки и средства Майкрософт для защиты вашей организации](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     - [Базовая инфраструктура Microsoft 365 корпоративный](#m365foundationinfra)
+    - [Подходы в отношении архитектуры для переходов между клиентами в облаке Майкрософт](#architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations)
     
 - **[Серия "Корпоративные решения для Microsoft 365"](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**
     - [Microsoft Teams и связанные службы повышения производительности в Microsoft 365 для ИТ-архитекторов](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
@@ -87,7 +88,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 Сведения для ИТ-архитекторов о создании системы удостоверений для организаций, использующих облачные службы и платформы Майкрософт.
   
-|**Элемент**|**Описание**|
+|**Ресурс**|**Описание**|
 |:-----|:-----|
 |[![Эскиз модели идентификации в облаке Майкрософт](media/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| [Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Эта модель содержит: <ul><li>Общие сведения об удостоверениях в облаке Майкрософт </li><li>Возможности платформы IDaaS в Azure AD </li><li>Интеграция локальных учетных записей доменных служб Active Directory с Microsoft Azure Active Directory </li><li>Размещение компонентов каталога в Azure </li><li>Варианты доменных служб для рабочих нагрузок в службе Azure IaaS </li></ul><br/>|
    
@@ -96,7 +97,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 Сведения для ИТ-архитекторов о безопасности в облачных службах и платформах Майкрософт.
   
-|**Элемент**|**Описание**|
+|**Ресурс**|**Описание**|
 |:-----|:-----|
 |[![Эскиз модели безопасности в облаке Майкрософт](media/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Эта модель содержит: <ul><li>Роль корпорации Майкрософт в предоставлении безопасных служб и платформ.</li><li>Обязанности клиента по снижению угроз безопасности.</li><li>Лучшие варианты сертификации защиты. </li><li>Решения для обеспечения безопасности от консалтинговых служб Майкрософт. </ul><br/>|
    
@@ -105,7 +106,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 Сведения для ИТ-архитекторов о сетях для облачных служб и платформ Майкрософт.
   
-|**Элемент**|**Описание**|
+|**Ресурс**|**Описание**|
 |:-----|:-----|
 |[![Эскиз модели организации сети в облаке Майкрософт](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [Статья](https://technet.microsoft.com/library/mt733214.aspx) <br/>[Другие языки](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Эта модель содержит следующие страницы: <ul><li> **Развитие сети для подключения к облаку**. Миграция в облако изменяет объем и характер потоков трафика в корпоративной сети и за ее пределами. Кроме того, она влияет на способы противодействия угрозам безопасности.</li><li> **Стандартные элементы Майкрософт для подключения к облаку**. Интеграция сети с облаком Майкрософт обеспечивает оптимальный доступ к большому числу служб. </li><li> **ExpressRoute для подключения к облаку Майкрософт**. ExpressRoute обеспечивает закрытое, выделенное и скоростное сетевое подключение к облаку Майкрософт. </li><li> **Разработка сетей для Microsoft SaaS (Office 365, Microsoft Intune и Dynamics CRM Online)**. Оптимизация сетей для служб Microsoft SaaS требует тщательного анализа конъюнктуры сети Интернет, клиентских устройств и типичных ИТ-операций. </li><li> **Разработка сетей для Azure PaaS**. Оптимизация сетей для приложений Azure PaaS требует соответствующей пропускной способности и, при необходимости, распределения сетевого трафика по нескольким сайтам или приложениям. </li><li> **Разработка сетей для Azure IaaS**. Пошаговая инструкция по разработке эффективной виртуальной сети Azure для размещения серверных ИТ-задач, в том числе подсетей, пространств адресов, маршрутизации, балансировки нагрузки, а также подключения к локальной сети, другим виртуальным сетям и к Интернету. </li></ul><br/>  <br/>|
    
@@ -115,7 +116,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 Сведения для ИТ-архитекторов о гибридном облаке для служб и платформ Майкрософт.
   
-|**Элемент**|**Описание**|
+|**Ресурс**|**Описание**|
 |:-----|:-----|
 |[![Эскиз модели гибридного облака Майкрософт](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Статья](https://technet.microsoft.com/library/mt750500.aspx) <br/>[Другие языки](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Эта модель содержит следующие страницы: <ul><li> **Общие сведения о гибридном облаке**. Облачные предложения корпорации Майкрософт (SaaS, Azure PaaS и Azure IaaS) и их общие элементы. </li><li> **Архитектура сценариев гибридного облака корпорации Майкрософт**. Схема архитектуры гибридного облака для облачных предложений корпорации Майкрософт, на которой показаны общие слои локальных инфраструктуры, сети и удостоверений. </li><li> **Сценарии гибридного облака для Microsoft SaaS (Office 365)**. Архитектура гибридного сценария SaaS и описания ключевых гибридных конфигураций для Skype для бизнеса, SharePoint Server и Exchange Server. </li><li> **Сценарии гибридного облака для Azure PaaS**. Архитектура гибридного сценария Azure PaaS и описание вариантов применения гибридной среды Azure PaaS с примером и описанием базы данных SQL Server 2016 Stretch. </li><li> **Сценарии гибридного облака для Azure IaaS**. Архитектура гибридного сценария Azure IaaS и описание варианта применения бизнес-приложения, размещенного в Azure IaaS. </li></ul><br/>|
    
@@ -132,10 +133,16 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 Быстро ознакомьтесь с [базовой инфраструктурой](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) для Microsoft 365 корпоративный, чтобы приступить к развертыванию.
   
-|**Item**|**Описание**|
+|**Ресурс**|**Описание**|
 |:-----|:-----|
 |[![Эскиз плаката с базовой инфраструктурой Microsoft 365 корпоративный](media/Microsoft365EnterpriseFoundInfra-thumb.png)](http://aka.ms/m365efoundinfraposter) <br/> [Смотреть в Интернете](http://aka.ms/m365efoundinfraposter) \| [PDF-ФАЙЛ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | На этом плакате представлена сводка каждого этапа базовой инфраструктуры с точки зрения целей, функций и инструментов, решений разработки, результатов конфигурации, адаптации, а также текущего мониторинга и обновлений. <br/>| 
 
+### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Подходы в отношении архитектуры для переходов между клиентами в облаке Майкрософт 
+В этих статьях описано несколько подходов в отношении архитектуры для слияний, приобретений, отделений и других сценариев, которые могут привести к переходу на новый облачный клиент. В этих статьях приведены начальные инструкции по планированию.
+
+|**Ресурс**|**Описание**|
+|:-----|:-----|
+|[![Эскиз плаката логической архитектуры Teams](downloads/msft-tenant-to-tenant-migration-thumb.png)](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |Эта модель содержит: <ul><li>Сопоставление бизнес-сценариев для подходов в отношении архитектуры</li><li>Рекомендации по разработке</li><li>Поток миграции одного события</li><li>Поток поэтапной миграции</li><li>Поток перемещения или разделения клиента</li></ul>|
 
 <!--<a name="santa"></a>
 ### The Santa cloud
@@ -155,7 +162,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams и связанные службы повышения производительности в Microsoft 365 для ИТ-архитекторов
 Логическая архитектура служб повышения производительности в Microsoft 365, начиная с Microsoft Teams.
 
-|**Item**|**Описание**|
+|**Ресурс**|**Описание**|
 |:-----|:-----|
 |[![Эскиз плаката логической архитектуры Teams](downloads/msft-teams-logical-architecture-thumb.png)](downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)     |Корпорация Майкрософт предоставляет набор служб повышения производительности, которые взаимодействуют между собой, обеспечивая возможности совместной работы для управления данными, безопасности и соответствия требованиям. <br/> <br/>Этот набор иллюстраций демонстрирует логическую архитектуру служб повышения производительности для корпоративных архитекторов, начиная с Microsoft Teams.|
 
@@ -163,7 +170,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Группы в Microsoft 365 для ИТ-архитекторов
 Что следует знать ИТ-архитекторам о группах в Microsoft 365
 
-|**Item**|**Описание**|
+|**Ресурс**|**Описание**|
 |:-----|:-----|
 |[![Эскиз инфографики групп](downloads/msft-m365-groups-architecture-thumb.png)](downloads/msft-m365-groups.pdf) <br/> [PDF](downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) |На этих иллюстрациях подробно показаны разные типы групп, как они создаются и управляются, а также приводится несколько рекомендаций по управлению.|
 
@@ -173,7 +180,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 
 Рекомендуемые возможности для защиты удостоверений и устройств, имеющих доступ к Office 365 и отличных от SaaS-служб и локальных приложений, которые опубликованы с помощью прокси приложения Azure AD.
   
-|**Элемент**|**Описание**|
+|**Ресурс**|**Описание**|
 |:-----|:-----|
 |[![Плакат модели: защита идентификации и устройств в Office 365 и других приложениях SaaS](media/c1cfb31b-5150-45ff-b46c-3a237e9f5581.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=55032) <br/> |Важно, чтобы уровни защиты данных, удостоверений и устройств согласовывались между собой. В этом документе приводится сравнительная характеристика различных возможностей, а также предоставляются дополнительные сведения о возможностях защиты удостоверений и устройств.  <br/> |
    
@@ -182,7 +189,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 
 В случае рекомендуемых возможностей для защиты файлов в Office 365 используются три разных уровня конфиденциальности.
   
-|**Элемент**|**Описание**|
+|**Ресурс**|**Описание**|
 |:-----|:-----|
 |[![Эскиз мини-плаката "Решения по защите файлов в Office 365"](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320)  \| [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |Важно, чтобы уровни защиты данных, удостоверений и устройств согласовывались между собой. В этом документе приводится сравнительная характеристика различных возможностей, а также предоставляются дополнительные сведения о возможностях защиты файлов в Office 365.  <br/> |
    
@@ -221,7 +228,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 
 Что ИТ-архитекторам нужно знать о развертывании обновлений для Office 365 профессиональный плюс в Windows 10 и управлении ими.
   
-|**Элемент**|**Описание**|
+|**Ресурс**|**Описание**|
 |:-----|:-----|
 |[![Эскиз модели развертывания современной и безопасной настольной системы с помощью Майкрософт](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](http://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](http://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Эта модель содержит: <ul><li>  Развертывание Windows 10 и Office профессиональный плюс из облака Майкрософт </li><li>  Развертывание Windows 10 и Office профессиональный плюс с помощью System Center Configuration Manager </li><li>  Управление обновлениями для Windows 10 и Office профессиональный плюс из облака Майкрософт </li><li>  Управление обновлениями для Windows 10 и Office профессиональный плюс с помощью System Center Configuration Manager </li><li>  Встроенные и дополнительные механизмы защиты Windows 10 </li></ul><br/> |
    
