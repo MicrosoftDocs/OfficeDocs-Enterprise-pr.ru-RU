@@ -1,7 +1,7 @@
 ---
 title: Общие сведения о настройке производительности для SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/22/2018
 audience: Admin
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: В этой статье описываются конкретные аспекты, которые необходимо учитывать при проектировании страниц для достижения оптимальной производительности в SharePoint Online.
-ms.openlocfilehash: 4743364f6e8a1e84800085d0875abad84491780b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d0dc4d6eac1a8711d1c93b97eccbf5474092d3af
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067215"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616682"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Общие сведения о настройке производительности для SharePoint Online
 
@@ -106,7 +106,7 @@ SharePoint Online
   
 ### <a name="network-connection"></a>Подключение к сети 
 
-Если локальная среда SharePoint не использует ГЛОБАЛЬную сеть, вы можете использовать высокоскоростное подключение между центром обработки данных и конечными пользователями. Как правило, управление с точки зрения сети упрощается.
+Если локальная среда SharePoint не использует глобальную сеть, вы можете использовать высокоскоростное подключение между центром обработки данных и конечными пользователями. Как правило, управление с точки зрения сети упрощается.
   
 В SharePoint Online можно рассмотреть еще несколько факторов. Например:
   
@@ -114,7 +114,7 @@ SharePoint Online
     
 - Интернет
     
-- ПОСТАВЩИК услуг Интернета
+- Поставщик услуг Интернета
     
 Независимо от того, какая версия SharePoint (и какая сеть используется), то, что обычно вызывает загрузку сети, не зависит от следующих факторов:
   

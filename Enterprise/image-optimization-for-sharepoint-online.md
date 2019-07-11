@@ -1,7 +1,7 @@
 ---
 title: Оптимизация изображений для SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/19/2018
 audience: Admin
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Узнайте, как использовать представления и спрайты для улучшения производительности изображений на веб-сайтах SharePoint Online.
-ms.openlocfilehash: b1210146aa3efb042937abeece4df0e62a579b94
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e82cde7cd45ac1cf6f416b1b26ff97f2ab588f1a
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067375"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616722"
 ---
 # <a name="image-optimization-for-sharepoint-online"></a>Оптимизация изображений для SharePoint Online
 

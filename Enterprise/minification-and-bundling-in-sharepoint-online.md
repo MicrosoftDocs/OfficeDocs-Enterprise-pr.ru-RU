@@ -1,7 +1,7 @@
 ---
 title: Минификация и объединение в SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 3/1/2017
 audience: Admin
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: В этой статье описывается, как использовать минификации и объединение технологий с помощью веб-компонентов Web Essentials для уменьшения количества HTTP-запросов и сокращения времени, необходимого для загрузки страниц в SharePoint Online.
-ms.openlocfilehash: d73bc6cc86ea1ea4ecba5395f22a20befdc64b13
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 823011894019e9602d949f1301994d79dc209664
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070265"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616852"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Минификация и объединение в SharePoint Online
 
@@ -49,7 +49,7 @@ ms.locfileid: "34070265"
   
 1. В обозревателе решений Visual Studio выберите файлы, которые нужно включить в пакет.
     
-2. Щелкните правой кнопкой мыши выбранные файлы, а затем **** \> в контекстном меню выберите команду **создать файл пакета JavaScript** . Примеры: 
+2. Щелкните правой кнопкой мыши выбранные файлы, а затем **** \> в контекстном меню выберите команду **создать файл пакета JavaScript** . Пример: 
     
     ![Снимок экрана: параметры меню Web Essentials](media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -85,7 +85,7 @@ ms.locfileid: "34070265"
   
 1. В обозревателе решений Visual Studio выберите файлы, которые нужно включить в пакет.
     
-2. Щелкните правой кнопкой мыши выбранные файлы, а затем в контекстном меню выберите команду **создать спрайт изображения** **Web Essentials** \> . Примеры: 
+2. Щелкните правой кнопкой мыши выбранные файлы, а затем в контекстном меню выберите команду **создать спрайт изображения** **Web Essentials** \> . Пример: 
     
     ![Снимок экрана: как создать спрайт изображения](media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

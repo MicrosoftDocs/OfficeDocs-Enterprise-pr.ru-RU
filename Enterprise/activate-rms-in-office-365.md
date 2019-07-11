@@ -1,5 +1,5 @@
 ---
-title: Активация службы управления правами в Центре администрирования Office 365
+title: Указатели на сведения об управлении правами в центре администрирования Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: Ссылки на разделы, в которых описывается активация и использование службы Rights Management с Office 365.
-ms.openlocfilehash: ffbb88de88b5f90d239698c0600e914266e84048
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7ae954eafacb196dc85f3e4c084de2f704f4ddce
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068455"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616712"
 ---
-# <a name="activate-rights-management-in-the-office-365-admin-center"></a>Активация службы управления правами в Центре администрирования Office 365
+# <a name="pointers-to-information-about-rights-management-in-the-office-365-admin-center"></a>Указатели на сведения об управлении правами в центре администрирования Office 365
 
 В этом разделе содержатся ссылки на разделы, в которых описывается включение и использование RMS в Office 365.
   
@@ -34,13 +34,11 @@ ms.locfileid: "34068455"
 Используйте следующие ссылки для получения дополнительных сведений о службе управления правами:
   
 - Чтобы узнать больше о службе управления правами, ознакомьтесь со статьей [Управление правами Azure](https://docs.microsoft.com/rights-management/understand-explore/what-is-azure-rms).
-    
-- Если вы не знакомы с RMS, ознакомьтесь со статьей [Обзор управления правами Azure](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management).
-    
-- Общие сведения о развертывании можно найти в статье [план развертывания службы управления правами Azure](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap).
-    
-- Инструкции по активации службы управления правами для Office 365 приведены в разделе [Активация службы управления правами Azure](https://technet.microsoft.com/library/jj658941.aspx).
-    
-- Путают различия между Azure RMS и IRM в Office? Хотите помочь другим условиям управления правами? Ознакомьтесь со статьей " [терминология для управления правами](https://technet.microsoft.com/library/dn595132.aspx)".
-    
 
+- Если вы не знакомы с RMS, ознакомьтесь со статьей [Обзор управления правами Azure](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management).
+
+- Общие сведения о развертывании можно найти на [карте пути развертывания управления правами Azure](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap).
+
+- Инструкции по активации службы управления правами для Office 365 приведены в разделе [Активация службы управления правами Azure](https://technet.microsoft.com/library/jj658941.aspx).
+
+- Путают различия между Azure RMS и IRM в Office? Хотите помочь другим условиям управления правами? Ознакомьтесь со статьей " [терминология для управления правами](https://technet.microsoft.com/library/dn595132.aspx)".
