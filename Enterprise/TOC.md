@@ -205,6 +205,8 @@
 ### [Средства для управления учетными записями пользователей](manage-office-365-accounts.md)
 ### [Добавление нескольких пользователей одновременно](add-several-users-at-the-same-time.md)
 ### [Восстановление элементов, удаленных из почтового ящика пользователя](recover-deleted-items-in-a-mailbox.md)
+### Совместная работа с гостями
+#### [Справочник по гостевому общему доступу](microsoft-365-guest-settings.md)
 
 ## Устройства
 ### [Выбор между MDM и Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
