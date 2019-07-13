@@ -3,7 +3,7 @@ title: Обновление с SharePoint 2010
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 06/04/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: Прекращение поддержки для SharePoint 2010 и SharePoint Server 2010 заканчивается 13 октября 2020 г. Используйте эту статью в качестве руководства по обновлению до SharePoint Online или более новой версии SharePoint Server в локальной среде.
-ms.openlocfilehash: d2114baf03d19c6be818139a08ed93ff3b64f664
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: c3860e8229c8633ea605228d7d3553d0f673a7d3
+ms.sourcegitcommit: d3f8df9439e9cd15333f01b5cde2001fb4b74113
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203618"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35643069"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Обновление с SharePoint 2010
 
@@ -57,12 +57,14 @@ Microsoft SharePoint 2010 и SharePoint Server 2010 достигают конц�
    
 Если вы выбрали параметры в нижней части шкалы (хорошие варианты), вам потребуется начать планирование еще одного обновления после завершения миграции с SharePoint Server 2010. 
 
+Ниже приведены три пути, которые можно предпринять, чтобы избежать завершения поддержки SharePoint Server 2010.
+
+![Пути обновления SharePoint Server 2010](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
+
 >[!Note]
 >Завершение поддержки SharePoint Server 2010 и SharePoint Foundation 2010 запланировано на 13 октября 2020, но *помните о* том, что всегда следует проверять наиболее актуальные даты на [сайте жизненного цикла продукта](https://support.microsoft.com/en-us/lifecycle) .
 >
 
-
- 
   
 ## <a name="where-should-i-go-next"></a>Где следует переходить дальше?
 
