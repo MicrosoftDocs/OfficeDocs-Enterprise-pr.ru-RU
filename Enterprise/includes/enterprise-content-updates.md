@@ -3,57 +3,6 @@
 
 
 
-## <a name="week-of-may-27-2019"></a>Неделя с 27 мая 2019 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 5/28/2019 | [Office 365 корпоративный](/Office365/Enterprise/index) | Изменено |
-| 5/28/2019 | [Загрузка и запуск средства IdFix для Office 365](/Office365/Enterprise/install-and-run-idfix) | Изменено |
-| 5/28/2019 | [Инструменты для управления учетными записями Office 365](/Office365/Enterprise/manage-office-365-accounts) | Изменено |
-| 5/28/2019 | [Подготовка атрибутов каталога к синхронизации с Office 365 с помощью инструмента IdFix](/Office365/Enterprise/prepare-directory-attributes-for-synch-with-idfix) | Изменено |
-| 5/28/2019 | [Подготовка к синхронизации каталогов в Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | Изменено |
-| 5/28/2019 | [Инструменты для управления учетными записями Office 365](/Office365/Enterprise/tools-to-manage-office-365-accounts) | Изменено |
-| 5/28/2019 | [Конечные точки DoD Office 365 для государственных учреждений (США)](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Изменено |
-| 5/28/2019 | [Office 365 США для государственных организаций GCC High](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Изменено |
-| 5/28/2019 | [Диапазоны IP-адресов и URL-адреса Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Изменено |
-| 5/29/2019 | [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | Изменено |
-| 5/29/2019 | [Планирование обновления с серверов и клиентов Office 2007 или 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | Изменено |
-| 5/29/2019 | [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Изменено |
-| 5/30/2019 | [Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | Изменено |
-
-
-## <a name="week-of-june-03-2019"></a>Неделя с 3 июня 2019 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 6/4/2019 | [Поддержка клиентских приложений Office 365 — современная проверка подлинности](/Office365/Enterprise/office-365-client-support-modern-authentication) | Изменено |
-| 6/4/2019 | [Конечные точки DoD Office 365 для государственных учреждений (США)](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Изменено |
-| 6/4/2019 | [Office 365 США для государственных организаций GCC High](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Изменено |
-| 6/4/2019 | [Планирование обновления с серверов и клиентов Office 2007 или 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | Изменено |
-| 6/4/2019 | [План конечной поддержки Project Server 2010](/Office365/Enterprise/project-server-2010-end-of-support) | Изменено |
-| 6/4/2019 | [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Изменено |
-| 6/4/2019 | [Обновление с SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | Изменено |
-| 6/5/2019 | [Azure ExpressRoute для Office 365](/Office365/Enterprise/azure-expressroute) | Изменено |
-| 6/5/2019 | [Использование сообществ BGP в ExpressRoute для сценариев Office 365](/Office365/Enterprise/bgp-communities-in-expressroute) | Изменено |
-| 6/5/2019 | [Подключение клиентских компьютеров](/Office365/Enterprise/client-connectivity) | Изменено |
-| 6/5/2019 | [Сети доставки содержимого](/Office365/Enterprise/content-delivery-networks) | Изменено |
-| 6/5/2019 | [Реализация ExpressRoute для Office 365](/Office365/Enterprise/implementing-expressroute) | Изменено |
-| 6/5/2019 | [Планирование сети при использовании ExpressRoute для Office 365](/Office365/Enterprise/network-planning-with-expressroute) | Изменено |
-| 6/5/2019 | [Веб-служба IP-адресов и URL-адресов в Office 365](/Office365/Enterprise/office-365-ip-web-service) | Изменено |
-| 6/5/2019 | [Принципы сетевого подключения к Office 365](/Office365/Enterprise/office-365-network-connectivity-principles) | Изменено |
-| 6/5/2019 | [Обзор сетевого подключения Office 365](/Office365/Enterprise/office-365-networking-overview) | Изменено |
-| 6/5/2019 | [Планирование сетевых устройств, подключающихся к службам Office 365](/Office365/Enterprise/plan-for-network-devices) | Изменено |
-| 6/5/2019 | [Маршрутизация с использованием ExpressRoute для Office 365](/Office365/Enterprise/routing-with-expressroute) | Изменено |
-| 6/5/2019 | [Настройка сети для Office 365](/Office365/Enterprise/set-up-network-for-office-365) | Изменено |
-| 6/5/2019 | [Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Изменено |
-| 6/5/2019 | [Advanced eDiscovery для среды разработки и тестирования Office 365](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | Изменено |
-| 6/7/2019 | [Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Изменено |
-| 6/7/2019 | [План конечной поддержки Project Server 2010](/Office365/Enterprise/project-server-2010-end-of-support) | Изменено |
-| 6/7/2019 | [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Изменено |
-
-
 ## <a name="week-of-june-10-2019"></a>Неделя с 10 июня 2019 г.
 
 
@@ -100,3 +49,42 @@
 | 6/28/2019 | [Диапазоны IP-адресов и URL-адреса Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Изменено |
 | 6/28/2019 | [Перемещение основных данных в новые жеос центра обработки данных Office 365](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | Изменено |
 | 6/28/2019 | [Как запросить перемещение данных](/Office365/Enterprise/request-your-data-move) | Изменено |
+
+
+## <a name="week-of-july-01-2019"></a>Неделя с 01 июля 2019 г.
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 7/2/2019 | [Перемещение сайта SharePoint в другое географическое расположение](/Office365/Enterprise/move-sharepoint-between-geo-locations) | Изменено |
+
+
+## <a name="week-of-july-08-2019"></a>Неделя с 8 июля 2019 г.
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 7/9/2019 | [Перенос данных организации в Office 365 корпоративный](/Office365/Enterprise/migrate-data-to-office-365) | Изменено |
+| 7/9/2019 | [Диагностика проблем производительности в SharePoint Online](/Office365/Enterprise/diagnosing-performance-issues-with-sharepoint-online) | Изменено |
+| 7/10/2019 | [Планирование обновления с серверов и клиентов Office 2007 или 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | Изменено |
+| 7/10/2019 | [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Изменено |
+| 7/10/2019 | [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | Изменено |
+| 7/10/2019 | [Указатели на сведения об управлении правами в центре администрирования Office 365](/Office365/Enterprise/activate-rms-in-office-365) | Изменено |
+| 7/10/2019 | [Рекомендации по использованию Office 365 в медленной сети](/Office365/Enterprise/best-practices-for-using-office-365-on-a-slow-network) | Изменено |
+| 7/10/2019 | [Задержка при загрузке изображений и JavaScript-файлов в SharePoint Online](/Office365/Enterprise/delay-loading-images-and-javascript-in-sharepoint-online) | Изменено |
+| 7/10/2019 | [Оптимизация изображений для SharePoint Online](/Office365/Enterprise/image-optimization-for-sharepoint-online) | Изменено |
+| 7/10/2019 | [Общие сведения о настройке производительности для SharePoint Online](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | Изменено |
+| 7/10/2019 | [Минификация и объединение в SharePoint Online](/Office365/Enterprise/minification-and-bundling-in-sharepoint-online) | Изменено |
+| 7/10/2019 | [Поддержка NAT в Office 365](/Office365/Enterprise/nat-support-with-office-365) | Изменено |
+| 7/10/2019 | [Параметры навигации для SharePoint Online](/Office365/Enterprise/navigation-options-for-sharepoint-online) | Изменено |
+| 7/10/2019 | [Планирование сети и миграции в Office 365](/Office365/Enterprise/network-and-migration-planning) | Изменено |
+| 7/10/2019 | [Планирование сети и настройка производительности для Office 365](/Office365/Enterprise/network-planning-and-performance) | Изменено |
+| 7/10/2019 | [Использование средства диагностики страниц для SharePoint Online](/Office365/Enterprise/page-diagnostics-for-spo) | Изменено |
+| 7/10/2019 | [Настройка производительности Office 365](/Office365/Enterprise/tune-office-365-performance) | Изменено |
+| 7/10/2019 | [Настройка производительности SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | Изменено |
+| 7/10/2019 | [Настройка производительности Skype для бизнеса Online](/Office365/Enterprise/tune-skype-for-business-online-performance) | Изменено |
+| 7/10/2019 | [Использование экономичных всплывающих окон для уменьшения объема памяти, используемой при чтении почтовых сообщений](/Office365/Enterprise/use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages) | Изменено |
+| 7/10/2019 | [Использование веб-части поиска контента вместо веб-части "Запрос контента" для улучшения производительности в SharePoint Online](/Office365/Enterprise/using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo) | Изменено |
+| 7/10/2019 | [Использование кэша объектов в SharePoint Online](/Office365/Enterprise/using-the-object-cache-with-sharepoint-online) | Изменено |
+| 7/11/2019 | [План конечной поддержки Project Server 2010](/Office365/Enterprise/project-server-2010-end-of-support) | Изменено |
+| 7/12/2019 | [Обновление с SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | Изменено |
