@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: Сводка. Узнайте, как использовать PowerShell в Office 365 с пользователями и лицензиями Office 365, Skype для бизнеса Online, SharePoint Online, Exchange Online и Центром безопасности и соответствия требованиям Office 365.
-ms.openlocfilehash: 90903c33ebabc426ba95e0c69e71fea985cb464d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 56c23aca44d09947e7469296c6ed85b2f3d2f3c5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068907"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782109"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Управление Office 365 с помощью PowerShell Office 365
 
  **Сводка.** Узнайте, как применять PowerShell в Office 365 с пользователями и лицензиями Office 365, Skype для бизнеса Online, SharePoint Online, Exchange Online и Центром безопасности и соответствия требованиям Office 365.
   
-PowerShell в Office 365 — это мощное средство управления, которое дополняет Центр администрирования Office 365. Например, вы можете использовать автоматизацию PowerShell в Office 365, чтобы еще быстрее управлять несколькими учетными записями пользователей и лицензиями, а также создавать отчеты. Узнайте, как использовать PowerShell в Office 365 с пользователями и лицензиями Office 365, Skype для бизнеса Online, SharePoint Online, Exchange Online и Центром безопасности и соответствия требованиям Office 365.
+Office 365 PowerShell — это мощное средство управления, которое дополняет центр администрирования Microsoft 365. Например, вы можете использовать автоматизацию Office 365 PowerShell для более быстрого управления несколькими учетными записями и лицензиями пользователей и создания отчетов. Узнайте, как использовать Office 365 PowerShell с Office 365 для пользователей и лицензий, Skype для бизнеса Online, SharePoint Online, Exchange Online и центра соответствия требованиям & безопасности Office 365.
   
 Выберите необходимый раздел:
   

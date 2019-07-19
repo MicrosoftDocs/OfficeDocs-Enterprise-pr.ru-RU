@@ -10,17 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: Эта статья представляет собой текстовую версию схемы "Интеграция функций между серверными продуктами Microsoft Office — SharePoint Server, Exchange Server, Lync Server и Office Online".
-ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Эта статья представляет собой текстовую версию схемы "Интеграция функций" в Microsoft Office Server Products-SharePoint Server, Exchange Server, Lync Server и Office Online Server.
+ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068775"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782249"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Доступная схема — интеграция функций между серверными продуктами Microsoft Office
 
-**Сводка:** Эта статья представляет собой текстовую версию схемы "Интеграция функций" в Microsoft Office Server Products-SharePoint Server, Exchange Server, Lync Server и Office Online.
+**Сводка:** Эта статья представляет собой текстовую версию схемы "Интеграция функций" в Microsoft Office Server Products-SharePoint Server, Exchange Server, Lync Server и Office Online Server.
   
 Схема состоит из нескольких вкладок, которые указываются в заголовках разделов этого документа.
   
@@ -86,7 +86,7 @@ ms.locfileid: "34068775"
     
 - Lync
     
-- Office Online (ранее известный как Office Web Apps)  
+- Office Online Server (прежнее название — Office Web Apps) 
     
 Фотографии пользователей в высоком разрешении. Эта функция применима к следующим продуктам.  
   
@@ -569,7 +569,7 @@ Project Server 2013 включает следующие элементы: 
     
  **Принцип работы**
   
-Если вызываемому абоненту не ответило ни одного из активных конечных точек вызываемого абонента, Lync Server направляет вызов на голосовую почту в единой системе обмена СООБЩЕНИЯми Exchange (например, на сервере почтовых ящиков Exchange). 
+Если вызываемому абоненту не ответило ни одного из активных конечных точек вызываемого абонента, Lync Server направляет вызов на голосовую почту в единой системе обмена сообщениями Exchange (например, на сервере почтовых ящиков Exchange). 
   
 На сопроводительной схеме показано, как перенаправляются вызовы в двух сценариях:  
   
@@ -589,7 +589,7 @@ Project Server 2013 включает следующие элементы: 
     
 Вызывающая сторона инициирует вызов с помощью Lync 2013.  
   
-1. Вызывающий абонент Б набирает номер телефона вызываемого абонента с помощью PSTN. 
+1. Вызывающий абонент б набирает номер телефона вызываемого абонента с помощью PSTN. 
     
 2. Вызов ТСОП направляется с IP-шлюза на cервер-посредник, то есть сервер Lync.  
     

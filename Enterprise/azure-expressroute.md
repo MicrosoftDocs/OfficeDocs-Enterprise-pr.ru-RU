@@ -3,7 +3,7 @@ title: Azure ExpressRoute для Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 6/5/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,21 +18,21 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365.
-ms.openlocfilehash: 26aa65cdec5e9e37ee99a283d600d56f79fd85a4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d881dc4e65ca2533f511c7f613c38569811b95a7
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068275"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782359"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute для Office 365
 
-Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365. Службы инфраструктуры и платформ, работающие в Azure, часто получают преимущества, устраняя сетевую архитектуру и вопросы производительности. В таких случаях рекомендуется использовать ExpressRoute для Azure. Программное обеспечение в виде таких служб, как Office 365 и Dynamics 365, были созданы для надежного и надежного доступа через Интернет. Вы можете ознакомиться с производительностью и безопасностью Интернета, а также в том, что вы можете использовать Azure ExpressRoute для Office 365 в статье [сетевое подключение к office 365](network-connectivity.md).
+Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365. Службы инфраструктуры и платформ, работающие в Azure, часто получают преимущества, устраняя сетевую архитектуру и вопросы производительности. В таких случаях рекомендуется использовать ExpressRoute для Azure. Программное обеспечение в виде таких служб, как Office 365 и Dynamics 365, были созданы для надежного и надежного доступа через Интернет. Вы можете прочитать сведения о производительности и безопасности Интернета, а также о том, как вы можете использовать Azure ExpressRoute для Office 365 в статье [Оценка сетевого подключения office 365](assessing-network-connectivity.md).
 
 > [!NOTE]
-> Для использования ExpressRoute для Office 365 требуется авторизация Майкрософт. Корпорация Майкрософт изучает все запросы клиентов и авторизует ExpressRoute для Office 365, когда нормативное требование клиента требует прямого подключения. Если у вас есть такие требования, укажите фрагмент текста и веб-ссылку для оценки, означающие, что в форме веб- [запросов ExpressRoute для Office 365](https://aka.ms/O365ERReview) требуется прямое подключение для начала рецензирования Майкрософт. Неавторизованные подписки, пытающиеся создать фильтры маршрутов для Office 365, получат [сообщение об ошибке](https://support.microsoft.com/kb/3181709). 
+> Для использования ExpressRoute для Office 365 требуется авторизация Майкрософт. Корпорация Майкрософт изучает все запросы клиентов и авторизует ExpressRoute для Office 365, когда нормативное требование клиента требует прямого подключения. Если у вас есть такие требования, укажите фрагмент текста и веб-ссылку для оценки, означающие, что в форме веб- [запросов ExpressRoute для Office 365](https://aka.ms/O365ERReview) требуется прямое подключение для начала рецензирования Майкрософт. Неавторизованные подписки, пытающиеся создать фильтры маршрутов для Office 365, получат [сообщение об ошибке](https://support.microsoft.com/kb/3181709).
 
-Теперь вы можете добавить прямое сетевое подключение к Office 365 для выбранного сетевого трафика Office 365. Azure ExpressRoute обеспечивает прямое подключение, предсказуемую производительность и приступает к СОГЛАШЕНИю об условиях работоспособности 99,95% для сетевых компонентов Майкрософт. Для служб, которые не поддерживаются в Azure ExpressRoute, по-прежнему потребуется подключение к Интернету.
+Теперь вы можете добавить прямое сетевое подключение к Office 365 для выбранного сетевого трафика Office 365. Azure ExpressRoute обеспечивает прямое подключение, предсказуемую производительность и приступает к соглашению об условиях работоспособности 99,95% для сетевых компонентов Майкрософт. Для служб, которые не поддерживаются в Azure ExpressRoute, по-прежнему потребуется подключение к Интернету.
 
 ## <a name="planning-azure-expressroute-for-office-365"></a>Планирование ExpressRoute в Azure для Office 365
 
@@ -50,8 +50,6 @@ ms.locfileid: "34068275"
 
 По-прежнему требуются дополнительные сведения? Узнайте, как [управлять сетевым трафиком с помощью Azure expressroute для office 365](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408) и Узнайте, как [настроить Azure ExpressRoute для Office 365](https://azure.microsoft.com/documentation/articles/expressroute-faqs/). Мы также записали 10 частей [Azure ExpressRoute для Office 365](https://channel9.msdn.com/series/aer) на канале 9, чтобы более тщательно объяснить концепции.
 
-([Azure ExpressRoute для Office 365](azure-expressroute.md#BKMK_HOME))
-
 ## <a name="what-office-365-services-are-included"></a>Какие службы Office 365 включены?
 <a name="BKMK_WhatDoIGet"> </a>
 
@@ -62,13 +60,11 @@ ms.locfileid: "34068275"
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype для бизнеса Online<sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive для бизнеса<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|Портал и общий<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> Подключение AAD<sup>1</sup> <br/> Office Online<sup>1</sup> <br/> |
+|Портал и общий<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> Подключение AAD<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
 <sup>1</sup> Для каждого из этих приложений требования к подключению к Интернету не поддерживаются в ExpressRoute, ознакомьтесь со [статьей Office 365 Endpoints](https://aka.ms/o365endpoints) для получения дополнительных сведений.
 
 Службы, не включенные в ExpressRoute для Office 365, — это загрузка клиентов Office 365 профессиональный плюс, локальный поставщик удостоверений и служба Office 365 (под управлением 21 ВИАНЕТ) в Китае.
-
-([Azure ExpressRoute для Office 365](azure-expressroute.md#BKMK_HOME))
 
 ## <a name="implementing-expressroute-for-office-365"></a>Реализация средства ExpressRoute для Office 365
 
@@ -100,11 +96,9 @@ ms.locfileid: "34068275"
 
 Готовы к регистрации в [ExpressRoute для Office 365](https://aka.ms/ert)?
 
-([Azure ExpressRoute для Office 365](azure-expressroute.md#BKMK_HOME))
-
 ## <a name="related-topics"></a>Статьи по теме
 
-[Сетевое подключение к Office 365](network-connectivity.md)
+[Оценка сетевого подключения Office 365](assessing-network-connectivity.md)
 
 [Управление подключением ExpressRoute для Office 365](managing-expressroute-for-connectivity.md)
 

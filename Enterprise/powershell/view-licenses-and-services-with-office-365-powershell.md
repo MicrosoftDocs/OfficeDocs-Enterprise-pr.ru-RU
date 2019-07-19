@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: В этой статье рассказывается, как использовать PowerShell для Office 365 для просмотра сведений о планах лицензирования, службах и лицензиях, доступных в организации Office 365.
-ms.openlocfilehash: 9e84797de29337d9414d9a578a98f6799ee816cb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 18444f76f312c75bc95645d17c48c996f1a3bfc7
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071095"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782039"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Просмотр лицензий и служб с помощью PowerShell в Office 365
 
@@ -74,7 +74,7 @@ $licenses = Get-AzureADSubscribedSku
 $licenses[<index>].ServicePlans
 ````
 
-\<Индекс_гт_ — это целое число, определяющее номер строки плана лицензирования из отображения `Get-AzureADSubscribedSku | Select SkuPartNumber` команды минус 1.
+\<Индекс> — это целое число, задающее номер строки плана лицензирования из отображения `Get-AzureADSubscribedSku | Select SkuPartNumber` команды минус 1.
 
 Например, если `Get-AzureADSubscribedSku | Select SkuPartNumber` команда имеет следующий вид:
 
@@ -137,7 +137,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office профессиональный плюс  <br/> |
 | `MCOSTANDARD` <br/> |Skype для бизнеса Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (план 2)  <br/> |
    
