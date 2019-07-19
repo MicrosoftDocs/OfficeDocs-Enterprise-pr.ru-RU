@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: Сводка. Используйте это руководство, чтобы создать пробную подписку Office 365 для оценки или разработки и тестирования.
-ms.openlocfilehash: 2f1856d203e892c98b44ccc1dbe1598d527165de
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 06ffed9ab4b41c5e164cfadb951181a3406c67a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162512"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781939"
 ---
 # <a name="office-365-devtest-environment"></a>Среда разработки и тестирования Office 365
 
@@ -118,7 +118,7 @@ ms.locfileid: "34162512"
     
 11. На следующей странице дождитесь завершения настройки Office 365 и появления всех плиток.
     
-Появится главная страница портала Office 365, с которой можно получить доступ к службам Office Online и Центру администрирования Microsoft 365.
+Появится главная страница портала Office 365, с которой можно получить доступ к службам Office и Центру администрирования Microsoft 365.
   
 Ниже показана итоговая конфигурация для среды разработки и тестирования Office 365, имитирующей предприятие.
   
