@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Используйте командлеты PowerShell централизованного развертывания для развертывания надстроек Office для организации Office 365 и управления ими.
-ms.openlocfilehash: c63a48d212bba4eda25fb6b8843f6321892dc54b
-ms.sourcegitcommit: d53033c2d2d41d52047e3e2644d77373d4a5dd9a
+ms.openlocfilehash: 301e44da4c663fa54c4e2b753552b0b345e2a6e5
+ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35791254"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35834239"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Использование командлетов PowerShell для централизованного развертывания для управления надстройками
 
@@ -171,6 +171,8 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ## <a name="customize-microsoft-store-add-ins-for-your-organization"></a>Настройка надстроек Microsoft Store для Организации
 
 Перед развертыванием надстройки в Организации ее необходимо настроить. Надстройки более ранние, чем версия 1,1, не поддерживаются этой функцией. 
+
+Рекомендуется сначала развернуть пользовательскую надстройку, чтобы убедиться, что она работает должным образом, прежде чем развертывать ее во всей Организации.
 
 Кроме того, обратите внимание на следующие ограничения:
 - Все URL-адреса должны быть абсолютными (включая HTTP или HTTPS) и допустимыми.
