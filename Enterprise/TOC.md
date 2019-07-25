@@ -172,10 +172,10 @@
 ##### [Включение SharePoint c поддержкой нескольких регионов в периферийном расположении](enabling-SP-multigeo-satellite-geolocation.md)
 ##### [Администрирование Exchange с поддержкой нескольких регионов](administering-exchange-online-multi-geo.md)
 
-#### [Перемещение в центр обработки данных Office 365 в другом регионе](moving-data-to-new-datacenter-geos.md)
-##### [Как запросить перемещение данных](request-your-data-move.md)
-##### [Во время и после перемещения данных](during-and-after-your-data-move.md)
-##### [Ответы на общие вопросы о перемещении данных](data-move-faq.md)
+### [Перемещение в центр обработки данных Office 365 в другом регионе](moving-data-to-new-datacenter-geos.md)
+#### [Как запросить перемещение данных](request-your-data-move.md)
+#### [Во время и после перемещения данных](during-and-after-your-data-move.md)
+#### [Ответы на общие вопросы о перемещении данных](data-move-faq.md)
 
 ### Гибридные решения
 #### [Использование Azure Active Directory для проверки подлинности в SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
