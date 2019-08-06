@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: Если вы отказались от развертывания с использованием службы FastTrack и готовы к переносу данных в Office 365, начните отсюда.
-ms.openlocfilehash: 9efaad6da9723d588cc0e42151bf297b271e4e5c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
+ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070125"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35597555"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Перенос данных организации в Office 365 корпоративный
 
@@ -35,9 +35,8 @@ ms.locfileid: "34070125"
 - Другие способы [миграции электронной почты, контактов и календарей ваших сотрудников](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e).
 
 ## <a name="migrate-files-and-folders"></a>Миграция файлов и папок
-- [Перенос контента в SharePoint Online](https://support.office.com/article/d8c6ce52-f8a2-4661-97f7-45e49351bdb9). (Администратор)
-- [План настройки гибридной службы OneDrive для бизнеса](https://docs.microsoft.com/SharePoint/hybrid/configure-hybrid-onedrive-for-businessroadmap). (Администратор)
-- [Миграция списков и файлов из локальных библиотек документов SharePoint или локальных файловых ресурсов в SharePoint или OneDrive в составе Office 365](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool). (Конечный пользователь)
+- [Переход на SharePoint Online и OneDrive](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online). Имени
+- Схемы [гибридных конфигураций SharePoint Server](https://docs.microsoft.com/SharePoint/hybrid/configuration-roadmaps). Имени
 
 ## <a name="migrate-skype-for-business-users"></a>Миграция пользователей Skype для бизнеса
 - [Миграция на Skype для бизнеса Online](https://technet.microsoft.com/library/jj204969.aspx). (Администратор)

@@ -15,16 +15,16 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Используйте командлеты PowerShell централизованного развертывания для развертывания надстроек Office для организации Office 365 и управления ими.
-ms.openlocfilehash: 404085d79827664437f3ad327fac4a99166adcf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3d6495646c6ce0a1d15f2d911f1fa8af92e3c2c6
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071145"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782589"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Использование командлетов PowerShell для централизованного развертывания для управления надстройками
 
-Администраторы Office 365 могут развертывать надстройки Office для пользователей с помощью функции централизованного развертывания (см. [Управление развертыванием надстроек office 365 в центре администрирования office 365](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)). Кроме развертывания надстроек Office с помощью центра администрирования Office 365, вы также можете использовать Microsoft PowerShell. [Скачайте](https://go.microsoft.com/fwlink/p/?linkid=850850) командлеты PowerShell для централизованного развертывания из центра загрузки Майкрософт. 
+Администраторы Office 365 могут развертывать надстройки Office для пользователей с помощью функции централизованного развертывания (см. [Управление развертыванием надстроек office 365 в центре администрирования](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)). Кроме развертывания надстроек Office с помощью центра администрирования, вы также можете использовать Microsoft PowerShell. [Скачайте](https://go.microsoft.com/fwlink/p/?linkid=850850) командлеты PowerShell для централизованного развертывания из центра загрузки Майкрософт. 
   
 ## <a name="what-do-you-want-to-do"></a>Что нужно сделать
 

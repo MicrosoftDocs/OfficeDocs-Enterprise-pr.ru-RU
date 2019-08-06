@@ -3,29 +3,6 @@
 
 
 
-## <a name="week-of-june-24-2019"></a>Неделя с 24 июня 2019 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 6/24/2019 | [Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Изменено |
-| 6/24/2019 | [Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | Изменено |
-| 6/24/2019 | [Подготовка домена, не поддерживающего маршрутизацию, для синхронизации службы каталогов](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | Изменено |
-| 6/24/2019 | [Восстановление удаленных элементов в почтовом ящике пользователя — справка для администраторов](/Office365/Enterprise/recover-deleted-items-in-a-mailbox) | Изменено |
-| 6/24/2019 | [Аварийное восстановление SharePoint Server 2013 в Microsoft Azure](/Office365/Enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure) | Изменено |
-| 6/24/2019 | [Обновление с SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | Изменено |
-| 6/26/2019 | [Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | Изменено |
-| 6/26/2019 | [Подготовка к синхронизации каталогов в Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | Изменено |
-| 6/26/2019 | [Настройка производительности SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | Изменено |
-| 6/28/2019 | [Конечные точки Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | Изменено |
-| 6/28/2019 | [Конечные точки DoD Office 365 для государственных учреждений (США)](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Изменено |
-| 6/28/2019 | [Office 365 США для государственных организаций GCC High](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Изменено |
-| 6/28/2019 | [URL-адреса и диапазоны IP-адресов для службы Office 365, предоставляемой компанией 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | Изменено |
-| 6/28/2019 | [Диапазоны IP-адресов и URL-адреса Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Изменено |
-| 6/28/2019 | [Перемещение основных данных в новые жеос центра обработки данных Office 365](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | Изменено |
-| 6/28/2019 | [Как запросить перемещение данных](/Office365/Enterprise/request-your-data-move) | Изменено |
-
-
 ## <a name="week-of-july-01-2019"></a>Неделя с 01 июля 2019 г.
 
 
@@ -131,3 +108,15 @@
 | 7/24/2019 | [Добавление домена к аренде клиента с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)](/Office365/Enterprise/powershell/add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe) | Изменено |
 | 7/25/2019 | [Перемещение основных данных в новые жеос центра обработки данных Office 365](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | Изменено |
 | 7/25/2019 | [Как запросить перемещение данных](/Office365/Enterprise/request-your-data-move) | Изменено |
+
+
+## <a name="week-of-july-29-2019"></a>Неделя с 29 июля 2019 г.
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 7/29/2019 | [Конечные точки Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | Изменено |
+| 7/29/2019 | [Конечные точки DoD Office 365 для государственных учреждений (США)](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Изменено |
+| 7/29/2019 | [Office 365 США для государственных организаций GCC High](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Изменено |
+| 7/29/2019 | [URL-адреса и диапазоны IP-адресов для службы Office 365, предоставляемой компанией 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | Изменено |
+| 7/29/2019 | [Диапазоны IP-адресов и URL-адреса Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Изменено |

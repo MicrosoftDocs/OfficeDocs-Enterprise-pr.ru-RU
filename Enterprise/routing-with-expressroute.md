@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Чтобы правильно разобрал трафик маршрутизации для Office 365 с помощью Azure ExpressRoute, вам потребуются сведения об основных требованиях к маршрутизации ExpressRoute, а также о доменах ExpressRoute и доменах маршрутизации. В этих статьях используются основные принципы использования ExpressRoute, на которые полагаются клиенты Office 365.
-ms.openlocfilehash: 60277e9d9f2a5b2fc92465b57b5aa08148b604f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 01251880eba2051d8839f7c08e244398906c75ed
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071005"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722718"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Маршрутизация с использованием ExpressRoute для Office 365
 
@@ -88,13 +88,13 @@ ms.locfileid: "34071005"
 |Служба потоковой передачи видео Office 365  <br/> |Службы мультимедиа Azure  <br/> |Нет  <br/> |Служба потоковой передачи, используемая в случае недоступности видео из сети CDN  <br/> |
 |Сеть доставки видеосодержимого Office 365  <br/> |Сеть CDN Azure  <br/> |Нет  <br/> |Основной источник загрузки и потоковой передачи видео. [Узнайте больше о Microsoft Office 365 Video Network](https://support.office.com/article/Office-365-Video-networking-Frequently-Asked-Questions-FAQ-2bed67a1-4052-49ff-a4ce-b7e6530eb98e).  <br/> |
 
-Все функции Office 365, доступные с помощью пиринга Майкрософт, указаны в [статье конечных точек office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) по типу приложения и ПОЛНОМу доменному имени. Причина использования полного ДОМЕНного имени в таблицах заключается в том, чтобы разрешить клиентам управлять трафиком с помощью файлов PAC или других конфигураций прокси-серверов, в нашем руководстве по [управлению конечными точками Office 365](https://aka.ms/manageo365endpoints) примеры файлов PAC.
+Все функции Office 365, доступные с помощью пиринга Майкрософт, указаны в [статье конечных точек office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) по типу приложения и полному доменному имени. Причина использования полного доменного имени в таблицах заключается в том, чтобы разрешить клиентам управлять трафиком с помощью файлов PAC или других конфигураций прокси-серверов, в нашем руководстве по [управлению конечными точками Office 365](https://aka.ms/manageo365endpoints) примеры файлов PAC.
   
 В некоторых ситуациях мы использовали домен с подстановочными знаками, где один или несколько полных полных доменных имен объявляются иначе, чем домен с подстановочными знаками верхнего уровня. Обычно это происходит, когда подстановочный знак представляет собой длинный список серверов, объявленных в ExpressRoute и Интернете, а небольшой поднабор адресов, объявленный только в Интернете или в обратном направлении. В приведенных ниже таблицах представлены сведения о различиях.
   
 В этой таблице отображаются полные доменные имена, объявляемые как в Интернете, так и в Azure ExpressRoute вместе с дочерними именами, объявленными только в Интернете.
 
-|**Домен с подстановочными знаками, объявленный для ExpressRoute и Интернет каналов**|**Дочернее полное ДОМЕНное имя, объявленное только межинтернетными цепями**|
+|**Домен с подстановочными знаками, объявленный для ExpressRoute и Интернет каналов**|**Дочернее полное доменное имя, объявленное только межинтернетными цепями**|
 |:-----|:-----|
 |\*. microsoftonline.com  <br/> |click.email.microsoftonline.com  <br/> portal.microsoftonline.com  <br/> provisioningapi.microsoftonline.com  <br/> adminwebservice.microsoftonline.com  <br/> |
 |\*. officeapps.live.com  <br/> |nexusRules.officeapps.live.com  <br/> nexus.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> cdn.odc.officeapps.live.com  <br/> ols.officeapps.live.com  <br/> ocsredir.officeapps.live.com  <br/> ocws.officeapps.live.com  <br/> ocsa.officeapps.live.com  <br/> |
@@ -109,7 +109,7 @@ ms.locfileid: "34071005"
 
 В этой таблице отображаются домены с подстановочными знаками, объявляемые в Интернет, только вместе с дочерними именами, объявляемыми в Azure ExpressRoute и Интернет цепям. Для файла PAC, указанного в приведенном ниже списке, указаны полные доменные имена в столбце 2 в приведенной ниже таблице, что означает, что они будут включены во вторую группу записей в файле.
 
-|**Домен с подстановочными знаками, объявляемый только межинтернетным цепям**|**Дочернее полное ДОМЕНное имя, объявленное с использованием ExpressRoute и интернетовых цепей**|
+|**Домен с подстановочными знаками, объявляемый только межинтернетным цепям**|**Дочернее полное доменное имя, объявленное с использованием ExpressRoute и интернетовых цепей**|
 |:-----|:-----|
 |\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
 |\*. office.net  <br/> |agent.office.net  <br/> |
@@ -230,7 +230,7 @@ Humongous страхование географически распределе
   
 ## <a name="related-topics"></a>Статьи по теме
 
-[Сетевое подключение к Office 365](network-connectivity.md)
+[Оценка сетевого подключения Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute для Office 365](azure-expressroute.md)
   

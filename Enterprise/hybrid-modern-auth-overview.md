@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: Современная проверка подлинности это способ управления удостоверениями, обеспечивающий более безопасную проверку подлинности и авторизацию пользователей. Он доступен для гибридных развертываний локального приложения Skype для бизнеса Server и локального сервера Exchange Server, а также для гибридных гибридов Skype для бизнеса. В этой статье приведены ссылки на связанные документы о предварительных требованиях, настройке и отключении современной проверки подлинности, а также о некоторых связанных клиентах (например, Сведения о клиентах Outlook и Skype).
-ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
-ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
+ms.openlocfilehash: a8395a4d1bc212f23309b4ea273588d44eef69a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34404221"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782459"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Обзор гибридной современной проверки подлинности и предварительные требования для их использования с локальными серверами Skype для бизнеса и Exchange
 
@@ -88,7 +88,7 @@ ms.locfileid: "34404221"
     
   - Ваш домен SIP добавляется в качестве федеративного домена в Office 365
     
-  - Все SFB переднего плана должны иметь подключения, исходящие через Интернет, в URL-адреса проверки подлинности Office 365 (TCP 443) и общеизвестные корневые списки отзыва сертификатов (TCP 80), перечисленные в строках 56 и 125 в разделе "Microsoft 365 Common and Office Online" ( [URL-адреса и IP-адрес) Office 365 диапазоны адресов](urls-and-ip-address-ranges.md).
+  - Все SFB переднего плана должны иметь подключения, исходящие через Интернет, в URL-адреса проверки подлинности Office 365 (TCP 443) и общеизвестные корневые списки отзыва сертификатов (TCP 80), указанные в строках 56 и 125 раздела "Microsoft 365 Common and Office" [URL-адресов и IP-адреса office 365 диапазоны](urls-and-ip-address-ranges.md).
   
 - **Локальная среда Skype для бизнеса в гибридной среде Office 365**
   - Развертывание Skype для бизнеса Server 2019 со всеми серверами, на которых работает Skype для бизнеса Server 2019.
