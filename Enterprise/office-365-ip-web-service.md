@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Чтобы помочь вам выявлять и дифференцировать сетевой трафик Office 365, новая веб-служба публикует конечные точки Office 365, упрощая оценку, настройку и обновление. Эта новая веб-служба заменяет собой скачиваемые XML-файлы, доступные в настоящее время.
-ms.openlocfilehash: fcef7a6a175b043639275fedc77faaa689f0e7d5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 8571a91e1ede5d281269b7209f4ddd69a70d586f
+ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069735"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786254"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Веб-служба IP-адресов и URL-адресов в Office 365
 
@@ -511,55 +511,15 @@ else:
 - Добавление нового именованного атрибута в один из элементов REST отклика или дополнительных столбцов в файл CSV отклика.
 - Добавление нового веб-метода с новым именем, который не вызывается старыми клиентами.
 
-## <a name="office-365-endpoint-functions-module"></a>Модуль функций конечных точек Office 365
+## <a name="exporting-a-proxy-pac-file"></a>Экспорт PAC-файла прокси-сервера
 
-Майкрософт содержит службу REST для получения самых новых и последних URI для служб Office 365.  Чтобы использовать URI как коллекцию, можно применять этот модуль с несколькими удобными командлетами.
-
-### <a name="calling-the-rest-service"></a>Вызов службы REST
-
-Чтобы использовать этот модуль, просто скопируйте файл модуля [O365EndpointFunctions.psm1](https://github.com/samurai-ka/PS-Module-O365EndpointService/blob/master/O365EndpointFunctions.psm1) в любое место на своем жестком диске и импортируйте его непосредственно с помощью этой команды:
-
-```powershell
-    Import-Module O365EndpointFunctions.psm1
-```
-
-После импорта модуля вы сможете вызывать службу REST. Она возвращает URI как коллекцию, которую можно обработать непосредственно в PowerShell. Необходимо ввести имя вашего клиента Office 365, как указано в следующей команде:
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant]
-```
-
-#### <a name="parameters"></a>Параметры
-
-- **tenantName**. Имя вашего клиента Office 365. Это обязательный параметр.
-- **ForceLatest**. Этот параметр заставляет API REST всегда возвращать весь список последних URI.
-- **IPv6**. Этот параметр дополнительно возвращает адреса IPv6. По умолчанию возвращаются только адреса IPv4.
-
-### <a name="examples"></a>Примеры
-
-Возвращение полного списка всех URI, включая адреса IPv6
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
-```
-
-Возвращение только IP-адресов для службы Exchange Online
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
-```
-
-### <a name="exporting-a-proxy-pac-file"></a>Экспорт PAC-файла прокси-сервера
-
-Этот модуль можно использовать для создания PAC-файла прокси-сервера. В этом примере сначала возвращаются конечные точки, а затем результаты фильтруются для выбора URL-адресов. Эти URL-адреса передаются для экспорта.  
-
-```powershell
- Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
-```
+[Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) — это сценарий PowerShell, который считывает последние конечные точки сети из IP-адреса и веб-службы URL-адресов Office 365 и создает пример PAC-файла. Сведения об использовании этого сценария находятся в статье [Использование PAC-файла для прямой маршрутизации обязательного трафика Office 365](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
 
 ## <a name="related-topics"></a>Статьи по теме
   
-[Диапазоны IP-адресов и URL-адреса Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URL-адреса и диапазоны IP-адресов для Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+
+[Управление конечными точками Office 365](managing-office-365-endpoints.md)
   
 [Вопросы и ответы о конечных точках Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 
@@ -567,7 +527,7 @@ else:
 
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)
 
-[Сетевое подключение к Office 365](network-connectivity.md)
+[Оценка сетевого подключения к Office 365](assessing-network-connectivity.md)
   
 [Качество мультимедиа и характеристики сетевого подключения в случае Skype для бизнеса Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
