@@ -3,14 +3,6 @@
 
 
 
-## <a name="week-of-july-01-2019"></a>Неделя с 01 июля 2019 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 7/2/2019 | [Перемещение сайта SharePoint в другое географическое расположение](/Office365/Enterprise/move-sharepoint-between-geo-locations) | Изменено |
-
-
 ## <a name="week-of-july-08-2019"></a>Неделя с 8 июля 2019 г.
 
 
@@ -120,3 +112,14 @@
 | 7/29/2019 | [Office 365 США для государственных организаций GCC High](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Изменено |
 | 7/29/2019 | [URL-адреса и диапазоны IP-адресов для службы Office 365, предоставляемой компанией 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | Изменено |
 | 7/29/2019 | [Диапазоны IP-адресов и URL-адреса Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Изменено |
+
+
+## <a name="week-of-august-05-2019"></a>Неделя с 5 августа 2019 г.
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 8/5/2019 | [Добавление в Office 365 сразу нескольких пользователей — справка для администраторов](/Office365/Enterprise/add-several-users-at-the-same-time) | Изменено |
+| 8/5/2019 | [Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | Изменено |
+| 8/6/2019 | [IP-адрес и URL-адрес веб-службы Office 365](/Office365/Enterprise/office-365-ip-web-service) | Изменено |
+| 8/7/2019 | [Оценка сетевого подключения Office 365](/Office365/Enterprise/assessing-network-connectivity) | Изменено |

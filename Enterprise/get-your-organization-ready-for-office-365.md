@@ -3,6 +3,7 @@ title: Планирование Office 365 корпоративный
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Получите доступ к ресурсам, чтобы спланировать развертывание Office 365 корпоративный.
-ms.openlocfilehash: 29510c6e3df5dfd6064b6e7e96e236e4bd8c0c47
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: de23b8f49968bad949cd01551fdb040882bc00f4
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249477"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302691"
 ---
 # <a name="plan-for-office-365-enterprise"></a>Планирование Office 365 корпоративный
 
@@ -38,7 +39,7 @@ ms.locfileid: "34249477"
 
 ## <a name="do-it-yourself-planning-for-office-365"></a>Планирование самостоятельного планирования для Office 365
 
-Чтобы спланировать Office 365 самостоятельно, определите правильные решения по проектированию для следующих областей:
+Чтобы спланировать Office 365 самостоятельно, выполните планирование и проектирование решений для следующих областей:
 
 - Клиент Office 365
 
@@ -56,7 +57,12 @@ ms.locfileid: "34249477"
 
   Включает сведения о миграции для Office 2007 и клиентских и серверных продуктов Office 2010. Начните [отсюда](plan-upgrade-previous-versions-office.md).
 
-Вы также можете войти в свою подписку и использовать [рекомендации по развертыванию для служб Office 365](deployment-advisors-for-office-365.md).
+>[!Note]
+>Вы также можете использовать этот процесс для подписки на [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) .
+>
+
+Вы также можете войти в свою подписку на Office 365 и использовать [рекомендации по развертыванию для служб office 365](deployment-advisors-for-office-365.md).
+
 
 
 <!--

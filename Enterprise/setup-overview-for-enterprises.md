@@ -3,6 +3,7 @@ title: Развертывание Office 365 корпоративный для �
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Эти шаги предназначены для помощи в настройке сети, создании удостоверений, развертывании Office 365 профессиональный плюс, переносе данных и помощи пользователям в Организации начать использовать Office 365.
-ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 20b970651d2ff432e0bf7b5d74bdc5f02e34f225
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249507"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302721"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Развертывание Office 365 корпоративный для организации
 
@@ -77,3 +78,5 @@ ms.locfileid: "34249507"
 >[!Note]
 >Эти действия также применяются для компаний и [некоммерческих](https://go.microsoft.com/fwlink/?LinkId=627221) компаний, которые хотят начать с настраиваемого развертывания Office 365 Enterprise. 
 >
+
+Если у вас есть подписка на Microsoft 365 корпоративный, начните [отсюда](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise).
