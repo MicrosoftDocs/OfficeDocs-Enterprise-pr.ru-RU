@@ -3,6 +3,7 @@ title: Планирование Office 365 корпоративный
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,46 +18,51 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Получите доступ к ресурсам, чтобы спланировать развертывание Office 365 корпоративный.
-ms.openlocfilehash: 29510c6e3df5dfd6064b6e7e96e236e4bd8c0c47
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: de23b8f49968bad949cd01551fdb040882bc00f4
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249477"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302691"
 ---
-# <a name="plan-for-office-365-enterprise"></a><span data-ttu-id="35438-103">Планирование Office 365 корпоративный</span><span class="sxs-lookup"><span data-stu-id="35438-103">Plan for Office 365 Enterprise</span></span>
+# <a name="plan-for-office-365-enterprise"></a><span data-ttu-id="ba7e3-103">Планирование Office 365 корпоративный</span><span class="sxs-lookup"><span data-stu-id="ba7e3-103">Plan for Office 365 Enterprise</span></span>
 
-<span data-ttu-id="35438-104">Когда вы перемещаете корпоративную организацию в Office 365, важно заранее спланировать и принять основные решения, которые будут упростить развертывание и внедрение ИТ.</span><span class="sxs-lookup"><span data-stu-id="35438-104">When you move an enterprise organization to Office 365, it's important to plan ahead and make the key design decisions that will streamline IT deployment and user adoption.</span></span> 
+<span data-ttu-id="ba7e3-104">Когда вы перемещаете корпоративную организацию в Office 365, важно заранее спланировать и принять основные решения, которые будут упростить развертывание и внедрение ИТ.</span><span class="sxs-lookup"><span data-stu-id="ba7e3-104">When you move an enterprise organization to Office 365, it's important to plan ahead and make the key design decisions that will streamline IT deployment and user adoption.</span></span> 
 
-## <a name="planning-with-office-365-fasttrack"></a><span data-ttu-id="35438-105">Планирование с помощью Office 365 FastTrack</span><span class="sxs-lookup"><span data-stu-id="35438-105">Planning with Office 365 FastTrack</span></span>
+## <a name="planning-with-office-365-fasttrack"></a><span data-ttu-id="ba7e3-105">Планирование с помощью Office 365 FastTrack</span><span class="sxs-lookup"><span data-stu-id="ba7e3-105">Planning with Office 365 FastTrack</span></span>
 
-<span data-ttu-id="35438-106">[FastTrack для office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365) — это лучший способ получить помощь от Майкрософт по планированию развертывания Office 365.</span><span class="sxs-lookup"><span data-stu-id="35438-106">[FastTrack for Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365) is the best method for getting help from Microsoft for planning your Office 365 deployment.</span></span> <span data-ttu-id="35438-107">FastTrack может помочь вам в наиболее распространенных вопросах проектирования и ответить на вопросы.</span><span class="sxs-lookup"><span data-stu-id="35438-107">FastTrack can help you through the most common design considerations and can answer questions along the way.</span></span> 
+<span data-ttu-id="ba7e3-106">[FastTrack для office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365) — это лучший способ получить помощь от Майкрософт по планированию развертывания Office 365.</span><span class="sxs-lookup"><span data-stu-id="ba7e3-106">[FastTrack for Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365) is the best method for getting help from Microsoft for planning your Office 365 deployment.</span></span> <span data-ttu-id="ba7e3-107">FastTrack может помочь вам в наиболее распространенных вопросах проектирования и ответить на вопросы.</span><span class="sxs-lookup"><span data-stu-id="ba7e3-107">FastTrack can help you through the most common design considerations and can answer questions along the way.</span></span> 
 
 >[!Note]
-><span data-ttu-id="35438-108">Вы также можете обратиться за помощью к [партнеру Майкрософт](https://www.microsoft.com/solution-providers/home).</span><span class="sxs-lookup"><span data-stu-id="35438-108">You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).</span></span>
+><span data-ttu-id="ba7e3-108">Вы также можете обратиться за помощью к [партнеру Майкрософт](https://www.microsoft.com/solution-providers/home).</span><span class="sxs-lookup"><span data-stu-id="ba7e3-108">You can also get help from a [Microsoft partner](https://www.microsoft.com/solution-providers/home).</span></span>
 >
 
-## <a name="do-it-yourself-planning-for-office-365"></a><span data-ttu-id="35438-109">Планирование самостоятельного планирования для Office 365</span><span class="sxs-lookup"><span data-stu-id="35438-109">Do-it-yourself planning for Office 365</span></span>
+## <a name="do-it-yourself-planning-for-office-365"></a><span data-ttu-id="ba7e3-109">Планирование самостоятельного планирования для Office 365</span><span class="sxs-lookup"><span data-stu-id="ba7e3-109">Do-it-yourself planning for Office 365</span></span>
 
-<span data-ttu-id="35438-110">Чтобы спланировать Office 365 самостоятельно, определите правильные решения по проектированию для следующих областей:</span><span class="sxs-lookup"><span data-stu-id="35438-110">To plan for Office 365 on your own, determine the correct design decisions for these areas:</span></span>
+<span data-ttu-id="ba7e3-110">Чтобы спланировать Office 365 самостоятельно, выполните планирование и проектирование решений для следующих областей:</span><span class="sxs-lookup"><span data-stu-id="ba7e3-110">To plan for Office 365 on your own, step through the planning and design decisions for these areas:</span></span>
 
-- <span data-ttu-id="35438-111">Клиент Office 365</span><span class="sxs-lookup"><span data-stu-id="35438-111">Your Office 365 tenant</span></span>
+- <span data-ttu-id="ba7e3-111">Клиент Office 365</span><span class="sxs-lookup"><span data-stu-id="ba7e3-111">Your Office 365 tenant</span></span>
 
-  <span data-ttu-id="35438-112">Включает планирование сетевых подключений к Интернету, удостоверений Office 365 и интеграцию с приложениями, локальными, Azure и другими элементами.</span><span class="sxs-lookup"><span data-stu-id="35438-112">Includes planning for your network connections to the Internet, your Office 365 identities, and integration with apps, on-premises, Azure, and other elements.</span></span> <span data-ttu-id="35438-113">Начните [отсюда](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span><span class="sxs-lookup"><span data-stu-id="35438-113">Start [here](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span></span>
+  <span data-ttu-id="ba7e3-112">Включает планирование сетевых подключений к Интернету, удостоверений Office 365 и интеграцию с приложениями, локальными, Azure и другими элементами.</span><span class="sxs-lookup"><span data-stu-id="ba7e3-112">Includes planning for your network connections to the Internet, your Office 365 identities, and integration with apps, on-premises, Azure, and other elements.</span></span> <span data-ttu-id="ba7e3-113">Начните [отсюда](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span><span class="sxs-lookup"><span data-stu-id="ba7e3-113">Start [here](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).</span></span>
 
-- <span data-ttu-id="35438-114">Поддержка клиентов</span><span class="sxs-lookup"><span data-stu-id="35438-114">Support for your clients</span></span>
+- <span data-ttu-id="ba7e3-114">Поддержка клиентов</span><span class="sxs-lookup"><span data-stu-id="ba7e3-114">Support for your clients</span></span>
 
-  <span data-ttu-id="35438-115">Включает проверку подлинности на основе сертификатов, управление мобильными устройствами, параметры проверки подлинности и совместную работу между клиентами.</span><span class="sxs-lookup"><span data-stu-id="35438-115">Includes certificate-based authentication, mobile device management, authentication options, and inter-tenant collaboration.</span></span> <span data-ttu-id="35438-116">Начните [отсюда](office-365-client-support-certificate-based-authentication.md).</span><span class="sxs-lookup"><span data-stu-id="35438-116">Start [here](office-365-client-support-certificate-based-authentication.md).</span></span>
+  <span data-ttu-id="ba7e3-115">Включает проверку подлинности на основе сертификатов, управление мобильными устройствами, параметры проверки подлинности и совместную работу между клиентами.</span><span class="sxs-lookup"><span data-stu-id="ba7e3-115">Includes certificate-based authentication, mobile device management, authentication options, and inter-tenant collaboration.</span></span> <span data-ttu-id="ba7e3-116">Начните [отсюда](office-365-client-support-certificate-based-authentication.md).</span><span class="sxs-lookup"><span data-stu-id="ba7e3-116">Start [here](office-365-client-support-certificate-based-authentication.md).</span></span>
 
-- <span data-ttu-id="35438-117">Поддержка гибридной современной проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="35438-117">Support for hybrid modern authentication</span></span>
+- <span data-ttu-id="ba7e3-117">Поддержка гибридной современной проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="ba7e3-117">Support for hybrid modern authentication</span></span>
 
-  <span data-ttu-id="35438-118">Включает планирование современной проверки подлинности при использовании гибридных конфигураций основных рабочих нагрузок Office 365.</span><span class="sxs-lookup"><span data-stu-id="35438-118">Includes planning for modern authentication when using hybrid configurations of key Office 365 workloads.</span></span> <span data-ttu-id="35438-119">Начните [отсюда](hybrid-modern-auth-overview.md).</span><span class="sxs-lookup"><span data-stu-id="35438-119">Start [here](hybrid-modern-auth-overview.md).</span></span>
+  <span data-ttu-id="ba7e3-118">Включает планирование современной проверки подлинности при использовании гибридных конфигураций основных рабочих нагрузок Office 365.</span><span class="sxs-lookup"><span data-stu-id="ba7e3-118">Includes planning for modern authentication when using hybrid configurations of key Office 365 workloads.</span></span> <span data-ttu-id="ba7e3-119">Начните [отсюда](hybrid-modern-auth-overview.md).</span><span class="sxs-lookup"><span data-stu-id="ba7e3-119">Start [here](hybrid-modern-auth-overview.md).</span></span>
 
-- <span data-ttu-id="35438-120">Старые клиенты и серверы Office</span><span class="sxs-lookup"><span data-stu-id="35438-120">Older Office clients and servers</span></span>
+- <span data-ttu-id="ba7e3-120">Старые клиенты и серверы Office</span><span class="sxs-lookup"><span data-stu-id="ba7e3-120">Older Office clients and servers</span></span>
 
-  <span data-ttu-id="35438-121">Включает сведения о миграции для Office 2007 и клиентских и серверных продуктов Office 2010.</span><span class="sxs-lookup"><span data-stu-id="35438-121">Includes migration information for Office 2007 and Office 2010 client and server products.</span></span> <span data-ttu-id="35438-122">Начните [отсюда](plan-upgrade-previous-versions-office.md).</span><span class="sxs-lookup"><span data-stu-id="35438-122">Start [here](plan-upgrade-previous-versions-office.md).</span></span>
+  <span data-ttu-id="ba7e3-121">Включает сведения о миграции для Office 2007 и клиентских и серверных продуктов Office 2010.</span><span class="sxs-lookup"><span data-stu-id="ba7e3-121">Includes migration information for Office 2007 and Office 2010 client and server products.</span></span> <span data-ttu-id="ba7e3-122">Начните [отсюда](plan-upgrade-previous-versions-office.md).</span><span class="sxs-lookup"><span data-stu-id="ba7e3-122">Start [here](plan-upgrade-previous-versions-office.md).</span></span>
 
-<span data-ttu-id="35438-123">Вы также можете войти в свою подписку и использовать [рекомендации по развертыванию для служб Office 365](deployment-advisors-for-office-365.md).</span><span class="sxs-lookup"><span data-stu-id="35438-123">You can also sign in to your subscription and use the [Deployment advisors for Office 365 services](deployment-advisors-for-office-365.md).</span></span>
+>[!Note]
+><span data-ttu-id="ba7e3-123">Вы также можете использовать этот процесс для подписки на [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) .</span><span class="sxs-lookup"><span data-stu-id="ba7e3-123">You can use this process for your [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) subscription as well.</span></span>
+>
+
+<span data-ttu-id="ba7e3-124">Вы также можете войти в свою подписку на Office 365 и использовать [рекомендации по развертыванию для служб office 365](deployment-advisors-for-office-365.md).</span><span class="sxs-lookup"><span data-stu-id="ba7e3-124">You can also sign in to your Office 365 subscription and use the [Deployment advisors for Office 365 services](deployment-advisors-for-office-365.md).</span></span>
+
 
 
 <!--
