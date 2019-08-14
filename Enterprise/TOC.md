@@ -72,16 +72,13 @@
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
 # Тестирование Office 365
-## [Руководства по лаборатории тестирования для облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+## [Тестирование Office 365](cloud-adoption-test-lab-guides-tlgs.md)
 ## [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
 ## [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
 ### [Синхронизация каталогов](dirsync-for-your-office-365-dev-test-environment.md)
 ### [Многофакторная проверка подлинности](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [Федеративное удостоверение](federated-identity-for-your-office-365-dev-test-environment.md)
 ### [Расширенная защита от угроз](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-### [Advanced eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
-### [Защита конфиденциальных файлов](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
-### [Метки и классификация данных](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Имитация распределенной виртуальной сети в Azure](simulated-cross-premises-virtual-network-in-azure.md)
 
 # [Развертывание Office 365 корпоративный](setup-overview-for-enterprises.md)
