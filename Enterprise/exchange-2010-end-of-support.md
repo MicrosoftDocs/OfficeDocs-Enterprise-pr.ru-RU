@@ -3,7 +3,7 @@ title: План поддержки Exchange 2010 в конце поддержк�
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 08/12/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 приближается к концу поддержки. Используйте эту схему планирования в качестве руководства по подготовке к обновлению до Exchange Online или более новой версии локального сервера Exchange Server.
-ms.openlocfilehash: a08ef80d2e6081adbc62b4c534ef185dcaff611f
-ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
+ms.openlocfilehash: 82d09b2193e009cfdf553743199638ca5dc4f319
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302759"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491250"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>План поддержки Exchange 2010 в конце поддержки
 
@@ -209,6 +209,16 @@ Exchange 2016 включает все функции и улучшения, вк
 - Изменения схемы Active Directory для Exchange [2016](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.150%29.aspx)
 - Требования к системе для Exchange [2016](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.150%29.aspx)
 - Необходимые условия для Exchange [2016](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.150%29.aspx)
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Обзор параметров для клиентов и серверов Office 2010 и Windows 7
+
+Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, скачайте [афишу конца службы](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять для предотвращения достижения конца обслуживания клиентскими и серверными продуктами Office 2010 и Windows 7, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
+
+Этот плакат можно распечатать в форматах Letter, Legal или таблоид (11 x 17).
 
 ## <a name="what-if-i-need-help"></a>Что делать, если вам нужна помощь?
 

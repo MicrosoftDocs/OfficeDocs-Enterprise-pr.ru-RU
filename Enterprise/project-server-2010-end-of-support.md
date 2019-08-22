@@ -3,7 +3,7 @@ title: План конечной поддержки Project Server 2010
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 07/11/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Прекращение поддержки для Project Server 2010 завершается 13 октября 2020 г. Используйте эту статью в качестве руководства по обновлению до Project Online или более новой версии Project Server в локальной среде.
-ms.openlocfilehash: 8001a3e3c9cb40d23f60a6d38aceca55e4838831
-ms.sourcegitcommit: 19de9984f47a1490e277848f079088685ad22a63
+ms.openlocfilehash: 5133cfaba65349133246e4e3eee3dd2fc286289d
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35630405"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491318"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>План поддержки Project Server 2010.
 
@@ -197,6 +197,16 @@ Project Server, как и почти все продукты Майкрософ�
 - [Описания служб Project Online](https://go.microsoft.com/fwlink/p/?linkid=841280): сведения о функциях управления портфелем, включенных в project Server 2016 и Project Online Premium.
     
 - [Руководство по миграции Microsoft Office Project Portfolio Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841279)
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Обзор параметров для клиентов и серверов Office 2010 и Windows 7
+
+Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, скачайте [афишу конца службы](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять для предотвращения достижения конца обслуживания клиентскими и серверными продуктами Office 2010 и Windows 7, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
+
+Этот плакат можно распечатать в форматах Letter, Legal или таблоид (11 x 17).
     
 ## <a name="related-topics"></a>Статьи по теме
 

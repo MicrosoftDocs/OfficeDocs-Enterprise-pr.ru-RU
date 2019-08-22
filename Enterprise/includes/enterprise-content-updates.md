@@ -3,37 +3,6 @@
 
 
 
-## <a name="week-of-july-08-2019"></a>Неделя с 8 июля 2019 г.
-
-
-| Дата публикации |Название статьи | Изменение |
-|------|------------|--------|
-| 7/9/2019 | [Перенос данных организации в Office 365 корпоративный](/Office365/Enterprise/migrate-data-to-office-365) | Изменено |
-| 7/9/2019 | [Диагностика проблем производительности в SharePoint Online](/Office365/Enterprise/diagnosing-performance-issues-with-sharepoint-online) | Изменено |
-| 7/10/2019 | [Планирование обновления с серверов и клиентов Office 2007 или 2010](/Office365/Enterprise/plan-upgrade-previous-versions-office) | Изменено |
-| 7/10/2019 | [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Изменено |
-| 7/10/2019 | [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | Изменено |
-| 7/10/2019 | [Указатели на сведения об управлении правами в центре администрирования Office 365](/Office365/Enterprise/activate-rms-in-office-365) | Изменено |
-| 7/10/2019 | [Рекомендации по использованию Office 365 в медленной сети](/Office365/Enterprise/best-practices-for-using-office-365-on-a-slow-network) | Изменено |
-| 7/10/2019 | [Задержка при загрузке изображений и JavaScript-файлов в SharePoint Online](/Office365/Enterprise/delay-loading-images-and-javascript-in-sharepoint-online) | Изменено |
-| 7/10/2019 | [Оптимизация изображений для SharePoint Online](/Office365/Enterprise/image-optimization-for-sharepoint-online) | Изменено |
-| 7/10/2019 | [Общие сведения о настройке производительности для SharePoint Online](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | Изменено |
-| 7/10/2019 | [Минификация и объединение в SharePoint Online](/Office365/Enterprise/minification-and-bundling-in-sharepoint-online) | Изменено |
-| 7/10/2019 | [Поддержка NAT в Office 365](/Office365/Enterprise/nat-support-with-office-365) | Изменено |
-| 7/10/2019 | [Параметры навигации для SharePoint Online](/Office365/Enterprise/navigation-options-for-sharepoint-online) | Изменено |
-| 7/10/2019 | [Планирование сети и миграции в Office 365](/Office365/Enterprise/network-and-migration-planning) | Изменено |
-| 7/10/2019 | [Планирование сети и настройка производительности для Office 365](/Office365/Enterprise/network-planning-and-performance) | Изменено |
-| 7/10/2019 | [Использование средства диагностики страниц для SharePoint Online](/Office365/Enterprise/page-diagnostics-for-spo) | Изменено |
-| 7/10/2019 | [Настройка производительности Office 365](/Office365/Enterprise/tune-office-365-performance) | Изменено |
-| 7/10/2019 | [Настройка производительности SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | Изменено |
-| 7/10/2019 | [Настройка производительности Skype для бизнеса Online](/Office365/Enterprise/tune-skype-for-business-online-performance) | Изменено |
-| 7/10/2019 | [Использование экономичных всплывающих окон для уменьшения объема памяти, используемой при чтении почтовых сообщений](/Office365/Enterprise/use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages) | Изменено |
-| 7/10/2019 | [Использование веб-части поиска контента вместо веб-части "Запрос контента" для улучшения производительности в SharePoint Online](/Office365/Enterprise/using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo) | Изменено |
-| 7/10/2019 | [Использование кэша объектов в SharePoint Online](/Office365/Enterprise/using-the-object-cache-with-sharepoint-online) | Изменено |
-| 7/11/2019 | [План конечной поддержки Project Server 2010](/Office365/Enterprise/project-server-2010-end-of-support) | Изменено |
-| 7/12/2019 | [Обновление с SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | Изменено |
-
-
 ## <a name="week-of-july-15-2019"></a>Неделя с 15 июля 2019 г.
 
 
@@ -123,3 +92,19 @@
 | 8/5/2019 | [Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | Изменено |
 | 8/6/2019 | [IP-адрес и URL-адрес веб-службы Office 365](/Office365/Enterprise/office-365-ip-web-service) | Изменено |
 | 8/7/2019 | [Оценка сетевого подключения Office 365](/Office365/Enterprise/assessing-network-connectivity) | Изменено |
+
+
+## <a name="week-of-august-12-2019"></a>Неделя с 12 августа 2019 г.
+
+
+| Дата публикации |Название статьи | Изменение |
+|------|------------|--------|
+| 8/12/2019 | [Тестирование Office 365 с руководствами по лаборатории тестирования (руководствах TLG)](/Office365/Enterprise/cloud-adoption-test-lab-guides-tlgs) | Изменено |
+| 8/12/2019 | [План поддержки Exchange 2010 в конце поддержки](/Office365/Enterprise/exchange-2010-end-of-support) | Изменено |
+| 8/12/2019 | [Планирование Office 365 корпоративный](/Office365/Enterprise/get-your-organization-ready-for-office-365) | Изменено |
+| 8/12/2019 | [Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | Изменено |
+| 8/12/2019 | [Развертывание Office 365 корпоративный для организации](/Office365/Enterprise/setup-overview-for-enterprises) | Изменено |
+| 8/13/2019 | [Azure ExpressRoute для Office 365](/Office365/Enterprise/azure-expressroute) | Изменено |
+| 8/13/2019 | [Внешние записи DNS для Office 365](/Office365/Enterprise/external-domain-name-system-records) | Изменено |
+| 8/13/2019 | [Параметры навигации для SharePoint Online](/Office365/Enterprise/navigation-options-for-sharepoint-online) | Изменено |
+| 8/13/2019 | [Использование сети доставки содержимого Office 365 с SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | Изменено |

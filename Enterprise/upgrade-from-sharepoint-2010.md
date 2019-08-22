@@ -3,7 +3,7 @@ title: Обновление с SharePoint 2010
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 07/11/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: Прекращение поддержки для SharePoint 2010 и SharePoint Server 2010 заканчивается 13 октября 2020 г. Используйте эту статью в качестве руководства по обновлению до SharePoint Online или более новой версии SharePoint Server в локальной среде.
-ms.openlocfilehash: c3860e8229c8633ea605228d7d3553d0f673a7d3
-ms.sourcegitcommit: d3f8df9439e9cd15333f01b5cde2001fb4b74113
+ms.openlocfilehash: 944dd4a2980097611de1fa9239acbfca46517960
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35643069"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491328"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Обновление с SharePoint 2010
 
@@ -178,6 +178,16 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
   
 > [!NOTE]
 > Помните, что ферму SharePoint Server 2010 сначала необходимо обновить в локальной среде до SharePoint Server 2013 или SharePoint Server 2016, чтобы использовать гибридный вариант. SharePoint Foundation 2010 и SharePoint Foundation 2013 не могут создавать гибридные подключения к SharePoint Online. 
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Обзор параметров для клиентов и серверов Office 2010 и Windows 7
+
+Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, скачайте [афишу конца службы](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять для предотвращения достижения конца обслуживания клиентскими и серверными продуктами Office 2010 и Windows 7, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
+
+Этот плакат можно распечатать в форматах Letter, Legal или таблоид (11 x 17).
   
 ## <a name="related-topics"></a>Статьи по теме
 
