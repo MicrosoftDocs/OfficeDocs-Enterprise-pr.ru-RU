@@ -1,8 +1,8 @@
 ---
 title: Обзор гибридной современной проверки подлинности и предварительные требования для их использования с локальными серверами Skype для бизнеса и Exchange
-ms.author: tracyp
+ms.author: kvice
 ms.reviewer: smithre4
-author: MSFTTracyP
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: Современная проверка подлинности это способ управления удостоверениями, обеспечивающий более безопасную проверку подлинности и авторизацию пользователей. Он доступен для гибридных развертываний локального приложения Skype для бизнеса Server и локального сервера Exchange Server, а также для гибридных гибридов Skype для бизнеса. В этой статье приведены ссылки на связанные документы о предварительных требованиях, настройке и отключении современной проверки подлинности, а также о некоторых связанных клиентах (например, Сведения о клиентах Outlook и Skype).
-ms.openlocfilehash: a8395a4d1bc212f23309b4ea273588d44eef69a3
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 6a724ae48166f8946e71cf3f2235e07ee399712a
+ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782459"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493306"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Обзор гибридной современной проверки подлинности и предварительные требования для их использования с локальными серверами Skype для бизнеса и Exchange
 
