@@ -1,6 +1,6 @@
 ---
 title: Office 365 корпоративный
-description: Microsoft Office 365 предоставляет мощные интерактивные облачные службы, обеспечивающие совместную работу, безопасность и соответствие требованиям, мобильность и аналитики. На этой странице представлены рекомендации для администраторов и ИТ-специалистов по развертыванию, настройке и управлению службами Office 365 в корпоративных организациях.
+description: Microsoft Office 365 предоставляет эффективные облачные службы в Интернете, обеспечивающие совместную работу, безопасность и соответствие требованиям, мобильность и аналитику. На этой странице представлены руководства для администраторов и ИТ-специалистов, разворачивающих и настраивающих службы Office 365, а также управляющих ими в корпоративной организации.
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -16,13 +16,13 @@ ms.date: 8/21/2018
 ms.author: robmazz
 ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
 ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 05/28/2019
 ms.locfileid: "34490732"
 ---
 <h1>Office 365 корпоративный</h1>
-<p>Microsoft Office&nbsp;365 предоставляет мощные интерактивные облачные службы, обеспечивающие совместную работу, безопасность и соответствие требованиям, мобильность и аналитики. На этой странице представлены ссылки на руководство для администраторов и ИТ-специалистов, которые развертывают, настраивают и&nbsp;управляют службами Office 365 в корпоративных организациях.</p>
+<p>Microsoft Office&nbsp;365 предоставляет эффективные облачные службы в Интернете, обеспечивающие совместную работу, безопасность и соответствие требованиям, мобильность и аналитику. На этой странице представлены ссылки на руководства для администраторов и ИТ-специалистов, разворачивающих и настраивающих службы Office&nbsp;365, а также управляющих ими в корпоративной организации.</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">
@@ -35,8 +35,8 @@ ms.locfileid: "34490732"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Руководство по развертыванию с FastTrack</h3>
-                <p>Воспользуйтесь преимуществом FastTrack Center for Office&nbsp;365, чтобы получить помощь в планировании, развертывании и использовании служб Office&nbsp;365 для вашей организации.</p>
+                        <h3>Поддержка при развертывании с помощью FastTrack</h3>
+                <p>Используйте преимущество FastTrack Center для Office&nbsp;365, чтобы получить помощь при планировании, развертывании и внедрении служб Office&nbsp;365 в организации.</p>
                     </div>
                 </div>
             </div>
@@ -54,8 +54,8 @@ ms.locfileid: "34490732"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Переход на Office 365</h3>
-                <p>Перенос существующей локальной инфраструктуры в Office&nbsp;365 и Microsoft Cloud.</p>
+                        <h3>Переход на Office 365</h3>
+                <p>Перенесите существующую локальную инфраструктуру в Office&nbsp;365 и Microsoft Cloud.</p>
                     </div>
                 </div>
             </div>
@@ -73,8 +73,8 @@ ms.locfileid: "34490732"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 профессиональный плюс</h3>
-                <p>Планирование, развертывание и управление Office&nbsp;365 профессиональный плюс в корпоративной среде.</p>
+                        <h3>Office 365 профессиональный плюс</h3>
+                <p>Планируйте, разворачивайте и используйте Office&nbsp;365 профессиональный плюс в корпоративной среде.</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@ ms.locfileid: "34490732"
                     </div>
                     <div class="cardText">
                         <h3>Гибридные развертывания</h3>
-                <p>Настройка и Управление гибридным развертыванием между существующей локальной инфраструктурой и Office&nbsp;365.</p>
+                <p>Настройте гибридное развертывание между существующей локальной инфраструктурой и Office&nbsp;365 и управляйте им.</p>
                     </div>
                 </div>
             </div>
@@ -130,8 +130,8 @@ ms.locfileid: "34490732"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Учебные курсы по Office 365</h3>
-                <p>Улучшите свои&nbsp;знания и навыки по администрированию Office&nbsp;365 с помощью учебных курсов Office 365 для ИТ-специалистов.</p>
+                        <h3>Обучение работе с Office 365</h3>
+                <p>Узнайте больше об администрировании Office&nbsp;365 с помощью учебных курсов по Office&nbsp;365 для ИТ-специалистов.</p>
                     </div>
                 </div>
             </div>
@@ -256,8 +256,8 @@ ms.locfileid: "34490732"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Сообщество Office 365 Tech</h3>
-                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Ознакомьтесь с рекомендациями, новостями и последними тенденциями и разделами,&nbsp;относящимися к Office 365.</a></p>
+                        <h3>Сообщество технических специалистов по Office 365</h3>
+                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Ознакомьтесь с рекомендациями, новостями, последними тенденциями и статьями, связанными с Office&nbsp;365.</a></p>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ ms.locfileid: "34490732"
                     </div>
                     <div class="cardText">
                         <h3>Получение поддержки</h3>
-                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Обратитесь в службу поддержки для получения&nbsp;помощи в Office 365.</a></p>
+                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Обращайтесь в службу поддержки для получения справки по Office&nbsp;365.</a></p>
                     </div>
                 </div>
             </div>
@@ -290,8 +290,8 @@ ms.locfileid: "34490732"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Microsoft 365</h3>
-                        <p><a href="https://docs.microsoft.com/microsoft-365">Узнайте больше о Microsoft 365.</a></p>
+                        <h3>Microsoft 365</h3>
+                        <p><a href="https://docs.microsoft.com/microsoft-365">Дополнительные сведения о Microsoft 365.</a></p>
                     </div>
                 </div>
             </div>
