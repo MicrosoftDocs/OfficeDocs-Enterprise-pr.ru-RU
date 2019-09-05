@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: Современная проверка подлинности — это способ управления удостоверениями, обеспечивающий более надежную проверку подлинности и авторизацию пользователей, доступный для локального сервера Skype для бизнеса Server и для локального сервера Exchange Server, а также для гибридной среды Skype для бизнеса.
-ms.openlocfilehash: 5db33a39ff58ae2aa21968c2f092c8ac29af5681
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
+ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493336"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36759687"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Как настроить локальное развертывание Skype для бизнеса для использования гибридной современной проверки подлинности
 
@@ -73,7 +73,7 @@ ms.locfileid: "36493336"
   
 ## <a name="collect-all-hma-specific-info-youll-need"></a>Сбор сведений, относящихся к сегменту HMA, которые вам понадобятся
 
-После повторной проверки соответствия требованиям для использования современной проверки [](hybrid-modern-auth-overview.md) подлинности (см. примечание выше) необходимо создать файл для хранения сведений, необходимых для настройки HMA в шагах. Примеры, используемые в этой статье: 
+После повторной проверки соответствия [требованиям для использования](hybrid-modern-auth-overview.md) современной проверки подлинности (см. примечание выше) необходимо создать файл для хранения сведений, необходимых для настройки HMA в шагах. Примеры, используемые в этой статье: 
   
 - **Домен SIP/SMTP**
     
@@ -103,11 +103,11 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
   
 ## <a name="turn-on-modern-authentication-for-sfbo"></a>Включение современной проверки подлинности для SFBO
 
-Следуйте инструкциям здесь: [Skype для бизнеса Online: Включите клиент для современной проверки](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)подлинности.
+Следуйте инструкциям здесь: [Skype для бизнеса Online: Включите клиент для современной проверки подлинности](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
   
 ## <a name="turn-on-hybrid-modern-authentication-for-exchange-on-premises"></a>Включение гибридной современной проверки подлинности для локального сервера Exchange
 
-Следуйте инструкциям ниже: [Настройка локального сервера Exchange Server для использования гибридной современной проверки](configure-exchange-server-for-hybrid-modern-authentication.md)подлинности.
+Следуйте инструкциям ниже: [Настройка локального сервера Exchange Server для использования гибридной современной проверки подлинности](configure-exchange-server-for-hybrid-modern-authentication.md).
   
 ## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>Включение гибридной современной проверки подлинности в локальной среде Skype для бизнеса
 
@@ -140,7 +140,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. Проверьте, были ли добавлены новые записи, выполнив команду Get – MsolServicePrincipal повторно с шага 2 и просмотрев результаты. Сравнение списка и снимка экрана перед новым списком имен участников-служб (вы также можете создать список снимков экрана для записи). В случае успеха в списке отобразятся два новых URL-адреса. В нашем примере список SPN теперь включает определенные URL-адреса https://lyncweb01.contoso.com и. https://lyncwebext01.contoso.com/
+4. Проверьте, были ли добавлены новые записи, выполнив команду Get – MsolServicePrincipal повторно с шага 2 и просмотрев результаты. Сравнение списка и снимка экрана перед новым списком имен участников-служб (вы также можете создать список снимков экрана для записи). В случае успеха в списке отобразятся два новых URL-адреса. В нашем примере список SPN теперь включает определенные URL-адреса https://lyncwebint01.contoso.com и. https://lyncwebext01.contoso.com/
     
 ### <a name="create-the-evosts-auth-server-object"></a>Создание объекта сервера проверки подлинности Евостс
 
@@ -172,7 +172,7 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
   
 ## <a name="related-articles"></a>Статьи по теме
 
-[Выполните обратное соединение с обзором современной проверки](hybrid-modern-auth-overview.md) подлинности. 
+[Выполните обратное соединение с обзором современной проверки подлинности](hybrid-modern-auth-overview.md) . 
   
 Вам нужно знать, как использовать современные проверки подлинности (ADAL) для клиентов Skype для бизнеса? Мы познакомились с [этой](https://technet.microsoft.com/en-us/library/mt710548.aspx)статьей.
   
