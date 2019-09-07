@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 приближается к концу поддержки. Используйте эту схему планирования в качестве руководства по подготовке к обновлению до Exchange Online или более новой версии локального сервера Exchange Server.
-ms.openlocfilehash: 82d09b2193e009cfdf553743199638ca5dc4f319
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: 94efc456df67017a557b14edcc9348433c862c6a
+ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491250"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36782399"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>План поддержки Exchange 2010 в конце поддержки
 
@@ -212,14 +212,14 @@ Exchange 2016 включает все функции и улучшения, вк
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Обзор параметров для клиентов и серверов Office 2010 и Windows 7
 
-Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, скачайте [афишу конца службы](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, ознакомьтесь с разрядом с [плакатом об отконце поддержки](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять для предотвращения достижения конца обслуживания клиентскими и серверными продуктами Office 2010 и Windows 7, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
+Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять, чтобы запретить клиенту Office 2010 и серверным продуктам и Windows 7 достичь конца поддержки, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
 
-Этот плакат можно распечатать в форматах Letter, Legal или таблоид (11 x 17).
-
+Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
+      
 ## <a name="what-if-i-need-help"></a>Что делать, если вам нужна помощь?
 
 При переходе на Office 365 вы можете использовать нашу службу Microsoft FastTrack. FastTrack предоставляет рекомендации, средства и ресурсы, позволяющие выполнить миграцию в Office 365 по мере возможности. Все, что у вас есть, у вас есть реальный инженер по поддержке, который поможет вам выполнить миграцию, используя планирование и проектирование всех способов переноса последнего почтового ящика. Если вы хотите узнать больше о FastTrack, ознакомьтесь со сведениями о [Microsoft FastTrack](https://fasttrack.microsoft.com/).

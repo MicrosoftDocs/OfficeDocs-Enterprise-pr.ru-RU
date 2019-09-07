@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: Прекращение поддержки для SharePoint 2010 и SharePoint Server 2010 заканчивается 13 октября 2020 г. Используйте эту статью в качестве руководства по обновлению до SharePoint Online или более новой версии SharePoint Server в локальной среде.
-ms.openlocfilehash: 944dd4a2980097611de1fa9239acbfca46517960
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: c83d91b3ae8124312459033cb59524dec048fd03
+ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491328"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36782436"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Обновление с SharePoint 2010
 
@@ -76,7 +76,7 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
     
 - Выполните оба указанных выше действия.
     
-- Реализация гибридного решения [SharePoint](https://docs.microsoft.com/sharepoint/hybrid/hybrid) 
+- Реализация [гибридного решения SharePoint](https://docs.microsoft.com/sharepoint/hybrid/hybrid) 
     
 Следует учитывать скрытые затраты, связанные с обслуживанием фермы серверов для пересылки, обслуживания и переноса настроек, а также обновления оборудования, от которого зависит SharePoint Server. Если вы осведомлены о том, что у вас есть учетная запись для всех этих задач, вы сможете упростить обновление локальной системы. В противном случае, если вы выполняете ферму на старых серверах SharePoint без высокой настройки, вы можете воспользоваться плановой миграцией в SharePoint Online. Кроме того, возможно, что для локальной среды SharePoint Server вы можете попытаться поместить некоторые данные в SharePoint Online, чтобы снизить объем управления аппаратным обеспечением, в рамках которого все данные в локальной среде используются. Перемещение некоторых данных в SharePoint Online может оказаться более экономичным.
   
@@ -118,7 +118,7 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>Обновление локальной версии SharePoint Server
 
-По мере получения последней версии локального продукта SharePoint (SharePoint Server 2016) обновления SharePoint Server должны идти последовательно, это означает, ** что невозможно выполнить обновление с sharepoint Server 2010 до sharepoint Server 2016 напрямую. 
+По мере получения последней версии локального продукта SharePoint (SharePoint Server 2016) обновления SharePoint Server должны идти последовательно, это *означает, что*невозможно выполнить обновление с sharepoint Server 2010 до sharepoint Server 2016 напрямую. 
   
 |||
 |:-----|:-----|
@@ -181,14 +181,14 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Обзор параметров для клиентов и серверов Office 2010 и Windows 7
 
-Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, скачайте [афишу конца службы](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, ознакомьтесь с разрядом с [плакатом об отконце поддержки](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять для предотвращения достижения конца обслуживания клиентскими и серверными продуктами Office 2010 и Windows 7, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
+Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять, чтобы запретить клиенту Office 2010 и серверным продуктам и Windows 7 достичь конца поддержки, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
 
-Этот плакат можно распечатать в форматах Letter, Legal или таблоид (11 x 17).
-  
+Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
+        
 ## <a name="related-topics"></a>Статьи по теме
 
 [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007 или 2010](upgrade-from-office-2010-servers-and-products.md)
