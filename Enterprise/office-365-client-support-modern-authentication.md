@@ -13,18 +13,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: Поддержка современной проверки подлинности в клиентских приложениях Office 365.
-ms.openlocfilehash: d5d17f3395b7eec736403c75b4e2b571c1123fe7
-ms.sourcegitcommit: 27614632a0ceccbd5a4083cefa822187417f02a6
+ms.openlocfilehash: 29abfdc5a9974b3e581e08556b675a725a6076dc
+ms.sourcegitcommit: b1a32e8df403143fb34eaddf116aed3595228c8c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36672939"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "36817265"
 ---
 # <a name="office-365-client-app-support---modern-authentication"></a>Поддержка клиентских приложений Office 365 — современная проверка подлинности
 
 Современная проверка подлинности включает вход на основе библиотеки проверки подлинности Active Directory (ADAL) для клиентских приложений Office на разных платформах. Это включает функции входа, такие как многофакторная проверка подлинности (MFA), смарт-карта и проверка подлинности на основе сертификатов.
 
-Узнайте больше о [многофакторной проверке](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication) подлинности и [проверке подлинности на основе сертификатов](https://docs.microsoft.com/azure/active-directory/active-directory-certificate-based-authentication-get-started).
+Узнайте больше о [многофакторной проверке подлинности](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication) и [проверке подлинности на основе сертификатов](https://docs.microsoft.com/azure/active-directory/active-directory-certificate-based-authentication-get-started).
 
 ## <a name="supported-platforms"></a>Поддерживаемые платформы
 
@@ -48,7 +48,7 @@ ms.locfileid: "36672939"
 | ![Значок Office.com](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Значок администратора Office 365](media/o365-o365admin-64x64.png) <br> [Администратор Office <br> 365](https://products.office.com/business/manage-office-365-admin-app) | ![Значок лупы](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Значок OneDrive для бизнеса](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![Значок OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) 
 | ![Значок Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Значок планировщика](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Значок PowerApps](media/o365-powerapps-64x64.png) <br> [PowerApps](https://powerapps.microsoft.com) | ![Значок PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![Значок PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![Значок проекта](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Значок Publisher](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![Значок SharePoint](media/o365-sharepoint-64x64.png) <br> [SharePoint](https://products.office.com/sharepoint) | ![Значок Skype для бизнеса](media/o365-skypeforbusiness-64x64.png) <br> [Skype для <br> бизнеса<sup>1</sup>](https://www.skype.com/business/) | ![Значок StaffHub](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software)
-| ![Значок клейких заметок](media/o365-stickynotes-64x64.png) <br> [Клейкие заметки](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Значок потока](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Значок Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Значок рабочих групп](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Значок дел](media/o365-todo-64x64.png) <br> [To-Do](https://todo.microsoft.com) 
+| ![Значок клейких заметок](media/o365-stickynotes-64x64.png) <br> [Клейкие заметки](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Значок потока](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Значок Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Значок рабочих групп](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Значок "to do"](media/o365-todo-64x64.png) <br> [Действие](https://todo.microsoft.com) 
 | ![Значок Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Значок доски](media/o365-whiteboard-64x64.png) <br> [Доска<sup>1</sup>,<sup>2</sup>](https://whiteboard.microsoft.com/) | ![Значок Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Значок Yammer](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview) | ![Значок Yammer](media/o365-yammer-64x64.png) <br> [Уведомление <br> об Yammer](https://products.office.com/yammer/yammer-overview) |  |
 
 ## <a name="supported-powershell-modules"></a>Поддерживаемые модули PowerShell
