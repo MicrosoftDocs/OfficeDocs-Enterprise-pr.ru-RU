@@ -124,7 +124,7 @@
 #### [Настройка синхронизации каталогов](set-up-directory-synchronization.md)
 ### [Назначение лицензий учетным записям пользователей](assign-licenses-to-user-accounts.md)
 
-## [3. Реализация возможностей защиты](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+## [3. Реализация возможностей защиты](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
 
 ## 4. Развертывание клиентского программного обеспечения
 ### [Развертывание Office 365 профессиональный плюс](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
@@ -204,6 +204,11 @@
 ### [Восстановление элементов, удаленных из почтового ящика пользователя](recover-deleted-items-in-a-mailbox.md)
 ### Совместная работа с гостями
 #### [Справочник по гостевому общему доступу](microsoft-365-guest-settings.md)
+#### Решения гостевого общего доступа
+##### [Обзор совместной работы с гостями](collaborating-with-people-outside-your-organization.md)
+##### [Совместная работа над документами](collaborate-on-documents.md)
+##### [Совместная работа на сайте](collaborate-in-a-site.md)
+##### [Совместная работа в группе](collaborate-as-a-team.md)
 
 ## Устройства
 ### [Выбор между MDM и Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
