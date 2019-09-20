@@ -3,7 +3,7 @@ title: Федеративная идентификация для среды р�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/09/2018
+ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: Сводка. Сведения о настройке федеративной аутентификации для среды разработки и тестирования Office 365.
-ms.openlocfilehash: 25280437a8909315fe2d4c07edbb2e904a30d6fb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9cee3ae308b5dc7e97b8711a9b021869478a47b4
+ms.sourcegitcommit: ed9d80a7b4acc42065c94155122f0cdb86dccde6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067605"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37046994"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Федеративная идентификация для среды разработки и тестирования Office 365
 
@@ -88,11 +88,14 @@ Office 365 поддерживает федеративную идентифик�
 ```
 $subscrName="<your Azure subscription name>"
 $rgName="<the resource group name of your Base Configuration>"
+$vnetName="TlgBaseConfig-01-VNET"
+# NOTE: If you built your simulated intranet with Azure PowerShell, comment the previous line with a "#" and remove the "#" from the next line.
+#$vnetName="TestLab"
 Connect-AzAccount
 Select-AzSubscription -SubscriptionName $subscrName
 $staticIP="10.0.0.100"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
-$vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
 $pip = New-AzPublicIpAddress -Name ADFS1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic = New-AzNetworkInterface -Name ADFS1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName ADFS1 -VMSize Standard_D2_v2
@@ -136,9 +139,12 @@ PROXY1 обеспечивает передачу сообщений аутент
   
 ```
 $rgName="<the resource group name of your Base Configuration>"
+$vnetName="TlgBaseConfig-01-VNET"
+# NOTE: If you built your simulated intranet with Azure PowerShell, comment the previous line with a "#" and remove the "#" from the next line.
+#$vnetName="TestLab"
 $staticIP="10.0.0.101"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
-$vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName
+$vnet=Get-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
 $pip = New-AzPublicIpAddress -Name PROXY1-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Static
 $nic = New-AzNetworkInterface -Name PROXY1-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName PROXY1 -VMSize Standard_D2_v2
