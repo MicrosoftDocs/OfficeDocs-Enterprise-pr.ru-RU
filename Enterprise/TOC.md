@@ -209,6 +209,10 @@
 ##### [Совместная работа над документами](collaborate-on-documents.md)
 ##### [Совместная работа на сайте](collaborate-in-a-site.md)
 ##### [Совместная работа в группе](collaborate-as-a-team.md)
+#### Безопасность гостевого общего доступа
+##### [Анонимный общий доступ](best-practices-anonymous-sharing.md)
+##### [Ограничение возможности случайного раскрытия файлов при предоставлении доступа гостям](sharing-limit-accidental-exposure.md)
+##### [Создание безопасной среды гостевого общего доступа](create-a-secure-guest-sharing-environment.md)
 
 ## Устройства
 ### [Выбор между MDM и Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
