@@ -3,7 +3,7 @@ title: Назначение лицензий для учетных записе�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/05/2019
+ms.date: 09/26/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Инструкции по использованию Office 365 PowerShell для назначения лицензии Office 365 пользователям без лицензий.
-ms.openlocfilehash: 4351feaa1dbe9d657ed8df54a74410991834ea5d
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 1f12c7b55e6766db5b2afc661ee5337448336ba1
+ms.sourcegitcommit: 71e6a99fb585b4eb1aea3f215c234688f28d2050
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108219"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37273684"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365
 
@@ -144,6 +144,58 @@ Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwa
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>Перемещение пользователя в другую подписку (план лицензирования) с помощью модуля Azure Active Directory PowerShell для Graph
+
+Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+  
+Затем получите имя для входа учетной записи пользователя, для которой требуется сменить подписку, также называемую именем участника-пользователя (UPN).
+
+Затем перечислите подписки (планы лицензирования) для вашего клиента с помощью этой команды.
+
+```
+Get-AzureADSubscribedSku | Select SkuPartNumber
+```
+
+Затем перечислите подписку на текущую учетную запись пользователя с помощью этих команд.
+
+```
+$userUPN=”<user account UPN>”
+$licensePlanList = Get-AzureADSubscribedSku
+$userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
+$userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
+```
+
+Определите подписку пользователя (из подписки) и подписку, на которую пользователь перемещается (в подписку).
+
+Наконец, укажите имена подписок "Кому" и "от" (номера деталей SKU) и выполните приведенные ниже команды.
+
+```
+$subscriptionFrom="<SKU part number of the current subscription>"
+$subscriptionTo="<SKU part number of the new subscription>"
+# Unassign
+$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
+$licenses.AddLicenses = $license
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+$licenses.AddLicenses = @()
+$licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+# Assign
+$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionTo -EQ).SkuID
+$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$licenses.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+```
+
+Вы можете проверить изменение подписки для учетной записи пользователя с помощью этих команд.
+
+```
+$licensePlanList = Get-AzureADSubscribedSku
+$userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
+$userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
+```
+
 ## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
