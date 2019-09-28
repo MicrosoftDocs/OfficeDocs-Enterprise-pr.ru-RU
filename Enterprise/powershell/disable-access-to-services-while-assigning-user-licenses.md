@@ -3,7 +3,7 @@ title: Отключение доступа к службам во время н�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 09/27/2019
 audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Сведения о том, как назначать лицензии для учетных записей пользователей и отключать определенные планы обслуживания, используя PowerShell в Office 365.
-ms.openlocfilehash: f45c76ba0e756aec057e4243ece51de2af26aaec
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: ac356e5cc70ef36ad2e45b84f0dcd9d2252c79a4
+ms.sourcegitcommit: 6b4fca7ccdbb7aeadc705d82f1007ac285f27357
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782149"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "37282924"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Отключение доступа к службам во время назначения лицензий
 
@@ -27,6 +27,40 @@ ms.locfileid: "35782149"
   
 Подписки на Office 365 включают в себя планы обслуживания для отдельных служб. Администраторам Office 365 часто нужно отключать определенные планы при назначении лицензий для пользователей. Следуя инструкциям в этой статье, вы можете с помощью PowerShell назначить лицензию на Office 365 для одной или нескольких учетных записей пользователей, при этом отключив определенные планы обслуживания.
 
+
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
+
+Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+  
+
+Затем перечислите план лицензирования для клиента с помощью этой команды.
+
+```
+Get-AzureADSubscribedSku | Select SkuPartNumber
+```
+
+Затем получите имя для входа учетной записи, к которой требуется добавить лицензию, также называемую именем участника-пользователя (UPN).
+
+Затем скомпилируйте список служб, которые нужно включить. Полный список планов лицензирования (называемых также названиями продуктов), включенных планов обслуживания и соответствующих понятных имен можно узнать в статье [наименования и идентификаторы планов обслуживания для лицензирования](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+
+В приведенном ниже блоке команд введите имя участника пользователя для учетной записи пользователя, номер детали SKU и список планов обслуживания, чтобы включить и удалить пояснительный текст, а также \< символы и >. Затем выполните полученные команды в командной строке PowerShell.
+  
+```
+$userUPN="<user account UPN>"
+$skuPart="<SKU part number>"
+$serviceList=<double-quoted enclosed, comma-separated list of enabled services>
+$user = Get-AzureADUser -ObjectID $userUPN
+$skuID= (Get-AzureADSubscribedSku  | Where {$_.SkuPartNumber -eq $skuPart}).SkuID
+$SkuFeaturesToEnable = @($serviceList)
+$StandardLicense = Get-AzureADSubscribedSku | Where {$_.SkuId -eq $skuID}
+$SkuFeaturesToDisable = $StandardLicense.ServicePlans | ForEach-Object { $_ | Where {$_.ServicePlanName -notin $SkuFeaturesToEnable }}
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$License.SkuId = $StandardLicense.SkuId
+$License.DisabledPlans = $SkuFeaturesToDisable.ServicePlanId
+$LicensesToAssign = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$LicensesToAssign.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAssign
+```
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
 
