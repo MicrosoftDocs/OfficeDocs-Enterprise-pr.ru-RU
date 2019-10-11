@@ -21,14 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Узнайте, как Office 365 современная проверка подлинности работает по-разному для клиентских приложений Office 2013 и 2016.
-ms.openlocfilehash: 17a6713fe12e7cdb1fe0355dd38b44b4cb93be54
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: 2518f60141f04c0474d849e6f597c062e23e06d7
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491298"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435363"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Современная проверка подлинности в клиентских приложениях Office 2013 и Office 2016
+
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный*
 
 Прочитайте эту статью, чтобы узнать, как клиентские приложения Office 2013 и Office 2016 используют современные функции проверки подлинности на основе конфигурации проверки подлинности в клиенте Office 365 для Exchange Online, SharePoint Online и Skype для бизнеса Online.
 
@@ -39,14 +41,14 @@ ms.locfileid: "36491298"
 
 Для служб Office 365 состояние современной проверки подлинности по умолчанию:
   
-- Включен **** по умолчанию для Exchange Online. В этой статье показано [Включение и отключение современной проверки подлинности в Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) для включения или отключения. 
+- Включен **по умолчанию для Exchange** Online. В этой статье показано [Включение и отключение современной проверки подлинности в Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) для включения или отключения. 
     
-- Включен **** по умолчанию для SharePoint Online. 
+- Включен **по умолчанию для SharePoint** Online. 
     
-- Включен **** по умолчанию для Skype для бизнеса Online. В этой статье описывается [Включение современной проверки подлинности в Skype для бизнеса Online ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)для ее включения или выключения.
+- Включен **по умолчанию для Skype** для бизнеса Online. В этой статье описывается [Включение современной проверки подлинности в Skype для бизнеса Online ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)для ее включения или выключения.
 
 > [!NOTE]
-> Для клиентов, созданных **до** 1 августа 2017, современная проверка подлинности **** по умолчанию отключена для Exchange Online и Skype для бизнеса Online.
+> Для клиентов, созданных **до** 1 августа 2017, современная проверка подлинности по умолчанию **отключена** для Exchange Online и Skype для бизнеса Online.
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Поведение клиентских приложений Office при входе
 
@@ -110,3 +112,5 @@ ms.locfileid: "36491298"
 [Планирование многофакторной проверки подлинности для развертываний Office 365 (для администраторов Office 365)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
 [Вход в Office 365 с 2-этапной проверкой (для конечных пользователей)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+
+[Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

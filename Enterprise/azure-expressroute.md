@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365.
-ms.openlocfilehash: b12310d9a82a1adafd82ce0c3b6554e7ceea9550
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: 360cae39010f35b5a921ec95f6e8ed1d02afb808
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385187"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435413"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute для Office 365
+
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный*
 
 Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365. Службы инфраструктуры и платформ, работающие в Azure, часто получают преимущества, устраняя сетевую архитектуру и вопросы производительности. В таких случаях рекомендуется использовать ExpressRoute для Azure. Программное обеспечение в виде таких служб, как Office 365 и Dynamics 365, были созданы для надежного и надежного доступа через Интернет. Вы можете прочитать сведения о производительности и безопасности Интернета, а также о том, как вы можете использовать Azure ExpressRoute для Office 365 в статье [Оценка сетевого подключения office 365](assessing-network-connectivity.md).
 
@@ -53,7 +55,7 @@ ms.locfileid: "36385187"
 ## <a name="what-office-365-services-are-included"></a>Какие службы Office 365 включены?
 <a name="BKMK_WhatDoIGet"> </a>
 
-В следующей таблице перечислены службы Office 365, поддерживаемые в ExpressRoute. Ознакомьтесь со статьей " [конечные точки Office 365](https://aka.ms/o365endpoints) ", чтобы узнать, какие сетевые запросы для этих приложений требуют подключения к Интернету.
+В следующей таблице перечислены службы Office 365, поддерживаемые в ExpressRoute. Ознакомьтесь со [статьей "конечные точки Office 365](https://aka.ms/o365endpoints) ", чтобы узнать, какие сетевые запросы для этих приложений требуют подключения к Интернету.
 
 |**Включенные приложения**|
 |:-----|
@@ -80,7 +82,7 @@ ms.locfileid: "36385187"
 
 5. Иметь действительную учетную запись Microsoft Azure для подписки на ExpressRoute.
 
-6. Выберите модель подключения и утвержденного [поставщика](https://azure.microsoft.com/documentation/articles/expressroute-locations/). Имейте в виду, что пользователи могут выбрать несколько моделей или партнеров по подключению, а партнер не должен совпадать с существующим поставщиком сети.
+6. Выберите модель подключения и [утвержденного поставщика](https://azure.microsoft.com/documentation/articles/expressroute-locations/). Имейте в виду, что пользователи могут выбрать несколько моделей или партнеров по подключению, а партнер не должен совпадать с существующим поставщиком сети.
 
 7. Проверка развертывания до направления трафика в ExpressRoute.
 
@@ -90,7 +92,7 @@ ms.locfileid: "36385187"
 
 Для дополнительных рекомендаций используйте наше [руководство по маршрутизации](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) в дополнение к [документации ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/).
 
-Чтобы приобрести ExpressRoute для Office 365, вам потребуется работать с одним или несколькими утвержденными [поставщиками](https://azure.microsoft.com/documentation/articles/expressroute-locations/) , чтобы подготовить нужные номера и размеры к подписке ExpressRoute Premium. Нет дополнительных лицензий, которые можно приобрести в Office 365.
+Чтобы приобрести ExpressRoute для Office 365, вам потребуется работать с одним или несколькими [утвержденными поставщиками](https://azure.microsoft.com/documentation/articles/expressroute-locations/) , чтобы подготовить нужные номера и размеры к подписке ExpressRoute Premium. Нет дополнительных лицензий, которые можно приобрести в Office 365.
 
 Вы можете быстро вернуться сюда с помощью этой короткой ссылки: [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365)
 
@@ -98,7 +100,7 @@ ms.locfileid: "36385187"
 
 ## <a name="related-topics"></a>Статьи по теме
 
-[Оценка сетевого подключения Office 365](assessing-network-connectivity.md)
+[Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
 
 [Управление подключением ExpressRoute для Office 365](managing-expressroute-for-connectivity.md)
 
@@ -119,3 +121,7 @@ ms.locfileid: "36385187"
 [Диапазоны IP-адресов и URL-адреса Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)
+
+## <a name="see-also"></a>См. также
+
+[Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

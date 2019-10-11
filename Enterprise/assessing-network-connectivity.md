@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 позволяет клиентам по всему миру подключаться к службе с помощью подключения к Интернету. По мере развития службы безопасность, производительность и надежность Office 365 улучшены в зависимости от клиентов, использующих Интернет для установления подключения к службе.
-ms.openlocfilehash: 884c4c0d510de55da4125a3e3b80b4bd869ec697
-ms.sourcegitcommit: c207aafc126a495e700552796ed89da3de254910
+ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233429"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428076"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Оценка сетевого подключения Office 365
+
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный*
 
 Office 365 позволяет клиентам по всему миру подключаться к службе с помощью подключения к Интернету. По мере развития службы безопасность, производительность и надежность Office 365 улучшены в зависимости от клиентов, использующих Интернет для установления подключения к службе.
   
@@ -38,7 +40,7 @@ Office 365 позволяет клиентам по всему миру подк
 Некоторые ресурсы, которые помогут вам оценить сеть:
 
 - Общие сведения о сети Office 365 содержатся в статье [Обзор подключения к сети office 365](office-365-networking-overview.md) .
-- Ознакомьтесь с принципами подключения к [сети office 365](https://aka.ms/o365networkingprinciples) , чтобы понять принципы подключения для безопасного управления трафиком Office 365 и получения максимальной производительности.
+- Ознакомьтесь с [принципами подключения к сети office 365](https://aka.ms/o365networkingprinciples) , чтобы понять принципы подключения для безопасного управления трафиком Office 365 и получения максимальной производительности.
 - Подпишитесь на [Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack) для получения помощи по планированию, проектированию и развертыванию Office 365. 
 - В разделе [средство входящей миграции сети Office 365](assessing-network-connectivity.md#the-office-365-network-onboarding-tool) приведено ниже, чтобы выполнить основные проверки подключения, предоставляющие конкретные рекомендации по улучшениям сетевого подключения, которые могут быть сделаны между заданным расположением пользователя и Office 365.
 
@@ -99,7 +101,7 @@ Office 365 позволяет клиентам по всему миру подк
 - Проверка подключения к нескольким конечным точкам, зависящим от функции
 - Диагностика сетевого пути, включающая трассировочные и заданные задержки для служб Exchange Online, SharePoint Online и Teams
 
-Вы можете прочитать сведения о средстве входящей миграции сети Office 365 и отправить отзыв по обновленному средству входящей миграции [сети office 365, известному с помощью новой записи в блоге по проектированию сети](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) . Сведения о будущих обновлениях этого средства и других сетевых обновлениях Office 365 будут опубликованы в блоге по [сети office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) .
+Вы можете прочитать сведения о средстве входящей миграции сети Office 365 и отправить отзыв по [обновленному средству входящей миграции сети office 365, известному с помощью новой записи в блоге по проектированию сети](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) . Сведения о будущих обновлениях этого средства и других сетевых обновлениях Office 365 будут опубликованы в блоге по [сети office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) .
   
 Ниже приведена короткая ссылка, которую можно использовать для возврата: [ https://aka.ms/o365networkconnectivity.](https://aka.ms/o365networkconnectivity)
   
@@ -116,3 +118,5 @@ Office 365 позволяет клиентам по всему миру подк
 [Веб-служба IP-адресов и URL-адресов в Office 365](office-365-ip-web-service.md)
 
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)
+
+[Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

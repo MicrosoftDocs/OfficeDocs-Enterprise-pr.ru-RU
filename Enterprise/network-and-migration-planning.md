@@ -17,14 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Содержит ссылки на сведения о планировании и тестировании сети и миграции в Office 365.
-ms.openlocfilehash: 572910f2104ecd90e78bcfe37b2b022ddb3893fa
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: b2f9cdd3514b8d272bc070108f0dbed94d350f94
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616784"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428146"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Планирование сети и миграции для Office 365
+
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный*
 
 В этой статье содержатся ссылки на сведения о планировании и тестировании сети и миграции в Office 365.
   
@@ -112,3 +114,6 @@ ms.locfileid: "35616784"
     
 - [Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
  
+## <a name="see-also"></a>См. также
+
+[Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

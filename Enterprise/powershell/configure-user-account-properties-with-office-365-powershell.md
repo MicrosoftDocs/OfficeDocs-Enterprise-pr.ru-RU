@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: Сводка. Сведения о том, как с помощью PowerShell в Office 365 настроить свойства одной или нескольких учетных записей пользователей в клиенте Office 365:.
-ms.openlocfilehash: 3d81a7e5860b086fd411e8e6fcaab44568e890d5
-ms.sourcegitcommit: 4d29b00a57c22225f2cdd592064ee8b6e575fceb
+ms.openlocfilehash: 40d7e78b3fd6c011f6c53b2af433f258b888d5bb
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "37411518"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435353"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Настройка параметров учетной записи пользователя с помощью PowerShell для Office 365
 
@@ -72,10 +72,7 @@ ms.locfileid: "37411518"
     
 Сведения о дополнительных параметрах см. в статье [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0).
 
->[!Note]
-> Свойство **mail** задается с помощью параметра **– осермаилс** .
->
- 
+
 Чтобы отобразить имя участника-пользователя для учетных записей пользователей, выполните следующую команду.
   
 ```
@@ -191,10 +188,6 @@ Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUse
     
 Сведения о дополнительных параметрах см. в статье [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).
 
->[!Note]
-> Свойство **mail** задается с помощью параметра **– алтернатимаиладдрессес** .
->
- 
 Чтобы просмотреть имя участника-пользователя для каждого из пользователей, выполните приведенную ниже команду.
   
 ```
