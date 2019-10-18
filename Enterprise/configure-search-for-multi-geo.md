@@ -85,7 +85,7 @@ ms.locfileid: "34068075"
 <tr class="odd">
 <td align="left"></td>
 <td align="left">При поиске в среде с поддержкой нескольких регионов невозможно динамическое группирование числовых уточнений.</td>
-<td align="left">В случае числовых уточнений задавайте <a href="https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/query-refinement-in-sharepoint">параметр discretize</a>.</td>
+<td align="left">В случае числовых уточнений задавайте <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">параметр discretize</a>.</td>
 </tr>
 <tr class="even">
 <td align="left">Идентификаторы документов</td>
@@ -172,7 +172,7 @@ ms.locfileid: "34068075"
 
 **Требование**
 
-Для каждого географического расположения необходимо убедиться, что всем пользователям в организации предоставлено разрешение **на чтение** корневого веб-сайта (например, contoso**APAC**.sharepoint.com/ и contoso**EU**.sharepoint.com/). [Сведения о разрешениях](https://support.office.com/ru-RU/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Для каждого географического расположения необходимо убедиться, что всем пользователям в организации предоставлено разрешение **на чтение** корневого веб-сайта (например, contoso**APAC**.sharepoint.com/ и contoso**EU**.sharepoint.com/). [Сведения о разрешениях](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Параметры запроса
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration — дополнительный список гео
 </tbody>
 </table>
 
-Если опустить элемент DataLocation или EndPoint, а также если продублировать DataLocation, запрос будет выполнен с ошибкой. [Сведения о конечной точке геообъектов клиента можно получить с помощью Microsoft Graph](https://docs.microsoft.com/ru-RU/sharepoint/dev/solution-guidance/multigeo-discovery).
+Если опустить элемент DataLocation или EndPoint, а также если продублировать DataLocation, запрос будет выполнен с ошибкой. [Сведения о конечной точке геообъектов клиента можно получить с помощью Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Данные отклика
 
