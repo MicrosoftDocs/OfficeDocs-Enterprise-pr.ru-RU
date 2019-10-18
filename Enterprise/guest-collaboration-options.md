@@ -15,8 +15,8 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 09/16/2019
 ms.locfileid: "36992428"
 ---
-# <a name="guest-collaboration-options"></a><span data-ttu-id="3e35c-103">Параметры совместной работы с гостями</span><span class="sxs-lookup"><span data-stu-id="3e35c-103">Guest collaboration options</span></span>
+# <a name="guest-collaboration-options"></a><span data-ttu-id="9a74a-103">Параметры совместной работы с гостями</span><span class="sxs-lookup"><span data-stu-id="9a74a-103">Guest collaboration options</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="3e35c-104">См. также</span><span class="sxs-lookup"><span data-stu-id="3e35c-104">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9a74a-104">См. также</span><span class="sxs-lookup"><span data-stu-id="9a74a-104">See Also</span></span>
 
-<span data-ttu-id="3e35c-105">Совместная работа</span><span class="sxs-lookup"><span data-stu-id="3e35c-105">CollabWorking</span></span>
+<span data-ttu-id="9a74a-105">Совместная работа</span><span class="sxs-lookup"><span data-stu-id="9a74a-105">CollabWorking</span></span>
