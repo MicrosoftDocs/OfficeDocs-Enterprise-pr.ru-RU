@@ -601,7 +601,7 @@ else:
 
 - Сведения о решении Microsoft Flow см. в статье [Использование Microsoft Flow для получения электронных сообщений об изменениях URL-адресов и IP-адресов Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - Сведения о развертывании Azure Logic App с помощью шаблона ARM см. на странице [Уведомление об обновлении Office 365 (версия 1.1)](https://aka.ms/ipurlws-updates-template).
-- Сведения о записи собственного скрипта уведомлений с помощью PowerShell см. в статье [Send-MailMessage](https://docs.microsoft.com/ru-RU/powershell/module/microsoft.powershell.utility/send-mailmessage).
+- Сведения о записи собственного скрипта уведомлений с помощью PowerShell см. в статье [Send-MailMessage](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
 ## <a name="exporting-a-proxy-pac-file"></a>Экспорт PAC-файла прокси-сервера
 
