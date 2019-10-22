@@ -3,7 +3,7 @@ title: Внешние записи DNS для Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 8/13/2019
+ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Сводка. Список записей DNS для планирования развертывания Office 365.
-ms.openlocfilehash: 665e5aebee6546ceaa3275249da1bcaac6eb0ba2
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37387056"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616142"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Внешние записи DNS для Office 365
 
@@ -45,7 +45,7 @@ ms.locfileid: "37387056"
 ||||
 |:-----|:-----|:-----|
 |**Запись DNS** <br/> |**Назначение** <br/> |**Значение для использования** <br/> |
-|**CNAME** <br/> **(Пакет)** <br/> |Используется Office 365 для прямой проверки подлинности в нужной платформе идентификации. [Дополнительные сведения](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Примечание.** Эта запись CNAME применяется только к службе Office 365, предоставляемой компанией 21Vianet.   |**Псевдоним:** msoid  <br/> **Целевое значение:** clientconfig.microsoftonline-p.net  <br/> |
+|**CNAME** <br/> **(Пакет)** <br/> |Используется Office 365 для прямой проверки подлинности в нужной платформе идентификации. [Дополнительные сведения](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Примечание.** Эта запись CNAME применяется только к службе Office 365, предоставляемой компанией 21Vianet.   |**Псевдоним:** msoid  <br/> **Целевое значение:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(Проверка домена)** <br/> |Используется Office 365 только для подтверждения прав владельца домена. Это не влияет на все остальное.  <br/> |**Узел:** @ (или доменное имя для некоторых поставщиков услуг размещения DNS)  <br/> **Значение TXT:** _текстовая строка, предоставленная_ Office 365  <br/> **Мастер настройки домена** Office 365 предоставляет значения, которые можно использовать для создания этой записи.  <br/> |
 
 
