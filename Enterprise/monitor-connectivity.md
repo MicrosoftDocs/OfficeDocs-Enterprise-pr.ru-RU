@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: После развертывания Office 365 вы можете поддерживать подключение к службам Office 365 с помощью описанных ниже средств и методик. Для этого желательно разобраться в официальных рекомендациях по поддержанию работоспособности и непрерывной работы служб, а также использованию Office 365 в медленных сетях. Полезно также задействовать приложение для администраторов Office 365 и добавить в закладки справку для администраторов по Office 365 для бизнеса.
-ms.openlocfilehash: ce307e01a3d7da4a24a06e58d293b9598c684d8f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
+ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070055"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931697"
 ---
 # <a name="monitor-office-365-connectivity"></a>Мониторинг подключения к Office 365
 
-После развертывания Office 365 вы можете поддерживать подключение к службам Office 365 с помощью описанных ниже средств и методик. Для этого желательно разобраться в официальных рекомендациях по поддержанию [работоспособности и непрерывной работы служб](https://technet.microsoft.com/library/office-365-service-health.aspx), а также [использованию Office 365 в медленных сетях](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166). Полезно также задействовать [приложение для администраторов Office 365](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/) и добавить в закладки [справку для администраторов по Office 365 для бизнеса](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791).
+После развертывания Office 365 вы можете поддерживать подключение к службам Office 365 с помощью описанных ниже средств и методик. Для этого желательно разобраться в официальных рекомендациях по поддержанию [работоспособности и непрерывной работы служб](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity), а также [использованию Office 365 в медленных сетях](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166). Полезно также задействовать [приложение для администраторов Office 365](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/) и добавить в закладки [справку для администраторов по Office 365 для бизнеса](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791).
   
 ## <a name="monitoring-office-365-connectivity"></a>Мониторинг подключения к Office 365
 
