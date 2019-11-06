@@ -124,7 +124,7 @@
 #### [Настройка синхронизации каталогов](set-up-directory-synchronization.md)
 ### [Назначение лицензий учетным записям пользователей](assign-licenses-to-user-accounts.md)
 
-## [3. Реализация возможностей защиты](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+## [3. Реализация возможностей защиты](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. Развертывание клиентского программного обеспечения
 ### [Развертывание Office 365 профессиональный плюс](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
