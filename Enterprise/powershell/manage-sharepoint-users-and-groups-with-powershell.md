@@ -3,7 +3,7 @@ title: Управление пользователями и группами Sha
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/07/2018
+ms.date: 10/05/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Сводка: использование PowerShell для Office 365 для управления пользователями, группами и сайтами SharePoint Online.'
-ms.openlocfilehash: 194486f539593215b8f8a17c04e3d4f499077c65
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f84e4cda797cd8f1bc4ddf573cb4f1c6f0165da7
+ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068825"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37975894"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell
 
@@ -70,7 +70,7 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.onmicrosoft.com -IsSiteCollectionAdmin $true
  ```
 
-Чтобы использовать эти команды, замените "заменить все" в кавычках, в том числе символы _Лт_ и _Гт_, указав правильные имена.
+Чтобы использовать эти команды, замените "заменить все" в кавычках, включая < и > символы, указав правильные имена.
 
 Например, этот набор команд добавляет Кастилло Opalis (имя пользователя opalc), список администраторов семейства веб-сайтов в семействе веб-сайтов ContosoTest в клиентской организации Contoso1:
 
@@ -83,7 +83,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 Вы можете скопировать и вставить эти команды в блокнот, изменить значения переменных для $tenant, $site и $user на фактические значения из вашей среды, а затем вставить их в окно командной консоли SharePoint Online для их запуска.
 
-## <a name="add-a-user-to-other-site-collection-administrators-groups"></a>Добавление пользователя в другие группы администраторов семейства веб-сайтов
+## <a name="add-a-user-to-other-site-collection-groups"></a>Добавление пользователя в другие группы семейств веб-сайтов
 
 Для этой задачи мы используем команду **Add-SPOUser**, чтобы добавить пользователя в группу SharePoint в семействе сайтов.
 
@@ -108,7 +108,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https:/
 
 ## <a name="create-a-site-collection-group"></a>Создание группы семейства веб-сайтов
 
-Для этого следует воспользоваться командой **Set-SPOSiteGroup**, чтобы создать группу SharePoint и добавить ее в семейство сайтов ContosoTest.
+Используйте команду **New-SPOSiteGroup** , чтобы создать новую группу SharePoint и добавить ее в семейство веб-сайтов ContosoTest.
 
 ```
 $tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
@@ -278,13 +278,13 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 
 Это довольно простой отчет, и вы можете добавить код, чтобы создать более сложные отчеты или отчеты с более подробной информацией. Однако в этом случае необходимо понять, как использовать командную консоль SharePoint Online для управления пользователями в среде SharePoint Online.
    
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Подключение к PowerShell в SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [Управление SharePoint Online с помощью Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
 
