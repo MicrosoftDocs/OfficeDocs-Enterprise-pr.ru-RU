@@ -42,7 +42,7 @@
 ## Поддержка клиента Office 365
 ### [Проверка подлинности на основе сертификатов](office-365-client-support-certificate-based-authentication.md)
 ### [Условный доступ](office-365-client-support-conditional-access.md)
-### [Выбор между MDM и Intune](https://docs.microsoft.com/ru-RU/office365/securitycompliance/choose-between-mdm-and-intune)
+### [Выбор между MDM и Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Управление мобильными приложениями](office-365-client-support-mobile-application-management.md)
 ### [Современная проверка подлинности](office-365-client-support-modern-authentication.md)
 ### [Единый вход](office-365-client-support-single-sign-on.md)
@@ -198,7 +198,7 @@
 ### [Отключение синхронизации каталогов](turn-off-directory-synchronization.md)
 
 ## Пользователи
-### [Центр справки для администраторов Office 365](https://support.office.com/ru-RU/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Центр справки для администраторов Office 365](https://support.office.com/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
 ### [Средства для управления учетными записями пользователей](manage-office-365-accounts.md)
 ### [Добавление нескольких пользователей одновременно](add-several-users-at-the-same-time.md)
 ### [Восстановление элементов, удаленных из почтового ящика пользователя](recover-deleted-items-in-a-mailbox.md)
@@ -227,7 +227,7 @@
 
 ## Работоспособность служб
 ### [Способ проверки](view-service-health.md)
-### [Варианты поддержки](https://support.office.com/ru-RU/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+### [Варианты поддержки](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## Производительность
 ### [Настройка производительности Office 365](tune-office-365-performance.md)
