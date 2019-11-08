@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Определяет и описывает неизменность данных в Office 365.
-ms.openlocfilehash: 7563b37af6c59d8d1d4273f70d86b2551addab89
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 027191e6bd8cb117bfec3fcd4e9b26ab0a6940b3
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067772"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035579"
 ---
 # <a name="immutability-in-office-365"></a>Неизменность данных в Office 365
 
@@ -38,12 +38,12 @@ ms.locfileid: "37067772"
 
 Кроме того, корпорация Майкрософт разработала функции надстроек, позволяющие выполнять [архивирование данных](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) из других источников с помощью интеграции со сторонними решениями для сбора данных и управления ими. После импорта сторонних данных можно применить к ним функции обеспечения соответствия требованиям Office 365, в том числе:
 
-- [Судебное удержание](/microsoft365/compliance/create-a-litigation-hold.md)
-- [Обнаружение электронных данных на месте и удержание на месте](/microsoft365/compliance/manage-legal-investigations.md)
-- [Поиск соответствия](/microsoft365/compliance/search-for-content.md)
-- [Архивация на месте](/microsoft365/compliance/enable-archive-mailboxes.md)
-- [Аудит почтовых ящиков](/microsoft365/compliance/enable-mailbox-auditing.md)
-- [Политики хранения](/microsoft365/compliance/retention-policies.md)
+- [Судебное удержание](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
+- [Обнаружение электронных данных на месте и удержание на месте](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [Поиск соответствия](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
+- [Архивация на месте](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
+- [Аудит почтовых ящиков](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)
+- [Политики хранения](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
 Например, при перемещении почтового ящика на хранение для судебного разбирательства сохраняются данные третьих лиц. Можно выполнять поиск сторонних данных, используя обнаружение электронных данных на месте или поиск соответствия требованиям. Кроме того, вы можете применять политики архивации и хранения к сторонним данным, как и к данным Майкрософт. Архивация сторонних данных в Office 365 помогает организации соответствовать государственным и нормативным политикам.
 

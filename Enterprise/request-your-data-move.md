@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Существующие пользователи Office 365 должны отправить запрос перед крайним сроком их страны, чтобы данные клиентов, участвующие в службах Office 365, перемещались на новый географию.
-ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
-ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
+ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907652"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031594"
 ---
 # <a name="how-to-request-your-data-move"></a>Как запросить перемещение данных
 
@@ -37,7 +37,7 @@ ms.locfileid: "35907652"
 |Соединенное Королевство  <br/> |15 марта 2017 г.  <br/> |15 сентября 2017 г.  <br/> |
 |Южная Корея  <br/> |1 мая 2017 г.  <br/> |31 октября 2017 г.  <br/> |
 |Франция  <br/> |14 марта 2018 г.  <br/> |15 сентября 2018 г.  <br/> |
-|Объединенные Арабские Эмираты  <br/> |15 июля 2019 г.  <br/> |31 января 2020 г.  <br/> |
+|Объединенные Арабские Эмираты  <br/> |15 июля 2019 г.  <br/> |31 января 2020 г.  <br/> |
 |Южная Африка  <br/> |25 июля 2019 г.  <br/> |31 января 2020 г.  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Запрос на перемещение
@@ -100,7 +100,7 @@ Microsoft Teams пока не поддерживает перенос конте
     
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Уведомление пользователей об обновлении параметров Exchange на мобильных устройствах
 
-Если у пользователей есть мобильное устройство с Exchange Server, для которого установлено значение **m.Outlook.com** или **podxxxxx.Outlook.com**, рекомендуется перейти на **Outlook.Office365.com**, следуя инструкциям в статье [Настройка мобильного устройства для синхронизации с вашей учетной записью](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+Если у пользователей есть мобильное устройство с Exchange Server, для которого установлено значение **m.Outlook.com** или **podxxxxx.Outlook.com**, рекомендуется перейти на **Outlook.Office365.com**, следуя инструкциям в статье [Настройка мобильного устройства для синхронизации с учетной записью](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
 
 ## <a name="related-topics"></a>Статьи по теме
 
@@ -110,6 +110,6 @@ Microsoft Teams пока не поддерживает перенос конте
 
 [Новые жеос центра обработки данных для Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Службы Azure по регионам](https://azure.microsoft.com/en-us/regions/)
+[Службы Azure по регионам](https://azure.microsoft.com/regions/)
   
 

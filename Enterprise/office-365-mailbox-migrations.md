@@ -13,14 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Краткое описание командлетов, используемых для миграции почтовых ящиков Office 365.
-ms.openlocfilehash: bdd4d6eb68a8727dc26a693f2716ed602e7a5a60
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 03075fdab50ed5dd315d4f9b988032e40f4cbc85
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067732"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035549"
 ---
 # <a name="office-365-mailbox-migrations"></a>Перенос почтовых ящиков Office 365
+
 С помощью гибридного развертывания на основе Exchange клиенты могут выбрать, как переместить локальные почтовые ящики Exchange в организацию [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) или переместить почтовые ящики Exchange Online в [локальную организацию Exchange](https://docs.microsoft.com/Exchange/exchange-server) . Пакеты миграции используются при перемещении почтовых ящиков между локальной организацией и организацией Exchange Online.
 
 Пользователи могут просматривать статистику и другие сведения о миграции почтовых ящиков с помощью следующих командлетов:

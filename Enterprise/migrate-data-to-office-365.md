@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: Если вы отказались от развертывания с использованием службы FastTrack и готовы к переносу данных в Office 365, начните отсюда.
-ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
-ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
+ms.openlocfilehash: 8fa0b26a1051c33a32fa9a583c76662e998b0692
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35597555"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031334"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Перенос данных организации в Office 365 корпоративный
 
@@ -40,7 +40,7 @@ ms.locfileid: "35597555"
 
 ## <a name="migrate-skype-for-business-users"></a>Миграция пользователей Skype для бизнеса
 - [Миграция на Skype для бизнеса Online](https://technet.microsoft.com/library/jj204969.aspx). (Администратор)
-- Скачайте [средство обновления собраний Skype для бизнеса](https://www.microsoft.com/en-us/download/details.aspx?id=51659) и [запустите его на каждой рабочей станции](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4). (Администратор и/или пользователи)
+- Скачайте [средство обновления собраний Skype для бизнеса](https://www.microsoft.com/download/details.aspx?id=51659) и [запустите его на каждой рабочей станции](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4). (Администратор и/или пользователи)
   
 ## <a name="need-to-talk-to-support"></a>Хотите связаться со службой поддержки?
 [Обратитесь в службу поддержки](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) продуктов для бизнеса.

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Ускорьте планирование и настройку Office 365 или Microsoft 365 с помощью рекомендаций по развертыванию.
-ms.openlocfilehash: 86605b1476916d8510a52009dc20a37eafd7c08f
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eee8dfedd72ed0e2e1ac6660d32167490a13f504
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782309"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030803"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Рекомендации по развертыванию служб Office 365 или Майкрософт 365
 
@@ -156,7 +156,7 @@ Watch the [Prepare your environment](https://go.microsoft.com/fwlink/?linkid=204
 
 ## <a name="file-creation-storage-and-sharing"></a>Создание, хранение и совместное использование файлов
 
-### <a name="office-365-proplus"></a>Office 365 профессиональный плюс
+### <a name="office-365-proplus"></a>Office 365 профессиональный плюс
 
 Office 365 профессиональный плюс позволяет пользователям работать с последними версиями Office и обновлять их.
 
@@ -318,9 +318,9 @@ Microsoft StaffHub — это облачная платформа, котора�
   
 ## <a name="additional-videos"></a>Дополнительные видеоролики
 
-### <a name="microsoft-365-admin-center"></a>Центр администрирования Microsoft 365
+### <a name="microsoft-365-admin-center"></a>Центр администрирования Microsoft 365
 
-- [Ориентация центра администрирования](https://www.microsoft.com/en-us/videoplayer/embed/RWfMut)
+- [Ориентация центра администрирования](https://www.microsoft.com/videoplayer/embed/RWfMut)
 
 - [Создание пользователей в центре администрирования](https://aka.ms/ac-createusers)
 

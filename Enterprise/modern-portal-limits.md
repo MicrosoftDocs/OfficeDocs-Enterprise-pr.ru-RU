@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: Сведения о рекомендациях по производительности современных сайтов в SharePoint Online.
-ms.openlocfilehash: 0f54520faaefcdfc66d10430c8d2a646696fc52b
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 2ff7f76a943563644403f3df2b6b0a6ee9b28d53
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37441076"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031274"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>Пределы сайтов современных порталов SharePoint Online
 
@@ -52,7 +52,7 @@ ms.locfileid: "37441076"
 |Максимальный размер изображения  <br/> |300 КБ на изображение  <br/> |Рекомендуем ограничить размер изображений 300kb или меньшим, а также использовать сеть CDN для размещения изображений, стилей и сценариев. <br/>Дополнительные сведения см. [в статье Оптимизация изображений на современных страницах SharePoint Online](modern-image-optimization.md) и [использование сети доставки содержимого (CDN) Office 365 с SharePoint Online](use-office-365-cdn-with-spo.md).  <br/> |
 |Пользователи с правами на изменение  <br/> |200 пользователей на сайт  <br/> |Сайты портала SharePoint оптимизированы для просмотра и использования контента. Разрешения на изменение на портале должны быть ограничены группой пользователей с ограниченным доступом, так как разрешения на изменение загружают дополнительные элементы управления, поэтому они будут выполняться медленнее для этих пользователей. Поэтому чрезмерное количество пользователей с разрешениями на изменение приведет к общему использованию интерфейса. <br/> |
 |Элементы iFrame третьих сторон  <br/> |2 на странице  <br/> |элементы iFrame непредсказуемо замедлены, так как они загружают отдельную внешнюю страницу, включая все связанные с ними материалы, такие как JavaScript, CSS и .NET Framework. Если необходимо использовать элементы iFrames, ограничьте их число 2 или меньше на каждой странице.<br/> Более подробную информацию можно узнать [в статье Оптимизация Iframes на страницах веб-сайта публикации SharePoint Online на современном и классическом сайтах](modern-iframe-optimization.md). <br/> |
-|Вызовы службы UPA  <br/> |1 на пользователя в час  <br/> |Мы не рекомендуем делать _запросы_ на звонки в службу UPA (приложение профилей пользователей). [API Microsoft Graph](https://docs.microsoft.com/en-us/graph/call-api) и [PageContext](https://docs.microsoft.com/en-us/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) можно использовать для запроса сведений о пользователе.  <br/> Если требуется вызов службы UPA, при необходимости сделайте один вызов, а затем кэшировать сведения для повторного использования в том же сеансе. |
+|Вызовы службы UPA  <br/> |1 на пользователя в час  <br/> |Мы не рекомендуем делать _запросы_ на звонки в службу UPA (приложение профилей пользователей). [API Microsoft Graph](https://docs.microsoft.com/graph/call-api) и [PageContext](https://docs.microsoft.com/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) можно использовать для запроса сведений о пользователе.  <br/> Если требуется вызов службы UPA, при необходимости сделайте один вызов, а затем кэшировать сведения для повторного использования в том же сеансе. |
 |Звонки в службу таксономии  <br/> |5 на пользователя в час  <br/> |В службу таксономии рекомендуется не принимать звонки _по запросу_ . Если необходимы вызовы службы таксономии, кэшировать сведения для повторного использования в одном сеансе. <br/> Дополнительную информацию можно узнать [в статье Оптимизация вызовов страниц на страницах веб-сайта на современном и классическом сайте SharePoint Online](modern-page-call-optimization.md). <br/> |
 
 ## <a name="related-topics"></a>Статьи по теме
@@ -61,10 +61,10 @@ ms.locfileid: "37441076"
 
 [Настройка производительности SharePoint Online](tune-sharepoint-online-performance.md)
 
-[Настройка производительности Office 365](tune-office-365-performance.md)
+[Настройка производительности Office 365](tune-office-365-performance.md)
 
-[Ограничения SharePoint Online](https://docs.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[Ограничения SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 
-[Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/en-us/sharepoint/modern-experience-performance)
+[Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
-[Руководство по оптимизации производительности для порталов SharePoint Online](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+[Руководство по оптимизации производительности для порталов SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)

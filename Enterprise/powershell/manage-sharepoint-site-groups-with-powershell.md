@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Сводка: использование PowerShell в Office 365 для управления группами сайтов SharePoint Online.'
-ms.openlocfilehash: a128823ba125342bd1d209ac8a2bf28334da866d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2deaeb2a39b094b828f75a18d4a2c2f06ca79e47
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068865"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031744"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Управление группами сайтов SharePoint Online с помощью Office 365 PowerShell
 
@@ -29,7 +29,7 @@ ms.locfileid: "34068865"
 
 ## <a name="before-you-begin"></a>Перед началом работы
 
-Процедуры, описанные в этой статье, требуют подключения к SharePoint Online. Инструкции см. в статье [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+Процедуры, описанные в этой статье, требуют подключения к SharePoint Online. Инструкции см. в статье [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 ## <a name="view-sharepoint-online-with-office-365-powershell"></a>Просмотр SharePoint Online с помощью PowerShell для Office 365
 
@@ -97,7 +97,7 @@ foreach ($y in $x)
 
 [Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell](manage-sharepoint-users-and-groups-with-powershell.md) .
 
-[Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
 

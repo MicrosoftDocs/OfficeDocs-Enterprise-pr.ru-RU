@@ -14,12 +14,12 @@ ms.assetid: 5a91b9e3-1508-475b-93e0-710fa5d5cd2d
 ms.collection:
 - M365-security-compliance
 description: Если Гибридная современная проверка подлинности (HMA) включена только для того, чтобы найти непригодную для текущей среды, можно отключить HMA. В этой статье описывается, как это сделать.
-ms.openlocfilehash: 91373adf590ad9a69880de20897795ced23d98b8
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 9f1236775f60fdb37ab12cd7cfb7eabd9763466d
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493326"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031604"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Удаление гибридной современной проверки подлинности из Skype для бизнеса и Exchange или ее отключение
 
@@ -30,7 +30,7 @@ ms.locfileid: "36493326"
 Если вы включили современные проверки подлинности в Skype для бизнеса Online или локальной среде, а также на сервере Exchange Online или в локальной среде, и вам нужно отключить сегмент HMA, выполните указанные ниже действия.
 
 > [!IMPORTANT]
-> Ознакомьтесь со статьей "[топологии Skype для бизнеса, поддерживаемые с современной проверкой](https://technet.microsoft.com/en-us/library/mt803262.aspx)подлинности", если вы находитесь в Skype для бизнеса Online или в локальной среде, у вас есть смешанная топология HMA, и вам нужно взглянуть на поддерживаемые топологии перед началом работы.
+> Ознакомьтесь со статьей "[топологии Skype для бизнеса, поддерживаемые с современной проверкой подлинности](https://technet.microsoft.com/library/mt803262.aspx)", если вы находитесь в Skype для бизнеса Online или в локальной среде, у вас есть смешанная топология HMA, и вам нужно взглянуть на поддерживаемые топологии перед началом работы.
   
 ## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>Как отключить гибридную современные проверки подлинности (Exchange)
 
@@ -41,7 +41,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange Online**: [Подключение к Exchange Online](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) с помощью удаленного сеанса PowerShell. Выполните следующую команду, чтобы превратить флаг *OAuth2ClientProfileEnabled* в значение false:
+2. **Exchange Online**: [Подключение к Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) с помощью удаленного сеанса PowerShell. Выполните следующую команду, чтобы превратить флаг *OAuth2ClientProfileEnabled* в значение false:
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
@@ -55,12 +55,12 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 ```
 
-2. **Skype для бизнеса Online**: [Подключение к Skype для бизнеса Online](https://docs.microsoft.com/en-us/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) с помощью удаленного сеанса PowerShell. Выполните следующую команду, чтобы отключить современные проверки подлинности:
+2. **Skype для бизнеса Online**: [Подключение к Skype для бизнеса Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) с помощью удаленного сеанса PowerShell. Выполните следующую команду, чтобы отключить современные проверки подлинности:
 
 ```powershell    
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed
 ```
 
-[Выполните обратное соединение с обзором современной проверки](hybrid-modern-auth-overview.md) подлинности. 
+[Выполните обратное соединение с обзором современной проверки подлинности](hybrid-modern-auth-overview.md) . 
   
 

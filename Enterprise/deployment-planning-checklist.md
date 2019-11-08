@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Этот контрольный список поможет вашей организации при планировании и подготовке к миграции в Office 365.
-ms.openlocfilehash: 9cd2977a43f26e724d85c723aa6aad70937b1f1f
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 9248ed4a252990094e91579deb723aa32f04316a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249497"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028873"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Контрольный список планирования развертывания для Office 365
 
@@ -36,7 +36,7 @@ ms.locfileid: "34249497"
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Задачи развертывания/Евентс** <br/> |**Дата начала** <br/> |**Дата окончания** <br/> |**Resources** <br/> |**Dependencies** <br/> |
+|**Задачи развертывания/Евентс** <br/> |**Дата начала** <br/> |**Дата окончания** <br/> |**Ресурсы** <br/> |**Dependencies** <br/> |
 |**Определение целей развертывания** <br/> |||||
 | С внутренними и внешними заинтересованными лицами:<br>  — Согласование с областью и временной шкалой <br>  — Согласование с механизмом отслеживания проектов  <br>  — Разработка критериев успеха и [связи](https://fasttrack.microsoft.com/office) / [Приступая к работе с Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Инвентаризация текущей среды и принятие ключевых решений по развертыванию** |||||
@@ -54,7 +54,7 @@ ms.locfileid: "34249497"
 | Как будет [выполняться проверка подлинности учетных записей пользователей](https://go.microsoft.com/fwlink/?LinkId=534820)? |||||
 | Будут переноситься все данные и как будет выполняться миграция ( [Электронная почта](https://go.microsoft.com/fwlink/?LinkId=534823) и [файлы](https://go.microsoft.com/fwlink/?LinkId=534824))? |||||
 | Существуют ли краткосрочные и долгосрочные [интеграции с локальными системами](https://go.microsoft.com/fwlink/?LinkId=534822)? |||||
-| Каким устройствам смогут подключаться [Пользователи](https://go.microsoft.com/fwlink/?LinkId=534821) (удаленно, с мобильных устройств или только из вашей сети)? |||||
+| Каким [устройствам смогут подключаться пользователи](https://go.microsoft.com/fwlink/?LinkId=534821) (удаленно, с мобильных устройств или только из вашей сети)? |||||
 |**Устранение возможных блокирований развертывания** |||||
 |С помощью средств и руководств от Майкрософт: |||||
 | Очистка учетных записей Active Directory ( [руководство](https://go.microsoft.com/fwlink/?LinkId=534825) и [средство](https://go.microsoft.com/fwlink/?LinkId=534826)) |||||
@@ -68,15 +68,15 @@ ms.locfileid: "34249497"
 | Настройка [параметров приложения](https://go.microsoft.com/fwlink/?LinkId=534829) (электронная почта, Обмен мгновенными сообщениями, собрания по сети, совместная работа в Интернете, хранение файлов, Yammer) |||||
 | При необходимости [Подготовьтесь к синхронизации службы каталогов](https://go.microsoft.com/fwlink/?LinkId=534830) |||||
 | Необязательное [Подготовьте единый вход](https://go.microsoft.com/fwlink/?LinkId=534831) |||||
-|Подготовка Организации |||||
+|Подготовка организации |||||
 |[Подготовка службы поддержки](https://fasttrack.microsoft.com/office) к предстоящей миграции |||||
 | Тестирование развертывания и необязательного процесса миграции |||||
-| Расскажите пользователям о предстоящих [изменениях и о том, как они повлияют на них](https://fasttrack.microsoft.com/office) |||||
+| Расскажите пользователям о [предстоящих изменениях и о том, как они повлияют на них](https://fasttrack.microsoft.com/office) |||||
 |**Развертывание для пользователей** |||||
 |Настройка учетных записей и почтовых ящиков |||||
 | Добавление пользователей и [Назначение лицензий пользователям в Office 365 для бизнеса](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
 | При необходимости перенесите данные ( [Электронная почта](https://go.microsoft.com/fwlink/?LinkId=534823)и [файлы](https://go.microsoft.com/fwlink/?LinkId=534824)и т. д.) |||||
 |Проверка функциональных возможностей выполните завершающие действия |||||
 | Перенос [параметров DNS для направления в Office 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| Расскажите пользователям, когда они могут [начать работу с Office 365](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
+| Расскажите пользователям, когда они могут [начать работу с Office 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
 | Перенастройка клиентских систем для подключения к Office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook для Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [мобильных устройств](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||

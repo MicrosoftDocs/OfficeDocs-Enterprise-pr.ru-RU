@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Здесь приведены ответы на общие вопросы о перемещении основных данных в новый географические центры обработки данных.
-ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782329"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028893"
 ---
 # <a name="data-move-general-faq"></a>Ответы на общие вопросы о перемещении данных
 
@@ -155,4 +155,4 @@ ms.locfileid: "35782329"
 
 [Новые жеос центра обработки данных для Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Службы Azure по регионам](https://azure.microsoft.com/en-us/regions/)
+[Службы Azure по регионам](https://azure.microsoft.com/regions/)

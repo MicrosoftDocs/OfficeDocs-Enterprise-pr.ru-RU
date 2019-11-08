@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Чтобы правильно разобрал трафик маршрутизации для Office 365 с помощью Azure ExpressRoute, вам потребуются сведения об основных требованиях к маршрутизации ExpressRoute, а также о доменах ExpressRoute и доменах маршрутизации. В этих статьях используются основные принципы использования ExpressRoute, на которые полагаются клиенты Office 365.
-ms.openlocfilehash: 01251880eba2051d8839f7c08e244398906c75ed
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722718"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031584"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Маршрутизация с использованием ExpressRoute для Office 365
 
@@ -63,7 +63,7 @@ ms.locfileid: "34722718"
 
 - [Гибридная среда BCS в SharePoint](https://technet.microsoft.com/library/dn197239.aspx ).
 
-- Федерация [гибридной среды Skype для бизнеса](https://technet.microsoft.com/en-us/library/jj205403.aspx) и/или [Skype для бизнеса](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
+- Федерация [гибридной среды Skype для бизнеса](https://technet.microsoft.com/library/jj205403.aspx) и/или [Skype для бизнеса](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
 
 - [Cloud Connector в Skype для бизнеса](https://technet.microsoft.com/library/mt605227.aspx ).
 
@@ -129,7 +129,7 @@ ms.locfileid: "34722718"
 
 4. Расположение, из которого выбран поставщик сети ExpressRoute.
 
-Определив ответы на эти вопросы, можно подготовить цепь ExpressRoute, которая отвечает требованиям к пропускной способности и расположениям. Для получения дополнительных сведений о планировании сети ознакомьтесь со [руководством по настройке сети Office 365](https://aka.ms/tune) и описанием того, [как Майкрософт выполняет планирование производительности сети](https://aka.ms/tunemsit).
+Определив ответы на эти вопросы, можно подготовить цепь ExpressRoute, которая отвечает требованиям к пропускной способности и расположениям. Для получения дополнительных сведений о планировании сети ознакомьтесь со [руководством по настройке сети Office 365](https://aka.ms/tune) и [описанием того, как Майкрософт выполняет планирование производительности сети](https://aka.ms/tunemsit).
   
 ### <a name="example-1-single-geographic-location"></a>Пример 1: одно географическое расположение
   
@@ -137,7 +137,7 @@ ms.locfileid: "34722718"
   
 Сотрудники компании Trey Research могут подключаться только к службам и веб-сайтам в Интернете, которые отправляются в отделе безопасности в явной форме исходящих прокси-серверов между корпоративной сетью и поставщиком услуг Интернета.
   
-Компания Trey Research планирует использовать Azure ExpressRoute для Office 365 и распознает, что некоторый трафик, такой как трафик, предназначенный для сетей доставки контента, не сможет маршрутизироваться через подключение ExpressRoute для Office 365. Так как весь трафик, который уже пересылается на прокси-устройства по умолчанию, эти запросы продолжат работать как прежде. После того как Trey Research определит, что они могут отвечать требованиям маршрутизации Azure ExpressRoute, они приступит к созданию канала, настройке маршрутизации и связыванию новой цепи ExpressRoute с виртуальной сетью. После того как основная конфигурация Azure ExpressRoute настроена, Trey Research использует [файл #2 Pac](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies) , который публикуется для маршрутизации трафика с данными, зависящими от клиента, через прямые ExpressRoute для подключений Office 365.
+Компания Trey Research планирует использовать Azure ExpressRoute для Office 365 и распознает, что некоторый трафик, такой как трафик, предназначенный для сетей доставки контента, не сможет маршрутизироваться через подключение ExpressRoute для Office 365. Так как весь трафик, который уже пересылается на прокси-устройства по умолчанию, эти запросы продолжат работать как прежде. После того как Trey Research определит, что они могут отвечать требованиям маршрутизации Azure ExpressRoute, они приступит к созданию канала, настройке маршрутизации и связыванию новой цепи ExpressRoute с виртуальной сетью. После того как основная конфигурация Azure ExpressRoute настроена, Trey Research использует [файл #2 PAC, который публикуется](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies) для маршрутизации трафика с данными, зависящими от клиента, через прямые ExpressRoute для подключений Office 365.
   
 Как показано на следующей схеме, компания Trey Research может удовлетворить требования для маршрутизации трафика Office 365 через Интернет и подмножества трафика через ExpressRoute с помощью изменений маршрутизации и исходящей прокси-конфигурации.
   
@@ -157,7 +157,7 @@ ms.locfileid: "34722718"
 
 - \*. Lync.com и диапазоны IP-адресов для трафика, не входящего в TCP
 
-- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \* word-edit.officeapps.live.com, \*word-view.officeapps.live.com, Office.Live.com
+- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*powerpoint.officeapps.live.com, \*view.officeapps.live.com, \*Visio.officeapps.Live.com, \*Word-Edit.officeapps.Live.com, \*Word-View.officeapps.Live.com, Office.Live.com
 
 Узнайте больше о [развертывании и управлении параметрами прокси-сервера в Windows 8](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) и [предоставлении учетной записи пользователя ограничения на Office 365](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx).
   
@@ -212,7 +212,7 @@ Humongous страхование географически распределе
   
 Если в Humongous есть основные офисы нескольких континентов, рекомендуется не менее двух активных/активных цепей на регион, чтобы уменьшить задержку для конфиденциальных приложений, таких как Skype для бизнеса Online. Если все офисы относятся к одному континенту или не используют режим совместной работы в режиме реального времени, наличие консолидированной или распределенной точки исходящего трафика является особым решением для пользователя. Если доступно несколько каналов, маршрутизация BGP обеспечит отработку отказа, если одна цепь станет недоступна.
   
-Узнайте больше о примерах конфигураций [https://azure.microsoft.com/en-us/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/) [маршрутизации](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) и.
+Узнайте больше о примерах [конфигураций маршрутизации](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) и [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/).
   
 ## <a name="selective-routing-with-expressroute"></a>Выборочная маршрутизация с помощью ExpressRoute
 
@@ -220,7 +220,7 @@ Humongous страхование географически распределе
   
 1. **Фильтрация маршрутов/разделение** — разрешение маршрутизации BGP для Office 365 через ExpressRoute в подмножество подсетей или маршрутизаторов. Это выборочно маршрутизирует по сегменту сети клиента или физическому расположению офиса. Это распространено на сведение к развертыванию ExpressRoute для Office 365 и настроено на устройствах BGP.
 
-2. **Файлы PAC/URL-адреса** — это направление сетевого трафика Office 365 для определенных полных доменных имен для маршрутизации по указанному пути. Это выборочно передается клиентским компьютером в соответствии с определенными развернутыми [файлами PAC](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies).
+2. **Файлы PAC/URL-адреса** — это направление сетевого трафика Office 365 для определенных полных доменных имен для маршрутизации по указанному пути. Это выборочно передается клиентским компьютером в соответствии с определенными [развернутыми файлами PAC](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies).
 
 3. **** - [Фильтры маршрутов](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) фильтрации маршрутов — это способ использования подмножества поддерживаемых служб с помощью пиринга Майкрософт.
 
@@ -230,7 +230,7 @@ Humongous страхование географически распределе
   
 ## <a name="related-topics"></a>Статьи по теме
 
-[Оценка сетевого подключения Office 365](assessing-network-connectivity.md)
+[Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute для Office 365](azure-expressroute.md)
   
@@ -254,6 +254,6 @@ Humongous страхование географически распределе
   
 [План устранения проблем с производительностью Office 365](performance-troubleshooting-plan.md)
   
-[Диапазоны IP-адресов и URL-адреса Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URL-адреса и диапазоны IP-адресов Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)

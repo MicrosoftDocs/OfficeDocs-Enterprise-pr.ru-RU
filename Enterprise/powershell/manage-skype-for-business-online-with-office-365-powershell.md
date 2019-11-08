@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Сводка: в этой статье рассказывается, как использовать PowerShell в Office 365 для управления параметрами политик, индивидуальных политик для пользователей и собраний в Skype для бизнеса Online.'
-ms.openlocfilehash: 80d8308a1c9b32fcafd47d1df2f699141e41accd
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 48b10038e396953469f4b0732103671cbc6b0d75
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782139"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030944"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Управление Skype для бизнеса Online с помощью Office 365 PowerShell
 
@@ -27,7 +27,7 @@ ms.locfileid: "35782139"
 
 ## <a name="before-you-start"></a>Перед началом работы
 
-Скачайте и установите [модуль соединителя Skype для бизнеса Online](https://www.microsoft.com/en-us/download/details.aspx?id=39366), а затем перезагрузите компьютер при появлении соответствующего запроса.
+Скачайте и установите [модуль соединителя Skype для бизнеса Online](https://www.microsoft.com/download/details.aspx?id=39366), а затем перезагрузите компьютер при появлении соответствующего запроса.
 
 
 ## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>Подключение с помощью имени и пароля учетной записи администратора Skype для бизнеса Online

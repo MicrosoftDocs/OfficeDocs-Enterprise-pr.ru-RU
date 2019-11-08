@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: Современная проверка подлинности — это способ управления удостоверениями, обеспечивающий более надежную проверку подлинности и авторизацию пользователей, доступный для локального сервера Skype для бизнеса Server и для локального сервера Exchange Server, а также для гибридной среды Skype для бизнеса.
-ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
-ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
+ms.openlocfilehash: 17079ab5e47e2e739780d3df4a9a523edccda14f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36759687"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029133"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Как настроить локальное развертывание Skype для бизнеса для использования гибридной современной проверки подлинности
 
@@ -67,7 +67,7 @@ ms.locfileid: "36759687"
   
 Как видно из четырех различных мест для включения MA! Для лучшего взаимодействия с пользователем рекомендуется включить мА во всех четырех местах. Если вы не можете включить MA во всех этих расположениях, настройте действия так, чтобы включить MA только в тех местах, которые необходимы для вашей среды.
   
-В [разделе Поддержка для Skype для бизнеса с MA](https://technet.microsoft.com/en-us/library/mt803262.aspx) для поддерживаемых топологий. 
+В [разделе Поддержка для Skype для бизнеса с MA](https://technet.microsoft.com/library/mt803262.aspx) для поддерживаемых топологий. 
   
  **Важно!** Прежде чем приступать к работе, убедитесь, что выполнены все необходимые условия. Эти сведения можно найти [здесь](hybrid-modern-auth-overview.md).
   
@@ -117,7 +117,7 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
   
  **Note (Примечание** ) Имена участников службы (SPN) идентифицируют веб-службы и связывают их с участником безопасности (например, именем или группой учетных записей), чтобы служба могла работать от имени авторизованного пользователя. Клиенты, выполняющие проверку подлинности на сервере, используют сведения, которые хранятся в именах участников-служб. 
   
-1. Для начала подключитесь к AAD с помощью [приведенных ниже инструкций](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0).
+1. Для начала подключитесь к AAD с помощью [приведенных ниже инструкций](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
     
 2. Выполните эту команду в локальной среде, чтобы получить список URL-адресов веб-службы SFB.
 
@@ -174,7 +174,7 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 
 [Выполните обратное соединение с обзором современной проверки подлинности](hybrid-modern-auth-overview.md) . 
   
-Вам нужно знать, как использовать современные проверки подлинности (ADAL) для клиентов Skype для бизнеса? Мы познакомились с [этой](https://technet.microsoft.com/en-us/library/mt710548.aspx)статьей.
+Вам нужно знать, как использовать современные проверки подлинности (ADAL) для клиентов Skype для бизнеса? Мы познакомились с [этой](https://technet.microsoft.com/library/mt710548.aspx)статьей.
   
 Вы хотите прочитать эти действия, так как они отображаются для Exchange Server, локальной сети и работают без SFB? Эти действия доступны здесь.
   

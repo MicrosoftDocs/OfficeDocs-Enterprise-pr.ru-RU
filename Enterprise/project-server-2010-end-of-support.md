@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Прекращение поддержки для Project Server 2010 завершается 13 октября 2020 г. Используйте эту статью в качестве руководства по обновлению до Project Online или более новой версии Project Server в локальной среде.
-ms.openlocfilehash: f43bf5bfc6468d48708e02eec62fb3f822f5eb47
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: b1505a89b10b3e18da99f66a203dde376f8db5c4
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782446"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031624"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>План поддержки Project Server 2010.
 
@@ -93,7 +93,7 @@ Project Server, как и почти все продукты Майкрософ�
   
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|[Приступая к работе с Project Online](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11) <br/> |Настройка и использование Project Online.  <br/> |
+|[Начало работы с Project Online](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11) <br/> |Настройка и использование Project Online.  <br/> |
 |[Описание службы Project Online](https://go.microsoft.com/fwlink/p/?linkid=829088) <br/> |Сведения о различных доступных планах Project Online.  <br/> |
    
 ## <a name="migrate-to-a-newer-on-premises-version-of-project-server"></a>Переход на новую локальную версию Project Server
@@ -147,7 +147,7 @@ Project Server, как и почти все продукты Майкрософ�
   
 - [Общие сведения о процессе обновления до Project Server 2013](https://go.microsoft.com/fwlink/p/?linkid=841274)
     
-- [Обновление баз данных и семейств сайтов Project Web App (Project Server 2013)](https://go.microsoft.com/fwlink/p/?linkid=841272)
+- [Обновление баз данных и семейств веб-сайтов Project Web App (Project Server 2013)](https://go.microsoft.com/fwlink/p/?linkid=841272)
     
 - [Схема процесса обновления Microsoft Project Server](https://go.microsoft.com/fwlink/p/?linkid=841270)
     
@@ -157,7 +157,7 @@ Project Server, как и почти все продукты Майкрософ�
 
 После перехода на Project Server 2013 и проверки того, что данные успешно перенесены, следующим шагом является перенос данных в Project Server 2016.
   
-Полное представление о том, что необходимо сделать для обновления Project Server 2013 до Project Server 2016, приведено в статье [Upgrade to Project server 2016](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016).
+Полное представление о том, что необходимо сделать для обновления Project Server 2013 до Project Server 2016, приведено в статье [Upgrade to Project server 2016](https://docs.microsoft.com/Project/upgrade-to-project-server-2016).
   
 Основные ресурсы:
   
@@ -176,7 +176,7 @@ Project Server, как и почти все продукты Майкрософ�
 
 После перехода на Project Server 2016 и проверки того, что данные успешно перенесены, следующим шагом является перенос данных в Project Server 2019.
   
-Полное представление о том, что необходимо сделать для обновления Project Server 2016 до Project Server 2019, приведено в статье [Upgrade to Project server 2019](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016).
+Полное представление о том, что необходимо сделать для обновления Project Server 2016 до Project Server 2019, приведено в статье [Upgrade to Project server 2019](https://docs.microsoft.com/Project/upgrade-to-project-server-2016).
   
 Основные ресурсы:
   
@@ -189,7 +189,7 @@ Project Server, как и почти все продукты Майкрософ�
   
 - В процессе обновления данные из базы данных Project Server 2016 будут перенесены в базу данных контента SharePoint Server 2019.  Project Server 2019 больше не будет создавать собственную базу данных Project Server в ферме SharePoint Server.
 
-- После обновления следует учитывать несколько изменений в Project Web App.  Описание этих возможностей приведено в статье [новые возможности Project Server 2019](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
+- После обновления следует учитывать несколько изменений в Project Web App.  Описание этих возможностей приведено в статье [новые возможности Project Server 2019](https://docs.microsoft.com/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
 
   
 Другие ресурсы:
@@ -212,6 +212,6 @@ Project Server, как и почти все продукты Майкрософ�
 
 [Обновление с SharePoint 2010](upgrade-from-sharepoint-2010.md)
   
-[Обновление серверов и клиентов Office 2010](upgrade-from-office-2010-servers-and-products.md)
+[Обновление серверов и клиентов Office 2010](upgrade-from-office-2010-servers-and-products.md)
   
 

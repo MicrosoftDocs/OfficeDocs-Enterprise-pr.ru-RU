@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Узнайте, как совместно работать с гостями в документе в SharePoint и OneDrive.
-ms.openlocfilehash: 1160e26c0aa23da499b8c0ef96bc5dd5d8e77004
-ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
+ms.openlocfilehash: 9ddbae276252c89ecae31a7f2bf5f1a3bf59af0f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37920152"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029153"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Совместная работа с гостями над документом
 
@@ -23,7 +23,7 @@ ms.locfileid: "37920152"
 
 В этом видеоролике показаны действия по настройке, описанные в этом документе.</br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE450Vt?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Параметры связей в Организации Azure
 

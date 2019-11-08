@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: Сводка. Решения SharePoint 2013 можно размещать на виртуальных машинах Microsoft Azure. Узнайте, какие типы решений хорошо для этого подходят и как настроить Microsoft Azure для их размещения.
-ms.openlocfilehash: 913910af1acf1353c3ee9b553178c4f0736eb290
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7bc274098f961ccf9aa6aef05f595dfc6e116bec
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070295"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032294"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Архитектуры Microsoft Azure для SharePoint 2013
 
@@ -54,9 +54,9 @@ ms.locfileid: "34070295"
 
 Хотя в этой статье используются примеры топологий SharePoint, вы можете использовать эти проектные решения с любой топологией фермы SharePoint. Прежде чем разрабатывать среду Azure, используйте указанные ниже топологию, архитектуру, емкость и производительность для разработки фермы SharePoint.
   
-- [Архитектура SharePoint 2013 для ИТ-специалистов](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
+- [Архитектура SharePoint 2013 для ИТ-специалистов](http://technet.microsoft.com/sharepoint/fp123594.aspx)
     
-- [Plan for performance and capacity management in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [Plan for performance and capacity management in SharePoint Server 2013](https://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
 ## <a name="determine-the-active-directory-domain-type"></a>Определение типа домена Active Directory
 

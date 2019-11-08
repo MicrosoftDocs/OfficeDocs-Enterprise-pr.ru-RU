@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: Данная статья представляет собой текстовую версию схемы "Веб-сайты в Microsoft Azure для SharePoint Server 2013".
-ms.openlocfilehash: 1d18ad73502c7e21c1c0825e3e56e4faac2a4a09
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf978dfb95b1f201c342889fc3dda428bb618241
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068645"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028063"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Доступная схема — веб-сайты в Microsoft Azure для SharePoint 2013
 
@@ -198,23 +198,23 @@ URL-адреса веб-приложения и корневого сайта 
     
 На сопроводительной схеме показаны службы пула приложений (например, служба поиска), взаимодействующие с семействами веб-сайтов с помощью веб-приложений. Ниже перечислены показанные на схеме семейства веб-сайтов.  
   
-- Семейство сайтов на основе пути, расположенное в http://internal:8000 каталоге (корневой сайт). 
+- Семейство сайтов на основе пути, расположенное в https://internal:8000 каталоге (корневой сайт). 
     
 - Обход: семейства сайтов с именем на основе узла, расположенные по https://authoring.contoso.com:8000адресу, например. 
     
 - Запросы Два отдельных семейства веб-сайтов с именами на основе узлов, расположенные, например, по указанным ниже адресам.  
     
-  - http://www.contoso.com 
+  - https://www.contoso.com 
     
   - https://secure.contoso.com 
     
-  - http://www.contoso.com:8000 
+  - https://www.contoso.com:8000 
     
-  - http://assets.contoso.com 
+  - https://assets.contoso.com 
     
   - https://secureassets.contoso.com 
     
-  - http://assets.contoso.com:8000 
+  - https://assets.contoso.com:8000 
     
 ## <a name="design-the-azure-environment"></a>Разработка среды Azure
 

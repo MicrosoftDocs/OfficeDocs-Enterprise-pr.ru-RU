@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: В этой статье описывается использование сети доставки содержимого (CDN) Office 365 для ускорения доставки ресурсов SharePoint Online всем пользователям независимо от того, где они размещены, или от того, как они обращаются к контенту.
-ms.openlocfilehash: dc08ae1cc54e17e5d7f1c3c717bfd254b6cf962d
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 60016fff28ca7c71555e141ef479d32fdd6d7856
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643302"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031434"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Использование сети доставки содержимого Office 365 с SharePoint Online
 
@@ -218,7 +218,7 @@ Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-Дополнительные сведения об этом командлете приведены в разделе [Set – SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).
+Дополнительные сведения об этом командлете приведены в разделе [Set – SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx).
 
 <a name="Office365CDNforSPOFileType"> </a>
 ### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Изменение списка типов файлов, включаемых в CDN Office 365 (необязательно)
@@ -246,7 +246,7 @@ Set-SPOTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -Polic
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-Дополнительные сведения об этих командлетах приведены в статье [Set/SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) и [Get – SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).
+Дополнительные сведения об этих командлетах приведены в статье [Set/SPOTenantCdnPolicy](https://technet.microsoft.com/library/mt800839.aspx) и [Get – SPOTenantCdnPolicies](https://technet.microsoft.com/library/mt800838.aspx).
 
 <a name="Office365CDNforSPOSiteClassification"> </a>
 ### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Изменение списка классификаций сайтов, которые требуется исключить из сети CDN Office 365 (необязательно)
@@ -279,7 +279,7 @@ Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 
 Свойство _ексклудеифноскриптдисаблед_ исключает содержимое из сети CDN на основе параметров атрибута _PostScript_ уровня сайта. По умолчанию _атрибуту_ InAttribute присвоено значение **Enabled** для _современных_ сайтов и **отключено** для _классических_ сайтов. Это зависит от параметров клиента.
 
-Дополнительные сведения об этих командлетах приведены в статье [Set/SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) и [Get – SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).
+Дополнительные сведения об этих командлетах приведены в статье [Set/SPOTenantCdnPolicy](https://technet.microsoft.com/library/mt800839.aspx) и [Get – SPOTenantCdnPolicies](https://technet.microsoft.com/library/mt800838.aspx).
 
 <a name="Office365CDNforSPOOrigin"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>Добавление источника для ресурсов
@@ -326,7 +326,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
-Дополнительные сведения об этой команде и ее синтаксисе можно найти в статье [Add/SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Дополнительные сведения об этой команде и ее синтаксисе можно найти в статье [Add/SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
 
 > [!NOTE]
 > В закрытых источниках ресурсы, к которым предоставлен общий доступ из источника, должны иметь основную версию, которая будет опубликована, прежде чем к ним можно будет получить доступ из сети CDN.
@@ -350,7 +350,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-Дополнительные сведения об этой команде и ее синтаксисе можно найти в статье [Add/SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Дополнительные сведения об этой команде и ее синтаксисе можно найти в статье [Add/SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
 
 После выполнения команды система синхронизирует конфигурацию в центре обработки данных. Это может занять до 15 минут.
 
@@ -375,7 +375,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
-Дополнительные сведения об этой команде и ее синтаксисе можно найти в статье [Add/SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Дополнительные сведения об этой команде и ее синтаксисе можно найти в статье [Add/SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
 
 После выполнения команды система синхронизирует конфигурацию в центре обработки данных. Это может занять до 15 минут.
 
@@ -388,7 +388,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-Дополнительные сведения об этой команде и ее синтаксисе можно найти в статье [Add/SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Дополнительные сведения об этой команде и ее синтаксисе можно найти в статье [Add/SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
   
 После выполнения команды система синхронизирует конфигурацию в центре обработки данных. Вы можете увидеть _ожидающее_ сообщение о конфигурации, которое ожидается, когда клиент SharePoint Online подключается к службе CDN. Это может занять до 15 минут.
 
@@ -402,7 +402,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 
 После завершения настройки вы можете добавить новые ресурсы, а также обновлять или удалять существующие ресурсы в любое время. Внесите изменения в ресурсы в папке или библиотеке SharePoint, которую вы определили в качестве источника. Если вы добавите новый ресурс, он будет доступен в CDN немедленно. Тем не менее, если вы обновите актив, новая копия будет распространена и станет доступной в сети CDN до 15 минут.
   
-Если необходимо извлечь расположение источника, можно использовать командлет **Get – SPOTenantCdnOrigins** . Сведения о том, как использовать этот командлет, можно найти в статье [Get – SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx).
+Если необходимо извлечь расположение источника, можно использовать командлет **Get – SPOTenantCdnOrigins** . Сведения о том, как использовать этот командлет, можно найти в статье [Get – SPOTenantCdnOrigins](https://technet.microsoft.com/library/mt790770.aspx).
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>Удаление источника из сети CDN Office 365
@@ -413,7 +413,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
-Сведения о том, как использовать этот командлет, можно найти в статье [Remove – SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx).
+Сведения о том, как использовать этот командлет, можно найти в статье [Remove – SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790761.aspx).
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>Изменение источника в сети CDN Office 365
@@ -437,7 +437,7 @@ Set-SPOTenantCdnEnabled -CdnType Public -Enable $false
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-Дополнительные сведения об этом командлете приведены в разделе [Set – SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).
+Дополнительные сведения об этом командлете приведены в разделе [Set – SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx).
 
 </details>
 
@@ -578,7 +578,7 @@ spo cdn set --type Public --enabled false
 + [Использование ресурсов в общедоступных источниках](use-office-365-cdn-with-spo.md#using-assets-in-public-origins)
 + [Использование ресурсов в частных источниках](use-office-365-cdn-with-spo.md#using-assets-in-private-origins)
 
-Сведения о том, как использовать сеть CDN для размещения клиентских веб-частей, можно найти в разделе [Host The Client Web Part of Office 365 CDN (Hello World, часть 4)](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn).
+Сведения о том, как использовать сеть CDN для размещения клиентских веб-частей, можно найти в разделе [Host The Client Web Part of Office 365 CDN (Hello World, часть 4)](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn).
 
 ### <a name="updating-links-to-cdn-assets"></a>Обновление ссылок на ресурсы CDN
 
@@ -588,7 +588,7 @@ spo cdn set --type Public --enabled false
 + Для каждой ссылки на ресурс в источнике Замените путь на путь к файлу в источнике CDN. Можно использовать относительные пути.
 + Сохраните страницу или контент.
 
-Например, рассмотрим изображение _/Сите/ситеассетс/имажес/имаже.ПНГ_, скопированное в папку библиотеки документов _/site/CDN_origins/Public/_. Чтобы использовать ресурс CDN, замените исходный путь на путь к расположению файла изображения, указав путь к источнику, чтобы сделать новый URL-адрес _/site/CDN_origins/Public/Image.png_.
+Например, рассмотрим изображение _/Сите/ситеассетс/имажес/имаже.ПНГ_, скопированное в папку библиотеки документов _/Сите/CDN_origins/публик/_. Чтобы использовать ресурс CDN, замените исходный путь к расположению файла изображения, указав путь к источнику, чтобы новый URL-адрес _/сите/CDN_origins/публик/имаже.ПНГ_.
 
 Если вы хотите использовать полный URL-адрес для ресурса вместо относительного пути, создайте ссылку следующим образом:
 
@@ -668,7 +668,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 Важно отметить, что SharePoint Online не поддерживает разрешения на уровне элементов для ресурсов в частных источниках. Например, для файла, расположенного в `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, пользователи имеют эффективный доступ к файлу с учетом следующих условий:
 
-|User  |Разрешения  |Эффективный доступ  |
+|Пользователь  |Разрешения  |Эффективный доступ  |
 |---------|---------|---------|
 |Пользователь 1     |Имеет доступ к Folder1         |Может получить доступ к image1. jpg из сети CDN         |
 |Пользователь 2     |Не имеет доступа к Folder1         |Не удается получить доступ к image1. jpg из сети CDN         |
@@ -690,7 +690,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 Вы не можете проверить URL-адреса CDN непосредственно в веб-браузере, так как вам потребуется источник ссылки, поступающий из SharePoint Online. Тем не менее, если вы добавите URL-адрес ресурса CDN на страницу SharePoint, а затем открыли страницу в браузере, на странице появится ресурс CDN, отображаемый на странице.
 
-Для получения дополнительных сведений об использовании средств разработчика в браузере Microsoft Edge обратитесь к разделу [Инструменты разработчика Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide).
+Для получения дополнительных сведений об использовании средств разработчика в браузере Microsoft Edge обратитесь к разделу [Инструменты разработчика Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide).
 
 Для просмотра коротких видеороликов, размещенных в статье [шаблоны и методики разработки на YouTube](https://aka.ms/sppnp-videos) , демонстрирующие, как проверить работу сети CDN, ознакомьтесь со статьей [Проверка использования сети CDN и обеспечение оптимального сетевого подключения](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5).
 

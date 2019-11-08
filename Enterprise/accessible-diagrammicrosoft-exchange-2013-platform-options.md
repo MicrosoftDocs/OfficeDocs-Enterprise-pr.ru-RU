@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: Эта статья  открытая текстовая версия диаграммыВарианты платформы Microsoft Exchange 2013, доступная в разделе Технические схемы.
-ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce1fe525b6a339c64d757b82a6f1c9ea4b82d23e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068595"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027573"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Открытая диаграмма — варианты платформы Microsoft Exchange 2013
 
-**Сводка.** Эта статья — удобная текстовая версия схемы "Варианты платформы для Microsoft Exchange 2013", которая доступна в разделе [Технические схемы](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Сводка.** Эта статья — удобная текстовая версия схемы "Варианты платформы для Microsoft Exchange 2013", которая доступна в разделе [Технические схемы](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
 На этом плакате представлена информация о развертывании Exchange Online и Exchange Server, которая необходима лицам, принимающим деловые решения (BDM), и архитекторам. Плакат содержит: 
   

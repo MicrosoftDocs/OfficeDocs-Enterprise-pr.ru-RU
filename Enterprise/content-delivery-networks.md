@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Используйте эту информацию, чтобы узнать о том, как Office 365 использует сети доставки содержимого (сети CDN) для повышения производительности.
-ms.openlocfilehash: a65e83c6063dcd5102dabb6be5ba76029aff6c85
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 7b9ef7a3742dbbccbc052eca28469c4fb10cdae1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643292"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029123"
 ---
 # <a name="content-delivery-networks-cdns"></a>Сети доставки контента (сети CDN)
 
@@ -62,7 +62,7 @@ ms.locfileid: "37643292"
 
 Служба CDN Office 365 входит в состав подписки на SharePoint Online.
 
-Дополнительные сведения об использовании сети CDN Office 365 см [в статье Использование сети доставки содержимого office 365 с SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo).
+Дополнительные сведения об использовании сети CDN Office 365 см [в статье Использование сети доставки содержимого office 365 с SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo).
 
 Для просмотра ряда коротких видеороликов, в которых представлены концептуальные и практические сведения об использовании сети CDN Office 365, посетите [канал шаблоны и рекомендации разработчика SharePoint на YouTube](https://aka.ms/sppnp-videos).
 
@@ -74,11 +74,11 @@ ms.locfileid: "37643292"
 
 Вы можете использовать **Azure CDN** для развертывания собственного экземпляра CDN для размещения настраиваемых веб-частей, библиотек и других ресурсов ресурсов, которые позволяют применять ключи доступа к хранилищу CDN и лучше контролировать конфигурацию сети CDN. Использование CDN CDN не освобождается и требует подписки на Azure.
 
-Дополнительные сведения о настройке экземпляра Azure CDN можно найти в статье [QuickStart: интеграция учетной записи хранилища Azure с CDN Azure](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn).
+Дополнительные сведения о настройке экземпляра Azure CDN можно найти в статье [QuickStart: интеграция учетной записи хранилища Azure с CDN Azure](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn).
 
-Пример того, как сеть CDN можно использовать для размещения веб-частей SharePoint, приведена в статье [развертывание клиентской веб-части SharePoint в Azure CDN](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn).
+Пример того, как сеть CDN можно использовать для размещения веб-частей SharePoint, приведена в статье [развертывание клиентской веб-части SharePoint в Azure CDN](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/deploy-web-part-to-cdn).
 
-Сведения о модуле Azure CDN PowerShell можно найти в статье [Управление CDN Azure с помощью PowerShell](https://docs.microsoft.com/en-us/azure/cdn/cdn-manage-powershell).
+Сведения о модуле Azure CDN PowerShell можно найти в статье [Управление CDN Azure с помощью PowerShell](https://docs.microsoft.com/azure/cdn/cdn-manage-powershell).
 
 ### <a name="microsoft-ajax-cdn"></a>Сеть CDN Microsoft AJAX
 
@@ -87,10 +87,10 @@ ms.locfileid: "37643292"
 Чтобы включить эти скрипты в проект, просто замените ссылки на эти общедоступные библиотеки ссылками на адрес CDN, а не в самом проекте. Например, используйте следующий код для ссылки на jQuery:
 
 ``` html
-<script src=http://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
+<script src=https://ajax.aspnetcdn.com/ajax/jquery-2.1.1.js> </script>
 ```
 
-Для получения дополнительных сведений об использовании сети CDN Microsoft AJAX обратитесь к разделу [CDN Microsoft AJAX](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview).
+Для получения дополнительных сведений об использовании сети CDN Microsoft AJAX обратитесь к разделу [CDN Microsoft AJAX](https://docs.microsoft.com/aspnet/ajax/cdn/overview).
 
 ## <a name="how-does-office-365-use-content-from-a-cdn"></a>Как Office 365 использует контент из сети CDN?
 
@@ -110,7 +110,7 @@ ms.locfileid: "37643292"
 
 ## <a name="how-should-i-set-up-my-network-so-that-cdns-work-best-with-office-365"></a>Как настроить сеть, чтобы сети CDN лучше всего использовать Office 365?
 
-Минимизация задержки между клиентами в сети и конечными точками CDN является важным вопросом для обеспечения оптимальной производительности. Вы можете использовать рекомендации, описанные в разделе [Управление конечными точками Office 365](managing-office-365-endpoints.md) , чтобы убедиться, что конфигурация сети позволяет клиентским браузерам напрямую получать доступ к сети CDN, а не через центральные прокси-серверы, чтобы избежать появления Ненужная задержка.
+Минимизация задержки между клиентами в сети и конечными точками CDN является важным вопросом для обеспечения оптимальной производительности. Вы можете использовать рекомендации, описанные в разделе [Управление конечными точками Office 365](managing-office-365-endpoints.md) , чтобы убедиться, что конфигурация сети позволяет клиентским браузерам напрямую получать доступ к сети CDN, а не по маршрутизации трафика сети CDN через центральные прокси-серверы, чтобы избежать лишних задержек.
 
 Вы также можете ознакомиться со [принципами сетевого подключения office 365](https://aka.ms/o365networkingprinciples) , чтобы узнать о концепциях оптимизации производительности сети для Office 365.
 
@@ -118,17 +118,17 @@ ms.locfileid: "37643292"
 
 Сети CDN, используемый в Office 365, всегда изменяется, а во многих случаях в событии один из них настроено несколько партнеров CDN. Основной сети CDN, используемый в Office 365:
 
-|CDN  |Company  |Применение  |ссылок.  |
+|Сеть доставки содержимого  |Company  |Применение  |Ссылка  |
 |---------|---------|---------|---------|
-|CDN для Office 365     |Akamai         |Универсальные активы в общедоступных источниках, контент пользователя SharePoint в частных источниках         |[Использование сети доставки содержимого Office 365 с SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)         |
+|CDN для Office 365     |Akamai         |Универсальные активы в общедоступных источниках, контент пользователя SharePoint в частных источниках         |[Использование сети доставки содержимого Office 365 с SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)         |
 |Сеть CDN Azure     |Microsoft         |Пользовательский код, решения SharePoint Framework         |[Сеть CDN Microsoft Azure](https://azure.microsoft.com/documentation/services/cdn/)         |
-|Сеть CDN Microsoft AJAX (только чтение)     |Microsoft         |Общие библиотеки для AJAX, jQuery, ASP.NET, начальной загрузки, выколачивание. js и т. д.         |[Сеть CDN Microsoft AJAX](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)         |
+|Сеть CDN Microsoft AJAX (только чтение)     |Microsoft         |Общие библиотеки для AJAX, jQuery, ASP.NET, начальной загрузки, выколачивание. js и т. д.         |[Сеть CDN Microsoft AJAX](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>Какой выигрыш в производительности обеспечивает сеть CDN?
 
 Существует множество факторов, связанных с измерениями производительности между данными, загруженными непосредственно из Office 365, и данными, загруженными из определенной сети CDN, такими как расположение относительно клиента и до ближайшей конечной точки CDN, количество ресурсы на странице, обслуживаемые сетью CDN, и временные изменения задержки и пропускной способности сети. Тем не менее, простой тест A/B позволяет показать разницу во времени загрузки для определенного файла.
 
-В следующих снимках экрана показана разница в скорости загрузки между собственным расположением файлов в Office 365 и одним файлом, размещенным в [сети доставки содержимого Microsoft AJAX](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview). Эти снимки экрана находятся на вкладке **сеть** в средствах разработчика Internet Explorer 11. В этих снимках экрана показана задержка на популярных библиотеках jQuery. Чтобы открыть этот экран, в Internet Explorer нажмите клавишу **F12** и перейдите на вкладку **сеть** , которая называется значком Wi-Fi.
+В следующих снимках экрана показана разница в скорости загрузки между собственным расположением файлов в Office 365 и одним файлом, размещенным в [сети доставки содержимого Microsoft AJAX](https://docs.microsoft.com/aspnet/ajax/cdn/overview). Эти снимки экрана находятся на вкладке **сеть** в средствах разработчика Internet Explorer 11. В этих снимках экрана показана задержка на популярных библиотеках jQuery. Чтобы открыть этот экран, в Internet Explorer нажмите клавишу **F12** и перейдите на вкладку **сеть** , которая называется значком Wi-Fi.
   
 ![Снимок экрана: вкладка "Сеть", отобразившаяся после нажатия клавиши F12](media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
@@ -153,7 +153,7 @@ ms.locfileid: "37643292"
 
 - Дополнительные сведения о конфиденциальности и защите данных Office 365 в [центре управления безопасностью (Майкрософт](https://www.microsoft.com/trustcenter) )
 - Дополнительные сведения о конфиденциальности и защите данных в [центре безопасности Akamai Trust](https://www.akamai.com/us/en/about/compliance/data-protection-at-akamai.jsp)
-- Узнайте больше о конфиденциальности Azure и защите данных в [центре управления безопасностью Azure](https://azure.microsoft.com/en-us/overview/trusted-cloud/)
+- Узнайте больше о конфиденциальности Azure и защите данных в [центре управления безопасностью Azure](https://azure.microsoft.com/overview/trusted-cloud/)
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>Как защитить сеть со всеми этими сторонними службами?
 
@@ -165,13 +165,13 @@ ms.locfileid: "37643292"
 
 Список полных доменных имен и способ использования сети CDN изменения с течением времени. На странице опубликованные [URL-адреса и диапазоны IP-адресов](https://go.microsoft.com/fwlink/p/?LinkID=293744) на нашем опубликованном веб-странице 365, чтобы получить последние сведения о последних доменных именах, которые используют сети CDN.
 
-Вы также можете использовать [IP-адрес office 365 и веб-службу URL-](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service) адресов, чтобы запросить текущие URL-адреса и диапазоны IP-адресов Office 365 в формате CSV или JSON.
+Вы также можете использовать [IP-адрес office 365 и веб-службу URL-](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service) адресов, чтобы запросить текущие URL-адреса и диапазоны IP-адресов Office 365 в формате CSV или JSON.
 
 ## <a name="can-i-use-my-own-cdn-and-cache-content-on-my-local-network"></a>Можно ли использовать в локальной сети CDN и кэшировать контент?
 
 Мы постоянно ищем новые способы поддержки наших клиентов и в настоящее время изучаем использование прокси-решений кэширования и других локальных решений CDN.
 
-Несмотря на то, что она не входит в CDN Office 365, вы можете также использовать **CDN Azure** для хранения настраиваемых веб-частей, библиотек и других ресурсов ресурсов, которые позволяют применять ключи доступа к хранилищу CDN и лучше контролировать конфигурацию сети CDN. Использование CDN CDN не освобождается и требует подписки на Azure. Дополнительные сведения о настройке экземпляра Azure CDN можно найти в статье [QuickStart: интеграция учетной записи хранилища Azure с CDN Azure](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn).
+Несмотря на то, что она не входит в CDN Office 365, вы можете также использовать **CDN Azure** для хранения настраиваемых веб-частей, библиотек и других ресурсов ресурсов, которые позволяют применять ключи доступа к хранилищу CDN и лучше контролировать конфигурацию сети CDN. Использование CDN CDN не освобождается и требует подписки на Azure. Дополнительные сведения о настройке экземпляра Azure CDN можно найти в статье [QuickStart: интеграция учетной записи хранилища Azure с CDN Azure](https://docs.microsoft.com/azure/cdn/cdn-create-a-storage-account-with-cdn).
 
 ## <a name="im-using-azure-expressroute-for-office-365-does-that-change-things"></a>Я использую Azure ExpressRoute для Office 365, изменяет ли это?
 
@@ -189,11 +189,11 @@ ms.locfileid: "37643292"
 
 [Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
 
-[Управление конечными точками Office 365](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
+[Управление конечными точками Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 
 [URL-адреса и диапазоны IP-адресов Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
-[Использование сети доставки содержимого Office 365 с SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
+[Использование сети доставки содержимого Office 365 с SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)
 
 [Центр управления безопасностью (Майкрософт)](https://www.microsoft.com/trustcenter)
 

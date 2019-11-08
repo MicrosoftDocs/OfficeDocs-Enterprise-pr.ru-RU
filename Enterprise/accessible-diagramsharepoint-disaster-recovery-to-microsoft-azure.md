@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: Данная статья представляет собой текстовую версию схемы "Аварийное восстановление SharePoint в Microsoft Azure".
-ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e711452f6e019ceb280d43c2e0167507a0b0ef20
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068525"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038238"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Доступная схема — аварийное восстановление SharePoint в Microsoft Azure
 
@@ -46,7 +46,7 @@ ms.locfileid: "34068525"
   
 - Внутренние службы 
     
-- Администратор 
+- Admin 
     
 - Диспетчер бизнес-правил 
     
@@ -194,10 +194,9 @@ ms.locfileid: "34068525"
 
 Конфигурация доменных служб Active Directory для этого решения представляет собой сценарий гибридного развертывания, в котором эти службы развертываются частично на локальных виртуальных машинах и частично — на виртуальных машинах Azure.  
   
-Важно! перед развертыванием доменных служб Active Directory в Azure ознакомьтесь с рекомендациями по развертыванию Windows Server Active Directory наhttp://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)виртуальных машинах Microsoft Azure (. 
+Важно! перед развертыванием доменных служб Active Directory в Azure ознакомьтесь с рекомендациями по развертыванию Windows Server Active Directory наhttps://docs.microsoft.com/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)виртуальных машинах Microsoft Azure (. 
   
-Для получения более подробных инструкций по проектированию и развертыванию http://TechNet.microsoft.comсред Active Directory, ознакомьтесь со статьей. 
-  
+ 
 Данная эталонная архитектура включает две виртуальные машины, настроенные в качестве контроллеров доменов. Каждая виртуальная машина настраивается указанным ниже образом. 
   
 - Размер: малый. 

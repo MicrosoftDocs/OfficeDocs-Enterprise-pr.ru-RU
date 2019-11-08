@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Помогает спланировать требования к пропускной способности сети для Microsoft Office 365. Когда вы развернетесь, вернитесь сюда, чтобы выполнить тонкую настройку и устранение проблем с производительностью Office 365.
-ms.openlocfilehash: c7ea169fbb39a16612c957f0d0275de60c83de1e
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: bedddefe893781fc2c51d0e282dc603e30c90b06
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616742"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032144"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Планирование сети и настройка производительности для Office 365
 Перед первым развертыванием или переходом на Office 365 можно использовать сведения из этих разделов для оценки необходимой пропускной способности, а затем проверить, достаточно ли пропускной способности для развертывания или переноса в Office 365. Общие сведения: [планирование сети и миграции для Office 365](network-and-migration-planning.md).
   
 |||||
 |:-----|:-----|:-----|:-----|
-|**Планирование сети** <br/> ![Сеть](media/5e9dcd06-601b-4b28-88dc-f524e7548794.png)           <br/> |Хотите быстро загружать быстрые подключения и страницы?  <br/> Узнайте [, как получить лучшее подключение и производительность в Office 365](https://aka.ms/o365perfprinciples) <br/> Ознакомьтесь со статьей [Обзор сетевого подключения Office 365](https://docs.microsoft.com/en-us/office365/enterprise/office-365-networking-overview) для ознакомления с основными понятиями,  <br/> |**Измерение сети** <br/> ![Отображаем](media/d690a132-4884-40eb-a918-526bb3dff3cc.png)           <br/> |Ознакомьтесь [с настройками производительности office 365 с помощью базовых планов и журнала производительности](performance-tuning-using-baselines-and-history.md) и [плана устранения проблем с производительностью для Office 365](performance-troubleshooting-plan.md).  <br/> Используйте эти средства для [оценки существующей сети](network-and-migration-planning.md#calculators).  <br/> |
+|**Планирование сети** <br/> ![Сеть](media/5e9dcd06-601b-4b28-88dc-f524e7548794.png)           <br/> |Хотите быстро загружать быстрые подключения и страницы?  <br/> Узнайте [, как получить лучшее подключение и производительность в Office 365](https://aka.ms/o365perfprinciples) <br/> Ознакомьтесь со статьей [Обзор сетевого подключения Office 365](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview) для ознакомления с основными понятиями,  <br/> |**Измерение сети** <br/> ![Отображаем](media/d690a132-4884-40eb-a918-526bb3dff3cc.png)           <br/> |Ознакомьтесь [с настройками производительности office 365 с помощью базовых планов и журнала производительности](performance-tuning-using-baselines-and-history.md) и [плана устранения проблем с производительностью для Office 365](performance-troubleshooting-plan.md).  <br/> Используйте эти средства для [оценки существующей сети](network-and-migration-planning.md#calculators).  <br/> |
 |**Рекомендации** <br/> ![Рекомендации](media/2a659a5c-1007-47d3-a6c6-a19e018ab29b.png)           <br/> |Рекомендации [по планированию сети и улучшению производительности при миграции для Office 365](network-and-migration-planning.md#BestPractices). Хотите приступить к работе пользователей сразу? Ознакомьтесь с рекомендациями [по использованию Office 365 в медленной сети](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166).  <br/> [Принципы подключения к сети в office 365](https://aka.ms/o365networkingprinciples) помогут вам ознакомиться с самыми последними рекомендациями по безопасной оптимизации сетевого подключения Office 365.  <br/> |**Reference** <br/> ![Книга или журнал](media/56dff3c1-f605-48d8-811f-7d13ce639ecd.png)           <br/> |Хотите получить подробные сведения, например список IP-адресов и портов? Ознакомьтесь со статьей [Справка по планированию сети для Office 365](network-and-migration-planning.md#NetReference).  <br/> |
 |![Плакат о облачных сетях Майкрософт для корпоративных архитекторов](media/3094be9f-2407-4fa5-896d-aa66ef7b9bb9.png)           <br/> |Чтобы выполнить оптимизацию сети для Office 365 и других платформ и служб Microsoft Cloud, посетите афишу [облачных сетей Майкрософт для корпоративных архитекторов](https://aka.ms/cloudarchnetworking) .  <br/> |
    
@@ -35,7 +35,7 @@ ms.locfileid: "35616742"
 
 После развертывания Office 365 вы можете оптимизировать производительность, используя подразделы, приведенные в этом разделе. При снижении производительности можно также использовать эти разделы для устранения неполадок.
   
- **[Настройка производительности Office 365](tune-office-365-performance.md)**: сведения об использовании преобразования сетевых адресов с помощью Office 365 приведены [в статье поддержка NAT в Office 365](nat-support-with-office-365.md). Кроме того, ознакомьтесь с десятью [десятью советами по оптимизации и устранению неполадок, связанных с подключением к сети Office 365](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx) , с помощью Пол коллинджа. 
+ **[Настройка производительности Office 365](tune-office-365-performance.md)**: сведения об использовании преобразования сетевых адресов с помощью Office 365 приведены [в статье поддержка NAT в Office 365](nat-support-with-office-365.md). Кроме того, ознакомьтесь с [десятью десятью советами по оптимизации и устранению неполадок, связанных с подключением к сети Office 365](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx) , с помощью Пол коллинджа. 
   
  **[Настройка производительности Exchange Online](tune-exchange-online-performance.md)**: Используйте эти статьи для точной настройки производительности Exchange Online. 
   

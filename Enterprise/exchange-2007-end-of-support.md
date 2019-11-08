@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: 11 апреля 2017 г. сервер Exchange Server 2007 достиг конца поддержки. Если вы еще не начали миграцию с Exchange 2007 на Office 365 или Exchange 2016, настало время начать планирование.
-ms.openlocfilehash: 08796407e41fcc249da709267301de94fc359f36
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: df870d05c6f5139c4274c1654cd3b4304103a98e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067615"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028853"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки Exchange 2007;
 
@@ -48,7 +48,7 @@ ms.locfileid: "34067615"
     
 В следующих разделах каждый из этих вариантов рассматривается более подробно.
   
-### <a name="migrate-to-office-365"></a>Переход на Office 365
+### <a name="migrate-to-office-365"></a>Переход на Office 365
 
 Перенос электронной почты в Office 365 — это самый лучший и простой способ отказаться от использования развертывания Exchange 2007. С помощью миграции в Office 365 вы можете сделать один переход с одной 10 лет на более старую для работы с возможностями иллюстраций, как показано ниже:
   
@@ -85,7 +85,7 @@ ms.locfileid: "34067615"
 |Поэтапная миграция  <br/> |Более 150 рабочих мест  <br/> |Несколько недель  <br/> |
 |Полная миграция гибридной среды  <br/> |Несколько сотен и тысяч рабочих мест  <br/> |Несколько месяцев или больше  <br/> |
    
-В следующих разделах представлены общие сведения об этих методах. [Выберите путь миграции](https://support.office.com/en-us/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) , чтобы узнать подробности каждого метода. 
+В следующих разделах представлены общие сведения об этих методах. [Выберите путь миграции](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) , чтобы узнать подробности каждого метода. 
   
 #### <a name="cutover-migration"></a>Прямая миграция
 
@@ -109,17 +109,17 @@ ms.locfileid: "34067615"
     
 - Вам потребуется лицензия на Office 365, включающая Exchange Online для каждого переносимого почтового ящика пользователя.
     
-- Пользователям потребуется настроить новый профиль Outlook на каждом устройстве и скачать электронную почту еще раз. Количество сообщений электронной почты, загружаемых Outlook, может различаться. Для получения дополнительных сведений об [изменении объема почты, который необходимо сохранить в автономном режиме](https://support.office.com/en-us/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1), изучите.
+- Пользователям потребуется настроить новый профиль Outlook на каждом устройстве и скачать электронную почту еще раз. Количество сообщений электронной почты, загружаемых Outlook, может различаться. Для получения дополнительных сведений об [изменении объема почты, который необходимо сохранить в автономном режиме](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1), изучите.
     
 Чтобы узнать больше о прямой миграции, ознакомьтесь со следующего:
   
-- [Что необходимо знать о прямой миграции электронной почты в Office 365](https://support.office.com/en-us/article/What-you-need-to-know-about-a-cutover-email-migration-to-Office-365-961978ef-f434-472d-a811-1801733869da)
+- [Что необходимо знать о прямой миграции электронной почты в Office 365](https://support.office.com/article/What-you-need-to-know-about-a-cutover-email-migration-to-Office-365-961978ef-f434-472d-a811-1801733869da)
     
-- [Выполнение прямой миграции электронной почты в Office 365](https://support.office.com/en-us/article/Perform-a-cutover-migration-of-email-to-Office-365-9496e93c-1e59-41a8-9bb3-6e8df0cd81b4)
+- [Выполнение прямой миграции электронной почты в Office 365](https://support.office.com/article/Perform-a-cutover-migration-of-email-to-Office-365-9496e93c-1e59-41a8-9bb3-6e8df0cd81b4)
     
 #### <a name="staged-migration"></a>Поэтапная миграция
 
-Поэтапная миграция состоит из нескольких сотен или нескольких тысяч почтовых ящиков, которые вы хотите перенести в Office 365, необходимо предпринять неделю или более, чтобы завершить миграцию и не потребуются расширенные функции гибридной миграции, такие как общие сведения о доступности в календаре рматион.
+Поэтапная миграция состоит в том, что у вас есть несколько сотен или несколько тысяч почтовых ящиков, которые нужно перенести в Office 365, необходимо выполнить одну или несколько недель для завершения миграции и не использовать расширенные функции гибридной миграции, такие как общие сведения о доступности в календаре.
   
 Поэтапная миграция отлично подходит для организаций, которым требуется больше времени на перенос почтовых ящиков в Office 365, но по-прежнему планируете выполнить миграцию в течение нескольких недель. Вы можете перенести почтовые ящики в «пакетах», которые позволяют контролировать, сколько почтовых ящиков и какие из них переносятся в данный момент времени. Вы можете выполнять пакетную обработку почтовых ящиков пользователей в одном отделе, например, чтобы убедиться в том, что все они перемещены одновременно. Вы также можете оставлять почтовые ящики руководителей, пока не будет выполнен последний пакет. Как и при прямой миграции, пользователям потребуется воссоздать свои профили Outlook.
   
@@ -139,13 +139,13 @@ ms.locfileid: "34067615"
     
 - Вам потребуется лицензия на Office 365, включающая Exchange Online для каждого переносимого почтового ящика пользователя.
     
-- Пользователям потребуется настроить новый профиль Outlook на каждом устройстве и скачать электронную почту еще раз. Количество сообщений электронной почты, загружаемых Outlook, может различаться. Для получения дополнительных сведений об [изменении объема почты, который необходимо сохранить в автономном режиме](https://support.office.com/en-us/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1), изучите.
+- Пользователям потребуется настроить новый профиль Outlook на каждом устройстве и скачать электронную почту еще раз. Количество сообщений электронной почты, загружаемых Outlook, может различаться. Для получения дополнительных сведений об [изменении объема почты, который необходимо сохранить в автономном режиме](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1), изучите.
     
 Чтобы узнать больше о поэтапной миграции, ознакомьтесь со следующего:
   
-- [Что необходимо знать о поэтапной миграции электронной почты в Office 365](https://support.office.com/en-us/article/What-you-need-to-know-about-a-staged-email-migration-to-Office-365-7e2c82be-5f3d-4e36-bc6b-e5b4d411e207)
+- [Что необходимо знать о поэтапной миграции электронной почты в Office 365](https://support.office.com/article/What-you-need-to-know-about-a-staged-email-migration-to-Office-365-7e2c82be-5f3d-4e36-bc6b-e5b4d411e207)
     
-- [Выполнение поэтапной миграции электронной почты в Office 365](https://support.office.com/en-us/article/Perform-a-staged-migration-of-email-to-Office-365-83bc0b69-de47-4cc4-a57d-47e478e4894e)
+- [Выполнение поэтапной миграции электронной почты в Office 365](https://support.office.com/article/Perform-a-staged-migration-of-email-to-Office-365-83bc0b69-de47-4cc4-a57d-47e478e4894e)
     
 #### <a name="full-hybrid"></a>Полное гибридное развертывание
 
@@ -187,13 +187,13 @@ ms.locfileid: "34067615"
   
 - [Помощник по развертыванию Exchange](https://aka.ms/exdeploy)
     
-- [Гибридные развертывания Exchange Server](https://technet.microsoft.com/en-us/library/jj200581%28v=exchg.150%29.aspx)
+- [Гибридные развертывания Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)
     
-- [Мастер гибридной конфигурации](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
+- [Мастер гибридной конфигурации](https://technet.microsoft.com/library/hh529921%28v=exchg.150%29.aspx)
     
-- [Мастер гибридной конфигурации: вопросы и ответы](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
+- [Мастер гибридной конфигурации: вопросы и ответы](https://technet.microsoft.com/library/mt488940%28v=exchg.150%29.aspx)
     
-- [Предварительные условия для гибридного развертывания](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
+- [Предварительные условия для гибридного развертывания](https://technet.microsoft.com/library/hh534377%28v=exchg.150%29.aspx)
     
 ### <a name="migrate-to-a-newer-version-of-exchange-server"></a>Переход на более новую версию Exchange Server
 
@@ -215,12 +215,12 @@ ms.locfileid: "34067615"
 |:-----|:-----|
 |Дата окончания поддержки  <br/> | Как и в Exchange 2007, у каждой версии Exchange своя дата окончания срока поддержки:  <br/> **Exchange 2010** — Январь 2020  <br/> **Exchange 2013** – Апрель 2023  <br/> **Exchange 2016** – Октябрь 2025  <br/>  Чем выше Дата поддержки, тем быстрее потребуется выполнить еще одну миграцию. Январь 2020 — гораздо больше, чем вы думаете!  <br/> |
 |Путь миграции к Exchange 2010 и 2013  <br/> |Ниже приведены общие этапы перехода на Exchange 2010 или Exchange 2013:  <br/> Установка Exchange 2010 или 2013 в имеющуюся организацию Exchange 2007. Перемещение служб и другой инфраструктуры в Exchange 2010 или 2013 перемещение почтовых ящиков и общедоступных папок в Exchange 2010 или 2013, оставшиеся серверами Exchange Server с 2007 |
-|Путь миграции к Exchange 2016  <br/> |Ниже приведены общие этапы перехода на Exchange 2016.  <br/> Установка Exchange 2013 в существующую организацию Exchange 2007. Переместите службы и другую инфраструктуру в Exchange 2013 перемещение почтовых ящиков и общедоступных папок в Exchange 2013 списать оставшиеся серверы Exchange Server, установка Exchange 2007 в существующую Организация Exchange 2013. Перемещать почтовые ящики, общедоступные папки, службы и другие инфраструктуры в Exchange 2016 (порядок не имеет значения). Списать оставшиеся серверы Exchange 2013 Servers _Гт_ [!NOTE]_Гт_ от Exchange 2013 до Exchange 2016 — это просто. Обе версии имеют почти одинаковые аппаратные требования. Таким образом, и фактически эти версии совместимы, это означает, что вы можете перестроить сервер, который вы приобрели для Exchange 2013, и установить Exchange 2016. Кроме того, при перемещении почтовых ящиков большинство пользователей никогда не увидят, что их почтовый ящик перемещается с сервера, а затем обратно после его перестроения с помощью Exchange 2016.           |
+|Путь миграции к Exchange 2016  <br/> |Ниже приведены общие этапы перехода на Exchange 2016.  <br/> Установка Exchange 2013 в существующую организацию Exchange 2007. Переместите службы и другую инфраструктуру в Exchange 2013 перемещение почтовых ящиков и общедоступных папок в Exchange 2013 списать оставшиеся серверы Exchange Server, установка Exchange 2007 в существующую Организация Exchange 2013. Перемещать почтовые ящики, общедоступные папки, службы и другие инфраструктуры в Exchange 2016 (порядок не имеет значения). Списать оставшиеся серверы Exchange 2013 > [!NOTE]> миграция с Exchange 2013 на Exchange 2016 проста. Обе версии имеют почти одинаковые аппаратные требования. Таким образом, и фактически эти версии совместимы, это означает, что вы можете перестроить сервер, который вы приобрели для Exchange 2013, и установить Exchange 2016. Кроме того, при перемещении почтовых ящиков большинство пользователей никогда не увидят, что их почтовый ящик перемещается с сервера, а затем обратно после его перестроения с помощью Exchange 2016.           |
 |Совместное использование версий  <br/> | При переходе на:  <br/> **Exchange 2016** Exchange 2016 невозможно установить в Организации, которая включает сервер Exchange Server 2007. Сначала необходимо выполнить миграцию в Exchange 2010 или 2013 (настоятельно рекомендуем Exchange 2013), удалить все серверы Exchange 2007, а затем перенести их в Exchange 2016.  <br/> **Exchange 2010 или exchange 2013** Вы можете установить Exchange 2010 или Exchange 2013 в существующую организацию Exchange 2007. Это позволяет установить один или несколько серверов Exchange 2010 или 2013 и выполнить миграцию.  <br/> |
-|Серверное оборудование  <br/> | Требования к оборудованию серверов изменились по сравнению с Exchange 2007. Необходимо убедиться, что оборудование, которое планируется использовать, совместимо. Вы можете узнать больше о требованиях к оборудованию для каждой версии:  <br/> [Требования к системе для Exchange 2016](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.160%29.aspx) <br/> [Требования к системе для Exchange 2013](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.150%29.aspx) <br/> [Требования к системе для Exchange 2010](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.141%29.aspx) <br/>  Вы обнаружите, что благодаря значительным улучшениям в производительности Exchange и увеличению энергопотребления и емкости хранилища на новых серверах, скорее всего, потребуется меньше серверов для поддержки одинакового количества почтовых ящиков.  <br/> |
-|Версия операционной системы  <br/> | Минимальная поддерживаемая версия операционной системы для каждой версии:  <br/> **Exchange 2016** Windows Server 2012  <br/> **Exchange 2013** Windows Server 2008 R2 с ПАКЕТом обновления 1  <br/> **Exchange 2010** Windows Server 2008 с ПАКЕТом обновления 2  <br/>  Дополнительные сведения о поддержке операционной системы можно найти в [матрице поддержки Exchange](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
-|Функциональный уровень леса Active Directory  <br/> | Минимальный поддерживаемый режим работы леса Active Directory для каждой версии:  <br/> **Exchange 2016** Windows Server 2008 R2 с ПАКЕТом обновления 1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Дополнительные сведения о поддержке режима работы леса можно найти в [матрице поддержки Exchange](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
-|Версии клиента Office  <br/> | Ниже перечислены минимальные поддерживаемые версии клиентов Office для каждой версии.  <br/> **Exchange 2016** Office 2010 (с последними обновлениями)  <br/> **Exchange 2013** Office 2007 SP3  <br/> **Exchange 2010** Office 2003  <br/>  Дополнительные сведения о поддержке клиентов Office можно найти в [матрице поддержки Exchange](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
+|Серверное оборудование  <br/> | Требования к оборудованию серверов изменились по сравнению с Exchange 2007. Необходимо убедиться, что оборудование, которое планируется использовать, совместимо. Вы можете узнать больше о требованиях к оборудованию для каждой версии:  <br/> [Требования к системе для Exchange 2016](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Требования к системе для Exchange 2013](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Требования к системе для Exchange 2010](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  Вы обнаружите, что благодаря значительным улучшениям в производительности Exchange и увеличению энергопотребления и емкости хранилища на новых серверах, скорее всего, потребуется меньше серверов для поддержки одинакового количества почтовых ящиков.  <br/> |
+|Версия операционной системы  <br/> | Минимальная поддерживаемая версия операционной системы для каждой версии:  <br/> **Exchange 2016** Windows Server 2012  <br/> **Exchange 2013** Windows Server 2008 R2 с пакетом обновления 1  <br/> **Exchange 2010** Windows Server 2008 с пакетом обновления 2  <br/>  Дополнительные сведения о поддержке операционной системы можно найти в [матрице поддержки Exchange](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
+|Функциональный уровень леса Active Directory  <br/> | Минимальный поддерживаемый режим работы леса Active Directory для каждой версии:  <br/> **Exchange 2016** Windows Server 2008 R2 с пакетом обновления 1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Дополнительные сведения о поддержке режима работы леса можно найти в [матрице поддержки Exchange](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
+|Версии клиента Office  <br/> | Ниже перечислены минимальные поддерживаемые версии клиентов Office для каждой версии.  <br/> **Exchange 2016** Office 2010 (с последними обновлениями)  <br/> **Exchange 2013** Office 2007 SP3  <br/> **Exchange 2010** Office 2003  <br/>  Дополнительные сведения о поддержке клиентов Office можно найти в [матрице поддержки Exchange](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
    
 #### <a name="how-do-i-migrate"></a>Как выполнить миграцию?
 
@@ -228,11 +228,11 @@ ms.locfileid: "34067615"
   
 - [Помощник по развертыванию Exchange](https://aka.ms/exdeploy)
     
-- Изменения схемы Active Directory для Exchange [2016](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.150%29.aspx), [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)
+- Изменения схемы Active Directory для Exchange [2016](https://technet.microsoft.com/library/bb738144%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/library/bb738144%28v=exchg.150%29.aspx), [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)
     
-- Требования к системе для Exchange [2016](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.150%29.aspx), [2010](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.141%29.aspx)
+- Требования к системе для Exchange [2016](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx), [2010](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx)
     
-- Необходимые условия для Exchange [2016](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.150%29.aspx), [2010](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.141%29.aspx)
+- Необходимые условия для Exchange [2016](https://technet.microsoft.com/library/bb691354%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/library/bb691354%28v=exchg.150%29.aspx), [2010](https://technet.microsoft.com/library/bb691354%28v=exchg.141%29.aspx)
     
 ## <a name="what-if-i-need-help"></a>Что делать, если вам нужна помощь?
 
@@ -240,14 +240,14 @@ ms.locfileid: "34067615"
   
 Если во время миграции в Office 365 вы не используете FastTrack или не выполняете миграцию на более новую версию Exchange Server, мы поможем вам помочь. Ниже приведены некоторые ресурсы, которые можно использовать.
   
-- [Техническое сообщество](https://social.technet.microsoft.com/Forums/office/en-US/home?category=exchangeserver)
+- [Техническое сообщество](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
     
-- [Служба поддержки клиентов](https://support.microsoft.com/en-us/gp/support-options-for-business)
+- [Служба поддержки клиентов](https://support.microsoft.com/gp/support-options-for-business)
     
 ## <a name="related-topics"></a>Статьи по теме
 
 [Ресурсы по обновлению серверов и клиентов Office 2007](upgrade-from-office-2007-servers-and-products.md)
   
-[Группа выбытия Office (Майкрософт Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
+[Группа для клиентов, у которых завершается поддержка продуктов Office (сообщество Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
   
 

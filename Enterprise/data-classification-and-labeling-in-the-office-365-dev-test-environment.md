@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: Сводка. Настройка и демонстрация классификации и маркировки данных с помощью клиента Azure Information Protection (AIP) в среде разработки и тестирования Office 365.
-ms.openlocfilehash: cf369894eb87381e3837a52946a0ba2b9705bf70
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f16fd41aaa454a3f038fd23c890bbf48be2c3e66
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067937"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028903"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Классификация и маркировка данных в среде разработки и тестирования Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "34067937"
 Клиент Azure Information Protection позволяет классифицировать документ перед его отправкой в папку SharePoint Online в Office 365. С помощью инструкций в этой статье вы можете установить клиент Azure Information Protection и продемонстрировать классификацию данных. Для получения дополнительных сведений см [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в Office 365.
+> Щелкните [здесь](https://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365
 
@@ -38,13 +38,13 @@ ms.locfileid: "34067937"
   
 ## <a name="phase-2-add-the-azure-information-protection-trial-subscription"></a>Этап 2. Добавление пробной подписки Azure Information Protection
 
-На этом этапе вы добавите службу Azure Information Protection в среду разработки и тестирования Office 365 и включите ее для учетных записей пользователей. Если вы настроили [Office 365 and EMS dev/test environment](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx), пропустите этот этап. Пробная подписка на Enterprise Mobility Suite включает лицензии Azure Information Protection.
+На этом этапе вы добавите службу Azure Information Protection в среду разработки и тестирования Office 365 и включите ее для учетных записей пользователей. Если вы настроили [Office 365 and EMS dev/test environment](https://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx), пропустите этот этап. Пробная подписка на Enterprise Mobility Suite включает лицензии Azure Information Protection.
   
 Сначала оформите пробную подписку на Azure Information Protection.
   
 ### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>Оформление пробной подписки на Azure Information Protection
 
-1. В Internet Explorer или в браузере перейдите к [http://admin.microsoft.com](http://admin.microsoft.com) учетной записи глобального администратора Office 365 и войдите в нее.
+1. В Internet Explorer или в браузере перейдите к [https://admin.microsoft.com](https://admin.microsoft.com) учетной записи глобального администратора Office 365 и войдите в нее.
     
 2. На главной вкладке **Microsoft Office** щелкните плитку **Администратор**.
     
@@ -78,11 +78,11 @@ ms.locfileid: "34067937"
   
 Если вы используете условную корпоративную среду разработки и тестирования Office 365, сначала необходимо установить Office 2016 на компьютере CLIENT1.
   
-1. Используйте браузер и перейдите на [портал Azure](http://portal.azure.com).
+1. Используйте браузер и перейдите на [портал Azure](https://portal.azure.com).
     
 2. 	Щелкните **Группы ресурсов >** [имя вашей группы ресурсов] **> CLIENT1 > Подключиться**.
     
-3. На компьютере CLIENT1 запустите Internet Explorer, перейдите на портал Office по адресу [http://admin.microsoft.com](http://admin.microsoft.com), а затем войдите в систему, используя имя и пароль учетной записи User5.
+3. На компьютере CLIENT1 запустите Internet Explorer, перейдите на портал Office по адресу [https://admin.microsoft.com](https://admin.microsoft.com), а затем войдите в систему, используя имя и пароль учетной записи User5.
     
 4. На главной вкладке **Microsoft Office** щелкните **Установить Office 2016**.
     
@@ -150,7 +150,7 @@ ms.locfileid: "34067937"
   
 1. На вкладке **Домашняя страница Microsoft Office** щелкните значок пользователя в верхней правой части, затем нажмите **Выйти**.
     
-2. Перейдите по ссылке [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Перейдите по ссылке [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. На странице **входа в Office 365** щелкните имя учетной записи User5 и войдите в систему.
     
@@ -162,9 +162,9 @@ ms.locfileid: "34067937"
     
 ## <a name="see-also"></a>См. также
 
-[Руководства по лаборатории тестирования для облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
 
-[Среда разработки и тестирования Office 365 и EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
+[Среда разработки и тестирования Office 365 и EMS](https://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   
 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
 

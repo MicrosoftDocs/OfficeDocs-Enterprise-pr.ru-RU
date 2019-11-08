@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: Сводка. Настройка контроллеров домена и сервера DirSync для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: 299723c8f49cddd4a30ba2defc73dd156792f337
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 5cb7c75f5d66dc37aa9e4b7fdc682c9508eac40e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102527"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028803"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Этап 2. Федеративная проверка подлинности для обеспечения высокой доступности: настройка контроллеров домена
 
@@ -36,19 +36,19 @@ ms.locfileid: "34102527"
   
 |**Элемент**|**Имя виртуальной машины**|**Образ коллекции**|**Тип хранилища**|**Минимальный размер**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png) (первый контроллер домена, например DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png) (второй контроллер домена, например DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)(Сервер DirSync, например, DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./media/Common-Images/TableLine.png)(первый сервер AD FS, например, ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./media/Common-Images/TableLine.png)(второй сервер AD FS, например, ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./media/Common-Images/TableLine.png)(первый прокси-сервер веб-приложений, например WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./media/Common-Images/TableLine.png)(второй прокси-сервер веб-приложений, например WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Стандард_лрс  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png) (первый контроллер домена, например DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png) (второй контроллер домена, например DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)(Сервер DirSync, например, DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./media/Common-Images/TableLine.png)(первый сервер AD FS, например, ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./media/Common-Images/TableLine.png)(второй сервер AD FS, например, ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./media/Common-Images/TableLine.png)(первый прокси-сервер веб-приложений, например WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png)(второй прокси-сервер веб-приложений, например WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **Таблица M: виртуальные машины для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Azure**
   
 Полный список размеров виртуальных машин представлен в [этой статье](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
   
-Приведенный ниже блок команд Azure PowerShell создает виртуальные машины для двух контроллеров домена. Укажите значения для переменных, удалите символы \< и _гт_. Обратите внимание, что в этом блоке команд Azure PowerShell используются значения из следующих таблиц:
+Приведенный ниже блок команд Azure PowerShell создает виртуальные машины для двух контроллеров домена. Укажите значения для переменных, удалив \< и > символы. Обратите внимание, что в этом блоке команд Azure PowerShell используются значения из следующих таблиц:
   
 - таблица M (для виртуальных машин);
     
@@ -65,7 +65,7 @@ ms.locfileid: "34102527"
 Помните, что вы определили таблицы R, V, S, I и A для [федеративной проверки подлинности с высоким уровнем доступности, этап 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> Для приведенных ниже последовательностей команд используется последняя версия Azure PowerShell. См. статью [Общие сведения об Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> Для приведенных ниже последовательностей команд используется последняя версия Azure PowerShell. См. статью [Общие сведения об Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Указав правильные значения, выполните полученный блок в командной строке Azure PowerShell или в интегрированной среде сценариев PowerShell (ISE) на локальном компьютере.
   
@@ -249,7 +249,7 @@ Restart-Computer
 
 ![Этап 2 инфраструктуры федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure с помощью контроллеров домена](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующее действие
 
 Продолжение здесь: [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md).
   

@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: В этой статье показано, как можно диагностировать распространенные проблемы с сайтом SharePoint Online с помощью средств разработчика Internet Explorer.
-ms.openlocfilehash: a4d66fd019a3b477a97dbf039144734dc7ee1288
-ms.sourcegitcommit: cb338a74194ec9ba0913070e2b74c9f50caffb3b
+ms.openlocfilehash: 2b97098c68eb519ed5a1edc26146c521f39a11d1
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605507"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033415"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Диагностика проблем производительности в SharePoint Online
 
@@ -32,7 +34,7 @@ ms.locfileid: "35605507"
 
 - Метрики заголовков ответа SharePoint Online
 
-В этом разделе описывается, как использовать каждый из этих методов для диагностики проблем с производительностью. Определив причину проблемы, вы можете работать над решением, используя статьи о повышении производительности SharePoint, на http://aka.ms/tuneкоторых можно найти.
+В этом разделе описывается, как использовать каждый из этих методов для диагностики проблем с производительностью. Определив причину проблемы, вы можете работать над решением, используя статьи о повышении производительности SharePoint, на https://aka.ms/tuneкоторых можно найти.
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Использование панели инструментов F12 для диагностики производительности в SharePoint Online
 <a name="F12ToolInfo"> </a>

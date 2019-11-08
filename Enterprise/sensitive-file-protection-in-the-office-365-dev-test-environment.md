@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: Сводка. Настройка и демонстрация защиты Office 365 Information Rights Management защищает конфиденциальные файлы, даже если они публикуются в неправильном семействе веб-сайтов SharePoint Online.
-ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782499"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031574"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Защита конфиденциальных файлов в среде разработки и тестирования Office 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "35782499"
 В этой статье описано, как включить и протестировать IRM в Office 365 для файлов, содержащих потенциально конфиденциальную информацию, в пробной подписке на Office 365.
   
 > [!TIP]
-> Щелкните [здесь](http://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в Office 365.
+> Щелкните [здесь](https://aka.ms/catlgstack), чтобы просмотреть схему всех статей, относящихся к руководствам по лаборатории тестирования в Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Этап 1. Создание среды разработки и тестирования Office 365
 
@@ -92,7 +92,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 Теперь создайте закрытую группу "Руководители" и добавьте в нее новые учетные записи.
   
-1. В браузере перейдите на портал Office [http://admin.microsoft.com](http://admin.microsoft.com) и войдите в пробную подписку на Office 365 с помощью учетной записи глобального администратора.
+1. В браузере перейдите на портал Office [https://admin.microsoft.com](https://admin.microsoft.com) и войдите в пробную подписку на Office 365 с помощью учетной записи глобального администратора.
     
   - Если вы используете упрощенную среду разработки и тестирования Office 365, запустите частный сеанс Internet Explorer или вашего браузера и войдите с локального компьютера.
     
@@ -166,7 +166,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. На главной вкладке **Microsoft Office ** щелкните значок пользователя в правом верхнем углу и нажмите **Выйти**.
     
-2. Перейдите по ссылке [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Перейдите по ссылке [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. На странице **входа в Office 365** выберите **Использовать другую учетную запись**.
     
@@ -204,7 +204,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. На главной вкладке **Microsoft Office ** щелкните значок пользователя в правом верхнем углу и нажмите **Выйти**.
     
-2. Перейдите по ссылке [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Перейдите по ссылке [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. На странице **входа в Office 365** выберите **Использовать другую учетную запись**.
     
@@ -224,7 +224,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. На главной вкладке **Microsoft Office ** щелкните значок пользователя в правом верхнем углу и нажмите **Выйти**.
     
-2. Перейдите по ссылке [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Перейдите по ссылке [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. На странице **входа в Office 365** выберите имя учетной записи глобального администратора, введите пароль и нажмите **Войти**.
     
@@ -280,7 +280,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
     
 5. На главной вкладке **Microsoft Office ** в браузере щелкните значок пользователя в правом верхнем углу и нажмите **Выйти**.
     
-6. Перейдите по ссылке [http://admin.microsoft.com](http://admin.microsoft.com).
+6. Перейдите по ссылке [https://admin.microsoft.com](https://admin.microsoft.com).
     
 7. На странице **входа в Office 365** выберите имя учетной записи генерального директора, введите пароль и нажмите **Войти**.
     
@@ -306,7 +306,7 @@ New-MsolUser -DisplayName "COO" -FirstName "Chief" -LastName "Operations Officer
   
 1. На главной вкладке **Microsoft Office ** в браузере щелкните значок пользователя в правом верхнем углу и нажмите **Выйти**.
     
-2. Перейдите по ссылке [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Перейдите по ссылке [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. На странице **входа в Office 365** щелкните имя учетной записи User5, введите пароль, а затем нажмите кнопку **войти**.
     

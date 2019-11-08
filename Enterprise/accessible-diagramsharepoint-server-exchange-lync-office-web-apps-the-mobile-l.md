@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: Эта статья  удобная текстовая версия схемы, показывающей варианты платформы Microsoft Exchange 2013, которая доступна в статье Технические схемы.
-ms.openlocfilehash: 9d10b9475a2c3a316ad5d23876574a46469e462e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068445"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030583"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Текстовая версия схемы, в которой представлена мобильная среда SharePoint Server, Exchange, Lync, Office Web Apps
 
-**Сводка.** Эта статья — удобная текстовая версия схемы "Варианты платформы для Microsoft Exchange 2013", которая доступна в разделе [Технические схемы](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409).
+**Сводка.** Эта статья — удобная текстовая версия схемы "Варианты платформы для Microsoft Exchange 2013", которая доступна в разделе [Технические схемы](https://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409).
   
 На этом плакате показана подробная структура приложений и мобильной браузерной среды для SharePoint Server, Lync, Exchange Server и Office Web Apps. На нем представлены указанные ниже сведения. 
   

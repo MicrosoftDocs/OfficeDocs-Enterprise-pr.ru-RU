@@ -13,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: Сводка. Узнайте, как автоматизировать сбор файлов с компьютеров пользователей для обнаружения электронных данных.
-ms.openlocfilehash: b54e54e2905407b81d95238afe97c1a542238e06
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 0133da6eecb229ad999043c9dfcb15d98a732829
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068425"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030493"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Автоматизация сбора файлов для обнаружения электронных данных
 
@@ -270,9 +270,9 @@ Write-Host -ForegroundColor Cyan "Finished."
     
 |**Номер строки**|**Необходимые изменения**|**Обязательно?**|
 |:-----|:-----|:-----|
-|71  <br/> |Переменная **$FileTypes**. Включите расширения всех типов файлов, подлежащих инвентаризации и сбору в переменной массива с использованием сценария.<br/> |При необходимости  <br/> |
+|71  <br/> |Переменная **$FileTypes**. Включите расширения всех типов файлов, подлежащих инвентаризации и сбору в переменной массива с использованием сценария.<br/> |Необязательный  <br/> |
 |76 и 77  <br/> |Измените способ сборки переменной **$CaseNo** в соответствии со своими потребностями. Сценарий записывает текущую дату и время, а также добавляет к переменной имя пользователя.<br/> |Необязательно  <br/> |
-|80  <br/> |Переменную **$CaseRootLocation** необходимо настроить для общей папки коллекции промежуточных серверов, например **\\\\Staging\\Cases$**. <br/> |Обязательный  <br/> |
+|80  <br/> |Переменную **$CaseRootLocation** необходимо настроить для общей папки коллекции промежуточных серверов, например **\\\\Staging\\Cases$**. <br/> |Обязательное  <br/> |
    
 4. Поместите файл CollectionScript.ps1 в общую папку Netlogon на контроллере домена.  
     
@@ -301,9 +301,9 @@ param ([String]$SourcePath,[String]$MailboxAlias)
 $FolderIdentifier = "zzImportedPSTs_"
 
 # Connect to Exchange remote powershell using the connection Uri below
-# This would be the format http://<exchange server FQDN>/Powershell
+# This would be the format https://<exchange server FQDN>/Powershell
 
-$ConnectionUri = 'http://h10-exch/PowerShell'
+$ConnectionUri = 'https://h10-exch/PowerShell'
 $RemoteEx2013Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $ConnectionUri -Authentication Kerberos
 Import-PSSession $RemoteEx2013Session
 

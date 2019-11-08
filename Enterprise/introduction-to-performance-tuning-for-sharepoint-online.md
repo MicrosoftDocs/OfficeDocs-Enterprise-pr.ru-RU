@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: В этой статье описываются конкретные аспекты, которые необходимо учитывать при проектировании страниц для достижения оптимальной производительности в SharePoint Online.
-ms.openlocfilehash: d0dc4d6eac1a8711d1c93b97eccbf5474092d3af
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3c2c6ccc58659aceaaf831b97eb8c4c05141afce
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616682"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033405"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Общие сведения о настройке производительности для SharePoint Online
 
@@ -44,7 +46,7 @@ ms.locfileid: "35616682"
     
 - Загрузка ненастраиваемых страниц выполняется очень быстро.
     
-- OneDrive для бизнеса, сайты групп и системные страницы, такие как _layouts и т. д., быстро загружаются.
+- В OneDrive для бизнеса, сайты групп и системные страницы, такие как _layouts и т. д., быстро загружаются.
     
 - Медленная загрузка 1% страниц SharePoint Online требует более 5 000 миллисекунд.
     
@@ -124,7 +126,7 @@ SharePoint Online
     
 - Большое физическое расстояние до сервера
     
-В SharePoint Online можно использовать одну функциональную возможность — Microsoft CDN (сеть доставки содержимого). Сеть CDN — это, по сути, распределенная коллекция серверов, развернутых в нескольких центрах обработки данных. С помощью сети CDN содержимое страниц может размещаться на сервере, близком к клиенту, даже если клиент находится далеко от исходного сервера SharePoint. В дальнейшем Майкрософт будет использовать эту возможность для хранения локальных экземпляров страниц, которые нельзя изменить, например домашней страницы администратора SharePoint Online. Дополнительные сведения о сети CDN можно найти в статье [Доставка содержимого в сети](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks).
+В SharePoint Online можно использовать одну функциональную возможность — Microsoft CDN (сеть доставки содержимого). Сеть CDN — это, по сути, распределенная коллекция серверов, развернутых в нескольких центрах обработки данных. С помощью сети CDN содержимое страниц может размещаться на сервере, близком к клиенту, даже если клиент находится далеко от исходного сервера SharePoint. В дальнейшем Майкрософт будет использовать эту возможность для хранения локальных экземпляров страниц, которые нельзя изменить, например домашней страницы администратора SharePoint Online. Дополнительные сведения о сети CDN можно найти в статье [Доставка содержимого в сети](https://docs.microsoft.com/office365/enterprise/content-delivery-networks).
   
 Что вам нужно знать о том, что вам не удастся выполнить многие действия — скорость подключения поставщика услуг Интернета. С помощью средства простого теста скорости вы узнаете скорость подключения.
   
@@ -158,6 +160,6 @@ SharePoint Online
     
 - [Использование кэша объектов в SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
     
-- [Как избежать регулирования количества запросов или блокировки в SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [Как избежать регулирования количества запросов или блокировки в SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
     
 

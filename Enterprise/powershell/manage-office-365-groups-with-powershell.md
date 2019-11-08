@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Узнайте, как выполнять стандартные задачи управления для групп Office 365 в Microsoft PowerShell.
-ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: 94aa95de79099b45ea05533e7c22959b9bdf7669
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017347"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031004"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Управление группами Office 365 с помощью PowerShell
 
@@ -46,7 +46,7 @@ ms.locfileid: "37017347"
   
 Чтобы включить для группы Office 365 параметр "Отправить как", используйте командлеты [Add – RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) и [Get – RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) , чтобы настроить этот параметр. После включения этого параметра пользователи группы Office 365 смогут отправлять сообщения электронной почты и отвечать на них в качестве группы Office 365 с помощью Outlook или Outlook в Интернете. Пользователи могут перейти к группе, создать новую электронную почту и изменить поле "Отправить как" на адрес электронной почты группы. 
 
-([Это также можно сделать в центре администрирования Exchange](https://docs.microsoft.com/en-us/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
+([Это также можно сделать в центре администрирования Exchange](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
   
 Используйте следующий скрипт, заменив * \<граупалиас\> * псевдонимом группы, которую требуется обновить, и * \<усералиас\> * с псевдонимом пользователя, которому необходимо предоставить пермссионс. Чтобы запустить этот скрипт, [подключитесь к Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) .
 
@@ -81,7 +81,7 @@ $setting["ClassificationDescriptions"] ="Classification:Description,Classificati
 
 где классификация соответствует строкам в Классификатионлист.
 
-Пример.
+Пример:
   
 ```
 $setting["ClassificationDescriptions"] = "Low Impact: General communication, Medium Impact: Company internal data , High Impact: Data that has regulatory requirements"
@@ -186,9 +186,9 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 
 ## <a name="related-topics"></a>Статьи по теме
 
-[Обновление списков рассылки до групп Office 365](https://docs.microsoft.com/en-us/office365/admin/manage/upgrade-distribution-lists)
+[Обновление списков рассылки до групп Office 365](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[Управление пользователями, которые могут создавать группы Office 365](https://docs.microsoft.com/en-us/office365/admin/create-groups/manage-creation-of-groups)
+[Управление пользователями, которые могут создавать группы Office 365](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [Управление гостевым доступом к Группам Office 365](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

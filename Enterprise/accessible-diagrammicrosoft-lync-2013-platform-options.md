@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: Эта статья  удобная текстовая версия схемы, показывающей варианты платформы Microsoft Lync 2013, которая доступна в статье Технические схемы.
-ms.openlocfilehash: 4993ad90307973589da6dc5081d8c2875b44ce66
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a62fb6d1e1ee7fbddb79b0aec4ddafea4b07b4fe
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068615"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030603"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>Текстовая версия схемы, в которой представлены варианты платформы Microsoft Lync 2013
 
-**Сводка.** Эта статья — удобная текстовая версия схемы "Варианты платформы для Microsoft Lync 2013", которая доступна в разделе [Технические схемы](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Сводка.** Эта статья — удобная текстовая версия схемы "Варианты платформы для Microsoft Lync 2013", которая доступна в разделе [Технические схемы](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
 На этом плакате представлены сведения о вариантах развертывания Lync Online (Office 365) и Lync Server, которые должны знать архитекторы и лица, принимающие бизнес-решения.
   

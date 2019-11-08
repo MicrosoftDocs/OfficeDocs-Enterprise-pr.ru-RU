@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
 description: 'Эта статья представляет собой текстовую версию схемы "Пример проектирования: веб-сайты в Microsoft Azure для SharePoint 2013.'
-ms.openlocfilehash: 28cf28739c476638b5775d170508001f2a9730ed
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 52ae615cbdc6a355155e54e36bc6a3d733d84869
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068804"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027633"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Доступная схема — пример проекта: веб-сайты в Microsoft Azure для SharePoint 2013
 
@@ -50,13 +50,13 @@ ms.locfileid: "34068804"
 
 Этот проект включает учетные записи пользователей четырех типов. Каждый тип учетной записи связан с сайтом для доступа и зоной, использующей определенный тип проверки подлинности.  
   
-- Анонимные клиенты — анонимные клиенты получают доступ через сайт, http://www.contoso.comнапример. Используемая зона — "Интернет-зона/Аноним", которая использует анонимную проверку подлинности.
+- Анонимные клиенты — анонимные клиенты получают доступ через сайт, https://www.contoso.comнапример. Используемая зона — "Интернет-зона/Аноним", которая использует анонимную проверку подлинности.
     
 - Проверенные клиенты — пользователи, прошедшие проверку подлинности, имеют https://secure.contoso.comдоступ через сайт, например. Используемая зона — это "зона экстрасети/SAML", которая использует Azure Active Directory с проверкой подлинности SAML.
     
-- Авторы и разработчики сайтов — Авторы и разработчики сайтов имеют доступ к таким сайтам http://authoring.contoso.com:8000 , http://www.contoso.com:8000как или. Используемая зона — это "зона по умолчанию/встроенная система Windows", которая использует доменные службы Active Directory (AD DS).
+- Авторы и разработчики сайтов — Авторы и разработчики сайтов имеют доступ к таким сайтам https://authoring.contoso.com:8000 , https://www.contoso.com:8000как или. Используемая зона — это "зона по умолчанию/встроенная система Windows", которая использует доменные службы Active Directory (AD DS).
     
-- Учетная запись обхода поиска — у учетной записи обхода контента есть доступ http://authoring.contoso.com:8000 к http://www.contoso.com:8000сайтам, таким как или. Используемая зона — это "Стандартная зона/встроенная система Windows", которая использует доменные службы Active Directory с проверкой подлинности Windows NTLM.
+- Учетная запись обхода поиска — у учетной записи обхода контента есть доступ https://authoring.contoso.com:8000 к https://www.contoso.com:8000сайтам, таким как или. Используемая зона — это "Стандартная зона/встроенная система Windows", которая использует доменные службы Active Directory с проверкой подлинности Windows NTLM.
     
 ## <a name="server-farm"></a>Ферма серверов
 
@@ -80,21 +80,21 @@ ms.locfileid: "34068804"
     
 ## <a name="application-pools-and-web-applications"></a>Пулы приложений и веб-приложения
 
-Группа по умолчанию в службе Azure включает пул приложений 3, содержащий веб-приложение с именем Contoso Sites. Это семейство веб-сайтов на основе путей расположено по адресу http://internal:8000.
+Группа по умолчанию в службе Azure включает пул приложений 3, содержащий веб-приложение с именем Contoso Sites. Это семейство веб-сайтов на основе путей расположено по адресу https://internal:8000.
   
 ## <a name="site-collections-and-sites"></a>Семейства веб-сайтов и сайты
 
 Семейства веб-сайтов в пуле приложений включают следующие компоненты:
   
-- Семейство веб-сайтов с именем на основе узла 1 для обхода (пример расположенияhttp://authoring.contoso.com:8000)
+- Семейство веб-сайтов с именем на основе узла 1 для обхода (пример расположенияhttps://authoring.contoso.com:8000)
     
-- Семейство сайтов с именем на основе узла 2 для запросов ( http://www.contoso.comпримеры https://secure.contoso.comрасположений,http://www.contoso.com:8000)
+- Семейство сайтов с именем на основе узла 2 для запросов ( https://www.contoso.comпримеры https://secure.contoso.comрасположений,https://www.contoso.com:8000)
     
-- Семейство сайтов с именем на основе узла 3 для запросов ( http://assets.contoso.comпримеры https://secureassets.contoso.comрасположений,http://assets.contoso.com:8000)
+- Семейство сайтов с именем на основе узла 3 для запросов ( https://assets.contoso.comпримеры https://secureassets.contoso.comрасположений,https://assets.contoso.com:8000)
     
 ## <a name="content-databases"></a>Базы данных контента
 
-В этом примере показаны две базы данных контента. Один — для семейства веб-сайтов 1, используемого для обходаhttp://authoring.contoso.com:8000)контента (. Другой — для двух семейств веб-сайтов 2 и 3, используемых для запросовhttp://www.contoso.com( https://secure.contoso.com, http://www.contoso.com:8000,, http://assets.contoso.comили https://secureassets.contoso.com, http://assets.contoso.com:8000),.
+В этом примере показаны две базы данных контента. Один — для семейства веб-сайтов 1, используемого для обходаhttps://authoring.contoso.com:8000)контента (. Другой — для двух семейств веб-сайтов 2 и 3, используемых для запросовhttps://www.contoso.com( https://secure.contoso.com, https://www.contoso.com:8000,, https://assets.contoso.comили https://secureassets.contoso.com, https://assets.contoso.com:8000),.
   
 ## <a name="zones-and-urls"></a>Зоны и URL-адреса
 
@@ -106,7 +106,7 @@ ms.locfileid: "34068804"
     
 - Зона — по умолчанию
     
-- URL-адрес с балансировкой нагрузки —http://authoring.contoso.com:8000
+- URL-адрес с балансировкой нагрузки —https://authoring.contoso.com:8000
     
 Второй список зон и URL-адресов включает пользователей трех типов в трех различных зонах. Этот список связан с семейством веб-сайтов 2 и содержит следующую информацию.
   
@@ -116,7 +116,7 @@ ms.locfileid: "34068804"
     
 - Зона — по умолчанию
     
-- URL-адрес с балансировкой нагрузки —http://www.contoso.com:8000
+- URL-адрес с балансировкой нагрузки —https://www.contoso.com:8000
     
 Вторая зона:
   
@@ -124,7 +124,7 @@ ms.locfileid: "34068804"
     
 - Зона — Интернет
     
-- URL-адрес с балансировкой нагрузки —http://www.contoso.com
+- URL-адрес с балансировкой нагрузки —https://www.contoso.com
     
 Третья зона:
   
@@ -142,7 +142,7 @@ ms.locfileid: "34068804"
     
 - Зона — Интернет
     
-- URL-адрес с балансировкой нагрузки —http://assets.contoso.com:8000
+- URL-адрес с балансировкой нагрузки —https://assets.contoso.com:8000
     
 Вторая зона:
   
@@ -150,7 +150,7 @@ ms.locfileid: "34068804"
     
 - Зона — Интернет
     
-- URL-адрес с балансировкой нагрузки —http://assets.contoso.com
+- URL-адрес с балансировкой нагрузки —https://assets.contoso.com
     
 Третья зона:
   
@@ -158,6 +158,6 @@ ms.locfileid: "34068804"
     
 - Зона — экстрасеть
     
-- URL-адрес с балансировкой нагрузки —http://secureassets.contoso.com
+- URL-адрес с балансировкой нагрузки —https://secureassets.contoso.com
     
 

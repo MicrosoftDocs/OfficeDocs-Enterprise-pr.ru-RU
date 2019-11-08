@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Используйте командлеты PowerShell централизованного развертывания для развертывания надстроек Office для организации Office 365 и управления ими.
-ms.openlocfilehash: 301e44da4c663fa54c4e2b753552b0b345e2a6e5
-ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
+ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35834239"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030864"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Использование командлетов PowerShell для централизованного развертывания для управления надстройками
 
@@ -66,7 +66,7 @@ ms.locfileid: "35834239"
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-Кроме того, можно выполнить командлет **New – организациянадстройки – in** , чтобы отправить надстройку и назначить ее пользователям или группам напрямую с помощью параметра Members __ , как показано в следующем примере. Разделяйте адреса электронной почты членов запятыми. 
+Кроме того, можно выполнить командлет **New – организациянадстройки – in** , чтобы отправить надстройку и назначить ее пользователям или группам напрямую с помощью параметра _Members_ , как показано в следующем примере. Разделяйте адреса электронной почты членов запятыми. 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
@@ -111,7 +111,7 @@ Get-OrganizationAddIn |Format-List
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>Включение и отключение надстройки
 
-Чтобы отключить надстройку, чтобы пользователи и группы, которым назначена эта надстройка, больше не были доступны, выполните командлет **Set – организатионаддин** с параметром _ProductID_ и параметром _Enabled_ `$false`, равным, как показано в следующем примере. .
+Чтобы отключить надстройку, чтобы пользователи и группы, которым назначена эта надстройка, больше не были доступны, выполните командлет **Set – организатионаддин** с параметром _ProductID_ и параметром _Enabled_ `$false`, равным, как показано в следующем примере.
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
@@ -125,7 +125,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $
 
 ## <a name="add-or-remove-users-from-an-add-in"></a>Добавление и удаление пользователей из надстройки
 
-Чтобы добавить пользователей и группы в определенную надстройку, выполните командлет **Set – организатионаддинассигнментс** с параметрами _ProductID_, _Add_и Members. __ Разделяйте адреса электронной почты членов запятыми. 
+Чтобы добавить пользователей и группы в определенную надстройку, выполните командлет **Set – организатионаддинассигнментс** с параметрами _ProductID_, _Add_и _Members_ . Разделяйте адреса электронной почты членов запятыми. 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
@@ -162,7 +162,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
   
 ## <a name="delete-an-add-in"></a>Удаление надстройки
 
-Чтобы удалить надстройку, запустите командлет Remove **– организатионаддин** с параметром _ProductID_ , как показано в следующем примере. 
+Чтобы удалить надстройку, запустите командлет **Remove – организатионаддин** с параметром _ProductID_ , как показано в следующем примере. 
   
 ```powershell
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
@@ -184,17 +184,17 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
     -  ;
     -  =   
 
-Если вы хотите настроить развернутую надстройку, необходимо удалить ее из центра администрирования, а затем удалить надстройку из [локального кэша](#remove-an-add-in-from-local-cache) , чтобы удалить ее с каждого компьютера, на котором она была развернута.
+Если вы хотите настроить развернутую надстройку, необходимо удалить ее из центра администрирования, а затем удалить [надстройку из локального кэша](#remove-an-add-in-from-local-cache) , чтобы удалить ее с каждого компьютера, на котором она была развернута.
 
-Чтобы настроить надстройку, выполните командлет **Set – организатионаддиноверридес** с *ProductID* в качестве параметра, а затем тег, который необходимо перезаписать, и новое значение. Чтобы узнать, как получить код *продукта* , ознакомьтесь со статьей [Получение сведений о надстройке](#get-details-of-an-add-in) в этой статье. Пример:
+Чтобы настроить надстройку, выполните командлет **Set – организатионаддиноверридес** с *ProductID* в качестве параметра, а затем тег, который необходимо перезаписать, и новое значение. Чтобы узнать, как получить код *продукта* , ознакомьтесь со статьей [Получение сведений о надстройке](#get-details-of-an-add-in) в этой статье. Например:
 
 ```powershell
- Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "http://site.com/img.jpg" 
+ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
 Чтобы настроить несколько тегов для надстройки, добавьте эти теги в командную строку:
 
 ```powershell
-Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "http://site.com/img.jpg" 
+Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
@@ -219,7 +219,7 @@ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -
 ```
 <Resources>  
     <bt:Images> 
-          <bt:Image id=”img16icon” DefaultValue=”http://site.com/img.jpg” 
+          <bt:Image id=”img16icon” DefaultValue=”https://site.com/img.jpg” 
     </bt:Images> 
 </Resources> 
 ``` 

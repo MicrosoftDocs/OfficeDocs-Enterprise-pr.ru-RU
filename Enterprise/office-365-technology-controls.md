@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Сводка. обзор методик управления технологиями Майкрософт для Office 365.
-ms.openlocfilehash: 1ddf4efdd8e2c2159f6d6c55cfeead1cfbd54395
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3063bcaca85d529885fbafddda88f61325b2b83c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067756"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031144"
 ---
 # <a name="office-365-technology-controls"></a>Технологические элементы управления в Office 365 
 
@@ -39,7 +39,7 @@ ms.locfileid: "37067756"
 
 В редких случаях, когда специалисту службы Microsoft требуется доступ к данным, доступ предоставляется только к данным, необходимым для решения проблемы, и в течение ограниченного периода времени. Если вы отклоните запрос на доступ, у специалистов Майкрософт нет доступа к контенту, и он не сможет выполнять операции службы. Если вы утверждаете запрос, инженеры Майкрософт ограничили доступ к контенту по требованию в контролируемых и ограниченных интерфейсах управления.
 
-Действия, выполняемые инженером службы поддержки, записываются в журнал для целей аудита и доступны через [API действий управления Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) и [Центр безопасности и соответствия требованиям](http://protection.office.com/).
+Действия, выполняемые инженером службы поддержки, записываются в журнал для целей аудита и доступны через [API действий управления Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) и [Центр безопасности и соответствия требованиям](https://protection.office.com/).
 
 >[!NOTE]
 > Защищенное хранилище для клиентов доступно в [Office 365 Enterprise](https://products.office.com/business/office-365-enterprise-e5-business-software) в качестве покупки надстройки. Для получения дополнительных сведений ознакомьтесь с разпрограммными [запросами Office 365 для клиентского хранилища](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
@@ -60,7 +60,7 @@ ms.locfileid: "37067756"
 
 Ограничения на использование и требования к подключению и настройке для сотрудников Office 365 устанавливаются с помощью групповых политик Active Directory. К этим политикам относятся следующие характеристики:
 
-- Тсгс использовать только проверенное шифрование [FIPS](https://www.microsoft.com/en-us/TrustCenter/Compliance/FIPS) 140-2.
+- Тсгс использовать только проверенное шифрование [FIPS](https://www.microsoft.com/TrustCenter/Compliance/FIPS) 140-2.
 - Сеансы ТСГ отключаются через 30 минут бездействия.
 - Сеансы ТСГ автоматически выходят через 24 часа.
 
