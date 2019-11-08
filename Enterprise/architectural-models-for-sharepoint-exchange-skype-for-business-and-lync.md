@@ -11,18 +11,19 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: Сводка. Здесь вы найдете афиши для ИТ-специалистов с описанием архитектурных моделей, развертывания и платформ для SharePoint, Exchange, Skype для бизнеса и Lync.
-ms.openlocfilehash: ed4aca3728d12b1a7828b003f0da219d67da6de3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce12d0a807c71e88d2f989f1b24ce033a63b8b70
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068415"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038268"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Архитектурные модели для SharePoint, Exchange, Skype для бизнеса и Lync
 
@@ -108,7 +109,7 @@ ms.locfileid: "34068415"
 
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Эскиз плаката о базах данных SharePoint Server 2016](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | На этом плакате для IT-специалистов представлен краткий справочник по базам данных SharePoint Server 2016. По каждой базе данных указано следующее: <br/><br/> - Размер <br/> - Рекомендации по масштабированию <br/> - Особенности ввода-вывода <br/> - Требования <br/><br/>  На первой странице приведены сведения о системных базах данных SharePoint и приложениях служб с несколькими базами данных. На второй странице представлены сведения о приложениях служб с одной базой данных. <br/><br/>  Дополнительные сведения о базах данных SharePoint Server 2016 см. в статье [Типы и описания баз данных в SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc678868%28v=office.16%29.aspx) <br/> |
+|[![Эскиз плаката о базах данных SharePoint Server 2016](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | На этом плакате для IT-специалистов представлен краткий справочник по базам данных SharePoint Server 2016. По каждой базе данных указано следующее: <br/><br/> - Размер <br/> - Рекомендации по масштабированию <br/> - Особенности ввода-вывода <br/> - Требования <br/><br/>  На первой странице приведены сведения о системных базах данных SharePoint и приложениях служб с несколькими базами данных. На второй странице представлены сведения о приложениях служб с одной базой данных. <br/><br/>  Дополнительные сведения о базах данных SharePoint Server 2016 см. в статье [Типы и описания баз данных в SharePoint Server 2016](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions) <br/> |
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Архитектурные модели Microsoft Skype для бизнеса 2015
@@ -138,7 +139,7 @@ ms.locfileid: "34068415"
 
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Эскиз вариантов платформы SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Эта модель, предназначенная для лиц, принимающих бизнес-решения, и архитекторов, описывает варианты платформ для SharePoint 2013, SharePoint в Office 365, локального гибридного развертывания в Office 365, Azure, а также локального развертывания. Она содержит обзор каждой архитектуры, рекомендации, лицензионные требования, а также списки задач для архитекторов и ИТ-специалистов по каждой платформе. В ней рассмотрено несколько решений SharePoint в Azure. <br/><br/>Текстовая версия этого плаката представлена в статье [Доступная схема — варианты платформы Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
+|[![Эскиз вариантов платформы SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Эта модель, предназначенная для лиц, принимающих бизнес-решения, и архитекторов, описывает варианты платформ для SharePoint 2013, SharePoint в Office 365, локального гибридного развертывания в Office 365, Azure, а также локального развертывания. Она содержит обзор каждой архитектуры, рекомендации, лицензионные требования, а также списки задач для архитекторов и ИТ-специалистов по каждой платформе. В ней рассмотрено несколько решений SharePoint в Azure. <br/><br/>Текстовая версия этого плаката представлена в статье [Доступная схема — варианты платформы Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Варианты платформы Exchange 2013

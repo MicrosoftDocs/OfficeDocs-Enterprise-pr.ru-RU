@@ -3,7 +3,7 @@ title: Оптимизация производительности веб-час
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 11/6/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,26 +16,23 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Узнайте, как оптимизировать производительность веб-частей страниц современных сайтов SharePoint Online.
-ms.openlocfilehash: 2fabfa44e29ac70d587ec2b6b95943a7c65632aa
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 776f80691b8679fdae04993763304ecf4867d3c5
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028246"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032234"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Оптимизация производительности веб-частей страниц современных сайтов SharePoint Online
-
->[!TIP]
->Сведения о том, как оптимизировать окна iFrame на страницах сайтов SharePoint, см. в статье [Оптимизация окон iFrame на страницах современных и классических сайтов публикаций SharePoint Online](modern-iframe-optimization.md).
 
 Страницы современного сайта SharePoint Online содержат веб-части, которые могут влиять на общее время загрузки страниц. Из этой статьи вы узнаете, как определять, насколько веб-части на страницах влияют на задержку, распознаваемую конечным пользователем, и как устранять распространенные проблемы.
 
 >[!NOTE]
->Дополнительные сведения о производительности на современных порталах SharePoint Online см. в статье [Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/ru-RU/sharepoint/modern-experience-performance).
+>Дополнительные сведения о производительности на современных порталах SharePoint Online см. в статье [Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Использование средства диагностики страниц SharePoint для анализа веб-частей
 
-Средство **Диагностика страниц SharePoint** — это браузерное расширение для Chrome и [Microsoft Edge версии 77 или более поздней](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8), которое можно использовать для анализа страниц современных и классических сайтов публикаций SharePoint. Это средство предоставляет отчет о каждой проанализированной странице, показывающий, как она работает при заданных критериях производительности. Чтобы установить и изучить средство диагностики страниц SharePoint, ознакомьтесь со статьей [Использование средства диагностики страниц SharePoint Online](page-diagnostics-for-spo.md).
+Средство **Диагностика страниц SharePoint** — это браузерное расширение для Chrome и [Microsoft Edge версии 77 или более поздней](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8), которое можно использовать для анализа страниц современных и классических сайтов публикаций SharePoint. Это средство предоставляет отчет о каждой проанализированной странице, показывающий, как она работает при заданных критериях производительности. Чтобы установить и изучить средство диагностики страниц SharePoint, ознакомьтесь со статьей [Использование средства диагностики страниц SharePoint Online](page-diagnostics-for-spo.md).
 
 При анализе сайта SharePoint с помощью средства диагностики страниц SharePoint можно просматривать данные о веб-частях, превышающие базовые показатели, которые указаны для результата **Влияние веб-частей на общее время загрузки страниц** на панели _Диагностические тесты_.
 
@@ -72,7 +69,7 @@ ms.locfileid: "37028246"
   - Переместите редко используемые сценарии и код режима изменения (например, панель свойств) в отдельные блоки с помощью оператора _import()_.
   - Ознакомьтесь с зависимостями в файле _package.json_, чтобы полностью удалить ненужный код. Переместите зависимости "только тестирование" или "только сборка" в раздел devDependencies.
   - Для оптимальной статической загрузки ресурсов следует использовать сеть доставки содержимого (CDN) Office 365. Открытые источники CDN предпочтительнее использовать для файлов _JS и CSS_. Дополнительные сведения о сети Office 365 CDN см. в статье [Использование сети доставки содержимого Office 365 с SharePoint Online](use-office-365-cdn-with-spo.md).
-  - Повторно используйте такие платформы, как _React_ и _Fabric imports_, которые входят в состав SharePoint Framework (SPFx). Дополнительные сведения см. в статье [Обзор SharePoint Framework](https://docs.microsoft.com/ru-RU/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Повторно используйте такие платформы, как _React_ и _Fabric imports_, которые входят в состав SharePoint Framework (SPFx). Дополнительные сведения см. в статье [Обзор SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Убедитесь, что у вас установлена последняя версия SharePoint Framework, и обновляйте до новых версий, когда они станут доступны.
 - Извлечение или кэширование данных
   - Если веб-часть использует дополнительные вызовы сервера, чтобы извлечь данные для отображения, убедитесь, что эти серверные API достаточно быстры и (или) выполняют кэширование на стороне клиента (например, с использованием _localStorage_ или _IndexDB_ для более крупных наборов).
@@ -99,7 +96,7 @@ ms.locfileid: "37028246"
 
 [Настройка производительности Office 365](tune-office-365-performance.md)
 
-[Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/ru-RU/sharepoint/modern-experience-performance.md)
+[Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
 
 [Сети доставки содержимого](content-delivery-networks.md)
 

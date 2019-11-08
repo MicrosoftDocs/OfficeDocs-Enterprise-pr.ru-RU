@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения об Office 365 с поддержкой нескольких регионов, о принципе такой поддержки и о географических расположениях, доступных для хранения данных.
-ms.openlocfilehash: f3abcf5e2c5cf0b8250b219e2891181365ffa934
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 216ff8e80970630356c36d50beda25f93ec706da
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069425"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031764"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Планирование использования Office 365 с поддержкой нескольких регионов
 
@@ -25,7 +25,7 @@ ms.locfileid: "34069425"
 
 Ниже приведены некоторые ключевые термины, связанные с поддержкой нескольких регионов, которые помогут вам понять базовые концепции конфигурации.
 
--   **Клиент** — представление организации в Office 365, которое имеет, как правило, один или несколько связанных с ним доменов (например, http://contoso.sharepoint.com). 
+-   **Клиент** — представление организации в Office 365, которое имеет, как правило, один или несколько связанных с ним доменов (например, https://contoso.sharepoint.com). 
 
 -   **Географические расположения** — регионы, доступные для размещения данных в клиенте Office 365.
 
@@ -64,7 +64,7 @@ ms.locfileid: "34069425"
 
 Создайте список пользователей, включите имя участника-пользователя и код расположения для соответствующего предпочтительного расположения данных. Включите тестового пользователя и первоначальную пилотную группу. Этот список понадобится для процедур настройки.
 
-Если выполняется синхронизация пользователей из локальной системы Active Directory в Azure Active Directory, нужно установить предпочтительное расположение данных в качестве атрибута Active Directory и синхронизировать его с помощью Azure Active Directory Connect. Напрямую настроить PDL для синхронизируемых пользователей с помощью Azure AD PowerShell невозможно. Шаги по настройке PDL в Active Directory и синхронизации приведены в статье [Синхронизация Azure Active Directory Connect: настройка предпочтительного расположения данных для ресурсов Office 365](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+Если выполняется синхронизация пользователей из локальной системы Active Directory в Azure Active Directory, нужно установить предпочтительное расположение данных в качестве атрибута Active Directory и синхронизировать его с помощью Azure Active Directory Connect. Напрямую настроить PDL для синхронизируемых пользователей с помощью Azure AD PowerShell невозможно. Шаги по настройке PDL в Active Directory и синхронизации приведены в статье [Синхронизация Azure Active Directory Connect: настройка предпочтительного расположения данных для ресурсов Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 Администрирование клиента с поддержкой нескольких регионов может отличаться от администрирования без таковой, так как многие службы и настройки SharePoint и OneDrive поддерживают несколько регионов. Рекомендуем ознакомиться со статьей [Администрирование среды с поддержкой нескольких регионов](administering-a-multi-geo-environment.md), прежде чем переходить к настройке.
 

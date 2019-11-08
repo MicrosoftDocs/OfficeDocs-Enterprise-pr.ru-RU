@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: Сведения о перемещении сайта OneDrive в другой геообъект.
-ms.openlocfilehash: 352e8317a3f62e23c4dc0faed4cb412707f525d8
-ms.sourcegitcommit: 921545ad533001a7ab055d3e6b19bfc8869df286
+ms.openlocfilehash: 49fec1359ed839b16c1872ab607d87515a27eaf5
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "34814721"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033455"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Перемещение сайта OneDrive в другой геообъект 
 
@@ -25,7 +27,7 @@ ms.locfileid: "34814721"
 
 Пока открыто окно перемещения OneDrive в отношении геообъекта (около 2–6 часов), служба OneDrive пользователя доступна только для чтения. Пользователь по-прежнему сможет получить доступ к своим файлам с помощью клиента синхронизации OneDrive или на сайте OneDrive в SharePoint Online. После перемещения OneDrive в отношении геообъекта пользователь будет автоматически подключен к OneDrive в целевом географическом расположении, когда попробует перейти к OneDrive в средстве запуска приложений Office 365. Клиент синхронизации в новом расположении автоматически начнет синхронизацию.
 
-Процедуры, описываемые в этой статье, требуют наличия [модуля Microsoft SharePoint Online для PowerShell](https://www.microsoft.com/en-us/download/details.aspx?id=35588).
+Процедуры, описываемые в этой статье, требуют наличия [модуля Microsoft SharePoint Online для PowerShell](https://www.microsoft.com/download/details.aspx?id=35588).
 
 ## <a name="communicating-to-your-users"></a>Общение с пользователями
 

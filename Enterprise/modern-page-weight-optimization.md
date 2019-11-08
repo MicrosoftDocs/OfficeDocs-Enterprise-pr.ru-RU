@@ -16,12 +16,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Узнайте, как оптимизировать вес страниц современных сайтов SharePoint Online.
-ms.openlocfilehash: 5e2231468363f58faeac1d7b21e06cd4fa790cf8
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 3079298781116c2664217f87715303c99e4d26b6
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028216"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032254"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Оптимизация веса страниц современных сайтов SharePoint Online
 
@@ -30,11 +30,11 @@ ms.locfileid: "37028216"
 Эта статья поможет вам понять, как уменьшить вес страниц современного сайта.
 
 >[!NOTE]
->Дополнительные сведения о производительности на современных порталах SharePoint Online см. в статье [Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/ru-RU/sharepoint/modern-experience-performance).
+>Дополнительные сведения о производительности на современных порталах SharePoint Online см. в статье [Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>Использование средства диагностики страниц SharePoint для анализа веса страниц
 
-Средство **Диагностика страниц SharePoint** — это браузерное расширение для Chrome и [Microsoft Edge версии 77 или более поздней](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8), которое можно использовать для анализа страниц современных и классических сайтов публикации SharePoint. Это средство предоставляет отчет о каждой проанализированной странице, показывающий, как страница работает в определенном наборе условий. Чтобы установить и изучить средство диагностики страниц SharePoint, ознакомьтесь со статьей [Использование средства диагностики страниц SharePoint Online](page-diagnostics-for-spo.md).
+Средство **Диагностика страниц SharePoint** — это браузерное расширение для Chrome и [Microsoft Edge версии 77 или более поздней](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8), которое можно использовать для анализа страниц современных и классических сайтов публикации SharePoint. Это средство предоставляет отчет о каждой проанализированной странице, показывающий, как она работает при заданных критериях производительности. Чтобы установить и изучить средство диагностики страниц SharePoint, ознакомьтесь со статьей [Использование средства диагностики страниц SharePoint Online](page-diagnostics-for-spo.md).
 
 При анализе страницы сайта SharePoint с помощью средства диагностики страниц SharePoint вы можете просматривать сведения о странице в результате **Вес страницы до 500 КБ** на панели _Диагностические тесты_. Результат появится в зеленом цвете, если вес страницы ниже базового значения, и в красном, если вес страницы превышает базовое значение.
 
@@ -60,22 +60,22 @@ ms.locfileid: "37028216"
 
 Дополнительные инструкции по ограничению веса страницы можно найти в следующей статье:
 
-- [Оптимизация производительности страниц в SharePoint](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
+- [Оптимизация производительности страниц в SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
 
-Перед внесением изменений в страницы для исправления проблем с производительностью запомните время загрузки страницы в результатах анализа. Снова запустите средство после изменения, чтобы увидеть, соответствует ли новый результат базовому стандарту, и проверить новое время загрузки на наличие улучшений.
+Перед внесением изменений в страницы для исправления проблем с производительностью запомните время загрузки страницы в результатах анализа. Снова запустите средство после внесения изменений, чтобы узнать, соответствует ли новый результат базовому стандарту, и проверить, сократилось ли время загрузки.
 
-![Результаты времени загрузки страницы](media/modern-portal-optimization/pagediag-page-load-time.png)
+![Анализ времени загрузки страницы](media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
->Время загрузки страницы зависит от множества факторов, например загрузки сети, времени суток и других переменных условий. Следует несколько раз проверить время загрузки страницы до и после внесения изменений, чтобы получить средние результаты.
+>Время загрузки страницы зависит от множества факторов, например от загрузки сети, времени суток и других переменных условий. Следует несколько раз проверить время загрузки страницы до и после внесения изменений, чтобы получить среднестатистические данные.
 
 ## <a name="related-topics"></a>Статьи по теме
 
 [Настройка производительности SharePoint Online](tune-sharepoint-online-performance.md)
 
-[Настройка производительности Office 365](tune-office-365-performance.md)
+[Настройка производительности Office 365](tune-office-365-performance.md)
 
-[Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/ru-RU/sharepoint/modern-experience-performance.md)
+[Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
 
 [Сети доставки содержимого](content-delivery-networks.md)
 

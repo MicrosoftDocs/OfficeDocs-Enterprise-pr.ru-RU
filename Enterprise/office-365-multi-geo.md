@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Расширьте свою географию присутствия Office 365 с помощью поддержки нескольких регионов в Office 365.
-ms.openlocfilehash: 7aa1933725617bcc1f84bbe6d0f31a6ddd91815d
-ms.sourcegitcommit: a7b2adf4b55df5fc35a617a145e8177caefce28b
+ms.openlocfilehash: 86234cb025d5e0398cbfa626b4867642412e7e0b
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078513"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031934"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 с поддержкой нескольких регионов
 
@@ -25,7 +25,7 @@ ms.locfileid: "35078513"
 
 #### <a name="video-introducing-office-365-multi-geo"></a>Видео: знакомство с Office 365 с поддержкой нескольких регионов
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
 
 В среде с поддержкой нескольких регионов клиент Office 365 состоит из центрального расположения (где изначально подготавливается подписка на Office 365) и одного или нескольких периферийных расположений. В клиенте с несколькими регионами информация о регионах, группах и пользователях обрабатывается в Azure Active Directory (AAD). Так как информация клиента обрабатывается централизованно и синхронизируется с каждым регионом, общий доступ и возможности в компании носят глобальный характер.
 

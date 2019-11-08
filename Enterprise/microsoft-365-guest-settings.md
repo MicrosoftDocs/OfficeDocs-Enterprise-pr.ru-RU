@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Узнайте о параметрах гостевого общего доступа, имеющихся в Microsoft 365.
-ms.openlocfilehash: 59e51a7118a226bb9c17e9529a517bf681b69849
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 4cba1f087828d33fb53b084e792664ecd11d3e63
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493346"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032324"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Справочные сведения о параметрах гостевого общего доступа в Microsoft 365
 

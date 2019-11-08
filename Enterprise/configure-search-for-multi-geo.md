@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения о настройке поиска в среде с поддержкой нескольких регионов.
-ms.openlocfilehash: e2f3aa9888e3c41c445e4ceeab491a3c5a617a14
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 50656a103fd27bfc4a61fb04d26779dd0972a2d4
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643282"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029143"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Настройка поиска в Office 365 с поддержкой нескольких регионов
 
@@ -85,7 +85,7 @@ ms.locfileid: "37643282"
 <tr class="odd">
 <td align="left"></td>
 <td align="left">При поиске в среде с поддержкой нескольких регионов невозможно динамическое группирование числовых уточнений.</td>
-<td align="left">В случае числовых уточнений задавайте <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">параметр discretize</a>.</td>
+<td align="left">В случае числовых уточнений задавайте <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">параметр discretize</a>.</td>
 </tr>
 <tr class="even">
 <td align="left">Идентификаторы документов</td>
@@ -172,7 +172,7 @@ ms.locfileid: "37643282"
 
 **Требование**
 
-Для каждого географического расположения необходимо убедиться, что всем пользователям в организации предоставлено разрешение **на чтение** корневого веб-сайта (например, contoso**APAC**.sharepoint.com/ и contoso**EU**.sharepoint.com/). [Сведения о разрешениях](https://support.office.com/ru-RU/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Для каждого географического расположения необходимо убедиться, что всем пользователям в организации предоставлено разрешение **на чтение** корневого веб-сайта (например, contoso**APAC**.sharepoint.com/ и contoso**EU**.sharepoint.com/). [Сведения о разрешениях](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Параметры запроса
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration — дополнительный список гео
 </tbody>
 </table>
 
-Если опустить элемент DataLocation или EndPoint, а также если продублировать DataLocation, запрос будет выполнен с ошибкой. [Сведения о конечной точке геообъектов клиента можно получить с помощью Microsoft Graph](https://docs.microsoft.com/ru-RU/sharepoint/dev/solution-guidance/multigeo-discovery).
+Если опустить элемент DataLocation или EndPoint, а также если продублировать DataLocation, запрос будет выполнен с ошибкой. [Сведения о конечной точке геообъектов клиента можно получить с помощью Microsoft Graph](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Данные отклика
 
