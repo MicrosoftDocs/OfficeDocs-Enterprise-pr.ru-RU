@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: В этой статье описывается, как уменьшить время загрузки страниц SharePoint Online с помощью JavaScript, чтобы задержать загрузку изображений, а также подождать, пока не загрузится страница.
-ms.openlocfilehash: 9069fb395465cd9d087c018cc2ae782759ddcb0d
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: a015c8ca26c402733eba3b26e641524f38acca21
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616792"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077672"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Задержка при загрузке изображений и JavaScript-файлов в SharePoint Online
 
@@ -28,7 +30,7 @@ ms.locfileid: "35616792"
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Увеличение времени загрузки страниц путем задержки загрузки изображений в страницах SharePoint Online с помощью JavaScript
 
-Вы можете использовать JavaScript, чтобы запретить веб-браузеру получать изображения с предварительной отправкой. Это ускоряет обработку всего документа. Чтобы сделать это, удалите значение атрибута src из тега \<IMG\> и замените его на путь к файлу в атрибуте данных, например: Data — src. Например:
+Вы можете использовать JavaScript, чтобы запретить веб-браузеру получать изображения с предварительной отправкой. Это ускоряет обработку всего документа. Чтобы сделать это, удалите значение атрибута src из тега \<IMG\> и замените его на путь к файлу в атрибуте данных, например: Data — src. Пример:
   
 ```txt
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />

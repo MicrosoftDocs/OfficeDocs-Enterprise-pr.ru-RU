@@ -11,14 +11,15 @@ ms.collection: Ent_O365
 ms.custom:
 - PowerShell
 - Ent_Office_Other
+- SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Сводка: использование PowerShell в Office 365 для создания новых сайтов SharePoint Online и добавления пользователей и групп на эти сайты.'
-ms.openlocfilehash: 2262c69af7dce7472257512d215c1f0425f875f0
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 17f3a6a6444ced647723f417145c6466dd8d284b
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031034"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077998"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Создание сайтов и добавление пользователей в SharePoint Online с помощью Office 365 PowerShell
 

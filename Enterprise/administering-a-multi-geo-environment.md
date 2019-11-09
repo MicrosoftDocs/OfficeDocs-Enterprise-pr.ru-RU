@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: Сведения об администрировании служб SharePoint и OneDrive в среде с поддержкой нескольких регионов.
-ms.openlocfilehash: 4f219b81882ce22faa5bec1b885d1a38629c18db
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9d4d35505dc5b0d24dd5b2ada8ff1028b1d0d61b
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068439"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076143"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Администрирование среды с поддержкой нескольких регионов
 

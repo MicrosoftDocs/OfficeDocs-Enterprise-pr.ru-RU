@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
+- SPO_Content
 ms.custom: Adm_O365_Setup
 search.appverid:
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Ускорьте планирование и настройку Office 365 или Microsoft 365 с помощью рекомендаций по развертыванию.
-ms.openlocfilehash: eee8dfedd72ed0e2e1ac6660d32167490a13f504
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a698ea4cf4eec5640d836986ce45f71bf7dba0a8
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030803"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076153"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Рекомендации по развертыванию служб Office 365 или Майкрософт 365
 
@@ -156,7 +157,7 @@ Watch the [Prepare your environment](https://go.microsoft.com/fwlink/?linkid=204
 
 ## <a name="file-creation-storage-and-sharing"></a>Создание, хранение и совместное использование файлов
 
-### <a name="office-365-proplus"></a>Office 365 профессиональный плюс
+### <a name="office-365-proplus"></a>Office 365 профессиональный плюс
 
 Office 365 профессиональный плюс позволяет пользователям работать с последними версиями Office и обновлять их.
 

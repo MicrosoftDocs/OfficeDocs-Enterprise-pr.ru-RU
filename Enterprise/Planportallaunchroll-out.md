@@ -7,16 +7,18 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: В этой статье описывается, как можно спланировать запуск портала в SharePoint Online и какие действия предпринять для успешного запуска.
-ms.openlocfilehash: cbb2c58498f682d68ac464d224522361a085b062
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: bba38bb188235ed38f3719cb4472ef156a4d76b3
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027663"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077572"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Планирование развертывания портала для запуска в SharePoint Online
 Портал — это сайт SharePoint по умолчанию для вашей компании; в крупных организациях может быть несколько из них. Если вы ожидаете, что к этой странице будут обращаться более 20 % пользователей вашей организации, рекомендуется сделать ее страницей портала. Ее не следует путать с сайтом группы, используемым вашим отделом для совместной работы и обмена документами.
