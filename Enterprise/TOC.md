@@ -71,15 +71,7 @@
 #### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
-# Тестирование Office 365
-## [Тестирование Office 365](cloud-adoption-test-lab-guides-tlgs.md)
-## [Базовая конфигурация среды разработки и тестирования](base-configuration-dev-test-environment.md)
-## [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
-### [Синхронизация каталогов](dirsync-for-your-office-365-dev-test-environment.md)
-### [Многофакторная проверка подлинности](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
-### [Федеративное удостоверение](federated-identity-for-your-office-365-dev-test-environment.md)
-### [Расширенная защита от угроз](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-## [Имитация распределенной виртуальной сети в Azure](simulated-cross-premises-virtual-network-in-azure.md)
+# [Тестирование Office 365](cloud-adoption-test-lab-guides-tlgs.md)
 
 # [Развертывание Office 365 корпоративный](setup-overview-for-enterprises.md)
 
@@ -198,7 +190,7 @@
 ### [Отключение синхронизации каталогов](turn-off-directory-synchronization.md)
 
 ## Пользователи
-### [Центр справки для администраторов Office 365](https://support.office.com/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Центр справки для администраторов Office 365](https://docs.microsoft.com/office365/admin/admin-home)
 ### [Средства для управления учетными записями пользователей](manage-office-365-accounts.md)
 ### [Добавление нескольких пользователей одновременно](add-several-users-at-the-same-time.md)
 ### [Восстановление элементов, удаленных из почтового ящика пользователя](recover-deleted-items-in-a-mailbox.md)
