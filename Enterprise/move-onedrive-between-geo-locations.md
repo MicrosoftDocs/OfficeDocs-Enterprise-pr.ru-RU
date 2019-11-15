@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Сведения о перемещении сайта OneDrive в другой геообъект.
-ms.openlocfilehash: 49fec1359ed839b16c1872ab607d87515a27eaf5
-ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
+ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033455"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626169"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Перемещение сайта OneDrive в другой геообъект 
 
@@ -55,11 +55,11 @@ ms.locfileid: "38033455"
 
 Используя командлеты перемещения в отношении геообъекта, подключитесь к службе SPO в текущем географическом расположении OneDrive пользователя с помощью такого синтаксиса:
 
-`connect-sposervice -url https://<tenantName>-admin.sharepoint.com`
+`Connect-SPOService -url https://<tenantName>-admin.sharepoint.com`
 
 Чтобы переместить, например, OneDrive пользователя matt@contosoenergy.onmicrosoft.com, подключитесь к европейскому Центру администрирования SharePoint, так как OneDrive пользователя находится в Европе.
 
-`connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
+`Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
 ![Снимок экрана: окно PowerShell с командлетом connect-sposervice](media/move-onedrive-between-geo-locations-image1.png)
 

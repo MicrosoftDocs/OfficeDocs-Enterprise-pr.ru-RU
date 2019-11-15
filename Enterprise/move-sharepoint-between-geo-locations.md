@@ -11,12 +11,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Сведения о перемещении сайта SharePoint в другой геообъект.
-ms.openlocfilehash: 3ba95215860646691e511b17d509dbbc49a5a75a
-ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
+ms.openlocfilehash: 77f5adee161739d8896004988b8a4d6ba0151ef1
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033445"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626149"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Перемещение сайта SharePoint в другой геообъект
 
@@ -71,7 +71,7 @@ ms.locfileid: "38033445"
 
 Например, если URL-адрес сайта — https://contosohealthcare.sharepoint.com/sites/Turbines, подключитесь к URL-адресу администрирования SharePoint https://contosohealthcare-admin.sharepoint.com:
 
-`connect-sposervice -url https://contosohealthcare-admin.sharepoint.com`
+`Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
 
 ![](media/move-onedrive-between-geo-locations-image1.png)
  
