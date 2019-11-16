@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 265de12a2f1156355873d6798a61a0438f6764a1
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: f655daf2887fd5bf8cc82065dc0cc53282b13146
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067114"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38030663"
 ---
 <h1>Office 365 корпоративный</h1>
 <p>Microsoft Office&nbsp;365 предоставляет эффективные облачные службы в Интернете, обеспечивающие совместную работу, безопасность и соответствие требованиям, мобильность и аналитику. На этой странице представлены ссылки на руководства для администраторов и ИТ-специалистов, разворачивающих и настраивающих службы Office&nbsp;365, а также управляющих ими в корпоративной организации.</p>
@@ -31,7 +31,7 @@ ms.locfileid: "37067114"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us//office/media/icons/get-started.svg" alt="Get Started icon" />
+                            <img src="https://docs.microsoft.com//office/media/icons/get-started.svg" alt="Get Started icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -50,7 +50,7 @@ ms.locfileid: "37067114"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/connector.svg" alt="Connector icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/connector.svg" alt="Connector icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -69,7 +69,7 @@ ms.locfileid: "37067114"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/blocks.svg" alt="Blocks icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/blocks.svg" alt="Blocks icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -88,7 +88,7 @@ ms.locfileid: "37067114"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/deploy.svg" alt="Deploy icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/deploy.svg" alt="Deploy icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -107,7 +107,7 @@ ms.locfileid: "37067114"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/hybrid.svg" alt="Hybrid icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/hybrid.svg" alt="Hybrid icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -126,7 +126,7 @@ ms.locfileid: "37067114"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/education-tutorial.svg" alt="Education icon" />
+                            <img src="https://docs.microsoft.com/office/media/icons/education-tutorial.svg" alt="Education icon" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -252,7 +252,7 @@ ms.locfileid: "37067114"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/users-people.svg" alt="New Office 365 Content" data-linktype="external">
+                            <img src="https://docs.microsoft.com/office/media/icons/users-people.svg" alt="New Office 365 Content" data-linktype="external">
                         </div>
                     </div>
                     <div class="cardText">
@@ -269,7 +269,7 @@ ms.locfileid: "37067114"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/chat.svg" alt="Chat image" data-linktype="external">
+                            <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="Chat image" data-linktype="external">
                         </div>
                     </div>
                     <div class="cardText">

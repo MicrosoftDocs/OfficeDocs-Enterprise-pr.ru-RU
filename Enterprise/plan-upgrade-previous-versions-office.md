@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Если вы используете Office 2007 или Office 2010, пора спланировать обновление. Не используйте устаревшие и неподдерживаемые приложения и серверы. Воспользуйтесь этими ресурсами, чтобы приступить к планированию.
-ms.openlocfilehash: 56efdc56824b3f280548a106450c565af4fb2694
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 39ae2a80f9f16d70e22f7654c8818155b0ffda91
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36991900"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38031064"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Планирование обновления серверов и клиентов Office 2007 или Office 2010
 
@@ -64,13 +64,13 @@ ms.locfileid: "36991900"
 
 Если вы используете Office 2007 или Office 2010 для дома, ознакомьтесь со следующими вариантами обновления:
 
-- **Используйте Office в браузере бесплатно.** Создавайте, просматривайте и редактируйте файлы Office в браузере, а также получайте доступ к этим файлам практически с любого устройства, подключенного к Интернету. [Веб-приложение Office](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) содержит [веб-приложение Word](http://go.microsoft.com/fwlink/p/?linkid=746664), [веб-приложение Excel](http://go.microsoft.com/fwlink/p/?linkid=746665), [веб-приложение PowerPoint](http://go.microsoft.com/fwlink/p/?linkid=746666), [веб-приложение OneNote](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [электронную почту](http://go.microsoft.com/fwlink/p/?linkid=746676), [календарь](http://go.microsoft.com/fwlink/p/?linkid=746678) и [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679). Чтобы приступить к работе, посетите сайт [office.com](https://office.com) и войдите в систему с помощью своей [учетной записи Майкрософт](https://account.microsoft.com/account). (Если у вас нет учетной записи Майкрософт, ее можно создать на сайте [office.com](https://office.com).)
+- **Используйте Office в браузере бесплатно.** Создавайте, просматривайте и редактируйте файлы Office в браузере, а также получайте доступ к этим файлам практически с любого устройства, подключенного к Интернету. [Веб-приложение Office](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) содержит [веб-приложение Word](https://go.microsoft.com/fwlink/p/?linkid=746664), [веб-приложение Excel](https://go.microsoft.com/fwlink/p/?linkid=746665), [веб-приложение PowerPoint](https://go.microsoft.com/fwlink/p/?linkid=746666), [веб-приложение OneNote](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675), [электронную почту](https://go.microsoft.com/fwlink/p/?linkid=746676), [календарь](https://go.microsoft.com/fwlink/p/?linkid=746678) и [OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Чтобы приступить к работе, посетите сайт [office.com](https://office.com) и войдите в систему с помощью своей [учетной записи Майкрософт](https://account.microsoft.com/account). (Если у вас нет учетной записи Майкрософт, ее можно создать на сайте [office.com](https://office.com).)
 
 - **Попробуйте Office 365 для домашнего использования.** Ознакомьтесь с [требованиями](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab) и выберите [Office 365 для дома](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) или [Office 365 персональный](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf). Начните использовать пробную версию и узнайте, подходит ли вам Office 365. Благодаря Office 365 вы сможете пользоваться облачным хранилищем в OneDrive, будете ежемесячно получать 60 минут звонков Skype на мобильные и стационарные номера, а также сможете воспользоваться другими новыми возможностями. Дополнительные сведения см. на странице [Все возможности Office с подпиской на Office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1).
 
    С [прекращением поддержки Windows 7 с 14 января 2020 г.](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support) версии Word, Excel, PowerPoint, Outlook, Publisher и Access, предоставляемые вместе с Office 365 для дома или Office 365 персональный, на устройствах с Windows 7 будут получать обновления для системы безопасности, но не обновления компонентов. Чтобы продолжать получать обновления компонентов для этих приложений, [обновите свои устройства с Windows 7 до Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
     
-- **Приобретите Office для дома и учебы.** При этом варианте выполняется единовременная покупка и установка Office на компьютере с Windows или Mac. Это не подписка, а единовременно приобретаемая бессрочная лицензия на один компьютер. Ознакомьтесь с [требованиями](http://office.com/systemrequirements) и выберите нужную версию.
+- **Приобретите Office для дома и учебы.** При этом варианте выполняется единовременная покупка и установка Office на компьютере с Windows или Mac. Это не подписка, а единовременно приобретаемая бессрочная лицензия на один компьютер. Ознакомьтесь с [требованиями](https://office.com/systemrequirements) и выберите нужную версию.
 
     - Если ваш компьютер работает под управлением Windows 10, рассмотрите возможность приобретения [Office для дома и учебы 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
 
