@@ -15,10 +15,10 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Прежде чем приступить к планированию сети для Office 365, важно понимать принципы подключения для безопасного управления трафиком Office 365 и получения максимальной производительности. Эта статья поможет вам ознакомиться с последними рекомендациями по безопасной оптимизации сетевого подключения Office 365.
 ms.openlocfilehash: d403cd6245be21f8089e1234e7c769b93c2142cb
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38031924"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Принципы сетевого подключения к Office 365
@@ -248,7 +248,7 @@ Office 365 — это распределенное программное обе
 
 [Управление конечными точками Office 365](managing-office-365-endpoints.md)
 
-[URL-адреса и диапазоны IP-адресов Office 365](urls-and-ip-address-ranges.md)
+[URL-адреса и диапазоны IP-адресов для Office 365](urls-and-ip-address-ranges.md)
 
 [Веб-служба IP-адресов и URL-адресов в Office 365](office-365-ip-web-service.md)
 

@@ -14,10 +14,10 @@ ms.collection:
 - M365-security-compliance
 description: Краткое описание командлетов, используемых для миграции почтовых ящиков Office 365.
 ms.openlocfilehash: 03075fdab50ed5dd315d4f9b988032e40f4cbc85
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38035549"
 ---
 # <a name="office-365-mailbox-migrations"></a>Перенос почтовых ящиков Office 365

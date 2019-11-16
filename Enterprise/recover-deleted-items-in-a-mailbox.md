@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'Эта статья предназначена для администраторов. Был ли пользователь навсегда удалять элементы из своего почтового ящика Outlook? Пользователь хочет выполнить эти функции, но не может их восстановить. Удаленные элементы могут быть восстановлены, если они не были окончательно удалены из почтового ящика пользователя. '
 ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
-ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38308604"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Восстановление удаленных элементов в почтовом ящике пользователя — справка для администраторов
