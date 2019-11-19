@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: Сводка. Узнайте основные принципы облачной архитектуры для удостоверений, безопасности, сети и гибридных решений Майкрософт. Ознакомьтесь с нормативными рекомендациями по защите файлов, удостоверений и устройств при использовании облака Майкрософт. Узнайте, как развернуть современную и безопасную настольную систему с Windows 10 и Office профессиональный плюс.
-ms.openlocfilehash: f22c61ee1ed8dc205b5818d46e03300c21c5f22d
-ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
+ms.openlocfilehash: c8817e0a6f0eda0dafec56475a3fb3e6a5a8627f
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38308614"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702260"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 
@@ -108,8 +108,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
   
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|[![Эскиз модели организации сети в облаке Майкрософт](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [Статья](https://technet.microsoft.com/library/mt733214.aspx) <br/>[Другие языки](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Эта модель содержит следующие страницы: <ul><li> **Развитие сети для подключения к облаку**. Миграция в облако изменяет объем и характер потоков трафика в корпоративной сети и за ее пределами. Кроме того, она влияет на способы противодействия угрозам безопасности.</li><li> **Стандартные элементы Майкрософт для подключения к облаку**. Интеграция сети с облаком Майкрософт обеспечивает оптимальный доступ к большому числу служб. </li><li> **ExpressRoute для подключения к облаку Майкрософт**. ExpressRoute обеспечивает закрытое, выделенное и скоростное сетевое подключение к облаку Майкрософт. </li><li> **Разработка сетей для Microsoft SaaS (Office 365, Microsoft Intune и Dynamics CRM Online)**. Оптимизация сетей для служб Microsoft SaaS требует тщательного анализа конъюнктуры сети Интернет, клиентских устройств и типичных ИТ-операций. </li><li> **Разработка сетей для Azure PaaS**. Оптимизация сетей для приложений Azure PaaS требует соответствующей пропускной способности и, при необходимости, распределения сетевого трафика по нескольким сайтам или приложениям. </li><li> **Разработка сетей для Azure IaaS**. Пошаговая инструкция по разработке эффективной виртуальной сети Azure для размещения серверных ИТ-задач, в том числе подсетей, пространств адресов, маршрутизации, балансировки нагрузки, а также подключения к локальной сети, другим виртуальным сетям и к Интернету. </li></ul><br/>  <br/>|
-   
+|[![Эскиз модели организации сети в облаке Майкрософт](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Эта модель содержит: <ul><li> Развитие сети для облачного подключения </li><li> Общие элементы облачного подключения Майкрософт </li><li> ExpressRoute для подключения к Microsoft Cloud </li><li> Проектирование сети для Microsoft SaaS, Azure PaaS и Azure IaaS </li></ul><br/>  <br/>|
    
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Гибридное облако Майкрософт для корпоративных архитекторов
@@ -118,7 +117,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
   
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|[![Эскиз модели гибридного облака Майкрософт](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Статья](https://technet.microsoft.com/library/mt750500.aspx) <br/>[Другие языки](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Эта модель содержит следующие страницы: <ul><li> **Общие сведения о гибридном облаке**. Облачные предложения корпорации Майкрософт (SaaS, Azure PaaS и Azure IaaS) и их общие элементы. </li><li> **Архитектура сценариев гибридного облака корпорации Майкрософт**. Схема архитектуры гибридного облака для облачных предложений корпорации Майкрософт, на которой показаны общие слои локальных инфраструктуры, сети и удостоверений. </li><li> **Сценарии гибридного облака для Microsoft SaaS (Office 365)**. Архитектура гибридного сценария SaaS и описания ключевых гибридных конфигураций для Skype для бизнеса, SharePoint Server и Exchange Server. </li><li> **Сценарии гибридного облака для Azure PaaS**. Архитектура гибридного сценария Azure PaaS и описание вариантов применения гибридной среды Azure PaaS с примером и описанием базы данных SQL Server 2016 Stretch. </li><li> **Сценарии гибридного облака для Azure IaaS**. Архитектура гибридного сценария Azure IaaS и описание варианта применения бизнес-приложения, размещенного в Azure IaaS. </li></ul><br/>|
+|[![Эскиз модели гибридного облака Майкрософт](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Эта модель содержит: <ul><li> Облачные предложения Майкрософт (SaaS, Azure PaaS и Azure IaaS) и их общие элементы </li><li> Архитектуру гибридного облака для облачных предложений Майкрософт </li><li> Сценарии гибридного облака для Microsoft SaaS (Office 365), Azure PaaS и Azure IaaS </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Распространенные атаки и средства Майкрософт для защиты вашей организации
@@ -144,18 +143,8 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 |:-----|:-----|
 |[![Эскиз плаката логической архитектуры Teams](downloads/msft-tenant-to-tenant-migration-thumb.png)](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |Эта модель содержит: <ul><li>Сопоставление бизнес-сценариев для подходов в отношении архитектуры</li><li>Рекомендации по разработке</li><li>Поток миграции одного события</li><li>Поток поэтапной миграции</li><li>Поток перемещения или разделения клиента</li></ul>|
 
-<!--<a name="santa"></a>
-### The Santa cloud
-
-How Santa and his elves use Microsoft's cloud offerings to make their annual deliveries.
-  
-|**Item**|**Description**|
-|:-----|:-----|
-|[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
-   
 <a name="BKMK_o365solutions"></a>
-
-## Серия "Корпоративные решения для Microsoft 365"
+## <a name="microsoft-365-enterprise-solution-series"></a>Серия "Корпоративные решения для Microsoft 365"
 
 В серии "Корпоративные решения для Microsoft 365" представлены инструкции по реализации возможностей Microsoft 365, особенно при их пересечении с технологиями.
 
