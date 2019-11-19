@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Сводка. Подключитесь к своей организации Office 365, используя PowerShell, чтобы выполнять задачи администрирования из командной строки.
-ms.openlocfilehash: 1bcf2438c4a07f3d025ef9cb664875214f1aa289
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e80af8b4174a4d3ac423e887b7f3c2fd9ee73375
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031754"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707046"
 ---
 # <a name="connect-to-office-365-powershell"></a>Подключение к Office 365 PowerShell
 
@@ -75,7 +75,7 @@ PowerShell в Office 365 позволяет управлять параметр�
     
 2. В командном окне **Администратор: Windows PowerShell** выполните следующую команду:
     
-  ```
+  ```powershell
   Install-Module -Name AzureAD
   ```
 
@@ -155,7 +155,7 @@ PowerShell в Office 365 позволяет управлять параметр�
   
 - **Возможно, используемая вами версия Модуль Microsoft Azure Active Directory для Windows PowerShell устарела.** Чтобы проверить актуальность версии, выполните указанную ниже команду в PowerShell в Office 365 или в Модуль Microsoft Azure Active Directory для Windows PowerShell.
     
-  ```
+  ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
