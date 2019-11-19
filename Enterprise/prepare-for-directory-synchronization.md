@@ -3,6 +3,7 @@ title: Подготовка к синхронизации каталогов в 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 11/18/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: В этой статье описано, как подготовить пользователей к работе с Office 365, используя синхронизацию службы каталогов и долгосрочные преимущества использования этого метода.
-ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
-ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
+ms.openlocfilehash: 22db70d659d74e6d0f37f54a7743a562f220565d
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35249200"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702240"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Подготовка к синхронизации каталогов в Office 365
 
@@ -54,6 +55,9 @@ ms.locfileid: "35249200"
 В доменных службах Active Directory выполните следующие задачи очистки для каждой учетной записи пользователя, которой будет назначена лицензия на Office 365:
   
 1. Убедитесь, что в атрибуте **proxyAddresses** допустимый и уникальный адрес электронной почты. 
+
+  >[!Note]
+  >Символ тильды (~) в адресах электронной почты будет игнорироваться. Это может приводить к ложным ошибкам синхронизации каталогов при дублировании proxyAddresses.
     
 2. Удалите все повторяющиеся значения в атрибуте **proxyAddresses** . 
     
@@ -102,7 +106,7 @@ ms.locfileid: "35249200"
     > [!NOTE]
     > Если имеются повторяющиеся значения, первый пользователь со значением синхронизируется. Последующие пользователи не будут отображаться в Office 365. Необходимо изменить значение в Office 365 или изменить оба значения в доменных СЛУЖБах Active Directory, чтобы оба пользователя отображались в Office 365. 
   
-- **mailNickname** (Псевдоним Exchange) 
+- **mailNickname** (псевдоним Exchange) 
     
   - Значение атрибута не может начинаться с точки (.).
   - Значение атрибута должно быть уникальным в пределах каталога.
@@ -128,7 +132,7 @@ ms.locfileid: "35249200"
   - Если пользователь имеет недопустимый атрибут **SamAccountName** , но имеет допустимый атрибут **userPrincipalName** , учетная запись пользователя создается в Office 365. 
   - Если и **SamAccountName** , и **userPrincipalName** являются недопустимыми, необходимо обновить атрибут **userPrincipalName** доменных служб Active Directory. 
     
-- **СН** ФИО 
+- **СН** (фамилия) 
     
   - Если атрибут существует в объекте пользователя, он будет синхронизирован с Office 365, но Office 365 не требует и не использует его.
     
