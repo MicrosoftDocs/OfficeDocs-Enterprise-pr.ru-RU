@@ -64,7 +64,7 @@
 
 ## 1. Настройка сети
 ### [Настройка корпоративной сети](set-up-network-for-office-365.md)
-### [Домены](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
+### [Добавление домена](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
 ### [Обзор возможности сетевого подключения к Office 365](office-365-networking-overview.md)
 ### [Принципы сетевого подключения к Office 365](office-365-network-connectivity-principles.md)
 ### [Планирование сети и настройка производительности для Office 365](network-planning-and-performance.md)
@@ -103,7 +103,7 @@
 #### [Настройка синхронизации каталогов](set-up-directory-synchronization.md)
 ### [Назначение лицензий учетным записям пользователей](assign-licenses-to-user-accounts.md)
 
-## [3. Реализация возможностей защиты](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
+## [3. Реализация защиты](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. Развертывание клиентского программного обеспечения
 ### [Развертывание Office 365 профессиональный плюс](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
