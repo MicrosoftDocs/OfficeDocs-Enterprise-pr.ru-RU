@@ -15,19 +15,16 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Узнайте, как удалять учетные записи пользователей Office 365, используя PowerShell.
-ms.openlocfilehash: dd7e5052f8933955267302a5d03870017702a7fb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7c30ec422475a4cf11b28249e8a20d64a3c90a4
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069045"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746432"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Удаление учетных записей пользователей с помощью PowerShell в Office 365
 
-**Сводка.** Узнайте, как удалять учетные записи пользователей Office 365, используя PowerShell.
-  
 Чтобы удалить учетную запись пользователя, можно использовать PowerShell в Office 365.
-
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
 
@@ -35,13 +32,13 @@ ms.locfileid: "34069045"
 
 После подключения используйте следующий синтаксис, чтобы удалить учетную запись пользователя:
   
-```
+```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
 В этом примере удаляется учетная запись пользователя fabricec@litwareinc.com.
   
-```
+```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
@@ -50,21 +47,21 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
   
 Чтобы отобразить имя учетной записи на основе имени пользователя, используйте следующие команды:
   
-```
+```powershell
 $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 В этом примере отображается имя учетной записи пользователя Caleb Sills.
   
-```
+```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 Чтобы удалить учетную запись на основе отображаемого имени пользователя, используйте указанные ниже команды:
   
-```
+```powershell
 $userName="<display name>"
 Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
@@ -78,25 +75,25 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 Чтобы удалить учетную запись пользователя, используйте следующий синтаксис:
   
-```
+```powershell
 Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 В этом примере удаляется учетная запись пользователя BelindaN@litwareinc.com.
   
-```
+```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
 ```
 
 Чтобы восстановить удаленную учетную запись пользователя в течение 30 дней, используйте следующий синтаксис:
   
-```
+```powershell
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 В этом примере восстанавливается удаленная учетная запись BelindaN@litwareinc.com.
   
-```
+```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
@@ -104,7 +101,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
   
 - Чтобы просмотреть список удаленных пользователей, которых можно восстановить, выполните следующую команду:
     
-  ```
+  ```powershell
   Get-MsolUser -All -ReturnDeletedUsers
   ```
 

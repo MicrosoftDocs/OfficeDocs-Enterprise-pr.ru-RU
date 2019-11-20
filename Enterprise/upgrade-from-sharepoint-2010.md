@@ -17,14 +17,16 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: Прекращение поддержки для SharePoint 2010 и SharePoint Server 2010 заканчивается 13 октября 2020 г. Используйте эту статью в качестве руководства по обновлению до SharePoint Online или более новой версии SharePoint Server в локальной среде.
-ms.openlocfilehash: 639782e877b9a6b0d8a7979d8984da11f2403f50
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 95feda3f05f3ecfabb473b6331962de811690770
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078118"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747301"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Обновление с SharePoint 2010
+
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
 
 Microsoft SharePoint 2010 и SharePoint Server 2010 достигают конца поддержки до **13 октября 2020 г**. В этой статье описываются ресурсы, которые помогут вам перенести существующие данные SharePoint Server 2010 в SharePoint Online в Office 365 или обновить локальную среду SharePoint Server 2010.
   

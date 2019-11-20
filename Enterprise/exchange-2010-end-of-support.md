@@ -11,14 +11,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 приближается к концу поддержки. Используйте эту схему планирования в качестве руководства по подготовке к обновлению до Exchange Online или более новой версии локального сервера Exchange Server.
-ms.openlocfilehash: 28dcead19c1af1b5a641cae8f9d649b22fb36c95
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 464406cd9603a41d10f98374442167160609c060
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38028833"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745802"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>План поддержки Exchange 2010 в конце поддержки
+
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
 
 **13 октября 2020**г. будет достигнут конец поддержки для Exchange Server 2010. Если вы еще не начали миграцию с Exchange 2010 на Office 365 или Exchange 2016, настало время начать планирование.
 
@@ -229,7 +231,7 @@ Exchange 2016 включает все функции и улучшения, вк
 - [Техническое сообщество](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
 - [Служба поддержки клиентов](https://support.microsoft.com/gp/support-options-for-business)
 
-## <a name="related-topics"></a>Связанные статьи
+## <a name="related-topics"></a>Статьи по теме
 
 [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)
 

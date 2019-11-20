@@ -14,14 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Сведения о том, почему оптимизация сети важна для служб SaaS, цели Office 365 в сети, а также от того, как SaaS требуется разная сеть от других рабочих нагрузок.
-ms.openlocfilehash: f26a7c245b0a6258717e8917628caeaef250e378
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031894"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747711"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Обзор сетевого подключения Office 365
+
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
 
 Office 365 это распределенное программное обеспечение, которое представляет собой облако, обеспечивающее продуктивность и совместную работу с помощью разнообразных микрослужб и приложений. Клиентские компоненты Office 365, такие как Outlook, Word и PowerPoint, выполняются на компьютерах пользователей и подключаются к другим компонентам Office 365, которые работают в центрах обработки данных Майкрософт. Наиболее важный фактор, определяющий качество взаимодействия с пользователем Office 365: надежность сети и небольшая задержка между клиентами Office 365 и внешними дверцами службы Office 365.
 
@@ -96,7 +98,7 @@ Office 365 разработана для обеспечения оптималь
 
 [Управление конечными точками Office 365](managing-office-365-endpoints.md)
 
-[URL-адреса и диапазоны IP-адресов Office 365](urls-and-ip-address-ranges.md)
+[URL-адреса и диапазоны IP-адресов для Office 365](urls-and-ip-address-ranges.md)
 
 [Веб-служба IP-адресов и URL-адресов в Office 365](office-365-ip-web-service.md)
 

@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Сводка: в этой статье описываются вопросы, касающиеся мощности сети, ускорителей глобальной сети и устройств балансировки нагрузки, которые используются для подключения к Office 365.'
-ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 2a38fd7dad23b41aa31dcf9ace7ebee6ed69c0f6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428106"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747072"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Планирование для сетевых устройств, подключающихся к службам Office 365
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный*
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
   
 **Сводка**: в этой статье описываются вопросы, касающиеся мощности сети, УСКОРИТЕЛей глобальной сети и устройств балансировки нагрузки, которые используются для подключения к Office 365.
 
@@ -68,7 +68,7 @@ ms.locfileid: "37428106"
   
 ## <a name="firewalls-and-proxies"></a>Брандмауэры и прокси-серверы
 
-Для получения дополнительных сведений о настройке брандмауэров и прокси-серверов для подключения к Office 365, прочитайте раздел [Управление конечными точками office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Оценка сетевого подключения Office 365](assessing-network-connectivity.md)и [вопросы и ответы на конечные точки Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) для получения дополнительных сведений об устройствах и каналах сделан.
+Для получения дополнительных сведений о настройке брандмауэров и прокси-серверов для подключения к Office 365, прочитайте раздел [Управление конечными точками office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Оценка сетевого подключения Office 365](assessing-network-connectivity.md)и [вопросы и ответы на конечные точки Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) для получения дополнительных сведений об устройствах и выборе канала.
   
 ## <a name="see-also"></a>См. также
 

@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Описывается синхронизация каталогов с Office 365, очистка доменных служб Active Directory и средство Azure Active Directory Connect.
-ms.openlocfilehash: fda9750ae6038f062938f3c8ad92fe1859c2d7e1
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428122"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747089"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Гибридная идентификация и синхронизация каталогов для Office 365
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный*
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
 
 В зависимости от потребностей бизнеса и технических требований, наиболее распространенным выбором для корпоративных клиентов, использующих Office 365, является гибридная модель идентификации и синхронизация службы каталогов. Синхронизация службы каталогов позволяет управлять удостоверениями в доменных службах Active Directory (AD DS), а все обновления учетных записей пользователей, групп и контактов синхронизируются с клиентом Azure Active Directory (Azure AD) вашей подписки на Office 365.
 
@@ -44,19 +44,19 @@ ms.locfileid: "37428122"
 
 - Федеративная проверка подлинности
 
-  Azure AD перенаправляет клиентский компьютер, запрашивающий проверку подлинности, для связи с другим поставщиком удостоверений.
+  Azure AD перенаправляет клиентский компьютер, запрашивающий проверку подлинности, установить контакт с другим поставщиком удостоверений.
 
 ### <a name="managed-authentication"></a>Управляемая проверка подлинности.
 
 Существует два типа управляемой проверки подлинности:
 
-- Синхронизация хэша паролей (ФС)
+- Синхронизация хэша паролей (PHS)
 
-  Azure AD выполняет проверку подлинности.
+  Проверка подлинности выполняется с помощью Azure AD.
 
 - Сквозная проверка подлинности (PTA)
 
-  В Azure AD доменные службы Active Directory выполняют проверку подлинности.
+  Проверка подлинности выполняется с помощью доменных служб Aсtive Directory в Azure AD.
 
 
 #### <a name="password-hash-synchronization"></a>Синхронизация хэшей паролей
@@ -105,7 +105,7 @@ ms.locfileid: "37428122"
 
 - Удалите повторяющиеся атрибуты **proxyAddress** и **userPrincipalName** .
 - Обновление пустых и недопустимых атрибутов **userPrincipalName** с допустимыми атрибутами **userPrincipalName** .
-- Удаление недопустимых и сомнительных символов **в givenName**, фамилия ( **SN** ), **SamAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailNickname**и **userPrincipalName** таблице. Подробнее о подготовке атрибутов можно узнать [в разделе List of Attributes, которые синхронизируются средством синхронизации Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+- Удалите недопустимые и сомнительные символы в атрибутах **givenName**, фамилия ( **SN** ), **SamAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailNickname**и **userPrincipalName** . Подробнее о подготовке атрибутов можно узнать [в разделе List of Attributes, которые синхронизируются средством синхронизации Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
     > [!NOTE]
     > Это те же атрибуты, которые синхронизируются с помощью Azure AD Connect. 

@@ -14,17 +14,15 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: 'Сводка: в этой статье рассказывается о том, как управлять учетными записями и лицензиями пользователей с помощью PowerShell в Office 365.'
-ms.openlocfilehash: b9b59db7ab1108db625aa6188ff12fec5d5814d7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 333a9501d3dfcd2f9f254a7b58e9f8589b68f9cb
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068755"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748457"
 ---
 # <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell
 
- **Сводка.** Узнайте, как управлять учетными записями и лицензиями пользователей с помощью PowerShell для Office 365.
-  
 Одна из основных задач любого администратора Office 365 — управление учетными записями и лицензиями пользователей. Вы можете выполнить некоторые из указанных ниже задач в Центре администрирования Microsoft 365, но остальные задачи гораздо быстрее и проще выполнить с помощью PowerShell в Office 365. Дополнительную информацию см. в следующих статьях:
   
 - [Просмотр лицензий и служб с помощью PowerShell в Office 365](view-licenses-and-services-with-office-365-powershell.md)

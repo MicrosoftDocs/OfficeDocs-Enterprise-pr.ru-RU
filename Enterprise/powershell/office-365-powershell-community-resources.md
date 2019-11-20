@@ -11,17 +11,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: Сводка. Получите справку по PowerShell в Office 365 на этих площадках сообщества.
-ms.openlocfilehash: 98147f9bc698184a4146580c10966a8f102bde21
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: f4bb2fe6321921b5f345630460ae7b388d40d896
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031704"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748447"
 ---
 # <a name="office-365-powershell-community-resources"></a>Ресурсы сообщества Office 365 PowerShell
 
- **Сводка.** Обратитесь к участникам сообщества за помощью с PowerShell для Office 365.
-  
 Используйте эти форумы и вики-сайты сообщества, чтобы получить доступ к вашим коллегам и быстро и правильно ответить на вопросы по Office 365 PowerShell. 
   
 - [Посетите сообщество Office 365 Tech Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
@@ -35,8 +33,6 @@ ms.locfileid: "38031704"
 - [Вики-сайт по управлению Office 365](https://community.office365.com/w/manage/default.aspx)
     
 ## <a name="see-also"></a>См. также
-
-#### 
 
 [Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
   

@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365.
-ms.openlocfilehash: 360cae39010f35b5a921ec95f6e8ed1d02afb808
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 63ac8c23a6b36ed6ed079a20f05ca5fdfdcfcb83
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435413"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745742"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute для Office 365
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный*
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
 
 Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365. Службы инфраструктуры и платформ, работающие в Azure, часто получают преимущества, устраняя сетевую архитектуру и вопросы производительности. В таких случаях рекомендуется использовать ExpressRoute для Azure. Программное обеспечение в виде таких служб, как Office 365 и Dynamics 365, были созданы для надежного и надежного доступа через Интернет. Вы можете прочитать сведения о производительности и безопасности Интернета, а также о том, как вы можете использовать Azure ExpressRoute для Office 365 в статье [Оценка сетевого подключения office 365](assessing-network-connectivity.md).
 
@@ -70,7 +70,7 @@ ms.locfileid: "37435413"
 
 ## <a name="implementing-expressroute-for-office-365"></a>Реализация средства ExpressRoute для Office 365
 
-Для реализации ExpressRoute требуется привлечение владельцев сети и приложений, а также необходимость тщательного планирования для определения новой [архитектуры сетевой маршрутизации](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), требований к пропускной способности, в которых будет реализована безопасность, высокая доступность, и т. д. Для реализации ExpressRoute необходимо выполнить следующие действия:
+Для реализации ExpressRoute требуется привлечение владельцев сети и приложений, а также необходимость тщательного планирования для определения новой [архитектуры сетевой маршрутизации](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), требований к пропускной способности, в том случае, когда безопасность будет реализована, высокой доступности и т. д. Для реализации ExpressRoute необходимо выполнить следующие действия:
 
 1. Полностью разобраться в необходимости ExpressRoute в вашем планировании подключения к Office 365. Сведения о том, какие приложения будут использовать Интернет или ExpressRoute, и полностью запланируйте требования к емкости сети, безопасности и высокой доступности в контексте использования Интернета и ExpressRoute для трафика Office 365.
 
@@ -118,7 +118,7 @@ ms.locfileid: "37435413"
 
 [План устранения проблем с производительностью Office 365](performance-troubleshooting-plan.md)
 
-[Диапазоны IP-адресов и URL-адреса Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+[URL-адреса и диапазоны IP-адресов для Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)
 

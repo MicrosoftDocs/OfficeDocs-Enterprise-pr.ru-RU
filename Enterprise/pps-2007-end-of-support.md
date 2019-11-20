@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: Достигнут конец поддержки PerformancePoint Server 2007, ProClarity и SharePoint Server 2007. Прочтите эту статью, чтобы спланировать обновление решения бизнес-аналитики.
-ms.openlocfilehash: 507e6c1707844fed3ecd7cf4d3a69174a10b3dc4
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 517d420eff35cde2862d7879e3b5557cbe6087ca
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067094"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746252"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки PerformancePoint Server 2007.
+
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
 
 Для серверов и приложений Office 2007 достигнут конец поддержки, в том числе серверы и приложения, которые могут использоваться в составе решений бизнес-аналитики (BI). В следующей таблице перечислены приложения бизнес-аналитики, которые затронуты:
   
@@ -53,7 +55,7 @@ ms.locfileid: "37067094"
   
 |**Если вы используете этот...**|**Изучите эти параметры...**|**И помните об этом...**|
 |:-----|:-----|:-----|
-| PerformancePoint Server 2007 мониторинг &amp; возможностей аналитики, в том числе:  <br/><br/>  Сервер мониторинга PerformancePoint  <br/><br/>  Конструктор панели мониторинга PerformancePoint  <br/><br/>  Средство просмотра панели мониторинга для служб SharePoint (используется для отображения панелей мониторинга PerformancePoint, систем показателей и отчетов)  <br/> |**Excel в браузере** (в облаке или локальной среде). Общие сведения о [возможностях бизнес-аналитики в Excel и Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/><br/> **Power BI** (в облаке или локальной среде). Общие сведения о том, [что такое Power BI?](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **Службы SQL Server Reporting Services** (локально). Общие сведения см. в статье [SQL Server Reporting Services (SSRS): создание, развертывание и управление отчетами для мобильных устройств и разбивки на страницы](https://go.microsoft.com/fwlink/?linkid=841342) <br/><br/> **Службы PerformancePoint Services** (локально). Общие сведения см. в статье [новые возможности PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343) <br/> |Приложение Excel доступно как в Интернете (на основе облака), так и в локальном решении. Многие потребности в отчетах и панелях мониторинга могут быть выполнены с помощью возможностей Excel.  <br/><br/> Power BI доступен в виде интерактивного или локального решения. Power BI не входит в состав Office 365, но вы можете приступить к работе с Power BI бесплатно, а затем, в зависимости от требований к использованию данных и бизнес-потребностям, выполнить обновление до Power BI Pro. <br/> <br/> Службы Reporting Services и PerformancePoint Services являются локальными решениями.  <br/><br/> Службы PerformancePoint доступны в SharePoint Server 2010, SharePoint Server 2013 и SharePoint Server 2016. <br/> <br/> Некоторые функции и типы отчетов, доступные в PerformancePoint Server 2007, недоступны в Excel, Power BI, Reporting Services или PerformancePoint Services. Вы хотите просмотреть доступные функции, чтобы определить оптимальное решение для ваших бизнес-потребностей.  <br/> |
+| PerformancePoint Server 2007 мониторинг &amp; возможностей аналитики, в том числе:  <br/><br/>  Сервер мониторинга PerformancePoint  <br/><br/>  Конструктор панели мониторинга PerformancePoint  <br/><br/>  Средство просмотра панели мониторинга для служб SharePoint (используется для отображения панелей мониторинга PerformancePoint, систем показателей и отчетов)  <br/> |**Excel в браузере** (в облаке или локальной среде). Общие сведения о [возможностях бизнес-аналитики в Excel и Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/><br/> **Power BI** (в облаке или локальной среде). Общие сведения о том, [что такое Power BI?](https://go.microsoft.com/fwlink/?linkid=841341) <br/><br/> **Службы SQL Server Reporting Services** (локально). Общие сведения см. в статье [SQL Server Reporting Services (SSRS): создание, развертывание и управление отчетами для мобильных устройств и разбивки на страницы](https://go.microsoft.com/fwlink/?linkid=841342) <br/><br/> **PerformancePoint Services** (локальная среда). Общие сведения см. в статье [новые возможности PerformancePoint Services (SharePoint Server 2010)](https://go.microsoft.com/fwlink/?linkid=841343) <br/> |Приложение Excel доступно как в Интернете (на основе облака), так и в локальном решении. Многие потребности в отчетах и панелях мониторинга могут быть выполнены с помощью возможностей Excel.  <br/><br/> Power BI доступен в виде интерактивного или локального решения. Power BI не входит в состав Office 365, но вы можете приступить к работе с Power BI бесплатно, а затем, в зависимости от требований к использованию данных и бизнес-потребностям, выполнить обновление до Power BI Pro. <br/> <br/> Службы Reporting Services и PerformancePoint Services являются локальными решениями.  <br/><br/> Службы PerformancePoint доступны в SharePoint Server 2010, SharePoint Server 2013 и SharePoint Server 2016. <br/> <br/> Некоторые функции и типы отчетов, доступные в PerformancePoint Server 2007, недоступны в Excel, Power BI, Reporting Services или PerformancePoint Services. Вы хотите просмотреть доступные функции, чтобы определить оптимальное решение для ваших бизнес-потребностей.  <br/> |
 | Программное обеспечение ProClarity, в том числе: <br/> <br/>  ProClarity Desktop профессиональный  <br/> <br/> Сервер аналитики ProClarity Analytics  <br/> <br/> ProClarity SharePoint Viewer  <br/> |Свяжитесь **с партнером корпорации Майкрософт** , чтобы определить решение, которое наилучшим образом соответствует вашим потребностям. Посетите [Центр партнеров Майкрософт](https://go.microsoft.com/fwlink/?linkid=841249) <br/><br/> Вы также можете рассмотреть возможность использования Excel в Excel в браузере, Power BI, службах SQL Server Reporting Services или PerformancePoint Services.  <br/> |Некоторые функции и возможности, доступные в программном обеспечении ProClarity, доступны в других решениях Майкрософт, в том числе Excel, Power BI, Reporting Services и PerformancePoint Services.  <br/> |
 |Ключевые показатели эффективности SharePoint Server 2007 (также называемые ключевыми показателями эффективности MOSS)  <br/> |**Excel со службами Excel**. Общие сведения см в статье [бизнес-аналитики в Excel и службах Excel (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |Ключевые показатели эффективности MOSS, созданные с помощью SharePoint Server 2007, можно использовать в SharePoint Server 2010, SharePoint Server 2013 и SharePoint Server 2016; Однако создавать новые ключевые показатели эффективности MOSS невозможно.  <br/> |
 |Excel 2007  <br/> |**Excel** (в облаке или локальной среде). Общие сведения о [возможностях бизнес-аналитики в Excel и Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/><br/> **Power BI** (в облаке или локальной среде). Общие сведения о том, [что такое Power BI?](https://go.microsoft.com/fwlink/?linkid=841341) <br/> |Как Excel, так и Power BI предоставляют Организации облачные и локальные решения с поддержкой широкого спектра источников данных.  <br/> |
@@ -70,7 +72,7 @@ ms.locfileid: "37067094"
 
 После изучения параметров обновления следующий шаг состоит в подготовке плана обновления. В следующих разделах содержатся сведения и ссылки на дополнительные ресурсы, которые помогут спланировать решение. Когда речь идет о приложениях Microsoft BI, у вас есть четыре основных варианта, в том числе два, которые работают как в облаке, так и в локальной среде, а также два, которые являются локальными решениями:
   
-|**Вариант**|**В облаке или локальной среде?**|
+|**Option**|**В облаке или локальной среде?**|
 |:-----|:-----|
 |[Excel](#excel-with-sharepoint-server-on-premises) <br/> |Двух  <br/> |
 |[Power BI](#use-power-bi-in-the-cloud-or on-premises) <br/> |Двух  <br/> |
@@ -151,7 +153,7 @@ Power BI не входит в состав Office 365 или SharePoint Server, 
 
 [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007](upgrade-from-office-2007-servers-and-products.md)
   
-[Группа выбытия Office (Майкрософт Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
+[Группа для клиентов, у которых завершается поддержка продуктов Office (сообщество Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
 
 
   

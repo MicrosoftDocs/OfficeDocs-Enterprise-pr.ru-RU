@@ -34,14 +34,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 10 октября 2017 г. поддержка закончилась для SharePoint Server 2007. В этой статье рассказывается о вариантах обновления, устранении неполадок, рекомендациях, требованиях к системе, действиях по обновлению и о том, как получить помощь от партнеров Майкрософт.
-ms.openlocfilehash: 55511852997f9781f9c05d0a846aac7cb1c72309
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 1b7b2ccf1bbda5210e563a4cd702ebd90b9f8f5d
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078098"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747318"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки SharePoint Server 2007
+
+*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
 
 **10 октября 2017**г. Microsoft Office SharePoint Server 2007 достиг конца поддержки. Если вы еще не начали переход с SharePoint Server 2007 на Office 365 или более новую версию SharePoint Server, теперь настало время начать планирование. В этой статье описываются ресурсы, которые помогут пользователям перенести данные в SharePoint Online или обновить локальный сервер SharePoint Server. 
   
