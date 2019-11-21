@@ -1,9 +1,9 @@
 ---
 title: Во время и после перемещения данных
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Перемещение данных — это фоновая операция с минимальным влиянием на конечных пользователей. Пока корпорация Майкрософт переместит каждую службу и связанные данные для клиента в новый Geo центра обработки данных, никаких действий не требуется. Передача и проверка данных выполняются в фоновом режиме заранее с минимальным влиянием на пользователей.
-ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626139"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756578"
 ---
 # <a name="during-and-after-your-data-move"></a>Во время и после перемещения данных
 
@@ -123,12 +123,8 @@ ms.locfileid: "38626139"
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>В Skype для бизнеса перемещаются сведения, связанные с поставщиком услуг голосовой связи стороннего производителя
 Сторонние надстройки поставщика услуг аудио-и видеоконференций для Skype для бизнеса недоступны для пользователей, размещенных в новых географических центрах обработки данных.  Существующие клиенты, использующие сторонние службы сторонних поставщиков конференций, не должны запрашивать перемещение в новый центр обработки данных.  Новые клиенты, развернутые в новых географических центрах обработки данных, должны запросить перемещение в региональный центр обработки данных, чтобы использовать стороннего поставщика конференций с аудио-и видеоконференциями.
-
-## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>Данные для других служб, в том числе Teams, Yammer и Power BI
-
-Мы перейдем только данные клиентов для Exchange Online, SharePoint Online и Skype для бизнеса. Мы не перемещайте данные для других служб. Вы не можете изменить или повлиять на вас как клиента или пользователя этих служб. Процесс перемещения не влияет на их, а расположение данных клиента остается неизменным.
   
-## <a name="related-topics"></a>Связанные статьи 
+## <a name="related-topics"></a>Статьи по теме 
  
 [Как запросить перемещение данных](request-your-data-move.md)
     

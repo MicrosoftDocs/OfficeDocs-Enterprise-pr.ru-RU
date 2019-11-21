@@ -18,19 +18,17 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Сводка: в этой статье описываются SSL-сертификаты, необходимые для локальных и гибридных развертываний Exchange, единого входа с использованием AD FS, служб Exchange Online и веб-служб Exchange.'
-ms.openlocfilehash: 92425793d616f642fb78331a965b1a4a2dff071f
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 74540fb612bd515443912114ebec20cd8ed5e1aa
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747691"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756618"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Планирование сторонних SSL-сертификатов для Office 365
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
- **Сводка:** Описание SSL-сертификатов, необходимых для локальной и гибридной среды Exchange, единого входа с использованием служб федерации Active Directory, служб Exchange Online и веб-служб Exchange. 
-  
 Чтобы шифровать связи между клиентами и средой Office 365, на серверах инфраструктуры необходимо установить сторонние сертификаты SSL (Secure Socket Layer).
 
 ||

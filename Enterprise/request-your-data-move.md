@@ -1,9 +1,9 @@
 ---
 title: Как запросить перемещение данных
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Существующие пользователи Office 365 должны отправить запрос перед крайним сроком их страны, чтобы данные клиентов, участвующие в службах Office 365, перемещались на новый географию.
-ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031594"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756598"
 ---
 # <a name="how-to-request-your-data-move"></a>Как запросить перемещение данных
 
@@ -72,7 +72,7 @@ ms.locfileid: "38031594"
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft Teams пока не поддерживает перенос контента клиента на другие центры обработки данных в регионах, где доступны размещению для Microsoft Teams.  Таким образом, все данные, которые хранятся у новых клиентов, хранятся в стране в новых регионах, где Microsoft Teams поддерживает данные размещению.  Узнайте больше о том, как Office 365 Data размещению для своего расположения [, где находятся ваши данные?](https://products.office.com/where-is-your-data-located)   
+Поддержка миграции для Microsoft Teams Chat и данных сообщений канала будет добавлена в локальную программу миграции Office 365.  Мы планируем открыть регистрацию программ в январе 2020 для всех соответствующих клиентов, включая пользователей, которые ранее были выбраны для Exchange Online и SharePoint Online и OneDrive для бизнеса.  Мы предоставим контроль участия в центре администрирования Microsoft 365 и отправите уведомление в центре сообщений всем подходящим клиентам.   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Необязательные действия перед запросом перемещения
 

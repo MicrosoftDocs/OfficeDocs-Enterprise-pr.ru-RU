@@ -1,9 +1,9 @@
 ---
 title: Ответы на общие вопросы о перемещении данных
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Здесь приведены ответы на общие вопросы о перемещении основных данных в новый географические центры обработки данных.
-ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028893"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756588"
 ---
 # <a name="data-move-general-faq"></a>Ответы на общие вопросы о перемещении данных
 
@@ -29,7 +29,7 @@ ms.locfileid: "38028893"
 
 ## <a name="how-do-we-define-core-customer-data"></a>Как определить основные данные клиента?
  
-Основные данные клиентов — это термин, который ссылается на подмножество данных клиентов, определенных в [терминах Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=249048). 
+Основные данные клиентов — это термин, который ссылается на подмножество данных клиентов, определенных в [терминах Microsoft Online Services](https://aka.ms/ost). 
 - Содержимое почтового ящика Exchange Online (текст сообщения электронной почты, записи календаря и содержимое вложений электронной почты);
 - Контент сайта SharePoint Online и файлы, хранящиеся на этом сайте
 - Файлы, отправленные в OneDrive для бизнеса 
