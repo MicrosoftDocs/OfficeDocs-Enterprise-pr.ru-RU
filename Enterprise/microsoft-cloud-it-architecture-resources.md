@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: Сводка. Узнайте основные принципы облачной архитектуры для удостоверений, безопасности, сети и гибридных решений Майкрософт. Ознакомьтесь с нормативными рекомендациями по защите файлов, удостоверений и устройств при использовании облака Майкрософт. Узнайте, как развернуть современную и безопасную настольную систему с Windows 10 и Office профессиональный плюс.
-ms.openlocfilehash: c8817e0a6f0eda0dafec56475a3fb3e6a5a8627f
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 85031a3062397c63326a3306d9a4a14d77c114f3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702260"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756608"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 
@@ -108,8 +108,8 @@ Learn key differences between Microsoft cloud services and platform offerings. F
   
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|[![Эскиз модели организации сети в облаке Майкрософт](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Эта модель содержит: <ul><li> Развитие сети для облачного подключения </li><li> Общие элементы облачного подключения Майкрософт </li><li> ExpressRoute для подключения к Microsoft Cloud </li><li> Проектирование сети для Microsoft SaaS, Azure PaaS и Azure IaaS </li></ul><br/>  <br/>|
-   
+|[![Эскиз модели организации сети в Microsoft Cloud](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](media/Network-Poster/MSFT_cloud_architecture_networking.pdf)  <br/> [PDF](media/Network-Poster/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/> | Эта модель содержит: <ul><li> Развитие сети для облачного подключения </li><li> Общие элементы облачного подключения Майкрософт </li><li> ExpressRoute для подключения к Microsoft Cloud </li><li> Проектирование сети для Microsoft SaaS, Azure PaaS и Azure IaaS </li></ul><br/>  <br/>|
+
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Гибридное облако Майкрософт для корпоративных архитекторов
 
@@ -117,7 +117,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
   
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|[![Эскиз модели гибридного облака Майкрософт](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Эта модель содержит: <ul><li> Облачные предложения Майкрософт (SaaS, Azure PaaS и Azure IaaS) и их общие элементы </li><li> Архитектуру гибридного облака для облачных предложений Майкрософт </li><li> Сценарии гибридного облака для Microsoft SaaS (Office 365), Azure PaaS и Azure IaaS </li></ul><br/>|
+|[![Эскиз модели гибридного облака Майкрософт](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf)           <br/> [PDF](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx)  | Эта модель содержит: <ul><li> Облачные предложения Майкрософт (SaaS, Azure PaaS и Azure IaaS) и их общие элементы </li><li> Архитектуру гибридного облака для облачных предложений Майкрософт </li><li> Сценарии гибридного облака для Microsoft SaaS (Office 365), Azure PaaS и Azure IaaS </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Распространенные атаки и средства Майкрософт для защиты вашей организации
