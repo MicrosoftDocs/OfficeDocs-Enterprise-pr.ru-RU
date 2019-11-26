@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: Сводка. Узнайте, как настроить распределенную виртуальную сеть Azure для серверных рабочих нагрузок Office с VPN-подключением типа "сеть-сеть".
-ms.openlocfilehash: 3506b1b4c6a88567bf216957f5e083c9e99156ba
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 34d7b7310fd0828732e288f090314b8689953b50
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793341"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254598"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Подключение локальной сети к виртуальной сети Microsoft Azure
 
@@ -207,7 +207,7 @@ ms.locfileid: "38793341"
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Этап 2. Создание распределенной виртуальной сети в Azure
 <a name="Phase2"></a>
 
-Сначала откройте командную строку Azure PowerShell. Если вы еще не установили Azure PowerShell, просмотрите статью [Начало работы с командлетами Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
+Сначала откройте командную строку Azure PowerShell. Если вы еще не установили Azure PowerShell, см. статью [Начало работы с Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).
 
  
 Затем войдите в свою учетную запись Azure с помощью следующей команды.

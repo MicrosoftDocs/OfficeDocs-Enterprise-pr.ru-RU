@@ -3,7 +3,7 @@ title: Развертывание в Azure федеративной провер
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/06/2018
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,17 +17,15 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: Сводка. Настройка федеративной проверки подлинности с высоким уровнем доступности для подписки на Office 365 в Microsoft Azure.
-ms.openlocfilehash: ba8049271e4820cca8db2ce5d6cabf76dacfb36a
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 0b622c895bcd6b11ee7e096ac1e39f1b6bd2dae2
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793291"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254518"
 ---
-# <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365
+# <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365
 
- **Сводка.** Настройка федеративной проверки подлинности с высоким уровнем доступности для подписки на Office 365 в Microsoft Azure.
-  
 Эта статья содержит ссылки на пошаговые инструкции по развертыванию федеративной проверки подлинности с высоким уровнем доступности для Microsoft Office 365 в службах инфраструктуры Azure со следующими виртуальными машинами:
   
 - два прокси-сервера веб-приложений;
@@ -36,7 +34,7 @@ ms.locfileid: "38793291"
     
 - две реплики контроллеров домена;
     
-- один сервер DirSync, на котором запущено средство Azure AD Connect.
+- один сервер синхронизации каталогов, на котором запущено средство Azure AD Connect.
     
 Ниже приводится конфигурация с именами-заполнителями для каждого сервера.
   
@@ -54,7 +52,7 @@ ms.locfileid: "38793291"
 > [!NOTE]
 > Поскольку эта виртуальная сеть соединена с локальной, в конфигурацию не входят виртуальные машины jumpbox и виртуальные машины наблюдения в подсети управления. Дополнительные сведения см. в статье [Запуск виртуальных машин Windows в n-уровневой архитектуре](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm). 
   
-Такая конфигурация обеспечивает федеративную проверку подлинности для всех пользователей Office 365, при которой они смогут применять для входа учетные данные доменных служб Active Directory, а не учетную запись Office 365. Инфраструктура федеративной проверки подлинности включает группу избыточных серверов, которые проще развертывать в службах инфраструктуры Azure, чем в локальной сети периметра.
+Такая конфигурация обеспечивает федеративную проверку подлинности для всех пользователей Office 365, при которой они смогут применять для входа учетные данные доменных служб Active Directory, а не учетную запись Office 365. Инфраструктура федеративной проверки подлинности включает группу избыточных серверов, которые проще развертывать в службах инфраструктуры Azure, чем в локальной сети периметра.
   
 ## <a name="bill-of-materials"></a>Перечень компонентов
 
@@ -90,7 +88,7 @@ ms.locfileid: "38793291"
   
 - [Этап 1: настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Создание групп ресурсов, учетных записей хранения, групп доступности и распределенной виртуальной сети.
     
-- [Этап 2: настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Создание и настройка реплик контроллеров домена для доменных служб Active Directory (AD DS) и сервера DirSync.
+- [Этап 2. Настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Создание и настройка реплики контроллеров домена AD DS и сервера синхронизации каталогов.
     
 - [Этап 3: настройка серверов AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Создание и настройка двух серверов AD FS.
     
@@ -106,7 +104,7 @@ ms.locfileid: "38793291"
     
 Для создания среды разработки и тестирования или экспериментальной версии этой конфигурации ознакомьтесь со статьей [Федеративное удостоверение для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md).
   
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий шаг
 
-Начните настройку этой рабочей нагрузки с ознакомления со статьей [Этап 1. Федеративная проверка подлинности для обеспечения высокой доступности: настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
+Начните настройку этой рабочей нагрузки с [этапа 1: настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md).  
   
