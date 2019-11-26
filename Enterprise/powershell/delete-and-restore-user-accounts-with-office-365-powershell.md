@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Узнайте, как удалять учетные записи пользователей Office 365, используя PowerShell.
-ms.openlocfilehash: b7c30ec422475a4cf11b28249e8a20d64a3c90a4
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e62c06981a861580804dde852ad3da7bd729fdbe
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746432"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257650"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Удаление учетных записей пользователей с помощью PowerShell в Office 365
 
@@ -35,6 +35,10 @@ ms.locfileid: "38746432"
 ```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
+
+>[!Note]
+>PowerShell Core не поддерживает модуль Microsoft Azure Active Directory для модуля Windows PowerShell и командлеты с **MSOL** в имени. Чтобы продолжить использовать эти командлеты, необходимо запустить их из Windows PowerShell.
+>
 
 В этом примере удаляется учетная запись пользователя fabricec@litwareinc.com.
   

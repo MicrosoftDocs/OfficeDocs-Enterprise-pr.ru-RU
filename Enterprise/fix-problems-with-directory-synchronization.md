@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: В этой статье описаны распространенные причины проблем с синхронизацией службы каталогов в Office 365, а также несколько способов их решения.
-ms.openlocfilehash: 3a1cf63122be84dc3e1c60e84a9a3a488f81bc0f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: cc0fe15d0d49542489ac1e586efbe99d0846b3ab
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067675"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254528"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Устранение проблем с синхронизацией службы каталогов для Office 365
 
@@ -30,17 +30,13 @@ ms.locfileid: "34067675"
   
 ## <a name="how-do-i-know-if-something-is-wrong"></a>Как узнать, что что-то пошло не так?
 
-Первым сигналом о наличии проблемы служит вот такое сообщение, появляющееся на плитке "Состояние DirSync" в Центре администрирования Microsoft 365:
-  
-![Плитка "Состояние DirSync" в предварительной версии центра администрирования](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+Первое указание на то, что что-то пошло не так, когда плитка состояния DirSync в центре администрирования Майкрософт 365 указывает на наличие проблемы.
   
 Вы также получите от Office 365 почтовое сообщение (на адрес электронной почты администратора и запасной адрес) о том, что в вашем клиенте обнаружены ошибки синхронизации службы каталогов. Подробные сведения см. в статье [Определение ошибок синхронизации службы каталогов в Office 365](identify-directory-synchronization-errors.md).
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Как получить средство Azure Active Directory Connect?
 
-В [Центре администрирования Microsoft 365](https://admin.microsoft.com) перейдите к разделу ** Пользователи ** \> **Активные пользователи**. В меню **Дополнительно** выберите элемент **Синхронизация службы каталогов**. 
-  
-![В меню "Дополнительно" выберите элемент "Синхронизация службы каталогов"](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+В [центре администрирования Microsoft 365](https://admin.microsoft.com)перейдите к разделу **Пользователи** \> **Активные пользователи**. Щелкните меню **больше** (три точки) и выберите пункт **Синхронизация службы каталогов**. 
   
 Следуйте [инструкциям в мастере](set-up-directory-synchronization.md), чтобы скачать Azure AD Connect. 
   
@@ -93,6 +89,6 @@ ms.locfileid: "34067675"
     
 ## <a name="diagnostic-tools"></a>Средства диагностики
 
-Средство [IDFix](prepare-directory-attributes-for-synch-with-idfix.md) используется для обнаружения и исправления объектов удостоверений и их атрибутов в локальной среде Active Directory при подготовке к переходу на Office 365. Средство IDFix предназначено для администраторов Active Directory, отвечающих за синхронизацию службы каталогов со службой Office 365. 
+Средство [IDFix](prepare-directory-attributes-for-synch-with-idfix.md) используется для обнаружения и исправления объектов удостоверений и их атрибутов в локальной среде Active Directory при подготовке к переходу на Office 365. IDFix предназначен для администраторов Active Directory, ответственных за синхронизацию службы каталогов с службой Office 365. 
 
 [Скачайте средство IDFix](https://go.microsoft.com/fwlink/p/?LinkId=396718) из Центра загрузки Майкрософт.

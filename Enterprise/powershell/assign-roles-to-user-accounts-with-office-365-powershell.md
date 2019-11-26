@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: Сводка. Назначайте роли учетным записям пользователей, используя PowerShell для Office 365.
-ms.openlocfilehash: 29c23e88d9b7bc2fc0030d467336e38ed413a4ab
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 5af8c514cbe8d102716d2d6b45e8ebdbdb5b1507
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707036"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257448"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365
 
@@ -94,6 +94,10 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
   ```
 
     Эта команда выводит учетные записи пользователей, отсортированное по отображаемому имени, по одному экрану за раз. Вы можете отфильтровать список, используя командлет **Where**. Вот пример:
+
+   >[!Note]
+   >PowerShell Core не поддерживает модуль Microsoft Azure Active Directory для модуля Windows PowerShell и командлеты с **MSOL** в имени. Чтобы продолжить использовать эти командлеты, необходимо запустить их из Windows PowerShell.
+   >
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More

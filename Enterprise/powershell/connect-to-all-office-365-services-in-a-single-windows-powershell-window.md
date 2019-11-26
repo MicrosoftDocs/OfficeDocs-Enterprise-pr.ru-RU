@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Сводка: подключение Windows PowerShell ко всем службам Office 365 в отдельном окне Windows PowerShell.'
-ms.openlocfilehash: f64a29bb0594694c5a6b6e2dff8d0f7611fdf11e
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: c8390b3d704fa9df64f147a942891308b1ed825f
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707066"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257428"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell
 
@@ -37,7 +37,7 @@ ms.locfileid: "38707066"
 >В настоящее время эта статья содержит только команды для подключения к облаку Office 365 Worldwide (+ GCC). Дополнительные примечания содержат ссылки на статьи со сведениями о подключении к другим облакам Office 365.
 >
 
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="before-you-begin"></a>Подготовка
 
 Прежде чем управлять всеми Office 365 из одного экземпляра Windows PowerShell, примите во внимание следующие предварительные требования:
   
@@ -98,6 +98,10 @@ ms.locfileid: "38707066"
   ```powershell
   Connect-MsolService -Credential $credential
  ```
+
+>[!Note]
+>PowerShell Core не поддерживает модуль Microsoft Azure Active Directory для модуля Windows PowerShell и командлеты с **MSOL** в имени. Чтобы продолжить использовать эти командлеты, необходимо запустить их из Windows PowerShell.
+>
 
 4. Выполните указанные ниже команды, чтобы подключиться к SharePoint Online. Замените _ \<домаинхост>_ на фактическое значение для вашего домена. Например, для "litwareinc.onmicrosoft.com" _ \<домаинхост>_ значение "litwareinc".
     

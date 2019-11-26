@@ -18,12 +18,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Инструкции по использованию Office 365 PowerShell для назначения лицензии Office 365 пользователям без лицензий.
-ms.openlocfilehash: 22cc5377557464ac6d67833381b96ac01382bc4b
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 8db03eb919547fd0664f8e71cf5f8eddd0f41e2e
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707006"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257458"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365
 
@@ -79,7 +79,11 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 Выполните команду **Get – MsolAccountSku** , чтобы просмотреть доступные планы лицензирования и число доступных лицензий в каждом плане в Организации. Число доступных лицензий в каждом плане — **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Для получения дополнительных сведений о планах лицензирования, лицензиях и службах ознакомьтесь со статьей [Просмотр лицензий и служб с помощью Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
-    
+
+>[!Note]
+>PowerShell Core не поддерживает модуль Microsoft Azure Active Directory для модуля Windows PowerShell и командлеты с **MSOL** в имени. Чтобы продолжить использовать эти командлеты, необходимо запустить их из Windows PowerShell.
+>
+
 Чтобы найти нелицензированные учетные записи в Организации, выполните указанную ниже команду.
 
 ```powershell
@@ -100,7 +104,7 @@ Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-Пример:
+Например:
 
 ```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US

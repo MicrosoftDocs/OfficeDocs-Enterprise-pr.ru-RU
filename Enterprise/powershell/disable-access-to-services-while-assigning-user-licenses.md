@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Сведения о том, как назначать лицензии для учетных записей пользователей и отключать определенные планы обслуживания, используя PowerShell в Office 365.
-ms.openlocfilehash: 16e24a61aea1298b2c24a251d61c414c355dead7
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 06b6de4ea6d96dd2c9510770042bd2a2f1260876
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747661"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257398"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Отключение доступа к службам во время назначения лицензий
 
@@ -69,6 +69,10 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 Get-MsolAccountSku
 ```
 
+>[!Note]
+>PowerShell Core не поддерживает модуль Microsoft Azure Active Directory для модуля Windows PowerShell и командлеты с **MSOL** в имени. Чтобы продолжить использовать эти командлеты, необходимо запустить их из Windows PowerShell.
+>
+
 Значение составляющих команды  `Get-MsolAccountSku`:
   
 - **AccountSkuId** — это подписка вашей организации в формате \<НазваниеОрганизации>:\<Подписка>. \<НазваниеОрганизации> — значение, которое вы указали при регистрации в Office 365 (уникальное для организации). \<Подписка> — значение, обозначающее конкретную подписку. Например, в случае litwareinc:ENTERPRISEPACK название организации — litwareinc, а название подписки — ENTERPRISEPACK (Office 365 корпоративный E3).
@@ -101,7 +105,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office профессиональный плюс  <br/> |
 | `MCOSTANDARD` <br/> |Skype для бизнеса Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Кабинет   <br/> |
+| `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (план 2)  <br/> |
    

@@ -3,7 +3,7 @@ title: Этап 3 для федеративной проверки подлин�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,20 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: Сводка. Создание и настройка серверов служб федерации Active Directory (AD FS) для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: a69738e5be639341963ac1e90aff08328a83257b
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: db9f976ebaf7524c6e13d4dabcc21dd4300102a7
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793310"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257574"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Этап 3. Федеративная проверка подлинности для обеспечения высокой доступности: настройка серверов AD FS
 
- **Сводка.** Создание и настройка серверов служб федерации Active Directory (AD FS) для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-  
 На этом этапе развертывания федеративной проверки подлинности с высоким уровнем доступности для Office 365 в службах инфраструктуры Azure создаются внутренний балансировщик нагрузки и два сервера AD FS.
   
-Прежде чем переходить к разделу [High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md), необходимо завершить этот этап. Описание всех этапов см. в статье [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+Необходимо выполнить этот этап, прежде чем переходить к [этапу 4: Настройка прокси-серверов веб-приложений](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Описание всех этапов см. в статье [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Создание виртуальных машин серверов AD FS в Azure
 
@@ -43,13 +41,16 @@ ms.locfileid: "38793310"
     
 - таблица A (для групп доступности).
     
-Помните, что вы определили таблицу M на [этапе высокодоступной федеративной проверки подлинности 2: Configure Domain Controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I и A [with High Availability Authentication Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Помните, что вы определили таблицу M на [этапе 2: Configure Domain Controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I и на [этапе 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Обратитесь к разделу начало [работы с командлетами Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Ознакомьтесь [с статьей начало работы с Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
   
 Сначала создайте внутренний балансировщик нагрузки Azure для двух серверов AD FS. Укажите значения для переменных, удалив \< и > символы. Задав правильные значения, выполните полученный блок в командной строке Azure PowerShell или в интегрированной среде сценариев PowerShell.
   
+> [!TIP]
+> Для создания блоков команд PowerShell, готовых к запуску, на основе настраиваемых параметров, используйте эту [книгу настройки Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+
 ```powershell
 # Set up key variables
 $locName="<your Azure location>"
@@ -147,7 +148,7 @@ Restart-Computer
   
 ## <a name="next-step"></a>Следующее действие
 
-Продолжение здесь: [High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md).
+Используйте [Этап 4: Настройка прокси-серверов веб-приложений](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) для продолжения настройки этой рабочей нагрузки.
   
 ## <a name="see-also"></a>См. также
 

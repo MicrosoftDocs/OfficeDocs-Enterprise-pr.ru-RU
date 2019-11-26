@@ -3,7 +3,7 @@ title: Фаза федеративной проверки подлинности
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,30 +12,31 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: Сводка. Настройка прокси-серверов веб-приложений для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: 276d28835cbedf7d2eb87b80304fbb0e4e9de2c3
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 0ab2526209bc9c59fdce839e0f50451b23d78b04
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793321"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257498"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Этап 4. Федеративная проверка подлинности для обеспечения высокой доступности: настройка прокси веб-приложений
 
- **Сводка:** Настройка прокси-серверов веб-приложений для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-  
 На этом этапе развертывания федеративной проверки подлинности с высоким уровнем доступности для Office 365 в службах инфраструктуры Azure создаются внутренний балансировщик нагрузки и два сервера AD FS.
   
-Необходимо выполнить этот этап перед переходом к [этапу федеративной проверки подлинности высокого уровня доступности 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Описание всех этапов см. в статье [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+Необходимо выполнить этот этап, прежде чем переходить к [этапу 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Описание всех этапов см. в статье [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
 ## <a name="create-the-internet-facing-load-balancer-in-azure"></a>Создание подсистемы балансировки сетевой нагрузки в Azure для выхода из Интернета
 
 Необходимо создать подсистему балансировки нагрузки с выходом в Интернет, чтобы Azure перегрузил входящий трафик проверки подлинности клиента из Интернета между двумя серверами прокси-сервера веб-приложений.
   
 > [!NOTE]
-> Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Обратитесь к разделу начало [работы с командлетами Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Ознакомьтесь [с статьей начало работы с Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
   
 После того как вы задали значения расположения и группы ресурсов, запустите полученный блок в командной строки Azure PowerShell или в ИНТЕГРИРОВАНной среде выполнения PowerShell.
   
+> [!TIP]
+> Для создания блоков команд PowerShell, готовых к запуску, на основе настраиваемых параметров, используйте эту [книгу настройки Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+
 ```powershell
 # Set up key variables
 $locName="<your Azure location>"
@@ -91,7 +92,7 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
     
 - таблица A (для групп доступности).
     
-Помните, что вы определили таблицу M на [этапе высокодоступной федеративной проверки подлинности 2: Configure Domain Controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I и A [with High Availability Authentication Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Помните, что вы определили таблицу M на [этапе 2: Configure Domain Controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I и на [этапе 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 Задав правильные значения, выполните полученный блок в командной строке Azure PowerShell или в интегрированной среде сценариев PowerShell.
   
@@ -157,7 +158,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 ## <a name="next-step"></a>Следующее действие
 
-Применение [федеративной проверки подлинности с высоким уровнем доступности этап 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) для продолжения настройки этой рабочей нагрузки.
+Используйте [этап 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) , чтобы продолжить настройку этой рабочей нагрузки.
   
 ## <a name="see-also"></a>См. также
 

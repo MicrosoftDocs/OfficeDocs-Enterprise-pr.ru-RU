@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: Сводка. Сведения о том, как с помощью PowerShell в Office 365 настроить свойства одной или нескольких учетных записей пользователей в клиенте Office 365:.
-ms.openlocfilehash: 94596326c9d52b4010f6e9baf67fe3c7a12399be
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 67ce7d3c57f286f0b2365aa2503fdf1c8bc13429
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38706996"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257660"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Настройка параметров учетной записи пользователя с помощью PowerShell для Office 365
 
@@ -146,6 +146,10 @@ Get-AzureADUser | Where-Object {$_.Department -eq "Accounting"} | Set-AzureADUse
 
 Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
   
+>[!Note]
+>PowerShell Core не поддерживает модуль Microsoft Azure Active Directory для модуля Windows PowerShell и командлеты с **MSOL** в имени. Чтобы продолжить использовать эти командлеты, необходимо запустить их из Windows PowerShell.
+>
+
 ### <a name="change-properties-for-a-specific-user-account"></a>Изменение свойств учетной записи пользователя
 
 Чтобы настроить свойства учетной записи пользователя, используйте командлет [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) и укажите свойства, которые нужно задать или изменить. 

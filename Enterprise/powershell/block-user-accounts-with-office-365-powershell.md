@@ -14,12 +14,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Сведения об использовании PowerShell в Office 365 для блокировки и разблокировки доступа к учетным записям Office 365.
-ms.openlocfilehash: 3cc063fac2fa7795ba924b7b937efc9afe6594a1
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 09cfdaf1485837713d03949cca456b9d07b66b00
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38706986"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257670"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Блокировка учетных записей пользователей с помощью PowerShell в Office 365
 
@@ -119,6 +119,10 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 ```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $true
 ```
+
+>[!Note]
+>PowerShell Core не поддерживает модуль Microsoft Azure Active Directory для модуля Windows PowerShell и командлеты с **MSOL** в имени. Чтобы продолжить использовать эти командлеты, необходимо запустить их из Windows PowerShell.
+>
 
 В этом примере блокируется доступ к учетной записи пользователя fabricec@litwareinc.com.
   

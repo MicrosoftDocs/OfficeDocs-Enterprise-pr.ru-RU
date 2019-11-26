@@ -16,12 +16,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: В этой статье объясняется, как использовать PowerShell для Office 365 для удаления лицензий Office 365, которые ранее были назначены пользователям.
-ms.openlocfilehash: bfd333b649df1d346a45abc3e8b9e35666f8f582
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 1147b59c948d3d09349de42a637f522df04f8687
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747545"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257388"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Использование PowerShell в Office 365 для удаления лицензий из учетных записей пользователей
 
@@ -73,6 +73,10 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 ```powershell
 Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
 ```
+
+>[!Note]
+>PowerShell Core не поддерживает модуль Microsoft Azure Active Directory для модуля Windows PowerShell и командлеты с **MSOL** в имени. Чтобы продолжить использовать эти командлеты, необходимо запустить их из Windows PowerShell.
+>
 
 В этом примере удаляется лицензия `litwareinc:ENTERPRISEPACK` (Office 365 корпоративный E3) из учетной записи пользователя BelindaN@litwareinc.com.
   

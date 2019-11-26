@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Отключение доступа к службам Office 365 для пользователей с помощью PowerShell в Office 365.
-ms.openlocfilehash: c012d7451d022ea8cf3e3fa1a8d0a89d804e9c66
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 711f48dd2caad6fc2b438010405b126be203bd54
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746282"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257604"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Отключение доступа к службам с помощью Office 365 PowerShell
 
@@ -41,6 +41,10 @@ ms.locfileid: "38746282"
 ```powershell
 Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 ```
+
+>[!Note]
+>PowerShell Core не поддерживает модуль Microsoft Azure Active Directory для модуля Windows PowerShell и командлеты с **MSOL** в имени. Чтобы продолжить использовать эти командлеты, необходимо запустить их из Windows PowerShell.
+>
 
 Дополнительные сведения см. [в статье Просмотр лицензий и служб с помощью Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
     

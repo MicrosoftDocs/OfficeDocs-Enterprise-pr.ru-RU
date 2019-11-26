@@ -3,7 +3,7 @@ title: Этап 2 для федеративной проверки подлин�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,24 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: Сводка. Настройка контроллеров домена и сервера DirSync для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: 3e5ede99c114b59f6aafbf37c3aa11e3ebd62cca
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+description: Сводка. Настройте контроллеры домена и сервер синхронизации службы каталогов для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
+ms.openlocfilehash: 853f7c55039fb4dcd09ae9d0d748a4e559d5564a
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793351"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257508"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Этап 2. Федеративная проверка подлинности для обеспечения высокой доступности: настройка контроллеров домена
 
- **Сводка.** Настройка контроллеров домена и сервера DirSync для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-  
-На этом этапе развертывания федеративной проверки подлинности с высоким уровнем доступности для Office 365 в службах инфраструктуры Azure настраиваются два контроллера домена и сервер DirSync в виртуальной сети Azure. После этого проверку подлинности клиентов можно выполнять в виртуальной сети Azure, не отправляя трафик проверки подлинности через подключение VPN типа "сеть-сеть" к локальной сети.
+На этом этапе развертывания высокой доступности для федеративной проверки подлинности Office 365 в службах инфраструктуры Azure можно настроить два контроллера домена и сервер синхронизации службы каталогов в виртуальной сети Azure. После этого проверку подлинности клиентов можно выполнять в виртуальной сети Azure, не отправляя трафик проверки подлинности через подключение VPN типа "сеть-сеть" к локальной сети.
   
 > [!NOTE]
 > Службы федерации Active Directory (AD FS) не могут использовать доменные службы Azure Active Directory для замены контроллеров домена доменных служб Active Directory. 
   
-Прежде чем переходить к разделу [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md), необходимо завершить этот этап. Описание всех этапов см. в статье [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+Необходимо выполнить этот этап, прежде чем переходить к [этапу 3: Configure AD FS Servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Описание всех этапов см. в статье [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Создание виртуальных машин контроллеров домена в Azure
 
@@ -38,7 +36,7 @@ ms.locfileid: "38793351"
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png) (первый контроллер домена, например DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png) (второй контроллер домена, например DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)(Сервер DirSync, например, DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)(сервер синхронизации каталогов, например, DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |4.  <br/> |![](./media/Common-Images/TableLine.png)(первый сервер AD FS, например, ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |5.  <br/> |![](./media/Common-Images/TableLine.png)(второй сервер AD FS, например, ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |6.  <br/> |![](./media/Common-Images/TableLine.png)(первый прокси-сервер веб-приложений, например WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
@@ -62,13 +60,16 @@ ms.locfileid: "38793351"
     
 - таблица A (для групп доступности).
     
-Помните, что вы определили таблицы R, V, S, I и A для [федеративной проверки подлинности с высоким уровнем доступности, этап 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Помните, что вы определили таблицы R, V, S, I и на [этапе 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> Для приведенных ниже последовательностей команд используется последняя версия Azure PowerShell. См. статью [Общие сведения об Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Ознакомьтесь [с статьей начало работы с Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
   
 Указав правильные значения, выполните полученный блок в командной строке Azure PowerShell или в интегрированной среде сценариев PowerShell (ISE) на локальном компьютере.
   
+> [!TIP]
+> Для создания блоков команд PowerShell, готовых к запуску, на основе настраиваемых параметров, используйте эту [книгу настройки Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+
 ```powershell
 # Set up variables common to both virtual machines
 $locName="<your Azure location>"
@@ -123,7 +124,7 @@ $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer Win
 $vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
-# Create the DirSync server
+# Create the directory synchronization server
 $vmName="<Table M - Item 3 - Virtual machine name column>"
 $vmSize="<Table M - Item 3 - Minimum size column>"
 $staticIP="<Table I - Item 3 - Value column>"
@@ -132,7 +133,7 @@ $diskStorageType="<Table M - Item 3 - Storage type column>"
 $nic=New-AzNetworkInterface -Name ($vmName +"-NIC") -ResourceGroupName $rgName -Location $locName -Subnet $subnet -PrivateIpAddress $staticIP
 $vm=New-AzVMConfig -VMName $vmName -VMSize $vmSize
 
-$cred=Get-Credential -Message "Type the name and password of the local administrator account for the DirSync server." 
+$cred=Get-Credential -Message "Type the name and password of the local administrator account for the directory synchronization server." 
 $vm=Set-AzVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzVMNetworkInterface -VM $vm -Id $nic.Id
@@ -225,9 +226,9 @@ New-ADReplicationSite -Name $vnet
 New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 ```
 
-## <a name="configure-the-dirsync-server"></a>Настройка сервера DirSync
+## <a name="configure-the-directory-synchronization-server"></a>Настройка сервера синхронизации службы каталогов
 
-Используйте клиент удаленного рабочего стола и создайте подключение к виртуальной машине сервера DirSync к удаленному рабочему столу. Используйте DNS-имя интрасети или имя компьютера, а также учетные данные локального администратора.
+Используйте клиент удаленного рабочего стола и создайте подключение к виртуальной машине сервера синхронизации каталогов на удаленном рабочем столе. Используйте DNS-имя интрасети или имя компьютера, а также учетные данные локального администратора.
   
 Затем присоедините его к соответствующему домену доменных служб Active Directory, выполнив приведенные ниже команды в командной строке Windows PowerShell.
   
@@ -240,13 +241,13 @@ Restart-Computer
 
 Здесь показана конфигурация, полученная в результате успешного выполнения этого этапа (с заполнителями вместо имен компьютеров).
   
-**Этап 2. Контроллеры домена и сервер DirSync для инфраструктуры федеративной проверки подлинности с высоким уровнем доступности в Azure**
+**Этап 2: контроллеры домена и сервер синхронизации службы каталогов для инфраструктуры федеративной проверки подлинности с высоким уровнем доступности в Azure**
 
 ![Этап 2 инфраструктуры федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure с помощью контроллеров домена](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>Следующее действие
 
-Продолжение здесь: [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md).
+Используйте [Этап 3: Configure AD FS Servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) , чтобы продолжить настройку этой рабочей нагрузки.
   
 ## <a name="see-also"></a>См. также
 

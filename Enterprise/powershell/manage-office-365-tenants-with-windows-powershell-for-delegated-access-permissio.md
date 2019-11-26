@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: Сводка. Узнайте, как использовать Windows PowerShell для Office 365, чтобы управлять пользовательскими клиентами.
-ms.openlocfilehash: b38c1862a0cf2db4a751d1690686baeead8ae9ea
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: a45fb7b888d7e591f6765150525f0b50c72ddc5c
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781859"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257594"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Управление клиентами Office 365 с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 
@@ -47,6 +47,10 @@ Get-MsolPartnerContract -All | Select-Object TenantId
 ```
 
 Отобразится список всех пользовательских клиентов по идентификатору **TenantId**.
+
+>[!Note]
+>PowerShell Core не поддерживает модуль Microsoft Azure Active Directory для модуля Windows PowerShell и командлеты с **MSOL** в имени. Чтобы продолжить использовать эти командлеты, необходимо запустить их из Windows PowerShell.
+>
   
 ### <a name="get-a-tenant-id-by-using-the-domain-name"></a>Получение идентификатора клиента по доменному имени
 
