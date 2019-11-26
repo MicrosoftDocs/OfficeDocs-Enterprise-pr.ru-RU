@@ -158,11 +158,11 @@
 #### [Подключение локальной сети к виртуальной сети Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Развертывание сервера синхронизации каталогов в Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
 #### [Развертывание федеративной проверки подлинности для обеспечения высокой доступности Office 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
-##### [Этап 1. Федеративная проверка подлинности для обеспечения высокой доступности: настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
-##### [Этап 2. Федеративная проверка подлинности для обеспечения высокой доступности: настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
-##### [Этап 3. Федеративная проверка подлинности для обеспечения высокой доступности: настройка серверов AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
-##### [Этап 4. Федеративная проверка подлинности для обеспечения высокой доступности: настройка прокси веб-приложений](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
-##### [Этап 5. Федеративная проверка подлинности для обеспечения высокой доступности: настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+##### [Этап 1. Настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
+##### [Этап 2. Настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
+##### [Этап 3. Настройка серверов AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
+##### [Этап 4. Настройка прокси веб-приложений](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
+##### [Этап 5. Настройка федеративной проверки подлинности](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
 # Управление Office 365
 
