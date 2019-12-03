@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: В этой статье рассказывается, как использовать PowerShell в Office 365 для просмотра учетных записей пользователей с лицензиями и пользователей без лицензий.
-ms.openlocfilehash: 3869be5a0f7527f516248e7e1ef0333707f49305
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f56a3fe7ece50c5f7fb345ccc0b843cacf185d28
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748417"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655861"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Отображение списков пользователей с лицензиями и пользователей без лицензий с помощью Office 365 PowerShell
 
@@ -54,6 +54,10 @@ Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLic
 ```powershell
 Get-MsolUser -All
 ```
+
+>[!Note]
+>В PowerShell Core не поддерживается модуль Microsoft Azure Active Directory для Windows PowerShell и командлеты с компонентом **Msol** в имени. Чтобы использовать эти командлеты, необходимо запустить их из Windows PowerShell.
+>
 
 Чтобы отобразить список всех учетных записей пользователей без лицензий в вашей организации, выполните указанную ниже команду.
   
