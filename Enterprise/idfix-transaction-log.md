@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: В этом разделе приводится пример и описывается соглашение об именовании и уровень журнала по умолчанию для журнала транзакций Office 365 IdFix.
-ms.openlocfilehash: 0c6f2dd64cb406681c0a98099b2a42887ee79c25
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 22ea5af87b1bbcaa96f88e3746a50f1411a01b9a
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067265"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813427"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Журнал транзакций Office 365 IdFix
+
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 В этом разделе приводится пример и описывается соглашение об именовании и уровень журнала по умолчанию для журнала транзакций Office 365 IdFix.
   

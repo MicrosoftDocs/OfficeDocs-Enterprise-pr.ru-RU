@@ -3,7 +3,7 @@ title: Задержка при загрузке изображений и JavaSc
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/29/2016
+ms.date: 12/3/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: В этой статье описывается, как уменьшить время загрузки страниц SharePoint Online с помощью JavaScript, чтобы задержать загрузку изображений, а также подождать, пока не загрузится страница.
-ms.openlocfilehash: a015c8ca26c402733eba3b26e641524f38acca21
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: bf68dd29d1c92d37e8dfb5b99f043af160f96d1e
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077672"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813477"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Задержка при загрузке изображений и JavaScript-файлов в SharePoint Online
 
@@ -30,9 +30,9 @@ ms.locfileid: "38077672"
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Увеличение времени загрузки страниц путем задержки загрузки изображений в страницах SharePoint Online с помощью JavaScript
 
-Вы можете использовать JavaScript, чтобы запретить веб-браузеру получать изображения с предварительной отправкой. Это ускоряет обработку всего документа. Чтобы сделать это, удалите значение атрибута src из тега \<IMG\> и замените его на путь к файлу в атрибуте данных, например: Data — src. Пример:
+Вы можете использовать JavaScript, чтобы запретить веб-браузеру получать изображения с предварительной отправкой. Это ускоряет обработку всего документа. Чтобы сделать это, удалите значение атрибута src из тега \<IMG\> и замените его на путь к файлу в атрибуте данных, например: Data — src. Например:
   
-```txt
+```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
@@ -40,9 +40,9 @@ ms.locfileid: "38077672"
   
 Чтобы все это происходило, необходимо использовать JavaScript.
   
-В текстовом файле определите функцию **иселементинвиевпорт ()** , чтобы проверить, находится ли элемент в части браузера, видимой для пользователя. 
+В текстовом файле определите функцию **иселементинвиевпорт ()** , чтобы проверить, находится ли элемент в части браузера, видимой для пользователя.
   
-```txt
+```javascript
 function isElementInViewport(el) {
   if (!el)
     return false;
@@ -51,14 +51,14 @@ function isElementInViewport(el) {
     rect.top >= 0 &amp;&amp;
     rect.left >= 0 &amp;&amp;
     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &amp;&amp;
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 ```
 
-Затем используйте **иселементинвиевпорт ()** в функции **лоадитемсинвиев ()** . Функция **лоадитемсинвиев ()** загрузит все изображения, имеющие значение для атрибута Data-src, если они находятся в той части браузера, которая видна пользователю. Добавьте в текстовый файл указанную ниже функцию. 
+Затем используйте **иселементинвиевпорт ()** в функции **лоадитемсинвиев ()** . Функция **лоадитемсинвиев ()** загрузит все изображения, имеющие значение для атрибута Data-src, если они находятся в той части браузера, которая видна пользователю. Добавьте в текстовый файл указанную ниже функцию.
   
-```
+```javascript
 function loadItemsInView() {
   //Select elements by the row id.
   $("#row [data-src]").each(function () {
@@ -72,9 +72,9 @@ function loadItemsInView() {
 }
 ```
 
-В заключение вызовите **лоадитемсинвиев ()** из **Window. OnScroll ()** , как показано в следующем примере. Это гарантирует, что все изображения в окне просмотра загружаются по мере необходимости. Добавьте следующий текст в текстовый файл: 
+В заключение вызовите **лоадитемсинвиев ()** из **Window. OnScroll ()** , как показано в следующем примере. Это гарантирует, что все изображения в окне просмотра загружаются по мере необходимости. Добавьте следующий текст в текстовый файл:
   
-```
+```javascript
 //Example of calling loadItemsInView() from within window.onscroll()
 $(window).on("scroll", function () {
     loadItemsInView();
@@ -84,7 +84,7 @@ $(window).on("scroll", function () {
 
 Для SharePoint Online необходимо подключить следующую функцию к событию прокрутки в теге #s4-Workspace \<div.\> Это связано с тем, что события окон переопределяются, чтобы лента оставалась присоединенной к верхней части страницы.
   
-```
+```javascript
 //Keep the ribbon at the top of the page
 $('#s4-workspace').on("scroll", function () {
     loadItemsInView();
@@ -96,10 +96,10 @@ $('#s4-workspace').on("scroll", function () {
 После того как вы закончите написание файла delayLoadImages. js, вы можете добавить его содержимое на главную страницу в SharePoint Online. Для этого добавьте ссылку на скрипт в заголовок главной страницы. Когда она находится на главной странице, JavaScript будет применен ко всем страницам на сайте SharePoint Online, которые используют этот макет эталонной страницы. Кроме того, если вы планируете использовать его только на одной странице сайта, используйте веб-часть редактора скриптов, чтобы внедрить JavaScript на страницу. Дополнительные сведения приведены в следующих статьях:
   
 - [Инструкции. Применение эталонной страницы к сайту в SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
-    
+
 - [Инструкции. Создание макета страницы в SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
-    
- **Пример: ссылка на файл JavaScript delayLoadImages. js из эталонной страницы в SharePoint Online**
+
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Пример: ссылка на файл JavaScript delayLoadImages. js из эталонной страницы в SharePoint Online
   
 Чтобы это работало, вам также потребуется ссылаться на jQuery на главной странице. В следующем примере показана загрузка на начальной странице, если загружено только одно изображение, но на странице есть несколько дополнительных.
   
@@ -113,7 +113,7 @@ $('#s4-workspace').on("scroll", function () {
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>Пример кода GitHub: внедрение JavaScript для улучшения производительности
 
-Не пропустите статью и пример кода на [JavaScript Injection](https://go.microsoft.com/fwlink/p/?LinkId=524759) , предоставленном в GitHub. 
+Не пропустите статью и пример кода на [JavaScript Injection](https://go.microsoft.com/fwlink/p/?LinkId=524759) , предоставленном в GitHub.
   
 ## <a name="see-also"></a>См. также
 
@@ -122,4 +122,3 @@ $('#s4-workspace').on("scroll", function () {
 [Инструкции. Применение эталонной страницы к сайту в SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   
 [Инструкции. Создание макета страницы в SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
-

@@ -16,14 +16,17 @@ ms.collection:
 - M365-identity-device-management
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: Список атрибутов, исключаемых и поддерживаемых средством IdFix.
-ms.openlocfilehash: bf88fea3592860a89d69717177593b6553318ee4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e57507688fe1efd21bb629b4fad297129eff55d6
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067275"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813929"
 ---
 # <a name="idfix-excluded-and-supported-objects-and-attributes"></a>Исключаемые и поддерживаемые объекты и атрибуты IdFix
+
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+
 Существует два набора правил, поддерживаемых IdFix; Поддержка нескольких клиентов и выделенного/ITAR. В настоящее время два набора правил исключают одни и те же объекты, атрибуты и значения атрибутов из поиска. Это может измениться в будущих выпусках.
   
 ## <a name="multi-tenant-and-dedicated-error-exclusions-used-by-idfix"></a>Несколько клиентов и выделенные исключения ошибок, используемые IdFix
@@ -33,19 +36,19 @@ ms.locfileid: "34067275"
 
 |**Исключения**|**Пример**|
 |:-----|:-----|
-|Админи\* |Администратор |
-|КАС_ {\*  |КАС_ {fe35fc98e69e4d08} |
-|Дисковерисеарчмаилбокс\*  |Дисковерисеарчмаилбокс  |
+|админи\* |Администратор |
+|CAS_ {\*  |CAS_ {fe35fc98e69e4d08} |
+|дисковерисеарчмаилбокс\*  |дисковерисеарчмаилбокс  |
 |FederatedEmail\* |FederatedEmail. *GUID* |
 |Guest\* ||
-|Хттпконнектор\*  |Хттпконнектор |
+|хттпконнектор\*  |хттпконнектор |
 |KRBTGT\* |MS DS: KrbTgt – Link |
-|IUSR\* |IUSR_ *имя_компьютера* |
+|iusr_\* |iusr_ *MachineName* |
 |IWAM\*  |IWAM_ *MachineName* |
-|MSOL\* |МСОЛ_АД_СИНК |
-|поддержки\* ||
+|MSOL\* |MSOL_AD_SYNC |
+|support_\* ||
 |SystemMailbox\* |SystemMailbox { *GUID* }|
-|Ввиоадмини\*  ||
+|ввиоадмини\*  ||
 |\*$ ||
 |distinguishedName содержит "\0ACNF:"|"\0ACNF: *GUID* " |
 |Объект содержит атрибут Искритикалсистемобжект |Ознакомьтесь с [атрибутом искритикалсистемобжект](https://go.microsoft.com/fwlink/p/?LinkId=401169). |

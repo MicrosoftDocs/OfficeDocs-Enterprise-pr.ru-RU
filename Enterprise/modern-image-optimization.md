@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Узнайте, как оптимизировать изображения на современных страницах сайтов SharePoint Online.
-ms.openlocfilehash: df6fab6fdd02bf6668a86c8d7a3941ece10cc3d1
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 68e2f79e1f768cfc93feb4f26f8b2fbeca5d6b83
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078018"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814227"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Оптимизация изображений на современных страницах сайтов SharePoint Online
 
@@ -65,7 +65,7 @@ ms.locfileid: "38078018"
 
 [Настройка производительности Office 365](tune-office-365-performance.md)
 
-[Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [Сети доставки содержимого](content-delivery-networks.md)
 

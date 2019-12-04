@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Узнайте, как оптимизировать производительность iFrame на современных и классических страницах сайта публикаций SharePoint Online.
-ms.openlocfilehash: 97848d28277f19e8984f1f08e90f07236fd5c85b
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: f4b28ad9e59e41ddb8a4b96b532a49811e722874
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078438"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814237"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Оптимизация окон iFrame на страницах современных и классических сайтов публикаций SharePoint Online
 
@@ -75,4 +75,4 @@ ms.locfileid: "38078438"
 
 [Настройка производительности Office 365](tune-office-365-performance.md)
 
-[Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[Производительность в современном интерфейсе SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)

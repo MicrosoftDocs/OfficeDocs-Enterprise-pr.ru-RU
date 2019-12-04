@@ -3,6 +3,7 @@ title: Удостоверения для Office 365 в облаке
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,14 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: В этой статье описано, как создавать пользователей и группы, когда ваша подписка на Office 365 использует удостоверения, предназначенные только для облака.
-ms.openlocfilehash: 7a2aaf7705378da3cbd91b415f07d10b6e039293
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 6815c89821216416379a27eb525e66b90b828ea8
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34164614"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813417"
 ---
 # <a name="office-365-cloud-only-identities"></a>Удостоверения для Office 365 в облаке
+
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 При использовании удостоверения только в облаке все пользователи, группы и контакты хранятся в клиенте Azure Active Directory (Azure AD) вашей подписки на Office 365. Ниже приведены основные компоненты удостоверения "только облако".
  
@@ -53,12 +56,12 @@ ms.locfileid: "34164614"
 
 Вы можете создавать новых ***пользователей*** с помощью следующих компонентов:
 
-- [Центр администрирования Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+- [Центр администрирования Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
 - [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
 
 Вы можете создавать новые ***группы*** с помощью следующих компонентов:
 
-- [Центр администрирования Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
+- [Центр администрирования Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
 - [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 
