@@ -18,15 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: В статье описывается как скачать и запустить инструмент Office 365 IdFix, чтобы очистить доменные службы Active Directory (AD DS) перед их синхронизацией с Office 365.
-ms.openlocfilehash: 4a402cf245ebd20fbc5846908d521469ebfb90c1
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
-ms.translationtype: HT
+ms.openlocfilehash: 03f26f877786057a4ebca2bad0ae85369fb712ac
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490760"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813537"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Скачивание и запуск инструмента Office 365 IdFix
 
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 IdFix определяет в домене AD DS (доменные службы Active Directory) ошибки, например повторения или ошибки форматирования, перед выполнением синхронизации с Office 365. 
   
