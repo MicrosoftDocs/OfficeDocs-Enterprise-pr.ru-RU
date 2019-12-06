@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: Сводка. Решения SharePoint 2013 можно размещать на виртуальных машинах Microsoft Azure. Узнайте, какие типы решений хорошо для этого подходят и как настроить Microsoft Azure для их размещения.
-ms.openlocfilehash: 2059ee68a523641bbfe7389d273c931e44d23bd5
-ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
+ms.openlocfilehash: d2e3302b9ea47b842f870e76f023499a92162eca
+ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38308594"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39858027"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Архитектуры Microsoft Azure для SharePoint 2013
 
@@ -215,14 +215,6 @@ ms.locfileid: "38308594"
   
 На этой схеме показана ферма SharePoint, реализованная в службах инфраструктуры Azure: группы доступности обеспечивают домены сбоя для серверов на каждом уровне.
   
-**Присоединяйтесь к обсуждению**
-
-|**Свяжитесь с нами**|**Описание**|
-|:-----|:-----|
-|**Какое вам решение необходимо?** <br/> |Мы создаем контент для решений, которые охватывают несколько продуктов и служб Майкрософт. Сообщите нам, что вы думаете о наших межсерверных решениях, или укажите интересующие вас решения, написав по адресу [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
-|**Присоединяйтесь к обсуждению решений** <br/> |If you are passionate about cloud-based solutions, consider joining the Cloud Adoption Advisory Board (CAAB) to connect with a larger, vibrant community of Microsoft content developers, industry professionals, and customers from around the globe. To join, add yourself as a member of the [CAAB (Cloud Adoption Advisory Board) space](https://aka.ms/caab) of the Microsoft Tech Community and send us a quick email at[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Anyone can read community-related content on the [CAAB blog](https://blogs.technet.com/b/solutions_advisory_board/). However, CAAB members get invitations to private webinars that describe new cloud adoption resources and solutions.  <br/> |
-|**Получите изображения, которые вы здесь видите** <br/> |Если вам нужна редактируемая копия иллюстративного материала из этой статьи, мы с радостью вам ее отправим. Напишите нам, указав URL-адрес и название материала, по адресу [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
-   
 ## <a name="see-also"></a>См. также
 
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
