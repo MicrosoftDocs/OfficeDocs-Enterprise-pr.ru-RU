@@ -3,7 +3,7 @@ title: Использование сети доставки содержимог
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: В этой статье описывается использование сети доставки содержимого (CDN) Office 365 для ускорения доставки ресурсов SharePoint Online всем пользователям независимо от того, где они размещены, или от того, как они обращаются к контенту.
-ms.openlocfilehash: bb60e129f988041a7d763c1558a9ee3c86f75226
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: de4982047e7a92d7df477128274e0037fbc86d42
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813517"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962486"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Использование сети доставки содержимого Office 365 с SharePoint Online
 
@@ -384,7 +384,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Пример: Настройка частного источника для семейства веб-сайтов для SharePoint Online
 
-Используйте командлет **Add-SPOTenantCdnOrigin** для определения семейства веб-сайтов в качестве частного источника. Например:
+Используйте командлет **Add-SPOTenantCdnOrigin** для определения семейства веб-сайтов в качестве частного источника. Пример:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -657,7 +657,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Доступ к ресурсам в частных источниках в сети CDN Office 365 предоставляется маркерами, созданными SharePoint Online. Пользователи, которые уже имеют разрешение на доступ к папке или библиотеке, назначенным источником, автоматически получают маркеры, позволяющие пользователю получить доступ к файлу на основе их уровня разрешений. Эти маркеры доступа действительны в течение 30 – 90 минут после их создания для предотвращения атак с повторением маркеров.
 
-После создания маркера доступа SharePoint Online возвращает пользовательский URI для клиента, содержащего два параметра авторизации _EAT_ (маркер авторизации пограничного сервера) и _ОАТ_ (маркер авторизации источника). Структура каждого маркера _< ' время истечения срока действия в формате эпохи ' >__< ' Secure Signature ' >_. Например:
+После создания маркера доступа SharePoint Online возвращает пользовательский URI для клиента, содержащего два параметра авторизации _EAT_ (маркер авторизации пограничного сервера) и _ОАТ_ (маркер авторизации источника). Структура каждого маркера _< ' время истечения срока действия в формате эпохи ' >__< ' Secure Signature ' >_. Пример:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -670,7 +670,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 Важно отметить, что SharePoint Online не поддерживает разрешения на уровне элементов для ресурсов в частных источниках. Например, для файла, расположенного в `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, пользователи имеют эффективный доступ к файлу с учетом следующих условий:
 
-|User  |Разрешения  |Эффективный доступ  |
+|Пользователь  |Разрешения  |Эффективный доступ  |
 |---------|---------|---------|
 |Пользователь 1     |Имеет доступ к Folder1         |Может получить доступ к image1. jpg из сети CDN         |
 |Пользователь 2     |Не имеет доступа к Folder1         |Не удается получить доступ к image1. jpg из сети CDN         |
@@ -688,9 +688,9 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 Кроме того, с помощью средств разработчика браузера можно просматривать URL-адрес каждого ресурса на странице или использовать средство трассировки сети стороннего производителя.
 
 > [!NOTE]
-> Если вы используете сетевое средство, например Fiddler, для тестирования ресурсов за предельным отображением ресурса на странице SharePoint, необходимо вручную добавить заголовок источника ссылки "ссылка" `https://yourdomain.sharepoint.com`: в запрос GET, где URL-адрес — это корневой URL-адрес клиента SharePoint Online.
+> Если вы используете сетевое средство, например Fiddler, чтобы протестировать ресурсы за предельным отображением ресурса на странице SharePoint, необходимо вручную добавить заголовок ссылки "ссылка": `https://yourdomain.sharepoint.com`"на запрос GET, где URL-адрес — это корневой URL-адрес клиента SharePoint Online.
 
-Вы не можете проверить URL-адреса CDN непосредственно в веб-браузере, так как вам потребуется источник ссылки, поступающий из SharePoint Online. Тем не менее, если вы добавите URL-адрес ресурса CDN на страницу SharePoint, а затем открыли страницу в браузере, на странице появится ресурс CDN, отображаемый на странице.
+Вы не можете проверить URL-адреса CDN непосредственно в веб-браузере, так как у вас должны быть ссылки из SharePoint Online. Тем не менее, если вы добавите URL-адрес ресурса CDN на страницу SharePoint, а затем открыли страницу в браузере, на странице появится ресурс CDN, отображаемый на странице.
 
 Для получения дополнительных сведений об использовании средств разработчика в браузере Microsoft Edge обратитесь к разделу [Инструменты разработчика Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide).
 

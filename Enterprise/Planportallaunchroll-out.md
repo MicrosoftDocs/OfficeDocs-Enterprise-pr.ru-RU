@@ -13,14 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: В этой статье описывается, как можно спланировать запуск портала в SharePoint Online и какие действия предпринять для успешного запуска.
-ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 8c7f427d0f8f89b11b144d045a03fa3138b8f019
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919131"
+ms.locfileid: "39959123"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Планирование развертывания портала для запуска в SharePoint Online
+
 Портал — это сайт SharePoint в интрасети с большим количеством средств просмотра сайтов, использующих контент сайта. В крупных организациях может быть несколько из них; Например, корпоративный портал и портал кадров. Обычно у порталов есть сравнительно немало пользователей, создающих и разрабатывающих сайт и его контент. Большинство посетителей портала читают и потребляют содержимое.
 
 В этой статье описано, как спланировать развертывание и развертывание плана в SharePoint Online. Кроме того, в SharePoint Online не разрешается соблюдение традиционных нагрузочного тестирования. SharePoint Online — это облачная служба, которая управляет возможностями нагрузки, работоспособностью и общим балансом нагрузки в службе.
