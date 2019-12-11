@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Сводка: понимание миграции с Microsoft Cloud для Германии (Microsoft Cloud Deutschland) в службы Office 365 в новых регионах центров обработки данных в Германии'
-ms.openlocfilehash: 5b339ab36ad613078bbfcd705f42ceb3703585e9
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 95edbeeb79549957ff49afa8b8a96160945b0f20
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39920285"
+ms.locfileid: "39962446"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Миграция с Microsoft Cloud для Германии (Microsoft Cloud Deutschland) в службы Office 365 в новых регионах центров обработки данных в Германии
 
@@ -43,7 +43,7 @@ ms.locfileid: "39920285"
 
 Для организаций, давших согласие на программу под руководством корпорации Майкрософт, предполагается, что миграция будет выполняться в 2020 году. В результате миграции основные данные клиента и подписки перемещаются в новые регионы в Германии. 
 
-Обратите внимание на то, что после завершения миграции подписки цены будут снижаться в соответствии с ценами на общедоступное облако. Прямые клиенты увидят, что новая подписка будет продлена на новый срок в 12 месяцев, а дата завершения миграции будет вашей новой ежегодной датой продления. Указанные ниже службы будут перенесены в рамках программы под руководством корпорации Майкрософт:
+Указанные ниже службы будут перенесены в рамках программы под руководством корпорации Майкрософт:
 
 - Azure Active Directory
 - Exchange Online
@@ -52,12 +52,12 @@ ms.locfileid: "39920285"
 - OneDrive для бизнеса
 - Skype для бизнеса Online
 
-  В рамках перехода с Microsoft Cloud для Германии на регион в Германии существующие пользователи Skype для бизнеса Online перейдут в Microsoft Teams. Дополнительные сведения см. в статье [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home).
+В процессе миграции с Microsoft Cloud для Германии на регионы центров обработки данных в Германии существующие пользователи Skype для бизнеса Online перейдут в Microsoft Teams. Дополнительные сведения см. в статье [Начало перехода на Microsoft Teams](https://aka.ms/SkypeToTeams-Home).
 
 - Группы Office 365
 - Dynamics 365 / Power Platform
 
-  Предварительные требования и влияние миграции на эти службы описаны в статье [Dynamics 365 Customer engagement](https://aka.ms/D365ceOptIn).
+Предварительные требования и влияние миграции на эти службы описаны в статье [Dynamics 365 Customer engagement](https://aka.ms/D365ceOptIn).
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Как подготовиться к миграции на службы Office 365 в новых регионах центров обработки данных в Германии
 
@@ -65,13 +65,13 @@ ms.locfileid: "39920285"
 
 - Всем мигрирующим пользователям необходимо проверить подключение к [URL-адресам и IP-адресам Office 365](urls-and-ip-address-ranges.md), которые включают в себя новые регионы центров обработки данных в Германии.
 - Ознакомьтесь с описанием службы платформы Office 365, чтобы понять, какие функции и службы станут доступны вашей организации после завершения миграции в регион в Германии. 
-- Во время миграции будут переходить платные подписки.
+- Во время миграции будут переходить платные подписки.  Мы не переносим пробные подписки.
 
 Миграции клиента выполняются в виде серверных операций обслуживания, для которых требуется минимальное взаимодействие с клиентом.  В процессе миграции в Центре сообщений будет отображаться информация о любых дополнительные задачах, выполняемых клиентом, и об общем состоянии миграции.  Примером задач могут быть управляемые клиентом обновления DNS или реконфигурация гибридной настройки для гибридных клиентов Exchange.
 
 ## <a name="customer-experience-during-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Взаимодействие с клиентами в процессе миграции на службы Office 365 в новых регионах центров обработки данных в Германии
 
-Миграции клиента выполняются в виде серверных операций обслуживания с минимальным взаимодействием с конечными клиентами или действиями, требуемыми администраторами.  Однако для каждой рабочей нагрузки следует учитывать ряд моментов.  
+Миграция клиента призвана оказать минимальное влияние на конечных пользователей и администраторов.  Однако для каждой рабочей нагрузки следует учитывать ряд моментов.  
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -130,11 +130,9 @@ ms.locfileid: "39920285"
 - Предлагают полный набор функций, обеспечение безопасности корпоративного уровня и широкие возможности, которые помогают клиентам удовлетворить нормативные требования. 
 - Доступны через существующие контракты веб-служб.
 
-#### <a name="what-is-the-service-availability"></a>Какова доступность у службы?
+#### <a name="what-is-the-service-availability-between-the-different-office-365-cloud-service-offerings"></a>Какова доступность службы между различными предложениями облачных служб Office 365?
 
-Службы Microsoft 365, доступные для подписки только с одним клиентом Office 365
-
-Для Microsoft Cloud для Германии (Microsoft Cloud Deutschland) мы предлагаем следующие службы. Мы не добавляем новые службы в это облачное предложение.
+Указанные ниже 15 служб доступны в предложении облачной службы Microsoft Cloud для Германии (Microsoft Cloud Deutschland).  Мы не добавляем новые службы в Microsoft Cloud для Германии.
 
 1. Exchange Online
 2. Защищенное хранилище для пользователей (Exchange Online)
@@ -152,7 +150,7 @@ ms.locfileid: "39920285"
 14. Office 365 профессиональный плюс
 15. Outlook Mobile
 
-Для служб Office 365 в новых регионах центров обработки данных в Германии мы предлагаем следующие службы. Мы постоянно добавляем новые службы в это облачное предложение.
+В настоящее время пакет служб Office 365 в новых регионах центров обработки данных в Германии включает 29 служб.  Новые функции и службы будут доступны в рамках глобальных служб Office 365 на постоянной основе.
 
 1. Exchange Online
 2. Защищенное хранилище для пользователей (Exchange Online)
@@ -170,14 +168,14 @@ ms.locfileid: "39920285"
 14. Защищенное хранилище для пользователей (SharePoint Online)
 15. OneDrive для бизнеса
 16. Microsoft Stream
-17. Skype для бизнеса (переход на Microsoft Teams)
+17. Skype для бизнеса (переход на Microsoft Teams в процессе миграции)
 18. Облачная УАТС
 19. Конференц-связь через ТСОП
 20. Вызовы ТСОП
 21. Microsoft Teams
 22. Отчеты администратора / Отчеты об использовании
-23. Word Online, Excel Online, PowerPoint, OneNote, Visio Online
-24. 24. Планировщик
+23. Word Online, Excel Online, PowerPoint, OneNote и Visio Online
+24. Планировщик
 25. Sway
 26. Office 365 профессиональный плюс
 27. Outlook Mobile
@@ -186,17 +184,17 @@ ms.locfileid: "39920285"
 
 ### <a name="when-will-migration-happen"></a>Когда произойдет миграция?
 
-- Azure 
+#### <a name="azure"></a>Azure 
 
- Вы можете начать [миграцию](https://docs.microsoft.com/azure/germany/germany-migration-main) своих ресурсов Azure в другой регион уже сегодня. При наличии Azure с Office 365, Dynamics 365 и/или Power BI выполните указанные ниже действия.
+Вы можете начать [миграцию](https://docs.microsoft.com/azure/germany/germany-migration-main) своих ресурсов Azure в другой регион уже сегодня. При наличии Azure с Office 365, Dynamics 365 и/или Power BI выполните указанные ниже действия.
 
-- Office 365
+#### <a name="office-365"></a>Office 365
 
-  [Согласие](https://aka.ms/office365germanymoveoptin) на миграцию под руководством корпорации Майкрософт сегодня. Когда вы будете готовы начать миграцию, то в центре администрирования Microsoft 365 мы проинформируем вас с помощью [Центра сообщений](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide).
+[Согласие](https://aka.ms/office365germanymoveoptin) на миграцию под руководством корпорации Майкрософт сегодня. Когда вы будете готовы начать миграцию, то в центре администрирования Microsoft 365 мы проинформируем вас с помощью [Центра сообщений](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide).
 
-- Dynamics 365 и Power BI
+#### <a name="dynamics-365-and-power-bi"></a>Dynamics 365 и Power BI
 
-  Присоединяйтесь к миграции под руководством корпорации Майкрософт для [Dynamics 365](https://aka.ms/D365ceOptIn) и [Power BI сегодня](https://aka.ms/pbioptin). Когда вы будете готовы начать миграцию, то в центре администрирования Microsoft 365 мы проинформируем вас с помощью [Центра сообщений](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide).
+Присоединяйтесь к миграции под руководством корпорации Майкрософт для [Dynamics 365](https://aka.ms/D365ceOptIn) и [Power BI сегодня](https://aka.ms/pbioptin). Когда вы будете готовы начать миграцию, то в центре администрирования Microsoft 365 мы проинформируем вас с помощью [Центра сообщений](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide).
 
 ### <a name="will-the-price-change-for-the-office-services-that-i-use"></a>Будут ли изменяться цены для используемых мною служб Office?
 
@@ -212,9 +210,10 @@ ms.locfileid: "39920285"
 
 ## <a name="more-information"></a>Дополнительные сведения
 
-- Помощь по миграции Microsoft Cloud Deutschland в [https://aka.ms/germanymigrateassist](https://aka.ms/germanymigrateassist)
-- Как принять участие в миграции на [https://aka.ms/office365germanymoveoptin](https://aka.ms/office365germanymoveoptin)
-- Миграция Dynamics 365 на [https://aka.ms/D365ceOptIn](https://aka.ms/D365ceOptIn)
-- Миграция Power BI на [https://aka.ms/pbioptin](https://aka.ms/pbioptin)
-- URL-адреса и диапазоны IP-адресов для Office 365 на [https://aka.ms/o365endpoints](https://aka.ms/o365endpoints)
-- Мастер гибридной конфигурации Office 365 на [https://aka.ms/HybridWizard](https://aka.ms/HybridWizard)
+- [Помощь по миграции Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
+- [Как принять участие в миграции](https://aka.ms/office365germanymoveoptin)
+- [Сведения о программе миграции Dynamics 365](https://aka.ms/D365ceOptIn)
+- [Сведения о программе миграции Power BI](https://aka.ms/pbioptin)
+- [URL-адреса и диапазоны IP-адресов для Office 365](https://aka.ms/o365endpoints)
+- [Мастер гибридной конфигурации Office 365](https://aka.ms/HybridWizard)
+- [Начало перехода на Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
