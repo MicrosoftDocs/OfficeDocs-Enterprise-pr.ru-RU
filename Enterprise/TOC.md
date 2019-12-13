@@ -152,6 +152,8 @@
 #### [Как запросить перемещение данных](request-your-data-move.md)
 #### [Во время и после перемещения данных](during-and-after-your-data-move.md)
 #### [Ответы на общие вопросы о перемещении данных](data-move-faq.md)
+#### [Microsoft Cloud Deutschland: программа миграции Office 365](ms-cloud-germany-transition.md)
+#### [Microsoft Cloud Deutschland: участие в миграции](ms-cloud-germany-migration-opt-in.md)
 
 ### Гибридные решения
 #### [Использование Azure Active Directory для проверки подлинности в SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
@@ -189,7 +191,7 @@
 ##### [Совместная работа на сайте](collaborate-in-a-site.md)
 ##### [Совместная работа в группе](collaborate-as-a-team.md)
 #### Безопасность гостевого общего доступа
-##### [Анонимный общий доступ](best-practices-anonymous-sharing.md)
+##### [Общий доступ без проверки подлинности](best-practices-anonymous-sharing.md)
 ##### [Ограничение возможности случайного раскрытия файлов при предоставлении доступа гостям](sharing-limit-accidental-exposure.md)
 ##### [Создание безопасной среды гостевого общего доступа](create-a-secure-guest-sharing-environment.md)
 
