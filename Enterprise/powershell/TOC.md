@@ -7,22 +7,31 @@
 ### [Использование Windows PowerShell для создания отчетов в Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
 ### [Сведения о командлетах для служб Office 365](cmdlet-references-for-office-365-services.md)
 ### [Ресурсы сообщества PowerShell Office 365](office-365-powershell-community-resources.md)
-## [Управление пользовательскими учетными записями и лицензиями](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-### [Просмотр лицензий и служб](view-licenses-and-services-with-office-365-powershell.md)
-### [Просмотр лицензированных и нелицензированных пользователей](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
-### [Назначение лицензий учетным записям пользователей](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-### [Просмотр сведений о лицензии и службе учетной записи](view-account-license-and-service-details-with-office-365-powershell.md)
-### [Назначение ролей учетным записям пользователей](assign-roles-to-user-accounts-with-office-365-powershell.md)
-### [Отключение доступа к службам](disable-access-to-services-with-office-365-powershell.md)
-#### [Отключение доступа к Sway](disable-access-to-sway-with-office-365-powershell.md)
-#### [Отключение доступа к службам во время назначения лицензий](disable-access-to-services-while-assigning-user-licenses.md)
-### [Удаление лицензий из учетных записей пользователей](remove-licenses-from-user-accounts-with-office-365-powershell.md)
-### [Блокировка учетных записей пользователей](block-user-accounts-with-office-365-powershell.md)
-### [Удаление и восстановление учетных записей пользователей](delete-and-restore-user-accounts-with-office-365-powershell.md)
-### [Создание учетных записей пользователей](create-user-accounts-with-office-365-powershell.md)
-### [Просмотр учетных записей пользователей](view-user-accounts-with-office-365-powershell.md)
-### [Настройка свойств учетной записи пользователя](configure-user-account-properties-with-office-365-powershell.md)
-## [Управление группами](manage-office-365-groups-with-powershell.md)
+
+## [Управление пользовательскими учетными записями, лицензиями и группами](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+
+### Учетные записи пользователей
+#### [Создание учетных записей пользователей](create-user-accounts-with-office-365-powershell.md)
+#### [Просмотр учетных записей пользователей](view-user-accounts-with-office-365-powershell.md)
+#### [Настройка свойств учетной записи пользователя](configure-user-account-properties-with-office-365-powershell.md)
+#### [Назначение ролей учетным записям пользователей](assign-roles-to-user-accounts-with-office-365-powershell.md)
+#### [Удаление и восстановление учетных записей пользователей](delete-and-restore-user-accounts-with-office-365-powershell.md)
+#### [Блокировка учетных записей пользователей](block-user-accounts-with-office-365-powershell.md)
+
+### Лицензии и службы
+#### [Просмотр лицензий и служб](view-licenses-and-services-with-office-365-powershell.md)
+#### [Просмотр лицензированных и нелицензированных пользователей](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+#### [Назначение лицензий учетным записям пользователей](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+#### [Просмотр сведений о лицензии и службе учетной записи](view-account-license-and-service-details-with-office-365-powershell.md)
+#### [Отключение доступа к службам](disable-access-to-services-with-office-365-powershell.md)
+##### [Отключение доступа к Sway](disable-access-to-sway-with-office-365-powershell.md)
+##### [Отключение доступа к службам во время назначения лицензий](disable-access-to-services-while-assigning-user-licenses.md)
+#### [Удаление лицензий из учетных записей пользователей](remove-licenses-from-user-accounts-with-office-365-powershell.md)
+
+### Группы
+#### [Управление участием в группах](maintain-group-membership-with-office-365-powershell.md)
+#### [Управление группами Office 365](manage-office-365-groups-with-powershell.md)
+
 ## [Управление SharePoint Online](manage-sharepoint-online-with-office-365-powershell.md)
 ### [Создание сайтов и добавление пользователей в SharePoint Online](create-sharepoint-sites-and-add-users-with-powershell.md)
 ### [Управление пользователями и группами SharePoint Online](manage-sharepoint-users-and-groups-with-powershell.md)
