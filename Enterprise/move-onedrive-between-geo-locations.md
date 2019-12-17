@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Сведения о перемещении сайта OneDrive в другой геообъект.
-ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 9760d61a8a1db76e3abf061552e0a99d85b9092a
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626169"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072561"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Перемещение сайта OneDrive в другой геообъект 
 
@@ -47,7 +47,7 @@ ms.locfileid: "38626169"
 
 - Можно запланировать до 4000 перемещений за один раз.
 - После начала перемещения можно продолжить планирование, не превышая 4000 ожидаемых перемещений в очереди в любой момент времени.
-- Рекомендуется не планировать более 4000 перемещений в месяц.
+- Максимальный размер OneDrive, который можно переместить, составляет 1 терабайт (1 ТБ).
 
 ## <a name="moving-a-onedrive-site"></a>Перемещение сайта OneDrive
 

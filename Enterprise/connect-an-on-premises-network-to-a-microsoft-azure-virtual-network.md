@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: Сводка. Узнайте, как настроить распределенную виртуальную сеть Azure для серверных рабочих нагрузок Office с VPN-подключением типа "сеть-сеть".
-ms.openlocfilehash: 34d7b7310fd0828732e288f090314b8689953b50
-ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
+ms.openlocfilehash: 2d87c269565c3281c2f047187fd48578153088be
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39254598"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072301"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Подключение локальной сети к виртуальной сети Microsoft Azure
 
@@ -142,11 +142,11 @@ ms.locfileid: "39254598"
   
 |**Элемент**|**Элемент Configuration**|**Описание**|**Значение**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Имя виртуальной сети  <br/> |Имя, назначаемое виртуальной сети Azure (например, DirSyncNet).  <br/> |![](./media/Common-Images/TableLine.png) |
-|2.  <br/> |Расположение виртуальной сети  <br/> |Центр обработки данных Azure, в котором будет расположена виртуальная сеть (например, Запад США).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |IP-адрес VPN-устройства  <br/> |Общедоступный IPv4-адрес интерфейса VPN-устройства в Интернете. Попросите ИТ-отдел определить этот адрес.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Адресное пространство виртуальной сети  <br/> |Адресное пространство (определенное в одном префиксе личного адреса) для виртуальной сети. Определите это адресное пространство при поддержке ИТ-отдела. Оно должно быть представлено в формате CIDR, также известном как формат префикса сети. Пример: 10.24.64.0/20.  <br/> |![](./media/Common-Images/TableLine.png) <br/> |
-|5.  <br/> |Общий ключ IPsec  <br/> |32-значный случайный буквенно-цифровой ключ, который будет использоваться для проверки подлинности обеих сторон VPN-подключения. Определите значение этого ключа при поддержке ИТ-отдела, а затем сохраните его в надежном месте. Вы также можете ознакомиться со статьей [Создание случайной строки для предварительного ключа IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./media/Common-Images/TableLine.png) <br/> |
+|1.  <br/> |Имя виртуальной сети  <br/> |Имя, назначаемое виртуальной сети Azure (например, DirSyncNet).  <br/> |![линия](./media/Common-Images/TableLine.png) |
+|2.  <br/> |Расположение виртуальной сети  <br/> |Центр обработки данных Azure, в котором будет расположена виртуальная сеть (например, Запад США).  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |IP-адрес VPN-устройства  <br/> |Общедоступный IPv4-адрес интерфейса VPN-устройства в Интернете. Попросите ИТ-отдел определить этот адрес.  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Адресное пространство виртуальной сети  <br/> |Адресное пространство (определенное в одном префиксе личного адреса) для виртуальной сети. Определите это адресное пространство при поддержке ИТ-отдела. Оно должно быть представлено в формате CIDR, также известном как формат префикса сети. Пример: 10.24.64.0/20.  <br/> |![линия](./media/Common-Images/TableLine.png) <br/> |
+|5.  <br/> |Общий ключ IPsec  <br/> |32-значный случайный буквенно-цифровой ключ, который будет использоваться для проверки подлинности обеих сторон VPN-подключения. Определите значение этого ключа при поддержке ИТ-отдела, а затем сохраните его в надежном месте. Вы также можете ознакомиться со статьей [Создание случайной строки для предварительного ключа IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![линия](./media/Common-Images/TableLine.png) <br/> |
    
 Укажите подсети этого решения в таблице S.
   
@@ -160,8 +160,8 @@ ms.locfileid: "39254598"
   
 |**Элемент**|**Имя подсети**|**Адресное пространство подсети**|**Назначение**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая шлюзом Azure.  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |Подсеть, используемая шлюзом Azure.  <br/> |
+|2.  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |
    
 Для локальных DNS-серверов, используемых виртуальными машинами в виртуальной сети, заполните таблицу D. Присвойте каждому DNS-серверу понятное имя и один IP-адрес. Это понятное имя необязательно должно совпадать с именем узла или именем компьютера на DNS-сервере. Обратите внимание, что представлено два пустых поля, но вы можете добавить еще. Определите этот список при поддержке ИТ-отдела.
   
@@ -169,8 +169,8 @@ ms.locfileid: "39254598"
   
 |**Элемент**|**Понятное имя DNS-сервера**|**IP-адрес DNS-сервера**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |
    
 Чтобы отправлять пакеты из виртуальной сети Azure в сеть организации с помощью VPN-подключения типа "сеть-сеть", необходимо настроить виртуальную сеть с локальной сетью. Эта локальная сеть содержит список адресных пространств (в формате CIDR) для всех расположений в локальной сети организации, которые должны быть доступны виртуальным машинам в виртуальной сети. Это могут быть все расположения в локальной сети или подсети. Список адресных пространств, которые определяют локальную сеть, должен быть уникален и не должен пересекаться с адресными пространствами, используемыми для этой или других виртуальных сетей.
   
@@ -180,9 +180,9 @@ ms.locfileid: "39254598"
   
 |**Элемент**|**Адресное пространство локальной сети**|
 |:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![линия](./media/Common-Images/TableLine.png)  <br/> |
    
 ## <a name="deployment-roadmap"></a>План развертывания
 <a name="DeploymentRoadmap"> </a>
