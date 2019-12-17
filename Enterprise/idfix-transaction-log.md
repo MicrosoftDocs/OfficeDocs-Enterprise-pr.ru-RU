@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: В этом разделе приводится пример и описывается соглашение об именовании и уровень журнала по умолчанию для журнала транзакций Office 365 IdFix.
-ms.openlocfilehash: 22ea5af87b1bbcaa96f88e3746a50f1411a01b9a
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: af1ce72760d9a94438eeead50474094ca0e3a2bd
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813427"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072171"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Журнал транзакций Office 365 IdFix
 
@@ -68,5 +68,4 @@ IdFix записывает результаты каждого действия 
 5/22/2018 6:37:57 AM Update: [CN=user000001,OU=e2k10OU1,DC=e2k10,DC=com][user][mailnickname][character][user?^|000001][user000001][UNDO]
 5/22/2018 6:37:57 AM Update: [CN=user000008,OU=e2k10OU1,DC=e2k10,DC=com][user][targetAddress][duplicate][smtp:user000008@customer.com][][UNDO]
 5/22/2018 6:37:57 AM COMPLETE
-
 ```

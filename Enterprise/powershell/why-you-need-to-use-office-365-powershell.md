@@ -3,7 +3,7 @@ title: Причины использования Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/11/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,30 +12,30 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Сводка: в этой статье рассказывается, почему необходимо использовать PowerShell в Office 365 для управления Office 365:: в ряде случаев это может быть более эффективно, а в других  вызвано необходимостью.'
-ms.openlocfilehash: 3e2f0d4ee1c86e26ccf728412d419ae6ba3018e7
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: ecf386e39c9610f0444789cdc11441be545ea814
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655788"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072431"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Причины использования Office 365 PowerShell
 
-С помощью центра администрирования Microsoft 365 вы можете не только управлять своими учетными записями пользователей и лицензиями Office 365, но также можете управлять серверными продуктами Office 365: Exchange, Skype для бизнеса Online и SharePoint Online. Тем не менее, вы также можете управлять этими элементами с помощью команд PowerShell для Office 365, используя преимущества командной строки и язык сценариев для ускорения, автоматизации и дополнительной возможности.
+С помощью центра администрирования Microsoft 365 можно не только управлять учетными записями пользователей и лицензиями Office 365, но и управлять такими службами Office 365, как Exchange Online, Teams и SharePoint Online. Тем не менее, вы также можете управлять этими элементами с помощью команд PowerShell для Office 365, используя преимущества командной строки и язык сценариев для ускорения, автоматизации и дополнительной возможности.
   
-В этой статье мы покажем вам эти способы использования PowerShell в Office 365 для управления Office 365:.
+В этой статье мы расскажем, как использовать PowerShell Office 365 для управления Office 365:
   
-- Office 365 PowerShell может открыть дополнительные сведения, которые не отображаются в центре администрирования Microsoft 365
+- Показать дополнительные сведения, которые не отображаются в центре администрирования Microsoft 365
     
-- Некоторые компоненты Office 365 можно настроить только с помощью PowerShell Office 365
+- Настройка компонентов и параметров, доступных только с помощью PowerShell для Office 365
     
-- PowerShell в Office 365 идеально подходит для выполнения групповых операций.
+- Выполнение массовых операций
     
-- Возможности фильтрации данных с помощью PowerShel Office 365
+- Фильтрация данных
     
-- Упрощение печати или сохранения данных с помощью PowerShell Office 365
+- Печать или сохранение данных
     
-- PowerShell для Office 365 позволяет управлять различными серверными продуктами
+- Управление между службами
     
 Приступая к чтению статьи, необходимо понимать, что PowerShell в Office 365 — это набор модулей для Windows PowerShell, среды командной строки для служб и платформ Windows. Эта среда создает язык командной строки, который можно расширить с помощью дополнительных модулей и который позволяет выполнять как простые, так и сложные команды и скрипты. Например, после установки модулей PowerShell в Office 365 и подключения подписки на Office 365 вы можете выполнить следующую команду, чтобы получить список всех почтовых ящиков пользователей для Microsoft Exchange Online:
   
@@ -159,7 +159,6 @@ $x = Get-MsolUser
 $x | Select DisplayName, UsageLocation
 ```
 
-
 Этот набор команд PowerShell для Office 365 интерпретируется так:
 - Возвращается список всех пользователей в текущей подписке Office 365, после чего сведения сохраняются в переменной $x (**$x = Get-MsolUser**).
 - Отображается содержимое переменной $x, которое включает в себя только имя и местонахождение каждого пользователя (**$x | Select DisplayName, UsageLocation**).
@@ -231,7 +230,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> Для использования этой команды необходимо [подключиться к PowerShell для SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps). 
+> Для этой команды необходимо установить [модуль PowerShell для SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps). 
   
 > [!TIP]
 >  Эта команда PowerShell возвращает список всех сайтов SharePoint в текущей подписке Office 365 (**Get-SPOSite**) и удаляет пользователя Ken Meyer из списка зарегистрированных пользователей каждого сайта (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}**).
@@ -427,7 +426,7 @@ Molly Dempsey           False        True               False
 
 [Начало работы с PowerShell для Office 365](getting-started-with-office-365-powershell.md)
   
-[Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Использование Windows PowerShell для создания отчетов в Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
 

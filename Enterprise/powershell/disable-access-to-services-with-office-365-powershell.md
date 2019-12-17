@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Отключение доступа к службам Office 365 для пользователей с помощью PowerShell в Office 365.
-ms.openlocfilehash: 9668175010b2581bcdd40988f605f68eea30520d
-ms.sourcegitcommit: 572375d69c438bd1eae012e6e98039be0a126a6d
+ms.openlocfilehash: 83967e0b44099fb651edaa7f7cba9e811f9fdf81
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39872247"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072201"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Отключение доступа к службам с помощью Office 365 PowerShell
 
@@ -155,11 +155,6 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 Чтобы отключить службы Office 365 для пользователей при назначении их плану лицензирования, ознакомьтесь со статьей [Отключение доступа к службам при назначении пользовательских лицензий](disable-access-to-services-while-assigning-user-licenses.md).
 
 
-## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
-<a name="LinkedIn"> </a>
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-   
 ## <a name="see-also"></a>См. также
 <a name="SeeAlso"> </a>
 

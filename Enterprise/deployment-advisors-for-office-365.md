@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Ускорьте планирование и настройку Office 365 или Microsoft 365 с помощью рекомендаций по развертыванию.
-ms.openlocfilehash: a698ea4cf4eec5640d836986ce45f71bf7dba0a8
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076153"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072371"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Рекомендации по развертыванию служб Office 365 или Майкрософт 365
 
@@ -37,13 +37,13 @@ ms.locfileid: "38076153"
 
 Каждый помощник — это мастер, который поможет вам выбрать нужные компоненты и параметры развертывания. В некоторых случаях вы можете использовать мастер, чтобы настроить действие или активировать параметр. Пример:
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
+![Пример помощника по развертыванию](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
 
 Помощник по выполнению рекомендаций поможет вам выполнить индивидуальную настройку ваших потребностей. Кроме того, вы получите инструкции, сценарии и другие ресурсы, чтобы внести изменения в конфигурацию.
 
 В конце вы получите ссылки на видеоролики и справочные статьи. Пример:
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
+![Примеры ссылок на видеоролики и справочные статьи](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
 
 Эти рекомендации можно использовать в любое время, чтобы узнать больше о возможностях и вариантах Office 365. Это включается во время планирования или после того, как вы уже настроили службы.
   

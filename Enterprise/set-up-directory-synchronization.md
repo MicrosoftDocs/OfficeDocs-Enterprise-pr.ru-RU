@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Узнайте, как настроить синхронизацию каталогов между Office 365 и локальной службой Active Directory.
-ms.openlocfilehash: 5cd56eb90e6421d530ff0c2b8739bd13be238eae
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 505dde1a371d269f157ec076b75ca1bc5962c9da
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814597"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072151"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Настройка синхронизации службы каталогов для Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "39814597"
 
 Если у вас есть локальные доменные службы Active Directory, вы можете синхронизировать учетные записи пользователей, группы и контакты доменных служб Active Directory с клиентом Azure AD для вашей подписки на Office 365. Это гибридное удостоверение для Office 365. Ниже перечислены его компоненты.
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![Компоненты синхронизации каталогов для Office 365](./media/about-office-365-identity/hybrid-identity.png)
 
 Azure AD Connect запускается на локальном сервере и синхронизирует ваши доменные службы Active Directory с клиентом Azure AD. Одновременно с синхронизацией каталогов вы можете также задать приведенные ниже параметры проверки подлинности.
 

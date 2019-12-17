@@ -3,7 +3,7 @@ title: Начало работы с Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,17 +14,15 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 'Сводка. Указанные ниже статьи раскрывают важность PowerShell в Office 365 и объясняют, как подключиться к клиенту Office 365: и где получить поддержку.'
-ms.openlocfilehash: aeabc0b4ab799f542a05e5279b8ff5cb7123abd8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d1066d914708bd267b5de38099b6cf6175268f9c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068955"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072181"
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Начало работы с Office 365 PowerShell
 
- **Сводка.** Узнайте, для чего нужен PowerShell, как подключиться к клиенту Office 365 и куда обратиться за помощью.
-  
 Благодаря PowerShell в Office 365 вы можете управлять Office 365: с помощью команд и сценариев, которые упорядочивают вашу ежедневную работу. Узнайте, почему возможности PowerShell в Office 365 имеют важнейшее значение при управлении Office 365:, подключении вашей подписки Office 365:, создании отчетов и получении дополнительной информации и справочных сведений из сообщества Office 365:.
   
 Выберите необходимую вам статью из перечисленных ниже.
@@ -54,8 +52,6 @@ ms.locfileid: "34068955"
     Ознакомьтесь с этой статьей, чтобы связаться с участниками сообщества PowerShell и получить помощь или текущую информацию об использовании PowerShell в Office 365.
     
 ## <a name="see-also"></a>См. также
-
-#### 
 
 [Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
 

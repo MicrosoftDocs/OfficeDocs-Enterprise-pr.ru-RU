@@ -3,7 +3,7 @@ title: Просмотр лицензий и служб с помощью PowerSh
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: В этой статье рассказывается, как использовать PowerShell для Office 365 для просмотра сведений о планах лицензирования, службах и лицензиях, доступных в организации Office 365.
-ms.openlocfilehash: b8a0bb1845f3c0db5aa47cea0c2f6e5e580c804f
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: d212a79be127dabae52993cb8cfd21fb848b3aad
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655851"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072161"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Просмотр лицензий и служб с помощью PowerShell в Office 365
 
@@ -46,7 +46,7 @@ ms.locfileid: "39655851"
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
 ```
 
-Результаты содержат сведения, указанные ниже.
+Результаты содержат:
   
 - **Скупартнумбер:** Показывает доступные планы лицензирования для вашей организации. Например, `ENTERPRISEPACK` это название плана лицензирования для Office 365 корпоративный E3.
     
@@ -115,7 +115,7 @@ Get-MsolAccountSku
 
 Результаты содержат сведения, указанные ниже.
   
-- **AccountSkuId:** Отображение доступных планов лицензирования для Организации с помощью синтаксиса `<CompanyName>:<LicensingPlan>`.  _<CompanyName>_— Это значение, заданное при регистрации в Office 365, и уникальное для вашей организации. Это _<LicensingPlan>_ значение одинаково для всех. Например, в значении `litwareinc:ENTERPRISEPACK`название `litwareinc`компании и название `ENTERPRISEPACK`плана лицензирования, которое является системным именем для Office 365 корпоративный E3.
+- **AccountSkuId:** Отображение доступных планов лицензирования для Организации с помощью синтаксиса `<CompanyName>:<LicensingPlan>`.  CompanyName>— это значение, которое вы задаете при регистрации в Office 365 и является уникальным для вашей организации. _ \<_ Значение _ \<>лиценсингплан_ одинаково для всех. Например, в значении `litwareinc:ENTERPRISEPACK`название `litwareinc`компании и название `ENTERPRISEPACK`плана лицензирования, которое является системным именем для Office 365 корпоративный E3.
     
 - **ActiveUnits:** Количество лицензий, приобретенных для определенного плана лицензирования.
     
@@ -139,7 +139,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office профессиональный плюс  <br/> |
 | `MCOSTANDARD` <br/> |Skype для бизнеса Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office  <br/> |
+| `SHAREPOINTWAC` <br/> |Кабинет  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (план 2)  <br/> |
    
@@ -157,15 +157,10 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-
-## <a name="new-to-office-365"></a>Никогда не работали с Office 365?
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-   
 ## <a name="see-also"></a>См. также
 
-[Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)

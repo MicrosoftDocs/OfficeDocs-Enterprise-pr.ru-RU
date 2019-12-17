@@ -20,15 +20,15 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Сведения о том, что делать, если у вас нет домена раутале, связанного с локальными пользователями, прежде чем выполнять синхронизацию с Office 365.
-ms.openlocfilehash: cf7b901c3aaf6f49e4ecd92d27b9a6d9b8951d40
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 013d29acdd3761793a93dab1eb8583324ba08591
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203638"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072421"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Подготовка домена, не поддерживающего маршрутизацию, для синхронизации службы каталогов
-При синхронизации локального каталога с Office 365 необходимо иметь проверенный домен в Azure Active Directory. Синхронизируются только имена участников-пользователей (UPN), связанные с локальным доменом. Тем не менее, любой UPN, который содержит домен без маршрутизации, например, Local (например, Билла @ contoso. local), будет синхронизирован с доменом onmicrosoft.com (например, billa@contoso.onmicrosoft.com). 
+При синхронизации локального каталога с Office 365 необходимо иметь проверенный домен в Azure Active Directory. Синхронизируются только имена участников-пользователей (UPN), связанные с локальным доменом. Тем не менее, любой UPN, который содержит домен без поддержки маршрутизации, например Local (например, billa@contoso. local), будет синхронизирован с доменом onmicrosoft.com (например, billa@contoso.onmicrosoft.com). 
 
 Если в настоящее время для учетных записей пользователей в Active Directory используется локальный домен, рекомендуется изменить их на использование проверенного домена (например, billa@contoso.com), чтобы обеспечить правильную синхронизацию с доменом Office 365.
   
@@ -62,7 +62,7 @@ Azure AD Connect синхронизирует UPN и пароль пользов
     
     ![Щелкните правой кнопкой мыши "домены и доверие" ActiveDirectory и выберите пункт "Свойства".](media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
-3. На вкладке **UPN** -суффиксы в поле **Дополнительные UPN** -суффиксы введите новые суффиксы UPN или суффиксы, а затем нажмите кнопку **Add** \> **Apply**(Добавить).
+3. На вкладке **UPN-суффиксы** в поле **Дополнительные UPN-суффиксы** введите новые суффиксы UPN или суффиксы, а затем нажмите кнопку **Add** \> **Apply**(Добавить).
     
     ![Добавление нового суффикса имени участника-пользователя](media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
@@ -91,12 +91,10 @@ Azure AD Connect синхронизирует UPN и пароль пользов
 
 Выполните следующие команды Windows PowerShell, чтобы обновить все локальные суффиксы contoso. contoso.com:
     
-  ```
+  ```powershell
   $LocalUsers = Get-ADUser -Filter {UserPrincipalName -like '*contoso.local'} -Properties userPrincipalName -ResultSetSize $null
-  ```
-
-  ```
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("contoso.local","contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
+
 Чтобы узнать больше об использовании Windows PowerShell в Active Directory, обратитесь к разделу [Windows PowerShell Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=624314) . 
 

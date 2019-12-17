@@ -21,16 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2010, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: af31db341aab1c52873613682c03dd54b3b76225
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 9df09e0f31358c9dd1bfe4a4adde99d41070060f
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748009"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072411"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Office 2010, Exchange Server 2010, SharePoint 2010 и Project Server 2010 достигают конца поддержки **13 октября 2020**. 
 
@@ -42,7 +42,7 @@ Office 2010, Exchange Server 2010, SharePoint 2010 и Project Server 2010 дос
 
 Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, ознакомьтесь с разрядом с [плакатом об отконце поддержки](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+![Плакат о клиентах и серверах Office 2010 и о конце поддержки Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
 Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять, чтобы запретить клиенту Office 2010 и серверным продуктам и Windows 7 достичь конца поддержки, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
 
@@ -62,7 +62,7 @@ Office 2010, Exchange Server 2010, SharePoint 2010 и Project Server 2010 дос
 
 Если вы используете продукты и приложения Office 2010 на домашней странице, ознакомьтесь с [этими сведениями](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>См. также
 
 [Группа для клиентов, у которых завершается поддержка продуктов Office (сообщество Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
   

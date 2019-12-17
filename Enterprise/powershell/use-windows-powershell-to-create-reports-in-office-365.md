@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: Сводка. Создавайте отчеты, которые нельзя создать в Центре администрирования Microsoft 365, используя PowerShell в Office 365.
-ms.openlocfilehash: 4303f03c282c84972428ab8e5010aa316f40c90a
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 9b3ab8490eb3b4b89878eb8ea94ebc5a99ca9254
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746262"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072461"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Использование Windows PowerShell для создания отчетов в Office 365
 
@@ -63,5 +63,5 @@ ms.locfileid: "38746262"
   
 [Управление SharePoint Online с помощью Office 365 PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
   
-[Управление учетными записями и лицензиями пользователей с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

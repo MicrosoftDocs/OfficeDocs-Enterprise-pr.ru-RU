@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Защитите глобальный администратор доступ к вашей подписке на Office 365.
-ms.openlocfilehash: a428f3d70e87744c33c5fb5187dc869f3b2029e1
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 293044fc508c89b5e08234aa62633c6c4490ba6d
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814607"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072211"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Защита учетных записей глобальных администраторов Office 365
 
@@ -49,7 +49,7 @@ ms.locfileid: "39814607"
   
 1. Определите набор учетных записей пользователей, которым назначена роль глобального администратора. Для этого можно использовать командную консоль PowerShell Active Directory (Azure AD) PowerShell для Graph:
   
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
@@ -75,7 +75,7 @@ ms.locfileid: "39814607"
   
 - Роль глобального администратора имеют только новые специальные учетные записи глобального администратора. Проверьте это с помощью следующей команды PowerShell:
     
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
@@ -148,7 +148,7 @@ ms.locfileid: "39814607"
 
 Программное обеспечение SIEM, выполняемое на сервере, выполняет анализ оповещений системы безопасности и событий, созданных приложениями и сетевым оборудованием, в режиме реального времени. Чтобы разрешить серверу SIEM включать оповещения и события безопасности Office 365 в функции анализа и создания отчетов, интегрируйте Azure AD в вы СЕИМ. Ознакомьтесь [со статьей введение в службу интеграции журналов Azure](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
 
-## <a name="next-step"></a>Следующий шаг
+## <a name="next-step"></a>Следующий этап
 
 Если вы настраиваете удостоверение для подписки на Office 365, ознакомьтесь со статьей:
 
