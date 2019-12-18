@@ -14,18 +14,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Сводка: использование PowerShell в Office 365 для создания новых сайтов SharePoint Online и добавления пользователей и групп на эти сайты.'
-ms.openlocfilehash: abe8f76de07c230c0d1484ccfb57b3b9a7bf8d34
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: f15add5652af44d24e2fec678c5224b5efd7aa4f
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707026"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261352"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Создание сайтов и добавление пользователей в SharePoint Online с помощью Office 365 PowerShell
 
- **Сводка:** С помощью PowerShell в Office 365 создайте новые сайты SharePoint Online, а затем добавьте пользователей и группы на эти сайты.
-
-Когда вы используете Office 365 PowerShell для создания сайтов SharePoint Online и добавления пользователей, вы можете быстро и многократно выполнять задачи гораздо быстрее, чем в центре администрирования Office 356. Кроме того, вы можете выполнить задачи, которые недоступны в Центре администрирования Office 356. 
+Когда вы используете Office 365 PowerShell для создания сайтов SharePoint Online и добавления пользователей, вы можете быстро и многократно выполнять задачи гораздо быстрее, чем в центре администрирования Майкрософт 356. Кроме того, вы можете выполнить задачи, которые недоступны в Центре администрирования Office 356. 
 
 ## <a name="before-you-begin"></a>Перед началом работы
 
@@ -53,11 +51,11 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 2. Сохраните файл на рабочем столе в формате **SiteCollections. csv**.<br/>
 
 > [!TIP]
-> Перед использованием этого или другого CSV-файла либо файла сценария Windows PowerShell рекомендуем убедиться, что в них нет лишних или непечатаемых символов. Откройте файл в Word и щелкните значок абзаца на ленте, чтобы показать непечатаемые символы. Файлы не должны содержать лишние непечатаемые символы. Например, в конце файла не должно быть знаков абзаца.
+> Перед использованием этого или другого файла сценария. CSV или Windows PowerShell рекомендуется убедиться в отсутствии лишних или непечатаемых символов. Откройте файл в Word и щелкните значок абзаца на ленте, чтобы показать непечатаемые символы. Файлы не должны содержать лишние непечатаемые символы. Например, в конце файла не должно быть знаков абзаца.
 
 ### <a name="run-the-windows-powershell-command"></a>Выполнение команды Windows PowerShell
 
-1. В командной строке Windows PowerShell введите или скопируйте и вставьте следующий командлет, а затем нажмите клавишу ВВОД:<br/>
+1. В командной консоли Windows PowerShell введите (или скопируйте и вставьте) следующую команду и нажмите клавишу ВВОД:<br/>
 ```powershell
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
@@ -72,24 +70,25 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
 
-4. Обратите внимание на новые семейства веб-сайтов в списке. Должны отобразиться следующие семейства веб-сайтов: **ContosoTest**, **TeamSite01**, **Blog01**и **Project01**
+4. Обратите внимание на новые семейства веб-сайтов в списке. Используя наш пример CSV-файла, вы увидите следующие семейства веб-сайтов: **TeamSite01**, **Blog01**, **Project01**и **Community01**
 
-Вот и все. Вы создали несколько семейств веб-сайтов с помощью CSV-файла и одного командлета Windows PowerShell. Теперь вы можете создать пользователей и назначить их сайтам.
+Вот и все. Вы создали несколько семейств веб-сайтов с помощью созданного CSV-файла и одной команды Windows PowerShell. Теперь вы можете создать пользователей и назначить их сайтам.
 
 ## <a name="step-2-add-users-and-groups"></a>Действие 2. Добавление пользователей или групп
 
 Теперь мы создадим пользователей и добавим их в группу семейства сайтов. Мы используем CSV-файл для массовой загрузки новых групп и пользователей.
 
-В следующих процедурах предполагается, что вы успешно создали семейства сайтов contosotest, TeamSite01, Blog01 и Project01.
+Следующие процедуры продолжают использовать примеры сайтов TeamSite01, Blog01, Project01 и Community01.
 
 ### <a name="create-csv-and-ps1-files"></a>Создание CSV- и PS1-файлов
 
 1. Откройте Блокнот и вставьте в него следующий блок текста:<br/>
+
 ```powershell
 Site,Group,PermissionLevels
-https://tenant.sharepoint.com/sites/contosotest,Contoso Project Leads,Full Control
-https://tenant.sharepoint.com/sites/contosotest,Contoso Auditors,View Only
-https://tenant.sharepoint.com/sites/contosotest,Contoso Designers,Design
+https://tenant.sharepoint.com/sites/Community01,Contoso Project Leads,Full Control
+https://tenant.sharepoint.com/sites/Community01,Contoso Auditors,View Only
+https://tenant.sharepoint.com/sites/Community01,Contoso Designers,Design
 https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Team Leads,Full Control
 https://tenant.sharepoint.com/sites/TeamSite01,XT1000 Advisors,Edit
 https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
@@ -104,9 +103,9 @@ https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Contr
 
 ```powershell
 Group,LoginName,Site
-Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
-Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
-Contoso Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
+Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
+Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
+Contoso Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Community01
 XT1000 Team Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
 XT1000 Advisors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/TeamSite01
 Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01

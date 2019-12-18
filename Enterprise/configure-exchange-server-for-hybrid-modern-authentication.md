@@ -14,16 +14,16 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: Гибридная современная проверка подлинности (HMA) — это способ управления удостоверениями, обеспечивающий более безопасную проверку подлинности и авторизацию пользователей, а также доступный для локальных гибридных развертываний Exchange Server.
-ms.openlocfilehash: 44061a8b75a07283c36d02812488441d40f9c9c3
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f5bbbffb3d21ab5eebfb7704318c08abe75f064b
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746222"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085174"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Гибридная современная проверка подлинности (HMA) — это способ управления удостоверениями, обеспечивающий более безопасную проверку подлинности и авторизацию пользователей, а также доступный для локальных гибридных развертываний Exchange Server.
   
@@ -154,10 +154,13 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 Кроме того, следует удерживать нажатой клавишу CTRL, щелкнув значок клиента Outlook (также в области уведомлений Windows), и выберите пункт "состояние подключения". Найдите SMTP-адрес клиента для типа "определения" носителя "Bearer\*", который представляет токен носителя, используемый в OAuth.
   
  **Note (Примечание** ) Требуется настроить Skype для бизнеса с HMA? Вам потребуются две статьи: одна, в которой перечислены [Поддерживаемые топологии](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)и одна, которая показывает, [как выполнить настройку](configure-skype-for-business-for-hybrid-modern-authentication.md).
+ 
+## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>Гибридная современная проверка подлинности в случае Outlook для iOS и Android
+
+Если вы являетесь локальным клиентом, использующим Exchange Server по протоколу TCP 443, белом следующие диапазоны IP-адресов: <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> 
   
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>См. также
 
 [Обзор гибридной современной проверки подлинности и предварительные требования для их использования с локальными серверами Skype для бизнеса и Exchange](hybrid-modern-auth-overview.md) 
   
-

@@ -3,7 +3,7 @@ title: Использование PowerShell в Office 365 для удалени
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/23/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,19 +16,18 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: В этой статье объясняется, как использовать PowerShell для Office 365 для удаления лицензий Office 365, которые ранее были назначены пользователям.
-ms.openlocfilehash: cb0d5a17cc40b4c7e1f4d0fbcb14d4851c612ef5
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: f88a8d32616e615ada081af6e7229da57ce3f668
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072481"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261542"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Использование PowerShell в Office 365 для удаления лицензий из учетных записей пользователей
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
 
 Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
-  
 
 Затем перечислите план лицензирования для клиента с помощью этой команды.
 
@@ -56,7 +55,6 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
 
 Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
-
    
 Сведения о плане лицензирования (**AccountSkuID** ) в Организации можно просмотреть в следующих разделах:
     
@@ -78,14 +76,14 @@ Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1
 >В PowerShell Core не поддерживается модуль Microsoft Azure Active Directory для Windows PowerShell и командлеты с компонентом **Msol** в имени. Чтобы использовать эти командлеты, необходимо запустить их из Windows PowerShell.
 >
 
-В этом примере удаляется лицензия `litwareinc:ENTERPRISEPACK` (Office 365 корпоративный E3) из учетной записи пользователя BelindaN@litwareinc.com.
+В этом примере удаляется лицензия **litwareinc: ENTERPRISEPACK** (Office 365 корпоративный E3) из учетной записи пользователя BelindaN@litwareinc.com.
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
 >[!Note]
->Командлет Set – MsolUserLicense нельзя использовать для отмены назначения пользователям *отмененных* лицензий. Это необходимо сделать отдельно для каждой учетной записи пользователя в центре администрирования Microsoft 365.
+>Вы не можете использовать `Set-MsolUserLicense` этот командлет для отмены назначения пользователям *отмененных* лицензий. Это необходимо сделать отдельно для каждой учетной записи пользователя в центре администрирования Microsoft 365.
 >
 
 Чтобы удалить лицензии из группы лицензированных пользователей, используйте один из следующих способов:
@@ -97,7 +95,7 @@ $x = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
 $x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
-В этом примере показано `litwareinc:ENTERPRISEPACK` , как удалить лицензии (Office 365 корпоративный E3) из всех учетных записей для пользователей в отделе продаж в США.
+В этом примере удаляются лицензии **litwareinc: ENTERPRISEPACK** (Office 365 корпоративный E3) из всех учетных записей для пользователей в отделе продаж в США.
     
 ```powershell
 $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
@@ -120,7 +118,7 @@ kakers@contoso.com
   Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"... }
   ```
 
-В этом примере удаляется лицензия `litwareinc:ENTERPRISEPACK` (Office 365 корпоративный E3) из учетных записей пользователей, определенных в текстовом файле "\ мои Documents\Accounts.txt.".
+В этом примере удаляется лицензия **litwareinc: ENTERPRISEPACK** (Office 365 корпоративный E3) из учетных записей пользователей, определенных в текстовом файле "е Documents\Accounts.txt.".
     
   ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUserLicense -UserPrincipalName $_ -RemoveLicenses "litwareinc:ENTERPRISEPACK" }
@@ -133,7 +131,7 @@ $x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
 $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
-В этом примере удаляется лицензия `litwareinc:ENTERPRISEPACK` (Office 365 корпоративный E3) со всех существующих лицензированных учетных записей пользователей.
+В этом примере удаляется лицензия **litwareinc: ENTERPRISEPACK** (Office 365 корпоративный E3) из всех имеющихся лицензированных учетных записей пользователей.
   
 ```powershell
 $x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
@@ -146,7 +144,7 @@ $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -Remov
 
 [Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Узнайте, как совместно работать с гостями на сайте SharePoint.
-ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919262"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261362"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Совместная работа с гостями на сайте
 
@@ -121,7 +121,7 @@ ms.locfileid: "39919262"
 
 Гостевые пользователи не могут добавляться с сайта. Их необходимо добавить с помощью Outlook в Интернете.
 
-Приглашение гостей на сайт
+Приглашение гостей в группу
 1. В Outlook в Интернете в разделе **группы**выберите группу, в которую вы хотите добавить участников.
 2. Откройте карточку контакта группы, а затем в разделе **Дополнительные параметры** (...) нажмите кнопку **Добавить участников**.
 3. Введите адреса электронной почты гостей, которых вы хотите пригласить, и нажмите кнопку **Добавить**.
@@ -133,5 +133,7 @@ ms.locfileid: "39919262"
 
 [Ограничение возможности случайного раскрытия файлов при предоставлении доступа гостям](sharing-limit-accidental-exposure.md)
 
-[Создание безопасной среды общего доступа гостей](create-a-secure-guest-sharing-environment.md))
+[Создание безопасной среды гостевого общего доступа](create-a-secure-guest-sharing-environment.md)
+
+[Создание экстрасети B2B с управляемыми гостями](b2b-extranet.md)
 

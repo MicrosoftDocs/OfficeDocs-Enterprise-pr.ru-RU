@@ -3,7 +3,7 @@ title: Отключение доступа к службам с помощью O
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/04/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Отключение доступа к службам Office 365 для пользователей с помощью PowerShell в Office 365.
-ms.openlocfilehash: 83967e0b44099fb651edaa7f7cba9e811f9fdf81
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 7f50d3bbe08f02ee1149ca10859c9583b10f5e2d
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072201"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261422"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Отключение доступа к службам с помощью Office 365 PowerShell
 
@@ -156,17 +156,9 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 
 
 ## <a name="see-also"></a>См. также
-<a name="SeeAlso"> </a>
 
-Сведения об управлении пользователями с помощью Office 365 PowerShell см. в следующих статьях:
+[Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-- [Удаление и восстановление учетных записей пользователей с помощью PowerShell в Office 365](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Удаление и восстановление учетных записей пользователей с помощью PowerShell в Office 365](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Блокировка учетных записей пользователей с помощью PowerShell в Office 365](block-user-accounts-with-office-365-powershell.md)
-    
-- [Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-- [Создание учетных записей пользователей с помощью PowerShell в Office 365](create-user-accounts-with-office-365-powershell.md)
-    
+[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+  
+[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)

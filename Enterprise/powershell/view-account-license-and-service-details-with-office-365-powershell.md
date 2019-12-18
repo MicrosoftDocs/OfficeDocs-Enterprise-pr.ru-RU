@@ -3,7 +3,7 @@ title: Просмотр сведений о лицензии и службе у�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: В этой статье объясняется, как использовать PowerShell в Office 365 для определения служб Office 365, назначенных пользователям.
-ms.openlocfilehash: 08e44476ea746b7e8298355e3adc5d0401261acd
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: d56457f00e63d20b9d87e1f90e0e8d12587fcc1f
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072291"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261432"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Просмотр сведений о лицензии и службе учетной записи с помощью PowerShell в Office 365
 
@@ -77,7 +77,7 @@ Get-MsolAccountSku
 Затем выполните эту команду, чтобы получить список служб, доступных в каждом плане лицензирования, и порядок, в котором они указаны (номер индекса).
 
 ```powershell
-(Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus
+(Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
   
 Используйте эту команду, чтобы получить список лицензий, назначенных пользователю, и порядок их следования (номер индекса).
@@ -85,11 +85,6 @@ Get-MsolAccountSku
 ```powershell
 Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
 ```
-
->[!Note]
->Если использовать командлет **Get-MsolUser** без параметра _All_, возвращаются только первые 500 учетных записей.
->
-   
 
 ### <a name="to-view-services-for-a-user-account"></a>Просмотр служб для учетной записи пользователя
 
@@ -114,8 +109,8 @@ Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Lic
 Чтобы просмотреть все службы для пользователя, которому назначено *несколько лицензий*, используйте следующий синтаксис:
 
 ```powershell
-$userAccountUPN="<user account UPN>"
-$AllLicenses=(Get-MsolUser -UserPrincipalName $userAccountUPN).Licenses
+$userUPN="<user account UPN>"
+$AllLicenses=(Get-MsolUser -UserPrincipalName $userUPN).Licenses
 $licArray = @()
 for($i = 0; $i -lt $AllLicenses.Count; $i++)
 {
@@ -130,6 +125,6 @@ $licArray
 
 [Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)

@@ -3,7 +3,7 @@ title: Управление пользователями и группами Sha
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/05/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,26 +15,22 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Сводка: использование PowerShell для Office 365 для управления пользователями, группами и сайтами SharePoint Online.'
-ms.openlocfilehash: e011946fa46455d1c1eba2bdff565bd55ec875bf
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 37aec217c39d9e1b9641004e38c049dcc407fd0c
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747624"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261382"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell
 
 Если вы являетесь администратором SharePoint Online, который работает с большими списками учетных записей пользователей или групп и хотите упростить управление ими, вы можете использовать PowerShell для Office 365. 
 
-## <a name="before-you-begin"></a>Перед началом работы
-
-Процедуры, описанные в этом разделе, требуют подключения к SharePoint Online. Инструкции см в разделе [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Прежде чем приступать к работе, процедуры, описанные в этом разделе, требуют подключения к SharePoint Online. Инструкции см в разделе [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>Получение списков сайтов, групп и пользователей
 
 Прежде чем мы начнем управлять пользователями и группами, вам необходимо получить список сайтов, групп и пользователей. Эту информацию можно использовать для работы с примером в данной статье.
-
-### <a name="get-a-list-of-sites"></a>Получение списка сайтов
 
 Чтобы получить список сайтов в своем клиенте, выполните следующую команду:
 
@@ -42,15 +38,11 @@ ms.locfileid: "38747624"
 Get-SPOSite
 ```
 
-### <a name="get-a-list-of-groups"></a>Получение списка групп
-
 Чтобы получить список групп в своем клиенте, выполните следующую команду:
 
 ```powershell
 Get-SPOSite | ForEach {Get-SPOSiteGroup -Site $_.Url} | Format-Table
 ```
-
-### <a name="get-a-list-of-users"></a>Получение списка пользователей
 
 Чтобы получить список пользователей в своем клиенте, выполните следующую команду:
 
@@ -60,69 +52,69 @@ Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 
 ## <a name="add-a-user-to-the-site-collection-administrators-group"></a>Добавление пользователя в группу администраторов семейства веб-сайтов
 
-Используйте команду **Set-SPOUser**, чтобы добавить пользователя в список администраторов семейства веб-сайтов. Вот как выглядит синтаксис команды:
+Используйте `Set-SPOUser` командлет, чтобы добавить пользователя в список администраторов семейства веб-сайтов в семействе веб-сайтов.
 
 ```powershell
-$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$tenant = "<tenant name, such as litwareinc for litwareinc.com>"
 $site = "<site name>"
 $user = "<user account name, such as opalc>"
-Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.onmicrosoft.com -IsSiteCollectionAdmin $true
+Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
 Чтобы использовать эти команды, замените "заменить все" в кавычках, включая < и > символы, указав правильные имена.
 
-Например, этот набор команд добавляет Кастилло Opalis (имя пользователя opalc), список администраторов семейства веб-сайтов в семействе веб-сайтов ContosoTest в клиентской организации Contoso1:
+Например, этот набор команд добавляет Кастилло Opalis (имя пользователя opalc), список администраторов семейства веб-сайтов в семействе веб-сайтов ContosoTest в клиенте Contoso:
 
 ```powershell
-$tenant = "contoso1"
+$tenant = "contoso"
 $site = "contosotest"
 $user = "opalc"
-Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.onmicrosoft.com -IsSiteCollectionAdmin $true
+Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
 ```
 
 Вы можете скопировать и вставить эти команды в блокнот, изменить значения переменных для $tenant, $site и $user на фактические значения из вашей среды, а затем вставить их в окно командной консоли SharePoint Online для их запуска.
 
 ## <a name="add-a-user-to-other-site-collection-groups"></a>Добавление пользователя в другие группы семейств веб-сайтов
 
-Для этой задачи мы используем команду **Add-SPOUser**, чтобы добавить пользователя в группу SharePoint в семействе сайтов.
+В этой задаче мы будем использовать `Add-SPOUser` командлет, чтобы добавить пользователя в группу SharePoint в семействе веб-сайтов.
 
 ```powershell
-$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$tenant = "<tenant name, such as litwareinc for litwareinc.com>"
 $site = "<site name>"
 $user = "<user account name, such as opalc>"
 $group = "<group name name, such as Auditors>"
-Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site
+Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site
 
 ```
 
-Например, давайте добавим пользователя Glen Rife (с именем пользователя "glenr") в группу аудиторов в семействе веб-сайтов ContosoTest клиентской организации contoso1.
+Например, добавим Glen Rife (имя пользователя "glenr") в группу аудиторий в семействе веб-сайтов ContosoTest в компании Contoso:
 
 ```powershell
-$tenant = "contoso1"
+$tenant = "contoso"
 $site = "contosotest"
 $user = "glenr"
 $group = "Auditors"
-Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site
+Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site
 ```
 
 ## <a name="create-a-site-collection-group"></a>Создание группы семейства веб-сайтов
 
-Используйте команду **New-SPOSiteGroup** , чтобы создать новую группу SharePoint и добавить ее в семейство веб-сайтов ContosoTest.
+`New-SPOSiteGroup` Командлет используется для создания новой группы SharePoint и ее добавления в семейство веб-сайтов.
 
 ```powershell
-$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$tenant = "<tenant name, such as litwareinc for litwareinc.com>"
 $site = "<site name>"
 $group = "<group name name, such as Auditors>"
 $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
-Свойства группы, например уровни разрешений, можно обновить позднее с помощью командлета **Set-SPOSiteGroup**.
+Свойства групп, такие как уровни разрешений, можно обновлять позже с помощью `Set-SPOSiteGroup` командлета.
 
-Например, добавим группу аудиторий с разрешениями только на просмотр для тестового семейства веб-сайтов Contoso в Contoso1.
+Например, добавим группу аудиторий с разрешениями "Просмотр только для просмотра" в семействе веб-сайтов ContosoTest в клиенте Contoso:
 
 ```powershell
-$tenant = "contoso1"
-$site = "Contoso Test"
+$tenant = "contoso"
+$site = "contosotest"
 $group = "Auditors"
 $level = "View Only"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
@@ -134,31 +126,31 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 Однако с помощью командной консоли SharePoint Online и CSV-файлов это быстро и легко. Для этой задачи вы используете Windows PowerShell, чтобы удалить пользователя из группы безопасности семейства сайтов. Затем вы используете CSV-файл и удалите множество пользователей с разных сайтов. 
 
-Мы будем использовать команду **Remove-супруг** для удаления одного пользователя Office 365 из группы семейств веб-сайтов, так как мы можем увидеть синтаксис команды. Вот как выглядит синтаксис:
+Мы будем использовать командлет "Remove-супруг" для удаления одного пользователя Office 365 из группы семейств веб-сайтов, так как мы можем увидеть синтаксис команды. Вот как выглядит синтаксис:
 
 ```powershell
-$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$tenant = "<tenant name, such as litwareinc for litwareinc.com>"
 $site = "<site name>"
 $user = "<user account name, such as opalc>"
 $group = "<group name name, such as Auditors>"
-Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
+Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
-Например, давайте удалим Бобби Оверби из группы аудиторий семейства веб-сайтов в тестовом семействе веб-сайтов Contoso в клиенте Contoso1:
+Например, давайте удалим Бобби Оверби из группы аудиторий семейства веб-сайтов в семействе веб-сайтов ContosoTest в клиенте Contoso:
 
 ```powershell
-$tenant = "contoso1"
+$tenant = "contoso"
 $site = "contosotest"
 $user = "bobbyo"
 $group = "Auditors"
-Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
+Remove-SPOUser -LoginName $user@$tenant.com -Site https://$tenant.sharepoint.com/sites/$site -Group $group
 ```
 
 Предположим, что мы хотим удалить Bobby из всех групп, в которых он состоит. Вот как это сделать:
 
 ```powershell
-$tenant = "contoso1"
+$tenant = "contoso"
 $user = "bobbyo"
-Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUser -LoginName $user@$tenant.onmicrosoft.com -Site &_.Url}
+Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUser -LoginName $user@$tenant.com -Site &_.Url}
 ```
 
 > [!WARNING]
@@ -174,13 +166,13 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 Первый CSV-файл добавляет одну или несколько групп в одно или несколько семейств сайтов. Он использует следующую структуру:
 
-### <a name="header"></a>Верхний
+Верхний
 
 ```powershell
 Site,Group,PermissionLevels
 ```
 
-### <a name="item"></a>Элемента
+Элемента
 
 ```powershell
 https://tenant.sharepoint.com/sites/site,group,level
@@ -190,25 +182,25 @@ https://tenant.sharepoint.com/sites/site,group,level
 
 ```powershell
 Site,Group,PermissionLevels
-https://contoso1.sharepoint.com/sites/contosotest,Contoso Project Leads,Full Control
-https://contoso1.sharepoint.com/sites/contosotest,Contoso Auditors,View Only
-https://contoso1.sharepoint.com/sites/contosotest,Contoso Designers,Design
-https://contoso1.sharepoint.com/sites/TeamSite01,XT1000 Team Leads,Full Control
-https://contoso1.sharepoint.com/sites/TeamSite01,XT1000 Advisors,Edit
-https://contoso1.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
-https://contoso1.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
-https://contoso1.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
+https://contoso.sharepoint.com/sites/contosotest,Contoso Project Leads,Full Control
+https://contoso.sharepoint.com/sites/contosotest,Contoso Auditors,View Only
+https://contoso.sharepoint.com/sites/contosotest,Contoso Designers,Design
+https://contoso.sharepoint.com/sites/TeamSite01,XT1000 Team Leads,Full Control
+https://contoso.sharepoint.com/sites/TeamSite01,XT1000 Advisors,Edit
+https://contoso.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
+https://contoso.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
+https://contoso.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
 
 Второй CSV-файл добавляет одного или нескольких пользователей в одну или несколько групп. Он использует следующую структуру:
 
-### <a name="header"></a>Верхний
+Верхний
 
 ```powershell
 Group,LoginName,Site
 ```
 
-### <a name="item"></a>Элемента
+Элемента
 
 ```powershell
 group,login,https://tenant.sharepoint.com/sites/site
@@ -218,14 +210,14 @@ group,login,https://tenant.sharepoint.com/sites/site
 
 ```powershell
 Group,LoginName,Site
-Contoso Project Leads,bobbyo@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/contosotest
-Contoso Auditors,allieb@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/contosotest
-Contoso Designers,bonniek@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/contosotest
-XT1000 Team Leads,dorenap@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/TeamSite01
-XT1000 Advisors,garthf@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/TeamSite01
-Contoso Blog Designers,janets@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/Blog01
-Contoso Blog Editors,opalc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/Blog01
-Project Alpha Approvers,robinc@contoso1.onmicrosoft.com,https://contoso1.sharepoint.com/sites/Project01
+Contoso Project Leads,bobbyo@contoso.com,https://contoso.sharepoint.com/sites/contosotest
+Contoso Auditors,allieb@contoso.com,https://contoso.sharepoint.com/sites/contosotest
+Contoso Designers,bonniek@contoso.com,https://contoso.sharepoint.com/sites/contosotest
+XT1000 Team Leads,dorenap@contoso.com,https://contoso.sharepoint.com/sites/TeamSite01
+XT1000 Advisors,garthf@contoso.com,https://contoso.sharepoint.com/sites/TeamSite01
+Contoso Blog Designers,janets@contoso.com,https://contoso.sharepoint.com/sites/Blog01
+Contoso Blog Editors,opalc@contoso.com,https://contoso.sharepoint.com/sites/Blog01
+Project Alpha Approvers,robinc@contoso.com,https://contoso.sharepoint.com/sites/Project01
 ```
 
 Затем необходимо сохранить на диск два CSV-файла. Ниже приведены примеры команд, использующих как CSV-файлы, так и добавления разрешений и членства в группах.
@@ -248,7 +240,7 @@ Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginN
 Возможно, вам потребуется простой отчет о пользователях нескольких сайтов, их уровне разрешений и других свойствах. Вот как выглядит синтаксис команды:
 
 ```powershell
-$tenant = "<tenant name, such as litwareinc for litwareinc.onmicrosoft.com>"
+$tenant = "<tenant name, such as litwareinc for litwareinc.com>"
 $site = "<site name>"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | select * | Format-table -Wrap -AutoSize | Out-File c\UsersReport.txt -Force -Width 360 -Append
 ```
@@ -258,7 +250,7 @@ Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | select * | Format
 Например, запустим отчет на сайтах ContosoTest, TeamSite01 и Project01 клиентской организации Contoso1.
 
 ```powershell
-$tenant = "contoso1"
+$tenant = "contoso"
 $site = "contosotest"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 $site = "TeamSite01"

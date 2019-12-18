@@ -3,7 +3,7 @@ title: Назначение лицензий для учетных записе�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/26/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,17 +18,15 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Инструкции по использованию Office 365 PowerShell для назначения лицензии Office 365 пользователям без лицензий.
-ms.openlocfilehash: d78bd36807a87cced3fdc8ac8bc06e6886970861
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ea2c889834c70095474fbc2957768746d92fe8cc
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072551"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261342"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Назначение лицензий для учетных записей пользователей с помощью PowerShell в Office 365
 
-**Сводка:**  Инструкции по использованию Office 365 PowerShell для назначения лицензии Office 365 пользователям без лицензий.
-  
 Пользователи не могут использовать службы Office 365, пока их учетной записи не назначена лицензия из плана лицензирования. Вы можете быстро назначить лицензии для нелицензированных учетных записей с помощью PowerShell в Office 365. 
 
 >[!Note]
@@ -78,7 +76,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-Выполните команду **Get – MsolAccountSku** , чтобы просмотреть доступные планы лицензирования и число доступных лицензий в каждом плане в Организации. Число доступных лицензий в каждом плане — **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Для получения дополнительных сведений о планах лицензирования, лицензиях и службах ознакомьтесь со статьей [Просмотр лицензий и служб с помощью Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
+Выполните `Get-MsolAccountSku` команду, чтобы просмотреть доступные планы лицензирования и число доступных лицензий в каждом плане в Организации. Число доступных лицензий в каждом плане — **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Для получения дополнительных сведений о планах лицензирования, лицензиях и службах ознакомьтесь со статьей [Просмотр лицензий и служб с помощью Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
 
 >[!Note]
 >В PowerShell Core не поддерживается модуль Microsoft Azure Active Directory для Windows PowerShell и командлеты с компонентом **Msol** в имени. Чтобы использовать эти командлеты, необходимо запустить их из Windows PowerShell.
@@ -126,7 +124,7 @@ Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-Чтобы назначить лицензию большому количеству нелицензированных пользователей, выполните указанную ниже команду.
+Чтобы назначить лицензию для всех нелицензированных пользователей, выполните указанную ниже команду.
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLicense -AddLicenses "<AccountSkuId>"
@@ -204,6 +202,6 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
 
 [Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
