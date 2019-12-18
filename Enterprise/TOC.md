@@ -194,6 +194,7 @@
 ##### [Общий доступ без проверки подлинности](best-practices-anonymous-sharing.md)
 ##### [Ограничение возможности случайного раскрытия файлов при предоставлении доступа гостям](sharing-limit-accidental-exposure.md)
 ##### [Создание безопасной среды гостевого общего доступа](create-a-secure-guest-sharing-environment.md)
+#### [Создание экстрасети B2B](b2b-extranet.md)
 
 ## Устройства
 ### [Выбор между MDM и Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
