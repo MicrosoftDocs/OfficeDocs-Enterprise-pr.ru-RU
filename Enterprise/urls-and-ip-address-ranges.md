@@ -1,7 +1,7 @@
 ---
 title: URL-адреса и диапазоны IP-адресов Office 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: laurawi
+author: LauraWi
 manager: laurawi
 ms.date: 11/27/2019
 audience: Admin
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: Сводка. Для Office 365 требуется подключение к Интернету. Указанные ниже конечные точки должны быть доступны для клиентов, использующих планы Office 365, в том числе входящих в облако сообщества государственных учреждений (GCC).
 hideEdit: true
-ms.openlocfilehash: fe88ef5a7613c385363136dbdb5ac51855ab4c5e
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: eecd07a471c1ca07387e89d7c3b4dbca4277e14d
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655829"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744493"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL-адреса и диапазоны IP-адресов Office 365
 
