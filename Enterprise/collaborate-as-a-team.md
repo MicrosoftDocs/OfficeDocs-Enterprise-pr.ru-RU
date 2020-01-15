@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Узнайте, как совместно работать с гостями в Teams.
-ms.openlocfilehash: 2743b1062aebf5e8fbc1db191fcf36f4091bc1f3
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 45a806694285006faa02ff4df413f4078016b9d9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085204"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122598"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Совместная работа с гостями в команде
 
@@ -171,6 +171,6 @@ Teams использует группы Office 365 для членства в г
 
 [Ограничение возможности случайного раскрытия файлов при предоставлении доступа гостям](sharing-limit-accidental-exposure.md)
 
-[Создание безопасной среды общего доступа гостей](create-a-secure-guest-sharing-environment.md))
+[Создание безопасной среды гостевого общего доступа](create-a-secure-guest-sharing-environment.md)
 
 [Создание экстрасети B2B с управляемыми гостями](b2b-extranet.md)
