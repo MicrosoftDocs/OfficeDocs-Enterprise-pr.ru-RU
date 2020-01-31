@@ -1,9 +1,9 @@
 ---
 title: Использование командлетов PowerShell для централизованного развертывания для управления надстройками
-ms.author: twerner
-author: twernermsft
-manager: scotv
-ms.date: 5/31/2017
+ms.author: kvice
+author: kelleyvice-msft
+manager: laurawi
+ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Используйте командлеты PowerShell централизованного развертывания для развертывания надстроек Office для организации Office 365 и управления ими.
-ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0577a4d69d7b6d32164e66613a9d38a71d9766e4
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030864"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570876"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Использование командлетов PowerShell для централизованного развертывания для управления надстройками
 
@@ -106,7 +106,7 @@ Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 Чтобы получить полные сведения обо всех надстройках, а также о назначенных пользователях и группах, перечислите выходные данные командлета **Get – организатионаддин** в командлет Format – List, как показано в следующем примере.
   
 ```powershell
-Get-OrganizationAddIn |Format-List
+foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
 ```
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>Включение и отключение надстройки
@@ -168,53 +168,54 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-## <a name="customize-microsoft-store-add-ins-for-your-organization"></a>Настройка надстроек Microsoft Store для Организации
+<!--
+## Customize Microsoft Store add-ins for your organization
 
-Перед развертыванием надстройки в Организации ее необходимо настроить. Надстройки более ранние, чем версия 1,1, не поддерживаются этой функцией. 
+You must customize the add-in before you deploy it to your organization. Add-ins older than version 1.1 are not supported by this feature. 
 
-Рекомендуется сначала развернуть пользовательскую надстройку, чтобы убедиться, что она работает должным образом, прежде чем развертывать ее во всей Организации.
+We recommend that you deploy a customized add-in  to yourself first to make sure it works as expected before you deploy it to your entire organization.
 
-Кроме того, обратите внимание на следующие ограничения:
-- Все URL-адреса должны быть абсолютными (включая HTTP или HTTPS) и допустимыми.
-- *Отображаемое имя* не должно превышать 125 символов 
-- *DisplayName*, *ресурсы* и *AppDomain* не должны содержать следующие символы: 
+Note also the following restrictions:
+- All URLs must be absolute (include http or https) and valid.
+- *DisplayName* must not exceed 125 characters 
+- *DisplayName*, *Resources* and *AppDomains* must not include the following characters: 
  
     - \<
     -  \>
     -  ;
     -  =   
 
-Если вы хотите настроить развернутую надстройку, необходимо удалить ее из центра администрирования, а затем удалить [надстройку из локального кэша](#remove-an-add-in-from-local-cache) , чтобы удалить ее с каждого компьютера, на котором она была развернута.
+If you want to customize an add-in that has been deployed, you have to uninstall it in the admin center, and see [remove an add-in from local cache](#remove-an-add-in-from-local-cache) for steps to remove it from each computer it has been deployed to.
 
-Чтобы настроить надстройку, выполните командлет **Set – организатионаддиноверридес** с *ProductID* в качестве параметра, а затем тег, который необходимо перезаписать, и новое значение. Чтобы узнать, как получить код *продукта* , ознакомьтесь со статьей [Получение сведений о надстройке](#get-details-of-an-add-in) в этой статье. Например:
+To customize an add-in, run the **Set –OrganizationAddInOverrides** cmdlet with the *ProductId* as a parameter, followed by the tag you want to overwrite and the new value. To find out how to get the *ProductId* see [get details of an add-in](#get-details-of-an-add-in) in this article. For example:
 
 ```powershell
  Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
-Чтобы настроить несколько тегов для надстройки, добавьте эти теги в командную строку:
+To customize multiple tags for an add-in, add those tags to the commandline:
 
 ```powershell
 Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
-> К одной надстройке необходимо применить несколько настраиваемых тегов с одной командой. Если вы настраиваете Теги один на один, то применяется только последняя настройка. Кроме того, если вы настраиваете тег по ошибке, необходимо удалить все настройки и начать заново.
+> You must apply multiple customized tags to one add-in as one command. If you customize tags one by one, only the last customization will be applied. Additionally, if you customize a tag by mistake, you must remove all customizations and start over.
 
-### <a name="tags-you-can-customize"></a>Теги, которые можно настраивать
+### Tags you can customize
 
-| Tag                  | Описание          |
+| Tag                  | Description          |
 | :------------------- | :------------------- |
-| \<IconURL>   </br>| URL-адрес изображения, используемого в качестве значка надстройки (в центре администрирования). </br> |
-| \<DisplayName>| Название надстройки (в центре администрирования).|
-| \<Hosts>| Список приложений, которые будут поддерживать надстройку.|
-| \<SourceLocation> | URL-адрес источника, к которому будет подключаться надстройка.| 
-| \<> AppDomains | Список доменов, с которыми может подключаться надстройка. | 
-| \<SupportURL>| URL-адрес, с помощью которого пользователи могут получать доступ к справке и поддержке. | 
-| \<Ресурсы>  | Этот тег содержит ряд элементов, в том числе заголовки, подсказки и значки разного размера.| 
+| \<IconURL>   </br>| The URL of the image used as the add-in’s icon (in admin center). </br> |
+| \<DisplayName>| The title of the add-in  (in admin center).|
+| \<Hosts>| List of apps that will support the add-in.|
+| \<SourceLocation> | The source URL that the add-in will connect to.| 
+| \<AppDomains> | A list of domains that the add-in can connect with. | 
+| \<SupportURL>| The URL users can use to access help and support. | 
+| \<Resources>  | This tag contains a number of elements including titles, tooltips, and icons of different sizes.| 
 |
-### <a name="customize-resources-tag"></a>Настройка тега Resources
+### Customize Resources tag
 
-Любой элемент в <Resources> теге манифеста может быть динамически настраиваемым. Сначала необходимо проверить манифест, чтобы найти идентификатор элемента, которому требуется назначить новое значение. <Resources> Тег выглядит следующим образом:
+Any element in the <Resources> tag of the manifest can be customized dynamically. You first need to check the manifest to find the element id to which you want to assign a new value. The <Resources> tag looks like this:
 
 ```
 <Resources>  
@@ -223,45 +224,47 @@ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -
     </bt:Images> 
 </Resources> 
 ``` 
-В этом случае идентификатор элемента изображения — "img16icon", а связанное с ним значение — "http:<i></i>//Сите. <i> </i>com/IMG. jpg. "
+In this case, the element id for the image is “img16icon” and the value associated with it is “http:<i></i>//site.<i></i>com/img.jpg.”
 
-Определив элементы, которые вы хотите настроить, выполните следующую команду в PowerShell, чтобы присвоить элементам новые значения:
+Once you have identified the elements you want to customize, use the following command in Powershell to assign new values to the elements:
 
 ```powershell
 Set-OrganizationAddInOverrides -Resources @{“ElementID” = “New Value”; “NextElementID” = “Next New Value”} 
 ```
 
-Вы можете настроить любое количество элементов с помощью команды.
+You can customize as many elements with the command as you need to.
 
-### <a name="remove-customization-from-an-add-in"></a>Удаление настроек из надстройки
+### Remove customization from an add-in
 
-Единственным вариантом, доступным для удаления настроек, является удаление всех из них одновременно:
+The only option currently available for deleting customizations is to delete all of them at once:
 
 ```powershell
 Remove-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="view-add-in-customizations"></a>Просмотр настроек надстроек
+### View add-in customizations
 
-Чтобы просмотреть список примененных настроек, выполните командлет **Get – организатионаддиноверридес** . Если командлет **Get-организатионаддиноверридес** запускается без *ProductID* , возвращается список всех надстроек с примененными переопределениями.  
+To view a list of applied customizations, run the **Get-OrganizationAddInOverrides** cmdlet. If **Get-OrganizationAddInOverrides** is run without a *ProductId* then a list of all add-ins with applied overrides are returned.  
 
 ```powershell
 Get-OrganizationAddInOverrides 
 ```
-Если указан ProductId, возвращается список переопределений, примененных к этой надстройке. 
+If ProductId is specified, then a list of overrides applied to that add-in is returned. 
 
 ```powershell
 Get-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="remove-an-add-in-from-local-cache"></a>Удаление надстройки из локального кэша
+### Remove an add-in from local cache
 
-Если надстройка была развернута, ее необходимо удалить из кэша на каждом компьютере перед настройкой. Чтобы ремиве надстройку из кэша:
+If an add-in has been deployed, it has to be removed from the cache in each computer before it can be customized. To remive an add-in from cache:
 
-1. Переход к папке "Пользователи" в C:\ 
-1. Переход к папке пользователя
-1. Перейдите к Аппдата\локал\микрософт\оффице и выберите папку, связанную с версией Office.
-1. В папке *WEF* удалите папку *манифестов* .
+1. Navigate to the “Users” folder in C:\ 
+1. Go to your user folder
+1. Navigate to AppData\Local\Microsoft\Office and select the folder associated with your version of Office
+1. In the *Wef* folder delete the *Manifests* folder.
+
+-->
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>Получение подробной справки для каждого командлета
 

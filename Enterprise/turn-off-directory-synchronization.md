@@ -17,12 +17,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: Узнайте, как отключить синхронизацию службы каталогов для Office 365 с помощью PowerShell.
-ms.openlocfilehash: de7cfcbc11ed281e412c68674b808613b3421041
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: efee8b216d63f32ac64a559aca3bcb55b0a933c1
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072401"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570896"
 ---
 # <a name="turn-off-directory-synchronization-for-office-365"></a>Отключение синхронизации службы каталогов для Office 365
 Вы можете отключить синхронизацию службы каталогов с помощью PowerShell. Тем не менее, не рекомендуется отключать синхронизацию службы каталогов в качестве действия по устранению неполадок. Если вам нужна помощь с устранением проблем с синхронизацией службы каталогов, обратитесь к разделу [Устранение проблем с синхронизацией каталогов для Office 365](fix-problems-with-directory-synchronization.md) . 
@@ -32,7 +32,7 @@ ms.locfileid: "40072401"
 ## <a name="turn-off-directory-synchronization"></a>Отключение синхронизации каталогов  
 Чтобы отключить синхронизацию службы каталогов, выполните указанные ниже действия.
   
-1. Сначала установите необходимое программное обеспечение и подключитесь к вашей подписке на Office 365. Инструкции для обоих [способов приведены в статье подключение к Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=821938).
+1. Сначала установите необходимое программное обеспечение и подключитесь к вашей подписке на Office 365. Для получения инструкций обратитесь [к разделу Подключение к модулю Microsoft Azure Active Directory для Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
 2. Используйте [Set – мсолдирсинценаблед](https://go.microsoft.com/fwlink/p/?LinkId=821939) , чтобы отключить синхронизацию службы каталогов: 
     
