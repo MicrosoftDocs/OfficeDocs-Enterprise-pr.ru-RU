@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Обзор политик Майкрософт для Office 365, касающихся хранения, удаления и уничтожения данных.
-ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 93093e3688d0f8ae399a4e021deaaf4b7ed5cecf
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37975834"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658336"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Хранение, удаление и уничтожение данных в Office 365
 
@@ -47,7 +47,7 @@ ms.locfileid: "37975834"
 
 Для любой подписки подписчик может обратиться в службу поддержки Майкрософт и отправить запрос на отмену подписки. В этом процессе все данные пользователя удаляются через три дня после того, как администратор введет код блокировки, предоставленный корпорацией Майкрософт. Сюда входят данные в SharePoint Online и Exchange Online в режиме хранения или хранения в неактивных почтовых ящиках.
 
-Дополнительные сведения о ускоренной подготовке можно найти в статье [Отмена Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
+Дополнительные сведения о ускоренной подготовке можно найти в статье [Отмена Office 365](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/cancel-your-subscription).
 
 ## <a name="related-links"></a>Дополнительные ссылки
 
