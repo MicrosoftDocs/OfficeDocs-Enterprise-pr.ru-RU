@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: Современная проверка подлинности это способ управления удостоверениями, обеспечивающий более безопасную проверку подлинности и авторизацию пользователей. Он доступен для гибридных развертываний локального приложения Skype для бизнеса Server и локального сервера Exchange Server, а также для гибридных гибридов Skype для бизнеса. В этой статье приведены ссылки на связанные документы о предварительных требованиях, настройке и отключении современной проверки подлинности, а также о некоторых связанных клиентах (например, Сведения о клиентах Outlook и Skype).
-ms.openlocfilehash: 87a2cc49594b0b71d1288e27ab1323f1850fd7eb
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 5124e42f5dff33d59083cc23f0c57349e6136fb9
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261402"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721920"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Обзор гибридной современной проверки подлинности и предварительные требования для их использования с локальными серверами Skype для бизнеса и Exchange
 
@@ -115,7 +115,7 @@ Get-CSOAuthConfiguration
 - C:\Program Files\Skype for Business Server 2015 \ Web Компонентс\веб тиккет\екст\веб.конфиг
 
 ```xml
-<system.identityModel.services>
+<configuration>
   <system.net>
     <defaultProxy>
       <proxy
@@ -123,7 +123,7 @@ Get-CSOAuthConfiguration
         bypassonlocal="true" />
     </defaultProxy>
   </system.net>
-</system.identityModel.services>
+</configuration>
 ```
 
 > [!IMPORTANT]
@@ -146,7 +146,7 @@ Get-CSOAuthConfiguration
   
   - Современные проверки подлинности поддерживаются следующими клиентами:
 
-  |**Клиенты**|**Основной протокол**|**Примечания**|
+  |**Клиенты**|**Основной протокол**|**Notes**|
   |:-----|:-----|:-----|
   |Outlook 2013 и Outlook 2016  <br/> |Протокол MAPI over HTTP  <br/> |Протокол MAPI over HTTP должен быть включен в Exchange, чтобы использовать современные проверки подлинности для этих клиентов (обычно они включены или истинны для новых установок Exchange 2013 с пакетом обновления 1 (SP1) и более поздних версий); для получения дополнительных сведений Узнайте [, как работает современная проверка подлинности для клиентских приложений office 2013 и office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).  <br/> Убедитесь, что вы используете минимальную требуемую сборку Outlook; Ознакомьтесь [с последними обновлениями для версий Outlook, использующих установщик Windows (MSI)](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
   |Outlook 2016 для Mac;  <br/> |веб-службы Exchange  <br/> |  <br/> |

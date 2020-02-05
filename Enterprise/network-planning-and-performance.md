@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Помогает спланировать требования к пропускной способности сети для Microsoft Office 365. Когда вы развернетесь, вернитесь сюда, чтобы выполнить тонкую настройку и устранение проблем с производительностью Office 365.
-ms.openlocfilehash: bedddefe893781fc2c51d0e282dc603e30c90b06
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 0f60c925d01b4a4471d475b923389e3b59e5526c
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38032144"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721950"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Планирование сети и настройка производительности для Office 365
 Перед первым развертыванием или переходом на Office 365 можно использовать сведения из этих разделов для оценки необходимой пропускной способности, а затем проверить, достаточно ли пропускной способности для развертывания или переноса в Office 365. Общие сведения: [планирование сети и миграции для Office 365](network-and-migration-planning.md).
@@ -35,7 +35,7 @@ ms.locfileid: "38032144"
 
 После развертывания Office 365 вы можете оптимизировать производительность, используя подразделы, приведенные в этом разделе. При снижении производительности можно также использовать эти разделы для устранения неполадок.
   
- **[Настройка производительности Office 365](tune-office-365-performance.md)**: сведения об использовании преобразования сетевых адресов с помощью Office 365 приведены [в статье поддержка NAT в Office 365](nat-support-with-office-365.md). Кроме того, ознакомьтесь с [десятью десятью советами по оптимизации и устранению неполадок, связанных с подключением к сети Office 365](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx) , с помощью Пол коллинджа. 
+ **[Настройка производительности Office 365](tune-office-365-performance.md)**: сведения об использовании преобразования сетевых адресов с помощью Office 365 приведены [в статье поддержка NAT в Office 365](nat-support-with-office-365.md). Кроме того, ознакомьтесь с [десятью десятью советами по оптимизации и устранению неполадок подключения к сети Office 365](https://docs.microsoft.com/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity). 
   
  **[Настройка производительности Exchange Online](tune-exchange-online-performance.md)**: Используйте эти статьи для точной настройки производительности Exchange Online. 
   
