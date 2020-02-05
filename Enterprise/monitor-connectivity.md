@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: После развертывания Office 365 вы можете поддерживать подключение к службам Office 365 с помощью описанных ниже средств и методик. Для этого желательно разобраться в официальных рекомендациях по поддержанию работоспособности и непрерывной работы служб, а также использованию Office 365 в медленных сетях. Полезно также задействовать приложение для администраторов Office 365 и добавить в закладки справку для администраторов по Office 365 для бизнеса.
-ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
-ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
+ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931697"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721970"
 ---
 # <a name="monitor-office-365-connectivity"></a>Мониторинг подключения к Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "37931697"
 |**Использование Azure AD Connect Health с AD FS** <br/> |Если вы используете AD FS для единого входа в Office 365, рекомендуем вам начать [использовать службу Azure AD Connect Health для мониторинга своей инфраструктуры AD FS](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/).  <br/> |
 |**Программный мониторинг Office 365** <br/> |См. наше руководство по [API управления Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview).  <br/> |
 
-Вы можете быстро вернуться сюда с помощью этой короткой ссылки: [hhttps://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
+Вы можете быстро вернуться сюда с помощью этой короткой ссылки: [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
 ## <a name="see-also"></a>См. также
 
