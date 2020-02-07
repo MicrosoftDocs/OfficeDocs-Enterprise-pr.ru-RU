@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
+f1.keywords:
+- NOCSH
 description: Сводка. Узнайте, как создать интегрированную лабораторию тестирования, содержащую сервер под управлением Exchange Server 2013, сервер, на котором работает Lync Server 2013, и сервер, на котором работает SharePoint Server 2013.
-ms.openlocfilehash: 58c7d5ad701471e87c5e6600af2f9a36ac374448
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 6041f47520f7a02efe08d05835ca0f15dfd6633a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070405"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841106"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Руководство по лаборатории тестирования. Настройка интегрированной лаборатории тестирования Exchange, Lync и SharePoint
 

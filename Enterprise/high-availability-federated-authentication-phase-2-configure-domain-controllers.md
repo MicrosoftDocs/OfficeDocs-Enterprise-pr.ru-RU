@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: Сводка. Настройте контроллеры домена и сервер синхронизации службы каталогов для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: bf5ee3a63d12d369a6d318f5fc23fa4577730768
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: e43787817287779330e28236700f1a710c37dceb
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072391"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840316"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Этап 2. Федеративная проверка подлинности для обеспечения высокой доступности: настройка контроллеров домена
 
@@ -34,13 +36,13 @@ ms.locfileid: "40072391"
   
 |**Элемент**|**Имя виртуальной машины**|**Образ коллекции**|**Тип хранилища**|**Минимальный размер**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  (первый контроллер домена, например DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  (второй контроллер домена, например DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![line](./media/Common-Images/TableLine.png) (сервер синхронизации каталогов, например, DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![line](./media/Common-Images/TableLine.png) (первый сервер AD FS, например, ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![line](./media/Common-Images/TableLine.png) (второй сервер AD FS, например, ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![line](./media/Common-Images/TableLine.png) (первый прокси-сервер веб-приложений, например WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![line](./media/Common-Images/TableLine.png) (второй прокси-сервер веб-приложений, например WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![линия](./media/Common-Images/TableLine.png)  (первый контроллер домена, например DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![линия](./media/Common-Images/TableLine.png)  (второй контроллер домена, например DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![линия](./media/Common-Images/TableLine.png) (сервер синхронизации каталогов, например, DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![линия](./media/Common-Images/TableLine.png) (первый сервер AD FS, например, ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![линия](./media/Common-Images/TableLine.png) (второй сервер AD FS, например, ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![линия](./media/Common-Images/TableLine.png) (первый прокси-сервер веб-приложений, например WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![линия](./media/Common-Images/TableLine.png) (второй прокси-сервер веб-приложений, например WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **Таблица M: виртуальные машины для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Azure**
   
@@ -245,7 +247,7 @@ Restart-Computer
 
 ![Этап 2 инфраструктуры федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure с помощью контроллеров домена](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 Используйте [Этап 3: Configure AD FS Servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) , чтобы продолжить настройку этой рабочей нагрузки.
   

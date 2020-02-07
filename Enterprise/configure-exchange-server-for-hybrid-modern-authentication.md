@@ -13,13 +13,15 @@ search.appverid:
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Гибридная современная проверка подлинности (HMA) — это способ управления удостоверениями, обеспечивающий более безопасную проверку подлинности и авторизацию пользователей, а также доступный для локальных гибридных развертываний Exchange Server.
-ms.openlocfilehash: 1a8bed186acd8da9c5f223120c5e58e8bfd445b4
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 6c4b57454b415b3af799d82e1c3655daa1fd5ef8
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122568"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840746"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности
 

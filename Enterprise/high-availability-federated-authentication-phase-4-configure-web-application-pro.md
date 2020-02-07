@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: Сводка. Настройка прокси-серверов веб-приложений для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: 0ab2526209bc9c59fdce839e0f50451b23d78b04
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 9dedf8197cc24f82d516b75ecf29caca6d1f09b4
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257498"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840166"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Этап 4. Федеративная проверка подлинности для обеспечения высокой доступности: настройка прокси веб-приложений
 
@@ -62,13 +64,13 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
   
 После того как вы ФДКН службу федерации, создайте запись A общедоступного домена DNS для службы федерации ФДКН, которая разрешается в общедоступный IP-адрес подсистемы балансировки нагрузки Azure, доступного для выхода в Интернет.
   
-|**Имя**|**Тип**|**TTL**|**Значение**|
+|**Name**|**Type**|**TTL**|**Значение**|
 |:-----|:-----|:-----|:-----|
 |Служба федерации ФДКН  <br/> |A  <br/> |3600  <br/> |общедоступный IP-адрес балансировщика нагрузки с выходом в Интернет Azure (отображается с помощью команды **Write-Host** в предыдущем разделе) <br/> |
    
 Вот пример:
   
-|**Имя**|**Тип**|**TTL**|**Значение**|
+|**Name**|**Type**|**TTL**|**Значение**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -156,7 +158,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 ![Этап 4 инфраструктуры федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure с помощью прокси-серверов веб-приложений](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий шаг
 
 Используйте [этап 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) , чтобы продолжить настройку этой рабочей нагрузки.
   

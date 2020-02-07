@@ -11,6 +11,8 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Этот контрольный список поможет вашей организации при планировании и подготовке к миграции в Office 365.
-ms.openlocfilehash: 9248ed4a252990094e91579deb723aa32f04316a
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: dbd996a21cb98fcf7831ef22b855cc8fcb1af39f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028873"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840516"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Контрольный список планирования развертывания для Office 365
 

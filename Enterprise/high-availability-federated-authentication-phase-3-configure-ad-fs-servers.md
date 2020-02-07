@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: Сводка. Создание и настройка серверов служб федерации Active Directory (AD FS) для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: db9f976ebaf7524c6e13d4dabcc21dd4300102a7
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 5ac87b0d19c43e8711e188d1a0f6a7f33a37871f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257574"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840156"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Этап 3. Федеративная проверка подлинности для обеспечения высокой доступности: настройка серверов AD FS
 
@@ -146,7 +148,7 @@ Restart-Computer
 
 ![Этап 3 инфраструктуры федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure с серверами AD FS](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
-## <a name="next-step"></a>Следующее действие
+## <a name="next-step"></a>Следующий шаг
 
 Используйте [Этап 4: Настройка прокси-серверов веб-приложений](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) для продолжения настройки этой рабочей нагрузки.
   

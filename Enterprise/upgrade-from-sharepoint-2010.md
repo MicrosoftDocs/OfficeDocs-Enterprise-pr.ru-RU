@@ -16,17 +16,19 @@ search.appverid:
 - WSU140
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
+f1.keywords:
+- NOCSH
 description: Прекращение поддержки для SharePoint 2010 и SharePoint Server 2010 заканчивается 13 октября 2020 г. Используйте эту статью в качестве руководства по обновлению до SharePoint Online или более новой версии SharePoint Server в локальной среде.
-ms.openlocfilehash: 95feda3f05f3ecfabb473b6331962de811690770
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 51c372bf2d96c245223a1ea3776f889e60bf4491
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747301"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841056"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Обновление с SharePoint 2010
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Microsoft SharePoint 2010 и SharePoint Server 2010 достигают конца поддержки до **13 октября 2020 г**. В этой статье описываются ресурсы, которые помогут вам перенести существующие данные SharePoint Server 2010 в SharePoint Online в Office 365 или обновить локальную среду SharePoint Server 2010.
   
@@ -193,7 +195,7 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
 
 Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
         
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007 или 2010](upgrade-from-office-2010-servers-and-products.md)
   

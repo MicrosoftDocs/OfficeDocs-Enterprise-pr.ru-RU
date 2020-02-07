@@ -11,17 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: Сводка. Настройка и демонстрация работы Office 365 Cloud App Security в среде разработки и тестирования Office 365.
-ms.openlocfilehash: c4a36ea766bd42b432d531ffecdfb709056220d8
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a4f0f9e8912a5455ec5253e9992873136e71d694
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030833"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840806"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security для среды разработки и тестирования Office 365
 
@@ -57,7 +59,7 @@ Office 365 Cloud App Security, ранее известное как управл
     
 2. На главной странице портала нажмите **Администрирование**.
     
-3. На панели навигации слева выберите **Пользователи > Активные пользователи**.
+3. На панели навигации слева выберите элементы **Пользователи > Активные пользователи**.
     
 4. Выберите учетную запись **Пользователь 4**.
     
@@ -125,7 +127,7 @@ Office 365 Cloud App Security, ранее известное как управл
     
 8. На главной странице портала нажмите **Администрирование**.
     
-9. На панели навигации слева выберите **Пользователи > Активные пользователи**.
+9. На панели навигации слева выберите элементы **Пользователи > Активные пользователи**.
     
 10. Выберите учетную запись **Пользователь 5**.
     

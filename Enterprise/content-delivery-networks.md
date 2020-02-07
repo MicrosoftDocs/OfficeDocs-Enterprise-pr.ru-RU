@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Используйте эту информацию, чтобы узнать о том, как Office 365 использует сети доставки содержимого (сети CDN) для повышения производительности.
-ms.openlocfilehash: be93be8af81714c6e166246a4e68f74b9b803f46
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: a9840cd325d30febdbef62e7cddf22640bffac42
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745842"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840636"
 ---
 # <a name="content-delivery-networks-cdns"></a>Сети доставки контента (сети CDN)
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Сети CDN Помогите обеспечить высокую скорость и надежность Office 365 для конечных пользователей. Облачные службы, такие как Office 365, используют сети CDN для кэширования статических ресурсов ближе к браузерам, которые запрашивают их для ускорения загрузки и сокращения задержек конечных пользователей. Сведения, приведенные в этом разделе, помогут вам узнать о сетях доставки контента (сети CDN) и о том, как они используются в Office 365.
 
@@ -191,7 +193,7 @@ ms.locfileid: "38745842"
 
 [Принципы сетевого подключения к Office 365](https://aka.ms/o365networkingprinciples)
 
-[Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
+[Оценка сетевого подключения к Office 365](assessing-network-connectivity.md)
 
 [Управление конечными точками Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 

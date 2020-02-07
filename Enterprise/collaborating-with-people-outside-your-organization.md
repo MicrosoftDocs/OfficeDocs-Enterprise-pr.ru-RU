@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: Узнайте, как настроить Office 365 для совместной работы с пользователями, не входящими в вашу организацию.
-ms.openlocfilehash: d343594319f40a3fa3ab2bb619c91f9a3a03ca62
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 747f2d40ade4396979450c3e2d27f387c7bd8aca
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919323"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840776"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Совместное работа с людьми за прев Организации
 
@@ -26,8 +28,8 @@ ms.locfileid: "39919323"
 
 ## <a name="see-also"></a>См. также
 
-[Рекомендации по предоставлению общего доступа к файлам и папкам пользователям, не прошедшим проверку подлинности](best-practices-anonymous-sharing.md)
+[Рекомендации по предоставлению общего доступа к файлам и папкам непроверенным пользователям](best-practices-anonymous-sharing.md)
 
-[Ограничить случайную выдержку при предоставлении доступа к файлам пользователям за пределами Организации](sharing-limit-accidental-exposure.md)
+[Ограничение возможности случайного раскрытия информации при предоставлении общего доступа к файлам пользователям за пределами организации](sharing-limit-accidental-exposure.md)
 
 [Создание безопасной среды общего доступа гостей](create-a-secure-guest-sharing-environment.md))

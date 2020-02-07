@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
+f1.keywords:
+- NOCSH
 description: Перемещение данных — это фоновая операция с минимальным влиянием на конечных пользователей. Пока корпорация Майкрософт переместит каждую службу и связанные данные для клиента в новый Geo центра обработки данных, никаких действий не требуется. Передача и проверка данных выполняются в фоновом режиме заранее с минимальным влиянием на пользователей.
-ms.openlocfilehash: f98d3a9aaef1197b1f424ce8cbd23b3d18b7ef2b
-ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
+ms.openlocfilehash: 58c4b407062c5472e9c5908d34b084a2d192227d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "40923861"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840376"
 ---
 # <a name="during-and-after-your-data-move"></a>Во время и после перемещения данных
 

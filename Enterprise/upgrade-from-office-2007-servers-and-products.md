@@ -20,17 +20,19 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2007, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: 2fd2e8a0bd2435dbec8c846111a628ffe56fa10c
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748026"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841006"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Если вы используете продукты и службы Office 2007, поддержка этих приложений закончилась. При планировании обновления это отличное время для перехода на Microsoft Cloud, начиная с Office 365. Используйте эту статью в качестве отправной точки для просмотра вариантов и планирования обновления.
       
@@ -53,7 +55,7 @@ ms.locfileid: "38748026"
 
 Если вы используете продукты и приложения Office 2007 на домашней странице, ознакомьтесь с [этими сведениями](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
      
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Группа для клиентов, у которых завершается поддержка продуктов Office (сообщество Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
   

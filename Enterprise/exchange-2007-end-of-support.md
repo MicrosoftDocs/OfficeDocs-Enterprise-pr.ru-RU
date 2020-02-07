@@ -10,17 +10,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
+f1.keywords:
+- NOCSH
 description: 11 апреля 2017 г. сервер Exchange Server 2007 достиг конца поддержки. Если вы еще не начали миграцию с Exchange 2007 на Office 365 или Exchange 2016, настало время начать планирование.
-ms.openlocfilehash: fbc2c4d0de03f27020cedf5458d7e94f880715dd
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 67e6a8f271fd8d553895ba086ed4b6ad11d9a877
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746232"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840356"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки Exchange 2007;
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 **11 апреля 2017**г. сервер Exchange Server 2007 достиг конца поддержки. Если вы еще не начали миграцию с Exchange 2007 на Office 365 или Exchange 2016, настало время начать планирование. 
   
@@ -246,7 +248,7 @@ ms.locfileid: "38746232"
     
 - [Служба поддержки клиентов](https://support.microsoft.com/gp/support-options-for-business)
     
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Ресурсы по обновлению серверов и клиентов Office 2007](upgrade-from-office-2007-servers-and-products.md)
   

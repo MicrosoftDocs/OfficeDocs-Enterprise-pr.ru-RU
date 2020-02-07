@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: В этой статье описывается, как уменьшить время загрузки страниц SharePoint Online с помощью JavaScript, чтобы задержать загрузку изображений, а также подождать, пока не загрузится страница.
-ms.openlocfilehash: bf68dd29d1c92d37e8dfb5b99f043af160f96d1e
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 86efb767e80927f7d3f5d8055676e6d99da4d667
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813477"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840566"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Задержка при загрузке изображений и JavaScript-файлов в SharePoint Online
 
@@ -115,7 +117,7 @@ $('#s4-workspace').on("scroll", function () {
 
 Не пропустите статью и пример кода на [JavaScript Injection](https://go.microsoft.com/fwlink/p/?LinkId=524759) , предоставленном в GitHub.
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Поддерживаемые браузеры в Office 2013 и Office 365 профессиональный плюс](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   

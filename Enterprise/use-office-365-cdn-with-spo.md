@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: В этой статье описывается использование сети доставки содержимого (CDN) Office 365 для ускорения доставки ресурсов SharePoint Online всем пользователям независимо от того, где они размещены, или от того, как они обращаются к контенту.
-ms.openlocfilehash: 829903919d0a6222b213fe08a610ff6ebe9b985d
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 7194f5e73c2799a40b750032b736e2b7c7bd2c10
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721940"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841076"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Использование сети доставки содержимого Office 365 с SharePoint Online
 
@@ -385,7 +387,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Пример: Настройка частного источника для семейства веб-сайтов для SharePoint Online
 
-Используйте командлет **Add-SPOTenantCdnOrigin** для определения семейства веб-сайтов в качестве частного источника. Пример:
+Используйте командлет **Add-SPOTenantCdnOrigin** для определения семейства веб-сайтов в качестве частного источника. Например:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -668,7 +670,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 <a name="ExamplePrivateOriginSiteCollectionPnPPosh"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Пример: Настройка частного источника для семейства веб-сайтов для SharePoint Online
 
-Используйте командлет **Add-пнптенанткдноригин** для определения семейства веб-сайтов в качестве частного источника. Пример:
+Используйте командлет **Add-пнптенанткдноригин** для определения семейства веб-сайтов в качестве частного источника. Например:
 
 ``` powershell
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -941,7 +943,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 Доступ к ресурсам в частных источниках в сети CDN Office 365 предоставляется маркерами, созданными SharePoint Online. Пользователи, которые уже имеют разрешение на доступ к папке или библиотеке, назначенным источником, автоматически получают маркеры, позволяющие пользователю получить доступ к файлу на основе их уровня разрешений. Эти маркеры доступа действительны в течение 30 – 90 минут после их создания для предотвращения атак с повторением маркеров.
 
-После создания маркера доступа SharePoint Online возвращает пользовательский URI для клиента, содержащего два параметра авторизации _EAT_ (маркер авторизации пограничного сервера) и _ОАТ_ (маркер авторизации источника). Структура каждого маркера _< ' время истечения срока действия в формате эпохи ' >__< ' Secure Signature ' >_. Пример:
+После создания маркера доступа SharePoint Online возвращает пользовательский URI для клиента, содержащего два параметра авторизации _EAT_ (маркер авторизации пограничного сервера) и _ОАТ_ (маркер авторизации источника). Структура каждого маркера _< ' время истечения срока действия в формате эпохи ' >__< ' Secure Signature ' >_. Например:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -993,10 +995,10 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 Если источник */клиентсидеассетс отсутствует, решения SharePoint Framework завершатся неуспешно, и предупреждения или сообщения об ошибках не создаются. Этот источник может отсутствовать из-за того, что для сети CDN включен параметр _-нодефаулторигинс_ , для которого задано значение **$true**или удалено удаление источника вручную.
 
-Вы можете проверить, присутствует ли источник */КЛИЕНТСИДЕАССЕТС с помощью следующей команды PowerShell:
+Вы можете проверить, какие источники имеются в наличии с помощью следующей команды PowerShell:
 
 ``` powershell
-Get-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
+Get-SPOTenantCdnOrigins -CdnType Public
 ```
 
 Вы также можете проверить наличие Office 365 CLI:
@@ -1024,7 +1026,7 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 + [Начало работы с командной консолью SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 + [Установка Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Сети доставки содержимого](https://aka.ms/o365cdns)
 

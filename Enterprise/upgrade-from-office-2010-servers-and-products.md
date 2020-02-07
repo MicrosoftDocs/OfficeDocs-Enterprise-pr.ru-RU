@@ -20,13 +20,15 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2010, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: 9df09e0f31358c9dd1bfe4a4adde99d41070060f
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: a71ac61b69d72f6386c3b9063ec0c1946a5b57ca
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072411"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841036"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 
@@ -62,7 +64,7 @@ Office 2010, Exchange Server 2010, SharePoint 2010 и Project Server 2010 дос
 
 Если вы используете продукты и приложения Office 2010 на домашней странице, ознакомьтесь с [этими сведениями](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 
-## <a name="related-topics"></a>См. также
+## <a name="related-topics"></a>Связанные статьи
 
 [Группа для клиентов, у которых завершается поддержка продуктов Office (сообщество Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
   

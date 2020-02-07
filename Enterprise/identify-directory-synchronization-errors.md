@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -19,12 +21,12 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Сведения о том, как просматривать ошибки синхронизации каталогов в центре администрирования Microsoft 365.
-ms.openlocfilehash: b1cda68590131967ea2fe91506c8e71769f4c32b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e270b7f1bc29d952cd07a7b3430a1a9a50b67783
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067525"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840176"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Просмотр ошибок синхронизации каталогов в Office 365
 
@@ -42,7 +44,7 @@ ms.locfileid: "34067525"
     
 3. На **домашней** странице вы увидите плитку **состояния DirSync** . 
     
-    ![Плитка состояния DirSync в предварительной версии центра администрирования](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![Плитка "Состояние DirSync" в предварительной версии центра администрирования](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
 4. На плитке выберите **состояние DirSync** , чтобы перейти на страницу **состояния синхронизации каталогов** . 
     
