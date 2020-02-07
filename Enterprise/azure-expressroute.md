@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365.
-ms.openlocfilehash: 63ac8c23a6b36ed6ed079a20f05ca5fdfdcfcb83
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745742"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844930"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute для Office 365
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365. Службы инфраструктуры и платформ, работающие в Azure, часто получают преимущества, устраняя сетевую архитектуру и вопросы производительности. В таких случаях рекомендуется использовать ExpressRoute для Azure. Программное обеспечение в виде таких служб, как Office 365 и Dynamics 365, были созданы для надежного и надежного доступа через Интернет. Вы можете прочитать сведения о производительности и безопасности Интернета, а также о том, как вы можете использовать Azure ExpressRoute для Office 365 в статье [Оценка сетевого подключения office 365](assessing-network-connectivity.md).
 
@@ -100,7 +102,7 @@ ms.locfileid: "38745742"
 
 ## <a name="related-topics"></a>Статьи по теме
 
-[Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
+[Оценка сетевого подключения к Office 365](assessing-network-connectivity.md)
 
 [Управление подключением ExpressRoute для Office 365](managing-expressroute-for-connectivity.md)
 
@@ -122,6 +124,6 @@ ms.locfileid: "38745742"
 
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

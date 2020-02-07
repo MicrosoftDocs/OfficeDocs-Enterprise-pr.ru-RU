@@ -12,13 +12,15 @@ ms.collection:
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
+f1.keywords:
+- NOCSH
 description: Эта статья представляет собой текстовую версию схемы "Варианты платформы Microsoft SharePoint 2013".
-ms.openlocfilehash: aeb17825efa26260422bd1407dfa71920838011d
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 100645b8de8487497eca4a2581523818e18834b3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077552"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843880"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>Доступная схема — варианты платформы Microsoft SharePoint 2013
 
@@ -46,7 +48,7 @@ ms.locfileid: "38077552"
     
 - обязанности ИТ-специалистов в отношении реализации решения.  
     
-### <a name="overview"></a>Обзор
+### <a name="overview"></a>Общие сведения
 
 #### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 в Office 365
 

@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: IT_ProjectAdmin
 search.appverid:
 - MET150
@@ -17,16 +19,16 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: 10 октября 2017 г. поддержка закончилась для Project Server 2007, Project Portfolio Server и Project 2007. Используйте эту статью для планирования обновления сейчас.
-ms.openlocfilehash: c21d9d1c2539f66587243f04d4d874649d6bf460
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 4eb8d734f74e2c146da419a55d78d0c8fcce5aab
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746242"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844080"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки Project Server 2007;
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Поддержка для серверов и приложений Office 2007 в 2017, и вам необходимо рассмотреть план миграции. Если в настоящее время используется Project Server 2007, обратите внимание на то, что этот продукт и другие связанные продукты имеют следующие даты окончания поддержки:
   
@@ -217,7 +219,7 @@ Project Portfolio Server 2007 использовался с Project Server 2007 
     
 - [Руководство по миграции Microsoft Office Project Portfolio Server 2007](https://go.microsoft.com/fwlink/p/?linkid=841279)
     
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [План поддержки SharePoint Server 2007](sharepoint-2007-end-of-support.md)
   

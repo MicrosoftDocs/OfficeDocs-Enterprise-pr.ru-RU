@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Сводка: в этой статье описывается поддержка IPv6 в компонентах Microsoft Office 365 и Office 365 для государственных организаций.'
-ms.openlocfilehash: 17938a6bd3544889c4afa38f27b11ea7f02e0f43
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 32e90f0dda9b06d06b6e289b26f640c4ddc79cf3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745732"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845120"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Поддержка протокола IPv6 в службах Office 365
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Office 365 поддерживает как IPv6, так и IPv4; Однако не все функции Office 365 полностью включены с IPv6. Это означает, что для подключения к Office 365 необходимо использовать IPv4 и IPv6. Если вы фильтруете исходящий трафик в Office 365, полный список IPv6-адресов, поддерживаемых в Office 365, можно найти в статье [URL-адреса и диапазоны IP-адресов office 365](urls-and-ip-address-ranges.md). После настройки сети и разрешения соответствующих IPv6-адресов можно скачать [план тестирования IPv6 для Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) из центра загрузки Майкрософт.
   

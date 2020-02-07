@@ -9,18 +9,20 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Сводка: использование PowerShell для Office 365 для управления пользователями, группами и сайтами SharePoint Online.'
-ms.openlocfilehash: 37aec217c39d9e1b9641004e38c049dcc407fd0c
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 54a493cc7635562733241fb371ecdb59477ac717
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261382"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841326"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell
 
@@ -269,7 +271,7 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 
 Это довольно простой отчет, и вы можете добавить код, чтобы создать более сложные отчеты или отчеты с более подробной информацией. Однако в этом случае необходимо понять, как использовать командную консоль SharePoint Online для управления пользователями в среде SharePoint Online.
    
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Подключение к PowerShell в SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 

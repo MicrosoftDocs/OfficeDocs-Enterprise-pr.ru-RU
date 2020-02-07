@@ -5,13 +5,15 @@ author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
-f1_keywords:
+ms.service: o365-administration
+localization_priority: Normal
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
 - O365P_AddUsersCSV
 - O365M_AddUsersCSV
 - O365E_AddUsersCSV
-ms.service: o365-administration
-localization_priority: Normal
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOP150
@@ -23,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Узнайте о том, как добавить в Office 365 для бизнеса сразу нескольких пользователей из электронной таблицы или другого CSV-файла. Посмотрите видео на сайте YouTube, в котором показано, как добавлять учетные записи в Office 365. После добавления учетных записей у каждого пользователя появится почтовый ящик Office 365. '
-ms.openlocfilehash: 283a45750c6b5d51f96dae2cac12acf3f47b98fe
-ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
+ms.openlocfilehash: 713d54759b32d498a58b88766ffbba9df64da51c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39825201"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844650"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Добавление сразу нескольких пользователей в службу Office 365 (справка для администраторов)
 

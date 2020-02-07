@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Сведения о том, как корпорация Майкрософт защищает облачные службы от атак типа "отказ в обслуживании" (DoS).
-ms.openlocfilehash: ba4688d965d6cce232f771507df941540acc8e4e
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 042748927ddfa4d81fa3c62b98ab8f1114a8ada0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035776"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843620"
 ---
 # <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>Защита облачных служб Майкрософт от атак типа "отказ в обслуживании"
 

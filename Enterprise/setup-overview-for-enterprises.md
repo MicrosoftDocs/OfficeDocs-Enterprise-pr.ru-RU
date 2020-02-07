@@ -14,15 +14,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Эти шаги предназначены для помощи в настройке сети, создании удостоверений, развертывании Office 365 профессиональный плюс, переносе данных и помощи пользователям в Организации начать использовать Office 365.
-ms.openlocfilehash: e9af8d1ad617d617450946966967ab797eeffa07
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 979b7f1153451b072c5ab25ad8aced50ae69576a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748070"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844020"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Развертывание Office 365 корпоративный для организации
 

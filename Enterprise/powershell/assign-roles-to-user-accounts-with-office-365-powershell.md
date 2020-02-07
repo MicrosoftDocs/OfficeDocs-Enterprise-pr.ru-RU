@@ -9,18 +9,20 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - O365ITProTrain
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: Сводка. Назначайте роли учетным записям пользователей, используя PowerShell для Office 365.
-ms.openlocfilehash: 999b44f56e2652c0d6d2d746a3ed204be9d1f69c
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 3b57862d78d8699da033ed016338a449650e7140
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072531"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841676"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365
 
@@ -228,5 +230,5 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 ## <a name="see-also"></a>См. также
 
 - [Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+- [Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
 - [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)

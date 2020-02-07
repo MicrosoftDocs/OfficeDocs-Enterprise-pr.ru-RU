@@ -1,5 +1,5 @@
 ---
-title: Доступ к сетевому подключению Office 365
+title: Оценка сетевого подключения к Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 позволяет клиентам по всему миру подключаться к службе с помощью подключения к Интернету. По мере развития службы безопасность, производительность и надежность Office 365 улучшены в зависимости от клиентов, использующих Интернет для установления подключения к службе.
-ms.openlocfilehash: 8b784da9dcb8b5e821197e72ccc5ab49b976ba74
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: c96cb8aa7341c0749d198e1fa5459433c40e1062
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745722"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844700"
 ---
-# <a name="assessing-office-365-network-connectivity"></a>Доступ к сетевому подключению Office 365
+# <a name="assessing-office-365-network-connectivity"></a>Оценка сетевого подключения к Office 365
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Office 365 позволяет клиентам по всему миру подключаться к службе с помощью подключения к Интернету. По мере развития службы безопасность, производительность и надежность Office 365 улучшены в зависимости от клиентов, использующих Интернет для установления подключения к службе.
   
@@ -105,7 +107,7 @@ Office 365 позволяет клиентам по всему миру подк
   
 Ниже приведена короткая ссылка, которую можно использовать для возврата: [ https://aka.ms/o365networkconnectivity.](https://aka.ms/o365networkconnectivity)
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Обзор сетевого подключения Office 365](office-365-networking-overview.md)
 

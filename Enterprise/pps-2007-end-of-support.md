@@ -13,17 +13,19 @@ search.appverid:
 - PDD140
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
+f1.keywords:
+- NOCSH
 description: Достигнут конец поддержки PerformancePoint Server 2007, ProClarity и SharePoint Server 2007. Прочтите эту статью, чтобы спланировать обновление решения бизнес-аналитики.
-ms.openlocfilehash: 517d420eff35cde2862d7879e3b5557cbe6087ca
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 89f13a9fba91195c8e3ecfcdaaebb52a27307eef
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746252"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844100"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки PerformancePoint Server 2007.
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Для серверов и приложений Office 2007 достигнут конец поддержки, в том числе серверы и приложения, которые могут использоваться в составе решений бизнес-аналитики (BI). В следующей таблице перечислены приложения бизнес-аналитики, которые затронуты:
   
@@ -149,7 +151,7 @@ Power BI не входит в состав Office 365 или SharePoint Server, 
 
 Как вы обновляете локально или переходите в Office 365, рекомендуем вам работать с партнером Майкрософт. Квалифицированный партнер может помочь вам определить решение, которое соответствует потребностям вашей компании, и помочь вам в развертывании. Посетите [Центр партнеров Майкрософт](https://go.microsoft.com/fwlink/?linkid=841249)и используйте фильтры поиска, чтобы найти поставщика решений.
   
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007](upgrade-from-office-2007-servers-and-products.md)
   

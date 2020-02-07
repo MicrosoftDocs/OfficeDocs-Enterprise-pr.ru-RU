@@ -13,17 +13,19 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- NOCSH
 description: Сведения о том, почему оптимизация сети важна для служб SaaS, цели Office 365 в сети, а также от того, как SaaS требуется разная сеть от других рабочих нагрузок.
-ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747711"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844360"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Обзор сетевого подключения Office 365
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Office 365 это распределенное программное обеспечение, которое представляет собой облако, обеспечивающее продуктивность и совместную работу с помощью разнообразных микрослужб и приложений. Клиентские компоненты Office 365, такие как Outlook, Word и PowerPoint, выполняются на компьютерах пользователей и подключаются к другим компонентам Office 365, которые работают в центрах обработки данных Майкрософт. Наиболее важный фактор, определяющий качество взаимодействия с пользователем Office 365: надежность сети и небольшая задержка между клиентами Office 365 и внешними дверцами службы Office 365.
 
@@ -102,7 +104,7 @@ Office 365 разработана для обеспечения оптималь
 
 [Веб-служба IP-адресов и URL-адресов в Office 365](office-365-ip-web-service.md)
 
-[Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
+[Оценка сетевого подключения к Office 365](assessing-network-connectivity.md)
 
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)
 

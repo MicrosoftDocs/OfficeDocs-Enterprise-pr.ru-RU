@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: В этой статье описывается, как использовать минификации и объединение технологий с помощью веб-компонентов Web Essentials для уменьшения количества HTTP-запросов и сокращения времени, необходимого для загрузки страниц в SharePoint Online.
-ms.openlocfilehash: 22114d8ab3b33c9a39b4d9291b4099501fcfb93f
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: ca0ad53f2c854226b729a94e345a553850517eaf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078448"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844900"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Минификация и объединение в SharePoint Online
 
@@ -51,7 +53,7 @@ ms.locfileid: "38078448"
   
 1. В обозревателе решений Visual Studio выберите файлы, которые нужно включить в пакет.
     
-2. Щелкните правой кнопкой мыши выбранные файлы, а затем в контекстном **меню выберите команду** \> **создать файл пакета JavaScript** . Пример: 
+2. Щелкните правой кнопкой мыши выбранные файлы, а затем в контекстном **меню выберите команду** \> **создать файл пакета JavaScript** . Например: 
     
     ![Снимок экрана: параметры меню Web Essentials](media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -87,7 +89,7 @@ ms.locfileid: "38078448"
   
 1. В обозревателе решений Visual Studio выберите файлы, которые нужно включить в пакет.
     
-2. Щелкните правой кнопкой мыши выбранные файлы, а затем в контекстном меню выберите команду **создать спрайт изображения** **Web Essentials** \> . Пример: 
+2. Щелкните правой кнопкой мыши выбранные файлы, а затем в контекстном меню выберите команду **создать спрайт изображения** **Web Essentials** \> . Например: 
     
     ![Снимок экрана: как создать спрайт изображения](media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

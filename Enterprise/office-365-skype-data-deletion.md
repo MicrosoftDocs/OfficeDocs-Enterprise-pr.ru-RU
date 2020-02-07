@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Пояснения об удалении данных в Skype для бизнеса.
-ms.openlocfilehash: 0c04ff898395a723ebadd792ea576fe10d440dae
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 33fbb91d2fbfd0e3133bfa2cca2118643b702d95
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035736"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844310"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Удаление данных в Skype для бизнеса в Office 365
 

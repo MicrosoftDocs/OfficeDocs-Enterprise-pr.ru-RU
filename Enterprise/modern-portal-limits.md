@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: Сведения о рекомендациях по производительности современных сайтов в SharePoint Online.
-ms.openlocfilehash: e868b765fe46d8f6ee26443d6e75d31a39bb3281
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078404"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844790"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>Пределы сайтов современных порталов SharePoint Online
 
@@ -44,7 +46,7 @@ ms.locfileid: "38078404"
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>Рекомендации и требования к современным сайтам портала
 
-|**Limit**|**Максимальное рекомендуемое значение**|**Примечания**|
+|**Limit**|**Максимальное рекомендуемое значение**|**Notes**|
 |:-----|:-----|:-----|:-----|
 |Элементы страниц и новостей  <br/> |5000 для каждого сайта  <br/> |Рекомендуем ограничить количество страниц и элементов новостей на современном сайте портала до 5 000.  <br/> |
 |Веб-части на странице  <br/> |20 на странице  <br/> |Рекомендуется использовать не более 20 веб-частей на странице, включая как встроенные, так и настраиваемые веб-части. <br/> Более подробную информацию можно узнать [в статье Оптимизация производительности веб-частей на современных страницах сайта SharePoint Online](modern-web-part-optimization.md).  <br/> |
@@ -57,7 +59,7 @@ ms.locfileid: "38078404"
 |Вызовы службы UPA  <br/> |1 на пользователя в час  <br/> |Мы не рекомендуем делать _запросы_ на звонки в службу UPA (приложение профилей пользователей). [API Microsoft Graph](https://docs.microsoft.com/graph/call-api) и [PageContext](https://docs.microsoft.com/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) можно использовать для запроса сведений о пользователе.  <br/> Если требуется вызов службы UPA, при необходимости сделайте один вызов, а затем кэшировать сведения для повторного использования в том же сеансе. |
 |Звонки в службу таксономии  <br/> |5 на пользователя в час  <br/> |В службу таксономии рекомендуется не принимать звонки _по запросу_ . Если необходимы вызовы службы таксономии, кэшировать сведения для повторного использования в одном сеансе. <br/> Дополнительную информацию можно узнать [в статье Оптимизация вызовов страниц на страницах веб-сайта на современном и классическом сайте SharePoint Online](modern-page-call-optimization.md). <br/> |
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Создание работоспособного портала SharePoint](https://docs.microsoft.com/sharepoint/portal-health)
 

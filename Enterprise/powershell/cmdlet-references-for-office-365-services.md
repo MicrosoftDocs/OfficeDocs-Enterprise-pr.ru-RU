@@ -9,19 +9,21 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Office_Other
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Сводка. Поиск разделов справки по командлетам PowerShell для Office 365 для Azure Active Directory, Exchange Online, SharePoint Online, Skype для бизнеса Online и соответствия требованиям безопасности _Амп_.
-ms.openlocfilehash: 5b8833b426e08417e23bea6e94b7c5a201bf40ff
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Сводка. Поиск разделов справки по командлетам PowerShell для Office 365 для Azure Active Directory, Exchange Online, SharePoint Online, Skype для бизнеса Online и соответствия требованиям безопасности &.
+ms.openlocfilehash: 0fe0f87bdb2110630706e276092012af86ff5044
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069205"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841646"
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Сведения о командлетах для служб Office 365
 
- **Сводка:** Найдите справочные статьи по командлетам PowerShell для Office 365 для Azure Active Directory, Exchange Online, SharePoint Online, Skype для бизнеса Online и соответствия требованиям безопасности _Амп_.
+ **Сводка:** Справочные материалы по командлетам PowerShell для Office 365 для Azure Active Directory, Exchange Online, SharePoint Online, Skype для бизнеса Online и обеспечения безопасности & соответствия требованиям.
   
 Разделы справки по командлетам для различных служб Office 365 предоставляют подробные сведения и инструкции по использованию каждого командлета. Кроме того, каждая служба Office 365 с поддержкой PowerShell требует различных инструкций по подключению.
   
@@ -61,7 +63,7 @@ ms.locfileid: "34069205"
 
 Справочные материалы &amp; по командлетам центра безопасности и соответствия требованиям Office 365 содержатся в разделе **Справочник** по [документации PowerShell для Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
   
-Для получения инструкций по подключению для центра безопасности &amp; и соответствия требованиям PowerShell щелкните [подключиться к &amp; оболочке PowerShell центра безопасности Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Для получения инструкций по подключению для центра безопасности &amp; и соответствия требованиям PowerShell щелкните [подключиться к оболочке PowerShell центра безопасности &amp; Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 
   

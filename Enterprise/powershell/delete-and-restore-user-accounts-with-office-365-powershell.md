@@ -9,18 +9,20 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Узнайте, как удалять учетные записи пользователей Office 365, используя PowerShell.
-ms.openlocfilehash: 0cdc48f9570c994ec0a55d37d013a084b495f259
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 5c69d69a61b3d3299f34a46c32d5575eae7b908a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072521"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841554"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Удаление учетных записей пользователей с помощью PowerShell в Office 365
 
@@ -115,6 +117,6 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 
 [Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)

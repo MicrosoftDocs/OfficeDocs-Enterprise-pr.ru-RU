@@ -12,6 +12,8 @@ ms.collection:
 - Ent_O365
 - M365-identity-device-management
 - M365-security-compliance
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Сведения об управлении удостоверениями пользователей в Office 365.
-ms.openlocfilehash: 0cc40323d978fe9ab13e3326dac183143a014406
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: a44f3073895ef1c8172a6ab5637f50cd9c6ac186
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40071881"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843810"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Модели удостоверений Office 365 и Azure Active Directory
 
@@ -90,7 +92,7 @@ Azure AD Connect обеспечивает текущую синхронизац�
 
 Вы не используете центр администрирования Microsoft 365 или Windows PowerShell для управления синхронизированными учетными записями пользователей в Azure AD.
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 Если требуется только Облачная модель удостоверений, ознакомьтесь со статьями " [облачные удостоверения](cloud-only-identities.md)".
 
@@ -101,6 +103,6 @@ Azure AD Connect обеспечивает текущую синхронизац�
 
 В видеокурсе [Office 365: Управление удостоверениями с помощью Azure AD Connect](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx), предоставленных в LinkedIn Learning.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

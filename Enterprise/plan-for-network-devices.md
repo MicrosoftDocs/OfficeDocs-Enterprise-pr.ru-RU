@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Сводка: в этой статье описываются вопросы, касающиеся мощности сети, ускорителей глобальной сети и устройств балансировки нагрузки, которые используются для подключения к Office 365.'
-ms.openlocfilehash: 2a38fd7dad23b41aa31dcf9ace7ebee6ed69c0f6
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: edc089abc58f19c0655f9a75da96366a0a09dcb7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747072"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841731"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Планирование для сетевых устройств, подключающихся к службам Office 365
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
   
 **Сводка**: в этой статье описываются вопросы, касающиеся мощности сети, УСКОРИТЕЛей глобальной сети и устройств балансировки нагрузки, которые используются для подключения к Office 365.
 
@@ -70,7 +72,7 @@ ms.locfileid: "38747072"
 
 Для получения дополнительных сведений о настройке брандмауэров и прокси-серверов для подключения к Office 365, прочитайте раздел [Управление конечными точками office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Оценка сетевого подключения Office 365](assessing-network-connectivity.md)и [вопросы и ответы на конечные точки Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) для получения дополнительных сведений об устройствах и выборе канала.
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
 

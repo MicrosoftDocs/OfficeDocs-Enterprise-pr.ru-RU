@@ -6,7 +6,9 @@ manager: laurawi
 ms.date: 01/28/2019
 audience: ITPro
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
 - vsemail
 - MS_WSS_DirectoryManagement
 - MS_WSS_ConfigEmail
@@ -34,16 +36,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 10 октября 2017 г. поддержка закончилась для SharePoint Server 2007. В этой статье рассказывается о вариантах обновления, устранении неполадок, рекомендациях, требованиях к системе, действиях по обновлению и о том, как получить помощь от партнеров Майкрософт.
-ms.openlocfilehash: 1b7b2ccf1bbda5210e563a4cd702ebd90b9f8f5d
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6f0bd60d1f1201750ae1f0e4cc1a001ab4ed2ef6
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747318"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844010"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки SharePoint Server 2007
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 **10 октября 2017**г. Microsoft Office SharePoint Server 2007 достиг конца поддержки. Если вы еще не начали переход с SharePoint Server 2007 на Office 365 или более новую версию SharePoint Server, теперь настало время начать планирование. В этой статье описываются ресурсы, которые помогут пользователям перенести данные в SharePoint Online или обновить локальный сервер SharePoint Server. 
   
@@ -195,7 +197,7 @@ SharePoint Server можно установить локально на собс
 > [!NOTE]
 > Помните, что ферма SharePoint 2007 должна быть обновлена в локальной среде до SharePoint Server 2013 или SharePoint Server 2016, чтобы использовать гибридный вариант. 
   
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Устранение неполадок и возобновление обновления (Office SharePoint Server 2007)](https://go.microsoft.com/fwlink/?linkid=843192)
   

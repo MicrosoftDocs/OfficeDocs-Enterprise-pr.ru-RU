@@ -15,14 +15,16 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+f1.keywords:
+- NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Защитите глобальный администратор доступ к вашей подписке на Office 365.
-ms.openlocfilehash: 293044fc508c89b5e08234aa62633c6c4490ba6d
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ee5acefbd5eab287a78b55f5d4ddfc525432b403
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072211"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841196"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Защита учетных записей глобальных администраторов Office 365
 
@@ -148,7 +150,7 @@ ms.locfileid: "40072211"
 
 Программное обеспечение SIEM, выполняемое на сервере, выполняет анализ оповещений системы безопасности и событий, созданных приложениями и сетевым оборудованием, в режиме реального времени. Чтобы разрешить серверу SIEM включать оповещения и события безопасности Office 365 в функции анализа и создания отчетов, интегрируйте Azure AD в вы СЕИМ. Ознакомьтесь [со статьей введение в службу интеграции журналов Azure](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 Если вы настраиваете удостоверение для подписки на Office 365, ознакомьтесь со статьей:
 
@@ -156,6 +158,6 @@ ms.locfileid: "40072211"
 - [Подготовка к синхронизации службы каталогов](prepare-for-directory-synchronization.md) , если вы используете гибридную идентификацию
 
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Схема безопасности Office 365](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).

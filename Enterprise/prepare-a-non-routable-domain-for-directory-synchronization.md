@@ -5,11 +5,13 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: article
-f1_keywords:
-- O365E_SetupDirSyncLocalDir
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
+- O365E_SetupDirSyncLocalDir
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -20,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Сведения о том, что делать, если у вас нет домена раутале, связанного с локальными пользователями, прежде чем выполнять синхронизацию с Office 365.
-ms.openlocfilehash: 013d29acdd3761793a93dab1eb8583324ba08591
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 10ec92ff19bd5e74363bced9a2f29c356c7fa4e8
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072421"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841226"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Подготовка домена, не поддерживающего маршрутизацию, для синхронизации службы каталогов
 При синхронизации локального каталога с Office 365 необходимо иметь проверенный домен в Azure Active Directory. Синхронизируются только имена участников-пользователей (UPN), связанные с локальным доменом. Тем не менее, любой UPN, который содержит домен без поддержки маршрутизации, например Local (например, billa@contoso. local), будет синхронизирован с доменом onmicrosoft.com (например, billa@contoso.onmicrosoft.com). 

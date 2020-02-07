@@ -8,6 +8,8 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Описывается синхронизация каталогов с Office 365, очистка доменных служб Active Directory и средство Azure Active Directory Connect.
-ms.openlocfilehash: 7dfb5a34e7a5a1bf1368a059859ef32049a15473
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 5368fc00aafe66ed51af80c50aaf72ee5f939041
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072541"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841766"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Гибридная идентификация и синхронизация каталогов для Office 365
 
@@ -141,11 +143,11 @@ ms.locfileid: "40072541"
   - У вас есть интегрированная локальная смарт-карта или решение с многофакторной проверкой подлинности.
 - Синхронизация фотографий, эскизов, Конференц-залов и групп безопасности
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 Когда вы будете готовы развернуть гибридную идентификацию, ознакомьтесь со статьей [Подготовка к подготовке пользователей](prepare-for-directory-synchronization.md).
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
 

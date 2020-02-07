@@ -12,17 +12,19 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Если вы используете Office 2007 или Office 2010, пора спланировать обновление. Не используйте устаревшие и неподдерживаемые приложения и серверы. Воспользуйтесь этими ресурсами, чтобы приступить к планированию.
-ms.openlocfilehash: 2eee3efccfce79bcab7f2d179e13f46fbfc7a501
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: b654dcd7b8f923f952a6e2fbefe37a5e523e1cd4
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747062"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841716"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Планирование обновления серверов и клиентов Office 2007 или Office 2010
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Если в вашей организации используются более ранние версии продуктов и серверов Office, пора начать планирование обновления. [Прекращена поддержка](upgrade-from-office-2007-servers-and-products.md) продуктов и служб Office 2007. Поддержка продуктов и служб Office 2010 (в том числе Office 2010, Exchange 2010, SharePoint 2010 и Project Server 2010) будет прекращена **13 октября 2020 г.** Воспользуйтесь ресурсами этого раздела, чтобы приступить к планированию.
 

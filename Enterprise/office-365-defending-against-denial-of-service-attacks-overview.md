@@ -12,19 +12,21 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Обзор атак типа "отказ в обслуживании" (DoS).
-ms.openlocfilehash: 55fffccfc59f13d32cdd19930320c1df1cf58461
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 16378800fc7bb61b8f78e2c4c51eb7940cb45d17
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067763"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843592"
 ---
 # <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Защита от атак типа "отказ в обслуживании" в Office 365
 
-## <a name="introduction"></a>Общие сведения
+## <a name="introduction"></a>Введение
 
-Корпорация Майкрософт предоставляет надежную инфраструктуру для более чем 200 облачных служб, размещенных в глобальной облачной инфраструктуре с более чем 100 центрами обработки данных. К ним относятся:
+Корпорация Майкрософт предоставляет надежную инфраструктуру для более чем 200 облачных служб, размещенных в глобальной облачной инфраструктуре с более чем 100 центрами обработки данных. Такие законодательные акты перечислены ниже.
 
 - Microsoft Azure
 - Microsoft Bing

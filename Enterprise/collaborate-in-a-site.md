@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: Узнайте, как совместно работать с гостями на сайте SharePoint.
-ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261362"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845070"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Совместная работа с гостями на сайте
 
@@ -84,7 +86,7 @@ ms.locfileid: "40261362"
 Следующий шаг — создание сайта, который планируется использовать для совместной работы с гостями.
 
 Создание сайта
-1. В центре администрирования SharePoint в разделе **сайты**щелкните **активные сайты**.
+1. В Центре администрирования SharePoint в разделе **Сайты** щелкните **Активные сайты**.
 2. Нажмите кнопку **Создать**.
 3. Щелкните **сайт группы**.
 4. Введите имя сайта и введите имя владельца группы (владельца сайта).

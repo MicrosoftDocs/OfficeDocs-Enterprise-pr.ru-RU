@@ -17,14 +17,16 @@ search.appverid:
 - OGD150
 - MOE150
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
+f1.keywords:
+- NOCSH
 description: Сводка. для Office 365 требуется подключение к Интернету. Конечные точки, расположенные ниже, должны быть достижимыми для клиентов, использующих только планы DoD Office 365 США.
 hideEdit: true
-ms.openlocfilehash: f764934edacf377851122c89dcfb923946e79f41
-ms.sourcegitcommit: 22fa825e9bcd1e167d0b931941f30b8622b93cb4
+ms.openlocfilehash: fac5107df0a9551a85b47d648d1962867d49eaa9
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41677854"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841986"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Конечные точки DoD Office 365 для государственных учреждений (США)
 
@@ -39,7 +41,7 @@ ms.locfileid: "41677854"
   
 |||
 |:-----|:-----|
-|**Последнее обновление:** 01/28/2020 — ![](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Подписка на журнал изменений](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) RSS <br/> |**Download:** полный список в [формате JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Последнее обновление:** 28.01.2020, [подписка на журнал изменений](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) <br/> |**Download:** полный список в [формате JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Начните с [управления конечными точками Office 365](managing-office-365-endpoints.md) , чтобы узнать, какие рекомендации по управлению сетевым подключением с помощью этих данных. Данные конечных точек обновляются в начале каждого месяца с новыми IP-адресами и URL-адресами, опубликованными в течение 30 дней до момента активации. Это позволяет пользователям, у которых еще не было автоматизированное обновление, завершить свои процессы, прежде чем потребуется новое подключение. Конечные точки также могут быть обновлены в течение месяца при необходимости обращения к укрупнению поддержки, происшествиям безопасности или другим немедленным рабочим требованиям. Данные, показанные на этой странице, созданы на основе веб-служб REST. Если вы используете сценарий или сетевое устройство для доступа к этим данным, перейдите непосредственно к [веб-службе](office-365-ip-web-service.md) .
 

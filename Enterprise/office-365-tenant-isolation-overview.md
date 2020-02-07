@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Сводка о том, как корпорация Майкрософт обеспечивает изоляцию клиентов для Office 365.
-ms.openlocfilehash: 37d695635a5b7145b8384f1bf69fc357875ac38f
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 5b9db878fce46e02815a06b16271289d199105a0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035629"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844300"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Изоляция клиентов в Office 365
 

@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
+f1.keywords:
+- NOCSH
 description: Данная статья представляет собой текстовую версию схемы "Аварийное восстановление SharePoint в Microsoft Azure".
-ms.openlocfilehash: e711452f6e019ceb280d43c2e0167507a0b0ef20
-ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
+ms.openlocfilehash: f9bbc62994c1ca36425fa35a4ce294e22596d793
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38038238"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843850"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Доступная схема — аварийное восстановление SharePoint в Microsoft Azure
 
@@ -46,7 +48,7 @@ ms.locfileid: "38038238"
   
 - Внутренние службы 
     
-- Admin 
+- Администратор 
     
 - Диспетчер бизнес-правил 
     
@@ -74,7 +76,7 @@ ms.locfileid: "38038238"
 
 На сопроводительной схеме показана локальная среда, точно реплицированная в среде восстановления Azure. В этой среде сервер для общего доступа к файлам связан с локальной средой посредством репликации распределенной файловой системы. Репликация распределенной файловой системы передает журналы из рабочей среды в среду восстановления через сервер для общего доступа к файлам.  
   
-### <a name="overview"></a>Обзор
+### <a name="overview"></a>Общие сведения
 
 Среда аварийного восстановления для локальной фермы SharePoint 2013 может быть размещена в Azure. 
   

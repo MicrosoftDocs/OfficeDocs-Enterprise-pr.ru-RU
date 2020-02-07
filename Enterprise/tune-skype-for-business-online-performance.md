@@ -9,6 +9,8 @@ ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -17,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: В этой статье приведены ссылки на системные администраторы, которые хотят спланировать требования к пропускной способности сети или кто должен увеличить производительность Skype для бизнеса Online.
-ms.openlocfilehash: 57b326849fbb4fb1448824da1682d8f7ca66a473
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 4ca25d8a38ffce5b694b9ca31c330f6488720fcb
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616822"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843920"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Настройка производительности Skype для бизнеса Online
 
@@ -50,7 +52,7 @@ ms.locfileid: "35616822"
     
 - [Вот что вы получаете в телефонной системе в Office 365](https://docs.microsoft.com/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Планирование сети и настройка производительности для Office 365](network-planning-and-performance.md)
   

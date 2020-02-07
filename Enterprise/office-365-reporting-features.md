@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-analytics
+f1.keywords:
+- NOCSH
 description: Описание функций отчетов в Office 365.
-ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031864"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842036"
 ---
 # <a name="office-365-reporting-features"></a>Функции создания отчетов в Office 365 
 

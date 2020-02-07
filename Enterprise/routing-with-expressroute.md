@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Чтобы правильно разобрал трафик маршрутизации для Office 365 с помощью Azure ExpressRoute, вам потребуются сведения об основных требованиях к маршрутизации ExpressRoute, а также о доменах ExpressRoute и доменах маршрутизации. В этих статьях используются основные принципы использования ExpressRoute, на которые полагаются клиенты Office 365.
-ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 0a83499c6724fd4e843a7bf6788ebf4df945f145
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813899"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844060"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Маршрутизация с использованием ExpressRoute для Office 365
 
@@ -231,7 +233,7 @@ Humongous страхование географически распределе
   
 ## <a name="related-topics"></a>Статьи по теме
 
-[Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
+[Оценка сетевого подключения к Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute для Office 365](azure-expressroute.md)
   
@@ -255,6 +257,6 @@ Humongous страхование географически распределе
   
 [План устранения проблем с производительностью Office 365](performance-troubleshooting-plan.md)
   
-[URL-адреса и диапазоны IP-адресов Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URL-адреса и диапазоны IP-адресов для Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)

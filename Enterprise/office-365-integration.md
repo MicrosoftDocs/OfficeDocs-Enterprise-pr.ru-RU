@@ -8,6 +8,8 @@ ms.topic: article
 ms.date: 10/08/2019
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -19,16 +21,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Узнайте, как интегрировать Office 365 с существующими службами каталогов.
-ms.openlocfilehash: 36bbda95e96223c465d5bf5a2ec93e5514a38a17
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 61feabb4d62b4b67538f45a3f827c746197b55d3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747165"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844500"
 ---
 # <a name="office-365-integration-with-on-premises-environments"></a>Интеграция Office 365 с локальными средами
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Вы можете интегрировать Office 365 с существующими службами каталогов и с локальной установкой Exchange Server, Skype для бизнеса Server 2015 или SharePoint Server.
   
@@ -41,7 +43,7 @@ ms.locfileid: "38747165"
 - [Помощник по развертыванию AD FS](https://aka.ms/adfsguidance)
 - [Руководство по установке Azure AD Premium](https://aka.ms/aadpguidance)
    
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="before-you-begin"></a>Подготовка
 
 Перед интеграцией Office 365 и локальной среды также необходимо принять участие в [планировании сети и настройке производительности](network-planning-and-performance.md). Вам также потребуется ознакомиться с доступными [моделями удостоверений](about-office-365-identity.md). 
 
@@ -80,6 +82,6 @@ Azure AD Connect заменяет более ранние версии сред�
 
 Кроме того, вы можете ознакомиться со статьей [развертывание службы синхронизации каталогов Office 365 в Microsoft Azure](https://go.microsoft.com/fwlink/?LinkId=517887).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

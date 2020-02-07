@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Если в организации используется Office 365 и компьютеры в сети не подключаются к Интернету, ниже вы найдете конечные точки (FQDN, Ports, URL-адреса, IPv4 и диапазоны адресов IPv6), которые следует включить в списки разрешенных исходящих подключений, чтобы убедиться, что компьютеры могут успешно использовать Office 365.
 hideEdit: true
-ms.openlocfilehash: 3fba372269886d5314724c8bf25f829bbb540447
-ms.sourcegitcommit: 22fa825e9bcd1e167d0b931941f30b8622b93cb4
+ms.openlocfilehash: 76579b9c6b567394e12f655a9edaf620a219b8d7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41677884"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844330"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 США для государственных организаций GCC High
 
@@ -36,7 +38,7 @@ ms.locfileid: "41677884"
   
 |||
 |:-----|:-----|
-|**Последнее обновление:** 01/28/2020 — ![](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Подписка на журнал изменений](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) RSS <br/> |**Download:** полный список в [формате JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Последнее обновление:** 28.01.2020, [подписка на журнал изменений](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) <br/> |**Download:** полный список в [формате JSON](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Начните с [управления конечными точками Office 365](managing-office-365-endpoints.md) , чтобы узнать, какие рекомендации по управлению сетевым подключением с помощью этих данных. Данные конечных точек обновляются в начале каждого месяца с новыми IP-адресами и URL-адресами, опубликованными в течение 30 дней до момента активации. Это позволяет пользователям, у которых еще не было автоматизированное обновление, завершить свои процессы, прежде чем потребуется новое подключение. Конечные точки также могут быть обновлены в течение месяца при необходимости обращения к укрупнению поддержки, происшествиям безопасности или другим немедленным рабочим требованиям. Данные, показанные на этой странице, созданы на основе веб-служб REST. Если вы используете сценарий или сетевое устройство для доступа к этим данным, перейдите непосредственно к [веб-службе](office-365-ip-web-service.md) .
 

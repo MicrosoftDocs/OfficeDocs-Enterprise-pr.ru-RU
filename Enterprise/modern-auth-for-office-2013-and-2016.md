@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -21,12 +23,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Узнайте, как Office 365 современная проверка подлинности работает по-разному для клиентских приложений Office 2013 и 2016.
-ms.openlocfilehash: aebc9957ed3eac5997bf8646dfc7284f24a2ed1b
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122578"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844860"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Современная проверка подлинности в клиентских приложениях Office 2013 и Office 2016
 
@@ -48,7 +50,7 @@ ms.locfileid: "41122578"
 - Включен **по умолчанию для Skype** для бизнеса Online. В этой статье описывается [Включение современной проверки подлинности в Skype для бизнеса Online ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)для ее включения или выключения.
 
 > [!NOTE]
-> Для клиентов, созданных **до** 1 августа 2017, современная проверка подлинности по умолчанию **отключена** для Exchange Online и Skype для бизнеса Online.
+> Для клиентов, созданных **до** 1 августа 2017 г., современная проверка подлинности по умолчанию **отключена** в Exchange Online и Skype для бизнеса Online.
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Поведение клиентских приложений Office при входе
 
@@ -106,7 +108,7 @@ ms.locfileid: "41122578"
 |Office 2013  <br/> |Нет  <br/> |Нет  <br/> |Только помощник по входу в Microsoft Online.  <br/> |Только помощник по входу в Microsoft Online.  <br/> |
 |Office 2013  <br/> |Да, Енаблеадал = 1  <br/> |Да  <br/> |Сначала выполняется попытка современной проверки подлинности. Если сервер отказывается от современного подключения проверки подлинности, используется помощник по входу в Microsoft Online. Сервер отклоняет современные проверки подлинности при отключенных клиентах Skype для бизнеса Online.  <br/> |Только помощник по входу в Microsoft Online.  <br/> |
    
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Включение современной проверки подлинности для Office 2013 на устройствах с Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 

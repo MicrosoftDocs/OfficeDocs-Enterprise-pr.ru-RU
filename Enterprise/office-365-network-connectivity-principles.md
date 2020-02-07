@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_Enterprise
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
+f1.keywords:
+- NOCSH
 description: Прежде чем приступить к планированию сети для Office 365, важно понимать принципы подключения для безопасного управления трафиком Office 365 и получения максимальной производительности. Эта статья поможет вам ознакомиться с последними рекомендациями по безопасной оптимизации сетевого подключения Office 365.
-ms.openlocfilehash: 5e590df37aa1660e4787ac86e556e2cb93feb1e4
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 63ae147174cd40ae86a060832468097e5533b837
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747099"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842646"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Принципы сетевого подключения к Office 365
 
-*Эта статья относится как к Office 365 Enterprise, так и к Microsoft 365 корпоративный.*
+*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
 Прежде чем приступить к планированию сети для Office 365, важно понимать принципы подключения для безопасного управления трафиком Office 365 и получения максимальной производительности. Эта статья поможет вам ознакомиться с последними рекомендациями по безопасной оптимизации сетевого подключения Office 365.
   
@@ -254,7 +256,7 @@ Office 365 — это распределенное программное обе
 
 [Веб-служба IP-адресов и URL-адресов в Office 365](office-365-ip-web-service.md)
 
-[Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
+[Оценка сетевого подключения к Office 365](assessing-network-connectivity.md)
 
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)
 

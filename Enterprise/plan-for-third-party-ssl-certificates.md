@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Сводка: в этой статье описываются SSL-сертификаты, необходимые для локальных и гибридных развертываний Exchange, единого входа с использованием AD FS, служб Exchange Online и веб-служб Exchange.'
-ms.openlocfilehash: 74540fb612bd515443912114ebec20cd8ed5e1aa
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: a28acae142f97a52f7c6db8e5a7d93049b2876cc
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756618"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841736"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Планирование сторонних SSL-сертификатов для Office 365
 
@@ -78,6 +80,6 @@ ms.locfileid: "38756618"
 
 В этой статье описываются сертификаты, которые может потребоваться установить в вашей инфраструктуре. Дополнительные сведения о сертификатах, установленных на наших серверах Office 365, можно найти в статье [цепочки сертификатов Office 365](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
   
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 [Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

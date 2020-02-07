@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute для Office 365 обеспечивает связь уровня 3 между вашей сетью и центрами обработки данных Майкрософт. Цепи используют объявления маршрутов протокола BGP для серверов переднего плана Office 365. С точки зрения локальных устройств, когда необходимо выбрать правильный путь TCP/IP к Office 365, Azure ExpressRoute является альтернативой Интернет-адресу.
-ms.openlocfilehash: 8e8c1e1790e38b4e0e858a4a72266de9fcdc8157
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 2f38b88b5d940d1a8aa171c777e82a4a308be0cf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814637"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844560"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Планирование сети при использовании ExpressRoute для Office 365
 
@@ -192,7 +194,7 @@ Azure ExpressRoute добавляет прямой путь к определе�
 ## <a name="related-topics"></a>Статьи по теме
 <a name="BKMK_high-availability"> </a>
 
-[Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
+[Оценка сетевого подключения к Office 365](assessing-network-connectivity.md)
   
 [Azure ExpressRoute для Office 365](azure-expressroute.md)
   
@@ -216,7 +218,7 @@ Azure ExpressRoute добавляет прямой путь к определе�
   
 [План устранения проблем с производительностью Office 365](performance-troubleshooting-plan.md)
   
-[URL-адреса и диапазоны IP-адресов Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URL-адреса и диапазоны IP-адресов для Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)
   

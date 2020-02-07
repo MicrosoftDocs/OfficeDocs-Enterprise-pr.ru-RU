@@ -9,13 +9,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
+f1.keywords:
+- NOCSH
 description: Эта статья  удобная текстовая версия схемы, показывающей варианты платформы Microsoft Exchange 2013, которая доступна в статье Технические схемы.
-ms.openlocfilehash: 1440558a3c462ae71189fb42d492e0292c256c19
-ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
+ms.openlocfilehash: f2f42cc2bdabd2383dc67b5412774627440574d0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "41627855"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843844"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Текстовая версия схемы, в которой представлена мобильная среда SharePoint Server, Exchange, Lync, Office Web Apps
 
