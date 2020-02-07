@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
 localization_priority: Priority
+f1.keywords:
+- NOCSH
 description: Узнайте, как добавить или удалить администратора геообъектов в Office 365 с поддержкой нескольких регионов.
-ms.openlocfilehash: 70f479fb9d0e77cb803d9e0b2274646ad8c066f1
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 0e0ce9166d7e290ea0f038bf8d4f20c132be2bc4
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076193"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840796"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Добавление и удаление администратора геообъектов в Office 365 с поддержкой нескольких регионов
 

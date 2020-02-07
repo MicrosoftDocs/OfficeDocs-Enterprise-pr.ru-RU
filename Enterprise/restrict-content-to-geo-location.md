@@ -6,16 +6,18 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Узнайте, как ограничить сайты SharePoint определенным географическим расположением в среде с поддержкой нескольких регионов.
-ms.openlocfilehash: 9319ed6229acc7cda48cc52b3a27681c53f1359c
-ms.sourcegitcommit: 7bb48195079ce14aabfa0384771b17db0e4908b9
+ms.openlocfilehash: b8716eb0ad2d9292a0d52638f827dcc7665d027a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36828483"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845020"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Ограничение содержимого сайтов SharePoint по географическому расположению
 
