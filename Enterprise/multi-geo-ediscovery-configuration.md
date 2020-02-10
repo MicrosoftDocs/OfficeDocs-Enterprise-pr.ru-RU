@@ -6,23 +6,24 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+f1.keywords:
+- NOCSH
 ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Узнайте, как настроить обнаружение электронных данных в Office 365 с поддержкой нескольких регионов.
-ms.openlocfilehash: f9d8fe8b65f5772005bf7d6a7ea3735277077d3b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 01796000353bcc20d9e0ed63be088beeb9b3680e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069965"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844600"
 ---
 # <a name="office-365-multi-geo-ediscovery-configuration"></a>Настройка обнаружения электронных данных в Office 365 с поддержкой нескольких регионов
 
-
 По умолчанию менеджер по обнаружению электронных данных или администратор в клиенте с поддержкой нескольких регионов сможет обнаруживать электронные данные только в центральном расположении для этого клиента. Чтобы обеспечить поддержку обнаружения электронных данных для периферийных расположений, в PowerShell добавлен новый параметр Region для фильтра соответствия требованиям безопасности.
 
-Глобальный администратор Office 365 должен предоставить менеджеру по обнаружению электронных данных право разрешать другим пользователям выполнять обнаружение электронных данных и назначать параметр Region в соответствующем фильтре соответствия требованиям безопасности, чтобы указывать периферийное расположение в качестве региона для обнаружения электронных данных. В противном случае обнаружение электронных данных не будет выполняться для периферийного расположения.
+Глобальный администратор Office 365 должен предоставить менеджеру по обнаружению электронных данных право разрешать другим пользователям выполнять обнаружение электронных данных и назначать параметр Region в соответствующем фильтре соответствия требованиям безопасности, чтобы указывать спутниковое расположение в качестве региона для обнаружения электронных данных. В противном случае обнаружение электронных данных не будет выполняться для спутникового расположения.
 
 Если роль менеджера по обнаружению электронных данных или администратора задана для определенного периферийного расположения, то соответствующий пользователь сможет выполнять операции поиска с обнаружением электронных данных только на сайтах SharePoint и OneDrive, расположенных в этом периферийном расположении. Если менеджер по обнаружению электронных данных попробует выполнить поиск на сайтах SharePoint или OneDrive за пределами указанного периферийного расположения, результаты не будут возвращаться. Кроме того, когда менеджер по обнаружению электронных данных или администратор для периферийного расположения запускает экспорт, данные экспортируются в экземпляр Azure в этом регионе. Это помогает организациям обеспечивать соответствие требованиям, не разрешая экспорт содержимого через контролируемые границы.
 
@@ -33,15 +34,18 @@ ms.locfileid: "34069965"
 
 Установка фильтра соответствия требованиям безопасности для региона:
 
-1.  Откройте Windows PowerShell
+1. [Подключитесь к PowerShell Центра безопасности и соответствия требованиям Office 365.](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
 
-2.  Введите следующие команды:  
-    $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
+2. Используйте следующий синтаксис:
 
-    $a = Import-PSSession $s -AllowClobber  
+   ```powershell
+   New-ComplianceSecurityFilter -Action All -FilterName <TheNameYouWantToAssign> -Region <RegionValue> -Users <UserPrincipalName>
+   ```
 
-3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** Введите_нужное_имя **-Region** Введите_параметр_региона **-Users** Введите_имя_субъекта-пользователя
+   Пример:
 
-    Пример: **New-ComplianceSecurityFilter -Action** ALL **-FilterName** NAMEDISCOVERYMANAGERS **-Region** NAM **-Users** adwood@contosodemosx.onmicrosoft.com
+   ```powershell
+   New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
+   ```
 
-Дополнительные параметры и синтаксис рассматриваются в статье [New-ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx).
+Дополнительные параметры и синтаксис рассматриваются в статье [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesecurityfilter).
