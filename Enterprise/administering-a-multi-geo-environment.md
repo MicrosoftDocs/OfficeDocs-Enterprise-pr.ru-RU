@@ -1,5 +1,6 @@
 ---
 title: Администрирование среды с поддержкой нескольких регионов
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -14,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Сведения об администрировании служб SharePoint и OneDrive в среде с поддержкой нескольких регионов.
-ms.openlocfilehash: cb6c61f0531b92a4ce568072519ec74dda44afa2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 483250f8956ba1220c29bb769abef187ac9ec53d
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844680"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974031"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Администрирование среды с поддержкой нескольких регионов
 
