@@ -81,6 +81,7 @@
 #### [Сетевые запросы в Office для Mac](network-requests-in-office-2016-for-mac.md)
 #### [Веб-служба IP-адресов и URL-адресов в Office 365](office-365-ip-web-service.md)
 #### [Дополнительные конечные точки, отсутствующие в веб-службе](additional-office365-ip-addresses-and-urls.md)
+### [Оптимизация производительности Office 365 для пользователей Китая](office-365-networking-china.md)
 ### [Сети доставки содержимого](content-delivery-networks.md)
 ### [Поддержка IPv6 в службах Office 365](ipv6-support.md)
 ### [Поддержка NAT в Office 365](nat-support-with-office-365.md)
@@ -154,6 +155,7 @@
 #### [Ответы на общие вопросы о перемещении данных](data-move-faq.md)
 #### [Microsoft Cloud Deutschland: программа миграции Office 365](ms-cloud-germany-transition.md)
 #### [Microsoft Cloud Deutschland: участие в миграции](ms-cloud-germany-migration-opt-in.md)
+#### [Данные клиента в центрах обработки данных Office 365](o365-data-locations.md)
 
 ### Гибридные решения
 #### [Использование Azure Active Directory для проверки подлинности в SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
