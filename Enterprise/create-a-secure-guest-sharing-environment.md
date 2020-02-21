@@ -8,15 +8,14 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Сведения о создании безопасной среды гостевого общего доступа в Microsoft 365.
-ms.openlocfilehash: 9df369457770315d5d77894432761385edf3dbc4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4c77ae6905341ba7cde974b2fc3966009a38d512
+ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840626"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155578"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Создание безопасной среды гостевого общего доступа
 
@@ -319,6 +318,14 @@ ms.locfileid: "41840626"
 После получения гостем доступа к документу введите текст *Проект Сатурн* в документе и сохраните его. После сканирования документа службой Cloud App Security должна быть применена метка *Строго конфиденциально*, а гостевому пользователю должен быть запрещен доступ к документу.
 
 Средства, описанные в этой статье, можно использовать в различных сочетаниях, чтобы создать эффективную и безопасную среду гостевого общего доступа для организации.
+
+## <a name="additional-options"></a>Дополнительные параметры
+
+Для обеспечения безопасности среды гостевого общего доступа также можно использовать некоторые дополнительные параметры в Microsoft 365 и Azure Active Directory.
+
+- Вы можете создать список доменов, для которых общий доступ разрешен или запрещен, чтобы ограничить тех, с кем пользователи могут делиться. Дополнительные сведения см. в статье [Ограничение общего доступа к контенту SharePoint и OneDrive по домену](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) и [Разрешение или блокировка приглашений для пользователей B2B из определенных организаций](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
+- Вы можете ограничить других клиентов Azure Active Directory, к которым могут подключаться пользователи. Сведения см. в статье [Использование ограничений клиентов для управления доступом к облачным приложениям SaaS](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions).
+- Вы можете создать управляемую среду, в которой партнеры могут помочь в управлении гостевыми учетными записями. Сведения см. в статье [Создание экстрасети B2B с управляемыми гостями](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet).
 
 ## <a name="see-also"></a>См. также
 
