@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Сведения об Office 365 с поддержкой нескольких регионов, о принципе такой поддержки и о географических расположениях, доступных для хранения данных.
-ms.openlocfilehash: f3bc2b43181bb4479c0f3b9c65ed4bcd5b1f9b38
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 2875f820b0ce1437a09289e3c5e660287b64dc40
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974231"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316008"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Планирование использования Office 365 с поддержкой нескольких регионов
 
@@ -74,6 +74,8 @@ ms.locfileid: "41974231"
 Администрирование клиента с поддержкой нескольких регионов может отличаться от администрирования без таковой, так как многие службы и настройки SharePoint и OneDrive поддерживают несколько регионов. Рекомендуем ознакомиться со статьей [Администрирование среды с поддержкой нескольких регионов](administering-a-multi-geo-environment.md), прежде чем переходить к настройке.
 
 Прочтите статью [Взаимодействие с пользователем в среде с поддержкой нескольких регионов](multi-geo-user-experience.md).
+
+Сведения о работе с Teams в клиентах Office 365 с поддержкой нескольких регионов см. в статье [Взаимодействие с Teams в клиентах Office 365 OneDrive и SharePoint Online с поддержкой нескольких регионов](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 
 Чтобы начать настройку Office 365 с поддержкой нескольких регионов, ознакомьтесь со статьей [Настройка Office 365 с поддержкой нескольких регионов](multi-geo-tenant-configuration.md).
 
