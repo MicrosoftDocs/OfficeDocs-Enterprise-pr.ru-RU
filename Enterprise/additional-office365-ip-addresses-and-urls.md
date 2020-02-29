@@ -3,7 +3,7 @@ title: Дополнительные конечные точки не включ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 2/27/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: Сводка. В новой веб-службе конечных точек отсутствует небольшое количество конечных точек для определенных сценариев.
 hideEdit: true
-ms.openlocfilehash: 150e57c569a5305251d1bed2989bc4c87af988d0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 5e763b00f8b43b652809df994e933228dd7e1dfb
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844690"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42315968"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365
 
@@ -66,6 +66,7 @@ ms.locfileid: "41844690"
 | 18  | Используйте [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) для синхронизации учетных записей пользователей с Azure AD. | См. статьи [Порты и протоколы, необходимые для гибридной идентификации](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Устранение неполадок подключения Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) и [Установка агента Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Только исходящий серверный трафик |
 | 19  | Microsoft Stream (требуется маркер пользователя Azure AD). <BR> Office 365 Worldwide (включая GCC) | *.cloudapp.net <BR> *.api.microsoftstream.com <BR> *.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP-порт 443  | Входящий серверный трафик |
 | 20  | Использование сервера MFA для запросов многофакторной проверки подлинности: как новых установок сервера, так и его настройки с помощью доменных служб Active Directory (AD DS). | См. статью [Приступая к работе с сервером многофакторной идентификации Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment).  | Только исходящий серверный трафик |
+| 21  | Уведомления об изменениях в Microsoft Graph | Разработчики могут использовать [уведомления об изменениях](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0), чтобы подписаться на события в Microsoft Graph. | *.cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228, общедоступное облако: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183 <BR> Microsoft Cloud for US Government: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108 <BR> Microsoft Cloud (Германия): 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215 <BR> Microsoft Cloud (Китай) под управлением 21Vianet: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77<BR> TCP-порт 443 <BR> Примечание. Разработчики могут указывать различные порты при создании подписок.  | Входящий трафик сервера |
 |||||
 
 ## <a name="related-topics"></a>Статьи по теме
@@ -81,4 +82,3 @@ ms.locfileid: "41844690"
 [Диапазоны IP-адресов центра обработки данных Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653)
   
 [Пространство публичных IP-адресов корпорации Майкрософт](https://www.microsoft.com/download/details.aspx?id=53602)
-
