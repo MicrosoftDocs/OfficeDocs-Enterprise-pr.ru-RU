@@ -8,15 +8,14 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Узнайте, как совместно работать с гостями в документе в SharePoint и OneDrive.
-ms.openlocfilehash: d4c7a62fbf4ca94e0f6dd61018f723801a3966a7
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 6646a3b11d9acbc01b998d90e6ff836533e4545c
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845090"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549048"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Совместная работа с гостями над документом
 
