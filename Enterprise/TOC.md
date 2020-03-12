@@ -185,19 +185,20 @@
 ### [Средства для управления учетными записями пользователей](manage-office-365-accounts.md)
 ### [Добавление нескольких пользователей одновременно](add-several-users-at-the-same-time.md)
 ### [Восстановление элементов, удаленных из почтового ящика пользователя](recover-deleted-items-in-a-mailbox.md)
+
 ### Совместная работа с гостями
-#### [Справочник по гостевому общему доступу](microsoft-365-guest-settings.md)
+#### [Справочник по гостевому общему доступу](/microsoft-365/solutions/microsoft-365-guest-settings?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### Сценарии гостевого общего доступа
-##### [Обзор совместной работы с гостями](collaborating-with-people-outside-your-organization.md)
-##### [Совместная работа над документами](collaborate-on-documents.md)
-##### [Совместная работа на сайте](collaborate-in-a-site.md)
-##### [Совместная работа в группе](collaborate-as-a-team.md)
+##### [Обзор совместной работы с гостями](/microsoft-365/solutions/collaborate-with-people-outside-your-organization?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Совместная работа над документами](/microsoft-365/solutions/collaborate-on-documents?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Совместная работа на сайте](/microsoft-365/solutions/collaborate-in-site?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Совместная работа в группе](/microsoft-365/solutions/collaborate-as-team?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### Безопасность гостевого общего доступа
-##### [Общий доступ без проверки подлинности](best-practices-anonymous-sharing.md)
-##### [Ограничение возможности случайного раскрытия файлов при предоставлении доступа гостям](sharing-limit-accidental-exposure.md)
-##### [Создание безопасной среды гостевого общего доступа](create-a-secure-guest-sharing-environment.md)
-#### [Создание экстрасети B2B](b2b-extranet.md)
-### [Ограничение общего доступа](microsoft-365-limit-sharing.md)
+##### [Общий доступ без проверки подлинности](/microsoft-365/solutions/best-practices-anonymous-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Ограничение возможности случайного раскрытия файлов при предоставлении доступа гостям](/microsoft-365/solutions/share-limit-accidental-exposure?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Создание безопасной среды гостевого общего доступа](/microsoft-365/solutions/create-secure-guest-sharing-environment?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+#### [Создание экстрасети B2B](/microsoft-365/solutions/b2b-extranet?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+### [Ограничение общего доступа](/microsoft-365/solutions/microsoft-365-limit-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 
 ## Устройства
 ### [Выбор между MDM и Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
