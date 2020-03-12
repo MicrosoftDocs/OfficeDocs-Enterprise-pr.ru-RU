@@ -3,7 +3,7 @@ title: Оптимизация вызовов на современных и кл
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Узнайте, как оптимизировать современные и классические страницы сайтов публикации в SharePoint Online, ограничив число вызовов конечных точек служб SharePoint Online.
-ms.openlocfilehash: 13c403e03c0d2aa2cb73d626c92596d12a8b1ee4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: b339e6888e9434b6df26b0a29450bfcbbce84e66
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844839"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603728"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Оптимизация вызовов на современных и классических страницах сайтов публикации SharePoint Online
 
@@ -37,7 +37,10 @@ ms.locfileid: "41844839"
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-calls"></a>Использование средства диагностики страниц SharePoint для анализа вызовов страниц
 
-Средство **Диагностика страниц SharePoint** — это браузерное расширение для Chrome и [Microsoft Edge версии 77 или более поздней](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8), которое можно использовать для анализа современных и классических страниц сайтов публикации SharePoint. Это средство предоставляет отчет о каждой проанализированной странице, показывающий, как она работает при заданных критериях производительности. Чтобы установить и изучить средство диагностики страниц SharePoint, ознакомьтесь со статьей [Использование средства диагностики страниц SharePoint Online](page-diagnostics-for-spo.md).
+Средство "Диагностика страниц SharePoint" — это браузерное расширение для браузеров Chrome и новой версии Microsoft Edge (https://www.microsoft.com/edge), анализирующее страницы современных и классических сайтов публикаций SharePoint Online. Это средство предоставляет отчет о каждой проанализированной странице, показывающий, как она работает при заданных критериях производительности. Чтобы установить и изучить средство диагностики страниц SharePoint, ознакомьтесь со статьей [Использование средства диагностики страниц SharePoint Online](page-diagnostics-for-spo.md).
+
+>[!NOTE]
+>Средство диагностики страниц работает только в SharePoint Online, и его нельзя использовать на системной странице SharePoint.
 
 При анализе страницы сайта SharePoint с помощью средства диагностики страниц SharePoint вы можете просматривать сведения о внешних вызовах в результатах **Запросы к SharePoint** в панели _Диагностические тесты_. Строка будет выделена зеленым цветом, если страница сайта содержит меньше вызовов, чем установленное базовое число, и красным цветом, если количество вызовов превышает базовое число. Базовое число отличается для современных и классических страниц, так как классические страницы сайтов используют протокол HTTP 1.1, а современные страницы — HTTP 2.0:
 
