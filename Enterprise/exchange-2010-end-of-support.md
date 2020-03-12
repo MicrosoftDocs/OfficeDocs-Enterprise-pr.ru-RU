@@ -13,12 +13,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 приближается к концу поддержки. Используйте эту схему планирования в качестве руководства по подготовке к обновлению до Exchange Online или более новой версии локального сервера Exchange Server.
-ms.openlocfilehash: b8e9e1b94c08ec58294f88a7b5607b18c9f44a99
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d5118d0abf02464b47bfb4a368d42b0921c19ec5
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840386"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605574"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>План поддержки Exchange 2010 в конце поддержки
 
@@ -236,5 +236,3 @@ Exchange 2016 включает все функции и улучшения, вк
 ## <a name="related-topics"></a>Связанные статьи
 
 [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)
-
-[Группа для клиентов, у которых завершается поддержка продуктов Office (сообщество Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)

@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2010, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: a71ac61b69d72f6386c3b9063ec0c1946a5b57ca
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 29f1074a4ca0ab520ad29bc480178d2af535b72a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841036"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605564"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 
@@ -66,8 +66,6 @@ Office 2010, Exchange Server 2010, SharePoint 2010 и Project Server 2010 дос
 
 ## <a name="related-topics"></a>Связанные статьи
 
-[Группа для клиентов, у которых завершается поддержка продуктов Office (сообщество Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-  
 [Видео: что такое Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Политика жизненного цикла поддержки Майкрософт](https://go.microsoft.com/fwlink/?linkid=865200)

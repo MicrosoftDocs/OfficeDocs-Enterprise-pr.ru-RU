@@ -15,12 +15,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Если вы используете Office 2007 или Office 2010, пора спланировать обновление. Не используйте устаревшие и неподдерживаемые приложения и серверы. Воспользуйтесь этими ресурсами, чтобы приступить к планированию.
-ms.openlocfilehash: b654dcd7b8f923f952a6e2fbefe37a5e523e1cd4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e970546790f290cd2d075adba7628188d60ef19a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841716"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605623"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Планирование обновления серверов и клиентов Office 2007 или Office 2010
 
@@ -110,9 +110,3 @@ Microsoft 365 — это способ цифрового преобразова�
 ## <a name="related-topics"></a>Статьи по теме
   
 [Политика жизненного цикла поддержки Майкрософт](https://go.microsoft.com/fwlink/?linkid=865200)
-
-[Группа для клиентов, у которых завершается поддержка продуктов Office (сообщество Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-
-
-
-

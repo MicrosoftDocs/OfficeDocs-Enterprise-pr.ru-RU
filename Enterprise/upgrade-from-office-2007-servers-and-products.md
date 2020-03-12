@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2007, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 101db7891dd2d336c9b15b2e7070587fb61eb53a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841006"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605644"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007
 
@@ -44,7 +44,7 @@ ms.locfileid: "41841006"
 |:-----|:-----|
 |[План поддержки Office 2007 в конце поддержки](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10 октября 2017 г.  <br/> |
 |[План действий после прекращения поддержки Exchange 2007](exchange-2007-end-of-support.md); <br/> |11 апреля 2017 г.  <br/> |
-|[План действий после прекращения поддержки SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 октября 2017 г.  <br/> |
+|[План действий после прекращения поддержки SharePoint Server 2007](sharepoint-2007-end-of-support.md); <br/> |10 октября 2017 г.  <br/> |
 |[План действий после прекращения поддержки Project Server 2007](project-server-2007-end-of-support.md); <br/> |10 октября 2017 г.  <br/> |
 |[Обновление с сервера Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 января 2018 г.  <br/> |
 |[План действий после прекращения поддержки PerformancePoint Server 2007](pps-2007-end-of-support.md). <br/> |9 января 2018 г.  <br/> |
@@ -57,8 +57,6 @@ ms.locfileid: "41841006"
      
 ## <a name="related-topics"></a>Связанные статьи
 
-[Группа для клиентов, у которых завершается поддержка продуктов Office (сообщество Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-  
 [Видео: что такое Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Политика жизненного цикла поддержки Майкрософт](https://go.microsoft.com/fwlink/?linkid=865200)

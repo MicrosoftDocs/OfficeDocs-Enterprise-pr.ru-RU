@@ -16,12 +16,12 @@ ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 f1.keywords:
 - NOCSH
 description: Достигнут конец поддержки PerformancePoint Server 2007, ProClarity и SharePoint Server 2007. Прочтите эту статью, чтобы спланировать обновление решения бизнес-аналитики.
-ms.openlocfilehash: 89f13a9fba91195c8e3ecfcdaaebb52a27307eef
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 37ac5425e282efd4a9e8e0fc2a8f6b5c897ec105
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844100"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605621"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки PerformancePoint Server 2007.
 
@@ -154,9 +154,3 @@ Power BI не входит в состав Office 365 или SharePoint Server, 
 ## <a name="related-topics"></a>Связанные статьи
 
 [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007](upgrade-from-office-2007-servers-and-products.md)
-  
-[Группа для клиентов, у которых завершается поддержка продуктов Office (сообщество Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-
-
-  
-
