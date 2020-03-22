@@ -1,0 +1,68 @@
+### YamlMime:Landing
+title: Документация по Office 365 для предприятий
+summary: На этой странице представлены руководства для администраторов и ИТ-специалистов, разворачивающих и настраивающих службы Office 365, а также управляющих ими в корпоративной организации.
+metadata:
+  title: Документация по Office 365 для предприятий
+  description: На этой странице представлены руководства для администраторов и ИТ-специалистов, разворачивающих и настраивающих службы Office 365, а также управляющих ими в корпоративной организации.
+  ms.service: o365-solutions
+  ms.topic: landing-page
+  author: wingtofree
+  ms.author: v-qingao
+  ms.date: 03/12/2020
+  ms.openlocfilehash: 432c124f39db7168a93b4c061c00b10a07cc20d9
+  ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "42891513"
+landingContent:
+- title: Сведения о Office 365 корпоративный
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Принятие Office 365 с помощью FastTrack
+      url: https://www.microsoft.com/fasttrack/microsoft-365/office-365
+    - text: Перенос данных организации в Office 365 корпоративный
+      url: migrate-data-to-office-365.md
+    - text: Руководство по развертыванию Office 365 профессиональный плюс
+      url: https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus
+    - text: Развертывание Office 365 корпоративный для организации
+      url: setup-overview-for-enterprises.md
+    - text: Гибридные развертывания
+      url: microsoft-cloud-it-architecture-resources.md
+  - linkListType: learn
+    links:
+    - text: Начало работы с Microsoft 365
+      url: https://support.office.com/article/office-365-admin-and-it-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5
+- title: Развертывание рабочих нагрузок Office 365
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Exchange Online
+      url: https://docs.microsoft.com/Exchange/exchange-online
+    - text: SharePoint Online
+      url: https://support.office.com/article/sharepoint-online-%E2%80%93-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
+    - text: Skype для бизнеса Online
+      url: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
+    - text: Microsoft Teams
+      url: https://docs.microsoft.com/MicrosoftTeams/Microsoft-Teams
+    - text: Power BI
+      url: https://docs.microsoft.com/power-bi
+    - text: Yammer
+      url: https://support.office.com/yammer
+- title: Дополнительные ресурсы
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Сообщество технических специалистов по Office 365
+      url: https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365
+    - text: Получение поддержки
+      url: https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
+  - linkListType: learn
+    links:
+    - text: Дополнительные сведения о Microsoft 365
+      url: https://docs.microsoft.com/microsoft-365
+    - text: Дополнительные сведения о соответствии требованиям Microsoft 365
+      url: https://docs.microsoft.com/microsoft-365/compliance/
+    - text: Дополнительные сведения о безопасности Microsoft 365
+      url: https://docs.microsoft.com/microsoft-365/security/
