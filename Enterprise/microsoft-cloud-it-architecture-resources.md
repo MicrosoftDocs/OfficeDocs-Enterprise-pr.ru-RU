@@ -18,12 +18,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: Сводка. Узнайте основные принципы облачной архитектуры для удостоверений, безопасности, сети и гибридных решений Майкрософт. Ознакомьтесь с нормативными рекомендациями по защите файлов, удостоверений и устройств при использовании облака Майкрософт. Узнайте, как развернуть современную и безопасную настольную систему с Windows 10 и Office профессиональный плюс.
-ms.openlocfilehash: f2f466ff0f5f13e2b7e3bfb85f77a7e7961fcde2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 5cfed9ba3fd3dcc2c92d0226398cdf7658ee6cab
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844940"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979481"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 
@@ -136,7 +136,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
   
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|[![Эскиз плаката с базовой инфраструктурой Microsoft 365 корпоративный](media/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Смотреть в Интернете](https://aka.ms/m365efoundinfraposter) \| [PDF-ФАЙЛ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | На этом плакате представлена сводка каждого этапа базовой инфраструктуры с точки зрения целей, функций и инструментов, решений разработки, результатов конфигурации, адаптации, а также текущего мониторинга и обновлений. <br/>| 
+|[![Эскиз плаката с базовой инфраструктурой Microsoft 365 корпоративный](media/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Смотреть в Интернете](https://aka.ms/m365efoundinfraposter) \| [PDF-ФАЙЛ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | На этом плакате представлена сводка каждого этапа базовой инфраструктуры с точки зрения целей, функций и инструментов, решений разработки, результатов конфигурации, адаптации, а также текущего мониторинга и обновлений. <br/>| 
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Подходы в отношении архитектуры для переходов между клиентами в облаке Майкрософт 
 В этих статьях описано несколько подходов в отношении архитектуры для слияний, приобретений, отделений и других сценариев, которые могут привести к переходу на новый облачный клиент. В этих статьях приведены начальные инструкции по планированию.

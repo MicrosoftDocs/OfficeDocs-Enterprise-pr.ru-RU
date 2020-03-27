@@ -19,12 +19,12 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: Прекращение поддержки для SharePoint 2010 и SharePoint Server 2010 заканчивается 13 октября 2020 г. Используйте эту статью в качестве руководства по обновлению до SharePoint Online или более новой версии SharePoint Server в локальной среде.
-ms.openlocfilehash: 51c372bf2d96c245223a1ea3776f889e60bf4491
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 81aeebc584f1ba9d6e0bd22a1a83362db4dc669a
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841056"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979491"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Обновление с SharePoint 2010
 
@@ -137,13 +137,13 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
   
 Не забудьте просмотреть **Поддерживаемые и неподдерживаемые пути обновления**: 
   
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156).
     
 - [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
     
 Если у вас есть **настройки**, важно обновить план для каждого шага в пути миграции: 
   
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
+- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160).
     
 - [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
     
@@ -189,11 +189,11 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
 
 Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, ознакомьтесь с разрядом с [плакатом об отконце поддержки](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Изображение плаката “Прекращение поддержки клиентов и серверов Office 2010 и Windows 7”](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять, чтобы запретить клиенту Office 2010 и серверным продуктам и Windows 7 достичь конца поддержки, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
 
-Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
+Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
         
 ## <a name="related-topics"></a>Связанные статьи
 

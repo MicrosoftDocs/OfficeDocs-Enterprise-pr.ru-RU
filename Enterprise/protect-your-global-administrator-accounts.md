@@ -19,14 +19,17 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Защитите глобальный администратор доступ к вашей подписке на Office 365.
-ms.openlocfilehash: ee5acefbd5eab287a78b55f5d4ddfc525432b403
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fcd4d69df967ad592af52a36a55008463b6f30e2
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841196"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979371"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Защита учетных записей глобальных администраторов Office 365
+
+> [!NOTE]
+> Учетную запись глобального администратора можно создать без добавления лицензий.
 
 *Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
@@ -158,6 +161,6 @@ ms.locfileid: "41841196"
 - [Подготовка к синхронизации службы каталогов](prepare-for-directory-synchronization.md) , если вы используете гибридную идентификацию
 
   
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 [Схема безопасности Office 365](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).

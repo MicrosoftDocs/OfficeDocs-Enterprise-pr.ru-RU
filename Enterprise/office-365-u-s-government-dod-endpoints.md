@@ -1,7 +1,7 @@
 ---
 title: Конечные точки DoD Office 365 для государственных учреждений (США)
-ms.author: laurawi
-author: LauraWi
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/04/2020
 audience: ITPro
@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: Сводка. для Office 365 требуется подключение к Интернету. Конечные точки, расположенные ниже, должны быть достижимыми для клиентов, использующих только планы DoD Office 365 США.
 hideEdit: true
-ms.openlocfilehash: 8464605b9a9437cc3ad5e87a3e01434e590f616f
-ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
+ms.openlocfilehash: 41a6cd8044e3e8a415242832aed671a178789fa1
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417034"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979501"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Конечные точки DoD Office 365 для государственных учреждений (США)
 
@@ -41,7 +41,7 @@ ms.locfileid: "42417034"
   
 |||
 |:-----|:-----|
-|**Последнее обновление:** 02/28/2020 — ![](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Подписка на журнал изменений](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) RSS <br/> |**Download:** полный список в [формате JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Последнее обновление:** 28.01.2020, [подписка на журнал изменений](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) <br/> |**Download:** полный список в [формате JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Начните с [управления конечными точками Office 365](managing-office-365-endpoints.md) , чтобы узнать, какие рекомендации по управлению сетевым подключением с помощью этих данных. Данные конечных точек обновляются в начале каждого месяца с новыми IP-адресами и URL-адресами, опубликованными в течение 30 дней до момента активации. Это позволяет пользователям, у которых еще не было автоматизированное обновление, завершить свои процессы, прежде чем потребуется новое подключение. Конечные точки также могут быть обновлены в течение месяца при необходимости обращения к укрупнению поддержки, происшествиям безопасности или другим немедленным рабочим требованиям. Данные, показанные на этой странице, созданы на основе веб-служб REST. Если вы используете сценарий или сетевое устройство для доступа к этим данным, перейдите непосредственно к [веб-службе](office-365-ip-web-service.md) .
 

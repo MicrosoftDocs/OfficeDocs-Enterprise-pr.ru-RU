@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Прекращение поддержки для Project Server 2010 завершается 13 октября 2020 г. Используйте эту статью в качестве руководства по обновлению до Project Online или более новой версии Project Server в локальной среде.
-ms.openlocfilehash: 2b921426d066f97af65f7f89fa29958eb1c55dab
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 158cf7476a8d80d0024cf4093d0d20fc884811e0
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844120"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979521"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>План поддержки Project Server 2010.
 
@@ -206,11 +206,11 @@ Project Server, как и почти все продукты Майкрософ�
 
 Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, ознакомьтесь с разрядом с [плакатом об отконце поддержки](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Изображение плаката “Прекращение поддержки клиентов и серверов Office 2010 и Windows 7”](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять, чтобы запретить клиенту Office 2010 и серверным продуктам и Windows 7 достичь конца поддержки, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
 
-Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
+Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
    
 ## <a name="related-topics"></a>Связанные статьи
 

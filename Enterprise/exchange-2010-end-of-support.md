@@ -13,12 +13,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 приближается к концу поддержки. Используйте эту схему планирования в качестве руководства по подготовке к обновлению до Exchange Online или более новой версии локального сервера Exchange Server.
-ms.openlocfilehash: d5118d0abf02464b47bfb4a368d42b0921c19ec5
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: ddf2a099688e55e5e0650a030eb2a33293b21eb2
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605574"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979350"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>План поддержки Exchange 2010 в конце поддержки
 
@@ -218,11 +218,11 @@ Exchange 2016 включает все функции и улучшения, вк
 
 Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, ознакомьтесь с разрядом с [плакатом об отконце поддержки](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Изображение плаката “Прекращение поддержки клиентов и серверов Office 2010 и Windows 7”](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять, чтобы запретить клиенту Office 2010 и серверным продуктам и Windows 7 достичь конца поддержки, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
 
-Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
+Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
       
 ## <a name="what-if-i-need-help"></a>Что делать, если вам нужна помощь?
 

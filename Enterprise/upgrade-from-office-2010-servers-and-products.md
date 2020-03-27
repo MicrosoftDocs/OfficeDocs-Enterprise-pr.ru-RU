@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2010, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: 29f1074a4ca0ab520ad29bc480178d2af535b72a
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 8f5ba4ced815cddf3fbbb357b71157c3ad54347e
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605564"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979451"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 
@@ -44,11 +44,11 @@ Office 2010, Exchange Server 2010, SharePoint 2010 и Project Server 2010 дос
 
 Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, ознакомьтесь с разрядом с [плакатом об отконце поддержки](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![Плакат о клиентах и серверах Office 2010 и о конце поддержки Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
+[![Изображение плаката “Прекращение поддержки клиентов и серверов Office 2010 и Windows 7”](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять, чтобы запретить клиенту Office 2010 и серверным продуктам и Windows 7 достичь конца поддержки, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
 
-Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
+Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
       
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Планирование обновления клиентских и серверных приложений Office 2010
   
