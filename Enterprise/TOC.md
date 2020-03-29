@@ -81,7 +81,10 @@
 #### [Сетевые запросы в Office для Mac](network-requests-in-office-2016-for-mac.md)
 #### [Веб-служба IP-адресов и URL-адресов в Office 365](office-365-ip-web-service.md)
 #### [Дополнительные конечные точки, отсутствующие в веб-службе](additional-office365-ip-addresses-and-urls.md)
-### [Оптимизация производительности Office 365 для пользователей Китая](office-365-networking-china.md)
+### Оптимизация подключения Office 365 для удаленных пользователей
+#### [Общие сведения о раздельном туннелировании VPN](office-365-vpn-split-tunnel.md)
+#### [Реализация раздельного туннелирования VPN](office-365-vpn-implement-split-tunnel.md)
+#### [Оптимизация Office 365 для пользователей Китая](office-365-networking-china.md)
 ### [Сети доставки содержимого](content-delivery-networks.md)
 ### [Поддержка IPv6 в службах Office 365](ipv6-support.md)
 ### [Поддержка NAT в Office 365](nat-support-with-office-365.md)
