@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- remotework
 search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: В этой статье приводятся рекомендации по оптимизации производительности сети для пользователей в Китае с глобальными клиентами Office 365.
-ms.openlocfilehash: 33e475dfbf4accf306a099542cf8cf2f22ff23a5
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: 50cf6189c922ada5d4ebb9683bec0dd8c6e38f6d
+ms.sourcegitcommit: cb942f32da99eda6455756ce0fd409cf8ee9de3e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106427"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058972"
 ---
 # <a name="office-365-global-tenant-performance-optimization-for-china-users"></a>Оптимизация производительности глобального клиента Office 365 для пользователей Китая
 
@@ -67,7 +68,7 @@ ms.locfileid: "42106427"
 
 Корпорация Майкрософт непрерывно работает над повышением качества взаимодействия с пользователем Office 365 и производительностью клиентов по самым широкому спектру различных архитектур и характеристик сети. Посетите [сообщество Office 365](https://techcommunity.microsoft.com/t5/office-365/bd-p/Office365General) , чтобы начать или присоединиться к беседе, найти ресурсы, а также отправлять запросы и предложения по функциям.
 
-## <a name="related-topics"></a>Связанные статьи
+## <a name="related-topics"></a>Статьи по теме
 
 [Планирование сети и настройка производительности для Office 365](https://aka.ms/tune)
 
