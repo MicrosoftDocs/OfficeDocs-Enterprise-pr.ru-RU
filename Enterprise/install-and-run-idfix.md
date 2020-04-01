@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: В статье описывается как скачать и запустить инструмент Office 365 IdFix, чтобы очистить доменные службы Active Directory (AD DS) перед их синхронизацией с Office 365.
-ms.openlocfilehash: 7bb1577e7fc1c96cc7edcf96e4aac17b310e3710
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d816abe8e93830832077c614e496576d42890d50
+ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844620"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068781"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Скачивание и запуск инструмента Office 365 IdFix
 
@@ -74,15 +74,15 @@ IdFix определяет в домене AD DS (доменные службы 
   
 1. Войдите на компьютер, где нужно запустить инструмент IdFix.
     
-2. Перейдите на страницу Центра загрузки Майкрософт для [средства исправления ошибок синхронизации каталога IdFix](https://go.microsoft.com/fwlink/?linkid=867219).
+2. Перейдите на сайт [средства исправления ошибок IdFix DirSync](https://github.com/microsoft/idfix) .
     
-3. Скачайте и откройте ZIP-файл.
+3. В разделе **Запуск ClickOnce** нажмите кнопку **запустить** , чтобы скачать ZIP-файл. Откройте ZIP-файл.
     
-3. В папке **IdFix** выберите команду **Извлечь**, а затем — **Извлечь все**. По умолчанию IdFix извлекается в папку `C:\Users\<your user name>\Documents\IdFix`. 
+4. В папке **IdFix** выберите команду **Извлечь**, а затем — **Извлечь все**. По умолчанию IdFix извлекается в папку `C:\Users\<your user name>\Documents\IdFix`. 
     
-6. Нажмите **Извлечь**.
+5. Нажмите **Извлечь**.
 
-Эти действия были выполнены в Internet Explorer на сервере под управлением Windows Server 2016. Если вы используете другую версию Windows или другой браузер, ваши действия могут отличаться.
+Действия могут отличаться в зависимости от используемой версии Windows и Интернет браузера.
     
 ## <a name="run-the-idfix-tool"></a>Запуск IdFix
 

@@ -3,7 +3,7 @@ title: Средство входящей миграции в сети Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/04/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Средство входящей миграции в сети Office 365 в центре администрирования M365 (Предварительная версия)
-ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 299bace51b768add9ace29ce2f0680a2d8dd0250
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890402"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081701"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Средство входящей миграции в сети Office 365 в центре администрирования M365 (Предварительная версия)
 
@@ -120,10 +120,12 @@ ms.locfileid: "42890402"
 
 В этом разделе показаны результаты протокола ICMP трацерауте к передней дверце службы Exchange Online, передней дверце службы SharePoint Online и передней дверце службы Microsoft Teams. Он предоставляется только для информации и не имеет связанного анализа сети.
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Рекомендации по повышению производительности сети в центре администрирования Microsoft 365 (Предварительная версия)](office-365-network-mac-perf-overview.md)
 
 [Подробные сведения о производительности сети Office 365 (Предварительная версия)](office-365-network-mac-perf-insights.md)
 
 [Оценка сети Office 365 (Предварительная версия)](office-365-network-mac-perf-score.md)
+
+[Службы расположения сетевых подключений Office 365 (Предварительная версия)](office-365-network-mac-location-services.md)
