@@ -3,7 +3,7 @@ title: Внедрение раздельного VPN-туннелировани�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 3/27/2020
+ms.date: 4/1/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Как реализовать VPN-туннель для Office 365
-ms.openlocfilehash: 060b62e51ed20274867bf4ac6b07f113c39a2805
-ms.sourcegitcommit: c081928170e2a56bc0627e5ec8174c1152fcc151
+ms.openlocfilehash: 028b2f35d1398f432c950c86330c2ee531cea02a
+ms.sourcegitcommit: fce45e7373e5722e1068696565975853126666e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034917"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43093453"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Внедрение раздельного VPN-туннелирования для Office 365
 
@@ -269,6 +269,7 @@ Skype для бизнеса Online генерирует имя пользова�
 В этом разделе приведены ссылки на подробные руководства по внедрению раздельного туннелирования для трафика Office 365 от самых распространенных партнеров в этом пространстве. Мы добавим дополнительные руководства по мере их появления.
 
 - **Cisco Anyconnect**: [оптимизируйте разделительный туннель Anyconnect для Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
+- **Palo Alto GlobalProtect**: [оптимизация трафика Office 365 через разделенные туннели VPN с исключением маршрутов доступа](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 
 ## <a name="faq"></a>Вопросы и ответы
 
