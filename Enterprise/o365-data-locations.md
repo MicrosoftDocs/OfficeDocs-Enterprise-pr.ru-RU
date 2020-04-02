@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Сводка: расположения данных Office 365'
-ms.openlocfilehash: 004d055c08769524907651a56b1a885d44a111d0
-ms.sourcegitcommit: a59b35b0b2667738998333d25e2a61cd8d7a3e26
+ms.openlocfilehash: ae11127cfaa592ae4a3db0a342e6d68c85fe7774
+ms.sourcegitcommit: 9483bc02cf410e80b56fe898298bd26eef486e17
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42581608"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43076132"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -39,6 +39,12 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 Сведения о контрактных обязательствах по расположению хранилища неактивных данных клиента см. в [условиях использования Microsoft Online Services (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Расположения данных Azure Active Directory см. на [карте данных AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
+
+
+Из-за беспрецедентных условий, связанных с COVID-19, и необходимостью управлять спросом на веб-службы в Европе, если ваша организация является образовательным учреждением, мы можем подготовить ваш клиент Office 365 в Европейском Союзе (ЕС), Европейской ассоциации свободной торговли (ЕАСТ), Соединенном Королевстве (UK), Соединенных Штатах (США) и Канаде (CA) или перенести данные в любые центры обработки данных в ЕС, ЕАСТ, Соединенном Королевстве, США или Канаде.  Это означает, что ваши данные могут храниться в ЕС, ЕАСТ, Соединенном Королевстве, США или Канаде.  Наши обязательства по обеспечению соответствия требованиям, конфиденциальности и безопасности остаются неизменными при реализации необходимых и рациональных мер по обеспечению доступности служб.  Мы соблюдаем все соответствующие законы в отношении передачи данных.
+
+
+
 
 ## <a name="faq"></a>Вопросы и ответы
 

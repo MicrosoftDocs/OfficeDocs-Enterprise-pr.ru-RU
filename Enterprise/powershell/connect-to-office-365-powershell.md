@@ -3,7 +3,7 @@ title: Подключение к Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/26/2020
+ms.date: 03/31/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,13 +16,13 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: Сводка. Подключитесь к своей организации Office 365, используя PowerShell, чтобы выполнять задачи администрирования из командной строки.
-ms.openlocfilehash: a1031250919dfa7724bf44ac752684060422d85e
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: Подключитесь к своей организации Office 365, используя PowerShell, чтобы выполнять задачи администрирования из командной строки.
+ms.openlocfilehash: 642016f734a2a9d7e490d5905a3ed93d7f330ca9
+ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979441"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068761"
 ---
 # <a name="connect-to-office-365-powershell"></a>Подключение к Office 365 PowerShell
 
@@ -158,9 +158,15 @@ PowerShell в Office 365 позволяет управлять параметр�
   ```
 
     Если возвращенный номер версии будет меньше 1.0.8070.2, удалите Модуль Microsoft Azure Active Directory для Windows PowerShell и установите последнюю версию, скачав ее по ссылке, указанной на шаге 1.
-    
+
 - **Если при подключении возникнет ошибка, ознакомьтесь с **[этой статьей](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
+- **Если возникнет ошибка "Get-Item: не удается найти путь", используйте следующую команду:** 
+
+  ```powershell
+  (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
+ 
+```
 
 ## <a name="see-also"></a>См. также
 
