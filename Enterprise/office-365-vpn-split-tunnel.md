@@ -3,7 +3,7 @@ title: 'Общие сведения: разделенный туннеллинг
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 3/27/2020
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Руководство по использованию раздельного туннелирования VPN с Office 365 для оптимизации подключения Office 365 для удаленных пользователей.
-ms.openlocfilehash: 3ba52ecdb6e22c234cc0f208ae3ca40b3cb06b6d
-ms.sourcegitcommit: c081928170e2a56bc0627e5ec8174c1152fcc151
+ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
+ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034887"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131438"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Оптимизация подключения Office 365 для удаленных пользователей с использованием VPN-туннелирования
 <!---
@@ -106,6 +106,8 @@ _Рисунок 3: Решение VPN с разделенным туннелем
 [Оптимизация производительности Office 365 для пользователей Китая](office-365-networking-china.md)
 
 [Альтернативные пути для специалистов по безопасности и ИТ для достижения современных мер безопасности в современных уникальных сценариях удаленной работы (блог Microsoft Security Team)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Улучшение производительности VPN в Майкрософт: использование VPN-профилей Windows 10 для разрешения автоматических подключений](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [Запуск по VPN: как Microsoft поддерживает подключение своих удаленных сотрудников](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
