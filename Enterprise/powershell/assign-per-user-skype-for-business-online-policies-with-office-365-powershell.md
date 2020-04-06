@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: Сводка.PowerShell в Office 365 позволяет назначать индивидуальные параметры связи с политиками Skype для бизнеса Online.
-ms.openlocfilehash: b9bb38b4b93d9b18e46fc1891f52d89fd1ba9c9e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
+ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844270"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "43146814"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Назначение индивидуальных политик для Skype для бизнеса Online с помощью Office 365 PowerShell
 
@@ -107,6 +107,39 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 Эта команда задает значение Null ($Null) для имени политики внешнего доступа, назначенной Семену. Значение Null означает "ничего". Другими словами, Семену не назначена ни одна политика внешнего доступа. Если пользователю не назначена ни одна политика внешнего доступа, для управления им используется глобальная политика.
   
 Чтобы отключить учетную запись пользователя с помощью Windows PowerShell, удалите лицензию пользователя Alex на Skype Online для бизнеса, используя командлеты Azure Active Directory. Дополнительные сведения см. в статье [Отключение доступа к службам с помощью PowerShell для Office 365](assign-licenses-to-user-accounts-with-office-365-powershell.md).
+
+## <a name="managing-large-numbers-of-users"></a>Управление большим количеством пользователей
+
+Для управления большим количеством пользователей (1000 или более) необходимо выполнить пакетную команду с помощью блока сценария с помощью командлета [Invoke-Command](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  В предыдущих примерах при каждом запуске командлета необходимо настроить вызов, а затем дождаться результата перед его отправкой.  При использовании блока сценария это позволяет выполнять командлеты удаленно, а после завершения отправлять данные обратно. 
+
+```powershell
+Import-Module LyncOnlineConnector
+$sfbSession = New-CsOnlineSession
+$users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
+
+$batch = 50
+$filter = ''
+$total = $users.Count
+$count = 0
+    $users | ForEach-Object {
+    $upn = $_.UserPrincipalName
+    $filter += "(UserPrincipalName -eq '$upn')"
+    $batch--
+    $count++
+    if (($batch -eq 0) -or ($count -eq $total)) {
+        $filterSB=[ScriptBlock]::Create($filter)
+        Invoke-Command -Session $s -ScriptBlock {param($f) Get-CsOnlineUser -filter $f | Grant-CsClientPolicy -PolicyName "ClientPolicyNoIMURL" -Passthru | Grant-CsExternalAccessPolicy -PolicyName "FederationAndPICDefault"} -ArgumentList $filterSB
+
+        # Reset
+        $batch = 50
+        $filter = ''
+    } else {
+        $filter += " -or "
+    }
+}
+```
+
+Пользователи смогут найти 500 пользователей за раз без политики клиента. Он предоставит им политику клиента "Клиентполициноимурл" и политику внешнего доступа "Федератионандпикдефаулт". Результаты группируются в группы 50, а каждый пакет 50 отправляется на удаленный компьютер.
   
 ## <a name="see-also"></a>См. также
 
@@ -115,4 +148,3 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 [Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
   
 [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-
