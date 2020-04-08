@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Подключитесь к своей организации Office 365, используя PowerShell, чтобы выполнять задачи администрирования из командной строки.
-ms.openlocfilehash: 642016f734a2a9d7e490d5905a3ed93d7f330ca9
-ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
+ms.openlocfilehash: 00c4e303faa7a182a9bd5c859a09ad150fc0b8d4
+ms.sourcegitcommit: b1042fa2d02f1bc74586751c542776325d3a170f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43068761"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170617"
 ---
 # <a name="connect-to-office-365-powershell"></a>Подключение к Office 365 PowerShell
 
@@ -163,9 +163,8 @@ PowerShell в Office 365 позволяет управлять параметр�
     
 - **Если возникнет ошибка "Get-Item: не удается найти путь", используйте следующую команду:** 
 
-  ```powershell
+```powershell
   (dir "C:\Program Files\WindowsPowerShell\Modules\MSOnline").Name
- 
 ```
 
 ## <a name="see-also"></a>См. также
