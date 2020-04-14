@@ -17,12 +17,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Узнайте, как удалять учетные записи пользователей Office 365, используя PowerShell.
-ms.openlocfilehash: 5c69d69a61b3d3299f34a46c32d5575eae7b908a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ea803d82bb54e5430ceb9a59e8c04a0f72b200fc
+ms.sourcegitcommit: 069f56455252d6f4001ec0ecee792b83b585e692
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841554"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237810"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Удаление учетных записей пользователей с помощью PowerShell в Office 365
 
@@ -45,7 +45,7 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> Параметр **-ObjectID** в командлете **Remove-AzureAD** принимает либо имя учетной записи, используемое для входа (имя участника-пользователя), либо идентификатор объекта учетной записи.
+> Параметр **– ObjectID** в командлете **Remove – AzureADUser** принимает либо имя входа учетной записи, также называемое именем участника пользователя, либо идентификатор объекта учетной записи.
   
 Чтобы отобразить имя учетной записи на основе имени пользователя, используйте следующие команды:
   
