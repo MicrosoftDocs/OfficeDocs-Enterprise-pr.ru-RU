@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Прекращение поддержки для Project Server 2010 завершается 13 апреля 2021. Используйте эту статью в качестве руководства по обновлению до Project Online или более новой версии Project Server в локальной среде.
-ms.openlocfilehash: b9cb6c08a2eacc794ace5f9d983120c29820df14
-ms.sourcegitcommit: ae9220b36041395a786a48d04c09eafd8ebe76d0
+ms.openlocfilehash: 3c60763576d75e62c39fe202523d22550acd2f3c
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240529"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503837"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>План поддержки Project Server 2010.
 
@@ -33,9 +33,9 @@ Project Server 2010 дойдет до конца поддержки от **13 а
   
 |**Product**|**Дата окончания поддержки**|
 |:-----|:-----|
-|Project Portfolio Server 2010  <br/> |13 октября 2020 г.  <br/> |
-|Project 2010 Стандартный  <br/> |13 октября 2020 г.  <br/> |
+|Project 2010 Стандартный <br/> |13 октября 2020 г.  <br/> |
 |Project 2010 профессиональный  <br/> |13 октября 2020 г.  <br/> |
+
    
 Дополнительные сведения о серверах Office 2010, достигнутых в конце поддержки, можно найти [в статье обновление с серверов и клиентских продуктов office 2010](https://docs.microsoft.com/office365/enterprise/plan-upgrade-previous-versions-office).
   

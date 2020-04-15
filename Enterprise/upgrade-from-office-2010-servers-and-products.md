@@ -3,7 +3,7 @@ title: Ресурсы, помогающие выполнить обновлен�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -23,18 +23,20 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2010, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: 8f5ba4ced815cddf3fbbb357b71157c3ad54347e
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 3504f7d7042616f94cc359ef849ca3afd86ebc04
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979451"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503827"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 
 *Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
 
-Office 2010, Exchange Server 2010, SharePoint 2010 и Project Server 2010 достигают конца поддержки **13 октября 2020**. 
+Office 2010 и Exchange 2010 достигают конца поддержки до **13 октября 2020 г**. 
+
+Версии SharePoint 2010 и Project Server 2010 будут достигаться до **13 апреля 2021 г**.
 
 При планировании обновления это отличное время для перехода на Office 365 или Microsoft 365. 
 
@@ -56,15 +58,15 @@ Office 2010, Exchange Server 2010, SharePoint 2010 и Project Server 2010 дос
 |:-----|:-----|:-----|
 |Office 2010 (включая Word 2010, Excel 2010, PowerPoint 2010 и Outlook 2010)  <br/> | 13 октября 2020 г. |[План поддержки Office 2010 в конце поддержки](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> | 13 октября 2020 г.  |[План поддержки Exchange 2010 в конце поддержки](exchange-2010-end-of-support.md) <br/> |
-|SharePoint 2010 или SharePoint Server 2010  <br/> | 13 октября 2020 г. |[Обновление с SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 <br/> | 13 октября 2020 г. | [План поддержки Project Server 2010.](project-server-2010-end-of-support.md) <br/> |
+|SharePoint 2010 или SharePoint Server 2010  <br/> | 13 апреля 2021 г. |[Обновление с SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
+|Project Server 2010 <br/> | 13 апреля 2021 г. | [План поддержки Project Server 2010.](project-server-2010-end-of-support.md) <br/> |
 |Lync Server 2010 <br/> | 13 апреля 2021 г. | [Планирование обновления до Skype для бизнеса Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
 ## <a name="im-a-home-user-what-do-i-do"></a>Я использую версию для дома. Что мне делать?
 
 Если вы используете продукты и приложения Office 2010 на домашней странице, ознакомьтесь с [этими сведениями](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 
-## <a name="related-topics"></a>Связанные статьи
+## <a name="related-topics"></a>Статьи по теме
 
 [Видео: что такое Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
