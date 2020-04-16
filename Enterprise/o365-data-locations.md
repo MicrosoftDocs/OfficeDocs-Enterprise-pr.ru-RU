@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Сводка: расположения данных Office 365'
-ms.openlocfilehash: 5db3c97914f9c5bdcf4389637494a421ad57de64
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 4503d624fb9b7b0cea8715352518bfe678ea0bfa
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206606"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516540"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -120,6 +120,7 @@ Office 365 использует технологии на стороне слу�
 | Индия | Ченнаи, Мумбаи, Пуна |
 | Япония | Осака, Токио, Сайтама |
 | Республика Корея | Бусан, Сеул |
+| Норвегия | Осло, Ставангер |
 | Южная Африка | Кейптаун, Йоханнесбург |
 | Швейцария | Женева, Цюрих |
 | Объединенные Арабские Эмираты | Дубай, Абу Даби |
@@ -3928,18 +3929,18 @@ Office 365 использует технологии на стороне слу�
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Глобальный географический регион 1 — EMEA |
-| OneDrive для бизнеса | Глобальный географический регион 1 — EMEA |
-| SharePoint Online | Глобальный географический регион 1 — EMEA |
+| Exchange Online | Норвегия |
+| OneDrive для бизнеса | Норвегия |
+| SharePoint Online | Норвегия |
 | Skype для бизнеса | Глобальный географический регион 1 — EMEA |
-| Microsoft Teams | Глобальный географический регион 1 — EMEA |
-| Office Online и Mobile | Глобальный географический регион 1 — EMEA |
-| EOP | Глобальный географический регион 1 — EMEA |
-| MyAnalytics | Глобальный географический регион 1 — EMEA |
+| Microsoft Teams | Норвегия |
+| Office Online &amp; Mobile | Норвегия |
+| EOP | Норвегия |
+| MyAnalytics | Норвегия |
 | Планировщик | Глобальный географический регион 1 — EMEA |
 | Sway | Соединенные Штаты |
 | Yammer | Глобальный географический регион 1 — EMEA |
-| Службы OneNote | Глобальный географический регион 1 — EMEA |
+| Службы OneNote | Норвегия |
 | Stream | Глобальный географический регион 1 — EMEA |
 | Доска | Соединенные Штаты |
 | Forms | Глобальный географический регион 1 — EMEA |
