@@ -3,7 +3,7 @@ title: Внедрение раздельного VPN-туннелировани�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/9/2020
+ms.date: 4/14/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Как реализовать VPN-туннель для Office 365
-ms.openlocfilehash: 3ac4d1243e28e8081439c98baf181ba9fb5fb2b3
-ms.sourcegitcommit: f12f95866df3a7bbf866e1d21a839be7fbdf9470
+ms.openlocfilehash: 81412e5f64f143949ef1cbca7b030f643cbace03
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43203853"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516490"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Внедрение раздельного VPN-туннелирования для Office 365
 
@@ -273,6 +273,7 @@ Skype для бизнеса Online генерирует имя пользова�
 - **Palo Alto GlobalProtect**: [оптимизация трафика Office 365 через разделенные туннели VPN с исключением маршрутов доступа](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM**: [оптимизация трафика Office 365 при удаленном доступе через VPN при использовании BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
 - **Citrix Gateway**: [оптимизация раздельного VPN-туннелирования Citrix Gateway для Office365](https://docs.citrix.com/ru-RU/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Pulse Secure**: [VPN-туннелирование: как настроить раздельное туннелирование для исключения приложений Office365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
 
 ## <a name="faq"></a>Вопросы и ответы
 
