@@ -19,12 +19,12 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: Поддержка заканчивается для SharePoint 2010 и SharePoint Server 2010 на 13 апреля 2021 г. Используйте эту статью в качестве руководства по обновлению до SharePoint Online или более новой версии SharePoint Server в локальной среде.
-ms.openlocfilehash: e4e4b874d5ea73fa37c3d1e338890a1391516273
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
+ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503847"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43532296"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Обновление с SharePoint 2010
 
@@ -68,7 +68,7 @@ Microsoft SharePoint 2010 и SharePoint Server 2010 достигают окон�
 ![Пути обновления SharePoint Server 2010](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 >[!Note]
->Завершение поддержки SharePoint Server 2010 и SharePoint Foundation 2010 запланировано на 13 октября 2020, но *помните о* том, что всегда следует проверять наиболее актуальные даты на [сайте жизненного цикла продукта](https://support.microsoft.com/lifecycle) .
+>Завершение поддержки SharePoint Server 2010 и SharePoint Foundation 2010 запланировано на 13 апреля 2021, но *помните о* том, что всегда следует проверять последние даты на [сайте жизненного цикла продукта](https://support.microsoft.com/lifecycle) .
 >
 
   
@@ -195,7 +195,7 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
 
 Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
         
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007 или 2010](upgrade-from-office-2010-servers-and-products.md)
   
