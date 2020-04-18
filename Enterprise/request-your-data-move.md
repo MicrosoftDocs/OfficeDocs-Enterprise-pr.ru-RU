@@ -1,7 +1,7 @@
 ---
 title: Как запросить перемещение данных
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Существующим пользователям Office 365 необходимо отправить запрос перед крайним сроком их страны, чтобы получить данные о том, что данные о своих участниках служб Microsoft 365 перемещены на новый географическое расположение.
-ms.openlocfilehash: 2b91f471fb6a1c82f37cf89aaec29de040a73fcf
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 9c78492584f49cf263916726b2272d3b9405446e
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516570"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547747"
 ---
 # <a name="how-to-request-your-data-move"></a>Как запросить перемещение данных
 
@@ -74,7 +74,7 @@ ms.locfileid: "43516570"
 
 В январе 2020 клиенты в соответствующих странах Office 365 могут участвовать в переносе данных службы Chat Microsoft Teams.  Временные шкалы, которые вы хотите использовать, были повторно открыты или расширены для всех соответствующих стран, чтобы предоставить пользователям возможность учитывать программу миграции с Microsoft Teams в области. Клиенты, которые ранее выказали о перемещении размещению данных, также смогут перемещаться по Teams в локальный центр обработки данных.
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Перемещение основных данных в новые жеос центра обработки данных Office 365](moving-data-to-new-datacenter-geos.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Перемещение основных данных в новые жеос центра обработки данных Майкрософт 365
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: 'Новые центры обработки данных жеос добавляют ресурсы емкости и вычислительные ресурсы для поддержки текущих роста требований клиентов и использования. Кроме того, новые центры обработки данных жеос предоставляют размещению данных для основных данных клиентов. Основные данные клиента — это термин, который ссылается на подмножество данных клиентов, определенных в терминах Microsoft Online Services: содержимое почтовых ящиков Exchange Online (текст электронной почты, записи календаря и содержимое вложений электронной почты) и контент сайта SharePoint Online, а также файлы, отправленные в OneDrive для бизнеса.'
-ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516550"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547727"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Перемещение основных данных в новые жеос центра обработки данных Майкрософт 365
 
@@ -69,7 +69,7 @@ ms.locfileid: "43516550"
 
 Перемещение данных на новый географию центра обработки данных завершается без дополнительных затрат на доступ к клиенту.
     
-## <a name="related-topics"></a>Статьи по теме 
+## <a name="related-topics"></a>Связанные статьи 
  
 [Как запросить перемещение данных](request-your-data-move.md)
     
