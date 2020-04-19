@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Руководство по использованию раздельного туннелирования VPN с Office 365 для оптимизации подключения Office 365 для удаленных пользователей.
-ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: d8f8d4364804395cd10eceb1aa55422f01cbe079
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131438"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547657"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Оптимизация подключения Office 365 для удаленных пользователей с использованием VPN-туннелирования
 <!---
@@ -32,7 +32,7 @@ ms.locfileid: "43131438"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
-Для клиентов, которые подключают свои удаленные рабочие устройства к корпоративной сети или облачной инфраструктуре через VPN, Microsoft рекомендует, чтобы ключевые сценарии Office 365 **Microsoft Teams**, **SharePoint Online** и **Exchange Online** маршрутизируются через конфигурацию _VPN с разделенным туннелем_. Это становится особенно важным в качестве стратегии первой линии, способствующей повышению производительности труда сотрудников во время масштабных мероприятий на дому, таких как пандемия COVID-19.
+Для клиентов, которые подключают свои удаленные рабочие устройства к корпоративной сети или облачной инфраструктуре через VPN, Microsoft рекомендует, чтобы ключевые сценарии Office 365 **Microsoft Teams**, **SharePoint Online** и **Exchange Online** маршрутизируются через конфигурацию _VPN с разделенным туннелем_. Это становится особенно важным в качестве первоочередной стратегии, способствующей повышению производительности сотрудников в масштабных ситуациях работы из дома, как при кризисе, связанном с COVID-19.
 
 ![Конфигурация Split Tunnel VPN](media/vpn-split-tunnelling/vpn-model-2.png)
 

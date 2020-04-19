@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Сводка: расположения данных Office 365'
-ms.openlocfilehash: 4503d624fb9b7b0cea8715352518bfe678ea0bfa
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 71c286b3dc7fbbaa842183dcaa23c863e46f809a
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516540"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547737"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 Расположения данных Azure Active Directory см. на [карте данных AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-Из-за беспрецедентных условий, связанных с COVID-19, и необходимостью управлять спросом на веб-службы в Европе, если ваша организация является образовательным учреждением, мы можем подготовить ваш клиент Office 365 в Европейском Союзе (ЕС), Европейской ассоциации свободной торговли (ЕАСТ), Соединенном Королевстве (UK), Соединенных Штатах (США) и Канаде (CA) или перенести данные в любые центры обработки данных в ЕС, ЕАСТ, Соединенном Королевстве, США или Канаде.  Это означает, что ваши данные могут храниться в ЕС, ЕАСТ, Соединенном Королевстве, США или Канаде.  Наши обязательства по обеспечению соответствия требованиям, конфиденциальности и безопасности остаются неизменными при реализации необходимых и рациональных мер по обеспечению доступности служб.  Мы соблюдаем все соответствующие законы в отношении передачи данных.
+Из-за беспрецедентных условий, вызванных кризисом в связи с COVID-19, и необходимостью управлять спросом на веб-службы в Европе, если ваша организация является образовательным учреждением, мы можем подготовить ваш клиент Office 365 в Европейском Союзе (ЕС), Европейской ассоциации свободной торговли (ЕАСТ), Соединенном Королевстве (UK), Соединенных Штатах (США) и Канаде (CA) или перенести данные в любые центры обработки данных в ЕС, ЕАСТ, Соединенном Королевстве, США или Канаде.  Это означает, что ваши данные могут храниться в ЕС, ЕАСТ, Соединенном Королевстве, США или Канаде.  Наши обязательства по обеспечению соответствия требованиям, конфиденциальности и безопасности остаются неизменными при реализации необходимых и рациональных мер по обеспечению доступности служб.  Мы соблюдаем все соответствующие законы в отношении передачи данных.
 
 
 
