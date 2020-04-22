@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 04/20/2010
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Описывается синхронизация каталогов с Office 365, очистка доменных служб Active Directory и средство Azure Active Directory Connect.
-ms.openlocfilehash: 5368fc00aafe66ed51af80c50aaf72ee5f939041
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44894cdbc65c243ce0c4a66ceba1d123ece49c62
+ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841766"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43580936"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Гибридная идентификация и синхронизация каталогов для Office 365
 
@@ -69,7 +69,7 @@ ms.locfileid: "41841766"
 
 Когда пароли изменяются или сбрасываются локально, новые хэши паролей синхронизируются с Azure AD, чтобы пользователи всегда могли использовать одинаковые пароли для облачных ресурсов и локальных ресурсов. Пароли пользователей никогда не отправляются в Azure AD или хранятся в службе Azure AD в виде простого текста. Некоторые расширенные функции Azure AD, такие как защита идентификации, требуют ФС независимо от выбранного метода проверки подлинности.
   
-Чтобы узнать больше, ознакомьтесь со статьей [Выбор ФС](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Чтобы узнать больше, ознакомьтесь со статьей [Выбор ФС](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) .
   
 #### <a name="pass-through-authentication"></a>Сквозная проверка подлинности
 
@@ -81,15 +81,15 @@ ms.locfileid: "41841766"
 
 ПТА также используется в организациях с требованиями к безопасности для немедленного применения локальных состояний учетных записей пользователей, политик паролей и часов входа. 
   
-Чтобы узнать больше, ознакомьтесь со статьей [Выбор ПТА](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Чтобы узнать больше, ознакомьтесь со статьей [Выбор ПТА](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) .
   
 ### <a name="federated-authentication"></a>Федеративная проверка подлинности
 
 Федеративная проверка подлинности в основном используется для крупных организаций с более сложными требованиями к проверке подлинности. Удостоверения доменных служб Active Directory синхронизируются с Office 365, и учетные записи пользователей управляются локально. При использовании федеративной проверки подлинности пользователи имеют один и тот же пароль в локальной среде и в облаке, и им не нужно повторно выполнять вход для использования Office 365. 
 
-Федеративная проверка подлинности может поддерживать дополнительные требования к проверке подлинности, такие как проверка подлинности на основе смарт-карт или третья многофакторная проверка подлинности и обычно требуется при отсутствии требования к проверке подлинности для организаций изначально поддержка Azure AD.
+Федеративная проверка подлинности может поддерживать дополнительные требования к проверке подлинности, такие как проверка подлинности на основе смарт-карт или третья многофакторная проверка подлинности и обычно требуется, когда в организациях нет требований проверки подлинности, изначально поддерживаемых Azure AD.
  
-Чтобы узнать больше, ознакомьтесь со статьей [Выбор федеративной проверки подлинности](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Чтобы узнать больше, ознакомьтесь со статьей [Выбор федеративной проверки подлинности](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) .
   
 #### <a name="third-party-authentication-and-identity-providers"></a>Сторонние поставщики проверки подлинности и идентификации
 
@@ -147,7 +147,7 @@ ms.locfileid: "41841766"
 
 Когда вы будете готовы развернуть гибридную идентификацию, ознакомьтесь со статьей [Подготовка к подготовке пользователей](prepare-for-directory-synchronization.md).
   
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 [Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
 

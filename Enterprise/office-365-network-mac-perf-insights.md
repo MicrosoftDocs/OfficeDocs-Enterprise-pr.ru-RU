@@ -3,7 +3,7 @@ title: Microsoft 365 Network Insights (Предварительная верси
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Insights (Предварительная версия)
-ms.openlocfilehash: baab4716ace0b15df5878d21987c037372a2754e
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 0146019d1424cda696104d68eeda32ce28a26391
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185760"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612909"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network Insights (Предварительная версия)
 
@@ -147,6 +147,6 @@ Insights призваны помочь при проектировании пе�
 
 [Оценка сети Microsoft 365 (Предварительная версия)](office-365-network-mac-perf-score.md)
 
-[Средство входящей миграции по сети Microsoft 365 в центре администрирования M365 (Предварительная версия)](office-365-network-mac-perf-onboarding-tool.md)
+[Проверка подключения Microsoft 365 в центре администрирования M365 (Предварительная версия)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Служба расположения сетевых подключений (Предварительная версия) Microsoft 365](office-365-network-mac-location-services.md)

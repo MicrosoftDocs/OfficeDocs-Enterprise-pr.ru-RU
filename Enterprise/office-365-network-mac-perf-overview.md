@@ -3,7 +3,7 @@ title: Рекомендации по повышению производител
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Обзор рекомендаций по производительности сети в центре администрирования Microsoft 365 (Предварительная версия)
-ms.openlocfilehash: 9bd1470b80d0c65c11748bee3e8a6a73a218f55f
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 077202f5ba1ffa95324131e6c283f2c3845aa07f
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185780"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612939"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Рекомендации по повышению производительности сети в центре администрирования Microsoft 365 (Предварительная версия)
 
@@ -131,7 +131,7 @@ ms.locfileid: "43185780"
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Что такое оптимальная Передняя дверца службы Microsoft 365?
 
-Оптимальная Передняя дверца службы Microsoft 365 — это наиболее близкий к выходу из сети, как правило, в области город или Metro. Используйте средство входящей миграции [сети microsoft 365](office-365-network-mac-perf-onboarding-tool.md) , чтобы определить расположение входящей и оптимальной дверцы службы Microsoft 365. Если вы определили, что используемая Передняя дверца является оптимальной, то вы оптимально подключаются к глобальной сети Майкрософт.
+Оптимальная Передняя дверца службы Microsoft 365 — это наиболее близкий к выходу из сети, как правило, в области город или Metro. Используйте [Тест подключения microsoft 365](office-365-network-mac-perf-onboarding-tool.md) , чтобы определить расположение вашей работающей передней дверцы службы Microsoft 365 и оптимальной дверцы службы. Если вы определили, что используемая Передняя дверца является оптимальной, то вы оптимально подключаются к глобальной сети Майкрософт.
 
 ### <a name="what-is-an-internet-egress-location"></a>Что такое расположение для выхода в Интернет?
 
@@ -143,6 +143,6 @@ ms.locfileid: "43185780"
 
 [Оценка сети Microsoft 365 (Предварительная версия)](office-365-network-mac-perf-score.md)
 
-[Средство входящей миграции по сети Microsoft 365 в центре администрирования M365 (Предварительная версия)](office-365-network-mac-perf-onboarding-tool.md)
+[Проверка подключения Microsoft 365 в центре администрирования M365 (Предварительная версия)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Служба расположения сетевых подключений (Предварительная версия) Microsoft 365](office-365-network-mac-location-services.md)
