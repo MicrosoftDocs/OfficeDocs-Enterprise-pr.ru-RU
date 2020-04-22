@@ -15,18 +15,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Сводка. сведения об ограничении ресурсов для различных приложений в Office 365.
-ms.openlocfilehash: 112d910ae724ad01629aaef5a8e2e1756ceb8ecf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 55fa8d90c6f83c84a1e43f32cf7cd0eeafbf1274
+ms.sourcegitcommit: ed4482ad35274b79d44d0f9a17be3e52d5ad0492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844320"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43666330"
 ---
 # <a name="resource-limits"></a>Ограничения ресурсов
 
 Ограничения ресурсов применяются с помощью квот (ограничений) и регулирования. Azure Active Directory и отдельные службы Office 365 используют оба. При добавлении новых возможностей предельные значения задаются для конкретных служб и изменяются с течением времени. Сведения о текущих пределах для различных служб представлены в следующих разделах:
 
-- [Ограничения и ограничения для службы Azure Active Directory](https://msdn.microsoft.com/library/azure/dn764971.aspx)
+- [Ограничения и ограничения для службы Azure Active Directory](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 - [Ограничения Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx)
 - [Ограничения Exchange Online Protection](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx)
 - [Границы и ограничения программного обеспечения SharePoint Online](https://support.office.com/article/SharePoint-Online-software-boundaries-and-limits-8F34FF47-B749-408B-ABC0-B605E1F6D498)
