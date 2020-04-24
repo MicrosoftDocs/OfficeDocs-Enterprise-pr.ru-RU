@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Сводка. Воспользуйтесь этими руководствами по лаборатории тестирования, чтобы настроить среды для демонстрации, экспериментальной установки, разработки и тестирования продуктов Office 365.
-ms.openlocfilehash: 133f31dd46555ac7d80c2fcc5f3756da967cb331
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 6a4b6087a66607906e2de7407fd23e4d2f7aba3d
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845030"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793692"
 ---
 # <a name="test-office-365-with-test-lab-guides-tlgs"></a>Тестирование Office 365 с помощью руководств по лаборатории тестирования
 
@@ -52,6 +52,6 @@ ms.locfileid: "41845030"
     
 ## <a name="see-also"></a>См. также
 
-[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
+[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.yml)
   
 [Гибридные решения](hybrid-solutions.md)
