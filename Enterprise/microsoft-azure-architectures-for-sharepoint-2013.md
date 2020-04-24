@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: Сводка. Решения SharePoint 2013 можно размещать на виртуальных машинах Microsoft Azure. Узнайте, какие типы решений хорошо для этого подходят и как настроить Microsoft Azure для их размещения.
-ms.openlocfilehash: ff5837030384a7f10dc36bb9c436394a19521254
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 62a3668fe231e8cb5d60964a3325cc200126df12
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844910"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793742"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Архитектуры Microsoft Azure для SharePoint 2013
 
@@ -219,7 +219,7 @@ ms.locfileid: "41844910"
   
 ## <a name="see-also"></a>См. также
 
-[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
+[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.yml)
   
 [Веб-сайты в Microsoft Azure с использованием SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   

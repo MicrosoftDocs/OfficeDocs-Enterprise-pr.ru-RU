@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: Сводка. Настройка Azure AD Connect для федеративной проверки высокого уровня доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: 8a65ee9af994d46cdc53266a92851e0684e06121
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ac5536ac66412825b245851a7f225acad5e9895a
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840246"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793802"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Этап 5. Федеративная проверка подлинности для обеспечения высокой доступности: настройка федеративной проверки подлинности для Office 365
 
-На последнем этапе развертывания федеративной проверки подлинности с высоким уровнем доступности для Office 365 в службах инфраструктуры Azure можно получить и установить сертификат, выданный общедоступным центром сертификации, проверить конфигурацию, а затем установить и запустить Azure AD. Подключитесь к серверу синхронизации каталогов. Azure AD Connect настраивает подписку на Office 365, серверы служб федерации Active Directory (AD FS) и прокси-серверы веб-приложений для федеративной проверки подлинности.
+На последнем этапе развертывания федеративной проверки подлинности с высоким уровнем доступности для Office 365 в службах инфраструктуры Azure можно получить и установить сертификат, выданный общедоступным центром сертификации, проверить конфигурацию, а затем установить и запустить Azure AD Connect на сервере синхронизации службы каталогов. Azure AD Connect настраивает подписку на Office 365, серверы служб федерации Active Directory (AD FS) и прокси-серверы веб-приложений для федеративной проверки подлинности.
   
 Описание всех этапов см. в статье [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
@@ -145,7 +145,7 @@ ms.locfileid: "41840246"
   
 [Федеративное удостоверение для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
+[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.yml)
 
 [Федеративные удостоверения для Office 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
 

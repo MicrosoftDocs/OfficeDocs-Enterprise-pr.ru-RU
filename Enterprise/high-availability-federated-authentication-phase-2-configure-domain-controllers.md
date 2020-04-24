@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: Сводка. Настройте контроллеры домена и сервер синхронизации службы каталогов для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: e43787817287779330e28236700f1a710c37dceb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 80b413f8a6d415378e384b1625fc756f96dd00db
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840316"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793822"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Этап 2. Федеративная проверка подлинности для обеспечения высокой доступности: настройка контроллеров домена
 
@@ -257,6 +257,6 @@ Restart-Computer
   
 [Федеративное удостоверение для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
+[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.yml)
 
 

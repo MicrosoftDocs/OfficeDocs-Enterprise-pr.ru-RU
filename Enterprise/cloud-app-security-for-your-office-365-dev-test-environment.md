@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: Сводка. Настройка и демонстрация работы Office 365 Cloud App Security в среде разработки и тестирования Office 365.
-ms.openlocfilehash: a4f0f9e8912a5455ec5253e9992873136e71d694
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f76aaa5b13e409f08a4b96714e1f4bdfcc84ecac
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840806"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793722"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security для среды разработки и тестирования Office 365
 
  **Сводка.** Настройка и демонстрация работы Office 365 Cloud App Security в среде разработки и тестирования Office 365.
   
-Office 365 Cloud App Security, ранее известное как управление расширенной безопасностью Office 365, позволяет создавать политики, отслеживающие подозрительные действия в вашей подписке на Office 365 и информирующие Вас о возможных исправлениях. меры. Дополнительные сведения см в разделе [Обзор Cloud App Security в Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Office 365 Cloud App Security, ранее известное как расширенное управление безопасностью Office 365, позволяет создавать политики, отслеживающие подозрительные действия в вашей подписке на Office 365 и информирующие Вас о возможных действиях по исправлению. Дополнительные сведения см в разделе [Обзор Cloud App Security в Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 С помощью инструкций в этой статье вы можете включить и протестировать функции Cloud App Security в пробной подписке на Office 365.
   
@@ -161,11 +161,11 @@ Office 365 Cloud App Security, ранее известное как управл
   
 ## <a name="see-also"></a>См. также
 
-[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по лаборатории тестирования для облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Среда разработки и тестирования Office 365](office-365-dev-test-environment.md)
   
-[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.md)
+[Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.yml)
 
 [Обзор Cloud App Security в Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 
