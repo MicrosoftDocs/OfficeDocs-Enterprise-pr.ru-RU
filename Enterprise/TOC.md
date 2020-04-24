@@ -1,4 +1,5 @@
 # [Модели облачной архитектуры](microsoft-cloud-it-architecture-resources.md)
+# [Облачные решения для корпоративных пользователей](cloud-adoption-and-hybrid-solutions.yml)
 ## [Архитектурные модели для SharePoint, Exchange, Skype для бизнеса и Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
 # [Планирование Office 365](get-your-organization-ready-for-office-365.md)
