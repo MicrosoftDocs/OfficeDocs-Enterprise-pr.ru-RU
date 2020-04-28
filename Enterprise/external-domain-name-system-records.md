@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Сводка. Список записей DNS для планирования развертывания Office 365.
-ms.openlocfilehash: 294bf256df48f4c9c846346d7b303ba452b689ec
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: f7a4363f0b93a0b8735d3eae21e6e70e6b0ac3ba
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890348"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901232"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Внешние записи DNS для Office 365
 
@@ -137,10 +137,9 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 ||Используемая система  <br/> |Назначение  <br/> |Добавьте эти включения  <br/> |
 |1  <br/> |Все почтовые системы (обязательно)  <br/> |Все записи SPF начинаются с этого значения  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (распространено)  <br/> |Используйте только с Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
-|3  <br/> |SharePoint Online и Exchange Online (распространено)  <br/> |Используйте с Exchange Online и SharePoint Online  <br/> |include:sharepointonline.com  <br/> |
-|4  <br/> |Сторонняя почтовая система (менее распространено)  <br/> ||include:\<почтовая система, например mail.contoso.com\>  <br/> |
-|5  <br/> |Локальная почтовая система (менее распространено)  <br/> |Применяйте, если вы используете службу Exchange Online Protection или Exchange Online вместе с другой почтовой системой  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> include:\<mail.contoso.com\>  <br/> В угловых скобках (\<\>) следует указать другие почтовые системы, которые будут использоваться для отправки почты для вашего домена.  <br/> |
-|6  <br/> |Все почтовые системы (обязательно)  <br/> ||-all  <br/> |
+|3  <br/> |Сторонняя почтовая система (менее распространено)  <br/> ||include:\<почтовая система, например mail.contoso.com\>  <br/> |
+|4  <br/> |Локальная почтовая система (менее распространено)  <br/> |Применяйте, если вы используете службу Exchange Online Protection или Exchange Online вместе с другой почтовой системой  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> include:\<mail.contoso.com\>  <br/> В угловых скобках (\<\>) следует указать другие почтовые системы, которые будут использоваться для отправки почты для вашего домена.  <br/> |
+|5  <br/> |Все почтовые системы (обязательно)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Пример. Добавление значений в существующую запись SPF
 <a name="bkmk_addtospf"> </a>
