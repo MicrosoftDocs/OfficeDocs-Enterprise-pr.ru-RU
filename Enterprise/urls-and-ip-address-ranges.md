@@ -3,7 +3,7 @@ title: URL-адреса и диапазоны IP-адресов Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/14/2020
+ms.date: 04/28/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: Сводка. Для Office 365 требуется подключение к Интернету. Указанные ниже конечные точки должны быть доступны для клиентов, использующих планы Office 365, в том числе входящих в облако сообщества государственных учреждений (GCC).
 hideEdit: true
-ms.openlocfilehash: acccd4dbb1d9d7107542b711c5a7dd34d2f33c71
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: 76e5b8a9b4a9f41289c8f304cbe013b3f83d962f
+ms.sourcegitcommit: 5fb126747182108e31594b22e4677f05b1fb9313
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547767"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43928143"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL-адреса и диапазоны IP-адресов Office 365
 
@@ -45,7 +45,7 @@ ms.locfileid: "43547767"
   
 ||||
 |:-----|:-----|:-----|
-|**Последнее обновление:** 14.04.2020, ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [подписка на журнал изменений](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Скачивание:** все обязательные и необязательные назначения в одном списке [в формате JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Используйте:** наши [PAC-файлы](managing-office-365-endpoints.md#pacfiles) прокси-сервера <br/> |
+|**Последнее обновление:** 28.04.2020, ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [подписка на журнал изменений](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Скачивание:** все обязательные и необязательные назначения в одном списке [в формате JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Используйте:** наши [PAC-файлы](managing-office-365-endpoints.md#pacfiles) прокси-сервера <br/> |
 
  Сначала ознакомьтесь со статьей [Управление конечными точками Office 365](managing-office-365-endpoints.md), содержащей рекомендации по управлению сетевым подключением с использованием этих данных. В начале каждого месяца данные конечных точек обновляются новыми IP-адресами и URL-адресами, публикуемыми за 30 дней до их активации. Это позволяет пользователям, не имеющим автоматических обновлений, завершить свои процессы до того, как новое подключение станет обязательным. Конечные точки также могут обновляться в течение месяца, если это требуется для устранения проблем, выявленных службой поддержки, инцидентов безопасности или в связи с другими экстренными рабочими требованиями. Данные, представленные ниже на этой странице, получены из веб-служб на базе REST. Если вы используете скрипт или сетевое устройство для доступа к этим данным, сразу переходите к разделу [Веб-служба](office-365-ip-web-service.md).
 
