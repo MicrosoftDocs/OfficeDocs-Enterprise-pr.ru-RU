@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: Сводка. Узнайте, как использовать PowerShell в Office 365 с пользователями и лицензиями Office 365, Skype для бизнеса Online, SharePoint Online, Exchange Online и Центром безопасности и соответствия требованиям Office 365.
-ms.openlocfilehash: 5608d955dc408a600b398c9f0fb061d436f0ba56
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fbc10833d3ee1e7377e6ed68adb7d2299fce72fa
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841436"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004572"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Управление Office 365 с помощью PowerShell Office 365
 
@@ -52,7 +54,7 @@ Office 365 PowerShell — это мощное средство управлен�
 
     Ознакомьтесь с этой статьей, если у вас установлены модули PowerShell в Office 365 и вы хотите перенести свою электронную почту из существующих систем.
 
-- [Центр безопасности & соответствия требованиям](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [Центр безопасности и соответствия требованиям](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
 
     Ознакомьтесь с этой статьей, если вы хотите использовать команды автоматизации для управления Центром безопасности и соответствия требованиям.
 

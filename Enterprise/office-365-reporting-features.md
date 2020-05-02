@@ -24,7 +24,7 @@ ms.locfileid: "43206556"
 ---
 # <a name="office-365-reporting-features"></a>Функции создания отчетов в Office 365 
 
-## <a name="introduction"></a>Введение
+## <a name="introduction"></a>Общие сведения
 
 Функция отчетов в Office 365 предоставляет различные отчеты аудита для Azure Active Directory (AD), Exchange Online, управления устройствами, супервизорной проверки и защиты от потери данных (DLP). Эти отчеты отличаются от отчетов об активности Office 365 и отличаются друг от друга.
 

@@ -268,7 +268,7 @@ Office 365 — это распределенное программное обе
 
 [Сети доставки содержимого](content-delivery-networks.md)
 
-[Проверка подключения Microsoft 365](https://aka.ms/netonboard)
+[Проверка возможности подключения Microsoft 365](https://aka.ms/netonboard)
 
 [Как корпорация Майкрософт создает свою быструю и надежную глобальную сеть](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

@@ -102,7 +102,7 @@ ms.locfileid: "41844930"
 
 ## <a name="related-topics"></a>Статьи по теме
 
-[Оценка сетевого подключения к Office 365](assessing-network-connectivity.md)
+[Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
 
 [Управление подключением ExpressRoute для Office 365](managing-expressroute-for-connectivity.md)
 
@@ -124,6 +124,6 @@ ms.locfileid: "41844930"
 
 [Сеть Office 365 и настройка производительности](network-planning-and-performance.md)
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 [Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

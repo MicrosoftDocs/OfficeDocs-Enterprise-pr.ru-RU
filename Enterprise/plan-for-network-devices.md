@@ -72,7 +72,7 @@ ms.locfileid: "41841731"
 
 Для получения дополнительных сведений о настройке брандмауэров и прокси-серверов для подключения к Office 365, прочитайте раздел [Управление конечными точками office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Оценка сетевого подключения Office 365](assessing-network-connectivity.md)и [вопросы и ответы на конечные точки Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) для получения дополнительных сведений об устройствах и выборе канала.
   
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 [Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
 

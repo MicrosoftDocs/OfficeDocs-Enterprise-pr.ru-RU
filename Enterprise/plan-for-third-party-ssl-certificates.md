@@ -80,6 +80,6 @@ ms.locfileid: "41841736"
 
 В этой статье описываются сертификаты, которые может потребоваться установить в вашей инфраструктуре. Дополнительные сведения о сертификатах, установленных на наших серверах Office 365, можно найти в статье [цепочки сертификатов Office 365](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
   
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 [Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

@@ -219,7 +219,7 @@ Project Portfolio Server 2007 использовался с Project Server 2007 
     
 - [Руководство по миграции Microsoft Office Project Portfolio Server 2007](https://go.microsoft.com/fwlink/p/?linkid=841279)
     
-## <a name="related-topics"></a>Связанные статьи
+## <a name="related-topics"></a>Статьи по теме
 
 [План поддержки SharePoint Server 2007](sharepoint-2007-end-of-support.md)
   

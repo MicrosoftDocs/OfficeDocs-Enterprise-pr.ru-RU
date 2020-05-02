@@ -174,7 +174,7 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
   
 Кроме того, следует удерживать нажатой клавишу CTRL, щелкнув значок клиента Outlook (также в области уведомлений Windows), и выберите пункт "состояние подключения". Найдите SMTP-адрес клиента с типом определения "Bearer\*", который представляет токен носителя, используемый в OAuth.
   
-## <a name="related-articles"></a>Статьи по теме
+## <a name="related-articles"></a>Связанные статьи
 
 [Выполните обратное соединение с обзором современной проверки подлинности](hybrid-modern-auth-overview.md).
   

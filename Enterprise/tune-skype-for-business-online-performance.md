@@ -52,7 +52,7 @@ ms.locfileid: "41843920"
     
 - [Вот что вы получаете в телефонной системе в Office 365](https://docs.microsoft.com/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 [Планирование сети и настройка производительности для Office 365](network-planning-and-performance.md)
   
@@ -60,5 +60,5 @@ ms.locfileid: "41843920"
   
 [ExpressRoute и качество обслуживания в Skype для бизнеса Online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)
   
-[Потоки вызовов с помощью ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
+[Поток вызовов с использованием ExpressRoute](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/call-flow-using-expressroute)
 

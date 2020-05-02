@@ -63,6 +63,6 @@ Azure также предоставляет другие функциональ�
    
 Узнайте больше об [интегрированных приложениях и Azure AD для администраторов Office 365](integrated-apps-and-azure-ads.md) и [коллекции приложений Azure AD и единого входа](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 [Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

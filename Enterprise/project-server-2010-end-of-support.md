@@ -237,7 +237,7 @@ Project Server, как и почти все продукты Майкрософ�
 
 Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
    
-## <a name="related-topics"></a>Связанные статьи
+## <a name="related-topics"></a>Статьи по теме
 
 [Обновление с SharePoint 2010](upgrade-from-sharepoint-2010.md)
   

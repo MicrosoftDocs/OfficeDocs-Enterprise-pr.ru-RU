@@ -34,7 +34,7 @@ ms.locfileid: "41844020"
 
 ## <a name="guided-office-365-enterprise-setup-process-with-fasttrack"></a>Процесс установки Office 365 Enterprise с FastTrack
 
-**[FastTrack для office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** — лучший способ развертывания Office 365. FastTrack рассказывает о самых распространенных конфигурациях развертывания и может отвечать на вопросы. 
+**[FastTrack для office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** — лучший способ развертывания Office 365. Служба FastTrack поможет разобраться в одной из самых распространенных конфигураций развертывания и ответит на возникающие в ходе этого процесса вопросы. 
 
 Чтобы получить доступ к ряду руководств по настройке, войдите в свою подписку на Office 365 и перейдите к разделу [Настройка Office 365](https://aka.ms/o365fasttrack).
 

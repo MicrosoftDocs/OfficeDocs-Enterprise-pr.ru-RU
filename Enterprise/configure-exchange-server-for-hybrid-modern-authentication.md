@@ -162,7 +162,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 Если вы являетесь локальным клиентом, использующим Exchange Server по протоколу TCP 443, белом следующие диапазоны IP-адресов: <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> 
   
 
-## <a name="related-topics"></a>Связанные статьи
+## <a name="related-topics"></a>Статьи по теме
 
 [Обзор гибридной современной проверки подлинности и предварительные требования для их использования с локальными серверами Skype для бизнеса и Exchange](hybrid-modern-auth-overview.md) 
   

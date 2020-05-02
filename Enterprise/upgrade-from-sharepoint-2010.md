@@ -195,7 +195,7 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
 
 Вы также можете [скачать](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) этот плакат и распечатать его в форматах Letter, Legal или таблоид (11 x 17).
         
-## <a name="related-topics"></a>Связанные статьи
+## <a name="related-topics"></a>Статьи по теме
 
 [Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007 или 2010](upgrade-from-office-2010-servers-and-products.md)
   

@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Сводка: в этой статье рассказывается, как использовать PowerShell в Office 365 для управления пользователями, группами и группами сайтов в SharePoint Online.'
-ms.openlocfilehash: e5009f8c1119d921f3dd46720a47f5935c56ae8b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 1ca8217b7d4f48fc7d133110fdce7bdbd6cd18c3
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841346"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004132"
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Управление SharePoint Online с помощью Office 365 PowerShell
 

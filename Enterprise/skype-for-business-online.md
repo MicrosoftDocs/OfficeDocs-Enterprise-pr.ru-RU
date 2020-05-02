@@ -40,7 +40,7 @@ ms.locfileid: "41841116"
   
 - [Разрешите пользователям связываться с внешними пользователями Skype для бизнеса](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
     
-- [Добавление контактов Skype для пользователей Skype для бизнеса](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
+- [Разрешение на добавление контактов Skype пользователям Skype для бизнеса](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
     
 ## <a name="improve-call-and-video-quality"></a>Улучшите качество звонков и видео
 

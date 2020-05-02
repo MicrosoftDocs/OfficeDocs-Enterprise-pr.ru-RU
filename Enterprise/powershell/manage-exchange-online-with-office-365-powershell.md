@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,12 +18,12 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 'Сводка: в этой статье рассказывается, как использовать PowerShell в Office 365 для управления Microsoft Exchange Online, в том числе для отображения конфигураций почтовых ящиков и работы с расширенными функциями отчетности.'
-ms.openlocfilehash: 535a53e10d1eb11e5db4e31edd6c4c3f856b3914
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 25cd466ae1c7fca7bb8bd4e44036588df28403ef
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841476"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004622"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Управление Exchange Online с помощью Office 365 PowerShell
 
