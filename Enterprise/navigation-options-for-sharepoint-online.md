@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: В этой статье описываются параметры навигации сайтов с включенной публикацией SharePoint в SharePoint Online. Выбор и настройка навигации значительно влияют на производительность и масштабируемость сайтов в SharePoint Online. Эта статья неприменима к классическим сайтам групп.
-ms.openlocfilehash: 410be307fca62c987baed39601e122717a6bebcc
-ms.sourcegitcommit: b1042fa2d02f1bc74586751c542776325d3a170f
+ms.openlocfilehash: c651530284889d2808c8fa415b72836eb6d14aea
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170657"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004764"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Параметры навигации для SharePoint Online
 
@@ -97,7 +99,7 @@ ms.locfileid: "43170657"
 
 В docs.microsoft.com содержатся несколько статей, посвященных управлению навигацией. Например, в разделе [Обзор управляемой навигации в SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation).
 
-Чтобы реализовать управляемую навигацию, вы можете настроить термины с URL-адресами, соответствующими структуре навигации сайта. Управляемую навигацию можно также выполнить вручную, чтобы заменить структурную навигацию во многих случаях. Пример:
+Чтобы реализовать управляемую навигацию, вы можете настроить термины с URL-адресами, соответствующими структуре навигации сайта. Управляемую навигацию можно также выполнить вручную, чтобы заменить структурную навигацию во многих случаях. Например:
 
 ![Структура сайта SharePoint Online](media/SPONavOptionsListOfSites.png))
 
