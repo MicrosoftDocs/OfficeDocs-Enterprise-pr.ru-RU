@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2010, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: 3504f7d7042616f94cc359ef849ca3afd86ebc04
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 76f61942a4b3f832b75f4a098452748898d2e8c5
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503827"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009524"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 
@@ -42,7 +42,7 @@ Office 2010 и Exchange 2010 достигают конца поддержки д
 
 - В Office 365 имеются облачные службы для серверных продуктов Office 2010, такие как Exchange Server и SharePoint Server и службы, такие как teams и OneDrive для бизнеса. 
 
-- Office 365 профессиональный плюс, входящий в состав Office 365 E3 и, а также Microsoft 365 Enterprise, — это набор клиентских приложений Office, устанавливаемых на локальном устройстве. Они регулярно обновляются с учетом новых функций обеспечения производительности и безопасности в Microsoft Cloud.
+- Приложения Microsoft 365 для предприятий (ранее именуемые Office 365 профессиональный плюс), включенные в Office 365 E3 и, а также Microsoft 365 корпоративный, — это набор клиентских приложений Office, устанавливаемых на локальном устройстве. Они регулярно обновляются с учетом новых функций обеспечения производительности и безопасности в Microsoft Cloud.
 
 Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, ознакомьтесь с разрядом с [плакатом об отконце поддержки](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 

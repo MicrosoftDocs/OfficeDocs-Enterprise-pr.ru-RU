@@ -18,13 +18,13 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: Эти шаги предназначены для помощи в настройке сети, создании удостоверений, развертывании Office 365 профессиональный плюс, переносе данных и помощи пользователям в Организации начать использовать Office 365.
-ms.openlocfilehash: 979b7f1153451b072c5ab25ad8aced50ae69576a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Эти шаги предназначены для помощи в настройке сети, создании удостоверений, развертывании приложений Microsoft 365 для предприятий, переносе данных и оказания помощи пользователям в вашей организации для начала работы с Office 365.
+ms.openlocfilehash: 456b080d166578a50b345a047e5a37c839b69e20
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844020"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009284"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Развертывание Office 365 корпоративный для организации
 
@@ -60,9 +60,9 @@ ms.locfileid: "41844020"
 
    Включает в себя настройку базовой и усиленной безопасности, угроз и защиты информации для клиента и удостоверений в течение первых 30 дней, 90 дней и более поздних.
  
-4. [Развертывание клиентского программного обеспечения](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+4. [Развертывание клиентского программного обеспечения](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   Включает развертывание Office 365 профессиональный плюс, обновленную облачную версию и постоянную версию пакета Office (Word, Excel, PowerPoint и др.) на устройствах. Каждая клиентская лицензия на Office 365 содержит лицензию на Office 365 профессиональный плюс.
+   Включает развертывание приложений Microsoft 365 для предприятий (ранее именуемых Office 365 профессиональный плюс), обновленная облачная версия и всегда Текущая версия пакета Office (Word, Excel, PowerPoint и другие) на устройствах. Каждая клиентская лицензия на Office 365 содержит лицензию на приложения Майкрософт 365 для предприятий.
  
 5. [Настройка управления мобильными устройствами](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 

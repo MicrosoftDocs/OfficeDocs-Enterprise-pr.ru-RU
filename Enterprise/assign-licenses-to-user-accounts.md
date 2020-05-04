@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: В этой статье описано, как назначать лицензии на Office 365 для учетных записей пользователей по отдельности или в зависимости от принадлежности к группе.
-ms.openlocfilehash: 3ffd51b6b3ab4add900746f14f013a307ca352ad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 77e6f6c20e9eeff11487a31cb2d616abbed42601
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843790"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009384"
 ---
 # <a name="assign-office-365-licenses-to-user-accounts"></a>Назначение лицензий на Office 365 для учетных записей пользователей
 
@@ -57,6 +57,6 @@ ms.locfileid: "41843790"
 С полным набором учетных записей пользователей, которым были назначены лицензии, вы можете:
 
 - [Реализация безопасности](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
-- [Развертывание клиентского программного обеспечения, например Office 365 профессиональный плюс](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+- [Развертывание клиентского программного обеспечения, например Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Настройка управления мобильными устройствами в Office 365](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [Настройка служб и приложений](configure-services-and-applications.md)

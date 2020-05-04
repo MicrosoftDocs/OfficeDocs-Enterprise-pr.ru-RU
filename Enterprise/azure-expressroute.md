@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365.
-ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cf280ff386893f98844e5653ceed180339f701a6
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844930"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009364"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute для Office 365
 
@@ -68,7 +68,7 @@ ms.locfileid: "41844930"
 
 <sup>1</sup> Для каждого из этих приложений требования к подключению к Интернету не поддерживаются в ExpressRoute, ознакомьтесь со [статьей Office 365 Endpoints](https://aka.ms/o365endpoints) для получения дополнительных сведений.
 
-Службы, не включенные в ExpressRoute для Office 365, — это загрузка клиентов Office 365 профессиональный плюс, локальный поставщик удостоверений и служба Office 365 (под управлением 21 ВИАНЕТ) в Китае.
+Службы, не включенные в ExpressRoute для Office 365, представляют собой приложения Microsoft 365 для загрузки корпоративных клиентов, входа в систему локального поставщика удостоверений и службы Office 365 (под управлением 21 ВИАНЕТ) в Китае.
 
 ## <a name="implementing-expressroute-for-office-365"></a>Реализация средства ExpressRoute для Office 365
 
