@@ -111,7 +111,7 @@
 ## [3. Реализация защиты](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. Развертывание клиентского программного обеспечения
-### [Развертывание Office 365 профессиональный плюс](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+### [Развертывание приложений Microsoft 365 для предприятий](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 ### [Развертывание клиента Skype для бизнеса](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [Развертывание мобильных приложений и управление ими](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
