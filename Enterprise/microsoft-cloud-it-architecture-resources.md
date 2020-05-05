@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: Краткое описание. Сведения об основных принципах облачной архитектуры, связанные с удостоверениями, безопасностью, сетевыми функциями и гибридной средой (Майкрософт). Обзор указаний по защите файлов, удостоверений и устройств при использовании облака Майкрософт. Сведения о развертывании современной безопасной классической системы с Windows 10 и приложениями Microsoft 365 для предприятий.
-ms.openlocfilehash: 065776de182ab960f6f9ccf5cfbc58449954e220
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: Сводка. Узнайте основные принципы облачной архитектуры для удостоверений, безопасности, сети и гибридных решений Майкрософт. Ознакомьтесь с нормативными рекомендациями по защите файлов, удостоверений и устройств при использовании облака Майкрософт.
+ms.openlocfilehash: e5d1ba6b69dc092df72ead30da620f6007843f5c
+ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009374"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44013432"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 
- **Краткое описание.** Сведения об основных принципах облачной архитектуры, связанные с удостоверениями, безопасностью, сетевыми функциями и гибридной средой (Майкрософт). Обзор указаний по защите файлов, удостоверений и устройств при использовании облака Майкрософт. Сведения о развертывании современной безопасной классической системы с Windows 10 и приложениями Microsoft 365 для предприятий.
+ **Сводка.** Узнайте основные принципы облачной архитектуры для удостоверений, безопасности, сети и гибридных решений Майкрософт. Ознакомьтесь с нормативными рекомендациями по защите файлов, удостоверений и устройств при использовании облака Майкрософт.
   
 Эти плакаты и средства архитектуры содержат информацию об облачных службах Майкрософт, в том числе Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365, а также гибридных и облачных решениях. При помощи этих ресурсов ответственные ИТ-специалисты и архитекторы могут определять подходящие варианты для своих рабочих нагрузок, а также принимать решения по основным компонентам инфраструктуры, таким как идентификация и безопасность. 
   
@@ -52,7 +52,6 @@ ms.locfileid: "44009374"
     - [Защита информации в Office 365 в соответствии с GDPR](#office-365-information-protection-for-gdpr)
     - [Руководство по безопасности (Майкрософт) для политических кампаний, некоммерческих и других динамических организаций](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
     - [Решения Майкрософт для телефонии](#microsoft-telephony-solutions) 
-    - [Развертывание современной и безопасной настольной системы с помощью Майкрософт](microsoft-cloud-it-architecture-resources.md#msd)
     
 Ждем ваших отзывов по адресу [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
 
@@ -223,15 +222,6 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 Дополнительные сведения см. в статье [Решения Майкрософт для телефонии](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Развертывание современной и безопасной настольной системы с помощью Майкрософт
-
-Что ИТ-архитекторам нужно знать о развертывании обновлений для приложений Microsoft 365 для предприятий (ранее называвшихся Office 365 профессиональный плюс) в Windows 10 и управлении ими.
-  
-|**Элемент**|**Описание**|
-|:-----|:-----|
-|[![Эскиз модели развертывания современной и безопасной настольной системы с помощью Майкрософт](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Эта модель содержит: <ul><li>  Развертывание Windows 10 и приложений Microsoft 365 для предприятий из облака Майкрософт </li><li>  Развертывание Windows 10 и приложений Microsoft 365 для предприятий с помощью Microsoft Endpoint Configuration Manager </li><li>  Управление установкой обновлений Windows 10 и приложений Microsoft 365 для предприятий из облака Майкрософт </li><li>  Управление установкой обновлений Windows 10 и приложений Microsoft 365 для предприятий с помощью Microsoft Endpoint Configuration Manager </li><li>  Встроенные и дополнительные механизмы защиты Windows 10 </li></ul><br/> |
-   
 ## <a name="see-also"></a>См. также
 
 [Архитектурные модели для SharePoint, Exchange, Skype для бизнеса и Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
