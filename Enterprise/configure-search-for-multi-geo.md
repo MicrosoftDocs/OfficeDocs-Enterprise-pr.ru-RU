@@ -1,5 +1,5 @@
 ---
-title: Настройка поиска в Office 365 с поддержкой нескольких регионов
+title: Настройка поиска для Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: tlarsen
 author: tklarsen
@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Сведения о настройке поиска в среде с поддержкой нескольких регионов.
-ms.openlocfilehash: 9f4861a2a093ac8497a86022f44c168a1c5982ab
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974011"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057675"
 ---
-# <a name="configure-search-for-office-365-multi-geo"></a>Настройка поиска в Office 365 с поддержкой нескольких регионов
+# <a name="configure-search-for-microsoft-365-multi-geo"></a>Настройка поиска для Microsoft 365 Multi-Geo
 
 В среде с поддержкой нескольких регионов для каждого географического расположения предусмотрены отдельные индекс и центр поиска. Когда пользователь пытается что-то найти, запрос развертывается для всех индексов, а возвращенные результаты объединяются.
 
@@ -102,7 +102,7 @@ ms.locfileid: "41974011"
 </tr>
 <tr class="even">
 <td align="left">Гибридный поиск</td>
-<td align="left">В гибридной среде SharePoint с <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">облачным гибридным поиском</a> локальный контент добавляется в индекс Office 365 центрального расположения.</td>
+<td align="left">В гибридной среде SharePoint с <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">облачным гибридным поиском</a> локальный контент добавляется в индекс Microsoft 365 центрального расположения.</td>
 <td align="left"></td>
 </tr>
 </tbody>
