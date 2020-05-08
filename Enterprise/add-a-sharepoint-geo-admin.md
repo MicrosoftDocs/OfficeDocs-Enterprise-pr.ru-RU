@@ -11,15 +11,15 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords:
 - NOCSH
-description: Узнайте, как добавить или удалить администратора геообъектов в Office 365 с поддержкой нескольких регионов.
-ms.openlocfilehash: 4225cd73aa243fadde21e5bd2d248fe54f738e33
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Узнайте, как добавить или удалить администратора геообъектов в Microsoft 365 Multi-Geo.
+ms.openlocfilehash: f2cb71f26216d859c00cefb10661608178e19315
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974201"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057705"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Добавление и удаление администратора геообъектов в Office 365 с поддержкой нескольких регионов
+# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Добавление и удаление администратора геообъектов в Microsoft 365 Multi-Geo.
 
 Можно настроить отдельных администраторов для каждого географического расположения в клиенте. Эти администраторы получат доступ к параметрам SharePoint Online и OneDrive, относящимся к конкретным географическим расположениям.
 
@@ -43,7 +43,7 @@ ms.locfileid: "41974201"
 
 ### <a name="adding-a-group-as-a-geo-admin"></a>Добавление группы в качестве администратора геообъекта
 
-Можно добавить группу безопасности или группу безопасности с поддержкой электронной почты в качестве администратора геообъекта. (Группы рассылки и группы Office 365 не поддерживаются.)
+Можно добавить группу безопасности или группу безопасности с поддержкой электронной почты в качестве администратора геообъекта. (Группы рассылки и группы Microsoft 365 не поддерживаются.)
 
 Чтобы добавить группу в качестве администратора геообъекта, выполните команду `Add-SPOGeoAdministrator -GroupAlias <alias>`
 

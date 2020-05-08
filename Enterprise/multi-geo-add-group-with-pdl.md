@@ -1,5 +1,5 @@
 ---
-title: Создание группы Office 365 с определенным предпочтительным расположением данных (PDL)
+title: Создание группы Microsoft 365 с определенным предпочтительным расположением данных (PDL)
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -12,21 +12,21 @@ f1.keywords:
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Узнайте, как создать группу Office 365 с указанным предпочтительным расположением данных в среде с поддержкой нескольких регионов.
-ms.openlocfilehash: 96c2e5513879dff291c0119ddad38a78ab91ec1a
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Узнайте, как создать группу Microsoft 365 с указанным предпочтительным расположением данных в среде с поддержкой нескольких регионов.
+ms.openlocfilehash: 5b2294ff8821e84cb0158fa989b97134353969b2
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974091"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057989"
 ---
-# <a name="create-an-office-365-group-with-a-specific-pdl"></a>Создание группы Office 365 с определенным предпочтительным расположением данных (PDL)
+# <a name="create-an-microsoft-365-group-with-a-specific-pdl"></a>Создание группы Microsoft 365 с определенным предпочтительным расположением данных (PDL)
 
-Когда пользователь в среде с поддержкой нескольких регионов создает группу Office 365, предпочтительному расположению данных группы автоматически присваивается значение, соответствующее этому значению пользователя. Глобальные администраторы, администраторы SharePoint и Exchange могут создавать группы в любом выбранном регионе. 
+Когда пользователь в среде с поддержкой нескольких регионов создает группу Microsoft 365, предпочтительному расположению данных группы автоматически присваивается значение, соответствующее расположению данных пользователя. Глобальные администраторы, администраторы SharePoint и Exchange могут создавать группы в любом выбранном регионе. 
 
 Если нужно создать группу с определенным PDL, можно использовать Центр администрирования SharePoint или командлет Microsoft PowerShell New-UnifiedGroup для Exchange Online. При этом как почтовый ящик группы, так и сайт SharePoint, связанный с группой, подготавливаются в указанном предпочтительном расположении данных (PDL).
 
-Чтобы создать группу Office 365 с указанным PDL, перейдите в Центр администрирования SharePoint в географическом расположении, где нужно создать сайт группы.
+Чтобы создать группу Microsoft 365 с указанным PDL, перейдите в Центр администрирования SharePoint в географическом расположении, где нужно создать сайт группы.
 
 Пример:
 
@@ -53,7 +53,7 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ## <a name="geo-location-codes"></a>Коды регионов
 
-[!INCLUDE [Office 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
+[!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
 ## <a name="see-also"></a>См. также
 

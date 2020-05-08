@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Сведения о перемещении сайта SharePoint в другой геообъект.
-ms.openlocfilehash: 8a842f32091f84d64522526ad5407af8cfd780a9
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185720"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057999"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Перемещение сайта SharePoint в другой геообъект
 
@@ -26,8 +26,8 @@ ms.locfileid: "43185720"
 
 Следующие типы сайтов можно перемещать между геообъектами:
 
-- Сайты, подключенные к группе Office 365
-- Современные сайты без связи с группой Office 365
+- Сайты, подключенные к группе Microsoft 365
+- Современные сайты, не связанные с группой Microsoft 365
 - Классические сайты SharePoint
 - Информационные сайты
 
@@ -96,13 +96,13 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 В результате будет возвращено значение *Success*, если сайт готов к перемещению или *Fail*, если имеются какие-либо препятствия.
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-office-365-group"></a>Запуск перемещения географического расположения сайта SharePoint для сайта, не связанного с группой Office 365
+### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Запуск перемещения сайта SharePoint для сайта, не связанного с группой Microsoft 365
 
 По умолчанию исходный URL-адрес для сайта изменяется на URL-адрес целевого географического расположения. Пример:
 
 https://Contoso.sharepoint.com/sites/projectx меняется на https://ContosoEUR.sharepoint.com/sites/projectx
 
-Сайты, не связанные с группой Office 365, также можно переименовать с помощью параметра `-DestinationUrl`. Пример:
+Сайты, не связанные с группой Microsoft 365, также можно переименовать с помощью параметра `-DestinationUrl`. Пример:
 
 https://Contoso.sharepoint.com/sites/projectx меняется на https://ContosoEUR.sharepoint.com/sites/projecty
 
@@ -112,11 +112,11 @@ https://Contoso.sharepoint.com/sites/projectx меняется на https://Cont
 
 ![Снимок экрана: окно PowerShell с командлетом Start-SPOSiteContentMove](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-office-365-group-connected-site"></a>Запуск перемещения географического расположения сайта SharePoint для сайта, подключенного к группе Office 365
+### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Запуск перемещения сайта SharePoint для сайта, подключенного к группе Microsoft 365
 
-Чтобы переместить сайт, подключенный к группе Office 365, глобальный администратор должен сначала изменить атрибут предпочтительного расположения данных (PDL) для группы Office 365.
+Чтобы переместить сайт, подключенный к группе Microsoft 365, глобальный администратор должен сначала изменить атрибут предпочтительного расположения данных (PDL) для группы Microsoft 365.
 
-Настройка атрибута PDL для группы Office 365:
+Настройка атрибута PDL для группы Microsoft 365:
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -187,9 +187,9 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 - OneNote UWP версии 16.0.8431.1006 (или более поздней);
 - приложение OneNote Mobile версии 16.0.8431.1011 (или более поздней).
 
-### <a name="teams-applicable-to-office-365-group-connected-sites"></a>Teams (применимо к сайтам, подключенным к группе Office 365)
+### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (применимо к сайтам, подключенным к группе Microsoft 365)
 
-Когда перемещение географического расположения сайта SharePoint будет завершено, пользователи получат доступ к файлам сайта, подключенного к группе Office 365, в приложении Teams. Кроме того, файлы, отправленные из сайта через чат Teams до такого перемещения, будут продолжать работать и после него.
+Когда перемещение сайта SharePoint будет завершено, пользователи получат доступ к файлам сайта, подключенного к группе Microsoft 365, в приложении Teams. Кроме того, файлы, отправленные из сайта через чат Teams до такого перемещения, будут продолжать работать и после него.
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>Мобильное приложение SharePoint (iOS или Android)
 
