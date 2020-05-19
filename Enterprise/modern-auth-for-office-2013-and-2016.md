@@ -23,12 +23,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Узнайте, как Office 365 современная проверка подлинности работает по-разному для клиентских приложений Office 2013 и 2016.
-ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
+ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844860"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280218"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Современная проверка подлинности в клиентских приложениях Office 2013 и Office 2016
 
@@ -54,7 +54,14 @@ ms.locfileid: "41844860"
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Поведение клиентских приложений Office при входе
 
-Клиентские приложения Office 2013 по умолчанию поддерживают устаревшую проверку подлинности. Устаревшие значения означают, что они поддерживают либо помощник по входу в Microsoft Online, либо обычную проверку подлинности. Чтобы эти клиенты могли использовать современные функции проверки подлинности, в клиенте Windows установлены разделы реестра. Инструкции: [Enable современная проверка подлинности для Office 2013 на устройствах с Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
+Клиентские приложения Office 2013 по умолчанию поддерживают устаревшую проверку подлинности. Устаревшие значения означают, что они поддерживают либо помощник по входу в Microsoft Online, либо обычную проверку подлинности. Чтобы эти клиенты могли использовать современные функции проверки подлинности, в клиенте Windows должны быть заданы разделы реестра. Инструкции: [Enable современная проверка подлинности для Office 2013 на устройствах с Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
+
+Чтобы включить современную проверку подлинности для устройства с Windows (например, ноутбука или планшета), на котором установлен Microsoft Office 2013, необходимо настроить указанные ниже разделы реестра. Это нужно сделать для каждого устройства, на котором вы хотите включить современную проверку подлинности.
+  
+|**Раздел реестра**|**Тип**|**Значение** |
+|:-------|:------:|--------:|
+|Hkcu\software\microsoft\office\15.0\common\identity\enableadal нулевое  |REG_DWORD  |1   |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
   
 Узнайте, [как использовать современные проверки подлинности (ADAL) со Skype для бизнеса](https://go.microsoft.com/fwlink/p/?LinkId=785431) , чтобы узнать, как она работает с Skype для бизнеса. 
   
