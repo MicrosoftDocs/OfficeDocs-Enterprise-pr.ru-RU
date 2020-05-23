@@ -86,6 +86,13 @@
 #### [Общие сведения о раздельном туннелировании VPN](office-365-vpn-split-tunnel.md)
 #### [Реализация раздельного туннелирования VPN](office-365-vpn-implement-split-tunnel.md)
 #### [Оптимизация Office 365 для пользователей Китая](office-365-networking-china.md)
+### Сети для клиентов GCC High и DoD
+#### [Дополнительные требования сетевой безопасности для GCC High и DoD](additional-network-security-requirements-for-office-365-gcchigh-and-dod.md)
+#### [Записи DNS для Office 365 DoD](dns-records-for-office-365-dod.md)
+#### [Записи DNS для Office 365 GCC High](dns-records-for-office-365-gcc-high.md)
+#### [Конечные точки U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)
+#### [Конечные точки U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md)
+#### [Цепочки шифрования Office 365 — DoD и GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
 ### [Сети доставки содержимого](content-delivery-networks.md)
 ### [Поддержка IPv6 в службах Office 365](ipv6-support.md)
 ### [Поддержка NAT в Office 365](nat-support-with-office-365.md)
