@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Узнайте, как выполнять стандартные задачи управления для групп Office 365 в Microsoft PowerShell.
-ms.openlocfilehash: bab98ac641b03bd30ea8acbc8d4dacd55073f62f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a9b481d7448c65a8860ef44d6d7f8980c3dd91d8
+ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841446"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352959"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Управление группами Office 365 с помощью PowerShell
 
@@ -46,11 +46,11 @@ ms.locfileid: "41841446"
 ## <a name="allow-users-to-send-as-the-office-365-group"></a>Разрешить пользователям отправлять сообщения в качестве группы Office 365
 <a name="BK_LinkToGuideLines"> </a>
   
-Чтобы включить для группы Office 365 параметр "Отправить как", используйте командлеты [Add – RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) и [Get – RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) , чтобы настроить этот параметр. После включения этого параметра пользователи группы Office 365 смогут отправлять сообщения электронной почты и отвечать на них в качестве группы Office 365 с помощью Outlook или Outlook в Интернете. Пользователи могут перейти к группе, создать новую электронную почту и изменить поле "Отправить как" на адрес электронной почты группы. 
+Чтобы включить для группы Office 365 параметр "Отправить как", используйте командлеты [Add – RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission) и [Get – RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient) , чтобы настроить этот параметр. После включения этого параметра пользователи группы Office 365 смогут отправлять сообщения электронной почты и отвечать на них в качестве группы Office 365 с помощью Outlook или Outlook в Интернете. Пользователи могут перейти к группе, создать новую электронную почту и изменить поле "Отправить как" на адрес электронной почты группы. 
 
 ([Это также можно сделать в центре администрирования Exchange](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
   
-Используйте следующий скрипт, заменив * \<граупалиас\> * псевдонимом группы, которую требуется обновить, и * \<усералиас\> * с псевдонимом пользователя, которому необходимо предоставить пермссионс. Чтобы запустить этот скрипт, [подключитесь к Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) .
+Используйте следующий скрипт, заменив * \< граупалиас \> * псевдонимом группы, которую требуется обновить, и * \< усералиас \> * с псевдонимом пользователя, которому необходимо предоставить пермссионс. Чтобы запустить этот скрипт, [подключитесь к Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) .
 
 ```PowerShell
 $groupAlias = "<GroupAlias>"
@@ -89,7 +89,7 @@ $setting["ClassificationDescriptions"] ="Classification:Description,Classificati
 $setting["ClassificationDescriptions"] = "Low Impact: General communication, Medium Impact: Company internal data , High Impact: Data that has regulatory requirements"
 ```
 
-После выполнения приведенного выше командлета Azure Active Directory для настройки классификации запустите командлет [Set – UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-UnifiedGroup) , если необходимо задать классификацию для определенной группы. 
+После выполнения приведенного выше командлета Azure Active Directory для настройки классификации запустите командлет [Set – UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/Set-UnifiedGroup) , если необходимо задать классификацию для определенной группы. 
   
 ```
 Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact> 
@@ -167,7 +167,7 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
   
  `Get-OrganizationConfig | ft DefaultGroupAccessType`
   
-Дополнительные сведения см. в статье [Set – OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) и [Get – OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Get-OrganizationConfig).
+Дополнительные сведения см. в статье [Set – OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) и [Get – OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig).
   
 ## <a name="office-365-groups-cmdlets"></a>Командлеты Office 365 Groups
 
