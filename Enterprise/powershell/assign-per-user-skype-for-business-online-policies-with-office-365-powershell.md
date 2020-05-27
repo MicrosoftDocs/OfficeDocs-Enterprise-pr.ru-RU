@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: Сводка.PowerShell в Office 365 позволяет назначать индивидуальные параметры связи с политиками Skype для бизнеса Online.
-ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
-ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
+ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
+ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "43146814"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374448"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Назначение индивидуальных политик для Skype для бизнеса Online с помощью Office 365 PowerShell
 
@@ -110,7 +110,7 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 
 ## <a name="managing-large-numbers-of-users"></a>Управление большим количеством пользователей
 
-Для управления большим количеством пользователей (1000 или более) необходимо выполнить пакетную команду с помощью блока сценария с помощью командлета [Invoke-Command](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  В предыдущих примерах при каждом запуске командлета необходимо настроить вызов, а затем дождаться результата перед его отправкой.  При использовании блока сценария это позволяет выполнять командлеты удаленно, а после завершения отправлять данные обратно. 
+Для управления большим количеством пользователей (1000 или более) необходимо выполнить пакетную команду с помощью блока сценария с помощью командлета [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  В предыдущих примерах при каждом запуске командлета необходимо настроить вызов, а затем дождаться результата перед его отправкой.  При использовании блока сценария это позволяет выполнять командлеты удаленно, а после завершения отправлять данные обратно. 
 
 ```powershell
 Import-Module LyncOnlineConnector
