@@ -30,7 +30,6 @@
 ## Поддержка клиента Office 365
 ### [Проверка подлинности на основе сертификатов](office-365-client-support-certificate-based-authentication.md)
 ### [Условный доступ](office-365-client-support-conditional-access.md)
-### [Выбор между MDM и Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Управление мобильными приложениями](office-365-client-support-mobile-application-management.md)
 ### [Современная проверка подлинности](office-365-client-support-modern-authentication.md)
 ### [Единый вход](office-365-client-support-single-sign-on.md)
@@ -198,7 +197,6 @@
 ### [Восстановление элементов, удаленных из почтового ящика пользователя](recover-deleted-items-in-a-mailbox.md)
 
 ## Устройства
-### [Выбор между MDM и Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
 ### [Управление параметрами доступа с устройств](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
 
 ## Рабочие нагрузки
