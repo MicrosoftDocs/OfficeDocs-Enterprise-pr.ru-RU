@@ -7,8 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-f1.keywords:
-- CSH
+f1.keywords: CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,17 +18,15 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Узнайте, как выполнять стандартные задачи управления для групп Office 365 в Microsoft PowerShell.
-ms.openlocfilehash: a9b481d7448c65a8860ef44d6d7f8980c3dd91d8
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
+ms.openlocfilehash: 7ebb3cfdfc6375cbc340c1fc3be37d59bcd9d4c8
+ms.sourcegitcommit: c758588cf2b68de9291a362fd73ec9dc721d04d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352959"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411066"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Управление группами Office 365 с помощью PowerShell
-
- *Последнее обновление 18 апреля, 2018* 
-  
+ 
 В этой статье приводятся инструкции по выполнению стандартных задач управления для групп в Microsoft PowerShell. Кроме того, в нем перечислены командлеты PowerShell для групп. Сведения об управлении сайтами SharePoint можно найти [в статье Управление сайтами SharePoint Online с помощью PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
 
 ## <a name="link-to-your-office-365-groups-usage-guidelines"></a>Ссылка на свои рекомендации по использованию групп Office 365
@@ -50,7 +47,7 @@ ms.locfileid: "44352959"
 
 ([Это также можно сделать в центре администрирования Exchange](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
   
-Используйте следующий скрипт, заменив * \< граупалиас \> * псевдонимом группы, которую требуется обновить, и * \< усералиас \> * с псевдонимом пользователя, которому необходимо предоставить пермссионс. Чтобы запустить этот скрипт, [подключитесь к Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) .
+Используйте следующий сценарий, заменив *\<GroupAlias\>* псевдонимом группы, которую требуется обновить, и *\<UserAlias\>* указав псевдоним пользователя, которому необходимо предоставить разрешения. Чтобы запустить этот скрипт, [подключитесь к Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) .
 
 ```PowerShell
 $groupAlias = "<GroupAlias>"
@@ -67,7 +64,12 @@ Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAli
 
 ## <a name="create-classifications-for-office-groups-in-your-organization"></a>Создание классификаций для групп Office в Организации
 
-Вы можете создавать классификации, которые пользователи в организации могут установить при создании группы Office 365. Например, вы можете разрешить пользователям устанавливать "стандартные", "секрет" и "самый высокий секрет" при создании групп. Классификации групп не задаются по умолчанию и их необходимо создать, чтобы пользователи могли их настраивать. Используйте PowerShell Azure Active Directory, чтобы указать пользователям в Организации рекомендации по использованию для групп Office 365.
+Вы можете создавать метки конфиденциальности, которые пользователи в организации могут установить при создании группы Microsoft 365. Если вы хотите классифицировать группы, мы рекомендуем использовать метки чувствительности вместо функции классификации предыдущих групп. Сведения об использовании меток конфиденциальности приведены в разделе [Использование меток конфиденциальности для защиты содержимого в Microsoft Teams, microsoft 365 Groups и сайтов SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+
+> [!IMPORTANT]
+> Если вы используете метки классификации, они больше не будут доступны пользователям, которые создают группы после включения меток конфиденциальности.
+
+Вы по-прежнему можете использовать функцию классификации предыдущих групп. Вы можете создавать классификации, которые пользователи в организации могут установить при создании группы Office 365. Например, вы можете разрешить пользователям устанавливать "стандартные", "секрет" и "самый высокий секрет" при создании групп. Классификации групп не задаются по умолчанию и их необходимо создать, чтобы пользователи могли их настраивать. Используйте PowerShell Azure Active Directory, чтобы указать пользователям в Организации рекомендации по использованию для групп Office 365.
   
 Изучите [командлеты Azure Active Directory для настройки параметров групп](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets) и следуйте шагам, описанным в разделе **CREATE Settings на уровне каталога** , чтобы определить классификацию для групп Office 365. 
   
@@ -186,7 +188,7 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 |[Set — UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |Используется для связывания фотографии пользователя с учетной записью. Фотографии пользователей хранятся в Active Directory  <br/> |
 |[Remove — UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |Удаление фотографии для группы Office 365  <br/> |
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Обновление списков рассылки до групп Office 365](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
