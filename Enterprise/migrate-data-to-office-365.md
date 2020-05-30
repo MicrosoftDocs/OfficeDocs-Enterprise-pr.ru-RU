@@ -16,12 +16,12 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 description: Если вы отказались от развертывания с использованием службы FastTrack и готовы к переносу данных в Office 365, начните отсюда.
-ms.openlocfilehash: 4389d5531b21b892408ba7941900ee7aceb55474
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44038429ecf3b927db408679f8651d4055113a48
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844890"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419347"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Перенос данных организации в Office 365 корпоративный
 
@@ -29,7 +29,7 @@ ms.locfileid: "41844890"
 
 Наши [инструкции по базовой настройке](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) помогут вам в кратчайший срок развернуть приложения и службы Office 365 для всех пользователей. В них не описываются гибридные сценарии и более сложные методы миграции на Office 365. 
   
-Если вам нужна помощь с настройкой Office 365, проще всего воспользоваться для развертывания службой [FastTrack](https://fasttrack.microsoft.com/office). Вы также можете выполнить вход и использовать [помощников по развертыванию служб Office 365](deployment-advisors-for-office-365.md).
+Если вам нужна помощь в установке Office 365, [FastTrack](https://fasttrack.microsoft.com/office) является самым простым способом развертывания Office 365, вы также можете войти в систему и использовать [руководства по настройке для служб Office 365](setup-guides-for-office-365.md).
 
 ## <a name="migrate-email-to-office-365"></a>Миграция электронной почты в Office 365
 - Миграция в гибридную среду Exchange с использованием [помощника по развертыванию Exchange](https://technet.microsoft.com/exdeploy2013). (Администратор)

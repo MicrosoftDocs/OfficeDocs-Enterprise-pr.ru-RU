@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Содержит ссылки на сведения о планировании и тестировании сети и миграции в Office 365.
-ms.openlocfilehash: 0601775beb3f7e42d3e18de7b85406c02df2f4e8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88dd3e4fca66855e8204b452aea6cfb4c659d201
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844580"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419387"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Планирование сети и миграции для Office 365
 
@@ -98,8 +98,6 @@ ms.locfileid: "41844580"
   
 - [Управление конечными точками Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
     
-- [Подключение клиентских компьютеров](client-connectivity.md)
-    
 - [Сети доставки содержимого](content-delivery-networks.md)
     
 - [Внешние записи DNS для Office 365](external-domain-name-system-records.md)
@@ -112,7 +110,7 @@ ms.locfileid: "41844580"
     
 - [Планирование сетевых устройств, подключающихся к службам Office 365](plan-for-network-devices.md)
     
-- [Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
+- [Руководства по настройке для служб Office 365](setup-guides-for-office-365.md)
  
 ## <a name="see-also"></a>См. также
 

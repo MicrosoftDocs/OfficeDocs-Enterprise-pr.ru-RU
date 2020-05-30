@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Сводка: в этой статье описываются вопросы, касающиеся мощности сети, ускорителей глобальной сети и устройств балансировки нагрузки, которые используются для подключения к Office 365.'
-ms.openlocfilehash: edc089abc58f19c0655f9a75da96366a0a09dcb7
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 9776611aa64f8783a22252a2c4182e63bda1093a
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841731"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419377"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Планирование для сетевых устройств, подключающихся к службам Office 365
 
@@ -74,6 +74,6 @@ ms.locfileid: "41841731"
   
 ## <a name="see-also"></a>См. также
 
-[Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
+[Руководства по настройке для служб Office 365](setup-guides-for-office-365.md)
 
 [Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

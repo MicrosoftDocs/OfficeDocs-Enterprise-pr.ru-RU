@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: Ресурсы по планированию и управлению Office 365 для корпоративной организации.
-ms.openlocfilehash: 714308f597b3338abb167f765cc4d1f9b08b582b
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 51687e07abfafa7959166cfcd1a59b3a1af7bc20
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979551"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419397"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>Корпоративные организации и Office 365
 
@@ -44,11 +44,11 @@ ms.locfileid: "42979551"
   
 ![Символы безопасности и соответствия требованиям](media/f96c2cdf-d151-4f44-bb11-20bb7f366a21.png)
   
- **Соответствие &amp; требованиям безопасности**
+ **&amp;Соответствие требованиям безопасности**
   
 Защитите свои данные и придерживается соблюдение юридических и нормативных требований.
   
-[Обзор соответствия требованиям &amp; безопасности в Office 365](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
+[Обзор &amp; соответствия требованиям безопасности в Office 365](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
   
 ![Символы в облаке и архитектуре](media/2850ac8d-4c99-4825-869e-83724c4ef54e.png)
   
@@ -110,7 +110,7 @@ ms.locfileid: "42979551"
   
 [Обновление серверов и клиентов Office 2010](upgrade-from-office-2010-servers-and-products.md)
   
-[Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
+[Руководства по настройке для служб Office 365](setup-guides-for-office-365.md)
   
  **Обучение пользователей**
   

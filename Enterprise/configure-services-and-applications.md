@@ -18,12 +18,12 @@ ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 f1.keywords:
 - NOCSH
 description: Настройка служб и приложений Office 365 корпоративный
-ms.openlocfilehash: 45fb283894e68e40d38bc42667f5ac9e5d45b579
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: e0b0be9b4b99f5a652145e9f2991181769a9df19
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009324"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419327"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Настройка служб и приложений Office 365 корпоративный
 
@@ -31,7 +31,7 @@ ms.locfileid: "44009324"
 
 Наши [инструкции по базовой настройке](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) помогут вам в кратчайший срок задействовать приложения и службы Office 365. Иногда имеет смысл настроить систему перед тем, как все начнут ее использовать. Это относится, например, к настройке маршрутизации почты, хранилища файлов или политик общего доступа. 
   
-Если вам нужна помощь с настройкой Office 365, воспользуйтесь службой **[FastTrack](https://fasttrack.microsoft.com/office)** или [помощниками по развертыванию служб Office 365](deployment-advisors-for-office-365.md).
+Если вам нужна помощь в установке Office 365, используйте **[FastTrack](https://fasttrack.microsoft.com/office)** или [руководства по настройке для служб Office 365](setup-guides-for-office-365.md).
   
 |**Службы и приложения**|**Ресурсы**|
 |:-----|:-----|
