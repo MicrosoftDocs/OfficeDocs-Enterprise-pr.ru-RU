@@ -17,7 +17,7 @@
 #### [Гибридное удостоверение](plan-for-directory-synchronization.md)
 
 ### [Планирование сторонних SSL-сертификатов для Office 365](plan-for-third-party-ssl-certificates.md)
-### [Помощники по развертыванию служб Office 365](deployment-advisors-for-office-365.md)
+### [Руководства по настройке для служб Office 365 и Microsoft 365](setup-guides-for-office-365.md)
 ### [Интегрированные приложения и Azure AD](integrated-apps-and-azure-ads.md)
 
 ### Интеграция Office 365
@@ -181,7 +181,6 @@
 # Управление Office 365
 
 ## Сеть
-### [Подключение клиентских компьютеров](client-connectivity.md)
 ### [Мониторинг подключения](monitor-connectivity.md)
 
 ## Синхронизация каталогов
