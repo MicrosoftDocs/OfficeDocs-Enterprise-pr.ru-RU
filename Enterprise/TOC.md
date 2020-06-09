@@ -30,7 +30,6 @@
 ## Поддержка клиента Office 365
 ### [Проверка подлинности на основе сертификатов](office-365-client-support-certificate-based-authentication.md)
 ### [Условный доступ](office-365-client-support-conditional-access.md)
-### [Управление мобильными приложениями](office-365-client-support-mobile-application-management.md)
 ### [Современная проверка подлинности](office-365-client-support-modern-authentication.md)
 ### [Единый вход](office-365-client-support-single-sign-on.md)
 
