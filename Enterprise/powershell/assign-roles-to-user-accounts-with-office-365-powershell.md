@@ -3,7 +3,7 @@ title: Назначение ролей учетным записям польз�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 06/09/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,16 +19,20 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: Сводка. Назначайте роли учетным записям пользователей, используя PowerShell для Office 365.
-ms.openlocfilehash: 8cd3bd27f95c9d4191c24c7febc85c8fb2fb0118
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 9a28ff27138b689ed0325580af956a90d7eb7982
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004742"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698916"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Назначение ролей учетным записям пользователей с помощью PowerShell для Office 365
 
 Вы можете быстро и легко назначать роли учетным записям пользователей с помощью PowerShell для Office 365.
+
+>[!Note]
+>Чтобы назначить роли учетным записям пользователей с помощью центра администрирования Microsoft 365, ознакомьтесь с приведенными [ниже инструкциями](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
 
@@ -125,7 +129,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Скопируйте команды в Блокнот. Замените описания переменных **$dispName** и **$roleName** их значениями, удалите символы \< и > и оставьте кавычки. Скопируйте измененные строки в окно модуля Windows Azure Active Directory для Windows PowerShell и запустите их. Кроме того, можно использовать интегрированную среду сценариев Windows PowerShell.
+Скопируйте команды в Блокнот. Для переменных **$dispName** и **$roleName** замените текст описания их значениями, удалите \< and > символы и оставьте кавычки. Скопируйте измененные строки в окно модуля Windows Azure Active Directory для Windows PowerShell, чтобы запустить их. Кроме того, можно использовать интегрированную среду сценариев Windows PowerShell.
   
 Вот пример полного набора команд:
   
@@ -171,7 +175,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-Скопируйте команды в Блокнот. Для переменных **$upnName** и **$roleName** замените текст описания их значениями, удалите символы \< и > и оставьте кавычки. Скопируйте измененные строки в окно модуля Windows Azure Active Directory для Windows PowerShell, чтобы запустить их. Кроме того, вы можете использовать среду Windows PowerShell ISE.
+Скопируйте команды в Блокнот. Для переменных **$upnName** и **$roleName** замените текст описания их значениями, удалите \< and > символы и оставьте кавычки. Скопируйте измененные строки в окно модуля Windows Azure Active Directory для Windows PowerShell, чтобы запустить их. Кроме того, вы можете использовать среду Windows PowerShell ISE.
   
 Вот пример полного набора команд:
   
@@ -232,5 +236,5 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 ## <a name="see-also"></a>См. также
 
 - [Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+- [Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 - [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
