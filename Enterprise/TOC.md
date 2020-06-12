@@ -30,6 +30,7 @@
 ## Поддержка клиента Office 365
 ### [Проверка подлинности на основе сертификатов](office-365-client-support-certificate-based-authentication.md)
 ### [Условный доступ](office-365-client-support-conditional-access.md)
+### [Управление мобильными приложениями](https://support.microsoft.com/en-us/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a?ui=en-US&rs=en-US&ad=US)
 ### [Современная проверка подлинности](office-365-client-support-modern-authentication.md)
 ### [Единый вход](office-365-client-support-single-sign-on.md)
 
@@ -106,7 +107,7 @@
 
 ## 2. Настройка удостоверений
 ### [Защита учетных записей глобальных администраторов](protect-your-global-administrator-accounts.md)
-### [Только облачные удостоверения](cloud-only-identities.md)
+### [Облачное удостоверение](cloud-only-identities.md)
 ### Гибридные удостоверения
 #### [Подготовка к синхронизации каталогов](prepare-for-directory-synchronization.md)
 #### Использование средства IdFix
