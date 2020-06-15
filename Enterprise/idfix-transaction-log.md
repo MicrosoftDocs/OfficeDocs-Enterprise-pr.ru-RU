@@ -1,5 +1,5 @@
 ---
-title: Журнал транзакций Office 365 IdFix
+title: Журнал транзакций Microsoft 365 IdFix
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,31 +17,31 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: В этом разделе приводится пример и описывается соглашение об именовании и уровень журнала по умолчанию для журнала транзакций Office 365 IdFix.
-ms.openlocfilehash: fb294095dc5b163965660546f5033a845d6cb0b4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: В этом разделе приводится пример и описывается соглашение об именовании и уровень журнала по умолчанию для журнала транзакций Microsoft 365 IdFix.
+ms.openlocfilehash: a2b887907dd1ad622a9d237cf7200aa6db8a2a8e
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840116"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711559"
 ---
-# <a name="office-365-idfix-transaction-log"></a><span data-ttu-id="c1aae-103">Журнал транзакций Office 365 IdFix</span><span class="sxs-lookup"><span data-stu-id="c1aae-103">Office 365 IdFix transaction log</span></span>
+# <a name="microsoft-365-idfix-transaction-log"></a><span data-ttu-id="12811-103">Журнал транзакций Microsoft 365 IdFix</span><span class="sxs-lookup"><span data-stu-id="12811-103">Microsoft 365 IdFix transaction log</span></span>
 
-<span data-ttu-id="c1aae-104">*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*</span><span class="sxs-lookup"><span data-stu-id="c1aae-104">*This article applies to both Office 365 Enterprise and Microsoft 365 Enterprise.*</span></span>
+<span data-ttu-id="12811-104">*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*</span><span class="sxs-lookup"><span data-stu-id="12811-104">*This article applies to both Office 365 Enterprise and Microsoft 365 Enterprise.*</span></span>
 
-<span data-ttu-id="c1aae-105">В этом разделе приводится пример и описывается соглашение об именовании и уровень журнала по умолчанию для журнала транзакций Office 365 IdFix.</span><span class="sxs-lookup"><span data-stu-id="c1aae-105">Provides an example and describes the naming convention and default log level of the Office 365 IdFix transaction log.</span></span>
+<span data-ttu-id="12811-105">В этом разделе приводится пример и описывается соглашение об именовании и уровень журнала по умолчанию для журнала транзакций Microsoft 365 IdFix.</span><span class="sxs-lookup"><span data-stu-id="12811-105">Provides an example and describes the naming convention and default log level of the Microsoft 365 IdFix transaction log.</span></span>
   
-## <a name="idfix-transaction-log-location"></a><span data-ttu-id="c1aae-106">Расположение журнала транзакций IdFix</span><span class="sxs-lookup"><span data-stu-id="c1aae-106">IdFix transaction log location</span></span>
+## <a name="idfix-transaction-log-location"></a><span data-ttu-id="12811-106">Расположение журнала транзакций IdFix</span><span class="sxs-lookup"><span data-stu-id="12811-106">IdFix transaction log location</span></span>
 
-<span data-ttu-id="c1aae-107">Средство Office 365 IdFix создает новый журнал транзакций при каждом нажатии кнопки **Применить** в IdFix и применении изменений к лесу Active Directory.</span><span class="sxs-lookup"><span data-stu-id="c1aae-107">The Office 365 IdFix tool creates a new transaction log each time you click **Apply** in IdFix and apply changes to the Active Directory forest.</span></span> <span data-ttu-id="c1aae-108">Журнал транзакций сохраняется в той же папке, где установлен IdFix.</span><span class="sxs-lookup"><span data-stu-id="c1aae-108">The transaction log is saved in the same folder where you installed IdFix.</span></span> <span data-ttu-id="c1aae-109">По умолчанию эта папка является К:\деплоймент Тулс\идфикс.</span><span class="sxs-lookup"><span data-stu-id="c1aae-109">By default, this folder is C:\Deployment Tools\IDFix.</span></span> <span data-ttu-id="c1aae-110">В имени файла журнала транзакций используется формат даты и времени, например verbose 6-1-2018 6-17-22 PM указывает файл, который был создан 1 июня 2018 по 6:17:22 PM.</span><span class="sxs-lookup"><span data-stu-id="c1aae-110">The transaction log file name uses a date and time stamp format, for example, Verbose 6-1-2018 6-17-22 PM indicates a file that was generated at June 1, 2018 at 6:17:22 PM.</span></span> <span data-ttu-id="c1aae-111">Verbose указывает уровень ведения журнала.</span><span class="sxs-lookup"><span data-stu-id="c1aae-111">Verbose indicates the logging level.</span></span> 
+<span data-ttu-id="12811-107">Средство Microsoft 365 IdFix создает новый журнал транзакций при каждом нажатии кнопки **Применить** в IdFix и применении изменений в лесу Active Directory.</span><span class="sxs-lookup"><span data-stu-id="12811-107">The Microsoft 365 IdFix tool creates a new transaction log each time you click **Apply** in IdFix and apply changes to the Active Directory forest.</span></span> <span data-ttu-id="12811-108">Журнал транзакций сохраняется в той же папке, где установлен IdFix.</span><span class="sxs-lookup"><span data-stu-id="12811-108">The transaction log is saved in the same folder where you installed IdFix.</span></span> <span data-ttu-id="12811-109">По умолчанию эта папка является К:\деплоймент Тулс\идфикс.</span><span class="sxs-lookup"><span data-stu-id="12811-109">By default, this folder is C:\Deployment Tools\IDFix.</span></span> <span data-ttu-id="12811-110">В имени файла журнала транзакций используется формат даты и времени, например verbose 6-1-2018 6-17-22 PM указывает файл, который был создан 1 июня 2018 по 6:17:22 PM.</span><span class="sxs-lookup"><span data-stu-id="12811-110">The transaction log file name uses a date and time stamp format, for example, Verbose 6-1-2018 6-17-22 PM indicates a file that was generated at June 1, 2018 at 6:17:22 PM.</span></span> <span data-ttu-id="12811-111">Verbose указывает уровень ведения журнала.</span><span class="sxs-lookup"><span data-stu-id="12811-111">Verbose indicates the logging level.</span></span> 
   
-## <a name="idfix-transaction-log-logging-level"></a><span data-ttu-id="c1aae-112">Уровень ведения журнала транзакций IdFix</span><span class="sxs-lookup"><span data-stu-id="c1aae-112">IdFix transaction log logging level</span></span>
+## <a name="idfix-transaction-log-logging-level"></a><span data-ttu-id="12811-112">Уровень ведения журнала транзакций IdFix</span><span class="sxs-lookup"><span data-stu-id="12811-112">IdFix transaction log logging level</span></span>
 
-<span data-ttu-id="c1aae-113">Слово Verbose в имени файла журнала транзакций указывает уровень ведения журнала в файле.</span><span class="sxs-lookup"><span data-stu-id="c1aae-113">The word verbose in the transaction log file name indicates the level of logging in the file.</span></span> <span data-ttu-id="c1aae-114">Verbose означает, что максимальный объем информации записывается в журнал.</span><span class="sxs-lookup"><span data-stu-id="c1aae-114">Verbose means that the maximum amount of information is captured in the log.</span></span> <span data-ttu-id="c1aae-115">Это уровень ведения журнала по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="c1aae-115">This is the default logging level.</span></span> <span data-ttu-id="c1aae-116">В настоящее время невозможно изменить уровень ведения журнала.</span><span class="sxs-lookup"><span data-stu-id="c1aae-116">At this time, you cannot change the logging level.</span></span>
+<span data-ttu-id="12811-113">Слово Verbose в имени файла журнала транзакций указывает уровень ведения журнала в файле.</span><span class="sxs-lookup"><span data-stu-id="12811-113">The word verbose in the transaction log file name indicates the level of logging in the file.</span></span> <span data-ttu-id="12811-114">Verbose означает, что максимальный объем информации записывается в журнал.</span><span class="sxs-lookup"><span data-stu-id="12811-114">Verbose means that the maximum amount of information is captured in the log.</span></span> <span data-ttu-id="12811-115">Это уровень ведения журнала по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="12811-115">This is the default logging level.</span></span> <span data-ttu-id="12811-116">В настоящее время невозможно изменить уровень ведения журнала.</span><span class="sxs-lookup"><span data-stu-id="12811-116">At this time, you cannot change the logging level.</span></span>
   
-## <a name="idfix-transaction-log-format"></a><span data-ttu-id="c1aae-117">Формат журнала транзакций IdFix</span><span class="sxs-lookup"><span data-stu-id="c1aae-117">IdFix transaction log format</span></span>
+## <a name="idfix-transaction-log-format"></a><span data-ttu-id="12811-117">Формат журнала транзакций IdFix</span><span class="sxs-lookup"><span data-stu-id="12811-117">IdFix transaction log format</span></span>
 
-<span data-ttu-id="c1aae-118">IdFix записывает результаты каждого действия **обновления** в журнал транзакций, как показано в следующем примере:</span><span class="sxs-lookup"><span data-stu-id="c1aae-118">IdFix writes the results of each **UPDATE** action to a transaction log as shown in the following example:</span></span>
+<span data-ttu-id="12811-118">IdFix записывает результаты каждого действия **обновления** в журнал транзакций, как показано в следующем примере:</span><span class="sxs-lookup"><span data-stu-id="12811-118">IdFix writes the results of each **UPDATE** action to a transaction log as shown in the following example:</span></span>
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant
