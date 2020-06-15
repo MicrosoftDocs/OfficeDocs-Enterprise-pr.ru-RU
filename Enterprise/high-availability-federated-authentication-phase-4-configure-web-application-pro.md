@@ -13,19 +13,19 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
-description: Сводка. Настройка прокси-серверов веб-приложений для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: ac7b43daea832d4283404605fbb8ccb46e6cc76c
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: Сводка. Настройка прокси-серверов веб-приложений для федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365 в Microsoft Azure.
+ms.openlocfilehash: 4d6e2991c3293952c38e994728e6eca7ea5f5b35
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793812"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711892"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Этап 4. Федеративная проверка подлинности для обеспечения высокой доступности: настройка прокси веб-приложений
 
-На этом этапе развертывания федеративной проверки подлинности с высоким уровнем доступности для Office 365 в службах инфраструктуры Azure создаются внутренний балансировщик нагрузки и два сервера AD FS.
+На этом этапе развертывания высокой доступности для федеративной проверки подлинности Microsoft 365 в службах инфраструктуры Azure вы создадите внутренний балансировщик нагрузки и два сервера AD FS.
   
-Необходимо выполнить этот этап, прежде чем переходить к [этапу 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Описание всех этапов см. в статье [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+Необходимо выполнить этот этап, прежде чем переходить к [этапу 5: Настройка федеративной проверки подлинности для Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). [В статье Развертывание федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) для всех фаз.
   
 ## <a name="create-the-internet-facing-load-balancer-in-azure"></a>Создание подсистемы балансировки сетевой нагрузки в Azure для выхода из Интернета
 
@@ -60,17 +60,17 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
 
 ## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a>Определение полного доменного имени и создание записей DNS для службы федерации
 
-Необходимо определить DNS-имя, чтобы определить имя службы федерации в Интернете. Azure AD Connect настроит Office 365 с этим именем в фазе 5, которая становится частью URL-адреса, который Office 365 отправляет клиентам для получения маркера безопасности. Например, fs.contoso.com (FS означает служба Федерации).
+Необходимо определить DNS-имя, чтобы определить имя службы федерации в Интернете. Azure AD Connect настроит Microsoft 365 с таким именем на этапе 5, которое будет частью URL-адреса, который корпорация Майкрософт 365 отправляет клиентам для получения маркера безопасности. Например, fs.contoso.com (FS означает служба Федерации).
   
 После того как вы ФДКН службу федерации, создайте запись A общедоступного домена DNS для службы федерации ФДКН, которая разрешается в общедоступный IP-адрес подсистемы балансировки нагрузки Azure, доступного для выхода в Интернет.
   
-|**Имя**|**Тип**|**TTL**|**Значение**|
+|**Name**|**Тип**|**TTL**|**Значение**|
 |:-----|:-----|:-----|:-----|
 |Служба федерации ФДКН  <br/> |A  <br/> |3600  <br/> |общедоступный IP-адрес балансировщика нагрузки с выходом в Интернет Azure (отображается с помощью команды **Write-Host** в предыдущем разделе) <br/> |
    
 Вот пример:
   
-|**Имя**|**Тип**|**TTL**|**Значение**|
+|**Name**|**Тип**|**TTL**|**Значение**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -156,17 +156,17 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 **Этап 4: подсистема балансировки нагрузки на основе Интернета и прокси-серверы веб-приложений для инфраструктуры федеративной проверки подлинности с высоким уровнем доступности в Azure**
 
-![Этап 4 инфраструктуры федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure с помощью прокси-серверов веб-приложений](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Этап 4 из инфраструктуры федеративной проверки подлинности Microsoft 365 с высоким уровнем доступности в Azure с помощью прокси-серверов веб-приложений](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>Следующий шаг
 
-Используйте [этап 5: Настройка федеративной проверки подлинности для Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) , чтобы продолжить настройку этой рабочей нагрузки.
+Используйте [этап 5: Настройка федеративной проверки подлинности для Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) , чтобы продолжить настройку этой рабочей нагрузки.
   
 ## <a name="see-also"></a>См. также
 
-[Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Развертывание федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Федеративное удостоверение для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[Федеративная идентификация для среды разработки и тестирования Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.yml)
 

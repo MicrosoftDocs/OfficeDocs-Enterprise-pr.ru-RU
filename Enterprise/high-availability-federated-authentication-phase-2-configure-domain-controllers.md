@@ -13,22 +13,22 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: Сводка. Настройте контроллеры домена и сервер синхронизации службы каталогов для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Microsoft Azure.
-ms.openlocfilehash: 80b413f8a6d415378e384b1625fc756f96dd00db
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: Сводка. Настройте контроллеры домена и сервер синхронизации службы каталогов для федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365 в Microsoft Azure.
+ms.openlocfilehash: 6e75b8787fb5d077cf082d5beb47827c5132706e
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793822"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711942"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Этап 2. Федеративная проверка подлинности для обеспечения высокой доступности: настройка контроллеров домена
 
-На этом этапе развертывания высокой доступности для федеративной проверки подлинности Office 365 в службах инфраструктуры Azure можно настроить два контроллера домена и сервер синхронизации службы каталогов в виртуальной сети Azure. После этого проверку подлинности клиентов можно выполнять в виртуальной сети Azure, не отправляя трафик проверки подлинности через подключение VPN типа "сеть-сеть" к локальной сети.
+На этом этапе развертывания высокой доступности для федеративной проверки подлинности Microsoft 365 в службах инфраструктуры Azure можно настроить два контроллера домена и сервер синхронизации службы каталогов в виртуальной сети Azure. После этого проверку подлинности клиентов можно выполнять в виртуальной сети Azure, не отправляя трафик проверки подлинности через подключение VPN типа "сеть-сеть" к локальной сети.
   
 > [!NOTE]
 > Службы федерации Active Directory (AD FS) не могут использовать доменные службы Azure Active Directory для замены контроллеров домена доменных служб Active Directory. 
   
-Необходимо выполнить этот этап, прежде чем переходить к [этапу 3: Configure AD FS Servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Описание всех этапов см. в статье [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+Необходимо выполнить этот этап, прежде чем переходить к [этапу 3: Configure AD FS Servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). [В статье Развертывание федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) для всех фаз.
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Создание виртуальных машин контроллеров домена в Azure
 
@@ -44,11 +44,11 @@ ms.locfileid: "43793822"
 |6.  <br/> |![линия](./media/Common-Images/TableLine.png) (первый прокси-сервер веб-приложений, например WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |7.  <br/> |![линия](./media/Common-Images/TableLine.png) (второй прокси-сервер веб-приложений, например WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
- **Таблица M: виртуальные машины для федеративной проверки подлинности с высоким уровнем доступности для Office 365 в Azure**
+ **Таблица M: виртуальные машины для федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365 в Azure**
   
 Полный список размеров виртуальных машин представлен в [этой статье](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
   
-Приведенный ниже блок команд Azure PowerShell создает виртуальные машины для двух контроллеров домена. Укажите значения для переменных, удалив \< и > символы. Обратите внимание, что в этом блоке команд Azure PowerShell используются значения из следующих таблиц:
+Приведенный ниже блок команд Azure PowerShell создает виртуальные машины для двух контроллеров домена. Укажите значения для переменных, удалив \< and > символы. Обратите внимание, что в этом блоке команд Azure PowerShell используются значения из следующих таблиц:
   
 - таблица M (для виртуальных машин);
     
@@ -245,7 +245,7 @@ Restart-Computer
   
 **Этап 2: контроллеры домена и сервер синхронизации службы каталогов для инфраструктуры федеративной проверки подлинности с высоким уровнем доступности в Azure**
 
-![Этап 2 инфраструктуры федеративной проверки подлинности Office 365 с высоким уровнем доступности в Azure с помощью контроллеров домена](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Этап 2 в инфраструктуре федеративной проверки подлинности Microsoft 365 с высоким уровнем доступности в Azure с помощью контроллеров домена](media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>Следующий шаг
 
@@ -253,9 +253,9 @@ Restart-Computer
   
 ## <a name="see-also"></a>См. также
 
-[Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Развертывание федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Федеративное удостоверение для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[Федеративная идентификация для среды разработки и тестирования Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.yml)
 

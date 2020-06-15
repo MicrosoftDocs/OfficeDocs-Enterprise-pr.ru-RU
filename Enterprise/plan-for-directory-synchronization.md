@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Описание синхронизации каталогов с Microsoft 365, очисткой доменных служб Active Directory и средством Azure Active Directory Connect.
-ms.openlocfilehash: ef7af68a65e4799e7bffbe6edba4f2b237a4d8b4
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: b22533e66d18541b8eb72900514543367633e462
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698966"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711872"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Гибридное удостоверение и синхронизация каталогов для Microsoft 365
 
@@ -143,7 +143,7 @@ ms.locfileid: "44698966"
   - У вас есть интегрированная локальная смарт-карта или решение с многофакторной проверкой подлинности.
 - Синхронизация фотографий, эскизов, Конференц-залов и групп безопасности
 
-## <a name="next-step"></a>Следующий этап
+## <a name="next-step"></a>Следующий шаг
 
 Когда вы будете готовы развернуть гибридную идентификацию, ознакомьтесь со статьей [Подготовка к подготовке пользователей](prepare-for-directory-synchronization.md).
   

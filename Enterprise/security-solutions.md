@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: Сводка. В этих статьях содержатся рекомендации по развертыванию решений для обеспечения безопасности в облачных предложениях Майкрософт.
-ms.openlocfilehash: d006fe0ebb1b4bb4c963ffec8dbdece590c81032
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+ms.openlocfilehash: aecb9f8d23b04cbc5c4d8065708ba8171f1ea555
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793682"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711832"
 ---
 # <a name="security-solutions"></a>Решения для обеспечения безопасности
 
@@ -44,7 +44,7 @@ ms.locfileid: "43793682"
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
-[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Руководства по лаборатории тестирования для Microsoft 365 на крупных предприятиях](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [Архитектурные модели для SharePoint, Exchange, Skype для бизнеса и Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

@@ -18,21 +18,21 @@ ms.collection:
 - M365-identity-device-management
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: Список атрибутов, исключаемых и поддерживаемых средством IdFix.
-ms.openlocfilehash: 0203f47864dc4222cd2f95a4e67b2f10bec44f71
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: da9a59d60b1ae2f1f68803e5a10afba16207fc69
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840146"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711579"
 ---
 # <a name="idfix-excluded-and-supported-objects-and-attributes"></a>Исключаемые и поддерживаемые объекты и атрибуты IdFix
 
-*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
 Существует два набора правил, поддерживаемых IdFix; Поддержка нескольких клиентов и выделенного/ITAR. В настоящее время два набора правил исключают одни и те же объекты, атрибуты и значения атрибутов из поиска. Это может измениться в будущих выпусках.
   
 ## <a name="multi-tenant-and-dedicated-error-exclusions-used-by-idfix"></a>Несколько клиентов и выделенные исключения ошибок, используемые IdFix
-В этом разделе перечислены объекты, атрибуты и значения, которые IdFix исключает из поиска в каталоге. Звездочка (\*) — это подстановочный знак, который можно заменить на другие символы.
+В этом разделе перечислены объекты, атрибуты и значения, которые IdFix исключает из поиска в каталоге. Звездочка ( \* ) — это подстановочный знак, который можно заменить на другие символы.
   
 ### <a name="objects-attributes-and-values-excluded-during-an-idfix-search"></a>Объекты, атрибуты и значения, исключенные во время поиска IdFix
 
@@ -56,6 +56,6 @@ ms.locfileid: "41840146"
 |Объект содержит атрибут Искритикалсистемобжект |Ознакомьтесь с [атрибутом искритикалсистемобжект](https://go.microsoft.com/fwlink/p/?LinkId=401169). |
    
 ## <a name="multi-tenant-and-dedicated-objects-and-attributes-checked-by-idfix"></a>Поддержка нескольких клиентов и выделенных объектов и атрибутов, проверенных с помощью IdFix
-Атрибуты, которые проверяются на наличие ошибок с помощью IdFix, описаны в разделе "объект каталога и подготовка атрибута" в разделе [Подготовка атрибутов каталога для синхронизации с Office 365 с помощью средства IdFix](prepare-directory-attributes-for-synch-with-idfix.md).
+Атрибуты, которые проверяются на наличие ошибок с помощью IdFix, описаны в разделе "объект каталога и подготовка атрибута" в разделе [Prepare Attributes for Synchronization for Synchronization with Microsoft 365 с помощью средства IdFix](prepare-directory-attributes-for-synch-with-idfix.md).
   
 

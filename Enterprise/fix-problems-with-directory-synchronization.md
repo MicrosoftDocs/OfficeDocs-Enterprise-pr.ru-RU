@@ -1,5 +1,5 @@
 ---
-title: Устранение проблем с синхронизацией службы каталогов для Office 365
+title: Устранение проблем с синхронизацией службы каталогов для Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,14 +19,14 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: В этой статье описаны распространенные причины проблем с синхронизацией службы каталогов в Office 365, а также несколько способов их решения.
-ms.openlocfilehash: 658f1649d0a4b9bf109bbb35593d4c64092e1cf8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cb2ec57331d227f0965095ee0782f13af935d569
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840336"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711912"
 ---
-# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Устранение проблем с синхронизацией службы каталогов для Office 365
+# <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Устранение проблем с синхронизацией службы каталогов для Microsoft 365
 
 С помощью синхронизации службы каталогов можно продолжать локально управлять пользователями и группами и синхронизировать добавления, удаления и изменения с облаком. Тем не менее ее настройка немного сложна и иногда бывает трудно определить причину проблемы. Мы предлагаем ресурсы, которые помогут вам выявить потенциальные проблемы и устранить их.
   
@@ -34,7 +34,7 @@ ms.locfileid: "41840336"
 
 Первое указание на то, что что-то пошло не так, когда плитка состояния DirSync в центре администрирования Майкрософт 365 указывает на наличие проблемы.
   
-Вы также получите от Office 365 почтовое сообщение (на адрес электронной почты администратора и запасной адрес) о том, что в вашем клиенте обнаружены ошибки синхронизации службы каталогов. Подробные сведения см. в статье [Определение ошибок синхронизации службы каталогов в Office 365](identify-directory-synchronization-errors.md).
+Кроме того, вы получите почту из Microsoft 365, которая указывает, что клиент обнаружил ошибки синхронизации службы каталогов, в альтернативную электронную почту и электронную почту администратора. Подробные сведения см. [в статье определение ошибок синхронизации каталогов в Microsoft 365](identify-directory-synchronization-errors.md).
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Как получить средство Azure Active Directory Connect?
 
@@ -42,11 +42,11 @@ ms.locfileid: "41840336"
   
 Следуйте [инструкциям в мастере](set-up-directory-synchronization.md), чтобы скачать Azure AD Connect. 
   
-Если вы все еще используете средство синхронизации Azure Active Directory (DirSync), ознакомьтесь со статьей [Устранение ошибок установки инструмента для синхронизации Azure Active Directory и мастера настройки в Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717), чтобы узнать о требованиях к системе для установки средства, необходимых разрешениях и устранении распространенных ошибок. 
+Если вы по-прежнему используете Azure Active Directory Sync (DirSync), ознакомьтесь с [сообщениями об ошибках мастера установки и настройки средства синхронизации Azure Active Directory в Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) для получения сведений о требованиях к системе для установки DirSync, необходимых разрешений и устранении распространенных ошибок. 
   
 Чтобы перейти от средства синхронизации Azure Active Directory к Azure AD Connect, см. [инструкции по обновлению](https://go.microsoft.com/fwlink/p/?LinkId=733240).
   
-## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a>Устранение распространенных причин проблем с синхронизаций службы каталогов в Office 365
+## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>Устранение распространенных причин проблем с синхронизацией службы каталогов в Microsoft 365
 
 ### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**Синхронизированные объекты не отображаются или не обновляются в режиме онлайн. Или служба возвращает отчеты об ошибках синхронизации.**
 
@@ -62,7 +62,7 @@ ms.locfileid: "41840336"
 - [Реализация синхронизации хэшированных паролей в службе синхронизации Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Появляется оповещение о том, что превышена квота на объекты.**
-- Для защиты службы используется встроенная квота на объекты. Если в каталоге слишком много объектов, которые нужно синхронизировать с Office 365, [обратитесь в службу поддержки продуктов для бизнеса](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) с просьбой увеличить квоту.
+- Для защиты службы используется встроенная квота на объекты. Если в вашем каталоге слишком много объектов, которые необходимо синхронизировать с Microsoft 365, вам потребуется [обратиться в службу поддержки продуктов для бизнеса](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) , чтобы увеличить квоту.
 
 ### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**Мне нужно знать, какие атрибуты синхронизируются**
 - Список всех атрибутов, которые синхронизируются между локальной средой и облаком, можно найти [здесь](https://go.microsoft.com/fwlink/p/?LinkId=396719).
@@ -91,6 +91,6 @@ ms.locfileid: "41840336"
     
 ## <a name="diagnostic-tools"></a>Средства диагностики
 
-Средство [IDFix](prepare-directory-attributes-for-synch-with-idfix.md) используется для обнаружения и исправления объектов удостоверений и их атрибутов в локальной среде Active Directory при подготовке к переходу на Office 365. IDFix предназначен для администраторов Active Directory, ответственных за синхронизацию службы каталогов с службой Office 365. 
+[Средство IDFix](prepare-directory-attributes-for-synch-with-idfix.md) используется для выполнения обнаружения и исправления объектов Identity и их атрибутов в локальной среде Active Directory при подготовке к миграции в Microsoft 365. IDFix предназначен для администраторов Active Directory, ответственных за синхронизацию каталогов со службой Microsoft 365. 
 
 [Скачайте средство IDFix](https://go.microsoft.com/fwlink/p/?LinkId=396718) из Центра загрузки Майкрософт.

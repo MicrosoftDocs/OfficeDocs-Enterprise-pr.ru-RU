@@ -1,5 +1,5 @@
 ---
-title: Перенос данных организации в Office 365 корпоративный
+title: Перенос данных Организации в Microsoft 365 корпоративный
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,25 +15,25 @@ search.appverid:
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
-description: Если вы отказались от развертывания с использованием службы FastTrack и готовы к переносу данных в Office 365, начните отсюда.
-ms.openlocfilehash: 44038429ecf3b927db408679f8651d4055113a48
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+description: Если вы отказались от развертывания FastTrack и готовы к переносу данных в Microsoft 365, то начните с этого места.
+ms.openlocfilehash: a04c4df37d5f8c72330907752247d7bea48fb72d
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419347"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711852"
 ---
-# <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Перенос данных организации в Office 365 корпоративный
+# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Перенос данных Организации в Microsoft 365 корпоративный
 
-## <a name="ready-to-migrate-your-data-to-office-365"></a>Готовы перенести свои данные в Office 365?
+## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>Готовы к переносу данных в Microsoft 365?
 
-Наши [инструкции по базовой настройке](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) помогут вам в кратчайший срок развернуть приложения и службы Office 365 для всех пользователей. В них не описываются гибридные сценарии и более сложные методы миграции на Office 365. 
+Наши [основные инструкции по настройке](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) помогут вам одновременно получить доступ к службам и приложениям Microsoft 365. Это пропускает гибридные сценарии и более сложные методы для перехода на Microsoft 365. 
   
-Если вам нужна помощь в установке Office 365, [FastTrack](https://fasttrack.microsoft.com/office) является самым простым способом развертывания Office 365, вы также можете войти в систему и использовать [руководства по настройке для служб Office 365](setup-guides-for-office-365.md).
+Если вам нужна помощь в установке Microsoft 365, [FastTrack](https://fasttrack.microsoft.com/office) является самым простым способом развертывания Microsoft 365, вы также можете войти в систему и использовать [руководства по настройке для служб Microsoft 365](setup-guides-for-office-365.md).
 
-## <a name="migrate-email-to-office-365"></a>Миграция электронной почты в Office 365
+## <a name="migrate-email-to-microsoft-365"></a>Перенос электронной почты в Microsoft 365
 - Миграция в гибридную среду Exchange с использованием [помощника по развертыванию Exchange](https://technet.microsoft.com/exdeploy2013). (Администратор)
-- Дополнительные сведения о разных [способах миграции электронной почты в Office 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842).
+- Узнайте больше о различных [способах миграции электронной почты в Microsoft 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842).
 - Другие способы [миграции электронной почты, контактов и календарей ваших сотрудников](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e).
 
 ## <a name="migrate-files-and-folders"></a>Миграция файлов и папок

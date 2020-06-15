@@ -1,5 +1,5 @@
 ---
-title: Контрольный список планирования развертывания для Office 365
+title: Контрольный список планирования развертывания для Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,28 +19,28 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
-description: Этот контрольный список поможет вашей организации при планировании и подготовке к миграции в Office 365.
-ms.openlocfilehash: fdbc56b3d3a907ef5ca66f9d184525f8aae13246
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+description: Этот контрольный список поможет вашей организации при планировании и подготовке к миграции в Microsoft 365.
+ms.openlocfilehash: f958a48b01c3e027804c75bf469276bcfeed1d83
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419368"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711905"
 ---
-# <a name="deployment-planning-checklist-for-office-365"></a>Контрольный список планирования развертывания для Office 365
+# <a name="deployment-planning-checklist-for-microsoft-365"></a>Контрольный список планирования развертывания для Microsoft 365
 
-При перемещении корпоративной организации в Office 365 важно точно спланировать действия, которые необходимо выполнить, а когда — и кто будет выполнять эти действия. Этот контрольный список поможет вашей организации при планировании и подготовке к миграции в Office 365. Этапы и шаги в контрольном списке выравниваются по рекомендациям, предоставленным [центром](https://go.microsoft.com/fwlink/?LinkId=517115)входящей миграции. Вы можете адаптировать этот контрольный список к потребностям вашей организации.
+При перемещении корпоративной организации в Microsoft 365 важно точно спланировать действия, которые необходимо выполнить, а когда — и кто будет выполнять эти действия. Этот контрольный список поможет вашей организации при планировании и подготовке к миграции в Microsoft 365. Вы можете адаптировать этот контрольный список к потребностям вашей организации.
 
 ## <a name="need-help-with-your-deployment"></a>Нужна помощь по развертыванию?
-Нужна помощь в установке Office 365? Рекомендуется использовать [FastTrack](https://fasttrack.microsoft.com/office) или [руководства по настройке для служб Office 365](setup-guides-for-office-365.md).
+Нужна помощь по установке Microsoft 365? Рекомендуется использовать [FastTrack](https://fasttrack.microsoft.com/microsoft-365) или [руководства по настройке для служб Microsoft 365](setup-guides-for-office-365.md).
 
-## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Пример контрольного списка для развертывания Office 365 корпоративный
+## <a name="sample-checklist-for-a-microsoft-365-enterprise-deployment"></a>Пример контрольного списка для развертывания Microsoft 365 корпоративный
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Задачи развертывания/Евентс** <br/> |**Дата начала** <br/> |**Дата окончания** <br/> |**Ресурсы** <br/> |**Dependencies** <br/> |
 |**Определение целей развертывания** <br/> |||||
-| С внутренними и внешними заинтересованными лицами:<br>  — Согласование с областью и временной шкалой <br>  — Согласование с механизмом отслеживания проектов  <br>  — Разработка критериев успеха и [связи](https://fasttrack.microsoft.com/office)  /  [Приступая к работе с Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
+| С внутренними и внешними заинтересованными лицами:<br>  — Согласование с областью и временной шкалой <br>  — Согласование с механизмом отслеживания проектов  <br>  — Разработка критериев успеха и [связи](https://fasttrack.microsoft.com/microsoft-365)  /  [Приступая к работе с Microsoft 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Инвентаризация текущей среды и принятие ключевых решений по развертыванию** |||||
 |Инвентаризация текущей среды |||||
 | Сбор числа учетных записей пользователей (имена для входа, адреса электронной почты) |||||
@@ -64,8 +64,8 @@ ms.locfileid: "44419368"
 | Подготовка сети ( [руководство и средства](https://aka.ms/tune)) |||||
 | Обновление версий клиентского программного обеспечения ( [руководство](https://go.microsoft.com/fwlink/?LinkId=534827)) |||||
 | Если у вас есть служба управления правами Active Directory: подготовка среды ( [руководство](https://go.microsoft.com/fwlink/?linkid=844967))  <br/> |||||
-|**Настройка служб Office 365 для работы в Организации** |||||
-|Настройка подписки на Office 365 |||||
+|**Настройка служб Microsoft 365 для работы в Организации** |||||
+|Настройка подписки на Microsoft 365 |||||
 |[Проверьте домены, которые вы хотите использовать с подпиской.](https://go.microsoft.com/fwlink/?LinkId=534828) |||||
 | Настройка [параметров приложения](https://go.microsoft.com/fwlink/?LinkId=534829) (электронная почта, Обмен мгновенными сообщениями, собрания по сети, совместная работа в Интернете, хранение файлов, Yammer) |||||
 | При необходимости [Подготовьтесь к синхронизации службы каталогов](https://go.microsoft.com/fwlink/?LinkId=534830) |||||
@@ -76,9 +76,9 @@ ms.locfileid: "44419368"
 | Расскажите пользователям о [предстоящих изменениях и о том, как они повлияют на них](https://fasttrack.microsoft.com/office) |||||
 |**Развертывание для пользователей** |||||
 |Настройка учетных записей и почтовых ящиков |||||
-| Добавление пользователей и [Назначение лицензий пользователям в Office 365 для бизнеса](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
+| Добавление пользователей и [Назначение лицензий пользователям в Microsoft 365 для бизнеса](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
 | При необходимости перенесите данные ( [Электронная почта](https://go.microsoft.com/fwlink/?LinkId=534823)и [файлы](https://go.microsoft.com/fwlink/?LinkId=534824)и т. д.) |||||
 |Проверка функциональных возможностей выполните завершающие действия |||||
-| Перенос [параметров DNS для направления в Office 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| Расскажите пользователям, когда они могут [начать работу с Office 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
-| Перенастройка клиентских систем для подключения к Office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook для Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [мобильных устройств](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||
+| Перенесите [параметры DNS, чтобы указать на Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
+| Расскажите пользователям, когда они могут [начать использовать Microsoft 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
+| Перенастройка клиентских систем для подключения к Microsoft 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook для Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [мобильных устройств](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||

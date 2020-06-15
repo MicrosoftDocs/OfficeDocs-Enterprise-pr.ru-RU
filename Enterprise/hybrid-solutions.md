@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: Сводка. В этих статьях описано, как развернуть рабочие нагрузки сервера Office Server в Microsoft Azure.
-ms.openlocfilehash: 5106a509cd5be05b9988f6d4b27c1947deede588
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+ms.openlocfilehash: 558b3eb612d67b3135a762326382218ae4f286c1
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793792"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711569"
 ---
 # <a name="hybrid-solutions"></a>Гибридные решения
 
@@ -29,15 +29,15 @@ ms.locfileid: "43793792"
   
 Теперь некоторые рабочие нагрузки Office Server, которые обычно развертывались локально, можно развернуть в службах инфраструктуры Azure.
   
-Для инфраструктуры идентификации Office 365 в Azure:
+Для инфраструктуры удостоверений Microsoft 365 в Azure:
 
 - [Использование Azure AD для проверки подлинности на сервере SharePoint Server](using-azure-ad-for-sharepoint-server-authentication.md)
 
-- [Развертывание синхронизации каталогов Office 365 в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Развертывание синхронизации каталогов Microsoft 365 в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [Подключение локальной сети к виртуальной сети Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [Развертывание федеративной проверки подлинности для обеспечения высокой доступности Office 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [Развертывание федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
 Для рабочих нагрузок SharePoint Server 2013 в Azure:
   
@@ -54,8 +54,6 @@ ms.locfileid: "43793792"
   
 [Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
-[Руководства по лаборатории тестирования для принятия облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
+[Microsoft 365 для корпоративных руководств по лаборатории тестирования (руководствах TLG)](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [Архитектурные модели для SharePoint, Exchange, Skype для бизнеса и Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
-
-

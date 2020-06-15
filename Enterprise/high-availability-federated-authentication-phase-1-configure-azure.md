@@ -13,17 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: Сводка. Настройка инфраструктуры Microsoft Azure для размещения федеративной проверки подлинности с высоким уровнем доступности для Office 365.
-ms.openlocfilehash: 9f2991ef495093f2aed01e57f47dab3371b97de3
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: 'Сводка: Настройка инфраструктуры Microsoft Azure для размещения федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365.'
+ms.openlocfilehash: 10bf8165b36571b5cd68107fa32e26db970d1d58
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793832"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711952"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Этап 1. Федеративная проверка подлинности для обеспечения высокой доступности: настройка Azure
 
-На этом этапе вы создадите группы ресурсов, виртуальную сеть (VNet) и группы доступности в Azure, где будут размещаться виртуальные машины на этапах 2, 3 и 4. Прежде чем переходить к разделу [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md), необходимо завершить этот этап. Описание всех этапов см. в статье [Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+На этом этапе вы создадите группы ресурсов, виртуальную сеть (VNet) и группы доступности в Azure, где будут размещаться виртуальные машины на этапах 2, 3 и 4. Прежде чем переходить к разделу [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md), необходимо завершить этот этап. [В статье Развертывание федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) для всех фаз.
   
 Azure необходимо подготовить к работе с этими основными компонентами:
   
@@ -106,7 +106,7 @@ Azure необходимо подготовить к работе с этими 
    
  **Таблица L. Префиксы адресов для локальной сети**
   
-Теперь приступим к созданию инфраструктуры Azure для размещения федеративной проверки подлинности для Office 365.
+Теперь приступим к созданию инфраструктуры Azure для размещения федеративной проверки подлинности для Microsoft 365.
   
 > [!NOTE]
 > Для указанных ниже последовательностей команд используется последняя версия Azure PowerShell. Ознакомьтесь [с статьей начало работы с Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
@@ -132,7 +132,7 @@ Get-AzSubscription | Sort Name | Select Name
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Укажите свою подписку Azure. Замените все в кавычках, в том \< числе символы и >, указав правильное имя.
+Укажите свою подписку Azure. Замените все в кавычках, в том числе \< and > символами, правильным именем.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -300,9 +300,9 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 Ниже показана конфигурация, полученная в результате успешного выполнения этого этапа.
   
-**Этап 1. Инфраструктура Azure для федеративной проверки подлинности с высоким уровнем доступности для Office 365**
+**Этап 1: инфраструктура Azure для федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365**
 
-![Этап 1 для федеративной проверки подлинности Office 365 в Azure с инфраструктурой Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Этап 1 для федеративной проверки подлинности Microsoft 365 с высоким уровнем доступности в Azure с инфраструктурой Azure](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Следующий шаг
 
@@ -310,12 +310,12 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
   
 ## <a name="see-also"></a>См. также
 
-[Развертывание в Azure федеративной проверки подлинности для обеспечения высокой доступности в случае использования Office 365](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Развертывание федеративной проверки подлинности с высоким уровнем доступности для Microsoft 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Федеративное удостоверение для среды разработки и тестирования Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[Федеративная идентификация для среды разработки и тестирования Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.yml)
 
-[Идентификация в Office 365 и Azure Active Directory](about-office-365-identity.md)
+[Общие сведения об удостоверении Microsoft 365 и Azure Active Directory](about-office-365-identity.md)
 
 

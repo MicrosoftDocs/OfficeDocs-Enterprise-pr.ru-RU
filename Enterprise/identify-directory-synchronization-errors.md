@@ -1,5 +1,5 @@
 ---
-title: Просмотр ошибок синхронизации каталогов в Office 365
+title: Просмотр ошибок синхронизации каталогов в Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,24 +21,24 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Сведения о том, как просматривать ошибки синхронизации каталогов в центре администрирования Microsoft 365.
-ms.openlocfilehash: e270b7f1bc29d952cd07a7b3430a1a9a50b67783
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d10abc29a08da4352d4c0779698e2062175008b4
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840176"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711649"
 ---
-# <a name="view-directory-synchronization-errors-in-office-365"></a>Просмотр ошибок синхронизации каталогов в Office 365
+# <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Просмотр ошибок синхронизации каталогов в Microsoft 365
 
 Вы можете просматривать ошибки синхронизации каталогов в [центре администрирования Microsoft 365](https://admin.microsoft.com). Отображаются только ошибки объекта пользователя. Просмотреть ошибки с помощью PowerShell можно в разделе [Identify Objects with дирсинкпровисионинжеррорс](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
-После просмотра ознакомьтесь с разрешениями [проблем с синхронизацией каталогов для Office 365](fix-problems-with-directory-synchronization.md) , чтобы устранить обнаруженные проблемы.
+После просмотра ознакомьтесь с разрешениями [проблем с синхронизацией каталогов для Microsoft 365](fix-problems-with-directory-synchronization.md) , чтобы устранить обнаруженные проблемы.
   
 ## <a name="view-directory-synchronization-errors-in-the-admin-center"></a>Просмотр ошибок синхронизации каталогов в центре администрирования
 
 Чтобы просмотреть ошибки в центре администрирования, выполните следующие действия.
   
-1. Войдите в Office 365 с рабочей или учебной учетной записью. 
+1. Войдите в Microsoft 365, используя свою рабочую или учебную учетную запись. 
     
 2. Перейдите к разделу [о центре администрирования](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     
