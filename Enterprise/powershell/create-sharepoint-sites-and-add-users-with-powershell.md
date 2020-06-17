@@ -18,16 +18,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Сводка: использование PowerShell в Office 365 для создания новых сайтов SharePoint Online и добавления пользователей и групп на эти сайты.'
-ms.openlocfilehash: 1fc9192ed27bfd097ac770b53837fb8ba2eb062d
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 8011a7e3f61e6b26d4606bfdae67152a1d894840
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004702"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735707"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Создание сайтов и добавление пользователей в SharePoint Online с помощью Office 365 PowerShell
 
-Когда вы используете Office 365 PowerShell для создания сайтов SharePoint Online и добавления пользователей, вы можете быстро и многократно выполнять задачи гораздо быстрее, чем в центре администрирования Майкрософт 356. Кроме того, вы можете выполнить задачи, которые недоступны в Центре администрирования Office 356. 
+Когда вы используете Office 365 PowerShell для создания сайтов SharePoint Online и добавления пользователей, вы можете быстро и многократно выполнять задачи гораздо быстрее, чем в центре администрирования Майкрософт 365. Вы также можете выполнять задачи, которые невозможно выполнить в центре администрирования Office 365. 
 
 ## <a name="before-you-begin"></a>Перед началом работы
 
@@ -37,7 +37,7 @@ ms.locfileid: "44004702"
 
 Создайте несколько сайтов с помощью PowerShell для Office 365 и CSV-файла, созданного с помощью примера кода и блокнота. В этой процедуре заменяются сведения о заполнителе, показанные в квадратных скобках, с собственными сведениями о сайтах и клиентах. Этот процесс позволяет создать один файл и запустить одну команду PowerShell Office 365, использующую этот файл. Это делает действия, которые были как повторяющимися, так и переносимыми, и исключает многие, если не все, ошибки, которые могут возникнуть при вводе длинных команд в командную консоль SharePoint Online. Эта процедура состоит из двух частей. Сначала вы создадите CSV-файл, а затем сослаться на этот CSV-файл с помощью Office 365 PowerShell, который будет использовать его содержимое для создания сайтов.
 
-Командлет Office 365 PowerShell импортирует CSV-файл и передает его в цикл в фигурных скобках, который считывает первую строку файла как заголовки столбцов. Командлет Office 365 PowerShell проходит по остальным записям, создает семейство веб-сайтов для каждой из них и назначает свойства семейства веб-сайтов в соответствии с заголовками столбцов.
+The Office 365 PowerShell cmdlet imports the .csv file and pipes it to a loop inside the curly brackets that reads the first line of the file as column headers. The Office 365 PowerShell cmdlet then iterates through the remaining records, creates a new site collection for each record, and assigns properties of the site collection according to the column headers.
 
 ### <a name="create-a-csv-file"></a>Создание CSV-файла
 
@@ -52,7 +52,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 <br/>Где *клиент* — это имя вашего клиента, а *owner* — это имя пользователя в клиенте, которому требуется предоставить роль главного администратора семейства веб-сайтов.<br/>(Можно нажать клавиши CTRL + H при использовании блокнота для ускорения массового замещения.)<br/>
 
-2. Сохраните файл на рабочем столе в формате **SiteCollections. csv**.<br/>
+2. Сохраните файл на рабочем столе как **SiteCollections.csv**.<br/>
 
 > [!TIP]
 > Перед использованием этого или другого файла сценария. CSV или Windows PowerShell рекомендуется убедиться в отсутствии лишних или непечатаемых символов. Откройте файл в Word и щелкните значок абзаца на ленте, чтобы показать непечатаемые символы. Файлы не должны содержать лишние непечатаемые символы. Например, в конце файла не должно быть знаков абзаца.
@@ -65,7 +65,7 @@ Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SP
 ```
 <br/>Где *мялиас* соответствует псевдониму пользователя.<br/>
 
-2. Дождитесь появления окна командной строки Windows PowerShell. Для этого может потребоваться одна или две минуты.<br/>
+2. Wait for the Windows PowerShell prompt to reappear. It might take a minute or two.<br/>
 
 3. В командной строке Windows PowerShell введите или скопируйте и вставьте следующий командлет, а затем нажмите клавишу ВВОД:<br/>
 
@@ -80,7 +80,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 ## <a name="step-2-add-users-and-groups"></a>Действие 2. Добавление пользователей или групп
 
-Теперь мы создадим пользователей и добавим их в группу семейства сайтов. Мы используем CSV-файл для массовой загрузки новых групп и пользователей.
+Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
 
 Следующие процедуры продолжают использовать примеры сайтов TeamSite01, Blog01, Project01 и Community01.
 
@@ -101,7 +101,7 @@ https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Contr
 ```
 <br/>Где *клиент* равняется имени клиента.<br/>
 
-2. Сохраните файл на рабочем столе в формате **граупсандпермиссионс. csv**.<br/>
+2. Сохраните файл на рабочем столе как **GroupsAndPermissions.csv**.<br/>
 
 3. Откройте новый экземпляр Блокнота и вставьте в него следующий блок текста:<br/>
 
@@ -118,7 +118,7 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 ```
 <br/>Где *клиент* равняется имени клиента, а *username* — имя пользователя существующего пользователя.<br/>
 
-4. Сохраните файл на рабочем столе с именем **Users. csv**.<br/>
+4. Сохраните файл на рабочем столе как **Users.csv**.<br/>
 
 5. Откройте новый экземпляр Блокнота и вставьте в него следующий блок текста:<br/>
 
@@ -128,7 +128,7 @@ Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Gro
 ```
 <br/>Где Мялиас = имя пользователя, выполнившего вход в систему.<br/>
 
-6. Сохраните файл на рабочем столе в формате **усерсандграупс. ps1**. Это простой сценарий Windows PowerShell.
+6. Сохраните файл на рабочем столе как **UsersAndGroups.ps1**. Это простой сценарий Windows PowerShell.
 
 Теперь вы можете выполнить скрипт UsersAndGroup.ps1, чтобы добавить пользователей и группы в несколько семейств сайтов.
 
@@ -150,7 +150,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
 <br/>Где *мялиас* = ваше имя пользователя.<br/>
 
-5. Дождитесь появления окна командной строки. Сначала вы увидите группы по мере их создания. Затем вы увидите список групп, который повторяется при добавлении пользователей.
+5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
 
 ## <a name="see-also"></a>См. также
 
@@ -158,7 +158,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [Управление группами сайтов SharePoint Online в Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
 
