@@ -2,32 +2,32 @@
 # [Облачные решения для корпоративных пользователей](cloud-adoption-and-hybrid-solutions.yml)
 ## [Архитектурные модели для SharePoint, Exchange, Skype для бизнеса и Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
-# [Планирование Office 365](get-your-organization-ready-for-office-365.md)
+# [План для Microsoft 365](get-your-organization-ready-for-office-365.md)
 
-## Клиент Office 365
+## Ваш клиент Microsoft 365
 ### [Подписки, лицензии и клиенты](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 
 ### Планирование сети
-#### [Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
-#### [Планирование сетевых устройств, подключающихся к службам Office 365](plan-for-network-devices.md)
-#### [Планирование сети и миграции в Office 365](network-and-migration-planning.md)
+#### [Оценка сетевого подключения Microsoft 365](assessing-network-connectivity.md)
+#### [Планирование сетевых устройств, подключающихся к службам Microsoft 365](plan-for-network-devices.md)
+#### [Планирование сети и миграции в Microsoft 365](network-and-migration-planning.md)
 
 ### Планирование удостоверений
 #### [Модели удостоверений](about-office-365-identity.md)
 #### [Гибридное удостоверение](plan-for-directory-synchronization.md)
 
-### [Планирование сторонних SSL-сертификатов для Office 365](plan-for-third-party-ssl-certificates.md)
-### [Руководства по настройке для служб Office 365 и Microsoft 365](setup-guides-for-office-365.md)
+### [Планирование сторонних SSL-сертификатов для Microsoft 365](plan-for-third-party-ssl-certificates.md)
+### [Руководства по настройке для служб Microsoft 365 и Office 365](setup-guides-for-office-365.md)
 ### [Интегрированные приложения и Azure AD](integrated-apps-and-azure-ads.md)
 
-### Интеграция Office 365
+### Интеграция с Microsoft 365
 #### [Интеграция с локальной средой](office-365-integration.md)
 #### [Интеграция с Azure](azure-integration.md)
 #### [Azure ExpressRoute](azure-expressroute.md)
 #### [Современная проверка подлинности для клиентских приложений Office 2013 и Office 2016](modern-auth-for-office-2013-and-2016.md)
 #### [Взаимодействие между клиентами](office-365-inter-tenant-collaboration.md)
 
-## Поддержка клиента Office 365
+## Служба поддержки клиентов Microsoft 365
 ### [Проверка подлинности на основе сертификатов](office-365-client-support-certificate-based-authentication.md)
 ### [Условный доступ](office-365-client-support-conditional-access.md)
 ### [Управление мобильными приложениями](https://support.microsoft.com/en-us/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a?ui=en-US&rs=en-US&ad=US)
@@ -58,17 +58,17 @@
 #### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
-# [Тестирование Office 365](cloud-adoption-test-lab-guides-tlgs.md)
+# [Тестирование Microsoft 365](cloud-adoption-test-lab-guides-tlgs.md)
 
-# [Развертывание Office 365 корпоративный](setup-overview-for-enterprises.md)
+# [Развертывание Microsoft 365 Enterprise](setup-overview-for-enterprises.md)
 
 ## 1. Настройка сети
 ### [Настройка корпоративной сети](set-up-network-for-office-365.md)
 ### [Добавление домена](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
-### [Обзор возможности сетевого подключения к Office 365](office-365-networking-overview.md)
-### [Принципы сетевого подключения к Office 365](office-365-network-connectivity-principles.md)
-### [Планирование сети и настройка производительности для Office 365](network-planning-and-performance.md)
-### [Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
+### [Обзор возможности сетевого подключения к Microsoft 365](office-365-networking-overview.md)
+### [Принципы сетевого подключения к Microsoft 365](office-365-network-connectivity-principles.md)
+### [Планирование сети и настройка производительности для Microsoft 365](network-planning-and-performance.md)
+### [Оценка сетевого подключения Microsoft 365](assessing-network-connectivity.md)
 ### [Партнерская программа Office 365 для поставщиков сетевых устройств и служб](office-365-networking-partner-program.md)
 ### URL- и IP-адреса для Office 365
 #### [Конечные точки Office 365](office-365-endpoints.md)
@@ -86,10 +86,10 @@
 #### [Краткое руководство по работе с CDN Office 365](office-365-cdn-quickstart.md)
 #### [Использование CDN Office 365 с SharePoint Online](use-office-365-cdn-with-spo.md)
 #### [Сети доставки содержимого](content-delivery-networks.md)
-### Оптимизация подключения Office 365 для удаленных пользователей
+### Оптимизация подключения Microsoft 365 для удаленных пользователей
 #### [Общие сведения о раздельном туннелировании VPN](office-365-vpn-split-tunnel.md)
 #### [Реализация раздельного туннелирования VPN](office-365-vpn-implement-split-tunnel.md)
-#### [Оптимизация Office 365 для пользователей Китая](office-365-networking-china.md)
+#### [Оптимизация Microsoft 365 для пользователей из Китая](office-365-networking-china.md)
 ### Сети для клиентов GCC High и DoD
 #### [Дополнительные требования сетевой безопасности для GCC High и DoD](additional-network-security-requirements-for-office-365-gcchigh-and-dod.md)
 #### [Записи DNS для Office 365 DoD](dns-records-for-office-365-dod.md)
@@ -97,13 +97,13 @@
 #### [Конечные точки U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)
 #### [Конечные точки U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Цепочки шифрования Office 365 — DoD и GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [Поддержка IPv6 в службах Office 365](ipv6-support.md)
-### [Поддержка NAT в Office 365](nat-support-with-office-365.md)
-### Работа с ExpressRoute для Office 365
-#### [ExpressRoute для Office 365](azure-expressroute.md)
-#### [Реализация ExpressRoute для Office 365](implementing-expressroute.md)
-#### [Планирование сети при использовании ExpressRoute для Office 365](network-planning-with-expressroute.md)
-#### [Маршрутизация с использованием ExpressRoute для Office 365](routing-with-expressroute.md)
+### [Поддержка IPv6 в службах Microsoft 365](ipv6-support.md)
+### [Поддержка NAT в службах Microsoft 365](nat-support-with-office-365.md)
+### Работа с ExpressRoute для Microsoft 365
+#### [ExpressRoute для Microsoft 365](azure-expressroute.md)
+#### [Реализация работы ExpressRoute для Microsoft 365](implementing-expressroute.md)
+#### [Планирование сети с использованием ExpressRoute для Microsoft 365](network-planning-with-expressroute.md)
+#### [Маршрутизация с использованием ExpressRoute для Microsoft 365](routing-with-expressroute.md)
 
 ## 2. Настройка удостоверений
 ### [Защита учетных записей глобальных администраторов](protect-your-global-administrator-accounts.md)
@@ -129,7 +129,7 @@
 
 ## 6. Настройка служб и приложений
 ### [Подготовка](configure-services-and-applications.md)
-### [Перенос данных в Office 365](migrate-data-to-office-365.md)
+### [Перенос данных в Microsoft 365](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
 ### [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
 ### [Skype для бизнеса](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
@@ -163,7 +163,7 @@
 ##### [Включение SharePoint c поддержкой нескольких регионов в периферийном расположении](enabling-SP-multigeo-satellite-geolocation.md)
 ##### [Администрирование Exchange с поддержкой нескольких регионов](administering-exchange-online-multi-geo.md)
 
-### [Перемещение в центр обработки данных Office 365 в другом регионе](moving-data-to-new-datacenter-geos.md)
+### [Переход к новому географическому центру обработки данных Microsoft 365](moving-data-to-new-datacenter-geos.md)
 #### [Как запросить перемещение данных](request-your-data-move.md)
 #### [Во время и после перемещения данных](during-and-after-your-data-move.md)
 #### [Ответы на общие вопросы о перемещении данных](data-move-faq.md)
@@ -175,14 +175,14 @@
 #### [Использование Azure Active Directory для проверки подлинности в SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [Подключение локальной сети к виртуальной сети Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Развертывание сервера синхронизации каталогов в Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
-#### [Развертывание федеративной проверки подлинности для обеспечения высокой доступности Office 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+#### [Развертывание федеративной проверки подлинности для обеспечения высокой доступности Microsoft 365 в Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
 ##### [Этап 1. Настройка Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
 ##### [Этап 2. Настройка контроллеров домена](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
 ##### [Этап 3. Настройка серверов AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
 ##### [Этап 4. Настройка прокси веб-приложений](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
 ##### [Этап 5. Настройка федеративной проверки подлинности](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
-# Управление Office 365
+# Управление Microsoft 365
 
 ## Сеть
 ### [Мониторинг подключения](monitor-connectivity.md)
@@ -194,7 +194,7 @@
 ### [Отключение синхронизации каталогов](turn-off-directory-synchronization.md)
 
 ## Пользователи
-### [Центр справки для администраторов Office 365](https://docs.microsoft.com/office365/admin/admin-home)
+### [Справка по Центру администрирования Microsoft 365](https://docs.microsoft.com/office365/admin/admin-home)
 ### [Средства для управления учетными записями пользователей](manage-office-365-accounts.md)
 ### [Добавление нескольких пользователей одновременно](add-several-users-at-the-same-time.md)
 ### [Восстановление элементов, удаленных из почтового ящика пользователя](recover-deleted-items-in-a-mailbox.md)
@@ -214,7 +214,7 @@
 ### [Варианты поддержки](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## Производительность
-### [Настройка производительности Office 365](tune-office-365-performance.md)
+### [Настройка производительности Microsoft 365](tune-office-365-performance.md)
 ### [Настройка производительности с помощью базовых показателей и журнала производительности](performance-tuning-using-baselines-and-history.md)
 ### [Настройка производительности Exchange Online](tune-exchange-online-performance.md)
 ### [Настройка производительности SharePoint Online](tune-sharepoint-online-performance.md)
@@ -226,8 +226,8 @@
 ### [Управление ExpressRoute](managing-expressroute-for-connectivity.md)
 
 # Контроль качества обслуживания
-## [Контроль качества обслуживания в Центре безопасности и соответствия требованиям Office 365](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)
-## [Административные элементы управления доступом в Office 365](office-365-administrative-access-controls-overview.md)
+## [Контроль качества обслуживания в Центре безопасности и соответствия требованиям Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)
+## [Административные элементы управления доступом в Microsoft 365](office-365-administrative-access-controls-overview.md)
 ### [Элементы управления доступом к мониторингу и аудиту](office-365-monitoring-and-auditing-access-controls.md)
 ### [Элементы управления изоляцией в Office 365](office-365-isolation-controls.md)
 ### [Элементы управления персоналом в Office 365](office-365-personnel-controls.md)
@@ -254,7 +254,7 @@
 ### [Стратегия защиты от атак типа "отказ в обслуживании" корпорации Майкрософт](office-365-microsoft-dos-defense-strategy.md)
 ### [Основные принципы защиты от атак типа "отказ в обслуживании"](office-365-core-principles-of-defense-against-dos-attacks.md)
 ## [Шифрование в Microsoft Cloud](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)
-### [Шифрование служб Office 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption)
+### [Служба шифрования Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption)
 ### [Шифрование транзитных данных](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit)
 ### [Возможности шифрования под управлением клиента](https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features)
 ### [Риски шифрования и средства защиты](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections)
@@ -273,5 +273,5 @@
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [Соответствие требованиям Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Безопасность в Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)
-# [Office 365 для бизнеса](https://docs.microsoft.com/office365/admin/admin-home)
+# [Microsoft 365 для бизнеса](https://www.microsoft.com/microsoft-365/business)
 # [Microsoft 365](https://docs.microsoft.com/microsoft-365)
