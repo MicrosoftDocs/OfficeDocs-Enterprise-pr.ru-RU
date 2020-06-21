@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Сведения о том, как создавать пользователей и группы, когда ваша подписка на Microsoft 365 использует удостоверение, доступное только для облака.
-ms.openlocfilehash: 257634db4ba8cd001ea52004be05f8a8a7d35e87
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: f510d82186e9a44c20bd20f1c7b5a7a44c8b765b
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698926"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774834"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Удостоверение только для облака Microsoft 365
 
-*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
 При использовании удостоверения только в облаке все пользователи, группы и контакты хранятся в клиенте Azure Active Directory (Azure AD) вашей подписки на Microsoft 365. Ниже приведены основные компоненты удостоверения "только облако".
  

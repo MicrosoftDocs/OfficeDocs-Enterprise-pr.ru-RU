@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Загрузка и запуск средства Microsoft 365 IdFix для упрощения очистки доменных служб Active Directory (AD DS) перед их синхронизацией с Microsoft 365.
-ms.openlocfilehash: dde12d7e16aad8488fe067888eacdf1c80e1a037
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: c4df63e6162b1d53cb7a45f046542443177b25ff
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711599"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774864"
 ---
 # <a name="download-and-run-the-microsoft-365-idfix-tool"></a>Загрузка и запуск средства Microsoft 365 IdFix
 
-*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
 IdFix определяет ошибки, такие как дублирование и форматирование в домене доменных служб Active Directory (AD DS) перед синхронизацией с Microsoft 365. 
   
@@ -125,8 +125,3 @@ IdFix определяет ошибки, такие как дублирован�
 - [Исключаемые и поддерживаемые объекты и атрибуты IdFix](idfix-excluded-and-supported-objects-and-attributes.md)  
 - [Журнал транзакций Microsoft 365 IdFix](idfix-transaction-log.md)
     
-## <a name="video-training"></a>Обучающее видео
-
-Дополнительные сведения см. в статье [Установка и использование инструмента IdFix](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US). Обучающее видео предоставлено платформой LinkedIn Learning.
-  
-

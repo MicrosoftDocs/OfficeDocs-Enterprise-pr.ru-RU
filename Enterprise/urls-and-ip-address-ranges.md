@@ -3,7 +3,7 @@ title: URL-адреса и диапазоны IP-адресов Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/28/2020
+ms.date: 06/16/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,48 +22,48 @@ search.appverid:
 - MOM160
 - BCS160
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
-description: Сводка. Для Office 365 требуется подключение к Интернету. Указанные ниже конечные точки должны быть доступны для клиентов, использующих планы Office 365, в том числе входящих в облако сообщества государственных учреждений (GCC).
+description: 'Summary: Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 6d0719de89e36caf648ff76904fc1fa4fc892e7a
-ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
-ms.translationtype: HT
+ms.openlocfilehash: 58453be147fec41bb35b7d6d758ce3d5df5a4148
+ms.sourcegitcommit: f2a4b77c8c3932beb1a78bf2f5bf793fefb3fa49
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44013422"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44747375"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL-адреса и диапазоны IP-адресов Office 365
 
- **Сводка.** Для Office 365 требуется подключение к Интернету. Указанные ниже конечные точки должны быть доступны для клиентов, использующих планы Office 365, в том числе входящих в облако сообщества государственных учреждений (GCC).
+ **Summary:** Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).
   
 > [!NOTE]
 > В рамках реакции на кризис с COVID-19 корпорация Майкрософт объявила временный мораторий на некоторые запланированные изменения URL- и IP-адресов. Этот мораторий предназначен для того, чтобы ИТ-отделы уверенно и легко выполняли рекомендуемые меры оптимизации сетей для сценариев Office 365 при работе из дома. С 24 марта по 30 июня 2020 г. этот мораторий приостанавливает изменения диапазонов IP-адресов и URL-адресов основных служб Office 365 (Exchange Online, SharePoint Online и Microsoft Teams), включенных в категорию оптимизации. Изменения в конечных точках других категорий будут выполняться в обычном режиме. В этот период клиенты могут использовать определения конечных точек служб Office 365 из категории оптимизации статическим способом, чтобы выполнять целевую оптимизацию сетей (например, резервирование пропускной способности или настройку раздельного VPN-туннелирования) с минимальным риском для подключения Office 365 благодаря изменениям сети в облачной среде. Чтобы гарантировать отсутствие перерывов обслуживания в конце моратория, корпорация Майкрософт настоятельно рекомендует клиентам реализовать управление изменениями и/или процессы автоматизации для конечных точек служб Office 365, используя инструкции, предоставленные в статье [Управление конечными точками Office 365](managing-office-365-endpoints.md).
 
 > [!NOTE]
-> Корпорация Майкрософт выпустила веб-службу на базе REST для записей IP-адресов и полных доменных имен на этой странице. Эта новая служба поможет настраивать и обновлять устройства периметра сети, такие как брандмауэры и прокси-серверы. Вы можете скачать список конечных точек, текущую версию списка или сведения об определенных изменениях. Эта служба заменяет XML-документ, связанный с этой страницей, который устарел 2 октября 2018 г. Сведения о том, как опробовать новую службу, см. в статье [Веб-служба](office-365-ip-web-service.md).
+> Microsoft has released a REST-based web service for the IP address and FQDN entries on this page. This new service will help you configure and update network perimeter devices such as firewalls and proxy servers. You can download the list of endpoints, the current version of the list, or specific changes. This service replaces the XML document linked from this page, which was deprecated on October 2, 2018. To try out this new service, go to [Web service](office-365-ip-web-service.md).
   
 *Office 365 по всему миру (+ GCC)* | [Office 365, предоставляемый 21 Vianet](urls-and-ip-address-ranges-21vianet.md) | [Office 365 Germany](office-365-germany-endpoints.md) | [Office 365 для DoD государственных организаций США](office-365-u-s-government-dod-endpoints.md)  | [Office 365 для GCC High государственных организаций США](office-365-u-s-government-gcc-high-endpoints.md) |
   
 ||||
 |:-----|:-----|:-----|
-|**Последнее обновление:** 28.04.2020, ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [подписка на журнал изменений](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Скачивание:** все обязательные и необязательные назначения в одном списке [в формате JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Используйте:** наши [PAC-файлы](managing-office-365-endpoints.md#pacfiles) прокси-сервера <br/> |
+|**Последнее обновление:** 06/16/2020 — ![ ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Подписка на журнал изменений](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) RSS <br/> |**Скачивание:** все обязательные и необязательные назначения в одном списке [в формате JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Используйте:** наши [PAC-файлы](managing-office-365-endpoints.md#pacfiles) прокси-сервера <br/> |
 
- Сначала ознакомьтесь со статьей [Управление конечными точками Office 365](managing-office-365-endpoints.md), содержащей рекомендации по управлению сетевым подключением с использованием этих данных. В начале каждого месяца данные конечных точек обновляются новыми IP-адресами и URL-адресами, публикуемыми за 30 дней до их активации. Это позволяет пользователям, не имеющим автоматических обновлений, завершить свои процессы до того, как новое подключение станет обязательным. Конечные точки также могут обновляться в течение месяца, если это требуется для устранения проблем, выявленных службой поддержки, инцидентов безопасности или в связи с другими экстренными рабочими требованиями. Данные, представленные ниже на этой странице, получены из веб-служб на базе REST. Если вы используете скрипт или сетевое устройство для доступа к этим данным, сразу переходите к разделу [Веб-служба](office-365-ip-web-service.md).
+ Start with [Managing Office 365 endpoints](managing-office-365-endpoints.md) to understand our recommendations for managing network connectivity using this data. Endpoints data is updated at the beginning of each month with new IP Addresses and URLs published 30 days in advance of being active. This allows for customers who do not yet have automated updates to complete their processes before new connectivity is required. Endpoints may also be updated during the month if needed to address support escalations, security incidents, or other immediate operational requirements. The data shown on this page below is all generated from the REST-based web services. If you are using a script or a network device to access this data, you should go to the [Web service](office-365-ip-web-service.md) directly.
 
-Ниже в данных конечной точки перечислены требования к подключениям с компьютера пользователя к Office 365. Они не включают сетевые подключения от корпорации Майкрософт к сети клиентов, которые иногда называются гибридными или входящими сетевыми подключениями. Подробные сведения см. в статье [Дополнительные конечные точки](additional-office365-ip-addresses-and-urls.md).
+Endpoint data below lists requirements for connectivity from a user's machine to Office 365. It does not include network connections from Microsoft into a customer network, sometimes called hybrid or inbound network connections. See [Additional endpoints](additional-office365-ip-addresses-and-urls.md) for more information.
 
-Конечные точки сгруппированы в четыре области обслуживания. Первые три области обслуживания можно независимо выбирать для подключения. Четвертая область обслуживания — это общая зависимость (называемая Microsoft 365 Common and Office), которая всегда должна обеспечиваться сетевым подключением.
+The endpoints are grouped into four service areas. The first three service areas can be independently selected for connectivity. The fourth service area is a common dependency (called Microsoft 365 Common and Office) and must always have network connectivity.
 
 Показанные столбцы с данными:
 
-- **Идентификатор**. Код строки, также известный как набор конечной точки. Этот идентификатор совпадает с возвращаемым веб-службой для набора конечной точки.
+- **ID**: The ID number of the row, also known as an endpoint set. This ID is the same as is returned by the web service for the endpoint set.
 
-- **Категория**. Показывает, присвоена ли набору конечной точки категория "Оптимизация", "Разрешение" или "По умолчанию". С этими категориями и инструкцией по их управлению можно ознакомиться в разделе [Новые категории конечных точек Office 365](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories). В этом столбце также указано, какие наборы конечной точки необходимы для обеспечения сетевого подключения. Для наборов конечной точки, не требующихся для сетевого подключения, в этом поле приводятся примечания о том, какие функции будут отсутствовать при блокировании этого набора конечной точки. При исключении всей области обслуживания наборы конечной точки, перечисленные как обязательные, не требуют подключения.
+- **Category**: Shows whether the endpoint set is categorized as "Optimize", "Allow", or "Default". You can read about these categories and guidance for management of them at [New Office 365 endpoint categories](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories). This column also lists which endpoint sets are required to have network connectivity. For endpoint sets which are not required to have network connectivity, we provide notes in this field to indicate what functionality would be missing if the endpoint set is blocked. If you are excluding an entire service area, the endpoint sets listed as required do not require connectivity.
 
-- **ER**. Значение **Да**, если набор конечной точки поддерживается в Azure ExpressRoute с префиксами маршрутизации Office 365. Сообщество BGP, которое включает указанные префиксы маршрутизации, соответствует области службы в списке. Если значение ER соответствует **Нет**, это означает, что ExpressRoute не поддерживается для этого набора конечной точки. Тем не менее, не нужно считать, что для набора конечной точки со значением ER равным **Нет** отсутствуют объявленные маршруты.
+- **ER**: This is **Yes** if the endpoint set is supported over Azure ExpressRoute with Office 365 route prefixes. The BGP community that includes the route prefixes shown aligns with the service area listed. When ER is **No**, this means that ExpressRoute is not supported for this endpoint set. However, it should not be assumed that no routes are advertised for an endpoint set where ER is **No**.
 
-- **Адреса**. Перечисляет полные доменные имена или подстановочные доменные имена, а также диапазоны IP-адресов для набора конечной точки. Обратите внимание, что диапазон IP-адресов представлен в формате CIDR и может содержать несколько отдельных IP-адресов в указанной сети.
+- **Addresses**: Lists the FQDNs or wildcard domain names and IP Address ranges for the endpoint set. Note that an IP Address range is in CIDR format and may include many individual IP Addresses in the specified network.
  
-- **Порты**. Перечисляет порты TCP или UDP, которые объединяются с адресами для создания конечной точки сети. Можно заметить дублирование в диапазонах IP-адресов при перечислении разных портов.
+- **Ports**: Lists the TCP or UDP ports that are combined with the Addresses to form the network endpoint. You may notice some duplication in IP Address ranges where there are different ports listed.
 
 [!INCLUDE [Office 365 worldwide endpoints](./includes/office-365-worldwide-endpoints.md)]
 

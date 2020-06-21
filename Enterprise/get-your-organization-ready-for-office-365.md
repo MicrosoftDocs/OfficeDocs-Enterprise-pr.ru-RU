@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Получите доступ к ресурсам, чтобы спланировать развертывание Microsoft 365 корпоративный.
-ms.openlocfilehash: 106ee743f6f1ddd49d2d81d653f97bfa40566649
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 4b779365fc1dbad05e1eacbba1e346530952d372
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735797"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774474"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Планирование для Microsoft 365 корпоративный
 
@@ -33,7 +33,7 @@ ms.locfileid: "44735797"
 
 ## <a name="planning-with-microsoft-365-fasttrack"></a>Планирование с помощью Microsoft 365 FastTrack
 
-[FastTrack для microsoft 365](https://www.microsoft.com/en-us/fasttrack/microsoft-365) — лучший способ получить помощь от Майкрософт по планированию развертывания Microsoft 365. FastTrack может помочь вам в наиболее распространенных вопросах проектирования и ответить на вопросы. 
+[FastTrack для microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) — лучший способ получить помощь от Майкрософт по планированию развертывания Microsoft 365. FastTrack может помочь вам в наиболее распространенных вопросах проектирования и ответить на вопросы. 
 
 >[!Note]
 >Вы также можете обратиться за помощью к [партнеру Майкрософт](https://www.microsoft.com/solution-providers/home).
@@ -43,7 +43,7 @@ ms.locfileid: "44735797"
 
 Чтобы спланировать Microsoft 365 самостоятельно, выполните планирование и проектирование решений для следующих областей:
 
-- Клиент Microsoft 365
+- Ваш клиент Microsoft 365
 
   Включает планирование сетевых подключений к Интернету, удостоверений Microsoft 365 и интеграцию с приложениями, локальными, Azure и другими элементами. Начните [отсюда](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
 

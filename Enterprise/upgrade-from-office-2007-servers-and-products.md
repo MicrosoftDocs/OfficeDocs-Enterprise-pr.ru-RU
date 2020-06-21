@@ -23,16 +23,16 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2007, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: 2686d081952a2b18a1d08378e3aa7f66f4142542
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 8da5cd95b683be40c4efa3137ecfca4d31e11aae
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979361"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774564"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007
 
-*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
 Если вы используете продукты и службы Office 2007, поддержка этих приложений закончилась. При планировании обновления это отличное время для перехода на Microsoft Cloud, начиная с Office 365. Используйте эту статью в качестве отправной точки для просмотра вариантов и планирования обновления.
       

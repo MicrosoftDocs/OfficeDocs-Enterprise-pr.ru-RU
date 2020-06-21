@@ -36,16 +36,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: 10 октября 2017 г. поддержка закончилась для SharePoint Server 2007. В этой статье рассказывается о вариантах обновления, устранении неполадок, рекомендациях, требованиях к системе, действиях по обновлению и о том, как получить помощь от партнеров Майкрософт.
-ms.openlocfilehash: 6f0bd60d1f1201750ae1f0e4cc1a001ab4ed2ef6
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 860e142912d54b87c10677681dcbb429a6df9a8a
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844010"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44775004"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки SharePoint Server 2007;
 
-*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
 **10 октября 2017**г. Microsoft Office SharePoint Server 2007 достиг конца поддержки. Если вы еще не начали переход с SharePoint Server 2007 на Office 365 или более новую версию SharePoint Server, теперь настало время начать планирование. В этой статье описываются ресурсы, которые помогут пользователям перенести данные в SharePoint Online или обновить локальный сервер SharePoint Server. 
   
@@ -108,9 +108,7 @@ SharePoint Server можно установить локально на собс
   
 ### <a name="migrate-to-sharepoint-online"></a>Миграция на SharePoint Online
 
-Убедитесь, что в SharePoint Online есть все необходимые вам функции, изменив связанное описание службы. Вот ссылка на все описания служб Office 365:
-  
-[Описание служб Office 365](https://go.microsoft.com/fwlink/?linkid=272060)
+Убедитесь, что в SharePoint Online есть все необходимые вам функции, изменив связанное описание службы. Ознакомьтесь [с описаниями служб microsoft 365 и Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
   
 Прямой способ переноса из SharePoint 2007 в SharePoint Online отсутствует. Переход на SharePoint Online выполняется вручную. При обновлении до SharePoint Server 2013 или SharePoint Server 2016 перемещение также может включать использование API миграции SharePoint (например, для переноса информации в OneDrive для бизнеса).
   
@@ -176,15 +174,15 @@ SharePoint Server можно установить локально на собс
   
 - **Требования к оборудованию и программному обеспечению для**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | для[SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - **Границы и ограничения программного обеспечения для**: 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | для[SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - Ниже **приведен обзор процесса обновления**. 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250) | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | для[SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250)  |  [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>Создание гибридного решения SharePoint между SharePoint Online и локальной системой
 

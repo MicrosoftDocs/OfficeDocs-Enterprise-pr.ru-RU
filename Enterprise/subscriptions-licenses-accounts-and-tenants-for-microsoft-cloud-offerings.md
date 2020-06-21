@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: Сводка. Общие сведения о связи между организациями, подписками, лицензиями, учетными записями пользователей и клиентами в облачных предложениях корпорации Майкрософт.
-ms.openlocfilehash: 65922f3ab8a88056ebc63d12cc0dcad37d6c49c8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: ad4307b2725fa37f6b28540b92895fc78f097c6c
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843980"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735967"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Подписки, лицензии, учетные записи и клиенты для облачных предложений корпорации Майкрософт
 
@@ -45,7 +45,7 @@ ms.locfileid: "41843980"
   
 ### <a name="organization"></a>Организация
 
-Организация представляет субъект бизнес-деятельности, использующий облачные решения Майкрософт. Как правило, он определяется по одному или нескольким именам общедоступного домена службы доменных имен (DNS), например contoso.com. Организация является контейнером для подписок.
+An organization represents a business entity that is using Microsoft cloud offerings, typically identified by one or more public Domain Name System (DNS) domain names, such as contoso.com. The organization is a container for subscriptions.
   
 ### <a name="subscriptions"></a>Подписки
 
@@ -54,7 +54,7 @@ ms.locfileid: "41843980"
 - В облачных предложениях корпорации Майкрософт на основе SaaS (Office 365, Intune/EMS и Dynamics 365) оплата взимается за лицензии пользователей. 
 - В облачных предложениях корпорации Майкрософт (Azure) на основе PaaS (платформа как услуга) и IaaS (инфраструктура как услуга) оплата взимается за использование облачных ресурсов.
  
-Вы также можете использовать пробную подписку, срок действия которой истекает через определенное время или после использования определенного количества ресурсов. Вы можете преобразовать пробную подписку в платную.
+You can also use a trial subscription, but the subscription expires after a specific amount of time or consumption charges. You can convert a trial subscription to a paid subscription.
   
 У организации может быть несколько подписок на облачные предложения корпорации Майкрософт. На рисунке 1 показана одна организация с несколькими подписками на Office 365 и Azure, подпиской на Intune и подпиской на Dynamics 365.
 
@@ -73,9 +73,9 @@ ms.locfileid: "41843980"
   
 В случае облачных служб на основе Azure PaaS стоимость лицензий на программное обеспечение включается в цену службы.
   
-Для виртуальных машин на основе Azure IaaS могут потребоваться дополнительные лицензии на использование ПО или приложений, установленных в образе виртуальной машины. В некоторых образах виртуальных машин установлены лицензированные версии программного обеспечения, цены которых включаются в поминутный тариф для сервера. К примерам таких виртуальных машин относятся образы для SQL Server 2014 и SQL Server 2016. 
+For Azure IaaS-based virtual machines, additional licenses to use the software or application installed on a virtual machine image might be required. Some virtual machine images have licensed versions of software installed and the cost is included in the per-minute rate for the server. Examples are the virtual machine images for SQL Server 2014 and SQL Server 2016. 
   
-В некоторых образах виртуальных машин установлены пробные версии приложений, а для их использования по завершении пробного периода требуются дополнительные лицензии. Например, образ виртуальной машины для пробной версии SharePoint Server 2016 включает предустановленную пробную версию SharePoint Server 2016. Чтобы продолжать использовать SharePoint Server 2016 по истечении пробного периода, необходимо приобрести у корпорации Майкрософт лицензию на SharePoint Server 2016 и клиентские лицензии. Эта плата взимается отдельно от платы за подписку Azure и не отменяет поминутный тариф на работу виртуальной машины.
+Some virtual machine images have trial versions of applications installed and need additional software application licenses for use beyond the trial period. For example, the SharePoint Server 2016 Trial virtual machine image includes a trial version of SharePoint Server 2016 pre-installed. To continue using SharePoint Server 2016 after the trial expiration date, you must purchase a SharePoint Server 2016 license and client licenses from Microsoft. These charges are separate from the Azure subscription and the per-minute rate to run the virtual machine still applies.
   
 ### <a name="user-accounts"></a>Учетные записи пользователей
 
@@ -89,11 +89,11 @@ ms.locfileid: "41843980"
   
 ### <a name="tenants"></a>Клиенты
 
-В случае облачных предложений на основе SaaS клиент — это регион, в котором располагаются серверы, предоставляющие облачные службы. Например, корпорация Contoso выбрала европейский регион для размещения клиентов Office 365, EMS и Dynamics 365, которыми пользуются 15 000 сотрудников главного офиса компании в Париже.
+For SaaS cloud offerings, the tenant is the regional location that houses the servers providing cloud services. For example, the Contoso Corporation chose the European region to host its Office 365, EMS, and Dynamics 365 tenants for the 15,000 workers in their Paris headquarters.
   
-Службы PaaS Azure и рабочие нагрузки на основе виртуальных машин, размещенные на платформе IaaS Azure, могут находиться в центре обработки данных Azure в любой точке мира. Центр обработки данных Azure, или расположение, указывается при создании приложения или службы PaaS Azure либо элемента рабочей нагрузки IaaS.
+Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can have tenancy in any Azure datacenter across the world. You specify the Azure datacenter, known as the location, when you create the Azure PaaS app or service or element of an IaaS workload.
   
-Клиент Azure AD — это определенный экземпляр Azure AD, содержащий учетные записи и группы. Платные и пробные подписки Office 365, Dynamics 365 или Intune/EMS включают бесплатный клиент Azure AD. Этот клиент Azure AD не включает службы Azure и не предоставляется с пробной или платной подпиской Azure.
+An Azure AD tenant is a specific instance of Azure AD containing accounts and groups. Paid or trial subscriptions of Office 365, Dynamics 365, or Intune/EMS include a free Azure AD tenant. This Azure AD tenant does not include other Azure services and is not the same as an Azure trial or paid subscription.
   
 ### <a name="summary-of-the-hierarchy"></a>Сводка по иерархии
 
@@ -129,7 +129,7 @@ ms.locfileid: "41843980"
 
 ![Идентификация как служба (IDaaS) для организации.](media/Subscriptions/Subscriptions-Fig4.png)
   
-На рисунке 4 показано, как взаимодействуют с общим клиентом Azure AD облачные решения SaaS Майкрософт, приложения PaaS Azure и виртуальные машины на платформе IaaS Azure, использующие доменные службы Azure AD. Клиент Azure AD синхронизируется с локальным лесом AD DS с помощью Azure AD Connect.
+Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud offerings, Azure PaaS apps, and virtual machines in Azure IaaS that use Azure AD Domain Services. Azure AD Connect synchronizes the on-premises AD DS forest with the Azure AD tenant.
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>Объединение подписок для нескольких облачных предложений корпорации Майкрософт
 

@@ -1,5 +1,5 @@
 ---
-title: Настройка сети для Office 365
+title: Настройка сети для Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,45 +18,45 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
-description: Сводка. Статьи с общими сведениями об организации сети для Office 365.
-ms.openlocfilehash: c1976a6b1ae5bff0b5f6f909ee9ab8495f371653
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+description: 'Сводка: в этих статьях вы найдете сведения о сети для Microsoft 365.'
+ms.openlocfilehash: 4c414d8cbf597af9165e991a71e5d6a6a330e33a
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844030"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735665"
 ---
-# <a name="set-up-your-network-for-office-365"></a>Настройка сети для Office 365
+# <a name="set-up-your-network-for-microsoft-365"></a>Настройка сети для Microsoft 365
 
-*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
-Важной частью миграции на Office 365 является обеспечение настройки сети и подключений к Интернету для оптимизации доступа. Настройка локальной сети для доступа к глобально распределенным облачным предложениям программного обеспечения как услуги (SaaS) отличается от традиционной сети, оптимизированной для трафика к локальным центрам обработки данных и центрального подключения к Интернету. 
+An important part of your Microsoft 365 onboarding is to ensure that your network and Internet connections are set up for optimized access. Configuring your on-premises network to access a globally distributed Software-as-a-Service (SaaS) cloud is different from a traditional network that is optimized for traffic to on-premises datacenters and a central Internet connection. 
 
 С помощью этих статей можно ознакомиться с основными различиями пограничных устройств, клиентских компьютеров и локальной сети, а также изменять их для обеспечения оптимальной производительности для локальных пользователей.
 
-## <a name="how-office-365-networking-works"></a>Как выполняется организация сети Office 365
+## <a name="how-microsoft-365-networking-works"></a>Работа сети Microsoft 365
 
-В указанных ниже статьях рассматриваются возможности подключения для Office 365.
+В этих статьях представлены общие сведения о подключении к Microsoft 365:
 
-- [Обзор возможности сетевого подключения к Office 365](office-365-networking-overview.md)
-- [Принципы сетевого подключения к Office 365](office-365-network-connectivity-principles.md)
-- [Оценка сетевого подключения к Office 365](assessing-network-connectivity.md)
+- [Обзор возможности сетевого подключения к Microsoft 365](office-365-networking-overview.md)
+- [Принципы сетевого подключения Microsoft 365](office-365-network-connectivity-principles.md)
+- [Оценка сетевого подключения Microsoft 365](assessing-network-connectivity.md)
 
-Советы по повышению производительности см. в статье [Планирование сети и настройка производительности для Office 365](network-planning-and-performance.md).
+Советы по повышению производительности можно найти в [статье Планирование сети и настройка производительности для Microsoft 365](network-planning-and-performance.md).
 
-## <a name="support-office-365-networking-as-a-network-equipment-vendor"></a>Поддержка организации сети Office 365 поставщиком сетевого оборудования
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Поддержка сети Microsoft 365 в качестве поставщика сетевого оборудования
 
-Если вы являетесь поставщиком сетевого оборудования, присоединяйтесь к [партнерской программе Office 365 для поставщиков сетевых устройств и служб](office-365-networking-partner-program.md). Зарегистрируйтесь в программе, чтобы встроить принципы сетевого подключения к Office 365 в свои продукты и решения. 
+If you are a network equipment vendor, join the [Office 365 Networking Partner Program](office-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
 
 ## <a name="office-365-endpoints"></a>Конечные точки Office 365
 
 Конечные точки — это набор конечных IP-адресов, доменных имен DNS и URL-адресов для трафика Office 365 в Интернете. 
 
-Чтобы повысить производительность облачных служб Office 365, некоторым конечным точкам требуется специальная обработка клиентскими браузерами и устройствами в сети периметра. К этим устройствам относятся брандмауэры, устройства расшифровки и анализа SSL-трафика, устройства анализа пакетов и системы защиты от потери данных.
+To optimize performance to Office 365 cloud-based services, some endpoints need special handling by your client browsers and the devices in your edge network. These devices include firewalls, SSL Break and Inspect and packet inspection devices, and data loss prevention systems.
 
 Подробные сведения см. в статье [Управление конечными точками Office 365](managing-office-365-endpoints.md).
 
-В настоящее время существует пять разных облаков Office 365. Эта таблица позволяет перейти к списку конечных точек для каждого из них.
+There are currently five different Office 365 clouds. This table takes you to the list of endpoints for each one.
 
 |||
 |:-------|:-----|
@@ -75,15 +75,15 @@ ms.locfileid: "41844030"
 - [Сетевые запросы в Office 2016 для Mac](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-office-365-networking"></a>Дополнительные разделы об организации сети Office 365
+## <a name="additional-topics-for-microsoft-365-networking"></a>Дополнительные разделы, посвященные Microsoft 365 Network
 
-Специальные разделы, касающиеся организации сети Office 365, см. в указанных ниже статьях.
+В следующих статьях представлены специализированные разделы, посвященные Microsoft 365 Network:
 
 - [Сети доставки содержимого](content-delivery-networks.md)
 - [Поддержка IPv6 в службах Office 365](ipv6-support.md)
 - [Поддержка NAT в Office 365](nat-support-with-office-365.md)
 
-## <a name="expressroute-for-office-365"></a>ExpressRoute для Office 365
+## <a name="expressroute-for-microsoft-365"></a>ExpressRoute для Microsoft 365
 
 Сведения об использовании ExpressRoute для трафика Office 365 см. в указанных ниже статьях.
 

@@ -19,16 +19,16 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: Поддержка заканчивается для SharePoint 2010 и SharePoint Server 2010 на 13 апреля 2021 г. Используйте эту статью в качестве руководства по обновлению до SharePoint Online или более новой версии SharePoint Server в локальной среде.
-ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
-ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
+ms.openlocfilehash: 906fd4a5189bba29e90f342c1c9199c927210bb2
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43532296"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774454"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Обновление с SharePoint 2010
 
-*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
 Microsoft SharePoint 2010 и SharePoint Server 2010 достигают окончания поддержки до **13 апреля 2021 г**. В этой статье описываются ресурсы, которые помогут вам перенести существующие данные SharePoint Server 2010 в SharePoint Online в Office 365 или обновить локальную среду SharePoint Server 2010.
   
@@ -128,7 +128,7 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
   
 |||
 |:-----|:-----|
-||Последовательный путь обновления * * * *: SharePoint Server **\>** 2010 sharepoint Server **\>** 2013 SharePoint Server 2016 |
+||Последовательный путь обновления * * * *: SharePoint Server 2010 **\>** SharePoint server 2013 **\>** sharepoint Server 2016 |
    
 Если вы решили подписаться на весь путь от SharePoint 2010 к SharePoint Server 2016, это займет некоторое время и планирования. При обновлении используются затраты на обновление оборудования (следует учитывать, что необходимо также обновить серверы SQL Server), программное обеспечение и администрирование. Кроме того, может потребоваться обновить настройки или даже относиться к ним. Перед обновлением фермы SharePoint Server убедитесь, что вы собираете заметки по всем важнейшим настройкам.
   
@@ -162,15 +162,15 @@ SharePoint Server 2013 и SharePoint Foundation 2013 можно установи
   
 - **Требования к оборудованию и программному обеспечению для**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - **Границы и ограничения программного обеспечения для**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - Ниже **приведен обзор процесса обновления**. 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Создание гибридного решения SharePoint между SharePoint Online и SharePoint Server в локальной среде
 

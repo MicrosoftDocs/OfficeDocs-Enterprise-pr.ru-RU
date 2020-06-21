@@ -19,16 +19,16 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: 10 октября 2017 г. поддержка закончилась для Project Server 2007, Project Portfolio Server и Project 2007. Используйте эту статью для планирования обновления сейчас.
-ms.openlocfilehash: 4eb8d734f74e2c146da419a55d78d0c8fcce5aab
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4a2b046ca68de3571cd5be15bce48a6c30b8bf51
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844080"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44775078"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки Project Server 2007;
 
-*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
 Поддержка для серверов и приложений Office 2007 в 2017, и вам необходимо рассмотреть план миграции. Если в настоящее время используется Project Server 2007, обратите внимание на то, что этот продукт и другие связанные продукты имеют следующие даты окончания поддержки:
   

@@ -17,19 +17,19 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: Сводка. Узнайте основные принципы облачной архитектуры для удостоверений, безопасности, сети и гибридных решений Майкрософт. Ознакомьтесь с нормативными рекомендациями по защите файлов, удостоверений и устройств при использовании облака Майкрософт.
-ms.openlocfilehash: e5d1ba6b69dc092df72ead30da620f6007843f5c
-ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
-ms.translationtype: HT
+description: "Summary: Learn core cloud architecture concepts for Microsoft identity, security, networking, and hybrid. Review prescriptive recommendations for protecting files, identities, and devices when using Microsoft's cloud."
+ms.openlocfilehash: b868394d12f65d9169203da275cef5fbb2f619e4
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44013432"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44736047"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 
  **Сводка.** Узнайте основные принципы облачной архитектуры для удостоверений, безопасности, сети и гибридных решений Майкрософт. Ознакомьтесь с нормативными рекомендациями по защите файлов, удостоверений и устройств при использовании облака Майкрософт.
   
-Эти плакаты и средства архитектуры содержат информацию об облачных службах Майкрософт, в том числе Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365, а также гибридных и облачных решениях. При помощи этих ресурсов ответственные ИТ-специалисты и архитекторы могут определять подходящие варианты для своих рабочих нагрузок, а также принимать решения по основным компонентам инфраструктуры, таким как идентификация и безопасность. 
+These architecture tools and posters give you information about Microsoft cloud services, including Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security. 
   
 <!--**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) -->
     
@@ -53,7 +53,7 @@ ms.locfileid: "44013432"
     - [Руководство по безопасности (Майкрософт) для политических кампаний, некоммерческих и других динамических организаций](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
     - [Решения Майкрософт для телефонии](#microsoft-telephony-solutions) 
     
-Ждем ваших отзывов по адресу [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
+Let us know what you think! Send us email at [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
 
 <!--
 <a name="roadmap"></a>
@@ -70,7 +70,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 
 ## Серия "Облако Майкрософт для корпоративных архитекторов"
 
-На этих плакатах об облачной архитектуре приведена информация об облачных службах Майкрософт, в том числе Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, а также гибридных и облачных решениях. При помощи этих ресурсов ответственные ИТ-специалисты и архитекторы могут определять подходящие варианты для своих рабочих нагрузок, а также принимать решения по основным компонентам инфраструктуры, таким как идентификация и безопасность.
+These cloud architecture posters give you information about Microsoft cloud services, including Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security.
 
 <!--  
 <a name="platformoptions"></a>
@@ -181,7 +181,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
   
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|[![Плакат модели: защита идентификации и устройств в Office 365 и других приложениях SaaS](media/c1cfb31b-5150-45ff-b46c-3a237e9f5581.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=55032) <br/> |Важно, чтобы уровни защиты данных, удостоверений и устройств согласовывались между собой. В этом документе приводится сравнительная характеристика различных возможностей, а также предоставляются дополнительные сведения о возможностях защиты удостоверений и устройств.  <br/> |
+|[![Плакат модели: защита идентификации и устройств в Office 365 и других приложениях SaaS](media/c1cfb31b-5150-45ff-b46c-3a237e9f5581.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=55032) <br/> |It's important to use consistent levels of protection across your data, identities, and devices. This document shows you which capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
    
 <a name="BKMK_O365fileprotect"></a>
 ### <a name="file-protection-solutions-in-office-365"></a>Решения для защиты файлов в Office 365
@@ -190,12 +190,12 @@ Learn key differences between Microsoft cloud services and platform offerings. F
   
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|[![Эскиз мини-плаката "Решения по защите файлов в Office 365"](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320)  \| [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |Важно, чтобы уровни защиты данных, удостоверений и устройств согласовывались между собой. В этом документе приводится сравнительная характеристика различных возможностей, а также предоставляются дополнительные сведения о возможностях защиты файлов в Office 365.  <br/> |
+|[![Эскиз мини-плаката "Решения по защите файлов в Office 365"](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320)  \| [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |It's important to use consistent levels of protection across your data, identities, and devices. This document shows you which capabilities are comparable with more information on capabilities to protect files in Office 365.  <br/> |
    
 
 ### <a name="office-365-information-protection-for-gdpr"></a>Защита информации в Office 365 в соответствии с регламентом GDPR
 
-Предписывающие рекомендации по обнаружению, классификации, защите и отслеживанию персональных данных. В этом решении в качестве примера используется Общий регламент по защите данных (GDPR), но аналогичный процесс можно применить, чтобы обеспечить соответствие требованиям ряда других нормативов.
+Prescriptive recommendations for discovering, classifying, protecting, and monitoring personal data. This solution uses General Data Protection Regulation (GDPR) as an example, but you can apply the same process to achieve compliance with many other regulations.
 
 |**Ресурс**|**Описание**|
 |:-----|:-----|
@@ -203,19 +203,19 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 ### <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Руководство по безопасности (Майкрософт) для политических кампаний, некоммерческих и других динамических организаций 
 
-В этом руководстве описано, как реализовать безопасную облачную среду. Это руководство может использовать любая организация. В него входят дополнительные справочные сведения для организации с гибкими возможностями работы с доступом BYOD и учетными записями гостей. Его можно взять за основу при разработке собственной среды.
+This guidance describes how to implement a secure cloud environment. The solution guidance can be used by any organization. It includes extra help for agile organizations with BYOD access and guest accounts. You can use this guidance as a starting-point for designing your own environment.
 
 
 |**Ресурс**|**Описание**|
 |:-----|:-----|
-|**Руководство по безопасности (Майкрософт) для политических кампаний** <br/> [![Эскиз для набора мини-постеров.](media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br/> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf)  \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx) <br/> |В этом руководстве в качестве примера приведена организация, проводящая политические кампании. Используйте это руководство в качестве отправной точки для любой среды.  <br/> |
-|**Руководство по безопасности (Майкрософт) для некоммерческих организаций** <br/> [![Эскиз для скачиваемого файла](media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br/> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf)  \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx) <br/> |В это руководство внесены незначительные изменения, благодаря которым оно подходит некоммерческим организациям. Например, рассмотрены планы Office 365 для некоммерческих организаций. Техническое руководство ничем не отличается от такового для организаций, проводящих политические кампании.  <br/> |
+|**Руководство по безопасности (Майкрософт) для политических кампаний** <br/> [![Эскиз для набора мини-постеров.](media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br/> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf)  \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx) <br/> |This guidance uses a political campaign organization as an example. Use this guidance as a starting point for any environment.  <br/> |
+|**Руководство по безопасности (Майкрософт) для некоммерческих организаций** <br/> [![Эскиз для скачиваемого файла](media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br/> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf)  \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx) <br/> |This guide is slightly revised for nonprofit organizations. For example, it references Office 365 Nonprofit plans. The technical guidance is the same as the political campaign solution guide.  <br/> |
 
-В нем содержатся руководства по лаборатории тестирования. Дополнительные сведения см. в статье [Руководство по безопасности (Майкрософт) для политических кампаний, некоммерческих и других динамических организаций](https://docs.microsoft.com/Office365/SecurityCompliance/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o).
+This guidance includes Test Lab Guides. For more information, see [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](https://docs.microsoft.com/Office365/SecurityCompliance/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o).
 
 ### <a name="microsoft-telephony-solutions"></a>Решения Майкрософт для телефонии
 
-Корпорация Майкрософт поддерживает несколько вариантов начала работы с Teams в облаке Майкрософт. Этот плакат поможет вам определить, какие решения Майкрософт для телефонии (телефонная система в облаке или локальная корпоративная голосовая связь) оптимальны для пользователей в вашей организации, а также как организация может подключаться к телефонной сети общего пользования (ТСОП).
+Microsoft supports several options as you begin your journey to Teams in the Microsoft cloud. This poster helps you decide which Microsoft telephony solution (Phone System in the cloud or Enterprise Voice on-premises) is right for users in your organization, and how your organization can connect to the Public Switched Telephone Network (PSTN).
 
 ![Эскиз плаката решений Майкрософт для телефонии](media/microsoft-telephony-solutions-thumb.png) <br/>
 [PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) 
@@ -226,9 +226,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 [Архитектурные модели для SharePoint, Exchange, Skype для бизнеса и Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
-[Руководства по созданию сред разработки и тестирования облачных решений](cloud-adoption-test-lab-guides-tlgs.md)
-  
-[Решения для обеспечения безопасности](security-solutions.md)
+[Руководства по лаборатории тестирования для Microsoft 365 на крупных предприятиях](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [Гибридные решения](hybrid-solutions.md)
 
