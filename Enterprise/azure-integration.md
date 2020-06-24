@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Подписка на Microsoft 365 включает в себя подписку на Azure AD. Интегрируйте Microsoft 365 с Azure AD, если вы хотите выполнить синхронизацию паролей или единый вход с локальной средой.
-ms.openlocfilehash: 40426c20f12cf17955457c38d809926550efa188
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
+ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774844"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842061"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Интеграция с Microsoft Azure с помощью Microsoft 365
 
@@ -40,7 +40,7 @@ Azure также предоставляет другие функциональ�
 
  - [Советник по подключению Azure AD](https://aka.ms/aadconnectpwsync)
  - [Помощник по развертыванию AD FS](https://aka.ms/adfsguidance)
- - [Руководство по установке Azure AD Premium](https://aka.ms/aadpguidance)
+ - [Руководство по установке Azure AD](https://aka.ms/aadpguidance)
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Выпуски Azure AD и Microsoft 365 Identity Management
 
