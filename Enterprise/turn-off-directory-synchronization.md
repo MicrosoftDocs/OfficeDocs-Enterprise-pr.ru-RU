@@ -1,5 +1,5 @@
 ---
-title: Отключение синхронизации службы каталогов для Office 365
+title: Отключение синхронизации каталогов для Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,23 +18,23 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
-description: Узнайте, как отключить синхронизацию службы каталогов для Office 365 с помощью PowerShell.
-ms.openlocfilehash: eab736241372b2d1b6023dc803dff540dded64ae
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Узнайте, как отключить синхронизацию службы каталогов для Microsoft 365 с помощью PowerShell.
+ms.openlocfilehash: 935d7e26c7b99aba876500e6b9d428557aed5b9c
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841016"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906212"
 ---
-# <a name="turn-off-directory-synchronization-for-office-365"></a>Отключение синхронизации службы каталогов для Office 365
-Вы можете отключить синхронизацию службы каталогов с помощью PowerShell. Тем не менее, не рекомендуется отключать синхронизацию службы каталогов в качестве действия по устранению неполадок. Если вам нужна помощь с устранением проблем с синхронизацией службы каталогов, обратитесь к разделу [Устранение проблем с синхронизацией каталогов для Office 365](fix-problems-with-directory-synchronization.md) . 
+# <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Отключение синхронизации каталогов для Microsoft 365
+Вы можете отключить синхронизацию службы каталогов с помощью PowerShell. Тем не менее, не рекомендуется отключать синхронизацию службы каталогов в качестве действия по устранению неполадок. Если вам нужна помощь с устранением проблем с синхронизацией службы каталогов, обратитесь к разделу [Устранение проблем с синхронизацией каталогов для статьи Microsoft 365](fix-problems-with-directory-synchronization.md) . 
   
 При необходимости [свяжитесь со службой поддержки](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) для бизнес-продуктов.
   
 ## <a name="turn-off-directory-synchronization"></a>Отключение синхронизации каталогов  
 Чтобы отключить синхронизацию службы каталогов, выполните указанные ниже действия.
   
-1. Сначала установите необходимое программное обеспечение и подключитесь к вашей подписке на Office 365. Для получения инструкций обратитесь [к разделу Подключение к модулю Microsoft Azure Active Directory для Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. Сначала установите необходимое программное обеспечение и подключитесь к вашей подписке на Microsoft 365. Для получения инструкций обратитесь [к разделу Подключение к модулю Microsoft Azure Active Directory для Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
 2. Используйте [Set – мсолдирсинценаблед](https://go.microsoft.com/fwlink/p/?LinkId=821939) , чтобы отключить синхронизацию службы каталогов: 
     

@@ -3,7 +3,7 @@ title: Подписки, лицензии, учетные записи и кли
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/08/2019
+ms.date: 06/25/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -19,25 +19,20 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: Сводка. Общие сведения о связи между организациями, подписками, лицензиями, учетными записями пользователей и клиентами в облачных предложениях корпорации Майкрософт.
-ms.openlocfilehash: ad4307b2725fa37f6b28540b92895fc78f097c6c
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 52857196f53a44196c96f60bd70564f5e3221b80
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735967"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906292"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Подписки, лицензии, учетные записи и клиенты для облачных предложений корпорации Майкрософт
 
- **Сводка.** Общие сведения о связи между организациями, подписками, лицензиями, учетными записями пользователей и клиентами в облачных предложениях корпорации Майкрософт.
-  
 Для облачных решений Майкрософт предусмотрена иерархия организаций, подписок, лицензий и учетных записей пользователей. Это обеспечивает согласованное использование удостоверений и выставление счетов.
   
-- Microsoft Office 365
+- Microsoft 365 и Microsoft Office 365
 - Microsoft Azure
-- Microsoft Intune и Enterprise Mobility + Security (EMS)
 - Microsoft Dynamics 365
-
-[Microsoft 365](https://docs.microsoft.com/microsoft-365/) объединяет Office 365, EMS и Windows 10 Корпоративная в одну подписку и набор интегрированных служб.
 
 ## <a name="elements-of-the-hierarchy"></a>Элементы иерархии
 
@@ -51,21 +46,20 @@ An organization represents a business entity that is using Microsoft cloud offer
 
 Подписка — это соглашение с корпорацией Майкрософт на использование одной или нескольких облачных платформ или служб Майкрософт, за которые взимается плата (по лицензиям отдельных пользователей или по использованию облачных ресурсов). 
 
-- В облачных предложениях корпорации Майкрософт на основе SaaS (Office 365, Intune/EMS и Dynamics 365) оплата взимается за лицензии пользователей. 
+- Корпорация Майкрософт (Microsoft 365 и Dynamics 365) — это облачные решения Майкрософт (Microsoft и Dynamics), которые оплачиваются за лицензии на пользователя. 
 - В облачных предложениях корпорации Майкрософт (Azure) на основе PaaS (платформа как услуга) и IaaS (инфраструктура как услуга) оплата взимается за использование облачных ресурсов.
  
 You can also use a trial subscription, but the subscription expires after a specific amount of time or consumption charges. You can convert a trial subscription to a paid subscription.
   
-У организации может быть несколько подписок на облачные предложения корпорации Майкрософт. На рисунке 1 показана одна организация с несколькими подписками на Office 365 и Azure, подпиской на Intune и подпиской на Dynamics 365.
+У организации может быть несколько подписок на облачные предложения корпорации Майкрософт. На рисунке 1 показана одна организация с несколькими подписками на Microsoft 365, подпиской Dynamics 365 и несколькими подписками Azure.
 
 **Рис. 1. Пример использования нескольких подписок для организации**
 
 ![Пример организации с несколькими подписками на облачные предложения корпорации Майкрософт.](media/Subscriptions/Subscriptions-Fig1.png)
-
   
 ### <a name="licenses"></a>Лицензии
 
-В случае облачных предложений корпорации Майкрософт на основе SaaS лицензия позволяет определенному пользователю пользоваться услугами облачной службы. В рамках подписки ежемесячно взимается фиксированная плата. Администраторы назначают лицензии отдельным учетным записям пользователей в подписке. Например, на рис. 2 у корпорации Contoso есть подписка на Office 365 корпоративный E5 со 100 лицензиями, что позволяет 100 отдельным пользователям использовать функции и службы Office 365 корпоративный E5.
+В случае облачных предложений корпорации Майкрософт на основе SaaS лицензия позволяет определенному пользователю пользоваться услугами облачной службы. В рамках подписки ежемесячно взимается фиксированная плата. Администраторы назначают лицензии отдельным учетным записям пользователей в подписке. В примере на рисунке 2 Корпорация Contoso имеет подписку Microsoft 365, в которой есть лицензии на 100, которые позволяют до 100 отдельных учетных записей пользователей использовать функции и службы Microsoft 365.
   
 **Рис. 2. Лицензии в рамках подписок на основе SaaS для организации**
 
@@ -89,11 +83,11 @@ Some virtual machine images have trial versions of applications installed and ne
   
 ### <a name="tenants"></a>Клиенты
 
-For SaaS cloud offerings, the tenant is the regional location that houses the servers providing cloud services. For example, the Contoso Corporation chose the European region to host its Office 365, EMS, and Dynamics 365 tenants for the 15,000 workers in their Paris headquarters.
+В случае облачных предложений на основе SaaS клиент — это регион, в котором располагаются серверы, предоставляющие облачные службы. Например, Корпорация Contoso выбрала Европейский регион для размещения клиентов Microsoft 365, EMS и Dynamics 365 для сотрудников 15 000 в штаб-квартирах Париж.
   
 Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can have tenancy in any Azure datacenter across the world. You specify the Azure datacenter, known as the location, when you create the Azure PaaS app or service or element of an IaaS workload.
   
-An Azure AD tenant is a specific instance of Azure AD containing accounts and groups. Paid or trial subscriptions of Office 365, Dynamics 365, or Intune/EMS include a free Azure AD tenant. This Azure AD tenant does not include other Azure services and is not the same as an Azure trial or paid subscription.
+Клиент Azure AD — это определенный экземпляр Azure AD, содержащий учетные записи и группы. Платные или пробные подписки Microsoft 365 или Dynamics 365 включают бесплатный клиент Azure AD. Этот клиент Azure AD не включает службы Azure и не предоставляется с пробной или платной подпиской Azure.
   
 ### <a name="summary-of-the-hierarchy"></a>Сводка по иерархии
 
@@ -111,11 +105,9 @@ An Azure AD tenant is a specific instance of Azure AD containing accounts and gr
   
 - Организация определяется по имени общедоступного домена.
     
-  - Подписка Office 365 корпоративный E3 с лицензиями "на пользователя".
+  - Подписка на Microsoft 365 E3 с пользовательскими лицензиями.
     
-    Подписка Office 365 корпоративный E5 с лицензиями "на пользователя".
-    
-    Подписка на EMS с лицензиями "на пользователя".
+    Подписка на Microsoft 365 с пользовательским лицензиями.
     
     Подписка на Dynamics 365 с лицензиями "на пользователя".
     
@@ -135,12 +127,11 @@ Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud of
 
 В приведенной ниже таблице показано, как объединить несколько облачных предложений корпорации Майкрософт на основе имеющейся подписки на облачное предложение одного типа (подписи в первом столбце) и добавленной подписки на другое решение (поперек столбцов).
   
-||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
+||**Microsoft 365**|**Azure**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Office 365** <br/> |Н/Д  <br/> |Добавьте подписку Azure для организации с помощью портала Azure.  <br/> |Добавьте подписку Intune/EMS для организации в Центре администрирования Microsoft 365.  <br/> |Добавьте подписку на Dynamics 365 для организации в Центре администрирования Microsoft 365.  <br/> |
-|**Azure** <br/> |Добавьте подписку на Office 365 для организации.  <br/> |Недоступно  <br/> |Добавьте подписку Intune/EMS для организации.  <br/> |Добавьте подписку Dynamics 365 для организации.  <br/> |
-|**Intune/EMS** <br/> |Добавьте подписку на Office 365 для организации.  <br/> |Добавьте подписку Azure для организации с помощью портала Azure.  <br/> |Недоступно  <br/> |Добавьте подписку Dynamics 365 для организации.  <br/> |
-|**Dynamics 365** <br/> |Добавьте подписку на Office 365 для организации.  <br/> |Добавьте подписку Azure для организации с помощью портала Azure.  <br/> |Добавьте подписку Intune/EMS для организации.  <br/> |Н/Д  <br/> |
+|**Microsoft 365** <br/> |NA  <br/> |Добавьте подписку Azure для организации с помощью портала Azure.  <br/> |Добавьте подписку на Dynamics 365 для организации в Центре администрирования Microsoft 365.  <br/> |
+|**Azure** <br/> |Вы добавляете в организацию подписку на Microsoft 365.  <br/> |Н/Д  <br/> |Добавьте подписку Dynamics 365 для организации.  <br/> |
+|**Dynamics 365** <br/> |Вы добавляете в организацию подписку на Microsoft 365.  <br/> |Добавьте подписку Azure для организации с помощью портала Azure.  <br/> |Н/Д  <br/> |
    
 Вы можете с легкостью добавить подписки на службы Майкрософт на основе SaaS для организации, используя Центр администрирования.
   
@@ -150,17 +141,17 @@ Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud of
     
 3. На странице **Приобретение служб** купите новые подписки.
     
-Центр администрирования назначает организации и клиенту Azure AD, у которых есть подписка на Office 365, новые подписки на облачные решения на основе SaaS.
+Центр администрирования назначает организацию и клиент Azure AD для подписки на Microsoft 365 новым подпискам на облачные решения на основе SaaS.
   
-Чтобы добавить подписку Azure с теми же организацией и клиентом Azure AD, что и в подписке на Office 365:
+Чтобы добавить подписку Azure с той же организацией и клиентом Azure AD, что и ваша подписка на Microsoft 365:
   
-1. Войдите на портал Azure ([https://portal.azure.com](https://portal.azure.com)), используя учетную запись глобального администратора Office 365.
+1. Войдите на портал Azure ( [https://portal.azure.com](https://portal.azure.com) ) с помощью учетной записи глобального администратора Microsoft 365.
     
 2. В области навигации слева выберите **Подписки** > **Добавить**.
     
 3. На странице **Добавление подписки** выберите предложение, а затем укажите платежную информацию и примите условия лицензионного соглашения.
     
-Если вы приобрели подписки на Azure и Office 365 отдельно и хотите получить доступ к клиенту Azure AD в Office 365, воспользуйтесь инструкциями в статье [Добавление существующей подписки на Azure с клиентом Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Если вы приобрели подписки Azure и Microsoft 365 отдельно и хотите получить доступ к клиенту Microsoft 365 Azure AD из вашей подписки на Azure, ознакомьтесь с инструкциями в статье [Добавление существующей подписки Azure в клиент Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## <a name="see-also"></a>См. также
 
@@ -172,5 +163,5 @@ Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud of
 
 ## <a name="next-step"></a>Следующий шаг
 
-[Доступ к сетевому подключению Office 365](assessing-network-connectivity.md)
+[Оценка сетевого подключения Microsoft 365](assessing-network-connectivity.md)
   

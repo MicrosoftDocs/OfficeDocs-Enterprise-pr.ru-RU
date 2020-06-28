@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2010, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: 0bfb3f60583f944971823f4653255cd2531e703a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 570386c2f12a098ee2ccb355b5d0fa20bc32aaee
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775108"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906242"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 
@@ -38,11 +38,11 @@ Office 2010 и Exchange 2010 достигают конца поддержки д
 
 Версии SharePoint 2010 и Project Server 2010 будут достигаться до **13 апреля 2021 г**.
 
-При планировании обновления это отличное время для перехода на Office 365 или Microsoft 365. 
+При планировании обновления это отличное время для перехода на Microsoft 365. 
 
-- В Office 365 имеются облачные службы для серверных продуктов Office 2010, такие как Exchange Server и SharePoint Server и службы, такие как teams и OneDrive для бизнеса. 
+- Microsoft 365 имеет облачные службы для Office 2010 Server Products, такие как Exchange Server и SharePoint Server и службы, такие как teams и OneDrive для бизнеса. 
 
-- Приложения Microsoft 365 для предприятий (ранее именуемые Office 365 профессиональный плюс), включенные в Office 365 E3 и, а также Microsoft 365 корпоративный, — это набор клиентских приложений Office, устанавливаемых на локальном устройстве. Они регулярно обновляются с учетом новых функций обеспечения производительности и безопасности в Microsoft Cloud.
+- Приложения Microsoft 365 для предприятий (ранее именуемые Office 365 профессиональный плюс), которые входят в состав Microsoft 365 E3 и "е", — это набор клиентских приложений Office, устанавливаемых на локальном устройстве. Они регулярно обновляются с учетом новых функций обеспечения производительности и безопасности в Microsoft Cloud.
 
 Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, ознакомьтесь с разрядом с [плакатом об отконце поддержки](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
@@ -66,9 +66,9 @@ Office 2010 и Exchange 2010 достигают конца поддержки д
 
 Если вы используете продукты и приложения Office 2010 на домашней странице, ознакомьтесь с [этими сведениями](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
-[Видео: что такое Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Видео: что такое Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Политика жизненного цикла поддержки Майкрософт](https://go.microsoft.com/fwlink/?linkid=865200)
 
