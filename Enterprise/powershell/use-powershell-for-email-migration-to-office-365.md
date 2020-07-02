@@ -16,18 +16,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: 'Сводка. Узнайте, как перенести электронную почту в Office 365: с помощью Windows PowerShell.'
-ms.openlocfilehash: df8c6715f47de4a7edce091c69c1b8218cbdcd54
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 340a8fd9ae40b64445a1b6dc25b16cf302ac377b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004542"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998611"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Использование PowerShell для переноса электронной почты в Office 365
 
- **Сводка.** Узнайте, как перенести электронную почту в Office 365, используя Windows PowerShell.
-  
-При начальной настройке Office 365: многие администраторы переносят электронную почту из существующих систем. Для этого также можно использовать пользовательский интерфейс администрирования Office 365:. Кроме того, для переноса электронной почты вы можете использовать Windows PowerShell.
+When administrators first set up Office 365, many of them migrate email from existing systems. You can also do this by using the Office 365 administration user interface. You can also use Windows PowerShell to migrate email.
   
 ## <a name="office-365-licensing-and-windows-powershell"></a>Лицензирование Office 365 и Windows PowerShell
 

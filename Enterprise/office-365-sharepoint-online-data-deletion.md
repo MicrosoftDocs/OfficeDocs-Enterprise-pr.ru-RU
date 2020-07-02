@@ -1,7 +1,7 @@
 ---
-title: Удаление данных в Office 365 SharePoint Online
-ms.author: robmazz
-author: robmazz
+title: Удаление данных Microsoft 365 SharePoint Online
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Пояснения об удалении данных в SharePoint Online.
-ms.openlocfilehash: fbb81d4f2440dc34ec261e943436c656f8266e8f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842046"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997819"
 ---
-# <a name="sharepoint-online-data-deletion-in-office-365"></a>Удаление данных в SharePoint Online в Office 365
+# <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Удаление данных SharePoint Online в Microsoft 365
 
 SharePoint Online хранит объекты в виде абстрактного кода в базах данных приложений. Когда пользователь отправляет файл в SharePoint Online, этот файл разбивается и преобразуется в код приложения и хранится в нескольких таблицах нескольких баз данных. В SharePoint Online весь контент, который отправляет клиент, разбивается на блоки, шифруются (потенциально с несколькими ключами AES 256-bit) и распределяются в центре обработки данных. Конкретные сведения о процессе фрагментирования и шифровании приведены в разделе [Шифрование в Microsoft Cloud](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview). 
 

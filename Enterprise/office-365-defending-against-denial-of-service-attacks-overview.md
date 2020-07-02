@@ -1,7 +1,7 @@
 ---
-title: Защита от атак типа "отказ в обслуживании" в Office 365
-ms.author: robmazz
-author: robmazz
+title: Защита от атак типа "отказ в обслуживании" в Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,23 +15,23 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Обзор атак типа "отказ в обслуживании" (DoS).
-ms.openlocfilehash: 16378800fc7bb61b8f78e2c4c51eb7940cb45d17
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 2cbe5eb86402fd7b7888f39440a58935604c90eb
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843592"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998423"
 ---
-# <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Защита от атак типа "отказ в обслуживании" в Office 365
+# <a name="defend-against-denial-of-service-attacks-in-microsoft-365"></a>Защита от атак типа "отказ в обслуживании" в Microsoft 365
 
-## <a name="introduction"></a>Общие сведения
+## <a name="introduction"></a>Введение
 
 Корпорация Майкрософт предоставляет надежную инфраструктуру для более чем 200 облачных служб, размещенных в глобальной облачной инфраструктуре с более чем 100 центрами обработки данных. К ним относятся:
 
 - Microsoft Azure
 - Microsoft Bing
 - Microsoft Dynamics 365
-- Microsoft Office 365
+- Microsoft 365 и Office 365
 - Microsoft OneDrive
 - Skype
 - Xbox LIVE

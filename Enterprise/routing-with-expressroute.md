@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Чтобы правильно разобрал трафик маршрутизации для Office 365 с помощью Azure ExpressRoute, вам потребуются сведения об основных требованиях к маршрутизации ExpressRoute, а также о доменах ExpressRoute и доменах маршрутизации. В этих статьях используются основные принципы использования ExpressRoute, на которые полагаются клиенты Office 365.
-ms.openlocfilehash: 0a83499c6724fd4e843a7bf6788ebf4df945f145
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c9d81e0823b63750a456f559855bb130a2e87b07
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844060"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998198"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Маршрутизация с использованием ExpressRoute для Office 365
 
-*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
 Чтобы правильно разобрал трафик маршрутизации для Office 365 с помощью Azure ExpressRoute, вам потребуются сведения об основных [требованиях к маршрутизации expressroute](https://azure.microsoft.com/documentation/articles/expressroute-routing/) , а также о [доменах expressroute и доменах маршрутизации](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/). В этих статьях используются основные принципы использования ExpressRoute, на которые полагаются клиенты Office 365.
   
@@ -117,7 +117,7 @@ ms.locfileid: "41844060"
 |\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*. office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
-|\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> автообнаружения —\<клиент\>. Outlook.com  <br/> |
+|\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> автообнаружения — \<tenant\> . Outlook.com  <br/> |
 |\*. windows.net  <br/> |login.windows.net  <br/> |
 
 ## <a name="routing-office-365-traffic-over-the-internet-and-expressroute"></a>Маршрутизация трафика Office 365 через Интернет и ExpressRoute
@@ -156,11 +156,11 @@ ms.locfileid: "41844060"
   
 - outlook.office365.com, outlook.office.com
 
-- \<\>имя \<клиента. SharePoint.com, имя клиента — имя\>My.SharePoint.com, \<имя\>-\<клиента App\>. SharePoint.com
+- \<tenant-name\>. SharePoint.com, \<tenant-name\> My.SharePoint.com, \<tenant-name\> - \<app\> . SharePoint.com
 
 - \*. Lync.com и диапазоны IP-адресов для трафика, не входящего в TCP
 
-- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*powerpoint.officeapps.live.com, \*view.officeapps.live.com, \*Visio.officeapps.Live.com, \*Word-Edit.officeapps.Live.com, \*Word-View.officeapps.Live.com, Office.Live.com
+- \*broadcast.officeapps.live.com, \* Excel.officeapps.Live.com, \* onenote.officeapps.live.com, \* PowerPoint.officeapps.Live.com, \* view.officeapps.live.com, \* Visio.officeapps.Live.com, \* Word-Edit.officeapps.Live.com, \* Word-View.officeapps.Live.com, Office.Live.com
 
 Узнайте больше о [развертывании и управлении параметрами прокси-сервера в Windows 8](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) и [предоставлении учетной записи пользователя ограничения на Office 365](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx).
   
@@ -215,7 +215,7 @@ Humongous страхование географически распределе
   
 Если в Humongous есть основные офисы нескольких континентов, рекомендуется не менее двух активных/активных цепей на регион, чтобы уменьшить задержку для конфиденциальных приложений, таких как Skype для бизнеса Online. Если все офисы относятся к одному континенту или не используют режим совместной работы в режиме реального времени, наличие консолидированной или распределенной точки исходящего трафика является особым решением для пользователя. Если доступно несколько каналов, маршрутизация BGP обеспечит отработку отказа, если одна цепь станет недоступна.
   
-Узнайте больше о примерах [конфигураций маршрутизации](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) и [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/).
+Узнайте больше о примерах [конфигураций маршрутизации](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) и [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/) .
   
 ## <a name="selective-routing-with-expressroute"></a>Выборочная маршрутизация с помощью ExpressRoute
 
@@ -225,7 +225,7 @@ Humongous страхование географически распределе
 
 2. **Файлы PAC/URL-адреса** — это направление сетевого трафика Office 365 для определенных полных доменных имен для маршрутизации по указанному пути. Это выборочно передается клиентским компьютером в соответствии с определенными [развернутыми файлами PAC](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies).
 
-3. **Route filtering** - [Фильтры маршрутов](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) фильтрации маршрутов — это способ использования подмножества поддерживаемых служб с помощью пиринга Майкрософт.
+3. **Фильтрация маршрутов**  -  [Фильтры маршрутов](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) — это способ использования подмножества поддерживаемых служб с помощью пиринга Майкрософт.
 
 4. **Сообщества BGP** — фильтрация на основе [тегов сообщества BGP](https://aka.ms/bgpexpressroute365) позволяет клиенту определять, какие приложения Office 365 будут перемещаться в ExpressRoute и что будет проходить через Интернет.
 

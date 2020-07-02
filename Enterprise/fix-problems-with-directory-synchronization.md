@@ -19,12 +19,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: В этой статье описаны распространенные причины проблем с синхронизацией службы каталогов в Office 365, а также несколько способов их решения.
-ms.openlocfilehash: cb2ec57331d227f0965095ee0782f13af935d569
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: d9e390a7230499f724ebbdae592264a850dd9418
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711912"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998037"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Устранение проблем с синхронизацией службы каталогов для Microsoft 365
 
@@ -42,9 +42,9 @@ ms.locfileid: "44711912"
   
 Следуйте [инструкциям в мастере](set-up-directory-synchronization.md), чтобы скачать Azure AD Connect. 
   
-Если вы по-прежнему используете Azure Active Directory Sync (DirSync), ознакомьтесь с [сообщениями об ошибках мастера установки и настройки средства синхронизации Azure Active Directory в Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) для получения сведений о требованиях к системе для установки DirSync, необходимых разрешений и устранении распространенных ошибок. 
+Если вы по-прежнему используете синхронизацию Azure Active Directory (DirSync), ознакомьтесь с [сообщениями об ошибках мастера установки и настройки средства синхронизации Azure Active Directory в Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) для получения сведений о требованиях к системе для установки DirSync, необходимых разрешений и устранении распространенных ошибок. 
   
-Чтобы перейти от средства синхронизации Azure Active Directory к Azure AD Connect, см. [инструкции по обновлению](https://go.microsoft.com/fwlink/p/?LinkId=733240).
+Чтобы выполнить обновление из Azure AD Sync в Azure AD Connect, ознакомьтесь [с инструкциями по обновлению](https://go.microsoft.com/fwlink/p/?LinkId=733240).
   
 ## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>Устранение распространенных причин проблем с синхронизацией службы каталогов в Microsoft 365
 

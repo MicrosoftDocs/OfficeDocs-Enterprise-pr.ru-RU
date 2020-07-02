@@ -1,7 +1,7 @@
 ---
-title: Стратегия защиты от атак в Office 365 для DoS
-ms.author: robmazz
-author: robmazz
+title: Стратегия защиты от атак Microsoft 365 DoS
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Обзор стратегии корпорации Майкрософт по защите от атак типа "отказ в обслуживании" (DoS).
-ms.openlocfilehash: c30e8e5c91ead81ceda9cfaeb4ef6b17c9addc9f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f3359bb39e01c6b090c30e9f7ce88d69dc3be17e
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844390"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998756"
 ---
-# <a name="office-365-denial-of-service-defense-strategy"></a>Стратегия защиты от атак типа "отказ в обслуживании" для Office 365
+# <a name="microsoft-365-denial-of-service-defense-strategy"></a>Стратегия защиты от атак типа "отказ в обслуживании" Microsoft 365
 
 Стратегия Майкрософт для защиты от атак типа "отказ в обслуживании" (DoS) является уникальной из-за масштаба и глобального размещения. Такая шкала позволяет корпорации Майкрософт использовать стратегии и методы, которые могут сопоставляться с другими организациями, поставщиками или организациями клиентов. Основой стратегии DoS является наше глобальное присутствие. Корпорация Майкрософт применяет Интернет-поставщики, поставщики пиринга (общедоступные и частные) и частные организации по всему миру. Это дает корпорации Майкрософт значительное присутствие в Интернете и позволяет корпорации Майкрософт пристигать атак в большой контактной зоне.
 

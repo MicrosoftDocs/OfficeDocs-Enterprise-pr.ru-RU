@@ -1,7 +1,7 @@
 ---
-title: Изоляция клиента Office 365 в Office 365 видео
-ms.author: robmazz
-author: robmazz
+title: Изоляция клиента в Office 365 - Видео
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,19 +15,19 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Сводка. Описание изоляции клиентов в Office 365 Video.
-ms.openlocfilehash: c7fb97180fbe6c96d2849be7725958a788309558
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d3d7f71260d74d598a8cc72962c2ab1ea1f2e6c3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843660"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998702"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Изоляция клиента в Office 365 - Видео
 
 > [!NOTE]
-> Видео Office 365 будет заменено на Microsoft Stream. Чтобы узнать больше о новой службе Enterprise Video, которая добавляет логику к совместной работе с видео и Узнайте о планах перехода для текущих пользователей Office 365 видео, ознакомьтесь со статьей [Переход в поток из Office 365 Video](https://docs.microsoft.com/stream/).
+> Видео Office 365 будет заменено на Microsoft Stream. Чтобы узнать больше о новой службе Enterprise Video, которая добавляет логику к совместной работе с видео и Узнайте о планах перехода для текущих пользователей Microsoft 365 видео, ознакомьтесь со статьей [Office 365 Video Transition to Microsoft Stream Overview](https://docs.microsoft.com/stream/migrate-from-office-365).
 
-## <a name="introduction"></a>Общие сведения
+## <a name="introduction"></a>Введение
 
 Служба хранилища Azure используется для хранения данных для нескольких служб Office 365, в том числе Office 365 Video и Sway. Хранилище Azure включает хранилище больших двоичных объектов, которое является масштабируемым хранилищем облачных объектов на основе REST, используемым для хранения неструктурированных данных. Служба хранилища Azure использует модель простого управления доступом; Каждая подписка на Azure может создать одну или несколько учетных записей хранения. Каждая учетная запись хранения имеет один секретный ключ, который используется для управления доступом ко всем данным в учетной записи хранения. Это поддерживает типичный сценарий, в котором хранилище связывается с приложениями, и эти приложения имеют полный контроль над связанными с ними данными; Например, Sway хранит контент в хранилище Azure. Весь контент клиента для Sway хранится в общих учетных записях хранения Azure. Контент каждого пользователя находится в отдельном дереве каталогов больших двоичных объектов в хранилище Azure.
 

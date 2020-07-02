@@ -13,19 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: Сводка. Решения SharePoint 2013 можно размещать на виртуальных машинах Microsoft Azure. Узнайте, какие типы решений хорошо для этого подходят и как настроить Microsoft Azure для их размещения.
-ms.openlocfilehash: 62a3668fe231e8cb5d60964a3325cc200126df12
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: 'Summary: SharePoint 2013 solutions can be hosted in Microsoft Azure virtual machines. Learn which type of solutions are a good fit and how to set up Microsoft Azure to host one.'
+ms.openlocfilehash: fee388f56faf2b30534d9a56926d9d62a176df19
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793742"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997901"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Архитектуры Microsoft Azure для SharePoint 2013
 
- **Сводка.** Решения SharePoint 2013 можно размещать на виртуальных машинах Microsoft Azure. Узнайте, какие типы решений хорошо для этого подходят и как настроить Microsoft Azure для их размещения.
-  
-Среда Azure отлично подходит для размещения решений SharePoint Server 2013. В большинстве случаев рекомендуем использовать Office 365, но ферма SharePoint Server, размещенная в Azure, может быть хорошим вариантом для определенных решений. В этой статье описано, как спроектировать решения SharePoint для обеспечения совместимости с платформой Azure. В качестве примеров используются два следующих решения:
+Среда Azure отлично подходит для размещения решений SharePoint Server 2013. В большинстве случаев рекомендуется использовать Microsoft 365, но ферма SharePoint Server, размещенная в Azure, может быть хорошим вариантом для определенных решений. В этой статье описано, как спроектировать решения SharePoint для обеспечения совместимости с платформой Azure. В качестве примеров используются два следующих решения:
   
 - [Аварийное восстановление SharePoint Server 2013 в Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -33,28 +31,28 @@ ms.locfileid: "43793742"
     
 ## <a name="recommended-sharepoint-solutions-for-azure-infrastructure-services"></a>Рекомендуемые решения SharePoint для служб инфраструктуры Azure
 
-Службы инфраструктуры Azure отлично подходят для размещения решений SharePoint. Не все решения одинаково совместимы с этой платформой. В приведенной ниже таблице представлены рекомендуемые решения.
+Azure infrastructure services is a compelling option for hosting SharePoint solutions. Some solutions are a better fit for this platform than others. The following table shows recommended solutions.
   
 |**Решение**|**Преимущества работы с Azure**|
 |:-----|:-----|
 |Среды разработки и тестирования  <br/> |Создавать такие среды и управлять ими легко.  <br/> |
-|Аварийное восстановление локальных ферм SharePoint в Azure  <br/> |**Размещенный вспомогательный центр обработки данных** Используйте Azure, чтобы не вкладывать средства во вспомогательный центр обработки данных в другом регионе. <br/> **Снижение затрат на среды аварийного восстановления** По сравнению с локальной средой аварийного восстановления потребуется обслуживать и оплачивать меньше ресурсов. Их количество зависит от выбранной среды аварийного восстановления: с холодным или горячим резервированием либо горячей заменой.<br/> **Более эластичная платформа** В случае аварии вы можете с легкостью развернуть ферму восстановления SharePoint в соответствии с требованиями к нагрузке. Когда необходимость в дополнительных ресурсах пропадет, вы можете свернуть ферму.<br/> См. статью [Аварийное восстановление SharePoint Server 2013 в Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Сайты в Интернете, которые используют функции и масштабирование, недоступные в Office 365  <br/> |**Правильные приоритеты** Сосредоточьтесь на создании отличного сайта, а не инфраструктуры. <br/> **Воспользуйтесь преимуществами эластичности Azure** Изменяйте размер фермы в соответствии с потребностями, добавляя новые серверы, и платите только за необходимые вам ресурсы. Динамическое распределение машин не поддерживается (автомасштабирование).<br/> **Использование службы Azure Active Directory (AD)** Воспользуйтесь преимуществами Azure AD для учетных записей клиентов. <br/> **Добавление функций SharePoint, недоступных в Office 365** Добавьте функции подробных отчетов и аналитики. <br/> См. статью [Веб-сайты в Microsoft Azure с использованием SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
-|Фермы приложений для поддержки Office 365 или локальных сред  <br/> |**Создание, тестирование и размещение приложений** в Azure для поддержки как локальных, так и облачных сред. <br/> **Разместите эту роль** в Azure, не покупая новое оборудование для локальных сред. <br/> |
+|Аварийное восстановление локальных ферм SharePoint в Azure  <br/> |**Размещенный вспомогательный центр обработки данных** Используйте Azure, чтобы не вкладывать средства во вспомогательный центр обработки данных в другом регионе. <br/> **Lower-cost disaster-recovery environments** Maintain and pay for fewer resources than an on-premises disaster recovery environment. The number of resources depends on the disaster recovery environment you choose: cold standby, warm standby, or hot standby. <br/> **More elastic platform** In the event of a disaster, easily scale-out your recovery SharePoint farm to meet load requirements. Scale in when you no longer need the resources. <br/> См. статью [Аварийное восстановление SharePoint Server 2013 в Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
+|Веб-сайты, использующие функции и масштабируемые, не поддерживаемые в Microsoft 365  <br/> |**Правильные приоритеты** Сосредоточьтесь на создании отличного сайта, а не инфраструктуры. <br/> **Take advantage of elasticity in Azure** Size the farm for the demand by adding new servers, and pay only for resources you need. Dynamic machine allocation is not supported (auto scale). <br/> **Использование службы Azure Active Directory (AD)** Воспользуйтесь преимуществами Azure AD для учетных записей клиентов. <br/> **Добавление функций SharePoint, недоступных в Microsoft 365** Добавьте глубокую отчетность и Web Analytics. <br/> См. статью [Веб-сайты в Microsoft Azure с использованием SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
+|Фермы приложений для поддержки Microsoft 365 или локальных сред  <br/> |**Создание, тестирование и размещение приложений** в Azure для поддержки как локальных, так и облачных сред. <br/> **Разместите эту роль** в Azure, не покупая новое оборудование для локальных сред. <br/> |
    
 Для решений интрасети и совместной работы рассмотрите следующие факторы.
   
-- Определите, соответствует ли Office 365 бизнес-требованиям и может ли быть частью решения. В Office 365 представлено много функций, которые постоянно обновляются.
+- Определите, соответствует ли Microsoft 365 требованиям бизнес-требований или является частью решения. Microsoft 365 предоставляет богатый набор функций, которые всегда актуальны.
     
-- Если Office 365 не соответствует вашим бизнес-требованиям, рекомендуется стандартная локальная реализация SharePoint 2013 из служб консультации Майкрософт (MCS). Поддерживать стандартную архитектуру может быть дешевле и проще, чем персонализированное решение. 
+- Если Microsoft 365 не отвечает всем бизнес-требованиям, рекомендуем использовать стандартную реализацию SharePoint 2013 в локальной среде консультационных служб Майкрософт (MCS). Поддерживать стандартную архитектуру может быть дешевле и проще, чем персонализированное решение. 
     
 - Если стандартная реализация не соответствует вашим бизнес-требованиям, рекомендуется персонализированное локальное решение.
     
-- Если ваши бизнес-требования включают использование облачной платформы, рассмотрите возможность стандартной или персонализированной реализации SharePoint 2013 с размещением в службах инфраструктуры Azure. Поддерживать решения SharePoint в Azure намного проще, чем другие общедоступные облачные платформы (не корпорации Майкрософт).
+- If using a cloud platform is important for your business requirements, consider a standard or customized implementation of SharePoint 2013 hosted in Azure infrastructure services. SharePoint solutions are much easier to support in Azure than other non-native Microsoft public cloud platforms.
     
 ## <a name="before-you-design-the-azure-environment"></a>Перед разработкой среды Azure
 
-Хотя в этой статье используются примеры топологий SharePoint, вы можете использовать эти проектные решения с любой топологией фермы SharePoint. Прежде чем разрабатывать среду Azure, используйте указанные ниже топологию, архитектуру, емкость и производительность для разработки фермы SharePoint.
+While this article uses example SharePoint topologies, you can use these design concepts with any SharePoint farm topology. Before you design the Azure environment, use the following topology, architecture, capacity, and performance guidance to design the SharePoint farm:
   
 - [Архитектура SharePoint 2013 для ИТ-специалистов](https://technet.microsoft.com/sharepoint/fp123594.aspx)
     
@@ -62,34 +60,34 @@ ms.locfileid: "43793742"
     
 ## <a name="determine-the-active-directory-domain-type"></a>Определение типа домена Active Directory
 
-Каждая ферма SharePoint Server использует службу Active Directory для создания учетных записей администраторов. В настоящее время существует два варианта для решений SharePoint в Azure. Они описываются в следующей таблице.
+Each SharePoint Server farm relies on Active Directory to provide administrative accounts for farm setup. At this time, there are two options for SharePoint solutions in Azure. These are described in the following table.
   
 |**Вариант**|**Описание**|
 |:-----|:-----|
-|Выделенный домен  <br/> |Вы можете развернуть выделенный изолированный домен Active Directory в Azure для поддержки фермы SharePoint. Этот вариант хорошо подходит для общедоступных сайтов в Интернете.  <br/> |
-|Расширение локального домена через подключение между организациями  <br/> |Когда вы расширяете локальный домен через подключение между организациями, пользователи получают доступ к ферме SharePoint через интрасеть, как будто она размещена локально. Вы можете использовать локальные службы Active Directory и DNS.  <br/> Для создания среды аварийного восстановления в Azure необходимо соединение между организациями, чтобы обрабатывать отказы локальной фермы.  <br/> |
+|Выделенный домен  <br/> |You can deploy a dedicated and isolated Active Directory domain to Azure to support your SharePoint farm. This is a good choice for public-facing Internet sites.  <br/> |
+|Расширение локального домена через подключение между организациями  <br/> |When you extend the on-premises domain through a cross-premises connection, users access the SharePoint farm via your intranet as if it were hosted on-premises. You can take advantage of your on-premises Active Directory and DNS implementation.  <br/> Для создания среды аварийного восстановления в Azure необходимо соединение между организациями, чтобы обрабатывать отказы локальной фермы.  <br/> |
    
-В этой статье представлены проектные решения для расширения локального домена через подключение между организациями. Если ваше решение использует выделенный домен, подключение между организациями не требуется.
+This article includes design concepts for extending the on-premises domain through a cross-premises connection. If your solution uses a dedicated domain, you don't need a cross-premises connection.
   
 ## <a name="design-the-virtual-network"></a>Разработка виртуальной сети
 
-Для начала вам потребуется виртуальная сеть в Azure, включающая подсети, в которых будут размещаться виртуальные машины. Для виртуальной сети необходимо пространство частных IP-адресов, части которого назначаются подсетям.
+First you need a virtual network in Azure, which includes subnets on which you will place your virtual machines. The virtual network needs a private IP address space, portions of which you assign to the subnets.
   
 Если вы расширяете локальную сеть в Azure через подключение между организациями (требуется для среды аварийного восстановления), необходимо выбрать пространство частных адресов, которое еще не используется в сети организации и может включать локальную среду и другие виртуальные сети Azure. 
   
 **Рисунок 1. Локальная среда с виртуальной сетью в Azure**
 
-![Конструкция виртуальной сети Microsoft Azure для решения SharePoint. Одна подсеть для шлюза Azure. Одна подсеть для виртуальных машин.](media/OPrrasconWA-AZarch.png)
+![Microsoft Azure virtual network design for a SharePoint solution. One subnet for the Azure gateway. One subnet for the virtual machines.](media/OPrrasconWA-AZarch.png)
   
 На этой схеме:
   
-- Виртуальная сеть в Azure показана рядом с локальной средой. Между двумя средами еще не установлено подключение (VPN-подключение типа "сеть-сеть" или подключение ExpressRoute);
+- A virtual network in Azure is illustrated side-by-side to the on-premises environment. The two environments are not yet connected by a cross-premises connection, which can be a site-to-site VPN connection or ExpressRoute.
     
-- Сейчас виртуальная сеть включает только подсети без остальных элементов архитектуры. В одной подсети будет размещаться шлюз Azure, а в других — уровни фермы SharePoint с дополнительной подсетью для Active Directory и DNS.
+- At this point, the virtual network just includes the subnets and no other architectural elements. One subnet will host the Azure gateway and other subnets host the tiers of the SharePoint farm, with an additional one for Active Directory and DNS.
     
 ## <a name="add-cross-premises-connectivity"></a>Добавление подключения между организациями
 
-Следующий этап развертывания  создание подключения между организациями (если это применимо к вашему решению). В схеме подключений между организациями шлюз Azure находится в отдельной подсети, которую необходимо создать и которой нужно назначить пространство адресов. 
+The next deployment step is to create the cross-premises connection (if this applies to your solution). For cross-premises connections, a Azure gateway resides in a separate gateway subnet, which you must create and assign an address space. 
   
 При планировании подключения между организациями необходимо определить и создать шлюз Azure и подключение к локальному устройству шлюза.
   
@@ -115,21 +113,21 @@ ms.locfileid: "43793742"
 
 ![Две виртуальные машины, развернутые в виртуальной сети Azure и подсети фермы SharePoint — это реплики контроллеров домена и DNS-серверы](media/AZarch-HyADdomainConfig.png)
   
-В отличие от предыдущих схем, на этой схеме в подсеть AD на сервере Windows и DNS добавлены две виртуальные машины. Это реплики контроллеров доменов и DNS-серверов. Они являются расширением локальной среды AD на сервере Windows. 
+This diagram builds on the previous diagrams by adding two virtual machines to a Windows Server AD and DNS subnet. These virtual machines are replica domain controllers and DNS servers. They are an extension of the on-premises Windows Server AD environment. 
   
-В таблице ниже приведены рекомендации по настройке этих виртуальных машин в Azure. Используйте их в качестве основы для разработки своей среды  даже для выделенного домена, где среда Azure не подключена к локальной среде.
+The following table provides configuration recommendations for these virtual machines in Azure. Use these as a starting point for designing your own environment—even for a dedicated domain where your Azure environment doesn't communicate with your on-premises environment.
   
 |**Элемент**|**Конфигурация**|
 |:-----|:-----|
 |Размер виртуальных машин в Azure  <br/> |Размер A1 или A2 стандартного уровня  <br/> |
 |Операционная система  <br/> |Windows Server 2012 R2  <br/> |
-|Роль Active Directory  <br/> |Контроллер домена AD DS, выбранный в качестве сервера глобального каталога. Эта конфигурация снижает выходной трафик соединения между организациями.  <br/> В среде с несколькими доменами и высокими темпами роста (такие среды встречаются редко) настройте локальные контроллеры домена так, чтобы они не синхронизировались с серверами глобального каталога в Azure, что позволяет снизить трафик репликации.  <br/> |
+|Роль Active Directory  <br/> |AD DS domain controller designated as a global catalog server. This configuration reduces egress traffic across the cross-premises connection.  <br/> В среде с несколькими доменами и высокими темпами роста (такие среды встречаются редко) настройте локальные контроллеры домена так, чтобы они не синхронизировались с серверами глобального каталога в Azure, что позволяет снизить трафик репликации.  <br/> |
 |Роль DNS  <br/> |Установка и настройка службы DNS-серверов на контроллерах доменов.  <br/> |
-|Диски с данными  <br/> |Разместите базу данных Active Directory, журналы и SYSVOL на дополнительных дисках с данными Azure. Не размещайте их на диске операционной системы и временных дисках, предоставленных Azure.  <br/> |
+|Диски с данными  <br/> |Place the Active Directory database, logs, and SYSVOL on additional Azure data disks. Do not place these on the operating system disk or the temporary disks provided by Azure.  <br/> |
 |IP-адреса  <br/> |Используйте статические IP-адреса и настройте виртуальную сеть, чтобы назначить эти адреса виртуальным машинам в виртуальной сети после того, как будут настроены контроллеры доменов.  <br/> |
    
 > [!IMPORTANT]
-> Перед развертыванием Active Directory в Azure прочитайте [руководства по развертыванию Windows Server Active Directory на виртуальных машинах Azure](https://go.microsoft.com/fwlink/p/?linkid=392681). Они помогут вам определить, требуются ли для вашего решения другие параметры конфигурации или другая архитектура. 
+> Before you deploy Active Directory in Azure, read [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://go.microsoft.com/fwlink/p/?linkid=392681). These help you determine if a different architecture or different configuration settings are needed for your solution. 
   
 ## <a name="add-the-sharepoint-farm"></a>Добавление фермы SharePoint
 
@@ -147,15 +145,15 @@ ms.locfileid: "43793742"
     
 ## <a name="design-and-fine-tune-server-roles-for-availability-sets-and-fault-domains"></a>Разработка и точная настройка ролей серверов для групп доступности и доменов сбоя
 
-Домен сбоя  это набор оборудования, на котором выполняются экземпляры ролей. Инфраструктура Azure может одновременно обновлять все виртуальные машины в одном домене сбоя. Тем не менее они могут одновременно отказать, так как используют одну стойку. Чтобы не размещать две виртуальные машины в одном домене сбоя, вы можете настроить их как группу доступности, тогда каждая виртуальная машина будет размещаться в отдельном домене сбоя. Если три виртуальные машины настроены как группа доступности, Azure гарантирует, что в одном домене сбоя размещается не больше двух виртуальных машин.
+A fault domain is a grouping of hardware in which role instances run. Virtual machines within the same fault domain can be updated by the Azure infrastructure at the same time. Or, they can fail at the same time because they share the same rack. To avoid the risk of having two virtual machines on the same fault domain, you can configure your virtual machines as an availability set, which ensures that each virtual machine is in a different fault domain. If three virtual machines are configured as an availability set, Azure guarantees that no more than two of the virtual machines are located in the same fault domain.
   
-При разработке архитектуры Azure для фермы SharePoint настройте одинаковые роли серверов как группу доступности. Это обеспечит распределение виртуальных машин между несколькими доменами сбоя.
+When you design the Azure architecture for a SharePoint farm, configure identical server roles to be part of an availability set. This ensures that your virtual machines are spread across multiple fault domains.
   
 **Рисунок 5. Использование групп доступности Azure для обеспечения высокой доступности уровней фермы SharePoint**
 
 ![Конфигурация групп доступности в инфраструктуре Azure для решения SharePoint 2013](media/AZenv-WinAzureAvailSetsHA.png)
   
-На этой схеме показана конфигурация групп доступности в инфраструктуре Azure. Перечисленные ниже роли используют отдельную группу доступности.
+This diagram calls out the configuration of availability sets within the Azure infrastructure. Each of the following roles share a separate availability set:
   
 - Active Directory и DNS
     
@@ -167,9 +165,9 @@ ms.locfileid: "43793742"
     
 - Интерфейсный сервер
     
-Может потребоваться точная настройка фермы SharePoint на платформе Azure. Чтобы обеспечить высокую доступность всех компонентов, убедитесь, что все роли серверов настроены одинаково.
+The SharePoint farm might need to be fine tuned in the Azure platform. To ensure high availability of all components, ensure that the server roles are all configured identically.
   
-Ниже приводится пример стандартной архитектуры веб-сайтов, которая соответствует определенным требованиям к мощности и производительности. Этот пример представлен в модели [Архитектуры поиска на веб-сайтах для SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=261519).
+Here is an example that shows a standard Internet Sites architecture that meets specific capacity and performance goals. This example is featured in the following architecture model: [Internet Sites Search Architectures for SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=261519).
   
 **Рисунок 6. Пример планирования емкости и производительности в трехуровневой ферме**
 
@@ -183,7 +181,7 @@ ms.locfileid: "43793742"
     
 - Два сервера баз данных настроены одинаково.
     
-- Три сервера приложений настроены по-разному. Эти роли серверов требуют точной настройки для групп доступности в Azure.
+- The three application servers are not configured identically. These server roles require fine tuning for availability sets in Azure.
     
 Рассмотрим уровень серверов приложений подробнее.
   
@@ -201,7 +199,7 @@ ms.locfileid: "43793742"
     
 - третий сервер включает два компонента.
     
-Количество компонентов определяется требованиями к производительности и емкости фермы. Чтобы адаптировать эту архитектуру для Azure, мы реплицируем четыре компонента на всех трех серверах. Таким образом, количество компонентов будет превышать необходимое. С другой стороны, такая схема обеспечивает высокую доступность всех четырех компонентов на платформе Azure, когда эти три виртуальные машины назначаются группе доступности.
+You determine the number of components by the performance and capacity targets for the farm. To adapt this architecture for Azure, we'll replicate the four components across all three servers. This increases the number of components beyond what is necessary for performance and capacity. The tradeoff is that this design ensures high availability of all four components in the Azure platform when these three virtual machines are assigned to an availability set.
   
 **Рисунок 8. Уровень серверов приложений после точной настройки**
 

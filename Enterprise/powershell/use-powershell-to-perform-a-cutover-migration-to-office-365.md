@@ -15,31 +15,29 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Сводка. Узнайте, как использовать Windows PowerShell для прямой миграции в Office 365.
-ms.openlocfilehash: 159ebe7d279713168993c51529b9935c6e5d681a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: b40c6ac53a173f700c6b931781d98d7965a2be7c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004532"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998574"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Прямая миграция в Office 365 с помощью PowerShell
 
- **Сводка.** Узнайте, как выполнить прямую миграцию в Office 365, используя Windows PowerShell.
+You can migrate the contents of user mailboxes from a source email system to Office 365 all at once by using a cutover migration. This article walks you through the tasks for an email cutover migration by using Exchange Online PowerShell. 
   
-Вы можете одновременно перенести содержимое почтовых ящиков пользователей из исходной системы электронной почты в Office 365:, используя прямую миграцию. В этой статье описаны задачи, которые выполняются при прямой миграции электронной почты с помощью Exchange Online PowerShell. 
-  
-Процесс миграции в общих чертах рассматривается в статье [Что необходимо знать о прямой миграции электронной почты в Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536688). Ознакомившись с содержимым этой статьи, начните переносить почтовые ящики из одной почтовой системы в другую, руководствуясь приведенными в этой статье сведениями.
+By reviewing the topic, [What you need to know about a cutover email migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536688), you can get an overview of the migration process. When you're comfortable with the contents of that article, use this one to begin migrating mailboxes from one email system to another.
   
 > [!NOTE]
-> Для прямой миграции можно также использовать Центр администрирования Exchange. См. статью [Прямая миграция электронной почты в Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536689). 
+> You can also use the Exchange admin center to perform a cutover migration. See [Perform a cutover migration of email to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536689). 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Что нужно знать перед началом работы?
 
-Предполагаемое время выполнения задачи: от 2 до 5 минут для создания пакета миграции. После запуска пакета миграции продолжительность миграции будет зависеть от количества почтовых ящиков в пакете, размера каждого почтового ящика и доступной пропускной способности сети. Подробнее о других факторах, влияющих на продолжительность миграции почтовых ящиков в Office 365:, см. в статье [Производительность миграции](https://go.microsoft.com/fwlink/p/?LinkId=275079)
+Estimated time to complete this task: 2-5 minutes to create a migration batch. After the migration batch is started, the duration of the migration will vary based on the number of mailboxes in the batch, the size of each mailbox, and your available network capacity. For information about other factors that affect how long it takes to migrate mailboxes to Office 365, see [Migration Performance](https://go.microsoft.com/fwlink/p/?LinkId=275079).
   
-Для выполнения этой процедуры (процедур) необходимы соответствующие разрешения. Сведения о необходимых разрешениях см. в пункте "Миграция" статьи [Разрешения получателей](https://go.microsoft.com/fwlink/p/?LinkId=534105) в соответствующей таблице.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Migration" entry in a table in the [Recipients Permissions](https://go.microsoft.com/fwlink/p/?LinkId=534105) topic.
   
-Чтобы использовать командлеты Exchange Online PowerShell, вам необходимо войти в систему и импортировать командлеты в локальный сеанс Windows PowerShell. Инструкции см в статье [Подключение к Exchange Online с помощью удаленной оболочки PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=534121).
+To use the Exchange Online PowerShell cmdlets, you need to sign in and import the cmdlets into your local Windows PowerShell session. See [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=534121) for instructions.
   
 Полный список команд миграции см. в статье [Командлеты перемещения и миграции](https://go.microsoft.com/fwlink/p/?LinkId=534750).
   
@@ -48,9 +46,9 @@ ms.locfileid: "44004532"
 ### <a name="step-1-prepare-for-a-cutover-migration"></a>Шаг 1. Подготовка к прямой миграции
 <a name="BK_Step1"> </a>
 
-- **Добавьте локальную организацию Exchange в качестве обслуживаемого домена организации Office 365.** Служба миграции использует SMTP-адрес локальных почтовых ящиков для создания идентификатора пользователя Microsoft Online Services и адреса электронной почты для новых почтовых ящиков Office 365:. Выполнить миграцию не удастся, если домен Exchange не является обслуживаемым или основным доменом организации Office 365:. Дополнительные сведения см. в статье[Проверка домена в Office 365](https://go.microsoft.com/fwlink/p/?LinkId=534110).
+- **Add your on-premises Exchange organization as an accepted domain of your Office 365 organization.** The migration service uses the SMTP address of your on-premises mailboxes to create the Microsoft Online Services user ID and email address for the new Office 365 mailboxes. Migration will fail if your Exchange domain isn't an accepted domain or the primary domain of your Office 365 organization. For more information, see[Verify your domain in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=534110).
     
-- **Настройте мобильный Outlook на локальном сервере Exchange.** Служба миграции электронной почты использует протокол RPC через HTTP, также называемый мобильный Outlook, для подключения к локальному серверу Exchange Server. Дополнительные сведения о настройке службы мобильный Outlook для Exchange 2010, Exchange 2007 и Exchange 2003 см. в следующих статьях.
+- **Configure Outlook Anywhere on your on-premises Exchange server.** The email migration service uses RPC over HTTP, or Outlook Anywhere, to connect to your on-premises Exchange server. For information about how to set up Outlook Anywhere for Exchange 2010, Exchange 2007, and Exchange 2003, see the following:
     
   - [Exchange 2010. Включение мобильного Outlook](https://go.microsoft.com/fwlink/?LinkID=187249)
     
@@ -61,13 +59,13 @@ ms.locfileid: "44004532"
   - [Настройка мобильного Outlook в Exchange 2003](https://go.microsoft.com/fwlink/?LinkID=167209)
     
     > [!IMPORTANT]
-    > Конфигурацию мобильного Outlook необходимо настроить с использованием сертификата, выпущенного доверенным центром сертификации (ЦС). Настройка с использованием самозаверяющего сертификата невозможна. Дополнительные сведения см. в статье [Инструкции по настройке протокола SSL для мобильного Outlook](https://go.microsoft.com/fwlink/?LinkID=80875). 
+    > Your Outlook Anywhere configuration must be configured with a certificate issued by a trusted certification authority (CA). It can't be configured with a self-signed certificate. For more information, see [How to Configure SSL for Outlook Anywhere](https://go.microsoft.com/fwlink/?LinkID=80875). 
   
-- **Проверьте возможность подключения к организации Exchange с помощью мобильного Outlook.** Проверьте настройки подключения с использованием следующих способов.
+- **Verify that you can connect to your Exchange organization using Outlook Anywhere.** Try one of these methods to test your connection settings:
     
   - Подключитесь к локальному почтовому ящику Exchange с помощью Microsoft Outlook из-за пределов корпоративной сети.
     
-  - Проверьте настройки подключения с помощью [анализатора удаленного подключения Exchange](https://www.testexchangeconnectivity.com/) корпорации Майкрософт. Используйте средства мобильного Outlook (RPC через HTTP) или проверки автообнаружения Outlook.
+  - Use the Microsoft [Exchange Remote Connectivity Analyzer](https://www.testexchangeconnectivity.com/) to test your connection settings. Use the Outlook Anywhere (RPC over HTTP) or Outlook Autodiscover tests.
     
   - В Exchange Online PowerShell выполните следующие команды.
     
@@ -81,11 +79,11 @@ ms.locfileid: "44004532"
 
 - **Назначьте для локальной учетной записи необходимые разрешения на доступ к почтовым ящикам в организации Exchange.** Локальная учетная запись пользователя, которая используется для подключения к локальной организации Exchange (также называемую администратором миграции), должна иметь необходимые разрешения для доступа к локальным почтовым ящикам, которые необходимо перенести в Office 365. Эта учетная запись пользователя необходима для создания конечной точки миграции в вашей локальной организации.
     
-    В следующем списке перечислены права администратора, необходимые для переноса почтовых ящиков с помощью прямой миграции. У вас есть три варианта.
+    The following list shows the administrative privileges required to migrate mailboxes using a cutover migration. There are three possible options.
     
   - Администратор миграции должен быть членом группы **Администраторы домена** в службе каталогов Active Directory локальной организации.
     
-    ИЛИ
+    или
     
   - Администратор миграции должен иметь разрешение **FullAccess** для всех локальных почтовых ящиков.
     
@@ -93,14 +91,14 @@ ms.locfileid: "44004532"
     
   - Администратор миграции должен иметь разрешение **Получить как** в локальной базе данных, где хранятся почтовые ящики пользователей.
     
-- **Отключите единую систему обмена сообщениями.** Если для локальных почтовых ящиков включена поддержка единой системы обмена сообщениями, ее необходимо отключить, прежде чем переносить почтовые ящики. После завершения миграции поддержку единой системы обмена сообщениями для этих ящиков можно снова включить.
+- **Disable Unified Messaging.** If the on-premises mailboxes you're migrating are enabled for Unified Messaging (UM), you have to disable UM on the mailboxes before you migrate them. You can then enable UM on the mailboxes after the migration is complete.
     
-- **Группы безопасности и делегаты.** Служба миграции электронной почты не может определить, являются ли локальные группы Active Directory группами безопасности, поэтому эта служба не может подготовить к работе перенесенные группы в качестве групп безопасности в Office 365. Если вы хотите иметь группы безопасности в клиенте Office 365, сначала необходимо подготовить к работе пустую группу безопасности, поддерживающую почту, в клиенте Office 365 перед запуском прямой миграции. Кроме того, этот метод миграции обеспечивает перемещение только почтовых ящиков, почтовых пользователей, почтовых контактов и групп, поддерживающих почту. Если любой другой объект Active Directory, например пользователь, не перенесенный в Office 365:, назначается в качестве руководителя или делегата для переносимого объекта, перед миграцией их необходимо удалить из объекта.
+- **Security Groups and Delegates** The email migration service cannot detect whether on-premises Active Directory groups are security groups or not, so it cannot provision any migrated groups as security groups in Office 365. If you want to have security groups in your Office 365 tenant, you must first provision an empty mail-enabled security group in your Office 365 tenant before starting the cutover migration. Additionally, this migration method only moves mailboxes, mail users, mail contacts, and mail-enabled groups. If any other Active Directory object, such as user that is not migrated to Office 365, is assigned as a manager or delegate to an object being migrated, they must be removed from the object before you migrate.
     
 ### <a name="step-2-create-a-migration-endpoint"></a>Шаг 2. Создание конечной точки миграции
 <a name="BK_Step2"> </a>
 
-Для успешного переноса электронной почты решение Office 365: должно обмениваться данными с исходной системой электронной почты. Для этого Office 365 использует конечную точку миграции. Чтобы создать конечную точку миграции мобильного Outlook для прямой миграции, сначала [подключитесь к Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
+To migrate email successfully, Office 365 needs to connect and communicate with the source email system. To do this, Office 365 uses a migration endpoint. To create an Outlook Anywhere migration endpoint for cutover migration, first [connect to Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
   
 Полный список команд миграции см. в статье [Командлеты перемещения и миграции](https://go.microsoft.com/fwlink/p/?LinkId=534750).
   
@@ -121,7 +119,7 @@ New-MigrationEndpoint -ExchangeOutlookAnywhere -Name CutoverEndpoint -Connection
 ```
 
 > [!NOTE]
-> С помощью командлета **New-MigrationEndpoint** и параметра **-TargetDatabase** можно указать базу данных, которая будет использоваться службой. В противном случае база данных назначается случайным образом на сайте Службы федерации Active Directory (AD FS) 2.0, на котором расположен почтовый ящик управления.
+> The **New-MigrationEndpoint** cmdlet can be used to specify a database for the service to use by using the **-TargetDatabase** option. Otherwise a database is randomly assigned from the Active Directory Federation Services (AD FS) 2.0 site where the management mailbox is located.
   
 #### <a name="verify-it-worked"></a>Проверка работы
 
@@ -135,13 +133,13 @@ Get-MigrationEndpoint CutoverEndpoint | Format-List EndpointType,ExchangeServer,
 ### <a name="step-3-create-the-cutover-migration-batch"></a>Шаг 3. Создание пакета прямой миграции
 <a name="BK_Step3"> </a>
 
-Чтобы создать пакет для прямой миграции, выполните командлет **New-MigrationBatch** в Exchange Online PowerShell. Можно создать пакет миграции и запустить его обработку автоматически, включив параметр _AutoStart_. Кроме того, вы можете создать пакет миграции, а затем вручную запустить его с помощью командлета **Start-MigrationBatch**. В этом примере создается пакет миграции CutoverBatch и используется конечная точка миграции, созданная на предыдущем шаге.
+You can use the **New-MigrationBatch** cmdlet in Exchange Online PowerShell to create a migration batch for a cutover migration. You can create a migration batch and start it automatically by including the _AutoStart_ parameter. Alternatively, you can create the migration batch and then manually start it afterwards by using the **Start-MigrationBatch** cmdlet. This example creates a migration batch called "CutoverBatch" and uses the migration endpoint that was created in the previous step.
   
 ```
 New-MigrationBatch -Name CutoverBatch -SourceEndpoint CutoverEndpoint -AutoStart
 ```
 
-В этом примере также создается пакет миграции CutoverBatch и используется конечная точка миграции, созданная на предыдущем шаге. Так как параметр  _AutoStart_ не включен, пакет миграции необходимо запустить вручную на панели мониторинга миграции или с помощью командлета **Start-MigrationBatch**. Как было сказано выше, в одно и то же время может существовать только один пакет прямой миграции.
+This example also creates a migration batch called "CutoverBatch" and uses the migration endpoint that was created in the previous step. Because the  _AutoStart_ parameter isn't included, the migration batch has to be manually started on the migration dashboard or by using **Start-MigrationBatch** cmdlet. As previously stated, only one cutover migration batch can exist at a time.
   
 ```
 New-MigrationBatch -Name CutoverBatch -SourceEndpoint CutoverEndpoint
@@ -158,7 +156,7 @@ Get-MigrationBatch | Format-List
 ### <a name="step-4-start-the-cutover-migration-batch"></a>Шаг 4. Запуск пакета прямой миграции
 <a name="BK_Step4"> </a>
 
-Чтобы запустить пакет миграции в Exchange Online PowerShell, выполните следующую команду. Будет создан пакет миграции CutoverBatch.
+To start the migration batch in Exchange Online PowerShell, run the following command. This will create a migration batch called "CutoverBatch".
   
 ```
 Start-MigrationBatch -Identity CutoverBatch
@@ -166,7 +164,7 @@ Start-MigrationBatch -Identity CutoverBatch
 
 #### <a name="verify-it-worked"></a>Проверка работы
 
-Если пакет миграции успешно запущен, состояние пакета на панели мониторинга миграции изменится на "Синхронизация". Чтобы убедиться, вы успешно запустили пакет миграции с помощью Exchange Online PowerShell, выполните следующую команду.
+If a migration batch is successfully started, its status on the migration dashboard is specified as Syncing. To verify that you've successfully started a migration batch using Exchange Online PowerShell, run the following command:
   
 ```
 Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
@@ -175,20 +173,20 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ### <a name="step-5-route-your-email-to-office-365"></a>Шаг 5. Маршрутизация электронной почты в Office 365
 <a name="BK_Step5"> </a>
 
-Чтобы выяснить, куда доставлять сообщения электронной почты, системы электронной почты используют DNS-запись, которая называется записью MX. В процессе миграции электронной почты запись MX указывала на вашу исходную систему электронной почты. Теперь, когда перенос электронной почты в Office 365: завершен, запись MX должна указывать на Office 365:. Это обеспечит доставку электронной почты в ваши почтовые ящики Office 365:. Перемещая запись MX, вы также сможете отключить старую систему электронной почты, когда будете готовы сделать это. 
+Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your source email system. Now that the email migration to Office 365 is complete, it's time to point your MX record at Office 365. This helps make sure that email is delivered to your Office 365 mailboxes. By moving the MX record, you can also you turn off your old email system when you're ready. 
   
-Многим поставщикам DNS следует придерживаться инструкций по [изменению записи MX](https://go.microsoft.com/fwlink/p/?LinkId=279163). Если ваш поставщик DNS не включен в этот список, или если вы хотите получить представление об общих указаниях, см. [статью с общими инструкции в отношении записи MX](https://go.microsoft.com/fwlink/?LinkId=397449).
+For many DNS providers, there are specific instructions to [change your MX record](https://go.microsoft.com/fwlink/p/?LinkId=279163). If your DNS provider isn't included, or if you want to get a sense of the general directions, [general MX record instructions ](https://go.microsoft.com/fwlink/?LinkId=397449) are provided as well.
   
-Системам электронной почты клиентов и партнеров может потребоваться до 72 часов, чтобы распознать измененную запись MX. Подождите по крайней мере 72 часа, прежде чем перейти к следующей задаче: [Шаг 6. Удаление пакета прямой миграции](use-powershell-to-perform-a-cutover-migration-to-office-365.md#Bk_step6). 
+It can take up to 72 hours for the email systems of your customers and partners to recognize the changed MX record. Wait at least 72 hours before you proceed to the next task: [Step 6: Delete the cutover migration batch](use-powershell-to-perform-a-cutover-migration-to-office-365.md#Bk_step6). 
   
 ### <a name="step-6-delete-the-cutover-migration-batch"></a>Шаг 6. Удаление пакета прямой миграции
 <a name="Bk_step6"> </a>
 
-После того как вы измените запись MX и убедитесь, что вся электронная почта направляется в почтовые ящики Office 365:, уведомите пользователей о том, что их сообщения доставляются в Office 365. Затем можно удалить пакет прямой миграции. Убедитесь в следующем, прежде чем удалить пакет миграции.
+After you change the MX record and verify that all email is being routed to Office 365 mailboxes, notify the users that their mail is going to Office 365. After this, you can delete the cutover migration batch. Verify the following before you delete the migration batch.
   
-- Все пользователи используют почтовые ящики Office 365:. После удаления пакета почта, отправляемая в почтовые ящики на локальном сервере Exchange Server, не копируется в соответствующие почтовые ящики Office 365:.
+- All users are using Office 365 mailboxes. After the batch is deleted, mail sent to mailboxes on the on-premises Exchange Server isn't copied to the corresponding Office 365 mailboxes.
     
-- Почтовые ящики Office 365: синхронизированы по крайней мере один раз после того, как почта стала доставляться непосредственно в них. Для этого убедитесь, что значение в поле "Время последней синхронизации" для пакета миграции позже даты и времени, когда почта стала направляться непосредственно в почтовые ящики Office 365:.
+- Office 365 mailboxes were synchronized at least once after mail began being sent directly to them. To do this, make sure that the value in the Last Synced Time box for the migration batch is more recent than when mail started being routed directly to Office 365 mailboxes.
     
 Чтобы удалить пакет миграции CutoverBatch в Exchange Online PowerShell, выполните следующую команду.
   
@@ -204,14 +202,14 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="step-8-complete-post-migration-tasks"></a>Шаг 8. Необходимые действия после миграции
 <a name="BK_Step8"> </a>
 
-- **Создайте DNS-запись автообнаружения, чтобы пользователи смогли с легкостью получить доступ к своим почтовым ящикам.** После переноса всех локальных почтовых ящиков в Office 365: вы можете настроить DNS-запись автообнаружения для своей организации Office 365:, чтобы пользователи могли с легкостью подключаться к своим новым почтовым ящикам Office 365: с помощью Outlook и мобильных клиентов. В этой новой DNS-записи автообнаружения необходимо использовать то же пространство имен, которое используется для организации Office 365:. Например, если облачное пространство имен  cloud.contoso.com, необходимо создать DNS-запись автообнаружения autodiscover.cloud.contoso.com.
+- **Create an Autodiscover DNS record so users can easily get to their mailboxes.** After all on-premises mailboxes are migrated to Office 365, you can configure an Autodiscover DNS record for your Office 365 organization to enable users to easily connect to their new Office 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Office 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
     
     Если Exchange Server останется, убедитесь, что после миграции запись CNAME службы доменных имен (DNS) для автообнаружения указывает на Office 365 на внутренних и внешних DNS-серверах, чтобы клиент Outlook мог подключиться к правильному почтовому ящику.
     
     > [!NOTE]
     >  В Exchange 2007, Exchange 2010 и Exchange 2013 для параметра  `Set-ClientAccessServer AutodiscoverInternalConnectionURI` необходимо задать значение `Null`. 
   
-    В Office 365: запись CNAME служит для реализации службы автообнаружения для клиентов Outlook и мобильных клиентов. Необходимо, чтобы запись CNAME для автообнаружения содержала следующие сведения.
+    Office 365 uses a CNAME record to implement the Autodiscover service for Outlook and mobile clients. The Autodiscover CNAME record must contain the following information:
     
   - **Псевдоним:** autodiscover
     
@@ -219,7 +217,7 @@ Remove-MigrationBatch -Identity CutoverBatch
     
     Дополнительные сведения см. в статье [Создание DNS-записей для Office 365 при управлении DNS-записями](https://go.microsoft.com/fwlink/p/?LinkId=535028).
     
-- **Выполните списание локальных серверов Exchange.** Как только вы убедитесь, что вся электронная почта направляется непосредственно в почтовые ящики Office 365:, поэтому вам больше не нужно поддерживать свою локальную организацию электронной почты, либо если вы не планируете внедрять решение единого входа, вы можете удалить Exchange с серверов, а также удалить свою локальную организацию Exchange.
+- **Decommission on-premises Exchange servers.** After you've verified that all email is being routed directly to the Office 365 mailboxes, and you no longer need to maintain your on-premises email organization or don't plan on implementing a single sign-on (SSO) solution, you can uninstall Exchange from your servers and remove your on-premises Exchange organization.
     
     Дополнительные сведения см. в следующих статьях:
     

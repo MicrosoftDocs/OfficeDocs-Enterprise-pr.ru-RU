@@ -1,7 +1,7 @@
 ---
-title: Поддержка клиентских приложений Office 365 — единый вход
-ms.author: robmazz
-author: robmazz
+title: Поддержка клиентских приложений Microsoft 365 — единый вход
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Поддержка единого входа в клиентские приложения Office 365.
-ms.openlocfilehash: 8d6ba1701d9981bb5833bd6cf6ace641d5a27181
-ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
+description: Поддержка единого входа в клиентские приложения Microsoft 365.
+ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44619335"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998517"
 ---
-# <a name="office-365-client-app-support--single-sign-on"></a>Поддержка клиентских приложений Office 365 — единый вход
+# <a name="microsoft-365-client-app-support--single-sign-on"></a>Поддержка клиентских приложений Microsoft 365 — единый вход
 
-*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
 Единый вход (SSO) обеспечивает безопасность и удобство при входе пользователей в приложения в Azure Active Directory (Azure AD). При использовании единого входа пользователи могут войти в систему с одной учетной записью, чтобы получить доступ к устройствам, связанным с доменом, ресурсам компании, программному обеспечению и веб-приложениям.
 
@@ -39,7 +39,7 @@ ms.locfileid: "44619335"
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-Дополнительные сведения о поддержке платформ в Office 365 приведены в статье [требования к системе для office 365](https://products.office.com/office-system-requirements).
+Дополнительные сведения о поддержке платформ в Microsoft 365 приведены в разделе [требования к системе для microsoft 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Поддерживаемые клиенты
 

@@ -3,7 +3,7 @@ title: URL-адреса и диапазоны IP-адресов Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/16/2020
+ms.date: 06/29/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,16 +24,16 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Summary: Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 58453be147fec41bb35b7d6d758ce3d5df5a4148
-ms.sourcegitcommit: f2a4b77c8c3932beb1a78bf2f5bf793fefb3fa49
+ms.openlocfilehash: d75fa6d88255ff5df785fa335a9976c4bcca309d
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44747375"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997452"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL-адреса и диапазоны IP-адресов Office 365
 
- **Summary:** Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).
+Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 plans, including Government Community Cloud (GCC).
   
 > [!NOTE]
 > В рамках реакции на кризис с COVID-19 корпорация Майкрософт объявила временный мораторий на некоторые запланированные изменения URL- и IP-адресов. Этот мораторий предназначен для того, чтобы ИТ-отделы уверенно и легко выполняли рекомендуемые меры оптимизации сетей для сценариев Office 365 при работе из дома. С 24 марта по 30 июня 2020 г. этот мораторий приостанавливает изменения диапазонов IP-адресов и URL-адресов основных служб Office 365 (Exchange Online, SharePoint Online и Microsoft Teams), включенных в категорию оптимизации. Изменения в конечных точках других категорий будут выполняться в обычном режиме. В этот период клиенты могут использовать определения конечных точек служб Office 365 из категории оптимизации статическим способом, чтобы выполнять целевую оптимизацию сетей (например, резервирование пропускной способности или настройку раздельного VPN-туннелирования) с минимальным риском для подключения Office 365 благодаря изменениям сети в облачной среде. Чтобы гарантировать отсутствие перерывов обслуживания в конце моратория, корпорация Майкрософт настоятельно рекомендует клиентам реализовать управление изменениями и/или процессы автоматизации для конечных точек служб Office 365, используя инструкции, предоставленные в статье [Управление конечными точками Office 365](managing-office-365-endpoints.md).
@@ -45,7 +45,7 @@ ms.locfileid: "44747375"
   
 ||||
 |:-----|:-----|:-----|
-|**Последнее обновление:** 06/16/2020 — ![ ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Подписка на журнал изменений](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) RSS <br/> |**Скачивание:** все обязательные и необязательные назначения в одном списке [в формате JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Используйте:** наши [PAC-файлы](managing-office-365-endpoints.md#pacfiles) прокси-сервера <br/> |
+|**Последнее обновление:** 06/29/2020 — ![ ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Подписка на журнал изменений](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) RSS <br/> |**Скачивание:** все обязательные и необязательные назначения в одном списке [в формате JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Используйте:** наши [PAC-файлы](managing-office-365-endpoints.md#pacfiles) прокси-сервера <br/> |
 
  Start with [Managing Office 365 endpoints](managing-office-365-endpoints.md) to understand our recommendations for managing network connectivity using this data. Endpoints data is updated at the beginning of each month with new IP Addresses and URLs published 30 days in advance of being active. This allows for customers who do not yet have automated updates to complete their processes before new connectivity is required. Endpoints may also be updated during the month if needed to address support escalations, security incidents, or other immediate operational requirements. The data shown on this page below is all generated from the REST-based web services. If you are using a script or a network device to access this data, you should go to the [Web service](office-365-ip-web-service.md) directly.
 

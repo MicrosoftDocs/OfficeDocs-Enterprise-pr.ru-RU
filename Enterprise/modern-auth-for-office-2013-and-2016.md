@@ -22,26 +22,26 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: Узнайте, как Office 365 современная проверка подлинности работает по-разному для клиентских приложений Office 2013 и 2016.
-ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
-ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
+description: Узнайте, как Microsoft 365 современная проверка подлинности работает по-разному для клиентских приложений Office 2013 и 2016.
+ms.openlocfilehash: a7c3a9a8aaa4705ff81607718813060be3455ccd
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280218"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997846"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Современная проверка подлинности в клиентских приложениях Office 2013 и Office 2016
 
-*Эта статья относится к Office 365 корпоративный и Microsoft 365 корпоративный.*
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
-Прочитайте эту статью, чтобы узнать, как клиентские приложения Office 2013 и Office 2016 используют современные функции проверки подлинности на основе конфигурации проверки подлинности в клиенте Office 365 для Exchange Online, SharePoint Online и Skype для бизнеса Online.
+Прочитайте эту статью, чтобы узнать, как клиентские приложения Office 2013 и Office 2016 используют современные функции проверки подлинности на основе конфигурации проверки подлинности в клиенте Microsoft 365 для Exchange Online, SharePoint Online и Skype для бизнеса Online.
 
 > [!NOTE]
 > Устаревшие клиентские приложения, такие как Office 2010 и Office для Mac 2011, не поддерживают современная проверка подлинности и могут использоваться только с обычной проверкой подлинности.
 
-## <a name="availability-of-modern-authentication-for-office-365-services"></a>Доступность современной проверки подлинности для служб Office 365
+## <a name="availability-of-modern-authentication-for-microsoft-365-services"></a>Доступность современной проверки подлинности для служб Microsoft 365
 
-Для служб Office 365 состояние современной проверки подлинности по умолчанию:
+Для служб Microsoft 365 состояние современной проверки подлинности по умолчанию:
   
 - Включен **по умолчанию для Exchange** Online. В этой статье показано [Включение и отключение современной проверки подлинности в Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) для включения или отключения. 
     
@@ -56,7 +56,7 @@ ms.locfileid: "44280218"
 
 Клиентские приложения Office 2013 по умолчанию поддерживают устаревшую проверку подлинности. Устаревшие значения означают, что они поддерживают либо помощник по входу в Microsoft Online, либо обычную проверку подлинности. Чтобы эти клиенты могли использовать современные функции проверки подлинности, в клиенте Windows должны быть заданы разделы реестра. Инструкции: [Enable современная проверка подлинности для Office 2013 на устройствах с Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
 
-Чтобы включить современную проверку подлинности для устройства с Windows (например, ноутбука или планшета), на котором установлен Microsoft Office 2013, необходимо настроить указанные ниже разделы реестра. Это нужно сделать для каждого устройства, на котором вы хотите включить современную проверку подлинности.
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
   
 |**Раздел реестра**|**Тип**|**Значение** |
 |:-------|:------:|--------:|
@@ -67,7 +67,7 @@ ms.locfileid: "44280218"
   
 Клиенты Office 2016 по умолчанию поддерживают современные проверки подлинности и не требуют никаких действий для использования новых потоков в клиенте. Однако для использования устаревшей проверки подлинности требуется явное действие.
   
-Перейдите по указанным ниже ссылкам, чтобы узнать, как Office 2013 и Office 2016 работает в службах Office 365 в зависимости от того, включена ли современная проверка подлинности.
+Перейдите по указанным ниже ссылкам, чтобы узнать, как Office 2013 и Office 2016 работает в службах Microsoft 365 в зависимости от того, включена ли современная проверка подлинности.
   
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
     
@@ -117,10 +117,10 @@ ms.locfileid: "44280218"
    
 ## <a name="see-also"></a>См. также
 
-[Включение современной проверки подлинности для Office 2013 на устройствах с Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Включение современной проверки подлинности для Office 2013 на устройствах с Windows](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)
 
-[Планирование многофакторной проверки подлинности для развертываний Office 365 (для администраторов Office 365)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Многофакторная проверка подлинности для Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 
-[Вход в Office 365 с 2-этапной проверкой (для конечных пользователей)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+[Вход в Microsoft 365 с многофакторной проверкой подлинности](https://support.microsoft.com/office/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
 
 [Обзор Microsoft 365 корпоративный](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
