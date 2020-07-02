@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Сводка: понимание миграции с Microsoft Cloud для Германии (Microsoft Cloud Deutschland) в службы Office 365 в новых регионах центров обработки данных в Германии'
-ms.openlocfilehash: 7e9ba9135d024be5c12d6ca19b55ec68588d9ab4
-ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
+ms.openlocfilehash: 0a90c1b7f74ce9bc14ccae9965c4ce07f74e1b73
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772150"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998564"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Миграция с Microsoft Cloud для Германии (Microsoft Cloud Deutschland) в службы Office 365 в новых регионах центров обработки данных в Германии
 
@@ -128,7 +128,7 @@ ms.locfileid: "43772150"
 - Предложение конкурентоспособной рыночной цены для [Azure](https://azure.microsoft.com/pricing/calculator/), [Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans), [Dynamics 365 Customer Engagement](https://dynamics.microsoft.com/pricing/) и [Power BI](https://powerbi.microsoft.com/pricing/). 
 - Они подключены к глобальной сети Майкрософт, предлагают сотни периферийных сетевых сайтов, расположений пиринга и точек выхода, чтобы обеспечить надежную работу пользователей в любой точке мира. 
 - Помогают вам соответствовать местным требованиям о размещении данных в пределах Германии. 
-- Вы получаете полнофункциональное глобальное облачное решение, в том числе новейшие версии наших служб и новых возможностей, включая Microsoft Teams и Office 365. Сравните продукты по регионам для [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](https://products.office.com/ru-RU/where-is-your-data-located)и [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability).
+- Вы получаете полнофункциональное глобальное облачное решение, в том числе новейшие версии наших служб и новых возможностей, включая Microsoft Teams и Office 365. Сравните продукты по регионам для [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](https://docs.microsoft.com/office365/enterprise/o365-data-locations)и [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability).
 - Предлагают полный набор функций, обеспечение безопасности корпоративного уровня и широкие возможности, которые помогают клиентам удовлетворить нормативные требования. 
 - Доступны через существующие контракты веб-служб.
 
