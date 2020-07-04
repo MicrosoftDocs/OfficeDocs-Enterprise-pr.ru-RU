@@ -1,5 +1,5 @@
 ---
-title: Развертывание службы синхронизации каталогов Office 365 в Microsoft Azure
+title: Развертывание синхронизации каталогов Microsoft 365 в Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,19 +18,17 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: Сводка. Развертывание средства Azure AD Connect на виртуальной машине в Azure для синхронизации учетных записей между локальным каталогом и клиентом Azure AD, связанным с подпиской на Office 365.
-ms.openlocfilehash: 05e0071ce9ffb172fc1399f4038c603ef0d335c5
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
-ms.translationtype: HT
+description: Сводка. Развертывание Azure AD Connect на виртуальной машине в Azure для синхронизации учетных записей между локальным каталогом и клиентом Azure AD для подписки Microsoft 365.
+ms.openlocfilehash: 6f2da528293de54d21bd88b31fcd347cfab9335c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793662"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998067"
 ---
-# <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Развертывание службы синхронизации каталогов Office 365 в Microsoft Azure
+# <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Развертывание синхронизации каталогов Microsoft 365 в Microsoft Azure
 
- **Сводка.** Развертывание средства Azure AD Connect на виртуальной машине в службах инфраструктуры Azure для синхронизации учетных записей между локальным каталогом и клиентом Azure AD, связанным с подпиской на Office 365.
-  
-Средство Azure Active Directory Connect (предыдущие названия: средство синхронизации каталогов и средство DirSync.exe) — это приложение, которое устанавливается на сервере, входящем в домен, для синхронизации пользователей локальных доменных служб Active Directory (AD DS) с клиентом Azure AD, связанным с подпиской на Office 365. Office 365 использует службу каталогов Azure Active Directory (Azure AD). Подписка на Office 365 включает клиент Azure AD. Его также можно использовать для управления удостоверениями организации в других облачных рабочих нагрузках, в том числе других приложениях SaaS и приложениях в Azure.
+Azure Active Directory (Azure AD) Connect (ранее известное как средство синхронизации каталогов, средство синхронизации каталогов или средство DirSync.exe) — это приложение, которое устанавливается на сервере, присоединенном к домену, для синхронизации локальных пользователей доменных служб Active Directory (AD DS) с клиентом Azure AD вашей подписки на Microsoft 365. Microsoft 365 использует Azure AD для службы каталогов. Ваша подписка на Microsoft 365 включает клиент Azure AD. Этот клиент также может использоваться для управления удостоверениями организации с другими облачными рабочими нагрузками, в том числе с другими приложениями SaaS и приложениями в Azure.
 
 Вы можете установить средство Azure AD Connect как на локальном сервере, так и на виртуальной машине в Azure. Последний вариант установки возможен по причинам, указанным ниже:
   
@@ -38,46 +36,46 @@ ms.locfileid: "43793662"
 - Azure обеспечивает высокую доступность сайтов и требует меньше усилий.
 - Вы можете сократить количество локальных серверов в своей организации.
 
-Для этого решения требуется соединение между локальной сетью и виртуальной сетью Azure. Дополнительные сведения см. в статье [Подключение локальной сети к виртуальной сети Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
+This solution requires connectivity between your on-premises network and your Azure virtual network. For more information, see [Connect an on-premises network to a Microsoft Azure virtual network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
   
 > [!NOTE]
-> В этой статье описывается синхронизация одного домена в одном лесу. Средство Azure AD Connect синхронизирует все домены AD DS в лесу Active Directory с Office 365. Если вам нужно синхронизировать несколько лесов Active Directory с Office 365, см. [сценарий синхронизации каталогов с единым входом при наличии нескольких лесов](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
+> В этой статье описывается синхронизация одного домена в одном лесу. Azure AD Connect синхронизирует все домены AD DS в лесу Active Directory с помощью Microsoft 365. Если вы используете несколько лесов Active Directory для синхронизации с Microsoft 365, ознакомьтесь со статьей [синхронизация каталогов нескольких лесов с использованием единого входа](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
   
-## <a name="overview-of-deploying-office-365-directory-synchronization-in-azure"></a>Общие сведения о развертывании синхронизации каталогов Office 365 в Azure
+## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>Общие сведения о развертывании синхронизации каталогов Microsoft 365 в Azure
 
-На представленной ниже схеме показано средство Azure AD Connect, запущенное на виртуальной машине в Azure (сервер синхронизации каталогов), которое синхронизирует локальный лес AD DS с подпиской на Office 365.
+На следующей схеме показана служба Azure AD Connect, запущенная на виртуальной машине в Azure (сервер синхронизации каталогов), которая синхронизирует локальный лес доменных служб Active Directory с подпиской Microsoft 365.
   
-![Средство Azure AD Connect на виртуальной машине в Azure синхронизирует локальные учетные записи с клиентом Azure AD для Office 365](media/CP-DirSyncOverview.png)
+![Средство Azure AD Connect на виртуальной машине в Azure Синхронизация локальных учетных записей с клиентом Azure AD подписки на Microsoft 365 с потоком трафика](media/CP-DirSyncOverview.png)
   
-На этой схеме показаны две сети, соединенные VPN-подключением типа "сеть-сеть" или подключением ExpressRoute. В локальной сети размещаются контроллеры доменов AD DS, а в виртуальной сети Azure — сервер синхронизации каталогов, виртуальная машина, на которой запущено [средство Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). Из сервера синхронизации каталогов исходит два основных потока трафика:
+In the diagram, there are two networks connected by a site-to-site VPN or ExpressRoute connection. There is an on-premises network where AD DS domain controllers are located, and there is an Azure virtual network with a directory sync server, which is a virtual machine running [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). There are two main traffic flows originating from the directory sync server:
   
 -  Средство Azure AD Connect отправляет контроллеру домена в локальной сети запросы на изменение учетных записей и паролей.
--  Средство Azure AD Connect отправляет изменения учетных записей и паролей экземпляру Azure AD подписки на Office 365. Так как сервер синхронизации каталогов является расширением локальной сети, эти изменения отправляются через прокси-сервер локальной сети.
+-  Azure AD Connect отправляет изменения учетных записей и паролей в экземпляр Azure AD вашей подписки на Microsoft 365. Так как сервер синхронизации каталогов находится в расширенной части локальной сети, эти изменения отправляются через прокси-сервер локальной сети.
     
 > [!NOTE]
-> В этом решении описывается синхронизация одного домена Active Directory в одном лесу. Средство синхронизации Azure AD Connect синхронизирует все домены Active Directory в лесу Active Directory с Office 365. Если вам нужно синхронизировать несколько лесов Active Directory с Office 365, см. [сценарий синхронизации каталогов с единым входом при наличии нескольких лесов](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
+> В этом решении описывается синхронизация одного домена Active Directory в одном лесу. Azure AD Connect синхронизирует все домены Active Directory в лесу Active Directory с помощью Microsoft 365. Если вы используете несколько лесов Active Directory для синхронизации с Microsoft 365, ознакомьтесь со статьей [синхронизация каталогов нескольких лесов с использованием единого входа](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
   
 Развертывание этого решения делится на два основных этапа:
   
-1. Создание виртуальной сети Azure и настройка VPN-подключения типа "сеть-сеть" к локальной сети. Дополнительные сведения см. в статье [Подключение локальной сети к виртуальной сети Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
+1. Create an Azure virtual network and establish a site-to-site VPN connection to your on-premises network. For more information, see [Connect an on-premises network to a Microsoft Azure virtual network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
     
-2. Установка [средства Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594) на присоединенной к домену виртуальной машине в Azure и синхронизация локального леса AD DS с Office 365. Этот процесс включает следующие этапы:
+2. Установите [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594) на виртуальной машине с присоединением к домену в Azure, а затем синхронизируйте локальные доменные службы Active Directory с Microsoft 365. Этот процесс включает следующие этапы:
     
     Создание виртуальной машины Azure для запуска Azure AD Connect.
     
     Установка и настройка [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594).
     
-    Для настройки средства Azure AD Connect требуются учетные данные (имя пользователя и пароль) администратора Azure AD и администратора предприятия AD DS. Средство Azure AD Connect запускается мгновенно и регулярно для синхронизации локального леса AD DS с Office 365.
+    Для настройки Azure AD Connect необходимы учетные данные (имя пользователя и пароль) учетной записи администратора Azure AD и учетной записи администратора Active Directory для предприятия. Azure AD Connect выполняется немедленно и непрерывно, чтобы синхронизировать локальный лес AD DS с Microsoft 365.
     
-Прежде чем развертывать это решение в эксплуатационной среде, можно воспользоваться инструкциями в статье [Синхронизация каталогов для среды разработки и тестирования Office 365](dirsync-for-your-office-365-dev-test-environment.md), чтобы установить эту конфигурацию для демонстраций или экспериментов.
+Прежде чем развертывать это решение в рабочей среде, вы можете использовать инструкции, приведенные в [статье смоделированная Корпоративная конфигурация](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise) , чтобы настроить эту конфигурацию в качестве эксперимента, демонстраций или экспериментов.
   
 > [!IMPORTANT]
 > После настройки средство Azure AD Connect не сохраняет учетные данные администратора предприятия AD DS. 
   
 > [!NOTE]
-> Это решение описывает синхронизацию одного леса AD DS с Office 365. Топология, описываемая в этой статье, предоставляет только один из способов реализации решения. Топология вашей организации может отличаться в связи с уникальными требованиями к сети и ее безопасности. 
+> Это решение описывает синхронизацию одного леса доменных служб Active Directory с Microsoft 365. Топология, описываемая в этой статье, предоставляет только один из способов реализации решения. Топология организации может отличаться в зависимости от требований к сети и соображений безопасности. 
   
-## <a name="plan-for-hosting-a-directory-sync-server-for-office-365-in-azure"></a>Планирование размещения сервера синхронизации каталогов для Office 365 в Azure
+## <a name="plan-for-hosting-a-directory-sync-server-for-microsoft-365-in-azure"></a>Планирование хостинга сервера синхронизации каталогов для Microsoft 365 в Azure
 <a name="PlanningVirtual"> </a>
 
 ### <a name="prerequisites"></a>Требования
@@ -88,9 +86,9 @@ ms.locfileid: "43793662"
     
 - Убедитесь, что ваша организация отвечает всем [требованиям](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#prerequisites) для настройки виртуальной сети Azure.
     
-- Приготовьте подписку на Office 365, которая включает функцию интеграции с Active Directory. Сведения о подписках на Office 365 см. на [этой странице](https://products.office.com/compare-all-microsoft-office-products?tab=2).
+- У вас есть подписка на Microsoft 365, включающая в себя компонент интеграции с Active Directory. Для получения сведений о подписках на Microsoft 365 перейдите на [страницу подписки на microsoft 365](https://products.office.com/compare-all-microsoft-office-products?tab=2).
     
-- Подготовьте одну виртуальную машину Azure, на которой запущено средство Azure AD Connect, для синхронизации локального леса AD DS с Office 365.
+- Подготовьте одну виртуальную машину Azure, которая запускает Azure AD Connect для синхронизации локального леса AD DS с Microsoft 365.
     
     У вас должны быть учетные данные (имена и пароли) администратора предприятия AD DS и администратора Azure AD.
     
@@ -98,17 +96,17 @@ ms.locfileid: "43793662"
 
 Ниже приведены принятые проектные решения.
   
-- Это решение использует одну виртуальную сеть Azure с VPN-подключением типа "сеть-сеть". В виртуальной сети Azure размещается одна подсеть с одним сервером синхронизации каталогов, на котором запущено средство Azure AD Connect. 
+- This solution uses a single Azure virtual network with a site-to-site VPN connection. The Azure virtual network hosts a single subnet that has one server, the directory sync server that is running Azure AD Connect. 
     
 - В локальной сети размещены контроллер домена и DNS-серверы.
     
-- Вместо единого входа средство Azure AD Connect выполняет синхронизацию хэша паролей. Вам не требуется развертывать инфраструктуру служб федерации Active Directory (AD FS). Дополнительные сведения о синхронизации хэша паролей и едином входе см. в статье [Выбор правильного метода аутентификации для гибридного решения для идентификации Azure Active Directory](https://aka.ms/auth-options).
+- Azure AD Connect performs password hash synchronization instead of single sign-on. You do not have to deploy an Active Directory Federation Services (AD FS) infrastructure. To learn more about password hash synchronization and single sign-on options, see [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://aka.ms/auth-options).
     
-При развертывании этого решения в своей среде вы можете рассмотреть дополнительные варианты структуры. К ним относятся следующие:
+There are additional design choices that you might consider when you deploy this solution in your environment. These include the following:
   
 - Если в виртуальной сети Azure уже есть DNS-серверы, определите, должен ли сервер синхронизации каталогов использовать их вместо DNS-серверов в локальной сети.
     
-- Если в существующей виртуальной сети Azure есть контроллеры доменов, решите, будет ли настройка сайтов и служб Active Directory более подходящим вариантом для вашей организации. Вместо контроллеров доменов локальной сети сервер синхронизации каталогов может отправлять запросы контроллерам доменов в виртуальной сети Azure для поиска изменений в учетных записях и паролях.
+- If there are domain controllers in an existing Azure virtual network, determine whether configuring Active Directory Sites and Services may be a better option for you. The directory sync server can query the domain controllers in the Azure virtual network for changes in accounts and passwords instead of domain controllers on the on-premises network.
     
 ## <a name="deployment-roadmap"></a>План развертывания
 
@@ -120,7 +118,7 @@ ms.locfileid: "43793662"
     
 - Этап 3. Установка и настройка Azure AD Connect
     
-После развертывания также необходимо назначить расположения и лицензии для новых учетных записей пользователей в Office 365.
+После развертывания необходимо также назначить расположения и лицензии для новых учетных записей пользователей в Microsoft 365.
 
 
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Этап 1. Создание и настройка виртуальной сети Azure
@@ -129,29 +127,29 @@ ms.locfileid: "43793662"
   
 Ниже показана итоговая конфигурация.
   
-![Этап 1. Развертывание сервера синхронизации каталогов для Office 365 в Azure](media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Этап 1 сервера синхронизации каталогов для Microsoft 365, размещенный в Azure](media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 На этом рисунке показана локальная сеть, подключенная к виртуальной сети Azure через подключение VPN типа "сеть-сеть" или ExpressRoute.
   
 ### <a name="phase-2-create-and-configure-the-azure-virtual-machine"></a>Этап 2. Создание и настройка виртуальной машины Azure
 
-Создайте виртуальную машину в Azure, следуя инструкциям в статье [Создание первой виртуальной машины Windows на портале Azure](https://go.microsoft.com/fwlink/p/?LinkId=393098). Используйте следующие параметры:
+Create the virtual machine in Azure using the instructions [Create your first Windows virtual machine in the Azure portal](https://go.microsoft.com/fwlink/p/?LinkId=393098). Use the following settings:
   
-- В области **Основные** выберите ту же подписку, расположение и группу ресурсов, что и в виртуальной сети. Запишите имя пользователя и пароль в надежном месте. Они потребуются позже для подключения к виртуальной машине.
+- On the **Basics** pane, select the same subscription, location, and resource group as your virtual network. Record the user name and password in a secure location. You will need these later to connect to the virtual machine.
     
 - В области **Выберите размер** выберите размер **Стандартный A2**.
     
-- В области **Параметры** в разделе **Хранилище** выберите тип хранилища **Стандартный**. В разделе **Сеть** выберите имя виртуальной сети и подсеть для размещения сервера синхронизации каталогов (не GatewaySubnet). Для всех остальных параметров оставьте значения по умолчанию.
+- On the **Settings** pane, in the **Storage** section, select the **Standard** storage type. In the **Network** section, select the name of your virtual network and the subnet for hosting the directory sync server (not the GatewaySubnet). Leave all other settings at their default values.
     
 Проверьте внутренний DNS, чтобы убедиться, что сервер синхронизации каталогов правильно использует DNS и для виртуальной машины добавлена запись адреса (A) с ее IP-адресом. 
   
-Воспользуйтесь инструкциями в разделе [Подключение к виртуальной машине и вход](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon), чтобы подключиться к серверу синхронизации каталогов через подключение к удаленному рабочему столу. После входа присоедините виртуальную машину к локальному домену AD DS.
+Use the instructions in [Connect to the virtual machine and sign on](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon) to connect to the directory sync server with a Remote Desktop Connection. After signing in, join the virtual machine to the on-premises AD DS domain.
   
-Чтобы предоставить средству Azure AD Connect доступ к ресурсам Интернета, необходимо настроить сервер синхронизации каталогов на использование прокси-сервера локальной сети. Обратитесь к администратору сети за дополнительными инструкциями по настройке.
+For Azure AD Connect to gain access to Internet resources, you must configure the directory sync server to use the on-premises network's proxy server. You should contact your network administrator for any additional configuration steps to perform.
   
 Ниже показана итоговая конфигурация.
   
-![Этап 2. Развертывание сервера синхронизации каталогов для Office 365 в Azure](media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Этап 2 сервера синхронизации каталогов для Microsoft 365, размещенный в Azure](media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 На этом рисунке показана виртуальная машина сервера синхронизации каталогов в виртуальной сети Azure.
   
@@ -159,24 +157,24 @@ ms.locfileid: "43793662"
 
 Выполните следующие действия:
   
-1. Подключитесь к серверу синхронизации каталогов в режиме удаленного рабочего стола, используя учетную запись домена AD DS с правами локального администратора. См. статью [Подключение к виртуальной машине и вход](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon).
+1. Connect to the directory sync server using a Remote Desktop Connection with an AD DS domain account that has local administrator privileges. See [Connect to the virtual machine and sign on](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon).
     
-2. На сервере синхронизации каталогов откройте статью [Настройка синхронизации каталогов для Office 365](set-up-directory-synchronization.md) и следуйте инструкциям для синхронизации каталогов с синхронизацией хэша паролей.
+2. На сервере синхронизации каталогов откройте статью [Настройка синхронизации каталогов для Microsoft 365](set-up-directory-synchronization.md) и следуйте инструкциям для синхронизации каталогов с синхронизацией хэша паролей.
     
 > [!CAUTION]
-> Программа установки создает учетную запись **AAD_xxxxxxxxxxxx** в подразделении "Локальные пользователи". Не перемещайте и не удаляйте эту учетную запись, иначе синхронизация будет невозможна.
+> Setup creates the **AAD_xxxxxxxxxxxx** account in the Local Users organizational unit (OU). Do not move or remove this account or synchronization will fail.
   
 Ниже показана итоговая конфигурация.
   
-![Этап 3. Развертывание сервера синхронизации каталогов для Office 365 в Azure](media/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Этап 3 сервера синхронизации каталогов для Microsoft 365, размещенный в Azure](media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 На этом рисунке показан сервер синхронизации каталогов со средством Azure AD Connect в виртуальной сети Azure.
   
-### <a name="assign-locations-and-licenses-to-users-in-office-365"></a>Назначение расположений и лицензий пользователям в Office 365
+### <a name="assign-locations-and-licenses-to-users-in-microsoft-365"></a>Назначение местоположений и лицензий пользователям в Microsoft 365
 
-Средство Azure AD Connect добавляет учетные записи из локального леса AD DS в подписку на Office 365, но чтобы пользователи могли входить в Office 365 и использовать службы, необходимо настроить расположение и лицензии. Чтобы добавить расположение и активировать лицензии для соответствующих учетных записей пользователей, сделайте следующее:
+Azure AD Connect добавляет учетные записи в свою подписку Microsoft 365 из локальных ДОМЕНных служб Active Directory, но чтобы пользователи могли входить в Microsoft 365 и использовать ее службы, необходимо настроить учетные записи с указанием расположения и лицензий. Чтобы добавить расположение и активировать лицензии для соответствующих учетных записей пользователей, сделайте следующее:
   
-1. Выполните вход на [странице портала Office 365](https://www.office.com) и нажмите плитку **Администрирование**.
+1. Войдите в [центр администрирования Microsoft 365](https://admin.microsoft.com)и выберите **Администратор**.
     
 2. На панели навигации слева выберите **Пользователи > Активные пользователи**.
     
@@ -198,5 +196,5 @@ ms.locfileid: "43793662"
 
 [Скачать Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)
   
-[Настройка синхронизации каталогов для Office 365](set-up-directory-synchronization.md)
+[Настройка синхронизации каталогов для Microsoft 365](set-up-directory-synchronization.md)
   
