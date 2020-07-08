@@ -1,47 +1,47 @@
 ### YamlMime:Landing
-title: Документация по Office 365 для предприятий
-summary: На этой странице представлены руководства для администраторов и ИТ-специалистов, разворачивающих и настраивающих службы Office 365, а также управляющих ими в корпоративной организации.
+title: Документация по Microsoft 365 и Office 365 корпоративный
+summary: На этой странице представлены ссылки на руководство для администраторов и ИТ-специалистов, которые развертывают, настраивают и управляют службами Microsoft 365 и Office 365 в корпоративных организациях.
 metadata:
-  title: Документация по Office 365 для предприятий
-  description: На этой странице представлены руководства для администраторов и ИТ-специалистов, разворачивающих и настраивающих службы Office 365, а также управляющих ими в корпоративной организации.
+  title: Документация по Microsoft 365 и Office 365 корпоративный
+  description: На этой странице представлены ссылки на руководство для администраторов и ИТ-специалистов, которые развертывают, настраивают и управляют службами Microsoft 365 и Office 365 в корпоративных организациях.
   ms.service: o365-solutions
   ms.topic: landing-page
   author: wingtofree
   ms.author: v-qingao
   ms.date: 03/12/2020
-  ms.openlocfilehash: 8397c93d6632710a036b2de7ef604451c5c42e70
-  ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+  ms.openlocfilehash: c01461934a08d3baf314c35bbb0c0e3eed34f9f8
+  ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 05/03/2020
-  ms.locfileid: "44009294"
+  ms.lasthandoff: 07/07/2020
+  ms.locfileid: "45052452"
 landingContent:
-- title: Сведения о Office 365 корпоративный
+- title: О Microsoft 365 и Office 365 корпоративный
   linkLists:
   - linkListType: deploy
     links:
+    - text: Принятие Microsoft 365 с помощью FastTrack
+      url: https://www.microsoft.com/fasttrack/microsoft-365
     - text: Принятие Office 365 с помощью FastTrack
       url: https://www.microsoft.com/fasttrack/microsoft-365/office-365
-    - text: Перенос данных организации в Office 365 корпоративный
+    - text: Развертывание Microsoft 365 для Организации
+      url: setup-overview-for-enterprises.md
+    - text: Перенос данных Организации в Microsoft 365
       url: migrate-data-to-office-365.md
     - text: Руководство по развертыванию Приложений Microsoft 365 для предприятий
       url: https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps
-    - text: Развертывание Office 365 корпоративный для организации
-      url: setup-overview-for-enterprises.md
-    - text: Гибридные развертывания
-      url: microsoft-cloud-it-architecture-resources.md
   - linkListType: learn
     links:
     - text: Начало работы с Microsoft 365
       url: https://support.office.com/article/office-365-admin-and-it-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5
-- title: Развертывание рабочих нагрузок Office 365
+- title: Развертывание рабочих нагрузок Microsoft 365 и Office 365
   linkLists:
   - linkListType: overview
     links:
     - text: Exchange Online
       url: https://docs.microsoft.com/Exchange/exchange-online
-    - text: SharePoint Online
-      url: https://support.office.com/article/sharepoint-online-%E2%80%93-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a
+    - text: SharePoint
+      url: https://docs.microsoft.com/sharepoint/introduction
     - text: Skype для бизнеса Online
       url: https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online
     - text: Microsoft Teams
@@ -49,20 +49,22 @@ landingContent:
     - text: Power BI
       url: https://docs.microsoft.com/power-bi
     - text: Yammer
-      url: https://support.office.com/yammer
+      url: https://microsoft.office.com/yammer
 - title: Дополнительные ресурсы
   linkLists:
   - linkListType: overview
     links:
+    - text: Сообщество Майкрософт 365 Tech
+      url: https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365
     - text: Сообщество технических специалистов по Office 365
       url: https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365
     - text: Получение поддержки
       url: https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
   - linkListType: learn
     links:
-    - text: Дополнительные сведения о Microsoft 365
+    - text: Центр справки Microsoft 365
       url: https://docs.microsoft.com/microsoft-365
-    - text: Дополнительные сведения о соответствии требованиям Microsoft 365
+    - text: Соответствие требованиям Microsoft 365
       url: https://docs.microsoft.com/microsoft-365/compliance/
-    - text: Дополнительные сведения о безопасности Microsoft 365
+    - text: Безопасность Microsoft 365
       url: https://docs.microsoft.com/microsoft-365/security/

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Узнайте, как выполнять стандартные задачи управления для групп Office 365 в Microsoft PowerShell.
-ms.openlocfilehash: 71d48b133ce716995ec6059a60a0fed487fde208
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: c946b570b0d434886dbd76ba61f53771aa6bca80
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736027"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052482"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Управление группами Office 365 с помощью PowerShell
  
@@ -34,7 +34,7 @@ ms.locfileid: "44736027"
 
 Когда пользователи [создают или редактируют группу в Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), вы можете показывать им ссылку на рекомендации по использованию вашей организации. Например, если требуется добавить в имя группы определенный префикс или суффикс.
   
-Используйте PowerShell Azure Active Directory, чтобы указать пользователям в Организации рекомендации по использованию для групп Office 365. Изучите [командлеты Azure Active Directory для настройки параметров групп](https://go.microsoft.com/fwlink/?LinkID=827484) и следуйте шагам, описанным в разделе **CREATE Settings на уровне каталога** , чтобы определить гиперссылку на рекомендации по использованию. После запуска командлета AAD пользователь увидит ссылку на свои рекомендации при создании или изменении группы в Outlook. 
+Используйте оболочку PowerShell Azure Active Directory (Azure AD), чтобы указать пользователям в Организации рекомендации по использованию для групп Office 365. Изучите [командлеты Azure Active Directory для настройки параметров групп](https://go.microsoft.com/fwlink/?LinkID=827484) и следуйте шагам, описанным в разделе **CREATE Settings на уровне каталога** , чтобы определить гиперссылку на рекомендации по использованию. После выполнения командлета Azure AD пользователь увидит ссылку на свои рекомендации при создании или изменении группы в Outlook. 
   
 ![Создание ссылки на новую группу с рекомендациями по использованию](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
   
@@ -85,7 +85,7 @@ $setting["ClassificationDescriptions"] ="Classification:Description,Classificati
 
 где классификация соответствует строкам в Классификатионлист.
 
-Пример:
+Пример.
   
 ```
 $setting["ClassificationDescriptions"] = "Low Impact: General communication, Medium Impact: Company internal data , High Impact: Data that has regulatory requirements"
@@ -188,7 +188,7 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 |[Set — UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |Используется для связывания фотографии пользователя с учетной записью. Фотографии пользователей хранятся в Active Directory  <br/> |
 |[Remove — UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |Удаление фотографии для группы Office 365  <br/> |
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Обновление списков рассылки до групп Office 365](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
