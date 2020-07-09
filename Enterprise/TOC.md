@@ -69,7 +69,7 @@
 ### [Принципы сетевого подключения к Microsoft 365](office-365-network-connectivity-principles.md)
 ### [Планирование сети и настройка производительности для Microsoft 365](network-planning-and-performance.md)
 ### [Оценка сетевого подключения Microsoft 365](assessing-network-connectivity.md)
-### [Партнерская программа Office 365 для поставщиков сетевых устройств и служб](office-365-networking-partner-program.md)
+### [Партнерская программа Microsoft 365 для поставщиков сетевых устройств и служб](office-365-networking-partner-program.md)
 ### URL- и IP-адреса для Office 365
 #### [Конечные точки Office 365](office-365-endpoints.md)
 #### [Управление конечными точками Office 365](managing-office-365-endpoints.md)
@@ -97,13 +97,13 @@
 #### [Конечные точки U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)
 #### [Конечные точки U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Цепочки шифрования Office 365 — DoD и GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [Поддержка IPv6 в службах Microsoft 365](ipv6-support.md)
-### [Поддержка NAT в службах Microsoft 365](nat-support-with-office-365.md)
+### [Поддержка IPv6 в службах Office 365](ipv6-support.md)
+### [Поддержка NAT в Office 365](nat-support-with-office-365.md)
 ### Работа с ExpressRoute для Microsoft 365
-#### [ExpressRoute для Microsoft 365](azure-expressroute.md)
-#### [Реализация работы ExpressRoute для Microsoft 365](implementing-expressroute.md)
-#### [Планирование сети с использованием ExpressRoute для Microsoft 365](network-planning-with-expressroute.md)
-#### [Маршрутизация с использованием ExpressRoute для Microsoft 365](routing-with-expressroute.md)
+#### [ExpressRoute для Office 365](azure-expressroute.md)
+#### [Реализация ExpressRoute для Office 365](implementing-expressroute.md)
+#### [Планирование сети при использовании ExpressRoute для Office 365](network-planning-with-expressroute.md)
+#### [Маршрутизация с использованием ExpressRoute для Office 365](routing-with-expressroute.md)
 
 ## 2. Настройка удостоверений
 ### [Защита учетных записей глобальных администраторов](protect-your-global-administrator-accounts.md)
@@ -274,4 +274,4 @@
 # [Соответствие требованиям Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Безопасность в Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)
 # [Microsoft 365 для бизнеса](https://www.microsoft.com/microsoft-365/business)
-# [Microsoft 365](https://docs.microsoft.com/microsoft-365)
+# [Центр справки Microsoft 365](https://docs.microsoft.com/microsoft-365)
