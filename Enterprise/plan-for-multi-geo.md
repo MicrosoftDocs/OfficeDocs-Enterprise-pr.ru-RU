@@ -15,18 +15,18 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Сведения о Microsoft 365 Multi-Geo, о принципе такой поддержки и о географических расположениях, доступных для хранения данных.
-ms.openlocfilehash: 41a17cf4506b62ae588afa750d6f9e3a8c99191d
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 8f06c43b9a622e06959ab12fa0e055c8653ca61c
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057715"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052462"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>План для Microsoft 365 Multi-Geo
 
 Настоящее руководство предназначено для администраторов транснациональных компаний (MNC), которые готовятся к использованию клиента Microsoft 365 в дополнительных географических расположениях и при этом должны соблюдать требования к месту расположения данных.
 
-В конфигурации с поддержкой нескольких регионов клиент Microsoft 365 включает центральное расположение и одно или несколько вспомогательных расположений. Это один клиент, который охватывает несколько географических расположений. Управление сведениями о клиенте, в том числе географическими расположениями, выполняется в Azure Active Directory (AAD).
+В конфигурации с поддержкой нескольких регионов клиент Microsoft 365 включает центральное расположение и одно или несколько вспомогательных расположений. Это один клиент, который охватывает несколько географических расположений. Управление сведениями о клиенте, в том числе географическими расположениями, выполняется в Azure Active Directory (Azure AD).
 
 Ниже приведены некоторые ключевые термины, связанные с поддержкой нескольких регионов, которые помогут вам понять базовые концепции конфигурации.
 
@@ -57,7 +57,7 @@ ms.locfileid: "44057715"
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
-Настраивая поддержку нескольких регионов, рассмотрите возможность консолидировать свою локальную инфраструктуру при миграции в Microsoft 365. Например, можно консолидировать локальные фермы, находящиеся в Сингапуре и Малайзии, с вспомогательным расположением APC при условии, что это разрешено требованиями к месту расположения данных.
+When you configure multi-geo, consider taking the opportunity to consolidate your on-premises infrastructure while migrating to Microsoft 365. For example, if you have on-premises farms in Singapore and Malaysia, then you can consolidate them to the APC satellite location, provided data residency requirements allow you to do so.
 
 ## <a name="best-practices"></a>Рекомендации
 
@@ -65,13 +65,13 @@ ms.locfileid: "44057715"
 
 Завершив тестирование с вовлечением тестового пользователя, выберите пилотную группу (например, группу ИТ-специалистов), которая первой воспользуется OneDrive и Exchange в новом географическом расположении. В эту группу добавьте пользователей, у которых еще нет OneDrive. Рекомендуется вначале добавлять не более пяти человек, а затем постепенно расширять группу методом пакетного развертывания.
 
-У каждого пользователя должно быть *предпочтительное расположение данных* (PDL), чтобы служба Microsoft 365 могла определить, в каком географическом расположении нужно подготовить к работе OneDrive. PDL пользователя должно соответствовать одному из выбранных вспомогательных расположений или центральному расположению. Хотя поле PDL можно не заполнять, рекомендуем задать его для всех пользователей. Рабочие нагрузки пользователя без PDL будут подготовлены к работе в центральном расположении.
+Each user should have a *preferred data location* (PDL) set so that Microsoft 365 can determine in which geo location to provision their OneDrive. The user's preferred data location must match one of your chosen satellite locations or your central location. While the PDL field is not mandatory, we recommend that a PDL be set for all users. Workloads of a user without a PDL will be provisioned in the central location.
 
-Создайте список пользователей, включите имя участника-пользователя и код расположения для соответствующего предпочтительного расположения данных. Включите тестового пользователя и первоначальную пилотную группу. Этот список понадобится для процедур настройки.
+Create a list of your users, and include their user principal name (UPN) and the location code for the appropriate preferred data location. Include your test user and your initial pilot group to start with. You'll need this list for the configuration procedures.
 
 Если выполняется синхронизация пользователей из локальной системы Active Directory в Azure Active Directory, нужно установить предпочтительное расположение данных в качестве атрибута Active Directory и синхронизировать его с помощью Azure Active Directory Connect. Напрямую настроить PDL для синхронизируемых пользователей с помощью Azure AD PowerShell невозможно. Шаги по настройке PDL в Active Directory и синхронизации рассматриваются в статье [Синхронизация Azure Active Directory Connect: настройка предпочтительного расположения данных для ресурсов Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
-Администрирование клиента с поддержкой нескольких регионов может отличаться от администрирования без таковой, так как многие службы и настройки SharePoint и OneDrive поддерживают несколько регионов. Рекомендуем ознакомиться со статьей [Администрирование среды с поддержкой нескольких регионов](administering-a-multi-geo-environment.md), прежде чем переходить к настройке.
+The administration of a multi-geo tenant can differ from a non-multi-geo tenant, as many of the SharePoint and OneDrive settings and services are multi-geo aware. We recommend that you review [Administering a multi-geo environment](administering-a-multi-geo-environment.md) before you proceed with your configuration.
 
 Прочтите статью [Взаимодействие с пользователем в среде с поддержкой нескольких регионов](multi-geo-user-experience.md).
 

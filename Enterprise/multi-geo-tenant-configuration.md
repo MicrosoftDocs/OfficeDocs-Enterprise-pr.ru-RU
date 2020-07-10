@@ -13,22 +13,22 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Сведения о настройке Microsoft 365 Multi-Geo.
-ms.openlocfilehash: ffacd18a95288cfcce0794afceaf7ff22bfa2c76
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 928033dcbec0ad0b52f24bd0bec4dd6b9f9331bc
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057725"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052572"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Конфигурация клиента Microsoft 365 Multi-Geo
 
 Прежде чем настраивать клиент Microsoft 365 Multi-Geo, прочтите статью [План для Microsoft 365 Multi-Geo](plan-for-multi-geo.md). Чтобы выполнить шаги, описанные в этой статье, вам понадобится список географических расположений, которые нужно включить в качестве периферийных расположений, а также тестовые пользователи, которых нужно подготовить к работе для этих расположений.
 
-## <a name="add-the-multi-geo-capabilities-in-microsoft-365-plan-to-your-tenant"></a>Добавление поддержки нескольких регионов в план Microsoft 365 для клиента
+## <a name="add-the-multi-geo-capabilities-in-your-microsoft-365-plan-to-your-tenant"></a>Добавление поддержки нескольких регионов в план Microsoft 365 для клиента
 
 Чтобы использовать Microsoft 365 Multi-Geo, вам понадобится план _поддержки нескольких регионов в Microsoft 365_. Вместе с сотрудниками, занимающимися учетными записями, добавьте этот план для клиента. Эти сотрудники свяжут вас с подходящим специалистом по лицензированию и помогут настроить клиент.
 
-Обратите внимание, что план _поддержки нескольких регионов в Microsoft 365_ — это план обслуживания на уровне пользователя. Для каждого пользователя, которого нужно разместить во вспомогательном расположении, необходима лицензия. Постепенно можно добавлять дополнительные лицензии по мере добавления пользователей во вспомогательные расположения.
+Note that the _Multi-Geo Capabilities in Microsoft 365_ plan are a user-level service plan. You need a license for each user that you want to host in a satellite location. You can add more licenses over time as you add users in satellite locations.
 
 Когда клиент будет подготовлен к работе с планом _поддержки нескольких регионов в Microsoft 365_, в Центрах администрирования OneDrive и SharePoint станет доступной вкладка **Географические расположения**.
 
@@ -54,15 +54,15 @@ ms.locfileid: "44057725"
 
 6. Нажмите кнопку **Закрыть**.
 
-В зависимости от размера клиента подготовка к работе может занять от нескольких до 72 часов. Как только подготовка вспомогательного расположения завершится, вы получите подтверждение по электронной почте. Когда новое географическое расположение отобразится в синем цвете на карте вкладки **Географические расположения** в Центре администрирования OneDrive, вы сможете перейти к настройке предпочтительного расположения данных пользователей для этого географического расположения. 
+Provisioning may take from a few hours up to 72 hours, depending on the size of your tenant. Once provisioning of a satellite location has completed, you will receive an email confirmation. When the new geo location appears in blue on the map on the **Geo locations** tab in the OneDrive admin center, you can proceed to set users' preferred data location to that geo location. 
 
 > [!IMPORTANT]
-> Для нового периферийного расположения будут заданы параметры по умолчанию. Это позволит настроить его в соответствии с локальными требованиями.
+> Your new satellite location will be set up with default settings. This will allow you to configure that satellite location as appropriate for your local compliance needs.
 
 ## <a name="setting-users-preferred-data-location"></a>Настройка предпочтительного расположения данных пользователей
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
 
-Настроив необходимые периферийные расположения данных, вы можете обновить учетные записи пользователей для применения соответствующих предпочтительных расположений данных. Рекомендуем задать предпочтительное расположение данных для каждого пользователя, даже если какие-то пользователи остаются в центральном расположении.
+Once you enable the needed satellite locations, you can update your user accounts to use the appropriate preferred data location. We recommend that you set a preferred data location for every user, even if that user is staying in the central location.
 
 > [!IMPORTANT]
 > Если для предпочтительного расположения данных пользователя задано расположение, не настроенное в качестве периферийного или центрального, система по умолчанию использует центральное расположение при подготовке сайтов OneDrive и SharePoint, а также почтовых ящиков групп.
@@ -70,32 +70,32 @@ ms.locfileid: "44057725"
 > [!TIP]
 > Прежде чем развертывать поддержку нескольких регионов для всей организации, рекомендуем начать проверки с вовлечением тестового пользователя или небольшой группы пользователей.
 
-В Azure Active Directory существует два типа объектов пользователя: синхронизированные и только облачные. Следуйте соответствующим инструкциям для вашего типа пользователей.
+В Azure Active Directory (Azure AD) существует два типа объектов пользователя: синхронизированные и только облачные. Следуйте соответствующим инструкциям для вашего типа пользователей.
 
-### <a name="synchronize-users-preferred-data-location-using-azure-active-directory-connect"></a>Синхронизация предпочтительного расположения данных пользователя с помощью Azure Active Directory Connect 
+### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Синхронизация предпочтительного расположения данных пользователя с помощью Azure AD Connect 
 
-Если пользователи вашей организации синхронизируются из системы локальной службы Active Directory в Azure Active Directory, соответствующий параметр PreferredDataLocation должен быть заполнен в AD и синхронизирован с AAD. Чтобы настроить синхронизацию предпочтительных расположений данных из локальной службы Active Directory в Azure Active Directory, следуйте инструкциям из статьи [Синхронизация Azure Active Directory Connect: настройка предпочтительного расположения данных для ресурсов Microsoft 365](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation).
+Если пользователи вашей организации синхронизируются с Azure AD из локальной системы Active Directory, PreferredDataLocation заполняется в AD и синхронизируется с Azure AD.
+
+Выполните действия, описанные в разделе [Синхронизация Azure Active Directory Connect: настройка предпочтительного расположения данных для ресурсов Microsoft 365](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation), чтобы настроить синхронизацию предпочтительного расположения данных с Azure AD из локальных доменных служб Active Directory (AD DS).
 
 Рекомендуем включить настройку предпочтительного расположения данных пользователя в стандартный рабочий процесс создания пользователей.
 
 > [!IMPORTANT]
-> В случае новых пользователей, для которых служба OneDrive не подготовлена к работе, следует подождать по крайней мере 24 часа после синхронизации PDL в Azure Active Directory пользователя. Это срок распространения изменений, по завершении которого пользователи смогут войти в OneDrive для бизнеса. (Настройка предпочтительного расположения данных до входа пользователя с целью подготовки к работе OneDrive для бизнеса позволяет обеспечить подготовку OneDrive в правильном расположении.)
+> В случае новых пользователей, для которых служба OneDrive не подготовлена к работе, следует подождать по крайней мере 24 часа после синхронизации PDL пользователя с Azure AD. Это срок распространения изменений, по завершении которого пользователи смогут войти в OneDrive для бизнеса. (Настройка предпочтительного расположения данных до входа пользователя с целью подготовки к работе OneDrive для бизнеса позволяет обеспечить подготовку OneDrive в правильном расположении.)
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Настройка предпочтительного расположения данных для облачных пользователей 
 
-Если пользователи вашей организации не синхронизируются из системы локальной службы Active Directory в Azure Active Directory, то есть создаются в Microsoft 365 или Azure Active Directory, задать PDL нужно с помощью Azure Active Directory PowerShell.
+Если пользователи вашей организации не синхронизируются с Azure AD из локальной системы Active Directory, то есть создаются в Microsoft 365 или Azure AD, тогда PDL задается с помощью модуля Microsoft Azure Active Directory для Windows PowerShell.
 
-Процедуры, описанные в этом разделе, требуют наличия [модуля Microsoft Azure Active Directory для Windows PowerShell](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Если вы уже установили Azure Active Directory PowerShell, нужно обновление до последней версии.
+Для выполнения процедур, описанных в этом разделе, требуется [Модуль Azure Active Directory для Windows PowerShell](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Если у вас уже установлен этот модуль, убедитесь, что он обновлен до последней версии.
 
-1.  Откройте модуль Microsoft Azure Active Directory для Windows PowerShell.
+1.  [Подключитесь и выполните вход](/powershell/connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) с помощью набора учетных данных глобального администратора для вашего клиента.
 
-2.  Запустите командлет `Connect-MsolService` и введите учетные данные глобального администратора для своего клиента.
-
-3.  Запустите командлет [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser), чтобы задать предпочтительное расположение данных для каждого из пользователей. Пример:
+2.  Use the [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
-    Командлет Get-MsolUser позволяет проверить обновление предпочтительного расположения данных. Пример:
+    You can check to confirm that the preferred data location was updated properly by using the Get-MsolUser cmdlet. For example:
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
@@ -118,7 +118,7 @@ ms.locfileid: "44057725"
 
 По умолчанию возвращаются объединенные результаты, даже когда каждый индекс поиска находится в пределах релевантного геообъекта, если поиск выполняется из этих точек входа:
 
-- OneDrive для бизнеса;
+- OneDrive для бизнеса
 
 - Delve;
 
@@ -140,16 +140,16 @@ ms.locfileid: "44057725"
 
 **Мобильное приложение OneDrive**
 
-Войдите в мобильное приложение OneDrive, используя тестовые учетные данные. Убедитесь, что файлы в OneDrive для бизнеса отображаются и вы можете с ними работать на мобильном устройстве.
+Войдите в мобильное приложение OneDrive, используя учетные данные тестовой учетной записи. Убедитесь, что файлы в OneDrive для бизнеса отображаются и вы можете работать с ними на мобильном устройстве.
 
 **Клиент синхронизации OneDrive**
 
-Убедитесь в том, что клиент синхронизации OneDrive автоматически определяет географическое расположение OneDrive для бизнеса после входа. Если вам нужно скачать клиент синхронизации, в библиотеке OneDrive выберите **Синхронизация**.
+Confirm that the OneDrive sync client automatically detects your OneDrive for Business geo location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
 
 **Приложения Office**
 
-Убедитесь, что можете войти в OneDrive для бизнеса из приложения Office, например Word. Откройте приложение Office и выберите "OneDrive – <TenantName>". Office обнаружит географическое расположение OneDrive и отобразит файлы, которые вы можете открыть.
+Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select "OneDrive – <TenantName>". Office will detect your OneDrive location and show you the files that you can open.
 
 **Общий доступ**
 
-Попробуйте предоставить доступ к файлам в OneDrive. Убедитесь в том, что средство выбора людей показывает вам всех пользователей SharePoint Online независимо от того, каковы их географические расположения.
+Try sharing OneDrive files. Confirm that the people picker shows you all your SharePoint online users regardless of their geo location.

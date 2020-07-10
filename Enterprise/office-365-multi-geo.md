@@ -13,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Расширьте присутствие Microsoft 365 до нескольких регионов с помощью Microsoft 365 Multi-Geo.
-ms.openlocfilehash: d69d8adb83eb639589efec0863b2e15966339b58
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: af1036ce2e8512a13cbf1867bb75a18aff3ac0a2
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057735"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052582"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -30,7 +30,7 @@ ms.locfileid: "44057735"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
 
-В среде с поддержкой нескольких регионов клиент Microsoft 365 включает центральное расположение (где изначально подготавливается подписка на Microsoft 365) и одно или несколько вспомогательных расположений. В клиенте с несколькими регионами информация о регионах, группах и пользователях обрабатывается в Azure Active Directory (AAD). Так как информация клиента обрабатывается централизованно и синхронизируется с каждым регионом, общий доступ и возможности в компании носят глобальный характер.
+В среде с поддержкой нескольких регионов клиент Microsoft 365 включает центральное расположение (где изначально подготавливается подписка на Microsoft 365) и одно или несколько вспомогательных расположений. В клиенте с поддержкой нескольких регионов управление сведениями о географических расположениях, группах и пользователях выполняется в Azure Active Directory (Azure AD). Так как информация клиента обрабатывается централизованно и синхронизируется с каждым регионом, общий доступ и возможности в компании носят глобальный характер.
 
 ![Снимок экрана: карта нескольких регионов в Центре администрирования SharePoint](media/multi-geo-world-map.png)
 
