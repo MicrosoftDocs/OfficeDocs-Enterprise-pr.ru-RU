@@ -3,7 +3,7 @@ title: Миграция с Microsoft Cloud для Германии (Microsoft Cl
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 07/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Сводка: понимание миграции с Microsoft Cloud для Германии (Microsoft Cloud Deutschland) в службы Office 365 в новых регионах центров обработки данных в Германии'
-ms.openlocfilehash: 0a90c1b7f74ce9bc14ccae9965c4ce07f74e1b73
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 3270cb9cf51bc35e7eb7549a109b34c42dda16ff
+ms.sourcegitcommit: d34edff71d0b3c8088ec27049f0fc3b6ce57f7e7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998564"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45092888"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Миграция с Microsoft Cloud для Германии (Microsoft Cloud Deutschland) в службы Office 365 в новых регионах центров обработки данных в Германии
 
@@ -60,6 +60,8 @@ ms.locfileid: "44998564"
 - Dynamics 365 / Power Platform
 
 Предварительные требования и влияние миграции на эти службы описаны в статье [Dynamics 365 Customer engagement](https://aka.ms/D365ceOptIn).
+
+1 марта 2021 г. прекращается поддержка Office 365 Видео. Если вы решили перенести свой клиент Office 365 в новые регионы центров обработки данных в Германии, Office 365 Видео не будет поддерживаться после завершения миграции SharePoint Online. [Подробнее](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Как подготовиться к миграции на службы Office 365 в новых регионах центров обработки данных в Германии
 
@@ -102,6 +104,11 @@ ms.locfileid: "44998564"
 ### <a name="skype-for-business-online"></a>Skype для бизнеса Online
 
 Существующие клиенты Skype для бизнеса Online будут переходить в Microsoft Teams. Дополнительные сведения см. в статье [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home).
+
+### <a name="office-365-video"></a>Office 365 Видео
+Содержимое из Office 365 Видео будет перенесено в рамках миграции SharePoint Online. Но поддержка Office 365 Видео прекращается, и эта служба больше не будет поддерживаться после завершения миграции SharePoint Online в новые регионы центров обработки данных в Германии. Видеоролики не будут воспроизводиться в пользовательском интерфейсе Office 365 Видео после миграции SharePoint.
+
+Microsoft Stream не будет разворачиваться в Microsoft Deutschland, и в настоящее время у нас нет временной шкалы для развертывания Microsoft Stream в новых регионах центров обработки данных в Германии. В результате в этом регионе не будут предоставлены средства для миграции Office 365 Видео в Microsoft Stream. Чтобы сохранить свое содержимое, вам потребуется вручную скачать или переместить содержимое до 1 марта 2021 г. [Подробнее](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 
 ## <a name="key-differences-between-microsoft-cloud-germany-microsoft-cloud-deutschland-and-office-365-services-in-the-new-german-datacenter-regions"></a>Основные различия между Microsoft Cloud для Германии (Microsoft Cloud Deutschland) и служб Office 365 в новых регионах центров обработки данных в Германии
