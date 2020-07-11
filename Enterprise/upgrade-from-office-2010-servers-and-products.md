@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Поддержка скоро завершается для серверов и клиентских приложений Office 2010, а настраиваемые соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: 570386c2f12a098ee2ccb355b5d0fa20bc32aaee
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 5ee19f418512a5ab188a3618d61b067eb8cb790f
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906242"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102577"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2010
 
@@ -44,9 +44,9 @@ Office 2010 и Exchange 2010 достигают конца поддержки д
 
 - Приложения Microsoft 365 для предприятий (ранее именуемые Office 365 профессиональный плюс), которые входят в состав Microsoft 365 E3 и "е", — это набор клиентских приложений Office, устанавливаемых на локальном устройстве. Они регулярно обновляются с учетом новых функций обеспечения производительности и безопасности в Microsoft Cloud.
 
-Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, ознакомьтесь с разрядом с [плакатом об отконце поддержки](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
+Чтобы получить визуальную сводку по обновлению, переносу и переходу на облачные варианты для Office 2010 для клиентов и серверов и Windows 7, ознакомьтесь с разрядом с [плакатом об отконце поддержки](./downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Изображение плаката “Прекращение поддержки клиентов и серверов Office 2010 и Windows 7”](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Изображение плаката “Прекращение поддержки клиентов и серверов Office 2010 и Windows 7”](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
 
 Эта одностраничная Афиша позволяет быстро разобраться с различными путями, которые можно предпринять, чтобы запретить клиенту Office 2010 и серверным продуктам и Windows 7 достичь конца поддержки, с предпочитаемыми путями и поддержкой параметров в Microsoft 365 корпоративный выделенный.
 
