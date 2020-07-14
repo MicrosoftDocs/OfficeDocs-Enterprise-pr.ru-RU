@@ -20,18 +20,18 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: Сводка. Здесь вы найдете афиши для ИТ-специалистов с описанием архитектурных моделей, развертывания и платформ для SharePoint, Exchange, Skype для бизнеса и Lync.
-ms.openlocfilehash: 33613e8e4b4eefc051a1c249773301c5249b0b69
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+ms.openlocfilehash: 9e6e4f2b32bb2e5b39f8891d8acddc0699cdbf8d
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997990"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102567"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Архитектурные модели для SharePoint, Exchange, Skype для бизнеса и Lync
 
 На этих афишах для ИТ-специалистов описаны модели архитектуры и варианты развертывания SharePoint, Exchange, Skype для бизнеса и Lync. Эти ресурсы содержат также сведения о конфигурации для развертывания SharePoint в Microsoft Azure.
   
-С помощью Microsoft 365 вы можете предоставить службам совместной работы и общения, что пользователи знакомы с облачной службой. При наличии нескольких исключений пользователь работает так же, как при локальном развертывании, так и с помощью Microsoft 365. Этот единый подход несколько затрудняет выбор среды для рабочих нагрузок и поднимает следующие вопросы:
+С помощью Microsoft 365 вы можете предоставлять пользователям знакомые функции совместной работы и коммуникации в составе облачной службы.  За некоторыми исключениями, пользовательские интерфейсы в локальной среде и Microsoft 365 одинаковы. Этот единый подход несколько затрудняет выбор среды для рабочих нагрузок и поднимает следующие вопросы:
   
 - Как определить, какой вариант платформы использовать для отдельных рабочих нагрузок?
     
@@ -53,8 +53,6 @@ Let us know what you think! Send us email at [cloudadopt@microsoft.com](mailto:c
 - **Афиши с архитектурными моделями.**  Эти ресурсы помогут определить идеальную платформу и конфигурацию для SharePoint 2016 и Skype для бизнеса 2015.
     
   - [Архитектурные модели Microsoft SharePoint 2016](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_ArchModel)
-    
-  - [Возможности поддержки нескольких регионов в OneDrive и SharePoint Online в Microsoft 365](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#MultiGeoO365ODB)
     
   - [Базы данных SharePoint Server 2016](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_Databases)
     
@@ -97,13 +95,6 @@ These new IT posters for SharePoint 2016 and Skype for Business 2015 provide a w
 |:-----|:-----|
 |[![Эскиз афиши архитектурных моделей SharePoint 2016](media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | На этой афише для ИТ-специалистов описаны конфигурации SharePoint Online, Microsoft Azure и локальной среды SharePoint, которые необходимо знать лицам, принимающим бизнес-решения, и архитекторам решений. <br/><br/> - **SharePoint Online (SaaS)**. Используйте SharePoint по подписке в рамках модели SaaS. <br/> - **Гибридная конфигурация SharePoint**. Перемещайте сайты и приложения SharePoint в облако тогда, когда вам удобно. <br/> - **SharePoint in Azure (IaaS)** - You extend your on-premises environment into Microsoft Azure and deploy SharePoint 2016 Servers there. (This is recommended for High Availability/Disaster Recovery and dev/test environments.) <br/> - **Локальная среда SharePoint**. Планируйте, развертывайте, обслуживайте и настраивайте среду SharePoint в своем центре обработки данных. <br/> |
    
-<a name="MultiGeoO365ODB"> </a>
-### <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365"></a>Возможности поддержки нескольких регионов в OneDrive и SharePoint Online в Microsoft 365
-
-|**Элемент**|**Описание**|
-|:-----|:-----|
-|[![OneDrive с поддержкой нескольких регионов в модели Microsoft 365](media/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Multi-Geo-ODB.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Multi-Geo-ODB.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Multi-Geo-ODB.vsdx) <br/> | Этот плакат представляет собой одностраничный обзор возможностей поддержки нескольких регионов в OneDrive и SharePoint Online в Microsoft 365. Эта модель включает следующие компоненты: <br/><br/> - Преимущества <br/> - Этапы развертывания <br/> - Пример конфигурации <br/><br/>  Для получения дополнительных сведений о возможностях поддержки нескольких регионов в OneDrive и SharePoint Online в Microsoft 365 щелкните [здесь](https://aka.ms/onedrivemultigeo).  <br/> |
-   
 <a name="SP2016_Databases"> </a>
 ### <a name="sharepoint-server-2016-databases"></a>Базы данных SharePoint Server 2016
 
@@ -139,7 +130,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Эскиз вариантов платформы SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Для лиц, принимающих деловые решения (вариантах развертывания) и архитекторов, эта модель показывает варианты платформы для SharePoint 2013, SharePoint в Microsoft 365, локальную гибридную среду с Microsoft 365, Azure и локальными развертываниями. Она содержит общие сведения о каждой архитектуре, рекомендации, требования к лицензированию и списки задач для архитекторов и ИТ-специалистов. В Azure выделено несколько решений SharePoint. <br/> |
+|[![Эскиз вариантов платформы SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Эта модель, предназначенная для лиц, принимающих бизнес-решения, и архитекторов, описывает варианты платформ для SharePoint 2013, SharePoint в Microsoft 365, локального гибридного развертывания в Microsoft 365, Azure, а также локального развертывания.  Она содержит обзор каждой архитектуры, рекомендации, лицензионные требования, а также списки задач для архитекторов и ИТ-специалистов по каждой платформе. Также рассмотрено несколько решений SharePoint в Azure.  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Варианты платформы Exchange 2013
@@ -148,7 +139,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Эскиз вариантов платформы Exchange](media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=42676) <br/> |Эта модель, предназначенная архитекторов и ответственных за принятие коммерческих решений, описывает доступные варианты платформы для Exchange 2013. Клиенты могут выбрать Exchange Online с помощью Microsoft 365, гибридного Exchange, локального и размещенного Exchange Server. Плакат содержит подробные сведения о каждом варианте архитектуры, включая наиболее подходящие сценарии для каждого из них, требования к лицензированию и описание обязанностей ИТ-специалистов. <br/> |
+|[![Эскиз вариантов платформы Exchange](media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=42676) <br/> |В этой модели описаны доступные платформы для Exchange 2013 для лиц, принимающих бизнес-решения, и архитекторов. Клиенты могут выбрать Exchange Online с Microsoft 365, гибридную среду Exchange, локальную среду Exchange Server и размещенный Exchange. Плакат содержит сведения о каждом варианте архитектуры, включая оптимальные сценарии, требования к лицензиям и описание обязанностей ИТ-специалистов. <br/> |
    
 <a name="Lync2013_Options"> </a>
 ## <a name="lync-2013-platform-options"></a>Варианты платформы Lync 2013
@@ -157,7 +148,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Эскиз вариантов платформы Lync](media/Lync-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41677) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=391837)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=391839)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=41677) <br/> |Эта модель, предназначенная для лиц, принимающих бизнес-решения, и архитекторов, описывает доступные варианты платформы Lync 2013. Клиенты могут выбирать из Lync Online с помощью Microsoft 365, гибридной среды Lync, локальной среды Lync Server и размещенной Lync. Афиша для ИТ-специалистов содержит подробные сведения о каждом варианте архитектуры, включая наиболее подходящие сценарии для каждого из них, требования к лицензированию и обязанности ИТ-специалистов.  <br/> |
+|[![Эскиз вариантов платформы Lync](media/Lync-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41677) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=391837)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=391839)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=41677) <br/> |В этой модели описаны доступные платформы для Lync 2013 для лиц, принимающих бизнес-решения, и архитекторов. Клиенты могут выбрать Lync Online с Microsoft 365, гибридную среду Lync, локальный сервер Lync Server и размещенное решение Lync. Афиша для ИТ-специалистов содержит сведения о каждом варианте архитектуры, включая оптимальные сценарии, требования к лицензиям и описание обязанностей ИТ-специалистов.  <br/> |
    
 <a name="Lync2013_Options"> </a>
 ## <a name="sharepoint-in-azure-solutions-posters"></a>Афиши с решениями SharePoint в Azure
@@ -171,7 +162,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Изображение веб-сайтов в Azure, использующих SharePoint](media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |В этом афише показаны основные действия по проектированию и рекомендуемые варианты архитектуры для веб-сайтов в Azure.  <br/><br/> Дополнительные сведения см. в следующих статьях:  <br/><br/> - [Веб-сайты в Microsoft Azure, использующие SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Архитектуры Microsoft Azure для SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Изображение веб-сайтов в Azure, использующих SharePoint](media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |На этой афише представлены описания рекомендуемых вариантов архитектуры доступных в Интернете сайтов в Azure.  <br/><br/> Дополнительные сведения см. в следующих статьях:  <br/><br/> - [Веб-сайты в Microsoft Azure, использующие SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Архитектуры Microsoft Azure для SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 <a name="DesignSampleInternetSites"> </a>
 ### <a name="design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Пример проекта: веб-сайты в Microsoft Azure для SharePoint 2013
@@ -180,7 +171,7 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Изображение примера проекта: веб-сайты в Microsoft Azure для SharePoint 2013](media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |Используйте этот пример проектирования в качестве отправной точки для собственной архитектуры собственного веб-сайта в Azure с помощью SharePoint Server 2013. <br/><br/> Дополнительные сведения см. в следующих статьях:  <br/><br/> - [Веб-сайты в Microsoft Azure, использующие SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Архитектуры Microsoft Azure для SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Изображение примера проекта: веб-сайты в Microsoft Azure для SharePoint 2013](media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |Используйте этот пример проектирования в качестве начальной точки при создании собственной архитектуры для доступного в Интернете сайта в Azure с использованием SharePoint Server 2013. <br/><br/> Дополнительные сведения см. в следующих статьях:  <br/><br/> - [Веб-сайты в Microsoft Azure, использующие SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Архитектуры Microsoft Azure для SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 <a name="sharepoint_recovery_Azure"> </a>
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Аварийное восстановление SharePoint в Microsoft Azure
@@ -189,13 +180,13 @@ These IT posters for SharePoint 2013, Exchange 2013, and Lync 2013 provide a way
 
 |**Элемент**|**Описание**|
 |:-----|:-----|
-|[![Процесс аварийного восстановления SharePoint в Azure](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |На этом плакате ИТ показаны принципы архитектуры для среды аварийного восстановления в Azure. <br/><br/> Дополнительные сведения см. в следующих статьях:  <br/><br/> - [Аварийное восстановление SharePoint Server 2013 в Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Архитектуры Microsoft Azure для SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Процесс аварийного восстановления SharePoint в Azure](media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |На этой афише для ИТ-специалистов отображены принципы создания архитектуры для среды аварийного восстановления в Azure. <br/><br/> Дополнительные сведения см. в следующих статьях:  <br/><br/> - [Аварийное восстановление SharePoint Server 2013 в Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Архитектуры Microsoft Azure для SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ## <a name="see-also"></a>См. также
 
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.yml)
   
-[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
 [Руководства по лаборатории тестирования для Microsoft 365 на крупных предприятиях](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   

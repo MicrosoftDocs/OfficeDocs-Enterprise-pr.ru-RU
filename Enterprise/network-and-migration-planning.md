@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Содержит ссылки на сведения о планировании и тестировании сети и миграции в Office 365.
-ms.openlocfilehash: fbf8046fb5f386dfceb3a59dbc384e578fe3a519
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 530e07aeb2f3420f0c752f2b254913a42c73f8ee
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998554"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117271"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Планирование сети и миграции для Office 365
 
@@ -53,7 +53,7 @@ ms.locfileid: "44998554"
     
 2. Определите, какие службы и функции Office 365 будут доступны для использования клиентами. Скорее всего, у вас будут группы людей с разными службами или профилями использования.
     
-3. Измерьте использование сети для пилотной группы клиентов. Убедитесь, что пилотным клиентам характерны различные профили сотрудников Организации, а также различные географические расположения. Вы можете проанализировать результаты с помощью старых калькуляторов для [Exchange ](https://go.microsoft.com/fwlink/p/?LinkId=321550)и [Skype для бизнеса](https://go.microsoft.com/fwlink/p/?LinkId=321551) , а также для [исследования обращений](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) , которые мы выполняли в своей сети. 
+3. Измерьте использование сети для пилотной группы клиентов. Убедитесь, что пилотным клиентам характерны различные профили сотрудников Организации, а также различные географические расположения. Вы можете проанализировать результаты с помощью старых калькуляторов для [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) и [Skype для бизнеса](https://go.microsoft.com/fwlink/p/?LinkId=321551) , а также для [исследования обращений](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) , которые мы выполняли в своей сети. 
     
 4. Используйте измерения из пилотной группы для экстраполяции потребностей Организации и повторной проверки, чтобы проверить оценки перед внесением изменений в сеть.
     
