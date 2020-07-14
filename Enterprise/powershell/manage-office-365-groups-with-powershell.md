@@ -1,5 +1,5 @@
 ---
-title: Управление группами Office 365 с помощью PowerShell
+title: Управление группами Microsoft 365 с помощью PowerShell
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -17,33 +17,33 @@ search.appverid:
 - BSA160
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
-description: Узнайте, как выполнять стандартные задачи управления для групп Office 365 в Microsoft PowerShell.
-ms.openlocfilehash: c946b570b0d434886dbd76ba61f53771aa6bca80
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+description: Узнайте, как выполнять стандартные задачи управления для групп Microsoft 365 в Microsoft PowerShell.
+ms.openlocfilehash: e0758ca928a30c06da33f0b213ada51f69bf65e1
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052482"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117261"
 ---
-# <a name="manage-office-365-groups-with-powershell"></a>Управление группами Office 365 с помощью PowerShell
+# <a name="manage-microsoft-365-groups-with-powershell"></a>Управление группами Microsoft 365 с помощью PowerShell
  
 В этой статье приводятся инструкции по выполнению стандартных задач управления для групп в Microsoft PowerShell. Кроме того, в нем перечислены командлеты PowerShell для групп. Сведения об управлении сайтами SharePoint можно найти [в статье Управление сайтами SharePoint Online с помощью PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
 
-## <a name="link-to-your-office-365-groups-usage-guidelines"></a>Ссылка на свои рекомендации по использованию групп Office 365
+## <a name="link-to-your-microsoft-365-groups-usage-guidelines"></a>Ссылки на рекомендации по использованию групп Microsoft 365
 <a name="BK_LinkToGuideLines"> </a>
 
 Когда пользователи [создают или редактируют группу в Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), вы можете показывать им ссылку на рекомендации по использованию вашей организации. Например, если требуется добавить в имя группы определенный префикс или суффикс.
   
-Используйте оболочку PowerShell Azure Active Directory (Azure AD), чтобы указать пользователям в Организации рекомендации по использованию для групп Office 365. Изучите [командлеты Azure Active Directory для настройки параметров групп](https://go.microsoft.com/fwlink/?LinkID=827484) и следуйте шагам, описанным в разделе **CREATE Settings на уровне каталога** , чтобы определить гиперссылку на рекомендации по использованию. После выполнения командлета Azure AD пользователь увидит ссылку на свои рекомендации при создании или изменении группы в Outlook. 
+Используйте оболочку PowerShell Azure Active Directory (Azure AD), чтобы указать пользователям в Организации рекомендации по использованию для групп Microsoft 365. Изучите [командлеты Azure Active Directory для настройки параметров групп](https://go.microsoft.com/fwlink/?LinkID=827484) и следуйте шагам, описанным в разделе **CREATE Settings на уровне каталога** , чтобы определить гиперссылку на рекомендации по использованию. После запуска командлета AAD пользователь увидит ссылку на свои рекомендации при создании или изменении группы в Outlook. 
   
 ![Создание ссылки на новую группу с рекомендациями по использованию](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
   
 ![Выберите пункт рекомендации по использованию групп, чтобы просмотреть рекомендации для организаций Office 365 для групп](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
   
-## <a name="allow-users-to-send-as-the-office-365-group"></a>Разрешить пользователям отправлять сообщения в качестве группы Office 365
+## <a name="allow-users-to-send-as-the-microsoft-365-group"></a>Разрешить пользователям отправлять сообщения в качестве группы Microsoft 365
 <a name="BK_LinkToGuideLines"> </a>
   
-Чтобы включить для группы Office 365 параметр "Отправить как", используйте командлеты [Add – RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission) и [Get – RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient) , чтобы настроить этот параметр. После включения этого параметра пользователи группы Office 365 смогут отправлять сообщения электронной почты и отвечать на них в качестве группы Office 365 с помощью Outlook или Outlook в Интернете. Пользователи могут перейти к группе, создать новую электронную почту и изменить поле "Отправить как" на адрес электронной почты группы. 
+Если вы хотите включить "Отправить как" для групп Microsoft 365, выполните командлеты [Add – RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission) и [Get – RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient) , чтобы настроить этот параметр. После включения этого параметра пользователи группы Microsoft 365 могут использовать Outlook или Outlook в Интернете для отправки электронной почты и ответа в качестве группы Microsoft 365. Пользователи могут перейти к группе, создать новую электронную почту и изменить поле "Отправить как" на адрес электронной почты группы. 
 
 ([Это также можно сделать в центре администрирования Exchange](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
   
