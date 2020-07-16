@@ -13,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Расширьте присутствие Microsoft 365 до нескольких регионов с помощью Microsoft 365 Multi-Geo.
-ms.openlocfilehash: af1036ce2e8512a13cbf1867bb75a18aff3ac0a2
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: a49ba9b9b5109972a6b0a631d34d14acb189f484
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052582"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117281"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -47,6 +47,15 @@ ms.locfileid: "45052582"
 - **Предпочтительное расположение данных (PDL)** — свойство пользователя, устанавливаемое администратором, которое указывает географическое расположение, где следует подготовить почтовый ящик Exchange и хранилище OneDrive пользователей. PDL также определяет, где подготовлены сайты SharePoint, созданные пользователем.
 - **Вспомогательное расположение** — географическое расположение, где учитывающие регион рабочие нагрузки Microsoft 365 (SharePoint, OneDrive и Exchange) включены в клиенте с поддержкой нескольких регионов.
 - **Клиент** — представление организации в Microsoft 365, которое имеет, как правило, один или несколько связанных с ним доменов (например, contoso.com).
+
+## <a name="licensing"></a>Лицензирование
+
+Microsoft 365 с поддержкой нескольких регионов доступен как надстройка для планов подписки Microsoft 365 для клиентов EA с не менее чем 250 рабочих мест Microsoft 365 в клиенте и не менее чем 5% из этих рабочих мест, для которых используется поддержка нескольких регионов. За дополнительной информацией обращайтесь к команде, в которую входит ваша учетная запись.
+
+- Microsoft 365 F1, E1, E3 или E5
+- Exchange Online (план 1 или план 2)
+- OneDrive для бизнеса (план 1 или план 2)
+- SharePoint Online (план 1 или план 2)
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Доступность Microsoft 365 Multi-Geo
 
