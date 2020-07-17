@@ -30,7 +30,7 @@ ms.locfileid: "44735665"
 
 *Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
-An important part of your Microsoft 365 onboarding is to ensure that your network and Internet connections are set up for optimized access. Configuring your on-premises network to access a globally distributed Software-as-a-Service (SaaS) cloud is different from a traditional network that is optimized for traffic to on-premises datacenters and a central Internet connection. 
+Важная часть вашей входящей миграции Microsoft 365 — убедиться в том, что в сети и подключения к Интернету настроена Оптимизация доступа. Настройка локальной сети для доступа к глобально распределенному облачному программному обеспечению (SaaS) отличается от традиционной сети, оптимизированной для трафика в локальных центрах обработки данных и центрального подключения к Интернету. 
 
 С помощью этих статей можно ознакомиться с основными различиями пограничных устройств, клиентских компьютеров и локальной сети, а также изменять их для обеспечения оптимальной производительности для локальных пользователей.
 
@@ -46,17 +46,17 @@ An important part of your Microsoft 365 onboarding is to ensure that your networ
 
 ## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Поддержка сети Microsoft 365 в качестве поставщика сетевого оборудования
 
-If you are a network equipment vendor, join the [Office 365 Networking Partner Program](office-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
+Если вы являетесь поставщиком сетевого оборудования, присоединяйтесь к [партнерской программе Office 365 для поставщиков сетевых устройств и служб](office-365-networking-partner-program.md). Зарегистрируйтесь в программе, чтобы встроить принципы сетевого подключения к Office 365 в свои продукты и решения. 
 
 ## <a name="office-365-endpoints"></a>Конечные точки Office 365
 
 Конечные точки — это набор конечных IP-адресов, доменных имен DNS и URL-адресов для трафика Office 365 в Интернете. 
 
-To optimize performance to Office 365 cloud-based services, some endpoints need special handling by your client browsers and the devices in your edge network. These devices include firewalls, SSL Break and Inspect and packet inspection devices, and data loss prevention systems.
+Чтобы повысить производительность облачных служб Office 365, некоторым конечным точкам требуется специальная обработка клиентскими браузерами и устройствами в сети периметра. К этим устройствам относятся брандмауэры, устройства расшифровки и анализа SSL-трафика, устройства анализа пакетов и системы защиты от потери данных.
 
 Подробные сведения см. в статье [Управление конечными точками Office 365](managing-office-365-endpoints.md).
 
-There are currently five different Office 365 clouds. This table takes you to the list of endpoints for each one.
+В настоящее время существует пять разных облаков Office 365. Эта таблица позволяет перейти к списку конечных точек для каждого из них.
 
 |||
 |:-------|:-----|

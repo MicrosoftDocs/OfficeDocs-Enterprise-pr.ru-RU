@@ -24,9 +24,9 @@ ms.locfileid: "44997799"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Удаление данных в Skype для бизнеса в Office 365
 
-Skype for Business provides archiving of peer-to-peer instant messages, multiparty instant messages, and content upload activities in meetings. The archiving capability requires Exchange and is controlled by the user's Exchange mailbox In-Place Hold attribute, which archives both email and Skype for Business contents.
+Skype для бизнеса позволяет архивировать личные мгновенные сообщения, групповые чаты и загрузки содержимого во время собраний. Для архивации требуется Exchange. Архивацией управляет атрибут удержания на месте пользовательского почтового ящика Exchange, отвечающий за архивацию как содержимого Skype для бизнеса, так и содержимого электронной почты.
 
-All archiving in Skype for Business is considered "user-level archiving" because you enable or disable it for one or more specific users or groups of users by creating, configuring, and applying a user-level archiving policy for those users. There is no direct control of archiving settings from within the Skype for Business admin center.
+Архивация в Skype для бизнеса включается или отключается для отдельных пользователей или групп пользователей путем создания, настройки и применения политики архивации. Управлять настройками архивации в Центре администрирования Skype для бизнеса нельзя.
 
 Следующие типы контента не архивируются в Skype для бизнеса:
 

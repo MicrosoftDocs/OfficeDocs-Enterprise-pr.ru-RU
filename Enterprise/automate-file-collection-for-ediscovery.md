@@ -26,18 +26,18 @@ ms.locfileid: "44997980"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Автоматизация сбора файлов для обнаружения электронных данных
 
-All companies face the potential of lawsuits or other types of legal action. While legal departments work to reduce that exposure, litigation is a fact of business life. When a company faces legal action, they are required, through the process of legal discovery, to provide all relevant documentary materials to the court and to opposing counsel. 
+Ни одна компания не застрахована от судебных исков. Несмотря на то что юридические отделы стараются снизить этот риск, судебные разбирательства  неизбежная реальность бизнеса. Когда против компании начинается судебное разбирательство, она обязана предоставить суду и адвокату противной стороны все необходимые документы. 
   
-eDiscovery is the process by which companies inventory, search, identify, preserve, filter, and make available the relevant documentary materials that exist in electronic form. SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online, and Exchange Online can hold large amounts of documentary content. Depending on the version, these products may support eDiscovery and in place holds (Lync via Exchange Server), making it easier for the legal teams to index, identify, hold, and filter the most relevant content for a given case.
+Обнаружение электронных данных  это процесс, который компании используют для инвентаризации, поиска, идентификации, сохранения, фильтрации и предоставления необходимых электронных документов. В SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online и Exchange Online можно хранить большое количество документов. В зависимости от версии эти продукты могут поддерживать eDiscovery и хранение на месте (Lync через Exchange Server), что позволяет юридическим отделам легко индексировать, идентифицировать, хранить и фильтровать материалы по тому или иному делу.
   
-Many documents are stored on users' (Custodians) local computers, not in a centralized location. This makes it essentially impossible for SharePoint 2013 to search, and if it can't be searched, it can't be included in eDiscovery. This solution shows you how to use logon scripts, System Center Orchestrator 2012 R2 and Windows PowerShell for Exchange Server to automate the identification and collection of documentary materials from users' computers.
+Многие документы хранятся на локальных компьютерах пользователей (хранителей), а не в одной папке. В этом случае поиск данных в SharePoint 2013 практически невозможен. Следовательно, их невозможно включить в eDiscovery. В этом решении показано, как использовать сценарии входа, System Center Orchestrator 2012 R2 и Windows PowerShell, чтобы автоматизировать идентификацию и сбор документов с компьютеров пользователей в Exchange Server.
   
 ## <a name="what-this-solution-does"></a>Принцип работы решения
 
-This solution uses a global security group, Group Policy, and a Windows PowerShell script to locate, inventory, and collect content and Outlook personal store (PST) files from users local computers to a hidden file share. From there, the PST files can be imported into either Exchange Server 2013 or Exchange Online. All files are then moved using a System Center Orchestrator 2012 R2 runbook to another file share in Microsoft Azure for long-term storage and indexing by SharePoint 2013. You then use eDiscovery centers in your on-premises SharePoint 2013 deployment or in SharePoint Online as you regularly would to perform eDiscovery. 
+В этом решении используются глобальная группа безопасности, групповая политика и сценарий Windows PowerShell для поиска содержимого и PST-файлов Outlook на локальных компьютерах пользователей, их инвентаризации и сбора в скрытую общую папку. Оттуда PST-файлы можно импортировать в Exchange Server 2013 или Exchange Online. После этого все файлы перемещаются с помощью модуля Runbook System Center Orchestrator 2012 R2 в другую общую папку в Microsoft Azure для долгосрочного хранения и индексации с помощью SharePoint 2013. Затем вы можете использовать центры eDiscovery в локальном развертывании SharePoint 2013 или SharePoint Online, как при обычном поиске eDiscovery. 
   
 > [!IMPORTANT]
-> This solution uses robocopy to copy files from custodian's computers to a centralized file share. Because robocopy does not copy files that are open or locked, any files, including PST files, that the custodian has open will not be collected. You will have to collect them manually. This solution does provide you with a list that explicitly identifies the files it cannot copy and the full path to each file. 
+> В этом решении файлы копируются с компьютеров хранителей в одну общую папку с помощью операции Robocopy. Операция Robocopy не копирует открытые или заблокированные файлы, поэтому все открытые файлы, в том числе PST-файлы, не будут собраны. Их потребуется собрать вручную. В этом решении не создается список файлов, которые не удалось скопировать, с полными путями к каждому файлу. 
   
 На следующей схеме подробно рассмотрены все этапы и элементы решения.
   
@@ -59,7 +59,7 @@ This solution uses a global security group, Group Policy, and a Windows PowerShe
    
 ## <a name="prerequisites"></a>Предварительные условия
 
-The configuration of this solution requires many elements, most of which you likely have in place and configured if you're thinking about eDiscovery. For the elements that you may not have or ones that require a specific configuration, we'll provide you with the links you need build out your base configuration. You must have the base configuration in place before you configure the solution itself.
+Для настройки этого решения требуется ряд элементов, большинство из которых должны быть установлены и настроены, если вы планируете использовать eDiscovery. Мы предоставим вам ссылки на элементы, которые отсутствуют или требуют специальной настройки, чтобы вы смогли создать базовую конфигурацию. Базовая конфигурация должна быть готова до настройки самого решения.
   
 ### <a name="base-configuration"></a>Базовая настройка
 
@@ -86,7 +86,7 @@ The configuration of this solution requires many elements, most of which you lik
 
 1. Создайте на локальном домене глобальную группу безопасности Custodians.
     
-2. Create a hidden file share for the files that are collected from Custodians computers. This should be on an on-premises server. For example, on a server called Staging, create a file share called Cases$. The **$** is required to make this a hidden share.
+2. Создайте скрытую общую папку для файлов, собираемых с компьютеров хранителей. Она должна находиться на локальном сервере. Например, на сервере Staging создайте общую папку Cases$. Символ **$** необходим для того, чтобы сделать эту папку скрытой.
     
 3. Задайте следующие разрешения для общей папки:
     
@@ -96,7 +96,7 @@ The configuration of this solution requires many elements, most of which you lik
     
   - Доверенная подсистема Exchange: "Изменение", "Чтение"
     
-4. Open the **Security** tab, add the Custodians group, and click **Advanced**. Set the following permissions for the Custodians group:
+4. Откройте вкладку **Безопасность**, добавьте группу Custodians и нажмите кнопку **Дополнительно**. Для группы Custodians задайте следующие разрешения:
     
   - **Тип: Deny**
     
@@ -116,11 +116,11 @@ The configuration of this solution requires many elements, most of which you lik
     
 2. Поместите файл в папку Cases$.
     
-3. As the user, browse to the staging server, for example browse to the \\\\Staging share to see what shares are available. You shouldn't see the **Cases$** share listed.
+3. От имени пользователя перейдите к промежуточному серверу, например к общей папке \\\\Staging, чтобы проверить, какие папки доступны. Папки **Cases$** не должно быть в списке.
     
-4. Manually type the full path to the Cases$ share into Explorer. This should open the Cases$ share.
+4. Вручную введите полный путь к общей папке Cases$ в проводнике. Должна открыться общая папка Cases$.
     
-5. Try to open the file you previously placed in the share. This should fail.
+5. Попробуйте открыть файл, который вы ранее разместили в общей папке. Должна возникнуть ошибка.
     
 ### <a name="logon-script"></a>Сценарий входа
 
@@ -268,12 +268,12 @@ Write-Host -ForegroundColor Cyan "Finished."
 
 2. Сохраните приведенный выше сценарий как CollectionScript.ps1 в легкодоступном расположении, например C:\\AFCScripts.
     
-3. Use the Go To feature in Notepad. Make the following changes, as needed:
+3. Используя функцию Блокнота "Перейти", при необходимости внесите следующие изменения:
     
 |**Номер строки**|**Необходимые изменения**|**Обязательно?**|
 |:-----|:-----|:-----|
-|71  <br/> |**$FileTypes** variable. Include all the file type extensions that you want the script to inventory and collect in the array variable. <br/> |Необязательна  <br/> |
-|76 и 77  <br/> |Change the way the **$CaseNo** variable is built to suit your needs. The script captures the current date and time and appends the user name to it. <br/> |Необязательно  <br/> |
+|71  <br/> |Переменная **$FileTypes**. Включите расширения всех типов файлов, подлежащих инвентаризации и сбору в переменной массива с использованием сценария.<br/> |Необязательна  <br/> |
+|76 и 77  <br/> |Измените способ сборки переменной **$CaseNo** в соответствии со своими потребностями. Сценарий записывает текущую дату и время, а также добавляет к переменной имя пользователя.<br/> |Необязательно  <br/> |
 |80  <br/> |Переменную **$CaseRootLocation** необходимо настроить для общей папки коллекции промежуточных серверов, например **\\\\Staging\\Cases$**. <br/> |Обязательный  <br/> |
    
 4. Поместите файл CollectionScript.ps1 в общую папку Netlogon на контроллере домена.  
@@ -324,14 +324,14 @@ $AllFiles | ForEach-Object {
 }
   ```
 
-2. Save the script as PSTImportScript.ps1 in a location that's easy for you to find. For example and ease of use, create a folder on your staging server called \\\\Staging\\AFCScripts, and save it there.
+2. Сохраните сценарий как PSTImportScript.ps1 в расположении, которое вы сможете легко найти. Например, для удобства создайте папку \\\\Staging\\AFCScripts на своем промежуточном сервере и сохраните сценарий в ней.
     
 3. Используя функцию Блокнота "Перейти", при необходимости внесите следующие изменения:
     
 |**Номер строки**|**Необходимые изменения**|**Обязательно?**|
 |:-----|:-----|:-----|
-|12   <br/> |**$FolderIdentifier** tags the mailbox folders that PSTs are imported into. Change this if necessary. <br/> |Необязательный  <br/> |
-|17   <br/> |**$ConnectionUri** необходимо настроить на отдельном сервере. <br/> > [!IMPORTANT]> Make sure your **$ConnectionUri** points to a http location, not https. It won't work with https:.          |Обязательно  <br/> |
+|12   <br/> |**$FolderIdentifier** помечает папки почтовых ящиков, в которые импортируются PST-файлы. При необходимости измените их.<br/> |Необязательный  <br/> |
+|17   <br/> |**$ConnectionUri** необходимо настроить на отдельном сервере. <br/> > [!IMPORTANT]> Убедитесь, что **$ConnectionUri** указывает на расположение с префиксом http://, а не https://. Префикс https:// не будет работать.          |Обязательно  <br/> |
    
 4. Убедитесь, что у учетной записи "Доверенная подсистема Exchange" есть разрешения на чтение, запись и выполнение в общей папке \\\\Staging\\Cases$.
     
@@ -345,13 +345,13 @@ $AllFiles | ForEach-Object {
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>Вариант Б импорта PST-файлов для Exchange Online
 
--  Create the mailbox structure to place the imported PST files into. For more information on how to create a user mailbox in Exchange Online, see[Create User Mailboxes in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
+-  Создайте структуру почтовых ящиков для размещения импортированных PST-файлов. Дополнительные сведения о том, как создать почтовый ящик пользователя в Exchange Online, см. в статье [Создание почтовых ящиков пользователей в Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
     
 ### <a name="cold-storage"></a>Автономное неструктурированное защищенное хранилище
 
 1. Создайте общую папку в виртуальной машине Azure, в которую будут помещены все собранные файлы, например \\\\AZFile1\\ContentColdStorage.
     
-2. Grant the default content access account at least Read permissions to the share and all subfolders and files. For more information about configuring SharePoint 2013 Search, see [Create and configure a Search service application in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940).
+2. Предоставьте стандартной учетной записи для доступа к контенту разрешения по крайней мере на чтение содержимого общей папки, а также всех вложенных папок и файлов. Дополнительные сведения о настройке службы поиска SharePoint 2013 см. в статье [Создание и настройка приложения-службы поиска в SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940).
     
 3. Если планируется импортировать PST-файлы из общей папки \\\\AZFile1\\ContentColdStorage, предоставьте группе "Доверенная подсистема Exchange" разрешения на чтение, запись и выполнение в этой папке.
     
@@ -359,17 +359,17 @@ $AllFiles | ForEach-Object {
 
 1. Скачайте [MoveToColdStorage Runbook](https://go.microsoft.com/fwlink/?LinkId=616095) в Центре загрузки Майкрософт.
     
-2. Open the **Runbook Designer**, in the **Connections** pane, click the folder that you want to import the runbook into. Click the **Actions** menu, and the click **Import**. The **Import** dialog box appears.
+2. Откройте **Runbook Designer** и в области **Подключения** выберите папку, в которую нужно импортировать модуль Runbook. В меню **Действия** выберите пункт **Импортировать**. Откроется диалоговое окно **Импорт**.
     
 3. В поле **Расположение файла** введите путь и имя файла модуля Runbook, который вы хотите импортировать, или щелкните многоточие ( **...**), чтобы найти необходимый файл. 
     
-4. Select **Import runbooks** and **Import Orchestrator encrypted data**. Clear **Counters**, **Schedules**, **Variables**, **Computer Groups**, **Import global configurations**, and **Overwrite existing global configurations**.
+4. Последовательно выберите пункты **Импорт модулей Runbook** и **Импорт данных, зашифрованных в Orchestrator**. Очистите значения в полях **Счетчики**, **Расписания**, **Переменные**, **Группы компьютеров**, **Импортировать глобальные конфигурации** и **Перезаписать существующие глобальные конфигурации**.
     
 5. Нажмите кнопку **Готово**.
     
 6. Внесите в модуль Runbook **MoveFilesToColdStorage** следующие изменения.
     
-1. **Move File** activity - set the **Source File** path to the collection file share, for example \\\\Staging\\cases$. Set the **Destination Folder** to the cold storage file share in Azure, for example \\\\AZFile1\\ContentColdStorage. Select **Create a file with a unique name**.
+1. Действие **Перемещение файла**: задайте в качестве значения параметра **Исходный файл** общую папку для сбора данных, например \\\\Staging\\cases$. Задайте в качестве значения параметра **Конечная папка** общую папку в защищенном хранилище в Azure, например \\\\AZFile1\\ContentColdStorage. Выберите пункт **Создать файл с уникальным именем**.
     
 2. Действие **Удаление папки**: задайте в качестве значения параметра **Путь:** общую папку для сбора данных, например \\\\Staging\\cases$\\* и выберите пункт **Удалить все файлы и вложенные папки**. 
     
@@ -377,17 +377,17 @@ $AllFiles | ForEach-Object {
     
 ### <a name="sharepoint-on-premises-search-for-cold-storage"></a>Локальный поиск защищенного хранилища в SharePoint
 
-1. Create an new content source in your SharePoint 2013 farm for the cold storage share in Azure, for example \\\\AZFile1\\ContentColdStorage. For more information about managing content sources, see [Add, edit, or delete a content source in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
+1. Создайте новый источник контента на своей ферме SharePoint 2013 для общей папки в автономном неструктурированном защищенном хранилище Azure, например \\\\AZFile1\\ContentColdStorage. Дополнительные сведения об управлении источниками контента см. в статье [Добавление, изменение и удаление источника контента в SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004).
     
-2. Start a full crawl. For more information see, [Start, pause, resume, or stop a crawl in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+2. Запустите полный обход контента. Дополнительные сведения см. в статье [Запуск, приостановка, возобновление и остановка обхода контента в SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
     
 ## <a name="using-the-solution"></a>Использование решения
 
-There are five major steps in using this solution, assuming you don't want to import the PST files into both Exchange Server 2013 and Exchange Online. This section provides you with the procedures for all of them. Your primary interaction with the solution will be in doing the following:
+Это решение используется в пять основных этапов, если PST-файлы не нужно импортировать как в Exchange Server 2013, так и в Exchange Online. В этом разделе описаны действия для всех этих этапов. При работе с решением вашими основными задачами будут следующие:
   
 1. Управление членством в группе Custodians.
     
-2. Review the log files generated by the logon script. The FileCopyErrors.log lists all the files that were not successfully copied. You need to decide what you want to do with them
+2. Ошибки
     
 3. Управление процессом импорта PST-файлов.
     
@@ -409,32 +409,32 @@ There are five major steps in using this solution, assuming you don't want to im
     
 ### <a name="custodian-management"></a>Управление хранителями
 
-- To start the automated file collection process for an individual user, add them to the Custodians group. The next time that the user logs on, the logon script assigned to the Custodians group through Group Policy will run. 
+- Чтобы начать процесс автоматического сбора файлов для отдельных пользователей, добавьте их в группу Custodians. При следующем входе пользователя в систему будет выполняться сценарий входа, назначенный группе Custodians с помощью групповой политики. 
     
 ### <a name="monitor-collected-files-and-review-log-files"></a>Отслеживание сбора файлов и просмотр файлов журнала
 
-1. Watch the collection file share, for example \\\\Staging\\cases$\\*, for the collection folder from the user. The name of the folder will be formatted like this:  *yyyyMMddHHmm_UserName*  .
+1. Откройте общую папку для сбора данных, например \\\\Staging\\cases$\\*, и найдите в ней папку пользователя. Имя папки будет иметь следующий формат:  *ггггММддЧЧмм_ИмяПользователя*  .
     
-2. When the collection is completed, open the collection folder, and browse to the _Log folder. In the _Log folder, you will see the following:
+2. По завершении сбора данных откройте эту папку и перейдите в папку _Log. В папке _Log вы обнаружите следующее:
     
-  - One XML file for every local drive on the user's computer, for example **A.xml**, **C.xml**. These files contain the inventory drives that they are named after, and they are used for the robocopy operation.
+  - Один XML-файл для каждого локального диска на компьютере пользователя, например **A.xml**, **C.xml**. Эти файлы содержат инвентаризированные диски, на основе которых они получили свои имена. Файлы используются для операции Robocopy.
     
     > [!NOTE]
-    > The collection script will only create an entry in the inventory file for the file types that you defined in the script itself. It will not create an inventory entry for every file on the user's computer. 
+    > Сценарий сбора данных только создаст запись в файле инвентаризации для типов файлов, определенных в самом сценарии. Он не будет создавать запись инвентаризации для каждого файла на компьютере пользователя. 
   
-  - One log file named FileCopyErrors.log for each collection run. This file contains a listing of the files that robocopy could not copy to the file collection share, for example, \\\\Staging\\cases$\\*. You will need to review this and decide what actions to take for these missed files. Usually, you either need to collect them manually if you want them, or you may decide that they are not required and can therefore be omitted from the collection.
+  - Один файл журнала с именем FileCopyErrors.log для каждого цикла сбора данных. Этот файл содержит список файлов, которые операции Robocopy не удалось скопировать в общую папку для сбора данных, например \\\\Staging\\cases$\\*. Вам потребуется просмотреть этот список и решить, какие действия предпринять в отношении пропущенных файлов. Как правило, вам нужно будет собрать их вручную (если они необходимы) или исключить их из операции сбора данных, если вы решите, что эти файлы вам не нужны.
     
 ### <a name="pst-import-option-a-for-exchange-server-2013"></a>Вариант А импорта PST-файлов для Exchange Server 2013
 
-1. Log on to the server that hosts the collection file share, for example **Staging**, and open Windows PowerShell. For more information about starting Windows PowerShell, see[Starting Windows PowerShell on Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=615115).
+1. Войдите на сервер, на котором размещена общая папка для сбора данных, например **сервер для промежуточного хранения**, и откройте Windows PowerShell. Дополнительные сведения о запуске Windows PowerShell см. в статье[Запуск Windows PowerShell в Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=615115).
     
-2. Set the Execution policy to Unrestricted . Type  `Set-ExecutionPolicy Unrestricted -Scope Process` into Windows PowerShell, and press Enter.
+2. Установите отсутствие ограничений для политики выполнения. Введите  `Set-ExecutionPolicy Unrestricted -Scope Process` в Windows PowerShell и нажмите клавишу ВВОД.
     
-3. Run the PSTImportScript.ps1 file, and provide the **$SourcePath** and **$MailboxAlias** parameters. For more information about running Windows PowerShell scripts, see[Running Scripts](https://go.microsoft.com/fwlink/p/?LinkID=615117).
+3. Запустите файл PSTImportScript.ps1, указав параметры **$SourcePath** и **$MailboxAlias**. Дополнительные сведения о запуске сценариев Windows PowerShell см. в статье[Поддержка скриптов](https://go.microsoft.com/fwlink/p/?LinkID=615117).
     
 4. Проверьте выходные данные на наличие ошибок.
     
-5. Before you attempt to import an identically named PST file into the same mailbox, you have to remove the mailbox import request. Run the following command to do that:  `Get-MailboxImportRequest | Remove-MailboxImportRequest`. You will be prompted to remove each individual request from the queue. Respond as needed.
+5. Прежде чем импортировать PST-файл с таким же именем в тот же почтовый ящик, необходимо удалить запрос на импорт почтового ящика. Для этого выполните следующую команду:  `Get-MailboxImportRequest | Remove-MailboxImportRequest`. Вам будет предложено удалить каждый запрос из очереди по отдельности. Выполните необходимые действия.
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>Вариант Б импорта PST-файлов для Exchange Online
 
@@ -444,11 +444,11 @@ There are five major steps in using this solution, assuming you don't want to im
 
 1. Запустите Runbook **MoveToColdStorage** , используя процедуры в [запущенных модулях Runbook](https://go.microsoft.com/fwlink/p/?LinkId=615123).
     
-2. Watch the Azure file share you are using for long term storage, for example \\\\AZFile1\\ContentColdStorage and the on-premises collection file share, for example \\\\Staging\\cases$. You should see the files and folders appear in the cold storage file share and disappear from the collection file share.
+2. Просмотрите общую папку Azure, используемую для долгосрочного хранения, например \\\\AZFile1\\ContentColdStorage, а также локальную общую папку для сбора данных, например \\\\Staging\\cases$. Файлы и папки должны появиться в общей папке в защищенном хранилище и исчезнуть из общей папки для сбора данных.
     
 ### <a name="ediscovery"></a>Обнаружение электронных данных
 
-1. Either allow the full crawl of the cold storage file share to run as schedules, or initiate a crawl. For more information on starting full or incremental crawls, see [Start, pause, resume, or stop a crawl in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+1. Разрешите полный обход контента для общей папки в автономном неструктурированном защищенном хранилище, чтобы запускать его по расписанию, либо инициируйте обход контента. Дополнительные сведения о запуске полного или добавочного обхода контента см. в статье [Запуск, приостановка, возобновление и остановка обхода контента в SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
     
 2. Создайте обращение к функции "eDiscovery" в SharePoint 2013, если вы использовали вариант А для импорта PST-файлов, или обращение к функции "eDiscovery" в SharePoint Online, если использовался вариант Б.
     

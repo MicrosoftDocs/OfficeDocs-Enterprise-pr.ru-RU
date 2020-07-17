@@ -31,7 +31,7 @@ ms.locfileid: "44997365"
 Партнеры по делегированным правам доступа (DAP)  партнеры по синдикации и поставщики облачных решений (CSP). Они часто бывают поставщиками сети или телекоммуникационных услуг в других компаниях. Они объединяют подписки на Microsoft 365 на свои услуги своим клиентам. Когда вы продаете подписку на Microsoft 365, им автоматически предоставляются разрешения на администрирование от имени пользователя (АОБО), чтобы они могли администрировать и предоставлять отчеты для клиентов клиенты.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Что нужно знать перед началом работы?
 
-The procedures in this topic require you to connect to Windows PowerShell for Office 365. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).
+Для процедур, описанных в этом разделе, требуется подключение к Windows PowerShell для Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
   
 Вам также необходимы учетные данные администратора для клиента партнера.
   
@@ -41,13 +41,13 @@ The procedures in this topic require you to connect to Windows PowerShell for Of
     
 - Вам необходим идентификатор **TenantId** пользователя.
     
-- The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy. For more information on how to publically register a domain name, see [How to buy a domain name](https://go.microsoft.com/fwlink/p/?LinkId=532541).
+- Полное доменное имя должно быть зарегистрировано у регистратора служб доменных имен Интернета (DNS), например GoDaddy. Дополнительные сведения о том, как публично зарегистрировать доменное имя, см. в статье [Приобретение доменного имени](https://go.microsoft.com/fwlink/p/?LinkId=532541).
     
 - Вам необходимо знать, как добавить запись типа TXT в зарегистрированную зону DNS для своего регистратора DNS. Дополнительные сведения о том, как добавить запись TXT, можно узнать [в статье Добавление записей DNS для подключения к домену](https://go.microsoft.com/fwlink/p/?LinkId=532542). Если эти действия вам не помогут, потребуется найти инструкции, касающиеся вашего регистратора DNS.
     
 ## <a name="create-domains"></a>Создание доменов
 
- Your customers will likely ask you to create additional domains to associate with their tenancy because they don't want the default <domain>.onmicrosoft.com domain to be the primary one that represents their corporate identities to the world. This procedure walks you through creating a new domain associated with your customer's tenancy.
+ Ваши клиенты, скорее всего, попросят вас создать дополнительные домены, чтобы связать их с со своим клиентом, поскольку они не хотят, чтобы стандартный домен<домен>.onmicrosoft.comбыл основным, который представляет лицо их организации всему миру. Это руководство поможет вам создать новый домен, связанный с пользовательским клиентом.
   
 > [!NOTE]
 > Для выполнения некоторых из этих операций учетная запись администратора партнера, с помощью которой вы входите в систему, должна быть настроена на **полный** доступ к параметру **назначить административный доступ к компаниям, которые вы поддерживаете** , в сведениях о учетной записи администратора в центре администрирования Microsoft 365. Дополнительные сведения об управлении ролями администраторов партнеров приведены в статье [партнеры: предлагается делегированное администрирование](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
@@ -87,7 +87,7 @@ Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of
 
 Прежде чем Microsoft 365 начнет принимать трафик, направленный на общедоступный доменное имя, необходимо доказать, что у вас есть права администратора домена. Для этого нужно создать для домена запись типа TXT. Такая запись не выполняет никаких действий в домене, и ее можно удалить, когда ваше владение доменом будет подтверждено. Чтобы создать записи TXT, выполните действия, описанные в разделе [Add DNS Records to Connect Domain](https://go.microsoft.com/fwlink/p/?LinkId=532542). Если эти действия вам не помогут, потребуется найти процедуры для своего регистратора DNS.
   
-Confirm the successful creation of the TXT record via nslookup. Follow this syntax.
+Убедитесь, что запись TXT создана успешно, с помощью команды nslookup. Используйте следующий синтаксис.
   
 ```
 nslookup -type=TXT <FQDN of registered domain>

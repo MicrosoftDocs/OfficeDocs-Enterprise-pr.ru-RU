@@ -43,7 +43,7 @@ ms.locfileid: "44997395"
 Для получения инструкций по подключению Exchange Online PowerShell щелкните [подключиться к Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
   
 > [!NOTE]
-> Reporting cmdlets for other services, for example, SharePoint Online, Skype for Business Online, and Office 365 user activity are available in Exchange Online PowerShell. For more information, see [Reporting cmdlets in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691595). 
+> Командлеты для создания отчетов для других служб, например SharePoint Online, Skype для бизнеса Online, и активности пользователей в Office 365 доступны в Exchange Online PowerShell. Дополнительные сведения см. в разделе [Командлеты отчетов в Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691595). 
   
 ## <a name="sharepoint-online-powershell-cmdlets"></a>Командлеты PowerShell в SharePoint Online
 

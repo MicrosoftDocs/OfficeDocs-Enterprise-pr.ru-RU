@@ -25,7 +25,7 @@ ms.locfileid: "44998611"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Использование PowerShell для переноса электронной почты в Office 365
 
-When administrators first set up Office 365, many of them migrate email from existing systems. You can also do this by using the Office 365 administration user interface. You can also use Windows PowerShell to migrate email.
+При начальной настройке Office 365: многие администраторы переносят электронную почту из существующих систем. Для этого также можно использовать пользовательский интерфейс администрирования Office 365:. Кроме того, для переноса электронной почты вы можете использовать Windows PowerShell.
   
 ## <a name="office-365-licensing-and-windows-powershell"></a>Лицензирование Office 365 и Windows PowerShell
 

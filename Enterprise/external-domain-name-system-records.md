@@ -31,32 +31,32 @@ ms.locfileid: "44996543"
 
 |||
 |:-----|:-----|
-|![Домен](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Want to see a customized list of DNS records for your Office 365 organization?** You can [find the info you need to create Office 365 DNS records](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) for your domain in Office 365.  <br/> **Need step-by-step help to add these records at your domain's DNS host, such as GoDaddy or eNom?** [Find links to step-by-step instructions for many popular DNS hosts](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **Sticking around to use the reference list for your own custom deployment?** The below list should be used as a reference for your custom Office 365 deployment. You will need to select which records apply to your organization and fill in the appropriate values. <br/> **Возврат к статье** [Планирование сети и настройка производительности для Office 365](https://aka.ms/tune).  <br/> |
+|![Домен](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Вам нужен индивидуальный список записей DNS для вашей организации Office 365?** Вы можете [найти необходимые сведения для создания записей DNS в Office 365](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) для домена в Office 365.<br/> **Вам нужны пошаговые инструкции по добавлению этих записей в узел DNS вашего домена, такой как GoDaddy или eNom?** [См. ссылки на пошаговые инструкции для популярных узлов DNS](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **Желаете использовать этот список для собственного развертывания?** Для пользовательского развертывания Office 365 используйте следующий список. Вам потребуется выбрать записи, применимые для вашей организации, и заполнить соответствующие значения. <br/> **Возврат к статье** [Планирование сети и настройка производительности для Office 365](https://aka.ms/tune).  <br/> |
 
-Often the SPF and MX records are the hardest to figure out. We've updated our SPF records guidance at the end of this article. The important thing to remember is that _you can only have a single SPF record for your domain_. You can have multiple MX records; however, that can cause problems for mail delivery. Having a single MX record that directs email to one mail system removes many potential problems.
+Зачастую разобраться с записями SPF и MX сложнее всего. Мы обновили наше руководство по записям SPF в конце этой статьи. Важно помнить, что _для своего домена вы можете использовать только одну запись SPF_. Можно использовать несколько записей MX, однако это может вызвать проблемы при доставке почты. Использование одной записи MX для направления электронной почты на одну почтовую систему позволяет избежать многих потенциальных проблем.
   
-The sections below are organized by service in Office 365. To see a customized list of the Office 365 DNS records for your domain, sign in to Office 365 and [Gather the information you need to create Office 365 DNS records](https://support.office.com/article/77f90d4a-dc7f-4f09-8972-c1b03ea85a67).
+Следующие разделы отсортированы по службе в Office 365. Чтобы просмотреть индивидуальный список записей DNS для Office 365 для вашего домена, войдите в Office 365 и ознакомьтесь со статьей [Сбор необходимых сведений для создания записей DNS в Office 365](https://support.office.com/article/77f90d4a-dc7f-4f09-8972-c1b03ea85a67).
   
 ## <a name="external-dns-records-required-for-office-365-core-services"></a>Внешние записи DNS, необходимые для Office 365 (основные службы)
 <a name="BKMK_ReqdCore"> </a>
 
-Every Office 365 customer needs to add two records to their external DNS. The first CNAME record ensures that Office 365 can direct workstations to authenticate with the appropriate identity platform. The second required record is to prove you own your domain name.
+Каждый пользователь Office 365 должен добавить две записи во внешнюю службу DNS. Первая запись CNAME предоставляет Office 365 возможность направлять рабочие станции на проверку подлинности с помощью соответствующей платформы идентификации. Вторая запись необходима для подтверждения вашего права владельца доменного имени.
   
 ||||
 |:-----|:-----|:-----|
 |**Запись DNS** <br/> |**Назначение** <br/> |**Значение для использования** <br/> |
-|**CNAME** <br/> **(Пакет)** <br/> |Used by Office 365 to direct authentication to the correct identity platform. [More information](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Примечание.** Эта запись CNAME применяется только к службе Office 365, предоставляемой компанией 21Vianet.   |**Псевдоним:** msoid  <br/> **Целевое значение:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
-|**TXT** <br/> **(Проверка домена)** <br/> |Used by Office 365 to verify only that you own your domain. It doesn't affect anything else.  <br/> |**Узел:** @ (или доменное имя для некоторых поставщиков услуг размещения DNS)  <br/> **Значение TXT:** _текстовая строка, предоставленная_ Office 365  <br/> **Мастер настройки домена** Office 365 предоставляет значения, которые можно использовать для создания этой записи.  <br/> |
+|**CNAME** <br/> **(Пакет)** <br/> |Используется Office 365 для прямой проверки подлинности в нужной платформе идентификации. [Дополнительные сведения](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Примечание.** Эта запись CNAME применяется только к службе Office 365, предоставляемой компанией 21Vianet.   |**Псевдоним:** msoid  <br/> **Целевое значение:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
+|**TXT** <br/> **(Проверка домена)** <br/> |Используется Office 365 только для подтверждения прав владельца домена. Это не влияет на все остальное.  <br/> |**Узел:** @ (или доменное имя для некоторых поставщиков услуг размещения DNS)  <br/> **Значение TXT:** _текстовая строка, предоставленная_ Office 365  <br/> **Мастер настройки домена** Office 365 предоставляет значения, которые можно использовать для создания этой записи.  <br/> |
 
 
 ## <a name="external-dns-records-required-for-email-in-office-365-exchange-online"></a>Внешние записи DNS, необходимые для электронной почты в Office 365 (Exchange Online)
 <a name="BKMK_ReqdCore"> </a>
 
-Email in Office 365 requires several different records. The three primary records that all customers should use are the Autodiscover, MX, and SPF records.
+Для электронной почты в Office 365 требуется несколько различных записей. Все пользователи должны использовать следующие три основные записи: автообнаружение, MX и SPF.
   
 - **Запись автообнаружения** позволяет клиентским компьютерам автоматически находить Exchange и настраивать клиент соответствующим образом.
 
-- **The MX record** tells other mail systems where to send email for your domain. **Note:** When you change your email to Office 365, by updating your domain's MX record, ALL email sent to that domain will start coming to Office 365.  
+- **Запись MX** сообщает другим почтовым системам, куда следует направлять электронную почту для вашего домена. **Примечание.** Когда вы переходите на службу электронной почты в Office 365, после обновления записи MX домена ВСЕ электронные письма, отправляемые в этот домен, будут поступать в среду Office 365.  
 Вы хотите перенести в Office 365 лишь несколько адресов? Воспользуйтесь [пилотным развертыванием Office 365 с несколькими адресами электронной почты в личном домене](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7).
 
 - **Запись типа TXT для SPF** используется принимающими почтовыми системами для проверки отправляющих серверов. Это помогает предотвратить такие проблемы, как спуфинг и фишинг электронной почты. Сведения о создании подобных записей см. в разделе [Внешние записи DNS, необходимые для SPF](external-domain-name-system-records.md#BKMK_SPFrecords) в этой статье.
@@ -66,11 +66,11 @@ Email in Office 365 requires several different records. The three primary record
 ||||
 |:-----|:-----|:-----|
 |**Запись DNS** <br/> |**Назначение** <br/> |**Значение для использования** <br/> |
-|**CNAME** <br/> **(Exchange Online)** <br/> |Helps Outlook clients to easily connect to the Exchange Online service by using the Autodiscover service. Autodiscover automatically finds the correct Exchange Server host and configures Outlook for users.  <br/> |**Псевдоним:** autodiscover  <br/> **Целевое значение:** autodiscover.outlook.com  <br/> |
+|**CNAME** <br/> **(Exchange Online)** <br/> |Позволяет клиентам Outlook подключиться к службе Exchange Online с помощью службы автообнаружения. Служба автообнаружения автоматически находит правильный узел Exchange Server и настраивает Outlook для пользователей.  <br/> |**Псевдоним:** autodiscover  <br/> **Целевое значение:** autodiscover.outlook.com  <br/> |
 |**MX** <br/> **(Exchange Online)** <br/> |Отправляет входящую почту для домена в службу Exchange Online в Office 365.  <br/> [!NOTE] Как только сообщения электронной почты начнут поступать в Exchange Online, следует удалить записи MX, указывающие на старую систему.   |**Домен:** например, contoso.com  <br/> **Целевой сервер электронной почты:** \<MX token\> . mail.protection.outlook.com  <br/> **Предпочтение/приоритет:** ниже, чем у всех остальных записей MX (это гарантирует доставку почты в Exchange Online) — например, 1 или "низкий"  <br/>  Чтобы найти свой \<MX token\> , выполните указанные ниже действия.  <br/>  Войдите в Office 365 и перейдите в раздел администратора Office 365 \> "Домены".  <br/>  В столбце действий для вашего домена выберите "Исправить ошибки".  <br/>  В разделе записей MX выберите пункт "Что необходимо исправить?"  <br/>  Следуйте указаниям на этой странице, чтобы обновить запись MX.  <br/> [Что такое приоритет записей MX?](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
-|**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |Helps to prevent other people from using your domain to send spam or other malicious email. Sender policy framework (SPF) records work by identifying the servers that are authorized to send email from your domain.  <br/> |[Внешние записи DNS, необходимые для SPF](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
+|**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |Это позволяет запретить другим людям использовать ваш домен для отправки нежелательной почты или других вредоносных сообщений. SPF (инфраструктура политики отправителей) работает путем определения серверов, имеющих право на отправку электронной почты с вашего домена.  <br/> |[Внешние записи DNS, необходимые для SPF](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **(федерация Exchange)** <br/> |Применяется для федерации Exchange для гибридного развертывания.  <br/> |**Запись TXT 1:** например, contoso.com и специально созданный связанный хэш-текст для подтверждения права собственности на домен (например, Y96nu89138789315669824)  <br/> **Запись TXT 2:** например, exchangedelegation.contoso.com и специально созданный связанный хэш-текст для подтверждения права собственности на домен (например, Y3259071352452626169)  <br/> |
-|**CNAME** <br/> **(федерация Exchange)** <br/> |Helps Outlook clients to easily connect to the Exchange Online service by using the Autodiscover service when your company is using Exchange federation. Autodiscover automatically finds the correct Exchange Server host and configures Outlook for your users.  <br/> |**Псевдоним:** например, Autodiscover.service.contoso.com  <br/> **Целевое значение:** autodiscover.outlook.com  <br/> |
+|**CNAME** <br/> **(федерация Exchange)** <br/> |Позволяет клиентам Outlook подключиться к Exchange Online с помощью службы автообнаружения, когда ваша компания использует федерацию Exchange. Служба автообнаружения автоматически находит правильный узел Exchange Server и настраивает Outlook для ваших пользователей.  <br/> |**Псевдоним:** например, Autodiscover.service.contoso.com  <br/> **Целевое значение:** autodiscover.outlook.com  <br/> |
 
 
 ## <a name="external-dns-records-required-for-skype-for-business-online"></a>Внешние записи DNS, необходимые для Skype для бизнеса Online
@@ -84,7 +84,7 @@ Email in Office 365 requires several different records. The three primary record
 ||||
 |:-----|:-----|:-----|
 |**Запись DNS** <br/> |**Назначение** <br/> |**Значение для использования** <br/> |
-|**SRV** <br/> **(Skype для бизнеса Online)** <br/> |Allows your Office 365 domain to share instant messaging (IM) features with external clients by enabling SIP federation. Read more about [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).  <br/> |**Служба:** sipfederationtls  <br/> **Протокол:** TCP  <br/> **Приоритет:** 100  <br/> **Вес:** 1  <br/> **Порт:** 5061  <br/> **Целевое значение:** sipfed.online.lync.com  <br/> **Примечание.** Если брандмауэр или прокси-сервер блокирует поиск SRV на внешнем DNS, эту запись необходимо также добавить во внутреннюю запись DNS.   |
+|**SRV** <br/> **(Skype для бизнеса Online)** <br/> |Позволяет домену Office 365 передавать функции обмена мгновенными сообщениями внешним клиентам путем включения федерации SIP. Дополнительные сведения см. в статье [URL-адреса и диапазоны IP-адресов Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).<br/> |**Служба:** sipfederationtls  <br/> **Протокол:** TCP  <br/> **Приоритет:** 100  <br/> **Вес:** 1  <br/> **Порт:** 5061  <br/> **Целевое значение:** sipfed.online.lync.com  <br/> **Примечание.** Если брандмауэр или прокси-сервер блокирует поиск SRV на внешнем DNS, эту запись необходимо также добавить во внутреннюю запись DNS.   |
 |**SRV** <br/> **(Skype для бизнеса Online)** <br/> |Используется Skype для бизнеса для координации потока сведений между клиентами Lync.  <br/> |**Служба:** sip  <br/> **Протокол:** TLS  <br/> **Приоритет:** 100  <br/> **Вес:** 1  <br/> **Порт:** 443  <br/> **Целевое значение:** sipdir.online.lync.com  <br/> |
 |**CNAME** <br/> **(Skype для бизнеса Online)** <br/> |Используется клиентом Lync для помощи в поиске службы Skype для бизнеса Online и входа.  <br/> |**Псевдоним:** sip  <br/> **Целевое значение:** sipdir.online.lync.com  <br/> Дополнительные сведения см. в статье [URL-адреса и диапазоны IP-адресов Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).  <br/> |
 |**CNAME** <br/> **(Skype для бизнеса Online)** <br/> |Используется мобильным клиентом Lync для помощи в поиске службы Skype для бизнеса Online и входа.  <br/> |**Псевдоним:** lyncdiscover  <br/> **Целевое значение:** webdir.online.lync.com  <br/> |
@@ -95,21 +95,21 @@ Email in Office 365 requires several different records. The three primary record
 ||||
 |:-----|:-----|:-----|
 |**Запись DNS** <br/> |**Назначение** <br/> |**Значение для использования** <br/> |
-|**Узел (A)** <br/> |Used for single sign-on (SSO). It provides the endpoint for your off-premises users (and on-premises users, if you like) to connect to your Active Directory Federation Services (AD FS) federation server proxies or load-balanced virtual IP (VIP).  <br/> |**Целевое значение:** например, sts.contoso.com  <br/> |
+|**Узел (A)** <br/> |Используется для единого входа (SSO). Предоставляет конечную точку для внешних пользователей (и локальных, при необходимости) для подключения к прокси-серверам федерации служб федерации Active Directory (AD FS) или виртуальному IP-адресу с балансировкой нагрузки (VIP).  <br/> |**Целевое значение:** например, sts.contoso.com  <br/> |
 
 ## <a name="external-dns-records-required-for-spf"></a>Внешние записи DNS, необходимые для SPF
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
-> SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF cannot protect against. In order to protect against these, once you have set up SPF, you should also configure DKIM and DMARC for Office 365. To get started, see [Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Next, see [Use DMARC to validate email in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+> Несмотря на то что инфраструктура политики отправителей разработана для предотвращения спуфинга, существует ряд методик, позволяющих обойти ее. Чтобы защититься от таких атак, по завершении настройки инфраструктуры политики отправителей необходимо настроить DKIM и DMARC для Office 365. Соответствующие инструкции по началу работы см. в статье [Проверка исходящей электронной почты, отправляемой со своего домена в Office 365, с помощью DKIM](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Дальнейшие действия см. в статье [Использование протокола DMARC для проверки электронной почты в Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
   
-SPF records are TXT records that help to prevent other people from using your domain to send spam or other malicious email. Sender policy framework (SPF) records work by identifying the servers that are authorized to send email from your domain.
+Записи SPF — это записи TXT, которые позволяют запретить другим людям использовать ваш домен для отправки нежелательной почты или других вредоносных сообщений. SPF (инфраструктура политики отправителей) работает путем определения серверов, имеющих право на отправку электронной почты с вашего домена.
   
-You can only have one SPF record (that is, a TXT record that defines SPF) for your domain. That single record can have a few different inclusions but the total DNS lookups that result can't be more than 10 (this helps prevent denial of service attacks). See the table and other examples below to help you create or update the right SPF record values for your environment.
+Для вашего домена можно использовать только одну запись SPF (т. е. запись TXT, определяющую SPF). Эта запись может содержать несколько элементов, но общее количество результат поиска DNS не должно превышать 10 (это помогает предотвратить атаки типа "отказ в обслуживании"). Для создания или обновления записи SPF с правильными значениями для вашей среды ознакомьтесь с приведенной ниже таблицей и примерами.
   
 ### <a name="structure-of-an-spf-record"></a>Структура записи SPF
 
-All SPF records contain three parts: the declaration that it is an SPF record, the domains, and IP addresses that should be sending email, and an enforcement rule. You need all three in a valid SPF record. Here's an example of a common SPF record for Office 365 when you use only Exchange Online email:
+Все записи SPF содержат три элемента: объявление о том, что это запись SPF, домены и IP-адреса, с которых должны отправляться сообщения электронной почты, а также правило принудительного применения. Для создания допустимой записи SPF необходимы все три элемента. Ниже приведен пример распространенной записи SPF для Office 365, когда используется только служба электронной почты Exchange Online:
   
 ``` dns
 TXT Name @
@@ -123,7 +123,7 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 В случаях, когда в Office 365 используется не только электронная почта Exchange Online (например, также используется почта, поступающая из SharePoint Online), вы можете определить, что нужно включить в значение записи, с помощью приведенной ниже таблицы.
   
 > [!NOTE]
-> If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you'll have a more detailed SPF record to set up. Learn how: [Set up SPF records in Office 365 to help prevent spoofing](https://go.microsoft.com/fwlink/?LinkId=787656). You can also learn much more about how SPF works with Office 365 by reading [How Office 365 uses Sender Policy Framework (SPF) to help prevent spoofing](https://go.microsoft.com/fwlink/?LinkId=787065).
+> Для сложного сценария, включающего, например, пограничные серверы электронной почты для управления почтовым трафиком, передаваемым через брандмауэр, потребуется настроить запись SPF более детально. См. статью [Настройка записей SPF в Office 365 для предотвращения спуфинга](https://go.microsoft.com/fwlink/?LinkId=787656). Дополнительные сведения о том, как записи SPF работают в Office 365 см. в статье [Как Office 365 использует инфраструктуру политики отправителей (SPF) для предотвращения спуфинга](https://go.microsoft.com/fwlink/?LinkId=787065).
   
 |||||
 |:-----|:-----|:-----|:-----|
@@ -137,7 +137,7 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 ### <a name="example-adding-to-an-existing-spf-record"></a>Пример. Добавление значений в существующую запись SPF
 <a name="bkmk_addtospf"> </a>
 
-If you already have an SPF record, you'll need to add or update values for Office 365. For example, say your existing SPF record for contoso.com is this:
+Если у вас уже есть запись SPF, вам потребуется добавить или обновить значения для Office 365. Например, для домена contoso.com уже существует следующая запись SPF:
   
 ``` dns
 TXT Name @
@@ -180,6 +180,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-These are some common examples that can help you adapt your existing SPF record when you add your domain to Office 365 for email. If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you'll have a more detailed SPF record to set up. Learn how: [Set up SPF records in Office 365 to help prevent spoofing](https://go.microsoft.com/fwlink/?LinkId=787656).
+Выше приведены некоторые распространенные примеры, которые могут помочь вам настроить существующую запись SPF при добавлении домена в Office 365 для работы с электронной почтой. Для сложного сценария, включающего, например, пограничные серверы электронной почты для управления почтовым трафиком, передаваемым через брандмауэр, потребуется настроить запись SPF более детально. См. статью [Настройка записей SPF в Office 365 для предотвращения спуфинга](https://go.microsoft.com/fwlink/?LinkId=787656).
   
 Вы можете быстро вернуться сюда с помощью этой короткой ссылки: [https://aka.ms/o365edns](https://aka.ms/o365edns)

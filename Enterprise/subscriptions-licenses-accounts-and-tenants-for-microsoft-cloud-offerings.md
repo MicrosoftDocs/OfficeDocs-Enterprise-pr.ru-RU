@@ -40,7 +40,7 @@ ms.locfileid: "44906292"
   
 ### <a name="organization"></a>Организация
 
-An organization represents a business entity that is using Microsoft cloud offerings, typically identified by one or more public Domain Name System (DNS) domain names, such as contoso.com. The organization is a container for subscriptions.
+Организация представляет субъект бизнес-деятельности, использующий облачные решения Майкрософт. Как правило, он определяется по одному или нескольким именам общедоступного домена службы доменных имен (DNS), например contoso.com. Организация является контейнером для подписок.
   
 ### <a name="subscriptions"></a>Подписки
 
@@ -49,7 +49,7 @@ An organization represents a business entity that is using Microsoft cloud offer
 - Корпорация Майкрософт (Microsoft 365 и Dynamics 365) — это облачные решения Майкрософт (Microsoft и Dynamics), которые оплачиваются за лицензии на пользователя. 
 - В облачных предложениях корпорации Майкрософт (Azure) на основе PaaS (платформа как услуга) и IaaS (инфраструктура как услуга) оплата взимается за использование облачных ресурсов.
  
-You can also use a trial subscription, but the subscription expires after a specific amount of time or consumption charges. You can convert a trial subscription to a paid subscription.
+Вы также можете использовать пробную подписку, срок действия которой истекает через определенное время или после использования определенного количества ресурсов. Вы можете преобразовать пробную подписку в платную.
   
 У организации может быть несколько подписок на облачные предложения корпорации Майкрософт. На рисунке 1 показана одна организация с несколькими подписками на Microsoft 365, подпиской Dynamics 365 и несколькими подписками Azure.
 
@@ -67,9 +67,9 @@ You can also use a trial subscription, but the subscription expires after a spec
   
 В случае облачных служб на основе Azure PaaS стоимость лицензий на программное обеспечение включается в цену службы.
   
-For Azure IaaS-based virtual machines, additional licenses to use the software or application installed on a virtual machine image might be required. Some virtual machine images have licensed versions of software installed and the cost is included in the per-minute rate for the server. Examples are the virtual machine images for SQL Server 2014 and SQL Server 2016. 
+Для виртуальных машин на основе Azure IaaS могут потребоваться дополнительные лицензии на использование ПО или приложений, установленных в образе виртуальной машины. В некоторых образах виртуальных машин установлены лицензированные версии программного обеспечения, цены которых включаются в поминутный тариф для сервера. К примерам таких виртуальных машин относятся образы для SQL Server 2014 и SQL Server 2016. 
   
-Some virtual machine images have trial versions of applications installed and need additional software application licenses for use beyond the trial period. For example, the SharePoint Server 2016 Trial virtual machine image includes a trial version of SharePoint Server 2016 pre-installed. To continue using SharePoint Server 2016 after the trial expiration date, you must purchase a SharePoint Server 2016 license and client licenses from Microsoft. These charges are separate from the Azure subscription and the per-minute rate to run the virtual machine still applies.
+В некоторых образах виртуальных машин установлены пробные версии приложений, а для их использования по завершении пробного периода требуются дополнительные лицензии. Например, образ виртуальной машины для пробной версии SharePoint Server 2016 включает предустановленную пробную версию SharePoint Server 2016. Чтобы продолжать использовать SharePoint Server 2016 по истечении пробного периода, необходимо приобрести у корпорации Майкрософт лицензию на SharePoint Server 2016 и клиентские лицензии. Эта плата взимается отдельно от платы за подписку Azure и не отменяет поминутный тариф на работу виртуальной машины.
   
 ### <a name="user-accounts"></a>Учетные записи пользователей
 
@@ -85,7 +85,7 @@ Some virtual machine images have trial versions of applications installed and ne
 
 В случае облачных предложений на основе SaaS клиент — это регион, в котором располагаются серверы, предоставляющие облачные службы. Например, Корпорация Contoso выбрала Европейский регион для размещения клиентов Microsoft 365, EMS и Dynamics 365 для сотрудников 15 000 в штаб-квартирах Париж.
   
-Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can have tenancy in any Azure datacenter across the world. You specify the Azure datacenter, known as the location, when you create the Azure PaaS app or service or element of an IaaS workload.
+Службы PaaS Azure и рабочие нагрузки на основе виртуальных машин, размещенные на платформе IaaS Azure, могут находиться в центре обработки данных Azure в любой точке мира. Центр обработки данных Azure, или расположение, указывается при создании приложения или службы PaaS Azure либо элемента рабочей нагрузки IaaS.
   
 Клиент Azure AD — это определенный экземпляр Azure AD, содержащий учетные записи и группы. Платные или пробные подписки Microsoft 365 или Dynamics 365 включают бесплатный клиент Azure AD. Этот клиент Azure AD не включает службы Azure и не предоставляется с пробной или платной подпиской Azure.
   
@@ -121,7 +121,7 @@ Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can
 
 ![Идентификация как служба (IDaaS) для организации.](media/Subscriptions/Subscriptions-Fig4.png)
   
-Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud offerings, Azure PaaS apps, and virtual machines in Azure IaaS that use Azure AD Domain Services. Azure AD Connect synchronizes the on-premises AD DS forest with the Azure AD tenant.
+На рисунке 4 показано, как взаимодействуют с общим клиентом Azure AD облачные решения SaaS Майкрософт, приложения PaaS Azure и виртуальные машины на платформе IaaS Azure, использующие доменные службы Azure AD. Клиент Azure AD синхронизируется с локальным лесом AD DS с помощью Azure AD Connect.
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>Объединение подписок для нескольких облачных предложений корпорации Майкрософт
 

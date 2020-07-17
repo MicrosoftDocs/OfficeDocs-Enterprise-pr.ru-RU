@@ -32,7 +32,7 @@ ms.locfileid: "45091186"
 Для Office 365 требуется подключение к Интернету. Конечные точки, расположенные ниже, должны быть достижимыми для клиентов, использующих только высокие планы Office 365 для государственных учреждений (США).
   
 > [!NOTE]
-> Microsoft has released a REST-based web service for the IP address and FQDN entries on this page. This new service will help you configure and update network perimeter devices such as firewalls and proxy servers. You can download the list of endpoints, the current version of the list, or specific changes. This service replaces the XML document linked from this page, which was deprecated on October 2, 2018. To try out this new service, go to [Web service](office-365-ip-web-service.md).
+> Корпорация Майкрософт выпустила веб-службу на базе REST для записей IP-адресов и полных доменных имен на этой странице. Эта новая служба поможет настраивать и обновлять устройства периметра сети, такие как брандмауэры и прокси-серверы. Вы можете скачать список конечных точек, текущую версию списка или сведения об определенных изменениях. Эта служба заменяет XML-документ, связанный с этой страницей, который устарел 2 октября 2018 г. Сведения о том, как опробовать новую службу, см. в статье [Веб-служба](office-365-ip-web-service.md).
   
  **Конечные точки Office 365:**[ по всему миру (включая GCC)](urls-and-ip-address-ranges.md) | [Office 365, предоставляемый 21 Vianet](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 Germany](office-365-germany-endpoints.md)  | [Office 365 для DoD государственных организаций США](office-365-u-s-government-dod-endpoints.md) | *Office 365 для GCC High государственных организаций США* |
   
@@ -42,21 +42,21 @@ ms.locfileid: "45091186"
 
  Начните с [управления конечными точками Office 365](managing-office-365-endpoints.md) , чтобы узнать, какие рекомендации по управлению сетевым подключением с помощью этих данных. Данные конечных точек обновляются в начале каждого месяца с новыми IP-адресами и URL-адресами, опубликованными в течение 30 дней до момента активации. Это позволяет пользователям, у которых еще не было автоматизированное обновление, завершить свои процессы, прежде чем потребуется новое подключение. Конечные точки также могут быть обновлены в течение месяца при необходимости обращения к укрупнению поддержки, происшествиям безопасности или другим немедленным рабочим требованиям. Данные, показанные на этой странице, созданы на основе веб-служб REST. Если вы используете сценарий или сетевое устройство для доступа к этим данным, перейдите непосредственно к [веб-службе](office-365-ip-web-service.md) .
 
-Endpoint data below lists requirements for connectivity from a user’s machine to Office 365. It does not include network connections from Microsoft into a customer network, sometimes called hybrid or inbound network connections.
+Ниже в данных конечной точки перечислены требования к подключениям с компьютера пользователя к Office 365. Они не включают сетевые подключения от корпорации Майкрософт к сети клиентов, которые иногда называются гибридными или входящими сетевыми подключениями.
 
-The endpoints are grouped into four service areas. The first three service areas can be independently selected for connectivity. The fourth service area is a common dependency (called Microsoft 365 Common and Office) and must always have network connectivity.
+Конечные точки сгруппированы в четыре области обслуживания. Первые три области обслуживания можно независимо выбирать для подключения. Четвертая область обслуживания — это общая зависимость (называемая Microsoft 365 Common and Office), которая всегда должна обеспечиваться сетевым подключением.
 
 Показанные столбцы с данными:
 
-- **ID**: The ID number of the row, also known as an endpoint set. This ID is the same as is returned by the web service for the endpoint set.
+- **Идентификатор**. Код строки, также известный как набор конечной точки. Этот идентификатор совпадает с возвращаемым веб-службой для набора конечной точки.
 
-- **Category**: Shows whether the endpoint set is categorized as “Optimize”, “Allow”, or “Default”. You can read about these categories and guidance for management of them at [https://aka.ms/pnc](https://aka.ms/pnc). This column also lists which endpoint sets are required to have network connectivity. For endpoint sets which are not required to have network connectivity, we provide notes in this field to indicate what functionality would be missing if the endpoint set is blocked. If you are excluding an entire service area, the endpoint sets listed as required do not require connectivity.
+- **Категория**. Показывает, присвоена ли набору конечной точки категория "Optimize" (Оптимизация), "Allow" (Разрешение) или "Default" (По умолчанию). С этими категориями и инструкцией по их управлению можно ознакомиться на странице [https://aka.ms/pnc](https://aka.ms/pnc). В этом столбце также указано, какие наборы конечной точки необходимы для обеспечения сетевого подключения. Для наборов конечной точки, не требующихся для сетевого подключения, в этом поле указываются примечания о том, что при блокировании этого набора конечной точки функции будут отсутствовать. При исключении всей области обслуживания наборы конечной точки, перечисленные как обязательные, не требуют подключения.
 
 - **ER**: **Да** , если набор конечных точек поддерживается через Azure ExpressRoute с префиксами маршрутизации Office 365. Сообщество BGP, содержащее префиксы маршрутов, которые отображаются в списке, соответствует области службы. Если параметр ER имеет значение " **нет**", это означает, что для этого набора конечных точек не поддерживается ExpressRoute. Однако он не должен предполагать, что для набора конечных точек не было объявлено ни одного маршрута, где ER — **No**. Если вы планируете использовать Azure AD Connect, ознакомьтесь с [разделом специальные факторы](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) , чтобы убедиться, что у вас есть соответствующая конфигурация Azure AD Connect.
 
-- **Addresses**: Lists the FQDNs or wildcard domain names and IP Address ranges for the endpoint set. Note that an IP Address range is in CIDR format and may include many individual IP Addresses in the specified network.
+- **Адреса**. Перечисляет полные доменные имена или подстановочные доменные имена, а также диапазоны IP-адресов для набора конечной точки. Обратите внимание, что диапазон IP-адресов представлен в формате CIDR и может содержать несколько отдельных IP-адресов в указанной сети.
  
-- **Ports**: Lists the TCP or UDP ports that are combined with the Addresses to form the network endpoint. You may notice some duplication in IP Address ranges where there are different ports listed.
+- **Порты**. Перечисляет порты TCP или UDP, которые объединяются с адресами для создания конечной точки сети. Можно заметить дублирование в диапазонах IP-адресов при перечислении разных портов.
  
 [!INCLUDE [Office 365 U.S. Government GCC High endpoints](./includes/office-365-u.s.-government-gcc-high-endpoints.md)]
 

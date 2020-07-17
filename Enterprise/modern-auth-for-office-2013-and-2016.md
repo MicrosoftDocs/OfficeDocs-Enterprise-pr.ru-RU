@@ -56,7 +56,7 @@ ms.locfileid: "45102607"
 
 Клиентские приложения Office 2013 по умолчанию поддерживают устаревшую проверку подлинности. Устаревшие значения означают, что они поддерживают либо помощник по входу в Microsoft Online, либо обычную проверку подлинности. Чтобы эти клиенты могли использовать современные функции проверки подлинности, в клиенте Windows должны быть заданы разделы реестра. Инструкции: [Enable современная проверка подлинности для Office 2013 на устройствах с Windows](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
 
-To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
+Чтобы включить современную проверку подлинности для устройства с Windows (например, ноутбука или планшета), на котором установлен Microsoft Office 2013, необходимо настроить указанные ниже разделы реестра. Это нужно сделать для каждого устройства, на котором вы хотите включить современную проверку подлинности.
   
 |**Раздел реестра**|**Type**|**Значение** |
 |:-------|:------:|--------:|
