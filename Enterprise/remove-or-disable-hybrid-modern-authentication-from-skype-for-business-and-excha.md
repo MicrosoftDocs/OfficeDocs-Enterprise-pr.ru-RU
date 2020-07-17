@@ -23,48 +23,48 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "44998208"
 ---
-# <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a><span data-ttu-id="54035-104">Удаление гибридной современной проверки подлинности из Skype для бизнеса и Exchange или ее отключение</span><span class="sxs-lookup"><span data-stu-id="54035-104">Removing or disabling Hybrid Modern Authentication from Skype for Business and Exchange</span></span>
+# <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a><span data-ttu-id="65393-104">Удаление гибридной современной проверки подлинности из Skype для бизнеса и Exchange или ее отключение</span><span class="sxs-lookup"><span data-stu-id="65393-104">Removing or disabling Hybrid Modern Authentication from Skype for Business and Exchange</span></span>
 
-<span data-ttu-id="54035-105">*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*</span><span class="sxs-lookup"><span data-stu-id="54035-105">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+<span data-ttu-id="65393-105">*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*</span><span class="sxs-lookup"><span data-stu-id="65393-105">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="54035-106">Если Гибридная современная проверка подлинности (HMA) включена только для того, чтобы найти непригодную для текущей среды, можно отключить HMA.</span><span class="sxs-lookup"><span data-stu-id="54035-106">If you've enabled Hybrid Modern Authentication (HMA) only to find it's unsuitable for your current environment, you can disable HMA.</span></span> <span data-ttu-id="54035-107">В этой статье описывается, как это сделать.</span><span class="sxs-lookup"><span data-stu-id="54035-107">This article explains how.</span></span>
+<span data-ttu-id="65393-106">Если Гибридная современная проверка подлинности (HMA) включена только для того, чтобы найти непригодную для текущей среды, можно отключить HMA.</span><span class="sxs-lookup"><span data-stu-id="65393-106">If you've enabled Hybrid Modern Authentication (HMA) only to find it's unsuitable for your current environment, you can disable HMA.</span></span> <span data-ttu-id="65393-107">В этой статье описывается, как это сделать.</span><span class="sxs-lookup"><span data-stu-id="65393-107">This article explains how.</span></span>
   
-## <a name="who-is-this-article-for"></a><span data-ttu-id="54035-108">Для кого предназначена эта статья?</span><span class="sxs-lookup"><span data-stu-id="54035-108">Who is this article for?</span></span>
+## <a name="who-is-this-article-for"></a><span data-ttu-id="65393-108">Для кого предназначена эта статья?</span><span class="sxs-lookup"><span data-stu-id="65393-108">Who is this article for?</span></span>
 
-<span data-ttu-id="54035-109">Если вы включили современные проверки подлинности в Skype для бизнеса Online или локальной среде, а также на сервере Exchange Online или в локальной среде, и вам нужно отключить сегмент HMA, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="54035-109">If you've enabled Modern Authentication in Skype for Business Online or On-premises, and/or Exchange Online or On-premises and found you need to disable HMA, these steps are for you.</span></span>
+<span data-ttu-id="65393-109">Если вы включили современные проверки подлинности в Skype для бизнеса Online или локальной среде, а также на сервере Exchange Online или в локальной среде, и вам нужно отключить сегмент HMA, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="65393-109">If you've enabled Modern Authentication in Skype for Business Online or On-premises, and/or Exchange Online or On-premises and found you need to disable HMA, these steps are for you.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="54035-110">Ознакомьтесь со статьей "[топологии Skype для бизнеса, поддерживаемые с современной проверкой подлинности](https://technet.microsoft.com/library/mt803262.aspx)", если вы находитесь в Skype для бизнеса Online или в локальной среде, у вас есть смешанная топология HMA, и вам нужно взглянуть на поддерживаемые топологии перед началом работы.</span><span class="sxs-lookup"><span data-stu-id="54035-110">See the '[Skype for Business topologies supported with Modern Authentication](https://technet.microsoft.com/library/mt803262.aspx)' article if you're in Skype for Business Online or On-premises, have a mixed-topology HMA, and need to look at supported topologies before you begin.</span></span>
+> <span data-ttu-id="65393-110">Ознакомьтесь со статьей "[топологии Skype для бизнеса, поддерживаемые с современной проверкой подлинности](https://technet.microsoft.com/library/mt803262.aspx)", если вы находитесь в Skype для бизнеса Online или в локальной среде, у вас есть смешанная топология HMA, и вам нужно взглянуть на поддерживаемые топологии перед началом работы.</span><span class="sxs-lookup"><span data-stu-id="65393-110">See the '[Skype for Business topologies supported with Modern Authentication](https://technet.microsoft.com/library/mt803262.aspx)' article if you're in Skype for Business Online or On-premises, have a mixed-topology HMA, and need to look at supported topologies before you begin.</span></span>
   
-## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a><span data-ttu-id="54035-111">Как отключить гибридную современные проверки подлинности (Exchange)</span><span class="sxs-lookup"><span data-stu-id="54035-111">How to disable Hybrid Modern Authentication (Exchange)</span></span>
+## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a><span data-ttu-id="65393-111">Как отключить гибридную современные проверки подлинности (Exchange)</span><span class="sxs-lookup"><span data-stu-id="65393-111">How to disable Hybrid Modern Authentication (Exchange)</span></span>
 
-1. <span data-ttu-id="54035-112">**Локальная служба Exchange**: Откройте командную консоль Exchange и выполните следующие команды:</span><span class="sxs-lookup"><span data-stu-id="54035-112">**Exchange On-premises**: Open the Exchange Management Shell and run the following commands:</span></span> 
+1. <span data-ttu-id="65393-112">**Локальная служба Exchange**: Откройте командную консоль Exchange и выполните следующие команды:</span><span class="sxs-lookup"><span data-stu-id="65393-112">**Exchange On-premises**: Open the Exchange Management Shell and run the following commands:</span></span> 
 
 ```powershell
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. <span data-ttu-id="54035-113">**Exchange Online**: [Подключение к Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) с помощью удаленного сеанса PowerShell.</span><span class="sxs-lookup"><span data-stu-id="54035-113">**Exchange Online**: [Connect to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) with Remote PowerShell.</span></span> <span data-ttu-id="54035-114">Выполните следующую команду, чтобы превратить флаг *OAuth2ClientProfileEnabled* в значение false:</span><span class="sxs-lookup"><span data-stu-id="54035-114">Run the following command to turn your  *OAuth2ClientProfileEnabled*  flag to 'false':</span></span>
+2. <span data-ttu-id="65393-113">**Exchange Online**: [Подключение к Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) с помощью удаленного сеанса PowerShell.</span><span class="sxs-lookup"><span data-stu-id="65393-113">**Exchange Online**: [Connect to Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) with Remote PowerShell.</span></span> <span data-ttu-id="65393-114">Выполните следующую команду, чтобы превратить флаг *OAuth2ClientProfileEnabled* в значение false:</span><span class="sxs-lookup"><span data-stu-id="65393-114">Run the following command to turn your  *OAuth2ClientProfileEnabled*  flag to 'false':</span></span>
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
 ```
     
-## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a><span data-ttu-id="54035-115">Как отключить гибридную современные проверки подлинности (Skype для бизнеса)</span><span class="sxs-lookup"><span data-stu-id="54035-115">How to disable Hybrid Modern Authentication (Skype for Business)</span></span>
+## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a><span data-ttu-id="65393-115">Как отключить гибридную современные проверки подлинности (Skype для бизнеса)</span><span class="sxs-lookup"><span data-stu-id="65393-115">How to disable Hybrid Modern Authentication (Skype for Business)</span></span>
 
-1. <span data-ttu-id="54035-116">**Локальная среда Skype для бизнеса**: выполните следующие команды в командной консоли Skype для бизнеса:</span><span class="sxs-lookup"><span data-stu-id="54035-116">**Skype for Business On-premises**: Run the following commands in Skype for Business Management Shell:</span></span>
+1. <span data-ttu-id="65393-116">**Локальная среда Skype для бизнеса**: выполните следующие команды в командной консоли Skype для бизнеса:</span><span class="sxs-lookup"><span data-stu-id="65393-116">**Skype for Business On-premises**: Run the following commands in Skype for Business Management Shell:</span></span>
 
 ```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 ```
 
-2. <span data-ttu-id="54035-117">**Skype для бизнеса Online**: [Подключение к Skype для бизнеса Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) с помощью удаленного сеанса PowerShell.</span><span class="sxs-lookup"><span data-stu-id="54035-117">**Skype for Business Online**: [Connect to Skype for Business Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) with Remote PowerShell.</span></span> <span data-ttu-id="54035-118">Выполните следующую команду, чтобы отключить современные проверки подлинности:</span><span class="sxs-lookup"><span data-stu-id="54035-118">Run the following command to disable Modern Authentication:</span></span>
+2. <span data-ttu-id="65393-117">**Skype для бизнеса Online**: [Подключение к Skype для бизнеса Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) с помощью удаленного сеанса PowerShell.</span><span class="sxs-lookup"><span data-stu-id="65393-117">**Skype for Business Online**: [Connect to Skype for Business Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) with Remote PowerShell.</span></span> <span data-ttu-id="65393-118">Выполните следующую команду, чтобы отключить современные проверки подлинности:</span><span class="sxs-lookup"><span data-stu-id="65393-118">Run the following command to disable Modern Authentication:</span></span>
 
 ```powershell    
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed
 ```
 
-<span data-ttu-id="54035-119">[Выполните обратное соединение с обзором современной проверки подлинности](hybrid-modern-auth-overview.md) .</span><span class="sxs-lookup"><span data-stu-id="54035-119">[Link back to the Modern Authentication overview](hybrid-modern-auth-overview.md) .</span></span> 
+<span data-ttu-id="65393-119">[Выполните обратное соединение с обзором современной проверки подлинности](hybrid-modern-auth-overview.md) .</span><span class="sxs-lookup"><span data-stu-id="65393-119">[Link back to the Modern Authentication overview](hybrid-modern-auth-overview.md) .</span></span> 
   
 
