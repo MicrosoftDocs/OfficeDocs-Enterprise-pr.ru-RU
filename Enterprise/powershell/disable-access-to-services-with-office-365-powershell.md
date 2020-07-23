@@ -1,9 +1,9 @@
 ---
-title: Отключение доступа к службам с помощью Office 365 PowerShell
+title: Отключение доступа к службам Microsoft 365 с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,92 +18,94 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: Отключение доступа к службам Office 365 для пользователей с помощью PowerShell в Office 365.
-ms.openlocfilehash: e0a486bbe3a783443fc25cbadff61721761a0028
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Используйте PowerShell, чтобы отключить доступ к службам Microsoft 365 для пользователей.
+ms.openlocfilehash: 4e7c59447dae027dffa7fd5ea24d1818d5d64a9a
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004652"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230685"
 ---
-# <a name="disable-access-to-services-with-office-365-powershell"></a><span data-ttu-id="cce25-103">Отключение доступа к службам с помощью Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="cce25-103">Disable access to services with Office 365 PowerShell</span></span>
+# <a name="disable-access-to-microsoft-365-services-with-powershell"></a><span data-ttu-id="eb951-103">Отключение доступа к службам Microsoft 365 с помощью PowerShell</span><span class="sxs-lookup"><span data-stu-id="eb951-103">Disable access to Microsoft 365 services with PowerShell</span></span>
 
-<span data-ttu-id="cce25-104">Когда учетной записи Office 365 назначена лицензия в плане лицензирования, службы Office 365 предоставляются пользователю из этой лицензии.</span><span class="sxs-lookup"><span data-stu-id="cce25-104">When an Office 365 account is assigned a license from a licensing plan, Office 365 services are made available to the user from that license.</span></span> <span data-ttu-id="cce25-105">Тем не менее, вы можете управлять службами Office 365, к которым у пользователя есть доступ.</span><span class="sxs-lookup"><span data-stu-id="cce25-105">However, you can control the Office 365 services that the user can access.</span></span> <span data-ttu-id="cce25-106">Например, несмотря на то, что лицензия разрешает доступ к службе SharePoint Online, вы можете отключить доступ к ней.</span><span class="sxs-lookup"><span data-stu-id="cce25-106">For example, even though the license allows access to the SharePoint Online service, you can disable access to it.</span></span> <span data-ttu-id="cce25-107">С помощью PowerShell можно отключить доступ к любому числу служб для определенного плана лицензирования:</span><span class="sxs-lookup"><span data-stu-id="cce25-107">You can use PowerShell to disable access to any number of services for a specific licensing plan for:</span></span>
+<span data-ttu-id="eb951-104">*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*</span><span class="sxs-lookup"><span data-stu-id="eb951-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-- <span data-ttu-id="cce25-108">отдельная учетная запись;</span><span class="sxs-lookup"><span data-stu-id="cce25-108">An individual account.</span></span>
-- <span data-ttu-id="cce25-109">группа учетных записей;</span><span class="sxs-lookup"><span data-stu-id="cce25-109">A group of accounts.</span></span>
-- <span data-ttu-id="cce25-110">все учетные записи в организации.</span><span class="sxs-lookup"><span data-stu-id="cce25-110">All accounts in your organization.</span></span>
+<span data-ttu-id="eb951-105">Когда учетной записи Microsoft 365 назначена лицензия из плана лицензирования, службы Microsoft 365 предоставляются пользователю из этой лицензии.</span><span class="sxs-lookup"><span data-stu-id="eb951-105">When a Microsoft 365 account is assigned a license from a licensing plan, Microsoft 365 services are made available to the user from that license.</span></span> <span data-ttu-id="eb951-106">Тем не менее, вы можете управлять службами Microsoft 365, к которым у пользователя есть доступ.</span><span class="sxs-lookup"><span data-stu-id="eb951-106">However, you can control the Microsoft 365 services that the user can access.</span></span> <span data-ttu-id="eb951-107">Например, несмотря на то, что лицензия разрешает доступ к службе SharePoint Online, вы можете отключить доступ к ней.</span><span class="sxs-lookup"><span data-stu-id="eb951-107">For example, even though the license allows access to the SharePoint Online service, you can disable access to it.</span></span> <span data-ttu-id="eb951-108">С помощью PowerShell можно отключить доступ к любому числу служб для определенного плана лицензирования:</span><span class="sxs-lookup"><span data-stu-id="eb951-108">You can use PowerShell to disable access to any number of services for a specific licensing plan for:</span></span>
+
+- <span data-ttu-id="eb951-109">отдельная учетная запись;</span><span class="sxs-lookup"><span data-stu-id="eb951-109">An individual account.</span></span>
+- <span data-ttu-id="eb951-110">группа учетных записей;</span><span class="sxs-lookup"><span data-stu-id="eb951-110">A group of accounts.</span></span>
+- <span data-ttu-id="eb951-111">все учетные записи в организации.</span><span class="sxs-lookup"><span data-stu-id="eb951-111">All accounts in your organization.</span></span>
 
 >[!Note]
-><span data-ttu-id="cce25-111">Существуют зависимости служб Office 365, которые могут препятствовать отключению указанной службы, когда от нее зависят другие службы.</span><span class="sxs-lookup"><span data-stu-id="cce25-111">There are Office 365 service dependencies that can prevent you from disabling a specified service when other services depend on it.</span></span>
+><span data-ttu-id="eb951-112">Существует зависимость от службы Microsoft 365, которая может препятствовать отключению указанной службы, когда от нее зависят другие службы.</span><span class="sxs-lookup"><span data-stu-id="eb951-112">There are Microsoft 365 service dependencies that can prevent you from disabling a specified service when other services depend on it.</span></span>
 >
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="cce25-112">Использование модуля Microsoft Azure Active Directory для Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="cce25-112">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="eb951-113">Использование модуля Microsoft Azure Active Directory для Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="eb951-113">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="cce25-113">Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="cce25-113">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="eb951-114">Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="eb951-114">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-<span data-ttu-id="cce25-114">Затем используйте эту команду для просмотра доступных планов лицензирования, известных также как Аккаунтскуидс:</span><span class="sxs-lookup"><span data-stu-id="cce25-114">Next, use this command to view your available licensing plans, also known as AccountSkuIds:</span></span>
+<span data-ttu-id="eb951-115">Затем используйте эту команду для просмотра доступных планов лицензирования, известных также как Аккаунтскуидс:</span><span class="sxs-lookup"><span data-stu-id="eb951-115">Next, use this command to view your available licensing plans, also known as AccountSkuIds:</span></span>
 
 ```powershell
 Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 ```
 
 >[!Note]
-><span data-ttu-id="cce25-115">В PowerShell Core не поддерживается модуль Microsoft Azure Active Directory для Windows PowerShell и командлеты с компонентом **Msol** в имени.</span><span class="sxs-lookup"><span data-stu-id="cce25-115">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="cce25-116">Чтобы использовать эти командлеты, необходимо запустить их из Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="cce25-116">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="eb951-116">В PowerShell Core не поддерживается модуль Microsoft Azure Active Directory для Windows PowerShell и командлеты с компонентом **Msol** в имени.</span><span class="sxs-lookup"><span data-stu-id="eb951-116">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="eb951-117">Чтобы использовать эти командлеты, необходимо запустить их из Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="eb951-117">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="cce25-117">Дополнительные сведения см. [в статье Просмотр лицензий и служб с помощью Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="cce25-117">For more information, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="eb951-118">Для получения дополнительных сведений ознакомьтесь [со статьей Просмотр лицензий и служб с помощью PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="eb951-118">For more information, see [View licenses and services with PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
     
-<span data-ttu-id="cce25-118">Чтобы просмотреть результаты процедуры, описанные в этом разделе, в статье [Просмотр сведений о лицензиях и службах для учетной записи с помощью Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="cce25-118">To see the before and after results of the procedures in this topic, see [View account license and service details with Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="eb951-119">Чтобы просмотреть результаты процедуры, описанные в этом разделе, в статье [Просмотр сведений о лицензиях и службах для учетной записи с помощью PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="eb951-119">To see the before and after results of the procedures in this topic, see [View account license and service details with PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).</span></span>
     
-<span data-ttu-id="cce25-119">Кроме того, вы можете воспользоваться сценарием PowerShell, который автоматизирует выполнение процедур, описанных в этой статье.</span><span class="sxs-lookup"><span data-stu-id="cce25-119">A PowerShell script is available that automates the procedures described in this topic.</span></span> <span data-ttu-id="cce25-120">В частности, скрипт позволяет просматривать и отключать службы в организации Office 365, в том числе Sway.</span><span class="sxs-lookup"><span data-stu-id="cce25-120">Specifically, the script lets you view and disable services in your Office 365 organization, including Sway.</span></span> <span data-ttu-id="cce25-121">Дополнительные сведения см. в статье [Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="cce25-121">For more information, see [Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="eb951-120">Кроме того, вы можете воспользоваться сценарием PowerShell, который автоматизирует выполнение процедур, описанных в этой статье.</span><span class="sxs-lookup"><span data-stu-id="eb951-120">A PowerShell script is available that automates the procedures described in this topic.</span></span> <span data-ttu-id="eb951-121">В частности, скрипт позволяет просматривать и отключать службы в организации Microsoft 365, в том числе Sway.</span><span class="sxs-lookup"><span data-stu-id="eb951-121">Specifically, the script lets you view and disable services in your Microsoft 365 organization, including Sway.</span></span> <span data-ttu-id="eb951-122">Дополнительные сведения см. [в статье Отключение доступа к Sway с помощью PowerShell](disable-access-to-sway-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="eb951-122">For more information, see [Disable access to Sway with PowerShell](disable-access-to-sway-with-office-365-powershell.md).</span></span>
     
     
-### <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a><span data-ttu-id="cce25-122">Отключение определенных служб Office 365 для определенных пользователей по определенному плану лицензирования</span><span class="sxs-lookup"><span data-stu-id="cce25-122">Disable specific Office 365 services for specific users for a specific licensing plan</span></span>
+### <a name="disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan"></a><span data-ttu-id="eb951-123">Отключение определенных служб Microsoft 365 для определенных пользователей по определенному плану лицензирования</span><span class="sxs-lookup"><span data-stu-id="eb951-123">Disable specific Microsoft 365 services for specific users for a specific licensing plan</span></span>
   
-<span data-ttu-id="cce25-123">Чтобы отключить определенный набор служб Office 365 для пользователей по определенному плану лицензирования, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="cce25-123">To disable a specific set of Office 365 services for users for a specific licensing plan, perform the following steps:</span></span>
+<span data-ttu-id="eb951-124">Чтобы отключить определенный набор служб Microsoft 365 для пользователей по определенному плану лицензирования, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="eb951-124">To disable a specific set of Microsoft 365 services for users for a specific licensing plan, perform the following steps:</span></span>
   
-#### <a name="step-1-identify-the-undesirable-services-in-the-licensing-plan-by-using-the-following-syntax"></a><span data-ttu-id="cce25-124">Шаг 1: определение нежелательных служб в плане лицензирования с помощью следующего синтаксиса:</span><span class="sxs-lookup"><span data-stu-id="cce25-124">Step 1: Identify the undesirable services in the licensing plan by using the following syntax:</span></span>
+#### <a name="step-1-identify-the-undesirable-services-in-the-licensing-plan-by-using-the-following-syntax"></a><span data-ttu-id="eb951-125">Шаг 1: определение нежелательных служб в плане лицензирования с помощью следующего синтаксиса:</span><span class="sxs-lookup"><span data-stu-id="eb951-125">Step 1: Identify the undesirable services in the licensing plan by using the following syntax:</span></span>
     
 ```powershell
 $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
 ```
 
-<span data-ttu-id="cce25-125">В следующем примере создается объект **LicenseOptions** , который отключает службы Office и SharePoint Online в плане лицензирования под названием `litwareinc:ENTERPRISEPACK` (Office 365 корпоративный E3).</span><span class="sxs-lookup"><span data-stu-id="cce25-125">The following example creates a **LicenseOptions** object that disables the Office and SharePoint Online services in the licensing plan named `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).</span></span>
+<span data-ttu-id="eb951-126">В следующем примере создается объект **LicenseOptions** , который отключает службы Office и SharePoint Online в плане лицензирования под названием `litwareinc:ENTERPRISEPACK` (Office 365 корпоративный E3).</span><span class="sxs-lookup"><span data-stu-id="eb951-126">The following example creates a **LicenseOptions** object that disables the Office and SharePoint Online services in the licensing plan named `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).</span></span>
     
 ```powershell
 $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
 ```
 
-#### <a name="step-2-use-the-licenseoptions-object-from-step-1-on-one-or-more-users"></a><span data-ttu-id="cce25-126">Шаг 2: используйте объект **LicenseOptions** из шага 1 для одного или нескольких пользователей.</span><span class="sxs-lookup"><span data-stu-id="cce25-126">Step 2: Use the **LicenseOptions** object from Step 1 on one or more users.</span></span>
+#### <a name="step-2-use-the-licenseoptions-object-from-step-1-on-one-or-more-users"></a><span data-ttu-id="eb951-127">Шаг 2: используйте объект **LicenseOptions** из шага 1 для одного или нескольких пользователей.</span><span class="sxs-lookup"><span data-stu-id="eb951-127">Step 2: Use the **LicenseOptions** object from Step 1 on one or more users.</span></span>
     
-<span data-ttu-id="cce25-127">Чтобы создать учетную запись, для которой отключены службы, используйте указанную ниже команду.</span><span class="sxs-lookup"><span data-stu-id="cce25-127">To create a new account that has the services disabled, use the following syntax:</span></span>
+<span data-ttu-id="eb951-128">Чтобы создать учетную запись, для которой отключены службы, используйте указанную ниже команду.</span><span class="sxs-lookup"><span data-stu-id="eb951-128">To create a new account that has the services disabled, use the following syntax:</span></span>
     
 ```powershell
 New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
 ```
 
-<span data-ttu-id="cce25-128">В следующем примере создается новая учетная запись для (Allie bellew), которая назначает лицензию и отключает службы, описанные в шаге 1.</span><span class="sxs-lookup"><span data-stu-id="cce25-128">The following example creates a new account for Allie Bellew that assigns the license and disables the services described in Step 1.</span></span>
+<span data-ttu-id="eb951-129">В следующем примере создается новая учетная запись для (Allie bellew), которая назначает лицензию и отключает службы, описанные в шаге 1.</span><span class="sxs-lookup"><span data-stu-id="eb951-129">The following example creates a new account for Allie Bellew that assigns the license and disables the services described in Step 1.</span></span>
     
 ```powershell
 New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
 ```
 
-<span data-ttu-id="cce25-129">Более подробную информацию о создании учетных записей пользователей в Office 365 PowerShell можно узнать в статье [Создание учетных записей пользователей с помощью office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="cce25-129">For more information about creating user accounts in Office 365 PowerShell, see [Create user accounts with Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="eb951-130">Для получения дополнительных сведений о создании учетных записей пользователей в PowerShell для Microsoft 365, ознакомьтесь со статьей [Создание учетных записей пользователей с помощью PowerShell](create-user-accounts-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="eb951-130">For more information about creating user accounts in PowerShell for Microsoft 365, see [Create user accounts with PowerShell](create-user-accounts-with-office-365-powershell.md).</span></span>
     
-<span data-ttu-id="cce25-130">Чтобы отключить службы для существующего лицензированного пользователя, выполните указанную ниже команду.</span><span class="sxs-lookup"><span data-stu-id="cce25-130">To disable the services for an existing licensed user, use the following syntax:</span></span>
+<span data-ttu-id="eb951-131">Чтобы отключить службы для существующего лицензированного пользователя, выполните указанную ниже команду.</span><span class="sxs-lookup"><span data-stu-id="eb951-131">To disable the services for an existing licensed user, use the following syntax:</span></span>
     
 ```powershell
 Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
 ```
 
-<span data-ttu-id="cce25-131">В этом примере показано, как отключить службы для пользователя BelindaN@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="cce25-131">This example disables the services for the user BelindaN@litwareinc.com.</span></span>
+<span data-ttu-id="eb951-132">В этом примере показано, как отключить службы для пользователя BelindaN@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="eb951-132">This example disables the services for the user BelindaN@litwareinc.com.</span></span>
     
 ```powershell
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
 ```
 
-<span data-ttu-id="cce25-132">Чтобы отключить службы, описанные в шаге 1, для всех существующих лицензированных пользователей, укажите имя плана Office 365 из отображения командлета **Get-MsolAccountSku** (например, **litwareinc: ENTERPRISEPACK**), а затем выполните следующие команды:</span><span class="sxs-lookup"><span data-stu-id="cce25-132">To disable the services described in Step 1 for all existing licensed users, specify the name of your Office 365 plan from the display of the **Get-MsolAccountSku** cmdlet (such as **litwareinc:ENTERPRISEPACK**), and then run the following commands:</span></span>
+<span data-ttu-id="eb951-133">Чтобы отключить службы, описанные в шаге 1, для всех существующих лицензированных пользователей, укажите имя плана Microsoft 365 на экране командлета **Get-MsolAccountSku** (например, **litwareinc: ENTERPRISEPACK**), а затем выполните следующие команды:</span><span class="sxs-lookup"><span data-stu-id="eb951-133">To disable the services described in Step 1 for all existing licensed users, specify the name of your Microsoft 365 plan from the display of the **Get-MsolAccountSku** cmdlet (such as **litwareinc:ENTERPRISEPACK**), and then run the following commands:</span></span>
     
 ```powershell
 $acctSKU="<AccountSkuId>"
@@ -111,31 +113,31 @@ $AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licens
 $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
 ```
 
- <span data-ttu-id="cce25-133">Если вы используете командлет **Get – MsolUser** без параметра _ALL_ , возвращаются только первые 500 учетных записей пользователей.</span><span class="sxs-lookup"><span data-stu-id="cce25-133">If you use the **Get-MsolUser** cmdlet without using the _All_ parameter, only the first 500 user accounts are returned.</span></span>
+ <span data-ttu-id="eb951-134">Если вы используете командлет **Get – MsolUser** без параметра _ALL_ , возвращаются только первые 500 учетных записей пользователей.</span><span class="sxs-lookup"><span data-stu-id="eb951-134">If you use the **Get-MsolUser** cmdlet without using the _All_ parameter, only the first 500 user accounts are returned.</span></span>
 
-<span data-ttu-id="cce25-134">Чтобы отключить службы для группы существующих пользователей, воспользуйтесь одним из указанных ниже методов для идентификации пользователей.</span><span class="sxs-lookup"><span data-stu-id="cce25-134">To disable the services for a group of existing users, use either of the following methods to identify the users:</span></span>
+<span data-ttu-id="eb951-135">Чтобы отключить службы для группы существующих пользователей, воспользуйтесь одним из указанных ниже методов для идентификации пользователей.</span><span class="sxs-lookup"><span data-stu-id="eb951-135">To disable the services for a group of existing users, use either of the following methods to identify the users:</span></span>
     
-<span data-ttu-id="cce25-135">**Способ 1. Фильтрация учетных записей на основе существующего атрибута учетной записи**</span><span class="sxs-lookup"><span data-stu-id="cce25-135">**Method 1. Filter the accounts based on an existing account attribute**</span></span> 
+<span data-ttu-id="eb951-136">**Способ 1. Фильтрация учетных записей на основе существующего атрибута учетной записи**</span><span class="sxs-lookup"><span data-stu-id="eb951-136">**Method 1. Filter the accounts based on an existing account attribute**</span></span> 
 
-<span data-ttu-id="cce25-136">Для этого используйте следующий синтаксис:</span><span class="sxs-lookup"><span data-stu-id="cce25-136">To do this, use the following syntax:</span></span>
+<span data-ttu-id="eb951-137">Для этого используйте следующий синтаксис:</span><span class="sxs-lookup"><span data-stu-id="eb951-137">To do this, use the following syntax:</span></span>
     
 ```powershell
 $x = Get-MsolUser -All <FilterableAttributes>
 $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
 ```
 
-<span data-ttu-id="cce25-137">В следующем примере отключаются службы для пользователей в отделе продаж в США.</span><span class="sxs-lookup"><span data-stu-id="cce25-137">The following example disables the services for users in the Sales department in the United States.</span></span>
+<span data-ttu-id="eb951-138">В следующем примере отключаются службы для пользователей в отделе продаж в США.</span><span class="sxs-lookup"><span data-stu-id="eb951-138">The following example disables the services for users in the Sales department in the United States.</span></span>
     
 ```powershell
 $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
 $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
 ```
 
-<span data-ttu-id="cce25-138">**Способ 2: использование списка определенных учетных записей**</span><span class="sxs-lookup"><span data-stu-id="cce25-138">**Method 2: Use a list of specific accounts**</span></span> 
+<span data-ttu-id="eb951-139">**Способ 2: использование списка определенных учетных записей**</span><span class="sxs-lookup"><span data-stu-id="eb951-139">**Method 2: Use a list of specific accounts**</span></span> 
 
-<span data-ttu-id="cce25-139">Для этого выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="cce25-139">To do this, perform the following steps:</span></span>
+<span data-ttu-id="eb951-140">Для этого выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="eb951-140">To do this, perform the following steps:</span></span>
     
-1. <span data-ttu-id="cce25-140">Создайте текстовый файл, в котором в каждой строке будет по одной учетной записи, как в примере ниже.</span><span class="sxs-lookup"><span data-stu-id="cce25-140">Create a text file that contains one account on each line like this:</span></span>
+1. <span data-ttu-id="eb951-141">Создайте текстовый файл, в котором в каждой строке будет по одной учетной записи, как в примере ниже.</span><span class="sxs-lookup"><span data-stu-id="eb951-141">Create a text file that contains one account on each line like this:</span></span>
     
   ```powershell
   akol@contoso.com
@@ -143,26 +145,26 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
   kakers@contoso.com
   ```
 
-  <span data-ttu-id="cce25-141">В этом примере текстовый файл имеет значение C:\\мои документы\\Accounts. txt.</span><span class="sxs-lookup"><span data-stu-id="cce25-141">In this example, the text file is C:\\My Documents\\Accounts.txt.</span></span>
+  <span data-ttu-id="eb951-142">В этом примере текстовый файл — C: \\ Мои документы \\Accounts.txt.</span><span class="sxs-lookup"><span data-stu-id="eb951-142">In this example, the text file is C:\\My Documents\\Accounts.txt.</span></span>
     
-2. <span data-ttu-id="cce25-142">Выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="cce25-142">Run the following command:</span></span>
+2. <span data-ttu-id="eb951-143">Выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="eb951-143">Run the following command:</span></span>
     
   ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
   ```
 
-<span data-ttu-id="cce25-143">Если вы хотите отключить доступ к службам для нескольких планов лицензирования, повторите указанные выше инструкции для каждого плана лицензирования, убедившись в том, что:</span><span class="sxs-lookup"><span data-stu-id="cce25-143">If you want to disable access to services for multiple licensing plans, repeat the above instructions for each licensing plan, ensuring that:</span></span>
+<span data-ttu-id="eb951-144">Если вы хотите отключить доступ к службам для нескольких планов лицензирования, повторите указанные выше инструкции для каждого плана лицензирования, убедившись в том, что:</span><span class="sxs-lookup"><span data-stu-id="eb951-144">If you want to disable access to services for multiple licensing plans, repeat the above instructions for each licensing plan, ensuring that:</span></span>
 
-- <span data-ttu-id="cce25-144">Учетным записям пользователей назначен план лицензирования.</span><span class="sxs-lookup"><span data-stu-id="cce25-144">The user accounts have been assigned the licensing plan.</span></span>
-- <span data-ttu-id="cce25-145">Службы, которые необходимо отключить, доступны в плане лицензирования.</span><span class="sxs-lookup"><span data-stu-id="cce25-145">The services to disable are available in the licensing plan.</span></span>
+- <span data-ttu-id="eb951-145">Учетным записям пользователей назначен план лицензирования.</span><span class="sxs-lookup"><span data-stu-id="eb951-145">The user accounts have been assigned the licensing plan.</span></span>
+- <span data-ttu-id="eb951-146">Службы, которые необходимо отключить, доступны в плане лицензирования.</span><span class="sxs-lookup"><span data-stu-id="eb951-146">The services to disable are available in the licensing plan.</span></span>
 
-<span data-ttu-id="cce25-146">Чтобы отключить службы Office 365 для пользователей при назначении их плану лицензирования, ознакомьтесь со статьей [Отключение доступа к службам при назначении пользовательских лицензий](disable-access-to-services-while-assigning-user-licenses.md).</span><span class="sxs-lookup"><span data-stu-id="cce25-146">To disable Office 365 services for users while you are assigning them to a licensing plan, see [Disable access to services while assigning user licenses](disable-access-to-services-while-assigning-user-licenses.md).</span></span>
+<span data-ttu-id="eb951-147">Чтобы отключить службы Microsoft 365 для пользователей при назначении их плану лицензирования, ознакомьтесь со статьей [Отключение доступа к службам при назначении пользовательских лицензий](disable-access-to-services-while-assigning-user-licenses.md).</span><span class="sxs-lookup"><span data-stu-id="eb951-147">To disable Microsoft 365 services for users while you are assigning them to a licensing plan, see [Disable access to services while assigning user licenses](disable-access-to-services-while-assigning-user-licenses.md).</span></span>
 
 
-## <a name="see-also"></a><span data-ttu-id="cce25-147">См. также</span><span class="sxs-lookup"><span data-stu-id="cce25-147">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eb951-148">См. также</span><span class="sxs-lookup"><span data-stu-id="eb951-148">See also</span></span>
 
-[<span data-ttu-id="cce25-148">Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="cce25-148">Manage user accounts, licenses, and groups with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="eb951-149">Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell</span><span class="sxs-lookup"><span data-stu-id="eb951-149">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="cce25-149">Управление Office 365 с помощью PowerShell Office 365</span><span class="sxs-lookup"><span data-stu-id="cce25-149">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="eb951-150">Управление Microsoft 365 с помощью PowerShell</span><span class="sxs-lookup"><span data-stu-id="eb951-150">Manage Microsoft 365 with PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="cce25-150">Начало работы с Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="cce25-150">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="eb951-151">Начало работы с PowerShell для Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="eb951-151">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-office-365-powershell.md)

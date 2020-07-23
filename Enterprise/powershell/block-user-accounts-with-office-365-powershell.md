@@ -1,9 +1,9 @@
 ---
-title: Блокировка учетных записей пользователей с помощью PowerShell в Office 365
+title: Блокировка учетных записей пользователей Microsoft 365 с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,46 +17,48 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: Сведения об использовании PowerShell в Office 365 для блокировки и разблокировки доступа к учетным записям Office 365.
-ms.openlocfilehash: 5633c35feee67ede65c4fffa8bc55276c3b979b8
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: В этой статье объясняется, как заблокировать и разблокировать доступ к учетным записям Microsoft 365 с помощью PowerShell.
+ms.openlocfilehash: c18c0248c51096ab089b16b2e9e31eb0929de443
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004732"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230895"
 ---
-# <a name="block-user-accounts-with-office-365-powershell"></a><span data-ttu-id="5bcf6-103">Блокировка учетных записей пользователей с помощью PowerShell в Office 365</span><span class="sxs-lookup"><span data-stu-id="5bcf6-103">Block user accounts with Office 365 PowerShell</span></span>
+# <a name="block-microsoft-365-user-accounts-with-powershell"></a><span data-ttu-id="aef8c-103">Блокировка учетных записей пользователей Microsoft 365 с помощью PowerShell</span><span class="sxs-lookup"><span data-stu-id="aef8c-103">Block Microsoft 365 user accounts with PowerShell</span></span>
 
-<span data-ttu-id="5bcf6-104">Блокировка доступа к учетной записи Office 365 позволяет всем пользователям использовать эту учетную запись для входа и доступа к службам и данным в организации Office 365.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-104">Blocking access to an Office 365 account prevents anyone from using the account to sign in and access the services and data in your Office 365 organization.</span></span> <span data-ttu-id="5bcf6-105">Вы можете использовать Office 365 PowerShell, чтобы заблокировать доступ к отдельным и нескольким учетным записям пользователей.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-105">You can use Office 365 PowerShell to block access to individual and multiple user accounts.</span></span>
+<span data-ttu-id="aef8c-104">*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*</span><span class="sxs-lookup"><span data-stu-id="aef8c-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="5bcf6-106">Использование модуля PowerShell Azure Active Directory для Graph</span><span class="sxs-lookup"><span data-stu-id="5bcf6-106">Use the Azure Active Directory PowerShell for Graph module</span></span>
+<span data-ttu-id="aef8c-105">Блокировка доступа к учетной записи Microsoft 365 запрещает всем пользователям использовать эту учетную запись для входа и доступа к службам и данным в организации Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="aef8c-105">Blocking access to a Microsoft 365 account prevents anyone from using the account to sign in and access the services and data in your Microsoft 365 organization.</span></span> <span data-ttu-id="aef8c-106">С помощью PowerShell можно блокировать доступ к отдельным и нескольким учетным записям пользователей.</span><span class="sxs-lookup"><span data-stu-id="aef8c-106">You can use PowerShell to block access to individual and multiple user accounts.</span></span>
 
-<span data-ttu-id="5bcf6-107">Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="5bcf6-107">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="aef8c-107">Использование модуля PowerShell Azure Active Directory для Graph</span><span class="sxs-lookup"><span data-stu-id="aef8c-107">Use the Azure Active Directory PowerShell for Graph module</span></span>
+
+<span data-ttu-id="aef8c-108">Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="aef8c-108">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
  
-### <a name="block-access-to-individual-user-accounts"></a><span data-ttu-id="5bcf6-108">Блокировка доступа к отдельным учетным записям пользователей</span><span class="sxs-lookup"><span data-stu-id="5bcf6-108">Block access to individual user accounts</span></span>
+### <a name="block-access-to-individual-user-accounts"></a><span data-ttu-id="aef8c-109">Блокировка доступа к отдельным учетным записям пользователей</span><span class="sxs-lookup"><span data-stu-id="aef8c-109">Block access to individual user accounts</span></span>
 
-<span data-ttu-id="5bcf6-109">Используйте следующий синтаксис, чтобы заблокировать отдельную учетную запись пользователя:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-109">Use the following syntax to block an individual user account:</span></span>
+<span data-ttu-id="aef8c-110">Используйте следующий синтаксис, чтобы заблокировать отдельную учетную запись пользователя:</span><span class="sxs-lookup"><span data-stu-id="aef8c-110">Use the following syntax to block an individual user account:</span></span>
   
 ```powershell
 Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $false
 ```
 
 > [!NOTE]
-> <span data-ttu-id="5bcf6-110">Параметр – ObjectID в командлете Set – AzureAD принимает либо имя входа учетной записи, также называемое именем участника пользователя, либо идентификатор объекта учетной записи.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-110">The -ObjectID parameter in the Set-AzureAD cmdlet accepts either the account sign-in name, also known as the User Principal Name, or the account's object ID.</span></span> 
+> <span data-ttu-id="aef8c-111">Параметр – ObjectID в командлете Set – AzureAD принимает либо имя входа учетной записи, также называемое именем участника пользователя, либо идентификатор объекта учетной записи.</span><span class="sxs-lookup"><span data-stu-id="aef8c-111">The -ObjectID parameter in the Set-AzureAD cmdlet accepts either the account sign-in name, also known as the User Principal Name, or the account's object ID.</span></span> 
   
-<span data-ttu-id="5bcf6-111">В этом примере блокируется доступ к учетной записи пользователя fabricec@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-111">This example blocks access to the user account fabricec@litwareinc.com.</span></span>
+<span data-ttu-id="aef8c-112">В этом примере блокируется доступ к учетной записи пользователя fabricec@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="aef8c-112">This example blocks access to the user account fabricec@litwareinc.com.</span></span>
   
 ```powershell
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
 ```
 
-<span data-ttu-id="5bcf6-112">Чтобы разблокировать эту учетную запись пользователя, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-112">To unblock this user account, run the following command:</span></span>
+<span data-ttu-id="aef8c-113">Чтобы разблокировать эту учетную запись пользователя, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="aef8c-113">To unblock this user account, run the following command:</span></span>
   
 ```powershell
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $true
 ```
 
-<span data-ttu-id="5bcf6-113">Чтобы отобразить учетную запись участника-пользователя на основе отображаемого имени пользователя, используйте следующие команды:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-113">To display the user account UPN based on the user's display name, use the following commands:</span></span>
+<span data-ttu-id="aef8c-114">Чтобы отобразить учетную запись участника-пользователя на основе отображаемого имени пользователя, используйте следующие команды:</span><span class="sxs-lookup"><span data-stu-id="aef8c-114">To display the user account UPN based on the user's display name, use the following commands:</span></span>
   
 ```powershell
 $userName="<display name>"
@@ -64,14 +66,14 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-<span data-ttu-id="5bcf6-114">В этом примере отображается имя участника-пользователя для учетной записи пользователя с именем Caleb Sills.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-114">This example displays the user account UPN for the user named Caleb Sills.</span></span>
+<span data-ttu-id="aef8c-115">В этом примере отображается имя участника-пользователя для учетной записи пользователя с именем Caleb Sills.</span><span class="sxs-lookup"><span data-stu-id="aef8c-115">This example displays the user account UPN for the user named Caleb Sills.</span></span>
   
 ```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-<span data-ttu-id="5bcf6-115">Чтобы заблокировать учетную запись на основе отображаемого имени пользователя, используйте следующие команды:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-115">To block an account based on the user's display name, use the following commands:</span></span>
+<span data-ttu-id="aef8c-116">Чтобы заблокировать учетную запись на основе отображаемого имени пользователя, используйте следующие команды:</span><span class="sxs-lookup"><span data-stu-id="aef8c-116">To block an account based on the user's display name, use the following commands:</span></span>
   
 ```powershell
 $userName="<display name>"
@@ -79,15 +81,15 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 
 ```
 
-<span data-ttu-id="5bcf6-116">В любое время вы можете проверить состояние блокировки учетной записи пользователя с помощью следующей команды:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-116">At any time, you can check the blocked status of a user account with the following command:</span></span>
+<span data-ttu-id="aef8c-117">В любое время вы можете проверить состояние блокировки учетной записи пользователя с помощью следующей команды:</span><span class="sxs-lookup"><span data-stu-id="aef8c-117">At any time, you can check the blocked status of a user account with the following command:</span></span>
   
 ```powershell
 Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
-### <a name="block-access-to-multiple-user-accounts"></a><span data-ttu-id="5bcf6-117">Блокировка доступа к нескольким учетным записям пользователей</span><span class="sxs-lookup"><span data-stu-id="5bcf6-117">Block access to multiple user accounts</span></span>
+### <a name="block-access-to-multiple-user-accounts"></a><span data-ttu-id="aef8c-118">Блокировка доступа к нескольким учетным записям пользователей</span><span class="sxs-lookup"><span data-stu-id="aef8c-118">Block access to multiple user accounts</span></span>
 
-<span data-ttu-id="5bcf6-118">Чтобы заблокировать доступ к нескольким учетным записям пользователей, создайте текстовый файл с одним именем входа учетной записи в каждой строке, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-118">To block access to multiple user accounts, create a text file that contains one account sign-in name on each line like this:</span></span>
+<span data-ttu-id="aef8c-119">Чтобы заблокировать доступ к нескольким учетным записям пользователей, создайте текстовый файл с одним именем входа учетной записи в каждой строке, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="aef8c-119">To block access to multiple user accounts, create a text file that contains one account sign-in name on each line like this:</span></span>
     
   ```powershell
 akol@contoso.com
@@ -95,57 +97,57 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-<span data-ttu-id="5bcf6-119">В приведенных ниже командах приведен пример текстового файла "\ мои Documents\Accounts.txt.".</span><span class="sxs-lookup"><span data-stu-id="5bcf6-119">In the following commands, the example text file is C:\My Documents\Accounts.txt.</span></span> <span data-ttu-id="5bcf6-120">Замените путь и имя файла для текстового файла.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-120">Replace this with the path and file name of your text file.</span></span>
+<span data-ttu-id="aef8c-120">В приведенных ниже командах пример текстового файла — "мой Documents\Accounts.txt".</span><span class="sxs-lookup"><span data-stu-id="aef8c-120">In the following commands, the example text file is C:\My Documents\Accounts.txt.</span></span> <span data-ttu-id="aef8c-121">Замените путь и имя файла для текстового файла.</span><span class="sxs-lookup"><span data-stu-id="aef8c-121">Replace this with the path and file name of your text file.</span></span>
   
-<span data-ttu-id="5bcf6-121">Чтобы заблокировать доступ к учетным записям, перечисленным в текстовом файле, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-121">To block access to the accounts listed in the text file, run the following command:</span></span>
+<span data-ttu-id="aef8c-122">Чтобы заблокировать доступ к учетным записям, перечисленным в текстовом файле, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="aef8c-122">To block access to the accounts listed in the text file, run the following command:</span></span>
     
 ```powershell
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $false }
 ```
 
-<span data-ttu-id="5bcf6-122">Чтобы разблокировать учетные записи, перечисленные в текстовом файле, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-122">To unblock the accounts listed in the text file, run the following command:</span></span>
+<span data-ttu-id="aef8c-123">Чтобы разблокировать учетные записи, перечисленные в текстовом файле, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="aef8c-123">To unblock the accounts listed in the text file, run the following command:</span></span>
     
 ```powershell
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="5bcf6-123">Использование модуля Microsoft Azure Active Directory для Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="5bcf6-123">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="aef8c-124">Использование модуля Microsoft Azure Active Directory для Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="aef8c-124">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="5bcf6-124">Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="5bcf6-124">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="aef8c-125">Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="aef8c-125">First, [connect to your Microsoft 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
     
-### <a name="block-access-to-individual-user-accounts"></a><span data-ttu-id="5bcf6-125">Блокировка доступа к отдельным учетным записям пользователей</span><span class="sxs-lookup"><span data-stu-id="5bcf6-125">Block access to individual user accounts</span></span>
+### <a name="block-access-to-individual-user-accounts"></a><span data-ttu-id="aef8c-126">Блокировка доступа к отдельным учетным записям пользователей</span><span class="sxs-lookup"><span data-stu-id="aef8c-126">Block access to individual user accounts</span></span>
 
-<span data-ttu-id="5bcf6-126">Используйте следующий синтаксис, чтобы заблокировать доступ к отдельной учетной записи пользователя:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-126">Use the following syntax to block access to an individual user account:</span></span>
+<span data-ttu-id="aef8c-127">Используйте следующий синтаксис, чтобы заблокировать доступ к отдельной учетной записи пользователя:</span><span class="sxs-lookup"><span data-stu-id="aef8c-127">Use the following syntax to block access to an individual user account:</span></span>
   
 ```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $true
 ```
 
 >[!Note]
-><span data-ttu-id="5bcf6-127">В PowerShell Core не поддерживается модуль Microsoft Azure Active Directory для Windows PowerShell и командлеты с компонентом **Msol** в имени.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-127">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="5bcf6-128">Чтобы использовать эти командлеты, необходимо запустить их из Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-128">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="aef8c-128">В PowerShell Core не поддерживается модуль Microsoft Azure Active Directory для Windows PowerShell и командлеты с компонентом **Msol** в имени.</span><span class="sxs-lookup"><span data-stu-id="aef8c-128">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="aef8c-129">Чтобы использовать эти командлеты, необходимо запустить их из Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="aef8c-129">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="5bcf6-129">В этом примере блокируется доступ к учетной записи пользователя fabricec@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-129">This example blocks access to the user account fabricec@litwareinc.com.</span></span>
+<span data-ttu-id="aef8c-130">В этом примере блокируется доступ к учетной записи пользователя fabricec@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="aef8c-130">This example blocks access to the user account fabricec@litwareinc.com.</span></span>
   
 ```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
 ```
 
-<span data-ttu-id="5bcf6-130">Чтобы разблокировать учетную запись пользователя, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-130">To unblock the user account, run the following command:</span></span>
+<span data-ttu-id="aef8c-131">Чтобы разблокировать учетную запись пользователя, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="aef8c-131">To unblock the user account, run the following command:</span></span>
   
 ```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $false
 ```
 
-<span data-ttu-id="5bcf6-131">В любое время вы можете проверить состояние блокировки учетной записи пользователя с помощью следующей команды:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-131">At any time, you can check the blocked status of a user account with the following command:</span></span>
+<span data-ttu-id="aef8c-132">В любое время вы можете проверить состояние блокировки учетной записи пользователя с помощью следующей команды:</span><span class="sxs-lookup"><span data-stu-id="aef8c-132">At any time, you can check the blocked status of a user account with the following command:</span></span>
   
 ```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayName,BlockCredential
 ```
 
-### <a name="block-access-to-multiple-user-accounts"></a><span data-ttu-id="5bcf6-132">Блокировка доступа к нескольким учетным записям пользователей</span><span class="sxs-lookup"><span data-stu-id="5bcf6-132">Block access to multiple user accounts</span></span>
+### <a name="block-access-to-multiple-user-accounts"></a><span data-ttu-id="aef8c-133">Блокировка доступа к нескольким учетным записям пользователей</span><span class="sxs-lookup"><span data-stu-id="aef8c-133">Block access to multiple user accounts</span></span>
 
-<span data-ttu-id="5bcf6-133">Сначала создайте текстовый файл, который содержит одну учетную запись в каждой строке, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-133">First, create a text file that contains one account on each line like this:</span></span>
+<span data-ttu-id="aef8c-134">Сначала создайте текстовый файл, который содержит одну учетную запись в каждой строке, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="aef8c-134">First, create a text file that contains one account on each line like this:</span></span>
     
 ```powershell
 akol@contoso.com
@@ -153,23 +155,23 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-<span data-ttu-id="5bcf6-134">В приведенных ниже командах приведен пример текстового файла "\ мои Documents\Accounts.txt.".</span><span class="sxs-lookup"><span data-stu-id="5bcf6-134">In the following commands, the example text file is C:\My Documents\Accounts.txt.</span></span> <span data-ttu-id="5bcf6-135">Замените путь и имя файла для текстового файла.</span><span class="sxs-lookup"><span data-stu-id="5bcf6-135">Replace this with the path and file name of your text file.</span></span>
+<span data-ttu-id="aef8c-135">В приведенных ниже командах пример текстового файла — "мой Documents\Accounts.txt".</span><span class="sxs-lookup"><span data-stu-id="aef8c-135">In the following commands, the example text file is C:\My Documents\Accounts.txt.</span></span> <span data-ttu-id="aef8c-136">Замените путь и имя файла для текстового файла.</span><span class="sxs-lookup"><span data-stu-id="aef8c-136">Replace this with the path and file name of your text file.</span></span>
     
-<span data-ttu-id="5bcf6-136">Чтобы заблокировать доступ к учетным записям, перечисленным в текстовом файле, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-136">To block access to the accounts listed in the text file, run the following command:</span></span>
+<span data-ttu-id="aef8c-137">Чтобы заблокировать доступ к учетным записям, перечисленным в текстовом файле, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="aef8c-137">To block access to the accounts listed in the text file, run the following command:</span></span>
     
   ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $true }
   ```
-<span data-ttu-id="5bcf6-137">Чтобы разблокировать учетные записи, перечисленные в текстовом файле, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="5bcf6-137">To unblock the accounts listed in the text file, run the following command:</span></span>
+<span data-ttu-id="aef8c-138">Чтобы разблокировать учетные записи, перечисленные в текстовом файле, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="aef8c-138">To unblock the accounts listed in the text file, run the following command:</span></span>
     
   ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $false }
   ```
 
-## <a name="see-also"></a><span data-ttu-id="5bcf6-138">См. также</span><span class="sxs-lookup"><span data-stu-id="5bcf6-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aef8c-139">См. также</span><span class="sxs-lookup"><span data-stu-id="aef8c-139">See also</span></span>
 
-[<span data-ttu-id="5bcf6-139">Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5bcf6-139">Manage user accounts, licenses, and groups with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="aef8c-140">Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell</span><span class="sxs-lookup"><span data-stu-id="aef8c-140">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[<span data-ttu-id="5bcf6-140">Управление Office 365 с помощью PowerShell Office 365</span><span class="sxs-lookup"><span data-stu-id="5bcf6-140">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="aef8c-141">Управление Microsoft 365 с помощью PowerShell</span><span class="sxs-lookup"><span data-stu-id="aef8c-141">Manage Microsoft 365 with PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="5bcf6-141">Начало работы с Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="5bcf6-141">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="aef8c-142">Начало работы с PowerShell для Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="aef8c-142">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-office-365-powershell.md)
