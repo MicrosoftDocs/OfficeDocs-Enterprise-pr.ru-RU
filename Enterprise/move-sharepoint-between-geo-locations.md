@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Сведения о перемещении сайта SharePoint в другой геообъект.
-ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 3b8028f1dc4b33201a19a8da1cad6c9a559cf4c0
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057999"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201623"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Перемещение сайта SharePoint в другой геообъект
 
@@ -112,9 +112,9 @@ https://Contoso.sharepoint.com/sites/projectx меняется на https://Cont
 
 ![Снимок экрана: окно PowerShell с командлетом Start-SPOSiteContentMove](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Запуск перемещения сайта SharePoint для сайта, подключенного к группе Microsoft 365
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Запуск перемещения сайта SharePoint для сайта, подключенного к группе Microsoft 365
 
-Чтобы переместить сайт, подключенный к группе Microsoft 365, глобальный администратор должен сначала изменить атрибут предпочтительного расположения данных (PDL) для группы Microsoft 365.
+Чтобы переместить сайт, подключенный к группе Office 365, глобальный администратор или администратор SharePoint должен сначала изменить атрибут предпочтительного расположения данных (PDL) для группы Office 365.
 
 Настройка атрибута PDL для группы Microsoft 365:
 
