@@ -1,9 +1,9 @@
 ---
-title: Настройка параметров учетной записи пользователя с помощью PowerShell для Office 365
+title: Настройка свойств учетной записи пользователя Microsoft 365 с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,57 +18,59 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: Сводка. Сведения о том, как с помощью PowerShell в Office 365 настроить свойства одной или нескольких учетных записей пользователей в клиенте Office 365:.
-ms.openlocfilehash: 5748bd382357168e4184754fb49fb7304e2d2474
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 'Сводка: использование PowerShell для Microsoft 365 для настройки свойств отдельных или нескольких учетных записей пользователей в клиенте Microsoft 365.'
+ms.openlocfilehash: ccf9bf9930551ab1ee26ef7a1f69427cdc4871f5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004722"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230855"
 ---
-# <a name="configure-user-account-properties-with-office-365-powershell"></a>Настройка параметров учетной записи пользователя с помощью PowerShell для Office 365
+# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Настройка свойств учетной записи пользователя Microsoft 365 с помощью PowerShell
 
-Несмотря на то, что вы можете использовать центр администрирования Microsoft 365 для настройки свойств учетных записей пользователей клиента Office 365, вы также можете использовать PowerShell для Office 365 и выполнять некоторые действия, которые не могут находиться в центре администрирования.
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+
+Несмотря на то, что вы можете использовать центр администрирования Microsoft 365 для настройки свойств учетных записей пользователей клиента Microsoft 365, вы также можете использовать PowerShell и выполнить некоторые действия, которые не могут находиться в центре администрирования Microsoft 365.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
 
 Чтобы настроить свойства учетных записей пользователей с помощью модуля PowerShell Azure Active Directory для Graph, используйте командлет [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0), указав свойства, которые нужно задать или изменить. 
 
-Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
    
 ### <a name="change-properties-for-a-specific-user-account"></a>Изменение свойств учетной записи пользователя
 
 Параметр **-ObjectID** указывает учетную запись, а ее свойства можно задать или изменить с помощью дополнительных параметров. Ниже перечислены наиболее распространенные.
   
-- -Department "\<название отдела>"
+- -Department "<название отдела>"
     
-- -DisplayName "\<полное имя пользователя>"
+- -DisplayName "<полное имя пользователя>"
     
-- -FacsimilieTelephoneNumber "\<номер факса>"
+- -FacsimilieTelephoneNumber "<номер факса>"
     
-- -GivenName "\<имя пользователя>"
+- -GivenName "<имя пользователя>"
     
-- -Surname "\<фамилия пользователя>"
+- -Surname "<фамилия пользователя>"
     
-- -Mobile "\<номер мобильного телефона>"
+- -Mobile "<номер мобильного телефона>"
     
-- -JobTitle "\<должность>"
+- -JobTitle "<должность>"
     
-- -PreferredLanguage "\<язык>"
+- -PreferredLanguage "<язык>"
     
-- -StreetAddress "\<почтовый адрес>"
+- -StreetAddress "<почтовый адрес>"
     
-- -City "\<название города>"
+- -City "<название города>"
     
-- -State "\<название штата>"
+- -State "<название региона>"
     
-- -PostalCode "\<почтовый индекс>"
+- -PostalCode "<почтовый индекс>"
     
-- -Country "\<название страны>"
+- -Country "<название страны>"
     
-- -TelephoneNumber "\<номер рабочего телефона>"
+- -TelephoneNumber "<номер рабочего телефона>"
     
-- -UsageLocation "\<2-значный код страны или региона>"
+- — UsageLocation " \<2-character country or region code> "
     
     Это двухбуквенный код страны или региона согласно ISO 3166-1 alpha-2 (A2).
     
@@ -81,17 +83,17 @@ ms.locfileid: "44004722"
 Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName | More
 ```
 
-Эта команда указывает PowerShell в Office 365 сделать следующее:
+Эта команда предписывает PowerShell выполнить следующие действия:
   
-- Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
+- Получите все сведения об учетных записях пользователей (**Get-AzureADUser**) и отправьте их в следующую команду ( **|** ).
     
-- Сортировать список имен субъектов-пользователей в алфавитном порядке ( **Сортировка userPrincipalName** ) и отправлять их в следующую команду **|** ().
+- Сортировать список имен субъектов-пользователей в алфавитном порядке (**Сортировка userPrincipalName**) и отправлять их в следующую команду ( **|** ).
     
-- Отобразите только свойство имени участника-пользователя для каждой учетной записи ( **выберите userPrincipalName** ).
+- Отобразите только свойство имени участника-пользователя для каждой учетной записи (**выберите userPrincipalName**).
 
-- Отобразить их на одном экране ( **More** ).
+- Отобразить их на одном экране (**More**).
     
-Эта команда возвращает список всех учетных записей. Если требуется показать имя участника-пользователя для учетной записи по соответствующему отображаемому имени (имени и фамилии), укажите значение переменной **$userName** ниже (удалив символы \< и >), а затем выполните следующие команды:
+Эта команда перечислит все учетные записи. Если вы хотите отобразить имя участника-пользователя для учетной записи на основе отображаемого имени (имя и фамилия), заполните приведенную ниже переменную **$username** (удалив \< and > символы), а затем выполните следующие команды:
   
 ```powershell
 $userName="<Display name>"
@@ -121,11 +123,11 @@ Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
 Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
 ```
 
-Эта команда дает инструкцию PowerShell для Office 365:
+Эта команда предписывает PowerShell выполнить следующие действия:
   
-- Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
+- Получите все сведения об учетных записях пользователей (**Get-AzureADUser**) и отправьте их в следующую команду ( **|** ).
     
-- Задать Францию в качестве расположения пользователя (**Set-AzureADUser -UsageLocation "FR"**).
+- Задайте для расположения пользователя значение Франция (**Set-AzureADUser-UsageLocation "fr"**).
     
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>Изменение свойств определенной части учетных записей пользователей
 
@@ -135,19 +137,19 @@ Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
 Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
 ```
 
-Эта команда дает инструкцию PowerShell для Office 365:
+Эта команда предписывает PowerShell выполнить следующие действия:
   
-- Получить всю информацию об учетных записях пользователей (**Get-AzureADUser**) и отправить их следующей команде (**|**).
+- Получите все сведения об учетных записях пользователей (**Get-AzureADUser**) и отправьте их в следующую команду ( **|** ).
     
-- Найти все учетные записи, в которых для свойства Department задано значение "Accounting" (**Where {$_.Department -eq "Accounting"}**), и передать полученные сведения в следующую команду (**|**).
+- Найдите все учетные записи пользователей, для которых в свойстве Department задано значение "Accounting" (**где {$ _. Department-EQ "Accounting"}**) и отправьте полученные сведения в следующую команду ( **|** ).
     
-- Задать Францию в качестве расположения пользователя (**Set-AzureADUser -UsageLocation "FR"**).
+- Задайте для расположения пользователя значение Франция (**Set-AzureADUser-UsageLocation "fr"**).
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
 
 Чтобы настроить свойства учетных записей пользователей с помощью модуля Microsoft Azure Active Directory для Windows PowerShell, используйте командлет **Set – MsolUser** и укажите свойства, которые нужно задать или изменить. 
 
-Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
   
 >[!Note]
 >В PowerShell Core не поддерживается модуль Microsoft Azure Active Directory для Windows PowerShell и командлеты с компонентом **Msol** в имени. Чтобы использовать эти командлеты, необходимо запустить их из Windows PowerShell.
@@ -159,37 +161,37 @@ Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -Usag
 
 Параметр **-UserPrincipalName** указывает учетную запись, а ее свойства можно задать или изменить с помощью дополнительных параметров. Ниже перечислены наиболее распространенные.
   
-- -City "\<название города>"
+- -City "<название города>"
     
-- -Country "\<название страны>"
+- -Country "<название страны>"
     
-- -Department "\<название отдела>"
+- -Department "<название отдела>"
     
-- -DisplayName "\<полное имя пользователя>"
+- -DisplayName "<полное имя пользователя>"
     
-- -Fax "\<номер факса>"
+- -Fax "<номер факса>"
     
-- -FirstName "\<имя пользователя>"
+- -FirstName "<имя пользователя>"
     
-- -LastName "\<фамилия пользователя>"
+- -LastName "<фамилия пользователя>"
     
-- -MobilePhone "\<номер мобильного телефона>"
+- -MobilePhone "<номер мобильного телефона>"
     
-- -Office "\<адрес офиса>"
+- -Office "<расположение офиса>"
     
-- -PhoneNumber "\<номер телефона офиса>"
+- -PhoneNumber "<номер телефона офиса>"
     
-- -PostalCode "\<почтовый индекс>"
+- -PostalCode "<почтовый индекс>"
     
-- -PreferredLanguage "\<язык>"
+- -PreferredLanguage "<язык>"
     
-- -State "\<название штата>"
+- -State "<название региона>"
     
-- -StreetAddress "\<почтовый адрес>"
+- -StreetAddress "<почтовый адрес>"
     
-- -Title "\<должность>"
+- -Title "<должность>"
     
-- -UsageLocation "\<2-значный код страны или региона>"
+- — UsageLocation " \<2-character country or region code> "
     
     Это двухбуквенный код страны или региона согласно ISO 3166-1 alpha-2 (A2).
     
@@ -201,17 +203,17 @@ Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -Usag
 Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName | More
 ```
 
-Эта команда указывает PowerShell в Office 365 сделать следующее:
+Эта команда предписывает PowerShell выполнить следующие действия:
   
-- Получить всю информацию об учетных записях пользователей (**Get-MsolUser**) и передать их в следующую команду (**|**).
+- Получите все сведения об учетных записях пользователей (**Get-MsolUser**) и отправьте их в следующую команду ( **|** ).
     
-- Сортировать список имен субъектов-пользователей в алфавитном порядке ( **Сортировка userPrincipalName** ) и отправлять их в следующую команду **|** ().
+- Сортировать список имен субъектов-пользователей в алфавитном порядке (**Сортировка userPrincipalName**) и отправлять их в следующую команду ( **|** ).
     
-- Отобразите только свойство имени участника-пользователя для каждой учетной записи ( **выберите userPrincipalName** ).
+- Отобразите только свойство имени участника-пользователя для каждой учетной записи (**выберите userPrincipalName**).
     
-- Отобразить их на одном экране ( **More** ).
+- Отобразить их на одном экране (**More**).
     
-Эта команда вернет все учетные записи. Если нужно отобразить имя участника-пользователя для учетной записи по соответствующему отображаемому имени (имени и фамилии), введите переменную **$userName** ниже (удалив символы \< и >), а затем выполните следующие команды:
+Эта команда перечислит все учетные записи. Если вы хотите отобразить имя участника-пользователя для учетной записи на основе отображаемого имени (имя и фамилия), заполните приведенную ниже переменную **$username** (удалив \< and > символы), а затем выполните следующие команды:
   
 ```powershell
 $userName="<Display name>"
@@ -241,11 +243,11 @@ Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
 Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 ```
 
-Эта команда указывает PowerShell в Office 365 сделать следующее:
+Эта команда предписывает PowerShell выполнить следующие действия:
   
-- Получить всю информацию об учетных записях пользователей (**Get-MsolUser**) и передать их в следующую команду (**|**).
+- Получите все сведения об учетных записях пользователей (**Get-MsolUser**) и отправьте их в следующую команду ( **|** ).
     
-- Задать Францию в качестве расположения пользователя (**Set-MsolUser -UsageLocation "FR"**).
+- Задайте для расположения пользователя значение Франция (**Set-MsolUser-UsageLocation "fr"**).
     
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>Изменение свойств для определенного набора учетных записей пользователей
 
@@ -255,19 +257,19 @@ Get-MsolUser | Set-MsolUser -UsageLocation "FR"
 Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
 ```
 
-Эта команда указывает PowerShell в Office 365 сделать следующее:
+Эта команда предписывает PowerShell выполнить следующие действия:
   
-- Получить всю информацию об учетных записях пользователей (**Get-MsolUser**) и передать их в следующую команду (**|**).
+- Получите все сведения об учетных записях пользователей (**Get-MsolUser**) и отправьте их в следующую команду ( **|** ).
     
-- Найти все учетные записи, в которых для свойства Department задано значение "Accounting" (**Where {$_.Department -eq "Accounting"}**), и передать полученные сведения в следующую команду (**|**).
+- Найдите все учетные записи пользователей, для которых в свойстве Department задано значение "Accounting" (**где {$ _. Department-EQ "Accounting"}**) и отправьте полученные сведения в следующую команду ( **|** ).
     
-- Задать Францию в качестве расположения пользователя (**Set-MsolUser -UsageLocation "FR"**).
+- Задайте для расположения пользователя значение Франция (**Set-MsolUser-UsageLocation "fr"**).
     
 
 ## <a name="see-also"></a>См. также
 
-[Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Начало работы с PowerShell для Microsoft 365](getting-started-with-office-365-powershell.md)

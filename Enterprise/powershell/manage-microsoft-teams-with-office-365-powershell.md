@@ -1,9 +1,9 @@
 ---
-title: Управление Microsoft Teams с помощью PowerShell для Office 365
+title: Управление Microsoft Teams с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/12/2020
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: 'Сводка: использование PowerShell в Office 365 для управления Microsoft Teams.'
-ms.openlocfilehash: 0f15d71558ddb5166090b067da06e0a6321a2b99
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+description: 'Сводка: использование PowerShell для управления Microsoft Teams.'
+ms.openlocfilehash: 8958c6ec6f0c17c21461cbee4cb1a6441ceed8d6
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209129"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230615"
 ---
-# <a name="manage-microsoft-teams-with-office-365-powershell"></a>Управление Microsoft Teams с помощью PowerShell для Office 365
+# <a name="manage-microsoft-teams-with-powershell"></a>Управление Microsoft Teams с помощью PowerShell
 
-Вы можете управлять Microsoft Teams с помощью PowerShell для Office 365.
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+
+Вы можете управлять Microsoft Teams с помощью PowerShell.
   
 Сначала установите [модуль Microsoft Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/).
     
@@ -83,7 +85,7 @@ Disconnect-MicrosoftTeams
 
 [Общие сведения о Teams PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
   
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Начало работы с PowerShell для Microsoft 365](getting-started-with-office-365-powershell.md)
 

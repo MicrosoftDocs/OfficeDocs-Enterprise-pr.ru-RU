@@ -1,9 +1,9 @@
 ---
-title: Просмотр лицензий и служб с помощью PowerShell в Office 365
+title: Просмотр лицензий и служб Microsoft 365 с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,30 +19,32 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: В этой статье рассказывается, как использовать PowerShell для Office 365 для просмотра сведений о планах лицензирования, службах и лицензиях, доступных в организации Office 365.
-ms.openlocfilehash: e76a11d0ac174ef2de05c7e670537304dad9462f
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: В этой статье объясняется, как использовать PowerShell для просмотра сведений о планах лицензирования, службах и лицензиях, доступных в организации Microsoft 365.
+ms.openlocfilehash: f0b7d6cd5981bec09e7773d10d82ff81c0f34d4e
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009534"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230215"
 ---
-# <a name="view-licenses-and-services-with-office-365-powershell"></a>Просмотр лицензий и служб с помощью PowerShell в Office 365
+# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Просмотр лицензий и служб Microsoft 365 с помощью PowerShell
 
-Каждая подписка на Office 365 состоит из следующих элементов:
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
-- **Планы лицензирования** Они также называются планами лицензирования или планами Office 365. Планы лицензирования определяют службы Office 365, доступные пользователям. Ваша подписка на Office 365 может содержать несколько планов лицензирования. Примером может служить план лицензирования Office 365 корпоративный E3.
+Каждая подписка на Microsoft 365 состоит из следующих элементов:
+
+- **Планы лицензирования** Они также называются планами лицензирования или планами Microsoft 365. В планах лицензирования определяются службы Microsoft 365, доступные пользователям. Подписка на Microsoft 365 может содержать несколько планов лицензирования. Пример плана лицензирования — Microsoft 365 E3.
     
-- **Службы** Они также называются планами обслуживания. Службы — это продукты, функции и возможности Office 365, доступные в каждом плане лицензирования, например Exchange Online и приложения Microsoft 365 для предприятий (ранее называлось Office 365 профессиональный плюс). Пользователям могут быть назначены несколько лицензий из разных планов лицензирования, которые предоставляют доступ к разным службам.
+- **Службы** Они также называются планами обслуживания. Службы — это продукты, функции и возможности Microsoft 365, доступные в каждом плане лицензирования, например Exchange Online и приложения Microsoft 365 для предприятий (ранее называлось Office 365 профессиональный плюс). Пользователям могут быть назначены несколько лицензий из разных планов лицензирования, которые предоставляют доступ к разным службам.
     
-- **Licenses (лицензии** ) Каждый план лицензирования содержит количество приобретенных лицензий. Вы назначаете пользователям лицензии, чтобы они могли использовать службы Office 365, определенные планом лицензирования. Каждая учетная запись пользователя должна иметь по крайней мере одну лицензию из одного плана лицензирования, чтобы пользователи могли входить в Office 365 и использовать службы.
+- **Licenses (лицензии** ) Каждый план лицензирования содержит количество приобретенных лицензий. Вы назначаете пользователям лицензии, чтобы они могли использовать службы Microsoft 365, определенные планом лицензирования. Каждая учетная запись пользователя должна иметь по крайней мере одну лицензию из одного плана лицензирования, чтобы пользователи могли входить в Microsoft 365 и использовать службы.
     
-Вы можете использовать Office 365 PowerShell для просмотра сведений о доступных планах лицензирования, лицензиях и службах в организации Office 365. Дополнительные сведения о продуктах, возможностях и службах, доступных в различных подписках на Office 365, можно найти в статье [варианты плана office 365](https://go.microsoft.com/fwlink/p/?LinkId=691147).
+Вы можете использовать PowerShell для Microsoft 365 для просмотра сведений о доступных планах лицензирования, лицензиях и службах в организации Microsoft 365. Дополнительные сведения о продуктах, возможностях и службах, доступных в различных подписках на Office 365, можно найти в статье [варианты плана office 365](https://go.microsoft.com/fwlink/p/?LinkId=691147).
 
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
 
-Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Чтобы просмотреть сводную информацию о текущих планах лицензирования и доступных лицензиях для каждого плана, выполните следующую команду:
   
@@ -58,7 +60,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
     
 - **ConsumedUnits:** Количество лицензий, назначенных пользователям из определенного плана лицензирования.
     
-Чтобы просмотреть сведения о службах Office 365, доступных во всех планах лицензирования, сначала необходимо отобразить список планов лицензирования.
+Чтобы просмотреть сведения о службах Microsoft 365, доступных во всех планах лицензирования, сначала необходимо отобразить список планов лицензирования.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
@@ -76,7 +78,7 @@ $licenses = Get-AzureADSubscribedSku
 $licenses[<index>].ServicePlans
 ```
 
-\<Индекс> — это целое число, задающее номер строки плана лицензирования из отображения `Get-AzureADSubscribedSku | Select SkuPartNumber` команды минус 1.
+\<index>— Это целое число, определяющее номер строки плана лицензирования из отображения `Get-AzureADSubscribedSku | Select SkuPartNumber` команды минус 1.
 
 Например, если `Get-AzureADSubscribedSku | Select SkuPartNumber` команда имеет следующий вид:
 
@@ -101,10 +103,10 @@ $licenses[2].ServicePlans
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
 
-Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 >[!Note]
->Кроме того, вы можете воспользоваться сценарием PowerShell, который автоматизирует выполнение процедур, описанных в этой статье. В частности, скрипт позволяет просматривать и отключать службы в организации Office 365, в том числе Sway. Дополнительные сведения см. в статье [Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
+>Кроме того, вы можете воспользоваться сценарием PowerShell, который автоматизирует выполнение процедур, описанных в этой статье. В частности, скрипт позволяет просматривать и отключать службы в организации Microsoft 365, в том числе Sway. Дополнительные сведения см. [в статье Отключение доступа к Sway с помощью PowerShell](disable-access-to-sway-with-office-365-powershell.md).
 >
     
 Чтобы просмотреть сводную информацию о текущих планах лицензирования и доступных лицензиях для каждого плана, выполните следующую команду:
@@ -119,7 +121,7 @@ Get-MsolAccountSku
 
 Результаты содержат сведения, указанные ниже.
   
-- **AccountSkuId:** Отображение доступных планов лицензирования для Организации с помощью синтаксиса `<CompanyName>:<LicensingPlan>`.  CompanyName>— это значение, которое вы задаете при регистрации в Office 365 и является уникальным для вашей организации. _ \<_ Значение _ \<>лиценсингплан_ одинаково для всех. Например, в значении `litwareinc:ENTERPRISEPACK`название `litwareinc`компании и название `ENTERPRISEPACK`плана лицензирования, которое является системным именем для Office 365 корпоративный E3.
+- **AccountSkuId:** Отображение доступных планов лицензирования для Организации с помощью синтаксиса `<CompanyName>:<LicensingPlan>` .  _\<CompanyName>_— Это значение, заданное при регистрации в Microsoft 365, и уникальное для Организации. Это _\<LicensingPlan>_ значение одинаково для всех. Например, в значении `litwareinc:ENTERPRISEPACK` название компании `litwareinc` и название плана лицензирования `ENTERPRISEPACK` , которое является системным именем для Office 365 корпоративный E3.
     
 - **ActiveUnits:** Количество лицензий, приобретенных для определенного плана лицензирования.
     
@@ -127,13 +129,13 @@ Get-MsolAccountSku
     
 - **ConsumedUnits:** Количество лицензий, назначенных пользователям из определенного плана лицензирования.
     
-Чтобы просмотреть сведения о службах Office 365, доступных во всех планах лицензирования, выполните следующую команду:
+Чтобы просмотреть сведения о службах Microsoft 365, доступных во всех планах лицензирования, выполните следующую команду:
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-В следующей таблице показаны планы обслуживания Office 365 и их понятные имена для наиболее распространенных служб. Ваш список планов обслуживания может отличаться. 
+В следующей таблице показаны планы обслуживания Microsoft 365 и их понятные имена для наиболее распространенных служб. Ваш список планов обслуживания может отличаться. 
   
 |**План обслуживания**|**Описание**|
 |:-----|:-----|
@@ -149,13 +151,13 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
    
 Полный список планов лицензирования (называемых также названиями продуктов), включенных планов обслуживания и соответствующих понятных имен можно узнать в статье [наименования и идентификаторы планов обслуживания для лицензирования](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
-Чтобы просмотреть сведения о службах Office 365, доступных в определенном плане лицензирования, используйте следующий синтаксис.
+Чтобы просмотреть сведения о службах Microsoft 365, доступных в определенном плане лицензирования, используйте следующий синтаксис.
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
-В этом примере показаны службы Office 365, доступные в плане лицензирования litwareinc: ENTERPRISEPACK (Office 365 корпоративный E3).
+В этом примере показаны службы, доступные в плане лицензирования litwareinc: ENTERPRISEPACK (Office 365 корпоративный E3).
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
@@ -163,8 +165,8 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 ## <a name="see-also"></a>См. также
 
-[Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Начало работы с PowerShell для Microsoft 365](getting-started-with-office-365-powershell.md)

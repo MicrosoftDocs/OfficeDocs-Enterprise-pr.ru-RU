@@ -16,22 +16,24 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: 'Сводка: используйте Windows PowerShell для Microsoft 365 для управления клиентами клиенты.'
-ms.openlocfilehash: a57f66ec02f5ba69006c17a9cf734e622017b8fb
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 'Сводка: использование PowerShell для Microsoft 365 для управления клиентами клиенты.'
+ms.openlocfilehash: 31ce5b9a7bdfa50234c76be65eaeb99d6d199136
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998235"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230595"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Управление клиентами Microsoft 365 с помощью Windows PowerShell для партнеров с правами доступа к данным делегированного доступа
+
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
 Windows PowerShell позволяет поставщикам синдикации и поставщикам облачных решений (CSP) легко администрировать и сообщать о параметрах аренды клиентов, недоступных в центре администрирования Microsoft 365. Обратите внимание на то, что для учетной записи администратора партнера для подключения к клиенты клиента требуется разрешение на администрирование от имени (АОБО).
   
 Партнеры по делегированным правам доступа (DAP)  партнеры по синдикации и поставщики облачных решений (CSP). Они часто бывают поставщиками сети или телекоммуникационных услуг в других компаниях. Они объединяют подписки на Microsoft 365 на свои услуги своим клиентам. Когда вы продаете подписку на Microsoft 365, им автоматически предоставляются разрешения на администрирование от имени пользователя (АОБО), чтобы они могли администрировать и предоставлять отчеты для клиентов клиенты.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Что нужно знать перед началом работы?
 
-Для процедур, описанных в этом разделе, требуется подключение к Windows PowerShell для Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
+Процедуры, описанные в этом разделе, требуют подключения к [Microsoft 365 с помощью PowerShell](connect-to-office-365-powershell.md).
   
 Вам также необходимы учетные данные администратора для клиента партнера.
   
@@ -74,7 +76,7 @@ Get-MsolDomain -TenantId <customer TenantId value>
   
 ### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>Получение сопоставления всех клиентов и зарегистрированных доменов
 
-Предыдущие команды Windows PowerShell для Office 365 позволяют получить идентификаторы клиентов или домены, но не позволяют получить их одновременно и не показывают их сопоставление. Эта команда создает список всех идентификаторов пользовательских клиентов и их доменов.
+В предыдущих командах PowerShell для Microsoft 365 показано, как получить идентификаторы или домены клиента, но не оба, и без четкого сопоставления между ними. Эта команда создает список всех идентификаторов пользовательских клиентов и их доменов.
   
 ```
 $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.TenantId; Get-MsolDomain -TenantId $Domains | fl @{Label="TenantId";Expression={$Domains}},name}
@@ -98,7 +100,7 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 
 ### <a name="add-users-set-options-and-assign-licenses"></a>Добавление пользователей настройка параметров и назначение лицензий
 
-Пакетное создание, Настройка и лицензирование пользователей Microsoft 365 особенно эффективны с помощью Windows PowerShell для Office 365. В этом пошаговом процессе сначала создаются записи для всех пользователей, которых нужно добавить в файл значений с разделителями-запятыми (CSV), а затем импортируйте этот файл с помощью Windows PowerShell для Office 365. 
+Пакетное создание, Настройка и лицензирование пользователей Microsoft 365 особенно эффективны с помощью PowerShell для Microsoft 365. В этом пошаговом процессе сначала создаются записи для всех пользователей, которых нужно добавить в файл значений с разделителями-запятыми (CSV), а затем импортируйте этот файл с помощью PowerShell для Microsoft 365. 
   
 #### <a name="create-a-csv-file"></a>Создание CSV-файла
 

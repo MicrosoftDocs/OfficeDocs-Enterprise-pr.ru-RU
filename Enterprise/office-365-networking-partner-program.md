@@ -1,5 +1,5 @@
 ---
-title: Сетевая Партнерская программа Microsoft 365
+title: Партнерская программа Microsoft 365 для поставщиков сетевых устройств и служб
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Сетевая Партнерская программа Microsoft 365 позволяет устройству быть сертифицированным для работы с Microsoft 365.
 hideEdit: true
-ms.openlocfilehash: 64e04bb1f9e4ebb5d39c34c128b544f65ef5147e
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: c43f110883cfb5ca150a702253a41e84f9e1ab0f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052502"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230195"
 ---
-# <a name="microsoft-365-networking-partner-program"></a>Сетевая Партнерская программа Microsoft 365
+# <a name="microsoft-365-networking-partner-program"></a>Партнерская программа Microsoft 365 для поставщиков сетевых устройств и служб
 
 Сетевое подключение оказывает прямое влияние на способность пользователей работать быстрее, эффективно сотрудничать и оптимизируя бизнес-процессы с помощью Microsoft 365. Для клиентов на любой стадии своего цифрового преобразования это важный аспект, который должен быть решен, прежде чем проблемы могут негативно повлиять на взаимодействие с пользователем.
 
@@ -37,6 +37,6 @@ ms.locfileid: "45052502"
 
 Сетевая Партнерская программа Microsoft 365 назначает сетевое решение как "работает с Microsoft 365". Только устройства или решения, которые отвечают требованиям корпорации Майкрософт по тщательному тестированию, имеют простой опыт работы с программой установки и демонстрируют высококачественную сеть при использовании с Microsoft 365, получат обозначение "работает с Microsoft 365". Эти проверенные решения партнеров перечислены на [странице Сетевая Партнерская программа Microsoft 365](https://www.microsoft.com/microsoft-365/partners/O365networkingpartners), а также сведения о решении и ссылки на дополнительные сведения.
 
-Если вы являетесь клиентом Microsoft 365, вы можете сделать так, чтобы поставщик сетевых решений сознал об этой программе на этой странице [https://aka.ms/Office365NPP](https://aka.ms/Office365NPP) .
+Если вы являетесь клиентом Microsoft 365, вы можете сделать так, чтобы поставщик сетевых решений знал об этой программе на этой странице [https://aka.ms/Office365NPP](https://aka.ms/Office365NPP) .
 
 Для поставщиков сетевых решений, которые хотят получить запрос о программе сетевого партнера Microsoft 365, заполните [эту форму](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyMNEapKtzJHu98R0YXYz1RUN0QxSUVEWTdRVTdIV1RTWjIzOVk0QkE4US4u). Благодарим вас за интерес и надеемся на прекрасную связь.

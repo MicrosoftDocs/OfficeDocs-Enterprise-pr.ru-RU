@@ -7,7 +7,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: Сводка. Узнайте, как настроить распределенную виртуальную сеть Azure для серверных рабочих нагрузок Office с VPN-подключением типа "сеть-сеть".
-ms.openlocfilehash: 4ff34795c4141c686523a9ae79b2052d8eb27140
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840656"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230075"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Подключение локальной сети к виртуальной сети Microsoft Azure
 
 Виртуальная сеть Azure подключается к вашей локальной сети, расширяя ее за счет подсетей и виртуальных машин, размещенных в службах инфраструктуры Azure. Это подключение обеспечивает компьютерам локальной сети прямой доступ к виртуальным машинам Azure, и наоборот. 
 
-Например, серверу синхронизации каталогов, запущенному на виртуальной машине Azure, необходимо запросить у локальных контроллеров домена информацию об изменениях учетных записей и синхронизировать эти изменения с вашей подпиской на Office 365. В этой статье описано, как настроить распределенную виртуальную сеть Azure, использующую VPN-подключение типа "сеть-сеть" и готовую к размещению виртуальных машин Azure.
+Например, сервер синхронизации каталогов, работающий на виртуальной машине Azure, должен запросить локальные контроллеры домена для изменения учетных записей и синхронизировать эти изменения с вашей подпиской на Microsoft 365. В этой статье показано, как настроить локальную виртуальную сеть Azure с помощью VPN-подключения типа "сеть-сеть", готового к размещению виртуальных машин Azure.
 
 ## <a name="overview"></a>Обзор
 
@@ -335,4 +335,4 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
   
 ## <a name="next-step"></a>Следующий шаг
   
-[Развертывание синхронизации каталогов Office 365 в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Развертывание синхронизации каталогов Microsoft 365 в Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)

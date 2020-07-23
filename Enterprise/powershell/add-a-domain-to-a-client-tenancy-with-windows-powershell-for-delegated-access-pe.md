@@ -16,22 +16,24 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: 'Сводка: используйте Windows PowerShell для Microsoft 365, чтобы добавить альтернативное доменное имя к существующему клиенту клиента.'
-ms.openlocfilehash: 6ba706c1fc0b2e2b43687ac582a40f36a2a3387c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 'Сводка: используйте PowerShell для Microsoft 365, чтобы добавить альтернативное доменное имя к существующему клиенту клиента.'
+ms.openlocfilehash: d5a6c7326684c74d3b05e7b4a1e88c2a37e99ca0
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997365"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229785"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Добавление домена к аренде клиента с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 
-Вы можете создавать и связывать новые домены с клиентской учетной записью с помощью Windows PowerShell для Microsoft 365 быстрее, чем при использовании центра администрирования Microsoft 365.
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+
+Вы можете создавать и связывать новые домены с клиентской учетной записью с помощью PowerShell для Microsoft 365 быстрее, чем при использовании центра администрирования Microsoft 365.
   
 Партнеры по делегированным правам доступа (DAP)  партнеры по синдикации и поставщики облачных решений (CSP). Они часто бывают поставщиками сети или телекоммуникационных услуг в других компаниях. Они объединяют подписки на Microsoft 365 на свои услуги своим клиентам. Когда вы продаете подписку на Microsoft 365, им автоматически предоставляются разрешения на администрирование от имени пользователя (АОБО), чтобы они могли администрировать и предоставлять отчеты для клиентов клиенты.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Что нужно знать перед началом работы?
 
-Для процедур, описанных в этом разделе, требуется подключение к Windows PowerShell для Office 365. Указания см. в статье [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md).
+Процедуры, описанные в этом разделе, требуют подключения к [Microsoft 365 с помощью PowerShell](connect-to-office-365-powershell.md).
   
 Вам также необходимы учетные данные администратора для клиента партнера.
   

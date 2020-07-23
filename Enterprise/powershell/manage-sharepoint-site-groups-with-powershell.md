@@ -1,5 +1,5 @@
 ---
-title: Управление группами сайтов SharePoint Online с помощью Office 365 PowerShell
+title: Управление группами сайтов SharePoint Online с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,23 +18,25 @@ ms.custom:
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Сводка: использование PowerShell в Office 365 для управления группами сайтов SharePoint Online.'
-ms.openlocfilehash: 3a1b999470746cbe02ec52fe888ea26b59cd423b
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Сводка. Управление группами сайтов SharePoint Online с помощью PowerShell.
+ms.openlocfilehash: bee1f01ae78ec35d34a6aba0119bba3fbf7eeada
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004202"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230495"
 ---
-# <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Управление группами сайтов SharePoint Online с помощью Office 365 PowerShell
+# <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Управление группами сайтов SharePoint Online с помощью PowerShell
 
-Несмотря на то что вы можете использовать центр администрирования Microsoft 365, вы также можете использовать Office 365 PowerShell для управления группами сайтов SharePoint Online.
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
-## <a name="before-you-begin"></a>Перед началом работы
+Несмотря на то что вы можете использовать центр администрирования Microsoft 365, вы также можете использовать PowerShell для Microsoft 365, чтобы управлять своими группами сайтов SharePoint Online.
+
+## <a name="before-you-begin"></a>Прежде чем начать
 
 Процедуры, описанные в этой статье, требуют подключения к SharePoint Online. Инструкции см. в статье [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
-## <a name="view-sharepoint-online-with-office-365-powershell"></a>Просмотр SharePoint Online с помощью PowerShell для Office 365
+## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Просмотр SharePoint Online с помощью PowerShell для Microsoft 365
 
 В центре администрирования SharePoint Online есть несколько простых в использовании способов управления группами сайтов. Например, предположим, что вы хотите просмотреть группы и членов группы для `https://litwareinc.sharepoint.com/sites/finance` сайта. Вот как это сделать.
 
@@ -43,7 +45,7 @@ ms.locfileid: "44004202"
 
 И затем повторить процесс для следующего сайта, который необходимо просмотреть.
 
-Чтобы получить список групп с помощью Office 365 PowerShell, можно использовать следующие команды:
+Чтобы получить список групп с помощью PowerShell для Microsoft 365, можно использовать следующие команды:
 
 ```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
@@ -58,7 +60,7 @@ foreach ($y in $x)
 
 Существует два способа выполнения этого набора команд в командной строке командной консоли SharePoint Online:
 
-- Скопируйте команды в Блокнот (или другой текстовый редактор), измените значение переменной **$siteURL** , выберите команды, а затем вставьте их в командную строку консоли управления SharePoint Online. После этого PowerShell остановится в **>>** командной консоли. Нажмите клавишу ВВОД, `foreach` чтобы выполнить команду.<br/>
+- Скопируйте команды в Блокнот (или другой текстовый редактор), измените значение переменной **$siteURL** , выберите команды, а затем вставьте их в командную строку консоли управления SharePoint Online. После этого PowerShell остановится в **>>** командной консоли. Нажмите клавишу ВВОД, чтобы выполнить `foreach` команду.<br/>
 - Скопируйте команды в блокнот (или другой текстовый редактор), измените значение переменной **$siteURL**, а затем сохраните этот текстовый файл с именем и расширением .ps1 в подходящей папке. После этого запустите сценарий из командной строки командной консоли SharePoint Online, указав путь и имя файла. Вот пример необходимой команды:
 
 ```powershell
@@ -69,7 +71,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 ![Группы сайтов SharePoint Online](media/SPO-site-groups.png)
 
-Это все группы, созданные для сайта `https://litwareinc.sharepoint.com/sites/finance`, и все пользователи, назначенные этим группам. Имена групп обозначены желтым цветом, чтобы вы могли отличить имена групп от их участников.
+Это все группы, созданные для сайта `https://litwareinc.sharepoint.com/sites/finance` , и все пользователи, назначенные этим группам. Имена групп обозначены желтым цветом, чтобы вы могли отличить имена групп от их участников.
 
 Другой пример: набор команд, в котором перечислены группы и все сведения о членстве в группах для всех сайтов SharePoint Online.
 
@@ -93,11 +95,11 @@ foreach ($y in $x)
 
 [Подключение к PowerShell в SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Создание сайтов и добавление пользователей в SharePoint Online с помощью Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
+[Создание сайтов и добавление пользователей в SharePoint Online с помощью PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell](manage-sharepoint-users-and-groups-with-powershell.md) .
+[Управление пользователями и группами SharePoint Online с помощью PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
 
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Начало работы с PowerShell для Microsoft 365](getting-started-with-office-365-powershell.md)
 

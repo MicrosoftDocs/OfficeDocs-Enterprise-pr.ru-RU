@@ -1,9 +1,9 @@
 ---
-title: Назначение индивидуальных политик для Skype для бизнеса Online с помощью Office 365 PowerShell
+title: Назначение политик Skype для бизнеса Online для отдельных пользователей с помощью PowerShell для Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: Сводка.PowerShell в Office 365 позволяет назначать индивидуальные параметры связи с политиками Skype для бизнеса Online.
-ms.openlocfilehash: 0b95c993c3795bdbe9a68e23e107ea745c15f71b
-ms.sourcegitcommit: 88ede20888e2db0bb904133c0bd97726d6d65ee2
+description: Сводка. Используйте PowerShell для Microsoft 365, чтобы назначить параметры связи для отдельных пользователей с политиками Skype для бизнеса Online.
+ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44719970"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229847"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Назначение индивидуальных политик для Skype для бизнеса Online с помощью Office 365 PowerShell
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Назначение политик Skype для бизнеса Online для отдельных пользователей с помощью PowerShell для Microsoft 365
 
-PowerShell в Office 365 позволяет эффективно назначать индивидуальные параметры связи с политиками Skype для бизнеса Online.
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+
+Использование PowerShell для Microsoft 365 является эффективным способом назначения параметров связи для отдельных пользователей с политиками Skype для бизнеса Online.
   
 ## <a name="before-you-begin"></a>Перед началом работы
 
@@ -136,8 +138,8 @@ $count = 0
   
 ## <a name="see-also"></a>См. также
 
-[Управление Skype для бизнеса Online с помощью Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
+[Управление Skype для бизнеса Online с помощью PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Начало работы с PowerShell для Microsoft 365](getting-started-with-office-365-powershell.md)

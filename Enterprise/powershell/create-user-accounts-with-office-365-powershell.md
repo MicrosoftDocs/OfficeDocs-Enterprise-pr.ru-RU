@@ -1,9 +1,9 @@
 ---
-title: Создание учетных записей пользователей с помощью PowerShell в Office 365
+title: Создание учетных записей пользователей Microsoft 365 с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,32 +18,34 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Сведения о том, как с помощью PowerShell в Office 365 создавать учетные записи пользователей в Office 365:.
-ms.openlocfilehash: 95cbefc2caeb61376ed77fe5023cb1c050a8fa07
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Узнайте, как использовать PowerShell для Microsoft 365 для создания учетных записей пользователей.
+ms.openlocfilehash: 4057f4e1b29e8177bee32306c49f25f607ac5a0f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004692"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230795"
 ---
-# <a name="create-user-accounts-with-office-365-powershell"></a>Создание учетных записей пользователей с помощью PowerShell в Office 365
+# <a name="create-microsoft-365-user-accounts-with-powershell"></a>Создание учетных записей пользователей Microsoft 365 с помощью PowerShell
 
-С помощью PowerShell в Office 365 можно эффективно создавать учетные записи пользователей, особенно если нужно создать сразу несколько. При создании учетных записей пользователей в PowerShell в Office 365 указываются определенные свойства. Одни из них обязательны, другие  нет. Все свойства важны. Они описаны в приведенной ниже таблице.
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+
+С помощью PowerShell для Microsoft 365 можно эффективно создавать учетные записи пользователей, особенно несколько учетных записей пользователей. При создании учетных записей пользователей в PowerShell некоторые свойства учетной записи всегда являются обязательными. Для создания учетной записи другие свойства не требуются, но в ином случае важен. Эти свойства описаны в приведенной ниже таблице.
   
 |**Имя свойства**|**Обязательный?**|**Описание**|
 |:-----|:-----|:-----|
-|**DisplayName** <br/> |Да  <br/> |Это отображаемое имя, которое используется в службах Office 365:. Например, Caleb Sills.  <br/> |
-|**UserPrincipalName** <br/> |Да  <br/> |Это имя учетной записи, которое используется для входа в службы Office 365:. Например, CalebS@contoso.onmicrosoft.com.  <br/> |
+|**DisplayName** <br/> |Да  <br/> |Это отображаемое имя, используемое в службах Microsoft 365. Например, Caleb Sills.  <br/> |
+|**UserPrincipalName** <br/> |Да  <br/> |Это имя учетной записи, используемой для входа в службы Microsoft 365. Например, CalebS@contoso.onmicrosoft.com.  <br/> |
 |**FirstName** <br/> |Нет  <br/> ||
 |**LastName** <br/> |Нет  <br/> ||
-|**LicenseAssignment** <br/> |Нет  <br/> |Это план лицензирования (также называемый планом Office 365 или SKU), согласно которому учетной записи пользователя назначается доступная лицензия. Лицензия определяет, какие службы Office 365 доступны учетной записи пользователя. Создавая учетную запись, пользователю не обязательно назначать лицензию, но она необходима для доступа к службам Office 365. Лицензию необходимо добавить в течение 30 дней после создания учетной записи пользователя. |
+|**LicenseAssignment** <br/> |Нет  <br/> |Это план лицензирования (который также называется планом лицензирования или SKU), от которого учетной записи пользователя назначена доступная лицензия. Лицензия определяет службы Microsoft 365, доступные для учетной записи. Вам не нужно назначать лицензию пользователю при создании учетной записи, но для этой учетной записи требуется лицензия на доступ к службам Microsoft 365. Лицензию требуется добавить в течение 30 дней после создания учетной записи пользователя. |
 |**Password** <br/> |Нет  <br/> | Если не задать пароль, для учетной записи пользователя назначается случайный пароль, отображающийся в результатах выполнения команды. Если вы решили задать пароль самостоятельно, он должен содержать от 8 до 16 текстовых знаков ASCII любых трех типов из указанных далее: строчные буквы, прописные буквы, числа и символы. <br/> |
-|**UsageLocation** <br/> |Нет  <br/> |Это действительный код страны по стандарту ISO 3166-1 alpha-2 (например, US для США и FR для Франции). Важно указать это значение, так как некоторые службы Office 365 недоступны в определенных странах. Следовательно, если это значение не указано, то учетной записи пользователя не удастся назначить лицензию. Дополнительные сведения см. в статье [О лицензионных ограничениях](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
+|**UsageLocation** <br/> |Нет  <br/> |Это допустимый код страны согласно ISO 3166-1 alpha-2 (например, US для США и FR для Франции). Важно указать это значение, так как некоторые службы O365_W14_2nd недоступны в определенных странах. Это значение необходимо указывать, так как некоторые службы Microsoft 365 недоступны в некоторых странах, поэтому вы не можете назначить лицензию учетной записи пользователя, если для этой учетной записи не задано это значение. Более подробную информацию можно узнать в статье [ограничения лицензирования](https://go.microsoft.com/fwlink/p/?LinkId=691730).  <br/> |
    
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
 
-Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 После подключения используйте следующий синтаксис, чтобы создать учетную запись:
   
@@ -63,7 +65,7 @@ New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
 
-Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 ### <a name="create-an-individual-user-account"></a>Создание одной учетной записи пользователя
 
@@ -101,9 +103,9 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
   ```
 
  > [!NOTE]
->Имена столбцов и их порядок в первой строке CSV-файла произвольны, но остальные данные в файле должны соответствовать порядку названий столбцов. Используйте названия столбцов в качестве значений параметров в команде PowerShell для Office 365.
+>Имена столбцов и их порядок в первой строке CSV-файла являются произвольными, но убедитесь, что данные в остальном файле соответствуют порядку имен столбцов, и используйте имена столбцов для значений параметров в команде PowerShell для Microsoft 365.
     
-2. Используйте указанный ниже синтаксис.
+2. Используйте следующий синтаксис:
     
   ```powershell
   Import-Csv -Path <Input CSV File Path and Name> | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId [-Password $_.Password]} | Export-Csv -Path <Output CSV File Path and Name>
@@ -115,12 +117,12 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
   Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
   ```
 
-3. Результаты можно просмотреть в выходном файле. Мы не указывали пароли, поэтому в выходном файле отображаются случайные значения, созданные Office 365.
+3. Результаты можно просмотреть в выходном файле. Мы не указали пароли, поэтому случайные пароли, созданные Microsoft 365, отображаются в выходном файле.
     
 ## <a name="see-also"></a>См. также
 
-[Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Начало работы с PowerShell для Microsoft 365](getting-started-with-office-365-powershell.md)

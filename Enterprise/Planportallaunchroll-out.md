@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: В этой статье описывается, как можно спланировать запуск портала в SharePoint Online и какие действия предпринять для успешного запуска.
-ms.openlocfilehash: c6f1ef0817534fe2e643492e882fe8f61c3a01dc
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 4edd1bc9c2001912a8ebb77e467f9663474ecb66
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004112"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230175"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Планирование развертывания портала для запуска в SharePoint Online
 
@@ -35,14 +35,14 @@ ms.locfileid: "44004112"
 Подход к развертыванию выделен ниже.
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>Обзор планирования мощности в SharePoint Online
-Чтобы эффективно использовать возможности и работать с непредвиденным ростом, в любой ферме существует Автоматизация, которая отслеживает определенные сценарии использования. Хотя точное увеличение непредсказуемо для любого клиента в одной ферме, суммарная сумма запросов предсказуема по времени. Определяя тенденции роста в SharePoint Online, мы можем запланировать будущее расширение. Для получения дополнительных сведений о [планировании мощности и тестировании нагрузки SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online).
+Чтобы эффективно использовать возможности и работать с непредвиденным ростом, в любой ферме существует Автоматизация, которая отслеживает определенные сценарии использования. Хотя точное увеличение непредсказуемо для любого клиента в одной ферме, суммарная сумма запросов предсказуема по времени. Определяя тенденции роста в SharePoint Online, мы можем запланировать будущее расширение. Для получения дополнительных сведений о [планировании мощности и тестировании нагрузки SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md).
 
 Основной частью успешного запуска является метод "Wave" или "поэтапная выгрузка", описанные ниже. 
 
 ## <a name="can-i-load-test-sharepoint-online"></a>Можно ли загрузить тест SharePoint Online?
 SharePoint Online — это общедоступная многоклиентская среда, сбалансированная между фермами и масштабированием. Нагрузочное тестирование среды, например SharePoint Online, в которой изменения масштаба непрерывно не только приводят к непредвиденным результатам, но не разрешены. 
 
-Дополнительные сведения: [SharePoint Online по планированию мощности и тестированию нагрузки](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
+Дополнительные сведения: [SharePoint Online по планированию мощности и тестированию нагрузки](capacity-planning-and-load-testing-sharepoint-online.md)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>Оптимизируйте страницы, следуя рекомендациям
 Страницы из локального развертывания не следует просто перемещать в SharePoint Online, не изменяя их на рекомендации для SharePoint Online. Наилучший подход состоит в том, чтобы всегда оптимизировать любую домашнюю страницу для любого сайта или портала в SharePoint, так как в этом случае большинство пользователей в организации будут иметь доступ к отправной точке для сайтов.

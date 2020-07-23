@@ -1,5 +1,5 @@
 ---
-title: Отключение доступа к службам во время назначения лицензий
+title: Отключение доступа к службам Microsoft 365 при назначении пользовательских лицензий
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,21 +17,23 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
-description: Сведения о том, как назначать лицензии для учетных записей пользователей и отключать определенные планы обслуживания, используя PowerShell в Office 365.
-ms.openlocfilehash: b1fcd8afd9f9fee5b249752821385cd888519a37
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: Сведения о том, как назначать лицензии учетным записям пользователей и отключать определенные планы обслуживания одновременно с помощью PowerShell для Microsoft 365.
+ms.openlocfilehash: 31199fa2fa61ec5da671da5def2bf648a07e7dd4
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009474"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230695"
 ---
-# <a name="disable-access-to-services-while-assigning-user-licenses"></a>Отключение доступа к службам во время назначения лицензий
+# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Отключение доступа к службам Microsoft 365 при назначении пользовательских лицензий
 
-Подписки на Office 365 включают в себя планы обслуживания для отдельных служб. Администраторам Office 365 часто нужно отключать определенные планы при назначении лицензий для пользователей. Следуя инструкциям в этой статье, вы можете с помощью PowerShell назначить лицензию на Office 365 для одной или нескольких учетных записей пользователей, при этом отключив определенные планы обслуживания.
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+
+Подписки на Microsoft 365 поставляются с планами обслуживания отдельных служб. Администраторам Microsoft 365 зачастую необходимо отключить определенные планы при назначении лицензий пользователям. С помощью инструкций, описанных в этой статье, можно назначить лицензию Microsoft 365 при отключении определенных планов служб с помощью PowerShell для отдельной учетной записи пользователя или нескольких учетных записей пользователей.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
 
-Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 
 Затем перечислите план лицензирования для клиента с помощью этой команды.
@@ -44,7 +46,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 
 Затем скомпилируйте список служб, которые нужно включить. Полный список планов лицензирования (называемых также названиями продуктов), включенных планов обслуживания и соответствующих понятных имен можно узнать в статье [наименования и идентификаторы планов обслуживания для лицензирования](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
-В приведенном ниже блоке команд введите имя участника пользователя для учетной записи пользователя, номер детали SKU и список планов обслуживания, чтобы включить и удалить пояснительный текст, а также \< символы и >. Затем выполните полученные команды в командной строке PowerShell.
+В приведенном ниже блоке команд введите имя участника пользователя для учетной записи пользователя, номер детали SKU и список планов обслуживания, чтобы включить и удалить пояснительный текст и \< and > символы. Затем выполните полученные команды в командной строке PowerShell.
   
 ```powershell
 $userUPN="<user account UPN>"
@@ -65,7 +67,7 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
 
-Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 Затем выполните следующую команду, чтобы просмотреть текущие подписки:
   
@@ -79,17 +81,17 @@ Get-MsolAccountSku
 
 Значение составляющих команды  `Get-MsolAccountSku`:
   
-- **AccountSkuId** — это подписка вашей организации в формате \<НазваниеОрганизации>:\<Подписка>. \<НазваниеОрганизации> — значение, которое вы указали при регистрации в Office 365 (уникальное для организации). \<Подписка> — значение, обозначающее конкретную подписку. Например, в случае litwareinc:ENTERPRISEPACK название организации — litwareinc, а название подписки — ENTERPRISEPACK (Office 365 корпоративный E3).
+- **AccountSkuId** is a subscription for your organization in \<OrganizationName>:\<Subscription> format. \<OrganizationName>Это значение, заданное при регистрации в Microsoft 365, является уникальным для вашей организации. The \<Subscription> value is for a specific subscription. For example, for litwareinc:ENTERPRISEPACK, the organization name is litwareinc, and the subscription name is ENTERPRISEPACK (Office 365 Enterprise E3).
     
-- **ActiveUnits**  количество лицензий, которые вы приобрели для подписки.
+- **ActiveUnits** — количество лицензий, которые вы приобрели для подписки.
     
 - **WarningUnits** — количество лицензий для не продленной подписки, срок действия которой истекает через 30 дней льготного периода.
     
-- **ConsumedUnits**  количество лицензий, которые вы назначили пользователям для подписки.
+- **ConsumedUnits** — количество лицензий, которые вы назначили пользователям для подписки.
     
-Укажите AccountSkuId для подписки на Office 365, где обозначены пользователи, которым вы хотите назначить лицензию. Убедитесь, что лицензий для назначения достаточно (отнимите **ConsumedUnits** от **ActiveUnits** ).
+Обратите внимание на AccountSkuId для подписки на Microsoft 365, содержащей пользователей, которым вы хотите лицензировать. Убедитесь, что лицензий для назначения достаточно (отнимите **ConsumedUnits** от **ActiveUnits** ).
   
-Затем выполните эту команду, чтобы просмотреть сведения о планах обслуживания Office 365, доступных для каждой из ваших подписок:
+Затем выполните следующую команду, чтобы просмотреть сведения о планах обслуживания Microsoft 365, доступных во всех подписках:
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
@@ -97,9 +99,9 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 Просмотрите результаты команды и определите, какие планы обслуживания нужно отключить при назначении лицензий пользователям.
   
-Ниже приведен неполный список планов обслуживания и соответствующих им служб Office 365.
+Ниже приведен неполный список планов обслуживания и соответствующих служб Microsoft 365.
 
-В следующей таблице показаны планы обслуживания Office 365 и их понятные имена для наиболее распространенных служб. Ваш список планов обслуживания может отличаться. 
+В следующей таблице показаны планы обслуживания Microsoft 365 и их понятные имена для наиболее распространенных служб. Ваш список планов обслуживания может отличаться. 
   
 |**План обслуживания**|**Описание**|
 |:-----|:-----|
@@ -119,7 +121,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
   
 ### <a name="for-a-single-user"></a>Для одного пользователя
 
-Введите имя участника-пользователя из учетной записи пользователя, AccountSkuId и список отключаемых планов обслуживания, удалив при этом пояснительный текст и символы \< и >. После этого выполните полученные команды в командной строке PowerShell.
+Для одного пользователя заполните имя участника пользователя учетной записи пользователя, AccountSkuId, а также список планов обслуживания, чтобы отключить и удалить пояснительный текст и \< and > символы. Затем выполните полученные команды в командной строке PowerShell.
   
 ```powershell
 $userUPN="<the user's account name in email format>"
@@ -184,10 +186,10 @@ $users | Get-MsolUser | Select UserPrincipalName, Islicensed,Usagelocation | Exp
     
 ## <a name="see-also"></a>См. также
 
-[Отключение доступа к службам с помощью Office 365 PowerShell](disable-access-to-services-with-office-365-powershell.md)
+[Отключение доступа к службам Microsoft 365 с помощью PowerShell](disable-access-to-services-with-office-365-powershell.md)
   
-[Отключение доступа к Sway с помощью PowerShell в Office 365](disable-access-to-sway-with-office-365-powershell.md)
+[Отключение доступа к Sway с помощью PowerShell](disable-access-to-sway-with-office-365-powershell.md)
   
-[Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)

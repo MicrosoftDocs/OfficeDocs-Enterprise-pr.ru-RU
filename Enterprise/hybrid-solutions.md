@@ -3,7 +3,7 @@ title: Гибридные решения
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2018
+ms.date: 07/20/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: Сводка. В этих статьях описано, как развернуть рабочие нагрузки сервера Office Server в Microsoft Azure.
-ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998017"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229955"
 ---
 # <a name="hybrid-solutions"></a>Гибридные решения
 
-Теперь некоторые рабочие нагрузки Office Server, которые обычно развертывались локально, можно развернуть в службах инфраструктуры Azure.
+С помощью Microsoft Azure можно развернуть некоторые рабочие нагрузки Office Server, которые обычно разворачиваются локально в службах инфраструктуры Azure.
   
 Для инфраструктуры удостоверений Microsoft 365 в Azure:
 
@@ -50,7 +50,7 @@ ms.locfileid: "44998017"
 
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.yml)
   
-[Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Ресурсы, посвященные ИТ-архитектуре Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
 [Microsoft 365 для корпоративных руководств по лаборатории тестирования (руководствах TLG)](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   

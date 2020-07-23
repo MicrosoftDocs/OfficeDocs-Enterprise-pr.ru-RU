@@ -1,9 +1,9 @@
 ---
-title: Управление членством в группах с помощью PowerShell для Office 365
+title: Обслуживание членства в группах Microsoft 365 с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/06/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,23 +18,25 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Узнайте, как использовать PowerShell для Office 365 для поддержки членства в группах для Office 365.
-ms.openlocfilehash: 0e6c5f2e27f9d146bb2a053bd3bdb6694fb07276
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Узнайте, как использовать PowerShell для поддержания членства в группах Microsoft 365.
+ms.openlocfilehash: f75587c9c50a1fce3a5abfb00ddba2845318e9c4
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004632"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230655"
 ---
-# <a name="maintain-group-membership-with-office-365-powershell"></a>Управление членством в группах с помощью PowerShell для Office 365
+# <a name="maintain-microsoft-365-group-membership-with-powershell"></a>Обслуживание членства в группах Microsoft 365 с помощью PowerShell
 
-Вы можете использовать Office 365 PowerShell в качестве альтернативы центру администрирования Microsoft 365 для поддержки членства в группах в Office 365. 
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+
+Вы можете использовать PowerShell для Microsoft 365 в качестве альтернативы центру администрирования Microsoft 365 для поддержки членства в группах в Microsoft 365. 
 
 > [!TIP]
 > Чтобы создать готовые команды PowerShell, указав имена учетных записей пользователей и групп, используйте эту [книгу для обслуживания групп Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/maintain-group-membership-with-office-365-powershell/GroupMaintPowerShellGenerator.xlsx). 
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Использование модуля PowerShell Azure Active Directory для Graph
-Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 ### <a name="add-or-remove-user-accounts-as-members-of-a-group"></a>Добавление и удаление учетных записей пользователей в качестве участников группы
 
@@ -72,7 +74,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>Добавление и удаление групп в качестве участников группы
 
-Группы безопасности могут содержать другие группы в качестве участников. Однако группы Office 365 не могут. В этом разделе содержатся команды PowerShell для добавления или удаления групп только для группы безопасности.
+Группы безопасности могут содержать другие группы в качестве участников. Однако группы Microsoft 365 не могут. В этом разделе содержатся команды PowerShell для добавления или удаления групп только для группы безопасности.
 
 **Чтобы добавить группу по отображаемому имени**, укажите отображаемое имя добавляемой группы и отображаемое имя группы, которая будет содержать группу участников, и выполните следующие команды в окне PowerShell или в интегрированной среде выполнения PowerShell.
 
@@ -92,7 +94,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Использование модуля Microsoft Azure Active Directory для Windows PowerShell
 
-Сначала [подключитесь к своему клиенту Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Сначала [подключитесь к клиенту Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 
 ### <a name="add-or-remove-user-accounts-as-members-of-a-group"></a>Добавление и удаление учетных записей пользователей в качестве участников группы
@@ -131,7 +133,7 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayNa
 
 ### <a name="add-or-remove-groups-as-members-of-a-group"></a>Добавление и удаление групп в качестве участников группы
 
-Группы безопасности могут содержать другие группы в качестве участников. Однако группы Office 365 не могут. В этом разделе содержатся команды PowerShell для добавления или удаления групп только для группы безопасности.
+Группы безопасности могут содержать другие группы в качестве участников. Однако группы Microsoft 365 не могут. В этом разделе содержатся команды PowerShell для добавления или удаления групп только для группы безопасности.
 
 **Чтобы добавить группу по отображаемому имени**, укажите отображаемое имя добавляемой группы и отображаемое имя группы, которая будет содержать группу участников, и выполните следующие команды в окне PowerShell или в интегрированной среде выполнения PowerShell.
 
@@ -151,9 +153,9 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayN
 
 ## <a name="see-also"></a>См. также
 
-[Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Начало работы с PowerShell для Microsoft 365](getting-started-with-office-365-powershell.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Создание сайтов и добавление пользователей в SharePoint Online с помощью Office 365 PowerShell
+title: Создание сайтов и добавление пользователей в SharePoint Online с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,27 +17,29 @@ ms.custom:
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Сводка: использование PowerShell в Office 365 для создания новых сайтов SharePoint Online и добавления пользователей и групп на эти сайты.'
-ms.openlocfilehash: 8011a7e3f61e6b26d4606bfdae67152a1d894840
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: Сводка. Используйте PowerShell для создания сайтов SharePoint Online и добавления пользователей и групп на эти сайты.
+ms.openlocfilehash: 2791b4de9388e3ff828a665aeeef5ada19627107
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735707"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230805"
 ---
-# <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Создание сайтов и добавление пользователей в SharePoint Online с помощью Office 365 PowerShell
+# <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Создание сайтов и добавление пользователей в SharePoint Online с помощью PowerShell
 
-Когда вы используете Office 365 PowerShell для создания сайтов SharePoint Online и добавления пользователей, вы можете быстро и многократно выполнять задачи гораздо быстрее, чем в центре администрирования Майкрософт 365. Вы также можете выполнять задачи, которые невозможно выполнить в центре администрирования Office 365. 
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
 
-## <a name="before-you-begin"></a>Перед началом работы
+При использовании PowerShell для Microsoft 365 для создания сайтов SharePoint Online и добавления пользователей можно быстро и многократно выполнять задачи в центре администрирования Майкрософт 365 быстрее и многократно. Вы также можете выполнять задачи, которые невозможно выполнить в центре администрирования Microsoft 365. 
+
+## <a name="before-you-begin"></a>Прежде чем начать
 
 Процедуры, описанные в этом разделе, требуют подключения к SharePoint Online. Инструкции см в разделе [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>Шаг 1. Создание семейств веб-сайтов с помощью Office 365 PowerShell
+## <a name="step-1-create-new-site-collections-using-powershell"></a>Шаг 1: создание новых семейств веб-сайтов с помощью PowerShell
 
-Создайте несколько сайтов с помощью PowerShell для Office 365 и CSV-файла, созданного с помощью примера кода и блокнота. В этой процедуре заменяются сведения о заполнителе, показанные в квадратных скобках, с собственными сведениями о сайтах и клиентах. Этот процесс позволяет создать один файл и запустить одну команду PowerShell Office 365, использующую этот файл. Это делает действия, которые были как повторяющимися, так и переносимыми, и исключает многие, если не все, ошибки, которые могут возникнуть при вводе длинных команд в командную консоль SharePoint Online. Эта процедура состоит из двух частей. Сначала вы создадите CSV-файл, а затем сослаться на этот CSV-файл с помощью Office 365 PowerShell, который будет использовать его содержимое для создания сайтов.
+Создайте несколько сайтов с помощью PowerShell и CSV-файла, который создается с помощью предоставленного примера кода и блокнота. В этой процедуре заменяются сведения о заполнителе, показанные в квадратных скобках, с собственными сведениями о сайтах и клиентах. Этот процесс позволяет создать один файл и выполнить одну команду PowerShell, использующую этот файл. Это делает действия, которые были как повторяющимися, так и переносимыми, и исключает многие, если не все, ошибки, которые могут возникнуть при вводе длинных команд в командную консоль SharePoint Online. Эта процедура состоит из двух частей. Сначала вы создадите CSV-файл, а затем сослаться на этот CSV-файл с помощью PowerShell, который будет использовать его содержимое для создания сайтов.
 
-Командлет Office 365 PowerShell импортирует CSV-файл и передает его в цикл в фигурных скобках, который считывает первую строку файла как заголовки столбцов. Командлет Office 365 PowerShell проходит по остальным записям, создает семейство веб-сайтов для каждой из них и назначает свойства семейства веб-сайтов в соответствии с заголовками столбцов.
+Командлет PowerShell импортирует CSV-файл и передает его в цикл в фигурных скобках, который считывает первую строку файла в виде заголовков столбцов. Затем командлет PowerShell выполняет итерацию по оставшимся записям, создает новое семейство сайтов для каждой записи и присваивает свойствам семейства веб-сайтов в соответствии с заголовками столбцов.
 
 ### <a name="create-a-csv-file"></a>Создание CSV-файла
 
@@ -156,9 +158,9 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [Подключение к PowerShell в SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Управление группами сайтов SharePoint Online в Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+[Управление группами сайтов SharePoint Online с помощью PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 
-[Управление Office 365 с помощью Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Начало работы с PowerShell для Microsoft 365](getting-started-with-office-365-powershell.md)
 

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365.
-ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997953"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230035"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute для Office 365
 
@@ -64,9 +64,9 @@ ms.locfileid: "44997953"
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype для бизнеса Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive для бизнеса<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|Портал и общий<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> Подключение AAD<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
+|Портал и общий<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
-<sup>1</sup> Для каждого из этих приложений требования к подключению к Интернету не поддерживаются в ExpressRoute, ознакомьтесь со [статьей Office 365 Endpoints](https://aka.ms/o365endpoints) для получения дополнительных сведений.
+<sup>1</sup> для каждого из этих приложений требования к подключению к Интернету не поддерживаются в ExpressRoute. Дополнительные сведения см. в [статье по конечным точкам Office 365](https://aka.ms/o365endpoints) .
 
 Службы, не включенные в ExpressRoute для Office 365, представляют собой приложения Microsoft 365 для загрузки корпоративных клиентов, входа в систему локального поставщика удостоверений и службы Office 365 (под управлением 21 ВИАНЕТ) в Китае.
 
@@ -90,7 +90,7 @@ ms.locfileid: "44997953"
 
 8. При необходимости [реализуйте QoS](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) и оцените региональные расширения.
 
-<sup>1</sup> Важные соображения по производительности. Решения здесь могут значительно повлиять на задержку, что является критически важным для таких приложений, как Skype для бизнеса.
+<sup>1</sup> важное замечание относительно производительности. Решения здесь могут значительно повлиять на задержку, что является критически важным для таких приложений, как Skype для бизнеса.
 
 Для дополнительных рекомендаций используйте наше [руководство по маршрутизации](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) в дополнение к [документации ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/).
 
@@ -112,7 +112,7 @@ ms.locfileid: "44997953"
 
 [Реализация ExpressRoute для Office 365](implementing-expressroute.md)
 
-[Использование сообществ BGP в ExpressRoute для сценариев Office 365 (Предварительная версия)](bgp-communities-in-expressroute.md)
+[Использование сообществ BGP в ExpressRoute для сценариев Office 365](bgp-communities-in-expressroute.md)
 
 [Качество мультимедиа и характеристики сетевого подключения в случае Skype для бизнеса Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 

@@ -1,9 +1,9 @@
 ---
-title: Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell
+title: Подключение ко всем службам Microsoft 365 в отдельном окне Windows PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/17/2020
+ms.date: 07/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,31 +17,31 @@ ms.custom:
 - O365ITProTrain
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
-description: 'Сводка: подключение Windows PowerShell ко всем службам Office 365 в отдельном окне Windows PowerShell.'
-ms.openlocfilehash: 47fd2be814b446cf12b136e359cdadc9374a7ab6
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+description: 'Сводка: подключение Windows PowerShell ко всем службам Microsoft 365 в отдельном окне Windows PowerShell.'
+ms.openlocfilehash: a037de53dcbf8fed95b9b4d5f05677997135dfb3
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208810"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230845"
 ---
-# <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Подключение ко всем службам Office 365 с помощью единого окна Windows PowerShell
+# <a name="connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window"></a>Подключение ко всем службам Microsoft 365 в отдельном окне Windows PowerShell
 
-При использовании PowerShell для управления Office 365 можно одновременно открыть до пяти разных сеансов Windows PowerShell, соответствующих центру администрирования Microsoft 365, SharePoint Online, Exchange Online, Skype для бизнеса Online, Microsoft Teams и центре безопасности и &amp; соответствия требованиям. С пятью методами подключения, которые находятся в разных сеансах Windows PowerShell, ваш рабочий стол может выглядеть следующим образом:
+При использовании PowerShell для управления Microsoft 365 можно одновременно открыть до пяти разных сеансов Windows PowerShell, соответствующих центру администрирования Microsoft 365, SharePoint Online, Exchange Online, Skype для бизнеса Online, Microsoft Teams и центре безопасности и &amp; соответствия требованиям. С пятью методами подключения, которые находятся в разных сеансах Windows PowerShell, ваш рабочий стол может выглядеть следующим образом:
   
 ![Пять консолей Windows PowerShell, работающих одновременно](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
-Это не является оптимальным для управления Office 365, так как вы не можете обмениваться данными между этими пятью окнами для управления в нескольких службах. В этом разделе описывается, как использовать один экземпляр Windows PowerShell, с которого вы можете управлять Office 365, Skype для бизнеса Online, Exchange Online, SharePoint Online, Microsoft Teams и центром безопасности и &amp; соответствия требованиям.
+Это не является оптимальным решением для управления Microsoft 365, так как вы не можете обмениваться данными между этими пятью окнами для управления в нескольких службах. В этом разделе описывается, как использовать один экземпляр Windows PowerShell, на котором можно управлять учетными записями Microsoft 365, Skype для бизнеса Online, Exchange Online, SharePoint Online, Microsoft Teams и &amp; центром безопасности.
 
 >[!Note]
->В настоящее время эта статья содержит только команды для подключения к облаку Office 365 Worldwide (+ GCC). Дополнительные примечания содержат ссылки на статьи со сведениями о подключении к другим облакам Office 365.
+>В настоящее время эта статья содержит только команды для подключения к облаку в мире (+ GCC). Дополнительные примечания содержат ссылки на статьи со сведениями о подключении к другим облакам Microsoft 365.
 >
 
-## <a name="before-you-begin"></a>Подготовка
+## <a name="before-you-begin"></a>Прежде чем начать
 
-Прежде чем управлять всеми Office 365 из одного экземпляра Windows PowerShell, примите во внимание следующие предварительные требования:
+Прежде чем управлять всеми Microsoft 365 с помощью одного экземпляра Windows PowerShell, примите во внимание следующие требования:
   
-- Рабочая или учебная учетная запись Office 365, используемая для выполнения этих процедур, должна быть членом роли администратора Office 365. Дополнительные сведения см. в статье [Роли администраторов в Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367). Это требование для Office 365 PowerShell, не обязательно для всех остальных служб Office 365.
+- Рабочая или учебная учетная запись Microsoft 365, используемая для выполнения этих процедур, должна быть членом роли администратора Microsoft 365. Дополнительные сведения см. в статье [О ролях администраторов](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). Это требование для PowerShell для Microsoft 365, не обязательно для всех остальных служб Microsoft 365.
     
 - Ниже приведены 64-разрядные версии Windows, которые можно использовать.
     
@@ -49,7 +49,7 @@ ms.locfileid: "44208810"
     
   - Windows 8.1 или Windows 8
     
-  - Windows Server 2019
+  - Windows Server 2019
     
   - Windows Server 2016
     
@@ -61,7 +61,7 @@ ms.locfileid: "44208810"
     
     \*Необходимо установить Microsoft .NET Framework 4,5. *x* , а затем — Windows management Framework 3,0 или Windows management Framework 4,0. Дополнительные сведения см. [в статье Установка .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) и [windows Management Framework 3,0](https://go.microsoft.com/fwlink/p/?LinkId=272757) или [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
     
-    Необходимо использовать 64-разрядную версию Windows из-за требований для модуля Skype для бизнеса Online и одного из модулей Office 365.
+    Необходимо использовать 64-разрядную версию Windows из-за требований для модуля Skype для бизнеса Online и одного из модулей Microsoft 365.
     
 - Необходимо установить модули, необходимые для Azure Active Directory (Azure AD), Exchange Online, SharePoint Online, Skype для бизнеса Online и teams:
     
@@ -77,13 +77,13 @@ ms.locfileid: "44208810"
   Set-ExecutionPolicy RemoteSigned
   ```
 
-## <a name="connection-steps-when-using-a-password"></a>Шаги подключения при использовании пароля
+## <a name="connection-steps-when-using-just-a-password"></a>Шаги подключения при использовании только пароля
 
-Ниже описаны действия, которые необходимо выполнить для подключения ко всем службам в отдельном окне PowerShell.
+Ниже приведены действия по подключению ко всем службам в отдельном окне PowerShell, когда вы используете только пароль для входа в систему.
   
 1. Откройте командную консоль Windows PowerShell.
     
-2. Выполните указанную ниже команду и введите учетные данные рабочей или учебной учетной записи Office 365.
+2. Выполните указанную ниже команду и введите учетные данные учетной записи Microsoft 365 Рабочая или учебной учетной записи.
     
   ```powershell
   $credential = Get-Credential
@@ -105,11 +105,11 @@ ms.locfileid: "44208810"
 >В PowerShell Core не поддерживается модуль Microsoft Azure Active Directory для Windows PowerShell и командлеты с компонентом **Msol** в имени. Чтобы использовать эти командлеты, необходимо запустить их из Windows PowerShell.
 >
 
-4. Выполните указанные ниже команды, чтобы подключиться к SharePoint Online. Замените _ \< домаинхост>_ на фактическое значение для вашего домена. Например, для "litwareinc.onmicrosoft.com" _ \< домаинхост>_ значение "litwareinc".
+4. Выполните указанные ниже команды, чтобы подключиться к SharePoint Online. Укажите название организации для вашего домена. Например, для "litwareinc.onmicrosoft.com" в качестве имени организации используется значение "litwareinc".
     
   ```powershell
-  Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-  Connect-SPOService -Url https://<domainhost>-admin.sharepoint.com -credential $credential
+  $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
+  Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
   ```
 
 5. Выполните приведенные ниже команды, чтобы подключиться к Skype для бизнеса Online. Предупреждение об увеличении `WSMan NetworkDelayms` значения ожидается при первом подключении и должно быть проигнорировано.
@@ -127,7 +127,7 @@ ms.locfileid: "44208810"
   ```
 
 >[!Note]
->Чтобы подключиться к Exchange Online для Office 365 для облаков, отличных от международных, используйте параметр **-ексчанжеенвиронментнаме** . Для получения дополнительных сведений обратитесь [к раздел Connect – ExchangeOnline](https://docs.microsoft.com/powershell/module/exchange/powershell-v2-module/connect-exchangeonline?view=exchange-ps) .
+>Чтобы подключиться к Exchange Online для других облаков Microsoft 365, используйте параметр **-ексчанжеенвиронментнаме** . Для получения дополнительных сведений обратитесь [к раздел Connect – ExchangeOnline](https://docs.microsoft.com/powershell/module/exchange/powershell-v2-module/connect-exchangeonline?view=exchange-ps) .
 >
 
 7. Выполните эти команды для подключения к PowerShell Teams PowerShell.
@@ -149,7 +149,7 @@ ms.locfileid: "44208810"
   ```
 
 >[!Note]
->Чтобы подключиться к &amp; центру соответствия требованиям безопасности для облаков office 365, отличных от мира, ознакомьтесь со статьей [Подключение к Office 365 Security & центра соответствия требованиям PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+>Чтобы подключиться к &amp; центру соответствия требованиям безопасности для других облаков Microsoft 365, которые не находятся в разных странах мира, обратитесь к разделу [Connect to Security & The PowerShell Center](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 >
 
 Ниже приведены все команды в отдельном блоке при использовании модуля Azure Active Directory PowerShell для Graph. Укажите имя узла домена, а затем выполните все сразу.
@@ -234,11 +234,11 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
-В центре безопасности для обеспечения соответствия требованиям Узнайте, как подключить многофакторную проверку подлинности с помощью многофакторной проверки подлинности для &amp; подключения к [Office 365 Security & центре соответствия требованиям в PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) .
+В центре безопасности и соответствия требованиям Узнайте, как подключить многофакторную проверку подлинности для &amp; подключения с использованием многофакторной проверки подлинности в [PowerShell центра безопасности & соответствия требованиям](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) .
 
 ## <a name="see-also"></a>См. также
 
-- [Подключение к Office 365 PowerShell](connect-to-office-365-powershell.md)
-- [Управление SharePoint Online с помощью Office 365 PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
-- [Управление учетными записями пользователей, лицензиями и группами с помощью Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Использование Windows PowerShell для создания отчетов в Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
+- [Подключение к Microsoft 365 с помощью PowerShell](connect-to-office-365-powershell.md)
+- [Управление SharePoint Online с помощью PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
+- [Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Использование Windows PowerShell для создания отчетов в Microsoft 365](use-windows-powershell-to-create-reports-in-office-365.md)

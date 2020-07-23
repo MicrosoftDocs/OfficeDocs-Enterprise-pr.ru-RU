@@ -1,9 +1,9 @@
 ---
-title: Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell
+title: Управление пользователями и группами SharePoint Online с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -18,17 +18,19 @@ ms.custom:
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Сводка: использование PowerShell для Office 365 для управления пользователями, группами и сайтами SharePoint Online.'
-ms.openlocfilehash: c820fd009635a8a9b27f28d858d345794bea6334
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 'Сводка: использование PowerShell для Microsoft 365 для управления пользователями, группами и сайтами SharePoint Online.'
+ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004122"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230475"
 ---
-# <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Управление пользователями и группами SharePoint Online с помощью Office 365 PowerShell
+# <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Управление пользователями и группами SharePoint Online с помощью PowerShell
 
-Если вы являетесь администратором SharePoint Online, который работает с большими списками учетных записей пользователей или групп и хотите упростить управление ими, вы можете использовать PowerShell для Office 365. 
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+
+Если вы являетесь администратором SharePoint Online, который работает с большими списками учетных записей пользователей или групп и хотите упростить управление ими, вы можете использовать PowerShell для Microsoft 365. 
 
 Прежде чем приступать к работе, процедуры, описанные в этом разделе, требуют подключения к SharePoint Online. Инструкции см в разделе [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -56,7 +58,7 @@ Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 
 ## <a name="add-a-user-to-the-site-collection-administrators-group"></a>Добавление пользователя в группу администраторов семейства веб-сайтов
 
-Используйте `Set-SPOUser` командлет, чтобы добавить пользователя в список администраторов семейства веб-сайтов в семействе веб-сайтов.
+Используйте командлет, `Set-SPOUser` чтобы добавить пользователя в список администраторов семейства веб-сайтов в семействе веб-сайтов.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -103,7 +105,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ## <a name="create-a-site-collection-group"></a>Создание группы семейства веб-сайтов
 
-`New-SPOSiteGroup` Командлет используется для создания новой группы SharePoint и ее добавления в семейство веб-сайтов.
+`New-SPOSiteGroup`Командлет используется для создания новой группы SharePoint и ее добавления в семейство веб-сайтов.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -130,7 +132,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 Однако с помощью командной консоли SharePoint Online и CSV-файлов это быстро и легко. Для этой задачи вы используете Windows PowerShell, чтобы удалить пользователя из группы безопасности семейства сайтов. Затем вы используете CSV-файл и удалите множество пользователей с разных сайтов. 
 
-Мы будем использовать командлет "Remove-супруг" для удаления одного пользователя Office 365 из группы семейств веб-сайтов, так как мы можем увидеть синтаксис команды. Вот как выглядит синтаксис:
+Мы будем использовать командлет "Remove-супруг" для удаления одного пользователя Microsoft 365 из группы семейств веб-сайтов, так как мы можем увидеть синтаксис команды. Вот как выглядит синтаксис:
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -277,9 +279,9 @@ Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSiz
 
 [Подключение к PowerShell в SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Управление SharePoint Online с помощью Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
+[Управление SharePoint Online с помощью PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Начало работы с PowerShell для Microsoft 365](getting-started-with-office-365-powershell.md)
 

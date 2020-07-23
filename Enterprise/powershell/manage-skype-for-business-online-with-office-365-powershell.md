@@ -1,9 +1,9 @@
 ---
-title: Управление Skype для бизнеса Online с помощью Office 365 PowerShell
+title: Управление Skype для бизнеса Online с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/28/2018
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: 'Сводка: в этой статье рассказывается, как использовать PowerShell в Office 365 для управления параметрами политик, индивидуальных политик для пользователей и собраний в Skype для бизнеса Online.'
-ms.openlocfilehash: f1a5df3802d43755e81465743b81c5fbb9fff7e0
-ms.sourcegitcommit: 6c7cc6aca8713e280ae6ff51226dde9db4497401
+description: 'Сводка: использование PowerShell для Microsoft 365 для управления политиками Skype для бизнеса Online, политиками для отдельных пользователей и параметрами собраний.'
+ms.openlocfilehash: f66b3186a5b29bbf0756a629b85c626caf2c1e36
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44415941"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230445"
 ---
-# <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Управление Skype для бизнеса Online с помощью Office 365 PowerShell
+# <a name="manage-skype-for-business-online-with-powershell"></a>Управление Skype для бизнеса Online с помощью PowerShell
 
-Одной из основных задач администратора Skype для бизнеса Online является Управление политиками. Вы можете выполнить некоторые из указанных ниже задач в Центре администрирования Microsoft 365, но остальные задачи гораздо быстрее и проще выполнить с помощью PowerShell в Office 365. 
+*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+
+Одной из основных задач администратора Skype для бизнеса Online является Управление политиками. Несмотря на то, что вы можете выполнить некоторые из этих задач в центре администрирования Microsoft 365, другие задачи выполняются значительно быстрее и проще в PowerShell. 
 
 ## <a name="before-you-start"></a>Перед началом работы
 
@@ -62,15 +64,15 @@ ms.locfileid: "44415941"
 
 Дополнительную информацию см. в следующих статьях:
   
-- [Управление политиками Skype для бизнеса Online с помощью Office 365 PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Управление политиками Skype для бизнеса Online с помощью PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
-- [Назначение индивидуальных политик для Skype для бизнеса Online с помощью Office 365 PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Назначение политик Skype для бизнеса Online для отдельных пользователей с помощью PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
 ## <a name="see-also"></a>См. также
 
-[Управление Office 365 с помощью PowerShell Office 365](manage-office-365-with-office-365-powershell.md)
+[Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Начало работы с Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Начало работы с PowerShell для Microsoft 365](getting-started-with-office-365-powershell.md)
 
 [Справочные материалы по командлетам PowerShell в Skype для бизнеса](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 
