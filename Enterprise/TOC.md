@@ -15,6 +15,7 @@
 ### Планирование удостоверений
 #### [Модели удостоверений](about-office-365-identity.md)
 #### [Гибридное удостоверение](plan-for-directory-synchronization.md)
+#### [Инструменты для управления учетными записями Microsoft 365](tools-to-manage-office-365-accounts.md)
 
 ### [Планирование сторонних SSL-сертификатов для Microsoft 365](plan-for-third-party-ssl-certificates.md)
 ### [Руководства по настройке для служб Microsoft 365 и Office 365](setup-guides-for-office-365.md)
@@ -110,6 +111,7 @@
 ### [Облачное удостоверение](cloud-only-identities.md)
 ### Гибридные удостоверения
 #### [Подготовка к синхронизации каталогов](prepare-for-directory-synchronization.md)
+#### [Подготовка немаршрутизируемого домена к синхронизации каталогов](prepare-a-non-routable-domain-for-directory-synchronization.md)
 #### Использование средства IdFix
 ##### [Подготовка атрибутов каталога с помощью средства IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
 ##### [Скачивание и запуск средства IdFix](install-and-run-idfix.md)
@@ -172,6 +174,7 @@
 #### [Данные клиента в центрах обработки данных Office 365](o365-data-locations.md)
 
 ### Гибридные решения
+#### [Обзор](hybrid-solutions.md)
 #### [Использование Azure Active Directory для проверки подлинности в SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [Подключение локальной сети к виртуальной сети Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Развертывание сервера синхронизации каталогов в Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
@@ -270,7 +273,7 @@
 ### [Изоляция клиента в Microsoft 365 Видео](office-365-isolation-in-office-365-video.md)
 ### [Изоляция клиента в Microsoft Graph и Delve](office-365-isolation-in-graph-and-delve.md)
 
-# [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
+# [PowerShell для Microsoft 365](powershell/manage-office-365-with-office-365-powershell.md)
 # [Соответствие требованиям Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Безопасность в Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)
 # [Microsoft 365 для бизнеса](https://www.microsoft.com/microsoft-365/business)
