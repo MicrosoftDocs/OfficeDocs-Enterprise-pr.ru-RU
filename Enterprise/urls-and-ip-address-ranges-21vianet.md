@@ -20,21 +20,18 @@ f1.keywords:
 - NOCSH
 description: Эта статья относится к службе Office 365, предоставляемой компанией 21Vianet в Китае. В ней перечислены URL-адреса и диапазоны IP-адресов, используемые в службе Office 365, предоставляемой компанией 21Vianet.
 hideEdit: true
-ms.openlocfilehash: 157f80b6d3bb12f0e3c3aa7f6d2d82a1d24965e1
-ms.sourcegitcommit: 338e3bcf0a62842fbbb17145b67a4a93f3b90aac
+ms.openlocfilehash: fe0015bcda70cace8247fdbcfb6a2d4424b28349
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091166"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387722"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URL-адреса и диапазоны IP-адресов для службы Office 365, предоставляемой компанией 21Vianet
 
  *Область применения: Office 365, предоставляемый 21Vianet — администратор малого бизнеса, Office 365, предоставляемый 21Vianet — администратор*
 
 **Сводка**. Следующие конечные точки (полные доменные имена, порты, URL-адреса, префиксы IPv4 и IPv6) применяются к Office 365 под управлением 21 Vianet и предназначены для предоставления служб повышения производительности организациям, использующим только эти планы.
-  
-> [!NOTE]
-> Корпорация Майкрософт выпустила веб-службу на базе REST для записей IP-адресов и полных доменных имен на этой странице. Эта новая служба поможет настраивать и обновлять устройства периметра сети, такие как брандмауэры и прокси-серверы. Вы можете скачать список конечных точек, текущую версию списка или сведения об определенных изменениях. Эта служба заменяет XML-документ, связанный с этой страницей, который устарел 2 октября 2018 г. Сведения о том, как опробовать новую службу, см. в статье [Веб-служба](office-365-ip-web-service.md).
   
  **Конечные точки Office 365:**[ по всему миру (включая GCC)](urls-and-ip-address-ranges.md)  | *Office 365, предоставляемый 21 Vianet* | [Office 365 Germany](office-365-germany-endpoints.md) | [Office 365 для DoD государственных организаций США](office-365-u-s-government-dod-endpoints.md) | [Office 365 для GCC High государственных организаций США](office-365-u-s-government-gcc-high-endpoints.md) |
   

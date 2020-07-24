@@ -19,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: Узнайте, как отключить синхронизацию службы каталогов для Microsoft 365 с помощью PowerShell.
-ms.openlocfilehash: 935d7e26c7b99aba876500e6b9d428557aed5b9c
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 1e3e26a262c112c05fe22cda2dbe3f14efb61f87
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906212"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387712"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Отключение синхронизации каталогов для Microsoft 365
 Вы можете отключить синхронизацию службы каталогов с помощью PowerShell. Тем не менее, не рекомендуется отключать синхронизацию службы каталогов в качестве действия по устранению неполадок. Если вам нужна помощь с устранением проблем с синхронизацией службы каталогов, обратитесь к разделу [Устранение проблем с синхронизацией каталогов для статьи Microsoft 365](fix-problems-with-directory-synchronization.md) . 
@@ -41,3 +41,8 @@ ms.locfileid: "44906212"
   ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
   ```
+
+>[!Note]
+>При использовании этой команды необходимо подождать 72 часов, прежде чем можно будет снова включить синхронизацию каталогов.
+>
+ 
