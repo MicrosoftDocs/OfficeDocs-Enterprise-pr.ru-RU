@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Гибридная современная проверка подлинности (HMA) — это способ управления удостоверениями, обеспечивающий более безопасную проверку подлинности и авторизацию пользователей, а также доступный для локальных гибридных развертываний Exchange Server.
-ms.openlocfilehash: 74c7ba7f050c4ac6f6c9b0e6eee7a399a15b196a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 4348de3fbec5917c2b13af3f93bf79ad898af017
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997385"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502594"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Гибридная современная проверка подлинности (HMA) — это способ управления удостоверениями, обеспечивающий более безопасную проверку подлинности и авторизацию пользователей, а также доступный для локальных гибридных развертываний Exchange Server.
   
@@ -74,6 +74,8 @@ Get-MapiVirtualDirectory | FL server,*url*
 Get-WebServicesVirtualDirectory | FL server,*url*
 Get-ActiveSyncVirtualDirectory | FL server,*url*
 Get-OABVirtualDirectory | FL server,*url*
+Get-AutodiscoverVirtualDirectory | FL server,*url*
+Get-OutlookAnywhere | FL server,*url*
 ```
     
 Убедитесь, что URL-адреса, к которым могут подключаться клиенты, указаны как имена субъектов-служб HTTPS в AAD.

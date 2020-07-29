@@ -3,7 +3,7 @@ title: Отключение доступа к службам Microsoft 365 с п
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,16 +19,16 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Используйте PowerShell, чтобы отключить доступ к службам Microsoft 365 для пользователей.
-ms.openlocfilehash: 4e7c59447dae027dffa7fd5ea24d1818d5d64a9a
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 7820bc44837af07975b2eeaeddf2cf20a9230fae
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230685"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502644"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Отключение доступа к службам Microsoft 365 с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Когда учетной записи Microsoft 365 назначена лицензия из плана лицензирования, службы Microsoft 365 предоставляются пользователю из этой лицензии. Тем не менее, вы можете управлять службами Microsoft 365, к которым у пользователя есть доступ. Например, несмотря на то, что лицензия разрешает доступ к службе SharePoint Online, вы можете отключить доступ к ней. С помощью PowerShell можно отключить доступ к любому числу служб для определенного плана лицензирования:
 
@@ -139,19 +139,19 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
     
 1. Создайте текстовый файл, в котором в каждой строке будет по одной учетной записи, как в примере ниже.
     
-  ```powershell
-  akol@contoso.com
-  tjohnston@contoso.com
-  kakers@contoso.com
-  ```
+   ```powershell
+   akol@contoso.com
+   tjohnston@contoso.com
+   kakers@contoso.com
+   ```
 
-  В этом примере текстовый файл — C: \\ Мои документы \\Accounts.txt.
+   В этом примере текстовый файл — C: \\ Мои документы \\Accounts.txt.
     
 2. Выполните следующую команду:
     
-  ```powershell
-  Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
-  ```
+   ```powershell
+   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
+   ```
 
 Если вы хотите отключить доступ к службам для нескольких планов лицензирования, повторите указанные выше инструкции для каждого плана лицензирования, убедившись в том, что:
 
@@ -160,6 +160,16 @@ $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName 
 
 Чтобы отключить службы Microsoft 365 для пользователей при назначении их плану лицензирования, ознакомьтесь со статьей [Отключение доступа к службам при назначении пользовательских лицензий](disable-access-to-services-while-assigning-user-licenses.md).
 
+### <a name="assign-all-services-in-a-licensing-plan-to-a-user-account"></a>Назначить учетной записи пользователя все службы в плане лицензирования
+
+Для учетных записей пользователей, для которых отключены службы, можно включить все службы для определенного плана лицензирования с помощью следующих команд:
+
+```powershell
+$userUPN="<user account UPN>"
+$acctSKU="<AccountSkuId>"
+$LO = New-MsolLicenseOptions -AccountSkuId $acctSKU
+Set-MsolUserLicense -UserPrincipalName $userUPN -LicenseOptions $LO
+```
 
 ## <a name="see-also"></a>См. также
 

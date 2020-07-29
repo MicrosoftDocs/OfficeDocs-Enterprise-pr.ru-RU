@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Сводка: использование PowerShell для Microsoft 365 для управления политиками Skype для бизнеса Online, политиками для отдельных пользователей и параметрами собраний.'
-ms.openlocfilehash: f66b3186a5b29bbf0756a629b85c626caf2c1e36
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 0701fdb8a0a1f588e1c113ad7050ed516638aebc
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230445"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502614"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Управление Skype для бизнеса Online с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Одной из основных задач администратора Skype для бизнеса Online является Управление политиками. Несмотря на то, что вы можете выполнить некоторые из этих задач в центре администрирования Microsoft 365, другие задачи выполняются значительно быстрее и проще в PowerShell. 
 
@@ -36,12 +36,12 @@ ms.locfileid: "45230445"
 
 1. Откройте командную строку Windows PowerShell и выполните указанные команды: 
     
-  ```powershell
-  Import-Module SkypeOnlineConnector
-  $userCredential = Get-Credential
-  $sfbSession = New-CsOnlineSession -Credential $userCredential
-  Import-PSSession $sfbSession
-  ```
+   ```powershell
+   Import-Module SkypeOnlineConnector
+   $userCredential = Get-Credential
+   $sfbSession = New-CsOnlineSession -Credential $userCredential
+   Import-PSSession $sfbSession
+   ```
 
 2. В диалоговом окне **запрос учетных данных Windows PowerShell** введите имя и пароль учетной записи администратора Skype для бизнеса Online, а затем нажмите кнопку **ОК**.
 
@@ -50,11 +50,11 @@ ms.locfileid: "45230445"
 
 1. Откройте командную строку Windows PowerShell и выполните указанные команды:
 
-  ```powershell
-  Import-Module SkypeOnlineConnector
-  $sfbSession = New-CsOnlineSession
-  Import-PSSession $sfbSession
-  ```
+   ```powershell
+   Import-Module SkypeOnlineConnector
+   $sfbSession = New-CsOnlineSession
+   Import-PSSession $sfbSession
+   ```
 
 2. Когда появится команда **New-CsOnlineSession** , введите имя учетной записи администратора Skype для бизнеса Online.
 
