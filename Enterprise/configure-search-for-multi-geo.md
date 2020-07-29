@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
+localization_priority: Normal
 description: Сведения о настройке поиска в среде с поддержкой нескольких регионов.
-ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057675"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433570"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Настройка поиска для Microsoft 365 Multi-Geo
 
@@ -258,11 +258,11 @@ MultiGeoSearchStatus — свойство, которое API поиска Share
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>Пример GET-запроса, развертывание которого выполняется для **всех** геообъектов
 
-https:// \<клиент\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='ИД\_моего\_клиента'
+HTTPS:// \<tenant\> / \_ API/Поиск/запрос? QueryText = ' SharePoint ' &свойства = ' енаблемултижеосеарч: true ' &ClientType = ' My \_ Client \_ ID '
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Пример GET-запроса, развертывание которого выполняется для **некоторых** геообъектов
 
-https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+HTTPS:// \<tenant\> / \_ API/Поиск/запрос? QueryText = ' site ' &ClientType = ' my_client_id ' &Properties = ' енаблемултижеосеарч: true, мултижеосеарчконфигуратион: [{расположение данных \\ : "тип" \\ , точка входа \\ : "HTTPS \\ ://contosoNAM.SharePoint.com" \\ , SourceID \\ : "B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ , {Location \\ : "Can" \\ , Endpoint \\ : "HTTPS \\ ://contosoCAN.SharePoint-DF.com"}] "
 
 > [!NOTE]
 > Перед запятыми и двоеточиями в списке геообъектов для свойства MultiGeoSearchConfiguration используется символ **обратной косой черты**. Это обусловлено тем, что запросы GET используют двоеточия для разделения свойств и запятые для разделения аргументов свойств. Без обратной косой черты в качестве экранирующего символа свойство MultiGeoSearchConfiguration будет распознаваться неправильно.

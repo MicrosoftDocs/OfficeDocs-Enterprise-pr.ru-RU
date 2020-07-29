@@ -25,12 +25,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Просмотрите состояние работоспособности служб Microsoft 365, прежде чем позвонить в службу поддержки, чтобы проверить, есть ли активные прерывания.
-ms.openlocfilehash: d937310faeaf5af63a6c36841d7a609006fc4ab5
-ms.sourcegitcommit: 057f0fce08b41a00581fc4736cad89270129c703
+ms.openlocfilehash: 17d0df388d3632f0b27b3ca59c57a995ce7dfb8e
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44266697"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433890"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Проверка работоспособности службы Microsoft 365
 
@@ -68,6 +68,9 @@ ms.locfileid: "44266697"
 - До двух адресов электронной почты.
 - Требуются ли уведомления об инцидентах или рекомендациях
 - Службы, для которых требуется уведомление
+
+> [!NOTE]
+> Для каждого администратора могут быть заданы параметры, а для каждой учетной записи администратора задано указанное выше количество.
 
 > [!TIP]
 > Вы также можете использовать [приложение Microsoft 365 Admin](https://go.microsoft.com/fwlink/p/?linkid=627216) на мобильном устройстве для просмотра работоспособности служб, что является прекрасным способом поддержания актуальности при push-уведомлениях. 
@@ -145,4 +148,5 @@ ms.locfileid: "44266697"
 
 ## <a name="see-also"></a>См. также
 
-[Отчеты об активности в центре администрирования Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Отчеты об активности в центре](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
+ администрирования Microsoft 365 [Параметры центра сообщений](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)

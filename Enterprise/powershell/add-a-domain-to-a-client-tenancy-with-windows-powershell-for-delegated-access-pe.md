@@ -17,16 +17,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Сводка: используйте PowerShell для Microsoft 365, чтобы добавить альтернативное доменное имя к существующему клиенту клиента.'
-ms.openlocfilehash: d5a6c7326684c74d3b05e7b4a1e88c2a37e99ca0
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: eabfa9dfcbb36cb54a2d51321dfe60f197290b10
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229785"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433770"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Добавление домена к аренде клиента с помощью Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Вы можете создавать и связывать новые домены с клиентской учетной записью с помощью PowerShell для Microsoft 365 быстрее, чем при использовании центра администрирования Microsoft 365.
   
@@ -58,7 +58,7 @@ ms.locfileid: "45229785"
 
 Эта команда создает домен в Azure Active Directory, но не связывает его с публично зарегистрированным доменом. Это поступает, когда вы подтверждаете, что вы являетесь владельцем общедоступного домена Microsoft 365 для предприятий.
   
-```
+```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
 
@@ -70,7 +70,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 
  Microsoft 365 создаст определенные данные, которые необходимо разместить в записи проверки DNS TXT. Чтобы получить эти данные, выполните указанную ниже команду.
   
-```
+```powershell
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
 ```
 
@@ -91,7 +91,7 @@ Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of
   
 Убедитесь, что запись TXT создана успешно, с помощью команды nslookup. Используйте следующий синтаксис.
   
-```
+```console
 nslookup -type=TXT <FQDN of registered domain>
 ```
 
@@ -107,22 +107,24 @@ nslookup -type=TXT <FQDN of registered domain>
 
 На последнем этапе вы проверите до Microsoft 365, что вы владеете общедоступным зарегистрированным доменом. После выполнения этого действия Microsoft 365 начнет принимать трафик, направленный на новое доменное имя. Чтобы завершить процесс создания и регистрации домена, выполните следующую команду. 
   
-```
+```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
 Эта команда не возвращает выходных данных, поэтому для проверки выполните следующую команду.
   
-```
+```powershell
 Get-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
 Выходные данные имеют следующий вид:
-  
-||||
-|:-----|:-----|:-----|
-| `Name` <br/> | `Status` <br/> | `Authentication` <br/> |
-| `FQDN of new domain` <br/> | `Verified` <br/> | `Managed` <br/> |
+
+```console
+Name                   Status      Authentication
+--------------------   ---------   --------------
+FQDN of new domain     Verified    Managed
+```
+
    
 ## <a name="see-also"></a>См. также
 

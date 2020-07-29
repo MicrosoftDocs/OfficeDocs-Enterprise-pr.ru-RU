@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 description: Сведения о перемещении сайта OneDrive в другой геообъект.
-ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 699c9502c7257e5908e79d591170b51a563c4999
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44058009"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433880"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Перемещение сайта OneDrive в другой геообъект 
 
@@ -199,4 +199,8 @@ ms.locfileid: "44058009"
 
 ### <a name="existing-followed-groups-and-sites"></a>Существующие отслеживаемые группы и сайты
 
-Отслеживаемые сайты и группы будут отображаться в учетной записи OneDrive для бизнеса пользователя независимо от его географического расположения. Сайты и группы, размещенные в другом геообъекте, откроются на отдельной вкладке.
+Отслеживаемые сайты и группы будут отображаться в OneDrive пользователя независимо от их географических расположений. Сайты и группы, размещенные в другом географическом расположении, открываются на отдельной вкладке.
+
+### <a name="delve-geo-url-updates"></a>Обновления для географических URL-адресов delve
+
+Пользователи будут отправлены в элемент GEO, соответствующий их PDL, только после того, как они были перемещены в новый географическое хранилище.

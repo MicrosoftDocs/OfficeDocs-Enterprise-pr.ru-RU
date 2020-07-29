@@ -10,14 +10,14 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 description: Узнайте, как управлять параметрами поддержки нескольких регионов в Exchange Online с помощью Microsoft PowerShell.
-ms.openlocfilehash: d2498178193f71c1ffaea6141a09cc76e826e99e
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
-ms.translationtype: HT
+ms.openlocfilehash: 7c05699b411a3f36fc1bb8b47e643283d1ec2d65
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352949"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433510"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Администрирование почтовых ящиков Exchange Online в среде с поддержкой нескольких регионов
 
@@ -103,7 +103,8 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
-> **Примечание.** Если код географического расположения в имени базы данных не соответствует значению **MailboxRegion**, почтовый ящик автоматически помещается в очередь перемещения и переносится в географическое расположение, указанное значением **MailboxRegion** (Exchange Online ищет несоответствия между этими значениями свойств).
+> [!NOTE]
+> Если код географического расположения в имени базы данных не совпадает со значением **маилбоксрегион** , почтовый ящик будет автоматически помещен в очередь перемещения и перемещен в географическое расположение, заданное значением **Маилбоксрегион** (Exchange Online ищет несоответствие между этими значениями свойств).
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>Перемещение существующего облачного почтового ящика в определенное географическое расположение
 
@@ -133,17 +134,16 @@ Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoL
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
 ```
 
-**Примечания**:
-
-- Как указано выше, нельзя использовать эту процедуру для объектов синхронизированных пользователей из локальной службы Active Directory. Нужно изменить значение **PreferredDataLocation** в Active Directory и синхронизировать его с помощью AAD Connect. Дополнительные сведения см. в статье [Синхронизация Azure Active Directory Connect: настройка предпочтительного расположения данных для ресурсов Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
-
-- Продолжительность перемещения почтового ящика в новое географическое расположение зависит от нескольких факторов:
-
-  - Размер и тип почтового ящика.
-
-  - Число перемещаемых почтовых ящиков.
-
-  - Доступность ресурсов перемещения.
+> [!NOTE]
+> - Как упоминалось ранее, эту процедуру нельзя использовать для синхронизированных объектов пользователей из локальной службы Active Directory. Нужно изменить значение **PreferredDataLocation** в Active Directory и синхронизировать его с помощью AAD Connect. Дополнительные сведения см. в статье [Синхронизация Azure Active Directory Connect: настройка предпочтительного расположения данных для ресурсов Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> 
+> - Продолжительность перемещения почтового ящика в новое географическое расположение зависит от нескольких факторов:
+> 
+>   - Размер и тип почтового ящика.
+> 
+>   - Число перемещаемых почтовых ящиков.
+> 
+>   - Доступность ресурсов перемещения.
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Перемещение отключенных почтовых ящиков, находящихся на судебном удержании
 
