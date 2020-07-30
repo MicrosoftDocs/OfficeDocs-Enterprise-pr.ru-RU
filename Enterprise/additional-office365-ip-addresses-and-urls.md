@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: Сводка. В новой веб-службе конечных точек отсутствует небольшое количество конечных точек для определенных сценариев.
 hideEdit: true
-ms.openlocfilehash: 4d67d67c3f1c0eb6aa8079dbbdc0d964274af48b
-ms.sourcegitcommit: 93d0cc401c9d910e115072c0229232765fbad75e
+ms.openlocfilehash: 9c57feb143b52bc84bd1d636f639712cf3c04cd3
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939604"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433550"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Дополнительные конечные точки не включены в веб-службу IP-адресов и URL-адресов Office 365
 
@@ -43,9 +43,8 @@ ms.locfileid: "43939604"
 
 Эти параметры (кроме DNS) являются необязательными для большинства клиентов, за исключением особого описанного сценария.
 
-|||||
+| Строка | Назначение | Назначение | Тип |
 |:-----|:-----|:-----|:-----|
-| **Строка** | **Цель** | **Назначение** | **Тип** |
 | 1  | [Служба импорта](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) для приема PST- и других файлов | Дополнительные требования см. в статье [Служба импорта](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6). | Редкий сценарий исходящего трафика |
 | 2  | [Помощник по поддержке и восстановлению для Office 365 (Майкрософт)](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Исходящий серверный трафик |
 | 3  | Azure AD Connect (с возможностью единого входа) — WinRM и удаленная оболочка PowerShell | Клиентская среда службы маркеров безопасности (сервер AD FS и прокси-сервер AD FS) \| TCP-порты 80 и 443 | Входящий серверный трафик |
@@ -61,7 +60,7 @@ ms.locfileid: "43939604"
 | 13  | Облачной ТСОП с возможностью гибридного локального подключения требуется поддержка подключения сети к локальным узлам. Дополнительные сведения о гибридных конфигурациях Skype для бизнеса Online  | См. статью [Планирование гибридного соединения Skype для бизнеса Server и Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity). | Гибридное входящее локальное подключение Skype для бизнеса |
 | 14  | **FQDN для проверки подлинности и идентификации** <br> Для функционирования полное доменное имя ```secure.aadcdn.microsoftonline-p.com``` должно находиться в зоне надежных сайтов Internet Explorer (IE) или Microsoft Edge. |  | Надежные сайты |
 | 15  |  **Полные доменные имена Microsoft Teams** <br> Если вы используете Internet Explorer или Microsoft Edge, вам нужно разрешить основные и сторонние файлы cookie, а также добавить полные доменные имена Teams в список надежных сайтов (в дополнение к полным доменным именам для всего набора, CDN и телеметрии, перечисленной в строке 14). Дополнительные сведения см. в статье [Известные проблемы Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Надежные сайты |
-| 16  |  **Полные доменные имена SharePoint Online и OneDrive для бизнеса** <br> Для функционирования все полные доменные имена ". sharepoint.com", имеющие в имени "\<клиент>", должны находиться в зоне надежных сайтов IE или Microsoft Edge вашего клиента. Эти конечные точки необходимо добавить в дополнение к полным доменным именам для всего набора, CDN и телеметрии, перечисленным в строке 14. |  | Надежные сайты |
+| 16  |  **Полные доменные имена SharePoint Online и OneDrive для бизнеса** <br> Для использования всех полных доменных имен .sharepoint.com, в которых указан "\<tenant>", их следует добавить в зону надежных сайтов IE или Microsoft Edge. Помимо полных доменных имен, сетей CDN и телеметрии, перечисленных в строке 14, для всего набора необходимо добавить указанные ниже конечные точки. |  | Надежные сайты |
 | 17  | **Yammer**  <br> Приложение Yammer доступно только в браузере и требует, чтобы авторизованный пользователь проходил через прокси-сервер. Для функционирования все полные доменные имена приложения Yammer должны находиться в зоне надежных сайтов IE или Microsoft Edge вашего клиента. |  | Надежные сайты |
 | 18  | Используйте [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) для синхронизации учетных записей пользователей с Azure AD. | См. статьи [Порты и протоколы, необходимые для гибридной идентификации](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Устранение неполадок подключения Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) и [Установка агента Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Только исходящий серверный трафик |
 | 19  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) с 21 ViaNet в Китае для синхронизации локальных учетных записей пользователей с Azure AD. | \*.digicert.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>См. также [Устранение неполадок при входе с подключением Azure AD](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity) | Только исходящий серверный трафик |
