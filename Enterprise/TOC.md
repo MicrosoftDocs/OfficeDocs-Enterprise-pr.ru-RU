@@ -184,6 +184,7 @@
 ##### [Этап 3. Настройка серверов AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
 ##### [Этап 4. Настройка прокси веб-приложений](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
 ##### [Этап 5. Настройка федеративной проверки подлинности](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+#### [Аварийное восстановление SharePoint Server 2013 в Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
 
 # Управление Microsoft 365
 
@@ -253,7 +254,7 @@
 ### [Удаление данных в Exchange Online](office-365-exchange-online-data-deletion.md)
 ### [Удаление данных в SharePoint Online](office-365-sharepoint-online-data-deletion.md)
 ### [Удаление данных в Skype для бизнеса](office-365-skype-data-deletion.md)
-## [Защита от атак типа "отказ в обслуживании" в Microsoft 365](office-365-defending-against-denial-of-service-attacks-overview.md)
+## [Защита от атак типа "отказ в обслуживании" в Microsoft 365](office-365-defending-cloud-services-against-dos-attacks.md)
 ### [Стратегия защиты от атак типа "отказ в обслуживании" корпорации Майкрософт](office-365-microsoft-dos-defense-strategy.md)
 ### [Основные принципы защиты от атак типа "отказ в обслуживании"](office-365-core-principles-of-defense-against-dos-attacks.md)
 ## [Шифрование в Microsoft Cloud](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)
