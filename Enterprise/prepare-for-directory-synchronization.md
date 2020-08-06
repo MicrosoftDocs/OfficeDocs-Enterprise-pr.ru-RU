@@ -1,5 +1,5 @@
 ---
-title: Подготовка к синхронизации каталогов в Microsoft 365
+title: Подготовка к синхронизации каталогов с Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -26,14 +26,14 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: В этой статье описано, как подготовить пользователей к работе с Microsoft 365, используя синхронизацию службы каталогов и долгосрочные преимущества использования этого метода.
-ms.openlocfilehash: 2a4b5f54d7b5aafd5e5eb7a43859e49caa57a519
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 30e735d086f1c31219fc9d6d52ff0b2545f5c08d
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735697"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571002"
 ---
-# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Подготовка к синхронизации каталогов в Microsoft 365
+# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Подготовка к синхронизации каталогов с Microsoft 365
 
 *Эта статья относится как к Microsoft 365 Enterprise, так и к Microsoft 365 корпоративный.*
 
@@ -76,7 +76,7 @@ ms.locfileid: "44735697"
   - мобильный телефон;
   - номер факса;
   - адрес;
-  - City
+  - Город
   - регион или область;
   - почтовый индекс;
   - страна или регион.
@@ -95,7 +95,7 @@ ms.locfileid: "44735697"
   - Если этот атрибут существует в объекте пользователя, для него должно быть задано значение. То есть атрибут не должен быть пустым.
   - Максимальное число символов: 256
     
-- **givenName**
+- **givenName;**
     
   - Если атрибут существует в объекте пользователя, он будет синхронизирован с Microsoft 365, но Microsoft 365 не требует и не использует его.
   - Максимальное число символов: 64
@@ -166,8 +166,6 @@ ms.locfileid: "44735697"
   - Необходимо использовать маршрутизируемые домены; Например, нельзя использовать локальные или внутренние домены.
   - Символы кодировки Юникод преобразуются в символы подчеркивания.
   - **userPrincipalName** не может содержать дублирующиеся значения в каталоге. 
-
-Чтобы определить ошибки в атрибутах доменных служб Active Directory, ознакомьтесь со статьей [Подготовка атрибутов каталогов с помощью средства IdFix](prepare-directory-attributes-for-synch-with-idfix.md) , чтобы использовать средство IdFix.
     
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. Подготовка атрибута userPrincipalName
 
@@ -189,9 +187,6 @@ ms.locfileid: "44735697"
   
 Кроме того, Узнайте [, как подготовить домен, не поддерживающий маршрутизацию (например, локальный домен), для синхронизации службы каталогов](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
-
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Сведения о [подготовке атрибутов каталогов с помощью средства IdFix](prepare-directory-attributes-for-synch-with-idfix.md) помогут исправить ошибки в атрибутах доменных служб Active Directory до синхронизации службы каталогов.
-
-Если были исправлены все ошибки атрибутов, обнаруженные с помощью средства IdFix, и выполнить действия с 1 по 5, ознакомьтесь с разделом [Настройка синхронизации службы каталогов](set-up-directory-synchronization.md).
+Если вы выполнили шаги с 1 по 5, ознакомьтесь с разделом [Настройка синхронизации службы каталогов](set-up-directory-synchronization.md).

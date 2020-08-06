@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Описание синхронизации каталогов с Microsoft 365, очисткой доменных служб Active Directory и средством Azure Active Directory Connect.
-ms.openlocfilehash: b22533e66d18541b8eb72900514543367633e462
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 8bfb9a7d65bf76fdadafe1bb49da91115ee9d07c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711872"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571162"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Гибридное удостоверение и синхронизация каталогов для Microsoft 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 В зависимости от потребностей бизнеса и технических требований, наиболее распространенным выбором для корпоративных клиентов, использующих Microsoft 365, является гибридная модель идентификации и синхронизация службы каталогов. Синхронизация службы каталогов позволяет управлять удостоверениями в доменных службах Active Directory (AD DS), а все обновления учетных записей пользователей, групп и контактов синхронизируются с клиентом Azure Active Directory (Azure AD) вашей подписки на Microsoft 365.
 
@@ -97,13 +97,11 @@ ms.locfileid: "44711872"
   
 Чтобы узнать больше, ознакомьтесь со [списком совместимость Федерации Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) .
   
-## <a name="ad-ds-cleanup"></a>Очистка AD DS
+## <a name="ad-ds-preparation"></a>Подготовка AD DS
 
 Для обеспечения беспрепятственного перехода на Microsoft 365 с помощью синхронизации необходимо подготовить лес доменных служб Active Directory, прежде чем приступать к развертыванию синхронизации каталогов Microsoft 365.
   
-Чтобы [настроить синхронизацию службы каталогов](set-up-directory-synchronization.md), выполните одно из указанных ниже действий для [загрузки и запуска средства IdFix](install-and-run-idfix.md). Средство IdFix можно использовать для [очистки каталогов](prepare-directory-attributes-for-synch-with-idfix.md).
-  
-Очистка каталогов должна сосредоточиться на следующих задачах:
+Подготовка каталогов должна сосредоточиться на следующих задачах:
 
 - Удалите повторяющиеся атрибуты **proxyAddress** и **userPrincipalName** .
 - Обновление пустых и недопустимых атрибутов **userPrincipalName** с допустимыми атрибутами **userPrincipalName** .

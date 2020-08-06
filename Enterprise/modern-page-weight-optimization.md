@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Узнайте, как оптимизировать вес страниц современных сайтов SharePoint Online.
-ms.openlocfilehash: c694e7ed2524e6e8e161a3ad844dd3d1cfc3a116
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
-ms.translationtype: HT
+ms.openlocfilehash: d571508648973a73efe1367c4d09b8cc6c8eb522
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603789"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571112"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Оптимизация веса страниц современных сайтов SharePoint Online
 
