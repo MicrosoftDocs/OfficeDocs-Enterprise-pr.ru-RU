@@ -7,7 +7,7 @@ ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,16 +19,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Сводка: в этих статьях вы найдете сведения о сети для Microsoft 365.'
-ms.openlocfilehash: 4c414d8cbf597af9165e991a71e5d6a6a330e33a
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: b1497c214777e34ce4a85701ce6596f50e59910d
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735665"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592153"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Настройка сети для Microsoft 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Важная часть вашей входящей миграции Microsoft 365 — убедиться в том, что в сети и подключения к Интернету настроена Оптимизация доступа. Настройка локальной сети для доступа к глобально распределенному облачному программному обеспечению (SaaS) отличается от традиционной сети, оптимизированной для трафика в локальных центрах обработки данных и центрального подключения к Интернету. 
 

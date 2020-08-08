@@ -7,7 +7,7 @@ ms.date: 07/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Сводка: понимание миграции с Microsoft Cloud для Германии (Microsoft Cloud Deutschland) в службы Office 365 в новых регионах центров обработки данных в Германии'
-ms.openlocfilehash: 3270cb9cf51bc35e7eb7549a109b34c42dda16ff
-ms.sourcegitcommit: d34edff71d0b3c8088ec27049f0fc3b6ce57f7e7
-ms.translationtype: HT
+ms.openlocfilehash: f63a9228b8669ce0b7a1d49c7b0045a2065f9ec4
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092888"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592143"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Миграция с Microsoft Cloud для Германии (Microsoft Cloud Deutschland) в службы Office 365 в новых регионах центров обработки данных в Германии
 
@@ -59,7 +59,7 @@ ms.locfileid: "45092888"
 - Группы Office 365
 - Dynamics 365 / Power Platform
 
-Предварительные требования и влияние миграции на эти службы описаны в статье [Dynamics 365 Customer engagement](https://aka.ms/D365ceOptIn).
+Предварительные требования и влияние миграции на эти службы описаны в статье [Dynamics 365 Customer engagement](https://aka.ms/d365ceoptin).
 
 1 марта 2021 г. прекращается поддержка Office 365 Видео. Если вы решили перенести свой клиент Office 365 в новые регионы центров обработки данных в Германии, Office 365 Видео не будет поддерживаться после завершения миграции SharePoint Online. [Подробнее](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
@@ -203,7 +203,7 @@ Microsoft Stream не будет разворачиваться в Microsoft Deu
 
 #### <a name="dynamics-365-and-power-bi"></a>Dynamics 365 и Power BI
 
-Присоединяйтесь к миграции под руководством корпорации Майкрософт для [Dynamics 365](https://aka.ms/D365ceOptIn) и [Power BI сегодня](https://aka.ms/pbioptin). Когда вы будете готовы начать миграцию, то в центре администрирования Microsoft 365 мы проинформируем вас с помощью [Центра сообщений](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide).
+Присоединяйтесь к миграции под руководством корпорации Майкрософт для [Dynamics 365](https://aka.ms/D365ceOptIn) и [Power BI сегодня](https://aka.ms/PBIOptIn). Когда вы будете готовы начать миграцию, то в центре администрирования Microsoft 365 мы проинформируем вас с помощью [Центра сообщений](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide).
 
 ### <a name="will-the-price-change-for-the-office-services-that-i-use"></a>Будут ли изменяться цены для используемых мною служб Office?
 
@@ -221,7 +221,7 @@ Microsoft Stream не будет разворачиваться в Microsoft Deu
 
 - [Помощь по миграции Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
 - [Как принять участие в миграции](https://aka.ms/office365germanymoveoptin)
-- [Сведения о программе миграции Dynamics 365](https://aka.ms/D365ceOptIn)
+- [Сведения о программе миграции Dynamics 365](https://aka.ms/d365ceoptin)
 - [Сведения о программе миграции Power BI](https://aka.ms/pbioptin)
 - [URL-адреса и диапазоны IP-адресов для Office 365](https://aka.ms/o365endpoints)
 - [Мастер гибридной конфигурации Office 365](https://aka.ms/HybridWizard)
