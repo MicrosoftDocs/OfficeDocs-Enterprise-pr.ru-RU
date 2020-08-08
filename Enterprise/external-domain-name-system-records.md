@@ -7,7 +7,7 @@ ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Сводка. Список записей DNS для планирования развертывания Office 365.
-ms.openlocfilehash: b17d97102498cbaabc87b89bb7cd1f32134cfbcd
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
-ms.translationtype: MT
+ms.openlocfilehash: d9bd097538e0aaab19e8b2a6eeb989c3a16492db
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46570982"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592193"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Внешние записи DNS для Office 365
 
@@ -125,13 +125,13 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 > [!NOTE]
 > Для сложного сценария, включающего, например, пограничные серверы электронной почты для управления почтовым трафиком, передаваемым через брандмауэр, потребуется настроить запись SPF более детально. См. статью [Настройка записей SPF в Office 365 для предотвращения спуфинга](https://go.microsoft.com/fwlink/?LinkId=787656). Дополнительные сведения о том, как записи SPF работают в Office 365 см. в статье [Как Office 365 использует инфраструктуру политики отправителей (SPF) для предотвращения спуфинга](https://go.microsoft.com/fwlink/?LinkId=787065).
   
-| Число|Используемая система  <br/> |Назначение  <br/> |Добавьте эти включения  <br/> |
+| Номер|Используемая система  <br/> |Назначение  <br/> |Добавьте эти включения  <br/> |
 |:-----|:-----|:-----|:-----|
-|1,1  <br/> |Все почтовые системы (обязательно)  <br/> |Все записи SPF начинаются с этого значения  <br/> |v=spf1  <br/> |
+|1  <br/> |Все почтовые системы (обязательно)  <br/> |Все записи SPF начинаются с этого значения  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (распространено)  <br/> |Используйте только с Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
-|4  <br/> |Сторонняя почтовая система (менее распространено)  <br/> ||include:\<email system like mail.contoso.com\>  <br/> |
-|4   <br/> |Локальная почтовая система (менее распространено)  <br/> |Применяйте, если вы используете службу Exchange Online Protection или Exchange Online вместе с другой почтовой системой  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> include:\<mail.contoso.com\>  <br/> В угловых скобках (\<\>) следует указать другие почтовые системы, которые будут использоваться для отправки почты для вашего домена.  <br/> |
-|5   <br/> |Все почтовые системы (обязательно)  <br/> ||-all  <br/> |
+|3  <br/> |Сторонняя почтовая система (менее распространено)  <br/> ||include:\<email system like mail.contoso.com\>  <br/> |
+|4  <br/> |Локальная почтовая система (менее распространено)  <br/> |Применяйте, если вы используете службу Exchange Online Protection или Exchange Online вместе с другой почтовой системой  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> include:\<mail.contoso.com\>  <br/> В угловых скобках (\<\>) следует указать другие почтовые системы, которые будут использоваться для отправки почты для вашего домена.  <br/> |
+|5  <br/> |Все почтовые системы (обязательно)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Пример. Добавление значений в существующую запись SPF
 <a name="bkmk_addtospf"> </a>
