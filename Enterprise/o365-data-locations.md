@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Сводка: расположение данных Microsoft 365'
-ms.openlocfilehash: 4fdac5fca89eebd8d1c44ffdf571cee2630b6e8c
-ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.openlocfilehash: 9d69b51a257978c557944951eabb099f76b9011e
+ms.sourcegitcommit: c779ded7647cb84f8daafc25565d3edac2917e83
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45263698"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588001"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 Расположения данных Azure Active Directory см. на [карте данных AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-Ввиду беспрецедентной ситуации, возникшей в связи с кризисом и эпидемией вируса COVID-19 и необходимостью управлять спросом на сетевые службы в Европе, если ваша организация является образовательным учреждением, мы можем подготовить ваш клиент Microsoft 365 в Евросоюзе (ЕС), Европейской ассоциации свободой торговли (ЕАСТ), в Великобритании, США или Канаде, или можем перенести ваши данные в любые центры обработки данных в этих странах.  Это означает, что ваши данные могут храниться в ЕС, ЕАСТ, Соединенном Королевстве, США или Канаде.  Наши обязательства по обеспечению соответствия требованиям, конфиденциальности и безопасности остаются неизменными при реализации необходимых и рациональных мер по обеспечению доступности служб.  Мы соблюдаем все соответствующие законы в отношении передачи данных.
+В связи с беспрецедентной ситуацией с COVID-19 и необходимостью управлять спросом на веб-службы, если ваша организация является образовательным учреждением в Европе, мы можем подготовить ваш клиент Office 365, перенести ваши данные и хранить ваши неактивные данные в Европейском Союзе.  Если ваша организация является образовательным учреждением в Индии, мы можем подготовить ваш клиент Office 365, перенести ваши данные и хранить ваши неактивные данные в Индии, Европе или Соединенных Штатах.  Если ваша организация является образовательным учреждением в Южной Африке, мы можем подготовить ваш клиент Office 365, перенести ваши данные и хранить ваши неактивные данные в Южной Африке или Европе. Наши обязательства по обеспечению соответствия требованиям, конфиденциальности и безопасности остаются неизменными при реализации необходимых и рациональных мер по обеспечению доступности служб. Мы соблюдаем все применимые законы в отношении передачи данных.
 
 
 
@@ -159,7 +159,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -183,7 +183,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -207,7 +207,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -231,7 +231,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -255,7 +255,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -279,7 +279,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -303,7 +303,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -317,7 +317,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -327,7 +327,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -341,7 +341,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -351,7 +351,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -365,7 +365,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -375,7 +375,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -399,7 +399,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -423,7 +423,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -437,7 +437,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -447,7 +447,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -471,7 +471,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Австралия |
 | MyAnalytics | Австралия |
 | Планировщик | Австралия |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Австралия |
 | Stream | Австралия |
@@ -495,7 +495,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -519,7 +519,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик |  Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -533,7 +533,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -543,7 +543,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -567,7 +567,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -591,7 +591,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -605,7 +605,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -615,7 +615,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -639,7 +639,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -663,7 +663,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -677,7 +677,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -687,7 +687,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -711,7 +711,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -725,7 +725,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -735,7 +735,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -759,7 +759,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -783,7 +783,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -807,7 +807,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -831,7 +831,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик |  Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -855,7 +855,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -869,7 +869,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -879,7 +879,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -903,7 +903,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -927,7 +927,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -941,7 +941,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -951,7 +951,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -975,7 +975,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -999,7 +999,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -1023,7 +1023,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1047,7 +1047,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1071,7 +1071,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -1095,7 +1095,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1119,7 +1119,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Канада |
 | Планировщик | Канада |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Канада |
 | Stream | Канада |
@@ -1143,7 +1143,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1157,17 +1157,17 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
 | Microsoft Teams | Соединенные Штаты |
 | Office Online и Mobile | Соединенные Штаты |
-| EOP | Соединенные Штаты |
+| EOP | США |
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -1191,7 +1191,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1215,7 +1215,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1239,7 +1239,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -1263,7 +1263,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -1287,7 +1287,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -1311,7 +1311,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -1325,7 +1325,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -1359,7 +1359,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1383,7 +1383,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1407,7 +1407,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1431,7 +1431,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -1445,7 +1445,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -1455,7 +1455,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -1479,7 +1479,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1503,7 +1503,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -1527,7 +1527,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -1551,7 +1551,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -1575,7 +1575,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -1599,7 +1599,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -1623,7 +1623,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1637,7 +1637,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -1647,7 +1647,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -1661,7 +1661,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -1671,7 +1671,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -1695,7 +1695,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -1719,7 +1719,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1733,7 +1733,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -1743,7 +1743,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -1767,7 +1767,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1791,7 +1791,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1815,7 +1815,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -1839,7 +1839,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик |  Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1863,7 +1863,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -1887,7 +1887,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -1911,7 +1911,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -1935,7 +1935,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Австралия |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Австралия |
 | Stream | Австралия |
@@ -1959,7 +1959,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -1983,7 +1983,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Франция |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз |
 | Службы OneNote | Франция |
 | Stream | Европейский Союз |
@@ -2007,7 +2007,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -2031,7 +2031,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -2045,7 +2045,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -2055,7 +2055,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -2079,7 +2079,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2103,7 +2103,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2127,7 +2127,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2151,7 +2151,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Германия |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз |
 | Службы OneNote | Германия |
 | Stream | Европейский Союз |
@@ -2175,7 +2175,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2199,7 +2199,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2223,7 +2223,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -2237,7 +2237,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -2247,7 +2247,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -2261,7 +2261,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -2271,7 +2271,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -2285,7 +2285,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -2295,7 +2295,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -2319,7 +2319,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -2333,7 +2333,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -2343,7 +2343,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -2367,7 +2367,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2391,7 +2391,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2415,7 +2415,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2439,7 +2439,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -2453,7 +2453,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -2463,7 +2463,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -2477,7 +2477,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -2487,7 +2487,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -2511,7 +2511,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2535,7 +2535,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2549,7 +2549,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -2559,7 +2559,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -2583,7 +2583,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -2607,7 +2607,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -2631,7 +2631,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2655,7 +2655,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Индия |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Индия |
 | Stream | Индия |
@@ -2679,7 +2679,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -2703,7 +2703,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2727,7 +2727,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -2751,7 +2751,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2775,7 +2775,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2799,7 +2799,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -2813,7 +2813,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -2823,7 +2823,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -2847,7 +2847,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Япония |
 | Планировщик | Япония |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Япония |
 | Stream | Япония |
@@ -2871,7 +2871,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer |  Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2895,7 +2895,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2919,7 +2919,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2943,7 +2943,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -2967,7 +2967,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -2991,7 +2991,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Республика Корея |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Республика Корея |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -3015,7 +3015,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3039,7 +3039,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3063,7 +3063,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3087,7 +3087,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -3111,7 +3111,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -3135,7 +3135,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer |  Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3159,7 +3159,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3183,7 +3183,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3207,7 +3207,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3231,7 +3231,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Швейцария |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Швейцария |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3255,7 +3255,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -3279,7 +3279,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -3303,7 +3303,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3327,7 +3327,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3351,7 +3351,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -3375,7 +3375,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -3399,7 +3399,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3423,7 +3423,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -3447,7 +3447,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -3461,7 +3461,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -3471,7 +3471,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -3495,7 +3495,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3519,7 +3519,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3543,7 +3543,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3557,17 +3557,17 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
 | Microsoft Teams | Соединенные Штаты |
 | Office Online и Mobile | Соединенные Штаты |
-| EOP | Соединенные Штаты |
+| EOP | США |
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -3591,7 +3591,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3615,7 +3615,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3639,7 +3639,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -3663,7 +3663,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3677,7 +3677,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -3687,7 +3687,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -3711,7 +3711,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3735,7 +3735,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3759,7 +3759,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -3783,7 +3783,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3807,7 +3807,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -3831,7 +3831,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -3855,7 +3855,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -3879,7 +3879,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -3903,7 +3903,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -3927,7 +3927,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Австралия |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Австралия |
 | Stream | Австралия |
@@ -3941,7 +3941,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -3951,7 +3951,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -3975,7 +3975,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -3999,7 +3999,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4023,7 +4023,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -4047,7 +4047,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -4071,7 +4071,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -4095,7 +4095,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Норвегия |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Норвегия |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4119,7 +4119,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4143,7 +4143,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4167,7 +4167,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -4191,7 +4191,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -4205,7 +4205,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -4215,7 +4215,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -4239,7 +4239,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -4263,7 +4263,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -4287,7 +4287,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -4311,7 +4311,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -4335,7 +4335,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -4359,7 +4359,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -4383,7 +4383,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -4397,7 +4397,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -4407,7 +4407,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -4431,7 +4431,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4455,7 +4455,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4479,7 +4479,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4503,7 +4503,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -4527,7 +4527,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4551,7 +4551,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4575,7 +4575,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4589,7 +4589,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -4599,7 +4599,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -4613,7 +4613,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -4623,7 +4623,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -4637,7 +4637,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -4647,7 +4647,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -4661,7 +4661,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -4671,7 +4671,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -4685,7 +4685,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -4695,7 +4695,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -4709,7 +4709,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -4719,7 +4719,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -4743,7 +4743,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -4767,7 +4767,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4791,7 +4791,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4839,7 +4839,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4863,7 +4863,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4887,7 +4887,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4911,7 +4911,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -4935,7 +4935,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -4949,7 +4949,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -4959,7 +4959,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -4983,7 +4983,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -5007,7 +5007,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -5031,7 +5031,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5055,7 +5055,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5079,7 +5079,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Южная Африка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Южная Африка |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5093,7 +5093,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -5103,7 +5103,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -5127,7 +5127,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -5151,7 +5151,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5165,7 +5165,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -5175,7 +5175,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -5199,7 +5199,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5223,7 +5223,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5247,7 +5247,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Европейский Союз |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз  |
 | Службы OneNote | Европейский Союз |
 | Stream | Европейский Союз |
@@ -5271,7 +5271,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Швейцария |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Швейцария |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5295,7 +5295,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5319,7 +5319,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5343,7 +5343,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5367,7 +5367,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5391,7 +5391,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5415,7 +5415,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5439,7 +5439,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5463,7 +5463,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5477,7 +5477,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -5487,7 +5487,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -5511,7 +5511,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5535,7 +5535,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5559,7 +5559,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5573,7 +5573,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -5583,7 +5583,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -5607,7 +5607,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5621,7 +5621,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -5631,7 +5631,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -5655,7 +5655,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5679,7 +5679,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5703,7 +5703,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Объединенные Арабские Эмираты |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Объединенные Арабские Эмираты |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5727,7 +5727,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Европейский Союз |
 | MyAnalytics | Соединенное Королевство |
 | Планировщик | Европейский Союз |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Европейский Союз |
 | Службы OneNote | Соединенное Королевство |
 | Stream | Соединенное Королевство |
@@ -5741,7 +5741,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -5751,7 +5751,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -5775,7 +5775,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Глобальный географический регион 3 — Северная и Южная Америка |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 3 — Северная и Южная Америка |
 | Stream | Соединенные Штаты |
@@ -5799,7 +5799,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5823,7 +5823,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5847,7 +5847,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5861,7 +5861,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 | Служба | Расположение |
 | --- | --- |
-| Exchange Online | Соединенные Штаты |
+| Exchange Online | США |
 | OneDrive для бизнеса | Соединенные Штаты |
 | SharePoint Online | Соединенные Штаты |
 | Skype для бизнеса | Соединенные Штаты |
@@ -5871,7 +5871,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | США |
 | MyAnalytics | Соединенные Штаты |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Соединенные Штаты |
 | Stream | Соединенные Штаты |
@@ -5895,7 +5895,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5919,7 +5919,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | MyAnalytics | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Планировщик | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Соединенные Штаты |
 | Службы OneNote | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
 | Stream | Глобальный географический регион 2 — Азиатско-Тихоокеанский регион |
@@ -5943,7 +5943,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5967,7 +5967,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Глобальный географический регион 1 — EMEA |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -5991,7 +5991,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
@@ -6015,7 +6015,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 | Intune | Глобальный географический регион 1 — EMEA |
 | MyAnalytics | Глобальный географический регион 1 — EMEA |
 | Планировщик | Соединенные Штаты |
-| Sway | Соединенные Штаты |
+| Sway | США |
 | Yammer | Глобальный географический регион 1 — EMEA |
 | Службы OneNote | Глобальный географический регион 1 — EMEA |
 | Stream | Глобальный географический регион 1 — EMEA |
