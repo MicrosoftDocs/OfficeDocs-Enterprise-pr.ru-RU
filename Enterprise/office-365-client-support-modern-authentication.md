@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Поддержка современной проверки подлинности в клиентском приложении Microsoft 365.
-ms.openlocfilehash: ed573cdf0cbd8f685f2807127335f5abc940cace
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье рассказывается о том, какие платформы, клиенты и модули PowerShell поддерживают современные проверки подлинности для Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 29a579111d04cef444d1f8ad306b940a93517fe6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998497"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606665"
 ---
 # <a name="microsoft-365-client-app-support---modern-authentication"></a>Поддержка клиентских приложений Microsoft 365 — современная проверка подлинности
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Современная проверка подлинности включает вход на основе библиотеки проверки подлинности Active Directory (ADAL) для клиентских приложений Office на разных платформах. Это включает функции входа, такие как многофакторная проверка подлинности (MFA), смарт-карта и проверка подлинности на основе сертификатов.
 

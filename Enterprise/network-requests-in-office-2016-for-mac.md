@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Приложения Office для Mac обеспечивают работу собственного приложения на платформе macOS. Каждое приложение предназначено для работы в различных сценариях, в том числе состояния, когда доступ к сети невозможен. Когда компьютер подключается к сети, приложения автоматически подключаются к ряду веб-служб, чтобы обеспечить расширенные функциональные возможности. В этом документе описываются конечные точки и URL-адреса, по которым приложения пытаются достичь, и предоставляемые службы. Эта информация полезна при устранении проблем с настройкой сети и настройке политики для серверов сетевых прокси-серверов. Сведения, приведенные в этой статье, предназначены для приветственного URL-адреса и диапазонов адресов Office 365.
-ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: В этой статье описаны конечные точки и URL-адреса приложений Office для Mac, которые попытаются получить доступ, и предоставляемые службы.
+ms.openlocfilehash: 70b2da671b590dbe0c7572eebd6d96e0970532e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774954"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606725"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Сетевые запросы в Office для Mac
 
@@ -159,7 +161,7 @@ ms.locfileid: "44774954"
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |Веб-служба конструктора PowerPoint  <br/> |
    
- **Быстрый запуск PowerPoint**
+ **Компоновщик PowerPoint**
   
 Следующие конечные точки сети применяются только к Microsoft 365 Subscription.
   

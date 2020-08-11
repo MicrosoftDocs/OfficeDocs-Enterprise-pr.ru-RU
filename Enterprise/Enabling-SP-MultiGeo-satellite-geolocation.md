@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Включение SharePoint c поддержкой нескольких регионов в периферийном расположении.
-ms.openlocfilehash: 2bf914c6df06f6e1cdfc8c95743f45a53823073c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: В этой статье приводятся сведения для администраторов глобальных сред или SharePoint о том, как использовать SharePoint с поддержкой нескольких регионов.
+ms.openlocfilehash: dc2cd3eeb4c7e74d8dbfee1070338e0e243b0519
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433490"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605855"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Включение SharePoint c поддержкой нескольких регионов в периферийном расположении 
 
@@ -38,11 +38,11 @@ ms.locfileid: "45433490"
 
 Чтобы установить режим SPO для географического расположения, подключитесь к географическому расположению, для которого нужно задать режим SPO:
 
-1.  Откройте командную консоль SharePoint Online 
-2.  Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -учетные данные $credential
-3.  Set-SPOMultiGeoExperience</br></br>
+1.    Откройте командную консоль SharePoint Online 
+2.    Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -учетные данные $credential
+3.    Set-SPOMultiGeoExperience</br></br>
 ![Set-SPOMultiGeoExperience](media/Set-SPO-MultiGeo.jpg)
-4.  Обычно эта операция занимает около часа, пока выполняются различные резервирования публикаций в службе, а также повторное присвоение метки клиенту. Минимум через 1 час выполните команду Get-SPOMultiGeoExperience.  В результате будет показано, находится ли это географическое расположение в режиме SPO.</br></br>
+4.    Обычно эта операция занимает около часа, пока выполняются различные резервирования публикаций в службе, а также повторное присвоение метки клиенту. Минимум через 1 час выполните команду Get-SPOMultiGeoExperience.  В результате будет показано, находится ли это географическое расположение в режиме SPO.</br></br>
 ![Set-SPOMultiGeoExperience](media/Get-SPO-MultiGeo.jpg)
 
  

@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
-description: Если в вашей организации используется Office 365 и компьютеры сети не подключаются к Интернету, ниже вы найдете конечные точки (FQDN, Ports, URL-адреса, IPv4 и диапазоны адресов IPv6), которые следует включить в списки разрешенных исходящих подключений, чтобы убедиться, что компьютеры могут успешно использовать Office 365.
+description: В этой статье вы найдете конечные точки, достижимые для клиентов, использующих Office 365 U.S. правительством GCC High.
 hideEdit: true
-ms.openlocfilehash: f8c6707d4d77182c64564dc9f150e60a9153bb4b
-ms.sourcegitcommit: b2767740251b257bb5e66d056731c6c9e7f2677d
+ms.openlocfilehash: 509cbf028899d0e289bc151922c63f22a231a827
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46596878"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606533"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 США для государственных организаций GCC High
 

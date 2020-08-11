@@ -14,13 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Сводка. обзор методик управления технологиями Майкрософт для Microsoft 365.
-ms.openlocfilehash: ef17d00cdeac4a5c7fa9dd1b2d5b5a644bb62ddb
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom:
+- seo-marvel-apr2020
+description: В этой статье представлен обзор средств и технологий, используемых корпорацией Майкрософт для управления технологиями в Microsoft 365.
+ms.openlocfilehash: 4944fcdac1142344178d289be1e5699b80b47683
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774854"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606275"
 ---
 # <a name="microsoft-365-technology-controls"></a>Элементы управления технологии Microsoft 365 
 

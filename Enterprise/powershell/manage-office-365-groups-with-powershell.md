@@ -7,8 +7,11 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-f1.keywords: CSH
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -17,17 +20,17 @@ search.appverid:
 - BSA160
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
-description: Узнайте, как выполнять стандартные задачи управления для групп Microsoft 365 в Microsoft PowerShell.
-ms.openlocfilehash: 25a0a3c90082c016c37820f12caddd1dc1f09704
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: В этой статье рассказывается, как выполнять стандартные задачи управления для групп Microsoft 365 в PowerShell.
+ms.openlocfilehash: 899205fbf53821758f848fd4e1c75f25fd16e223
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230605"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605955"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Управление группами Microsoft 365 с помощью PowerShell
  
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 В этой статье приводятся инструкции по выполнению стандартных задач управления для групп в Microsoft PowerShell. Кроме того, в нем перечислены командлеты PowerShell для групп. Сведения об управлении сайтами SharePoint можно найти [в статье Управление сайтами SharePoint Online с помощью PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
 

@@ -11,22 +11,24 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
-description: 'Сводка: в этой статье представлены сведения о том, как приблизительно указать правильное количество клиентов для каждого IP-адреса в Организации с помощью преобразования сетевых адресов (NAT).'
-ms.openlocfilehash: d1f6762fcb21e6c310c790f6b235e5a51db4b1f2
-ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
+description: В этой статье представлены сведения о том, как оценить количество клиентов, которые можно использовать для каждого IP-адреса в Организации с помощью NAT.
+ms.openlocfilehash: f5914efb8042076e3ae7cad0d5fcb1f7eb97c12a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201613"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606775"
 ---
 # <a name="nat-support-with-office-365"></a>Поддержка NAT в Office 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Ранее в руководстве было предложено, что максимальное число клиентов Exchange, которые необходимо использовать для подключения к Office 365, составило около 2 000 клиентов на сетевой порт.
   

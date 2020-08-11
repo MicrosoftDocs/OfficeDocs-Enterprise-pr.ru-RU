@@ -14,13 +14,14 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Краткое описание API действий управления Office 365.
-ms.openlocfilehash: 8c7e4723ffb1792847c4b4eca0ec8285b8848c98
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье представлены краткие сведения о API действий управления Office 365 и сведения, которые он предоставляет из журналов действий.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 05b47be60816b09a24df3dd0076a4d0cbcdabe84
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998678"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605551"
 ---
 # <a name="office-365-management-activity-api"></a>API действий управления Office 365
 

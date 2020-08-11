@@ -14,22 +14,24 @@ ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Если вы используете Office 2007 или Office 2010, пора спланировать обновление. Не используйте устаревшие и неподдерживаемые приложения и серверы. Воспользуйтесь этими ресурсами, чтобы приступить к планированию.
-ms.openlocfilehash: 83881977bdd3e42be47f7a9f08fdaff84742cf55
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.custom:
+- seo-marvel-apr2020
+description: В этой статье содержатся ресурсы для пользователей, использующих Office 2007 или Office 2010, которые помогут им спланировать обновление.
+ms.openlocfilehash: 8ea43c708c84ae81f61bb2acedd8bf60027070d4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735737"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606255"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Планирование обновления серверов и клиентов Office 2007 или Office 2010
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Если в вашей организации используются более ранние версии продуктов и серверов Office, пора начать планирование обновления. [Прекращена поддержка](upgrade-from-office-2007-servers-and-products.md) продуктов и служб Office 2007. 
 
-- Office 2010 и Exchange 2010 достигают конца поддержки до **13 октября 2020 г**. 
-- Версии SharePoint 2010 и Project Server 2010 будут достигаться до **13 апреля 2021 г**. 
+- Поддержка Office 2010 и Exchange 2010 будет завершена **13 октября 2020 г**. 
+- Поддержка SharePoint 2010 и Project Server 2010 будет завершена **13 апреля 2021 г**. 
 
 Используйте ресурсы, приведенные в этой статье, чтобы приступить к работе.
 

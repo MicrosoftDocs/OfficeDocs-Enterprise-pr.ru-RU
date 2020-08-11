@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 f1.keywords:
 - NOCSH
-description: В этой статье содержатся сведения о том, как улучшить производительность загрузки сообщений в Outlook в Интернете.
-ms.openlocfilehash: 49b570da9092ce4fc857757a7da72b2a81fd0090
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: В этой статье содержатся сведения об использовании экономичных всплывающих окон для улучшения скорости загрузки сообщений в Outlook в Интернете.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e9ca2f90c8798c144f2763106c4c9ca9f57e9df1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843910"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603611"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Использование экономичных всплывающих окон для уменьшения объема памяти, используемой при чтении почтовых сообщений
 

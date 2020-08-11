@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
-localization_priority: Normal
-description: Узнайте, как управлять параметрами поддержки нескольких регионов в Exchange Online с помощью Microsoft PowerShell.
-ms.openlocfilehash: 7c05699b411a3f36fc1bb8b47e643283d1ec2d65
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.custom: seo-marvel-mar2020
+localization_priority: normal
+description: Сведения о том, как администрировать параметры Multi-Geo Exchange Online в среде Microsoft 365 с помощью PowerShell.
+ms.openlocfilehash: 52183a24d6ae4993bc9b4205c1f1d7dc6cd12a3c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433510"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605815"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Администрирование почтовых ящиков Exchange Online в среде с поддержкой нескольких регионов
 

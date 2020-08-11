@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: 'Сводка: в этих статьях вы найдете сведения о сети для Microsoft 365.'
-ms.openlocfilehash: b1497c214777e34ce4a85701ce6596f50e59910d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Здесь вы найдете ссылки на статьи со сведениями, которые помогут вам настроить сеть для Microsoft 365, в том числе Обзор сетевого подключения и список конечных точек.
+ms.openlocfilehash: 2c5966dc169a189a4f5040d4b5673859a38e6640
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592153"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605211"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Настройка сети для Microsoft 365
 

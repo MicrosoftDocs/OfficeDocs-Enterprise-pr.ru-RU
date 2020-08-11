@@ -15,13 +15,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Гибридная современная проверка подлинности (HMA) — это способ управления удостоверениями, обеспечивающий более безопасную проверку подлинности и авторизацию пользователей, а также доступный для локальных гибридных развертываний Exchange Server.
-ms.openlocfilehash: afc3b2926f02a64a9f2f27ba85e5264258b49c3b
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
+description: Узнайте, как настроить локальную систему Exchange Server для использования гибридной современной проверки подлинности (HMA), обеспечивая более безопасную проверку подлинности и авторизацию пользователей.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8cffd30b07cf3f99be67cdc52f14534e639552ae
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548882"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606075"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Как настроить локальное развертывание Exchange Server для использования гибридной современной проверки подлинности
 
@@ -161,6 +162,6 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 Если вы являетесь локальным клиентом, использующим Exchange Server по протоколу TCP 443, белом следующие диапазоны IP-адресов: <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR>
 
-## <a name="related-topics"></a>Связанные разделы
+## <a name="related-topics"></a>Связанные статьи
 
 [Требования к конфигурации современного режима проверки подлинности для перехода от Office 365 выделенный/ITAR к vNext](https://docs.microsoft.com/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

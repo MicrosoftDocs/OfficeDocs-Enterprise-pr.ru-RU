@@ -11,23 +11,25 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
-description: ExpressRoute для Office 365 обеспечивает подключение уровня 3 между сетью и центрами обработки данных корпорации Майкрософт. Цепи используют объявления маршрутов протокола BGP для интерфейсных серверов Office 365. С точки зрения локальных устройств, когда необходимо выбрать правильный путь TCP/IP к Office 365, Azure ExpressRoute является альтернативой Интернет-адресу.
-ms.openlocfilehash: f147003491b2186a05edbaf73acc86e60dbe3110
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: В этой статье вы узнаете о Azure ExpressRoute для Office 365 и о том, как использовать его для планирования сети.
+ms.openlocfilehash: 72fe3dc05a50a4a237a7493498ba792316d98b68
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230885"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606735"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Планирование сети при использовании ExpressRoute для Office 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 ExpressRoute для Office 365 обеспечивает подключение уровня 3 между сетью и центрами обработки данных корпорации Майкрософт. Цепи используют объявления маршрутов протокола BGP для интерфейсных серверов Office 365. С точки зрения локальных устройств, когда необходимо выбрать правильный путь TCP/IP к Office 365, Azure ExpressRoute является альтернативой Интернет-адресу.
   

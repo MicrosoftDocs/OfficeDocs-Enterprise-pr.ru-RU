@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
-description: После развертывания Microsoft 365 вы можете поддерживать подключение к Microsoft 365 с помощью некоторых средств и приемов, приведенных ниже. Вы хотите ознакомиться с официальным набором требований к работоспособности и непрерывности обслуживания, а также рекомендациям по использованию Microsoft 365 в медленной сети.
-ms.openlocfilehash: aa47ff76f70e48285c6ca5f21ffdf30f1db52521
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: В этой статье вы узнаете о средствах и методах, которые можно использовать для отслеживания и обслуживания подключения к Microsoft 365.
+ms.openlocfilehash: 791352910cf82bf4d43543166cb4b1e974f9a238
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571012"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606865"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Мониторинг подключения к Microsoft 365
 
@@ -41,7 +43,7 @@ ms.locfileid: "46571012"
 
 Вы можете быстро вернуться сюда с помощью этой короткой ссылки: [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
-## <a name="see-also"></a>См. также
+## <a name="related-topics"></a>Связанные статьи
 
 [Настройка служб и приложений Microsoft 365 Enterprise](configure-services-and-applications.md)
   

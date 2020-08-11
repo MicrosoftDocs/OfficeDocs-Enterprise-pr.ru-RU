@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
-description: 'Сводка: Справка по PowerShell для Microsoft 365 от этих мест проведения сообщества.'
-ms.openlocfilehash: 8f07fa685f6abe4edb5d7a54a0f9584eecd0f3f7
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: В этой статье приводятся ресурсы сообщества для подключения к одноранговым узлам и получения справки по PowerShell для Microsoft 365.
+ms.openlocfilehash: 4166e47bc974f9109d23bbe3732f0c5da3d41960
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230405"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606455"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>Ресурсы сообщества Microsoft 365 для PowerShell
 

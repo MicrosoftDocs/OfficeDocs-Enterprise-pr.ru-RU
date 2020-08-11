@@ -13,24 +13,26 @@ ms.collection:
 - M365-identity-device-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
-description: Подписка на Microsoft 365 включает в себя подписку на Azure AD. Интегрируйте Microsoft 365 с Azure AD, если вы хотите выполнить синхронизацию паролей или единый вход с локальной средой.
-ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
-ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
+description: Интегрируйте Microsoft 365 с Azure AD, если вы хотите выполнить синхронизацию паролей или единый вход с локальной средой.
+ms.openlocfilehash: 64fcf25c75e636bebf78e9367f4cc68b367548f7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44842061"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606105"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Интеграция с Microsoft Azure с помощью Microsoft 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Microsoft 365 использует Azure Active Directory (Azure AD) для управления удостоверениями пользователей в фоновом режиме. Подписка на Microsoft 365 включает бесплатную подписку на Azure AD, чтобы вы могли интегрировать Microsoft 365 с Azure AD, если вы хотите синхронизировать пароли или настроить единый вход в локальной среде. Кроме того, вы можете приобрести дополнительные функции, чтобы лучше управлять учетными записями.
   

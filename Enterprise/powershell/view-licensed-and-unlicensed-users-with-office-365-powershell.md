@@ -17,18 +17,19 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 - PowerShell
+- seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: В этой статье объясняется, как использовать PowerShell для просмотра лицензированных и нелицензированных учетных записей пользователей Microsoft 365.
-ms.openlocfilehash: 02b1f76bab0e64e4e7e72f5e5556f5047d956d11
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 470c4dff2b425ba570926002c1efd68310e37d71
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230255"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605291"
 ---
 # <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Просмотр лицензированных и нелицензированных пользователей Microsoft 365 с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Для учетных записей пользователей в организации Microsoft 365 могут быть назначены не все доступные лицензии, доступные в Организации, а также некоторые из них. Вы можете использовать PowerShell для Microsoft 365 для быстрого поиска лицензированных и нелицензированных пользователей в Организации.
 
@@ -80,7 +81,7 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="see-also"></a>См. также
 
-[Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей Microsoft 365, лицензиями и группами с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   

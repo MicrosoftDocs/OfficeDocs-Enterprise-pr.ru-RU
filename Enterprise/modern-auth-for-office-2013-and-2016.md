@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -22,17 +24,17 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: Узнайте, как Microsoft 365 современная проверка подлинности работает по-разному для клиентских приложений Office 2013 и 2016.
-ms.openlocfilehash: 469dd665a3f427db3e2ae3731945e53b900f05e9
-ms.sourcegitcommit: 92bbb6d005d005952a9e2055661fcdccfdd0567b
+description: Узнайте, как Microsoft 365 современные функции проверки подлинности работают по-разному для клиентских приложений Office 2013 и 2016.
+ms.openlocfilehash: 20a6f495ac7e8bd6b2a918ca05b9edd074c7d61c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533494"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606915"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Как работает современная проверка подлинности для Office 2013, Office 2016 и клиентских приложений Office 2019
 
-*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Прочитайте эту статью, чтобы узнать, как клиентские приложения Office 2013, Office 2016 и Office 2019 используют современные функции проверки подлинности на основе конфигурации проверки подлинности в клиенте Microsoft 365 для Exchange Online, SharePoint Online и Skype для бизнеса Online.
 
@@ -58,7 +60,7 @@ ms.locfileid: "46533494"
 
 Чтобы включить современную проверку подлинности для устройства с Windows (например, ноутбука или планшета), на котором установлен Microsoft Office 2013, необходимо настроить указанные ниже разделы реестра. Это нужно сделать для каждого устройства, на котором вы хотите включить современную проверку подлинности.
   
-|**Раздел реестра**|**Тип**|**Значение** |
+|**Раздел реестра**|**Type**|**Значение** |
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1,1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1,1 |

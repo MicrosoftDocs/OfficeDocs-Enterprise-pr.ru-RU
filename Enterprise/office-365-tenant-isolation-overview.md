@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Сводка о том, как корпорация Майкрософт обеспечивает изоляцию клиентов для Microsoft 365.
-ms.openlocfilehash: 891fdb9bebb500c40a9658d170942ca396facfd1
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье представлен обзор того, как корпорация Майкрософт обеспечивает изоляцию клиентов в облачных службах, таких как Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 531b5023af49c776cccfef06dee5bff4b303beff
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998648"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606545"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Изоляция клиентов в Microsoft 365
 
@@ -30,8 +31,8 @@ ms.locfileid: "44998648"
 
 Две основные цели обслуживания клиентов в среде с несколькими клиентами:
 
-1.  Предотвращение утечки или несанкционированного доступа к контенту клиентов в разных клиентах; с
-2.  Предотвращение неблагоприятного влияния действий одного клиента на службу для другого клиента
+1.    Предотвращение утечки или несанкционированного доступа к контенту клиентов в разных клиентах; с
+2.    Предотвращение неблагоприятного влияния действий одного клиента на службу для другого клиента
 
 В Microsoft 365 реализовано несколько форм защиты, чтобы предотвратить появление пользователями служб или приложений Microsoft 365, а также получение несанкционированного доступа к сведениям о других клиентах или самой системе Microsoft 365, в том числе:
 
@@ -46,7 +47,7 @@ ms.locfileid: "44998648"
 
 - [Изоляция и управление доступом в Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
 - [Изоляция клиента в Office Graph и Delve](office-365-isolation-in-graph-and-delve.md)
-- [Изоляция клиента в Microsoft 365 Search](office-365-isolation-in-office-365-search.md)
+- [Изоляция клиента в поиске Microsoft 365](office-365-isolation-in-office-365-search.md)
 - [Изоляция клиента в Office 365 Видео](office-365-isolation-in-office-365-video.md)
 - [Ограничения ресурсов](office-365-resource-limits.md)
 - [Мониторинг и тестирование границ клиента](office-365-monitoring-and-testing.md)

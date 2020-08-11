@@ -1,5 +1,5 @@
 ---
-title: Выполнение миграции IMAP в Microsoft 365 с помощью PowerShell
+title: Миграция IMAP в Microsoft 365 с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
-description: 'Сводка: в этой статье рассказывается, как использовать Windows PowerShell для миграции IMAP в Microsoft 365.'
-ms.openlocfilehash: fa53fd1829121bb697277805e4f07d25ec2179b9
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Узнайте, как использовать PowerShell для миграции протокола IMAP в Microsoft 365.
+ms.openlocfilehash: 0254f35791ac83aed1afff293c98fcd654a27480
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229775"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606205"
 ---
-# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Выполнение миграции IMAP в Microsoft 365 с помощью PowerShell
+# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Миграция IMAP в Microsoft 365 с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 В рамках процесса развертывания Microsoft 365 вы можете перенести содержимое почтовых ящиков пользователей из службы электронной почты IMAP в Microsoft 365. В этой статье рассказывается о задачах миграции IMAP по электронной почте с помощью Exchange Online PowerShell. 
   

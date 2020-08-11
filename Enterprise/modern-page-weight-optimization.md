@@ -14,17 +14,19 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Узнайте, как оптимизировать вес страниц современных сайтов SharePoint Online.
-ms.openlocfilehash: d571508648973a73efe1367c4d09b8cc6c8eb522
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: Узнайте, как использовать средство диагностики страниц для оптимизации веса страниц на современных страницах SharePoint Online.
+ms.openlocfilehash: 0a658217b89dd50ce1c6e58024d4d78d19998612
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571112"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606895"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Оптимизация веса страниц современных сайтов SharePoint Online
 

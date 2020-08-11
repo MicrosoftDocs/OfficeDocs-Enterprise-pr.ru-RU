@@ -9,20 +9,22 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection: M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: Сведения о регистрации и администрировании интегрированных приложений Office 365 в Azure AD
-ms.openlocfilehash: 0cb3ac73230e0ddce62366af9019a12ea2b04d09
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Узнайте, как зарегистрировать и администрировать интегрированные приложения Office 365 в Azure AD, допуская авторизацию для приложений на уровне глобального администратора.
+ms.openlocfilehash: 66b552848e53b8a93ccffdef11e17c897f30e44f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998094"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606365"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>Интегрированные приложения и Azure AD для администраторов Microsoft 365
 

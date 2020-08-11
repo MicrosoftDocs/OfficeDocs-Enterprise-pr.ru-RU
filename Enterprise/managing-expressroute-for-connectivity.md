@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
-description: ExpressRoute для Office 365 предлагает альтернативный путь маршрутизации для доступа к нескольким службам Office 365, не требуя всего трафика для выхода в Интернет. Несмотря на то, что подключение к Интернету для Office 365 по-прежнему требуется, конкретные маршруты, объявляемые корпорацией Майкрософт по протоколу BGP для вашей сети, составляют предпочитаемую цепь ExpressRoute, если в сети нет других конфигураций. Три общих области, которые можно настроить для управления маршрутизацией, включают фильтрацию по префиксам, безопасность и соответствие требованиям.
-ms.openlocfilehash: 4793cd5c70407e7dc58a5a8f6f0eda30b3f23474
-ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
+description: Узнайте, как управлять ExpressRoute для Office 365, включая общие области для настройки фильтрации, безопасности и соответствия префиксов.
+ms.openlocfilehash: f62731b9f2fcfcb47504d2f73e9b8874980c4c7e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43798800"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606335"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Управление подключением к Office 365 через ExpressRoute
 
@@ -102,7 +104,7 @@ ExpressRoute для Office 365 предлагает альтернативный
   
 Вы можете быстро вернуться сюда с помощью этой короткой ссылки: [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Сети доставки содержимого](content-delivery-networks.md)
   

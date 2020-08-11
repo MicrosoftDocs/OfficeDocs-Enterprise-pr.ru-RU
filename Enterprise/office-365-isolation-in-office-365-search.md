@@ -1,5 +1,5 @@
 ---
-title: Изоляция клиента в Microsoft 365 Search
+title: Изоляция клиента в поиске Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Сводка. объяснение изоляции клиентов в Microsoft 365 Search.
-ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье рассказывается о том, как изоляция клиентов работает для разделения данных клиента в Microsoft 365 Search.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b887088799c83422a6bc5797a76dde73a58e2f29
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998259"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605591"
 ---
-# <a name="tenant-isolation-in-microsoft-365-search"></a>Изоляция клиента в Microsoft 365 Search
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Изоляция клиента в поиске Microsoft 365
 
 Служба поиска SharePoint Online использует модель разделения клиентов, которая балансирует эффективность общих структур данных с защитой от утечки данных между клиентами. С помощью этой модели мы не будем предотвращать функции поиска:
 

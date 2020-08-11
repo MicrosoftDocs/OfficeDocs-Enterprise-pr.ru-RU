@@ -1,5 +1,5 @@
 ---
-title: Справочники по командлетам для служб Microsoft 365
+title: Сведения о командлетах для служб Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Сводка. Поиск разделов справки по командлетам PowerShell для Microsoft 365 для Azure Active Directory, Exchange Online, SharePoint Online, Skype для бизнеса Online и соответствия требованиям безопасности &.
-ms.openlocfilehash: 71259e49fd70c4f3f7d7ebb7332fe75955797335
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Найдите разделы справки по командлетам Microsoft 365 PowerShell для Azure AD, Exchange Online, SharePoint Online, Skype для бизнеса Online и соответствия требованиям безопасности &.
+ms.openlocfilehash: 92423c9bd1f6a977c41d9077ab30122589ae374f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230865"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606025"
 ---
-# <a name="cmdlet-references-for-microsoft-365-services"></a>Справочники по командлетам для служб Microsoft 365
+# <a name="cmdlet-references-for-microsoft-365-services"></a>Сведения о командлетах для служб Microsoft 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Разделы справки по командлетам для различных служб Microsoft 365 предоставляют подробные сведения и инструкции по использованию каждого командлета. Кроме того, каждая служба Microsoft 365 с поддержкой PowerShell требует различных инструкций по подключению.
   

@@ -24,17 +24,19 @@ search.appverid:
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 f1.keywords:
 - NOCSH
-description: В SharePoint Server 2007 достигнут конец поддержки и время обновления. Используйте эту статью, чтобы помочь вам создать свой план.
-ms.openlocfilehash: e319438e2d760c391414f699de5967738d8c6b81
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom:
+- seo-marvel-apr2020
+description: В этой статье содержатся сведения для пользователей, использующих SharePoint Server 2007, которые помогут им спланировать обновление.
+ms.openlocfilehash: 9dd659936bd15e0052ce9f6ba6830238aa2c5180
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774994"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603691"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Варианты миграции SharePoint 2007, которые следует учитывать
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Microsoft SharePoint 2007 и SharePoint Server 2007 достигают конца поддержки. Время на обновление! В этой статье приводятся сведения о параметрах миграции.
   

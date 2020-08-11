@@ -13,16 +13,18 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
-description: В некоторых корпоративных сетях ограничиваются доступ к обычным интернет-адресам, транзитное соединение или обработка сетевого трафика. Чтобы обеспечить компьютерам в подобной сети доступ к Office 365, сетевым администраторам и администраторам прокси-серверов нужно вести список конечных точек Office 365, в котором указаны полные доменные имена, URL- и IP-адреса. Эти конечные точки необходимо добавить в правила прямой маршрутизации, обхода прокси-сервера и/или брандмауэра, а также в PAC-файлы, чтобы сетевые запросы доходили до Office 365.
-ms.openlocfilehash: 35f07538bd55386dc245286822eab9e14e70a3cf
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Узнайте, как управлять конечными точками Office 365, чтобы они работали с корпоративной архитектурой сети Организации.
+ms.openlocfilehash: 336e1a0d92ee9844bbd9b020d03774473c1d738b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592163"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606325"
 ---
 # <a name="managing-office-365-endpoints"></a>Управление конечными точками Office 365
 

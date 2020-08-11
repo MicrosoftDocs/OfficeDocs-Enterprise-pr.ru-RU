@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: В этой статье описывается, как уменьшить время загрузки страниц SharePoint Online с помощью JavaScript, чтобы задержать загрузку изображений, а также подождать, пока не загрузится страница.
-ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: Сведения о том, как уменьшить время загрузки страниц SharePoint Online с помощью JavaScript, чтобы задержать загрузку изображений и несущественных JavaScript.
+ms.openlocfilehash: 72eabed2dd940bb07ece44bbc0dbc9d72e426a67
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009354"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605755"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Задержка при загрузке изображений и JavaScript-файлов в SharePoint Online
 
@@ -34,7 +36,7 @@ ms.locfileid: "44009354"
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Увеличение времени загрузки страниц путем задержки загрузки изображений в страницах SharePoint Online с помощью JavaScript
 
-Вы можете использовать JavaScript, чтобы запретить веб-браузеру получать изображения с предварительной отправкой. Это ускоряет обработку всего документа. Чтобы сделать это, удалите значение атрибута src из тега \<IMG\> и замените его на путь к файлу в атрибуте данных, например: Data — src. Например:
+Вы можете использовать JavaScript, чтобы запретить веб-браузеру получать изображения с предварительной отправкой. Это ускоряет обработку всего документа. Чтобы сделать это, удалите значение атрибута src из \<img\> тега и замените его на путь к файлу в атрибуте данных, например: Data — src. Например:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -86,7 +88,7 @@ $(window).on("scroll", function () {
 
 ```
 
-Для SharePoint Online необходимо подключить следующую функцию к событию прокрутки в теге #s4-Workspace \<div.\> Это связано с тем, что события окон переопределяются, чтобы лента оставалась присоединенной к верхней части страницы.
+Для SharePoint Online необходимо подключить следующую функцию к событию прокрутки в теге #s4-Workspace \<div\> . Это связано с тем, что события окон переопределяются, чтобы лента оставалась присоединенной к верхней части страницы.
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -95,15 +97,15 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-Сохраните текстовый файл в виде файла JavaScript с расширением JS, например delayLoadImages. js.
+Сохраните текстовый файл в виде файла JavaScript с расширением JS, например delayLoadImages.js.
   
-После того как вы закончите написание файла delayLoadImages. js, вы можете добавить его содержимое на главную страницу в SharePoint Online. Для этого добавьте ссылку на скрипт в заголовок главной страницы. Когда она находится на главной странице, JavaScript будет применен ко всем страницам на сайте SharePoint Online, которые используют этот макет эталонной страницы. Кроме того, если вы планируете использовать его только на одной странице сайта, используйте веб-часть редактора скриптов, чтобы внедрить JavaScript на страницу. Дополнительные сведения приведены в следующих статьях:
+После того как вы закончите запись delayLoadImages.js, вы можете добавить содержимое файла на главную страницу в SharePoint Online. Для этого добавьте ссылку на скрипт в заголовок главной страницы. Когда она находится на главной странице, JavaScript будет применен ко всем страницам на сайте SharePoint Online, которые используют этот макет эталонной страницы. Кроме того, если вы планируете использовать его только на одной странице сайта, используйте веб-часть редактора скриптов, чтобы внедрить JavaScript на страницу. Дополнительные сведения приведены в следующих статьях:
   
 - [Инструкции. Применение эталонной страницы к сайту в SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
 
 - [Инструкции. Создание макета страницы в SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
 
-### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Пример: ссылка на файл JavaScript delayLoadImages. js из эталонной страницы в SharePoint Online
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Пример: ссылка на файл JavaScript delayLoadImages.js из эталонной страницы в SharePoint Online
   
 Чтобы это работало, вам также потребуется ссылаться на jQuery на главной странице. В следующем примере показана загрузка на начальной странице, если загружено только одно изображение, но на странице есть несколько дополнительных.
   

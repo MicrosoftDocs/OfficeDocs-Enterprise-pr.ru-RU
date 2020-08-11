@@ -13,23 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
-description: Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365.
-ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Узнайте, как использовать Azure ExpressRoute с Office 365 и запланировать проект реализации сети, если вы развертываете его.
+ms.openlocfilehash: 3d74d8b9274aebd92710f859a8c39aed12fe8da2
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230035"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605795"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute для Office 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Узнайте, как использовать Azure ExpressRoute с Office 365 и как спланировать проект реализации сети, который будет необходим при развертывании Azure ExpressRoute для использования с Office 365. Службы инфраструктуры и платформ, работающие в Azure, часто получают преимущества, устраняя сетевую архитектуру и вопросы производительности. В таких случаях рекомендуется использовать ExpressRoute для Azure. Программное обеспечение в виде таких служб, как Office 365 и Dynamics 365, были созданы для надежного и надежного доступа через Интернет. Вы можете прочитать сведения о производительности и безопасности Интернета, а также о том, как вы можете использовать Azure ExpressRoute для Office 365 в статье [Оценка сетевого подключения office 365](assessing-network-connectivity.md).
 

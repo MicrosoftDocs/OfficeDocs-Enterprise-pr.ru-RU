@@ -11,23 +11,23 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: Сводка. Используйте PowerShell для Microsoft 365, чтобы назначить параметры связи для отдельных пользователей с политиками Skype для бизнеса Online.
-ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: a5850c24f991161ec1de817d5b3f5037e9526767
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229847"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606465"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Назначение политик Skype для бизнеса Online для отдельных пользователей с помощью PowerShell для Microsoft 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Использование PowerShell для Microsoft 365 является эффективным способом назначения параметров связи для отдельных пользователей с политиками Skype для бизнеса Online.
   
-## <a name="before-you-begin"></a>Перед началом работы
+## <a name="prepare-to-run-the-powershell-commands"></a>Подготовка к запуску команд PowerShell
 
 Чтобы получить настройки для выполнения команд, воспользуйтесь приведенными ниже инструкциями (пропустите выполненные ранее шаги).
   

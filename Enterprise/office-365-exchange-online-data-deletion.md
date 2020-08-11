@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Как мягкое и жесткое удаление данных обрабатывается в Exchange Online.
-ms.openlocfilehash: 96d8676ad35bf3cc7ec2b21bdd24650ef90bb1a0
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Сведения о том, как мягкое и жесткое удаление данных для почтовых ящиков и элементов в почтовых ящиках обрабатывается в Exchange Online.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8d7e96bb6bdb46cc81be6a684cb0f3cc1db354d9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998323"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606585"
 ---
 # <a name="exchange-online-data-deletion-in-microsoft-365"></a>Удаление данных Exchange Online в Microsoft 365
 

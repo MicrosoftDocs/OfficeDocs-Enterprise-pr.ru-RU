@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Сводка. как работают изоляция и управление доступом в Azure Active Directory.
-ms.openlocfilehash: fe242acb5d14f5c90d6e646140b50f5f96c7a331
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье рассказывается о том, как работа по изоляции и управлению доступом позволяет хранить данные для нескольких клиентов, изолированных друг от друга в Azure Active Directory.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 98b18e57374132530e8b4c70a6becde01983dc2b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998719"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605611"
 ---
 # <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Изоляция и управление доступом в Microsoft 365 в Azure Active Directory
 

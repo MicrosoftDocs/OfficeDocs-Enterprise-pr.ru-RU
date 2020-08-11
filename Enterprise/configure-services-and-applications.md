@@ -17,13 +17,14 @@ search.appverid:
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 f1.keywords:
 - NOCSH
-description: Настройка служб и приложений Microsoft 365 Enterprise
-ms.openlocfilehash: 915d4baa18705e813f6d11a35dff6208c26ab0d3
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: Настройте Microsoft 365 Enterprise Services и приложения, такие как SharePoint, Exchange и Skype для бизнеса.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 4ce56110cb11a6b13d5cd384d813f449156f45fc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735957"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606065"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>Настройка служб и приложений Microsoft 365 Enterprise
 

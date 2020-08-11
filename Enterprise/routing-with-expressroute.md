@@ -13,23 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
-description: Чтобы правильно разобрал трафик маршрутизации для Office 365 с помощью Azure ExpressRoute, вам потребуются сведения об основных требованиях к маршрутизации ExpressRoute, а также о доменах ExpressRoute и доменах маршрутизации. В этих статьях используются основные принципы использования ExpressRoute, на которые полагаются клиенты Office 365.
-ms.openlocfilehash: c9d81e0823b63750a456f559855bb130a2e87b07
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье рассказывается о требованиях к маршрутизации Azure ExpressRoute, цепям и доменах маршрутизации для использования с Office 365.
+ms.openlocfilehash: c8063d570744b3a5fd42328ed3940fe7477c25c9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998198"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605231"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Маршрутизация с использованием ExpressRoute для Office 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Чтобы правильно разобрал трафик маршрутизации для Office 365 с помощью Azure ExpressRoute, вам потребуются сведения об основных [требованиях к маршрутизации expressroute](https://azure.microsoft.com/documentation/articles/expressroute-routing/) , а также о [доменах expressroute и доменах маршрутизации](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/). В этих статьях используются основные принципы использования ExpressRoute, на которые полагаются клиенты Office 365.
   

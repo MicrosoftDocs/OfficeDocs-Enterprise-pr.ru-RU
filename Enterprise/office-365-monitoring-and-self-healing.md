@@ -14,13 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Сведения о функциях мониторинга и самостоятельной восстановления Microsoft 365.
-ms.openlocfilehash: 88338f722e8563c3db6573ac6ab64252cb98c450
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+description: В этой статье вы узнаете о возможностях мониторинга и самостоятельной восстановления Microsoft 365.
+ms.openlocfilehash: 1fa42e5e4ac20462b0d32db28f59c1c51b8a1f35
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998766"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605531"
 ---
 # <a name="microsoft-365-monitoring-and-self-healing"></a>Мониторинг и самовосстановление Microsoft 365
 

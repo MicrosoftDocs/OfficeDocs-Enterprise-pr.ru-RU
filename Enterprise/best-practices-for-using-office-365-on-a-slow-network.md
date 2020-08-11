@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
-description: Было бы неплохо, если ваше подключение к Интернету всегда было быстрым и не отключено? Возможно, этот день будет. Но в то же время существуют практические вещи, которые можно использовать для работы с сетью балки и по-прежнему делать повседневную работу.
-ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom: seo-marvel-apr2020
+description: В этой статье описываются рекомендации, которые можно использовать для работы с Office 365 в медленных сетях.
+ms.openlocfilehash: b4b81826dfca4c5962cc6aef026c3878e3b52304
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844960"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605785"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Рекомендации по использованию Office 365 в медленной сети
 

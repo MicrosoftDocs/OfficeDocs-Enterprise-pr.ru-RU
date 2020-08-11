@@ -13,16 +13,18 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
-description: Сведения о рекомендациях по производительности современных сайтов в SharePoint Online.
-ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Сведения о рекомендациях по производительности современных сайтов в SharePoint Online, например об ограничении вызовов SharePoint и внешних конечных точек.
+ms.openlocfilehash: 1ec6dfb4b32a8915528adce168badf3645c26e48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844790"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606885"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>Пределы сайтов современных порталов SharePoint Online
 
@@ -46,7 +48,7 @@ ms.locfileid: "41844790"
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>Рекомендации и требования к современным сайтам портала
 
-|**Ограничение**|**Максимальное рекомендуемое значение**|**Примечания**|
+|**Limit**|**Максимальное рекомендуемое значение**|**Примечания**|
 |:-----|:-----|:-----|:-----|
 |Элементы страниц и новостей  <br/> |5000 для каждого сайта  <br/> |Рекомендуем ограничить количество страниц и элементов новостей на современном сайте портала до 5 000.  <br/> |
 |Веб-части на странице  <br/> |20 на странице  <br/> |Рекомендуется использовать не более 20 веб-частей на странице, включая как встроенные, так и настраиваемые веб-части. <br/> Более подробную информацию можно узнать [в статье Оптимизация производительности веб-частей на современных страницах сайта SharePoint Online](modern-web-part-optimization.md).  <br/> |
@@ -59,13 +61,13 @@ ms.locfileid: "41844790"
 |Вызовы службы UPA  <br/> |1 на пользователя в час  <br/> |Мы не рекомендуем делать _запросы_ на звонки в службу UPA (приложение профилей пользователей). [API Microsoft Graph](https://docs.microsoft.com/graph/call-api) и [PageContext](https://docs.microsoft.com/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) можно использовать для запроса сведений о пользователе.  <br/> Если требуется вызов службы UPA, при необходимости сделайте один вызов, а затем кэшировать сведения для повторного использования в том же сеансе. |
 |Звонки в службу таксономии  <br/> |5 на пользователя в час  <br/> |В службу таксономии рекомендуется не принимать звонки _по запросу_ . Если необходимы вызовы службы таксономии, кэшировать сведения для повторного использования в одном сеансе. <br/> Дополнительную информацию можно узнать [в статье Оптимизация вызовов страниц на страницах веб-сайта на современном и классическом сайте SharePoint Online](modern-page-call-optimization.md). <br/> |
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Создание работоспособного портала SharePoint](https://docs.microsoft.com/sharepoint/portal-health)
 
 [Настройка производительности SharePoint Online](tune-sharepoint-online-performance.md)
 
-[Настройка производительности Office 365](tune-office-365-performance.md)
+[Настройка производительности Office 365](tune-office-365-performance.md)
 
 [Ограничения SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 

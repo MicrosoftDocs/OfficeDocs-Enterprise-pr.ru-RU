@@ -11,13 +11,14 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Узнайте, как добавить или удалить администратора геообъектов в Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 13b730de6b318ddb3a4cf3a084d4b59e56a82dbf
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Требуется настроить отдельных администраторов для каждого географического местоположения? Узнайте, как добавить или удалить администратора геообъектов в Microsoft 365 Multi-Geo.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b69ff352ae0e5ceb55200e0ed034e278808cdc9f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433610"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605825"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Добавление и удаление администратора геообъектов в Microsoft 365 Multi-Geo.
 
@@ -55,7 +56,7 @@ ms.locfileid: "45433610"
 
 Чтобы удалить группу с помощью ObjectID, выполните команду `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
 
-## <a name="see-also"></a>См. также
+## <a name="related-topics"></a>Связанные статьи
 
 [Add-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 

@@ -17,18 +17,19 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 - LIL_Placement
+- seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: Используйте PowerShell, чтобы отключить доступ к службам Microsoft 365 для пользователей.
-ms.openlocfilehash: 7820bc44837af07975b2eeaeddf2cf20a9230fae
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+description: В этой статье рассказывается, как использовать PowerShell для отключения доступа к службам Microsoft 365 для пользователей.
+ms.openlocfilehash: f546014b83e0910e38817e0b7ef84d67f1b88614
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502644"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605975"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Отключение доступа к службам Microsoft 365 с помощью PowerShell
 
-*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Когда учетной записи Microsoft 365 назначена лицензия из плана лицензирования, службы Microsoft 365 предоставляются пользователю из этой лицензии. Тем не менее, вы можете управлять службами Microsoft 365, к которым у пользователя есть доступ. Например, несмотря на то, что лицензия разрешает доступ к службе SharePoint Online, вы можете отключить доступ к ней. С помощью PowerShell можно отключить доступ к любому числу служб для определенного плана лицензирования:
 
@@ -171,9 +172,9 @@ $LO = New-MsolLicenseOptions -AccountSkuId $acctSKU
 Set-MsolUserLicense -UserPrincipalName $userUPN -LicenseOptions $LO
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="related-topic"></a>Связанная тема
 
-[Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей Microsoft 365, лицензиями и группами с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   

@@ -14,17 +14,19 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Узнайте, как оптимизировать производительность веб-частей страниц современных сайтов SharePoint Online.
-ms.openlocfilehash: ffa4937f734a803b34af277fb697bc991f0d0d3c
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: Узнайте, как использовать диагностику страниц для оптимизации производительности веб-частей на современных страницах SharePoint Online.
+ms.openlocfilehash: 14ad6152ba039a33b599f5b9467daef7665b7178
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571022"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606875"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Оптимизация производительности веб-частей страниц современных сайтов SharePoint Online
 

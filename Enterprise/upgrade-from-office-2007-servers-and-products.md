@@ -22,17 +22,18 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Закончилась поддержка серверов Office 2007 и клиентских приложений, а пользовательские соглашения о поддержке недоступны. Используйте эту статью, чтобы начать планирование обновления сейчас.
-ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+description: В этой статье содержатся ресурсы, которые помогут вам выполнить обновление серверов и клиентов Office 2007, так как поддержка Office 2007 закончилась.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 21147ccd027ba0492ced6078f91932acc3bb958c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906232"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605875"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ресурсы, помогающие выполнить обновление серверов и клиентов Office 2007
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Если вы используете продукты и службы Office 2007, поддержка этих приложений закончилась. При планировании обновления это отличное время для перехода на Microsoft Cloud, начиная с Microsoft 365. Используйте эту статью в качестве отправной точки для просмотра вариантов и планирования обновления.
       
@@ -55,9 +56,9 @@ ms.locfileid: "44906232"
 
 Если вы используете продукты и приложения Office 2007 на домашней странице, ознакомьтесь с [этими сведениями](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
      
-## <a name="related-topics"></a>Связанные статьи
+## <a name="related-topics"></a>Статьи по теме
 
-[Видео: что такое Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Видео. Что такое Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Политика жизненного цикла поддержки Майкрософт](https://go.microsoft.com/fwlink/?linkid=865200)
 

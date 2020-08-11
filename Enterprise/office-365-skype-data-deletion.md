@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Пояснения об удалении данных в Skype для бизнеса.
-ms.openlocfilehash: 7c94c5d1ddfb5a8056e139d664627dd1e7bed0de
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье рассказывается об удалении данных в Skype для бизнеса, в том числе о том, какие типы контента не поддерживаются.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40ce2ca16367b0ca4b86ed839ca3ac9c6ddc04e4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997799"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606285"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Удаление данных в Skype для бизнеса в Office 365
 

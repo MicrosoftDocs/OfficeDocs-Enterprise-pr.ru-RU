@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Поддержка единого входа в клиентские приложения Microsoft 365.
-ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье рассказывается о том, какие платформы, клиенты и модули PowerShell поддерживают единый вход для Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d0f757c28695c46e6a960828914fff34c7fab5e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998517"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605651"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Поддержка клиентских приложений Microsoft 365 — единый вход
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Единый вход (SSO) обеспечивает безопасность и удобство при входе пользователей в приложения в Azure Active Directory (Azure AD). При использовании единого входа пользователи могут войти в систему с одной учетной записью, чтобы получить доступ к устройствам, связанным с доменом, ресурсам компании, программному обеспечению и веб-приложениям.
 

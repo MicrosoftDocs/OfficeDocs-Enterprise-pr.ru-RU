@@ -17,14 +17,15 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Сводка: использование PowerShell для Microsoft 365 для управления пользователями, группами и сайтами SharePoint Online.'
-ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
-ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
+description: В этой статье рассказывается, как использовать PowerShell для Microsoft 365 для управления пользователями, группами и сайтами SharePoint Online.
+ms.openlocfilehash: 96e9040542ac9a3351cf8b8f3ab314910dc66a3b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "46542820"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605895"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Управление пользователями и группами SharePoint Online с помощью PowerShell
 
@@ -168,7 +169,7 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 Создайте CSV-файл с заголовками (столбцами), соответствующими параметрам скрипта Windows PowerShell. Такой список можно легко создать в Excel, а затем экспортировать в виде CSV-файла. Затем с помощью скрипта Windows PowerShell вы пройдете по всем записям (строкам) в CSV-файле, добавляя пользователей в группы и группы в сайты. 
 
-Для примера создадим CSV-файл, чтобы определить группу семейств сайтов, групп и разрешений. Затем мы создадим CSV-файл, чтобы заполнить группы пользователями. Наконец, мы создадим и выполним простой скрипт Windows PowerShell, который создает и заполняет группы.
+Например, создадим CSV-файл, чтобы определить группу семейств веб-сайтов, групп и разрешений. Затем мы создадим CSV-файл, чтобы заполнить группы пользователями. Наконец, мы создадим и выполним простой скрипт Windows PowerShell, который создает и заполняет группы.
 
 Первый CSV-файл добавляет одну или несколько групп в одно или несколько семейств сайтов. Он использует следующую структуру:
 
@@ -235,7 +236,7 @@ Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –Logi
 
 Сценарий импортирует содержимое CSV-файла и использует значения в столбцах для заполнения параметров команд **New-SPOSiteGroup** и **Add-супруг** . В нашем примере мы сохраняем это в папке theO365Admin на диске C, но вы можете сохранить ее там, где бы вы ни находились.
 
-Удалим множество пользователей из нескольких групп на различных сайтах с помощью этого же CSV-файла. Вот пример необходимой команды:
+Теперь удалим группу людей для нескольких групп на разных сайтах, используя один и тот же CSV-файл. Вот пример необходимой команды:
 
 ```powershell
 Import-Csv C:\O365Admin\Users.csv | ForEach {Remove-SPOUser -LoginName $_.LoginName -Site $_.Site -Group $_.Group}

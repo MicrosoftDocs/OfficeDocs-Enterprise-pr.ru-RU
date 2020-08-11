@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
-description: Здесь приведены ответы на общие вопросы о перемещении основных данных в новый географические центры обработки данных.
-ms.openlocfilehash: 2954d85b0094a8d0f74980fa4e0ee9cac504abbe
-ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
+description: Здесь вы найдете ответы на часто задаваемые вопросы о перемещении основных данных в новый географические центры Office 365 Datacenter.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: bd26296831ddb5aa0932d4106893e5a9adfb1d50
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44781044"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606045"
 ---
 # <a name="data-move-general-faq"></a>Ответы на общие вопросы о перемещении данных
 
@@ -138,7 +139,7 @@ ms.locfileid: "44781044"
 
 SharePoint Online и OneDrive для бизнеса не могут быть перенесены в новый узел центра обработки данных в рамках программы перемещения, но вы можете настроить общие ресурсы OneDrive для бизнеса, чтобы перейти на любой регион, который вы хотите с помощью программы с несколькими географическими программами.
 
-## <a name="related-topics"></a>Статьи по теме
+## <a name="related-topics"></a>Связанные статьи
 
 [Перемещение основных данных в новые жеос центра обработки данных Майкрософт 365](moving-data-to-new-datacenter-geos.md)
 

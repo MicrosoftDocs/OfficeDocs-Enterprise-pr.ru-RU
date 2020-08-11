@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Сводка: использование PowerShell для Microsoft 365 для создания отчетов, которые невозможно создать в центре администрирования Microsoft 365.'
-ms.openlocfilehash: 855f6529445b95dd949fb672f978a82f1afd6149
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: d2d03d6ac170fef95352a2aabf6cd27176202a1e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229805"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605321"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Создание отчетов для Microsoft 365 с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 В Центре администрирования Microsoft 365 доступно множество различных отчетов. Тем не менее иногда представленной в них информации бывает недостаточно. Если вам нужна оболочка PowerShell для Microsoft 365
   
@@ -59,7 +61,7 @@ ms.locfileid: "45229805"
     
   - [Отображение отчетов Exchange Online с помощью PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
-## <a name="see-also"></a>См. также
+## <a name="related-topics"></a>Связанные статьи
 
 [Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   
@@ -67,5 +69,5 @@ ms.locfileid: "45229805"
   
 [Управление SharePoint Online с помощью PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
   
-[Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей Microsoft 365, лицензиями и группами с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

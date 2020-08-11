@@ -17,18 +17,19 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: 'Сводка: Просмотр, список или отображение учетных записей пользователей Microsoft 365 различными способами с помощью PowerShell.'
-ms.openlocfilehash: a67457169328828b2b471dd5db6a53bab3bbacda
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Сведения о том, как просматривать, перечислить и отображать учетные записи пользователей Microsoft 365 различными способами с помощью PowerShell.
+ms.openlocfilehash: 56da6bfc7b467b6a85a4bd8c84abd4c2ae05913f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230205"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605300"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Просмотр учетных записей пользователей Microsoft 365 с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Несмотря на то, что вы можете использовать центр администрирования Microsoft 365 для просмотра учетных записей клиента Microsoft 365, вы также можете использовать PowerShell для Microsoft 365 и выполнять некоторые действия, которые не могут находиться в центре администрирования.
   
@@ -299,7 +300,7 @@ Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipa
 
 ## <a name="see-also"></a>См. также
 
-[Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей Microsoft 365, лицензиями и группами с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   

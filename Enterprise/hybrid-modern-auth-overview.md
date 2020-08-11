@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Современная проверка подлинности — это метод управления удостоверениями, обеспечивающий более надежную аутентификацию и авторизацию пользователей. Эта возможность доступна для гибридных развертываний локальных серверов Skype для бизнеса Server и Exchange Server, а также гибридных сред Skype для бизнеса с разделенным доменом. Эта статья связана с соответствующими документами о предварительных требованиях, настройке и отключении современной проверки подлинности, а также со сведениями о некоторых соответствующих клиентах (например, клиентах Outlook и Skype).
-ms.openlocfilehash: df755c8af161609c1c18dbe066662aaf1d410429
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.custom: seo-marvel-apr2020
+description: В этой статье вы узнаете о гибридной современной проверке подлинности и необходимых условиях для использования с локальными серверами Skype для бизнеса и Exchange.
+ms.openlocfilehash: 81ffdb7175673c81917e34c98a2d162529a0efc9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571052"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605735"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Общие сведения о гибридной современной проверке подлинности и предварительные требования для ее использования с локальными серверами Skype для бизнеса Server и Exchange Server
 

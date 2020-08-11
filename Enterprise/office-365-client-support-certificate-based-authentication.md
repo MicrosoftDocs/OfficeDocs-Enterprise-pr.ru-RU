@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Поддержка клиентских приложений Microsoft 365 для проверки подлинности на основе сертификатов.
-ms.openlocfilehash: a174e24c31e9ad2688ead557c29c3fecdac82a56
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье вы найдете сведения о поддержке клиентских приложений Microsoft 365 для проверки подлинности на основе сертификатов.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 759979ac7236ff4a6cf4c77ab52fff9b472b84ec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998601"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606675"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Поддержка клиентских приложений Microsoft 365 — проверка подлинности на основе сертификатов
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Проверка подлинности на основе сертификатов позволяет выполнять проверку подлинности в Azure Active Directory с помощью сертификата клиента на устройствах под управлением Windows, Android или iOS. Настройка этой функции исключает необходимость ввода имени пользователя и пароля в определенные приложения электронной почты и приложения Microsoft Office на мобильном устройстве.
 

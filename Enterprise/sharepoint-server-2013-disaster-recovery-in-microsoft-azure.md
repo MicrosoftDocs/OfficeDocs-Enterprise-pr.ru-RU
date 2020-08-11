@@ -13,15 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Deployment
+ms.custom:
+- Ent_Deployment
+- seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: Сводка. С помощью Azure вы можете создать среду аварийного восстановления для локальной фермы SharePoint. В этой статье описываются разработка и реализация этого решения.
-ms.openlocfilehash: 101d87b1a25d2b3ac8a7ae29832e52c805ecdc4c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье описано, как использовать Azure для создания среды аварийного восстановления для локальной фермы SharePoint.
+ms.openlocfilehash: b4ba92136139d723b26fe89b13f4e43c67f5c2fe
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998171"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606135"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Аварийное восстановление SharePoint Server 2013 в Microsoft Azure
 

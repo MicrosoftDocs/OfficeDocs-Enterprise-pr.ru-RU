@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: Сводка. Управление группами сайтов SharePoint Online с помощью PowerShell.
-ms.openlocfilehash: bee1f01ae78ec35d34a6aba0119bba3fbf7eeada
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: В этой статье описаны процедуры использования PowerShell для Microsoft 365 для управления группами сайтов SharePoint Online.
+ms.openlocfilehash: 5df2b57db4ac57aaf7905346d090ccde2d96a11c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230495"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605905"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Управление группами сайтов SharePoint Online с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Несмотря на то что вы можете использовать центр администрирования Microsoft 365, вы также можете использовать PowerShell для Microsoft 365, чтобы управлять своими группами сайтов SharePoint Online.
 
@@ -38,7 +39,7 @@ ms.locfileid: "45230495"
 
 ## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Просмотр SharePoint Online с помощью PowerShell для Microsoft 365
 
-В центре администрирования SharePoint Online есть несколько простых в использовании способов управления группами сайтов. Например, предположим, что вы хотите просмотреть группы и членов группы для `https://litwareinc.sharepoint.com/sites/finance` сайта. Вот как это сделать.
+В центре администрирования SharePoint Online есть несколько простых в использовании способов управления группами сайтов. Например, предположим, что вы хотите просмотреть группы и членов группы для `https://litwareinc.sharepoint.com/sites/finance` сайта. Вот что нужно сделать:
 
 1. В центре администрирования SharePoint щелкните **активные сайты**, а затем щелкните URL-адрес сайта.
 2. На странице сайт щелкните значок **Параметры** (в верхнем правом углу страницы), а затем выберите **разрешения для сайта**.

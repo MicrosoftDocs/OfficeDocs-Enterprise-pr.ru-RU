@@ -18,17 +18,18 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: Защитите глобальный администратор доступ к вашей подписке на Microsoft 365.
-ms.openlocfilehash: fdab22944902b554bc7fa295d189cfd2899933ef
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: В этой статье представлены сведения о защите доступа глобального администратора к вашей подписке на Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5184b39a48348b07f0a16ce3db2aeaccfe0b2d21
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229765"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606195"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Защита учетных записей глобального администратора Майкрософт 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Нарушения безопасности подписки на Microsoft 365, включая сбор информации и атаки фишинга, обычно выполняются путем взлома учетных данных глобального администратора Microsoft 365. Безопасность в облаке — это партнерство между вами и корпорацией Майкрософт:
   

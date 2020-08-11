@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Определяет и описывает неизменность данных в Microsoft 365.
-ms.openlocfilehash: 8648060f3036d2f3c81704cf53a817910607263a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Узнайте, как Microsoft 365 сохраняет данные в обнаруживаемой форме для удовлетворения нормативных требований, требований к внутреннему управлению и рискам судебного разбирательства.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dcc997cf157df08441bf1f6e825d0a5a468edbd1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998463"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605641"
 ---
-# <a name="immutability-in-microsoft-365"></a>Неизменность в Microsoft 365
+# <a name="immutability-in-microsoft-365"></a>Неизменность данных в Microsoft 365
 
 Для обеспечения соответствия нормативным требованиям, внутренним требованиям по управлению или рискам судебного разбирательства необходимо, чтобы организации сохраняли электронную почту и связанные данные в обнаруживаемой форме. Все данные в системе должны быть обнаруживаемыми и не могут быть удалены или изменены. Термин "неизменяемый" промышленным термином является "неизменным".
 

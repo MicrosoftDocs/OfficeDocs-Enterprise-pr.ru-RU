@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Существующим пользователям Office 365 необходимо отправить запрос перед крайним сроком их страны, чтобы получить данные о том, что данные о своих участниках служб Microsoft 365 перемещены на новый географическое расположение.
-ms.openlocfilehash: 06deead188f985f7cd8e410937ae612f3d509b7c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Существующие пользователи Office 365 должны отправить запрос перед крайним сроком их страны для того, чтобы их данные службы Microsoft 365 были перемещены на новые географические учетные данные.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 72b7c7d1f6b6b19ff5749787fd8ea6e789c3372a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433760"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606165"
 ---
 # <a name="how-to-request-your-data-move"></a>Как запросить перемещение данных
 

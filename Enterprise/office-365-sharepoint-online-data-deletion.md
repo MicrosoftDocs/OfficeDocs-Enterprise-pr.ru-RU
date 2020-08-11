@@ -15,13 +15,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: Пояснения об удалении данных в SharePoint Online.
-ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Сведения о том, как удаление данных работает в SharePoint Online, например, место хранения удаленного контента и продолжительность.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 424cfcc1bcad53ff3e12278367614d048043e4bb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997819"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606295"
 ---
 # <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Удаление данных SharePoint Online в Microsoft 365
 

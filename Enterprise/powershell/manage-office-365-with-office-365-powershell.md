@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: 'Сводка: в этой статье рассказывается, как использовать PowerShell для управления пользователями и лицензиями Microsoft 365, Skype для бизнеса Online, SharePoint Online, Exchange Online и центром безопасности & соответствия требованиям.'
-ms.openlocfilehash: 741ec15a78db9393e11ba6d06720457e20741581
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Узнайте, как управлять пользователями и лицензиями Microsoft 365, а также приложений Microsoft 365 с помощью PowerShell.
+ms.openlocfilehash: ed20ec5bbe05ab0be382b87c04ba2dbc9428b4cc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230515"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605935"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Управление Microsoft 365 с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 PowerShell для Microsoft 365 — это мощное средство управления, которое дополняет центр администрирования Microsoft 365. Например, вы можете использовать автоматизацию PowerShell для более быстрого управления несколькими учетными записями и лицензиями пользователей и создания отчетов. Узнайте, как использовать PowerShell для пользователей и лицензий Microsoft 365, Skype для бизнеса Online, SharePoint Online, Exchange Online и центра безопасности & соответствия требованиям.
   

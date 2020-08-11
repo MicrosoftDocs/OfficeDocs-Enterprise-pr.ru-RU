@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: Сводка. в этих статьях приведены сведения о конечных точках Интернета различных облаков Microsoft 365.
-ms.openlocfilehash: 8fe95915f687b38a86fd13fb823a0db39637c47d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Для конечных IP-адресов и URL-адресов для трафика Microsoft 365 используйте этот список статей для конечных точек Интернета различных облаков Майкрософт 365.
+ms.openlocfilehash: 1ef9d3a97beb14a1d51827d145f6fdc644c49f3c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592203"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606625"
 ---
 # <a name="microsoft-365-endpoints"></a>Конечные точки Microsoft 365
 

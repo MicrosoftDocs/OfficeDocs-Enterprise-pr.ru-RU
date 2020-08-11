@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Сведения о том, как корпорация Майкрософт защищает облачные службы от атак типа "отказ в обслуживании" (DoS).
-ms.openlocfilehash: a8374e46c9b561afce77545293b9bae3dd42ed64
-ms.sourcegitcommit: 72217e86b0da7ba13407aefe270200449c352548
+description: В этой статье рассказывается о том, как корпорация Майкрософт защищает облачные службы от атак типа "отказ в обслуживании" (DoS).
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1eb4f7544d978cdbc1e3673bd1badefde7bc3dd6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529092"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606645"
 ---
 # <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>Защита облачных служб Microsoft 365 от атак типа "отказ в обслуживании"
 

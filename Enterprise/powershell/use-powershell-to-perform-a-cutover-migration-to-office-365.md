@@ -1,5 +1,5 @@
 ---
-title: Использование PowerShell для выполнения прямой миграции в Microsoft 365
+title: Прямая миграция в Microsoft 365 с помощью PowerShell
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
@@ -12,19 +12,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: 'Сводка: в этой статье рассказывается, как использовать Windows PowerShell для выполнения прямой миграции в Microsoft 365.'
-ms.openlocfilehash: 203c041e0bd5fe58d697d074e94b749726bb22bf
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Узнайте, как использовать PowerShell для перемещения содержимого из исходной почтовой системы сразу, выполнив прямой миграцию в Microsoft 365.
+ms.openlocfilehash: fde0795b767f908fb0d1dcc5ce17a0bb50235d8e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229855"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606225"
 ---
-# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Использование PowerShell для выполнения прямой миграции в Microsoft 365
+# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Прямая миграция в Microsoft 365 с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Вы можете перенести содержимое почтовых ящиков пользователей из исходной системы электронной почты в Microsoft 365, используя прямой миграцию. В этой статье описаны задачи, которые выполняются при прямой миграции электронной почты с помощью Exchange Online PowerShell. 
   
@@ -85,7 +85,7 @@ ms.locfileid: "45229855"
     
   - Администратор миграции должен быть членом группы **Администраторы домена** в службе каталогов Active Directory локальной организации.
     
-    или
+    Или
     
   - Администратор миграции должен иметь разрешение **FullAccess** для всех локальных почтовых ящиков.
     

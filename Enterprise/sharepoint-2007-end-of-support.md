@@ -15,6 +15,7 @@ ms.custom:
 - globalemailconfig
 - configssc
 - AppDefToBDC
+- seo-marvel-apr2020
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
@@ -35,17 +36,17 @@ search.appverid:
 - BSA160
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
-description: 10 октября 2017 г. поддержка закончилась для SharePoint Server 2007. В этой статье рассказывается о вариантах обновления, устранении неполадок, рекомендациях, требованиях к системе, действиях по обновлению и о том, как получить помощь от партнеров Майкрософт.
-ms.openlocfilehash: 561619559fd43131518a0032d3b28dc556f2d8b0
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 10 октября 2017 г. поддержка закончилась для SharePoint Server 2007. В этой статье рассказывается о возможностях обновления, миграции и поддержки.
+ms.openlocfilehash: f1473e101d33b0e58ffd300d61ed92cc19c0a9f4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996533"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603721"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки SharePoint Server 2007;
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 **10 октября 2017**г. Microsoft Office SharePoint Server 2007 достиг конца поддержки. Если вы еще не начали переход с SharePoint Server 2007 на Microsoft 365 или более новую версию SharePoint Server, теперь пришло время начать планирование. В этой статье описываются ресурсы, которые помогут пользователям перенести данные в SharePoint Online или обновить локальный сервер SharePoint Server. 
   
@@ -72,7 +73,7 @@ ms.locfileid: "44996533"
 
 Ваша первая остановка должна быть [сайтом жизненного цикла продукта](https://go.microsoft.com/fwlink/?linkid=843148). Если у вас есть локальный продукт корпорации Майкрософт, который является задолжением по срокам хранения, следует проверить, что срок его действия не превышает даты, а также что-либо, как и в случае необходимости миграции, можно запланировать обновление или миграцию. Выбирая следующий шаг, вы можете понять, что было бы достаточно хорошим, лучше и лучше, когда дело доходит до компонентов продукта. Пример:
   
-|**Хорошо**|**Вариант**|**Лучший**|
+|**Good**|**Вариант**|**Лучший**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
 ||Гибридная среда SharePoint  <br/> |SharePoint Server 2016  <br/> |

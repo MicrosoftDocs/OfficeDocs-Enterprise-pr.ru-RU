@@ -16,18 +16,19 @@ f1.keywords:
 ms.custom:
 - Ent_Office_Other
 - PowerShell
+- seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: В этой статье объясняется, как заблокировать и разблокировать доступ к учетным записям Microsoft 365 с помощью PowerShell.
-ms.openlocfilehash: c18c0248c51096ab089b16b2e9e31eb0929de443
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 1d32554642f29b4548e2525135d20967ba6b0f16
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230895"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606435"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>Блокировка учетных записей пользователей Microsoft 365 с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Блокировка доступа к учетной записи Microsoft 365 запрещает всем пользователям использовать эту учетную запись для входа и доступа к службам и данным в организации Microsoft 365. С помощью PowerShell можно блокировать доступ к отдельным и нескольким учетным записям пользователей.
 
@@ -170,7 +171,7 @@ kakers@contoso.com
 
 ## <a name="see-also"></a>См. также
 
-[Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Управление учетными записями пользователей Microsoft 365, лицензиями и группами с помощью PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
   

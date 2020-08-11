@@ -1,5 +1,5 @@
 ---
-title: Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell
+title: Управление учетными записями пользователей Microsoft 365, лицензиями и группами с помощью PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,18 +14,19 @@ f1.keywords:
 ms.custom:
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: Сводка. сведения о том, как управлять учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell.
-ms.openlocfilehash: 26da0d13ecc9c14be4abe059943bd91d88126f1e
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: В этой статье рассказывается, как управлять учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell.
+ms.openlocfilehash: b5a2d43ad4dee3a70f934f9fc52b93e7c99f3644
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230415"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605885"
 ---
-# <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Управление учетными записями пользователей, лицензиями и группами Microsoft 365 с помощью PowerShell
+# <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Управление учетными записями пользователей Microsoft 365, лицензиями и группами с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Одной из основных задач администратора Microsoft 365 является управление учетными записями пользователей, лицензиями и группами. Несмотря на то, что вы можете выполнить большинство аспектов этих задач в центре администрирования Microsoft 365, другие задачи выполняются значительно быстрее и проще с помощью PowerShell. 
 

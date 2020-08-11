@@ -1,5 +1,5 @@
 ---
-title: Подключение к клиентам Exchange Online с помощью удаленного сеанса Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
+title: Подключение к клиентам Exchange Online с помощью удаленной оболочки Windows PowerShell для партнеров на сайте доступа к данным
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: Сводка. Использование удаленного сеанса Windows PowerShell для подключения к Exchange Online с помощью значения DelegatedOrg.
-ms.openlocfilehash: f04632f9e7b5e8dec476a5381550020e5d8a1521
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: bfb041a9ab91cda54e643e8410704662c11ef175
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230835"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606015"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Подключение к клиентам Exchange Online с помощью удаленного сеанса Windows PowerShell для партнеров службы разрешений делегированного доступа (DAP)
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 > [!IMPORTANT]
 > Процедуры, описанные в этой статье, предназначены только для партнеров службы разрешений делегированного доступа (DAP). Если вы не являетесь партнером DAP, не используйте эти процедуры. 
@@ -134,6 +134,6 @@ Invoke-Command -Session $Session -ScriptBlock {Get-Mailbox}
     
 - [Remove-PSSession](https://go.microsoft.com/fwlink/p/?LinkId=389620);
     
-- [Set-ExecutionPolicy](https://go.microsoft.com/fwlink/p/?LinkId=389623).
+- [Set-ExecutionPolicy](https://go.microsoft.com/fwlink/p/?LinkId=389623)
     
 

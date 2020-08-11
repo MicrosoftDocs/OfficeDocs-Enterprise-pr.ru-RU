@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -18,13 +20,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
-description: Узнайте, как отключить синхронизацию службы каталогов для Microsoft 365 с помощью PowerShell.
-ms.openlocfilehash: 1e3e26a262c112c05fe22cda2dbe3f14efb61f87
-ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
+description: В этой статье содержатся сведения об использовании PowerShell для отключения синхронизации службы каталогов для Microsoft 365.
+ms.openlocfilehash: 815d20ff6a0697f1533e44305e20e61a9282312b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387712"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603651"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Отключение синхронизации каталогов для Microsoft 365
 Вы можете отключить синхронизацию службы каталогов с помощью PowerShell. Тем не менее, не рекомендуется отключать синхронизацию службы каталогов в качестве действия по устранению неполадок. Если вам нужна помощь с устранением проблем с синхронизацией службы каталогов, обратитесь к разделу [Устранение проблем с синхронизацией каталогов для статьи Microsoft 365](fix-problems-with-directory-synchronization.md) . 

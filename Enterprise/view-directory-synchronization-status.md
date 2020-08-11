@@ -9,7 +9,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -18,13 +20,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
-description: Сведения о том, как отключить синхронизацию службы каталогов. Вы также можете просмотреть его состояние.
-ms.openlocfilehash: 4c2f0baf6d3657e3eb9974ff7d4f8109e52e603b
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: В этой статье рассказывается о том, как проверить состояние синхронизации службы каталогов в Office 365.
+ms.openlocfilehash: 9aaad085854326ebb6542f03256ae851b27f0980
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571042"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605865"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Просмотр состояния синхронизации каталогов в Microsoft 365
 

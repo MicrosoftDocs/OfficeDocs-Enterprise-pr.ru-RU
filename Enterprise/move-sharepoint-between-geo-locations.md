@@ -11,14 +11,16 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-f1.keywords: NOCSH
-description: Сведения о перемещении сайта SharePoint в другой геообъект.
-ms.openlocfilehash: 88c739e69f27df72cba3757f224ccd1a916d3148
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: Сведения о том, как переместить сайт SharePoint в другое географическое расположение в среде с поддержкой нескольких регионов и сообщить о ожиданиях изменений пользователей.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8fdf6e3ec181ac5c4303579871c6f83112df1e3c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433870"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606845"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Перемещение сайта SharePoint в другой геообъект
 
@@ -82,8 +84,8 @@ ms.locfileid: "45433870"
 Перед планированием перемещения любого сайта рекомендуется выполнить проверку, позволяющую убедиться, что сайт можно перемещать.
 
 Не поддерживается перемещение сайтов со следующими элементами:
--   Службы Business Connectivity Services
--   Формы InfoPath 
+-    Службы Business Connectivity Services
+-    Формы InfoPath 
 - Примененные шаблоны управления правами на доступ к данным (IRM)
 
 Чтобы проверить, все ли геообъекты совместимы, выполните команду `Get-SPOGeoMoveCrossCompatibilityStatus`. Она отобразит все ваши геообъекты и укажет, совместима ли среда с целевым географическим расположением.

@@ -11,17 +11,19 @@ localization_priority: Normal
 ms.collection: Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
-description: Помогает спланировать требования к пропускной способности сети для Microsoft 365. Когда вы развернетесь, вернитесь сюда, чтобы выполнить тонкую настройку и устранение проблем с производительностью Microsoft 365.
-ms.openlocfilehash: 2754bdfe427a87f0cbed538703877b089c3fcc38
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+- Adm_O365
+description: Эта статья поможет вам спланировать требования к пропускной способности сети для Microsoft 365, а также выполнить тонкую настройку и устранение неполадок с производительностью.
+ms.openlocfilehash: 4942d2d9d36123465dd15aecf6e72988c9952037
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998584"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606745"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Планирование сети и настройка производительности для Microsoft 365
 Перед развертыванием в первый раз или при переходе на Microsoft 365 вы можете использовать сведения из этих разделов для оценки необходимой пропускной способности, а затем проверить, достаточно ли пропускной способности для развертывания или миграции в Microsoft 365. Общие сведения: [планирование сети и миграции для Microsoft 365](network-and-migration-planning.md).

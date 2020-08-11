@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: В этой статье описывается, как использовать минификации и объединение технологий с помощью веб-компонентов Web Essentials для уменьшения количества HTTP-запросов и сокращения времени, необходимого для загрузки страниц в SharePoint Online.
-ms.openlocfilehash: 44f9e6151c22c3715b56a164bd0c9cacedcf2580
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Узнайте, как использовать минификации и объединение технологий с помощью Web Essentials, чтобы сократить количество HTTP-запросов и время, необходимое для загрузки страниц в SharePoint Online.
+ms.openlocfilehash: 3b840b7da953103448515c51f79ba15cb356ae38
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004774"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605661"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Минификация и объединение в SharePoint Online
 
@@ -39,7 +41,7 @@ ms.locfileid: "44004774"
 Вы можете использовать сторонние программы, такие как Web Essentials, для объединения файлов CSS и JavaScript.
   
 > [!IMPORTANT]
-> Веб-Essentials — это проект на основе сторонних поставщиков с открытым кодом и сообществом. Программное обеспечение — это расширение Visual Studio 2012 и Visual Studio 2013, которое не поддерживается корпорацией Майкрософт. Чтобы скачать веб-Essentials, посетите веб- [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)сайт по адресу. 
+> Веб-Essentials — это проект на основе сторонних поставщиков с открытым кодом и сообществом. Программное обеспечение — это расширение Visual Studio 2012 и Visual Studio 2013, которое не поддерживается корпорацией Майкрософт. Чтобы скачать веб-Essentials, посетите веб-сайт по адресу [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) . 
   
 Веб-компоненты предлагают две формы объединения:
   
@@ -55,7 +57,7 @@ ms.locfileid: "44004774"
   
 1. В обозревателе решений Visual Studio выберите файлы, которые нужно включить в пакет.
     
-2. Щелкните правой кнопкой мыши выбранные файлы, а затем в контекстном **меню выберите команду** \> **создать файл пакета JavaScript** . Например: 
+2. Щелкните правой кнопкой мыши выбранные файлы, а затем **Web Essentials** \> в контекстном меню выберите команду **создать файл пакета JavaScript** . Например: 
     
     ![Снимок экрана: параметры меню Web Essentials](media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -91,7 +93,7 @@ ms.locfileid: "44004774"
   
 1. В обозревателе решений Visual Studio выберите файлы, которые нужно включить в пакет.
     
-2. Щелкните правой кнопкой мыши выбранные файлы, а затем в контекстном меню выберите команду **создать спрайт изображения** **Web Essentials** \> . Например: 
+2. Щелкните правой кнопкой мыши выбранные файлы, а затем **Web Essentials** в \> контекстном меню выберите команду **создать спрайт изображения** Web Essentials. Например: 
     
     ![Снимок экрана: как создать спрайт изображения](media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

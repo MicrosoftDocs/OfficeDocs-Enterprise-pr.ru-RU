@@ -14,23 +14,25 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-mar2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: Сведения об управлении удостоверениями пользователей в Microsoft 365.
-ms.openlocfilehash: 418d5841a55e6a0da2ccb098c6b41e5a247c9552
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Узнайте, как управлять службой удостоверений пользователей Azure AD в Microsoft 365, используя только облачные или гибридные модели удостоверений.
+ms.openlocfilehash: fee2f0e9c8a2ee1216fb2a37e6d517348111b064
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433620"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605835"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Модели удостоверений Microsoft 365 и Azure Active Directory
 
-*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Microsoft 365 использует Azure Active Directory (Azure AD), службу удостоверений и удостоверений пользователей на основе облачной службы проверки подлинности, включенную в подписку Microsoft 365, для управления удостоверениями и проверкой подлинности в Microsoft 365. Правильная настройка инфраструктуры удостоверений крайне важна для управления доступом пользователей и разрешений Microsoft 365 для Организации.
 

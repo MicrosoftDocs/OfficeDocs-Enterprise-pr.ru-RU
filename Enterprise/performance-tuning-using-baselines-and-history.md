@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +22,13 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 - SPO_Content
-description: Существует несколько простых способов проверить производительность подключения между Office 365 и предприятием, которое позволит вам создать грубую базовую линию подключения. Сведения о том, как вести журнал производительности клиентских компьютеров, поможет обнаружить возникающие проблемы на ранних этапах, выявить и предсказать проблемы.
-ms.openlocfilehash: ffccd9f5763d7d47dbb3aa02d3063582d1fa83cc
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Узнайте, как проверить историю подключений клиентских компьютеров, чтобы упростить обнаружение новых проблем.
+ms.openlocfilehash: 31849e14b5dec7cba3878a85219ef2b8994f0fb9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774554"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605471"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Настройка производительности Office 365 с помощью базовых показателей и истории производительности
 

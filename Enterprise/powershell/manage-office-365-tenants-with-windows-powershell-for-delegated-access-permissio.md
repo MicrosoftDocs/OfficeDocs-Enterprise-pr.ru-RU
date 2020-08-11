@@ -1,5 +1,5 @@
 ---
-title: Управление клиентами Microsoft 365 с помощью Windows PowerShell для партнеров с правами доступа к данным делегированного доступа
+title: Управление клиентами Microsoft 365 с помощью Windows PowerShell для партнеров в системе доступа к данным
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: 'Сводка: использование PowerShell для Microsoft 365 для управления клиентами клиенты.'
-ms.openlocfilehash: 31ce5b9a7bdfa50234c76be65eaeb99d6d199136
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: В этой статье рассказывается, как использовать PowerShell для Microsoft 365 для управления клиентами клиенты.
+ms.openlocfilehash: b1e0459b906bd0a06758147923dff0dcc0af1b3e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230595"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605945"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Управление клиентами Microsoft 365 с помощью Windows PowerShell для партнеров с правами доступа к данным делегированного доступа
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Windows PowerShell позволяет поставщикам синдикации и поставщикам облачных решений (CSP) легко администрировать и сообщать о параметрах аренды клиентов, недоступных в центре администрирования Microsoft 365. Обратите внимание на то, что для учетной записи администратора партнера для подключения к клиенты клиента требуется разрешение на администрирование от имени (АОБО).
   

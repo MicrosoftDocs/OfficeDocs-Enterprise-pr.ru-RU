@@ -7,18 +7,18 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-f1.keywords:
-- NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Расширьте присутствие Microsoft 365 до нескольких регионов с помощью Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 01683caa3dfebc8331bb0b4b6ba239be2e0d9aaa
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: В этой статье рассказывается о том, как расширить сведения о присутствии Microsoft 365 в несколько географических регионов с помощью Microsoft 365 с поддержкой нескольких регионов.
+ms.openlocfilehash: 74fdf77ed28ea443cdb14bd37c2735b3a221e14d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433810"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605511"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 

@@ -16,20 +16,21 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 - O365ITProTrain
+- seo-marvel-apr2020
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: Использование PowerShell для назначения лицензии Microsoft 365 нелицензированным пользователям.
-ms.openlocfilehash: 25a57158be82f985885a7ceaf89f526f9d522b4d
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: В этой статье рассказывается, как использовать PowerShell для назначения лицензии Microsoft 365 нелицензированным пользователям.
+ms.openlocfilehash: 824d6b786c3334ae36929e50298e6be0aafd9cb2
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229835"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606475"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>Назначение лицензий Microsoft 365 для учетных записей пользователей с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Пользователи не могут использовать службы Microsoft 365, пока их учетной записи не назначена лицензия из плана лицензирования. С помощью PowerShell можно быстро назначить лицензии нелицензированным учетным записям. 
 
@@ -106,7 +107,7 @@ Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-Пример:
+Например:
 
 ```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US

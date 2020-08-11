@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Сведения о квотах хранилища SharePoint в средах с поддержкой нескольких регионов.
-ms.openlocfilehash: f0463797dd3471f349e60d8f029b7ae2fa4b65a6
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Сведения о квотах хранилища SharePoint в средах с поддержкой нескольких регионов, а также об управлении квотами для администраторов SharePoint Online.
+ms.openlocfilehash: 6198b5c6c22b2eefcf65224bdfbd92bccd3f966d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433740"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606145"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Квоты хранилища SharePoint в средах с поддержкой нескольких регионов
 

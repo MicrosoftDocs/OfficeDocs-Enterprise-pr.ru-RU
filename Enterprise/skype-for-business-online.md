@@ -13,6 +13,7 @@ f1.keywords:
 ms.custom:
 - Adm_O365
 - ms.lync.lac.ProviderManagedFeature
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +21,13 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: Справка для администраторов Skype для бизнеса Настройка Skype для бизнеса, сети, собраний и мгновенных сообщений, а так же внешнего доступа для пользователей. Настройка параметров, устранение неполадок и просмотр отчетов об использовании.
-ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Как администратор, вы можете получить помощь по настройке частей Skype для бизнеса Online, в том числе сети, собраний и мгновенных сообщений, а также внешнего доступа для пользователей.
+ms.openlocfilehash: 2e0a3b47c89f1573b50681445e150755e0a78985
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841116"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603661"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype для бизнеса Online в Office 365  справка для администраторов
 

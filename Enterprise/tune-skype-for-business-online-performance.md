@@ -11,20 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - MSO150
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
-description: В этой статье приведены ссылки на системные администраторы, которые хотят спланировать требования к пропускной способности сети или кто должен увеличить производительность Skype для бизнеса Online.
-ms.openlocfilehash: 4ca25d8a38ffce5b694b9ca31c330f6488720fcb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: В этой статье представлены ссылки на системные администраторы, планирующие требования к пропускной способности сети или повышающие производительность Skype для бизнеса Online.
+ms.openlocfilehash: 1ca9d969f4552cf260d44099becd41f5868286d7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843920"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606425"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Настройка производительности Skype для бизнеса Online
 

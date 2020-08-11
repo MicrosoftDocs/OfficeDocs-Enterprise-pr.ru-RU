@@ -12,17 +12,18 @@ ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
-description: 11 апреля 2017 г. сервер Exchange Server 2007 достиг конца поддержки. Если вы еще не начали миграцию с Exchange 2007 на Microsoft 365, Office 365 или Exchange 2016, настало время начать планирование.
-ms.openlocfilehash: 7228d123a8f4fe21c3d92753fe3f60a7d2e4f67b
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.custom: seo-marvel-apr2020
+description: Узнайте о возможностях после того, как Exchange Server 2007 достиг конца поддержки и начала планирования миграции в Microsoft 365, Office 365 или Exchange 2016.
+ms.openlocfilehash: c77d3de47ea917730874253c286565971d80ea48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052441"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606405"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>План действий после прекращения поддержки Exchange 2007;
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 **11 апреля 2017**г. сервер Exchange Server 2007 достиг конца поддержки. Если вы еще не начали миграцию с Exchange 2007 на Microsoft 365, Office 365 или Exchange 2016, настало время начать планирование. 
   
@@ -52,7 +53,7 @@ ms.locfileid: "45052441"
     
 В следующих разделах каждый из этих вариантов рассматривается более подробно.
   
-### <a name="migrate-to-microsoft-365"></a>Переход на Microsoft 365
+### <a name="migrate-to-microsoft-365"></a>Миграция в Microsoft 365
 
 Вы можете перенести электронную почту в Microsoft 365 — это самый лучший и простой способ отказаться от использования развертывания Exchange 2007. При переходе на Microsoft 365 вы можете сделать один переход с более 10 лет старой технологии на функциональные возможности, такие как:
   

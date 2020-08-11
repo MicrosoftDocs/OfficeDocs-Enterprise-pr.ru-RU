@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Сводка. Используйте эти руководства по лаборатории тестирования (руководствах TLG), чтобы настроить демонстрацию, эксперименты или среды разработки и тестирования для Microsoft 365.
-ms.openlocfilehash: 32204f3b3ca2cc51d3d0eea9a3d1ef6dfa65228d
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 198185f75ef2f0a9347508e17717811feb3a0cd9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230015"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606085"
 ---
 # <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Тестирование Microsoft 365 с руководствами по лаборатории тестирования (руководствах TLG)
 
@@ -48,9 +49,9 @@ ms.locfileid: "45230015"
 
     Это действие не является обязательным, оно нужно лишь в случае, если нужно создать имитацию конфигурации предприятия для гибридного удостоверения.
     
-Для получения дополнительных руководств по лаборатории тестирования, применимых одновременно к Office 365 и Microsoft 365, щелкните [здесь](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).  
+Дополнительные руководствах TLG, которые относятся как к Office 365, так и к Microsoft 365, можно найти в [руководствах по лаборатории тестирования](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides).  
     
-## <a name="see-also"></a>См. также
+## <a name="related-topics"></a>Связанные статьи
 
 [Освоение облака и гибридные решения](cloud-adoption-and-hybrid-solutions.yml)
   

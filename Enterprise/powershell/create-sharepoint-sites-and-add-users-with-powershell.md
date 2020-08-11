@@ -16,22 +16,23 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: Сводка. Используйте PowerShell для создания сайтов SharePoint Online и добавления пользователей и групп на эти сайты.
-ms.openlocfilehash: 2791b4de9388e3ff828a665aeeef5ada19627107
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 85694799c32d0a075a158df47dc021bbbbe0c844
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230805"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606005"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>Создание сайтов и добавление пользователей в SharePoint Online с помощью PowerShell
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 При использовании PowerShell для Microsoft 365 для создания сайтов SharePoint Online и добавления пользователей можно быстро и многократно выполнять задачи в центре администрирования Майкрософт 365 быстрее и многократно. Вы также можете выполнять задачи, которые невозможно выполнить в центре администрирования Microsoft 365. 
 
-## <a name="before-you-begin"></a>Прежде чем начать
+## <a name="connect-to-sharepoint-online"></a>Подключение к SharePoint Online
 
 Процедуры, описанные в этом разделе, требуют подключения к SharePoint Online. Инструкции см в разделе [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 

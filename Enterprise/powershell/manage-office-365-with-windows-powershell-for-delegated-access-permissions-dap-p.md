@@ -1,5 +1,5 @@
 ---
-title: Управление Microsoft 365 с помощью Windows PowerShell для партнеров с правами доступа к данным делегированного доступа
+title: Управление Microsoft 365 с помощью Windows PowerShell для партнеров в системе доступа к данным
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: Сводка. партнеры по синдикации и поставщикам облачных решений (CSP) могут использовать Windows PowerShell для управления клиентскими клиентами Microsoft 365.
-ms.openlocfilehash: 22fd26fb89d15cc036d52ed49ec61319c7e13a52
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: a2b05a5f24984d4113c856920d217f47d55f606b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230485"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605925"
 ---
 # <a name="manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Управление Microsoft 365 с помощью Windows PowerShell для партнеров с правами доступа к данным делегированного доступа
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Партнеры по делегированным правам доступа (DAP)  партнеры по синдикации и поставщики облачных решений (CSP). Они часто бывают поставщиками сети или телекоммуникационных услуг в других компаниях. Они объединяют подписки на Microsoft 365 на свои услуги своим клиентам. Когда вы продаете подписку на Microsoft 365, им автоматически предоставляются разрешения на администрирование от имени пользователя (АОБО), чтобы они могли администрировать и предоставлять отчеты для клиентов клиенты. В центре администрирования Майкрософт 365 это сложно и много времени. Значительно упрощается выполнение административных задач, таких как список всех клиентов **тенантидс** и их доменов, а также определение всех пользователей в клиентской лицензии и лицензий, назначенных им с помощью PowerShell для Microsoft 365. В некоторых случаях эти административные задачи можно выполнить только в PowerShell для Microsoft 365. Ниже приведены примеры сценариев, которые партнеры служб синдикации и CSP чаще всего используют для администрирования своих клиентов:
   

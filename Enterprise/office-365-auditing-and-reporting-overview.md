@@ -16,13 +16,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: Обзор функций аудита и создания отчетов в Microsoft 365 и службе Software Assurance.
-ms.openlocfilehash: 10bbf660ee0e0868abdb6b41c1cc318f6d64bb61
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Обзор функций аудита и создания отчетов в Office 365, Microsoft 365 и гарантиях обслуживания.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40e68954cb0128ad323305bf8347a8e13afda9d5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774964"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606685"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Аудит и создание отчетов в облачных службах Майкрософт
 
@@ -57,7 +58,7 @@ ms.locfileid: "44774964"
 ## <a name="related-links"></a>Дополнительные ссылки
 
 - [Функции обнаружения электронных данных и поиска](office-365-ediscovery-and-search-features.md)
-- [Функции отчетов Microsoft 365](office-365-reporting-features.md)
+- [Функции создания отчетов в Microsoft 365](office-365-reporting-features.md)
 - [API действий управления Microsoft 365](office-365-management-activity-api.md)
-- [Миграция почтовых ящиков Microsoft 365](office-365-mailbox-migrations.md)
-- [Внутреннее ведение журнала для разработки Microsoft 365](office-365-internal-logging.md)
+- [Перенос почтовых ящиков Microsoft 365](office-365-mailbox-migrations.md)
+- [Внутренняя регистрация для инженеров Microsoft 365](office-365-internal-logging.md)

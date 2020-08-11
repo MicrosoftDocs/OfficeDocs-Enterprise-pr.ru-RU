@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
-description: Если вы отказались от развертывания FastTrack и готовы к переносу данных в Microsoft 365, то начните с этого места.
-ms.openlocfilehash: a04c4df37d5f8c72330907752247d7bea48fb72d
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.custom: seo-marvel-apr2020
+description: В этой статье описываются ресурсы, которые помогут вам перенести данные Организации в Microsoft 365.
+ms.openlocfilehash: b7598b6d8ccf566c43aacded5237dc4dc22fe42e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711852"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605671"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>Перенос данных Организации в Microsoft 365 корпоративный
 

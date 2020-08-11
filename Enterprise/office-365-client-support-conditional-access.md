@@ -14,13 +14,14 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-description: Общие сведения о поддержке клиентского приложения Microsoft 365 для условного доступа
-ms.openlocfilehash: 6081af2ad3bca69978a10baabeae0a13d783f0ae
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье рассказывается о том, какие платформы, клиенты и модули PowerShell поддерживают условный доступ для Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 77fe8411109bf77287674d8c6fa1607a0689f46f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998507"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606704"
 ---
 # <a name="microsoft-365-client-app-support--conditional-access"></a>Поддержка клиентских приложений Microsoft 365 — условный доступ
 

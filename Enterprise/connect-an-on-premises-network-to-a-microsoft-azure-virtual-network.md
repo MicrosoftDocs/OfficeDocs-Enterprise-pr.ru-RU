@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: Сводка. Узнайте, как настроить распределенную виртуальную сеть Azure для серверных рабочих нагрузок Office с VPN-подключением типа "сеть-сеть".
-ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 939ba28b1fc2b21a93e22ce019879fef73d58c1c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230075"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606055"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Подключение локальной сети к виртуальной сети Microsoft Azure
 
@@ -32,7 +33,7 @@ ms.locfileid: "45230075"
 
 Например, сервер синхронизации каталогов, работающий на виртуальной машине Azure, должен запросить локальные контроллеры домена для изменения учетных записей и синхронизировать эти изменения с вашей подпиской на Microsoft 365. В этой статье показано, как настроить локальную виртуальную сеть Azure с помощью VPN-подключения типа "сеть-сеть", готового к размещению виртуальных машин Azure.
 
-## <a name="overview"></a>Обзор
+## <a name="configure-a-cross-premises-azure-virtual-network"></a>Настройка виртуальной сети Azure с несколькими локальными сайтами
 
 Виртуальные машины в Azure не должны быть изолированы от локальной среды. Чтобы подключить виртуальные машины Azure к локальным сетевым ресурсам, необходимо настроить виртуальную сеть Azure. На схеме ниже показаны компоненты, необходимые для развертывания виртуальной сети Azure с виртуальной машиной в Azure.
   

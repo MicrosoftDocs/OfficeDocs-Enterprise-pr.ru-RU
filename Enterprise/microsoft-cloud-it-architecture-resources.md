@@ -14,16 +14,17 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: Сводка. Узнайте основные принципы облачной архитектуры для удостоверений, безопасности, сети и гибридных решений Майкрософт. Ознакомьтесь с нормативными рекомендациями по защите файлов, удостоверений и устройств при использовании облака Майкрософт.
-ms.openlocfilehash: f19a84297de0ff809979bc5735eb8c19cfbb7f57
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: В этой статье вы найдете материалы, посвященные основной архитектуре ИТ (Майкрософт Cloud IT), связанные рекомендации по защите & процедуры развертывания.
+ms.openlocfilehash: 644dc437fe1d0c3dc60c3e191a98ee52e761e03a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592183"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605681"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ресурсы для администраторов, посвященные архитектуре Microsoft Cloud
 
@@ -88,7 +89,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 Сведения для ИТ-архитекторов о создании системы удостоверений для организаций, использующих облачные службы и платформы Майкрософт.
   
-|**Ресурс**|**Описание**|
+|**Элемент**|**Описание**|
 |:-----|:-----|
 |[![Эскиз модели идентификации в облаке Майкрософт](media/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| [Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Эта модель содержит: <ul><li>Общие сведения об использовании удостоверений в облаке Майкрософт </li><li>Возможности платформы IDaaS в Azure AD </li><li>Интеграция локальных учетных записей доменных служб Active Directory с Microsoft Azure Active Directory </li><li>Размещение компонентов каталога в Azure </li><li>Варианты доменных служб для рабочих нагрузок в службе Azure IaaS </li></ul><br/>|
    
@@ -97,7 +98,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 Сведения для ИТ-архитекторов о безопасности в облачных службах и платформах Майкрософт.
   
-|**Ресурс**|**Описание**|
+|**Элемент**|**Описание**|
 |:-----|:-----|
 |[![Эскиз модели безопасности в облаке Майкрософт](media/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Эта модель содержит: <ul><li>Роль корпорации Майкрософт в предоставлении безопасных служб и платформ.</li><li>Обязанности клиента по снижению угроз безопасности.</li><li>Лучшие варианты сертификации защиты. </li><li>Решения для обеспечения безопасности от консалтинговых служб Майкрософт. </ul><br/>|
    
@@ -106,7 +107,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 Сведения для ИТ-архитекторов о сетях для облачных служб и платформ Майкрософт.
   
-|**Ресурс**|**Описание**|
+|**Элемент**|**Описание**|
 |:-----|:-----|
 |[![Эскиз модели организации сети в Microsoft Cloud](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](downloads/MSFT_cloud_architecture_networking.pdf)  <br/> [PDF](downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_networking.vsdx) <br/> | Эта модель содержит: <ul><li> Развитие сети для облачного подключения </li><li> Общие элементы облачного подключения Майкрософт </li><li> ExpressRoute для подключения к Microsoft Cloud </li><li> Проектирование сети для Microsoft SaaS, Azure PaaS и Azure IaaS </li></ul><br/>  <br/>|
 
@@ -115,7 +116,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 Сведения для ИТ-архитекторов о гибридном облаке для служб и платформ Майкрософт.
   
-|**Ресурс**|**Описание**|
+|**Элемент**|**Описание**|
 |:-----|:-----|
 |[![Эскиз модели гибридного облака Майкрософт](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](downloads/MSFT_cloud_architecture_hybrid.pdf)           <br/> [PDF](downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_hybrid.vsdx)  | Эта модель содержит: <ul><li> Облачные предложения Майкрософт (SaaS, Azure PaaS и Azure IaaS) и их общие элементы </li><li> Архитектуру гибридного облака для облачных предложений Майкрософт </li><li> Сценарии гибридного облака для Microsoft SaaS (Microsoft 365), Azure PaaS и Azure IaaS </li></ul><br/>|
    
@@ -177,7 +178,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 Рекомендуемые возможности для защиты удостоверений и устройств, имеющих доступ к Office 365 и отличных от SaaS-служб и локальных приложений, которые опубликованы с помощью прокси приложения Azure AD.
   
-|**Ресурс**|**Описание**|
+|**Элемент**|**Описание**|
 |:-----|:-----|
 |[![Плакат модели: защита идентификации и устройств в Office 365 и других приложениях SaaS](media/c1cfb31b-5150-45ff-b46c-3a237e9f5581.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [Другие языки](https://www.microsoft.com/download/details.aspx?id=55032) <br/> |Важно, чтобы уровни защиты данных, удостоверений и устройств согласовывались между собой. В этом документе приводится сравнительная характеристика различных возможностей, а также предоставляются дополнительные сведения о возможностях защиты удостоверений и устройств.  <br/> |
    
@@ -186,7 +187,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
 В случае рекомендуемых возможностей для защиты файлов в Office 365 используются три разных уровня конфиденциальности.
   
-|**Ресурс**|**Описание**|
+|**Элемент**|**Описание**|
 |:-----|:-----|
 |[![Эскиз мини-плаката "Решения по защите файлов в Office 365"](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320)  \| [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |Важно, чтобы уровни защиты данных, удостоверений и устройств согласовывались между собой. В этом документе приводится сравнительная характеристика различных возможностей, а также предоставляются дополнительные сведения о возможностях защиты файлов в Office 365.  <br/> |
    

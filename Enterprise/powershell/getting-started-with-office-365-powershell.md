@@ -14,24 +14,25 @@ f1.keywords:
 ms.custom:
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: Сводка. Узнайте о важности PowerShell для Microsoft 365, обратитесь к своему клиенту Microsoft 365 и получите помощь.
-ms.openlocfilehash: 6ef7217d24dc865b3053fb7f7bf66acc79384200
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ca3d1b337583aa00075f67aa359e3293838b2cbc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230675"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605965"
 ---
 # <a name="getting-started-with-powershell-for-microsoft-365"></a>Начало работы с PowerShell для Microsoft 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 С помощью PowerShell для Microsoft 365 вы можете управлять Microsoft 365 с помощью команд и сценариев для упрощения ежедневной работы. Узнайте, почему для Microsoft 365 навыки чрезвычайно важны для управления Microsoft 365, для подключения к вашей подписке Microsoft 365, создания отчетов и получения дополнительных сведений и помощи в сообществе Microsoft 365.
   
 Выберите необходимую вам статью из перечисленных ниже.
   
-- [Почему необходимо использовать PowerShell для Microsoft 365](why-you-need-to-use-office-365-powershell.md)
+- [Зачем использовать PowerShell для Microsoft 365](why-you-need-to-use-office-365-powershell.md)
     
     Ознакомьтесь с этой статьей, если вы впервые используете PowerShell для Microsoft 365 и хотите шесть причин, по которым необходимо использовать PowerShell для Microsoft 365. 
     
@@ -39,7 +40,7 @@ ms.locfileid: "45230675"
     
     Начните отсюда, чтобы подключиться к вашей подписке на Microsoft 365 с помощью PowerShell для Microsoft 365 и выполнять задачи администрирования из командной строки.
     
-- [Подключение ко всем службам Microsoft 365 в отдельном окне Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
+- [Подключение ко всем службам Microsoft 365 с помощью единого окна Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
     
     Вы можете управлять Microsoft 365 в отдельном окне для Skype для бизнеса Online, SharePoint Online, Microsoft Exchange Online и учетных записей и лицензий Microsoft 365. Кроме того, можно управлять ими из одного окна. В этом разделе рассказывается, как это сделать.
     
@@ -47,7 +48,7 @@ ms.locfileid: "45230675"
     
     Начните отсюда, если вы установили модули PowerShell для Microsoft 365 и хотите узнать больше об использовании команд автоматизации для быстрого создания отчетов. 
     
-- [Справочники по командлетам для служб Microsoft 365](cmdlet-references-for-office-365-services.md)
+- [Сведения о командлетах для служб Microsoft 365](cmdlet-references-for-office-365-services.md)
     
     Начните отсюда, чтобы найти разделы с описанием командлетов PowerShell для модулей Microsoft 365.
     
@@ -55,7 +56,7 @@ ms.locfileid: "45230675"
     
     Начните отсюда, чтобы подключиться к сообществу PowerShell и получить помощь или текущую информацию об использовании PowerShell для Microsoft 365.
     
-## <a name="see-also"></a>См. также
+## <a name="related-topics"></a>Связанные статьи
 
 [Управление Microsoft 365 с помощью PowerShell](manage-office-365-with-office-365-powershell.md)
 

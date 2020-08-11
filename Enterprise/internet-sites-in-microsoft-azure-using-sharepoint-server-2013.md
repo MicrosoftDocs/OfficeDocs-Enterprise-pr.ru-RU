@@ -1,5 +1,5 @@
 ---
-title: Веб-сайты в Microsoft Azure с использованием SharePoint Server 2013
+title: Веб-сайты в Microsoft Azure, использующие SharePoint Server 2013
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
-description: Сводка. Веб-сайты, использующие SharePoint Server 2013, размещаются в службах инфраструктуры Azure. В этой статье приводятся ресурсы по проектированию и реализации этого решения.
-ms.openlocfilehash: fa01df6903a9cbc2ec6163514f27a6bd2fd603aa
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: В этой статье приводятся ресурсы по проектированию и внедрению веб-сайтов SharePoint Server 2013, размещенных в службах инфраструктуры Azure.
+ms.openlocfilehash: d663ca0c663d5fd3e8e13670bdec4bcb80613e51
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998121"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606355"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Веб-сайты в Microsoft Azure, использующие SharePoint Server 2013
 

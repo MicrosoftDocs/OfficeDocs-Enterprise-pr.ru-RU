@@ -15,17 +15,19 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Если Гибридная современная проверка подлинности (HMA) включена только для того, чтобы найти непригодную для текущей среды, можно отключить HMA. В этой статье описывается, как это сделать.
-ms.openlocfilehash: ad9db5894670b49d2d9a1f385cd9f6acd43ea00f
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+description: В этой статье объясняется, как удалить или отключить гибридную современные проверки подлинности из Skype для бизнеса и Exchange.
+ms.openlocfilehash: 9c3dcb2f4bb8993964707a3f30c699bcea3f0dbb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998208"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606175"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Удаление гибридной современной проверки подлинности из Skype для бизнеса и Exchange или ее отключение
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 Если Гибридная современная проверка подлинности (HMA) включена только для того, чтобы найти непригодную для текущей среды, можно отключить HMA. В этой статье описывается, как это сделать.
   

@@ -11,23 +11,25 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
-description: ExpressRoute для Office 365 предоставляет альтернативный путь маршрутизации к многим службам Office 365, подключенным к Интернету. Архитектура ExpressRoute для Office 365 основана на объявлениях общедоступных IP-префиксов служб Office 365, которые уже доступны через Интернет в подготовленные каналы ExpressRoute для последующего повторного распространения этих префиксов IP-адресов в сеть. С помощью ExpressRoute вы эффективно включаете несколько различных путей маршрутизации через Интернет и ExpressRoute для многих служб Office 365. Это состояние маршрутизации в сети может представлять существенные изменения в соответствии с топологией внутренней сети.
-ms.openlocfilehash: 925aeb2db9350eab9abb70bf3e3d6957608f618b
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Узнайте, как реализовать ExpressRoute для Office 365, который предоставляет альтернативный путь маршрутизации к многим службам Office 365, подключенным к Интернету.
+ms.openlocfilehash: 3495b66556a8bd8d9aa16aaa4a3283e6017e883c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230305"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605701"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Реализация средства ExpressRoute для Office 365
 
-*Эта статья относится как к Microsoft 365 Enterprise, так и к Office 365 корпоративный.*
+*Эта статья относится к Microsoft 365 корпоративный и Office 365 корпоративный.*
 
 ExpressRoute для Office 365 предоставляет альтернативный путь маршрутизации к многим службам Office 365, подключенным к Интернету. Архитектура ExpressRoute для Office 365 основана на объявлениях общедоступных IP-префиксов служб Office 365, которые уже доступны через Интернет в подготовленные каналы ExpressRoute для последующего повторного распространения этих префиксов IP-адресов в сеть. С помощью ExpressRoute вы эффективно включаете несколько различных путей маршрутизации через Интернет и ExpressRoute для многих служб Office 365. Это состояние маршрутизации в сети может представлять существенные изменения в соответствии с топологией внутренней сети.
   
@@ -189,7 +191,7 @@ ExpressRoute для Office 365 предоставляет альтернатив
 
 |**Плановые расположения для хранения файлов ExpressRoute в Калифорнии и Нью Йорк**||
 |:-----|:-----|
-|Местоположение  <br/> |Количество людей  <br/> |Ожидается задержка для Microsoft Network через Интернет  <br/> |Ожидается задержка в Microsoft Network вместо ExpressRoute  <br/> |
+|Расположение  <br/> |Количество людей  <br/> |Ожидается задержка для Microsoft Network через Интернет  <br/> |Ожидается задержка в Microsoft Network вместо ExpressRoute  <br/> |
 |Лос, Лос  <br/> |10 000  <br/> |~ 15ms  <br/> |~ 10ms (с помощью схемы Silicon)  <br/> |
 |Washington DC  <br/> |15,000  <br/> |~ 20 мс  <br/> |~ 10ms (через Нью-Йорк)  <br/> |
 |Офиса  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms (через Нью-Йорк)  <br/> |
