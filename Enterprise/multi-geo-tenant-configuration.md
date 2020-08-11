@@ -7,18 +7,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.collection: Strat_SP_gtc
+ms.collection:
+- SPO_Content
+- Strat_SP_gtc
 f1.keywords:
 - NOCSH
-ms.custom: ''
-localization_priority: Normal
-description: Сведения о настройке Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 518bc6dc5bf72e5196a46df8ee7b2e80b7b1838a
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
-ms.translationtype: MT
+ms.custom: seo-marvel-apr2020
+localization_priority: Priority
+description: Из этой статьи вы узнаете, как добавить периферийные расположения и настроить клиент для Microsoft 365 Multi-Geo.
+ms.openlocfilehash: 53a339c9bc709920adb55992d44be2f6280fffcd
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433820"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606795"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Конфигурация клиента Microsoft 365 Multi-Geo
 

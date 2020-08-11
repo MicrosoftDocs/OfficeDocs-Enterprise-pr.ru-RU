@@ -15,13 +15,14 @@ search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 f1.keywords:
 - NOCSH
-description: Прежде чем приступить к планированию сети для сетевого подключения к Office 365, важно понять принципы подключения для безопасного управления трафиком Office 365 и получения максимальной производительности. Эта статья поможет вам понять новейшие рекомендации по безопасной оптимизации сетевого подключения Office 365.
-ms.openlocfilehash: 399f00412bfd5c26a5910b9dcaa141a4fababd93
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+description: Эта статья содержит новейшие рекомендации по безопасной оптимизации сетевого подключения Office 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: be8877ca651e29763b16996670b294cb23bea960
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502704"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605501"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Принципы сетевого подключения к Microsoft 365
 
